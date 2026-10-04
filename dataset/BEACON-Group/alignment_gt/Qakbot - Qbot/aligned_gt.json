@@ -1,0 +1,1069 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_28a995b148f5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ransom Knight",
+        "edges": [
+          "EDGE_192be00f8ed8",
+          "EDGE_6bd556b803fc",
+          "EDGE_833c5aa3c507",
+          "EDGE_5c2d9cc429b9",
+          "EDGE_7dbee59c1245"
+        ],
+        "source": {
+          "Ransom Knight_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              0,
+              "The threat actors behind the Qakbot malware have been conducting a campaign since early August 2023 in which they have been distributing Ransom Knight ransomware and the Remcos backdoor via phishing emails."
+            ],
+            [
+              4,
+              "Talos assesses with moderate confidence that the threat actors behind Qakbot are still active and have been conducting a new campaign that started just before the takedown, distributing a variant of Cyclops/Ransom Knight ransomware along with the Remcos backdoor."
+            ],
+            [
+              5,
+              "Talos identified new LNK files in August 2023 that were created on the same machine referenced above, but observed that the payload of the files pointed to a network share in the command line that served a variant of Ransom Knight ransomware."
+            ],
+            [
+              11,
+              "According to our analysis, these XLL files are the Remcos backdoor which is executed along with Ransom Knight to give the threat actors access to the machine after the infection:."
+            ],
+            [
+              12,
+              "The LNK file, on the other hand, downloads an executable file from remote IP 89[.]23[.]96[.]203 shown in the command line above via WebDAV, which is the actual Ransom Knight payload."
+            ]
+          ],
+          "Ransom Knight_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              4,
+              "The researchers say they have observed hackers carrying out a campaign since early August, during which they have been distributing Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service operation, and the Remcos remote access trojan, which provides attackers with full access to a victim’s machine by sending phishing emails."
+            ]
+          ],
+          "Ransom Knight_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              0,
+              "Despite the disruption to its infrastructure, the threat actors behind the QakBot malware have been linked to an ongoing phishing campaign since early August 2023 that led to the delivery of Ransom Knight (aka Cyclops) ransomware and Remcos RAT."
+            ],
+            [
+              6,
+              "The latest activity, which commenced just before the takedown, starts with a malicious LNK file likely distributed via phishing emails that, when launched, detonates the infection and ultimately deploys the Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service (RaaS) scheme."
+            ]
+          ],
+          "Cyclops_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              4,
+              "Talos assesses with moderate confidence that the threat actors behind Qakbot are still active and have been conducting a new campaign that started just before the takedown, distributing a variant of Cyclops/Ransom Knight ransomware along with the Remcos backdoor."
+            ],
+            [
+              13,
+              "This ransomware family is an updated version of the Cyclops ransomware-as-a-service, rewritten from scratch."
+            ]
+          ],
+          "Cyclops_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              4,
+              "The researchers say they have observed hackers carrying out a campaign since early August, during which they have been distributing Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service operation, and the Remcos remote access trojan, which provides attackers with full access to a victim’s machine by sending phishing emails."
+            ]
+          ],
+          "Cyclops_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              0,
+              "Despite the disruption to its infrastructure, the threat actors behind the QakBot malware have been linked to an ongoing phishing campaign since early August 2023 that led to the delivery of Ransom Knight (aka Cyclops) ransomware and Remcos RAT."
+            ],
+            [
+              6,
+              "The latest activity, which commenced just before the takedown, starts with a malicious LNK file likely distributed via phishing emails that, when launched, detonates the infection and ultimately deploys the Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service (RaaS) scheme."
+            ]
+          ]
+        },
+        "alias": [
+          "Cyclops"
+        ]
+      },
+      {
+        "node_id": "HL_4ab972ce5e47",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Qakbot affiliates",
+        "edges": [],
+        "source": {
+          "Qakbot affiliates_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              2,
+              "Talos attributed this new campaign to Qakbot affiliates as the metadata found in LNK files used in this campaign matches the metadata from machines used in previous Qakbot campaigns “AA” and ”BB.”\nThough we have not seen the threat actors distributing Qakbot itself post-infrastructure takedown, we assess the malware will continue to pose a significant threat moving forward."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_76ee56ab7ffc",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Qakbot",
+        "edges": [
+          "EDGE_43cfd9d605bc"
+        ],
+        "source": {
+          "Qakbot_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              0,
+              "The threat actors behind the Qakbot malware have been conducting a campaign since early August 2023 in which they have been distributing Ransom Knight ransomware and the Remcos backdoor via phishing emails."
+            ],
+            [
+              1,
+              "Notably, this activity appeared to begin before the FBI seized Qakbot infrastructure in late August and has been ongoing since, indicating the law enforcement operation may not have impacted Qakbot operators’ spam delivery infrastructure but rather only their command and control (C2) servers."
+            ],
+            [
+              2,
+              "Talos attributed this new campaign to Qakbot affiliates as the metadata found in LNK files used in this campaign matches the metadata from machines used in previous Qakbot campaigns “AA” and ”BB.”\nThough we have not seen the threat actors distributing Qakbot itself post-infrastructure takedown, we assess the malware will continue to pose a significant threat moving forward."
+            ],
+            [
+              3,
+              "In a late August 2023 operation involving the FBI and many international partners, law enforcement agencies seized the infrastructure and cryptocurrency assets used by the Qakbot malware, dealing considerable damage to the group’s operations."
+            ],
+            [
+              4,
+              "Talos assesses with moderate confidence that the threat actors behind Qakbot are still active and have been conducting a new campaign that started just before the takedown, distributing a variant of Cyclops/Ransom Knight ransomware along with the Remcos backdoor."
+            ],
+            [
+              14,
+              "We do not believe the Qakbot threat actors are behind the ransomware-as-a-service offer, but are simply customers of the service."
+            ],
+            [
+              15,
+              "As this new operation has been ongoing since the beginning of August 2023 and has not stopped after the takedown, we believe the FBI operation didn’t affect Qakbot’s phishing email delivery infrastructure but only its command and control servers."
+            ],
+            [
+              16,
+              "Given the operators remain active, they may choose to rebuild Qakbot infrastructure to fully resume their pre-takedown activity."
+            ]
+          ],
+          "Qakbot_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              0,
+              "The hackers behind Qakbot, a notorious malware operation that was recently “dismantled” by the FBI, are still active and continue to target new victims, researchers say."
+            ],
+            [
+              1,
+              "The FBI announced in August that it had successfully “disrupted and dismantled” the infrastructure of the long-running Qakbot malware, which had infected more than 700,000 machines worldwide to cause hundreds of millions of dollars of damage."
+            ],
+            [
+              3,
+              "Despite these efforts, the hackers behind the Qakbot malware continue to spam new victims, according to new research from Cisco Talos."
+            ],
+            [
+              6,
+              "Talos says it assesses with “moderate confidence” that Qakbot-affiliated hackers are behind this campaign, noting that the filenames used, along with themes of urgent financial matters, are consistent with previous Qakbot campaigns."
+            ],
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ],
+            [
+              10,
+              "This indicates that Operation Duck Hunt may not have impacted Qakbot operators’ spam delivery infrastructure, but rather only their command and control (C2) servers, according to Talos."
+            ],
+            [
+              11,
+              "“Qakbot will likely continue to pose a significant threat moving forward, as the developers were not arrested and Talos assesses they are still operational,” Venere said."
+            ],
+            [
+              12,
+              "Talos noted that the attackers may choose to rebuild the Qakbot infrastructure, enabling them to fully resume pre-takedown activity."
+            ]
+          ],
+          "QakBot_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              0,
+              "Despite the disruption to its infrastructure, the threat actors behind the QakBot malware have been linked to an ongoing phishing campaign since early August 2023 that led to the delivery of Ransom Knight (aka Cyclops) ransomware and Remcos RAT."
+            ],
+            [
+              2,
+              "The activity has been attributed with moderate confidence by the cybersecurity firm to QakBot affiliates."
+            ],
+            [
+              4,
+              "QakBot, also called QBot and Pinkslipbot, originated as a Windows-based banking trojan in 2007 and subsequently developed capabilities to deliver additional payloads, including ransomware."
+            ],
+            [
+              11,
+              "\"Identifying the true scope is difficult but as we've already seen the QakBot distribution network is highly effective and has the ability to push large scale campaigns,\" Venere told the publication."
+            ]
+          ],
+          "QBot_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              4,
+              "QakBot, also called QBot and Pinkslipbot, originated as a Windows-based banking trojan in 2007 and subsequently developed capabilities to deliver additional payloads, including ransomware."
+            ]
+          ],
+          "Pinkslipbot_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              4,
+              "QakBot, also called QBot and Pinkslipbot, originated as a Windows-based banking trojan in 2007 and subsequently developed capabilities to deliver additional payloads, including ransomware."
+            ]
+          ]
+        },
+        "alias": [
+          "QakBot",
+          "QBot",
+          "Pinkslipbot"
+        ]
+      },
+      {
+        "node_id": "HL_9c1cf085aae6",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "BB",
+        "edges": [],
+        "source": {
+          "BB_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              2,
+              "Talos attributed this new campaign to Qakbot affiliates as the metadata found in LNK files used in this campaign matches the metadata from machines used in previous Qakbot campaigns “AA” and ”BB.”\nThough we have not seen the threat actors distributing Qakbot itself post-infrastructure takedown, we assess the malware will continue to pose a significant threat moving forward."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f8678a1d19a6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "FBI",
+        "edges": [],
+        "source": {
+          "FBI_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              1,
+              "Notably, this activity appeared to begin before the FBI seized Qakbot infrastructure in late August and has been ongoing since, indicating the law enforcement operation may not have impacted Qakbot operators’ spam delivery infrastructure but rather only their command and control (C2) servers."
+            ],
+            [
+              3,
+              "In a late August 2023 operation involving the FBI and many international partners, law enforcement agencies seized the infrastructure and cryptocurrency assets used by the Qakbot malware, dealing considerable damage to the group’s operations."
+            ],
+            [
+              15,
+              "As this new operation has been ongoing since the beginning of August 2023 and has not stopped after the takedown, we believe the FBI operation didn’t affect Qakbot’s phishing email delivery infrastructure but only its command and control servers."
+            ]
+          ],
+          "FBI_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              0,
+              "The hackers behind Qakbot, a notorious malware operation that was recently “dismantled” by the FBI, are still active and continue to target new victims, researchers say."
+            ],
+            [
+              1,
+              "The FBI announced in August that it had successfully “disrupted and dismantled” the infrastructure of the long-running Qakbot malware, which had infected more than 700,000 machines worldwide to cause hundreds of millions of dollars of damage."
+            ],
+            [
+              2,
+              "The FBI said at the time that the takedown, dubbed “Operation Duck Hunt,” included the seizure of 52 servers, which the agency said would “permanently dismantle” the botnet."
+            ],
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_faaef5ca949e",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "AA",
+        "edges": [],
+        "source": {
+          "AA_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              2,
+              "Talos attributed this new campaign to Qakbot affiliates as the metadata found in LNK files used in this campaign matches the metadata from machines used in previous Qakbot campaigns “AA” and ”BB.”\nThough we have not seen the threat actors distributing Qakbot itself post-infrastructure takedown, we assess the malware will continue to pose a significant threat moving forward."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1c48451c3ad2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Kansas",
+        "edges": [],
+        "source": {
+          "Kansas_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2069420e8737",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Southern California",
+        "edges": [],
+        "source": {
+          "Southern California_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_207fd553842b",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "power engineering firm",
+        "edges": [],
+        "source": {
+          "power engineering firm_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3f001d156764",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Illinois",
+        "edges": [],
+        "source": {
+          "Illinois_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "source": {
+          "Cisco Talos_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              3,
+              "Despite these efforts, the hackers behind the Qakbot malware continue to spam new victims, according to new research from Cisco Talos."
+            ],
+            [
+              4,
+              "The researchers say they have observed hackers carrying out a campaign since early August, during which they have been distributing Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service operation, and the Remcos remote access trojan, which provides attackers with full access to a victim’s machine by sending phishing emails."
+            ]
+          ],
+          "Cisco Talos_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              1,
+              "This indicates that “the law enforcement operation may not have impacted Qakbot operators’ spam delivery infrastructure but rather only their command-and-control (C2) servers,” Cisco Talos researcher Guilherme Venere said in a new report published today."
+            ],
+            [
+              10,
+              "“Given the operators remain active, they may choose to rebuild Qakbot infrastructure to fully resume their pre-takedown activity.”\nCisco Talos told The Hacker News that the attack chains are also being used to deliver other malware such as DarkGate, MetaStealer, and RedLine Stealer."
+            ]
+          ],
+          "Talos_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              2,
+              "Talos attributed this new campaign to Qakbot affiliates as the metadata found in LNK files used in this campaign matches the metadata from machines used in previous Qakbot campaigns “AA” and ”BB.”\nThough we have not seen the threat actors distributing Qakbot itself post-infrastructure takedown, we assess the malware will continue to pose a significant threat moving forward."
+            ],
+            [
+              4,
+              "Talos assesses with moderate confidence that the threat actors behind Qakbot are still active and have been conducting a new campaign that started just before the takedown, distributing a variant of Cyclops/Ransom Knight ransomware along with the Remcos backdoor."
+            ],
+            [
+              5,
+              "Talos identified new LNK files in August 2023 that were created on the same machine referenced above, but observed that the payload of the files pointed to a network share in the command line that served a variant of Ransom Knight ransomware."
+            ]
+          ]
+        },
+        "alias": [
+          "Talos"
+        ]
+      },
+      {
+        "node_id": "HL_5438c0743b2f",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial services organizations",
+        "edges": [],
+        "source": {
+          "financial services organizations_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_636e2d6a8f1d",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Maryland",
+        "edges": [],
+        "source": {
+          "Maryland_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_823200741ff8",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "food distribution company",
+        "edges": [],
+        "source": {
+          "food distribution company_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9d02c6fdae33",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "defense manufacturer",
+        "edges": [],
+        "source": {
+          "defense manufacturer_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ce675e6da11b",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Operation Duck Hunt",
+        "edges": [],
+        "source": {
+          "Operation Duck Hunt_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              2,
+              "The FBI said at the time that the takedown, dubbed “Operation Duck Hunt,” included the seizure of 52 servers, which the agency said would “permanently dismantle” the botnet."
+            ],
+            [
+              10,
+              "This indicates that Operation Duck Hunt may not have impacted Qakbot operators’ spam delivery infrastructure, but rather only their command and control (C2) servers, according to Talos."
+            ]
+          ],
+          "Duck Hunt_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              5,
+              "In late August 2023, the notorious malware operation was dealt a blow as part of an operation named Duck Hunt."
+            ]
+          ]
+        },
+        "alias": [
+          "Duck Hunt"
+        ]
+      },
+      {
+        "node_id": "HL_d956956b198e",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Alabama",
+        "edges": [],
+        "source": {
+          "Alabama_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              8,
+              "Previous Qakbot victims have included a power engineering firm based in Illinois; financial services organizations based in Alabama, Kansas and Maryland; a defense manufacturer based in Maryland; and a food distribution company in Southern California, according to the FBI."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_132cf6ae8435",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "The Hacker News",
+        "edges": [],
+        "source": {
+          "The Hacker News_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              10,
+              "“Given the operators remain active, they may choose to rebuild Qakbot infrastructure to fully resume their pre-takedown activity.”\nCisco Talos told The Hacker News that the attack chains are also being used to deliver other malware such as DarkGate, MetaStealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2547ae456147",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Remcos RAT",
+        "edges": [
+          "EDGE_0c20b1822e15",
+          "EDGE_06580670ac4e",
+          "EDGE_524dafdda80d"
+        ],
+        "source": {
+          "Remcos RAT_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              0,
+              "Despite the disruption to its infrastructure, the threat actors behind the QakBot malware have been linked to an ongoing phishing campaign since early August 2023 that led to the delivery of Ransom Knight (aka Cyclops) ransomware and Remcos RAT."
+            ],
+            [
+              7,
+              "The ZIP archives containing the LNK files have also been observed incorporating Excel add-in (.XLL) files to propagate the Remcos RAT, which facilitates persistent backdoor access to the endpoints."
+            ]
+          ],
+          "Remcos_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              0,
+              "The threat actors behind the Qakbot malware have been conducting a campaign since early August 2023 in which they have been distributing Ransom Knight ransomware and the Remcos backdoor via phishing emails."
+            ],
+            [
+              4,
+              "Talos assesses with moderate confidence that the threat actors behind Qakbot are still active and have been conducting a new campaign that started just before the takedown, distributing a variant of Cyclops/Ransom Knight ransomware along with the Remcos backdoor."
+            ],
+            [
+              11,
+              "According to our analysis, these XLL files are the Remcos backdoor which is executed along with Ransom Knight to give the threat actors access to the machine after the infection:."
+            ]
+          ],
+          "Remcos_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              4,
+              "The researchers say they have observed hackers carrying out a campaign since early August, during which they have been distributing Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service operation, and the Remcos remote access trojan, which provides attackers with full access to a victim’s machine by sending phishing emails."
+            ]
+          ]
+        },
+        "alias": [
+          "Remcos"
+        ]
+      },
+      {
+        "node_id": "HL_2b260171a6c9__d49dd009",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DarkGate",
+        "edges": [
+          "EDGE_66b3e3443dfe"
+        ],
+        "source": {
+          "DarkGate_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              10,
+              "“Given the operators remain active, they may choose to rebuild Qakbot infrastructure to fully resume their pre-takedown activity.”\nCisco Talos told The Hacker News that the attack chains are also being used to deliver other malware such as DarkGate, MetaStealer, and RedLine Stealer."
+            ]
+          ],
+          "Darkgate_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              5,
+              "The attackers have also begun to distribute the RedLine information stealer malware and the Darkgate backdoor, Talos researcher Guilherme Venere tells TechCrunch."
+            ]
+          ]
+        },
+        "alias": [
+          "Darkgate"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "source": {
+          "Windows_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              4,
+              "QakBot, also called QBot and Pinkslipbot, originated as a Windows-based banking trojan in 2007 and subsequently developed capabilities to deliver additional payloads, including ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_856a5e2e4897",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RedLine Stealer",
+        "edges": [
+          "EDGE_55cfa19cea56"
+        ],
+        "source": {
+          "RedLine Stealer_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              10,
+              "“Given the operators remain active, they may choose to rebuild Qakbot infrastructure to fully resume their pre-takedown activity.”\nCisco Talos told The Hacker News that the attack chains are also being used to deliver other malware such as DarkGate, MetaStealer, and RedLine Stealer."
+            ]
+          ],
+          "RedLine_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": [
+            [
+              5,
+              "The attackers have also begun to distribute the RedLine information stealer malware and the Darkgate backdoor, Talos researcher Guilherme Venere tells TechCrunch."
+            ]
+          ]
+        },
+        "alias": [
+          "RedLine"
+        ]
+      },
+      {
+        "node_id": "HL_951223d5d18c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Excel",
+        "edges": [],
+        "source": {
+          "Excel_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              7,
+              "The ZIP archives containing the LNK files have also been observed incorporating Excel add-in (.XLL) files to propagate the Remcos RAT, which facilitates persistent backdoor access to the endpoints."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b47574028bb3",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MetaStealer",
+        "edges": [
+          "EDGE_5a5c8b161c32"
+        ],
+        "source": {
+          "MetaStealer_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": [
+            [
+              10,
+              "“Given the operators remain active, they may choose to rebuild Qakbot infrastructure to fully resume their pre-takedown activity.”\nCisco Talos told The Hacker News that the attack chains are also being used to deliver other malware such as DarkGate, MetaStealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Talos identified new LNK files in August 2023 that were created on the same machine referenced above, but observed that the payload of the files pointed to a network share in the command line that served a variant of Ransom Knight ransomware.",
+            "Further analysis of the files revealed they point to Powershell.exe and pass the following arguments to download the next stage:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_6bd556b803fc"
+        ],
+        "source": {
+          "TTP:T1059_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": {
+            "best_span_ranges": [
+              [
+                5,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Talos identified new LNK files in August 2023 that were created on the same machine referenced above, but observed that the payload of the files pointed to a network share in the command line that served a variant of Ransom Knight ransomware.",
+                "Further analysis of the files revealed they point to Powershell.exe and pass the following arguments to download the next stage:."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "Talos identified new LNK files in August 2023 that were created on the same machine referenced above, but observed that the payload of the files pointed to a network share in the command line that served a variant of Ransom Knight ransomware.",
+            "Further analysis of the files revealed they point to Powershell.exe and pass the following arguments to download the next stage:."
+          ],
+          [
+            "The LNK file, on the other hand, downloads an executable file from remote IP 89[.]23[.]96[.]203 shown in the command line above via WebDAV, which is the actual Ransom Knight payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            6
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_10c9c5a27156",
+          "EDGE_192be00f8ed8",
+          "EDGE_55cfa19cea56",
+          "EDGE_5a5c8b161c32",
+          "EDGE_66b3e3443dfe"
+        ],
+        "source": {
+          "TTP:T1105_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": {
+            "best_span_ranges": [
+              [
+                5,
+                6
+              ],
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Talos identified new LNK files in August 2023 that were created on the same machine referenced above, but observed that the payload of the files pointed to a network share in the command line that served a variant of Ransom Knight ransomware.",
+                "Further analysis of the files revealed they point to Powershell.exe and pass the following arguments to download the next stage:."
+              ],
+              [
+                "The LNK file, on the other hand, downloads an executable file from remote IP 89[.]23[.]96[.]203 shown in the command line above via WebDAV, which is the actual Ransom Knight payload."
+              ]
+            ]
+          },
+          "TTP:T1105_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "“Given the operators remain active, they may choose to rebuild Qakbot infrastructure to fully resume their pre-takedown activity.”\nCisco Talos told The Hacker News that the attack chains are also being used to deliver other malware such as DarkGate, MetaStealer, and RedLine Stealer."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The threat actors behind the Qakbot malware have been conducting a campaign since early August 2023 in which they have been distributing Ransom Knight ransomware and the Remcos backdoor via phishing emails.",
+            "Notably, this activity appeared to begin before the FBI seized Qakbot infrastructure in late August and has been ongoing since, indicating the law enforcement operation may not have impacted Qakbot operators’ spam delivery infrastructure but rather only their command and control (C2) servers.",
+            "Talos attributed this new campaign to Qakbot affiliates as the metadata found in LNK files used in this campaign matches the metadata from machines used in previous Qakbot campaigns “AA” and ”BB.”\nThough we have not seen the threat actors distributing Qakbot itself post-infrastructure takedown, we assess the malware will continue to pose a significant threat moving forward."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_0c20b1822e15",
+          "EDGE_833c5aa3c507",
+          "EDGE_43cfd9d605bc"
+        ],
+        "source": {
+          "TTP:T1566_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": {
+            "best_span_ranges": [
+              [
+                0,
+                2
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The threat actors behind the Qakbot malware have been conducting a campaign since early August 2023 in which they have been distributing Ransom Knight ransomware and the Remcos backdoor via phishing emails.",
+                "Notably, this activity appeared to begin before the FBI seized Qakbot infrastructure in late August and has been ongoing since, indicating the law enforcement operation may not have impacted Qakbot operators’ spam delivery infrastructure but rather only their command and control (C2) servers.",
+                "Talos attributed this new campaign to Qakbot affiliates as the metadata found in LNK files used in this campaign matches the metadata from machines used in previous Qakbot campaigns “AA” and ”BB.”\nThough we have not seen the threat actors distributing Qakbot itself post-infrastructure takedown, we assess the malware will continue to pose a significant threat moving forward."
+              ]
+            ]
+          },
+          "TTP:T1566_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": {
+            "best_span_ranges": [
+              [
+                4,
+                5
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The researchers say they have observed hackers carrying out a campaign since early August, during which they have been distributing Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service operation, and the Remcos remote access trojan, which provides attackers with full access to a victim’s machine by sending phishing emails.",
+                "The attackers have also begun to distribute the RedLine information stealer malware and the Darkgate backdoor, Talos researcher Guilherme Venere tells TechCrunch."
+              ]
+            ]
+          },
+          "TTP:T1566_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": {
+            "best_span_ranges": [
+              [
+                0,
+                4
+              ],
+              [
+                6,
+                6
+              ],
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Despite the disruption to its infrastructure, the threat actors behind the QakBot malware have been linked to an ongoing phishing campaign since early August 2023 that led to the delivery of Ransom Knight (aka Cyclops) ransomware and Remcos RAT.",
+                "This indicates that “the law enforcement operation may not have impacted Qakbot operators’ spam delivery infrastructure but rather only their command-and-control (C2) servers,” Cisco Talos researcher Guilherme Venere said in a new report published today.",
+                "The activity has been attributed with moderate confidence by the cybersecurity firm to QakBot affiliates.",
+                "There is no evidence to date that the threat actors have resumed distributing the malware loader itself post-infrastructure takedown.",
+                "QakBot, also called QBot and Pinkslipbot, originated as a Windows-based banking trojan in 2007 and subsequently developed capabilities to deliver additional payloads, including ransomware."
+              ],
+              [
+                "The latest activity, which commenced just before the takedown, starts with a malicious LNK file likely distributed via phishing emails that, when launched, detonates the infection and ultimately deploys the Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service (RaaS) scheme."
+              ],
+              [
+                "\"We have observed phishing emails distributing these malware to Italian, German, and English victims which shows the campaign is widespread.\""
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "The researchers say they have observed hackers carrying out a campaign since early August, during which they have been distributing Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service operation, and the Remcos remote access trojan, which provides attackers with full access to a victim’s machine by sending phishing emails."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_06580670ac4e"
+        ],
+        "source": {
+          "TTP:T1219_techcrunch.com_2023_10_05_qakbot-hackers-are-still-spamming-victims-despite-fbi-takedown": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The researchers say they have observed hackers carrying out a campaign since early August, during which they have been distributing Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service operation, and the Remcos remote access trojan, which provides attackers with full access to a victim’s machine by sending phishing emails."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The latest activity, which commenced just before the takedown, starts with a malicious LNK file likely distributed via phishing emails that, when launched, detonates the infection and ultimately deploys the Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service (RaaS) scheme.",
+            "The ZIP archives containing the LNK files have also been observed incorporating Excel add-in (.XLL) files to propagate the Remcos RAT, which facilitates persistent backdoor access to the endpoints."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_524dafdda80d",
+          "EDGE_5c2d9cc429b9"
+        ],
+        "source": {
+          "TTP:T1204_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": {
+            "best_span_ranges": [
+              [
+                6,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The latest activity, which commenced just before the takedown, starts with a malicious LNK file likely distributed via phishing emails that, when launched, detonates the infection and ultimately deploys the Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service (RaaS) scheme.",
+                "The ZIP archives containing the LNK files have also been observed incorporating Excel add-in (.XLL) files to propagate the Remcos RAT, which facilitates persistent backdoor access to the endpoints."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "The latest activity, which commenced just before the takedown, starts with a malicious LNK file likely distributed via phishing emails that, when launched, detonates the infection and ultimately deploys the Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service (RaaS) scheme."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_7dbee59c1245"
+        ],
+        "source": {
+          "TTP:T1486_thehackernews.com_2023_10_qakbot-threat-actors-still-in-action.html": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The latest activity, which commenced just before the takedown, starts with a malicious LNK file likely distributed via phishing emails that, when launched, detonates the infection and ultimately deploys the Ransom Knight ransomware, a recent rebrand of the Cyclops ransomware-as-a-service (RaaS) scheme."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_489f44795008",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "89[.]23[.]96[.]203",
+        "edges": [
+          "EDGE_10c9c5a27156"
+        ],
+        "source": {
+          "89[.]23[.]96[.]203_blog.talosintelligence.com_qakbot-affiliated-actors-distribute-ransom": [
+            [
+              7,
+              "The command above opens Explorer.exe and attempts to access a remote network share on IP 89[.]23[.]96[.]203 using WebDAV on port 80."
+            ],
+            [
+              12,
+              "The LNK file, on the other hand, downloads an executable file from remote IP 89[.]23[.]96[.]203 shown in the command line above via WebDAV, which is the actual Ransom Knight payload."
+            ]
+          ]
+        },
+        "raw_value": "89[.]23[.]96[.]203",
+        "canonical_value": "89[.]23[.]96[.]203"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0c20b1822e15",
+      "node_u": "HL_2547ae456147",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_10c9c5a27156",
+      "node_u": "IOC_489f44795008",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_192be00f8ed8",
+      "node_u": "HL_28a995b148f5",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6bd556b803fc",
+      "node_u": "HL_28a995b148f5",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_833c5aa3c507",
+      "node_u": "HL_28a995b148f5",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_06580670ac4e",
+      "node_u": "HL_2547ae456147",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_43cfd9d605bc",
+      "node_u": "HL_76ee56ab7ffc",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_524dafdda80d",
+      "node_u": "HL_2547ae456147",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_55cfa19cea56",
+      "node_u": "HL_856a5e2e4897",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5a5c8b161c32",
+      "node_u": "HL_b47574028bb3",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5c2d9cc429b9",
+      "node_u": "HL_28a995b148f5",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66b3e3443dfe",
+      "node_u": "HL_2b260171a6c9__d49dd009",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7dbee59c1245",
+      "node_u": "HL_28a995b148f5",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

@@ -1,0 +1,1459 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_090c873a5da0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Apache",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The flaw in the PHP-CGI module misinterprets these characters as PHP options, allowing attackers to execute arbitrary PHP code on the server when using Apache with a vulnerable PHP-CGI setup."
+        ]
+      },
+      {
+        "node_id": "HL_0d4f22892e73",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "TaoWu",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          11,
+          29,
+          32,
+          43
+        ],
+        "span_sentences": [
+          "- The attacker utilizes plugins of the publicly available Cobalt Strike kit \"TaoWu\" for-post exploitation activities.",
+          "They establish persistence by modifying registry keys, adding scheduled tasks, and creating malicious services using the plugins of the Cobalt Strike kit called “TaoWu.”\nTo maintain stealth, they erase event logs using wevtutil commands, removing traces of their actions from the Windows security, system, and application logs.",
+          "After gaining remote access to the victim machine through Cobalt Strike reverse HTTP shellcode, the attacker remotely executes commands on the victim machine from the Cobalt Strike server that is configured with plugins from the “TaoWu” Cobalt Strike kit (hxxps[://]github[.]com/pandasec888/taowu-cobalt_strike) to perform the post-exploitation tasks.",
+          "The attacker leverages the “reg add” command and other .NET plugins of the TaoWu Cobalt Strike kit to modify the registry keys and create the Windows scheduled tasks to establish persistence on the victim machine.",
+          "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities."
+        ]
+      },
+      {
+        "node_id": "HL_2600fe09296e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Gitee",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "Our further analysis of the contents of the exposed folder showed that the attacker had downloaded and executed a pre-configured installer shellscript called “LinuxEnvConfig.sh” from the repository “yijingsec” on Gitee platform (hxxps[://]gitee[.]com/yijingsec/), a Chinese Git-based platform like GitHub."
+        ]
+      },
+      {
+        "node_id": "HL_2aeb84e1e773",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "wevtutil.exe",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "The attacker erases evidence of their activity on the victim machine by clearing the Windows event logs on the compromised endpoint using the living-off-the-land binary (LoLBin) “wevtutil.exe”."
+        ]
+      },
+      {
+        "node_id": "HL_3371dcf2599a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Japan",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          6
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered malicious activities conducted by an unknown attacker since as early as January 2025, predominantly targeting organizations in Japan.",
+          "We found that the attacker predominantly targets organizations in Japan across various business verticals, including technology, telecommunications, entertainment, education, and e-commerce, based on our analysis of command and control (C2) server artefacts."
+        ]
+      },
+      {
+        "node_id": "HL_3a658398f4f8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PHP",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          1,
+          16,
+          18
+        ],
+        "span_sentences": [
+          "- The attacker has exploited the vulnerability CVE-2024-4577, a remote code execution (RCE) flaw in the PHP-CGI implementation of PHP on Windows, to gain initial access to victim machines.",
+          "CVE-2024-4577 is a critical remote code execution (RCE) vulnerability in Windows-based PHP installations using CGI configurations.",
+          "The flaw in the PHP-CGI module misinterprets these characters as PHP options, allowing attackers to execute arbitrary PHP code on the server when using Apache with a vulnerable PHP-CGI setup."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          1,
+          7,
+          11,
+          16,
+          17,
+          31,
+          32,
+          33
+        ],
+        "span_sentences": [
+          "- The attacker has exploited the vulnerability CVE-2024-4577, a remote code execution (RCE) flaw in the PHP-CGI implementation of PHP on Windows, to gain initial access to victim machines.",
+          "The attacker attempts to compromise the victim machine using an exploit program targeting the vulnerability CVE-2024-4577, a remote code execution (RCE) flaw in the PHP-CGI implementation of PHP on Windows.",
+          "They establish persistence by modifying registry keys, adding scheduled tasks, and creating malicious services using the plugins of the Cobalt Strike kit called “TaoWu.”\nTo maintain stealth, they erase event logs using wevtutil commands, removing traces of their actions from the Windows security, system, and application logs.",
+          "CVE-2024-4577 is a critical remote code execution (RCE) vulnerability in Windows-based PHP installations using CGI configurations.",
+          "It arises from the \"Best-Fit\" behavior in Windows code pages, where certain characters are replaced in command-line inputs.",
+          "These Potato exploits abuse the Windows method of handling authentication and impersonation tokens to escalate privileges from a low-privileged user to SYSTEM user.",
+          "The attacker leverages the “reg add” command and other .NET plugins of the TaoWu Cobalt Strike kit to modify the registry keys and create the Windows scheduled tasks to establish persistence on the victim machine.",
+          "The attacker erases evidence of their activity on the victim machine by clearing the Windows event logs on the compromised endpoint using the living-off-the-land binary (LoLBin) “wevtutil.exe”."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered malicious activities conducted by an unknown attacker since as early as January 2025, predominantly targeting organizations in Japan."
+        ]
+      },
+      {
+        "node_id": "HL_5ad532e085c2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PHP-CGI",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          1,
+          18
+        ],
+        "span_sentences": [
+          "- The attacker has exploited the vulnerability CVE-2024-4577, a remote code execution (RCE) flaw in the PHP-CGI implementation of PHP on Windows, to gain initial access to victim machines.",
+          "The flaw in the PHP-CGI module misinterprets these characters as PHP options, allowing attackers to execute arbitrary PHP code on the server when using Apache with a vulnerable PHP-CGI setup."
+        ]
+      },
+      {
+        "node_id": "HL_60881ab07ab1",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SharpGPOAbuse.exe",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          13,
+          35
+        ],
+        "span_sentences": [
+          "The attacker has also attempted to abuse Group Policy Objects using “SharpGPOAbuse.exe” to execute malicious PowerShell scripts across the network.",
+          "The attacker runs “SharpGPOAbuse.exe”, a tool used to abuse group policy objects (GPOs) for malicious purposes."
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          2,
+          8,
+          11,
+          26,
+          29,
+          42,
+          43,
+          45
+        ],
+        "span_sentences": [
+          "- The attacker utilizes plugins of the publicly available Cobalt Strike kit \"TaoWu\" for-post exploitation activities.",
+          "In the event of successful exploitation, the attacker executes PowerShell script to run Cobalt Strike reverse HTTP shellcode, ensuring remote access to the victim machine.",
+          "They establish persistence by modifying registry keys, adding scheduled tasks, and creating malicious services using the plugins of the Cobalt Strike kit called “TaoWu.”\nTo maintain stealth, they erase event logs using wevtutil commands, removing traces of their actions from the Windows security, system, and application logs.",
+          "Upon execution, it injects and executes the Cobalt Strike reverse HTTP shellcode on the victim machine’s memory and connects to the Cobalt Strike server running on the C2 server over HTTP, enabling remote access to the victim machine.",
+          "After gaining remote access to the victim machine through Cobalt Strike reverse HTTP shellcode, the attacker remotely executes commands on the victim machine from the Cobalt Strike server that is configured with plugins from the “TaoWu” Cobalt Strike kit (hxxps[://]github[.]com/pandasec888/taowu-cobalt_strike) to perform the post-exploitation tasks.",
+          "We observed the attacker exploiting the weakness in the vulnerable systems to gain initial access and execute Cobalt Strike reverse HTTP beacons to have continued remote access to the victim machine.",
+          "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities.",
+          "We discovered that the attacker has used two C2 servers with IP addresses 38[.]14[.]255[.]23 and 118[.]31[.]18[.]77 hosted on Alibaba cloud running the Cobalt Strike team server."
+        ]
+      },
+      {
+        "node_id": "HL_66db47bb8643",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "RottenPotato",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          10,
+          30
+        ],
+        "span_sentences": [
+          "They execute privilege escalation exploit programs, such as JuicyPotato, RottenPotato, and SweetPotato, to gain SYSTEM-level access.",
+          "The attacker attempts to elevate the user privileges by executing privilege escalation exploits, including JuicyPotato, RottenPotato, and SweetPotato."
+        ]
+      },
+      {
+        "node_id": "HL_6d57d9f727aa",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "You Dun",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "Similar techniques were previously observed being used by the hacker group called “Dark Cloud Shield” or “You Dun” in their attacks in 2024, as reported by the DFIR Report."
+        ]
+      },
+      {
+        "node_id": "HL_6d7b11512a54",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Mimikatz",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          14,
+          40,
+          43
+        ],
+        "span_sentences": [
+          "Eventually, they execute Mimikatz commands to dump and exfiltrate passwords and NTLM hashes from memory on the victim’s machine.",
+          "The attacker executes Mimikatz commands to gather plaintext passwords and NTLM hashes from memory on the victim’s machine.",
+          "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities."
+        ]
+      },
+      {
+        "node_id": "HL_71bc39084933",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "entertainment",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "We found that the attacker predominantly targets organizations in Japan across various business verticals, including technology, telecommunications, entertainment, education, and e-commerce, based on our analysis of command and control (C2) server artefacts."
+        ]
+      },
+      {
+        "node_id": "HL_7baf91707a74",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "e-commerce",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "We found that the attacker predominantly targets organizations in Japan across various business verticals, including technology, telecommunications, entertainment, education, and e-commerce, based on our analysis of command and control (C2) server artefacts."
+        ]
+      },
+      {
+        "node_id": "HL_8fcd1040a490",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "DFIR Report",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "Similar techniques were previously observed being used by the hacker group called “Dark Cloud Shield” or “You Dun” in their attacks in 2024, as reported by the DFIR Report."
+        ]
+      },
+      {
+        "node_id": "HL_a13afbcd3a8a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Alibaba",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          3,
+          45
+        ],
+        "span_sentences": [
+          "- Talos found a pre-configured installer script on the command and control (C2) server that deploys a full suite of adversarial tools and frameworks hosted on an Alibaba cloud container Registry, highlighting the potential misuse of such tools for malicious purposes by the attacker.",
+          "We discovered that the attacker has used two C2 servers with IP addresses 38[.]14[.]255[.]23 and 118[.]31[.]18[.]77 hosted on Alibaba cloud running the Cobalt Strike team server."
+        ]
+      },
+      {
+        "node_id": "HL_a195341ed98c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Dark Cloud Shield",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "Similar techniques were previously observed being used by the hacker group called “Dark Cloud Shield” or “You Dun” in their attacks in 2024, as reported by the DFIR Report."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          8,
+          13,
+          24,
+          25,
+          36,
+          47
+        ],
+        "span_sentences": [
+          "In the event of successful exploitation, the attacker executes PowerShell script to run Cobalt Strike reverse HTTP shellcode, ensuring remote access to the victim machine.",
+          "The attacker has also attempted to abuse Group Policy Objects using “SharpGPOAbuse.exe” to execute malicious PowerShell scripts across the network.",
+          "The attacker triggers the infection by executing the PowerShell command through the PHP code, leading to the download and execution of a PowerShell injector script from the C2 server on the victim machine memory.",
+          "The PowerShell injector script is embedded with either base64-encoded or a hexadecimal data blob of the Cobalt Strike reverse http shellcode.",
+          "The attacker creates a scheduled task via GPO named \"update\" that runs a PowerShell command across the network, which downloads and executes the attacker's PowerShell payload.",
+          "We found PowerShell scripts, Cobalt Strike beacon executables, and exploit programs along with the attacker’s command execution history logs in the C2 server’s exposed folder."
+        ]
+      },
+      {
+        "node_id": "HL_adc349104a82",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecommunications",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "We found that the attacker predominantly targets organizations in Japan across various business verticals, including technology, telecommunications, entertainment, education, and e-commerce, based on our analysis of command and control (C2) server artefacts."
+        ]
+      },
+      {
+        "node_id": "HL_b22f52bb70f3",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SweetPotato",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          10,
+          30
+        ],
+        "span_sentences": [
+          "They execute privilege escalation exploit programs, such as JuicyPotato, RottenPotato, and SweetPotato, to gain SYSTEM-level access.",
+          "The attacker attempts to elevate the user privileges by executing privilege escalation exploits, including JuicyPotato, RottenPotato, and SweetPotato."
+        ]
+      },
+      {
+        "node_id": "HL_b49d717adc14",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "technology",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "We found that the attacker predominantly targets organizations in Japan across various business verticals, including technology, telecommunications, entertainment, education, and e-commerce, based on our analysis of command and control (C2) server artefacts."
+        ]
+      },
+      {
+        "node_id": "HL_b5c80a85c121",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "fscan",
+        "edges": [],
+        "sentence_indices": [
+          12,
+          34,
+          39,
+          43
+        ],
+        "span_sentences": [
+          "They further perform network reconnaissance using “fscan.exe” and “Seatbelt.exe” to map out potential lateral movement targets.",
+          "The attacker uses fscan.exe, an open-source network scanning utility, and Seatbelt, a tool used to collect detailed information about a system—such as remote access configurations, network shares, and other security-relevant data on victim machine —to perform network reconnaissance and lateral movement in the victim network.",
+          "Using the fscan utility, the attacker opens a reverse shell, enabling the attacker to execute commands on victim machines in the subnet while connecting back to their server on port 6666, and executes the “whoami” command on the accessible machines.",
+          "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities."
+        ]
+      },
+      {
+        "node_id": "HL_bb8f9da6eee1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Yijing Network Security Academy",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "The author had described that the repository belongs to a network security talent training service provider called “Yijing Network Security Academy,” which indicates that the attacker is likely abusing the legitimate resource for malicious intention."
+        ]
+      },
+      {
+        "node_id": "HL_c612c48839e9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "JuicyPotato",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          10,
+          30
+        ],
+        "span_sentences": [
+          "They execute privilege escalation exploit programs, such as JuicyPotato, RottenPotato, and SweetPotato, to gain SYSTEM-level access.",
+          "The attacker attempts to elevate the user privileges by executing privilege escalation exploits, including JuicyPotato, RottenPotato, and SweetPotato."
+        ]
+      },
+      {
+        "node_id": "HL_e57130d7e4d7",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "education",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "We found that the attacker predominantly targets organizations in Japan across various business verticals, including technology, telecommunications, entertainment, education, and e-commerce, based on our analysis of command and control (C2) server artefacts."
+        ]
+      },
+      {
+        "node_id": "HL_ecc97b45655c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Seatbelt",
+        "edges": [],
+        "sentence_indices": [
+          12,
+          34
+        ],
+        "span_sentences": [
+          "They further perform network reconnaissance using “fscan.exe” and “Seatbelt.exe” to map out potential lateral movement targets.",
+          "The attacker uses fscan.exe, an open-source network scanning utility, and Seatbelt, a tool used to collect detailed information about a system—such as remote access configurations, network shares, and other security-relevant data on victim machine —to perform network reconnaissance and lateral movement in the victim network."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_19",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            43,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Eventually, they execute Mimikatz commands to dump and exfiltrate passwords and NTLM hashes from memory on the victim’s machine."
+          ],
+          [
+            "The attacker executes Mimikatz commands to gather plaintext passwords and NTLM hashes from memory on the victim’s machine."
+          ],
+          [
+            "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities.",
+            "Similar techniques were previously observed being used by the hacker group called “Dark Cloud Shield” or “You Dun” in their attacks in 2024, as reported by the DFIR Report.",
+            "We discovered that the attacker has used two C2 servers with IP addresses 38[.]14[.]255[.]23 and 118[.]31[.]18[.]77 hosted on Alibaba cloud running the Cobalt Strike team server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1018",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1018",
+        "edges": [
+          "EDGE_27",
+          "EDGE_29"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They further perform network reconnaissance using “fscan.exe” and “Seatbelt.exe” to map out potential lateral movement targets."
+          ],
+          [
+            "The attacker uses fscan.exe, an open-source network scanning utility, and Seatbelt, a tool used to collect detailed information about a system—such as remote access configurations, network shares, and other security-relevant data on victim machine —to perform network reconnaissance and lateral movement in the victim network."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attacker locates SSH services that accept a public key, automating SSH brute-forcing by providing the public key (id_rsa.pub) to gain unauthorized access to SSH-enabled machines."
+          ],
+          [
+            "They also attempt to brute-force SSH credentials for services running on a non-default port (2222)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1046",
+        "edges": [
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They further perform network reconnaissance using “fscan.exe” and “Seatbelt.exe” to map out potential lateral movement targets."
+          ],
+          [
+            "The attacker uses fscan.exe, an open-source network scanning utility, and Seatbelt, a tool used to collect detailed information about a system—such as remote access configurations, network shares, and other security-relevant data on victim machine —to perform network reconnaissance and lateral movement in the victim network."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_8",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They establish persistence by modifying registry keys, adding scheduled tasks, and creating malicious services using the plugins of the Cobalt Strike kit called “TaoWu.”\nTo maintain stealth, they erase event logs using wevtutil commands, removing traces of their actions from the Windows security, system, and application logs."
+          ],
+          [
+            "The attacker leverages the “reg add” command and other .NET plugins of the TaoWu Cobalt Strike kit to modify the registry keys and create the Windows scheduled tasks to establish persistence on the victim machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_12",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attacker triggers the infection by executing the PowerShell command through the PHP code, leading to the download and execution of a PowerShell injector script from the C2 server on the victim machine memory."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_9",
+          "EDGE_13",
+          "EDGE_20",
+          "EDGE_23",
+          "EDGE_34"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            47,
+            47
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Talos found a pre-configured installer script on the command and control (C2) server that deploys a full suite of adversarial tools and frameworks hosted on an Alibaba cloud container Registry, highlighting the potential misuse of such tools for malicious purposes by the attacker."
+          ],
+          [
+            "In the event of successful exploitation, the attacker executes PowerShell script to run Cobalt Strike reverse HTTP shellcode, ensuring remote access to the victim machine."
+          ],
+          [
+            "The attacker has also attempted to abuse Group Policy Objects using “SharpGPOAbuse.exe” to execute malicious PowerShell scripts across the network."
+          ],
+          [
+            "Eventually, they execute Mimikatz commands to dump and exfiltrate passwords and NTLM hashes from memory on the victim’s machine."
+          ],
+          [
+            "The attacker triggers the infection by executing the PowerShell command through the PHP code, leading to the download and execution of a PowerShell injector script from the C2 server on the victim machine memory."
+          ],
+          [
+            "The attacker leverages the “reg add” command and other .NET plugins of the TaoWu Cobalt Strike kit to modify the registry keys and create the Windows scheduled tasks to establish persistence on the victim machine."
+          ],
+          [
+            "Using the fscan utility, the attacker opens a reverse shell, enabling the attacker to execute commands on victim machines in the subnet while connecting back to their server on port 6666, and executes the “whoami” command on the accessible machines."
+          ],
+          [
+            "We found PowerShell scripts, Cobalt Strike beacon executables, and exploit programs along with the attacker’s command execution history logs in the C2 server’s exposed folder."
+          ],
+          [
+            "Our further analysis of the contents of the exposed folder showed that the attacker had downloaded and executed a pre-configured installer shellscript called “LinuxEnvConfig.sh” from the repository “yijingsec” on Gitee platform (hxxps[://]gitee[.]com/yijingsec/), a Chinese Git-based platform like GitHub."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1068",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1068",
+        "edges": [
+          "EDGE_18",
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They execute privilege escalation exploit programs, such as JuicyPotato, RottenPotato, and SweetPotato, to gain SYSTEM-level access."
+          ],
+          [
+            "The attacker attempts to elevate the user privileges by executing privilege escalation exploits, including JuicyPotato, RottenPotato, and SweetPotato."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They establish persistence by modifying registry keys, adding scheduled tasks, and creating malicious services using the plugins of the Cobalt Strike kit called “TaoWu.”\nTo maintain stealth, they erase event logs using wevtutil commands, removing traces of their actions from the Windows security, system, and application logs."
+          ],
+          [
+            "The attacker erases evidence of their activity on the victim machine by clearing the Windows event logs on the compromised endpoint using the living-off-the-land binary (LoLBin) “wevtutil.exe”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_30",
+          "EDGE_32",
+          "EDGE_33",
+          "EDGE_36"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The shellcode connects to the C2 server 38[.]14[.]255[.]23 through HTTP using the port 8077 and the URL paths “/6Qeq” or “/jANd”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_2",
+          "EDGE_14",
+          "EDGE_21",
+          "EDGE_31",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The attacker utilizes plugins of the publicly available Cobalt Strike kit \"TaoWu\" for-post exploitation activities.",
+            "- Talos found a pre-configured installer script on the command and control (C2) server that deploys a full suite of adversarial tools and frameworks hosted on an Alibaba cloud container Registry, highlighting the potential misuse of such tools for malicious purposes by the attacker.",
+            "Talos noticed the attacker’s attempt at stealing the victim’s machine credentials.",
+            "However, we assess with moderate confidence that the attacker's motive extends beyond just credential harvesting, based on our observation of other post-exploitation activities, such as establishing persistence, elevating to SYSTEM level privilege, and potential access to adversarial frameworks, indicating the likelihood of future attacks."
+          ],
+          [
+            "- Talos found a pre-configured installer script on the command and control (C2) server that deploys a full suite of adversarial tools and frameworks hosted on an Alibaba cloud container Registry, highlighting the potential misuse of such tools for malicious purposes by the attacker."
+          ],
+          [
+            "The attacker triggers the infection by executing the PowerShell command through the PHP code, leading to the download and execution of a PowerShell injector script from the C2 server on the victim machine memory."
+          ],
+          [
+            "Our further analysis of the contents of the exposed folder showed that the attacker had downloaded and executed a pre-configured installer shellscript called “LinuxEnvConfig.sh” from the repository “yijingsec” on Gitee platform (hxxps[://]gitee[.]com/yijingsec/), a Chinese Git-based platform like GitHub."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1110",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attacker locates SSH services that accept a public key, automating SSH brute-forcing by providing the public key (id_rsa.pub) to gain unauthorized access to SSH-enabled machines."
+          ],
+          [
+            "They also attempt to brute-force SSH credentials for services running on a non-default port (2222)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They establish persistence by modifying registry keys, adding scheduled tasks, and creating malicious services using the plugins of the Cobalt Strike kit called “TaoWu.”\nTo maintain stealth, they erase event logs using wevtutil commands, removing traces of their actions from the Windows security, system, and application logs."
+          ],
+          [
+            "The attacker leverages the “reg add” command and other .NET plugins of the TaoWu Cobalt Strike kit to modify the registry keys and create the Windows scheduled tasks to establish persistence on the victim machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1190",
+        "edges": [
+          "EDGE_1",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_37",
+          "EDGE_38"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The attacker has exploited the vulnerability CVE-2024-4577, a remote code execution (RCE) flaw in the PHP-CGI implementation of PHP on Windows, to gain initial access to victim machines."
+          ],
+          [
+            "The attacker attempts to compromise the victim machine using an exploit program targeting the vulnerability CVE-2024-4577, a remote code execution (RCE) flaw in the PHP-CGI implementation of PHP on Windows."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1219",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In the event of successful exploitation, the attacker executes PowerShell script to run Cobalt Strike reverse HTTP shellcode, ensuring remote access to the victim machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1484",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1484",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attacker has also attempted to abuse Group Policy Objects using “SharpGPOAbuse.exe” to execute malicious PowerShell scripts across the network."
+          ],
+          [
+            "The attacker runs “SharpGPOAbuse.exe”, a tool used to abuse group policy objects (GPOs) for malicious purposes."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1543",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1543",
+        "edges": [
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They establish persistence by modifying registry keys, adding scheduled tasks, and creating malicious services using the plugins of the Cobalt Strike kit called “TaoWu.”\nTo maintain stealth, they erase event logs using wevtutil commands, removing traces of their actions from the Windows security, system, and application logs."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attacker erases evidence of their activity on the victim machine by clearing the Windows event logs on the compromised endpoint using the living-off-the-land binary (LoLBin) “wevtutil.exe”."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_063016ace587",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SharpStay.exe",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities."
+        ]
+      },
+      {
+        "node_id": "IOC_2d07989259a8",
+        "node_class": "ioc",
+        "node_type": "SecurityIndicator",
+        "node_text": "sekurlsa::logonpasswords",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "sekurlsa::logonpasswords."
+        ]
+      },
+      {
+        "node_id": "IOC_56d019aa49ff",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "fscan.exe",
+        "edges": [
+          "EDGE_27",
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          12,
+          34
+        ],
+        "span_sentences": [
+          "They further perform network reconnaissance using “fscan.exe” and “Seatbelt.exe” to map out potential lateral movement targets.",
+          "The attacker uses fscan.exe, an open-source network scanning utility, and Seatbelt, a tool used to collect detailed information about a system—such as remote access configurations, network shares, and other security-relevant data on victim machine —to perform network reconnaissance and lateral movement in the victim network."
+        ]
+      },
+      {
+        "node_id": "IOC_7722e94e3309",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Seatbelt.exe",
+        "edges": [
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "They further perform network reconnaissance using “fscan.exe” and “Seatbelt.exe” to map out potential lateral movement targets."
+        ]
+      },
+      {
+        "node_id": "IOC_80061ab645dd",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "38[.]14[.]255[.]23",
+        "edges": [
+          "EDGE_30",
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          27,
+          45,
+          46
+        ],
+        "span_sentences": [
+          "The shellcode connects to the C2 server 38[.]14[.]255[.]23 through HTTP using the port 8077 and the URL paths “/6Qeq” or “/jANd”.",
+          "We discovered that the attacker has used two C2 servers with IP addresses 38[.]14[.]255[.]23 and 118[.]31[.]18[.]77 hosted on Alibaba cloud running the Cobalt Strike team server.",
+          "During our research period, we noticed that the attacker has left the directory listings and access of the root folder to the internet in the C2 server 38[.]14[.]255[.]23, according to our OSINT research artefacts."
+        ]
+      },
+      {
+        "node_id": "IOC_8703139d660d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/jANd",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "The shellcode connects to the C2 server 38[.]14[.]255[.]23 through HTTP using the port 8077 and the URL paths “/6Qeq” or “/jANd”."
+        ]
+      },
+      {
+        "node_id": "IOC_8d82fa6094ee",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "118[.]31[.]18[.]77",
+        "edges": [
+          "EDGE_33"
+        ],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "We discovered that the attacker has used two C2 servers with IP addresses 38[.]14[.]255[.]23 and 118[.]31[.]18[.]77 hosted on Alibaba cloud running the Cobalt Strike team server."
+        ]
+      },
+      {
+        "node_id": "IOC_8e18a7abd731",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "sharpTask.exe",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities."
+        ]
+      },
+      {
+        "node_id": "IOC_917d5b3114d2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "LinuxEnvConfig.sh",
+        "edges": [
+          "EDGE_34",
+          "EDGE_35"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "Our further analysis of the contents of the exposed folder showed that the attacker had downloaded and executed a pre-configured installer shellscript called “LinuxEnvConfig.sh” from the repository “yijingsec” on Gitee platform (hxxps[://]gitee[.]com/yijingsec/), a Chinese Git-based platform like GitHub."
+        ]
+      },
+      {
+        "node_id": "IOC_9bdf2e7e84f1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SharpHide.exe",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities."
+        ]
+      },
+      {
+        "node_id": "IOC_a113b81bad01",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/6Qeq",
+        "edges": [
+          "EDGE_36"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "The shellcode connects to the C2 server 38[.]14[.]255[.]23 through HTTP using the port 8077 and the URL paths “/6Qeq” or “/jANd”."
+        ]
+      },
+      {
+        "node_id": "IOC_aabbe5da63d6",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Ladon.exe",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "They have used the Cobalt Strike kit “TaoWu” that has several plugins, including sharpTask.exe, SharpHide.exe, SharpStay.exe, Ladon.exe, and fscan, and Mimikatz for post-exploitation activities."
+        ]
+      },
+      {
+        "node_id": "IOC_b2ed43fe66f2",
+        "node_class": "ioc",
+        "node_type": "SecurityIndicator",
+        "node_text": "PHP-CGI_CVE-2024-4577_RCE.py",
+        "edges": [
+          "EDGE_37"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "To target the vulnerability, the attacker leverages a publicly available exploit Python script “PHP-CGI_CVE-2024-4577_RCE.py”."
+        ]
+      },
+      {
+        "node_id": "IOC_b7a88a938334",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2024-4577",
+        "edges": [
+          "EDGE_38"
+        ],
+        "sentence_indices": [
+          1,
+          7,
+          15,
+          16,
+          19,
+          20
+        ],
+        "span_sentences": [
+          "- The attacker has exploited the vulnerability CVE-2024-4577, a remote code execution (RCE) flaw in the PHP-CGI implementation of PHP on Windows, to gain initial access to victim machines.",
+          "The attacker attempts to compromise the victim machine using an exploit program targeting the vulnerability CVE-2024-4577, a remote code execution (RCE) flaw in the PHP-CGI implementation of PHP on Windows.",
+          "Talos discovered that the attacker gains initial access to the victim’s network by exploiting the vulnerability CVE-2024-4577.",
+          "CVE-2024-4577 is a critical remote code execution (RCE) vulnerability in Windows-based PHP installations using CGI configurations.",
+          "To target the vulnerability, the attacker leverages a publicly available exploit Python script “PHP-CGI_CVE-2024-4577_RCE.py”.",
+          "The script checks to see if a specific URL is vulnerable to the CVE-2024-4577 vulnerability."
+        ]
+      },
+      {
+        "node_id": "IOC_f1cc9977b4c4",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "e10adc3949ba59abbe56e057f20f883e",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "If the response contains the MD5 hash “e10adc3949ba59abbe56e057f20f883e”, it indicates a successful exploitation."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_090c873a5da0",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_2600fe09296e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_2aeb84e1e773",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_2aeb84e1e773",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_3a658398f4f8",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_5ad532e085c2",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_60881ab07ab1",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_60881ab07ab1",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_60881ab07ab1",
+      "node_v": "TTP_T1484"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1543"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_66db47bb8643",
+      "node_v": "TTP_T1068"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_6d7b11512a54",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_6d7b11512a54",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_a13afbcd3a8a",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_b22f52bb70f3",
+      "node_v": "TTP_T1068"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_c612c48839e9",
+      "node_v": "TTP_T1068"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_2d07989259a8",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_56d019aa49ff",
+      "node_v": "TTP_T1018"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_56d019aa49ff",
+      "node_v": "TTP_T1046"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_7722e94e3309",
+      "node_v": "TTP_T1018"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_80061ab645dd",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_80061ab645dd",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_8703139d660d",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_8d82fa6094ee",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_917d5b3114d2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_917d5b3114d2",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_a113b81bad01",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "IOC_b2ed43fe66f2",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_38",
+      "node_u": "IOC_b7a88a938334",
+      "node_v": "TTP_T1190"
+    }
+  ]
+}

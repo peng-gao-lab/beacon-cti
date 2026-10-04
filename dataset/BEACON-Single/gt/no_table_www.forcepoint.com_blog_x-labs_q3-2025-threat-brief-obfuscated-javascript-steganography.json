@@ -1,0 +1,612 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_092fdf9a7f8a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": ".NET Reactor",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "As per analysis, DLL payload is compiled and protected using with Protector: .NET Reactor (6.X)[Control Flow + Anti-ILDASM]\nFig."
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          15,
+          17,
+          21,
+          48
+        ],
+        "span_sentences": [
+          "After first level deobfusaction of JavaScript, PowerShell commands are visible which downloads the next stage payload from a compromised domain .",
+          "PowerShell tries to connect and download next stage stenography payload (.png file) from hxxps://educa[.]rr[.]gov[.]br/resources/img/1[.]png and .TXT from hxxp://motorshipco[.]rf[.]gd/arquivo_20250917185017[.]txt.",
+          "PowerShell also checks for alternative payload delivery mechanisms, sometimes leveraging text files containing embedded Base64-encoded streams representing executable binaries (EXE) or dynamic-link libraries (DLL).",
+          "These scripts act as downloaders, using PowerShell and steganography to deliver .NET-based RATs and Infostealers."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "It builds the command text and then uses Windows WMI interface to start that command as a hidden process (.ShowWindow = 0), so whatever it constructs runs silently in the background without showing a window."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "6 - Compiler and other details of DLL file\nDLL contains Microsoft task scheduler version info:\nFig."
+        ]
+      },
+      {
+        "node_id": "HL_526528ff3a46",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Formbook",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Examples include DarkCloud, Remcos, Agent Tesla and Formbook."
+        ]
+      },
+      {
+        "node_id": "HL_a0f4029cc093",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Iran",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Senders are like *@ymail[.]com or sender IP addresses [94[.]156[.]175[.]83] Bulgaria, 151[.]244[.]232[.]55 Iran."
+        ]
+      },
+      {
+        "node_id": "HL_a328b591fdc9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Remcos",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Examples include DarkCloud, Remcos, Agent Tesla and Formbook."
+        ]
+      },
+      {
+        "node_id": "HL_c2b6a3957ff7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Agent Tesla",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Examples include DarkCloud, Remcos, Agent Tesla and Formbook."
+        ]
+      },
+      {
+        "node_id": "HL_c8e13d8c953b",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Bulgaria",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Senders are like *@ymail[.]com or sender IP addresses [94[.]156[.]175[.]83] Bulgaria, 151[.]244[.]232[.]55 Iran."
+        ]
+      },
+      {
+        "node_id": "HL_d1ede03d2e9a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DarkCloud",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Examples include DarkCloud, Remcos, Agent Tesla and Formbook."
+        ]
+      },
+      {
+        "node_id": "HL_f9a45b836608",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WeTransfer",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Attackers are cloaking their lures in everyday business communications with fake quotes, purchase orders, shipment alerts and even WeTransfer-style links to slip past conventional filters and take advantage of recipient’s trust."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            6
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These campaigns typically use multi-stage delivery chains.",
+            "The initial payloads are usually JavaScript files, obfuscated and packed inside ZIP attachments that act as downloaders."
+          ],
+          [
+            "These emails usually contain obfuscated JavaScript attachments in archive filetypes (RAR, 7z, Zip, TAR).",
+            "Senders are like *@ymail[.]com or sender IP addresses [94[.]156[.]175[.]83] Bulgaria, 151[.]244[.]232[.]55 Iran."
+          ],
+          [
+            "This script is heavily obfuscated, storing many string fragments in an array where readable ASCII is interleaved with unusual Unicode markers (emoji/rare glyphs)."
+          ],
+          [
+            "Steganography:\nThe Downloaded PNG file contains a payload encoded in Base64 format, representing either a DLL or EXE binary."
+          ],
+          [
+            "PowerShell also checks for alternative payload delivery mechanisms, sometimes leveraging text files containing embedded Base64-encoded streams representing executable binaries (EXE) or dynamic-link libraries (DLL)."
+          ],
+          [
+            "As per analysis, DLL payload is compiled and protected using with Protector: .NET Reactor (6.X)[Control Flow + Anti-ILDASM]\nFig."
+          ],
+          [
+            "6.2 - .NET Assembly information\nBased on the details from the fig 9(.NET Assembly info), the DLL appears to be designed to evade analysis and .NET verification checks."
+          ],
+          [
+            "An EmailAction object like this seems to be used to prepare and send email possible data exfiltration or callbacks to attacker mailbox/C2 and obfuscation hides the exact SMTP / FTP calls."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1047",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1047",
+        "edges": [
+          "EDGE_2",
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After first level deobfusaction of JavaScript, PowerShell commands are visible which downloads the next stage payload from a compromised domain .",
+            "It builds the command text and then uses Windows WMI interface to start that command as a hidden process (.ShowWindow = 0), so whatever it constructs runs silently in the background without showing a window."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After looking into this code, we can see that it has sequence of API calls which stated that process hollowing will happen which targets to RegASM.exe process."
+          ],
+          [
+            "This all activity is happening after processing hollowing in targeted legit process RegASM.exe to execute final stealer and RAT which tries exfiltrate critical data to dynamic DNS servers or SMTP / FTP email client."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1057",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It can invoke Process.GetProcesses() to collect all active processes on the system."
+          ],
+          [
+            "It then uses cached delegate functions to project each Process into a string (probably ProcessName) and applies another delegate to normalize/sort them."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In Q3 2025, organizations across industries have seen a steep increase in JavaScript-attachment based campaigns that deliver a variety of information-stealing and RAT malware."
+          ],
+          [
+            "These campaigns typically use multi-stage delivery chains.",
+            "The initial payloads are usually JavaScript files, obfuscated and packed inside ZIP attachments that act as downloaders."
+          ],
+          [
+            "These emails usually contain obfuscated JavaScript attachments in archive filetypes (RAR, 7z, Zip, TAR).",
+            "Senders are like *@ymail[.]com or sender IP addresses [94[.]156[.]175[.]83] Bulgaria, 151[.]244[.]232[.]55 Iran."
+          ],
+          [
+            "After first level deobfusaction of JavaScript, PowerShell commands are visible which downloads the next stage payload from a compromised domain ."
+          ],
+          [
+            "After first level deobfusaction of JavaScript, PowerShell commands are visible which downloads the next stage payload from a compromised domain .",
+            "It builds the command text and then uses Windows WMI interface to start that command as a hidden process (.ShowWindow = 0), so whatever it constructs runs silently in the background without showing a window."
+          ],
+          [
+            "PowerShell tries to connect and download next stage stenography payload (.png file) from hxxps://educa[.]rr[.]gov[.]br/resources/img/1[.]png and .TXT from hxxp://motorshipco[.]rf[.]gd/arquivo_20250917185017[.]txt."
+          ],
+          [
+            "PowerShell also checks for alternative payload delivery mechanisms, sometimes leveraging text files containing embedded Base64-encoded streams representing executable binaries (EXE) or dynamic-link libraries (DLL)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            44,
+            44
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "An EmailAction object like this seems to be used to prepare and send email possible data exfiltration or callbacks to attacker mailbox/C2 and obfuscation hides the exact SMTP / FTP calls."
+          ],
+          [
+            "This all activity is happening after processing hollowing in targeted legit process RegASM.exe to execute final stealer and RAT which tries exfiltrate critical data to dynamic DNS servers or SMTP / FTP email client."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_4",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After first level deobfusaction of JavaScript, PowerShell commands are visible which downloads the next stage payload from a compromised domain ."
+          ],
+          [
+            "PowerShell tries to connect and download next stage stenography payload (.png file) from hxxps://educa[.]rr[.]gov[.]br/resources/img/1[.]png and .TXT from hxxp://motorshipco[.]rf[.]gd/arquivo_20250917185017[.]txt."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In Q3 2025, organizations across industries have seen a steep increase in JavaScript-attachment based campaigns that deliver a variety of information-stealing and RAT malware."
+          ],
+          [
+            "Attackers are cloaking their lures in everyday business communications with fake quotes, purchase orders, shipment alerts and even WeTransfer-style links to slip past conventional filters and take advantage of recipient’s trust."
+          ],
+          [
+            "These emails usually contain obfuscated JavaScript attachments in archive filetypes (RAR, 7z, Zip, TAR).",
+            "Senders are like *@ymail[.]com or sender IP addresses [94[.]156[.]175[.]83] Bulgaria, 151[.]244[.]232[.]55 Iran."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0e87b7daad9b",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "151[.]244[.]232[.]55",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Senders are like *@ymail[.]com or sender IP addresses [94[.]156[.]175[.]83] Bulgaria, 151[.]244[.]232[.]55 Iran."
+        ]
+      },
+      {
+        "node_id": "IOC_9ad6ea499714",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://motorshipco[.]rf[.]gd/arquivo_20250917185017[.]txt",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "PowerShell tries to connect and download next stage stenography payload (.png file) from hxxps://educa[.]rr[.]gov[.]br/resources/img/1[.]png and .TXT from hxxp://motorshipco[.]rf[.]gd/arquivo_20250917185017[.]txt."
+        ]
+      },
+      {
+        "node_id": "IOC_be4e1e54facf",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://educa[.]rr[.]gov[.]br/resources/img/1[.]png",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "PowerShell tries to connect and download next stage stenography payload (.png file) from hxxps://educa[.]rr[.]gov[.]br/resources/img/1[.]png and .TXT from hxxp://motorshipco[.]rf[.]gd/arquivo_20250917185017[.]txt."
+        ]
+      },
+      {
+        "node_id": "IOC_eddd7cf4a518",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "94[.]156[.]175[.]83",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Senders are like *@ymail[.]com or sender IP addresses [94[.]156[.]175[.]83] Bulgaria, 151[.]244[.]232[.]55 Iran."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_092fdf9a7f8a",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1047"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1047"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_526528ff3a46",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_c2b6a3957ff7",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_d1ede03d2e9a",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_f9a45b836608",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_0e87b7daad9b",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_9ad6ea499714",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_be4e1e54facf",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_eddd7cf4a518",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

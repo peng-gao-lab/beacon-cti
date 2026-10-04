@@ -1,0 +1,48 @@
+# Local development notes and agent state
+/develop/
+/.codex/
+/.agents/
+
+# Credentials and local overrides (keep shareable examples)
+.env
+.env.*
+!.env.example
+!.env.template
+/configs/*.local.yaml
+/configs/*.local.yml
+
+# Generated experiment outputs and temporary files
+/output/
+/outputs/
+/tmp/
+*.log
+.cache/
+
+# Python environments, bytecode, packaging, and tool caches
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+/build/
+/dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Downloaded model checkpoints
+/checkpoints/
+*.pt
+*.pth
+*.safetensors
+
+# Editor and OS files
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# dataset/, configs/, prompts, and pricing JSON are intentionally kept.

@@ -1,0 +1,1166 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0607bb9bb168",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "DropBox",
+        "sentence_indices": [
+          10,
+          11
+        ],
+        "span_sentences": [
+          "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2.",
+          "The misuse of legitimate webservices such as Trello, Firebase, or DropBox is likely an attempt to make detection or remediation harder."
+        ],
+        "edges": [
+          "EDGE_9d3ee6422b88",
+          "EDGE_b8c9d822374d"
+        ]
+      },
+      {
+        "node_id": "HL_0e23e7382dd4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Mandiant",
+        "sentence_indices": [
+          0,
+          2,
+          4,
+          6,
+          7,
+          8,
+          16,
+          18,
+          34,
+          37,
+          44,
+          51
+        ],
+        "span_sentences": [
+          "Since early 2021, Mandiant has been tracking extensive APT29 phishing campaigns targeting diplomatic organizations in Europe, the Americas, and Asia.",
+          "APT29 is a Russian espionage group that Mandiant has been tracking since at least 2014 and is likely sponsored by the Foreign Intelligence Service (SVR).",
+          "Mandiant previously tracked this intrusion activity under multiple clusters, UNC2652 and UNC2542, which were recently merged into APT29 in April 2022.",
+          "Beginning mid-January 2022, Mandiant detected and responded to an APT29 phishing campaign targeting a diplomatic entity.",
+          "During the investigation, Mandiant identified the deployment and use of the BEATDROP and BOOMMIC downloaders.",
+          "Shortly following the identification of this campaign, Mandiant discovered APT29 targeting multiple additional diplomatic and government entities through a series of phishing waves.",
+          "APT29 targeted large lists of recipients that Mandiant suspected were primarily publicly listed points of contact of embassy personnel.",
+          "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign.",
+          "Mandiant observed APT29 leveraging compromised websites as the C2 for BOOMMIC.",
+          "Mandiant observed APT29 quickly move to escalate their privileges within domains once access was established.",
+          "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment.",
+          "Mandiant observed APT29 quickly moving laterally within an environment."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0f70c0f8fd53",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNC2542",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Mandiant previously tracked this intrusion activity under multiple clusters, UNC2652 and UNC2542, which were recently merged into APT29 in April 2022."
+        ],
+        "edges": [
+          "EDGE_10e40db1d2ff",
+          "EDGE_19be1340415c",
+          "EDGE_2bf33b5af1b9",
+          "EDGE_4c8861f3cd52",
+          "EDGE_66a3b2c95b99",
+          "EDGE_76fd6211bf07",
+          "EDGE_b9ed3c638a7a"
+        ]
+      },
+      {
+        "node_id": "HL_1dd66246f913",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNC2652",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Mandiant previously tracked this intrusion activity under multiple clusters, UNC2652 and UNC2542, which were recently merged into APT29 in April 2022."
+        ],
+        "edges": [
+          "EDGE_0a310bb09748",
+          "EDGE_0f2e90f8e4d9",
+          "EDGE_0fa1031d993f",
+          "EDGE_443d5afcc55e",
+          "EDGE_7ebfc9b183c0",
+          "EDGE_abed80df245f",
+          "EDGE_edcb035701da"
+        ]
+      },
+      {
+        "node_id": "HL_2a0b5ad78f29",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT29",
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          12,
+          14,
+          16,
+          18,
+          23,
+          25,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          44,
+          46,
+          51,
+          52
+        ],
+        "span_sentences": [
+          "Since early 2021, Mandiant has been tracking extensive APT29 phishing campaigns targeting diplomatic organizations in Europe, the Americas, and Asia.",
+          "This blog post discusses our recent observations related to the identification of two new malware families in 2022, BEATDROP and BOOMMIC, as well as APT29’s efforts to evade detection through retooling and abuse of Atlassian's Trello service.",
+          "APT29 is a Russian espionage group that Mandiant has been tracking since at least 2014 and is likely sponsored by the Foreign Intelligence Service (SVR).",
+          "The diplomatic-centric targeting of this recent activity is consistent with Russian strategic priorities as well as historic APT29 targeting.",
+          "Mandiant previously tracked this intrusion activity under multiple clusters, UNC2652 and UNC2542, which were recently merged into APT29 in April 2022.",
+          "Some APT29 activity is also publicly referred to as Nobelium by Microsoft.",
+          "Beginning mid-January 2022, Mandiant detected and responded to an APT29 phishing campaign targeting a diplomatic entity.",
+          "Shortly following the identification of this campaign, Mandiant discovered APT29 targeting multiple additional diplomatic and government entities through a series of phishing waves.",
+          "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2).",
+          "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure.",
+          "To gain access to a victim environment, APT29 sent spear-phishing emails disguised as embassy administrative updates.",
+          "APT29 targeted large lists of recipients that Mandiant suspected were primarily publicly listed points of contact of embassy personnel.",
+          "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign.",
+          "Following the successful deployment of BEATDROP to deliver and execute a payload, APT29 was observed leveraging BOOMMIC to further establish a foothold within the environment.",
+          "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe.",
+          "Mandiant observed APT29 quickly move to escalate their privileges within domains once access was established.",
+          "In multiple cases, APT29 was able to gain Domain Admin in less than 12 hours from the initial phishing payload’s execution.",
+          "APT29 was observed utilizing a variety of TTPs to escalate their privileges.",
+          "In one instance, APT29 was observed writing files that contained Kerberos tickets most likely to be used in Pass the Ticket attacks or for offline cracking.",
+          "APT29 was also observed exploiting misconfigured certificate templates to allow them to impersonate admin users.",
+          "From here, APT29 created additional malicious certificates which they used to move laterally within the environment.",
+          "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment.",
+          "One notable TTP observed by APT29 was the hunting for passwords stored in SYSVOL.",
+          "Mandiant observed APT29 quickly moving laterally within an environment.",
+          "To facilitate lateral movement APT29 relied on a combination of malicious certificates used for impersonation of privileged users and SMB BEACON."
+        ],
+        "edges": [
+          "EDGE_03c29d7109f6",
+          "EDGE_19c51ef4fd20",
+          "EDGE_1c1236d4cab4",
+          "EDGE_51296359461d",
+          "EDGE_82717c401cb6",
+          "EDGE_86b42bd20762",
+          "EDGE_dc9f63958bab"
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          5,
+          24,
+          49
+        ],
+        "span_sentences": [
+          "Some APT29 activity is also publicly referred to as Nobelium by Microsoft.",
+          "BOOMMIC, also known as VaporRage by Microsoft, is a shellcode downloader written in C that communicates over HTTP to co-opted infrastructure used for C2.",
+          "Microsoft fixed this in MS14-025 which removed the option of configuring Group Policy Preferences with the “cpassword”."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_531e6b3bc64c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Nobelium",
+        "sentence_indices": [
+          5,
+          10
+        ],
+        "span_sentences": [
+          "Some APT29 activity is also publicly referred to as Nobelium by Microsoft.",
+          "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+        ],
+        "edges": [
+          "EDGE_103681d5227e",
+          "EDGE_1646c860943c",
+          "EDGE_fb4e9db799c6"
+        ]
+      },
+      {
+        "node_id": "HL_6f082c512436",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Firebase",
+        "sentence_indices": [
+          10,
+          11
+        ],
+        "span_sentences": [
+          "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2.",
+          "The misuse of legitimate webservices such as Trello, Firebase, or DropBox is likely an attempt to make detection or remediation harder."
+        ],
+        "edges": [
+          "EDGE_981bea8bc04c",
+          "EDGE_d1f7764d8a83"
+        ]
+      },
+      {
+        "node_id": "HL_72f79c00fb9d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BEATDROP",
+        "sentence_indices": [
+          1,
+          7,
+          12,
+          18,
+          19,
+          21,
+          22,
+          23
+        ],
+        "span_sentences": [
+          "This blog post discusses our recent observations related to the identification of two new malware families in 2022, BEATDROP and BOOMMIC, as well as APT29’s efforts to evade detection through retooling and abuse of Atlassian's Trello service.",
+          "During the investigation, Mandiant identified the deployment and use of the BEATDROP and BOOMMIC downloaders.",
+          "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure.",
+          "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign.",
+          "Figure 7: APT29 BEATDROP Execution chain\nBEATDROP is a downloader written in C that makes use of Trello for C2.",
+          "This information is used to create a victim ID, which is used by BEATDROP to store and retrieve victim payloads from its C2.",
+          "Once the victim ID is created, BEATDROP will make an initial request to Trello to identify whether the current victim has already been compromised.",
+          "Following the successful deployment of BEATDROP to deliver and execute a payload, APT29 was observed leveraging BOOMMIC to further establish a foothold within the environment."
+        ],
+        "edges": [
+          "EDGE_7780ff6f7336",
+          "EDGE_8d3c92e49b61",
+          "EDGE_a0195f744bf6",
+          "EDGE_e09ce063c6a1"
+        ]
+      },
+      {
+        "node_id": "HL_7ebd54a323e9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BOOMMIC",
+        "sentence_indices": [
+          1,
+          23,
+          24,
+          25,
+          26,
+          28,
+          29,
+          32,
+          33,
+          34,
+          35
+        ],
+        "span_sentences": [
+          "This blog post discusses our recent observations related to the identification of two new malware families in 2022, BEATDROP and BOOMMIC, as well as APT29’s efforts to evade detection through retooling and abuse of Atlassian's Trello service.",
+          "Following the successful deployment of BEATDROP to deliver and execute a payload, APT29 was observed leveraging BOOMMIC to further establish a foothold within the environment.",
+          "BOOMMIC, also known as VaporRage by Microsoft, is a shellcode downloader written in C that communicates over HTTP to co-opted infrastructure used for C2.",
+          "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe.",
+          "The primary function of BOOMMIC is to download and load shellcode payloads into memory on a target.",
+          "Analysis of BOOMMIC identified strings throughout the program are encoded using XOR, alternating bytes by 0x0C and 0x4D.",
+          "Figure 24: BOOMMIC check for jucheck.exe\nIf the malware is running under jucheck.exe, it will then create a host id for the compromised target to be used in the request to download a payload.",
+          "Figure 25: BOOMMIC host id creation\nOnce the host id has been created, BOOMMIC passes this value to the function used to download and execute payloads to be used as part of the request.",
+          "BOOMMIC then sends a GET request to its C2 to download and execute a shellcode payload.",
+          "Mandiant observed APT29 leveraging compromised websites as the C2 for BOOMMIC.",
+          "Once a payload is successfully downloaded, BOOMMIC XOR decodes and then executes it in memory."
+        ],
+        "edges": [
+          "EDGE_0eca145cf158",
+          "EDGE_506dbb0be3cc",
+          "EDGE_7536d3199e69",
+          "EDGE_d8f8af81599c"
+        ]
+      },
+      {
+        "node_id": "HL_83a2224bd763",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "BEACON",
+        "sentence_indices": [
+          12,
+          53,
+          54
+        ],
+        "span_sentences": [
+          "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure.",
+          "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload.",
+          "The BEACON payload was identified to be SMB BEACON that communicates over the following named pipe:\n\\\\.\\pipe\\SapIServerPipes-1-15-21-07836\nAPT29 was then observed utilizing the impersonation of a privileged user to copy SharedReality.dll to the Temp directory of multiple systems."
+        ],
+        "edges": [
+          "EDGE_b5e8a5b3d2ed"
+        ]
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a069d15d8907",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "SpecterOps",
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "This recent technique, which is well documented in a report from SpecterOps and was presented at Blackhat in August 2021, gives the attacker the ability to quickly escalate their privileges within the environment, but also provides a method for long term persistence through the creation of malicious certificates."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ac7530acd898",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Foreign Intelligence Service (SVR)",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "APT29 is a Russian espionage group that Mandiant has been tracking since at least 2014 and is likely sponsored by the Foreign Intelligence Service (SVR)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c5edbbaacadd",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "VaporRage",
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "BOOMMIC, also known as VaporRage by Microsoft, is a shellcode downloader written in C that communicates over HTTP to co-opted infrastructure used for C2."
+        ],
+        "edges": [
+          "EDGE_0b3319424bdd",
+          "EDGE_2ab39a89dd72",
+          "EDGE_f60bbc9e7c11",
+          "EDGE_f80fe834d045"
+        ]
+      },
+      {
+        "node_id": "HL_c9e79ff4a64a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Atlassian's Trello",
+        "sentence_indices": [
+          1,
+          9
+        ],
+        "span_sentences": [
+          "This blog post discusses our recent observations related to the identification of two new malware families in 2022, BEATDROP and BOOMMIC, as well as APT29’s efforts to evade detection through retooling and abuse of Atlassian's Trello service.",
+          "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2)."
+        ],
+        "edges": [
+          "EDGE_3be449085797",
+          "EDGE_698fea3014ac"
+        ]
+      },
+      {
+        "node_id": "HL_e1d89917c06c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "EnvyScout",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+        ],
+        "edges": [
+          "EDGE_2065b1896c04",
+          "EDGE_d3cb4a1d7f57"
+        ]
+      },
+      {
+        "node_id": "HL_e404563b3611",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ROOTSAW",
+        "sentence_indices": [
+          10,
+          17
+        ],
+        "span_sentences": [
+          "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2.",
+          "These phishing emails utilized a malicious HTML dropper tracked as ROOTSAW, that makes use of a technique known as HTML smuggling to deliver an IMG or ISO file to a victim system."
+        ],
+        "edges": [
+          "EDGE_133c8ec453f5",
+          "EDGE_399dd2cd771f"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1016",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1016",
+        "ttp_id": "T1016",
+        "best_span_sentences_list": [
+          [
+            "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            44
+          ]
+        ],
+        "edges": [
+          "EDGE_7780ff6f7336"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            53,
+            53
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2).",
+            "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+          ],
+          [
+            "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+          ],
+          [
+            "Once the victim ID is created, BEATDROP will make an initial request to Trello to identify whether the current victim has already been compromised."
+          ],
+          [
+            "BOOMMIC then sends a GET request to its C2 to download and execute a shellcode payload."
+          ],
+          [
+            "Mandiant observed APT29 quickly moving laterally within an environment.",
+            "To facilitate lateral movement APT29 relied on a combination of malicious certificates used for impersonation of privileged users and SMB BEACON."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            51,
+            52
+          ]
+        ],
+        "edges": [
+          "EDGE_0fa1031d993f",
+          "EDGE_2ab39a89dd72",
+          "EDGE_4c8861f3cd52",
+          "EDGE_51345d8f878a",
+          "EDGE_698fea3014ac",
+          "EDGE_a0195f744bf6",
+          "EDGE_b8c9d822374d",
+          "EDGE_d1f7764d8a83",
+          "EDGE_d8f8af81599c",
+          "EDGE_dc9f63958bab"
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Following this, BEATDROP will enumerate the system for the username, computer name, and IP address."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1102",
+        "ttp_id": "T1102",
+        "best_span_sentences_list": [
+          [
+            "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+          ],
+          [
+            "Once the victim ID is created, BEATDROP will make an initial request to Trello to identify whether the current victim has already been compromised."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_03c29d7109f6",
+          "EDGE_0f2e90f8e4d9",
+          "EDGE_1646c860943c",
+          "EDGE_3be449085797",
+          "EDGE_8d3c92e49b61",
+          "EDGE_981bea8bc04c",
+          "EDGE_9d3ee6422b88",
+          "EDGE_b9ed3c638a7a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+          ],
+          [
+            "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+          ],
+          [
+            "BOOMMIC then sends a GET request to its C2 to download and execute a shellcode payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_0b3319424bdd",
+          "EDGE_0eca145cf158",
+          "EDGE_103681d5227e",
+          "EDGE_10e40db1d2ff",
+          "EDGE_1c1236d4cab4",
+          "EDGE_399dd2cd771f",
+          "EDGE_443d5afcc55e",
+          "EDGE_b5e8a5b3d2ed",
+          "EDGE_d3cb4a1d7f57",
+          "EDGE_e09ce063c6a1"
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            53,
+            53
+          ]
+        ],
+        "edges": [
+          "EDGE_39643258921c",
+          "EDGE_7536d3199e69",
+          "EDGE_f80fe834d045"
+        ]
+      },
+      {
+        "node_id": "TTP_T1193",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1193",
+        "ttp_id": "T1193",
+        "best_span_sentences_list": [
+          [
+            "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_0a310bb09748",
+          "EDGE_76fd6211bf07",
+          "EDGE_82717c401cb6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1550",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1550",
+        "ttp_id": "T1550",
+        "best_span_sentences_list": [
+          [
+            "In one instance, APT29 was observed writing files that contained Kerberos tickets most likely to be used in Pass the Ticket attacks or for offline cracking."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_51296359461d",
+          "EDGE_66a3b2c95b99",
+          "EDGE_abed80df245f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Since early 2021, Mandiant has been tracking extensive APT29 phishing campaigns targeting diplomatic organizations in Europe, the Americas, and Asia."
+          ],
+          [
+            "Beginning mid-January 2022, Mandiant detected and responded to an APT29 phishing campaign targeting a diplomatic entity.",
+            "During the investigation, Mandiant identified the deployment and use of the BEATDROP and BOOMMIC downloaders.",
+            "Shortly following the identification of this campaign, Mandiant discovered APT29 targeting multiple additional diplomatic and government entities through a series of phishing waves.",
+            "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2).",
+            "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+          ],
+          [
+            "To gain access to a victim environment, APT29 sent spear-phishing emails disguised as embassy administrative updates."
+          ],
+          [
+            "These phishing emails utilized a malicious HTML dropper tracked as ROOTSAW, that makes use of a technique known as HTML smuggling to deliver an IMG or ISO file to a victim system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_133c8ec453f5",
+          "EDGE_19c51ef4fd20",
+          "EDGE_2065b1896c04",
+          "EDGE_2bf33b5af1b9",
+          "EDGE_edcb035701da",
+          "EDGE_fb4e9db799c6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_19be1340415c",
+          "EDGE_506dbb0be3cc",
+          "EDGE_6424dd8eacf8",
+          "EDGE_7ebfc9b183c0",
+          "EDGE_86b42bd20762",
+          "EDGE_a4ae59c2f3c7",
+          "EDGE_f60bbc9e7c11"
+        ]
+      },
+      {
+        "node_id": "TTP_T1649",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1649",
+        "ttp_id": "T1649",
+        "best_span_sentences_list": [
+          [
+            "APT29 was also observed exploiting misconfigured certificate templates to allow them to impersonate admin users.",
+            "From here, APT29 created additional malicious certificates which they used to move laterally within the environment.",
+            "This recent technique, which is well documented in a report from SpecterOps and was presented at Blackhat in August 2021, gives the attacker the ability to quickly escalate their privileges within the environment, but also provides a method for long term persistence through the creation of malicious certificates."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            43
+          ]
+        ],
+        "edges": []
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_37f87a2899c0",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://maybyrne[.]co[.]uk/modules/mod_search/mod_global_search.php?bin_data=<host_id>&Article=AboutMe",
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "https://maybyrne[.]co[.]uk/modules/mod_search/mod_global_search.php?bin_data=<host_id>&Article=AboutMe\nEscalate Privileges."
+        ],
+        "edges": [
+          "EDGE_51345d8f878a"
+        ]
+      },
+      {
+        "node_id": "IOC_42b489d3b74d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SharedReality.dll",
+        "sentence_indices": [
+          53,
+          54
+        ],
+        "span_sentences": [
+          "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload.",
+          "The BEACON payload was identified to be SMB BEACON that communicates over the following named pipe:\n\\\\.\\pipe\\SapIServerPipes-1-15-21-07836\nAPT29 was then observed utilizing the impersonation of a privileged user to copy SharedReality.dll to the Temp directory of multiple systems."
+        ],
+        "edges": [
+          "EDGE_39643258921c"
+        ]
+      },
+      {
+        "node_id": "IOC_474755f11bed",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "jucheck.exe",
+        "sentence_indices": [
+          25,
+          27,
+          29
+        ],
+        "span_sentences": [
+          "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe.",
+          "Once executed, BOOMMIC first checks if it is running under the process jucheck.exe, if it is not the program will exit.",
+          "Figure 24: BOOMMIC check for jucheck.exe\nIf the malware is running under jucheck.exe, it will then create a host id for the compromised target to be used in the request to download a payload."
+        ],
+        "edges": [
+          "EDGE_a4ae59c2f3c7"
+        ]
+      },
+      {
+        "node_id": "IOC_6927ee17a142",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "version.dll",
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe."
+        ],
+        "edges": [
+          "EDGE_6424dd8eacf8"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_03c29d7109f6",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0a310bb09748",
+      "node_u": "HL_1dd66246f913",
+      "node_v": "TTP_T1193",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0b3319424bdd",
+      "node_u": "HL_c5edbbaacadd",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0eca145cf158",
+      "node_u": "HL_7ebd54a323e9",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f2e90f8e4d9",
+      "node_u": "HL_1dd66246f913",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0fa1031d993f",
+      "node_u": "HL_1dd66246f913",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_103681d5227e",
+      "node_u": "HL_531e6b3bc64c",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_10e40db1d2ff",
+      "node_u": "HL_0f70c0f8fd53",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_133c8ec453f5",
+      "node_u": "HL_e404563b3611",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1646c860943c",
+      "node_u": "HL_531e6b3bc64c",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_19be1340415c",
+      "node_u": "HL_0f70c0f8fd53",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_19c51ef4fd20",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1c1236d4cab4",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2065b1896c04",
+      "node_u": "HL_e1d89917c06c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ab39a89dd72",
+      "node_u": "HL_c5edbbaacadd",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2bf33b5af1b9",
+      "node_u": "HL_0f70c0f8fd53",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_39643258921c",
+      "node_u": "IOC_42b489d3b74d",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_399dd2cd771f",
+      "node_u": "HL_e404563b3611",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3be449085797",
+      "node_u": "HL_c9e79ff4a64a",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_443d5afcc55e",
+      "node_u": "HL_1dd66246f913",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4c8861f3cd52",
+      "node_u": "HL_0f70c0f8fd53",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_506dbb0be3cc",
+      "node_u": "HL_7ebd54a323e9",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_51296359461d",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1550",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_51345d8f878a",
+      "node_u": "IOC_37f87a2899c0",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6424dd8eacf8",
+      "node_u": "IOC_6927ee17a142",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_66a3b2c95b99",
+      "node_u": "HL_0f70c0f8fd53",
+      "node_v": "TTP_T1550",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_698fea3014ac",
+      "node_u": "HL_c9e79ff4a64a",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7536d3199e69",
+      "node_u": "HL_7ebd54a323e9",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_76fd6211bf07",
+      "node_u": "HL_0f70c0f8fd53",
+      "node_v": "TTP_T1193",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7780ff6f7336",
+      "node_u": "HL_72f79c00fb9d",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7ebfc9b183c0",
+      "node_u": "HL_1dd66246f913",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_82717c401cb6",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1193",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_86b42bd20762",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8d3c92e49b61",
+      "node_u": "HL_72f79c00fb9d",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_981bea8bc04c",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9d3ee6422b88",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a0195f744bf6",
+      "node_u": "HL_72f79c00fb9d",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a4ae59c2f3c7",
+      "node_u": "IOC_474755f11bed",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_abed80df245f",
+      "node_u": "HL_1dd66246f913",
+      "node_v": "TTP_T1550",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b5e8a5b3d2ed",
+      "node_u": "HL_83a2224bd763",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b8c9d822374d",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b9ed3c638a7a",
+      "node_u": "HL_0f70c0f8fd53",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d1f7764d8a83",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d3cb4a1d7f57",
+      "node_u": "HL_e1d89917c06c",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d8f8af81599c",
+      "node_u": "HL_7ebd54a323e9",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dc9f63958bab",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e09ce063c6a1",
+      "node_u": "HL_72f79c00fb9d",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_edcb035701da",
+      "node_u": "HL_1dd66246f913",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f60bbc9e7c11",
+      "node_u": "HL_c5edbbaacadd",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f80fe834d045",
+      "node_u": "HL_c5edbbaacadd",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fb4e9db799c6",
+      "node_u": "HL_531e6b3bc64c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

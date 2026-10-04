@@ -1,0 +1,453 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_42e58b82b87b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Internal Revenue Service",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Internal Revenue Service (IRS) and requested that the recipient complete the attached form."
+        ],
+        "edges": [
+          "EDGE_e17eb2e51b4a"
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Microsoft recently deployed new security mechanisms around protecting endpoints from macro-based malware infections, which resulted in various threat actors moving away from Office document-based malspam campaigns."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_62951c4067f1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Word",
+        "sentence_indices": [
+          1,
+          4,
+          6
+        ],
+        "span_sentences": [
+          "- Initially leveraging heavily padded Microsoft Word documents to attempt to evade sandbox analysis and endpoint protection, the botnets switched to distributing malicious OneNote documents on March 16.",
+          "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection.",
+          "While the ZIP archives are often small, in some cases only ~646KB, the Microsoft Word document when fully extracted was ~500MB in size."
+        ],
+        "edges": [
+          "EDGE_3398e605c394",
+          "EDGE_67b0f6f4158b",
+          "EDGE_91eed0f0b223",
+          "EDGE_dd910140943c",
+          "EDGE_ec63b4275d4b"
+        ]
+      },
+      {
+        "node_id": "HL_934b448b11eb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "OneNote",
+        "sentence_indices": [
+          1,
+          11,
+          12,
+          15,
+          18
+        ],
+        "span_sentences": [
+          "- Initially leveraging heavily padded Microsoft Word documents to attempt to evade sandbox analysis and endpoint protection, the botnets switched to distributing malicious OneNote documents on March 16.",
+          "In many cases, these malware distribution campaigns switched to distributing OneNote documents instead, likely as a result of decreased infections and lower success rates.",
+          "Emotet is no different — shortly after their return to spamming operations on March 16, 2023, they began distributing OneNote files, as well.",
+          "The attached OneNote document featured templates similar to what has been observed in other Office document formats over the past several years, prompting the user to click inside the document to view the file.",
+          "More recently, the embedded object inside of the OneNote files contained JavaScript instead of VBScript but offered the same functionality within the infection chain."
+        ],
+        "edges": [
+          "EDGE_3fb563713dd2",
+          "EDGE_7313f39ffa28",
+          "EDGE_b073e6a36b4b",
+          "EDGE_bcd4b5dfad33",
+          "EDGE_dd76e73ca43d"
+        ]
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "In one example, the sender purported to be from the U.S."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f5d008f23d8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Emotet",
+        "sentence_indices": [
+          0,
+          2,
+          3,
+          4,
+          9,
+          12,
+          17,
+          21,
+          22
+        ],
+        "span_sentences": [
+          "Emotet resumed spamming operations on March 7, 2023, after a months-long hiatus.",
+          "- Since returning, Emotet has leveraged several distinct infection chains, indicating that they are modifying their approach based on their perceived success in infecting new systems.",
+          "- The initial emails delivered to victims are consistent with what has been observed from Emotet over the past several years.",
+          "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection.",
+          "The Word documents in this campaign contained malicious VBA macros that, when executed, functioned as a malware downloader, retrieving the Emotet payload from attacker-controlled distribution servers and infecting systems, thus adding them to the Emotet botnets.",
+          "Emotet is no different — shortly after their return to spamming operations on March 16, 2023, they began distributing OneNote files, as well.",
+          "This VBScript downloader is responsible for retrieving the Emotet malware payload from an attacker-controlled server and infecting the system.",
+          "This object is a heavily obfuscated JavaScript downloader responsible for retrieving and executing the Emotet payload on the system.",
+          "In a relatively short period, Emotet has modified its infection chain several times to maximize the likelihood of successfully infecting victims."
+        ],
+        "edges": [
+          "EDGE_04e14532070b",
+          "EDGE_095f9463036a",
+          "EDGE_2efcc32ebe9d",
+          "EDGE_8b5ada8903a3",
+          "EDGE_bfa92b240628"
+        ]
+      },
+      {
+        "node_id": "HL_fa48da7ddff9",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "IRS",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Internal Revenue Service (IRS) and requested that the recipient complete the attached form."
+        ],
+        "edges": [
+          "EDGE_21e2b86d943a"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "The document included a large number of 0x00 bytes, a technique commonly referred to as “padding.”\nSome of the documents also featured excerpts from the classic novel “Moby Dick,” another attempt to increase the size of the documents for evasion purposes."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "- Initially leveraging heavily padded Microsoft Word documents to attempt to evade sandbox analysis and endpoint protection, the botnets switched to distributing malicious OneNote documents on March 16."
+          ],
+          [
+            "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection."
+          ],
+          [
+            "The document included a large number of 0x00 bytes, a technique commonly referred to as “padding.”\nSome of the documents also featured excerpts from the classic novel “Moby Dick,” another attempt to increase the size of the documents for evasion purposes.",
+            "The Office documents featured templates consistent with those used by Emotet in the past, as shown below."
+          ],
+          [
+            "This object is a heavily obfuscated JavaScript downloader responsible for retrieving and executing the Emotet payload on the system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_2efcc32ebe9d",
+          "EDGE_b073e6a36b4b",
+          "EDGE_ec63b4275d4b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The Word documents in this campaign contained malicious VBA macros that, when executed, functioned as a malware downloader, retrieving the Emotet payload from attacker-controlled distribution servers and infecting systems, thus adding them to the Emotet botnets."
+          ],
+          [
+            "When clicked, an embedded WSF script linked behind the view button containing malicious VBScript code is executed.",
+            "This VBScript downloader is responsible for retrieving the Emotet malware payload from an attacker-controlled server and infecting the system.",
+            "More recently, the embedded object inside of the OneNote files contained JavaScript instead of VBScript but offered the same functionality within the infection chain.",
+            "Hovering over the next button indicates that an object called “Object1.js” will execute when the button is clicked."
+          ],
+          [
+            "This object is a heavily obfuscated JavaScript downloader responsible for retrieving and executing the Emotet payload on the system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_bfa92b240628",
+          "EDGE_dd76e73ca43d",
+          "EDGE_dd910140943c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The Word documents in this campaign contained malicious VBA macros that, when executed, functioned as a malware downloader, retrieving the Emotet payload from attacker-controlled distribution servers and infecting systems, thus adding them to the Emotet botnets."
+          ],
+          [
+            "This VBScript downloader is responsible for retrieving the Emotet malware payload from an attacker-controlled server and infecting the system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_7313f39ffa28",
+          "EDGE_8b5ada8903a3",
+          "EDGE_91eed0f0b223"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The attached OneNote document featured templates similar to what has been observed in other Office document formats over the past several years, prompting the user to click inside the document to view the file.",
+            "When clicked, an embedded WSF script linked behind the view button containing malicious VBScript code is executed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_04e14532070b",
+          "EDGE_3398e605c394",
+          "EDGE_bcd4b5dfad33"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Emotet resumed spamming operations on March 7, 2023, after a months-long hiatus."
+          ],
+          [
+            "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection."
+          ],
+          [
+            "Emotet is no different — shortly after their return to spamming operations on March 16, 2023, they began distributing OneNote files, as well.",
+            "In one example, the sender purported to be from the U.S.",
+            "Internal Revenue Service (IRS) and requested that the recipient complete the attached form."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            12,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_095f9463036a",
+          "EDGE_21e2b86d943a",
+          "EDGE_3fb563713dd2",
+          "EDGE_67b0f6f4158b",
+          "EDGE_e17eb2e51b4a"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_04e14532070b",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_095f9463036a",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_21e2b86d943a",
+      "node_u": "HL_fa48da7ddff9",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2efcc32ebe9d",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3398e605c394",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3fb563713dd2",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_67b0f6f4158b",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7313f39ffa28",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b5ada8903a3",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_91eed0f0b223",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b073e6a36b4b",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bcd4b5dfad33",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bfa92b240628",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dd76e73ca43d",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dd910140943c",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e17eb2e51b4a",
+      "node_u": "HL_42e58b82b87b",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec63b4275d4b",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

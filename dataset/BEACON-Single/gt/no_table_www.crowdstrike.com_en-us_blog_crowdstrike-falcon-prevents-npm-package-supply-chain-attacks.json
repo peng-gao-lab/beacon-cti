@@ -1,0 +1,504 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_7916b4248c5c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Scavenger",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          0,
+          8,
+          10,
+          11
+        ],
+        "span_sentences": [
+          "Recently, five popular NPM (Node Package Manager) packages were compromised and modified to deliver a malicious DLL, dubbed “Scavenger”.",
+          "The altered packages included the install script install.js\nand the Scavenger DLL node-gyp.dll\n.",
+          "The Scavenger DLL reads and exfiltrates the contents of the user’s NPM configuration file .npmrc\n, which often contains NPM authentication and access tokens.",
+          "Additionally, the Scavenger DLL writes a second-stage infostealer payload to disk, which ultimately targets the victims' browser data, including visited URLs and cached content."
+        ]
+      },
+      {
+        "node_id": "HL_a7d6a4b8fe94",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "NPM",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          10
+        ],
+        "span_sentences": [
+          "Recently, five popular NPM (Node Package Manager) packages were compromised and modified to deliver a malicious DLL, dubbed “Scavenger”.",
+          "The malware pushed via these compromised NPM packages executes in two stages: an initial first-stage loader, followed by a second-stage infostealer.",
+          "NPM is the package manager for the Node.js JavaScript platform, which allows developers to share and manage JavaScript libraries and tools.",
+          "On July 18, 2025, an unknown adversary was observed modifying the contents of multiple NPM packages to further actions on objectives.",
+          "This access was made possible following a successful credential phishing campaign targeting an NPM package maintainer that leveraged a spoofed login page and typosquatted domain of the NPM website.",
+          "In all, five NPM packages maintained by the compromised account were modified and malicious versions of those packages were published the same day.",
+          "The Scavenger DLL reads and exfiltrates the contents of the user’s NPM configuration file .npmrc\n, which often contains NPM authentication and access tokens."
+        ]
+      },
+      {
+        "node_id": "HL_ca5c19ba1ab0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Node Package Manager",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Recently, five popular NPM (Node Package Manager) packages were compromised and modified to deliver a malicious DLL, dubbed “Scavenger”."
+        ]
+      },
+      {
+        "node_id": "HL_dd60c1290aaf",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "eslint-config-prettier",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The most popular package, eslint-config-prettier\n, has over 30 million downloads per week, and its compromise was assigned CVE-2025-54313 with a CVSS severity rating of High."
+        ]
+      },
+      {
+        "node_id": "HL_f8d891215e79",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Node.js",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "NPM is the package manager for the Node.js JavaScript platform, which allows developers to share and manage JavaScript libraries and tools."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_1",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Scavenger DLL reads and exfiltrates the contents of the user’s NPM configuration file .npmrc\n, which often contains NPM authentication and access tokens."
+          ],
+          [
+            "Additionally, the Scavenger DLL writes a second-stage infostealer payload to disk, which ultimately targets the victims' browser data, including visited URLs and cached content."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_2",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Scavenger DLL reads and exfiltrates the contents of the user’s NPM configuration file .npmrc\n, which often contains NPM authentication and access tokens."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The altered packages included the install script install.js\nand the Scavenger DLL node-gyp.dll\n.",
+            "The script is executed upon installation of the packages and spawns rundll32.exe\nto load the DLL node-gyp.dll\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            7
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "By compromising these packages, attackers are able to perform supply chain attacks that have widespread impact and can be challenging to identify.",
+            "On July 18, 2025, an unknown adversary was observed modifying the contents of multiple NPM packages to further actions on objectives.",
+            "This access was made possible following a successful credential phishing campaign targeting an NPM package maintainer that leveraged a spoofed login page and typosquatted domain of the NPM website.",
+            "In all, five NPM packages maintained by the compromised account were modified and malicious versions of those packages were published the same day.",
+            "The most popular package, eslint-config-prettier\n, has over 30 million downloads per week, and its compromise was assigned CVE-2025-54313 with a CVSS severity rating of High."
+          ],
+          [
+            "This access was made possible following a successful credential phishing campaign targeting an NPM package maintainer that leveraged a spoofed login page and typosquatted domain of the NPM website."
+          ],
+          [
+            "In all, five NPM packages maintained by the compromised account were modified and malicious versions of those packages were published the same day."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1129",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1129",
+        "edges": [
+          "EDGE_3",
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The altered packages included the install script install.js\nand the Scavenger DLL node-gyp.dll\n.",
+            "The script is executed upon installation of the packages and spawns rundll32.exe\nto load the DLL node-gyp.dll\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_4",
+          "EDGE_6",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Recently, five popular NPM (Node Package Manager) packages were compromised and modified to deliver a malicious DLL, dubbed “Scavenger”.",
+            "The malware pushed via these compromised NPM packages executes in two stages: an initial first-stage loader, followed by a second-stage infostealer."
+          ],
+          [
+            "The malware pushed via these compromised NPM packages executes in two stages: an initial first-stage loader, followed by a second-stage infostealer.",
+            "NPM is the package manager for the Node.js JavaScript platform, which allows developers to share and manage JavaScript libraries and tools.",
+            "By compromising these packages, attackers are able to perform supply chain attacks that have widespread impact and can be challenging to identify."
+          ],
+          [
+            "By compromising these packages, attackers are able to perform supply chain attacks that have widespread impact and can be challenging to identify.",
+            "On July 18, 2025, an unknown adversary was observed modifying the contents of multiple NPM packages to further actions on objectives.",
+            "This access was made possible following a successful credential phishing campaign targeting an NPM package maintainer that leveraged a spoofed login page and typosquatted domain of the NPM website.",
+            "In all, five NPM packages maintained by the compromised account were modified and malicious versions of those packages were published the same day.",
+            "The most popular package, eslint-config-prettier\n, has over 30 million downloads per week, and its compromise was assigned CVE-2025-54313 with a CVSS severity rating of High."
+          ],
+          [
+            "On July 18, 2025, an unknown adversary was observed modifying the contents of multiple NPM packages to further actions on objectives."
+          ],
+          [
+            "In all, five NPM packages maintained by the compromised account were modified and malicious versions of those packages were published the same day."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1565",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1565",
+        "edges": [
+          "EDGE_7",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "On July 18, 2025, an unknown adversary was observed modifying the contents of multiple NPM packages to further actions on objectives."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This access was made possible following a successful credential phishing campaign targeting an NPM package maintainer that leveraged a spoofed login page and typosquatted domain of the NPM website."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1089d8a4cca2",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-54313",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The most popular package, eslint-config-prettier\n, has over 30 million downloads per week, and its compromise was assigned CVE-2025-54313 with a CVSS severity rating of High."
+        ]
+      },
+      {
+        "node_id": "IOC_40bd2fe94e03",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "node-gyp.dll",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          8,
+          9
+        ],
+        "span_sentences": [
+          "The altered packages included the install script install.js\nand the Scavenger DLL node-gyp.dll\n.",
+          "The script is executed upon installation of the packages and spawns rundll32.exe\nto load the DLL node-gyp.dll\n."
+        ]
+      },
+      {
+        "node_id": "IOC_452e90101f57",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "rundll32.exe",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "The script is executed upon installation of the packages and spawns rundll32.exe\nto load the DLL node-gyp.dll\n."
+        ]
+      },
+      {
+        "node_id": "IOC_6068e80610a6",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": ".npmrc",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The Scavenger DLL reads and exfiltrates the contents of the user’s NPM configuration file .npmrc\n, which often contains NPM authentication and access tokens."
+        ]
+      },
+      {
+        "node_id": "IOC_f616f6327bad",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "install.js",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The altered packages included the install script install.js\nand the Scavenger DLL node-gyp.dll\n."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_7916b4248c5c",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_7916b4248c5c",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_7916b4248c5c",
+      "node_v": "TTP_T1129"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_7916b4248c5c",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_a7d6a4b8fe94",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_a7d6a4b8fe94",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_a7d6a4b8fe94",
+      "node_v": "TTP_T1565"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_a7d6a4b8fe94",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_ca5c19ba1ab0",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_dd60c1290aaf",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_dd60c1290aaf",
+      "node_v": "TTP_T1565"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_1089d8a4cca2",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_40bd2fe94e03",
+      "node_v": "TTP_T1129"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_452e90101f57",
+      "node_v": "TTP_T1129"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_6068e80610a6",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_6068e80610a6",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_f616f6327bad",
+      "node_v": "TTP_T1059"
+    }
+  ]
+}

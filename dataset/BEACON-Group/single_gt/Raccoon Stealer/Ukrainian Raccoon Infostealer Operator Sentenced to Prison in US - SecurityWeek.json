@@ -1,0 +1,143 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0e654671c953",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "US Department of Justice",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The US Department of Justice on Wednesday announced the sentencing of a Ukrainian national for his role in the distribution of the Raccoon Infostealer malware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_410335234c91",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Raccoon Infostealer",
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "span_sentences": [
+          "The US Department of Justice on Wednesday announced the sentencing of a Ukrainian national for his role in the distribution of the Raccoon Infostealer malware.",
+          "The man, Mark Sokolovsky, 28, was arrested in March 2022 in the Netherlands, after the FBI and law enforcement agencies in Italy and the Netherlands took down the infrastructure behind Raccoon Infostealer.",
+          "In February 2024, he was extradited to the US from the Netherlands, and he pleaded guilty in October 2024 to operating the Raccoon Infostealer malware.",
+          "According to court documents, Raccoon Infostealer was offered under the malware-as-a-service (MaaS) business model, where miscreants would pay the operator roughly $200 per month in cryptocurrency to lease access to the malware."
+        ],
+        "edges": [
+          "EDGE_a9132af7af49"
+        ]
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "sentence_indices": [
+          2,
+          3
+        ],
+        "span_sentences": [
+          "The US announced charges against Sokolovsky in October 2022.",
+          "In February 2024, he was extradited to the US from the Netherlands, and he pleaded guilty in October 2024 to operating the Raccoon Infostealer malware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_85a6572c800b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "US DoJ",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Sokolovsky, the US DoJ announced, was sentenced to 60 months in prison."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_8f12e96c7bb0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Netherlands",
+        "sentence_indices": [
+          1,
+          3
+        ],
+        "span_sentences": [
+          "The man, Mark Sokolovsky, 28, was arrested in March 2022 in the Netherlands, after the FBI and law enforcement agencies in Italy and the Netherlands took down the infrastructure behind Raccoon Infostealer.",
+          "In February 2024, he was extradited to the US from the Netherlands, and he pleaded guilty in October 2024 to operating the Raccoon Infostealer malware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_91b03f3fabdd",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Italy",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The man, Mark Sokolovsky, 28, was arrested in March 2022 in the Netherlands, after the FBI and law enforcement agencies in Italy and the Netherlands took down the infrastructure behind Raccoon Infostealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f8678a1d19a6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "FBI",
+        "sentence_indices": [
+          1,
+          7
+        ],
+        "span_sentences": [
+          "The man, Mark Sokolovsky, 28, was arrested in March 2022 in the Netherlands, after the FBI and law enforcement agencies in Italy and the Netherlands took down the infrastructure behind Raccoon Infostealer.",
+          "In 2022, after dismantling Racoon Infostealer’s infrastructure, the FBI announced it collected over 50 million unique credentials and forms of identification stolen using the malware, along with other types of data."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The threat actors then distributed the information-stealing malware through phishing and other means, infecting the computer systems of unsuspecting victims to steal their credentials, financial information, and other data."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "edges": [
+          "EDGE_a9132af7af49"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_a9132af7af49",
+      "node_u": "HL_410335234c91",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

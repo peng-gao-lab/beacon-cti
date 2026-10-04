@@ -1,0 +1,569 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "sentence_indices": [
+          0,
+          2,
+          10
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem.",
+          "The group is now actively pursuing startups and technology professionals operating in cybersecurity, technology development, and intelligence-adjacent domains, likely viewing these emerging organizations as indirect pathways to sensitive government information, strategic business intelligence, and insights into India’s growing technology capabilities.",
+          "Transparent Tribe has strategically expanded its long-standing cyber-espionage operations beyond traditional government, military, and defense-related targets to actively pursue India’s rapidly growing startup ecosystem."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0a6a9cd6c2d8",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Earth Karkaddan",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          7,
+          27
+        ],
+        "span_sentences": [
+          "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins.",
+          "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_316692d823b4",
+          "EDGE_85f03ccca4ab"
+        ]
+      },
+      {
+        "node_id": "HL_1b7ecb94eac4",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mythic Leopard",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_1f8ea17923c7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "ProjectM",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "sentence_indices": [
+          0,
+          37
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem.",
+          "While the specific lure themes and target victim profiles have evolved to focus on the startup ecosystem, the underlying strategic motivation remains intelligence collection in support of Pakistani national security objectives rather than financially motivated cybercrime."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_39b1b6a1ac26",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GymRAT",
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "The command-and-control infrastructure overlaps with previously identified Transparent Tribe campaigns including operations deploying the GymRAT implant against Indian government agencies."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          4,
+          5,
+          7,
+          18,
+          21,
+          23
+        ],
+        "span_sentences": [
+          "ISO files provide significant operational advantages for attackers including bypassing Windows Mark-of-the-Web (MotW) security controls that normally flag downloaded files as potentially dangerous, appearing as legitimate software distributions or documentation packages, and containing multiple file components in a single convenient package.",
+          "When victims mount these ISO files, Windows automatically assigns them a drive letter and treats the contents as trusted local files, effectively circumventing security warnings that would normally be displayed for downloaded executable content.",
+          "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins.",
+          "ISO files bypass Windows Mark-of-the-Web security controls because files extracted from mounted ISOs do not inherit the untrusted zone identifier that triggers security warnings.",
+          "When victims download and mount the malicious ISO files provided by Transparent Tribe, Windows automatically assigns a drive letter to the virtual disk and makes the contents accessible through Windows Explorer.",
+          "Critically, the mounting operation causes Windows to treat the ISO contents as local trusted files rather than downloaded internet content, effectively bypassing Mark-of-the-Web (MotW) protections that would normally flag executable content from untrusted sources."
+        ],
+        "edges": [
+          "EDGE_a2dd9b2960eb"
+        ]
+      },
+      {
+        "node_id": "HL_4f25aeb0e5ef",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TEMP.Lapis",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_52125ef1195b",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Copper Fieldstone",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_56f80800a4d1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Crimson RAT",
+        "sentence_indices": [
+          9,
+          28,
+          29,
+          31,
+          34
+        ],
+        "span_sentences": [
+          "The final payload is Crimson RAT, a well-established remote access trojan consistently associated with Transparent Tribe operations.",
+          "The ultimate payload delivered through this attack chain is Crimson RAT, a sophisticated remote access trojan that has been consistently associated with Transparent Tribe operations for several years.",
+          "Crimson RAT implements multiple anti-analysis and evasion techniques designed to complicate security research, defeat automated analysis, and avoid detection by security products.",
+          "Crimson RAT utilizes a custom TCP-based command-and-control protocol rather than standard HTTP or HTTPS communications.",
+          "Once successfully deployed and connected to command-and-control infrastructure, Crimson RAT provides comprehensive post-exploitation capabilities."
+        ],
+        "edges": [
+          "EDGE_1247aa8bb73b",
+          "EDGE_dfc42d7fd169"
+        ]
+      },
+      {
+        "node_id": "HL_87713f94840d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT36",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9728b1ff28eb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Transparent Tribe",
+        "sentence_indices": [
+          0,
+          9,
+          10,
+          13,
+          21,
+          28,
+          35,
+          36
+        ],
+        "span_sentences": [
+          "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem.",
+          "The final payload is Crimson RAT, a well-established remote access trojan consistently associated with Transparent Tribe operations.",
+          "Transparent Tribe has strategically expanded its long-standing cyber-espionage operations beyond traditional government, military, and defense-related targets to actively pursue India’s rapidly growing startup ecosystem.",
+          "The Transparent Tribe campaign relies fundamentally on sophisticated social engineering tactics that demonstrate extensive pre-operational reconnaissance of target organizations and individuals.",
+          "When victims download and mount the malicious ISO files provided by Transparent Tribe, Windows automatically assigns a drive letter to the virtual disk and makes the contents accessible through Windows Explorer.",
+          "The ultimate payload delivered through this attack chain is Crimson RAT, a sophisticated remote access trojan that has been consistently associated with Transparent Tribe operations for several years.",
+          "Infrastructure reuse analysis, malware code similarities, consistent victimology patterns, and operational tradecraft allow this campaign to be attributed to Transparent Tribe with high confidence.",
+          "The command-and-control infrastructure overlaps with previously identified Transparent Tribe campaigns including operations deploying the GymRAT implant against Indian government agencies."
+        ],
+        "edges": [
+          "EDGE_2f5eeee5e742",
+          "EDGE_36dd8a6f273e",
+          "EDGE_4e528cab6bf3",
+          "EDGE_59354ac25277",
+          "EDGE_a553db3194aa",
+          "EDGE_c3206b82c8ee"
+        ]
+      },
+      {
+        "node_id": "HL_9e9d59dfb164",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SmartScreen",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "By stripping these markers, the malware effectively suppresses SmartScreen warnings and other security prompts that would normally alert users to potentially dangerous file execution."
+        ],
+        "edges": [
+          "EDGE_63053cc02dba"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1023",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1023",
+        "ttp_id": "T1023",
+        "best_span_sentences_list": [
+          [
+            "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_2f5eeee5e742"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "ISO files can contain multiple components including legitimate-appearing decoy documents, malicious LNK shortcuts, batch scripts, and executable payloads in a single convenient package."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_c3206b82c8ee"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins."
+          ],
+          [
+            "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_36dd8a6f273e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1095",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1095",
+        "ttp_id": "T1095",
+        "best_span_sentences_list": [
+          [
+            "Crimson RAT utilizes a custom TCP-based command-and-control protocol rather than standard HTTP or HTTPS communications."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_1247aa8bb73b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Inside the malicious ISO containers, victims encounter LNK shortcut files or staged executable files designed to initiate the infection chain with minimal additional user interaction."
+          ],
+          [
+            "ISO files can contain multiple components including legitimate-appearing decoy documents, malicious LNK shortcuts, batch scripts, and executable payloads in a single convenient package."
+          ],
+          [
+            "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_4e528cab6bf3",
+          "EDGE_85f03ccca4ab"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "The final payload is Crimson RAT, a well-established remote access trojan consistently associated with Transparent Tribe operations."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_a553db3194aa",
+          "EDGE_dfc42d7fd169"
+        ]
+      },
+      {
+        "node_id": "TTP_T1553",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1553",
+        "ttp_id": "T1553",
+        "best_span_sentences_list": [
+          [
+            "ISO files provide significant operational advantages for attackers including bypassing Windows Mark-of-the-Web (MotW) security controls that normally flag downloaded files as potentially dangerous, appearing as legitimate software distributions or documentation packages, and containing multiple file components in a single convenient package."
+          ],
+          [
+            "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins."
+          ],
+          [
+            "ISO files bypass Windows Mark-of-the-Web security controls because files extracted from mounted ISOs do not inherit the untrusted zone identifier that triggers security warnings."
+          ],
+          [
+            "Critically, the mounting operation causes Windows to treat the ISO contents as local trusted files rather than downloaded internet content, effectively bypassing Mark-of-the-Web (MotW) protections that would normally flag executable content from untrusted sources."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_316692d823b4",
+          "EDGE_63053cc02dba",
+          "EDGE_a2dd9b2960eb"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The technical delivery mechanism leverages malicious ISO container files distributed via phishing emails or malicious links."
+          ],
+          [
+            "The Transparent Tribe campaign relies fundamentally on sophisticated social engineering tactics that demonstrate extensive pre-operational reconnaissance of target organizations and individuals.",
+            "The threat actors craft phishing lures specifically tailored to the interests, responsibilities, and business priorities of startup founders, executives, and technical personnel.",
+            "Observed lure themes include professional networking invitations claiming to be from potential business partners, investors, or government procurement officials; industry conference and event invitations featuring realistic agendas, speaker lineups, and registration information; investment pitch decks and funding opportunity documentation appearing to come from venture capital firms or government funding programs; technology partnership and collaboration proposals suggesting mutually beneficial business arrangements; government tender documents and procurement announcements for technology services; and startup accelerator program applications and selection notices.",
+            "These carefully crafted lures are distributed via targeted phishing emails that often impersonate legitimate organizations, industry associations, government agencies, or well-known venture capital firms.",
+            "The use of ISO container files provides multiple tactical advantages for the attackers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            13,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_59354ac25277"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_f38d053860c5",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://sis.voldebug.in/",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The threat advisory references a recent breach disclosure at https://sis.voldebug.in/, suggesting a compromised organization or threat actor testing infrastructure associated with this campaign."
+        ],
+        "edges": []
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1247aa8bb73b",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1095",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2f5eeee5e742",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1023",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_316692d823b4",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1553",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_36dd8a6f273e",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4e528cab6bf3",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_59354ac25277",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_63053cc02dba",
+      "node_u": "HL_9e9d59dfb164",
+      "node_v": "TTP_T1553",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_85f03ccca4ab",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a2dd9b2960eb",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1553",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a553db3194aa",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c3206b82c8ee",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dfc42d7fd169",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

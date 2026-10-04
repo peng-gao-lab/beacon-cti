@@ -1,0 +1,43 @@
+# RQ1: full BEACON pipeline on BEACON-Single. Paths are relative to this file.
+input:
+  kind: reports
+  layout: flat
+  path: ../../dataset/BEACON-Single/reports
+  pattern: "*.txt"
+  limit: null
+output:
+  root: ../../output/experiments/rq1_beacon
+  existing: skip
+run:
+  workers: 8
+  sentence_splitter: regex
+resources:
+  mitre_json: ../../dataset/resources/mitre.json
+models:
+  default: gpt-4o
+  embedding: text-embedding-3-large
+components:
+  highlevel:
+    enabled: true
+    log: true
+    extract: true
+    chunk_size: 100
+    overlap_size: 2
+    token_overlap_threshold: 0.6
+  tagger:
+    enabled: true
+    log: true
+    extract: true
+    threshold: 0.71
+    lmax: 5
+    high_freq_threshold: 0.01
+    enable_ngram: true
+  ioc: {enabled: true, log: true, extract: true}
+  augmentor:
+    enabled: true
+    log: true
+    extract: true
+    threshold: 0.7
+    delta: 0
+    check_split: false
+  alignmentor: {enabled: false}

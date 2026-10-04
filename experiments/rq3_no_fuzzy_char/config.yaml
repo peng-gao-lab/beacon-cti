@@ -1,0 +1,36 @@
+# Full dataset; paths are relative to this file.
+input:
+  kind: graphs
+  layout: groups
+  path: ../../dataset/BEACON-Group/single_gt
+  pattern: "*.json"
+  limit: null
+output:
+  root: ../../output/experiments/rq3_no_fuzzy_char
+  existing: skip
+run:
+  workers: 8
+  sentence_splitter: regex
+models:
+  default: gpt-4o
+  embedding: text-embedding-3-large
+components:
+  highlevel: {enabled: false}
+  tagger: {enabled: false}
+  ioc: {enabled: false}
+  augmentor: {enabled: false}
+  alignmentor:
+    enabled: true
+    log: true
+    extract: true
+    node_threshold: 0.7
+    cluster_threshold: 0.7
+    enable_llm: true
+    highlevel_stages: ["embed","neighbor"]
+    disable_highlevel_deterministic_char: false
+    embed_backend: openai
+    embed_model: text-embedding-3-large
+    embed_sim_threshold: 0.7
+    max_neighbor_rounds: 3
+    neighbor_shared_ttp_threshold: 2
+    api_key_env: OPENAI_API_KEY

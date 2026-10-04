@@ -1,0 +1,1608 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0232121fe3ae",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "vetysafe.exe",
+        "sentence_indices": [
+          4,
+          21
+        ],
+        "span_sentences": [
+          "Once inside, the attackers used legitimate tools such as msbuild.exe for stealthy persistence and employed DLL sideloading techniques with a legitimate VipreAV executable (vetysafe.exe) to load malicious payloads.",
+          "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll)."
+        ],
+        "edges": [
+          "EDGE_ff32feddd6b3"
+        ]
+      },
+      {
+        "node_id": "HL_03ab562d2853",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VipreAV",
+        "sentence_indices": [
+          4,
+          21
+        ],
+        "span_sentences": [
+          "Once inside, the attackers used legitimate tools such as msbuild.exe for stealthy persistence and employed DLL sideloading techniques with a legitimate VipreAV executable (vetysafe.exe) to load malicious payloads.",
+          "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll)."
+        ],
+        "edges": [
+          "EDGE_d72132166145"
+        ]
+      },
+      {
+        "node_id": "HL_0575878c9fb2",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Space Pirates",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The APT41 threat group demonstrated a high level of operational discipline and technical sophistication, leveraging overlapping tools and techniques previously observed in related campaigns such as Kelp (Salt Typhoon) and Space Pirates."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0a716fcaa4ad",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Salt Typhoon",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The APT41 threat group demonstrated a high level of operational discipline and technical sophistication, leveraging overlapping tools and techniques previously observed in related campaigns such as Kelp (Salt Typhoon) and Space Pirates."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_24012dbc18af",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "msbuild.exe",
+        "sentence_indices": [
+          4,
+          18
+        ],
+        "span_sentences": [
+          "Once inside, the attackers used legitimate tools such as msbuild.exe for stealthy persistence and employed DLL sideloading techniques with a legitimate VipreAV executable (vetysafe.exe) to load malicious payloads.",
+          "A key persistence method involved the creation of scheduled tasks under SYSTEM privileges to execute malicious code via legitimate binaries such as msbuild.exe."
+        ],
+        "edges": [
+          "EDGE_61b5d9e724c1",
+          "EDGE_a5e57285d659"
+        ]
+      },
+      {
+        "node_id": "HL_2652e2aa9110",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Snappy Bee",
+        "sentence_indices": [
+          5,
+          23
+        ],
+        "span_sentences": [
+          "The campaign deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese state-sponsored operations, for remote access and credential theft.",
+          "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups."
+        ],
+        "edges": [
+          "EDGE_795370e2962c"
+        ]
+      },
+      {
+        "node_id": "HL_3277c8e3cd80",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "MSBuild",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The attackers embedded malicious payloads within XML configuration files, leveraging the trusted MSBuild utility to execute code without triggering traditional security alerts."
+        ],
+        "edges": [
+          "EDGE_335883a28596"
+        ]
+      },
+      {
+        "node_id": "HL_4e53e0933899",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Winnti",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+        ],
+        "edges": [
+          "EDGE_4557dd8d3666",
+          "EDGE_4c4d464d0cc6",
+          "EDGE_5482f8f3819f",
+          "EDGE_650d5ed61ad6",
+          "EDGE_670db082dbae",
+          "EDGE_7d80fb7e9974",
+          "EDGE_cb1c32220f44",
+          "EDGE_d887396683db",
+          "EDGE_ec18cc94d94d",
+          "EDGE_f398d14b0ddb"
+        ]
+      },
+      {
+        "node_id": "HL_5886a9ce543d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT41",
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          6,
+          7,
+          10,
+          11,
+          14,
+          17,
+          25,
+          27,
+          30,
+          34
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy.",
+          "This APT41 campaign reflects China’s strategic focus on institutions that shape U.S.",
+          "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network.",
+          "APT41 cyber-espionage tactics included DCSync attacks to harvest domain credentials, lateral movement across the network, and data exfiltration over command-and-control channels.",
+          "The APT41 cyber-espionage campaign was identified in April 2025 and targeted a U.S.-based non-profit organization with significant influence over government policy and foreign relations.",
+          "The APT41 threat group demonstrated a high level of operational discipline and technical sophistication, leveraging overlapping tools and techniques previously observed in related campaigns such as Kelp (Salt Typhoon) and Space Pirates.",
+          "The primary objective of the APT41 attack was to establish long-term, covert access to the victim’s network and exfiltrate sensitive policy-related intelligence.",
+          "The exploitation of these vulnerabilities allowed APT41 cyber attackers to achieve initial access and establish a foothold within the victim environment.",
+          "To maintain persistence within the compromised network, APT41 threat actors employed multiple sophisticated techniques designed to evade detection.",
+          "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques.",
+          "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence.",
+          "The final phase of the APT41 cyber-espionage campaign involved data exfiltration over command-and-control (C2) channels.",
+          "The APT41 attack underscores the ongoing threat posed by state-sponsored espionage groups targeting institutions involved in public policy, diplomacy, and strategic research."
+        ],
+        "edges": [
+          "EDGE_07d75593337e",
+          "EDGE_16fb4be811be",
+          "EDGE_30853b8fe352",
+          "EDGE_42e222a290c1",
+          "EDGE_49f1a89c52a5",
+          "EDGE_7df8d41cc3d0",
+          "EDGE_8f23e46a8225",
+          "EDGE_cf59f3021db2",
+          "EDGE_f6bb888e2378",
+          "EDGE_f9436a959d6d"
+        ]
+      },
+      {
+        "node_id": "HL_5948c3bebdf8",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Earth Baku",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+        ],
+        "edges": [
+          "EDGE_01da73fcb6f6",
+          "EDGE_0fe43c235e17",
+          "EDGE_3a12a45d3e8c",
+          "EDGE_4ace598c86c6",
+          "EDGE_9c48d721b3af",
+          "EDGE_c4861d7c7e66",
+          "EDGE_c8b5cdc5fb11",
+          "EDGE_cd92a7db70fe",
+          "EDGE_d62f9b17dd47",
+          "EDGE_e1a6ae1799b7"
+        ]
+      },
+      {
+        "node_id": "HL_6311a540e45e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Poisonplug.deed",
+        "sentence_indices": [
+          5,
+          23
+        ],
+        "span_sentences": [
+          "The campaign deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese state-sponsored operations, for remote access and credential theft.",
+          "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups."
+        ],
+        "edges": [
+          "EDGE_5f562d77f026"
+        ]
+      },
+      {
+        "node_id": "HL_738e9ce5172e",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BARIUM",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+        ],
+        "edges": [
+          "EDGE_07f2c7c19a12",
+          "EDGE_20ecbece35f7",
+          "EDGE_29deafbd1c54",
+          "EDGE_50ae22da4a1f",
+          "EDGE_5711a8aaab6c",
+          "EDGE_5efeff933cee",
+          "EDGE_734bf4c7bff9",
+          "EDGE_866b18ef706d",
+          "EDGE_900110b176a3",
+          "EDGE_b40dc7184c1a"
+        ]
+      },
+      {
+        "node_id": "HL_7d43e9efb620",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Group 72",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+        ],
+        "edges": [
+          "EDGE_01d0285c1fdb",
+          "EDGE_1eba8428229f",
+          "EDGE_4ccb4127a8d9",
+          "EDGE_4f568ac45657",
+          "EDGE_5eb1662ca216",
+          "EDGE_a57d61dcc4dd",
+          "EDGE_b53892a1c5f4",
+          "EDGE_ce43b30ce2db",
+          "EDGE_dacd1d70b0b7",
+          "EDGE_e93f1cd56555"
+        ]
+      },
+      {
+        "node_id": "HL_7ed492dce7cd",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "GREF",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+        ],
+        "edges": [
+          "EDGE_17fdf14984a2",
+          "EDGE_68349d8f1883",
+          "EDGE_6edbc5f3a291",
+          "EDGE_95a3019d6a90",
+          "EDGE_9bf0ba8d1e5c",
+          "EDGE_a6213592833d",
+          "EDGE_c6e1d506bb4e",
+          "EDGE_cd257f6f150e",
+          "EDGE_d4090a5f6be2",
+          "EDGE_feebfe8876a6"
+        ]
+      },
+      {
+        "node_id": "HL_82fc5147766f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CISA",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "All four vulnerabilities are listed in the CISA Known Exploited Vulnerabilities (KEV) catalog and have available patches."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9289d8826bff",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Deed RAT",
+        "sentence_indices": [
+          5,
+          23,
+          24,
+          29
+        ],
+        "span_sentences": [
+          "The campaign deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese state-sponsored operations, for remote access and credential theft.",
+          "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups.",
+          "Deed RAT malware provided the attackers with remote command execution, credential harvesting, and data exfiltration capabilities.",
+          "The combination of DCSync, Deed RAT, and Imjpuexc reflects the shared toolsets and methodologies observed across multiple Chinese APT operations, indicating coordination and shared development resources."
+        ],
+        "edges": [
+          "EDGE_6a2168d61540"
+        ]
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The attackers employed DCSync, a technique that impersonates domain controllers to harvest domain credentials from Active Directory."
+        ],
+        "edges": [
+          "EDGE_b303468618f8"
+        ]
+      },
+      {
+        "node_id": "HL_9e1bcfcbbefd",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "WICKED PANDA",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+        ],
+        "edges": [
+          "EDGE_07d0735df0ee",
+          "EDGE_1d97bd4f08b6",
+          "EDGE_5d663aaa349f",
+          "EDGE_996eb6ac215f",
+          "EDGE_c28b864b278a",
+          "EDGE_c75245f3c63f",
+          "EDGE_ccd4d0ff68ec",
+          "EDGE_d39068e45814",
+          "EDGE_e4dcbc10deee",
+          "EDGE_e516a218a598"
+        ]
+      },
+      {
+        "node_id": "HL_a15114478198",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Brass Typhoon",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+        ],
+        "edges": [
+          "EDGE_1976cdfe0ece",
+          "EDGE_20b5df15e714",
+          "EDGE_3f0e67253a7f",
+          "EDGE_5e57eff01bd1",
+          "EDGE_60f78782982e",
+          "EDGE_7e16484df4eb",
+          "EDGE_a8b6803a67b6",
+          "EDGE_bf1d947ead4a",
+          "EDGE_d030e66e803a",
+          "EDGE_de38f8e102cb"
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "sentence_indices": [
+          0,
+          1,
+          8
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy.",
+          "This APT41 campaign reflects China’s strategic focus on institutions that shape U.S.",
+          "This targeted cyber-espionage operation aligns with China’s broader intelligence-gathering strategy aimed at anticipating U.S."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "sentence_indices": [
+          0,
+          2,
+          7,
+          8
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy.",
+          "foreign relations and international policy decisions.",
+          "The APT41 cyber-espionage campaign was identified in April 2025 and targeted a U.S.-based non-profit organization with significant influence over government policy and foreign relations.",
+          "This targeted cyber-espionage operation aligns with China’s broader intelligence-gathering strategy aimed at anticipating U.S."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_bfd65ba0ca97",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Sunbelt Software",
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll)."
+        ],
+        "edges": [
+          "EDGE_7fa0271425fe"
+        ]
+      },
+      {
+        "node_id": "HL_c255d77af791",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "HOODOO",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+        ],
+        "edges": [
+          "EDGE_12710e5d7417",
+          "EDGE_16dc643b0576",
+          "EDGE_18d19b932884",
+          "EDGE_398b5d5dd31c",
+          "EDGE_59357c022592",
+          "EDGE_75557deca7f1",
+          "EDGE_76823cf63f1b",
+          "EDGE_a89f4901490a",
+          "EDGE_b69cbccebae3",
+          "EDGE_e2f735eb6458"
+        ]
+      },
+      {
+        "node_id": "HL_c603dda5c935",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Imjpuexc",
+        "sentence_indices": [
+          27,
+          29
+        ],
+        "span_sentences": [
+          "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence.",
+          "The combination of DCSync, Deed RAT, and Imjpuexc reflects the shared toolsets and methodologies observed across multiple Chinese APT operations, indicating coordination and shared development resources."
+        ],
+        "edges": [
+          "EDGE_9ef7460040bc"
+        ]
+      },
+      {
+        "node_id": "HL_ecdf05ce8ae1",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Kelp",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The APT41 threat group demonstrated a high level of operational discipline and technical sophistication, leveraging overlapping tools and techniques previously observed in related campaigns such as Kelp (Salt Typhoon) and Space Pirates."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f5d4d2485c76",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Atlassian Confluence",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+        ],
+        "edges": [
+          "EDGE_47c5a53dc278"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1003",
+        "ttp_id": "T1003",
+        "best_span_sentences_list": [
+          [
+            "APT41 cyber-espionage tactics included DCSync attacks to harvest domain credentials, lateral movement across the network, and data exfiltration over command-and-control channels."
+          ],
+          [
+            "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques.",
+            "The attackers employed DCSync, a technique that impersonates domain controllers to harvest domain credentials from Active Directory.",
+            "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            25,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_5711a8aaab6c",
+          "EDGE_59357c022592",
+          "EDGE_5e57eff01bd1",
+          "EDGE_5eb1662ca216",
+          "EDGE_7df8d41cc3d0",
+          "EDGE_b303468618f8",
+          "EDGE_c6e1d506bb4e",
+          "EDGE_cd92a7db70fe",
+          "EDGE_d39068e45814",
+          "EDGE_ec18cc94d94d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1016",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1016",
+        "ttp_id": "T1016",
+        "best_span_sentences_list": [
+          [
+            "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_398b5d5dd31c",
+          "EDGE_4c4d464d0cc6",
+          "EDGE_5efeff933cee",
+          "EDGE_60f78782982e",
+          "EDGE_a57d61dcc4dd",
+          "EDGE_c28b864b278a",
+          "EDGE_cd257f6f150e",
+          "EDGE_e1a6ae1799b7",
+          "EDGE_f6bb888e2378"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques.",
+            "The attackers employed DCSync, a technique that impersonates domain controllers to harvest domain credentials from Active Directory.",
+            "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_1976cdfe0ece",
+          "EDGE_42e222a290c1",
+          "EDGE_4ace598c86c6",
+          "EDGE_50ae22da4a1f",
+          "EDGE_650d5ed61ad6",
+          "EDGE_6edbc5f3a291",
+          "EDGE_9ef7460040bc",
+          "EDGE_b69cbccebae3",
+          "EDGE_e4dcbc10deee",
+          "EDGE_e93f1cd56555"
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "APT41 cyber-espionage tactics included DCSync attacks to harvest domain credentials, lateral movement across the network, and data exfiltration over command-and-control channels."
+          ],
+          [
+            "Deed RAT malware provided the attackers with remote command execution, credential harvesting, and data exfiltration capabilities.",
+            "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques."
+          ],
+          [
+            "The final phase of the APT41 cyber-espionage campaign involved data exfiltration over command-and-control (C2) channels.",
+            "The attackers used application layer protocols and web protocols to communicate with external infrastructure, including the identified C2 server at 38.180.83.166."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            30,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_07d75593337e",
+          "EDGE_17fdf14984a2",
+          "EDGE_1d97bd4f08b6",
+          "EDGE_29deafbd1c54",
+          "EDGE_4557dd8d3666",
+          "EDGE_5f562d77f026",
+          "EDGE_6a2168d61540",
+          "EDGE_795370e2962c",
+          "EDGE_7c5e5c197fbb",
+          "EDGE_9c48d721b3af",
+          "EDGE_bf1d947ead4a",
+          "EDGE_dacd1d70b0b7",
+          "EDGE_e2f735eb6458"
+        ]
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_01d0285c1fdb",
+          "EDGE_20ecbece35f7",
+          "EDGE_5482f8f3819f",
+          "EDGE_76823cf63f1b",
+          "EDGE_8f23e46a8225",
+          "EDGE_a8b6803a67b6",
+          "EDGE_c4861d7c7e66",
+          "EDGE_c75245f3c63f",
+          "EDGE_feebfe8876a6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "A key persistence method involved the creation of scheduled tasks under SYSTEM privileges to execute malicious code via legitimate binaries such as msbuild.exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_01da73fcb6f6",
+          "EDGE_12710e5d7417",
+          "EDGE_49f1a89c52a5",
+          "EDGE_5d663aaa349f",
+          "EDGE_7d80fb7e9974",
+          "EDGE_866b18ef706d",
+          "EDGE_a5e57285d659",
+          "EDGE_a6213592833d",
+          "EDGE_b53892a1c5f4",
+          "EDGE_de38f8e102cb"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The final phase of the APT41 cyber-espionage campaign involved data exfiltration over command-and-control (C2) channels.",
+            "The attackers used application layer protocols and web protocols to communicate with external infrastructure, including the identified C2 server at 38.180.83.166."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_07f2c7c19a12",
+          "EDGE_18d19b932884",
+          "EDGE_1eba8428229f",
+          "EDGE_68349d8f1883",
+          "EDGE_d030e66e803a",
+          "EDGE_d62f9b17dd47",
+          "EDGE_d887396683db",
+          "EDGE_e516a218a598",
+          "EDGE_f6783b95b439",
+          "EDGE_f9436a959d6d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity.",
+            "This phase involved system information discovery, network service scanning, and the identification of domain controllers and policy-sensitive servers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            16
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_0fe43c235e17",
+          "EDGE_17731c115187",
+          "EDGE_3f0e67253a7f",
+          "EDGE_47c5a53dc278",
+          "EDGE_4f568ac45657",
+          "EDGE_900110b176a3",
+          "EDGE_996eb6ac215f",
+          "EDGE_a89f4901490a",
+          "EDGE_af0bf8e4e0b1",
+          "EDGE_bb2c6ffc6514",
+          "EDGE_cf59f3021db2",
+          "EDGE_d4090a5f6be2",
+          "EDGE_e83e3983dc45",
+          "EDGE_f398d14b0ddb"
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "A key persistence method involved the creation of scheduled tasks under SYSTEM privileges to execute malicious code via legitimate binaries such as msbuild.exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_16dc643b0576",
+          "EDGE_16fb4be811be",
+          "EDGE_20b5df15e714",
+          "EDGE_335883a28596",
+          "EDGE_4ccb4127a8d9",
+          "EDGE_61b5d9e724c1",
+          "EDGE_734bf4c7bff9",
+          "EDGE_9bf0ba8d1e5c",
+          "EDGE_c8b5cdc5fb11",
+          "EDGE_cb1c32220f44",
+          "EDGE_ccd4d0ff68ec"
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll).",
+            "This technique exploited the trust associated with digitally signed binaries, enabling the malware to execute without raising suspicion.",
+            "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups.",
+            "Deed RAT malware provided the attackers with remote command execution, credential harvesting, and data exfiltration capabilities.",
+            "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_07d0735df0ee",
+          "EDGE_30853b8fe352",
+          "EDGE_3a12a45d3e8c",
+          "EDGE_670db082dbae",
+          "EDGE_75557deca7f1",
+          "EDGE_7e16484df4eb",
+          "EDGE_7fa0271425fe",
+          "EDGE_95a3019d6a90",
+          "EDGE_b40dc7184c1a",
+          "EDGE_ce43b30ce2db",
+          "EDGE_d72132166145",
+          "EDGE_ff32feddd6b3"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_15bb000603ba",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-9805",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+        ],
+        "edges": [
+          "EDGE_e83e3983dc45"
+        ]
+      },
+      {
+        "node_id": "IOC_2f3b89f16bc7",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-17562",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+        ],
+        "edges": [
+          "EDGE_af0bf8e4e0b1"
+        ]
+      },
+      {
+        "node_id": "IOC_312f96a0b721",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "38.180.83.166",
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The attackers used application layer protocols and web protocols to communicate with external infrastructure, including the identified C2 server at 38.180.83.166."
+        ],
+        "edges": [
+          "EDGE_7c5e5c197fbb",
+          "EDGE_f6783b95b439"
+        ]
+      },
+      {
+        "node_id": "IOC_f1732ca35012",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2022-26134",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+        ],
+        "edges": [
+          "EDGE_bb2c6ffc6514"
+        ]
+      },
+      {
+        "node_id": "IOC_fff79e145161",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2021-44228",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+        ],
+        "edges": [
+          "EDGE_17731c115187"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_01d0285c1fdb",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_01da73fcb6f6",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_07d0735df0ee",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_07d75593337e",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_07f2c7c19a12",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0fe43c235e17",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_12710e5d7417",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_16dc643b0576",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_16fb4be811be",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_17731c115187",
+      "node_u": "IOC_fff79e145161",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_17fdf14984a2",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_18d19b932884",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1976cdfe0ece",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1d97bd4f08b6",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1eba8428229f",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_20b5df15e714",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_20ecbece35f7",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_29deafbd1c54",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_30853b8fe352",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_335883a28596",
+      "node_u": "HL_3277c8e3cd80",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_398b5d5dd31c",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a12a45d3e8c",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3f0e67253a7f",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_42e222a290c1",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4557dd8d3666",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_47c5a53dc278",
+      "node_u": "HL_f5d4d2485c76",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_49f1a89c52a5",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ace598c86c6",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4c4d464d0cc6",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ccb4127a8d9",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4f568ac45657",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_50ae22da4a1f",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5482f8f3819f",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5711a8aaab6c",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_59357c022592",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5d663aaa349f",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5e57eff01bd1",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5eb1662ca216",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5efeff933cee",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5f562d77f026",
+      "node_u": "HL_6311a540e45e",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_60f78782982e",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_61b5d9e724c1",
+      "node_u": "HL_24012dbc18af",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_650d5ed61ad6",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_670db082dbae",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_68349d8f1883",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a2168d61540",
+      "node_u": "HL_9289d8826bff",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6edbc5f3a291",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_734bf4c7bff9",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_75557deca7f1",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_76823cf63f1b",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_795370e2962c",
+      "node_u": "HL_2652e2aa9110",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7c5e5c197fbb",
+      "node_u": "IOC_312f96a0b721",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7d80fb7e9974",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7df8d41cc3d0",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7e16484df4eb",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7fa0271425fe",
+      "node_u": "HL_bfd65ba0ca97",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_866b18ef706d",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8f23e46a8225",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_900110b176a3",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_95a3019d6a90",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_996eb6ac215f",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9bf0ba8d1e5c",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9c48d721b3af",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9ef7460040bc",
+      "node_u": "HL_c603dda5c935",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a57d61dcc4dd",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a5e57285d659",
+      "node_u": "HL_24012dbc18af",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a6213592833d",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a89f4901490a",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a8b6803a67b6",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_af0bf8e4e0b1",
+      "node_u": "IOC_2f3b89f16bc7",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b303468618f8",
+      "node_u": "HL_93e1ee43e148",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b40dc7184c1a",
+      "node_u": "HL_738e9ce5172e",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b53892a1c5f4",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b69cbccebae3",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bb2c6ffc6514",
+      "node_u": "IOC_f1732ca35012",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bf1d947ead4a",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c28b864b278a",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c4861d7c7e66",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c6e1d506bb4e",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c75245f3c63f",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c8b5cdc5fb11",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cb1c32220f44",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ccd4d0ff68ec",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd257f6f150e",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd92a7db70fe",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ce43b30ce2db",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cf59f3021db2",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d030e66e803a",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d39068e45814",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d4090a5f6be2",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d62f9b17dd47",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d72132166145",
+      "node_u": "HL_03ab562d2853",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d887396683db",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dacd1d70b0b7",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_de38f8e102cb",
+      "node_u": "HL_a15114478198",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e1a6ae1799b7",
+      "node_u": "HL_5948c3bebdf8",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e2f735eb6458",
+      "node_u": "HL_c255d77af791",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e4dcbc10deee",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e516a218a598",
+      "node_u": "HL_9e1bcfcbbefd",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e83e3983dc45",
+      "node_u": "IOC_15bb000603ba",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e93f1cd56555",
+      "node_u": "HL_7d43e9efb620",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec18cc94d94d",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f398d14b0ddb",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f6783b95b439",
+      "node_u": "IOC_312f96a0b721",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f6bb888e2378",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f9436a959d6d",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_feebfe8876a6",
+      "node_u": "HL_7ed492dce7cd",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ff32feddd6b3",
+      "node_u": "HL_0232121fe3ae",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

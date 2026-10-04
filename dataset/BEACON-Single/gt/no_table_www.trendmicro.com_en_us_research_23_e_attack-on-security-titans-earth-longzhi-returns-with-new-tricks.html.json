@@ -1,0 +1,1241 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0666553a06f3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Indonesia",
+        "edges": [],
+        "sentence_indices": [
+          38,
+          39,
+          48
+        ],
+        "span_sentences": [
+          "We found some decoy documents written in Vietnamese and Indonesian, as seen in Figures 16 and 17.",
+          "Based on these decoy documents, it can be inferred that the threat actors were keen on targeting users in Vietnam and Indonesia for its next wave of attacks.",
+          "Based on the document embedded in the samples that we saw, Vietnam and Indonesia are possibly the group’s next targeted countries."
+        ]
+      },
+      {
+        "node_id": "HL_0c43fa13c8df",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Roxwrapper",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          31,
+          32,
+          33,
+          35,
+          36
+        ],
+        "span_sentences": [
+          "During threat hunting, we found related samples on a third-party malware scanning service provider and started tracking the samples as Roxwrapper.",
+          "Roxwrapper is disguised as a normal DLL file, srpapi.dll, and works as a dropper.",
+          "We checked Roxwrapper’s embedded content and found Bigpipeloader as one of the embedded components used in its previous campaign.",
+          "Roxwrapper’s more complicated encryption suggests that the attackers might still be testing it to see if it can better evade security products.",
+          "Although Roxwrapper is not in the DLL file samples used in the actual incidents, this information is nonetheless noteworthy because it can be indicative of Earth Longzhi’s potential targets."
+        ]
+      },
+      {
+        "node_id": "HL_1b9289deee8b",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Government",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Government, healthcare, technology, and manufacturing comprise the affected industries."
+        ]
+      },
+      {
+        "node_id": "HL_2361b6ce9fed",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Philippines",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          45,
+          47
+        ],
+        "span_sentences": [
+          "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+          "A closer look at the samples we’ve gathered reveals that the group’s new campaign is aimed at the Philippines, Thailand, Taiwan, and Fiji.",
+          "Organizations in the Philippines, Thailand, and Taiwan had already been among Earth Longzhi’s previous targets, while the attacks on Fiji-based firms were the first we’ve seen in our monitoring of the group."
+        ]
+      },
+      {
+        "node_id": "HL_2ab3e10f0893",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Earth Longzhi",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          4,
+          7,
+          8,
+          9,
+          14,
+          34,
+          36,
+          47,
+          49,
+          51
+        ],
+        "span_sentences": [
+          "After months of dormancy, Earth Longzhi, a subgroup of advanced persistent threat (APT) group APT41, has reemerged using new techniques in its infection routine.",
+          "This blog entry forewarns readers of Earth Longzhi’s resilience as a noteworthy threat.",
+          "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+          "We also found that Earth Longzhi uses a new way to disable security products, a technique we’ve dubbed “stack rumbling” via Image File Execution Options (IFEO), which is a new denial-of-service (DoS) technique.",
+          "We also found some interesting samples in our investigation that contained information not only on Earth Longzhi’s potential targets, but also techniques for possible use in future campaigns.",
+          "This blog entry seeks to forewarn readers that Earth Longzhi remains active and continues to improve its tactics, techniques, and procedures (TTPs).",
+          "Earth Longzhi’s new campaign samples showed a tendency to exploit public-facing applications, Internet Information Services (IIS) servers, and Microsoft Exchange servers to install Behinder, a well-known web shell, rather than send pieces of document-based malware through email.",
+          "Our investigation showed two different types of malware that were launched through this technique: One is a new variant of Croxloader, and the other is a tool that can disable security products, which we dubbed “SPHijacker.”\nEarth Longzhi’s new campaign launched Windows Defender binaries as a system service.",
+          "Bigpipeloader was previously used in past Earth Longzhi-related samples.",
+          "Although Roxwrapper is not in the DLL file samples used in the actual incidents, this information is nonetheless noteworthy because it can be indicative of Earth Longzhi’s potential targets.",
+          "Organizations in the Philippines, Thailand, and Taiwan had already been among Earth Longzhi’s previous targets, while the attacks on Fiji-based firms were the first we’ve seen in our monitoring of the group.",
+          "In the fourth quarter of 2022, we discovered a new subgroup of APT41 that we tracked as Earth Longzhi.",
+          "This follow-up article to our previous report aims to flag readers that Earth Longzhi remains in circulation and is expected to improve its TTPs."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          9,
+          13
+        ],
+        "span_sentences": [
+          "In addition, we’ve noticed that this campaign installs drivers as kernel-level services by using Microsoft Remote Procedure Call (RPC) instead of using general Windows application programming interfaces (APIs).",
+          "Earth Longzhi’s new campaign samples showed a tendency to exploit public-facing applications, Internet Information Services (IIS) servers, and Microsoft Exchange servers to install Behinder, a well-known web shell, rather than send pieces of document-based malware through email.",
+          "The malware was disguised as a legitimate DLL, MpClient.dll and was loaded by Microsoft Defender’s binaries."
+        ]
+      },
+      {
+        "node_id": "HL_5886a9ce543d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT41",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          2,
+          49
+        ],
+        "span_sentences": [
+          "After months of dormancy, Earth Longzhi, a subgroup of advanced persistent threat (APT) group APT41, has reemerged using new techniques in its infection routine.",
+          "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+          "In the fourth quarter of 2022, we discovered a new subgroup of APT41 that we tracked as Earth Longzhi."
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The final payload is identified as a Cobalt Strike beacon, which we detected as Backdoor.Win64.COBEACON.ZYKB."
+        ]
+      },
+      {
+        "node_id": "HL_6571b1cda330",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Task Scheduler",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          37,
+          53
+        ],
+        "span_sentences": [
+          "Also, the information points to a new component, dwm.exe, which is a new privilege escalation tool that abuses Task Scheduler.",
+          "Notably, the group’s possible abuse of Task Scheduler to escalate privileges for persistence is a new technique that it might use in future campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          3,
+          12,
+          52
+        ],
+        "span_sentences": [
+          "This recent campaign, which follows months of dormancy, abuses a Windows Defender executable to perform DLL sideloading while also exploiting a vulnerable driver, zamguard64.sys, to disable security products installed on the hosts via a bring-your-own-vulnerable-driver (BYOVD) attack.",
+          "In the group’s new campaign, the malware was launched through legitimate Windows Defender binaries, MpDlpCmd.exe and MpCmdRun.exe, instead of using document-based samples.",
+          "Here, we revealed that the campaign deployed a fake mpclient.dll, launched through signed Windows Defender binaries, to decrease its risk of exposure."
+        ]
+      },
+      {
+        "node_id": "HL_727874bca4a3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Remote Procedure Call",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In addition, we’ve noticed that this campaign installs drivers as kernel-level services by using Microsoft Remote Procedure Call (RPC) instead of using general Windows application programming interfaces (APIs)."
+        ]
+      },
+      {
+        "node_id": "HL_77f79e754ba8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Exchange",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Earth Longzhi’s new campaign samples showed a tendency to exploit public-facing applications, Internet Information Services (IIS) servers, and Microsoft Exchange servers to install Behinder, a well-known web shell, rather than send pieces of document-based malware through email."
+        ]
+      },
+      {
+        "node_id": "HL_8c420ebe720a",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "healthcare",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Government, healthcare, technology, and manufacturing comprise the affected industries."
+        ]
+      },
+      {
+        "node_id": "HL_9699dfb4e4a6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Internet Information Services",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Earth Longzhi’s new campaign samples showed a tendency to exploit public-facing applications, Internet Information Services (IIS) servers, and Microsoft Exchange servers to install Behinder, a well-known web shell, rather than send pieces of document-based malware through email."
+        ]
+      },
+      {
+        "node_id": "HL_9819f6eee5b1",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SPHijacker",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          14,
+          20,
+          27,
+          29
+        ],
+        "span_sentences": [
+          "Our investigation showed two different types of malware that were launched through this technique: One is a new variant of Croxloader, and the other is a tool that can disable security products, which we dubbed “SPHijacker.”\nEarth Longzhi’s new campaign launched Windows Defender binaries as a system service.",
+          "SPHijacker, a new tool designed to disable security products, adopts two approaches to achieve this purpose.",
+          "Once the service successfully starts running, SPHijacker proceeds to open the handle to the device named \\\\.\\ZemanaAntiMalware to access the running driver.",
+          "Once the process termination is completed, SPHijacker disables process execution by forcefully causing the targeted applications to crash upon launching, a technique we referred to earlier as stack rumbling."
+        ]
+      },
+      {
+        "node_id": "HL_adc773403759",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Bigpipeloader",
+        "edges": [],
+        "sentence_indices": [
+          33,
+          34
+        ],
+        "span_sentences": [
+          "We checked Roxwrapper’s embedded content and found Bigpipeloader as one of the embedded components used in its previous campaign.",
+          "Bigpipeloader was previously used in past Earth Longzhi-related samples."
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          45,
+          47
+        ],
+        "span_sentences": [
+          "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+          "A closer look at the samples we’ve gathered reveals that the group’s new campaign is aimed at the Philippines, Thailand, Taiwan, and Fiji.",
+          "Organizations in the Philippines, Thailand, and Taiwan had already been among Earth Longzhi’s previous targets, while the attacks on Fiji-based firms were the first we’ve seen in our monitoring of the group."
+        ]
+      },
+      {
+        "node_id": "HL_b869d616918c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Croxloader",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          14,
+          15,
+          16
+        ],
+        "span_sentences": [
+          "Our investigation showed two different types of malware that were launched through this technique: One is a new variant of Croxloader, and the other is a tool that can disable security products, which we dubbed “SPHijacker.”\nEarth Longzhi’s new campaign launched Windows Defender binaries as a system service.",
+          "The new Croxloader variant, disguised as MpClient.dll, was subsequently loaded.",
+          "Once launched, Croxloader reads the payload named MpClient.bin and decrypts its content."
+        ]
+      },
+      {
+        "node_id": "HL_c07d7ceba47f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "the Philippines",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          45,
+          47
+        ],
+        "span_sentences": [
+          "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+          "A closer look at the samples we’ve gathered reveals that the group’s new campaign is aimed at the Philippines, Thailand, Taiwan, and Fiji.",
+          "Organizations in the Philippines, Thailand, and Taiwan had already been among Earth Longzhi’s previous targets, while the attacks on Fiji-based firms were the first we’ve seen in our monitoring of the group."
+        ]
+      },
+      {
+        "node_id": "HL_c328f2d52700",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "manufacturing",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Government, healthcare, technology, and manufacturing comprise the affected industries."
+        ]
+      },
+      {
+        "node_id": "HL_db4e36ec8dc3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Fiji",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          45,
+          47
+        ],
+        "span_sentences": [
+          "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+          "A closer look at the samples we’ve gathered reveals that the group’s new campaign is aimed at the Philippines, Thailand, Taiwan, and Fiji.",
+          "Organizations in the Philippines, Thailand, and Taiwan had already been among Earth Longzhi’s previous targets, while the attacks on Fiji-based firms were the first we’ve seen in our monitoring of the group."
+        ]
+      },
+      {
+        "node_id": "HL_ed027fcc1345",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Vietnam",
+        "edges": [],
+        "sentence_indices": [
+          38,
+          39,
+          48
+        ],
+        "span_sentences": [
+          "We found some decoy documents written in Vietnamese and Indonesian, as seen in Figures 16 and 17.",
+          "Based on these decoy documents, it can be inferred that the threat actors were keen on targeting users in Vietnam and Indonesia for its next wave of attacks.",
+          "Based on the document embedded in the samples that we saw, Vietnam and Indonesia are possibly the group’s next targeted countries."
+        ]
+      },
+      {
+        "node_id": "HL_f0730fc60dca",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Thailand",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          45,
+          47
+        ],
+        "span_sentences": [
+          "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+          "A closer look at the samples we’ve gathered reveals that the group’s new campaign is aimed at the Philippines, Thailand, Taiwan, and Fiji.",
+          "Organizations in the Philippines, Thailand, and Taiwan had already been among Earth Longzhi’s previous targets, while the attacks on Fiji-based firms were the first we’ve seen in our monitoring of the group."
+        ]
+      },
+      {
+        "node_id": "HL_f26ca7b6925d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zemana",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "One approach terminates the security product process by using a vulnerable driver, zamguard64.sys, published by Zemana (vulnerability designated as CVE-2018-5713)."
+        ]
+      },
+      {
+        "node_id": "HL_f5ddb72715f8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Behinder",
+        "edges": [
+          "EDGE_26",
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          9,
+          10
+        ],
+        "span_sentences": [
+          "Earth Longzhi’s new campaign samples showed a tendency to exploit public-facing applications, Internet Information Services (IIS) servers, and Microsoft Exchange servers to install Behinder, a well-known web shell, rather than send pieces of document-based malware through email.",
+          "As seen in this campaign, Behinder proved to be a powerful web shell variant that can support multiple backdoor functions, including file operation, remote command execution (RCE), interactive shell, and Socks5 proxy."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_24",
+          "EDGE_32"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once launched, Croxloader reads the payload named MpClient.bin and decrypts its content."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_30",
+          "EDGE_39"
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Roxwrapper is disguised as a normal DLL file, srpapi.dll, and works as a dropper."
+          ],
+          [
+            "First, dwm.exe replaces the image path name and the command-line information with C:\\Windows\\explorer.exe for defense evasion."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_3",
+          "EDGE_14",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ],
+          [
+            42,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Also, the information points to a new component, dwm.exe, which is a new privilege escalation tool that abuses Task Scheduler."
+          ],
+          [
+            "First, dwm.exe replaces the image path name and the command-line information with C:\\Windows\\explorer.exe for defense evasion.",
+            "Then, the Component Object Model (COM) object, IElevatedFactoryServer, is used to bypass the Windows User Account Control (UAC) mechanism and register the given payload as a scheduled task with the highest privilege."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As seen in this campaign, Behinder proved to be a powerful web shell variant that can support multiple backdoor functions, including file operation, remote command execution (RCE), interactive shell, and Socks5 proxy."
+          ],
+          [
+            "As seen in this campaign, Behinder proved to be a powerful web shell variant that can support multiple backdoor functions, including file operation, remote command execution (RCE), interactive shell, and Socks5 proxy.",
+            "Malicious actors use this web shell to discover intranet information and deploy other pieces of malware and hacking tools on a compromised machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1068",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1068",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+            "This recent campaign, which follows months of dormancy, abuses a Windows Defender executable to perform DLL sideloading while also exploiting a vulnerable driver, zamguard64.sys, to disable security products installed on the hosts via a bring-your-own-vulnerable-driver (BYOVD) attack."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_4",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We also found that Earth Longzhi uses a new way to disable security products, a technique we’ve dubbed “stack rumbling” via Image File Execution Options (IFEO), which is a new denial-of-service (DoS) technique."
+          ],
+          [
+            "Once the process termination is completed, SPHijacker disables process execution by forcefully causing the targeted applications to crash upon launching, a technique we referred to earlier as stack rumbling.",
+            "As a result of stack rumbling via IFEO, the targeted process failed to start with the exit code 0xC0000017, despite the process requiring high privilege."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1190",
+        "edges": [
+          "EDGE_5",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Earth Longzhi’s new campaign samples showed a tendency to exploit public-facing applications, Internet Information Services (IIS) servers, and Microsoft Exchange servers to install Behinder, a well-known web shell, rather than send pieces of document-based malware through email."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1211",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1211",
+        "edges": [
+          "EDGE_6",
+          "EDGE_28",
+          "EDGE_40"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+            "This recent campaign, which follows months of dormancy, abuses a Windows Defender executable to perform DLL sideloading while also exploiting a vulnerable driver, zamguard64.sys, to disable security products installed on the hosts via a bring-your-own-vulnerable-driver (BYOVD) attack."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [
+          "EDGE_7",
+          "EDGE_15",
+          "EDGE_31",
+          "EDGE_34",
+          "EDGE_37"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            51,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In the group’s new campaign, the malware was launched through legitimate Windows Defender binaries, MpDlpCmd.exe and MpCmdRun.exe, instead of using document-based samples."
+          ],
+          [
+            "This follow-up article to our previous report aims to flag readers that Earth Longzhi remains in circulation and is expected to improve its TTPs.",
+            "Here, we revealed that the campaign deployed a fake mpclient.dll, launched through signed Windows Defender binaries, to decrease its risk of exposure."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1499",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1499",
+        "edges": [
+          "EDGE_8",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We also found that Earth Longzhi uses a new way to disable security products, a technique we’ve dubbed “stack rumbling” via Image File Execution Options (IFEO), which is a new denial-of-service (DoS) technique."
+          ],
+          [
+            "Once the process termination is completed, SPHijacker disables process execution by forcefully causing the targeted applications to crash upon launching, a technique we referred to earlier as stack rumbling.",
+            "As a result of stack rumbling via IFEO, the targeted process failed to start with the exit code 0xC0000017, despite the process requiring high privilege."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1505",
+        "edges": [
+          "EDGE_9",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Earth Longzhi’s new campaign samples showed a tendency to exploit public-facing applications, Internet Information Services (IIS) servers, and Microsoft Exchange servers to install Behinder, a well-known web shell, rather than send pieces of document-based malware through email."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1543",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1543",
+        "edges": [
+          "EDGE_10",
+          "EDGE_18",
+          "EDGE_33"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We also found that Earth Longzhi uses a new way to disable security products, a technique we’ve dubbed “stack rumbling” via Image File Execution Options (IFEO), which is a new denial-of-service (DoS) technique.",
+            "In addition, we’ve noticed that this campaign installs drivers as kernel-level services by using Microsoft Remote Procedure Call (RPC) instead of using general Windows application programming interfaces (APIs)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1548",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1548",
+        "edges": [
+          "EDGE_11",
+          "EDGE_36"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "First, dwm.exe replaces the image path name and the command-line information with C:\\Windows\\explorer.exe for defense evasion.",
+            "Then, the Component Object Model (COM) object, IElevatedFactoryServer, is used to bypass the Windows User Account Control (UAC) mechanism and register the given payload as a scheduled task with the highest privilege.",
+            "This approach enables the specified binary to be launched with system privileges."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_12",
+          "EDGE_16",
+          "EDGE_23",
+          "EDGE_25",
+          "EDGE_29",
+          "EDGE_41"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+            "This recent campaign, which follows months of dormancy, abuses a Windows Defender executable to perform DLL sideloading while also exploiting a vulnerable driver, zamguard64.sys, to disable security products installed on the hosts via a bring-your-own-vulnerable-driver (BYOVD) attack."
+          ],
+          [
+            "We also found that Earth Longzhi uses a new way to disable security products, a technique we’ve dubbed “stack rumbling” via Image File Execution Options (IFEO), which is a new denial-of-service (DoS) technique."
+          ],
+          [
+            "SPHijacker, a new tool designed to disable security products, adopts two approaches to achieve this purpose.",
+            "One approach terminates the security product process by using a vulnerable driver, zamguard64.sys, published by Zemana (vulnerability designated as CVE-2018-5713)."
+          ],
+          [
+            "SPHijacker, a new tool designed to disable security products, adopts two approaches to achieve this purpose.",
+            "One approach terminates the security product process by using a vulnerable driver, zamguard64.sys, published by Zemana (vulnerability designated as CVE-2018-5713).",
+            "Meanwhile, another approach disables process launching by using a new technique that we named stack rumbling, which we will discuss in detail in succeeding paragraphs."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_13",
+          "EDGE_17",
+          "EDGE_38"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            51,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We discovered a new campaign by Earth Longzhi (a subgroup of APT41) that targets organizations based in Taiwan, Thailand, the Philippines, and Fiji.",
+            "This recent campaign, which follows months of dormancy, abuses a Windows Defender executable to perform DLL sideloading while also exploiting a vulnerable driver, zamguard64.sys, to disable security products installed on the hosts via a bring-your-own-vulnerable-driver (BYOVD) attack."
+          ],
+          [
+            "This follow-up article to our previous report aims to flag readers that Earth Longzhi remains in circulation and is expected to improve its TTPs.",
+            "Here, we revealed that the campaign deployed a fake mpclient.dll, launched through signed Windows Defender binaries, to decrease its risk of exposure."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1374fb7c8bf3",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2018-5713",
+        "edges": [
+          "EDGE_28",
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "One approach terminates the security product process by using a vulnerable driver, zamguard64.sys, published by Zemana (vulnerability designated as CVE-2018-5713)."
+        ]
+      },
+      {
+        "node_id": "IOC_58a5ef35acbc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\explorer.exe",
+        "edges": [
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "First, dwm.exe replaces the image path name and the command-line information with C:\\Windows\\explorer.exe for defense evasion."
+        ]
+      },
+      {
+        "node_id": "IOC_62ed3112ec29",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "MpCmdRun.exe",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "In the group’s new campaign, the malware was launched through legitimate Windows Defender binaries, MpDlpCmd.exe and MpCmdRun.exe, instead of using document-based samples."
+        ]
+      },
+      {
+        "node_id": "IOC_6a12bb5ecd7f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "MpClient.bin",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Once launched, Croxloader reads the payload named MpClient.bin and decrypts its content."
+        ]
+      },
+      {
+        "node_id": "IOC_721988df2b81",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "mmmm.sys",
+        "edges": [
+          "EDGE_33"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "Based on our analysis, the mmmm.sys file (originally named Zamguard64.sys) is decrypted and dropped, after which it is registered as a service."
+        ]
+      },
+      {
+        "node_id": "IOC_7883127874bf",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "MpDlpCmd.exe",
+        "edges": [
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "In the group’s new campaign, the malware was launched through legitimate Windows Defender binaries, MpDlpCmd.exe and MpCmdRun.exe, instead of using document-based samples."
+        ]
+      },
+      {
+        "node_id": "IOC_a28b906516f1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "dwm.exe",
+        "edges": [
+          "EDGE_35",
+          "EDGE_36"
+        ],
+        "sentence_indices": [
+          37,
+          40
+        ],
+        "span_sentences": [
+          "Also, the information points to a new component, dwm.exe, which is a new privilege escalation tool that abuses Task Scheduler.",
+          "Another notable component that we found in our threat hunting is dwm.exe, a new tool used for privilege escalation."
+        ]
+      },
+      {
+        "node_id": "IOC_aa64d4c5a669",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "MpClient.dll",
+        "edges": [
+          "EDGE_37",
+          "EDGE_38"
+        ],
+        "sentence_indices": [
+          13,
+          15,
+          52
+        ],
+        "span_sentences": [
+          "The malware was disguised as a legitimate DLL, MpClient.dll and was loaded by Microsoft Defender’s binaries.",
+          "The new Croxloader variant, disguised as MpClient.dll, was subsequently loaded.",
+          "Here, we revealed that the campaign deployed a fake mpclient.dll, launched through signed Windows Defender binaries, to decrease its risk of exposure."
+        ]
+      },
+      {
+        "node_id": "IOC_ca5f00d2b0d5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "srpapi.dll",
+        "edges": [
+          "EDGE_39"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "Roxwrapper is disguised as a normal DLL file, srpapi.dll, and works as a dropper."
+        ]
+      },
+      {
+        "node_id": "IOC_f703a060675f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "zamguard64.sys",
+        "edges": [
+          "EDGE_40",
+          "EDGE_41"
+        ],
+        "sentence_indices": [
+          3,
+          21
+        ],
+        "span_sentences": [
+          "This recent campaign, which follows months of dormancy, abuses a Windows Defender executable to perform DLL sideloading while also exploiting a vulnerable driver, zamguard64.sys, to disable security products installed on the hosts via a bring-your-own-vulnerable-driver (BYOVD) attack.",
+          "One approach terminates the security product process by using a vulnerable driver, zamguard64.sys, published by Zemana (vulnerability designated as CVE-2018-5713)."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0c43fa13c8df",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1211"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1499"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1505"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1543"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1548"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_6571b1cda330",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_727874bca4a3",
+      "node_v": "TTP_T1543"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_77f79e754ba8",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_9699dfb4e4a6",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_9819f6eee5b1",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_9819f6eee5b1",
+      "node_v": "TTP_T1499"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_9819f6eee5b1",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_f26ca7b6925d",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_f5ddb72715f8",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "HL_f5ddb72715f8",
+      "node_v": "TTP_T1505"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_1374fb7c8bf3",
+      "node_v": "TTP_T1211"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_1374fb7c8bf3",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_58a5ef35acbc",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_62ed3112ec29",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_6a12bb5ecd7f",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_721988df2b81",
+      "node_v": "TTP_T1543"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_7883127874bf",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_a28b906516f1",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_a28b906516f1",
+      "node_v": "TTP_T1548"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "IOC_aa64d4c5a669",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_38",
+      "node_u": "IOC_aa64d4c5a669",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_39",
+      "node_u": "IOC_ca5f00d2b0d5",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_40",
+      "node_u": "IOC_f703a060675f",
+      "node_v": "TTP_T1211"
+    },
+    {
+      "edge_id": "EDGE_41",
+      "node_u": "IOC_f703a060675f",
+      "node_v": "TTP_T1562"
+    }
+  ]
+}

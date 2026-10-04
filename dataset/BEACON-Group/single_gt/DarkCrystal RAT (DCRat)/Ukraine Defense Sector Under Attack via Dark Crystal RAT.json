@@ -1,0 +1,288 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_47dd6130af98",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CERT-UA",
+        "sentence_indices": [
+          0,
+          4
+        ],
+        "span_sentences": [
+          "Ukraine's Computer Emergency Response Team (CERT-UA) is warning of a new cyber-espionage campaign targeting defense-sector organizations, using malware known as Dark Crystal RAT (DCRat).",
+          "CERT-UA attributes the activity to a threat group it tracks as UAC-0200."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5085121e494b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Signal",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "The attacks involve distributing malicious messages through Signal, the secure messaging app."
+        ],
+        "edges": [
+          "EDGE_c68b7f2b91dc"
+        ]
+      },
+      {
+        "node_id": "HL_5b815adcebbd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Dark Tortilla",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "The messages contain alleged meeting minutes in the form of archive files which contain a decoy PDF and an executable — a crypter named \"Dark Tortilla\" that decrypts and executes the remote access Trojan in a second stage."
+        ],
+        "edges": [
+          "EDGE_37a515966faf",
+          "EDGE_593800f7d426"
+        ]
+      },
+      {
+        "node_id": "HL_8fd4fed8322b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ukraine's Computer Emergency Response Team",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Ukraine's Computer Emergency Response Team (CERT-UA) is warning of a new cyber-espionage campaign targeting defense-sector organizations, using malware known as Dark Crystal RAT (DCRat)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9622765f9905",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAC-0200",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "CERT-UA attributes the activity to a threat group it tracks as UAC-0200."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_abd6c209a6d3",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "defense-industrial complex enterprises",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The latest campaign, spotted earlier this month, has been targeting employees of defense-industrial complex enterprises as well as individuals in the Defense Forces of Ukraine, officials said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c6525c738dab",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "defense-sector organizations",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Ukraine's Computer Emergency Response Team (CERT-UA) is warning of a new cyber-espionage campaign targeting defense-sector organizations, using malware known as Dark Crystal RAT (DCRat)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c6ca18fdfff0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Ukraine",
+        "sentence_indices": [
+          0,
+          3
+        ],
+        "span_sentences": [
+          "Ukraine's Computer Emergency Response Team (CERT-UA) is warning of a new cyber-espionage campaign targeting defense-sector organizations, using malware known as Dark Crystal RAT (DCRat).",
+          "The latest campaign, spotted earlier this month, has been targeting employees of defense-industrial complex enterprises as well as individuals in the Defense Forces of Ukraine, officials said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_d05ac5b6c33f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Dark Crystal RAT",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Ukraine's Computer Emergency Response Team (CERT-UA) is warning of a new cyber-espionage campaign targeting defense-sector organizations, using malware known as Dark Crystal RAT (DCRat)."
+        ],
+        "edges": [
+          "EDGE_969cda590c11"
+        ]
+      },
+      {
+        "node_id": "HL_f52a2c5f6c57",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Defense Forces of Ukraine",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The latest campaign, spotted earlier this month, has been targeting employees of defense-industrial complex enterprises as well as individuals in the Defense Forces of Ukraine, officials said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_fb8c596ea9b8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DCRat",
+        "sentence_indices": [
+          1,
+          7
+        ],
+        "span_sentences": [
+          "DCRat is a remote access Trojan (RAT) created by a Russian developer.",
+          "DCRat then executes arbitrary commands, steals data, and finally establishes remote control over the infected devices."
+        ],
+        "edges": [
+          "EDGE_3cf103a56070"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The messages contain alleged meeting minutes in the form of archive files which contain a decoy PDF and an executable — a crypter named \"Dark Tortilla\" that decrypts and executes the remote access Trojan in a second stage."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_593800f7d426"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The messages contain alleged meeting minutes in the form of archive files which contain a decoy PDF and an executable — a crypter named \"Dark Tortilla\" that decrypts and executes the remote access Trojan in a second stage."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_37a515966faf"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "Ukraine's Computer Emergency Response Team (CERT-UA) is warning of a new cyber-espionage campaign targeting defense-sector organizations, using malware known as Dark Crystal RAT (DCRat).",
+            "DCRat is a remote access Trojan (RAT) created by a Russian developer.",
+            "Written in C#, the malware is popular among entry-level hackers but has many features associated with more advanced threat actors, such as custom plug-ins and a modular architecture.",
+            "The latest campaign, spotted earlier this month, has been targeting employees of defense-industrial complex enterprises as well as individuals in the Defense Forces of Ukraine, officials said."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_3cf103a56070",
+          "EDGE_969cda590c11"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The attacks involve distributing malicious messages through Signal, the secure messaging app.",
+            "The messages contain alleged meeting minutes in the form of archive files which contain a decoy PDF and an executable — a crypter named \"Dark Tortilla\" that decrypts and executes the remote access Trojan in a second stage."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_c68b7f2b91dc"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_37a515966faf",
+      "node_u": "HL_5b815adcebbd",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3cf103a56070",
+      "node_u": "HL_fb8c596ea9b8",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_593800f7d426",
+      "node_u": "HL_5b815adcebbd",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_969cda590c11",
+      "node_u": "HL_d05ac5b6c33f",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c68b7f2b91dc",
+      "node_u": "HL_5085121e494b",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

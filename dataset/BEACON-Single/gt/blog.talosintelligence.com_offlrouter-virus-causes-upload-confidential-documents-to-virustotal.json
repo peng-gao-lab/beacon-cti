@@ -1,0 +1,514 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_3c9e3682cbfd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          4
+        ],
+        "span_sentences": [
+          "- The virus, named OfflRouter, has been active in Ukraine since 2015 and remains active on some Ukrainian organizations’ networks, based on over 100 original infected documents uploaded to VirusTotal from Ukraine and the documents’ upload dates.",
+          "In February 2024, Talos discovered several documents with content that seems to originate from Ukrainian local government organizations and the Ukrainian National Police uploaded to VirusTotal."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "During a threat-hunting exercise, Cisco Talos discovered documents with potentially confidential information originating from Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "When the virus is run, it attempts to set the value Ctrlpanel of the registry key HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run so that it runs on the Windows boot."
+        ]
+      },
+      {
+        "node_id": "HL_65a63e52ff53",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "OfflRouter",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          3,
+          7
+        ],
+        "span_sentences": [
+          "- The virus, named OfflRouter, has been active in Ukraine since 2015 and remains active on some Ukrainian organizations’ networks, based on over 100 original infected documents uploaded to VirusTotal from Ukraine and the documents’ upload dates.",
+          "The analysis of the code showed unexpected results – instead of lures used by advanced actors, the uploaded documents were infected with a multi-component VBA macro virus OfflRouter, created in 2015."
+        ]
+      },
+      {
+        "node_id": "HL_7c414f4111df",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Word",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          27,
+          33,
+          35
+        ],
+        "span_sentences": [
+          "Ctrlpanel.exe .NET module\nThe unique infection method used by ctrlpanel.exe is through the Office Interop classes of .NET VBProject interface Microsoft.Vbe.Interop and the Microsoft.Office.Interop.Word class that exposes the functionality of the Word application.",
+          "VBAClass is tasked with generating VBA code and infecting other Word documents\nThe background worker function runs in an infinite loop and contains two major parts, the first is tasked with the document infection and the second with finding the documents to infect, the logic we already described above.",
+          "If the document to be infected is created in the Word 97-2003 binary format (OLE2), the document will be saved with the same name in Microsoft Office Open XML format with enabled macros (DOCX)."
+        ]
+      },
+      {
+        "node_id": "HL_84858ea90f98",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": ".NET",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          26,
+          27,
+          28
+        ],
+        "span_sentences": [
+          "The results of the investigation have shown that the presence of the malicious code is due to the activity of a rare multi-module virus that's delivered via the .NET interop functionality to infect Word documents.",
+          "The virus is unique, as it consists of VBA and executable modules with the infection logic contained in the PE executable .NET module.",
+          "Ctrlpanel.exe .NET module\nThe unique infection method used by ctrlpanel.exe is through the Office Interop classes of .NET VBProject interface Microsoft.Vbe.Interop and the Microsoft.Office.Interop.Word class that exposes the functionality of the Word application.",
+          "When the .NET module ctrlpanel.exe is launched, it attempts to open a mutex ctrlpanelapppppp to check if another module instance is already running on the system."
+        ]
+      },
+      {
+        "node_id": "HL_9d2f0fb03ebf",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Slovakian government CSIRT",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "According to earlier research by the Slovakian government CSIRT (Computer Security Incident Response Team) team, some infected documents were already publicly available on the Ukrainian National Police website in 2018."
+        ]
+      },
+      {
+        "node_id": "HL_c6ca18fdfff0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Ukraine",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          3,
+          6,
+          8,
+          9,
+          14,
+          16
+        ],
+        "span_sentences": [
+          "During a threat-hunting exercise, Cisco Talos discovered documents with potentially confidential information originating from Ukraine.",
+          "- The virus, named OfflRouter, has been active in Ukraine since 2015 and remains active on some Ukrainian organizations’ networks, based on over 100 original infected documents uploaded to VirusTotal from Ukraine and the documents’ upload dates.",
+          "Eventually, we discovered over 100 uploaded documents with potentially confidential information about government and police activities in Ukraine.",
+          "The virus is still active in Ukraine and is causing potentially confidential documents to be uploaded to publicly accessible document repositories.",
+          "Attribution\nAlthough the virus is active in Ukraine, there are no indications that it was created by an author from that region.",
+          "The newly discovered infected documents are written in Ukrainian, which may have contributed to the fact that the virus is rarely seen outside Ukraine.",
+          "The inability to spread by email and the initial documents in Ukrainian are additional likely reasons the virus stayed confined to Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_d0dee7a7bd04",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows File Explorer",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "If the plugins are already present on an infected machine, ctrlpanel.exe will try to encode them using Base64 encoding, copy them to the root of the attached removable media with the filename extension “.orp” and set the newly created file attributes to the values system and hidden so that they are not displayed by default by Windows File Explorer."
+        ]
+      },
+      {
+        "node_id": "HL_e216f6e22175",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Office Open XML",
+        "edges": [],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "If the document to be infected is created in the Word 97-2003 binary format (OLE2), the document will be saved with the same name in Microsoft Office Open XML format with enabled macros (DOCX)."
+        ]
+      },
+      {
+        "node_id": "HL_fcafd34e0033",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ukrainian National Police",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          13
+        ],
+        "span_sentences": [
+          "In February 2024, Talos discovered several documents with content that seems to originate from Ukrainian local government organizations and the Ukrainian National Police uploaded to VirusTotal.",
+          "According to earlier research by the Slovakian government CSIRT (Computer Security Incident Response Team) team, some infected documents were already publicly available on the Ukrainian National Police website in 2018."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            43
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Searching for the plugins in removable drives is unusual as it requires the plugins to be delivered to the system on a physical media, such as a USB drive or a CD-ROM.",
+            "The plugin loader searches for any files with the filename extension .orp, decodes its name using Base64 decoding function, decodes the file content using Base64 decoding, copies the file into the c:\\users\\public\\tools folder with the previously decoded name and the extension .exe and finally executes the plugin.",
+            "If the plugins are already present on an infected machine, ctrlpanel.exe will try to encode them using Base64 encoding, copy them to the root of the attached removable media with the filename extension “.orp” and set the newly created file attributes to the values system and hidden so that they are not displayed by default by Windows File Explorer."
+          ],
+          [
+            "If the plugins are already present on an infected machine, ctrlpanel.exe will try to encode them using Base64 encoding, copy them to the root of the attached removable media with the filename extension “.orp” and set the newly created file attributes to the values system and hidden so that they are not displayed by default by Windows File Explorer."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_2",
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            21,
+            23
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The documents contained malicious VBA code, indicating they may be used as lures to infect organizations."
+          ],
+          [
+            "The documents contained VBA code to drop and run an executable with the name `ctrlpanel.exe`, which raised our suspicion and prompted us to investigate further."
+          ],
+          [
+            "As a part of the infection process, the VBA code is generated by combining the code taken from the hard-coded strings in the module with the encoded bytes of the ctrlpanel.exe binary.",
+            "This makes the generated code the same for every infection cycle and rather easy to detect.",
+            "The VBA part of the virus runs when a document is opened, provided macros are enabled, and it contains code to drop and run the executable module ctrlpanel.exe."
+          ],
+          [
+            "VBAClass is tasked with generating VBA code and infecting other Word documents\nThe background worker function runs in an infinite loop and contains two major parts, the first is tasked with the document infection and the second with finding the documents to infect, the logic we already described above."
+          ],
+          [
+            "The code generation function MyScript contains static strings and instructions to dynamically generate code that will be added to infected documents."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1091",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1091",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            19
+          ],
+          [
+            41,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Since the malware has no capabilities to spread by email, it can only be spread by sharing documents and removable media, such as USB memory sticks with infected documents.",
+            "The inability to spread by email and the initial documents in Ukrainian are additional likely reasons the virus stayed confined to Ukraine.",
+            "The virus targets only documents with the filename extension .doc, the default extension for the OLE2 documents, and it will not try to infect other filename extensions.",
+            "The default Word document filename extension for the more recent Word versions is .docx, so few documents will be infected as a result.",
+            "Other issues prevented the virus from spreading more successfully and most of them are found in the executable module, ctrlpanel.exe, dropped and executed by the VBA part of the code."
+          ],
+          [
+            "Searching for the plugins in removable drives is unusual as it requires the plugins to be delivered to the system on a physical media, such as a USB drive or a CD-ROM.",
+            "The plugin loader searches for any files with the filename extension .orp, decodes its name using Base64 decoding function, decodes the file content using Base64 decoding, copies the file into the c:\\users\\public\\tools folder with the previously decoded name and the extension .exe and finally executes the plugin.",
+            "If the plugins are already present on an infected machine, ctrlpanel.exe will try to encode them using Base64 encoding, copy them to the root of the attached removable media with the filename extension “.orp” and set the newly created file attributes to the values system and hidden so that they are not displayed by default by Windows File Explorer."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_4",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When the virus is run, it attempts to set the value Ctrlpanel of the registry key HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run so that it runs on the Windows boot."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_5",
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As a part of the infection process, the VBA code is generated by combining the code taken from the hard-coded strings in the module with the encoded bytes of the ctrlpanel.exe binary.",
+            "This makes the generated code the same for every infection cycle and rather easy to detect.",
+            "The VBA part of the virus runs when a document is opened, provided macros are enabled, and it contains code to drop and run the executable module ctrlpanel.exe."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_6",
+          "EDGE_9",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When the virus is run, it attempts to set the value Ctrlpanel of the registry key HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run so that it runs on the Windows boot."
+          ],
+          [
+            "In that case, ctrlpanel.exe creates the mutex named “ctrlpanelapppppp”, attempts to set the registry run key so the module runs on system startup, and finally initializes two timers to run associated background timer callbacks – VBAClass_Timer_Callback and PluginClass_TimerCallback, implemented to start the Run function of the classes VBAClass and PluginClass, respectively."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_45e4cdaa334b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\Public\\ctrlpanel.exe",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "However, the variable Y is defined as a private property with an overridden setter function, which converts the variable value assignment into appending the supplied value to the end of the opened executable module C:\\Users\\Public\\ctrlpanel.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_5943b512525f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\users\\public\\tools",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The plugin loader searches for any files with the filename extension .orp, decodes its name using Base64 decoding function, decodes the file content using Base64 decoding, copies the file into the c:\\users\\public\\tools folder with the previously decoded name and the extension .exe and finally executes the plugin."
+        ]
+      },
+      {
+        "node_id": "IOC_b119a8bb1064",
+        "node_class": "ioc",
+        "node_type": "Mutex",
+        "node_text": "ctrlpanelapppppp",
+        "edges": [],
+        "sentence_indices": [
+          28,
+          31
+        ],
+        "span_sentences": [
+          "When the .NET module ctrlpanel.exe is launched, it attempts to open a mutex ctrlpanelapppppp to check if another module instance is already running on the system.",
+          "In that case, ctrlpanel.exe creates the mutex named “ctrlpanelapppppp”, attempts to set the registry run key so the module runs on system startup, and finally initializes two timers to run associated background timer callbacks – VBAClass_Timer_Callback and PluginClass_TimerCallback, implemented to start the Run function of the classes VBAClass and PluginClass, respectively."
+        ]
+      },
+      {
+        "node_id": "IOC_c7d2579b8d2f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "E:\\Projects\\OfflRouter2\\OfflRouter2\\obj\\Release\\ctrlpanel.pdb",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Even the debugging database string used to name the virus “E:\\Projects\\OfflRouter2\\OfflRouter2\\obj\\Release\\ctrlpanel.pdb” present in the ctrlpanel.exe does not point to a non-English speaker."
+        ]
+      },
+      {
+        "node_id": "IOC_e6f359371922",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "When the virus is run, it attempts to set the value Ctrlpanel of the registry key HKLM\\Software\\Microsoft\\Windows\\CurrentVersion\\Run so that it runs on the Windows boot."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_65a63e52ff53",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_65a63e52ff53",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_65a63e52ff53",
+      "node_v": "TTP_T1091"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_65a63e52ff53",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_65a63e52ff53",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_65a63e52ff53",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_7c414f4111df",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_7c414f4111df",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_45e4cdaa334b",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_5943b512525f",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_e6f359371922",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_e6f359371922",
+      "node_v": "TTP_T1547"
+    }
+  ]
+}

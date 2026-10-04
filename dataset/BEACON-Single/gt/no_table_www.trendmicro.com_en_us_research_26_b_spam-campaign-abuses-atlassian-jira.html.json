@@ -1,0 +1,498 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_462f5d88a391",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Jira Automation",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          9,
+          10
+        ],
+        "span_sentences": [
+          "Therefore, in this case, the attackers used Jira Automation to deliver crafted emails through an integrated email sending platform, which allowed them better control and avoiding alerts to their targets.",
+          "We also reproduced the delivery flow of one of the emails observed in the campaigns using Jira Automation rules."
+        ]
+      },
+      {
+        "node_id": "HL_5347f94a99ce",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Atlassian Cloud",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          5,
+          6
+        ],
+        "span_sentences": [
+          "Attackers abused Atlassian Cloud’s trusted domain for a spate of spam campaigns.",
+          "Threat actors began by creating Atlassian Cloud accounts using randomized naming conventions, enabling them to generate disposable Jira Cloud instances at scale.",
+          "Our analysis showed that these instances resolved to AWS IP (13[.]227[.]180[.]4), which also served many legitimate Atlassian Cloud deployments.",
+          "This strongly suggests that the attack used legitimate Atlassian Cloud infrastructure, not compromised servers."
+        ]
+      },
+      {
+        "node_id": "HL_5c3b6eb0fb17",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Jira Cloud",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Threat actors began by creating Atlassian Cloud accounts using randomized naming conventions, enabling them to generate disposable Jira Cloud instances at scale."
+        ]
+      },
+      {
+        "node_id": "HL_6dd88beb28f8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "We were able to source similar emails on VirusTotal, which revealed that the lure was early access to an investment service."
+        ]
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "edges": [],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "In some cases, target lists included highly skilled individuals born in Russia but who are currently living and working abroad, suggesting the campaign had targeted goals, even though financial gain still appeared to be the most prominent objective."
+        ]
+      },
+      {
+        "node_id": "HL_9fac26b94980",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "AWS",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Our analysis showed that these instances resolved to AWS IP (13[.]227[.]180[.]4), which also served many legitimate Atlassian Cloud deployments."
+        ]
+      },
+      {
+        "node_id": "HL_a8f73dd793e7",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Keitaro Traffic Distribution System",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "- Keitaro Traffic Distribution System (TDS) powered redirects, channeling targets to dubious investment schemes and online casinos, indicating that financial gain was likely the primary motive behind these campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_ad8e02633563",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Atlassian",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          4,
+          5,
+          6,
+          7,
+          8,
+          31,
+          32
+        ],
+        "span_sentences": [
+          "Attackers abused Atlassian Cloud’s trusted domain for a spate of spam campaigns.",
+          "Threat actors began by creating Atlassian Cloud accounts using randomized naming conventions, enabling them to generate disposable Jira Cloud instances at scale.",
+          "Our analysis showed that these instances resolved to AWS IP (13[.]227[.]180[.]4), which also served many legitimate Atlassian Cloud deployments.",
+          "This strongly suggests that the attack used legitimate Atlassian Cloud infrastructure, not compromised servers.",
+          "This indicates that the threat actors were not attempting to reinforce legitimacy through domain registration but instead relied on the inherent trust associated with Atlassian-generated system emails.",
+          "Further review revealed how setting up an Atlassian trial account is a straightforward process, meaning it lowered the barrier for threat actors to repeatedly create new instances.",
+          "Our analysis indicates that organizations already using Atlassian Jira were among the primary targets.",
+          "All of the domains we have identified in the campaign had active Atlassian instances, suggesting that threat actors deliberately selected organizations familiar with Jira-related emails to increase the likelihood of a successful delivery."
+        ]
+      },
+      {
+        "node_id": "HL_b4e7de559d54",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Keitaro",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          28,
+          29
+        ],
+        "span_sentences": [
+          "The URLs in the emails also pointed to a Traffic Distribution System (TDS) called Keitaro.",
+          "Keitaro is another legitimate product meant for tracking affiliate and advertising campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_f5b7fecaf042",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Atlassian Jira",
+        "edges": [],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "Our analysis indicates that organizations already using Atlassian Jira were among the primary targets."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Our analysis showed that these instances resolved to AWS IP (13[.]227[.]180[.]4), which also served many legitimate Atlassian Cloud deployments."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1136",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1136",
+        "edges": [
+          "EDGE_3",
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Threat actors began by creating Atlassian Cloud accounts using randomized naming conventions, enabling them to generate disposable Jira Cloud instances at scale."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_7",
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            28,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Keitaro Traffic Distribution System (TDS) powered redirects, channeling targets to dubious investment schemes and online casinos, indicating that financial gain was likely the primary motive behind these campaigns."
+          ],
+          [
+            "The URLs in the emails also pointed to a Traffic Distribution System (TDS) called Keitaro.",
+            "Keitaro is another legitimate product meant for tracking affiliate and advertising campaigns.",
+            "In this instance, it was weaponized to redirect spam URLs to final landing pages, the content of which ranged from dubious investment schemes and online casinos, with a blurred example shown in Figure 6."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_8",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            28,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Attackers abused Atlassian Cloud’s trusted domain for a spate of spam campaigns."
+          ],
+          [
+            "These campaigns not only distributed generic spam, but also specifically targeted sectors such as government and corporate entities."
+          ],
+          [
+            "Therefore, in this case, the attackers used Jira Automation to deliver crafted emails through an integrated email sending platform, which allowed them better control and avoiding alerts to their targets."
+          ],
+          [
+            "This allowed the attackers to deliver emails widely and anonymously, without exposing their infrastructure or requiring user enrollment."
+          ],
+          [
+            "TrendAI™ telemetry indicates that attackers targeted recipients with clear intent, focusing on specific organizations, languages, and demographic profiles."
+          ],
+          [
+            "For the delivery phase, the attackers relied on an integrated email sending platform to transmit their messages.",
+            "These emails were able to bypass many initial security controls due to two key factors:."
+          ],
+          [
+            "In some cases, the threat actors used standard Jira-generated subject lines, which are less effective in enticing recipients to click on the links associated with online casinos and dubious investment schemes."
+          ],
+          [
+            "Based on embedded links found in our telemetry, the spam links directed recipients to several domains, including:\n- adrinal[.]com\n- barankinyserialxud[.]online\n- archicad3d[.]com\nWe provide a complete list in the indicators of compromise (IOCs) section."
+          ],
+          [
+            "Many emails also contained links pointing to hostname go[.]sparkpostmail1[.]com, which served as an intermediary redirect to the final landing pages."
+          ],
+          [
+            "The URLs in the emails also pointed to a Traffic Distribution System (TDS) called Keitaro.",
+            "Keitaro is another legitimate product meant for tracking affiliate and advertising campaigns.",
+            "In this instance, it was weaponized to redirect spam URLs to final landing pages, the content of which ranged from dubious investment schemes and online casinos, with a blurred example shown in Figure 6."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_2c8d530db061",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "go[.]sparkpostmail1[.]com",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "Many emails also contained links pointing to hostname go[.]sparkpostmail1[.]com, which served as an intermediary redirect to the final landing pages."
+        ]
+      },
+      {
+        "node_id": "IOC_b3e6d8d8fc50",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "barankinyserialxud[.]online",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "Based on embedded links found in our telemetry, the spam links directed recipients to several domains, including:\n- adrinal[.]com\n- barankinyserialxud[.]online\n- archicad3d[.]com\nWe provide a complete list in the indicators of compromise (IOCs) section."
+        ]
+      },
+      {
+        "node_id": "IOC_db326438aaa3",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "adrinal[.]com",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "Based on embedded links found in our telemetry, the spam links directed recipients to several domains, including:\n- adrinal[.]com\n- barankinyserialxud[.]online\n- archicad3d[.]com\nWe provide a complete list in the indicators of compromise (IOCs) section."
+        ]
+      },
+      {
+        "node_id": "IOC_fb90f4168bd7",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "13[.]227[.]180[.]4",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Our analysis showed that these instances resolved to AWS IP (13[.]227[.]180[.]4), which also served many legitimate Atlassian Cloud deployments."
+        ]
+      },
+      {
+        "node_id": "IOC_fee9a3afd17d",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "archicad3d[.]com",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "Based on embedded links found in our telemetry, the spam links directed recipients to several domains, including:\n- adrinal[.]com\n- barankinyserialxud[.]online\n- archicad3d[.]com\nWe provide a complete list in the indicators of compromise (IOCs) section."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_462f5d88a391",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_5347f94a99ce",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_5347f94a99ce",
+      "node_v": "TTP_T1136"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_5347f94a99ce",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_5c3b6eb0fb17",
+      "node_v": "TTP_T1136"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_9fac26b94980",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_a8f73dd793e7",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_a8f73dd793e7",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_b4e7de559d54",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_b4e7de559d54",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_2c8d530db061",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_b3e6d8d8fc50",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_db326438aaa3",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_fb90f4168bd7",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_fee9a3afd17d",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

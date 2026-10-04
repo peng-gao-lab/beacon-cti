@@ -1,0 +1,677 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos has discovered a new campaign operated by a threat actor distributing a previously unknown malware we’re calling “TimbreStealer.”\n- This threat actor was observed distributing TimbreStealer via a spam campaign using Mexican tax-related themes starting in at least November 2023."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "The scheduled task uses Microsoft’s reg.exe to add a run once registry key, and then trigger rundll32.exe to process this entry through the system iernonce.dll."
+        ]
+      },
+      {
+        "node_id": "HL_8eae0ecb416f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TimbreStealer",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          9,
+          10,
+          13
+        ],
+        "span_sentences": [
+          "Cisco Talos has discovered a new campaign operated by a threat actor distributing a previously unknown malware we’re calling “TimbreStealer.”\n- This threat actor was observed distributing TimbreStealer via a spam campaign using Mexican tax-related themes starting in at least November 2023.",
+          "The threat actor has previously used similar tactics, techniques and procedures (TTPs) to distribute a banking trojan known as “Mispadu.”\n- TimbreStealer is a new obfuscated information stealer found targeting victims in Mexico.",
+          "Talos has observed an ongoing phishing spam campaign targeting potential victims in Mexico, luring users to download a new obfuscated information stealer we’re calling TimbreStealer, which has been active since at least November 2023.",
+          "Although we could not find hard evidence linking the two campaigns, we assess with high confidence they are operated by the same threat actor, based on the same TTPs observed in this campaign and the previous activity distributing Mispadu, and the fact that once TimbreStealer started being distributed, we could not find any more evidence of Mispadu being used.",
+          "TimbreStealer exhibits a sophisticated array of techniques to circumvent detection, engage in stealthy execution, and ensure its persistence within compromised systems.",
+          "Once the initial layer is extracted, TimbreStealer will check if the system is of interest and whether or not it’s being executed in a sandbox environment."
+        ]
+      },
+      {
+        "node_id": "HL_c0ea5e1a232f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMWare",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          22,
+          24
+        ],
+        "span_sentences": [
+          "Checks in this layer include:\n- VMWare hook and port checks.",
+          "- Checking physical drive for strings: qemu, virtual, vmware, vbox, xensrc, sandbox, geswall, bufferzone, safespace, virtio, harddisk_ata_device, disk_scsi_disk_device, disk_0_scsi_disk_device, nvme_card_pd, google_persistentdisk."
+        ]
+      },
+      {
+        "node_id": "HL_c679190ac4af",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Mexico",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          1,
+          2,
+          6,
+          7
+        ],
+        "span_sentences": [
+          "The threat actor has previously used similar tactics, techniques and procedures (TTPs) to distribute a banking trojan known as “Mispadu.”\n- TimbreStealer is a new obfuscated information stealer found targeting victims in Mexico.",
+          "Talos has observed an ongoing phishing spam campaign targeting potential victims in Mexico, luring users to download a new obfuscated information stealer we’re calling TimbreStealer, which has been active since at least November 2023.",
+          "The phishing campaign uses geofencing techniques to only target users in Mexico, and any attempt to contact the payload sites from other locations will return a blank PDF file instead of the malicious file.",
+          "The current spam run was observed to mainly use Mexico's digital tax receipt standard called CDFI (which stands for “Comprobante Fiscal Digital por Internet,” or online fiscal digital invoice in English)."
+        ]
+      },
+      {
+        "node_id": "HL_d42051901843",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Mispadu",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          1,
+          4,
+          9
+        ],
+        "span_sentences": [
+          "The threat actor has previously used similar tactics, techniques and procedures (TTPs) to distribute a banking trojan known as “Mispadu.”\n- TimbreStealer is a new obfuscated information stealer found targeting victims in Mexico.",
+          "Talos has observed new distribution campaigns being conducted by this threat actor since at least September 2023, when they were initially distributing a variant of the Mispadu banking trojan using geofenced WebDAV servers before changing the payload to this new information-stealer.",
+          "Although we could not find hard evidence linking the two campaigns, we assess with high confidence they are operated by the same threat actor, based on the same TTPs observed in this campaign and the previous activity distributing Mispadu, and the fact that once TimbreStealer started being distributed, we could not find any more evidence of Mispadu being used."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1",
+          "EDGE_17",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ],
+          [
+            33,
+            34
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The installed DLL named Cecujujajofubo475.dll uses the same overall architecture as the first DLL detailed above, with all of its internal strings encrypted, uses a global decrypt buffer, and uses a different Zw* API hash table to perform direct syscalls avoiding user API."
+          ],
+          [
+            "In this layer there are also TLS callbacks to add complexity to global decrypt buffer encryption.",
+            "An extra round of encryption has also been added that depends on the parent process name and value within the registry key given above to prevent analysis on 3rd party machines."
+          ],
+          [
+            "The first stage of the shellcode will decrypt its second stage, and then extract and decrypt the final payload DLL from the ApplicationIcon.ico file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Execution is triggered by registering a task through the ITaskService COM interface."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            42,
+            42
+          ],
+          [
+            43,
+            43
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This includes leveraging direct system calls to bypass conventional API monitoring, employing the Heaven’s Gate technique to execute 64-bit code within a 32-bit process, and utilizing custom loaders."
+          ],
+          [
+            "They attempt to inject this 64-bit DLL into a preferred list of svchost.exe processes."
+          ],
+          [
+            "If the injections into svchost.exe fail, then a backup 32-bit fallback shellcode is also available."
+          ],
+          [
+            "A new thread is created using syscalls with a modified context, and then ResumeThread triggers its execution."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [
+          "EDGE_4",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "TimbreStealer exhibits a sophisticated array of techniques to circumvent detection, engage in stealthy execution, and ensure its persistence within compromised systems.",
+            "This includes leveraging direct system calls to bypass conventional API monitoring, employing the Heaven’s Gate technique to execute 64-bit code within a 32-bit process, and utilizing custom loaders."
+          ],
+          [
+            "This includes leveraging direct system calls to bypass conventional API monitoring, employing the Heaven’s Gate technique to execute 64-bit code within a 32-bit process, and utilizing custom loaders."
+          ],
+          [
+            "The installed DLL named Cecujujajofubo475.dll uses the same overall architecture as the first DLL detailed above, with all of its internal strings encrypted, uses a global decrypt buffer, and uses a different Zw* API hash table to perform direct syscalls avoiding user API."
+          ],
+          [
+            "A new thread is created using syscalls with a modified context, and then ResumeThread triggers its execution."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The scheduled task uses Microsoft’s reg.exe to add a run once registry key, and then trigger rundll32.exe to process this entry through the system iernonce.dll."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_6",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The first stage of the shellcode will decrypt its second stage, and then extract and decrypt the final payload DLL from the ApplicationIcon.ico file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1189",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1189",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This campaign uses phishing emails with financial themes, directing users to a compromised website where the payload is hosted and tricking them into executing the malicious application."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Talos has observed an ongoing phishing spam campaign targeting potential victims in Mexico, luring users to download a new obfuscated information stealer we’re calling TimbreStealer, which has been active since at least November 2023.",
+            "This campaign uses phishing emails with financial themes, directing users to a compromised website where the payload is hosted and tricking them into executing the malicious application."
+          ],
+          [
+            "This campaign uses phishing emails with financial themes, directing users to a compromised website where the payload is hosted and tricking them into executing the malicious application."
+          ],
+          [
+            "This campaign uses phishing emails with financial themes, directing users to a compromised website where the payload is hosted and tricking them into executing the malicious application.",
+            "Talos has observed new distribution campaigns being conducted by this threat actor since at least September 2023, when they were initially distributing a variant of the Mispadu banking trojan using geofenced WebDAV servers before changing the payload to this new information-stealer.",
+            "After the threat actor changed to this new stealer, we haven’t found any evidence of Mispadu being used anymore.",
+            "The phishing campaign uses geofencing techniques to only target users in Mexico, and any attempt to contact the payload sites from other locations will return a blank PDF file instead of the malicious file.",
+            "The current spam run was observed to mainly use Mexico's digital tax receipt standard called CDFI (which stands for “Comprobante Fiscal Digital por Internet,” or online fiscal digital invoice in English)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The scheduled task uses Microsoft’s reg.exe to add a run once registry key, and then trigger rundll32.exe to process this entry through the system iernonce.dll."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1484",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1484",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Under certain conditions, this layer can also modify Group Policy options to set startup scripts."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [
+          "EDGE_10",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            20
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To determine if the system is of interest to the attackers, the malware first checks that the system language is not Russian, and then checks the timezone to ensure it is within a Latin American region."
+          ],
+          [
+            "This is followed by CsrGetProcessId debugger checks and counting desktop child windows to ensure it is not running in a sandbox environment.",
+            "Submodule No.",
+            "2 is an anti-analysis DLL that performs several checks and does scattered rounds of encryption on the global decrypt buffer."
+          ],
+          [
+            "- Vpcext, IceBP, int 2D instructions to detect debuggers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The scheduled task uses Microsoft’s reg.exe to add a run once registry key, and then trigger rundll32.exe to process this entry through the system iernonce.dll."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The first is a patch to the ZwTraceEvent API to disable user mode Event Tracing for Windows data collection."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_13",
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos has discovered a new campaign operated by a threat actor distributing a previously unknown malware we’re calling “TimbreStealer.”\n- This threat actor was observed distributing TimbreStealer via a spam campaign using Mexican tax-related themes starting in at least November 2023."
+          ],
+          [
+            "Talos has observed an ongoing phishing spam campaign targeting potential victims in Mexico, luring users to download a new obfuscated information stealer we’re calling TimbreStealer, which has been active since at least November 2023.",
+            "This campaign uses phishing emails with financial themes, directing users to a compromised website where the payload is hosted and tricking them into executing the malicious application."
+          ],
+          [
+            "This campaign uses phishing emails with financial themes, directing users to a compromised website where the payload is hosted and tricking them into executing the malicious application."
+          ],
+          [
+            "This campaign uses phishing emails with financial themes, directing users to a compromised website where the payload is hosted and tricking them into executing the malicious application.",
+            "Talos has observed new distribution campaigns being conducted by this threat actor since at least September 2023, when they were initially distributing a variant of the Mispadu banking trojan using geofenced WebDAV servers before changing the payload to this new information-stealer.",
+            "After the threat actor changed to this new stealer, we haven’t found any evidence of Mispadu being used anymore.",
+            "The phishing campaign uses geofencing techniques to only target users in Mexico, and any attempt to contact the payload sites from other locations will return a blank PDF file instead of the malicious file.",
+            "The current spam run was observed to mainly use Mexico's digital tax receipt standard called CDFI (which stands for “Comprobante Fiscal Digital por Internet,” or online fiscal digital invoice in English)."
+          ],
+          [
+            "The phishing campaign uses geofencing techniques to only target users in Mexico, and any attempt to contact the payload sites from other locations will return a blank PDF file instead of the malicious file."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1a9632207aa2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Cecujujajofubo475.dll",
+        "edges": [
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "The installed DLL named Cecujujajofubo475.dll uses the same overall architecture as the first DLL detailed above, with all of its internal strings encrypted, uses a global decrypt buffer, and uses a different Zw* API hash table to perform direct syscalls avoiding user API."
+        ]
+      },
+      {
+        "node_id": "IOC_c29cd136c6a2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ApplicationIcon.ico",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          39,
+          48
+        ],
+        "span_sentences": [
+          "This DLL serves as a loader for the final payload which is housed within the ApplicationIcon.ico file shown in the previous relationship diagram.",
+          "The first stage of the shellcode will decrypt its second stage, and then extract and decrypt the final payload DLL from the ApplicationIcon.ico file."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_8eae0ecb416f",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_c0ea5e1a232f",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_c679190ac4af",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_d42051901843",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_1a9632207aa2",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_1a9632207aa2",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_c29cd136c6a2",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_c29cd136c6a2",
+      "node_v": "TTP_T1140"
+    }
+  ]
+}

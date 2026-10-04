@@ -1,0 +1,458 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The BlackCat organization, including its affiliates, has historically focused on targeting victims in the United States."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_368df917d1ab",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BlackCat",
+        "sentence_indices": [
+          0,
+          1,
+          4,
+          6,
+          11,
+          12,
+          19,
+          47
+        ],
+        "span_sentences": [
+          "BlackCat operators recently announced new updates to their tooling, including a utility called Munchkin that allows attackers to propagate the BlackCat payload to remote machines and shares on a victim organization network.",
+          "For the past two years, the BlackCat ransomware operators have continued to evolve and iterate their tooling as part of their ransomware-as-a-service (RaaS) business model.",
+          "This publication details how this new utility works and sheds further light on the continued tactics used by BlackCat threat actors.",
+          "The BlackCat ransomware threat was first made public when it surfaced in November 2021.",
+          "The BlackCat organization, including its affiliates, has historically focused on targeting victims in the United States.",
+          "However, this focus has greatly broadened over time with increased popularity, and BlackCat has more recently been observed targeting victims worldwide across numerous industries and verticals.",
+          "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant).",
+          "Malware authors, especially those behind the BlackCat ransomware threat, continue to iterate and evolve their techniques and tactics."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_4d801cc36fa6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirtualBox",
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "The Munchkin utility is delivered as an ISO file, which is loaded in a newly installed instance of the VirtualBox virtualization product."
+        ],
+        "edges": [
+          "EDGE_6a3ef6d5bab7"
+        ]
+      },
+      {
+        "node_id": "HL_713d3f89a9d4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "tmux",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "It subsequently generates a new terminal session via the built-in tmux utility, which is used to execute the malware binary named controller."
+        ],
+        "edges": [
+          "EDGE_a95a14b4ad1f"
+        ]
+      },
+      {
+        "node_id": "HL_a74ea5eecea3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Unit 42",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "As part of a recent investigation, Unit 42 researchers have acquired an instance of Munchkin that is unique, in that it is loaded in a customized Alpine virtual machine (VM)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_be7937a9dcd7",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Munchkin",
+        "sentence_indices": [
+          0,
+          2,
+          19,
+          25,
+          48
+        ],
+        "span_sentences": [
+          "BlackCat operators recently announced new updates to their tooling, including a utility called Munchkin that allows attackers to propagate the BlackCat payload to remote machines and shares on a victim organization network.",
+          "As part of a recent investigation, Unit 42 researchers have acquired an instance of Munchkin that is unique, in that it is loaded in a customized Alpine virtual machine (VM).",
+          "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant).",
+          "The Munchkin utility is delivered as an ISO file, which is loaded in a newly installed instance of the VirtualBox virtualization product.",
+          "This is fully apparent in their recent release of Munchkin, which they’ve developed and provided to their affiliates."
+        ],
+        "edges": [
+          "EDGE_e783ebbbc3b9",
+          "EDGE_fba22fb101d7",
+          "EDGE_fc3280d4593a"
+        ]
+      },
+      {
+        "node_id": "HL_f4a13e431f72",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Sphynx",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant)."
+        ],
+        "edges": [
+          "EDGE_9d501764a808"
+        ]
+      },
+      {
+        "node_id": "HL_ffd6164ff34f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Alpine",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "This ISO file represents a customized implementation of the Alpine OS, which threat operators likely chose due to its small footprint."
+        ],
+        "edges": [
+          "EDGE_b4587847a603"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1003",
+        "ttp_id": "T1003",
+        "best_span_sentences_list": [
+          [
+            "Attackers can use many of the Python scripts above for lateral movement, password dumping and further execution of malware on the victim network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_fba22fb101d7"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Over time, threat operators updated the malware family to obfuscate this underlying configuration."
+          ],
+          [
+            "Upon execution, the controller will initially decrypt numerous strings using a unique single-byte XOR operation.",
+            "After the strings are decrypted, the threat will perform basic checks to ensure that the expected configuration and payload files reside within the /app directory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            34,
+            35
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "They also required a unique command-line parameter to execute the malware."
+          ],
+          [
+            "It subsequently generates a new terminal session via the built-in tmux utility, which is used to execute the malware binary named controller."
+          ],
+          [
+            "Attackers can use many of the Python scripts above for lateral movement, password dumping and further execution of malware on the victim network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_a95a14b4ad1f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1098",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1098",
+        "ttp_id": "T1098",
+        "best_span_sentences_list": [
+          [
+            "In doing so, the malware initially changes the root password of the VM to one chosen by the threat actors."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Upon execution, the controller will initially decrypt numerous strings using a unique single-byte XOR operation.",
+            "After the strings are decrypted, the threat will perform basic checks to ensure that the expected configuration and payload files reside within the /app directory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            35
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant).",
+            "Threat operators can use this utility to run BlackCat on remote machines, or to deploy it to encrypt remote Server Message Block (SMB)/Common Internet File Shares (CIFS)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_5ef331b0493a",
+          "EDGE_8d1f63f35303",
+          "EDGE_9d501764a808",
+          "EDGE_a952ebedb8c6",
+          "EDGE_fc3280d4593a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "This new tactic of leveraging a customized VM to deploy malware has been gaining traction in recent months, allowing ransomware threat actors to use VMs to circumvent security solutions in deploying their malware payloads."
+          ],
+          [
+            "The benefits of this approach include circumventing any security controls or protections set on the host OS, such as antivirus software.",
+            "As these solutions often do not have the introspection within the embedded virtualized OS, malware will frequently bypass any checks that are present."
+          ],
+          [
+            "This tool follows a continued trend of leveraging VMs in an attempt to thwart security controls present on a host and to stay ahead of the security community in defending against these threats."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            49,
+            49
+          ]
+        ],
+        "edges": [
+          "EDGE_6a3ef6d5bab7",
+          "EDGE_b4587847a603",
+          "EDGE_e783ebbbc3b9"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1039bbbeb272",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/app/payload",
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "The controller uses the previously noted /app/payload as a template for creating customized BlackCat samples."
+        ],
+        "edges": [
+          "EDGE_5ef331b0493a"
+        ]
+      },
+      {
+        "node_id": "IOC_af96345f179d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/app/config",
+        "sentence_indices": [
+          36,
+          38
+        ],
+        "span_sentences": [
+          "The threat will then deserialize and parse the /app/config file.",
+          "The /app/config file contains a wealth of information including the following, which the controller malware sample subsequently uses:."
+        ],
+        "edges": [
+          "EDGE_a952ebedb8c6"
+        ]
+      },
+      {
+        "node_id": "IOC_c3942e87cd13",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/payloads/",
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "After the configuration is parsed, the controller creates and mounts the /payloads/ directory, which it uses to host subsequently created instances of BlackCat."
+        ],
+        "edges": [
+          "EDGE_8d1f63f35303"
+        ]
+      },
+      {
+        "node_id": "IOC_d1e47f5f917d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/app",
+        "sentence_indices": [
+          30,
+          35
+        ],
+        "span_sentences": [
+          "The controller malware is hosted within the /app directory, along with other related files.",
+          "After the strings are decrypted, the threat will perform basic checks to ensure that the expected configuration and payload files reside within the /app directory."
+        ],
+        "edges": []
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_5ef331b0493a",
+      "node_u": "IOC_1039bbbeb272",
+      "node_v": "TTP_T1486",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a3ef6d5bab7",
+      "node_u": "HL_4d801cc36fa6",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8d1f63f35303",
+      "node_u": "IOC_c3942e87cd13",
+      "node_v": "TTP_T1486",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9d501764a808",
+      "node_u": "HL_f4a13e431f72",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a952ebedb8c6",
+      "node_u": "IOC_af96345f179d",
+      "node_v": "TTP_T1486",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a95a14b4ad1f",
+      "node_u": "HL_713d3f89a9d4",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b4587847a603",
+      "node_u": "HL_ffd6164ff34f",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e783ebbbc3b9",
+      "node_u": "HL_be7937a9dcd7",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fba22fb101d7",
+      "node_u": "HL_be7937a9dcd7",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fc3280d4593a",
+      "node_u": "HL_be7937a9dcd7",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+# Mode 4: consolidate existing single-report graphs (CTIAugmentor output JSON)
+# without running extraction. layout=flat: all JSON files directly under
+# input.path form one set. layout=groups: each direct subdirectory is a set.
+# Outputs go to <output.root>/ctialignmentor/ (flat) or
+# <output.root>/groups/<group_id>/ctialignmentor/ (groups).
+input:
+  kind: graphs
+  layout: groups
+  path: ../output/extraction_align_groups/groups   # e.g. reuse per-group ctiaugmentor outputs (see README)
+  pattern: "ctiaugmentor/*.json"
+  limit: null
+
+output:
+  root: ../output/align_existing
+  existing: skip
+
+run:
+  workers: 1
+  console: quiet
+  component_errors: fail
+  sentence_splitter: regex
+
+resources:
+  mitre_json: null       # not needed for alignment
+
+models:
+  default: gpt-4o
+  embedding: text-embedding-3-large
+
+components:
+  highlevel:
+    enabled: false
+  tagger:
+    enabled: false
+  ioc:
+    enabled: false
+  augmentor:
+    enabled: false
+  alignmentor:
+    enabled: true
+    log: true
+    extract: true
+    model: null
+    node_threshold: 0.7
+    cluster_threshold: 0.7
+    enable_llm: true
+    highlevel_stages: [char, embed, neighbor]
+    disable_highlevel_deterministic_char: false
+    embed_backend: openai
+    embed_model: null
+    embed_sim_threshold: 0.7
+    max_neighbor_rounds: 3
+    neighbor_shared_ttp_threshold: 2
+    api_key_env: OPENAI_API_KEY
+
+cost:
+  enabled: true
+  pricebook: null

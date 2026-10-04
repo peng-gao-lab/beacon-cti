@@ -1,0 +1,759 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0f465b2c0af1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Azure",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "To download modules (PipeMagic typically uses several plugins downloaded from the C2 server), attackers used a domain hosted on the Microsoft Azure cloud provider, with the following name: hxxp://aaaaabbbbbbb.eastus.cloudapp.azure[.]com."
+        ]
+      },
+      {
+        "node_id": "HL_104a7e589742",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Rufus",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The backdoor’s loader was a trojanized version of Rufus, a utility for formatting USB drives."
+        ]
+      },
+      {
+        "node_id": "HL_125e5aadeb42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Middle East",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          6,
+          14,
+          33,
+          53
+        ],
+        "span_sentences": [
+          "In September 2024, we encountered it again in attacks on organizations in the Middle East.",
+          "Most recently, in 2025 our solutions prevented PipeMagic infections at organizations in Brazil and the Middle East.",
+          "In October 2024, organizations in the Middle East were hit by a new wave of PipeMagic attacks.",
+          "This application resembles one used in campaigns against organizations in the Middle East in 2024.",
+          "The repeated detection of PipeMagic in attacks on organizations in the Middle East and its appearance in Brazil indicate that the malware remains active and that the attackers continue to develop its functionality."
+        ]
+      },
+      {
+        "node_id": "HL_15f440c9868f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "BI.ZONE",
+        "edges": [],
+        "sentence_indices": [
+          7,
+          8,
+          56
+        ],
+        "span_sentences": [
+          "This report is the result of a joint investigation with the head of vulnerability research group at BI.ZONE, in which we traced the evolution of PipeMagic – from its first detection in 2022 to new incidents in 2025 – and identified key changes in its operators’ tactics.",
+          "Our colleagues at BI.ZONE, in turn, conducted a technical analysis of the CVE-2025-29824 vulnerability itself.",
+          "The specifics of this vulnerability were analyzed in detail by BI.ZONE in the second part of our joint research."
+        ]
+      },
+      {
+        "node_id": "HL_18a8c40152fc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Brazil",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          23,
+          53
+        ],
+        "span_sentences": [
+          "Most recently, in 2025 our solutions prevented PipeMagic infections at organizations in Brazil and the Middle East.",
+          "PipeMagic in 2025\nIn January 2025, we detected new infections in a Middle Eastern country and Brazil.",
+          "The repeated detection of PipeMagic in attacks on organizations in the Middle East and its appearance in Brazil indicate that the malware remains active and that the attackers continue to develop its functionality."
+        ]
+      },
+      {
+        "node_id": "HL_3277c8e3cd80",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "msbuild",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "In addition to the initial execution method using a .mshi file launched through msbuild, the attackers also used a more popular method involving decrypting the payload and injecting it with the help of an executable file that does not require additional utilities to run."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          29,
+          40,
+          48
+        ],
+        "span_sentences": [
+          "The injected shellcode is executable code for 32-bit Windows systems.",
+          "In all the loading methods described above, the payload was an executable file for 32-bit Windows systems.",
+          "For example, we found in the telemetry a command executed during one of the infections:\nThe executable dllhost.exe is a part of Windows and does not support command-line flags."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          22,
+          52
+        ],
+        "span_sentences": [
+          "In April 2025, Microsoft patched 121 vulnerabilities in its products.",
+          "To download modules (PipeMagic typically uses several plugins downloaded from the C2 server), attackers used a domain hosted on the Microsoft Azure cloud provider, with the following name: hxxp://aaaaabbbbbbb.eastus.cloudapp.azure[.]com.",
+          "It is worth noting that a Microsoft article about attacks using CVE-2025-29824 mentions exactly the same method of obtaining LSASS memory using the procdump.exe file."
+        ]
+      },
+      {
+        "node_id": "HL_58043630366b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PipeMagic",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          6,
+          9,
+          13,
+          14,
+          18,
+          23,
+          24,
+          32,
+          42,
+          53
+        ],
+        "span_sentences": [
+          "The exploit for this vulnerability was executed by the PipeMagic malware, which we first discovered in December 2022 in a RansomExx ransomware campaign.",
+          "Notably, it was the same version of PipeMagic as in 2022.",
+          "Most recently, in 2025 our solutions prevented PipeMagic infections at organizations in Brazil and the Middle East.",
+          "PipeMagic is a backdoor we first detected in December 2022 while investigating a malicious campaign involving RansomExx.",
+          "PipeMagic supported two modes of operation – as a full-fledged backdoor providing remote access, and as a network gateway – and enabled the execution of a wide range of commands.",
+          "In October 2024, organizations in the Middle East were hit by a new wave of PipeMagic attacks.",
+          "One unique feature of PipeMagic is that it generates a random 16-byte array used to create a named pipe formatted as: \\\\.\\pipe\\1.<hex string>.",
+          "PipeMagic in 2025\nIn January 2025, we detected new infections in a Middle Eastern country and Brazil.",
+          "Further investigation revealed connections to the domain hxxp://aaaaabbbbbbb.eastus.cloudapp.azure[.]com, which suggested a link between this attack and PipeMagic.",
+          "In 2025, we also found PipeMagic loader samples mimicking a ChatGPT client.",
+          "This executable file is the PipeMagic backdoor.",
+          "The repeated detection of PipeMagic in attacks on organizations in the Middle East and its appearance in Brazil indicate that the malware remains active and that the attackers continue to develop its functionality."
+        ]
+      },
+      {
+        "node_id": "HL_5c4ab2152d3e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ProcDump",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          49,
+          55
+        ],
+        "span_sentences": [
+          "Although telemetry data does not allow us to determine exactly how the substitution was carried out, in this case the set of flags is characteristic of the procdump.exe file (ProcDump utility, part of the Sysinternals suite).",
+          "In the 2025 attacks, the attackers used the ProcDump tool renamed to dllhost.exe to extract memory from the LSASS process – similar to the method described by Microsoft in the context of exploiting vulnerability CVE-2025-29824."
+        ]
+      },
+      {
+        "node_id": "HL_684e374daf91",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Tokio",
+        "edges": [],
+        "sentence_indices": [
+          16,
+          34
+        ],
+        "span_sentences": [
+          "The fake app was written in Rust, using two frameworks: Tauri for rendering graphical applications and Tokio for asynchronous task execution.",
+          "It also uses the Tokio and Tauri frameworks, and judging by copyright strings and PE header metadata, the executable was built in 2024, though it was first discovered in the 2025 campaign."
+        ]
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The executable file itself was legitimate (in this campaign we saw a variant using the Google Chrome update file), and the malicious logic was implemented through a library that it loads, using the DLL hijacking method."
+        ]
+      },
+      {
+        "node_id": "HL_7f40fa6a5b53",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RansomExx",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          9
+        ],
+        "span_sentences": [
+          "The exploit for this vulnerability was executed by the PipeMagic malware, which we first discovered in December 2022 in a RansomExx ransomware campaign.",
+          "PipeMagic is a backdoor we first detected in December 2022 while investigating a malicious campaign involving RansomExx."
+        ]
+      },
+      {
+        "node_id": "HL_8e2b57a53517",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Tauri",
+        "edges": [],
+        "sentence_indices": [
+          16,
+          34
+        ],
+        "span_sentences": [
+          "The fake app was written in Rust, using two frameworks: Tauri for rendering graphical applications and Tokio for asynchronous task execution.",
+          "It also uses the Tokio and Tauri frameworks, and judging by copyright strings and PE header metadata, the executable was built in 2024, though it was first discovered in the 2025 campaign."
+        ]
+      },
+      {
+        "node_id": "HL_98ac8fd1bcba",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Southeast Asia",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The victims were industrial companies in Southeast Asia."
+        ]
+      },
+      {
+        "node_id": "HL_c3d33299e2a6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Sysinternals suite",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "Although telemetry data does not allow us to determine exactly how the substitution was carried out, in this case the set of flags is characteristic of the procdump.exe file (ProcDump utility, part of the Sysinternals suite)."
+        ]
+      },
+      {
+        "node_id": "HL_cfed1cacc9c5",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Rust",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The fake app was written in Rust, using two frameworks: Tauri for rendering graphical applications and Tokio for asynchronous task execution."
+        ]
+      },
+      {
+        "node_id": "HL_ebba44ed8bf3",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "industrial companies",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The victims were industrial companies in Southeast Asia."
+        ]
+      },
+      {
+        "node_id": "HL_f437f6c2c131",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ChatGPT",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          15,
+          32
+        ],
+        "span_sentences": [
+          "This time, rather than exploiting vulnerabilities for the initial penetration, the attackers used a fake ChatGPT client application as bait.",
+          "In 2025, we also found PipeMagic loader samples mimicking a ChatGPT client."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_2",
+          "EDGE_12",
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            50,
+            52
+          ],
+          [
+            55,
+            55
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers use this utility to dump the LSASS process memory into the file specified as the last argument (in this case, $appdata\\FoMJoEqdWg).",
+            "Later, having the LSASS process memory dump, attackers can extract credentials from the compromised device and, consequently, attempt various lateral movement vectors within the network.",
+            "It is worth noting that a Microsoft article about attacks using CVE-2025-29824 mentions exactly the same method of obtaining LSASS memory using the procdump.exe file."
+          ],
+          [
+            "In the 2025 attacks, the attackers used the ProcDump tool renamed to dllhost.exe to extract memory from the LSASS process – similar to the method described by Microsoft in the context of exploiting vulnerability CVE-2025-29824."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_3",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            55,
+            55
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The backdoor’s loader was a trojanized version of Rufus, a utility for formatting USB drives."
+          ],
+          [
+            "In the 2025 attacks, the attackers used the ProcDump tool renamed to dllhost.exe to extract memory from the LSASS process – similar to the method described by Microsoft in the context of exploiting vulnerability CVE-2025-29824."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The injected shellcode is executable code for 32-bit Windows systems."
+          ],
+          [
+            "In addition to the initial execution method using a .mshi file launched through msbuild, the attackers also used a more popular method involving decrypting the payload and injecting it with the help of an executable file that does not require additional utilities to run."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After decryption, the resulting shellcode is executed via the WinAPI function EnumDeviceMonitor."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1127",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1127",
+        "edges": [
+          "EDGE_1",
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In addition to the initial execution method using a .mshi file launched through msbuild, the attackers also used a more popular method involving decrypting the payload and injecting it with the help of an executable file that does not require additional utilities to run."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_7",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The C# code serves two purposes – decrypting and executing the shellcode, which is encrypted with the RC4 stream cipher using the key 4829468622e6b82ff056e3c945dd99c94a1f0264d980774828aadda326b775e5 (hex string)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_8",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This time, rather than exploiting vulnerabilities for the initial penetration, the attackers used a fake ChatGPT client application as bait."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1210",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1210",
+        "edges": [
+          "EDGE_9",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To penetrate the infrastructure, the attackers exploited the CVE-2017-0144 vulnerability."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To prevent the payload from being detected by the AMSI interface, the attackers first load a local copy of the amsi library.",
+            "Then they enable writing into memory region containing the functions AmsiScanString and AmsiScanBuffer and patch them.",
+            "For example, instead of the original code of the AmsiScanString function, a stub function is placed in memory that always returns 0 (thus marking the file as safe)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_11",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The executable file itself was legitimate (in this campaign we saw a variant using the Google Chrome update file), and the malicious logic was implemented through a library that it loads, using the DLL hijacking method.",
+            "For this, a malicious DLL was placed on the disk alongside the legitimate application, containing a function that the application exports."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_14a4c4fe471d",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://aaaaabbbbbbb.eastus.cloudapp.azure[.]com",
+        "edges": [],
+        "sentence_indices": [
+          22,
+          24
+        ],
+        "span_sentences": [
+          "To download modules (PipeMagic typically uses several plugins downloaded from the C2 server), attackers used a domain hosted on the Microsoft Azure cloud provider, with the following name: hxxp://aaaaabbbbbbb.eastus.cloudapp.azure[.]com.",
+          "Further investigation revealed connections to the domain hxxp://aaaaabbbbbbb.eastus.cloudapp.azure[.]com, which suggested a link between this attack and PipeMagic."
+        ]
+      },
+      {
+        "node_id": "IOC_2cbfb7f31ee7",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "$appdata\\FoMJoEqdWg",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "The attackers use this utility to dump the LSASS process memory into the file specified as the last argument (in this case, $appdata\\FoMJoEqdWg)."
+        ]
+      },
+      {
+        "node_id": "IOC_4cc581a1ac5a",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-29824",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          1,
+          8,
+          52,
+          55
+        ],
+        "span_sentences": [
+          "According to the company, only one of them was being used in real-world attacks at the time the patch was released: CVE-2025-29824.",
+          "Our colleagues at BI.ZONE, in turn, conducted a technical analysis of the CVE-2025-29824 vulnerability itself.",
+          "It is worth noting that a Microsoft article about attacks using CVE-2025-29824 mentions exactly the same method of obtaining LSASS memory using the procdump.exe file.",
+          "In the 2025 attacks, the attackers used the ProcDump tool renamed to dllhost.exe to extract memory from the LSASS process – similar to the method described by Microsoft in the context of exploiting vulnerability CVE-2025-29824."
+        ]
+      },
+      {
+        "node_id": "IOC_51541e6c0031",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "127.0.0.1:8082",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Meanwhile, the standard network interface with the IP address 127.0.0.1:8082 is used to interact with the named pipe."
+        ]
+      },
+      {
+        "node_id": "IOC_9c42d3caa4d9",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-0144",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "To penetrate the infrastructure, the attackers exploited the CVE-2017-0144 vulnerability."
+        ]
+      },
+      {
+        "node_id": "IOC_ed04a4a04397",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "4829468622e6b82ff056e3c945dd99c94a1f0264d980774828aadda326b775e5",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The C# code serves two purposes – decrypting and executing the shellcode, which is encrypted with the RC4 stream cipher using the key 4829468622e6b82ff056e3c945dd99c94a1f0264d980774828aadda326b775e5 (hex string)."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_3277c8e3cd80",
+      "node_v": "TTP_T1127"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1127"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1210"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_58043630366b",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_5c4ab2152d3e",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_5c4ab2152d3e",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_6adc15335b24",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_f437f6c2c131",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_2cbfb7f31ee7",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_4cc581a1ac5a",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_9c42d3caa4d9",
+      "node_v": "TTP_T1210"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_ed04a4a04397",
+      "node_v": "TTP_T1140"
+    }
+  ]
+}

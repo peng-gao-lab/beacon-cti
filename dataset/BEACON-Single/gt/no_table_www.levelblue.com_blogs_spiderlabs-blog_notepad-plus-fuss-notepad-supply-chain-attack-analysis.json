@@ -1,0 +1,763 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_03e5aa791b9b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Edge",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "It specifically scans for Internet Explorer and Microsoft Edge cache directories within the user’s local application data folder and selects a subdirectory at random to avoid a predictable installation path."
+        ]
+      },
+      {
+        "node_id": "HL_1d271045353f",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lotus Blossom",
+        "edges": [],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "On the same day, researchers at Rapid7 assessed that the Notepad++ supply chain attack was likely associated with the China-aligned APT group tracked as Lotus Blossom."
+        ]
+      },
+      {
+        "node_id": "HL_2361b6ce9fed",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Philippines",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "-\nFebruary 3, 2026\n-\nKaspersky researchers published findings indicating that the attackers targeted individual users in Vietnam, El Salvador, and Australia, as well as multiple organizations across the Philippines, El Salvador, and Vietnam."
+        ]
+      },
+      {
+        "node_id": "HL_387654bd8030",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Internet Explorer",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "It specifically scans for Internet Explorer and Microsoft Edge cache directories within the user’s local application data folder and selects a subdirectory at random to avoid a predictable installation path."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          16,
+          24
+        ],
+        "span_sentences": [
+          "The identified indicator’s internal name is installer_release.exe and masquerades as a “Microsoft Update Service”.",
+          "During the download operation, the script explicitly sets a custom User‑Agent string: Microsoft-Symbol-Server/6.12.0002.633 ."
+        ]
+      },
+      {
+        "node_id": "HL_4d69e00c5454",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WinGUp",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          1,
+          5,
+          12,
+          35
+        ],
+        "span_sentences": [
+          "The incident originated from the WinGUp update mechanism, the utility responsible for delivering Notepad++ updates to end users, which was exploited through the compromised former hosting provider’s infrastructure.",
+          "Notepad++ published security advisory disclosing that traffic originating from WinGUp, the application’s update utility, was intermittently redirected to malicious servers.",
+          "The flaw affects Notepad++ versions prior to 8.8.9 when using the WinGUp updater.",
+          "WinGUp is a configurable Generic Updater designed to run in the Windows environment, which is used to download and install software updates."
+        ]
+      },
+      {
+        "node_id": "HL_514b9e64f22f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Notepad++",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          9,
+          12,
+          13,
+          37,
+          39,
+          46
+        ],
+        "span_sentences": [
+          "LevelBlue SpiderLabs’ Cyber Threat Intelligence Team investigated the ongoing supply-chain compromise affecting Notepad++, a widely used open-source text editor.",
+          "The incident originated from the WinGUp update mechanism, the utility responsible for delivering Notepad++ updates to end users, which was exploited through the compromised former hosting provider’s infrastructure.",
+          "This compromise allowed threat actors to selectively intercept and redirect update traffic intended for Notepad++’s official update server.",
+          "The incident was highly targeted, affecting only a small number of high-value organizations rather than the broader Notepad++ user base.",
+          "Notepad++ published security advisory disclosing that traffic originating from WinGUp, the application’s update utility, was intermittently redirected to malicious servers.",
+          "Notepad++ released a security advisory confirming that state-sponsored threat actors had successfully hijacked the application’s update mechanism.",
+          "On the same day, researchers at Rapid7 assessed that the Notepad++ supply chain attack was likely associated with the China-aligned APT group tracked as Lotus Blossom.",
+          "The flaw affects Notepad++ versions prior to 8.8.9 when using the WinGUp updater.",
+          "Rapid7 and Kaspersky describe a consistent process execution pattern in which the legitimate Notepad++ binary (notepad++.exe) launches the trusted Generic Updater (GUP.exe), which is then abused to execute a malicious payload (update.exe).",
+          "In the context of Notepad++, WinGUP is used to transmit the currently installed version to hxxps://notepad-plus-plus[.]org/update/getDownloadUrl[.]php .",
+          "After extraction, the contents of update.zip closely resembles the legitimate Notepad++ updater directory.",
+          "Normally, GUP.exe resides in %ProgramFiles%\\Notepad++\\updater."
+        ]
+      },
+      {
+        "node_id": "HL_6f83a0450955",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Rapid7",
+        "edges": [],
+        "sentence_indices": [
+          9,
+          13
+        ],
+        "span_sentences": [
+          "On the same day, researchers at Rapid7 assessed that the Notepad++ supply chain attack was likely associated with the China-aligned APT group tracked as Lotus Blossom.",
+          "Rapid7 and Kaspersky describe a consistent process execution pattern in which the legitimate Notepad++ binary (notepad++.exe) launches the trusted Generic Updater (GUP.exe), which is then abused to execute a malicious payload (update.exe)."
+        ]
+      },
+      {
+        "node_id": "HL_89390e552cb8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Australia",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "-\nFebruary 3, 2026\n-\nKaspersky researchers published findings indicating that the attackers targeted individual users in Vietnam, El Salvador, and Australia, as well as multiple organizations across the Philippines, El Salvador, and Vietnam."
+        ]
+      },
+      {
+        "node_id": "HL_cb364632647a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "El Salvador",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "-\nFebruary 3, 2026\n-\nKaspersky researchers published findings indicating that the attackers targeted individual users in Vietnam, El Salvador, and Australia, as well as multiple organizations across the Philippines, El Salvador, and Vietnam."
+        ]
+      },
+      {
+        "node_id": "HL_cda5242f22cb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kaspersky",
+        "edges": [],
+        "sentence_indices": [
+          10,
+          13,
+          48
+        ],
+        "span_sentences": [
+          "-\nFebruary 3, 2026\n-\nKaspersky researchers published findings indicating that the attackers targeted individual users in Vietnam, El Salvador, and Australia, as well as multiple organizations across the Philippines, El Salvador, and Vietnam.",
+          "Rapid7 and Kaspersky describe a consistent process execution pattern in which the legitimate Notepad++ binary (notepad++.exe) launches the trusted Generic Updater (GUP.exe), which is then abused to execute a malicious payload (update.exe).",
+          "Similar to Kaspersky’s findings, all observed requests target the URL path “/dns-query”."
+        ]
+      },
+      {
+        "node_id": "HL_ed027fcc1345",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Vietnam",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "-\nFebruary 3, 2026\n-\nKaspersky researchers published findings indicating that the attackers targeted individual users in Vietnam, El Salvador, and Australia, as well as multiple organizations across the Philippines, El Salvador, and Vietnam."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The script attempts to install its payload in locations that resemble legitimate browser cache data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The update.exe file contains an embedded PowerShell script that is responsible for downloading additional payload."
+          ],
+          [
+            "Finally, the script recursively searches the extracted archive for an executable named “GUP.exe”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            26
+          ],
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Following extraction, the script removes Mark-of-the-Web metadata from all extracted files."
+          ],
+          [
+            "The script modifies the file timestamps of all extracted payload components to obscure the original download time."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Notepad++ published security advisory disclosing that traffic originating from WinGUp, the application’s update utility, was intermittently redirected to malicious servers."
+          ],
+          [
+            "Network traffic analysis shows that the malware attempts to establish connections to external servers using domain names associated with public DNS resolver services, including dns[.]google, cloudflare-dns[.]com , and dns.adguard-dns[.]com."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_6",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Finally, the script recursively searches the extracted archive for an executable named “GUP.exe”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In both reports, the update.exe payload is hosted remotely using the same directory structure across different IP addresses."
+          ],
+          [
+            "The update.exe file contains an embedded PowerShell script that is responsible for downloading additional payload."
+          ],
+          [
+            "The script downloads an archive file named “update.zip” from a hardcoded external IP address over HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As a result, some users unknowingly downloaded trojanized executable files during the update process."
+          ],
+          [
+            "Notepad++ released a security advisory confirming that state-sponsored threat actors had successfully hijacked the application’s update mechanism."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1557",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1557",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This compromise allowed threat actors to selectively intercept and redirect update traffic intended for Notepad++’s official update server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1564",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1564",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Following extraction, the script removes Mark-of-the-Web metadata from all extracted files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_12",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As a result, the locally placed libcurl.dll is loaded into the GUP.exeprocess in place of the legitimate library.",
+            "Runtime analysis confirms that the loaded DLL is actively used, with GUP.exe invoking curl_easy_init , curl_easy_setopt, curl_easy_perform, and curl_easy_cleanup exports.",
+            "This suggests that the threat actor deliberately crafted the sideloaded libcurl.dll to satisfy the executable’s runtime dependencies while operating within the trusted updater process."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0297b6662f42",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://notepad-plus-plus[.]org/update/getDownloadUrl[.]php",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "In the context of Notepad++, WinGUP is used to transmit the currently installed version to hxxps://notepad-plus-plus[.]org/update/getDownloadUrl[.]php ."
+        ]
+      },
+      {
+        "node_id": "IOC_0e493fe026a1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "notepad++.exe",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "Rapid7 and Kaspersky describe a consistent process execution pattern in which the legitimate Notepad++ binary (notepad++.exe) launches the trusted Generic Updater (GUP.exe), which is then abused to execute a malicious payload (update.exe)."
+        ]
+      },
+      {
+        "node_id": "IOC_251d0fefdfb0",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%ProgramFiles%\\Notepad++\\updater",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Normally, GUP.exe resides in %ProgramFiles%\\Notepad++\\updater."
+        ]
+      },
+      {
+        "node_id": "IOC_29d717ff9d99",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-15556",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "A new vulnerability, tracked as CVE-2025-15556, was publicly disclosed."
+        ]
+      },
+      {
+        "node_id": "IOC_66a4f85275a5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "gup.xml",
+        "edges": [],
+        "sentence_indices": [
+          38,
+          41
+        ],
+        "span_sentences": [
+          "The server responds with a file named gup.xml, that contains the download URL for the appropriate update.",
+          "GUP.exe requires the libcurl.dll and gup.xml file to run properly."
+        ]
+      },
+      {
+        "node_id": "IOC_77bf7267addc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "libcurl-x64.dll",
+        "edges": [],
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "The main difference is the presence of multiple versions of the cURL dynamic-link library, including libcurl-x64.dll and a smaller libcurl.dll file."
+        ]
+      },
+      {
+        "node_id": "IOC_8abf1c514a27",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "dns[.]google",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "Network traffic analysis shows that the malware attempts to establish connections to external servers using domain names associated with public DNS resolver services, including dns[.]google, cloudflare-dns[.]com , and dns.adguard-dns[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_bdadd953d049",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "update.zip",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          23,
+          39
+        ],
+        "span_sentences": [
+          "The script downloads an archive file named “update.zip” from a hardcoded external IP address over HTTP.",
+          "After extraction, the contents of update.zip closely resembles the legitimate Notepad++ updater directory."
+        ]
+      },
+      {
+        "node_id": "IOC_d34b4a6c660b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "update.exe",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          13,
+          17
+        ],
+        "span_sentences": [
+          "Rapid7 and Kaspersky describe a consistent process execution pattern in which the legitimate Notepad++ binary (notepad++.exe) launches the trusted Generic Updater (GUP.exe), which is then abused to execute a malicious payload (update.exe).",
+          "The sample was detected around October 2025 and was frequently deployed as update.exe ."
+        ]
+      },
+      {
+        "node_id": "IOC_e3927267c068",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "GUP.exe",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          13,
+          31,
+          34,
+          42,
+          43,
+          46
+        ],
+        "span_sentences": [
+          "Rapid7 and Kaspersky describe a consistent process execution pattern in which the legitimate Notepad++ binary (notepad++.exe) launches the trusted Generic Updater (GUP.exe), which is then abused to execute a malicious payload (update.exe).",
+          "Finally, the script recursively searches the extracted archive for an executable named “GUP.exe”.",
+          "GUP.exe is an executable associated with the WinGUp project.",
+          "When GUP.exe is executed from this directory, Windows’ default DLL search order causes the executable to load DLL files located in the same directory prior to system locations.",
+          "As a result, the locally placed libcurl.dll is loaded into the GUP.exeprocess in place of the legitimate library.",
+          "Normally, GUP.exe resides in %ProgramFiles%\\Notepad++\\updater."
+        ]
+      },
+      {
+        "node_id": "IOC_e789c81aa611",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "installer_release.exe",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The identified indicator’s internal name is installer_release.exe and masquerades as a “Microsoft Update Service”."
+        ]
+      },
+      {
+        "node_id": "IOC_e7ca63b01562",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "dns.adguard-dns[.]com",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "Network traffic analysis shows that the malware attempts to establish connections to external servers using domain names associated with public DNS resolver services, including dns[.]google, cloudflare-dns[.]com , and dns.adguard-dns[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_e9713f6f3ebc",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "cloudflare-dns[.]com",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "Network traffic analysis shows that the malware attempts to establish connections to external servers using domain names associated with public DNS resolver services, including dns[.]google, cloudflare-dns[.]com , and dns.adguard-dns[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_ed6fe14aba4f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "libcurl.dll",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          40,
+          41,
+          43
+        ],
+        "span_sentences": [
+          "The main difference is the presence of multiple versions of the cURL dynamic-link library, including libcurl-x64.dll and a smaller libcurl.dll file.",
+          "GUP.exe requires the libcurl.dll and gup.xml file to run properly.",
+          "As a result, the locally placed libcurl.dll is loaded into the GUP.exeprocess in place of the legitimate library."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_4d69e00c5454",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_514b9e64f22f",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_514b9e64f22f",
+      "node_v": "TTP_T1557"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "IOC_0297b6662f42",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "IOC_8abf1c514a27",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "IOC_bdadd953d049",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "IOC_bdadd953d049",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "IOC_d34b4a6c660b",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_d34b4a6c660b",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_d34b4a6c660b",
+      "node_v": "TTP_T1564"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_e3927267c068",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_e3927267c068",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_e789c81aa611",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_e7ca63b01562",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_e9713f6f3ebc",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_ed6fe14aba4f",
+      "node_v": "TTP_T1574"
+    }
+  ]
+}

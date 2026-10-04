@@ -1,0 +1,1401 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_001d48a597fa",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "SiegedSec",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "GhostSec is a hacker group that claims to be one of a modern-day Five Families group that includes ThreatSec, Stormous, Blackforums and SiegedSec on their Telegram channels."
+        ]
+      },
+      {
+        "node_id": "HL_0666553a06f3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Indonesia",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          5,
+          16
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site.",
+          "Along with the ransomware attacks, GhostSec seemed to be conducting attacks against corporate websites, including a national railway operator in Indonesia and one of Canada’s leading energy companies."
+        ]
+      },
+      {
+        "node_id": "HL_082118261122",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical infrastructure",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Talos’ observation in GhostSec’s Telegram channels highlighted the group’s continued attacks on Israel’s Industrial systems, critical infrastructure and technology companies."
+        ]
+      },
+      {
+        "node_id": "HL_0905da7869e1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GhostLocker 2.0",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          1,
+          21,
+          22,
+          23,
+          29,
+          34,
+          35,
+          36,
+          37
+        ],
+        "span_sentences": [
+          "- GhostSec has evolved with a new GhostLocker 2.0 ransomware, a Golang variant of the GhostLocker ransomware.",
+          "In November 2023, GhostSec announced a newer version of their GhostLocker ransomware called GhostLocker 2.0.",
+          "Recently we observed that they have again started advertising their latest Golang version “GhostLocker 2.0” by calling it “GhostLocker V2” and mentioning their ongoing work on the GhostLocker V3, indicating their continuous evolution in developing their toolset.",
+          "GhostLocker 2.0 encrypts the files on the victim’s machine using the file extension “.ghost” and drops and opens a ransom note.",
+          "During the initial execution, GhostLocker 2.0 copies itself to the Windows Startup folder to establish persistence.",
+          "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method.",
+          "In the GhostLocker 2.0 sample we analyzed, the actor has configured the ransomware to exfiltrate and encrypt the files that have file extensions .doc, .docx, .xls and .xlsx.",
+          "After successfully exfiltrating, GhostLocker 2.0 encrypts the targeted files and appends “.ghost” as the file extension for the encrypted files.",
+          "During the encryption process, GhostLocker 2.0 skips the “C:\\Windows” folder."
+        ]
+      },
+      {
+        "node_id": "HL_0f277059215f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Argentina",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_18a8c40152fc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Brazil",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_1bb94adb413e",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Blackforums",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "GhostSec is a hacker group that claims to be one of a modern-day Five Families group that includes ThreatSec, Stormous, Blackforums and SiegedSec on their Telegram channels."
+        ]
+      },
+      {
+        "node_id": "HL_1e9303f0478a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WordPress",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          42,
+          43
+        ],
+        "span_sentences": [
+          "It is done by using the Python libraries Beautiful Soup, a Python package used for parsing data out of HTML and XML files, and the BuiltWith Python library, a Python package used to detect the technology used by a website, such as Apache, JQuery and WordPress.",
+          "GhostPresser, an admin bypass and hacking tool targeting the WordPress content management system, is a shell script that GhostSec claims to have used in an XSS attack against a legitimate website in Canada."
+        ]
+      },
+      {
+        "node_id": "HL_40c2d1f1f4f8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "StormousX",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "14, 2023, the Stormous gang announced that they would use the GhostLocker ransomware program in addition to their StormousX program."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          29,
+          30,
+          37,
+          38
+        ],
+        "span_sentences": [
+          "During the initial execution, GhostLocker 2.0 copies itself to the Windows Startup folder to establish persistence.",
+          "It also generates a random string of 32 bytes and uses the generated string as the filename for its dropped copy in the Windows Startup folder.",
+          "During the encryption process, GhostLocker 2.0 skips the “C:\\Windows” folder.",
+          "After completing the encryption routine, the ransomware drops the embedded ransom note to an HTML file with the filename “Ransomnote.html” on the victim’s desktop and launches it using the Windows `Start` command."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos observed a surge in GhostSec, a hacking group’s malicious activities since this past year."
+        ]
+      },
+      {
+        "node_id": "HL_5209d14c92dc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Israel",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          5,
+          7
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site.",
+          "Talos’ observation in GhostSec’s Telegram channels highlighted the group’s continued attacks on Israel’s Industrial systems, critical infrastructure and technology companies."
+        ]
+      },
+      {
+        "node_id": "HL_5e822d04502b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GhostLocker V2",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Recently we observed that they have again started advertising their latest Golang version “GhostLocker 2.0” by calling it “GhostLocker V2” and mentioning their ongoing work on the GhostLocker V3, indicating their continuous evolution in developing their toolset."
+        ]
+      },
+      {
+        "node_id": "HL_6821b4a1bde6",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "technology companies",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Talos’ observation in GhostSec’s Telegram channels highlighted the group’s continued attacks on Israel’s Industrial systems, critical infrastructure and technology companies."
+        ]
+      },
+      {
+        "node_id": "HL_696ab1cbf870",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "energy companies",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Along with the ransomware attacks, GhostSec seemed to be conducting attacks against corporate websites, including a national railway operator in Indonesia and one of Canada’s leading energy companies."
+        ]
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Talos discovered the GhostLocker 2.0 C2 server with the IP address 94[.]103[.]91[.]246 located in Moscow, Russia."
+        ]
+      },
+      {
+        "node_id": "HL_7b895970f34a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Qatar",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_8a01fa32061a",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Stormous",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          2,
+          3,
+          5,
+          8,
+          13,
+          14,
+          15,
+          19
+        ],
+        "span_sentences": [
+          "- The GhostSec and Stormous ransomware groups are jointly conducting double extortion ransomware attacks on various business verticals in multiple countries.",
+          "- GhostLocker and Stormous ransomware have started a new ransomware-as-a-service (RaaS) program STMX_GhostLocker, providing various options for their affiliates.",
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site.",
+          "GhostSec is a hacker group that claims to be one of a modern-day Five Families group that includes ThreatSec, Stormous, Blackforums and SiegedSec on their Telegram channels.",
+          "After their successful collaborative operations with the Stormous ransomware group in July 2023 against Cuban ministries, on Oct.",
+          "14, 2023, the Stormous gang announced that they would use the GhostLocker ransomware program in addition to their StormousX program.",
+          "Since then, the GhostSec and Stormous ransomware groups have jointly conducted double extortion ransomware attacks targeting victims across various business verticals in multiple countries.",
+          "24, 2024, Stormous group mentioned on “The Five Families” Telegram channel that they have started their new ransomware-as-a-service (RaaS) program “STMX_GhostLocker” along with their partners in GhostSec."
+        ]
+      },
+      {
+        "node_id": "HL_90fd01a2271c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Uzbekistan",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_966a2c4ad9cc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "GhostSec Deep Scan tool",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          4,
+          40
+        ],
+        "span_sentences": [
+          "- Talos also discovered two new tools in GhostSec arsenal, the “GhostSec Deep Scan tool” and “GhostPresser,” both likely being used in the attacks against websites.",
+          "One of them is the “GhostSec Deep Scan toolset” to scan legitimate websites recursively, and another is a hack tool to perform cross-site scripting (XSS) attacks called “GhostPresser.”\nThe tool also contains placeholders to perform specific functions including SSL analysis, DNS lookup, checks for robots.txt and sitemap.xml, CVE scans on the targeted website, and an advanced search based on the file type, date range and the custom criteria of the websites, indicating the GhostSec’s continuous evolution of tools in their arsenal."
+        ]
+      },
+      {
+        "node_id": "HL_9e8afcce19e3",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GhostLocker",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          1,
+          3,
+          12,
+          14,
+          22,
+          25,
+          28,
+          34
+        ],
+        "span_sentences": [
+          "- GhostSec has evolved with a new GhostLocker 2.0 ransomware, a Golang variant of the GhostLocker ransomware.",
+          "- GhostLocker and Stormous ransomware have started a new ransomware-as-a-service (RaaS) program STMX_GhostLocker, providing various options for their affiliates.",
+          "In October 2023, GhostSec announced a new ransomware-as-a-service (RaaS) framework called GhostLocker.",
+          "14, 2023, the Stormous gang announced that they would use the GhostLocker ransomware program in addition to their StormousX program.",
+          "Recently we observed that they have again started advertising their latest Golang version “GhostLocker 2.0” by calling it “GhostLocker V2” and mentioning their ongoing work on the GhostLocker V3, indicating their continuous evolution in developing their toolset.",
+          "The GhostLocker RAAS has a C2 panel where the affiliates can get an overview of their attacks and gains.",
+          "We observed that the geolocation of the C2 server is similar to that of the C2 servers of earlier versions of the GhostLocker ransomware that security researchers at Uptycs reported.",
+          "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method."
+        ]
+      },
+      {
+        "node_id": "HL_a13386330da4",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "GhostSec",
+        "edges": [
+          "EDGE_22",
+          "EDGE_23",
+          "EDGE_24",
+          "EDGE_25",
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          7,
+          8,
+          9,
+          12,
+          15,
+          16,
+          19,
+          21,
+          39,
+          40,
+          43
+        ],
+        "span_sentences": [
+          "Cisco Talos observed a surge in GhostSec, a hacking group’s malicious activities since this past year.",
+          "- GhostSec has evolved with a new GhostLocker 2.0 ransomware, a Golang variant of the GhostLocker ransomware.",
+          "- The GhostSec and Stormous ransomware groups are jointly conducting double extortion ransomware attacks on various business verticals in multiple countries.",
+          "- Talos also discovered two new tools in GhostSec arsenal, the “GhostSec Deep Scan tool” and “GhostPresser,” both likely being used in the attacks against websites.",
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site.",
+          "Talos’ observation in GhostSec’s Telegram channels highlighted the group’s continued attacks on Israel’s Industrial systems, critical infrastructure and technology companies.",
+          "GhostSec is a hacker group that claims to be one of a modern-day Five Families group that includes ThreatSec, Stormous, Blackforums and SiegedSec on their Telegram channels.",
+          "GhostSec is financially motivated, conducting single and double extortion attacks on victims across various geographies.",
+          "In October 2023, GhostSec announced a new ransomware-as-a-service (RaaS) framework called GhostLocker.",
+          "Since then, the GhostSec and Stormous ransomware groups have jointly conducted double extortion ransomware attacks targeting victims across various business verticals in multiple countries.",
+          "Along with the ransomware attacks, GhostSec seemed to be conducting attacks against corporate websites, including a national railway operator in Indonesia and one of Canada’s leading energy companies.",
+          "24, 2024, Stormous group mentioned on “The Five Families” Telegram channel that they have started their new ransomware-as-a-service (RaaS) program “STMX_GhostLocker” along with their partners in GhostSec.",
+          "In November 2023, GhostSec announced a newer version of their GhostLocker ransomware called GhostLocker 2.0.",
+          "Talos’ research uncovered two new tools in GhostSec’s arsenal that the hacking group claimed to have used in compromising legitimate websites.",
+          "One of them is the “GhostSec Deep Scan toolset” to scan legitimate websites recursively, and another is a hack tool to perform cross-site scripting (XSS) attacks called “GhostPresser.”\nThe tool also contains placeholders to perform specific functions including SSL analysis, DNS lookup, checks for robots.txt and sitemap.xml, CVE scans on the targeted website, and an advanced search based on the file type, date range and the custom criteria of the websites, indicating the GhostSec’s continuous evolution of tools in their arsenal.",
+          "GhostPresser, an admin bypass and hacking tool targeting the WordPress content management system, is a shell script that GhostSec claims to have used in an XSS attack against a legitimate website in Canada."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_a9a02cc3bb05",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "STMX_GhostLocker",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          19
+        ],
+        "span_sentences": [
+          "- GhostLocker and Stormous ransomware have started a new ransomware-as-a-service (RaaS) program STMX_GhostLocker, providing various options for their affiliates.",
+          "24, 2024, Stormous group mentioned on “The Five Families” Telegram channel that they have started their new ransomware-as-a-service (RaaS) program “STMX_GhostLocker” along with their partners in GhostSec."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          6,
+          7,
+          8,
+          10,
+          19
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site.",
+          "The collaborative operation affected victims across various business verticals, according to disclosures made by the groups in their Telegram channels.",
+          "Talos’ observation in GhostSec’s Telegram channels highlighted the group’s continued attacks on Israel’s Industrial systems, critical infrastructure and technology companies.",
+          "GhostSec is a hacker group that claims to be one of a modern-day Five Families group that includes ThreatSec, Stormous, Blackforums and SiegedSec on their Telegram channels.",
+          "They have also conducted several denial-of-service (DoS) attacks and have taken down victims’ websites, according to their Telegram channel messages.",
+          "24, 2024, Stormous group mentioned on “The Five Families” Telegram channel that they have started their new ransomware-as-a-service (RaaS) program “STMX_GhostLocker” along with their partners in GhostSec."
+        ]
+      },
+      {
+        "node_id": "HL_b39d93b6fd6a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Canada",
+        "edges": [],
+        "sentence_indices": [
+          16,
+          43
+        ],
+        "span_sentences": [
+          "Along with the ransomware attacks, GhostSec seemed to be conducting attacks against corporate websites, including a national railway operator in Indonesia and one of Canada’s leading energy companies.",
+          "GhostPresser, an admin bypass and hacking tool targeting the WordPress content management system, is a shell script that GhostSec claims to have used in an XSS attack against a legitimate website in Canada."
+        ]
+      },
+      {
+        "node_id": "HL_b427e3b6cb6d",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Cuba",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          5,
+          13
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site.",
+          "After their successful collaborative operations with the Stormous ransomware group in July 2023 against Cuban ministries, on Oct."
+        ]
+      },
+      {
+        "node_id": "HL_b84a0d2574f0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Egypt",
+        "edges": [
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_b988cd210aac",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Poland",
+        "edges": [
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_bb459ba53504",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Industrial systems",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Talos’ observation in GhostSec’s Telegram channels highlighted the group’s continued attacks on Israel’s Industrial systems, critical infrastructure and technology companies."
+        ]
+      },
+      {
+        "node_id": "HL_c5780916bc11",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Lebanon",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_c64b199ed51c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Moscow",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Talos discovered the GhostLocker 2.0 C2 server with the IP address 94[.]103[.]91[.]246 located in Moscow, Russia."
+        ]
+      },
+      {
+        "node_id": "HL_c82c29bce379",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Uptycs",
+        "edges": [],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "We observed that the geolocation of the C2 server is similar to that of the C2 servers of earlier versions of the GhostLocker ransomware that security researchers at Uptycs reported."
+        ]
+      },
+      {
+        "node_id": "HL_c92b5a02c9c9",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Africa",
+        "edges": [
+          "EDGE_33"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_ce89fac1fa17",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "The Five Families",
+        "edges": [],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "24, 2024, Stormous group mentioned on “The Five Families” Telegram channel that they have started their new ransomware-as-a-service (RaaS) program “STMX_GhostLocker” along with their partners in GhostSec."
+        ]
+      },
+      {
+        "node_id": "HL_d128d1727722",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Morocco",
+        "edges": [
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_e255f2e6d10f",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "GhostPresser",
+        "edges": [
+          "EDGE_35"
+        ],
+        "sentence_indices": [
+          4,
+          17,
+          40,
+          43
+        ],
+        "span_sentences": [
+          "- Talos also discovered two new tools in GhostSec arsenal, the “GhostSec Deep Scan tool” and “GhostPresser,” both likely being used in the attacks against websites.",
+          "They have likely leveraged their GhostPresser tool along with the cross-site scripting attack technique to compromise the websites.",
+          "One of them is the “GhostSec Deep Scan toolset” to scan legitimate websites recursively, and another is a hack tool to perform cross-site scripting (XSS) attacks called “GhostPresser.”\nThe tool also contains placeholders to perform specific functions including SSL analysis, DNS lookup, checks for robots.txt and sitemap.xml, CVE scans on the targeted website, and an advanced search based on the file type, date range and the custom criteria of the websites, indicating the GhostSec’s continuous evolution of tools in their arsenal.",
+          "GhostPresser, an admin bypass and hacking tool targeting the WordPress content management system, is a shell script that GhostSec claims to have used in an XSS attack against a legitimate website in Canada."
+        ]
+      },
+      {
+        "node_id": "HL_e87e604bffaa",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Turkiye",
+        "edges": [
+          "EDGE_36"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_ed027fcc1345",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Vietnam",
+        "edges": [
+          "EDGE_37"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_f0730fc60dca",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Thailand",
+        "edges": [
+          "EDGE_38"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+        ]
+      },
+      {
+        "node_id": "HL_f9948000087a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GhostLocker V3",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Recently we observed that they have again started advertising their latest Golang version “GhostLocker 2.0” by calling it “GhostLocker V2” and mentioning their ongoing work on the GhostLocker V3, indicating their continuous evolution in developing their toolset."
+        ]
+      },
+      {
+        "node_id": "HL_fa561d0e7dd0",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "ThreatSec",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "GhostSec is a hacker group that claims to be one of a modern-day Five Families group that includes ThreatSec, Stormous, Blackforums and SiegedSec on their Telegram channels."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_5",
+          "EDGE_41",
+          "EDGE_44"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            34
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The generated JSON file is sent to the C2 server through the URL hxxp[://]94[.]103[.]91[.]246[/]addInfection to register the victim’s machine infection in the C2 panel.",
+            "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method."
+          ],
+          [
+            "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_6",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "During the encryption process, GhostLocker 2.0 skips the “C:\\Windows” folder.",
+            "After completing the encryption routine, the ransomware drops the embedded ransom note to an HTML file with the filename “Ransomnote.html” on the victim’s desktop and launches it using the Windows `Start` command."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_7",
+          "EDGE_39",
+          "EDGE_42",
+          "EDGE_43",
+          "EDGE_45"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            31
+          ],
+          [
+            33,
+            34
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "During the initial execution, GhostLocker 2.0 copies itself to the Windows Startup folder to establish persistence.",
+            "It also generates a random string of 32 bytes and uses the generated string as the filename for its dropped copy in the Windows Startup folder.",
+            "After establishing the persistence, the ransomware establishes the connection to the C2 server through the URL hxxp[://]94[.]103[.]91[.]246[/]incrementLaunch."
+          ],
+          [
+            "The generated JSON file is sent to the C2 server through the URL hxxp[://]94[.]103[.]91[.]246[/]addInfection to register the victim’s machine infection in the C2 panel.",
+            "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method."
+          ],
+          [
+            "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1190",
+        "edges": [
+          "EDGE_12",
+          "EDGE_22",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Talos also discovered two new tools in GhostSec arsenal, the “GhostSec Deep Scan tool” and “GhostPresser,” both likely being used in the attacks against websites."
+          ],
+          [
+            "They have likely leveraged their GhostPresser tool along with the cross-site scripting attack technique to compromise the websites."
+          ],
+          [
+            "GhostPresser, an admin bypass and hacking tool targeting the WordPress content management system, is a shell script that GhostSec claims to have used in an XSS attack against a legitimate website in Canada."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1486",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_8",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_21",
+          "EDGE_23",
+          "EDGE_27",
+          "EDGE_28",
+          "EDGE_29",
+          "EDGE_30",
+          "EDGE_31",
+          "EDGE_32",
+          "EDGE_33",
+          "EDGE_34",
+          "EDGE_36",
+          "EDGE_37",
+          "EDGE_38",
+          "EDGE_40"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            37,
+            37
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- GhostSec has evolved with a new GhostLocker 2.0 ransomware, a Golang variant of the GhostLocker ransomware."
+          ],
+          [
+            "- The GhostSec and Stormous ransomware groups are jointly conducting double extortion ransomware attacks on various business verticals in multiple countries."
+          ],
+          [
+            "- The GhostSec and Stormous ransomware groups are jointly conducting double extortion ransomware attacks on various business verticals in multiple countries.",
+            "- GhostLocker and Stormous ransomware have started a new ransomware-as-a-service (RaaS) program STMX_GhostLocker, providing various options for their affiliates.",
+            "- Talos also discovered two new tools in GhostSec arsenal, the “GhostSec Deep Scan tool” and “GhostPresser,” both likely being used in the attacks against websites.",
+            "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site."
+          ],
+          [
+            "Talos observed the GhostSec and Stormous ransomware groups operating together to conduct several double extortion attacks using the GhostLocker and StormousX ransomware programs against the victims in Cuba, Argentina, Poland, China, Lebanon, Israel, Uzbekistan, India, South Africa, Brazil, Morocco, Qatar, Turkiye, Egypt, Vietnam, Thailand and Indonesia according to our assessment of the disclosure messages posted by the group in their Telegram channels and Stormous ransomware data leak site.",
+            "The collaborative operation affected victims across various business verticals, according to disclosures made by the groups in their Telegram channels.",
+            "Talos’ observation in GhostSec’s Telegram channels highlighted the group’s continued attacks on Israel’s Industrial systems, critical infrastructure and technology companies."
+          ],
+          [
+            "GhostSec is financially motivated, conducting single and double extortion attacks on victims across various geographies."
+          ],
+          [
+            "GhostLocker 2.0 encrypts the files on the victim’s machine using the file extension “.ghost” and drops and opens a ransom note."
+          ],
+          [
+            "After successfully exfiltrating, GhostLocker 2.0 encrypts the targeted files and appends “.ghost” as the file extension for the encrypted files."
+          ],
+          [
+            "During the encryption process, GhostLocker 2.0 skips the “C:\\Windows” folder."
+          ],
+          [
+            "During the encryption process, GhostLocker 2.0 skips the “C:\\Windows” folder.",
+            "After completing the encryption routine, the ransomware drops the embedded ransom note to an HTML file with the filename “Ransomnote.html” on the victim’s desktop and launches it using the Windows `Start` command."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1499",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1499",
+        "edges": [
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They have also conducted several denial-of-service (DoS) attacks and have taken down victims’ websites, according to their Telegram channel messages."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_9",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            29,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "During the initial execution, GhostLocker 2.0 copies itself to the Windows Startup folder to establish persistence."
+          ],
+          [
+            "During the initial execution, GhostLocker 2.0 copies itself to the Windows Startup folder to establish persistence.",
+            "It also generates a random string of 32 bytes and uses the generated string as the filename for its dropped copy in the Windows Startup folder.",
+            "After establishing the persistence, the ransomware establishes the connection to the C2 server through the URL hxxp[://]94[.]103[.]91[.]246[/]incrementLaunch."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1587",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1587",
+        "edges": [
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In October 2023, GhostSec announced a new ransomware-as-a-service (RaaS) framework called GhostLocker."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1595",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1595",
+        "edges": [
+          "EDGE_20",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "One of them is the “GhostSec Deep Scan toolset” to scan legitimate websites recursively, and another is a hack tool to perform cross-site scripting (XSS) attacks called “GhostPresser.”\nThe tool also contains placeholders to perform specific functions including SSL analysis, DNS lookup, checks for robots.txt and sitemap.xml, CVE scans on the targeted website, and an advanced search based on the file type, date range and the custom criteria of the websites, indicating the GhostSec’s continuous evolution of tools in their arsenal."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0eb4df7c2d90",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[://]94[.]103[.]91[.]246[/]incrementLaunch",
+        "edges": [
+          "EDGE_39"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "After establishing the persistence, the ransomware establishes the connection to the C2 server through the URL hxxp[://]94[.]103[.]91[.]246[/]incrementLaunch."
+        ]
+      },
+      {
+        "node_id": "IOC_54e5cb37c4fc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows",
+        "edges": [
+          "EDGE_40"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "During the encryption process, GhostLocker 2.0 skips the “C:\\Windows” folder."
+        ]
+      },
+      {
+        "node_id": "IOC_757a21f0a952",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[://]94[.]103[.]91[.]246[/]upload",
+        "edges": [
+          "EDGE_41",
+          "EDGE_42"
+        ],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method."
+        ]
+      },
+      {
+        "node_id": "IOC_7a1c4df05c57",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[://]94[.]103[.]91[.]246[/]addInfection",
+        "edges": [
+          "EDGE_43"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "The generated JSON file is sent to the C2 server through the URL hxxp[://]94[.]103[.]91[.]246[/]addInfection to register the victim’s machine infection in the C2 panel."
+        ]
+      },
+      {
+        "node_id": "IOC_e2add28e5a32",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "94[.]103[.]91[.]246",
+        "edges": [
+          "EDGE_44",
+          "EDGE_45"
+        ],
+        "sentence_indices": [
+          27,
+          31,
+          33,
+          34
+        ],
+        "span_sentences": [
+          "Talos discovered the GhostLocker 2.0 C2 server with the IP address 94[.]103[.]91[.]246 located in Moscow, Russia.",
+          "After establishing the persistence, the ransomware establishes the connection to the C2 server through the URL hxxp[://]94[.]103[.]91[.]246[/]incrementLaunch.",
+          "The generated JSON file is sent to the C2 server through the URL hxxp[://]94[.]103[.]91[.]246[/]addInfection to register the victim’s machine infection in the C2 panel.",
+          "GhostLocker 2.0 searches for the target files on the victim’s machine according to the file extension list defined by the threat actor, and before the encryption routine starts, it will upload the target files to the C2 server through the URL “hxxp[://]94[.]103[.]91[.]246[/]upload” using HTTP post method."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_001424583ef1",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0666553a06f3",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_082118261122",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_0905da7869e1",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_0905da7869e1",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_0905da7869e1",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_0905da7869e1",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_0905da7869e1",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_0905da7869e1",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_0f277059215f",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_18a8c40152fc",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_1e9303f0478a",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_5209d14c92dc",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_6821b4a1bde6",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_7b895970f34a",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_8a01fa32061a",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_90fd01a2271c",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_966a2c4ad9cc",
+      "node_v": "TTP_T1595"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_9e8afcce19e3",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_a13386330da4",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_a13386330da4",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_a13386330da4",
+      "node_v": "TTP_T1499"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_a13386330da4",
+      "node_v": "TTP_T1587"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_a13386330da4",
+      "node_v": "TTP_T1595"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "HL_a87a238c89f2",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "HL_b427e3b6cb6d",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "HL_b84a0d2574f0",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "HL_b988cd210aac",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "HL_bb459ba53504",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "HL_c5780916bc11",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "HL_c92b5a02c9c9",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "HL_d128d1727722",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "HL_e255f2e6d10f",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "HL_e87e604bffaa",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "HL_ed027fcc1345",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_38",
+      "node_u": "HL_f0730fc60dca",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_39",
+      "node_u": "IOC_0eb4df7c2d90",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_40",
+      "node_u": "IOC_54e5cb37c4fc",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_41",
+      "node_u": "IOC_757a21f0a952",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_42",
+      "node_u": "IOC_757a21f0a952",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_43",
+      "node_u": "IOC_7a1c4df05c57",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_44",
+      "node_u": "IOC_e2add28e5a32",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_45",
+      "node_u": "IOC_e2add28e5a32",
+      "node_v": "TTP_T1071"
+    }
+  ]
+}

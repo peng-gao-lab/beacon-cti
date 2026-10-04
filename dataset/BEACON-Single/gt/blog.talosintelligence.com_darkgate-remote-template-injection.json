@@ -1,0 +1,562 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          17,
+          23
+        ],
+        "span_sentences": [
+          "The VBS file is appended with a command that executes a PowerShell script from the DarkGate command and control (C2) server.",
+          "As shown in the previous PowerShell code, payloads are initially saved to disk within a directory (C:\\rimz\\) on the system."
+        ]
+      },
+      {
+        "node_id": "HL_2b260171a6c9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DarkGate",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          17,
+          19,
+          22,
+          26,
+          29
+        ],
+        "span_sentences": [
+          "Recently, DarkGate has been observed distributing malware through Microsoft Teams and even via malvertising campaigns.",
+          "Notably, in the latest campaign, AutoHotKey scripting was employed instead of AutoIT, indicating the continuous evolution of DarkGate actors in altering the infection chain to evade detection.",
+          "Our initial findings linked the indicators of compromise (IOCs) to the DarkGate malware.",
+          "The VBS file is appended with a command that executes a PowerShell script from the DarkGate command and control (C2) server.",
+          "Payload analysis\nOn March 12, 2024, the DarkGate campaign transitioned from deploying AutoIT scripts to employing AutoHotKey scripts.",
+          "This binary data is then processed to execute the DarkGate malware payload directly within memory on infected systems.",
+          "The executed AHK script reads content from the text file (test.txt), decodes it in memory, and executes it without ever saving the decoded DarkGate payload to disk.",
+          "However, because of the evolving nature of recent DarkGate campaigns — as demonstrated by the shift from AutoIT to AutoHotKey scripts and use of remote template injection — serves as a stark reminder of the continuous arms race in cybersecurity."
+        ]
+      },
+      {
+        "node_id": "HL_3d07e70c6afd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Teams",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Recently, DarkGate has been observed distributing malware through Microsoft Teams and even via malvertising campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_951223d5d18c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Excel",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          8,
+          11,
+          13,
+          16
+        ],
+        "span_sentences": [
+          "It is an active campaign using attached Excel documents attempting to lure users to download and execute remote payloads.",
+          "The infection process begins when the malicious Excel document is opened.",
+          "Remote Template Injection is an attack technique that exploits a legitimate Excel functionality wherein templates can be imported from external sources to expand a document’s functions and features.",
+          "When the Excel file is opened, it downloads and executes a VBS file from an attacker-controlled server."
+        ]
+      },
+      {
+        "node_id": "HL_adc349104a82",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecommunications",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Healthcare technologies and telecommunications were the most-targeted sectors, but campaign activity was observed targeting a wide range of industries."
+        ]
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Based on Cisco Talos telemetry, this campaign targets the U.S."
+        ]
+      },
+      {
+        "node_id": "HL_bf47d8fe871b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoHotKey",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          1,
+          19,
+          20,
+          25,
+          29
+        ],
+        "span_sentences": [
+          "Notably, in the latest campaign, AutoHotKey scripting was employed instead of AutoIT, indicating the continuous evolution of DarkGate actors in altering the infection chain to evade detection.",
+          "Payload analysis\nOn March 12, 2024, the DarkGate campaign transitioned from deploying AutoIT scripts to employing AutoHotKey scripts.",
+          "While both AutoIT and AutoHotKey have legitimate purposes, they are often abused by adversaries to run malicious scripts, consistent with other scripting languages often observed in infection chains.",
+          "In this case, the attacker was using a legitimate copy of the AutoHotKey binary (AutoHotKey.exe) to execute a malicious AHK script (script.ahk).",
+          "However, because of the evolving nature of recent DarkGate campaigns — as demonstrated by the shift from AutoIT to AutoHotKey scripts and use of remote template injection — serves as a stark reminder of the continuous arms race in cybersecurity."
+        ]
+      },
+      {
+        "node_id": "HL_d89af15eceb9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Cisco Duo",
+        "edges": [],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "Cisco Duo provides multi-factor authentication for users to ensure only those authorized are accessing your network."
+        ]
+      },
+      {
+        "node_id": "HL_f490d3b65ad2",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoIT",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          1,
+          19,
+          20,
+          29
+        ],
+        "span_sentences": [
+          "Notably, in the latest campaign, AutoHotKey scripting was employed instead of AutoIT, indicating the continuous evolution of DarkGate actors in altering the infection chain to evade detection.",
+          "Payload analysis\nOn March 12, 2024, the DarkGate campaign transitioned from deploying AutoIT scripts to employing AutoHotKey scripts.",
+          "While both AutoIT and AutoHotKey have legitimate purposes, they are often abused by adversaries to run malicious scripts, consistent with other scripting languages often observed in infection chains.",
+          "However, because of the evolving nature of recent DarkGate campaigns — as demonstrated by the shift from AutoIT to AutoHotKey scripts and use of remote template injection — serves as a stark reminder of the continuous arms race in cybersecurity."
+        ]
+      },
+      {
+        "node_id": "HL_f9f5cfdecb16",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Healthcare technologies",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Healthcare technologies and telecommunications were the most-targeted sectors, but campaign activity was observed targeting a wide range of industries."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            22
+          ],
+          [
+            23,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As shown in the screenshot above, one of the files retrieved is ‘test.txt.’\nWithin this file, there is base64-encoded blob that, when decoded, transforms into binary data.",
+            "This binary data is then processed to execute the DarkGate malware payload directly within memory on infected systems."
+          ],
+          [
+            "As shown in the previous PowerShell code, payloads are initially saved to disk within a directory (C:\\rimz\\) on the system.",
+            "The directory name changes across infection chains that were analyzed.",
+            "In this case, the attacker was using a legitimate copy of the AutoHotKey binary (AutoHotKey.exe) to execute a malicious AHK script (script.ahk).",
+            "The executed AHK script reads content from the text file (test.txt), decodes it in memory, and executes it without ever saving the decoded DarkGate payload to disk."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_3",
+          "EDGE_15",
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            23,
+            26
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Notably, in the latest campaign, AutoHotKey scripting was employed instead of AutoIT, indicating the continuous evolution of DarkGate actors in altering the infection chain to evade detection."
+          ],
+          [
+            "When the Excel file is opened, it downloads and executes a VBS file from an attacker-controlled server."
+          ],
+          [
+            "The VBS file is appended with a command that executes a PowerShell script from the DarkGate command and control (C2) server."
+          ],
+          [
+            "This PowerShell script retrieves the next stage’s components and executes them, as shown below."
+          ],
+          [
+            "Payload analysis\nOn March 12, 2024, the DarkGate campaign transitioned from deploying AutoIT scripts to employing AutoHotKey scripts.",
+            "While both AutoIT and AutoHotKey have legitimate purposes, they are often abused by adversaries to run malicious scripts, consistent with other scripting languages often observed in infection chains."
+          ],
+          [
+            "As shown in the previous PowerShell code, payloads are initially saved to disk within a directory (C:\\rimz\\) on the system."
+          ],
+          [
+            "As shown in the previous PowerShell code, payloads are initially saved to disk within a directory (C:\\rimz\\) on the system.",
+            "The directory name changes across infection chains that were analyzed.",
+            "In this case, the attacker was using a legitimate copy of the AutoHotKey binary (AutoHotKey.exe) to execute a malicious AHK script (script.ahk).",
+            "The executed AHK script reads content from the text file (test.txt), decodes it in memory, and executes it without ever saving the decoded DarkGate payload to disk."
+          ],
+          [
+            "In this case, the attacker was using a legitimate copy of the AutoHotKey binary (AutoHotKey.exe) to execute a malicious AHK script (script.ahk)."
+          ],
+          [
+            "This file also contains shellcode that is loaded and executed by the AHK script, as shown below."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_4",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These files were specially crafted to utilize a technique, called “Remote Template Injection,” to trigger the automatic download and execution of malicious contents hosted on a remote server."
+          ],
+          [
+            "When the Excel file is opened, it downloads and executes a VBS file from an attacker-controlled server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_5",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As shown in the screenshot above, one of the files retrieved is ‘test.txt.’\nWithin this file, there is base64-encoded blob that, when decoded, transforms into binary data.",
+            "This binary data is then processed to execute the DarkGate malware payload directly within memory on infected systems."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_6",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The infection process begins when the malicious Excel document is opened."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1221",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1221",
+        "edges": [
+          "EDGE_7",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These files were specially crafted to utilize a technique, called “Remote Template Injection,” to trigger the automatic download and execution of malicious contents hosted on a remote server.",
+            "Remote Template Injection is an attack technique that exploits a legitimate Excel functionality wherein templates can be imported from external sources to expand a document’s functions and features."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Persistence mechanisms\n\nPersistence across reboots is established through the creation of a shortcut file within the Startup directory on the infected system."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_9",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Our telemetry indicates that malspam emails were the primary source of delivery for this campaign."
+          ],
+          [
+            "It is an active campaign using attached Excel documents attempting to lure users to download and execute remote payloads."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_7d1283c0ce33",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\rimz\\",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "As shown in the previous PowerShell code, payloads are initially saved to disk within a directory (C:\\rimz\\) on the system."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1221"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_951223d5d18c",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_951223d5d18c",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_951223d5d18c",
+      "node_v": "TTP_T1221"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_951223d5d18c",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_f490d3b65ad2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_7d1283c0ce33",
+      "node_v": "TTP_T1059"
+    }
+  ]
+}

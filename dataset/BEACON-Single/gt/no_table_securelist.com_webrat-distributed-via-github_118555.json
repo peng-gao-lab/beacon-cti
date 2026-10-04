@@ -1,0 +1,428 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0251d5a9c595",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GitHub",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In October, we uncovered a campaign that had been distributing Webrat via GitHub repositories since at least September."
+        ]
+      },
+      {
+        "node_id": "HL_134c4fd6476a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Webrat",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          8,
+          16,
+          17,
+          19,
+          20,
+          24,
+          26,
+          28
+        ],
+        "span_sentences": [
+          "In early 2025, security researchers uncovered a new malware family named Webrat.",
+          "In October, we uncovered a campaign that had been distributing Webrat via GitHub repositories since at least September.",
+          "In the Webrat campaign, the attackers bait their traps with both vulnerabilities lacking a working exploit and those which already have one.",
+          "- Fetch from a hardcoded URL (ezc5510min.temp[.]swtest[.]ru in our example) a sample of the Webrat family and execute it (T1608.001).",
+          "Webrat is a backdoor that allows the attackers to control the infected system.",
+          "The version of Webrat discovered in this campaign is no different from those documented previously.",
+          "Previously, Webrat spread alongside game cheats, software cracks, and patches for legitimate applications.",
+          "Furthermore, an experienced researcher would easily recognize Webrat, as it’s well-documented and the current version is no different from previous ones.",
+          "The threat actor behind Webrat is now disguising the backdoor not only as game cheats and cracked software, but also as exploits and PoCs.",
+          "However, Webrat itself has not changed significantly from past campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_22dbb4876dac",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Steam",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "Furthermore, it can steal data from cryptocurrency wallets, Telegram, Discord and Steam accounts, while also performing spyware functions such as screen recording, surveillance via a webcam and microphone, and keylogging."
+        ]
+      },
+      {
+        "node_id": "HL_2b1c8949f257",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Roblox",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Initially, the Trojan targeted regular users by disguising itself as cheats for popular games like Rust, Counter-Strike, and Roblox, or as cracked software."
+        ]
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "- Disable Windows Defender (T1562.001) to avoid detection."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "Furthermore, it can steal data from cryptocurrency wallets, Telegram, Discord and Steam accounts, while also performing spyware functions such as screen recording, surveillance via a webcam and microphone, and keylogging."
+        ]
+      },
+      {
+        "node_id": "HL_cfed1cacc9c5",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Rust",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Initially, the Trojan targeted regular users by disguising itself as cheats for popular games like Rust, Counter-Strike, and Roblox, or as cracked software."
+        ]
+      },
+      {
+        "node_id": "HL_e0dc5e187857",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Counter-Strike",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Initially, the Trojan targeted regular users by disguising itself as cheats for popular games like Rust, Counter-Strike, and Roblox, or as cracked software."
+        ]
+      },
+      {
+        "node_id": "HL_f32e005df759",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Discord",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "Furthermore, it can steal data from cryptocurrency wallets, Telegram, Discord and Steam accounts, while also performing spyware functions such as screen recording, surveillance via a webcam and microphone, and keylogging."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1056",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Furthermore, it can steal data from cryptocurrency wallets, Telegram, Discord and Steam accounts, while also performing spyware functions such as screen recording, surveillance via a webcam and microphone, and keylogging."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Furthermore, it can steal data from cryptocurrency wallets, Telegram, Discord and Steam accounts, while also performing spyware functions such as screen recording, surveillance via a webcam and microphone, and keylogging."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1123",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1123",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Furthermore, it can steal data from cryptocurrency wallets, Telegram, Discord and Steam accounts, while also performing spyware functions such as screen recording, surveillance via a webcam and microphone, and keylogging."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1134",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1134",
+        "edges": [
+          "EDGE_4",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "rasmanesc.exe (note: file names may vary): the primary malicious file (MD5 61b1fc6ab327e6d3ff5fd3e82b430315), which performs the following actions:\n- Escalate its privileges to the administrator level (T1134.002)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_5",
+          "EDGE_8",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Initially, the Trojan targeted regular users by disguising itself as cheats for popular games like Rust, Counter-Strike, and Roblox, or as cracked software."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_6",
+          "EDGE_9",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            15
+          ],
+          [
+            14,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "rasmanesc.exe (note: file names may vary): the primary malicious file (MD5 61b1fc6ab327e6d3ff5fd3e82b430315), which performs the following actions:\n- Escalate its privileges to the administrator level (T1134.002).",
+            "- Disable Windows Defender (T1562.001) to avoid detection."
+          ],
+          [
+            "rasmanesc.exe (note: file names may vary): the primary malicious file (MD5 61b1fc6ab327e6d3ff5fd3e82b430315), which performs the following actions:\n- Escalate its privileges to the administrator level (T1134.002).",
+            "- Disable Windows Defender (T1562.001) to avoid detection.",
+            "- Fetch from a hardcoded URL (ezc5510min.temp[.]swtest[.]ru in our example) a sample of the Webrat family and execute it (T1608.001)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1608",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1608",
+        "edges": [
+          "EDGE_7",
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Fetch from a hardcoded URL (ezc5510min.temp[.]swtest[.]ru in our example) a sample of the Webrat family and execute it (T1608.001)."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_508c857d771a",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "61b1fc6ab327e6d3ff5fd3e82b430315",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "rasmanesc.exe (note: file names may vary): the primary malicious file (MD5 61b1fc6ab327e6d3ff5fd3e82b430315), which performs the following actions:\n- Escalate its privileges to the administrator level (T1134.002)."
+        ]
+      },
+      {
+        "node_id": "IOC_ef4151e195fa",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ezc5510min.temp[.]swtest[.]ru",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "- Fetch from a hardcoded URL (ezc5510min.temp[.]swtest[.]ru in our example) a sample of the Webrat family and execute it (T1608.001)."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_134c4fd6476a",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_134c4fd6476a",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_134c4fd6476a",
+      "node_v": "TTP_T1123"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_134c4fd6476a",
+      "node_v": "TTP_T1134"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_134c4fd6476a",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_134c4fd6476a",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_134c4fd6476a",
+      "node_v": "TTP_T1608"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_2b1c8949f257",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_cfed1cacc9c5",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_e0dc5e187857",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_508c857d771a",
+      "node_v": "TTP_T1134"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_508c857d771a",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_508c857d771a",
+      "node_v": "TTP_T1608"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_ef4151e195fa",
+      "node_v": "TTP_T1608"
+    }
+  ]
+}

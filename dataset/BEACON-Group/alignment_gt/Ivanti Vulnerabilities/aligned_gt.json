@@ -1,0 +1,3512 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_08ad058c18ab",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Apache web server",
+        "edges": [],
+        "source": {
+          "Apache web server_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              9,
+              "The vulnerability lies in legacy bash scripts used by the Apache web server to handle URL rewriting."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "edges": [],
+        "source": {
+          "United States_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              3,
+              "This campaign also affected the following sectors in the United States, Germany, Australia and Canada:."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2600fe09296e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Gitee",
+        "edges": [
+          "EDGE_0eba3657726f"
+        ],
+        "source": {
+          "Gitee_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              24,
+              "They downloaded this tool with specific parameters to fetch from Gitee if the victim’s location is China, ensuring the largest possible victim base irrespective of location."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2e9950dd24ff",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "MobileIron",
+        "edges": [
+          "EDGE_0f358caf9610",
+          "EDGE_4c520d58050b"
+        ],
+        "source": {
+          "MobileIron_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              21,
+              "In some instances, attackers attempted to bypass authentication on Ivanti's MobileIron platform and immediately download and run a second-stage payload (the /slt script)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3a881efdfd5a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ivanti",
+        "edges": [],
+        "source": {
+          "Ivanti_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              0,
+              "Two critical zero-day vulnerabilities (CVE-2026-1281 and CVE-2026-1340) affecting Ivanti Endpoint Manager Mobile (EPMM) are being actively exploited in the wild, affecting enterprise mobile fleets and corporate networks."
+            ],
+            [
+              21,
+              "In some instances, attackers attempted to bypass authentication on Ivanti's MobileIron platform and immediately download and run a second-stage payload (the /slt script)."
+            ]
+          ],
+          "Ivanti_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              3,
+              "CVE-2025-0282 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a remote unauthenticated attacker to achieve remote code execution."
+            ],
+            [
+              5,
+              "CVE-2025-0283 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a local authenticated attacker to escalate their privileges."
+            ],
+            [
+              7,
+              "On the same day of Ivanti’s advisory, Mandiant disclosed its findings of attacks in the wild using the CVE-2025-0282 remote code execution vulnerability."
+            ],
+            [
+              14,
+              "This would be an initial foothold for an attacker to laterally move into the network behind the affected Ivanti appliance."
+            ],
+            [
+              24,
+              "Attackers leveraged a custom Perl script named ldap.pl to harvest credentials from the Ivanti appliance, which they likely used to move laterally into the victim environment."
+            ],
+            [
+              28,
+              "Additionally, the Ivanti appliance's /var/cores directory was empty, and the following files had been deleted:."
+            ],
+            [
+              29,
+              "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+            ]
+          ],
+          "Ivanti_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              1,
+              "An official security advisory and knowledge base article have been released by Ivanti that includes mitigation that should be applied immediately."
+            ],
+            [
+              5,
+              "These detections kicked off an incident response investigation across multiple systems that Volexity ultimately tracked back to the organization’s Internet-facing Ivanti Connect Secure (ICS) VPN appliance (formerly known as Pulse Connect Secure, or simply Pulse Secure)."
+            ],
+            [
+              20,
+              "Volexity used a combination of memory and disk forensics, combined with the results of the Integrity Checker Tool, to quickly zero in on multiple malicious files placed on the compromised Ivanti Connect Secure VPN appliance."
+            ],
+            [
+              36,
+              "The attacker also modified another inbuilt component of Ivanti Connect Secure named visits.py\nadding a webshell component Volexity refers to as GIFTEDVISITOR."
+            ],
+            [
+              54,
+              "This file can be provided to Ivanti to be decrypted and will contain an archival copy of the unexpected files identified."
+            ],
+            [
+              56,
+              "Throughout the incident response investigation and subsequent forensic analysis, Ivanti provided support that will ultimately protect organizations using the Ivanti Connect Secure software."
+            ]
+          ],
+          "Ivanti_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              10,
+              "Upon clicking the link impersonating Ivanti, the user is directed to a threat actor-controlled website designed to impersonate the official Ivanti Pulse Secure download page."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44f2e4d5c13f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Ivanti Android File Transfer mechanism",
+        "edges": [],
+        "source": {
+          "Ivanti Android File Transfer mechanism_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              15,
+              "CVE-2026-1340 (CVSS 9.8) impacts the Ivanti Android File Transfer mechanism."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_52ff0c5174c6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Cortex Xpanse",
+        "edges": [],
+        "source": {
+          "Cortex Xpanse_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              7,
+              "Palo Alto Networks Cortex Xpanse has identified the presence of over 4,400 EPMM instances in our telemetry."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5ce949e938eb",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Nezha",
+        "edges": [
+          "EDGE_2d14d1b78fc9"
+        ],
+        "source": {
+          "Nezha_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              23,
+              "We observed attackers downloading a Nezha monitoring agent, an open-source server monitoring utility."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_852186756800",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cybersecurity and Infrastructure Security Agency",
+        "edges": [],
+        "source": {
+          "Cybersecurity and Infrastructure Security Agency_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              5,
+              "Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-1281 to its Known Exploited Vulnerabilities (KEV) Catalog."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_89390e552cb8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Australia",
+        "edges": [],
+        "source": {
+          "Australia_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              3,
+              "This campaign also affected the following sectors in the United States, Germany, Australia and Canada:."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [],
+        "source": {
+          "Germany_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              3,
+              "This campaign also affected the following sectors in the United States, Germany, Australia and Canada:."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a74ea5eecea3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Unit 42",
+        "edges": [],
+        "source": {
+          "Unit 42_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              2,
+              "Unit 42 has observed widespread exploitation of these vulnerabilities, including:."
+            ],
+            [
+              20,
+              "Unit 42 has observed widespread and mostly automated exploitation attempts of CVE-2026-1281 and CVE-2026-1340."
+            ]
+          ],
+          "Unit 42_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              0,
+              "Unit 42 stopped monitoring this threat as well as updating this brief on March 11, 2025."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "source": {
+          "China_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              24,
+              "They downloaded this tool with specific parameters to fetch from Gitee if the victim’s location is China, ensuring the largest possible victim base irrespective of location."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b39d93b6fd6a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Canada",
+        "edges": [],
+        "source": {
+          "Canada_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              3,
+              "This campaign also affected the following sectors in the United States, Germany, Australia and Canada:."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d12e58f653ab",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Palo Alto Networks",
+        "edges": [],
+        "source": {
+          "Palo Alto Networks_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              7,
+              "Palo Alto Networks Cortex Xpanse has identified the presence of over 4,400 EPMM instances in our telemetry."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ebc383bd7173",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Ivanti EPMM",
+        "edges": [
+          "EDGE_c4f5170bd7e1"
+        ],
+        "source": {
+          "Ivanti EPMM_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              8,
+              "CVE-2026-1281 (CVSS 9.8) is a critical remote code execution (RCE) vulnerability in Ivanti EPMM."
+            ],
+            [
+              10,
+              "The vulnerable component in Ivanti EPMM uses Apache RewriteMap configurations that point to bash scripts located at /mi/bin/map-appstore-url."
+            ]
+          ],
+          "Ivanti Endpoint Manager Mobile_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              0,
+              "Two critical zero-day vulnerabilities (CVE-2026-1281 and CVE-2026-1340) affecting Ivanti Endpoint Manager Mobile (EPMM) are being actively exploited in the wild, affecting enterprise mobile fleets and corporate networks."
+            ]
+          ]
+        },
+        "alias": [
+          "Ivanti Endpoint Manager Mobile"
+        ]
+      },
+      {
+        "node_id": "HL_00770420ece9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Ivanti Neurons for ZTA gateways",
+        "edges": [],
+        "source": {
+          "Ivanti Neurons for ZTA gateways_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              3,
+              "CVE-2025-0282 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a remote unauthenticated attacker to achieve remote code execution."
+            ],
+            [
+              5,
+              "CVE-2025-0283 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a local authenticated attacker to escalate their privileges."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0a8a19dcf161",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Ivanti Policy Secure",
+        "edges": [
+          "EDGE_42d7e51d0776"
+        ],
+        "source": {
+          "Ivanti Policy Secure_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              3,
+              "CVE-2025-0282 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a remote unauthenticated attacker to achieve remote code execution."
+            ],
+            [
+              5,
+              "CVE-2025-0283 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a local authenticated attacker to escalate their privileges."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0e23e7382dd4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Mandiant",
+        "edges": [],
+        "source": {
+          "Mandiant_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              7,
+              "On the same day of Ivanti’s advisory, Mandiant disclosed its findings of attacks in the wild using the CVE-2025-0282 remote code execution vulnerability."
+            ],
+            [
+              20,
+              "While overlaps exist between our observations and activity reported by Mandiant as UNC5337, we do not yet have enough evidence to confirm whether this activity is by the same threat actor group."
+            ],
+            [
+              29,
+              "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_24012dbc18af",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "MSBuild.exe",
+        "edges": [],
+        "source": {
+          "MSBuild.exe_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              34,
+              "After moving laterally from the Ivanti appliance via RDP to a Windows host, attackers then used the legitimate build tool for Visual Studio named MSBuild.exe as a living off the land binary (LOLBIN) technique to create a likely memory dumping tool named package.dll."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2eb2909e5b69",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Visual Studio",
+        "edges": [],
+        "source": {
+          "Visual Studio_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              34,
+              "After moving laterally from the Ivanti appliance via RDP to a Windows host, attackers then used the legitimate build tool for Visual Studio named MSBuild.exe as a living off the land binary (LOLBIN) technique to create a likely memory dumping tool named package.dll."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3917dd0ffd19",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNC5337",
+        "edges": [],
+        "source": {
+          "UNC5337_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              20,
+              "While overlaps exist between our observations and activity reported by Mandiant as UNC5337, we do not yet have enough evidence to confirm whether this activity is by the same threat actor group."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_45cac1df01b0",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Watchtowr Labs",
+        "edges": [],
+        "source": {
+          "Watchtowr Labs_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              8,
+              "On January 10, Watchtowr Labs also provided analysis of the exploited vulnerability."
+            ]
+          ],
+          "Watchtowr_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              9,
+              "On January 12, Watchtowr provided a walkthrough and on January 16 they published a proof of concept (PoC)."
+            ]
+          ]
+        },
+        "alias": [
+          "Watchtowr"
+        ]
+      },
+      {
+        "node_id": "HL_73cd95911880",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SPAWNSLOTH",
+        "edges": [
+          "EDGE_fdb09169fb3c"
+        ],
+        "source": {
+          "SPAWNSLOTH_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              29,
+              "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8837dc3b4c1d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Ivanti Connect Secure",
+        "edges": [
+          "EDGE_164abbb37249",
+          "EDGE_2c12a9475d22",
+          "EDGE_31493c140f6a"
+        ],
+        "source": {
+          "Ivanti Connect Secure_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              3,
+              "CVE-2025-0282 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a remote unauthenticated attacker to achieve remote code execution."
+            ],
+            [
+              5,
+              "CVE-2025-0283 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a local authenticated attacker to escalate their privileges."
+            ],
+            [
+              21,
+              "Our telemetry reveals a threat actor potentially exploited the CVE-2025-0282 zero-day, pre-authentication remote code execution vulnerability in a public-facing Ivanti Connect Secure (ICS) VPN appliance in late December 2024."
+            ]
+          ],
+          "Ivanti Connect Secure_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              0,
+              "Volexity has uncovered active in-the-wild exploitation of two vulnerabilities allowing unauthenticated remote code execution in Ivanti Connect Secure VPN devices."
+            ],
+            [
+              5,
+              "These detections kicked off an incident response investigation across multiple systems that Volexity ultimately tracked back to the organization’s Internet-facing Ivanti Connect Secure (ICS) VPN appliance (formerly known as Pulse Connect Secure, or simply Pulse Secure)."
+            ],
+            [
+              20,
+              "Volexity used a combination of memory and disk forensics, combined with the results of the Integrity Checker Tool, to quickly zero in on multiple malicious files placed on the compromised Ivanti Connect Secure VPN appliance."
+            ],
+            [
+              36,
+              "The attacker also modified another inbuilt component of Ivanti Connect Secure named visits.py\nadding a webshell component Volexity refers to as GIFTEDVISITOR."
+            ],
+            [
+              56,
+              "Throughout the incident response investigation and subsequent forensic analysis, Ivanti provided support that will ultimately protect organizations using the Ivanti Connect Secure software."
+            ]
+          ],
+          "Ivanti Connect Secure VPN_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              0,
+              "Volexity has uncovered active in-the-wild exploitation of two vulnerabilities allowing unauthenticated remote code execution in Ivanti Connect Secure VPN devices."
+            ]
+          ],
+          "Ivanti Connect Secure (ICS) VPN appliance_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              21,
+              "Our telemetry reveals a threat actor potentially exploited the CVE-2025-0282 zero-day, pre-authentication remote code execution vulnerability in a public-facing Ivanti Connect Secure (ICS) VPN appliance in late December 2024."
+            ]
+          ],
+          "Pulse Connect Secure_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              5,
+              "These detections kicked off an incident response investigation across multiple systems that Volexity ultimately tracked back to the organization’s Internet-facing Ivanti Connect Secure (ICS) VPN appliance (formerly known as Pulse Connect Secure, or simply Pulse Secure)."
+            ]
+          ],
+          "Pulse Secure_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              5,
+              "These detections kicked off an incident response investigation across multiple systems that Volexity ultimately tracked back to the organization’s Internet-facing Ivanti Connect Secure (ICS) VPN appliance (formerly known as Pulse Connect Secure, or simply Pulse Secure)."
+            ]
+          ]
+        },
+        "alias": [
+          "Ivanti Connect Secure VPN",
+          "Ivanti Connect Secure (ICS) VPN appliance",
+          "Pulse Connect Secure",
+          "Pulse Secure"
+        ]
+      },
+      {
+        "node_id": "HL_8955836f337c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "CL-UNK-0979",
+        "edges": [
+          "EDGE_0d9fc713c707",
+          "EDGE_0da1f0592943",
+          "EDGE_1e56bea6926a",
+          "EDGE_29c0e8161848",
+          "EDGE_7867721a70cf",
+          "EDGE_7bb682b7480d",
+          "EDGE_864335402e98",
+          "EDGE_8dd78fa31333",
+          "EDGE_965d44d31387",
+          "EDGE_aaf7810e54e7",
+          "EDGE_d36b2be356e5",
+          "EDGE_dcd378b565bb",
+          "EDGE_f6e2bf9d4ad5"
+        ],
+        "source": {
+          "CL-UNK-0979_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              19,
+              "We currently track this activity as cluster CL-UNK-0979."
+            ],
+            [
+              31,
+              "To better understand the CL-UNK-0979 activity cluster, we examined the following tools used in the attacks:."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8fa0afbbf859",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "package.dll",
+        "edges": [
+          "EDGE_fb81cc2f40af"
+        ],
+        "source": {
+          "package.dll_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              25,
+              "Attackers used Remote Desktop Protocol (RDP) to move laterally to additional systems and deployed a simple memory dumping tool named package.dll to potentially dump LSASS memory for credential harvesting."
+            ],
+            [
+              34,
+              "After moving laterally from the Ivanti appliance via RDP to a Windows host, attackers then used the legitimate build tool for Visual Studio named MSBuild.exe as a living off the land binary (LOLBIN) technique to create a likely memory dumping tool named package.dll."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a33fa387da6f",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SPAWNSNAIL",
+        "edges": [
+          "EDGE_293102a2477b"
+        ],
+        "source": {
+          "SPAWNSNAIL_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              29,
+              "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a92e53356860",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ldap.pl",
+        "edges": [
+          "EDGE_04f3830d4124",
+          "EDGE_2e5ad0d25da7"
+        ],
+        "source": {
+          "ldap.pl_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              24,
+              "Attackers leveraged a custom Perl script named ldap.pl to harvest credentials from the Ivanti appliance, which they likely used to move laterally into the victim environment."
+            ],
+            [
+              32,
+              "Custom Perl Script: Ldap.pl\nThe attackers used a custom Perl script named ldap.pl, which appears designed to collect and decrypt passwords from the Ivanti appliance."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d146657d6f3b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SPAWNMOLE",
+        "edges": [
+          "EDGE_7ddb3b7ec00c"
+        ],
+        "source": {
+          "SPAWNMOLE_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              29,
+              "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_04321618123b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ReGeorg",
+        "edges": [
+          "EDGE_2bdadf994437"
+        ],
+        "source": {
+          "ReGeorg_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              31,
+              "The first code path is almost identical to the “tunnel” template present in ReGeorg, which was used to relay a connection."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_31f280c5f0e4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Volexity",
+        "edges": [],
+        "source": {
+          "Volexity_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              0,
+              "Volexity has uncovered active in-the-wild exploitation of two vulnerabilities allowing unauthenticated remote code execution in Ivanti Connect Secure VPN devices."
+            ],
+            [
+              4,
+              "Upon closer inspection, Volexity found that an attacker was placing webshells on multiple internal and external-facing web servers."
+            ],
+            [
+              5,
+              "These detections kicked off an incident response investigation across multiple systems that Volexity ultimately tracked back to the organization’s Internet-facing Ivanti Connect Secure (ICS) VPN appliance (formerly known as Pulse Connect Secure, or simply Pulse Secure)."
+            ],
+            [
+              18,
+              "Volexity currently attributes this activity to an unknown threat actor it tracks under the alias UTA0178."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_79a6aa1d61a2",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PySoxy",
+        "edges": [
+          "EDGE_653427887da4"
+        ],
+        "source": {
+          "PySoxy_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              23,
+              "This was discovered to be a copy of PySoxy, a SOCKS5 proxy written in Python, which is available on GitHub."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b51a206bf367",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UTA0178",
+        "edges": [
+          "EDGE_03b109aa95f1",
+          "EDGE_0666efc1b55e",
+          "EDGE_1c5ad5fae896",
+          "EDGE_49ea79c99c98",
+          "EDGE_614fdfab8712",
+          "EDGE_74b37b041a46",
+          "EDGE_7afb7af31da8",
+          "EDGE_9208a8849ba0",
+          "EDGE_b099153dc044",
+          "EDGE_b39a7bd5feec",
+          "EDGE_e88dd13119c4",
+          "EDGE_eb24092be37e",
+          "EDGE_ecea5bf01c05",
+          "EDGE_f3f82c716a23"
+        ],
+        "source": {
+          "UTA0178_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              18,
+              "Volexity currently attributes this activity to an unknown threat actor it tracks under the alias UTA0178."
+            ],
+            [
+              19,
+              "Volexity has reason to believe that UTA0178 is a Chinese nation-state-level threat actor."
+            ],
+            [
+              25,
+              "Once UTA0178 had access into the network via the ICS VPN appliance, their general approach was to pivot from system to system using compromised credentials."
+            ],
+            [
+              27,
+              "UTA0178 planted webshells on external-facing web servers in order to grant persistence to the customer environment."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b5ee5ca8774e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Integrity Checker Tool",
+        "edges": [
+          "EDGE_739a6a2dc9ad"
+        ],
+        "source": {
+          "Integrity Checker Tool_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              14,
+              "Volexity observed the attacker modifying legitimate ICS components and making changes to the system to evade the ICS Integrity Checker Tool."
+            ],
+            [
+              20,
+              "Volexity used a combination of memory and disk forensics, combined with the results of the Integrity Checker Tool, to quickly zero in on multiple malicious files placed on the compromised Ivanti Connect Secure VPN appliance."
+            ],
+            [
+              44,
+              "In addition to the built-in version, Ivanti has an enhanced version of the Integrity Checker Tool that can be run on ICS VPN appliances, which organizations can download."
+            ],
+            [
+              48,
+              "Note: Running the Integrity Checker Tool will reboot the ICS VPN appliance, which will result in the contents of system memory largely being overwritten."
+            ],
+            [
+              50,
+              "The image below shows an example of what it looks like when the Integrity Checker Tool is run on a compromised system."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bb44dd424b14",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GIFTEDVISITOR",
+        "edges": [
+          "EDGE_2bf2aa70e89f"
+        ],
+        "source": {
+          "GIFTEDVISITOR_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              36,
+              "The attacker also modified another inbuilt component of Ivanti Connect Secure named visits.py\nadding a webshell component Volexity refers to as GIFTEDVISITOR."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0f465b2c0af1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Azure",
+        "edges": [
+          "EDGE_118f2313a41a"
+        ],
+        "source": {
+          "Microsoft Azure_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              7,
+              "Data is sent to a command-and-control (C2) server hosted on Microsoft Azure infrastructure."
+            ],
+            [
+              29,
+              "This IP address is part of the Microsoft Azure range, likely to evade detection using a technique called Living off of Trusted Sites (LOTS)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2667e2b2457b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Bing",
+        "edges": [],
+        "source": {
+          "Bing_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              3,
+              "Zscaler Threat Hunting has identified an active campaign leveraging Search Engine Optimization (SEO) poisoning, primarily on the Bing search engine, to distribute a trojanized Ivanti Pulse Secure VPN client."
+            ],
+            [
+              20,
+              "However, when accessed via a Bing search (if Bing is present in the refer-URL), the original phishing content is displayed, including the malicious download link."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2ced2bd7404d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Ivanti Pulse Secure VPN",
+        "edges": [],
+        "source": {
+          "Ivanti Pulse Secure VPN_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              0,
+              "The Zscaler Threat HuntingTM team has recently detected an uptick in activity involving SEO poisoning to lure users into downloading a malicious version of the Ivanti Pulse Secure VPN client."
+            ],
+            [
+              3,
+              "Zscaler Threat Hunting has identified an active campaign leveraging Search Engine Optimization (SEO) poisoning, primarily on the Bing search engine, to distribute a trojanized Ivanti Pulse Secure VPN client."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "source": {
+          "Microsoft_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              7,
+              "Data is sent to a command-and-control (C2) server hosted on Microsoft Azure infrastructure."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_87fcc1a46ea5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Akira ransomware",
+        "edges": [],
+        "source": {
+          "Akira ransomware_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              8,
+              "This TTP has been historically observed following VPN credential theft threats; actors leverage these credentials to perform reconnaissance and lateral movement, which has led to the deployment of Akira ransomware in past campaigns."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_cd8ed940f5f1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler",
+        "edges": [],
+        "source": {
+          "Zscaler_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              0,
+              "The Zscaler Threat HuntingTM team has recently detected an uptick in activity involving SEO poisoning to lure users into downloading a malicious version of the Ivanti Pulse Secure VPN client."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The vulnerable component in Ivanti EPMM uses Apache RewriteMap configurations that point to bash scripts located at /mi/bin/map-appstore-url."
+          ],
+          [
+            "The flaw is a specific type of code injection that uses bash arithmetic expansion.",
+            "The exploitation process works by tricking the bash script into evaluating a variable that contains a malicious command."
+          ],
+          [
+            "In some instances, attackers attempted to bypass authentication on Ivanti's MobileIron platform and immediately download and run a second-stage payload (the /slt script)."
+          ],
+          [
+            "In many cases, we observed attempts to execute reverse shells by injecting commands establishing outbound connections to a listening post.",
+            "We also observed attackers issue sleep commands in attempts to determine whether the server targeted was vulnerable to exploitation.",
+            "This is a simple method of testing if the server will pause for five seconds."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            25,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_0f358caf9610",
+          "EDGE_4913ed59b5b8",
+          "EDGE_eedad7abec4f",
+          "EDGE_2e5ad0d25da7",
+          "EDGE_8dd78fa31333",
+          "EDGE_a63f58aa19c1",
+          "EDGE_b099153dc044",
+          "EDGE_d7ce2dcce62a"
+        ],
+        "source": {
+          "TTP:T1059_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ],
+              [
+                12,
+                13
+              ],
+              [
+                21,
+                21
+              ],
+              [
+                25,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The vulnerable component in Ivanti EPMM uses Apache RewriteMap configurations that point to bash scripts located at /mi/bin/map-appstore-url."
+              ],
+              [
+                "The flaw is a specific type of code injection that uses bash arithmetic expansion.",
+                "The exploitation process works by tricking the bash script into evaluating a variable that contains a malicious command."
+              ],
+              [
+                "In some instances, attackers attempted to bypass authentication on Ivanti's MobileIron platform and immediately download and run a second-stage payload (the /slt script)."
+              ],
+              [
+                "In many cases, we observed attempts to execute reverse shells by injecting commands establishing outbound connections to a listening post.",
+                "We also observed attackers issue sleep commands in attempts to determine whether the server targeted was vulnerable to exploitation.",
+                "This is a simple method of testing if the server will pause for five seconds."
+              ]
+            ]
+          },
+          "TTP:T1059_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                24,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Attackers leveraged a custom Perl script named ldap.pl to harvest credentials from the Ivanti appliance, which they likely used to move laterally into the victim environment."
+              ]
+            ]
+          },
+          "TTP:T1059_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                14,
+                16
+              ],
+              [
+                21,
+                23
+              ],
+              [
+                30,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Volexity observed the attacker modifying legitimate ICS components and making changes to the system to evade the ICS Integrity Checker Tool.",
+                "Notably, Volexity observed the attacker backdooring a legitimate CGI file (compcheckresult.cgi\n) on the ICS VPN appliance to allow command execution.",
+                "Further, the attacker also modified a JavaScript file used by the Web SSL VPN component of the device in order to keylog and exfiltrate credentials for users logging into it."
+              ],
+              [
+                "Volexity also believes the attacker created and executed a number of files from the system’s /tmp/.",
+                "By carving files from the disk images, despite the file having been deleted, Volexity was able to recover a Python-based proxy utility it believes was likely s.py\n.",
+                "This was discovered to be a copy of PySoxy, a SOCKS5 proxy written in Python, which is available on GitHub."
+              ],
+              [
+                "This version of the webshell has two code paths depending on the parameters present in the request.",
+                "The first code path is almost identical to the “tunnel” template present in ReGeorg, which was used to relay a connection.",
+                "The second code path is a classic code execution case where content from the request parameters is decoded from hex and then base64 decoded before being passed to Assembly.Load().",
+                "Based on evidence discovered, this was primarily used to execute arbitrary PowerShell commands.",
+                "As previously mentioned, to gain access to user credentials the attacker modified the file lastauthserverused.js\n, a legitimate component of the web app, modifying the “Login” function to POST user credentials to an attacker-controlled domain.",
+                "This was done by adding the following code to the beginning of the function:\nThis would result in a GET request from the user’s browser back to the attacker website with the victim’s username and password being base64 encoded in the request.",
+                "The attacker also modified another inbuilt component of Ivanti Connect Secure named visits.py\nadding a webshell component Volexity refers to as GIFTEDVISITOR.",
+                "The code in this function is called whenever users access /api/v1/cav/client/visits\n."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1102",
+        "ttp_id": "T1102",
+        "best_span_sentences_list": [
+          [
+            "We observed attackers downloading a Nezha monitoring agent, an open-source server monitoring utility.",
+            "They downloaded this tool with specific parameters to fetch from Gitee if the victim’s location is China, ensuring the largest possible victim base irrespective of location."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            24
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1102_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": {
+            "best_span_ranges": [
+              [
+                23,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "We observed attackers downloading a Nezha monitoring agent, an open-source server monitoring utility.",
+                "They downloaded this tool with specific parameters to fetch from Gitee if the victim’s location is China, ensuring the largest possible victim base irrespective of location."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "In some instances, attackers attempted to bypass authentication on Ivanti's MobileIron platform and immediately download and run a second-stage payload (the /slt script)."
+          ],
+          [
+            "We observed attackers downloading a Nezha monitoring agent, an open-source server monitoring utility.",
+            "They downloaded this tool with specific parameters to fetch from Gitee if the victim’s location is China, ensuring the largest possible victim base irrespective of location."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_0eba3657726f",
+          "EDGE_2d14d1b78fc9",
+          "EDGE_4c520d58050b",
+          "EDGE_ba8d1de14f4e",
+          "EDGE_7afb7af31da8"
+        ],
+        "source": {
+          "TTP:T1105_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": {
+            "best_span_ranges": [
+              [
+                21,
+                21
+              ],
+              [
+                23,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In some instances, attackers attempted to bypass authentication on Ivanti's MobileIron platform and immediately download and run a second-stage payload (the /slt script)."
+              ],
+              [
+                "We observed attackers downloading a Nezha monitoring agent, an open-source server monitoring utility.",
+                "They downloaded this tool with specific parameters to fetch from Gitee if the victim’s location is China, ensuring the largest possible victim base irrespective of location."
+              ]
+            ]
+          },
+          "TTP:T1105_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                13,
+                13
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this particular incident, the attacker leveraged these exploits to steal configuration data, modify existing files, download remote files, and reverse tunnel from the ICS VPN appliance."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "These vulnerabilities allow unauthenticated attackers to remotely execute arbitrary code on target servers, granting them full control over mobile device management (MDM) infrastructure without requiring user interaction or credentials."
+          ],
+          [
+            "This vulnerability is triggered via HTTP GET requests to endpoints beginning with /mifs/c/aftstore/fob/.",
+            "Current Scope of the Exploitation.",
+            "Unit 42 has observed widespread and mostly automated exploitation attempts of CVE-2026-1281 and CVE-2026-1340."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            18,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_56ed8c5da4c8",
+          "EDGE_88f6518a1ff6",
+          "EDGE_c4f5170bd7e1",
+          "EDGE_ea92bb97fec0",
+          "EDGE_164abbb37249",
+          "EDGE_42d7e51d0776",
+          "EDGE_7bb682b7480d",
+          "EDGE_ba9bd9d39795",
+          "EDGE_0666efc1b55e"
+        ],
+        "source": {
+          "TTP:T1190_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                18,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "These vulnerabilities allow unauthenticated attackers to remotely execute arbitrary code on target servers, granting them full control over mobile device management (MDM) infrastructure without requiring user interaction or credentials."
+              ],
+              [
+                "This vulnerability is triggered via HTTP GET requests to endpoints beginning with /mifs/c/aftstore/fob/.",
+                "Current Scope of the Exploitation.",
+                "Unit 42 has observed widespread and mostly automated exploitation attempts of CVE-2026-1281 and CVE-2026-1340."
+              ]
+            ]
+          },
+          "TTP:T1190_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                8,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "CVE-2025-0282 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a remote unauthenticated attacker to achieve remote code execution."
+              ],
+              [
+                "On January 10, Watchtowr Labs also provided analysis of the exploited vulnerability.",
+                "On January 12, Watchtowr provided a walkthrough and on January 16 they published a proof of concept (PoC).",
+                "CVE-2025-0282 is a buffer overflow vulnerability that can be exploited by an unauthenticated attacker.",
+                "Because the affected appliances are outward-facing and on the edge of the network, attackers could scan for and directly target them.",
+                "If the appliance is vulnerable, an attacker can exploit it by sending a specially crafted request.",
+                "If the exploit is successful, the attacker can gain a foothold into the internal network behind the appliance.",
+                "This would be an initial foothold for an attacker to laterally move into the network behind the affected Ivanti appliance."
+              ]
+            ]
+          },
+          "TTP:T1190_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Volexity discovered two different zero-day exploits which were being chained together to achieve unauthenticated remote code execution (RCE)."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1496",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1496",
+        "ttp_id": "T1496",
+        "best_span_sentences_list": [
+          [
+            "This second stage typically installs a web shell, a cryptominer or a persistent backdoor to grant the attacker control of the appliance.",
+            "We observed attackers downloading a Nezha monitoring agent, an open-source server monitoring utility."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            23
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1496_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": {
+            "best_span_ranges": [
+              [
+                22,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This second stage typically installs a web shell, a cryptominer or a persistent backdoor to grant the attacker control of the appliance.",
+                "We observed attackers downloading a Nezha monitoring agent, an open-source server monitoring utility."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1505",
+        "ttp_id": "T1505",
+        "best_span_sentences_list": [
+          [
+            "We observed threat actors attempt to install a lightweight JSP web shell with names like 401.jsp, 403.jsp and 1.jsp at filepath /mi/tomcat/webapps/mifs/ across various intended targets."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_4863bccd5f5b",
+          "EDGE_232a2aa8fba4",
+          "EDGE_2bf2aa70e89f",
+          "EDGE_31493c140f6a",
+          "EDGE_614fdfab8712",
+          "EDGE_ea6f501184e7"
+        ],
+        "source": {
+          "TTP:T1505_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "We observed threat actors attempt to install a lightweight JSP web shell with names like 401.jsp, 403.jsp and 1.jsp at filepath /mi/tomcat/webapps/mifs/ across various intended targets."
+              ]
+            ]
+          },
+          "TTP:T1505_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                27,
+                27
+              ],
+              [
+                34,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Upon closer inspection, Volexity found that an attacker was placing webshells on multiple internal and external-facing web servers."
+              ],
+              [
+                "UTA0178 planted webshells on external-facing web servers in order to grant persistence to the customer environment."
+              ],
+              [
+                "As previously mentioned, to gain access to user credentials the attacker modified the file lastauthserverused.js\n, a legitimate component of the web app, modifying the “Login” function to POST user credentials to an attacker-controlled domain.",
+                "This was done by adding the following code to the beginning of the function:\nThis would result in a GET request from the user’s browser back to the attacker website with the victim’s username and password being base64 encoded in the request.",
+                "The attacker also modified another inbuilt component of Ivanti Connect Secure named visits.py\nadding a webshell component Volexity refers to as GIFTEDVISITOR.",
+                "The code in this function is called whenever users access /api/v1/cav/client/visits\n."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1003",
+        "ttp_id": "T1003",
+        "best_span_sentences_list": [
+          [
+            "Attackers leveraged a custom Perl script named ldap.pl to harvest credentials from the Ivanti appliance, which they likely used to move laterally into the victim environment.",
+            "Attackers used Remote Desktop Protocol (RDP) to move laterally to additional systems and deployed a simple memory dumping tool named package.dll to potentially dump LSASS memory for credential harvesting."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_4fa60394ab39",
+          "EDGE_951ca38fb5c3",
+          "EDGE_aaf7810e54e7",
+          "EDGE_fb81cc2f40af"
+        ],
+        "source": {
+          "TTP:T1003_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                24,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Attackers leveraged a custom Perl script named ldap.pl to harvest credentials from the Ivanti appliance, which they likely used to move laterally into the victim environment.",
+                "Attackers used Remote Desktop Protocol (RDP) to move laterally to additional systems and deployed a simple memory dumping tool named package.dll to potentially dump LSASS memory for credential harvesting."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "Attackers used Remote Desktop Protocol (RDP) to move laterally to additional systems and deployed a simple memory dumping tool named package.dll to potentially dump LSASS memory for credential harvesting."
+          ],
+          [
+            "After moving laterally from the Ivanti appliance via RDP to a Windows host, attackers then used the legitimate build tool for Visual Studio named MSBuild.exe as a living off the land binary (LOLBIN) technique to create a likely memory dumping tool named package.dll."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "edges": [
+          "EDGE_0da1f0592943",
+          "EDGE_ecea5bf01c05"
+        ],
+        "source": {
+          "TTP:T1021_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                25,
+                25
+              ],
+              [
+                34,
+                34
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Attackers used Remote Desktop Protocol (RDP) to move laterally to additional systems and deployed a simple memory dumping tool named package.dll to potentially dump LSASS memory for credential harvesting."
+              ],
+              [
+                "After moving laterally from the Ivanti appliance via RDP to a Windows host, attackers then used the legitimate build tool for Visual Studio named MSBuild.exe as a living off the land binary (LOLBIN) technique to create a likely memory dumping tool named package.dll."
+              ]
+            ]
+          },
+          "TTP:T1021_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                26,
+                26
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "They would then further compromise credentials of users on any new system that was breached, and use these credentials to log into additional systems via RDP."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "Because the affected appliances are outward-facing and on the edge of the network, attackers could scan for and directly target them.",
+            "If the appliance is vulnerable, an attacker can exploit it by sending a specially crafted request.",
+            "If the exploit is successful, the attacker can gain a foothold into the internal network behind the appliance.",
+            "This would be an initial foothold for an attacker to laterally move into the network behind the affected Ivanti appliance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            14
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1046_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                11,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Because the affected appliances are outward-facing and on the edge of the network, attackers could scan for and directly target them.",
+                "If the appliance is vulnerable, an attacker can exploit it by sending a specially crafted request.",
+                "If the exploit is successful, the attacker can gain a foothold into the internal network behind the appliance.",
+                "This would be an initial foothold for an attacker to laterally move into the network behind the affected Ivanti appliance."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "Pivoting into the environment, the attackers leveraged a service named DcomSrv and a scheduled task named /mail for persistence for the backdoor."
+          ],
+          [
+            "Attackers set up a scheduled task named /mail for persistence to run DeElevate64.exe to sideload deelevator64.dll."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "edges": [
+          "EDGE_d36b2be356e5"
+        ],
+        "source": {
+          "TTP:T1053_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                30,
+                30
+              ],
+              [
+                45,
+                45
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Pivoting into the environment, the attackers leveraged a service named DcomSrv and a scheduled task named /mail for persistence for the backdoor."
+              ],
+              [
+                "Attackers set up a scheduled task named /mail for persistence to run DeElevate64.exe to sideload deelevator64.dll."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "Then the sample will spawn svchost.exe in a suspended state to attempt process hollowing to load the decrypted payload into memory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            48,
+            48
+          ]
+        ],
+        "edges": [
+          "EDGE_0d9fc713c707"
+        ],
+        "source": {
+          "TTP:T1055_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                48,
+                48
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Then the sample will spawn svchost.exe in a suspended state to attempt process hollowing to load the decrypted payload into memory."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1070",
+        "ttp_id": "T1070",
+        "best_span_sentences_list": [
+          [
+            "Post-exploitation, attackers engaged in anti-forensic activities including deleting critical log files to cover up their actions.",
+            "Specifically, a recovered debug log file only showed a specific period of time after the initial intrusion, suggesting they had removed other log entries.",
+            "Additionally, the Ivanti appliance's /var/cores directory was empty, and the following files had been deleted:.",
+            "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_1ba2f9e63655",
+          "EDGE_29c0e8161848",
+          "EDGE_fdb09169fb3c",
+          "EDGE_2c12a9475d22",
+          "EDGE_b39a7bd5feec"
+        ],
+        "source": {
+          "TTP:T1070_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                26,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Post-exploitation, attackers engaged in anti-forensic activities including deleting critical log files to cover up their actions.",
+                "Specifically, a recovered debug log file only showed a specific period of time after the initial intrusion, suggesting they had removed other log entries.",
+                "Additionally, the Ivanti appliance's /var/cores directory was empty, and the following files had been deleted:.",
+                "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+              ]
+            ]
+          },
+          "TTP:T1070_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                5,
+                7
+              ],
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "These detections kicked off an incident response investigation across multiple systems that Volexity ultimately tracked back to the organization’s Internet-facing Ivanti Connect Secure (ICS) VPN appliance (formerly known as Pulse Connect Secure, or simply Pulse Secure).",
+                "A closer inspection of the ICS VPN appliance showed that its logs had been wiped and logging had been disabled.",
+                "Further review of historic network traffic from the device also revealed suspect outbound and inbound communication from its management IP address."
+              ],
+              [
+                "At least as of the time of writing, the web requests associated with the exploits being used in the wild will not appear in the logs, even with the Unauthenticated Request setting enabled."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_864335402e98",
+          "EDGE_ad8c0c3cb2a6",
+          "EDGE_ebe46a4b980a",
+          "EDGE_022692fb0095",
+          "EDGE_03b109aa95f1",
+          "EDGE_118f2313a41a",
+          "EDGE_567c5b600e14",
+          "EDGE_87e9901c709e"
+        ],
+        "source": {
+          "TTP:T1071_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+              ]
+            ]
+          },
+          "TTP:T1071_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                34,
+                34
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "As previously mentioned, to gain access to user credentials the attacker modified the file lastauthserverused.js\n, a legitimate component of the web app, modifying the “Login” function to POST user credentials to an attacker-controlled domain."
+              ]
+            ]
+          },
+          "TTP:T1071_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": {
+            "best_span_ranges": [
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It then sends the collected credential data in an HTTP POST request to the C2 path /income_shit."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "Attackers leveraged a custom Perl script named ldap.pl to harvest credentials from the Ivanti appliance, which they likely used to move laterally into the victim environment."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_04f3830d4124",
+          "EDGE_7867721a70cf",
+          "EDGE_49ea79c99c98"
+        ],
+        "source": {
+          "TTP:T1078_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                24,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Attackers leveraged a custom Perl script named ldap.pl to harvest credentials from the Ivanti appliance, which they likely used to move laterally into the victim environment."
+              ]
+            ]
+          },
+          "TTP:T1078_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                25,
+                26
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once UTA0178 had access into the network via the ICS VPN appliance, their general approach was to pivot from system to system using compromised credentials.",
+                "They would then further compromise credentials of users on any new system that was breached, and use these credentials to log into additional systems via RDP."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_293102a2477b",
+          "EDGE_7ddb3b7ec00c",
+          "EDGE_f6e2bf9d4ad5",
+          "EDGE_2bdadf994437",
+          "EDGE_653427887da4",
+          "EDGE_eb24092be37e",
+          "EDGE_ec3fcd0df6ac"
+        ],
+        "source": {
+          "TTP:T1090_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The threat actor attempted to leverage a tunneler named SPAWNMOLE, an SSH backdoor named SPAWNSNAIL and a log tampering utility named SPAWNSLOTH as described by Mandiant for persistence on the Ivanti appliance."
+              ]
+            ]
+          },
+          "TTP:T1090_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                13,
+                13
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this particular incident, the attacker leveraged these exploits to steal configuration data, modify existing files, download remote files, and reverse tunnel from the ICS VPN appliance."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1107",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1107",
+        "ttp_id": "T1107",
+        "best_span_sentences_list": [
+          [
+            "Post-exploitation, attackers engaged in anti-forensic activities including deleting critical log files to cover up their actions.",
+            "Specifically, a recovered debug log file only showed a specific period of time after the initial intrusion, suggesting they had removed other log entries.",
+            "Additionally, the Ivanti appliance's /var/cores directory was empty, and the following files had been deleted:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_1e56bea6926a",
+          "EDGE_80bd0c2fe2a0"
+        ],
+        "source": {
+          "TTP:T1107_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                26,
+                28
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Post-exploitation, attackers engaged in anti-forensic activities including deleting critical log files to cover up their actions.",
+                "Specifically, a recovered debug log file only showed a specific period of time after the initial intrusion, suggesting they had removed other log entries.",
+                "Additionally, the Ivanti appliance's /var/cores directory was empty, and the following files had been deleted:."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Soon after MSBuild.exe was executed, a file was created at C:\\Users\\Public\\Music\\package.dll on the targeted system.",
+            "This file creates a full memory dump at C:\\Users\\Public\\Downloads\\VM.txt and XOR encodes it with a key 0x27."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            37
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1140_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                36,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Soon after MSBuild.exe was executed, a file was created at C:\\Users\\Public\\Music\\package.dll on the targeted system.",
+                "This file creates a full memory dump at C:\\Users\\Public\\Downloads\\VM.txt and XOR encodes it with a key 0x27."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1543",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1543",
+        "ttp_id": "T1543",
+        "best_span_sentences_list": [
+          [
+            "Pivoting into the environment, the attackers leveraged a service named DcomSrv and a scheduled task named /mail for persistence for the backdoor."
+          ],
+          [
+            "The malware file named vixDiskLib.dll creates a service named DcomSrv."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            41,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_dcd378b565bb"
+        ],
+        "source": {
+          "TTP:T1543_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                30,
+                30
+              ],
+              [
+                41,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Pivoting into the environment, the attackers leveraged a service named DcomSrv and a scheduled task named /mail for persistence for the backdoor."
+              ],
+              [
+                "The malware file named vixDiskLib.dll creates a service named DcomSrv."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1569",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1569",
+        "ttp_id": "T1569",
+        "best_span_sentences_list": [
+          [
+            "The malware file named vixDiskLib.dll creates a service named DcomSrv."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            41
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1569_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                41,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The malware file named vixDiskLib.dll creates a service named DcomSrv."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "Attackers set up a scheduled task named /mail for persistence to run DeElevate64.exe to sideload deelevator64.dll."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "edges": [
+          "EDGE_965d44d31387"
+        ],
+        "source": {
+          "TTP:T1574_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": {
+            "best_span_ranges": [
+              [
+                45,
+                45
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Attackers set up a scheduled task named /mail for persistence to run DeElevate64.exe to sideload deelevator64.dll."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1005",
+        "ttp_id": "T1005",
+        "best_span_sentences_list": [
+          [
+            "In this particular incident, the attacker leveraged these exploits to steal configuration data, modify existing files, download remote files, and reverse tunnel from the ICS VPN appliance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_9208a8849ba0",
+          "EDGE_34284ef0695f"
+        ],
+        "source": {
+          "TTP:T1005_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                13,
+                13
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this particular incident, the attacker leveraged these exploits to steal configuration data, modify existing files, download remote files, and reverse tunnel from the ICS VPN appliance."
+              ]
+            ]
+          },
+          "TTP:T1005_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ],
+              [
+                25,
+                26
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The malware specifically targets the connectionstore.dat file to steal saved VPN server URIs, which it combines with hardcoded credentials for exfiltration."
+              ],
+              [
+                "The malware searches for the Ivanti Pulse Secure connection storage file at the following hardcoded path: C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat.",
+                "It then reads and parses this .dat file to extract the VPN server URI (URL/server address) saved by the user."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "This version of the webshell has two code paths depending on the parameters present in the request.",
+            "The first code path is almost identical to the “tunnel” template present in ReGeorg, which was used to relay a connection.",
+            "The second code path is a classic code execution case where content from the request parameters is decoded from hex and then base64 decoded before being passed to Assembly.Load().",
+            "Based on evidence discovered, this was primarily used to execute arbitrary PowerShell commands."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_74b37b041a46"
+        ],
+        "source": {
+          "TTP:T1027_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                30,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This version of the webshell has two code paths depending on the parameters present in the request.",
+                "The first code path is almost identical to the “tunnel” template present in ReGeorg, which was used to relay a connection.",
+                "The second code path is a classic code execution case where content from the request parameters is decoded from hex and then base64 decoded before being passed to Assembly.Load().",
+                "Based on evidence discovered, this was primarily used to execute arbitrary PowerShell commands."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1056",
+        "ttp_id": "T1056",
+        "best_span_sentences_list": [
+          [
+            "Further, the attacker also modified a JavaScript file used by the Web SSL VPN component of the device in order to keylog and exfiltrate credentials for users logging into it."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_f3f82c716a23",
+          "EDGE_f47a2759386d"
+        ],
+        "source": {
+          "TTP:T1056_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Further, the attacker also modified a JavaScript file used by the Web SSL VPN component of the device in order to keylog and exfiltrate credentials for users logging into it."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "A closer inspection of the ICS VPN appliance showed that its logs had been wiped and logging had been disabled."
+          ],
+          [
+            "Volexity observed the attacker modifying legitimate ICS components and making changes to the system to evade the ICS Integrity Checker Tool."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_1c5ad5fae896",
+          "EDGE_739a6a2dc9ad"
+        ],
+        "source": {
+          "TTP:T1562_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ],
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A closer inspection of the ICS VPN appliance showed that its logs had been wiped and logging had been disabled."
+              ],
+              [
+                "Volexity observed the attacker modifying legitimate ICS components and making changes to the system to evade the ICS Integrity Checker Tool."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1565",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1565",
+        "ttp_id": "T1565",
+        "best_span_sentences_list": [
+          [
+            "Volexity observed the attacker modifying legitimate ICS components and making changes to the system to evade the ICS Integrity Checker Tool."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_1731b236d96e",
+          "EDGE_e88dd13119c4"
+        ],
+        "source": {
+          "TTP:T1565_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Volexity observed the attacker modifying legitimate ICS components and making changes to the system to evade the ICS Integrity Checker Tool."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "The malware specifically targets the connectionstore.dat file to steal saved VPN server URIs, which it combines with hardcoded credentials for exfiltration.",
+            "Data is sent to a command-and-control (C2) server hosted on Microsoft Azure infrastructure."
+          ],
+          [
+            "It then sends the collected credential data in an HTTP POST request to the C2 path /income_shit."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            7
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_00550e622483",
+          "EDGE_e53acd3ced28"
+        ],
+        "source": {
+          "TTP:T1041_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": {
+            "best_span_ranges": [
+              [
+                6,
+                7
+              ],
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The malware specifically targets the connectionstore.dat file to steal saved VPN server URIs, which it combines with hardcoded credentials for exfiltration.",
+                "Data is sent to a command-and-control (C2) server hosted on Microsoft Azure infrastructure."
+              ],
+              [
+                "It then sends the collected credential data in an HTTP POST request to the C2 path /income_shit."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Threat actors use lookalike domains to host fake download pages that appear legitimate to unsuspecting users."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_8a2fc89512fd",
+          "EDGE_efeda08ad9fd"
+        ],
+        "source": {
+          "TTP:T1204_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Threat actors use lookalike domains to host fake download pages that appear legitimate to unsuspecting users."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1553",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1553",
+        "ttp_id": "T1553",
+        "best_span_sentences_list": [
+          [
+            "Notably, the downloaded MSI file is signed, a technique used to evade security detections and create a false sense of security for the end user."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_effdddec5890"
+        ],
+        "source": {
+          "TTP:T1553_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Notably, the downloaded MSI file is signed, a technique used to evade security detections and create a false sense of security for the end user."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1fc6713b5493",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/mifs/c/aftstore/fob/",
+        "edges": [
+          "EDGE_56ed8c5da4c8"
+        ],
+        "source": {
+          "/mifs/c/aftstore/fob/_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              18,
+              "This vulnerability is triggered via HTTP GET requests to endpoints beginning with /mifs/c/aftstore/fob/."
+            ]
+          ]
+        },
+        "raw_value": "/mifs/c/aftstore/fob/",
+        "canonical_value": "/mifs/c/aftstore/fob",
+        "normalized_value": "/mifs/c/aftstore/fob"
+      },
+      {
+        "node_id": "IOC_268ddbb4a3f1",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2026-1281",
+        "edges": [
+          "EDGE_ea92bb97fec0"
+        ],
+        "source": {
+          "CVE-2026-1281_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              0,
+              "Two critical zero-day vulnerabilities (CVE-2026-1281 and CVE-2026-1340) affecting Ivanti Endpoint Manager Mobile (EPMM) are being actively exploited in the wild, affecting enterprise mobile fleets and corporate networks."
+            ],
+            [
+              5,
+              "Cybersecurity and Infrastructure Security Agency (CISA) added CVE-2026-1281 to its Known Exploited Vulnerabilities (KEV) Catalog."
+            ],
+            [
+              8,
+              "CVE-2026-1281 (CVSS 9.8) is a critical remote code execution (RCE) vulnerability in Ivanti EPMM."
+            ],
+            [
+              20,
+              "Unit 42 has observed widespread and mostly automated exploitation attempts of CVE-2026-1281 and CVE-2026-1340."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2026-1281",
+        "canonical_value": "CVE-2026-1281",
+        "normalized_value": "CVE-2026-1281"
+      },
+      {
+        "node_id": "IOC_6464c92fac02",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2026-1340",
+        "edges": [
+          "EDGE_88f6518a1ff6"
+        ],
+        "source": {
+          "CVE-2026-1340_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              0,
+              "Two critical zero-day vulnerabilities (CVE-2026-1281 and CVE-2026-1340) affecting Ivanti Endpoint Manager Mobile (EPMM) are being actively exploited in the wild, affecting enterprise mobile fleets and corporate networks."
+            ],
+            [
+              14,
+              "Details of CVE-2026-1340."
+            ],
+            [
+              15,
+              "CVE-2026-1340 (CVSS 9.8) impacts the Ivanti Android File Transfer mechanism."
+            ],
+            [
+              20,
+              "Unit 42 has observed widespread and mostly automated exploitation attempts of CVE-2026-1281 and CVE-2026-1340."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2026-1340",
+        "canonical_value": "CVE-2026-1340",
+        "normalized_value": "CVE-2026-1340"
+      },
+      {
+        "node_id": "IOC_646a14a04573",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/mi/bin/map-appstore-url",
+        "edges": [
+          "EDGE_4913ed59b5b8"
+        ],
+        "source": {
+          "/mi/bin/map-appstore-url_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              10,
+              "The vulnerable component in Ivanti EPMM uses Apache RewriteMap configurations that point to bash scripts located at /mi/bin/map-appstore-url."
+            ]
+          ]
+        },
+        "raw_value": "/mi/bin/map-appstore-url",
+        "canonical_value": "/mi/bin/map-appstore-url",
+        "normalized_value": "/mi/bin/map-appstore-url"
+      },
+      {
+        "node_id": "IOC_b543cd0d1fe9",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/mi/tomcat/webapps/mifs/",
+        "edges": [
+          "EDGE_4863bccd5f5b"
+        ],
+        "source": {
+          "/mi/tomcat/webapps/mifs/_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              29,
+              "We observed threat actors attempt to install a lightweight JSP web shell with names like 401.jsp, 403.jsp and 1.jsp at filepath /mi/tomcat/webapps/mifs/ across various intended targets."
+            ]
+          ]
+        },
+        "raw_value": "/mi/tomcat/webapps/mifs/",
+        "canonical_value": "/mi/tomcat/webapps/mifs",
+        "normalized_value": "/mi/tomcat/webapps/mifs"
+      },
+      {
+        "node_id": "IOC_efb9ecee93ec",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/slt",
+        "edges": [
+          "EDGE_ba8d1de14f4e",
+          "EDGE_eedad7abec4f"
+        ],
+        "source": {
+          "/slt_unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340": [
+            [
+              21,
+              "In some instances, attackers attempted to bypass authentication on Ivanti's MobileIron platform and immediately download and run a second-stage payload (the /slt script)."
+            ]
+          ]
+        },
+        "raw_value": "/slt",
+        "canonical_value": "/slt",
+        "normalized_value": "/slt"
+      },
+      {
+        "node_id": "IOC_0718b5bf405f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\Public\\Music\\package.dll",
+        "edges": [
+          "EDGE_951ca38fb5c3"
+        ],
+        "source": {
+          "C:\\Users\\Public\\Music\\package.dll_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              36,
+              "Soon after MSBuild.exe was executed, a file was created at C:\\Users\\Public\\Music\\package.dll on the targeted system."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Users\\Public\\Music\\package.dll",
+        "canonical_value": "C:\\Users\\Public\\Music\\package.dll",
+        "normalized_value": "C:\\Users\\Public\\Music\\package.dll"
+      },
+      {
+        "node_id": "IOC_1a7e60d2e653",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "193.149.180[.]128",
+        "edges": [
+          "EDGE_ad8c0c3cb2a6"
+        ],
+        "source": {
+          "193.149.180[.]128_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              49,
+              "We observed the injected processes beaconing to C2 IP addresses at 168.100.8[.]144 and 193.149.180[.]128."
+            ]
+          ]
+        },
+        "raw_value": "193.149.180[.]128",
+        "canonical_value": "193.149.180[.]128"
+      },
+      {
+        "node_id": "IOC_3566de0e0354",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\Public\\Downloads\\VM.txt",
+        "edges": [
+          "EDGE_4fa60394ab39"
+        ],
+        "source": {
+          "C:\\Users\\Public\\Downloads\\VM.txt_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              37,
+              "This file creates a full memory dump at C:\\Users\\Public\\Downloads\\VM.txt and XOR encodes it with a key 0x27."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Users\\Public\\Downloads\\VM.txt",
+        "canonical_value": "C:\\Users\\Public\\Downloads\\VM.txt",
+        "normalized_value": "C:\\Users\\Public\\Downloads\\VM.txt"
+      },
+      {
+        "node_id": "IOC_3d9671008dd0",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "168.100.8[.]144",
+        "edges": [
+          "EDGE_ebe46a4b980a"
+        ],
+        "source": {
+          "168.100.8[.]144_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              49,
+              "We observed the injected processes beaconing to C2 IP addresses at 168.100.8[.]144 and 193.149.180[.]128."
+            ]
+          ]
+        },
+        "raw_value": "168.100.8[.]144",
+        "canonical_value": "168.100.8[.]144"
+      },
+      {
+        "node_id": "IOC_7ccd5a77c43b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/var/cores",
+        "edges": [
+          "EDGE_1ba2f9e63655",
+          "EDGE_80bd0c2fe2a0"
+        ],
+        "source": {
+          "/var/cores_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              28,
+              "Additionally, the Ivanti appliance's /var/cores directory was empty, and the following files had been deleted:."
+            ]
+          ]
+        },
+        "raw_value": "/var/cores",
+        "canonical_value": "/var/cores",
+        "normalized_value": "/var/cores"
+      },
+      {
+        "node_id": "IOC_8d0093e53b08",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-0283",
+        "edges": [],
+        "source": {
+          "CVE-2025-0283_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              5,
+              "CVE-2025-0283 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a local authenticated attacker to escalate their privileges."
+            ],
+            [
+              15,
+              "CVE-2025-0283 is a stack-based buffer overflow that allows a local authenticated attacker to escalate privileges."
+            ],
+            [
+              16,
+              "There are no reports of attackers using the CVE-2025-0283 privilege escalation vulnerability at this time."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2025-0283",
+        "canonical_value": "CVE-2025-0283",
+        "normalized_value": "CVE-2025-0283"
+      },
+      {
+        "node_id": "IOC_f542c0c8b9b1",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-0282",
+        "edges": [
+          "EDGE_ba9bd9d39795"
+        ],
+        "source": {
+          "CVE-2025-0282_unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283": [
+            [
+              3,
+              "CVE-2025-0282 is a stack-based buffer overflow in Ivanti Connect Secure before version 22.7R2.5, Ivanti Policy Secure before version 22.7R1.2 and Ivanti Neurons for ZTA gateways before version 22.7R2.3 that allows a remote unauthenticated attacker to achieve remote code execution."
+            ],
+            [
+              7,
+              "On the same day of Ivanti’s advisory, Mandiant disclosed its findings of attacks in the wild using the CVE-2025-0282 remote code execution vulnerability."
+            ],
+            [
+              10,
+              "CVE-2025-0282 is a buffer overflow vulnerability that can be exploited by an unauthenticated attacker."
+            ],
+            [
+              17,
+              "There are limited reports of attackers using the CVE-2025-0282 remote code execution vulnerability to gain access into affected systems."
+            ],
+            [
+              21,
+              "Our telemetry reveals a threat actor potentially exploited the CVE-2025-0282 zero-day, pre-authentication remote code execution vulnerability in a public-facing Ivanti Connect Secure (ICS) VPN appliance in late December 2024."
+            ],
+            [
+              22,
+              "Third-party reporting suggests exploitation of CVE-2025-0282 involves a vulnerability in how IFT (also known as IF-T) connections are handled."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2025-0282",
+        "canonical_value": "CVE-2025-0282",
+        "normalized_value": "CVE-2025-0282"
+      },
+      {
+        "node_id": "IOC_15d893fa2bd9",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "lastauthserverused.js",
+        "edges": [
+          "EDGE_022692fb0095",
+          "EDGE_1731b236d96e",
+          "EDGE_f47a2759386d"
+        ],
+        "source": {
+          "lastauthserverused.js_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              34,
+              "As previously mentioned, to gain access to user credentials the attacker modified the file lastauthserverused.js\n, a legitimate component of the web app, modifying the “Login” function to POST user credentials to an attacker-controlled domain."
+            ]
+          ]
+        },
+        "raw_value": "lastauthserverused.js",
+        "canonical_value": "lastauthserverused.js",
+        "normalized_value": "lastauthserverused.js"
+      },
+      {
+        "node_id": "IOC_5b590b966055",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/tmp/",
+        "edges": [
+          "EDGE_d7ce2dcce62a"
+        ],
+        "source": {
+          "/tmp/_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              21,
+              "Volexity also believes the attacker created and executed a number of files from the system’s /tmp/."
+            ]
+          ]
+        },
+        "raw_value": "/tmp/",
+        "canonical_value": "/tmp",
+        "normalized_value": "/tmp"
+      },
+      {
+        "node_id": "IOC_5ba632a114f1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "compcheckresult.cgi",
+        "edges": [
+          "EDGE_232a2aa8fba4",
+          "EDGE_a63f58aa19c1"
+        ],
+        "source": {
+          "compcheckresult.cgi_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              15,
+              "Notably, Volexity observed the attacker backdooring a legitimate CGI file (compcheckresult.cgi\n) on the ICS VPN appliance to allow command execution."
+            ]
+          ]
+        },
+        "raw_value": "compcheckresult.cgi",
+        "canonical_value": "compcheckresult.cgi",
+        "normalized_value": "compcheckresult.cgi"
+      },
+      {
+        "node_id": "IOC_7da1687fdfd4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "download.pulsesecure[.]net",
+        "edges": [],
+        "source": {
+          "download.pulsesecure[.]net_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              39,
+              "From Volexity’s Network Security Monitoring of client networks, it typically sees the VPN appliance connect back to download.pulsesecure[.]net and to any other customer-configured integrations, such as to an SSO or MFA provider."
+            ]
+          ]
+        },
+        "raw_value": "download.pulsesecure[.]net",
+        "canonical_value": "download.pulsesecure.net",
+        "normalized_value": "download.pulsesecure.net"
+      },
+      {
+        "node_id": "IOC_8f0440bc2872",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "visits.py",
+        "edges": [
+          "EDGE_ea6f501184e7"
+        ],
+        "source": {
+          "visits.py_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              36,
+              "The attacker also modified another inbuilt component of Ivanti Connect Secure named visits.py\nadding a webshell component Volexity refers to as GIFTEDVISITOR."
+            ]
+          ]
+        },
+        "raw_value": "visits.py",
+        "canonical_value": "visits.py",
+        "normalized_value": "visits.py"
+      },
+      {
+        "node_id": "IOC_f3a4a8493f50",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "s.py",
+        "edges": [
+          "EDGE_ec3fcd0df6ac"
+        ],
+        "source": {
+          "s.py_www.volexity.com_blog_2024_01_10_active-exploitation-of-two-zero-day-vulnerabilities-in-ivanti-connect-secure-vpn": [
+            [
+              22,
+              "By carving files from the disk images, despite the file having been deleted, Volexity was able to recover a Python-based proxy utility it believes was likely s.py\n."
+            ]
+          ]
+        },
+        "raw_value": "s.py",
+        "canonical_value": "s.py",
+        "normalized_value": "s.py"
+      },
+      {
+        "node_id": "IOC_63f190d2ba95",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ivanti-secure-access[.]org",
+        "edges": [],
+        "source": {
+          "ivanti-secure-access[.]org_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              9,
+              "The user is presented with results pointing to look-alike domains such as ivanti-pulsesecure[.]com (registered on 2025-09-19) or ivanti-secure-access[.]org (registered on 2025-09-14)."
+            ]
+          ]
+        },
+        "raw_value": "ivanti-secure-access[.]org",
+        "canonical_value": "ivanti-secure-access.org",
+        "normalized_value": "ivanti-secure-access.org"
+      },
+      {
+        "node_id": "IOC_6456bc6a1c74",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "dwmapi.dll",
+        "edges": [],
+        "source": {
+          "dwmapi.dll_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              22,
+              "When the MSI is executed, it drops several files, including recently modified malicious DLLs named dwmapi.dll and pulse_extension.dll."
+            ]
+          ]
+        },
+        "raw_value": "dwmapi.dll",
+        "canonical_value": "dwmapi.dll",
+        "normalized_value": "dwmapi.dll"
+      },
+      {
+        "node_id": "IOC_69626fcf5fda",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "/income_shit",
+        "edges": [
+          "EDGE_87e9901c709e",
+          "EDGE_e53acd3ced28"
+        ],
+        "source": {
+          "/income_shit_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              30,
+              "It then sends the collected credential data in an HTTP POST request to the C2 path /income_shit."
+            ]
+          ]
+        },
+        "raw_value": "/income_shit",
+        "canonical_value": "/income_shit",
+        "normalized_value": "/income_shit"
+      },
+      {
+        "node_id": "IOC_7af7f63456db",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "4[.]239[.]95[.]1",
+        "edges": [
+          "EDGE_00550e622483",
+          "EDGE_567c5b600e14"
+        ],
+        "source": {
+          "4[.]239[.]95[.]1_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              28,
+              "It establishes a network connection to a hardcoded C2 server at IP address 4[.]239[.]95[.]1 on port 8080."
+            ],
+            [
+              31,
+              "The successful connection to the C2 server at 4[.]239[.]95[.]1:8080 is a strong indicator of successful credential exfiltration."
+            ]
+          ]
+        },
+        "raw_value": "4[.]239[.]95[.]1",
+        "canonical_value": "4[.]239[.]95[.]1"
+      },
+      {
+        "node_id": "IOC_80220cbae8a9",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "netml[.]shop/get?q=ivanti",
+        "edges": [
+          "EDGE_efeda08ad9fd"
+        ],
+        "source": {
+          "netml[.]shop/get?q=ivanti_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              13,
+              "This URL, in turn, facilitates the download of a trojanized MSI installer from netml[.]shop/get?q=ivanti."
+            ]
+          ]
+        },
+        "raw_value": "netml[.]shop/get?q=ivanti",
+        "canonical_value": "http://netml.shop/get?q=ivanti",
+        "normalized_value": "http://netml.shop/get?q=ivanti"
+      },
+      {
+        "node_id": "IOC_a47a1a4535bd",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "pulse_extension.dll",
+        "edges": [],
+        "source": {
+          "pulse_extension.dll_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              22,
+              "When the MSI is executed, it drops several files, including recently modified malicious DLLs named dwmapi.dll and pulse_extension.dll."
+            ]
+          ]
+        },
+        "raw_value": "pulse_extension.dll",
+        "canonical_value": "pulse_extension.dll",
+        "normalized_value": "pulse_extension.dll"
+      },
+      {
+        "node_id": "IOC_d4205b10a9ed",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ivanti-pulsesecure[.]com",
+        "edges": [],
+        "source": {
+          "ivanti-pulsesecure[.]com_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              9,
+              "The user is presented with results pointing to look-alike domains such as ivanti-pulsesecure[.]com (registered on 2025-09-19) or ivanti-secure-access[.]org (registered on 2025-09-14)."
+            ]
+          ]
+        },
+        "raw_value": "ivanti-pulsesecure[.]com",
+        "canonical_value": "ivanti-pulsesecure.com",
+        "normalized_value": "ivanti-pulsesecure.com"
+      },
+      {
+        "node_id": "IOC_e2593779ce34",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "6e258deec1e176516d180d758044c019",
+        "edges": [
+          "EDGE_effdddec5890"
+        ],
+        "source": {
+          "6e258deec1e176516d180d758044c019_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              14,
+              "Filename: Ivanti-VPN[.]msi\n- MD5: 6e258deec1e176516d180d758044c019 (VirusTotal)."
+            ]
+          ]
+        },
+        "raw_value": "6e258deec1e176516d180d758044c019",
+        "canonical_value": "6e258deec1e176516d180d758044c019"
+      },
+      {
+        "node_id": "IOC_f7871adbaff8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat",
+        "edges": [
+          "EDGE_34284ef0695f"
+        ],
+        "source": {
+          "C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              25,
+              "The malware searches for the Ivanti Pulse Secure connection storage file at the following hardcoded path: C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat."
+            ]
+          ]
+        },
+        "raw_value": "C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat",
+        "canonical_value": "C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat",
+        "normalized_value": "C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat"
+      },
+      {
+        "node_id": "IOC_f99718c6d7f2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "shopping5[.]shop/?file=ivanti",
+        "edges": [
+          "EDGE_8a2fc89512fd"
+        ],
+        "source": {
+          "shopping5[.]shop/?file=ivanti_www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites": [
+            [
+              12,
+              "When the user clicks the download button, the website initiates an HTTP request in the background to shopping5[.]shop/?file=ivanti."
+            ]
+          ]
+        },
+        "raw_value": "shopping5[.]shop/?file=ivanti",
+        "canonical_value": "http://shopping5.shop/?file=ivanti",
+        "normalized_value": "http://shopping5.shop/?file=ivanti"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0eba3657726f",
+      "node_u": "HL_2600fe09296e",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f358caf9610",
+      "node_u": "HL_2e9950dd24ff",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2d14d1b78fc9",
+      "node_u": "HL_5ce949e938eb",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4863bccd5f5b",
+      "node_u": "IOC_b543cd0d1fe9",
+      "node_v": "TTP_T1505",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4913ed59b5b8",
+      "node_u": "IOC_646a14a04573",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4c520d58050b",
+      "node_u": "HL_2e9950dd24ff",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_56ed8c5da4c8",
+      "node_u": "IOC_1fc6713b5493",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_88f6518a1ff6",
+      "node_u": "IOC_6464c92fac02",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba8d1de14f4e",
+      "node_u": "IOC_efb9ecee93ec",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c4f5170bd7e1",
+      "node_u": "HL_ebc383bd7173",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ea92bb97fec0",
+      "node_u": "IOC_268ddbb4a3f1",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_eedad7abec4f",
+      "node_u": "IOC_efb9ecee93ec",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_04f3830d4124",
+      "node_u": "HL_a92e53356860",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0d9fc713c707",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0da1f0592943",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_164abbb37249",
+      "node_u": "HL_8837dc3b4c1d",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1ba2f9e63655",
+      "node_u": "IOC_7ccd5a77c43b",
+      "node_v": "TTP_T1070",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1e56bea6926a",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1107",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_293102a2477b",
+      "node_u": "HL_a33fa387da6f",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_29c0e8161848",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1070",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2e5ad0d25da7",
+      "node_u": "HL_a92e53356860",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_42d7e51d0776",
+      "node_u": "HL_0a8a19dcf161",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4fa60394ab39",
+      "node_u": "IOC_3566de0e0354",
+      "node_v": "TTP_T1003",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7867721a70cf",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7bb682b7480d",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7ddb3b7ec00c",
+      "node_u": "HL_d146657d6f3b",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_80bd0c2fe2a0",
+      "node_u": "IOC_7ccd5a77c43b",
+      "node_v": "TTP_T1107",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_864335402e98",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8dd78fa31333",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_951ca38fb5c3",
+      "node_u": "IOC_0718b5bf405f",
+      "node_v": "TTP_T1003",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_965d44d31387",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_aaf7810e54e7",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ad8c0c3cb2a6",
+      "node_u": "IOC_1a7e60d2e653",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba9bd9d39795",
+      "node_u": "IOC_f542c0c8b9b1",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d36b2be356e5",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dcd378b565bb",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1543",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ebe46a4b980a",
+      "node_u": "IOC_3d9671008dd0",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f6e2bf9d4ad5",
+      "node_u": "HL_8955836f337c",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fb81cc2f40af",
+      "node_u": "HL_8fa0afbbf859",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fdb09169fb3c",
+      "node_u": "HL_73cd95911880",
+      "node_v": "TTP_T1070",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_022692fb0095",
+      "node_u": "IOC_15d893fa2bd9",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_03b109aa95f1",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0666efc1b55e",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1731b236d96e",
+      "node_u": "IOC_15d893fa2bd9",
+      "node_v": "TTP_T1565",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1c5ad5fae896",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_232a2aa8fba4",
+      "node_u": "IOC_5ba632a114f1",
+      "node_v": "TTP_T1505",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2bdadf994437",
+      "node_u": "HL_04321618123b",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2bf2aa70e89f",
+      "node_u": "HL_bb44dd424b14",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2c12a9475d22",
+      "node_u": "HL_8837dc3b4c1d",
+      "node_v": "TTP_T1070",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_31493c140f6a",
+      "node_u": "HL_8837dc3b4c1d",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_49ea79c99c98",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_614fdfab8712",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_653427887da4",
+      "node_u": "HL_79a6aa1d61a2",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_739a6a2dc9ad",
+      "node_u": "HL_b5ee5ca8774e",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_74b37b041a46",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7afb7af31da8",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9208a8849ba0",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a63f58aa19c1",
+      "node_u": "IOC_5ba632a114f1",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b099153dc044",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b39a7bd5feec",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1070",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d7ce2dcce62a",
+      "node_u": "IOC_5b590b966055",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e88dd13119c4",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1565",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ea6f501184e7",
+      "node_u": "IOC_8f0440bc2872",
+      "node_v": "TTP_T1505",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_eb24092be37e",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec3fcd0df6ac",
+      "node_u": "IOC_f3a4a8493f50",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ecea5bf01c05",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f3f82c716a23",
+      "node_u": "HL_b51a206bf367",
+      "node_v": "TTP_T1056",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f47a2759386d",
+      "node_u": "IOC_15d893fa2bd9",
+      "node_v": "TTP_T1056",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_00550e622483",
+      "node_u": "IOC_7af7f63456db",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_118f2313a41a",
+      "node_u": "HL_0f465b2c0af1",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_34284ef0695f",
+      "node_u": "IOC_f7871adbaff8",
+      "node_v": "TTP_T1005",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_567c5b600e14",
+      "node_u": "IOC_7af7f63456db",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_87e9901c709e",
+      "node_u": "IOC_69626fcf5fda",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8a2fc89512fd",
+      "node_u": "IOC_f99718c6d7f2",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e53acd3ced28",
+      "node_u": "IOC_69626fcf5fda",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_efeda08ad9fd",
+      "node_u": "IOC_80220cbae8a9",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_effdddec5890",
+      "node_u": "IOC_e2593779ce34",
+      "node_v": "TTP_T1553",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

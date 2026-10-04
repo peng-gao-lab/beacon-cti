@@ -1,0 +1,825 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "It then launches a hidden PowerShell command to download and execute a second-stage payload and store it in the Local Temp directory as “runtime.exe”."
+        ]
+      },
+      {
+        "node_id": "HL_5653bedbeb1d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Koi.ai",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "On December 8, 2025, Koi.ai published their findings about a campaign specifically targeting software developers through weaponized Visual Studio Code extensions."
+        ]
+      },
+      {
+        "node_id": "HL_56e26edc4469",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Lightshot",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          11,
+          14
+        ],
+        "span_sentences": [
+          "Upon successfully installing the malicious VSC extension, the downloader pretends to be a legitimate Lightshot DLL component, which is then executed by the genuine Lightshot.exe.",
+          "The malware implements a legitimate-looking Lightshot function exports to maintain its cover and implements a singleton pattern to ensure that it only executes once."
+        ]
+      },
+      {
+        "node_id": "HL_6222b27a8eca",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Visual Studio Code",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          1,
+          5
+        ],
+        "span_sentences": [
+          "Key takeaways\n- Analysis of the Evelyn Stealer campaign targeting software developers shows that threat actors are weaponizing the Visual Studio Code (VSC) extension ecosystem to deploy a multistage, information-stealing malware.",
+          "On December 8, 2025, Koi.ai published their findings about a campaign specifically targeting software developers through weaponized Visual Studio Code extensions."
+        ]
+      },
+      {
+        "node_id": "HL_af0b08696d67",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Evelyn",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          0,
+          6,
+          7,
+          18,
+          20,
+          22
+        ],
+        "span_sentences": [
+          "This blog entry provides an in-depth analysis of the multistage delivery of the Evelyn information stealer, which was used in a campaign targeting software developers.",
+          "Here, we’ll provide a more in-depth analysis of the multistage delivery of the Evelyn information stealer.",
+          "Evelyn implements multiple anti-analysis techniques to evade detection in research and sandbox environments.",
+          "The malware uses AES-256-CBC encryption to decrypt the final payload, which is a copy of Evelyn Stealer.",
+          "It then decrypts the final embedded payload (Evelyn Stealer), which is stored within the malware binary using AES-256-CBC encryption algorithm.",
+          "Upon execution of Evelyn Stealer, the malware dynamically resolves all Windows APIs needed for malware operations, including process injection, file operations, registry access, network communication, and clipboard access."
+        ]
+      },
+      {
+        "node_id": "HL_d7253e7bc7eb",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Evelyn Stealer campaign",
+        "edges": [],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The Evelyn Stealer campaign reflects the operationalization of attacks against developer communities, which are seen as high-value targets given their important role in the software development ecosystem."
+        ]
+      },
+      {
+        "node_id": "HL_ea5609bf8577",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Evelyn Stealer",
+        "edges": [
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          1,
+          38
+        ],
+        "span_sentences": [
+          "Key takeaways\n- Analysis of the Evelyn Stealer campaign targeting software developers shows that threat actors are weaponizing the Visual Studio Code (VSC) extension ecosystem to deploy a multistage, information-stealing malware.",
+          "The Evelyn Stealer campaign reflects the operationalization of attacks against developer communities, which are seen as high-value targets given their important role in the software development ecosystem."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Additionally, the malware captures desktop screenshots and collects various information from the infected machine, including the following:\n- System information such as username, computer name, OS version, installed software, running processes, sensitive files, VPN configuration, and more\n- Cryptocurrency wallets\n- Clipboard data\n- Wi-Fi passwords\nOnce the malware collects all the necessary information, it archives the data into a ZIP file and sends it to the attacker’s C&C server over FTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_5",
+          "EDGE_23",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware uses AES-256-CBC encryption to decrypt the final payload, which is a copy of Evelyn Stealer."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Upon successfully installing the malicious VSC extension, the downloader pretends to be a legitimate Lightshot DLL component, which is then executed by the genuine Lightshot.exe."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The malware is designed to exfiltrate sensitive information, including developer credentials and cryptocurrency-related data."
+          ],
+          [
+            "Additionally, the malware captures desktop screenshots and collects various information from the infected machine, including the following:\n- System information such as username, computer name, OS version, installed software, running processes, sensitive files, VPN configuration, and more\n- Cryptocurrency wallets\n- Clipboard data\n- Wi-Fi passwords\nOnce the malware collects all the necessary information, it archives the data into a ZIP file and sends it to the attacker’s C&C server over FTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_8",
+          "EDGE_20",
+          "EDGE_27",
+          "EDGE_29"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            29,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It collects system information and harvests browser credentials through DLL injection as well as files and information such as clipboard and Wi-Fi credentials ."
+          ],
+          [
+            "The second-stage payload of this malware campaign is a process hollowing injector, designed to decrypt and inject a third-stage payload into the legitimate Windows process, “grpconv.exe”."
+          ],
+          [
+            "The malware uses the following AES Key and IV to decrypt the embedded payload:\n- AES Key (32 bytes): 2e649f6145f55988b920ff5a445e63aae29c80495b830e0d8bb4b3fff4b1f6f4\n- IV (16 bytes): 5c507b22e9814428c5f2b1ef213c5c4a\nOnce the payload is decrypted, the malware injects it into the “grpconv.exe” and resumes the execution of the suspended process."
+          ],
+          [
+            "Upon execution of Evelyn Stealer, the malware dynamically resolves all Windows APIs needed for malware operations, including process injection, file operations, registry access, network communication, and clipboard access."
+          ],
+          [
+            "This component is essential for the malware’s capabilities to extract browser credentials and represents a key dependency for successful data theft operations.",
+            "The malware first checks the TEMP directory, which suggests that it could have been previously deployed or cached from earlier infections.",
+            "If not found in the TEMP directory, the malware tries to download it from the FTP server.",
+            "Lastly, it tries to load it from the current directory.",
+            "Once the malware acquires abe_decrypt.dll, the malware targets browsers by implementing a process creation and DLL injection technique specifically designed to compromise browser security mechanisms."
+          ],
+          [
+            "Once the malware acquires abe_decrypt.dll, the malware targets browsers by implementing a process creation and DLL injection technique specifically designed to compromise browser security mechanisms."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_9",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It then launches a hidden PowerShell command to download and execute a second-stage payload and store it in the Local Temp directory as “runtime.exe”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware communicates with its command-and-control (C&C) server over FTP."
+          ],
+          [
+            "Additionally, the malware captures desktop screenshots and collects various information from the infected machine, including the following:\n- System information such as username, computer name, OS version, installed software, running processes, sensitive files, VPN configuration, and more\n- Cryptocurrency wallets\n- Clipboard data\n- Wi-Fi passwords\nOnce the malware collects all the necessary information, it archives the data into a ZIP file and sends it to the attacker’s C&C server over FTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1074",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1074",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After successful initialization and environment validation, the malware establishes its operational workspace by creating a dedicated folder structure in the user's AppData directory for storing collected data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It collects system information and harvests browser credentials through DLL injection as well as files and information such as clipboard and Wi-Fi credentials ."
+          ],
+          [
+            "Additionally, the malware captures desktop screenshots and collects various information from the infected machine, including the following:\n- System information such as username, computer name, OS version, installed software, running processes, sensitive files, VPN configuration, and more\n- Cryptocurrency wallets\n- Clipboard data\n- Wi-Fi passwords\nOnce the malware collects all the necessary information, it archives the data into a ZIP file and sends it to the attacker’s C&C server over FTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_13",
+          "EDGE_26",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            29,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It then launches a hidden PowerShell command to download and execute a second-stage payload and store it in the Local Temp directory as “runtime.exe”."
+          ],
+          [
+            "This component is essential for the malware’s capabilities to extract browser credentials and represents a key dependency for successful data theft operations.",
+            "The malware first checks the TEMP directory, which suggests that it could have been previously deployed or cached from earlier infections.",
+            "If not found in the TEMP directory, the malware tries to download it from the FTP server.",
+            "Lastly, it tries to load it from the current directory.",
+            "Once the malware acquires abe_decrypt.dll, the malware targets browsers by implementing a process creation and DLL injection technique specifically designed to compromise browser security mechanisms."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It can also capture screenshots and steal cryptocurrency wallet."
+          ],
+          [
+            "Additionally, the malware captures desktop screenshots and collects various information from the infected machine, including the following:\n- System information such as username, computer name, OS version, installed software, running processes, sensitive files, VPN configuration, and more\n- Cryptocurrency wallets\n- Clipboard data\n- Wi-Fi passwords\nOnce the malware collects all the necessary information, it archives the data into a ZIP file and sends it to the attacker’s C&C server over FTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1115",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1115",
+        "edges": [
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It collects system information and harvests browser credentials through DLL injection as well as files and information such as clipboard and Wi-Fi credentials ."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_3",
+          "EDGE_16",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Key takeaways\n- Analysis of the Evelyn Stealer campaign targeting software developers shows that threat actors are weaponizing the Visual Studio Code (VSC) extension ecosystem to deploy a multistage, information-stealing malware.",
+            "- The malware is designed to exfiltrate sensitive information, including developer credentials and cryptocurrency-related data.",
+            "Compromised developer environments can also be abused as access points into broader organizational systems.",
+            "- This activity affects organizations with software development teams that rely on VSC and third-party extensions as well as those with access to production systems, cloud resources, or digital assets.",
+            "On December 8, 2025, Koi.ai published their findings about a campaign specifically targeting software developers through weaponized Visual Studio Code extensions."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [
+          "EDGE_17",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            23,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Evelyn implements multiple anti-analysis techniques to evade detection in research and sandbox environments."
+          ],
+          [
+            "The malware employs multiple layers of evasion techniques specifically designed to thwart security researchers, automated analysis systems, and sandbox environments.",
+            "The malware implements different virtual machine detection methods, debugger detection, and specialized checks for analysis environments like Remote Desktop Protocol (RDP) sessions and Hyper-V."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1555",
+        "edges": [
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It collects system information and harvests browser credentials through DLL injection as well as files and information such as clipboard and Wi-Fi credentials ."
+          ],
+          [
+            "Once the malware acquires abe_decrypt.dll, the malware targets browsers by implementing a process creation and DLL injection technique specifically designed to compromise browser security mechanisms."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Additionally, the malware captures desktop screenshots and collects various information from the infected machine, including the following:\n- System information such as username, computer name, OS version, installed software, running processes, sensitive files, VPN configuration, and more\n- Cryptocurrency wallets\n- Clipboard data\n- Wi-Fi passwords\nOnce the malware collects all the necessary information, it archives the data into a ZIP file and sends it to the attacker’s C&C server over FTP."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_314cf5918b12",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "5c507b22e9814428c5f2b1ef213c5c4a",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The malware uses the following AES Key and IV to decrypt the embedded payload:\n- AES Key (32 bytes): 2e649f6145f55988b920ff5a445e63aae29c80495b830e0d8bb4b3fff4b1f6f4\n- IV (16 bytes): 5c507b22e9814428c5f2b1ef213c5c4a\nOnce the payload is decrypted, the malware injects it into the “grpconv.exe” and resumes the execution of the suspended process."
+        ]
+      },
+      {
+        "node_id": "IOC_53ce589a8b47",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "2e649f6145f55988b920ff5a445e63aae29c80495b830e0d8bb4b3fff4b1f6f4",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The malware uses the following AES Key and IV to decrypt the embedded payload:\n- AES Key (32 bytes): 2e649f6145f55988b920ff5a445e63aae29c80495b830e0d8bb4b3fff4b1f6f4\n- IV (16 bytes): 5c507b22e9814428c5f2b1ef213c5c4a\nOnce the payload is decrypted, the malware injects it into the “grpconv.exe” and resumes the execution of the suspended process."
+        ]
+      },
+      {
+        "node_id": "IOC_661631b67414",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "runtime.exe",
+        "edges": [
+          "EDGE_25",
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "It then launches a hidden PowerShell command to download and execute a second-stage payload and store it in the Local Temp directory as “runtime.exe”."
+        ]
+      },
+      {
+        "node_id": "IOC_85ce28a9ff9c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "grpconv.exe",
+        "edges": [
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          17,
+          19,
+          21
+        ],
+        "span_sentences": [
+          "The second-stage payload of this malware campaign is a process hollowing injector, designed to decrypt and inject a third-stage payload into the legitimate Windows process, “grpconv.exe”.",
+          "Upon execution, the malware dynamically imports Windows APIs and creates a new instance of “grpconv.exe” using “CreateProcessA” with the CREATE_SUSPENDED flag.",
+          "The malware uses the following AES Key and IV to decrypt the embedded payload:\n- AES Key (32 bytes): 2e649f6145f55988b920ff5a445e63aae29c80495b830e0d8bb4b3fff4b1f6f4\n- IV (16 bytes): 5c507b22e9814428c5f2b1ef213c5c4a\nOnce the payload is decrypted, the malware injects it into the “grpconv.exe” and resumes the execution of the suspended process."
+        ]
+      },
+      {
+        "node_id": "IOC_d0f1b231b4a2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Lightshot.exe",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "Upon successfully installing the malicious VSC extension, the downloader pretends to be a legitimate Lightshot DLL component, which is then executed by the genuine Lightshot.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_d8736c141d05",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "abe_decrypt.dll",
+        "edges": [
+          "EDGE_29",
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          28,
+          33
+        ],
+        "span_sentences": [
+          "The malware then implements a sophisticated multi-tier strategy for acquiring its critical browser injection component “abe_decrypt.dll”.",
+          "Once the malware acquires abe_decrypt.dll, the malware targets browsers by implementing a process creation and DLL injection technique specifically designed to compromise browser security mechanisms."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_56e26edc4469",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_6222b27a8eca",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1115"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_af0b08696d67",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_ea5609bf8577",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_ea5609bf8577",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_ea5609bf8577",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_314cf5918b12",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_53ce589a8b47",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_661631b67414",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_661631b67414",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_85ce28a9ff9c",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_d0f1b231b4a2",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_d8736c141d05",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_d8736c141d05",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

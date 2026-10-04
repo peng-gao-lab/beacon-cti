@@ -1,0 +1,724 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0e4de83f4074",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AHK Bot",
+        "edges": [],
+        "sentence_indices": [
+          7,
+          41,
+          43
+        ],
+        "span_sentences": [
+          "Due to similarities in the design and implementation with the malware family AHK Bot, we are referring to this PowerShell-based malware as “PS1Bot.”\nThis campaign has been extremely active, with new samples being observed continuously over the past several months.",
+          "While Talos did not identify any direct overlap in activity related to these malware families, we noted similarities in the design architecture and functionality provided by the PS1Bot malware delivered in this case and that present in another malware family Talos previously reported on called AHK Bot.",
+          "Likewise, the use of a main polling script and subsequent delivery and execution of purpose-built modules is also similar to the design architecture found with AHK Bot."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          5
+        ],
+        "span_sentences": [
+          "Cisco Talos has observed an ongoing malware campaign that seeks to infect victims with a multi-stage malware framework, implemented in PowerShell and C#, which we are referring to as “PS1Bot.”\nPS1Bot features a modular design, with several modules delivered used to perform a variety of malicious activities on infected systems, including information theft, keylogging, reconnaissance and the establishment of persistent system access.",
+          "Campaign Overview\nCisco Talos has been monitoring an ongoing malware campaign that has been active throughout 2025."
+        ]
+      },
+      {
+        "node_id": "HL_906e6811b702",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Skitnet",
+        "edges": [],
+        "sentence_indices": [
+          8,
+          39
+        ],
+        "span_sentences": [
+          "The cluster of malicious activity associated with this campaign also overlaps with prior reporting, including reporting on Skitnet.",
+          "During our analysis of the code and functionality associated with this infection chain, we observed similarities with components referenced in prior reporting related to the use of Skitnet/Bossnet to deliver PowerShell modules to infected systems."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          6,
+          7,
+          13,
+          14,
+          15,
+          16,
+          20,
+          21,
+          22,
+          24,
+          29,
+          35,
+          36,
+          37,
+          38,
+          39
+        ],
+        "span_sentences": [
+          "Cisco Talos has observed an ongoing malware campaign that seeks to infect victims with a multi-stage malware framework, implemented in PowerShell and C#, which we are referring to as “PS1Bot.”\nPS1Bot features a modular design, with several modules delivered used to perform a variety of malicious activities on infected systems, including information theft, keylogging, reconnaissance and the establishment of persistent system access.",
+          "The campaign appears to be leveraging malvertising to direct victims to a multi-stage malware framework, implemented in PowerShell and C#, that possesses robust functionality, including the ability to deliver follow-on modules including an information stealer, keylogger, screen capture collector and more.",
+          "Due to similarities in the design and implementation with the malware family AHK Bot, we are referring to this PowerShell-based malware as “PS1Bot.”\nThis campaign has been extremely active, with new samples being observed continuously over the past several months.",
+          "This includes writing a PowerShell script to C:\\ProgramData\\.",
+          "This PowerShell script obtains the serial number of the C:\\ drive and uses it to construct a URL, which it uses to attempt to establish a connection to the command and control (C2) server to retrieve additional malicious content to execute.",
+          "Any PowerShell content received is then passed to Invoke-Expression (IEX) and executed within the existing PowerShell process.",
+          "This allows the malware to continue to run, periodically attempting to poll the attacker’s C2 server to retrieve additional commands to execute within the PowerShell process running on the system.",
+          "This PowerShell module is delivered after initial C2 establishment and is responsible for obtaining and reporting the antivirus programs present on the infected system.",
+          "Once antivirus detection has been performed, we have observed the delivery of additional PowerShell modules, one of which is used to capture screenshots on infected systems and transmit the resulting images to the C2 server.",
+          "In this case, the adversary is using PowerShell to dynamically compile and execute a C# assembly DLL at runtime.",
+          "Following successful collection of screenshots on infected systems, we have observed the delivery of an additional PowerShell module that the attacker refers to as the “grabber module” that is used to steal sensitive data from infected systems.",
+          "The keylogging and clipboard capture module is implemented similarly to the screen capture module described earlier, with PowerShell being used to dynamically compile and execute a C# assembly DLL at runtime.",
+          "The module begins by attempting to create a PowerShell script that will be executed each time the system restarts.",
+          "A malicious randomly-named LNK file is also created in the Startup directory that is configured to point to the PowerShell script previously created so that it can be executed each time the system is rebooted.",
+          "The PowerShell script contents are generated by retrieving an obfuscated blob from the C2 server, which in our sample was hosted at the URL path /transform.",
+          "When deobfuscated, the contents of the PowerShell simply contain the same logic used to establish the C2 polling process previously described early in the infection chain.",
+          "During our analysis of the code and functionality associated with this infection chain, we observed similarities with components referenced in prior reporting related to the use of Skitnet/Bossnet to deliver PowerShell modules to infected systems."
+        ]
+      },
+      {
+        "node_id": "HL_c43ada2fdf8c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Bossnet",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "During our analysis of the code and functionality associated with this infection chain, we observed similarities with components referenced in prior reporting related to the use of Skitnet/Bossnet to deliver PowerShell modules to infected systems."
+        ]
+      },
+      {
+        "node_id": "HL_c78ebd70dffb",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PS1Bot",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          7,
+          41
+        ],
+        "span_sentences": [
+          "Cisco Talos has observed an ongoing malware campaign that seeks to infect victims with a multi-stage malware framework, implemented in PowerShell and C#, which we are referring to as “PS1Bot.”\nPS1Bot features a modular design, with several modules delivered used to perform a variety of malicious activities on infected systems, including information theft, keylogging, reconnaissance and the establishment of persistent system access.",
+          "PS1Bot has been designed with stealth in mind, minimizing persistent artifacts left on infected systems and incorporating in-memory execution techniques to facilitate execution of follow-on modules without requiring them to be written to disk.",
+          "PS1Bot distribution campaigns have been extremely active since early 2025, with new samples being observed frequently throughout the year.",
+          "Due to similarities in the design and implementation with the malware family AHK Bot, we are referring to this PowerShell-based malware as “PS1Bot.”\nThis campaign has been extremely active, with new samples being observed continuously over the past several months.",
+          "While Talos did not identify any direct overlap in activity related to these malware families, we noted similarities in the design architecture and functionality provided by the PS1Bot malware delivered in this case and that present in another malware family Talos previously reported on called AHK Bot."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The information stealer module implementation leverages wordlists embedded into the stealer to enumerate files containing passwords and seed phrases that can be used to access cryptocurrency wallets, which the stealer also attempts to exfiltrate from infected systems."
+          ],
+          [
+            "Following successful collection of screenshots on infected systems, we have observed the delivery of an additional PowerShell module that the attacker refers to as the “grabber module” that is used to steal sensitive data from infected systems."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The PowerShell script contents are generated by retrieving an obfuscated blob from the C2 server, which in our sample was hosted at the URL path /transform."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once the sensitive information has been collected, it is then compressed and exfiltrated to the attacker’s C2 server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1056",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            29,
+            30
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos has observed an ongoing malware campaign that seeks to infect victims with a multi-stage malware framework, implemented in PowerShell and C#, which we are referring to as “PS1Bot.”\nPS1Bot features a modular design, with several modules delivered used to perform a variety of malicious activities on infected systems, including information theft, keylogging, reconnaissance and the establishment of persistent system access."
+          ],
+          [
+            "The campaign appears to be leveraging malvertising to direct victims to a multi-stage malware framework, implemented in PowerShell and C#, that possesses robust functionality, including the ability to deliver follow-on modules including an information stealer, keylogger, screen capture collector and more."
+          ],
+          [
+            "The keylogging and clipboard capture module is implemented similarly to the screen capture module described earlier, with PowerShell being used to dynamically compile and execute a C# assembly DLL at runtime.",
+            "The keylogger uses SetWindowsHookEx()."
+          ],
+          [
+            "Clipboard contents are also monitored so that information copied can be dynamically logged as well."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_5",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            34,
+            35
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos has observed an ongoing malware campaign that seeks to infect victims with a multi-stage malware framework, implemented in PowerShell and C#, which we are referring to as “PS1Bot.”\nPS1Bot features a modular design, with several modules delivered used to perform a variety of malicious activities on infected systems, including information theft, keylogging, reconnaissance and the establishment of persistent system access."
+          ],
+          [
+            "PS1Bot has been designed with stealth in mind, minimizing persistent artifacts left on infected systems and incorporating in-memory execution techniques to facilitate execution of follow-on modules without requiring them to be written to disk."
+          ],
+          [
+            "The campaign appears to be leveraging malvertising to direct victims to a multi-stage malware framework, implemented in PowerShell and C#, that possesses robust functionality, including the ability to deliver follow-on modules including an information stealer, keylogger, screen capture collector and more."
+          ],
+          [
+            "Inside of the compressed archive is a single file called “FULL DOCUMENT.js” that functions as a downloader, retrieving the next stage of the infection.",
+            "When executed, the malware retrieves a JScript scriptlet from an attacker controlled server, the contents of which are then executed."
+          ],
+          [
+            "This includes writing a PowerShell script to C:\\ProgramData\\."
+          ],
+          [
+            "This PowerShell script obtains the serial number of the C:\\ drive and uses it to construct a URL, which it uses to attempt to establish a connection to the command and control (C2) server to retrieve additional malicious content to execute."
+          ],
+          [
+            "Any PowerShell content received is then passed to Invoke-Expression (IEX) and executed within the existing PowerShell process."
+          ],
+          [
+            "This allows the malware to continue to run, periodically attempting to poll the attacker’s C2 server to retrieve additional commands to execute within the PowerShell process running on the system."
+          ],
+          [
+            "This PowerShell module is delivered after initial C2 establishment and is responsible for obtaining and reporting the antivirus programs present on the infected system."
+          ],
+          [
+            "Once antivirus detection has been performed, we have observed the delivery of additional PowerShell modules, one of which is used to capture screenshots on infected systems and transmit the resulting images to the C2 server."
+          ],
+          [
+            "In this case, the adversary is using PowerShell to dynamically compile and execute a C# assembly DLL at runtime."
+          ],
+          [
+            "Following successful collection of screenshots on infected systems, we have observed the delivery of an additional PowerShell module that the attacker refers to as the “grabber module” that is used to steal sensitive data from infected systems."
+          ],
+          [
+            "We have also observed the delivery of a persistence module that can be used as desired to ensure that the main looping mechanism is re-executed following a system restart or user session termination.",
+            "The module begins by attempting to create a PowerShell script that will be executed each time the system restarts."
+          ],
+          [
+            "A malicious randomly-named LNK file is also created in the Startup directory that is configured to point to the PowerShell script previously created so that it can be executed each time the system is rebooted."
+          ],
+          [
+            "The PowerShell script contents are generated by retrieving an obfuscated blob from the C2 server, which in our sample was hosted at the URL path /transform."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos has observed an ongoing malware campaign that seeks to infect victims with a multi-stage malware framework, implemented in PowerShell and C#, which we are referring to as “PS1Bot.”\nPS1Bot features a modular design, with several modules delivered used to perform a variety of malicious activities on infected systems, including information theft, keylogging, reconnaissance and the establishment of persistent system access."
+          ],
+          [
+            "This PowerShell module is delivered after initial C2 establishment and is responsible for obtaining and reporting the antivirus programs present on the infected system."
+          ],
+          [
+            "We have also observed the delivery of a system survey module that the attacker refers to as “WMIComputerCSHARP” that is used to collect and transmit information about the infected system and environment to the attacker."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Inside of the compressed archive is a single file called “FULL DOCUMENT.js” that functions as a downloader, retrieving the next stage of the infection.",
+            "When executed, the malware retrieves a JScript scriptlet from an attacker controlled server, the contents of which are then executed."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The keylogging and clipboard capture module is implemented similarly to the screen capture module described earlier, with PowerShell being used to dynamically compile and execute a C# assembly DLL at runtime.",
+            "The keylogger uses SetWindowsHookEx()."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_9",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The campaign appears to be leveraging malvertising to direct victims to a multi-stage malware framework, implemented in PowerShell and C#, that possesses robust functionality, including the ability to deliver follow-on modules including an information stealer, keylogger, screen capture collector and more."
+          ],
+          [
+            "Once antivirus detection has been performed, we have observed the delivery of additional PowerShell modules, one of which is used to capture screenshots on infected systems and transmit the resulting images to the C2 server."
+          ],
+          [
+            "Following successful collection of screenshots on infected systems, we have observed the delivery of an additional PowerShell module that the attacker refers to as the “grabber module” that is used to steal sensitive data from infected systems."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1115",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1115",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            29,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The keylogging and clipboard capture module is implemented similarly to the screen capture module described earlier, with PowerShell being used to dynamically compile and execute a C# assembly DLL at runtime.",
+            "The keylogger uses SetWindowsHookEx().",
+            "Clipboard contents are also monitored so that information copied can be dynamically logged as well."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1119",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1119",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The information stealer module implementation leverages wordlists embedded into the stealer to enumerate files containing passwords and seed phrases that can be used to access cryptocurrency wallets, which the stealer also attempts to exfiltrate from infected systems."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1217",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1217",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware first checks for the existence of various installed applications of interest, including browsers, browser extensions and cryptocurrency wallet applications."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1518",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1518",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware first checks for the existence of various installed applications of interest, including browsers, browser extensions and cryptocurrency wallet applications."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            35
+          ],
+          [
+            36,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We have also observed the delivery of a persistence module that can be used as desired to ensure that the main looping mechanism is re-executed following a system restart or user session termination.",
+            "The module begins by attempting to create a PowerShell script that will be executed each time the system restarts."
+          ],
+          [
+            "A malicious randomly-named LNK file is also created in the Startup directory that is configured to point to the PowerShell script previously created so that it can be executed each time the system is rebooted."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once the sensitive information has been collected, it is then compressed and exfiltrated to the attacker’s C2 server."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_36907851adcd",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "This includes writing a PowerShell script to C:\\ProgramData\\."
+        ]
+      },
+      {
+        "node_id": "IOC_bbf76c0289ea",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "The resulting DLL is then used to capture the screenshot and create a Bitmap image (.BMP) inside of the %TEMP%\ndirectory."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1518"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_c78ebd70dffb",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_36907851adcd",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_bbf76c0289ea",
+      "node_v": "TTP_T1113"
+    }
+  ]
+}

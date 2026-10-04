@@ -1,0 +1,958 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_125ce59a2714",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "education sector",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "One of the victims is in the education sector in South Korea."
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          8,
+          11,
+          12,
+          46
+        ],
+        "span_sentences": [
+          "When a user launches the executable, the malware retrieves a PowerShell script from the threat actor’s server.",
+          "The PowerShell script from the remote server is responsible for uploading general information about the victim and creating a Windows shortcut that retrieves an additional PowerShell script from the same server.",
+          "During our own research into this campaign, we discovered another PowerShell script with the MD5 hash: bba3b15bad6b5a80ab9fa9a49b643658\nand a GitHub account used by the script linked to the same actor.",
+          "From the newly discovered PowerShell script, we found that the actor used the domain \"r-e[.]kr\" to host the malicious PowerShell scripts."
+        ]
+      },
+      {
+        "node_id": "HL_29dbb6cf1793",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "North Korea",
+        "edges": [],
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "Based on this gathered information, we surmise that academic researchers specializing in the Korean peninsula, particularly those engaged in geopolitical matters involving North Korea, are among the primary targets of this campaign."
+        ]
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In July 2022, it was reported that Kimsuky used malicious Chrome extensions to target users in the U.S., Europe, and South Korea."
+        ]
+      },
+      {
+        "node_id": "HL_30275f88a7d7",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kakao",
+        "edges": [],
+        "sentence_indices": [
+          25,
+          31,
+          32
+        ],
+        "span_sentences": [
+          "- When the victim visits the Naver login page (nid.naver.com/*) or the Kakao login page (accounts.kakao.com/*), the\nauth.js\nfile is injected into the web page.",
+          "auth.js\nscript is used for manipulating security measures for Naver and Kakao.",
+          "To bypass Kakao, the script checks for elements with specific IDs."
+        ]
+      },
+      {
+        "node_id": "HL_38e0726d7c14",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TRANSLATEXT",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          4,
+          5,
+          15,
+          16,
+          18,
+          19,
+          22,
+          23,
+          37
+        ],
+        "span_sentences": [
+          "While actively monitoring this group, we discovered an instance where Kimsuky used a new Google Chrome extension, which we named “TRANSLATEXT\n”, for cyber espionage.",
+          "TRANSLATEXT\nis specifically leveraged to steal email addresses, usernames, passwords, cookies, and captures browser screenshots.",
+          "Therefore, it appears Kimsuky registered TRANSLATEXT\nin this registry key using previous stage methods.",
+          "In the attacker-controlled GitHub account, we observed an XML file in addition to TRANSLATEXT\n.",
+          "TRANSLATEXT\nwas uploaded to GitHub as “GoogleTranslate.crx\n”, and masqueraded as a Google Translate extension.",
+          "However, TRANSLATEXT\nactually contained four malicious Javascript files for bypassing security measures, stealing email addresses, credentials, cookies, capturing browser screenshots, and exfiltrating stolen data.",
+          "The TRANSLATEXT\nmanifest requests excessive permissions such as scripting.",
+          "This broad permission allows TRANSLATEXT\nto inject scripts into web pages, enabling it to modify page content, add functionality, and/or interact with the page's elements.",
+          "TRANSLATEXT\nuses HTTP POST requests for C2 communications, with the following hardcoded HTTP headers:Accept: application/json, application/xml, text/plain, text/html, *.*,\nContent-Type: application/x-www-form-urlencoded; charset=utf-8\nAccess-Control-Allow-Origin: \"*\"\nAccess-Control-Allow-Credentials: true\nTRANSLATEXT\nuses the following HTTP POST fields for sending the stolen information.TRANSLATEXT\n."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          7,
+          11,
+          14
+        ],
+        "span_sentences": [
+          "According to a recent publication by a South Korean security vendor, Kimsuky delivered an archive file named “한국군사학논집 심사평서 (1).zip”, which translates to \"Review of a Monograph on Korean Military History.\"\nThe archive contains two decoy files:\n- HWP documents (a popular office file format in South Korea)\n- A Windows executable masquerading as related documents.",
+          "The PowerShell script from the remote server is responsible for uploading general information about the victim and creating a Windows shortcut that retrieves an additional PowerShell script from the same server.",
+          "However, the newly discovered PowerShell script reveals that Kimsuky checked for the presence of installed Chrome extensions using the Windows registry key shown below:\nHKCU\\Software\\Policies\\Google\\Chrome\\ExtensionInstallForcelist\nThis registry key is used by Chrome to enforce the installation of specified extensions without user permission or intervention."
+        ]
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          4,
+          14,
+          18,
+          26,
+          29,
+          52
+        ],
+        "span_sentences": [
+          "They employ various tactics, techniques, and procedures (TTPs) in their targeted campaigns and one of their distribution methods is malicious Google Chrome extensions.",
+          "While actively monitoring this group, we discovered an instance where Kimsuky used a new Google Chrome extension, which we named “TRANSLATEXT\n”, for cyber espionage.",
+          "However, the newly discovered PowerShell script reveals that Kimsuky checked for the presence of installed Chrome extensions using the Windows registry key shown below:\nHKCU\\Software\\Policies\\Google\\Chrome\\ExtensionInstallForcelist\nThis registry key is used by Chrome to enforce the installation of specified extensions without user permission or intervention.",
+          "TRANSLATEXT\nwas uploaded to GitHub as “GoogleTranslate.crx\n”, and masqueraded as a Google Translate extension.",
+          "- Similarly, when visiting the Gmail login page (mail.google.com/), the\ngsuit.js\nfile is injected into the web page.",
+          "The The Note: We have notified the Google and Naver security teams about these security bypasses and are closely working with them to mitigate the issue.",
+          "Our research indicates that malicious Google Chrome extensions continue to be leveraged by Kimsuky."
+        ]
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          52
+        ],
+        "span_sentences": [
+          "They employ various tactics, techniques, and procedures (TTPs) in their targeted campaigns and one of their distribution methods is malicious Google Chrome extensions.",
+          "While actively monitoring this group, we discovered an instance where Kimsuky used a new Google Chrome extension, which we named “TRANSLATEXT\n”, for cyber espionage.",
+          "Our research indicates that malicious Google Chrome extensions continue to be leveraged by Kimsuky."
+        ]
+      },
+      {
+        "node_id": "HL_6f5754d22114",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "academic sector",
+        "edges": [],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "This group, first observed in 2013, is notorious for cyber espionage, and financially motivated cyber attacks, primarily targeting South Korean entities, including think tanks, government institutions, and the academic sector."
+        ]
+      },
+      {
+        "node_id": "HL_72608656a66c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Velvet Chollima",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In March 2024, Zscaler ThreatLabz observed new activity from Kimsuky (aka APT43, Emerald Sleet, and Velvet Chollima), an advanced persistent threat actor backed by the North Korean government."
+        ]
+      },
+      {
+        "node_id": "HL_7b33adfdc069",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Gmail",
+        "edges": [],
+        "sentence_indices": [
+          26,
+          44
+        ],
+        "span_sentences": [
+          "- Similarly, when visiting the Gmail login page (mail.google.com/), the\ngsuit.js\nfile is injected into the web page.",
+          "Furthermore, the main page of the threat actor's server redirects clients to the legitimate Gmail page when they connect without any parameters."
+        ]
+      },
+      {
+        "node_id": "HL_8e1659bea8b4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler ThreatLabz",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In March 2024, Zscaler ThreatLabz observed new activity from Kimsuky (aka APT43, Emerald Sleet, and Velvet Chollima), an advanced persistent threat actor backed by the North Korean government."
+        ]
+      },
+      {
+        "node_id": "HL_b475a81d8dfb",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "b374k webshell",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          42,
+          43
+        ],
+        "span_sentences": [
+          "From the threat actor's server, we discovered the presence of a b374k webshell (hxxps://webman.w3school.cloudns[.]nz/config.php) used for exfiltrating stolen information.",
+          "The Kimsuky group has a history of frequently utilizing the b374k webshell."
+        ]
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In July 2022, it was reported that Kimsuky used malicious Chrome extensions to target users in the U.S., Europe, and South Korea."
+        ]
+      },
+      {
+        "node_id": "HL_c21307a8188f",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Emerald Sleet",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In March 2024, Zscaler ThreatLabz observed new activity from Kimsuky (aka APT43, Emerald Sleet, and Velvet Chollima), an advanced persistent threat actor backed by the North Korean government."
+        ]
+      },
+      {
+        "node_id": "HL_c4d759a05211",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "viaweb",
+        "edges": [],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "The r-e.kr\ndomain was registered by a Korean ISP named “viaweb\n”."
+        ]
+      },
+      {
+        "node_id": "HL_c561042283db",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Naver",
+        "edges": [],
+        "sentence_indices": [
+          25,
+          29,
+          31,
+          33
+        ],
+        "span_sentences": [
+          "- When the victim visits the Naver login page (nid.naver.com/*) or the Kakao login page (accounts.kakao.com/*), the\nauth.js\nfile is injected into the web page.",
+          "The The Note: We have notified the Google and Naver security teams about these security bypasses and are closely working with them to mitigate the issue.",
+          "auth.js\nscript is used for manipulating security measures for Naver and Kakao.",
+          "The Naver section of the script, similar to the Kakao section, identifies elements with specific IDs and performs clicks on them."
+        ]
+      },
+      {
+        "node_id": "HL_cb6e965b7713",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Korea",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          6,
+          21,
+          39,
+          53
+        ],
+        "span_sentences": [
+          "In July 2022, it was reported that Kimsuky used malicious Chrome extensions to target users in the U.S., Europe, and South Korea.",
+          "Our research suggests that the main targets of this attack were in the South Korean academic field, specifically those involved in political research related to North Korean affairs.",
+          "The description and default title fields contain Korean, which likely indicates that this campaign was specifically targeting South Korea–we discuss this later in the blog.",
+          "One of the victims is in the education sector in South Korea.",
+          "The group appears to be targeting academia in South Korea as part of an ongoing intelligence collection campaign."
+        ]
+      },
+      {
+        "node_id": "HL_d1694cb712a7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT43",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In March 2024, Zscaler ThreatLabz observed new activity from Kimsuky (aka APT43, Emerald Sleet, and Velvet Chollima), an advanced persistent threat actor backed by the North Korean government."
+        ]
+      },
+      {
+        "node_id": "HL_daca20e92043",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Translate",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "TRANSLATEXT\nwas uploaded to GitHub as “GoogleTranslate.crx\n”, and masqueraded as a Google Translate extension."
+        ]
+      },
+      {
+        "node_id": "HL_e3c10fd9ca67",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GitHub",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          12,
+          13,
+          16,
+          18,
+          20
+        ],
+        "span_sentences": [
+          "During our own research into this campaign, we discovered another PowerShell script with the MD5 hash: bba3b15bad6b5a80ab9fa9a49b643658\nand a GitHub account used by the script linked to the same actor.",
+          "From this newly discovered GitHub account, we observed victim data and a previously deleted Chrome extension utilized by the actor.",
+          "In the attacker-controlled GitHub account, we observed an XML file in addition to TRANSLATEXT\n.",
+          "TRANSLATEXT\nwas uploaded to GitHub as “GoogleTranslate.crx\n”, and masqueraded as a Google Translate extension.",
+          "According to the manifest.json\nfile, the author name is listed as “Piano\n”, and the update_url\npoints to another GitHub address referencing an update.xml\nfile that did not exist at the time of our analysis."
+        ]
+      },
+      {
+        "node_id": "HL_f206fbee23cb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Kimsuky",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          7,
+          9,
+          15,
+          17,
+          41,
+          43,
+          45,
+          48,
+          51,
+          52
+        ],
+        "span_sentences": [
+          "In March 2024, Zscaler ThreatLabz observed new activity from Kimsuky (aka APT43, Emerald Sleet, and Velvet Chollima), an advanced persistent threat actor backed by the North Korean government.",
+          "In July 2022, it was reported that Kimsuky used malicious Chrome extensions to target users in the U.S., Europe, and South Korea.",
+          "While actively monitoring this group, we discovered an instance where Kimsuky used a new Google Chrome extension, which we named “TRANSLATEXT\n”, for cyber espionage.",
+          "According to a recent publication by a South Korean security vendor, Kimsuky delivered an archive file named “한국군사학논집 심사평서 (1).zip”, which translates to \"Review of a Monograph on Korean Military History.\"\nThe archive contains two decoy files:\n- HWP documents (a popular office file format in South Korea)\n- A Windows executable masquerading as related documents.",
+          "The figure below shows the Kimsuky infection chain.",
+          "Therefore, it appears Kimsuky registered TRANSLATEXT\nin this registry key using previous stage methods.",
+          "These files were present in the repository on March 7, 2024, and deleted the next day, implying that Kimsuky intended to minimize exposure and use the malware for a short period to target specific individuals.",
+          "Considering the C2 characteristics and victimology, we attribute this attack to the Kimsuky group with medium confidence.",
+          "The Kimsuky group has a history of frequently utilizing the b374k webshell.",
+          "This behavior aligns with the characteristic C2 configuration of the Kimsuky group.",
+          "Historically, the Kimsuky group has frequently abused this domain, according to other security vendors.",
+          "One of the primary objectives of the Kimsuky group is to conduct surveillance on academic and government personnel in order to gather valuable intelligence.",
+          "Our research indicates that malicious Google Chrome extensions continue to be leveraged by Kimsuky."
+        ]
+      },
+      {
+        "node_id": "HL_fc98689c400c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Korean peninsula",
+        "edges": [],
+        "sentence_indices": [
+          40,
+          50
+        ],
+        "span_sentences": [
+          "Based on this gathered information, we surmise that academic researchers specializing in the Korean peninsula, particularly those engaged in geopolitical matters involving North Korea, are among the primary targets of this campaign.",
+          "During our research, we identified a specific victim of this attack, an academic with a keen interest in geopolitical issues pertaining to the Korean peninsula."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1012",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1012",
+        "edges": [
+          "EDGE_11",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, the newly discovered PowerShell script reveals that Kimsuky checked for the presence of installed Chrome extensions using the Windows registry key shown below:\nHKCU\\Software\\Policies\\Google\\Chrome\\ExtensionInstallForcelist\nThis registry key is used by Chrome to enforce the installation of specified extensions without user permission or intervention."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "According to a recent publication by a South Korean security vendor, Kimsuky delivered an archive file named “한국군사학논집 심사평서 (1).zip”, which translates to \"Review of a Monograph on Korean Military History.\"\nThe archive contains two decoy files:\n- HWP documents (a popular office file format in South Korea)\n- A Windows executable masquerading as related documents."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_3",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_13",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "TRANSLATEXT\nuses HTTP POST requests for C2 communications, with the following hardcoded HTTP headers:Accept: application/json, application/xml, text/plain, text/html, *.*,\nContent-Type: application/x-www-form-urlencoded; charset=utf-8\nAccess-Control-Allow-Origin: \"*\"\nAccess-Control-Allow-Credentials: true\nTRANSLATEXT\nuses the following HTTP POST fields for sending the stolen information.TRANSLATEXT\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_14",
+          "EDGE_20",
+          "EDGE_22",
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            25,
+            27
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When a user launches the executable, the malware retrieves a PowerShell script from the threat actor’s server."
+          ],
+          [
+            "The PowerShell script from the remote server is responsible for uploading general information about the victim and creating a Windows shortcut that retrieves an additional PowerShell script from the same server.",
+            "During our own research into this campaign, we discovered another PowerShell script with the MD5 hash: bba3b15bad6b5a80ab9fa9a49b643658\nand a GitHub account used by the script linked to the same actor."
+          ],
+          [
+            "However, the newly discovered PowerShell script reveals that Kimsuky checked for the presence of installed Chrome extensions using the Windows registry key shown below:\nHKCU\\Software\\Policies\\Google\\Chrome\\ExtensionInstallForcelist\nThis registry key is used by Chrome to enforce the installation of specified extensions without user permission or intervention."
+          ],
+          [
+            "TRANSLATEXT\nwas uploaded to GitHub as “GoogleTranslate.crx\n”, and masqueraded as a Google Translate extension.",
+            "However, TRANSLATEXT\nactually contained four malicious Javascript files for bypassing security measures, stealing email addresses, credentials, cookies, capturing browser screenshots, and exfiltrating stolen data."
+          ],
+          [
+            "The TRANSLATEXT\nmanifest requests excessive permissions such as scripting.",
+            "This broad permission allows TRANSLATEXT\nto inject scripts into web pages, enabling it to modify page content, add functionality, and/or interact with the page's elements."
+          ],
+          [
+            "- When the victim visits the Naver login page (nid.naver.com/*) or the Kakao login page (accounts.kakao.com/*), the\nauth.js\nfile is injected into the web page.",
+            "- Similarly, when visiting the Gmail login page (mail.google.com/), the\ngsuit.js\nfile is injected into the web page.",
+            "The script injected into the web page is responsible for bypassing security measures on each specific login page."
+          ],
+          [
+            "From the newly discovered PowerShell script, we found that the actor used the domain \"r-e[.]kr\" to host the malicious PowerShell scripts."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_5",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "TRANSLATEXT\nuses HTTP POST requests for C2 communications, with the following hardcoded HTTP headers:Accept: application/json, application/xml, text/plain, text/html, *.*,\nContent-Type: application/x-www-form-urlencoded; charset=utf-8\nAccess-Control-Allow-Origin: \"*\"\nAccess-Control-Allow-Credentials: true\nTRANSLATEXT\nuses the following HTTP POST fields for sending the stolen information.TRANSLATEXT\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_2",
+          "EDGE_16",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When a user launches the executable, the malware retrieves a PowerShell script from the threat actor’s server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_6",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "TRANSLATEXT\nwas uploaded to GitHub as “GoogleTranslate.crx\n”, and masqueraded as a Google Translate extension.",
+            "However, TRANSLATEXT\nactually contained four malicious Javascript files for bypassing security measures, stealing email addresses, credentials, cookies, capturing browser screenshots, and exfiltrating stolen data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1119",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1119",
+        "edges": [
+          "EDGE_7",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "While actively monitoring this group, we discovered an instance where Kimsuky used a new Google Chrome extension, which we named “TRANSLATEXT\n”, for cyber espionage.",
+            "TRANSLATEXT\nis specifically leveraged to steal email addresses, usernames, passwords, cookies, and captures browser screenshots."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1176",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1176",
+        "edges": [
+          "EDGE_8",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This group, first observed in 2013, is notorious for cyber espionage, and financially motivated cyber attacks, primarily targeting South Korean entities, including think tanks, government institutions, and the academic sector.",
+            "They employ various tactics, techniques, and procedures (TTPs) in their targeted campaigns and one of their distribution methods is malicious Google Chrome extensions.",
+            "In July 2022, it was reported that Kimsuky used malicious Chrome extensions to target users in the U.S., Europe, and South Korea."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1305fa62a8cd",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "nid.naver.com/*",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "- When the victim visits the Naver login page (nid.naver.com/*) or the Kakao login page (accounts.kakao.com/*), the\nauth.js\nfile is injected into the web page."
+        ]
+      },
+      {
+        "node_id": "IOC_16ce6f8bab1c",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://webman.w3school.cloudns[.]nz/config.php",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "From the threat actor's server, we discovered the presence of a b374k webshell (hxxps://webman.w3school.cloudns[.]nz/config.php) used for exfiltrating stolen information."
+        ]
+      },
+      {
+        "node_id": "IOC_404df945392f",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "bba3b15bad6b5a80ab9fa9a49b643658",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "During our own research into this campaign, we discovered another PowerShell script with the MD5 hash: bba3b15bad6b5a80ab9fa9a49b643658\nand a GitHub account used by the script linked to the same actor."
+        ]
+      },
+      {
+        "node_id": "IOC_59136df9375c",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "r-e[.]kr",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          46,
+          49
+        ],
+        "span_sentences": [
+          "From the newly discovered PowerShell script, we found that the actor used the domain \"r-e[.]kr\" to host the malicious PowerShell scripts.",
+          "In addition to the r-e.kr\ndomain, they have used similar domains registered with the same provider, such as p-e.kr\nand o-r.kr\n."
+        ]
+      },
+      {
+        "node_id": "IOC_63a4ea06d020",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "o-r.kr",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "In addition to the r-e.kr\ndomain, they have used similar domains registered with the same provider, such as p-e.kr\nand o-r.kr\n."
+        ]
+      },
+      {
+        "node_id": "IOC_b44f0905920d",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "accounts.kakao.com/*",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "- When the victim visits the Naver login page (nid.naver.com/*) or the Kakao login page (accounts.kakao.com/*), the\nauth.js\nfile is injected into the web page."
+        ]
+      },
+      {
+        "node_id": "IOC_c0174824c7fd",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "mail.google.com/",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "- Similarly, when visiting the Gmail login page (mail.google.com/), the\ngsuit.js\nfile is injected into the web page."
+        ]
+      },
+      {
+        "node_id": "IOC_d9df477d6068",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "p-e.kr",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "In addition to the r-e.kr\ndomain, they have used similar domains registered with the same provider, such as p-e.kr\nand o-r.kr\n."
+        ]
+      },
+      {
+        "node_id": "IOC_f24c4012abcf",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU\\Software\\Policies\\Google\\Chrome\\ExtensionInstallForcelist",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "However, the newly discovered PowerShell script reveals that Kimsuky checked for the presence of installed Chrome extensions using the Windows registry key shown below:\nHKCU\\Software\\Policies\\Google\\Chrome\\ExtensionInstallForcelist\nThis registry key is used by Chrome to enforce the installation of specified extensions without user permission or intervention."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_38e0726d7c14",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_38e0726d7c14",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_38e0726d7c14",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_38e0726d7c14",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_38e0726d7c14",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_6adc15335b24",
+      "node_v": "TTP_T1176"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_b475a81d8dfb",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_e3c10fd9ca67",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1012"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_f206fbee23cb",
+      "node_v": "TTP_T1176"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_1305fa62a8cd",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_16ce6f8bab1c",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_404df945392f",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_59136df9375c",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_b44f0905920d",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_c0174824c7fd",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_f24c4012abcf",
+      "node_v": "TTP_T1012"
+    }
+  ]
+}

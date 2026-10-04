@@ -1,0 +1,446 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0607bb9bb168",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Dropbox",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          2,
+          15,
+          17,
+          34,
+          35
+        ],
+        "span_sentences": [
+          "The malicious chain relies on seemingly legitimate cloud infrastructure, such as Vercel Blob storage, to host a PDF that ultimately redirects victims to a Dropbox-impersonation page designed to harvest credentials.",
+          "The cloud hosted document redirects to a newly registered fraudulent website i.e “hxxps[://]tovz[.]life/bid-doc2026[.]php/?ai=xd”, impersonating Dropbox, presenting a familiar login interface to deceive the user.",
+          "The domain tovz[.]life has no affiliation with Dropbox.",
+          "The cloud-hosted document then redirects victims to a fake Dropbox login page.",
+          "Because Dropbox is a familiar and trusted brand, the request for credentials appeared reasonable to the unsuspecting users."
+        ]
+      },
+      {
+        "node_id": "HL_93869869b294",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Vercel Blob storage",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "The malicious chain relies on seemingly legitimate cloud infrastructure, such as Vercel Blob storage, to host a PDF that ultimately redirects victims to a Dropbox-impersonation page designed to harvest credentials."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          23,
+          26
+        ],
+        "span_sentences": [
+          "It then sends this data to a Telegram bot using a hardcoded bot token and chat ID.",
+          "Overall, the script is designed to capture user credentials (email and password) along with user system and location information to transmit it to a Telegram bot, while presenting a fake login failure message to the user."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1016",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1016",
+        "edges": [
+          "EDGE_8",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "From there, it fetches the user's IP address and geo-location details (city, region, country, ISP) using external APIs (https://api64.ipify.org and https://ipapi.co)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It then sends this data to a Telegram bot using a hardcoded bot token and chat ID."
+          ],
+          [
+            "These stolen credentials are then exfiltrated to attacker-controlled command-and-control infrastructure, enabling further misuse such as account takeover, internal access or additional follow-on fraud."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "From there, it fetches the user's IP address and geo-location details (city, region, country, ISP) using external APIs (https://api64.ipify.org and https://ipapi.co)."
+          ],
+          [
+            "It then sends this data to a Telegram bot using a hardcoded bot token and chat ID."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It then sends this data to a Telegram bot using a hardcoded bot token and chat ID."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_10",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            14
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We also observed a clickable element by hovering over the Text “View specification online Here:”.",
+            "It embeds with a Cloud-Hosted link - hxxps[://]nte2srryro7jecki[.]public[.]blob[.]vercel-storage[.]com/ProductLists[.]pdf that directs the victim to view a PDF hosted on legitimate cloud infrastructure i.e public.blob[.]vercel-storage[.]com, exploiting implicit trust in well-known platforms."
+          ],
+          [
+            "Overall, the script is designed to capture user credentials (email and password) along with user system and location information to transmit it to a Telegram bot, while presenting a fake login failure message to the user."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_11",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attack itself begins with a phishing email containing a PDF attachment."
+          ],
+          [
+            "The malicious chain relies on seemingly legitimate cloud infrastructure, such as Vercel Blob storage, to host a PDF that ultimately redirects victims to a Dropbox-impersonation page designed to harvest credentials."
+          ],
+          [
+            "The message asks the recipient to review an attached request order and to sign in using their business email credentials."
+          ],
+          [
+            "We also observed a clickable element by hovering over the Text “View specification online Here:”.",
+            "It embeds with a Cloud-Hosted link - hxxps[://]nte2srryro7jecki[.]public[.]blob[.]vercel-storage[.]com/ProductLists[.]pdf that directs the victim to view a PDF hosted on legitimate cloud infrastructure i.e public.blob[.]vercel-storage[.]com, exploiting implicit trust in well-known platforms."
+          ],
+          [
+            "The cloud hosted document redirects to a newly registered fraudulent website i.e “hxxps[://]tovz[.]life/bid-doc2026[.]php/?ai=xd”, impersonating Dropbox, presenting a familiar login interface to deceive the user."
+          ],
+          [
+            "The cloud-hosted document then redirects victims to a fake Dropbox login page."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1589",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1589",
+        "edges": [
+          "EDGE_9",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malicious chain relies on seemingly legitimate cloud infrastructure, such as Vercel Blob storage, to host a PDF that ultimately redirects victims to a Dropbox-impersonation page designed to harvest credentials."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_195164e86bdd",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps[://]tovz[.]life/bid-doc2026[.]php/?ai=xd",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The cloud hosted document redirects to a newly registered fraudulent website i.e “hxxps[://]tovz[.]life/bid-doc2026[.]php/?ai=xd”, impersonating Dropbox, presenting a familiar login interface to deceive the user."
+        ]
+      },
+      {
+        "node_id": "IOC_88991c7d19ad",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "tovz[.]life",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          15,
+          17
+        ],
+        "span_sentences": [
+          "The cloud hosted document redirects to a newly registered fraudulent website i.e “hxxps[://]tovz[.]life/bid-doc2026[.]php/?ai=xd”, impersonating Dropbox, presenting a familiar login interface to deceive the user.",
+          "The domain tovz[.]life has no affiliation with Dropbox."
+        ]
+      },
+      {
+        "node_id": "IOC_b1ab35fb7a88",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://api64.ipify.org",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "From there, it fetches the user's IP address and geo-location details (city, region, country, ISP) using external APIs (https://api64.ipify.org and https://ipapi.co)."
+        ]
+      },
+      {
+        "node_id": "IOC_bc7557824c60",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "public.blob[.]vercel-storage[.]com",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "It embeds with a Cloud-Hosted link - hxxps[://]nte2srryro7jecki[.]public[.]blob[.]vercel-storage[.]com/ProductLists[.]pdf that directs the victim to view a PDF hosted on legitimate cloud infrastructure i.e public.blob[.]vercel-storage[.]com, exploiting implicit trust in well-known platforms."
+        ]
+      },
+      {
+        "node_id": "IOC_daa83f35d779",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://ipapi.co",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "From there, it fetches the user's IP address and geo-location details (city, region, country, ISP) using external APIs (https://api64.ipify.org and https://ipapi.co)."
+        ]
+      },
+      {
+        "node_id": "IOC_ebba23814290",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps[://]nte2srryro7jecki[.]public[.]blob[.]vercel-storage[.]com/ProductLists[.]pdf",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "It embeds with a Cloud-Hosted link - hxxps[://]nte2srryro7jecki[.]public[.]blob[.]vercel-storage[.]com/ProductLists[.]pdf that directs the victim to view a PDF hosted on legitimate cloud infrastructure i.e public.blob[.]vercel-storage[.]com, exploiting implicit trust in well-known platforms."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_93869869b294",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "IOC_195164e86bdd",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "IOC_88991c7d19ad",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "IOC_b1ab35fb7a88",
+      "node_v": "TTP_T1016"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_b1ab35fb7a88",
+      "node_v": "TTP_T1589"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_bc7557824c60",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_bc7557824c60",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_daa83f35d779",
+      "node_v": "TTP_T1016"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_daa83f35d779",
+      "node_v": "TTP_T1589"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_ebba23814290",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_ebba23814290",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

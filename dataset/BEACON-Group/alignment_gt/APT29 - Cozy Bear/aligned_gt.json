@@ -1,0 +1,2959 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0607bb9bb168",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "DropBox",
+        "edges": [
+          "EDGE_9d3ee6422b88",
+          "EDGE_b8c9d822374d"
+        ],
+        "source": {
+          "DropBox_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              10,
+              "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+            ],
+            [
+              11,
+              "The misuse of legitimate webservices such as Trello, Firebase, or DropBox is likely an attempt to make detection or remediation harder."
+            ]
+          ],
+          "DropBox_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              12,
+              "On May 13, 2022, Cluster25 published a report that outlined Cloaked Ursa’s inclusion of DropBox services in their malware campaigns for the first time."
+            ],
+            [
+              21,
+              "Notably, rather than continuing their use of the DropBox services, identified by Cluster25 in early May, these new campaigns incorporated Google Drive storage services as a means to obfuscate their actions and deploy additional payloads into target environments."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0e23e7382dd4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Mandiant",
+        "edges": [],
+        "source": {
+          "Mandiant_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              0,
+              "Since early 2021, Mandiant has been tracking extensive APT29 phishing campaigns targeting diplomatic organizations in Europe, the Americas, and Asia."
+            ],
+            [
+              2,
+              "APT29 is a Russian espionage group that Mandiant has been tracking since at least 2014 and is likely sponsored by the Foreign Intelligence Service (SVR)."
+            ],
+            [
+              4,
+              "Mandiant previously tracked this intrusion activity under multiple clusters, UNC2652 and UNC2542, which were recently merged into APT29 in April 2022."
+            ],
+            [
+              6,
+              "Beginning mid-January 2022, Mandiant detected and responded to an APT29 phishing campaign targeting a diplomatic entity."
+            ],
+            [
+              7,
+              "During the investigation, Mandiant identified the deployment and use of the BEATDROP and BOOMMIC downloaders."
+            ],
+            [
+              8,
+              "Shortly following the identification of this campaign, Mandiant discovered APT29 targeting multiple additional diplomatic and government entities through a series of phishing waves."
+            ],
+            [
+              16,
+              "APT29 targeted large lists of recipients that Mandiant suspected were primarily publicly listed points of contact of embassy personnel."
+            ],
+            [
+              18,
+              "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign."
+            ],
+            [
+              34,
+              "Mandiant observed APT29 leveraging compromised websites as the C2 for BOOMMIC."
+            ],
+            [
+              37,
+              "Mandiant observed APT29 quickly move to escalate their privileges within domains once access was established."
+            ],
+            [
+              44,
+              "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment."
+            ],
+            [
+              51,
+              "Mandiant observed APT29 quickly moving laterally within an environment."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2a0b5ad78f29",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT29",
+        "edges": [
+          "EDGE_03c29d7109f6",
+          "EDGE_0a310bb09748",
+          "EDGE_0fa1031d993f",
+          "EDGE_103681d5227e",
+          "EDGE_19be1340415c",
+          "EDGE_19c51ef4fd20",
+          "EDGE_51296359461d",
+          "EDGE_1dbef2613987",
+          "EDGE_41d635e6cdc8"
+        ],
+        "source": {
+          "APT29_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              0,
+              "Since early 2021, Mandiant has been tracking extensive APT29 phishing campaigns targeting diplomatic organizations in Europe, the Americas, and Asia."
+            ],
+            [
+              1,
+              "This blog post discusses our recent observations related to the identification of two new malware families in 2022, BEATDROP and BOOMMIC, as well as APT29’s efforts to evade detection through retooling and abuse of Atlassian's Trello service."
+            ],
+            [
+              2,
+              "APT29 is a Russian espionage group that Mandiant has been tracking since at least 2014 and is likely sponsored by the Foreign Intelligence Service (SVR)."
+            ],
+            [
+              3,
+              "The diplomatic-centric targeting of this recent activity is consistent with Russian strategic priorities as well as historic APT29 targeting."
+            ],
+            [
+              4,
+              "Mandiant previously tracked this intrusion activity under multiple clusters, UNC2652 and UNC2542, which were recently merged into APT29 in April 2022."
+            ],
+            [
+              5,
+              "Some APT29 activity is also publicly referred to as Nobelium by Microsoft."
+            ],
+            [
+              6,
+              "Beginning mid-January 2022, Mandiant detected and responded to an APT29 phishing campaign targeting a diplomatic entity."
+            ],
+            [
+              8,
+              "Shortly following the identification of this campaign, Mandiant discovered APT29 targeting multiple additional diplomatic and government entities through a series of phishing waves."
+            ],
+            [
+              9,
+              "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2)."
+            ],
+            [
+              12,
+              "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+            ],
+            [
+              14,
+              "To gain access to a victim environment, APT29 sent spear-phishing emails disguised as embassy administrative updates."
+            ],
+            [
+              16,
+              "APT29 targeted large lists of recipients that Mandiant suspected were primarily publicly listed points of contact of embassy personnel."
+            ],
+            [
+              18,
+              "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign."
+            ],
+            [
+              23,
+              "Following the successful deployment of BEATDROP to deliver and execute a payload, APT29 was observed leveraging BOOMMIC to further establish a foothold within the environment."
+            ],
+            [
+              25,
+              "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe."
+            ],
+            [
+              37,
+              "Mandiant observed APT29 quickly move to escalate their privileges within domains once access was established."
+            ],
+            [
+              38,
+              "In multiple cases, APT29 was able to gain Domain Admin in less than 12 hours from the initial phishing payload’s execution."
+            ],
+            [
+              39,
+              "APT29 was observed utilizing a variety of TTPs to escalate their privileges."
+            ],
+            [
+              40,
+              "In one instance, APT29 was observed writing files that contained Kerberos tickets most likely to be used in Pass the Ticket attacks or for offline cracking."
+            ],
+            [
+              41,
+              "APT29 was also observed exploiting misconfigured certificate templates to allow them to impersonate admin users."
+            ],
+            [
+              42,
+              "From here, APT29 created additional malicious certificates which they used to move laterally within the environment."
+            ],
+            [
+              44,
+              "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment."
+            ],
+            [
+              46,
+              "One notable TTP observed by APT29 was the hunting for passwords stored in SYSVOL."
+            ],
+            [
+              51,
+              "Mandiant observed APT29 quickly moving laterally within an environment."
+            ],
+            [
+              52,
+              "To facilitate lateral movement APT29 relied on a combination of malicious certificates used for impersonation of privileged users and SMB BEACON."
+            ]
+          ],
+          "APT29_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              0,
+              "The latest campaigns conducted by an advanced persistent threat (APT) that we track as Cloaked Ursa (also known as APT29, Nobelium or Cozy Bear) demonstrate sophistication and the ability to rapidly integrate popular cloud storage services to avoid detection."
+            ]
+          ],
+          "APT29_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              1,
+              "We now have new evidence attributing these attacks to APT29 (Cozy Bear)."
+            ],
+            [
+              2,
+              "APT29’s involvement aligns with the attacks targeting the geopolitical relations between India and diplomats in European nations."
+            ],
+            [
+              4,
+              "Given the thematic and file name elements, we previously identified this threat actor as ‘\"SPIKEDWINE\", though new findings point directly to APT29 (Cozy Bear)."
+            ],
+            [
+              48,
+              "APT29 (Cozy Bear) put additional effort into remaining undetected by evading memory forensics and automated URL scanning solutions."
+            ]
+          ],
+          "UNC2542_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              4,
+              "Mandiant previously tracked this intrusion activity under multiple clusters, UNC2652 and UNC2542, which were recently merged into APT29 in April 2022."
+            ]
+          ],
+          "UNC2652_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              4,
+              "Mandiant previously tracked this intrusion activity under multiple clusters, UNC2652 and UNC2542, which were recently merged into APT29 in April 2022."
+            ]
+          ],
+          "Cozy Bear_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              0,
+              "The latest campaigns conducted by an advanced persistent threat (APT) that we track as Cloaked Ursa (also known as APT29, Nobelium or Cozy Bear) demonstrate sophistication and the ability to rapidly integrate popular cloud storage services to avoid detection."
+            ]
+          ],
+          "Cozy Bear_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              1,
+              "We now have new evidence attributing these attacks to APT29 (Cozy Bear)."
+            ],
+            [
+              4,
+              "Given the thematic and file name elements, we previously identified this threat actor as ‘\"SPIKEDWINE\", though new findings point directly to APT29 (Cozy Bear)."
+            ],
+            [
+              48,
+              "APT29 (Cozy Bear) put additional effort into remaining undetected by evading memory forensics and automated URL scanning solutions."
+            ]
+          ],
+          "Cloaked Ursa_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              0,
+              "The latest campaigns conducted by an advanced persistent threat (APT) that we track as Cloaked Ursa (also known as APT29, Nobelium or Cozy Bear) demonstrate sophistication and the ability to rapidly integrate popular cloud storage services to avoid detection."
+            ],
+            [
+              4,
+              "The cybersecurity industry has long considered Cloaked Ursa to be affiliated with the Russian government."
+            ],
+            [
+              12,
+              "On May 13, 2022, Cluster25 published a report that outlined Cloaked Ursa’s inclusion of DropBox services in their malware campaigns for the first time."
+            ],
+            [
+              15,
+              "Reviewing this list, we identified a third Agenda.pdf created on June 30, 2022 that we assess to be part of a second phishing campaign by Cloaked Ursa."
+            ],
+            [
+              20,
+              "Finally, in comparing both campaigns, we found that Cloaked Ursa had evolved their use of cloud storage services in their delivery tactics."
+            ]
+          ],
+          "Nobelium_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              5,
+              "Some APT29 activity is also publicly referred to as Nobelium by Microsoft."
+            ],
+            [
+              10,
+              "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+            ]
+          ],
+          "Nobelium_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              0,
+              "The latest campaigns conducted by an advanced persistent threat (APT) that we track as Cloaked Ursa (also known as APT29, Nobelium or Cozy Bear) demonstrate sophistication and the ability to rapidly integrate popular cloud storage services to avoid detection."
+            ]
+          ],
+          "SPIKEDWINE_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              4,
+              "Given the thematic and file name elements, we previously identified this threat actor as ‘\"SPIKEDWINE\", though new findings point directly to APT29 (Cozy Bear)."
+            ]
+          ]
+        },
+        "alias": [
+          "UNC2542",
+          "UNC2652",
+          "Cozy Bear",
+          "Cloaked Ursa",
+          "Nobelium",
+          "SPIKEDWINE"
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "source": {
+          "Microsoft_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              5,
+              "Some APT29 activity is also publicly referred to as Nobelium by Microsoft."
+            ],
+            [
+              24,
+              "BOOMMIC, also known as VaporRage by Microsoft, is a shellcode downloader written in C that communicates over HTTP to co-opted infrastructure used for C2."
+            ],
+            [
+              49,
+              "Microsoft fixed this in MS14-025 which removed the option of configuring Group Policy Preferences with the “cpassword”."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6f082c512436",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Firebase",
+        "edges": [
+          "EDGE_981bea8bc04c",
+          "EDGE_d1f7764d8a83"
+        ],
+        "source": {
+          "Firebase_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              10,
+              "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+            ],
+            [
+              11,
+              "The misuse of legitimate webservices such as Trello, Firebase, or DropBox is likely an attempt to make detection or remediation harder."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_72f79c00fb9d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BEATDROP",
+        "edges": [
+          "EDGE_7780ff6f7336",
+          "EDGE_8d3c92e49b61",
+          "EDGE_a0195f744bf6",
+          "EDGE_e09ce063c6a1"
+        ],
+        "source": {
+          "BEATDROP_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              1,
+              "This blog post discusses our recent observations related to the identification of two new malware families in 2022, BEATDROP and BOOMMIC, as well as APT29’s efforts to evade detection through retooling and abuse of Atlassian's Trello service."
+            ],
+            [
+              7,
+              "During the investigation, Mandiant identified the deployment and use of the BEATDROP and BOOMMIC downloaders."
+            ],
+            [
+              12,
+              "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+            ],
+            [
+              18,
+              "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign."
+            ],
+            [
+              19,
+              "Figure 7: APT29 BEATDROP Execution chain\nBEATDROP is a downloader written in C that makes use of Trello for C2."
+            ],
+            [
+              21,
+              "This information is used to create a victim ID, which is used by BEATDROP to store and retrieve victim payloads from its C2."
+            ],
+            [
+              22,
+              "Once the victim ID is created, BEATDROP will make an initial request to Trello to identify whether the current victim has already been compromised."
+            ],
+            [
+              23,
+              "Following the successful deployment of BEATDROP to deliver and execute a payload, APT29 was observed leveraging BOOMMIC to further establish a foothold within the environment."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7ebd54a323e9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BOOMMIC",
+        "edges": [
+          "EDGE_0b3319424bdd",
+          "EDGE_2ab39a89dd72",
+          "EDGE_506dbb0be3cc",
+          "EDGE_7536d3199e69"
+        ],
+        "source": {
+          "BOOMMIC_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              1,
+              "This blog post discusses our recent observations related to the identification of two new malware families in 2022, BEATDROP and BOOMMIC, as well as APT29’s efforts to evade detection through retooling and abuse of Atlassian's Trello service."
+            ],
+            [
+              23,
+              "Following the successful deployment of BEATDROP to deliver and execute a payload, APT29 was observed leveraging BOOMMIC to further establish a foothold within the environment."
+            ],
+            [
+              24,
+              "BOOMMIC, also known as VaporRage by Microsoft, is a shellcode downloader written in C that communicates over HTTP to co-opted infrastructure used for C2."
+            ],
+            [
+              25,
+              "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe."
+            ],
+            [
+              26,
+              "The primary function of BOOMMIC is to download and load shellcode payloads into memory on a target."
+            ],
+            [
+              28,
+              "Analysis of BOOMMIC identified strings throughout the program are encoded using XOR, alternating bytes by 0x0C and 0x4D."
+            ],
+            [
+              29,
+              "Figure 24: BOOMMIC check for jucheck.exe\nIf the malware is running under jucheck.exe, it will then create a host id for the compromised target to be used in the request to download a payload."
+            ],
+            [
+              32,
+              "Figure 25: BOOMMIC host id creation\nOnce the host id has been created, BOOMMIC passes this value to the function used to download and execute payloads to be used as part of the request."
+            ],
+            [
+              33,
+              "BOOMMIC then sends a GET request to its C2 to download and execute a shellcode payload."
+            ],
+            [
+              34,
+              "Mandiant observed APT29 leveraging compromised websites as the C2 for BOOMMIC."
+            ],
+            [
+              35,
+              "Once a payload is successfully downloaded, BOOMMIC XOR decodes and then executes it in memory."
+            ]
+          ],
+          "VaporRage_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              24,
+              "BOOMMIC, also known as VaporRage by Microsoft, is a shellcode downloader written in C that communicates over HTTP to co-opted infrastructure used for C2."
+            ]
+          ]
+        },
+        "alias": [
+          "VaporRage"
+        ]
+      },
+      {
+        "node_id": "HL_83a2224bd763",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "BEACON",
+        "edges": [
+          "EDGE_b5e8a5b3d2ed"
+        ],
+        "source": {
+          "BEACON_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              12,
+              "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+            ],
+            [
+              53,
+              "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload."
+            ],
+            [
+              54,
+              "The BEACON payload was identified to be SMB BEACON that communicates over the following named pipe:\n\\\\.\\pipe\\SapIServerPipes-1-15-21-07836\nAPT29 was then observed utilizing the impersonation of a privileged user to copy SharedReality.dll to the Temp directory of multiple systems."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "edges": [],
+        "source": {
+          "Active Directory_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              44,
+              "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a069d15d8907",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "SpecterOps",
+        "edges": [],
+        "source": {
+          "SpecterOps_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              43,
+              "This recent technique, which is well documented in a report from SpecterOps and was presented at Blackhat in August 2021, gives the attacker the ability to quickly escalate their privileges within the environment, but also provides a method for long term persistence through the creation of malicious certificates."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c9e79ff4a64a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Atlassian's Trello",
+        "edges": [
+          "EDGE_3be449085797",
+          "EDGE_698fea3014ac"
+        ],
+        "source": {
+          "Atlassian's Trello_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              1,
+              "This blog post discusses our recent observations related to the identification of two new malware families in 2022, BEATDROP and BOOMMIC, as well as APT29’s efforts to evade detection through retooling and abuse of Atlassian's Trello service."
+            ],
+            [
+              9,
+              "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e1d89917c06c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "EnvyScout",
+        "edges": [
+          "EDGE_133c8ec453f5",
+          "EDGE_399dd2cd771f",
+          "EDGE_3c02575c3068",
+          "EDGE_eeaf9ae25f3e"
+        ],
+        "source": {
+          "EnvyScout_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              10,
+              "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+            ]
+          ],
+          "EnvyScout_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              11,
+              "In both cases, the phishing documents contained a link to a malicious HTML file (EnvyScout) that served as a dropper for additional malicious files in the target network, including a Cobalt Strike payload."
+            ],
+            [
+              17,
+              "Specifically, the lure contained the same language and a similar link to an EnvyScout dropper hosted on a legitimate domain (porodicno[.]ba/wp-content/Agenda.html)."
+            ],
+            [
+              25,
+              "This file is EnvyScout, a malicious HTML document."
+            ],
+            [
+              28,
+              "EnvyScout – Agenda.html, Malicious HTML File\nEnvyScout can be described as an auxiliary tool that is used to further infect the target with the actor's implant."
+            ]
+          ],
+          "ROOTSAW_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              10,
+              "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+            ],
+            [
+              17,
+              "These phishing emails utilized a malicious HTML dropper tracked as ROOTSAW, that makes use of a technique known as HTML smuggling to deliver an IMG or ISO file to a victim system."
+            ]
+          ]
+        },
+        "alias": [
+          "ROOTSAW"
+        ]
+      },
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "edges": [
+          "EDGE_5d2998355e15",
+          "EDGE_984c79ba209c",
+          "EDGE_ef85c5f39c5e"
+        ],
+        "source": {
+          "Google Drive_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              2,
+              "Extending this trend, we have discovered that their two most recent campaigns leveraged Google Drive cloud storage services for the first time."
+            ],
+            [
+              3,
+              "The ubiquitous nature of Google Drive cloud storage services – combined with the trust that millions of customers worldwide have in them – make their inclusion in this APT’s malware delivery process exceptionally concerning."
+            ],
+            [
+              21,
+              "Notably, rather than continuing their use of the DropBox services, identified by Cluster25 in early May, these new campaigns incorporated Google Drive storage services as a means to obfuscate their actions and deploy additional payloads into target environments."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0ba651a3b366",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "SolarWinds",
+        "edges": [],
+        "source": {
+          "SolarWinds_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              6,
+              "In recent years, the hack of the United States Democratic National Committee (DNC) in 2016 has been attributed to this group, as well as the SolarWinds supply chain compromises in 2020."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "edges": [],
+        "source": {
+          "United States_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              7,
+              "Increasing the specificity of the attribution, both the United States and the United Kingdom have publicly attributed this group to Russia’s Foreign Intelligence Service (SVR)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_125ea66a8931",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "NATO",
+        "edges": [],
+        "source": {
+          "NATO_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              14,
+              "Less than two weeks after the Cluster25 report, on May 24, 2022, Unit 42 identified a new campaign targeting a NATO country in Europe."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_18a8c40152fc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Brazil",
+        "edges": [],
+        "source": {
+          "Brazil_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              10,
+              "The lures included in these campaigns suggest targeting of a foreign embassy in Portugal as well as a foreign embassy in Brazil."
+            ],
+            [
+              19,
+              "While the first two lures were addressed to a Portuguese Embassy, this third lure was addressed to an embassy in Brazil."
+            ],
+            [
+              23,
+              "This PDF document contains information that appears to address a foreign embassy in Brazil while using Brazil's official logo and notably misspelling “Brazil” as “Brzail.” The document was created on April 4, 2022, and later modified on June 30, 2022."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "source": {
+          "Europe_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              14,
+              "Less than two weeks after the Cluster25 report, on May 24, 2022, Unit 42 identified a new campaign targeting a NATO country in Europe."
+            ]
+          ],
+          "Europe_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              47,
+              "The threat discussed in this blog demonstrated advanced tactics, techniques, and procedures (TTPs), displaying a keen interest in exploiting the diplomatic relations between India and Europe."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_41136be0afe2",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "United States Democratic National Committee",
+        "edges": [],
+        "source": {
+          "United States Democratic National Committee_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              6,
+              "In recent years, the hack of the United States Democratic National Committee (DNC) in 2016 has been attributed to this group, as well as the SolarWinds supply chain compromises in 2020."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_49d8e2c982b1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Portugal",
+        "edges": [],
+        "source": {
+          "Portugal_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              10,
+              "The lures included in these campaigns suggest targeting of a foreign embassy in Portugal as well as a foreign embassy in Brazil."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_5df0724f3cde"
+        ],
+        "source": {
+          "Cobalt Strike_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              11,
+              "In both cases, the phishing documents contained a link to a malicious HTML file (EnvyScout) that served as a dropper for additional malicious files in the target network, including a Cobalt Strike payload."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_676cab1bbfd2",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cluster25",
+        "edges": [],
+        "source": {
+          "Cluster25_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              12,
+              "On May 13, 2022, Cluster25 published a report that outlined Cloaked Ursa’s inclusion of DropBox services in their malware campaigns for the first time."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "edges": [],
+        "source": {
+          "Russia_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              7,
+              "Increasing the specificity of the attribution, both the United States and the United Kingdom have publicly attributed this group to Russia’s Foreign Intelligence Service (SVR)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_830398d89518",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United Kingdom",
+        "edges": [],
+        "source": {
+          "United Kingdom_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              7,
+              "Increasing the specificity of the attribution, both the United States and the United Kingdom have publicly attributed this group to Russia’s Foreign Intelligence Service (SVR)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_90f71ab22c24",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Russia’s Foreign Intelligence Service (SVR)",
+        "edges": [],
+        "source": {
+          "Russia’s Foreign Intelligence Service (SVR)_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              7,
+              "Increasing the specificity of the attribution, both the United States and the United Kingdom have publicly attributed this group to Russia’s Foreign Intelligence Service (SVR)."
+            ]
+          ],
+          "Foreign Intelligence Service (SVR)_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              2,
+              "APT29 is a Russian espionage group that Mandiant has been tracking since at least 2014 and is likely sponsored by the Foreign Intelligence Service (SVR)."
+            ]
+          ]
+        },
+        "alias": [
+          "Foreign Intelligence Service (SVR)"
+        ]
+      },
+      {
+        "node_id": "HL_a0f6c9829fde",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Portuguese Embassy",
+        "edges": [],
+        "source": {
+          "Portuguese Embassy_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              19,
+              "While the first two lures were addressed to a Portuguese Embassy, this third lure was addressed to an embassy in Brazil."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a74ea5eecea3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Unit 42",
+        "edges": [],
+        "source": {
+          "Unit 42_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              14,
+              "Less than two weeks after the Cluster25 report, on May 24, 2022, Unit 42 identified a new campaign targeting a NATO country in Europe."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a8204d8acd61",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Chechnya",
+        "edges": [],
+        "source": {
+          "Chechnya_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              5,
+              "This aligns with the group’s historic targeting focus, dating back to malware campaigns against Chechnya and other former Soviet bloc countries in 2008."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [],
+        "source": {
+          "India_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              2,
+              "APT29’s involvement aligns with the attacks targeting the geopolitical relations between India and diplomats in European nations."
+            ],
+            [
+              5,
+              "The PDF file is a fake invitation to a wine-tasting event purported to take place at the Indian ambassador’s residence on February 2nd, 2024."
+            ],
+            [
+              6,
+              "The contents are well-crafted to impersonate the Ambassador of India."
+            ],
+            [
+              47,
+              "The threat discussed in this blog demonstrated advanced tactics, techniques, and procedures (TTPs), displaying a keen interest in exploiting the diplomatic relations between India and Europe."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_073de7f9bea3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "SECFORCE",
+        "edges": [],
+        "source": {
+          "SECFORCE_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              25,
+              "The implementation is similar to the one presented by SECFORCE in their blog."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_348a9135329c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "obfuscator.io",
+        "edges": [
+          "EDGE_dbe6d499bb7e"
+        ],
+        "source": {
+          "obfuscator.io_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              13,
+              "The obfuscation technique used in the code exhibits patterns that match those of the publicly available obfuscator obfuscator.io."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "source": {
+          "Windows_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              24,
+              "DLL hollowing is then used to inject WINELOADER into a randomly selected DLL from the Windows system directory."
+            ],
+            [
+              29,
+              "All requests to the C2 server use the same User-Agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.1) Gecko/20100101 Firefox/86.1, hardcoded into the sample itself."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a75c7f72d7bb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "LibreOffice",
+        "edges": [],
+        "source": {
+          "LibreOffice_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              11,
+              "A quick analysis of the PDF file's metadata reveals that it was generated using LibreOffice version 6.4, and the time of creation was January 29th, 2024, at 10:38 AM UTC."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_fdc33c346fe5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "WINELOADER",
+        "edges": [
+          "EDGE_091875ba874c",
+          "EDGE_16bc15cdb65e",
+          "EDGE_18ac7ccf48f6",
+          "EDGE_1bfbb2904626",
+          "EDGE_2d6aa74e7cbb",
+          "EDGE_2ed9fe6e3770",
+          "EDGE_349513fcf939",
+          "EDGE_3934b46dedf7",
+          "EDGE_3b9dadb38351",
+          "EDGE_94094268e127",
+          "EDGE_be2e30baf089",
+          "EDGE_e65d63045038",
+          "EDGE_eba675deb49c"
+        ],
+        "source": {
+          "WINELOADER_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              0,
+              "This blog provides detailed information about a previously undocumented backdoor we named \"WINELOADER\"."
+            ],
+            [
+              19,
+              "This function decrypts the embedded WINELOADER core module within the DLL using a hardcoded 256-byte RC4 key before executing it."
+            ],
+            [
+              21,
+              "Part of the decrypted WINELOADER core module is shown in Figure 5 below."
+            ],
+            [
+              23,
+              "WINELOADER employs the following techniques to evade detection:."
+            ],
+            [
+              24,
+              "DLL hollowing is then used to inject WINELOADER into a randomly selected DLL from the Windows system directory."
+            ],
+            [
+              26,
+              "WINELOADER includes additional randomization code to ensure that different DLLs are chosen for each instance of DLL hollowing (see Figure 6)."
+            ],
+            [
+              27,
+              "WINELOADER will inject itself into another randomly selected DLL again via DLL hollowing before it sends the first beacon request to the C2 server."
+            ],
+            [
+              41,
+              "After establishing persistence for WINELOADER, the module sends an HTTP POST request to notify the C2 server about the completed task."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1016",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1016",
+        "ttp_id": "T1016",
+        "best_span_sentences_list": [
+          [
+            "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            44
+          ]
+        ],
+        "edges": [
+          "EDGE_7780ff6f7336"
+        ],
+        "source": {
+          "TTP:T1016_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                44,
+                44
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once APT29 established access, Mandiant observed the group performing extensive reconnaissance of hosts and the Active Directory environment."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            53,
+            53
+          ]
+        ],
+        "edges": [
+          "EDGE_3c02575c3068",
+          "EDGE_41d635e6cdc8",
+          "EDGE_ef85c5f39c5e",
+          "EDGE_3934b46dedf7",
+          "EDGE_dbe6d499bb7e",
+          "EDGE_eab472efd35b"
+        ],
+        "source": {
+          "TTP:T1027_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                53,
+                53
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload."
+              ]
+            ]
+          },
+          "TTP:T1027_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this case, the file Agenda.html is responsible for deobfuscating a payload, and also for writing a malicious ISO file to the intended target hard drive."
+              ]
+            ]
+          },
+          "TTP:T1027_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                12,
+                13
+              ],
+              [
+                19,
+                21
+              ],
+              [
+                28,
+                30
+              ],
+              [
+                35,
+                35
+              ],
+              [
+                48,
+                48
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The HTA file downloaded in the previous section contains obfuscated JavaScript code, which executes the next stage of malicious activities.",
+                "The obfuscation technique used in the code exhibits patterns that match those of the publicly available obfuscator obfuscator.io."
+              ],
+              [
+                "This function decrypts the embedded WINELOADER core module within the DLL using a hardcoded 256-byte RC4 key before executing it.",
+                "Each module consists of configuration data (e.g., C2 polling interval), an RC4 key, and encrypted strings, followed by the module code.",
+                "Part of the decrypted WINELOADER core module is shown in Figure 5 below."
+              ],
+              [
+                "The beacon request is an HTTP GET request containing a request body, which is unusual for GET requests.",
+                "All requests to the C2 server use the same User-Agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.1) Gecko/20100101 Firefox/86.1, hardcoded into the sample itself.",
+                "The body of the HTTP GET request is encrypted with the same 256-byte RC4 key and the fields are as follows."
+              ],
+              [
+                "The same RC4 key is then used to decrypt the response from the C2 server."
+              ],
+              [
+                "APT29 (Cozy Bear) put additional effort into remaining undetected by evading memory forensics and automated URL scanning solutions."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2).",
+            "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+          ],
+          [
+            "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+          ],
+          [
+            "Once the victim ID is created, BEATDROP will make an initial request to Trello to identify whether the current victim has already been compromised."
+          ],
+          [
+            "BOOMMIC then sends a GET request to its C2 to download and execute a shellcode payload."
+          ],
+          [
+            "Mandiant observed APT29 quickly moving laterally within an environment.",
+            "To facilitate lateral movement APT29 relied on a combination of malicious certificates used for impersonation of privileged users and SMB BEACON."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            51,
+            52
+          ]
+        ],
+        "edges": [
+          "EDGE_0fa1031d993f",
+          "EDGE_2ab39a89dd72",
+          "EDGE_51345d8f878a",
+          "EDGE_698fea3014ac",
+          "EDGE_a0195f744bf6",
+          "EDGE_b8c9d822374d",
+          "EDGE_d1f7764d8a83",
+          "EDGE_349513fcf939"
+        ],
+        "source": {
+          "TTP:T1071_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                9,
+                10
+              ],
+              [
+                12,
+                12
+              ],
+              [
+                22,
+                22
+              ],
+              [
+                33,
+                33
+              ],
+              [
+                51,
+                52
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2).",
+                "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+              ],
+              [
+                "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+              ],
+              [
+                "Once the victim ID is created, BEATDROP will make an initial request to Trello to identify whether the current victim has already been compromised."
+              ],
+              [
+                "BOOMMIC then sends a GET request to its C2 to download and execute a shellcode payload."
+              ],
+              [
+                "Mandiant observed APT29 quickly moving laterally within an environment.",
+                "To facilitate lateral movement APT29 relied on a combination of malicious certificates used for impersonation of privileged users and SMB BEACON."
+              ]
+            ]
+          },
+          "TTP:T1071_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                28,
+                30
+              ],
+              [
+                41,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The beacon request is an HTTP GET request containing a request body, which is unusual for GET requests.",
+                "All requests to the C2 server use the same User-Agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.1) Gecko/20100101 Firefox/86.1, hardcoded into the sample itself.",
+                "The body of the HTTP GET request is encrypted with the same 256-byte RC4 key and the fields are as follows."
+              ],
+              [
+                "After establishing persistence for WINELOADER, the module sends an HTTP POST request to notify the C2 server about the completed task."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Following this, BEATDROP will enumerate the system for the username, computer name, and IP address."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1082_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Following this, BEATDROP will enumerate the system for the username, computer name, and IP address."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1102",
+        "ttp_id": "T1102",
+        "best_span_sentences_list": [
+          [
+            "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+          ],
+          [
+            "Once the victim ID is created, BEATDROP will make an initial request to Trello to identify whether the current victim has already been compromised."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_03c29d7109f6",
+          "EDGE_3be449085797",
+          "EDGE_8d3c92e49b61",
+          "EDGE_981bea8bc04c",
+          "EDGE_9d3ee6422b88",
+          "EDGE_984c79ba209c"
+        ],
+        "source": {
+          "TTP:T1102_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ],
+              [
+                22,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+              ],
+              [
+                "Once the victim ID is created, BEATDROP will make an initial request to Trello to identify whether the current victim has already been compromised."
+              ]
+            ]
+          },
+          "TTP:T1102_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": {
+            "best_span_ranges": [
+              [
+                20,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Finally, in comparing both campaigns, we found that Cloaked Ursa had evolved their use of cloud storage services in their delivery tactics.",
+                "Notably, rather than continuing their use of the DropBox services, identified by Cluster25 in early May, these new campaigns incorporated Google Drive storage services as a means to obfuscate their actions and deploy additional payloads into target environments."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+          ],
+          [
+            "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+          ],
+          [
+            "BOOMMIC then sends a GET request to its C2 to download and execute a shellcode payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_0b3319424bdd",
+          "EDGE_103681d5227e",
+          "EDGE_399dd2cd771f",
+          "EDGE_b5e8a5b3d2ed",
+          "EDGE_e09ce063c6a1",
+          "EDGE_5d2998355e15",
+          "EDGE_5df0724f3cde",
+          "EDGE_091875ba874c",
+          "EDGE_3e4143687877",
+          "EDGE_593059fd24dd",
+          "EDGE_8b0ffae475f4"
+        ],
+        "source": {
+          "TTP:T1105_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ],
+              [
+                12,
+                12
+              ],
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+              ],
+              [
+                "An operational shift was observed in February 2022 when APT29 moved from deploying BEATDROP, which used a third-party cloud service to retrieve BEACON, to a simpler BEACON dropper that relied on co-opted infrastructure."
+              ],
+              [
+                "BOOMMIC then sends a GET request to its C2 to download and execute a shellcode payload."
+              ]
+            ]
+          },
+          "TTP:T1105_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": {
+            "best_span_ranges": [
+              [
+                2,
+                4
+              ],
+              [
+                11,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Extending this trend, we have discovered that their two most recent campaigns leveraged Google Drive cloud storage services for the first time.",
+                "The ubiquitous nature of Google Drive cloud storage services – combined with the trust that millions of customers worldwide have in them – make their inclusion in this APT’s malware delivery process exceptionally concerning.",
+                "The cybersecurity industry has long considered Cloaked Ursa to be affiliated with the Russian government."
+              ],
+              [
+                "In both cases, the phishing documents contained a link to a malicious HTML file (EnvyScout) that served as a dropper for additional malicious files in the target network, including a Cobalt Strike payload.",
+                "On May 13, 2022, Cluster25 published a report that outlined Cloaked Ursa’s inclusion of DropBox services in their malware campaigns for the first time."
+              ]
+            ]
+          },
+          "TTP:T1105_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                8,
+                8
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            53,
+            53
+          ]
+        ],
+        "edges": [
+          "EDGE_39643258921c",
+          "EDGE_7536d3199e69",
+          "EDGE_3b9dadb38351"
+        ],
+        "source": {
+          "TTP:T1140_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                53,
+                53
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload."
+              ]
+            ]
+          },
+          "TTP:T1140_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                17,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "When executing sqlwriter.exe, it loads a malicious DLL named vcruntime140.dll from the same directory using DLL side-loading.",
+                "The exported function set_se_translator is then executed.",
+                "This function decrypts the embedded WINELOADER core module within the DLL using a hardcoded 256-byte RC4 key before executing it."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1193",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1193",
+        "ttp_id": "T1193",
+        "best_span_sentences_list": [
+          [
+            "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_0a310bb09748"
+        ],
+        "source": {
+          "TTP:T1193_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Mandiant also identified APT29 utilizing a malicious docx to deliver an HTA dropper, resulting in the delivery and execution of BEATDROP on a target system, in a separate but similar phishing campaign."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1550",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1550",
+        "ttp_id": "T1550",
+        "best_span_sentences_list": [
+          [
+            "In one instance, APT29 was observed writing files that contained Kerberos tickets most likely to be used in Pass the Ticket attacks or for offline cracking."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_51296359461d"
+        ],
+        "source": {
+          "TTP:T1550_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                40,
+                40
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In one instance, APT29 was observed writing files that contained Kerberos tickets most likely to be used in Pass the Ticket attacks or for offline cracking."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Since early 2021, Mandiant has been tracking extensive APT29 phishing campaigns targeting diplomatic organizations in Europe, the Americas, and Asia."
+          ],
+          [
+            "Beginning mid-January 2022, Mandiant detected and responded to an APT29 phishing campaign targeting a diplomatic entity.",
+            "During the investigation, Mandiant identified the deployment and use of the BEATDROP and BOOMMIC downloaders.",
+            "Shortly following the identification of this campaign, Mandiant discovered APT29 targeting multiple additional diplomatic and government entities through a series of phishing waves.",
+            "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2).",
+            "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+          ],
+          [
+            "To gain access to a victim environment, APT29 sent spear-phishing emails disguised as embassy administrative updates."
+          ],
+          [
+            "These phishing emails utilized a malicious HTML dropper tracked as ROOTSAW, that makes use of a technique known as HTML smuggling to deliver an IMG or ISO file to a victim system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_133c8ec453f5",
+          "EDGE_19c51ef4fd20",
+          "EDGE_6a8f38d26008",
+          "EDGE_f793b2b35671",
+          "EDGE_1bfbb2904626",
+          "EDGE_5b9eb1550a88",
+          "EDGE_8c4993e0f0c0"
+        ],
+        "source": {
+          "TTP:T1566_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                6,
+                10
+              ],
+              [
+                14,
+                14
+              ],
+              [
+                17,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Since early 2021, Mandiant has been tracking extensive APT29 phishing campaigns targeting diplomatic organizations in Europe, the Americas, and Asia."
+              ],
+              [
+                "Beginning mid-January 2022, Mandiant detected and responded to an APT29 phishing campaign targeting a diplomatic entity.",
+                "During the investigation, Mandiant identified the deployment and use of the BEATDROP and BOOMMIC downloaders.",
+                "Shortly following the identification of this campaign, Mandiant discovered APT29 targeting multiple additional diplomatic and government entities through a series of phishing waves.",
+                "The phishing emails sent by APT29 masqueraded as administrative notices related to various embassies and utilized legitimate but co-opted email addresses to send emails and Atlassian's Trello service for command and control (C2).",
+                "These phishing emails were similar to previous Nobelium phishing campaigns in 2021 as they targeted diplomatic organizations, used ROOTSAW (publicly known as EnvyScout) to deliver additional payloads, and misused Firebase or DropBox for C2."
+              ],
+              [
+                "To gain access to a victim environment, APT29 sent spear-phishing emails disguised as embassy administrative updates."
+              ],
+              [
+                "These phishing emails utilized a malicious HTML dropper tracked as ROOTSAW, that makes use of a technique known as HTML smuggling to deliver an IMG or ISO file to a victim system."
+              ]
+            ]
+          },
+          "TTP:T1566_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": {
+            "best_span_ranges": [
+              [
+                11,
+                12
+              ],
+              [
+                15,
+                19
+              ],
+              [
+                22,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In both cases, the phishing documents contained a link to a malicious HTML file (EnvyScout) that served as a dropper for additional malicious files in the target network, including a Cobalt Strike payload.",
+                "On May 13, 2022, Cluster25 published a report that outlined Cloaked Ursa’s inclusion of DropBox services in their malware campaigns for the first time."
+              ],
+              [
+                "Reviewing this list, we identified a third Agenda.pdf created on June 30, 2022 that we assess to be part of a second phishing campaign by Cloaked Ursa.",
+                "Examining the file, we found that its lure was consistent with the previous campaign.",
+                "Specifically, the lure contained the same language and a similar link to an EnvyScout dropper hosted on a legitimate domain (porodicno[.]ba/wp-content/Agenda.html).",
+                "Where the two campaigns differed was their target.",
+                "While the first two lures were addressed to a Portuguese Embassy, this third lure was addressed to an embassy in Brazil."
+              ],
+              [
+                "Beginning with the most recent spear phishing activity first, we analyzed a diplomatic-themed PDF file named Agenda.pdf (SHA256: ce9802b22a37ae26c02b1f2c3225955a7667495fce5b106113434ab5a87ae28a).",
+                "This PDF document contains information that appears to address a foreign embassy in Brazil while using Brazil's official logo and notably misspelling “Brazil” as “Brzail.” The document was created on April 4, 2022, and later modified on June 30, 2022."
+              ]
+            ]
+          },
+          "TTP:T1566_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ],
+              [
+                7,
+                8
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The PDF file is a fake invitation to a wine-tasting event purported to take place at the Indian ambassador’s residence on February 2nd, 2024."
+              ],
+              [
+                "The invitation contains a link to a fake questionnaire, which kickstarts the infection chain.",
+                "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_19be1340415c",
+          "EDGE_506dbb0be3cc",
+          "EDGE_6424dd8eacf8",
+          "EDGE_a4ae59c2f3c7",
+          "EDGE_41f603f151e9",
+          "EDGE_bed976a9d9e9",
+          "EDGE_e65d63045038"
+        ],
+        "source": {
+          "TTP:T1574_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                25,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe."
+              ]
+            ]
+          },
+          "TTP:T1574_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                17,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "When executing sqlwriter.exe, it loads a malicious DLL named vcruntime140.dll from the same directory using DLL side-loading.",
+                "The exported function set_se_translator is then executed.",
+                "This function decrypts the embedded WINELOADER core module within the DLL using a hardcoded 256-byte RC4 key before executing it."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1649",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1649",
+        "ttp_id": "T1649",
+        "best_span_sentences_list": [
+          [
+            "APT29 was also observed exploiting misconfigured certificate templates to allow them to impersonate admin users.",
+            "From here, APT29 created additional malicious certificates which they used to move laterally within the environment.",
+            "This recent technique, which is well documented in a report from SpecterOps and was presented at Blackhat in August 2021, gives the attacker the ability to quickly escalate their privileges within the environment, but also provides a method for long term persistence through the creation of malicious certificates."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            43
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1649_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": {
+            "best_span_ranges": [
+              [
+                41,
+                43
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "APT29 was also observed exploiting misconfigured certificate templates to allow them to impersonate admin users.",
+                "From here, APT29 created additional malicious certificates which they used to move laterally within the environment.",
+                "This recent technique, which is well documented in a report from SpecterOps and was presented at Blackhat in August 2021, gives the attacker the ability to quickly escalate their privileges within the environment, but also provides a method for long term persistence through the creation of malicious certificates."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "In both cases, the phishing documents contained a link to a malicious HTML file (EnvyScout) that served as a dropper for additional malicious files in the target network, including a Cobalt Strike payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_1dbef2613987",
+          "EDGE_eeaf9ae25f3e",
+          "EDGE_18ac7ccf48f6",
+          "EDGE_67609bd874d4",
+          "EDGE_8b476cba3eb6",
+          "EDGE_ee6ede25e428"
+        ],
+        "source": {
+          "TTP:T1204_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In both cases, the phishing documents contained a link to a malicious HTML file (EnvyScout) that served as a dropper for additional malicious files in the target network, including a Cobalt Strike payload."
+              ]
+            ]
+          },
+          "TTP:T1204_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ],
+              [
+                7,
+                8
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The PDF file is a fake invitation to a wine-tasting event purported to take place at the Indian ambassador’s residence on February 2nd, 2024."
+              ],
+              [
+                "The invitation contains a link to a fake questionnaire, which kickstarts the infection chain.",
+                "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_91e4d973a171",
+          "EDGE_932ac29b6e88",
+          "EDGE_be2e30baf089"
+        ],
+        "source": {
+          "TTP:T1036_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                39,
+                39
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "During our research, we obtained a persistence module from the C2 server.",
+            "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_1b76691f3718",
+          "EDGE_6c7eb661de5e",
+          "EDGE_89b2e71c9df8",
+          "EDGE_94094268e127"
+        ],
+        "source": {
+          "TTP:T1053_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                38,
+                39
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "During our research, we obtained a persistence module from the C2 server.",
+                "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "DLL hollowing is then used to inject WINELOADER into a randomly selected DLL from the Windows system directory."
+          ],
+          [
+            "WINELOADER will inject itself into another randomly selected DLL again via DLL hollowing before it sends the first beacon request to the C2 server."
+          ],
+          [
+            "The core module supports three commands:\n- Execute modules from the C2 either synchronously or asynchronously (via CreateThread)\n- Inject itself into another DLL\n- Update the sleep interval between beacon requests."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_2ed9fe6e3770"
+        ],
+        "source": {
+          "TTP:T1055_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                24,
+                24
+              ],
+              [
+                27,
+                27
+              ],
+              [
+                37,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "DLL hollowing is then used to inject WINELOADER into a randomly selected DLL from the Windows system directory."
+              ],
+              [
+                "WINELOADER will inject itself into another randomly selected DLL again via DLL hollowing before it sends the first beacon request to the C2 server."
+              ],
+              [
+                "The core module supports three commands:\n- Execute modules from the C2 either synchronously or asynchronously (via CreateThread)\n- Inject itself into another DLL\n- Update the sleep interval between beacon requests."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The HTA file downloaded in the previous section contains obfuscated JavaScript code, which executes the next stage of malicious activities."
+          ],
+          [
+            "The core module supports three commands:\n- Execute modules from the C2 either synchronously or asynchronously (via CreateThread)\n- Inject itself into another DLL\n- Update the sleep interval between beacon requests."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_02335e6cb415",
+          "EDGE_eba675deb49c"
+        ],
+        "source": {
+          "TTP:T1059_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                12,
+                12
+              ],
+              [
+                37,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The HTA file downloaded in the previous section contains obfuscated JavaScript code, which executes the next stage of malicious activities."
+              ],
+              [
+                "The core module supports three commands:\n- Execute modules from the C2 either synchronously or asynchronously (via CreateThread)\n- Inject itself into another DLL\n- Update the sleep interval between beacon requests."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "The persistence module offers an alternative configuration to establish registry persistence at HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_14892ed29866",
+          "EDGE_16bc15cdb65e"
+        ],
+        "source": {
+          "TTP:T1112_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                40,
+                40
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The persistence module offers an alternative configuration to establish registry persistence at HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "The persistence module offers an alternative configuration to establish registry persistence at HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_2d6aa74e7cbb",
+          "EDGE_d5b0d0598c96"
+        ],
+        "source": {
+          "TTP:T1547_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": {
+            "best_span_ranges": [
+              [
+                40,
+                40
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The persistence module offers an alternative configuration to establish registry persistence at HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_37f87a2899c0",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://maybyrne[.]co[.]uk/modules/mod_search/mod_global_search.php?bin_data=<host_id>&Article=AboutMe",
+        "edges": [
+          "EDGE_51345d8f878a"
+        ],
+        "source": {
+          "https://maybyrne[.]co[.]uk/modules/mod_search/mod_global_search.php?bin_data=<host_id>&Article=AboutMe_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              36,
+              "https://maybyrne[.]co[.]uk/modules/mod_search/mod_global_search.php?bin_data=<host_id>&Article=AboutMe\nEscalate Privileges."
+            ]
+          ]
+        },
+        "raw_value": "https://maybyrne[.]co[.]uk/modules/mod_search/mod_global_search.php?bin_data=<host_id>&Article=AboutMe",
+        "canonical_value": "https://maybyrne.co.uk/modules/mod_search/mod_global_search.php?bin_data=<host_id>&Article=AboutMe",
+        "normalized_value": "https://maybyrne.co.uk/modules/mod_search/mod_global_search.php?bin_data=<host_id>&Article=AboutMe"
+      },
+      {
+        "node_id": "IOC_42b489d3b74d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SharedReality.dll",
+        "edges": [
+          "EDGE_39643258921c"
+        ],
+        "source": {
+          "SharedReality.dll_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              53,
+              "Analysis of SharedReality.dll identified it to be a memory-only dropper written in Go language that decrypts and executes an embedded BEACON payload."
+            ],
+            [
+              54,
+              "The BEACON payload was identified to be SMB BEACON that communicates over the following named pipe:\n\\\\.\\pipe\\SapIServerPipes-1-15-21-07836\nAPT29 was then observed utilizing the impersonation of a privileged user to copy SharedReality.dll to the Temp directory of multiple systems."
+            ]
+          ]
+        },
+        "raw_value": "SharedReality.dll",
+        "canonical_value": "SharedReality.dll"
+      },
+      {
+        "node_id": "IOC_474755f11bed",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "jucheck.exe",
+        "edges": [
+          "EDGE_a4ae59c2f3c7"
+        ],
+        "source": {
+          "jucheck.exe_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              25,
+              "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe."
+            ],
+            [
+              27,
+              "Once executed, BOOMMIC first checks if it is running under the process jucheck.exe, if it is not the program will exit."
+            ],
+            [
+              29,
+              "Figure 24: BOOMMIC check for jucheck.exe\nIf the malware is running under jucheck.exe, it will then create a host id for the compromised target to be used in the request to download a payload."
+            ]
+          ]
+        },
+        "raw_value": "jucheck.exe",
+        "canonical_value": "jucheck.exe"
+      },
+      {
+        "node_id": "IOC_6927ee17a142",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "version.dll",
+        "edges": [
+          "EDGE_6424dd8eacf8"
+        ],
+        "source": {
+          "version.dll_cloud.google.com_blog_topics_threat-intelligence_tracking-apt29-phishing-campaigns": [
+            [
+              25,
+              "APT29 executed BOOMMIC through DLL Side Loading of a modified version.dll by a legitimate Java binary, jucheck.exe."
+            ]
+          ]
+        },
+        "raw_value": "version.dll",
+        "canonical_value": "version.dll"
+      },
+      {
+        "node_id": "IOC_262d917afc78",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "porodicno[.]ba/wp-content/Agenda.html",
+        "edges": [
+          "EDGE_f793b2b35671"
+        ],
+        "source": {
+          "porodicno[.]ba/wp-content/Agenda.html_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              17,
+              "Specifically, the lure contained the same language and a similar link to an EnvyScout dropper hosted on a legitimate domain (porodicno[.]ba/wp-content/Agenda.html)."
+            ]
+          ]
+        },
+        "raw_value": "porodicno[.]ba/wp-content/Agenda.html",
+        "canonical_value": "http://porodicno.ba/wp-content/Agenda.html",
+        "normalized_value": "http://porodicno.ba/wp-content/Agenda.html"
+      },
+      {
+        "node_id": "IOC_7f7f444dea0d",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "ce9802b22a37ae26c02b1f2c3225955a7667495fce5b106113434ab5a87ae28a",
+        "edges": [
+          "EDGE_6a8f38d26008"
+        ],
+        "source": {
+          "ce9802b22a37ae26c02b1f2c3225955a7667495fce5b106113434ab5a87ae28a_unit42.paloaltonetworks.com_cloaked-ursa-online-storage-services-campaigns": [
+            [
+              22,
+              "Beginning with the most recent spear phishing activity first, we analyzed a diplomatic-themed PDF file named Agenda.pdf (SHA256: ce9802b22a37ae26c02b1f2c3225955a7667495fce5b106113434ab5a87ae28a)."
+            ]
+          ]
+        },
+        "raw_value": "ce9802b22a37ae26c02b1f2c3225955a7667495fce5b106113434ab5a87ae28a",
+        "canonical_value": "ce9802b22a37ae26c02b1f2c3225955a7667495fce5b106113434ab5a87ae28a"
+      },
+      {
+        "node_id": "IOC_1c89e0282db8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "wine.hta",
+        "edges": [
+          "EDGE_02335e6cb415",
+          "EDGE_593059fd24dd",
+          "EDGE_67609bd874d4",
+          "EDGE_eab472efd35b"
+        ],
+        "source": {
+          "wine.hta_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              8,
+              "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+            ]
+          ]
+        },
+        "raw_value": "wine.hta",
+        "canonical_value": "wine.hta"
+      },
+      {
+        "node_id": "IOC_1d7d1534eb34",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "seeceafcleaners[.]co[.]uk",
+        "edges": [
+          "EDGE_8b0ffae475f4",
+          "EDGE_8b476cba3eb6",
+          "EDGE_8c4993e0f0c0"
+        ],
+        "source": {
+          "seeceafcleaners[.]co[.]uk_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              8,
+              "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+            ]
+          ]
+        },
+        "raw_value": "seeceafcleaners[.]co[.]uk",
+        "canonical_value": "seeceafcleaners.co.uk",
+        "normalized_value": "seeceafcleaners.co.uk"
+      },
+      {
+        "node_id": "IOC_51385baad487",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "vcruntime140.dll",
+        "edges": [
+          "EDGE_bed976a9d9e9"
+        ],
+        "source": {
+          "vcruntime140.dll_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              17,
+              "When executing sqlwriter.exe, it loads a malicious DLL named vcruntime140.dll from the same directory using DLL side-loading."
+            ]
+          ]
+        },
+        "raw_value": "vcruntime140.dll",
+        "canonical_value": "vcruntime140.dll"
+      },
+      {
+        "node_id": "IOC_659e9eb56667",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer",
+        "edges": [
+          "EDGE_14892ed29866",
+          "EDGE_d5b0d0598c96"
+        ],
+        "source": {
+          "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              40,
+              "The persistence module offers an alternative configuration to establish registry persistence at HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer."
+            ]
+          ]
+        },
+        "raw_value": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer",
+        "canonical_value": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer"
+      },
+      {
+        "node_id": "IOC_7059185f0d71",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "vcruntime.dll",
+        "edges": [],
+        "source": {
+          "vcruntime.dll_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              39,
+              "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+            ]
+          ]
+        },
+        "raw_value": "vcruntime.dll",
+        "canonical_value": "vcruntime.dll"
+      },
+      {
+        "node_id": "IOC_7bfc7c20bb7c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\Tasks",
+        "edges": [
+          "EDGE_1b76691f3718"
+        ],
+        "source": {
+          "C:\\Windows\\Tasks_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              39,
+              "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Windows\\Tasks",
+        "canonical_value": "C:\\Windows\\Tasks"
+      },
+      {
+        "node_id": "IOC_89ef20849635",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "sqlwriter.exe",
+        "edges": [
+          "EDGE_41f603f151e9",
+          "EDGE_89b2e71c9df8",
+          "EDGE_932ac29b6e88"
+        ],
+        "source": {
+          "sqlwriter.exe_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              17,
+              "When executing sqlwriter.exe, it loads a malicious DLL named vcruntime140.dll from the same directory using DLL side-loading."
+            ],
+            [
+              39,
+              "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+            ]
+          ]
+        },
+        "raw_value": "sqlwriter.exe",
+        "canonical_value": "sqlwriter.exe"
+      },
+      {
+        "node_id": "IOC_ac520884a472",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://seeceafcleaners[.]co[.]uk/wine.php",
+        "edges": [
+          "EDGE_3e4143687877",
+          "EDGE_5b9eb1550a88",
+          "EDGE_ee6ede25e428"
+        ],
+        "source": {
+          "hxxps://seeceafcleaners[.]co[.]uk/wine.php_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              8,
+              "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+            ]
+          ]
+        },
+        "raw_value": "hxxps://seeceafcleaners[.]co[.]uk/wine.php",
+        "canonical_value": "https://seeceafcleaners.co.uk/wine.php",
+        "normalized_value": "https://seeceafcleaners.co.uk/wine.php"
+      },
+      {
+        "node_id": "IOC_c7261a51fa80",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\Tasks\\sqlwriter.exe",
+        "edges": [
+          "EDGE_6c7eb661de5e",
+          "EDGE_91e4d973a171"
+        ],
+        "source": {
+          "C:\\Windows\\Tasks\\sqlwriter.exe_www.zscaler.com_blogs_security-research_european-diplomats-targeted-apt29-cozy-bear-wineloader": [
+            [
+              39,
+              "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Windows\\Tasks\\sqlwriter.exe",
+        "canonical_value": "C:\\Windows\\Tasks\\sqlwriter.exe"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_03c29d7109f6",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0a310bb09748",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1193",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0b3319424bdd",
+      "node_u": "HL_7ebd54a323e9",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0fa1031d993f",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_103681d5227e",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_133c8ec453f5",
+      "node_u": "HL_e1d89917c06c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_19be1340415c",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_19c51ef4fd20",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ab39a89dd72",
+      "node_u": "HL_7ebd54a323e9",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_39643258921c",
+      "node_u": "IOC_42b489d3b74d",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_399dd2cd771f",
+      "node_u": "HL_e1d89917c06c",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3be449085797",
+      "node_u": "HL_c9e79ff4a64a",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_506dbb0be3cc",
+      "node_u": "HL_7ebd54a323e9",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_51296359461d",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1550",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_51345d8f878a",
+      "node_u": "IOC_37f87a2899c0",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6424dd8eacf8",
+      "node_u": "IOC_6927ee17a142",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_698fea3014ac",
+      "node_u": "HL_c9e79ff4a64a",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7536d3199e69",
+      "node_u": "HL_7ebd54a323e9",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7780ff6f7336",
+      "node_u": "HL_72f79c00fb9d",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8d3c92e49b61",
+      "node_u": "HL_72f79c00fb9d",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_981bea8bc04c",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9d3ee6422b88",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a0195f744bf6",
+      "node_u": "HL_72f79c00fb9d",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a4ae59c2f3c7",
+      "node_u": "IOC_474755f11bed",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b5e8a5b3d2ed",
+      "node_u": "HL_83a2224bd763",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b8c9d822374d",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d1f7764d8a83",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e09ce063c6a1",
+      "node_u": "HL_72f79c00fb9d",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1dbef2613987",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3c02575c3068",
+      "node_u": "HL_e1d89917c06c",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_41d635e6cdc8",
+      "node_u": "HL_2a0b5ad78f29",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5d2998355e15",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5df0724f3cde",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a8f38d26008",
+      "node_u": "IOC_7f7f444dea0d",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_984c79ba209c",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_eeaf9ae25f3e",
+      "node_u": "HL_e1d89917c06c",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ef85c5f39c5e",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f793b2b35671",
+      "node_u": "IOC_262d917afc78",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_02335e6cb415",
+      "node_u": "IOC_1c89e0282db8",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_091875ba874c",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_14892ed29866",
+      "node_u": "IOC_659e9eb56667",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_16bc15cdb65e",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_18ac7ccf48f6",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b76691f3718",
+      "node_u": "IOC_7bfc7c20bb7c",
+      "node_v": "TTP_T1053",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bfbb2904626",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2d6aa74e7cbb",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ed9fe6e3770",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_349513fcf939",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3934b46dedf7",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3b9dadb38351",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3e4143687877",
+      "node_u": "IOC_ac520884a472",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_41f603f151e9",
+      "node_u": "IOC_89ef20849635",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_593059fd24dd",
+      "node_u": "IOC_1c89e0282db8",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5b9eb1550a88",
+      "node_u": "IOC_ac520884a472",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_67609bd874d4",
+      "node_u": "IOC_1c89e0282db8",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c7eb661de5e",
+      "node_u": "IOC_c7261a51fa80",
+      "node_v": "TTP_T1053",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_89b2e71c9df8",
+      "node_u": "IOC_89ef20849635",
+      "node_v": "TTP_T1053",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b0ffae475f4",
+      "node_u": "IOC_1d7d1534eb34",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b476cba3eb6",
+      "node_u": "IOC_1d7d1534eb34",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8c4993e0f0c0",
+      "node_u": "IOC_1d7d1534eb34",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_91e4d973a171",
+      "node_u": "IOC_c7261a51fa80",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_932ac29b6e88",
+      "node_u": "IOC_89ef20849635",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_94094268e127",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_be2e30baf089",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bed976a9d9e9",
+      "node_u": "IOC_51385baad487",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d5b0d0598c96",
+      "node_u": "IOC_659e9eb56667",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_dbe6d499bb7e",
+      "node_u": "HL_348a9135329c",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e65d63045038",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_eab472efd35b",
+      "node_u": "IOC_1c89e0282db8",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_eba675deb49c",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ee6ede25e428",
+      "node_u": "IOC_ac520884a472",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

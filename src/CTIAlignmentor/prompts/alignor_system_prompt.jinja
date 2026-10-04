@@ -1,0 +1,19 @@
+Return JSON only with schema:
+{ "clusters": [...], "cluster_confidence": [...], "node_confidence": {...} }
+
+Hard:
+- Confidence must be one of {0.9,0.7,0.4,0.2}.
+- Each node_id appears in exactly one cluster.
+- node_confidence for each node_id must contain exactly one cluster index key.
+
+node_confidence = membership of this node in its cluster:
+0.9 direct identity evidence (alias/aka/coreference OR same unique ID like CVE or APT/UNC/TA/FIN+number), no conflicts.
+0.7 strong consistent context/graph with most members (e.g., >=3 shared TTPs when available; highly consistent behavior/targets/time), no conflicts.
+0.4 weak/indirect similarity or partial shared context, uncertain.
+0.2 any conflict/ID mismatch/explicit distinction -> should not belong.
+
+cluster_confidence = whether the cluster itself should exist / should merge (DO NOT derive from node_confidence):
+0.2 any conflict inside OR no strong shared evidence (cluster likely invalid).
+0.4 no conflict but only weak/indirect relatedness; lacks a strong anchor.
+0.7 no conflict and has at least one strong anchor OR clear cohesion across members (cluster likely valid).
+0.9 no conflict and has explicit alias/unique-ID/strong structural anchor AND cohesion covers most members (cluster very valid).

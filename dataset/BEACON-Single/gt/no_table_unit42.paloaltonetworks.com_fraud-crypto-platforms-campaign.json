@@ -1,0 +1,209 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_4119eb0cd0c5",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Vue.js",
+        "edges": [],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "A known front-end JavaScript framework, Vue.js (discussed in a Stack Overflow thread) commonly uses this element."
+        ]
+      },
+      {
+        "node_id": "HL_7a83293baae8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Android",
+        "edges": [],
+        "sentence_indices": [
+          9,
+          38
+        ],
+        "span_sentences": [
+          "Each scam crypto investment platform can be accessed through a website and an Android-based mobile application.",
+          "Mobile applications: All reviewed mobile applications are Android-based."
+        ]
+      },
+      {
+        "node_id": "HL_7e5a30b9b20a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Singapore",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          5,
+          41
+        ],
+        "span_sentences": [
+          "This is underscored by the consistent registration of domains primarily in Singapore, predominantly using registrars with lenient policies and repeated patterns of fake registrant names.",
+          "Further, most of the domains (82%) were registered in Singapore using registrars with relaxed registration requirements."
+        ]
+      },
+      {
+        "node_id": "HL_a74ea5eecea3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Unit 42",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Unit 42 researchers discovered a campaign distributing thousands of fraudulent cryptocurrency investment platforms via websites and mobile applications."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [],
+        "sentence_indices": [
+          7,
+          32
+        ],
+        "span_sentences": [
+          "This campaign primarily targets users in East African and Asian countries, with scammers hosting large Telegram channels and groups to engage with victims.",
+          "For example, the Telegram channel shown in Figure 6 had over 29,000 members."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Our analysis revealed threat actors mimicking a wide range of brands, including:\n- Well-known banks\n- Retail stores\n- Technology companies\n- Luxury brands\n- E-commerce stores\n- Cryptocurrency exchanges\nWe identified over 50 impersonated themes across these websites."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These domains also employ free HTTPS certificates and domain fronting via a popular public cloud service to obscure their true locations."
+          ],
+          [
+            "The campaign heavily used domain fronting, a technique masking the true destination of web traffic, through public cloud services (97% of the hosting IP addresses belong to a single cloud service provider)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            40,
+            42
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            52,
+            52
+          ],
+          [
+            53,
+            53
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This is underscored by the consistent registration of domains primarily in Singapore, predominantly using registrars with lenient policies and repeated patterns of fake registrant names."
+          ],
+          [
+            "We observed that around 15 domains were created on average per day.",
+            "Further, most of the domains (82%) were registered in Singapore using registrars with relaxed registration requirements.",
+            "This is evident from the fake registrant names used for registration such as “Sophia” (14%), “Abe” (4%) and “Sophie” (3%)."
+          ],
+          [
+            "Like many malicious websites, these scam crypto websites use free HTTPS certificates (digital credentials that encrypt website traffic)."
+          ],
+          [
+            "In 2024, we uncovered thousands of websites associated with this campaign."
+          ],
+          [
+            "We found strong evidence that suggests a single threat actor likely operates these websites, given the consistent registration patterns and the use of similar infrastructure."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0b55492e1650",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "2024olympics-shop[.]com",
+        "edges": [],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "Figure 5 shows examples of videos promoting a platform 2024olympics-shop[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_7fc973367354",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "nmxquantify[.]com",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "This channel is associated with a scam crypto investment platform nmxquantify[.]com."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_7e5a30b9b20a",
+      "node_v": "TTP_T1583"
+    }
+  ]
+}

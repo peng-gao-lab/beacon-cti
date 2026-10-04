@@ -1,0 +1,813 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0730418e8ddf",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "IcedID",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          4,
+          5,
+          26,
+          43,
+          47
+        ],
+        "span_sentences": [
+          "While initial analysis suggested Latrodectus was a new variant of IcedID, subsequent analysis confirmed it was a new malware most likely named Latrodectus, based on a string identified in the code.",
+          "Based on characteristics in the disassembled sample and functionality of the malware, researchers assess the malware was likely written by the same developers as IcedID.",
+          "Like IcedID, the bot ID is generated via the hosts’ serial ID.",
+          "These commands support a feature that also exists within IcedID.",
+          "Although the malware supports “cmd_run_icedid” to download and execute “bp.dat”, Proofpoint has not observed Latrodectus dropping IcedID as a follow-on payload."
+        ]
+      },
+      {
+        "node_id": "HL_0d2904d625b1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Pikabot",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "TA577 used Latrodectus in at least three campaigns in November 2023 before reverting to Pikabot."
+        ]
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          54
+        ],
+        "span_sentences": [
+          "Although Latrodectus uses domains concealed behind Cloudflare in its malware configurations, Team Cymru confirmed that many of the C2s found communicating with the T2 were the true IPs behind these domains."
+        ]
+      },
+      {
+        "node_id": "HL_56ab569727f5",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "MSIEXEC",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "If this JavaScript was executed, it called MSIEXEC to run an MSI from a WebDAV share."
+        ]
+      },
+      {
+        "node_id": "HL_709ab3b20822",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Qbot",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "This malware was first observed being distributed by TA577, an IAB known as a prolific Qbot distributor prior to the malware’s disruption in 2023."
+        ]
+      },
+      {
+        "node_id": "HL_81e5de6d7e37",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DanaBot",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "In one campaign observed on 15 December 2023, Proofpoint observed TA578 deliver the Latrodectus downloader via a DanaBot infection."
+        ]
+      },
+      {
+        "node_id": "HL_903464adf545",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Proofpoint",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          11,
+          13,
+          47
+        ],
+        "span_sentences": [
+          "Proofpoint identified a new loader called Latrodectus in November 2023.",
+          "In one campaign observed on 15 December 2023, Proofpoint observed TA578 deliver the Latrodectus downloader via a DanaBot infection.",
+          "On 20 February 2024, Proofpoint researchers observed TA578 impersonating various companies to send legal threats about alleged copyright infringement.",
+          "Although the malware supports “cmd_run_icedid” to download and execute “bp.dat”, Proofpoint has not observed Latrodectus dropping IcedID as a follow-on payload."
+        ]
+      },
+      {
+        "node_id": "HL_9170b0b6c28a",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA577",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          7
+        ],
+        "span_sentences": [
+          "This malware was first observed being distributed by TA577, an IAB known as a prolific Qbot distributor prior to the malware’s disruption in 2023.",
+          "TA577 used Latrodectus in at least three campaigns in November 2023 before reverting to Pikabot."
+        ]
+      },
+      {
+        "node_id": "HL_9b4374c69d53",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Firebase",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The URL then downloaded a JavaScript file from a Google Firebase URL."
+        ]
+      },
+      {
+        "node_id": "HL_aeb661db6349",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA578",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          8,
+          9,
+          11,
+          12,
+          13,
+          15
+        ],
+        "span_sentences": [
+          "Since mid-January 2024, researchers observed it being used almost exclusively by TA578 in email threat campaigns.",
+          "Since mid-January 2024, Latrodectus has been almost exclusively distributed by TA578.",
+          "In one campaign observed on 15 December 2023, Proofpoint observed TA578 deliver the Latrodectus downloader via a DanaBot infection.",
+          "This December campaign was the first observed use of TA578 distributing Latrodectus.",
+          "On 20 February 2024, Proofpoint researchers observed TA578 impersonating various companies to send legal threats about alleged copyright infringement.",
+          "If the link was visited, the target was redirected to a landing page personalized to display both the target’s domain and the name of the impersonated company (TA578) reporting the copyright infringement."
+        ]
+      },
+      {
+        "node_id": "HL_b3f68f53b084",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Latrodectus",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          4,
+          7,
+          9,
+          11,
+          12,
+          19,
+          20,
+          22,
+          25,
+          47,
+          48
+        ],
+        "span_sentences": [
+          "Proofpoint identified a new loader called Latrodectus in November 2023.",
+          "Researchers have identified nearly a dozen campaigns delivering Latrodectus, beginning in February 2024.",
+          "Latrodectus is a downloader with the objective of downloading payloads and executing arbitrary commands.",
+          "While initial analysis suggested Latrodectus was a new variant of IcedID, subsequent analysis confirmed it was a new malware most likely named Latrodectus, based on a string identified in the code.",
+          "TA577 used Latrodectus in at least three campaigns in November 2023 before reverting to Pikabot.",
+          "Since mid-January 2024, Latrodectus has been almost exclusively distributed by TA578.",
+          "In one campaign observed on 15 December 2023, Proofpoint observed TA578 deliver the Latrodectus downloader via a DanaBot infection.",
+          "This December campaign was the first observed use of TA578 distributing Latrodectus.",
+          "The MSI executed the bundled DLL with the export \"fin\" to run Latrodectus.",
+          "Latrodectus resolves Windows API functions dynamically by hash, checks for debuggers present, gathers operating system information, checks running processes, and checks to make sure the computer does not have an existing Latrodectus infection running.",
+          "Latrodectus will post encrypted system information to the command and control server (C2) and request the download of the bot.",
+          "Latrodectus generates bot IDs for each unique host the malware is installed on.",
+          "Although the malware supports “cmd_run_icedid” to download and execute “bp.dat”, Proofpoint has not observed Latrodectus dropping IcedID as a follow-on payload.",
+          "Ultimately, Latrodectus is a generic loader that appears to be in active development, but so far there have not been groundbreaking changes to its capabilities."
+        ]
+      },
+      {
+        "node_id": "HL_d902ed30e325",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Team Cymru",
+        "edges": [],
+        "sentence_indices": [
+          49,
+          54
+        ],
+        "span_sentences": [
+          "Team Cymru’s research into Latrodectus infrastructure began in late 2023 with the identification of four Tier 1 Command and Control (C2) servers in the initial October 2023 campaign.",
+          "Although Latrodectus uses domains concealed behind Cloudflare in its malware configurations, Team Cymru confirmed that many of the C2s found communicating with the T2 were the true IPs behind these domains."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1022",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1022",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Latrodectus will post encrypted system information to the command and control server (C2) and request the download of the bot."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_8",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ],
+          [
+            34,
+            35
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware then attempts to read a hardcoded filename “update_data.dat”, decrypt it, and set C2s from that file into the global list of C2s."
+          ],
+          [
+            "The resulting RC4 encrypted data is base64 encoded and sent to the C2 in the HTTP body.",
+            "If the bot is coming from an IP that is not blocklisted and passed all other filtering, a response will be returned that, when decoded and decrypted with the global key “12345”, leads to a list of commands to be interpreted by the first command handler."
+          ],
+          [
+            "If the bot is coming from an IP that is not blocklisted and passed all other filtering, a response will be returned that, when decoded and decrypted with the global key “12345”, leads to a list of commands to be interpreted by the first command handler."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ],
+          [
+            34,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Latrodectus will post encrypted system information to the command and control server (C2) and request the download of the bot."
+          ],
+          [
+            "The resulting RC4 encrypted data is base64 encoded and sent to the C2 in the HTTP body.",
+            "If the bot is coming from an IP that is not blocklisted and passed all other filtering, a response will be returned that, when decoded and decrypted with the global key “12345”, leads to a list of commands to be interpreted by the first command handler."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware will then attempt to install itself, set an AutoRun key, and create a scheduled task for persistence."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1057",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            20,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Latrodectus resolves Windows API functions dynamically by hash, checks for debuggers present, gathers operating system information, checks running processes, and checks to make sure the computer does not have an existing Latrodectus infection running."
+          ],
+          [
+            "Latrodectus resolves Windows API functions dynamically by hash, checks for debuggers present, gathers operating system information, checks running processes, and checks to make sure the computer does not have an existing Latrodectus infection running.",
+            "The malware will then attempt to install itself, set an AutoRun key, and create a scheduled task for persistence.",
+            "Latrodectus will post encrypted system information to the command and control server (C2) and request the download of the bot.",
+            "In all the samples analyzed since the malware’s discovery, the malware always registers a mutex called “runnung” [sic].",
+            "If the mutex already exists, it indicates the host has an existing infection, and the malware will exit resulting in the new infection ending."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Latrodectus is a downloader with the objective of downloading payloads and executing arbitrary commands."
+          ],
+          [
+            "If this JavaScript was executed, it called MSIEXEC to run an MSI from a WebDAV share."
+          ],
+          [
+            "These commands check for the existence of “front” in the string, which can be seen in figure 16 to load the sysinfo shellcode."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The resulting RC4 encrypted data is base64 encoded and sent to the C2 in the HTTP body.",
+            "If the bot is coming from an IP that is not blocklisted and passed all other filtering, a response will be returned that, when decoded and decrypted with the global key “12345”, leads to a list of commands to be interpreted by the first command handler."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_1",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            20,
+            24
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Latrodectus resolves Windows API functions dynamically by hash, checks for debuggers present, gathers operating system information, checks running processes, and checks to make sure the computer does not have an existing Latrodectus infection running."
+          ],
+          [
+            "Latrodectus resolves Windows API functions dynamically by hash, checks for debuggers present, gathers operating system information, checks running processes, and checks to make sure the computer does not have an existing Latrodectus infection running.",
+            "The malware will then attempt to install itself, set an AutoRun key, and create a scheduled task for persistence.",
+            "Latrodectus will post encrypted system information to the command and control server (C2) and request the download of the bot.",
+            "In all the samples analyzed since the malware’s discovery, the malware always registers a mutex called “runnung” [sic].",
+            "If the mutex already exists, it indicates the host has an existing infection, and the malware will exit resulting in the new infection ending."
+          ],
+          [
+            "Latrodectus generates bot IDs for each unique host the malware is installed on.",
+            "Like IcedID, the bot ID is generated via the hosts’ serial ID."
+          ],
+          [
+            "These commands check for the existence of “front” in the string, which can be seen in figure 16 to load the sysinfo shellcode."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_2",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            54,
+            54
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Although Latrodectus uses domains concealed behind Cloudflare in its malware configurations, Team Cymru confirmed that many of the C2s found communicating with the T2 were the true IPs behind these domains."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_16",
+          "EDGE_21",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Latrodectus is a downloader with the objective of downloading payloads and executing arbitrary commands."
+          ],
+          [
+            "In one campaign observed on 15 December 2023, Proofpoint observed TA578 deliver the Latrodectus downloader via a DanaBot infection."
+          ],
+          [
+            "The URL then downloaded a JavaScript file from a Google Firebase URL."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Latrodectus resolves Windows API functions dynamically by hash, checks for debuggers present, gathers operating system information, checks running processes, and checks to make sure the computer does not have an existing Latrodectus infection running."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware then attempts to read a hardcoded filename “update_data.dat”, decrypt it, and set C2s from that file into the global list of C2s."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            24
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Latrodectus resolves Windows API functions dynamically by hash, checks for debuggers present, gathers operating system information, checks running processes, and checks to make sure the computer does not have an existing Latrodectus infection running.",
+            "The malware will then attempt to install itself, set an AutoRun key, and create a scheduled task for persistence.",
+            "Latrodectus will post encrypted system information to the command and control server (C2) and request the download of the bot.",
+            "In all the samples analyzed since the malware’s discovery, the malware always registers a mutex called “runnung” [sic].",
+            "If the mutex already exists, it indicates the host has an existing infection, and the malware will exit resulting in the new infection ending."
+          ],
+          [
+            "The malware will then attempt to install itself, set an AutoRun key, and create a scheduled task for persistence."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_6",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "On 20 February 2024, Proofpoint researchers observed TA578 impersonating various companies to send legal threats about alleged copyright infringement.",
+            "The actor filled out a contact form on multiple targets’ websites, with text containing unique URLs and included in the URI both the domain of the site that initiated the contact form (the target), and the name of the impersonated company (to further the legitimacy of the copyright complaint)."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_38078d5bfca9",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "popfealt[.]one/files/sysinfo.bin",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "For Example, the file “sysinfo.bin” would be downloaded from popfealt[.]one/files/sysinfo.bin."
+        ]
+      },
+      {
+        "node_id": "IOC_d42a1ba54859",
+        "node_class": "ioc",
+        "node_type": "Mutex",
+        "node_text": "runnung",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "In all the samples analyzed since the malware’s discovery, the malware always registers a mutex called “runnung” [sic]."
+        ]
+      },
+      {
+        "node_id": "IOC_f62b97976786",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "12345",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          32,
+          35
+        ],
+        "span_sentences": [
+          "Once this string is created, it is RC4 encrypted with the key “12345”.",
+          "If the bot is coming from an IP that is not blocklisted and passed all other filtering, a response will be returned that, when decoded and decrypted with the global key “12345”, leads to a list of commands to be interpreted by the first command handler."
+        ]
+      },
+      {
+        "node_id": "IOC_f65fc601502c",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "popfealt[.]one",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "For Example, the file “sysinfo.bin” would be downloaded from popfealt[.]one/files/sysinfo.bin."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0730418e8ddf",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_548f85d138f6",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_81e5de6d7e37",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_9b4374c69d53",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_aeb661db6349",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_aeb661db6349",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1022"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1057"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_b3f68f53b084",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_38078d5bfca9",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_f62b97976786",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_f65fc601502c",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

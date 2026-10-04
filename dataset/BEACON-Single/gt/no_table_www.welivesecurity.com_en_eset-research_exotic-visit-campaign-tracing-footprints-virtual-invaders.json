@@ -1,0 +1,1075 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "The eXotic Visit campaign appears to primarily target a select group of Android users in Pakistan and India."
+        ]
+      },
+      {
+        "node_id": "HL_0251d5a9c595",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GitHub",
+        "edges": [],
+        "sentence_indices": [
+          12,
+          13,
+          32,
+          33,
+          34,
+          35,
+          39
+        ],
+        "span_sentences": [
+          "Returning to ChitChat.apk and wetalk.apk: both apps contain the promised messaging functionality, but also include malicious code we have identified as the open-source XploitSPY available on GitHub.",
+          "XploitSPY is based on another open-source Android RAT called L3MON; however, it was removed from GitHub by its author.",
+          "As described in the Timeline of eXotic Visit apps section, the malicious ChitChat and WeTalk apps were distributed via dedicated websites (chitchat.ngrok[.]io and wetalk.ngrok[.]io, respectively), and hosted on GitHub (https://github[.]com/Sojal87/).",
+          "At that time, three more apps – LearnSindhi.apk, SafeChat.apk, and wechat.apk – were available from the same GitHub account; we are not aware of their distribution vector.",
+          "As of July 2023, these apps were not available for download from their GitHub repositories anymore.",
+          "However, the same GitHub account now hosts several new malicious apps available for download.",
+          "All analyzed apps contain customizations of the code from the malicious XploitSPY app available on GitHub."
+        ]
+      },
+      {
+        "node_id": "HL_07c3e8949dae",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "L3MON",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "XploitSPY is based on another open-source Android RAT called L3MON; however, it was removed from GitHub by its author."
+        ]
+      },
+      {
+        "node_id": "HL_2c3ea97d59bd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Alpha Chat",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          19,
+          37
+        ],
+        "span_sentences": [
+          "The trojanized Alpha Chat app, compared to previous versions of XploitSPY from the eXotic Visit campaign, contains a malicious code update that includes emulator detection.",
+          "The Dink Messenger and Alpha Chat apps were hosted on a dedicated website (letchitchat[.]info), from which victims were enticed into downloading and installing the app."
+        ]
+      },
+      {
+        "node_id": "HL_31ad5af7675a",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Virtual Invaders",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          6,
+          9,
+          41,
+          48,
+          51
+        ],
+        "span_sentences": [
+          "There is no indication that this campaign is linked to any known group; however, we are tracking the threat actors behind it under the moniker Virtual Invaders.",
+          "Interestingly, the implementation of the chat functionality integrated with XploitSPY is unique; we strongly believe that this chat function was developed by the Virtual Invaders group.",
+          "Defcom integrates XploitSPY code with a unique chat functionality; we believe with high level of confidence the chat functionality was created by Virtual Invaders.",
+          "Virtual Invaders use ngrok as its C&C server; the service is a cross-platform application that enables developers to expose a local development server to the internet.",
+          "We have described the eXotic Visit campaign, operated by the Virtual Invaders threat actor, which has been active since at least the end of 2021."
+        ]
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "The eXotic Visit campaign appears to primarily target a select group of Android users in Pakistan and India."
+        ]
+      },
+      {
+        "node_id": "HL_407729b8131e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Dink Messenger",
+        "edges": [],
+        "sentence_indices": [
+          15,
+          37,
+          38
+        ],
+        "span_sentences": [
+          "The same C&C address that was used by previously mentioned apps (wechat.apk and ChitChat.apk) is also used by Dink Messenger.",
+          "The Dink Messenger and Alpha Chat apps were hosted on a dedicated website (letchitchat[.]info), from which victims were enticed into downloading and installing the app.",
+          "The Dink Messenger, Sim Info, and Defcom apps had been available on Google Play until their removal by Google."
+        ]
+      },
+      {
+        "node_id": "HL_451e37727a3c",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "eXotic Visit",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          2,
+          5,
+          19,
+          26,
+          28,
+          36,
+          51
+        ],
+        "span_sentences": [
+          "We have named this campaign eXotic Visit and have tracked its activities from November 2021 through to the end of 2023.",
+          "The eXotic Visit campaign appears to primarily target a select group of Android users in Pakistan and India.",
+          "The trojanized Alpha Chat app, compared to previous versions of XploitSPY from the eXotic Visit campaign, contains a malicious code update that includes emulator detection.",
+          "With a high level of confidence, we assess that this app is a part of the eXotic Visit campaign.",
+          "Defcom is a trojanized messaging app that is part of the eXotic Visit campaign, using the same malicious code and native library to retrieve its C&C server.",
+          "All of these new apps are also part of the malicious eXotic Visit espionage campaign, due to also containing variants of the same XploitSPY code.",
+          "We have described the eXotic Visit campaign, operated by the Virtual Invaders threat actor, which has been active since at least the end of 2021."
+        ]
+      },
+      {
+        "node_id": "HL_58f0edcd1dc0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Play",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          4,
+          27,
+          38,
+          53
+        ],
+        "span_sentences": [
+          "The targeted campaign has been distributing malicious Android apps through dedicated websites and, for some time, through the Google Play store as well.",
+          "Because of the targeted nature of the campaign, the apps available on Google Play had a low number of installs; all of them have been removed from the store.",
+          "On June 21st, 2023, the malicious Defcom app was uploaded to Google Play; see Figure 7.",
+          "The Dink Messenger, Sim Info, and Defcom apps had been available on Google Play until their removal by Google.",
+          "Distribution started on dedicated websites and then even moved to the official Google Play store."
+        ]
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          4,
+          27,
+          38,
+          53
+        ],
+        "span_sentences": [
+          "The targeted campaign has been distributing malicious Android apps through dedicated websites and, for some time, through the Google Play store as well.",
+          "Because of the targeted nature of the campaign, the apps available on Google Play had a low number of installs; all of them have been removed from the store.",
+          "On June 21st, 2023, the malicious Defcom app was uploaded to Google Play; see Figure 7.",
+          "The Dink Messenger, Sim Info, and Defcom apps had been available on Google Play until their removal by Google.",
+          "Distribution started on dedicated websites and then even moved to the official Google Play store."
+        ]
+      },
+      {
+        "node_id": "HL_6dd88beb28f8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Based on VirusTotal’s in-the-wild URLs, this sample was available for download from letchitchat[.]info on February 24th, 2022."
+        ]
+      },
+      {
+        "node_id": "HL_6f082c512436",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Firebase",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          24,
+          43
+        ],
+        "span_sentences": [
+          "The C&C address is not hardcoded, as in previous cases; rather, it is returned from a Firebase server.",
+          "After its initial start, the app prompts users to create an account and simultaneously attempts to obtain device location details by querying api.ipgeolocation.io and forwarding the result to a Firebase server."
+        ]
+      },
+      {
+        "node_id": "HL_7a83293baae8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Android",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          3,
+          5,
+          10,
+          13,
+          14,
+          54
+        ],
+        "span_sentences": [
+          "ESET researchers have discovered an active espionage campaign targeting Android users with apps primarily posing as messaging services.",
+          "The targeted campaign has been distributing malicious Android apps through dedicated websites and, for some time, through the Google Play store as well.",
+          "The eXotic Visit campaign appears to primarily target a select group of Android users in Pakistan and India.",
+          "The malware also uses a native library, which is often used in Android app development for improving performance and accessing system features.",
+          "XploitSPY is based on another open-source Android RAT called L3MON; however, it was removed from GitHub by its author.",
+          "L3MON was inspired by yet another open-source Android RAT named AhMyth, with extended functionality (we covered another AhMyth-derived Android RAT in this WeLiveSecurity blogpost).",
+          "We have identified the malicious code used as a customized version of the open-source Android RAT, XploitSPY."
+        ]
+      },
+      {
+        "node_id": "HL_8734a30cce9b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ChitChat",
+        "edges": [],
+        "sentence_indices": [
+          12,
+          15,
+          32
+        ],
+        "span_sentences": [
+          "Returning to ChitChat.apk and wetalk.apk: both apps contain the promised messaging functionality, but also include malicious code we have identified as the open-source XploitSPY available on GitHub.",
+          "The same C&C address that was used by previously mentioned apps (wechat.apk and ChitChat.apk) is also used by Dink Messenger.",
+          "As described in the Timeline of eXotic Visit apps section, the malicious ChitChat and WeTalk apps were distributed via dedicated websites (chitchat.ngrok[.]io and wetalk.ngrok[.]io, respectively), and hosted on GitHub (https://github[.]com/Sojal87/)."
+        ]
+      },
+      {
+        "node_id": "HL_8889f579b671",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Sim Info",
+        "edges": [],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The Dink Messenger, Sim Info, and Defcom apps had been available on Google Play until their removal by Google."
+        ]
+      },
+      {
+        "node_id": "HL_8fddd293a54b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "XploitSPY",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          1,
+          7,
+          12,
+          18,
+          36,
+          39,
+          54
+        ],
+        "span_sentences": [
+          "While these apps offer functional services as bait, they are bundled with open-source XploitSPY malware.",
+          "Apps that contain XploitSPY can extract contact lists and files, get the device’s GPS location and the names of files listed in specific directories related to the camera, downloads, and various messaging apps such as Telegram and WhatsApp.",
+          "Returning to ChitChat.apk and wetalk.apk: both apps contain the promised messaging functionality, but also include malicious code we have identified as the open-source XploitSPY available on GitHub.",
+          "On top of messaging functionality, the attackers added malicious code based on XploitSPY.",
+          "All of these new apps are also part of the malicious eXotic Visit espionage campaign, due to also containing variants of the same XploitSPY code.",
+          "All analyzed apps contain customizations of the code from the malicious XploitSPY app available on GitHub.",
+          "We have identified the malicious code used as a customized version of the open-source Android RAT, XploitSPY."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET researchers have discovered an active espionage campaign targeting Android users with apps primarily posing as messaging services."
+        ]
+      },
+      {
+        "node_id": "HL_aa6029c7dd9c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AhMyth",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "L3MON was inspired by yet another open-source Android RAT named AhMyth, with extended functionality (we covered another AhMyth-derived Android RAT in this WeLiveSecurity blogpost)."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Apps that contain XploitSPY can extract contact lists and files, get the device’s GPS location and the names of files listed in specific directories related to the camera, downloads, and various messaging apps such as Telegram and WhatsApp."
+        ]
+      },
+      {
+        "node_id": "HL_aff4f951ca1c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ngrok",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          48,
+          49,
+          50
+        ],
+        "span_sentences": [
+          "Virtual Invaders use ngrok as its C&C server; the service is a cross-platform application that enables developers to expose a local development server to the internet.",
+          "ngrok can create a tunnel that connects using ngrok servers to a local machine.",
+          "ngrok allows its users – so, the attackers in this case – to reserve a particular IP address or redirect the victim to the attacker’s own domain on a specific port."
+        ]
+      },
+      {
+        "node_id": "HL_cab10105ec52",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WhatsApp",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Apps that contain XploitSPY can extract contact lists and files, get the device’s GPS location and the names of files listed in specific directories related to the camera, downloads, and various messaging apps such as Telegram and WhatsApp."
+        ]
+      },
+      {
+        "node_id": "HL_cb1faa264577",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "WeLiveSecurity",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "L3MON was inspired by yet another open-source Android RAT named AhMyth, with extended functionality (we covered another AhMyth-derived Android RAT in this WeLiveSecurity blogpost)."
+        ]
+      },
+      {
+        "node_id": "HL_d5ac1600ca6e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WeTalk",
+        "edges": [],
+        "sentence_indices": [
+          12,
+          32
+        ],
+        "span_sentences": [
+          "Returning to ChitChat.apk and wetalk.apk: both apps contain the promised messaging functionality, but also include malicious code we have identified as the open-source XploitSPY available on GitHub.",
+          "As described in the Timeline of eXotic Visit apps section, the malicious ChitChat and WeTalk apps were distributed via dedicated websites (chitchat.ngrok[.]io and wetalk.ngrok[.]io, respectively), and hosted on GitHub (https://github[.]com/Sojal87/)."
+        ]
+      },
+      {
+        "node_id": "HL_e5193a0d6e35",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Defcom",
+        "edges": [],
+        "sentence_indices": [
+          27,
+          28,
+          38,
+          41
+        ],
+        "span_sentences": [
+          "On June 21st, 2023, the malicious Defcom app was uploaded to Google Play; see Figure 7.",
+          "Defcom is a trojanized messaging app that is part of the eXotic Visit campaign, using the same malicious code and native library to retrieve its C&C server.",
+          "The Dink Messenger, Sim Info, and Defcom apps had been available on Google Play until their removal by Google.",
+          "Defcom integrates XploitSPY code with a unique chat functionality; we believe with high level of confidence the chat functionality was created by Virtual Invaders."
+        ]
+      },
+      {
+        "node_id": "HL_f4f363c94516",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telco DB",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "On August 15th, 2022, the Telco DB app (with the package name com.infinitetechnology.telcodb), which claims to provide information about the owners of phone numbers, was uploaded to an alternative app store; see Figure 6."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Apps that contain XploitSPY can extract contact lists and files, get the device’s GPS location and the names of files listed in specific directories related to the camera, downloads, and various messaging apps such as Telegram and WhatsApp.",
+            "If certain filenames are identified as being of interest, they can subsequently be extracted from these directories via an additional command from the command and control (C&C) server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_6",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ],
+          [
+            19,
+            23
+          ],
+          [
+            45,
+            45
+          ],
+          [
+            56,
+            56
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware also uses a native library, which is often used in Android app development for improving performance and accessing system features.",
+            "However, in this case, the library is used to hide sensitive information, like the addresses of the C&C servers, making it harder for security tools to analyze the app."
+          ],
+          [
+            "The trojanized Alpha Chat app, compared to previous versions of XploitSPY from the eXotic Visit campaign, contains a malicious code update that includes emulator detection.",
+            "If this app detects that it is running in an emulator, then it uses a fake C&C address instead of revealing the real one, as shown in Figure 3.",
+            "This should most likely prevent automated malware sandboxes, while performing dynamic analysis, from identifying the actual C&C server.",
+            "On August 15th, 2022, the Telco DB app (with the package name com.infinitetechnology.telcodb), which claims to provide information about the owners of phone numbers, was uploaded to an alternative app store; see Figure 6.",
+            "This app has the same malicious code, a newly added emulator check with fake C&C address redirection, and an additional C&C server for file exfiltration."
+          ],
+          [
+            "defcome-lib.so’s purpose is to hide sensitive information such as C&C servers from static app analysis."
+          ],
+          [
+            "The campaign has evolved over the years to include obfuscation, emulator detection, and hiding of C&C addresses."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Apps that contain XploitSPY can extract contact lists and files, get the device’s GPS location and the names of files listed in specific directories related to the camera, downloads, and various messaging apps such as Telegram and WhatsApp.",
+            "If certain filenames are identified as being of interest, they can subsequently be extracted from these directories via an additional command from the command and control (C&C) server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_3",
+          "EDGE_10",
+          "EDGE_16",
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            20,
+            24
+          ],
+          [
+            41,
+            43
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The same C&C address that was used by previously mentioned apps (wechat.apk and ChitChat.apk) is also used by Dink Messenger."
+          ],
+          [
+            "If this app detects that it is running in an emulator, then it uses a fake C&C address instead of revealing the real one, as shown in Figure 3.",
+            "This should most likely prevent automated malware sandboxes, while performing dynamic analysis, from identifying the actual C&C server.",
+            "On August 15th, 2022, the Telco DB app (with the package name com.infinitetechnology.telcodb), which claims to provide information about the owners of phone numbers, was uploaded to an alternative app store; see Figure 6.",
+            "This app has the same malicious code, a newly added emulator check with fake C&C address redirection, and an additional C&C server for file exfiltration.",
+            "The C&C address is not hardcoded, as in previous cases; rather, it is returned from a Firebase server."
+          ],
+          [
+            "Defcom integrates XploitSPY code with a unique chat functionality; we believe with high level of confidence the chat functionality was created by Virtual Invaders.",
+            "This applies to all of the other messaging apps that have XploitSPY included.",
+            "After its initial start, the app prompts users to create an account and simultaneously attempts to obtain device location details by querying api.ipgeolocation.io and forwarding the result to a Firebase server."
+          ],
+          [
+            "Virtual Invaders use ngrok as its C&C server; the service is a cross-platform application that enables developers to expose a local development server to the internet."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Apps that contain XploitSPY can extract contact lists and files, get the device’s GPS location and the names of files listed in specific directories related to the camera, downloads, and various messaging apps such as Telegram and WhatsApp."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_4",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Virtual Invaders use ngrok as its C&C server; the service is a cross-platform application that enables developers to expose a local development server to the internet."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_5",
+          "EDGE_11",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            24
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If this app detects that it is running in an emulator, then it uses a fake C&C address instead of revealing the real one, as shown in Figure 3.",
+            "This should most likely prevent automated malware sandboxes, while performing dynamic analysis, from identifying the actual C&C server.",
+            "On August 15th, 2022, the Telco DB app (with the package name com.infinitetechnology.telcodb), which claims to provide information about the owners of phone numbers, was uploaded to an alternative app store; see Figure 6.",
+            "This app has the same malicious code, a newly added emulator check with fake C&C address redirection, and an additional C&C server for file exfiltration.",
+            "The C&C address is not hardcoded, as in previous cases; rather, it is returned from a Firebase server."
+          ],
+          [
+            "As described in the Timeline of eXotic Visit apps section, the malicious ChitChat and WeTalk apps were distributed via dedicated websites (chitchat.ngrok[.]io and wetalk.ngrok[.]io, respectively), and hosted on GitHub (https://github[.]com/Sojal87/)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Initial access to the device is gained by tricking a potential victim into installing a fake, but functional, app."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1406",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1406",
+        "edges": [
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware also uses a native library, which is often used in Android app development for improving performance and accessing system features.",
+            "However, in this case, the library is used to hide sensitive information, like the addresses of the C&C servers, making it harder for security tools to analyze the app.",
+            "Returning to ChitChat.apk and wetalk.apk: both apps contain the promised messaging functionality, but also include malicious code we have identified as the open-source XploitSPY available on GitHub."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1430",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1430",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Apps that contain XploitSPY can extract contact lists and files, get the device’s GPS location and the names of files listed in specific directories related to the camera, downloads, and various messaging apps such as Telegram and WhatsApp."
+          ],
+          [
+            "After its initial start, the app prompts users to create an account and simultaneously attempts to obtain device location details by querying api.ipgeolocation.io and forwarding the result to a Firebase server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1476",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1476",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "ESET researchers have discovered an active espionage campaign targeting Android users with apps primarily posing as messaging services."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [
+          "EDGE_1",
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            56,
+            56
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The campaign has evolved over the years to include obfuscation, emulator detection, and hiding of C&C addresses."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1568",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1568",
+        "edges": [
+          "EDGE_2",
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            56,
+            56
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The campaign has evolved over the years to include obfuscation, emulator detection, and hiding of C&C addresses."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_16fb8cca58f6",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "LearnSindhi.apk",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "At that time, three more apps – LearnSindhi.apk, SafeChat.apk, and wechat.apk – were available from the same GitHub account; we are not aware of their distribution vector."
+        ]
+      },
+      {
+        "node_id": "IOC_20bdce497594",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "letchitchat[.]info",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          16,
+          37
+        ],
+        "span_sentences": [
+          "Based on VirusTotal’s in-the-wild URLs, this sample was available for download from letchitchat[.]info on February 24th, 2022.",
+          "The Dink Messenger and Alpha Chat apps were hosted on a dedicated website (letchitchat[.]info), from which victims were enticed into downloading and installing the app."
+        ]
+      },
+      {
+        "node_id": "IOC_454400ace2a7",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "chitchat.ngrok[.]io",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "As described in the Timeline of eXotic Visit apps section, the malicious ChitChat and WeTalk apps were distributed via dedicated websites (chitchat.ngrok[.]io and wetalk.ngrok[.]io, respectively), and hosted on GitHub (https://github[.]com/Sojal87/)."
+        ]
+      },
+      {
+        "node_id": "IOC_494a1652c9db",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "wetalk.ngrok[.]io",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "As described in the Timeline of eXotic Visit apps section, the malicious ChitChat and WeTalk apps were distributed via dedicated websites (chitchat.ngrok[.]io and wetalk.ngrok[.]io, respectively), and hosted on GitHub (https://github[.]com/Sojal87/)."
+        ]
+      },
+      {
+        "node_id": "IOC_5c302f6bd468",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "wechat.apk",
+        "edges": [],
+        "sentence_indices": [
+          15,
+          33
+        ],
+        "span_sentences": [
+          "The same C&C address that was used by previously mentioned apps (wechat.apk and ChitChat.apk) is also used by Dink Messenger.",
+          "At that time, three more apps – LearnSindhi.apk, SafeChat.apk, and wechat.apk – were available from the same GitHub account; we are not aware of their distribution vector."
+        ]
+      },
+      {
+        "node_id": "IOC_66fc2324c069",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "wetalk.apk",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Returning to ChitChat.apk and wetalk.apk: both apps contain the promised messaging functionality, but also include malicious code we have identified as the open-source XploitSPY available on GitHub."
+        ]
+      },
+      {
+        "node_id": "IOC_a0a6cbf51384",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "api.ipgeolocation.io",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "After its initial start, the app prompts users to create an account and simultaneously attempts to obtain device location details by querying api.ipgeolocation.io and forwarding the result to a Firebase server."
+        ]
+      },
+      {
+        "node_id": "IOC_bf75d7748bbc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SafeChat.apk",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "At that time, three more apps – LearnSindhi.apk, SafeChat.apk, and wechat.apk – were available from the same GitHub account; we are not aware of their distribution vector."
+        ]
+      },
+      {
+        "node_id": "IOC_d3a61889a482",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ChitChat.apk",
+        "edges": [],
+        "sentence_indices": [
+          12,
+          15
+        ],
+        "span_sentences": [
+          "Returning to ChitChat.apk and wetalk.apk: both apps contain the promised messaging functionality, but also include malicious code we have identified as the open-source XploitSPY available on GitHub.",
+          "The same C&C address that was used by previously mentioned apps (wechat.apk and ChitChat.apk) is also used by Dink Messenger."
+        ]
+      },
+      {
+        "node_id": "IOC_e0e066a639fa",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "zee.xylonn[.]com",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "This C&C domain (zee.xylonn[.]com) was registered on June 2nd, 2023."
+        ]
+      },
+      {
+        "node_id": "IOC_ed006cd0fafc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "defcome-lib.so",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "defcome-lib.so’s purpose is to hide sensitive information such as C&C servers from static app analysis."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_2c3ea97d59bd",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_2c3ea97d59bd",
+      "node_v": "TTP_T1568"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_31ad5af7675a",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_31ad5af7675a",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_31ad5af7675a",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_451e37727a3c",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_451e37727a3c",
+      "node_v": "TTP_T1476"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_451e37727a3c",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_451e37727a3c",
+      "node_v": "TTP_T1568"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_8fddd293a54b",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_8fddd293a54b",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_8fddd293a54b",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_8fddd293a54b",
+      "node_v": "TTP_T1406"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_aff4f951ca1c",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_aff4f951ca1c",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_20bdce497594",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_454400ace2a7",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_494a1652c9db",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_a0a6cbf51384",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_e0e066a639fa",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_ed006cd0fafc",
+      "node_v": "TTP_T1027"
+    }
+  ]
+}

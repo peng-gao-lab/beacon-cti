@@ -1,0 +1,3363 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "edges": [],
+        "source": {
+          "United States_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              11,
+              "The BlackCat organization, including its affiliates, has historically focused on targeting victims in the United States."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_368df917d1ab",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BlackCat",
+        "edges": [
+          "EDGE_08a388c806de",
+          "EDGE_0e4632bc59f4",
+          "EDGE_1d337604f37a",
+          "EDGE_3b1ecaaaae8b",
+          "EDGE_49cf0d99746e",
+          "EDGE_4d03f3bf0aa5",
+          "EDGE_6aa72b6e3eed",
+          "EDGE_7d47ae75e9b3",
+          "EDGE_7f8db812b662",
+          "EDGE_908943a5e8e0",
+          "EDGE_bd0e22b07435",
+          "EDGE_ca2d6efc0a64",
+          "EDGE_d211c84acf01",
+          "EDGE_f27476a8323c",
+          "EDGE_f8a971fb8cbb"
+        ],
+        "source": {
+          "BlackCat_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              0,
+              "BlackCat operators recently announced new updates to their tooling, including a utility called Munchkin that allows attackers to propagate the BlackCat payload to remote machines and shares on a victim organization network."
+            ],
+            [
+              1,
+              "For the past two years, the BlackCat ransomware operators have continued to evolve and iterate their tooling as part of their ransomware-as-a-service (RaaS) business model."
+            ],
+            [
+              4,
+              "This publication details how this new utility works and sheds further light on the continued tactics used by BlackCat threat actors."
+            ],
+            [
+              6,
+              "The BlackCat ransomware threat was first made public when it surfaced in November 2021."
+            ],
+            [
+              11,
+              "The BlackCat organization, including its affiliates, has historically focused on targeting victims in the United States."
+            ],
+            [
+              12,
+              "However, this focus has greatly broadened over time with increased popularity, and BlackCat has more recently been observed targeting victims worldwide across numerous industries and verticals."
+            ],
+            [
+              19,
+              "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant)."
+            ],
+            [
+              47,
+              "Malware authors, especially those behind the BlackCat ransomware threat, continue to iterate and evolve their techniques and tactics."
+            ]
+          ],
+          "BlackCat_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              0,
+              "The attack was facilitated by a known threat actor – BlackCat (ALPHV) – and employed a method that has become almost standard: leveraging access from third parties."
+            ],
+            [
+              56,
+              "Several weeks later, the files stolen from the victim were published on BlackCat’s leak site on the dark web."
+            ],
+            [
+              57,
+              "The BlackCat ransomware group surfaced in November 2021, and has since become one of the most sophisticated and active threat groups, targeting high-profile multi-sector and worldwide organizations."
+            ],
+            [
+              58,
+              "Like other ransomware threat actors, BlackCat employs a Ransomware-as-a-Service business model, allowing its affiliates to leverage their tooling and infrastructure for ransomware and extortion attacks."
+            ]
+          ],
+          "ALPHV_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              0,
+              "The attack was facilitated by a known threat actor – BlackCat (ALPHV) – and employed a method that has become almost standard: leveraging access from third parties."
+            ]
+          ],
+          "ALPHV Blackcat actors_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              1,
+              "ALPHV Blackcat actors have since employed improvised communication methods by creating victim-specific emails to notify of the initial compromise."
+            ]
+          ]
+        },
+        "alias": [
+          "ALPHV",
+          "ALPHV Blackcat actors"
+        ]
+      },
+      {
+        "node_id": "HL_4d801cc36fa6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirtualBox",
+        "edges": [
+          "EDGE_6a3ef6d5bab7"
+        ],
+        "source": {
+          "VirtualBox_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              25,
+              "The Munchkin utility is delivered as an ISO file, which is loaded in a newly installed instance of the VirtualBox virtualization product."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_713d3f89a9d4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "tmux",
+        "edges": [
+          "EDGE_a95a14b4ad1f"
+        ],
+        "source": {
+          "tmux_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              28,
+              "It subsequently generates a new terminal session via the built-in tmux utility, which is used to execute the malware binary named controller."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a74ea5eecea3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Unit 42",
+        "edges": [],
+        "source": {
+          "Unit 42_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              2,
+              "As part of a recent investigation, Unit 42 researchers have acquired an instance of Munchkin that is unique, in that it is loaded in a customized Alpine virtual machine (VM)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_be7937a9dcd7",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Munchkin",
+        "edges": [
+          "EDGE_e783ebbbc3b9",
+          "EDGE_fba22fb101d7",
+          "EDGE_fc3280d4593a"
+        ],
+        "source": {
+          "Munchkin_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              0,
+              "BlackCat operators recently announced new updates to their tooling, including a utility called Munchkin that allows attackers to propagate the BlackCat payload to remote machines and shares on a victim organization network."
+            ],
+            [
+              2,
+              "As part of a recent investigation, Unit 42 researchers have acquired an instance of Munchkin that is unique, in that it is loaded in a customized Alpine virtual machine (VM)."
+            ],
+            [
+              19,
+              "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant)."
+            ],
+            [
+              25,
+              "The Munchkin utility is delivered as an ISO file, which is loaded in a newly installed instance of the VirtualBox virtualization product."
+            ],
+            [
+              48,
+              "This is fully apparent in their recent release of Munchkin, which they’ve developed and provided to their affiliates."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f4a13e431f72",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Sphynx",
+        "edges": [
+          "EDGE_9d501764a808"
+        ],
+        "source": {
+          "Sphynx_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              19,
+              "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant)."
+            ]
+          ],
+          "ALPHV Blackcat Ransomware 2.0 Sphynx_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              4,
+              "In February 2023, ALPHV Blackcat administrators announced the ALPHV Blackcat Ransomware 2.0 Sphynx update, which was rewritten to provide additional features to affiliates, such as better defense evasion and additional tooling."
+            ]
+          ]
+        },
+        "alias": [
+          "ALPHV Blackcat Ransomware 2.0 Sphynx"
+        ]
+      },
+      {
+        "node_id": "HL_ffd6164ff34f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Alpine",
+        "edges": [
+          "EDGE_b4587847a603"
+        ],
+        "source": {
+          "Alpine_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              26,
+              "This ISO file represents a customized implementation of the Alpine OS, which threat operators likely chose due to its small footprint."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0607bb9bb168",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Dropbox",
+        "edges": [
+          "EDGE_e79d0af4cfa1"
+        ],
+        "source": {
+          "Dropbox_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              18,
+              "Then Mega.nz or Dropbox are used to move, exfiltrate, and/or download victim data."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_10f4db42cf03",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Plink",
+        "edges": [
+          "EDGE_6d99a22bd4fb",
+          "EDGE_b3092cd75b0a"
+        ],
+        "source": {
+          "Plink_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              12,
+              "After gaining access to networks, they use legitimate remote access and tunneling tools, such as Plink and Ngrok [S0508]."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1cc8a7cd6345",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Metasploit",
+        "edges": [],
+        "source": {
+          "Metasploit_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              16,
+              "To evade detection, affiliates employ allowlisted applications such as Metasploit."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3fdf4c0217aa",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Mega sync",
+        "edges": [
+          "EDGE_27b521647098"
+        ],
+        "source": {
+          "Mega sync_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              10,
+              "After gaining access to a victim network, ALPHV Blackcat affiliates deploy remote access software such as AnyDesk, Mega sync, and Splashtop in preparation of data exfiltration."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_5241d6a32f6c"
+        ],
+        "source": {
+          "Windows_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              5,
+              "This ALPHV Blackcat update has the capability to encrypt both Windows and Linux devices, and VMWare instances."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_45f04cb20e48",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Splashtop",
+        "edges": [
+          "EDGE_4b738fb16ce6"
+        ],
+        "source": {
+          "Splashtop_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              10,
+              "After gaining access to a victim network, ALPHV Blackcat affiliates deploy remote access software such as AnyDesk, Mega sync, and Splashtop in preparation of data exfiltration."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_572479f657da",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Mega.nz",
+        "edges": [
+          "EDGE_bb07f2bac822"
+        ],
+        "source": {
+          "Mega.nz_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              18,
+              "Then Mega.nz or Dropbox are used to move, exfiltrate, and/or download victim data."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_8402a231d9b1",
+          "EDGE_183c041e40e9",
+          "EDGE_9e3df188a1b7",
+          "EDGE_f19df6c04452"
+        ],
+        "source": {
+          "Cobalt Strike_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              13,
+              "ALPHV Blackcat affiliates claim to use Brute Ratel C4 [S1063] and Cobalt Strike [S1054] as beacons to command and control servers."
+            ]
+          ],
+          "Cobalt Strike_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              11,
+              "The threat actor used several remote code execution techniques and the Cobalt Strike platform, to move laterally between the victim’s on-premises domains and Azure environment through RDP and tunneled connections."
+            ],
+            [
+              24,
+              "These included executing PowerShell commands, attempting a privilege escalation attack, using a password-dumping tool, and deploying Cobalt Strike."
+            ],
+            [
+              25,
+              "Several Cobalt Strike framework capabilities were utilized by the threat actor throughout the course of the attack, including RDP tunnelling for lateral movement, and process injection for the purposes of execution and evasion."
+            ],
+            [
+              32,
+              "As a result, Cobalt Strike Beacon was installed, injected itself into ‘dfrgui.exe’, and communicated with a Cloudflare C2 domain ‘victorianshow[.]com’; this communication was crafted to look like the uploading and downloading of images."
+            ],
+            [
+              36,
+              "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed."
+            ],
+            [
+              45,
+              "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_78e1db397d80",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Brute Ratel C4",
+        "edges": [
+          "EDGE_9cc8c26cbc32"
+        ],
+        "source": {
+          "Brute Ratel C4_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              13,
+              "ALPHV Blackcat affiliates claim to use Brute Ratel C4 [S1063] and Cobalt Strike [S1054] as beacons to command and control servers."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_82fc5147766f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CISA",
+        "edges": [],
+        "source": {
+          "CISA_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              0,
+              "The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the Department of Health and Human Services (HHS) are releasing this joint CSA to disseminate known IOCs and TTPs associated with the ALPHV Blackcat ransomware as a service (RaaS) identified through FBI investigations as recently as February 2024."
+            ]
+          ],
+          "Cybersecurity and Infrastructure Security Agency_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              0,
+              "The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the Department of Health and Human Services (HHS) are releasing this joint CSA to disseminate known IOCs and TTPs associated with the ALPHV Blackcat ransomware as a service (RaaS) identified through FBI investigations as recently as February 2024."
+            ]
+          ]
+        },
+        "alias": [
+          "Cybersecurity and Infrastructure Security Agency"
+        ]
+      },
+      {
+        "node_id": "HL_ac693b8bf6ff",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Evilginx2",
+        "edges": [
+          "EDGE_c036fc82ef1f"
+        ],
+        "source": {
+          "Evilginx2_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              14,
+              "ALPHV Blackcat affiliates use the open source adversary-in-the-middle attack [T1557] framework Evilginx2, which allows them to obtain multifactor authentication (MFA) credentials, login credentials, and session cookies."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_aff4f951ca1c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Ngrok",
+        "edges": [
+          "EDGE_31e0ac4addd7",
+          "EDGE_804ba147a9dd"
+        ],
+        "source": {
+          "Ngrok_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              12,
+              "After gaining access to networks, they use legitimate remote access and tunneling tools, such as Plink and Ngrok [S0508]."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b32d1902bb1c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AnyDesk",
+        "edges": [
+          "EDGE_04d58efdd2e4"
+        ],
+        "source": {
+          "AnyDesk_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              10,
+              "After gaining access to a victim network, ALPHV Blackcat affiliates deploy remote access software such as AnyDesk, Mega sync, and Splashtop in preparation of data exfiltration."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c0ea5e1a232f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMWare",
+        "edges": [
+          "EDGE_766ad155ff33"
+        ],
+        "source": {
+          "VMWare_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              5,
+              "This ALPHV Blackcat update has the capability to encrypt both Windows and Linux devices, and VMWare instances."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c3c00bd24dee",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Tox",
+        "edges": [
+          "EDGE_cacfcc4a6a10"
+        ],
+        "source": {
+          "Tox_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              22,
+              "After exfiltrating and/or encrypting data, ALPHV Blackcat affiliates communicate with victims via TOR [S0183], Tox, email, or encrypted applications."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ca97c8a2b9a4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Federal Bureau of Investigation",
+        "edges": [],
+        "source": {
+          "Federal Bureau of Investigation_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              0,
+              "The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the Department of Health and Human Services (HHS) are releasing this joint CSA to disseminate known IOCs and TTPs associated with the ALPHV Blackcat ransomware as a service (RaaS) identified through FBI investigations as recently as February 2024."
+            ]
+          ],
+          "FBI_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              0,
+              "The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the Department of Health and Human Services (HHS) are releasing this joint CSA to disseminate known IOCs and TTPs associated with the ALPHV Blackcat ransomware as a service (RaaS) identified through FBI investigations as recently as February 2024."
+            ]
+          ]
+        },
+        "alias": [
+          "FBI"
+        ]
+      },
+      {
+        "node_id": "HL_d072381029c7",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "TOR",
+        "edges": [
+          "EDGE_41a6e38331d1"
+        ],
+        "source": {
+          "TOR_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              22,
+              "After exfiltrating and/or encrypting data, ALPHV Blackcat affiliates communicate with victims via TOR [S0183], Tox, email, or encrypted applications."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d2d6b57c6f27",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "STONESTOP",
+        "edges": [],
+        "source": {
+          "STONESTOP_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              20,
+              "According to public reporting, affiliates have additionally used POORTRY and STONESTOP to terminate security processes."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d4f44c91ede9",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "healthcare sector",
+        "edges": [],
+        "source": {
+          "healthcare sector_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              2,
+              "Since mid-December 2023, of the nearly 70 leaked victims, the healthcare sector has been the most commonly victimized."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e8e6423818e9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "POORTRY",
+        "edges": [],
+        "source": {
+          "POORTRY_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              20,
+              "According to public reporting, affiliates have additionally used POORTRY and STONESTOP to terminate security processes."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "edges": [
+          "EDGE_e0059dabd013"
+        ],
+        "source": {
+          "Linux_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              5,
+              "This ALPHV Blackcat update has the capability to encrypt both Windows and Linux devices, and VMWare instances."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f5ac9ba943f9",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "HHS",
+        "edges": [],
+        "source": {
+          "HHS_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              0,
+              "The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the Department of Health and Human Services (HHS) are releasing this joint CSA to disseminate known IOCs and TTPs associated with the ALPHV Blackcat ransomware as a service (RaaS) identified through FBI investigations as recently as February 2024."
+            ]
+          ],
+          "Department of Health and Human Services_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              0,
+              "The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the Department of Health and Human Services (HHS) are releasing this joint CSA to disseminate known IOCs and TTPs associated with the ALPHV Blackcat ransomware as a service (RaaS) identified through FBI investigations as recently as February 2024."
+            ]
+          ]
+        },
+        "alias": [
+          "Department of Health and Human Services"
+        ]
+      },
+      {
+        "node_id": "HL_076a04b3efbb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "MikroTik router",
+        "edges": [
+          "EDGE_ac0c0cd59c96"
+        ],
+        "source": {
+          "MikroTik router_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              46,
+              "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0fe717564f9b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Stowaway",
+        "edges": [
+          "EDGE_7a5fbb6de1e9",
+          "EDGE_82931b1b075c"
+        ],
+        "source": {
+          "Stowaway_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              39,
+              "Several executions of the Stowaway proxy tool were observed in the network under different names, such as ‘vhd.exe’, ‘vga.exe’ and ‘hhd.exe’."
+            ],
+            [
+              40,
+              "Stowaway is an open-source tool used for creation of a chained proxy connection between a series of hosts; when used with a single origin host, it enables remote access the entire network."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44b3459204b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Azure",
+        "edges": [
+          "EDGE_afd720af8d0f",
+          "EDGE_d2641edfb5f3"
+        ],
+        "source": {
+          "Azure_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              4,
+              "What made this situation even more complex is that the attacker compromised two different environments: on-premises and Azure."
+            ],
+            [
+              11,
+              "The threat actor used several remote code execution techniques and the Cobalt Strike platform, to move laterally between the victim’s on-premises domains and Azure environment through RDP and tunneled connections."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_49fa04070cb5",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Rclone",
+        "edges": [
+          "EDGE_14978e43da8b",
+          "EDGE_56289abe3e0c"
+        ],
+        "source": {
+          "Rclone_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              14,
+              "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’."
+            ],
+            [
+              41,
+              "During the next three days, the threat actor attempted to exfiltrate data from several different hosts by utilizing Rclone, an open-source tool used for syncing files and folders to and from cloud storage providers."
+            ],
+            [
+              51,
+              "The hash of the executable indicates that this file was actually an ‘Rclone’ executable."
+            ],
+            [
+              53,
+              "An ‘Rclone’ configuration file retrieved from a compromised server indicated the use of the ‘IDrive’ service, while a failed connection attempt to the ‘pCloud.com’ service was identified on another server."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "edges": [
+          "EDGE_04a4a0dd87d8",
+          "EDGE_d234dbcd5664"
+        ],
+        "source": {
+          "Cloudflare_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              29,
+              "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+            ],
+            [
+              32,
+              "As a result, Cobalt Strike Beacon was installed, injected itself into ‘dfrgui.exe’, and communicated with a Cloudflare C2 domain ‘victorianshow[.]com’; this communication was crafted to look like the uploading and downloading of images."
+            ],
+            [
+              45,
+              "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_601bdcf4b2fb",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "nslookup",
+        "edges": [
+          "EDGE_80f3764dac84"
+        ],
+        "source": {
+          "nslookup_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              36,
+              "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "edges": [],
+        "source": {
+          "Russia_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              46,
+              "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "edges": [
+          "EDGE_b303468618f8",
+          "EDGE_d8df5cb44939"
+        ],
+        "source": {
+          "Active Directory_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              35,
+              "The threat actor also executed a Kerberoasting attack in order to retrieve password hashes from the Active Directory."
+            ],
+            [
+              49,
+              "The file was identified as ‘ADRecon’, an open-source PowerShell tool specifically designed to gather extensive information about Active Directory (AD) environments, including ACLs, DNS zones, BitLocker recovery keys, LAPS passwords, Domain accounts, and SPN credential hashes."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9b4af12b449a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Wasabi",
+        "edges": [
+          "EDGE_13d6ce1e87dc",
+          "EDGE_a230f9ce093a"
+        ],
+        "source": {
+          "Wasabi_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              14,
+              "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_0614f566784c",
+          "EDGE_fedc2391e361",
+          "EDGE_ff6275ff963c"
+        ],
+        "source": {
+          "PowerShell_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              24,
+              "These included executing PowerShell commands, attempting a privilege escalation attack, using a password-dumping tool, and deploying Cobalt Strike."
+            ],
+            [
+              28,
+              "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+            ],
+            [
+              31,
+              "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’."
+            ],
+            [
+              47,
+              "Evidence of this execution was an obfuscated PowerShell script named ‘C:\\osit\\r.ps1’ that was found on a local server."
+            ],
+            [
+              48,
+              "Although the file no longer existed after execution – presumably it was deleted by the threat actor – by analysing the PowerShell logs, it was possible to recover and decode the content of the file."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ba978495bfed",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ADRecon",
+        "edges": [],
+        "source": {
+          "ADRecon_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              49,
+              "The file was identified as ‘ADRecon’, an open-source PowerShell tool specifically designed to gather extensive information about Active Directory (AD) environments, including ACLs, DNS zones, BitLocker recovery keys, LAPS passwords, Domain accounts, and SPN credential hashes."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e65338ef3309",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AccountRestore",
+        "edges": [
+          "EDGE_1097f24bbc5b"
+        ],
+        "source": {
+          "AccountRestore_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              34,
+              "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_fc1fc8b0d0af",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "IDrive",
+        "edges": [
+          "EDGE_be4176408eef"
+        ],
+        "source": {
+          "IDrive_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              53,
+              "An ‘Rclone’ configuration file retrieved from a compromised server indicated the use of the ‘IDrive’ service, while a failed connection attempt to the ‘pCloud.com’ service was identified on another server."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f0e52b427a11",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ALPHV Blackcat ransomware as a service (RaaS)",
+        "edges": [],
+        "source": {
+          "ALPHV Blackcat ransomware as a service (RaaS)_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": [
+            [
+              0,
+              "The Federal Bureau of Investigation (FBI), the Cybersecurity and Infrastructure Security Agency (CISA), and the Department of Health and Human Services (HHS) are releasing this joint CSA to disseminate known IOCs and TTPs associated with the ALPHV Blackcat ransomware as a service (RaaS) identified through FBI investigations as recently as February 2024."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1003",
+        "ttp_id": "T1003",
+        "best_span_sentences_list": [
+          [
+            "Attackers can use many of the Python scripts above for lateral movement, password dumping and further execution of malware on the victim network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_fba22fb101d7",
+          "EDGE_4d03f3bf0aa5",
+          "EDGE_b303468618f8"
+        ],
+        "source": {
+          "TTP:T1003_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": {
+            "best_span_ranges": [
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Attackers can use many of the Python scripts above for lateral movement, password dumping and further execution of malware on the victim network."
+              ]
+            ]
+          },
+          "TTP:T1003_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The actors also obtain passwords from the domain controller, local network, and deleted backup servers to move laterally throughout the network [T1555]."
+              ]
+            ]
+          },
+          "TTP:T1003_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                23,
+                24
+              ],
+              [
+                33,
+                35
+              ],
+              [
+                38,
+                38
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "During the RDP session, the threat actor conducted the first successful malicious activities in the targeted network.",
+                "These included executing PowerShell commands, attempting a privilege escalation attack, using a password-dumping tool, and deploying Cobalt Strike."
+              ],
+              [
+                "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+                "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords.",
+                "The threat actor also executed a Kerberoasting attack in order to retrieve password hashes from the Active Directory."
+              ],
+              [
+                "Following that, the threat actor attempted to save the Security Account Manager (SAM) registry hive, which stores credentials and account information for local users."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Over time, threat operators updated the malware family to obfuscate this underlying configuration."
+          ],
+          [
+            "Upon execution, the controller will initially decrypt numerous strings using a unique single-byte XOR operation.",
+            "After the strings are decrypted, the threat will perform basic checks to ensure that the expected configuration and payload files reside within the /app directory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            34,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_0614f566784c",
+          "EDGE_d211c84acf01",
+          "EDGE_f0e27ceb6413"
+        ],
+        "source": {
+          "TTP:T1027_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ],
+              [
+                34,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Over time, threat operators updated the malware family to obfuscate this underlying configuration."
+              ],
+              [
+                "Upon execution, the controller will initially decrypt numerous strings using a unique single-byte XOR operation.",
+                "After the strings are decrypted, the threat will perform basic checks to ensure that the expected configuration and payload files reside within the /app directory."
+              ]
+            ]
+          },
+          "TTP:T1027_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                47,
+                47
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Evidence of this execution was an obfuscated PowerShell script named ‘C:\\osit\\r.ps1’ that was found on a local server."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "They also required a unique command-line parameter to execute the malware."
+          ],
+          [
+            "It subsequently generates a new terminal session via the built-in tmux utility, which is used to execute the malware binary named controller."
+          ],
+          [
+            "Attackers can use many of the Python scripts above for lateral movement, password dumping and further execution of malware on the victim network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_a95a14b4ad1f",
+          "EDGE_6539d4200f25",
+          "EDGE_7f8db812b662",
+          "EDGE_8261e7b2eccc",
+          "EDGE_c87b9ee78a3b",
+          "EDGE_fedc2391e361"
+        ],
+        "source": {
+          "TTP:T1059_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ],
+              [
+                28,
+                28
+              ],
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "They also required a unique command-line parameter to execute the malware."
+              ],
+              [
+                "It subsequently generates a new terminal session via the built-in tmux utility, which is used to execute the malware binary named controller."
+              ],
+              [
+                "Attackers can use many of the Python scripts above for lateral movement, password dumping and further execution of malware on the victim network."
+              ]
+            ]
+          },
+          "TTP:T1059_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                23,
+                24
+              ],
+              [
+                28,
+                28
+              ],
+              [
+                31,
+                31
+              ],
+              [
+                36,
+                36
+              ],
+              [
+                45,
+                45
+              ],
+              [
+                47,
+                47
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "During the RDP session, the threat actor conducted the first successful malicious activities in the targeted network.",
+                "These included executing PowerShell commands, attempting a privilege escalation attack, using a password-dumping tool, and deploying Cobalt Strike."
+              ],
+              [
+                "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+              ],
+              [
+                "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’."
+              ],
+              [
+                "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed."
+              ],
+              [
+                "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+              ],
+              [
+                "Evidence of this execution was an obfuscated PowerShell script named ‘C:\\osit\\r.ps1’ that was found on a local server."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1098",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1098",
+        "ttp_id": "T1098",
+        "best_span_sentences_list": [
+          [
+            "In doing so, the malware initially changes the root password of the VM to one chosen by the threat actors."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1098_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": {
+            "best_span_ranges": [
+              [
+                27,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In doing so, the malware initially changes the root password of the VM to one chosen by the threat actors."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Upon execution, the controller will initially decrypt numerous strings using a unique single-byte XOR operation.",
+            "After the strings are decrypted, the threat will perform basic checks to ensure that the expected configuration and payload files reside within the /app directory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            35
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1140_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": {
+            "best_span_ranges": [
+              [
+                34,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Upon execution, the controller will initially decrypt numerous strings using a unique single-byte XOR operation.",
+                "After the strings are decrypted, the threat will perform basic checks to ensure that the expected configuration and payload files reside within the /app directory."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant).",
+            "Threat operators can use this utility to run BlackCat on remote machines, or to deploy it to encrypt remote Server Message Block (SMB)/Common Internet File Shares (CIFS)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_5ef331b0493a",
+          "EDGE_8d1f63f35303",
+          "EDGE_9d501764a808",
+          "EDGE_a952ebedb8c6",
+          "EDGE_fc3280d4593a",
+          "EDGE_5241d6a32f6c",
+          "EDGE_766ad155ff33",
+          "EDGE_e0059dabd013"
+        ],
+        "source": {
+          "TTP:T1486_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": {
+            "best_span_ranges": [
+              [
+                19,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In recent months, BlackCat has released a new tool named “Munchkin.”\nThis tooling provided a Linux-based operating system (OS) running Sphynx (the latest BlackCat variant).",
+                "Threat operators can use this utility to run BlackCat on remote machines, or to deploy it to encrypt remote Server Message Block (SMB)/Common Internet File Shares (CIFS)."
+              ]
+            ]
+          },
+          "TTP:T1486_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ],
+              [
+                19,
+                19
+              ],
+              [
+                25,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This ALPHV Blackcat update has the capability to encrypt both Windows and Linux devices, and VMWare instances."
+              ],
+              [
+                "The ransomware is then deployed, and the ransom note is embedded as a file.txt."
+              ],
+              [
+                "The ALPHV Blackcat encryptor results in a file with the following naming convention: RECOVER-(seven-digit extension) FILES.txt."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "This new tactic of leveraging a customized VM to deploy malware has been gaining traction in recent months, allowing ransomware threat actors to use VMs to circumvent security solutions in deploying their malware payloads."
+          ],
+          [
+            "The benefits of this approach include circumventing any security controls or protections set on the host OS, such as antivirus software.",
+            "As these solutions often do not have the introspection within the embedded virtualized OS, malware will frequently bypass any checks that are present."
+          ],
+          [
+            "This tool follows a continued trend of leveraging VMs in an attempt to thwart security controls present on a host and to stay ahead of the security community in defending against these threats."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            49,
+            49
+          ]
+        ],
+        "edges": [
+          "EDGE_6a3ef6d5bab7",
+          "EDGE_b4587847a603",
+          "EDGE_e783ebbbc3b9"
+        ],
+        "source": {
+          "TTP:T1497_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                23,
+                24
+              ],
+              [
+                49,
+                49
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This new tactic of leveraging a customized VM to deploy malware has been gaining traction in recent months, allowing ransomware threat actors to use VMs to circumvent security solutions in deploying their malware payloads."
+              ],
+              [
+                "The benefits of this approach include circumventing any security controls or protections set on the host OS, such as antivirus software.",
+                "As these solutions often do not have the introspection within the embedded virtualized OS, malware will frequently bypass any checks that are present."
+              ],
+              [
+                "This tool follows a continued trend of leveraging VMs in an attempt to thwart security controls present on a host and to stay ahead of the security community in defending against these threats."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1070",
+        "ttp_id": "T1070",
+        "best_span_sentences_list": [
+          [
+            "Once installed on the domain controller, the logs are cleared on the exchange server."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1070_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                17,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once installed on the domain controller, the logs are cleared on the exchange server."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "ALPHV Blackcat affiliates claim to use Brute Ratel C4 [S1063] and Cobalt Strike [S1054] as beacons to command and control servers."
+          ],
+          [
+            "After exfiltrating and/or encrypting data, ALPHV Blackcat affiliates communicate with victims via TOR [S0183], Tox, email, or encrypted applications."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_41a6e38331d1",
+          "EDGE_8402a231d9b1",
+          "EDGE_9cc8c26cbc32",
+          "EDGE_cacfcc4a6a10",
+          "EDGE_04a4a0dd87d8",
+          "EDGE_61c94c4bf1f1",
+          "EDGE_ab65218ddcfb",
+          "EDGE_ba3ec84d70b5",
+          "EDGE_d97ee649ce2a",
+          "EDGE_e700d8d6bc45",
+          "EDGE_f8a971fb8cbb",
+          "EDGE_fa3995743231"
+        ],
+        "source": {
+          "TTP:T1071_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                13,
+                13
+              ],
+              [
+                22,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ALPHV Blackcat affiliates claim to use Brute Ratel C4 [S1063] and Cobalt Strike [S1054] as beacons to command and control servers."
+              ],
+              [
+                "After exfiltrating and/or encrypting data, ALPHV Blackcat affiliates communicate with victims via TOR [S0183], Tox, email, or encrypted applications."
+              ]
+            ]
+          },
+          "TTP:T1071_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "ALPHV Blackcat affiliates use the open source adversary-in-the-middle attack [T1557] framework Evilginx2, which allows them to obtain multifactor authentication (MFA) credentials, login credentials, and session cookies.",
+            "The actors also obtain passwords from the domain controller, local network, and deleted backup servers to move laterally throughout the network [T1555]."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            15
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1078_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                14,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ALPHV Blackcat affiliates use the open source adversary-in-the-middle attack [T1557] framework Evilginx2, which allows them to obtain multifactor authentication (MFA) credentials, login credentials, and session cookies.",
+                "The actors also obtain passwords from the domain controller, local network, and deleted backup servers to move laterally throughout the network [T1555]."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1136",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1136",
+        "ttp_id": "T1136",
+        "best_span_sentences_list": [
+          [
+            "ALPHV Blackcat affiliates create a user account, “aadmin,” and use Kerberos token generation for domain access [T1558]."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1136_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ALPHV Blackcat affiliates create a user account, “aadmin,” and use Kerberos token generation for domain access [T1558]."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "After gaining access to a victim network, ALPHV Blackcat affiliates deploy remote access software such as AnyDesk, Mega sync, and Splashtop in preparation of data exfiltration."
+          ],
+          [
+            "After gaining access to networks, they use legitimate remote access and tunneling tools, such as Plink and Ngrok [S0508].",
+            "ALPHV Blackcat affiliates claim to use Brute Ratel C4 [S1063] and Cobalt Strike [S1054] as beacons to command and control servers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_04d58efdd2e4",
+          "EDGE_27b521647098",
+          "EDGE_31e0ac4addd7",
+          "EDGE_4b738fb16ce6",
+          "EDGE_b3092cd75b0a"
+        ],
+        "source": {
+          "TTP:T1219_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ],
+              [
+                12,
+                13
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "After gaining access to a victim network, ALPHV Blackcat affiliates deploy remote access software such as AnyDesk, Mega sync, and Splashtop in preparation of data exfiltration."
+              ],
+              [
+                "After gaining access to networks, they use legitimate remote access and tunneling tools, such as Plink and Ngrok [S0508].",
+                "ALPHV Blackcat affiliates claim to use Brute Ratel C4 [S1063] and Cobalt Strike [S1054] as beacons to command and control servers."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1555",
+        "ttp_id": "T1555",
+        "best_span_sentences_list": [
+          [
+            "The actors also obtain passwords from the domain controller, local network, and deleted backup servers to move laterally throughout the network [T1555]."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1555_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The actors also obtain passwords from the domain controller, local network, and deleted backup servers to move laterally throughout the network [T1555]."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1557",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1557",
+        "ttp_id": "T1557",
+        "best_span_sentences_list": [
+          [
+            "ALPHV Blackcat affiliates use the open source adversary-in-the-middle attack [T1557] framework Evilginx2, which allows them to obtain multifactor authentication (MFA) credentials, login credentials, and session cookies."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_c036fc82ef1f"
+        ],
+        "source": {
+          "TTP:T1557_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ALPHV Blackcat affiliates use the open source adversary-in-the-middle attack [T1557] framework Evilginx2, which allows them to obtain multifactor authentication (MFA) credentials, login credentials, and session cookies."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1558",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1558",
+        "ttp_id": "T1558",
+        "best_span_sentences_list": [
+          [
+            "ALPHV Blackcat affiliates create a user account, “aadmin,” and use Kerberos token generation for domain access [T1558]."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_6aa72b6e3eed",
+          "EDGE_d8df5cb44939"
+        ],
+        "source": {
+          "TTP:T1558_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ALPHV Blackcat affiliates create a user account, “aadmin,” and use Kerberos token generation for domain access [T1558]."
+              ]
+            ]
+          },
+          "TTP:T1558_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                33,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+                "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords.",
+                "The threat actor also executed a Kerberoasting attack in order to retrieve password hashes from the Active Directory."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1567",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1567",
+        "ttp_id": "T1567",
+        "best_span_sentences_list": [
+          [
+            "Then Mega.nz or Dropbox are used to move, exfiltrate, and/or download victim data."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_bb07f2bac822",
+          "EDGE_e79d0af4cfa1",
+          "EDGE_08a388c806de",
+          "EDGE_238fceed4e2f",
+          "EDGE_56289abe3e0c",
+          "EDGE_82bb19c4f18b",
+          "EDGE_a230f9ce093a",
+          "EDGE_be4176408eef"
+        ],
+        "source": {
+          "TTP:T1567_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Then Mega.nz or Dropbox are used to move, exfiltrate, and/or download victim data."
+              ]
+            ]
+          },
+          "TTP:T1567_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ],
+              [
+                41,
+                43
+              ],
+              [
+                56,
+                56
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’."
+              ],
+              [
+                "During the next three days, the threat actor attempted to exfiltrate data from several different hosts by utilizing Rclone, an open-source tool used for syncing files and folders to and from cloud storage providers.",
+                "In some executions of the tool, the threat actor utilized a filter file, to control the file types to be exfiltrated.",
+                "By analyzing firewall logs, it was determined that exfiltration attempts from two hosts were successful, and data was sent from the victim’s network to ‘wasabi’, a US-based cloud storage platform."
+              ],
+              [
+                "Several weeks later, the files stolen from the victim were published on BlackCat’s leak site on the dark web."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1572",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1572",
+        "ttp_id": "T1572",
+        "best_span_sentences_list": [
+          [
+            "After gaining access to networks, they use legitimate remote access and tunneling tools, such as Plink and Ngrok [S0508]."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_6d99a22bd4fb",
+          "EDGE_804ba147a9dd"
+        ],
+        "source": {
+          "TTP:T1572_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "After gaining access to networks, they use legitimate remote access and tunneling tools, such as Plink and Ngrok [S0508]."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1586",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1586",
+        "ttp_id": "T1586",
+        "best_span_sentences_list": [
+          [
+            "Actors pose as company IT and/or helpdesk staff and use phone calls or SMS messages [T1598] to obtain credentials from employees to access the target network [T1586]."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1586_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                8,
+                8
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Actors pose as company IT and/or helpdesk staff and use phone calls or SMS messages [T1598] to obtain credentials from employees to access the target network [T1586]."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1598",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1598",
+        "ttp_id": "T1598",
+        "best_span_sentences_list": [
+          [
+            "Actors pose as company IT and/or helpdesk staff and use phone calls or SMS messages [T1598] to obtain credentials from employees to access the target network [T1586]."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1598_www.cisa.gov_news-events_cybersecurity-advisories_aa23-353a": {
+            "best_span_ranges": [
+              [
+                8,
+                8
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Actors pose as company IT and/or helpdesk staff and use phone calls or SMS messages [T1598] to obtain credentials from employees to access the target network [T1586]."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "The threat actor used several remote code execution techniques and the Cobalt Strike platform, to move laterally between the victim’s on-premises domains and Azure environment through RDP and tunneled connections."
+          ],
+          [
+            "Day 1: Several RDP and SMB logon attempts were made to two servers; the attempts originated from an IP address of a vendor’s network which was connected to the victim, following an earlier compromise of this vendor."
+          ],
+          [
+            "Day 3: The threat actor successfully connected over RDP from the DESKTOP-PSGDD89 host to a server in the victim’s network."
+          ],
+          [
+            "The ‘C:\\Intel\\exp.exe’ file was created on the pivot-server during the RDP session, and its execution was detected and blocked by MDE."
+          ],
+          [
+            "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            36,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_49cf0d99746e",
+          "EDGE_9e3df188a1b7",
+          "EDGE_d2641edfb5f3"
+        ],
+        "source": {
+          "TTP:T1021_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ],
+              [
+                17,
+                17
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                26,
+                26
+              ],
+              [
+                36,
+                36
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The threat actor used several remote code execution techniques and the Cobalt Strike platform, to move laterally between the victim’s on-premises domains and Azure environment through RDP and tunneled connections."
+              ],
+              [
+                "Day 1: Several RDP and SMB logon attempts were made to two servers; the attempts originated from an IP address of a vendor’s network which was connected to the victim, following an earlier compromise of this vendor."
+              ],
+              [
+                "Day 3: The threat actor successfully connected over RDP from the DESKTOP-PSGDD89 host to a server in the victim’s network."
+              ],
+              [
+                "The ‘C:\\Intel\\exp.exe’ file was created on the pivot-server during the RDP session, and its execution was detected and blocked by MDE."
+              ],
+              [
+                "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+            "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords."
+          ],
+          [
+            "Several executions of the Stowaway proxy tool were observed in the network under different names, such as ‘vhd.exe’, ‘vga.exe’ and ‘hhd.exe’."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            34
+          ],
+          [
+            39,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_82931b1b075c",
+          "EDGE_bd0e22b07435"
+        ],
+        "source": {
+          "TTP:T1036_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                33,
+                34
+              ],
+              [
+                39,
+                39
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+                "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords."
+              ],
+              [
+                "Several executions of the Stowaway proxy tool were observed in the network under different names, such as ‘vhd.exe’, ‘vga.exe’ and ‘hhd.exe’."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1043",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1043",
+        "ttp_id": "T1043",
+        "best_span_sentences_list": [
+          [
+            "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1043_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "This server was used as the initial point of entry into the network, from which the threat actor conducted activities such as network scanning and lateral movement, so we will refer to it from now on as the ‘pivot-server’."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_80f3764dac84",
+          "EDGE_ca2d6efc0a64"
+        ],
+        "source": {
+          "TTP:T1046_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                22,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This server was used as the initial point of entry into the network, from which the threat actor conducted activities such as network scanning and lateral movement, so we will refer to it from now on as the ‘pivot-server’."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1048",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1048",
+        "ttp_id": "T1048",
+        "best_span_sentences_list": [
+          [
+            "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_13d6ce1e87dc",
+          "EDGE_14978e43da8b",
+          "EDGE_9881d69cc390",
+          "EDGE_f27476a8323c"
+        ],
+        "source": {
+          "TTP:T1048_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_1b7ce9ef5a6c",
+          "EDGE_1d337604f37a",
+          "EDGE_f19df6c04452"
+        ],
+        "source": {
+          "TTP:T1055_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                28,
+                28
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1076",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1076",
+        "ttp_id": "T1076",
+        "best_span_sentences_list": [
+          [
+            "Day 3: The threat actor successfully connected over RDP from the DESKTOP-PSGDD89 host to a server in the victim’s network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_3b1ecaaaae8b"
+        ],
+        "source": {
+          "TTP:T1076_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Day 3: The threat actor successfully connected over RDP from the DESKTOP-PSGDD89 host to a server in the victim’s network."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+          ],
+          [
+            "Several executions of the Stowaway proxy tool were observed in the network under different names, such as ‘vhd.exe’, ‘vga.exe’ and ‘hhd.exe’."
+          ],
+          [
+            "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "edges": [
+          "EDGE_0e4632bc59f4",
+          "EDGE_183c041e40e9",
+          "EDGE_1c13e2e42fad",
+          "EDGE_2ac86a37fde3",
+          "EDGE_5a0d1e108a67",
+          "EDGE_7a5fbb6de1e9",
+          "EDGE_ac0c0cd59c96",
+          "EDGE_aee6c0c4680d",
+          "EDGE_afd720af8d0f",
+          "EDGE_d234dbcd5664",
+          "EDGE_dae977eaf5ec",
+          "EDGE_f2d05a9451a3",
+          "EDGE_fb2a5c98985c"
+        ],
+        "source": {
+          "TTP:T1090_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ],
+              [
+                39,
+                39
+              ],
+              [
+                46,
+                46
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+              ],
+              [
+                "Several executions of the Stowaway proxy tool were observed in the network under different names, such as ‘vhd.exe’, ‘vga.exe’ and ‘hhd.exe’."
+              ],
+              [
+                "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The ‘C:\\Intel\\exp.exe’ file was created on the pivot-server during the RDP session, and its execution was detected and blocked by MDE."
+          ],
+          [
+            "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            26
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_8131d726f8d1",
+          "EDGE_908943a5e8e0",
+          "EDGE_ff6275ff963c"
+        ],
+        "source": {
+          "TTP:T1105_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                26,
+                26
+              ],
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The ‘C:\\Intel\\exp.exe’ file was created on the pivot-server during the RDP session, and its execution was detected and blocked by MDE."
+              ],
+              [
+                "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1110",
+        "ttp_id": "T1110",
+        "best_span_sentences_list": [
+          [
+            "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+            "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            34
+          ]
+        ],
+        "edges": [
+          "EDGE_1097f24bbc5b",
+          "EDGE_7d47ae75e9b3"
+        ],
+        "source": {
+          "TTP:T1110_www.sygnia.co_blog_blackcat-ransomware": {
+            "best_span_ranges": [
+              [
+                33,
+                34
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+                "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1039bbbeb272",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/app/payload",
+        "edges": [
+          "EDGE_5ef331b0493a"
+        ],
+        "source": {
+          "/app/payload_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              40,
+              "The controller uses the previously noted /app/payload as a template for creating customized BlackCat samples."
+            ]
+          ]
+        },
+        "raw_value": "/app/payload",
+        "canonical_value": "/app/payload",
+        "normalized_value": "/app/payload"
+      },
+      {
+        "node_id": "IOC_af96345f179d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/app/config",
+        "edges": [
+          "EDGE_a952ebedb8c6"
+        ],
+        "source": {
+          "/app/config_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              36,
+              "The threat will then deserialize and parse the /app/config file."
+            ],
+            [
+              38,
+              "The /app/config file contains a wealth of information including the following, which the controller malware sample subsequently uses:."
+            ]
+          ]
+        },
+        "raw_value": "/app/config",
+        "canonical_value": "/app/config",
+        "normalized_value": "/app/config"
+      },
+      {
+        "node_id": "IOC_c3942e87cd13",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/payloads/",
+        "edges": [
+          "EDGE_8d1f63f35303"
+        ],
+        "source": {
+          "/payloads/_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              39,
+              "After the configuration is parsed, the controller creates and mounts the /payloads/ directory, which it uses to host subsequently created instances of BlackCat."
+            ]
+          ]
+        },
+        "raw_value": "/payloads/",
+        "canonical_value": "/payloads",
+        "normalized_value": "/payloads"
+      },
+      {
+        "node_id": "IOC_d1e47f5f917d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/app",
+        "edges": [],
+        "source": {
+          "/app_unit42.paloaltonetworks.com_blackcat-ransomware-releases-new-utility-munchkin": [
+            [
+              30,
+              "The controller malware is hosted within the /app directory, along with other related files."
+            ],
+            [
+              35,
+              "After the strings are decrypted, the threat will perform basic checks to ensure that the expected configuration and payload files reside within the /app directory."
+            ]
+          ]
+        },
+        "raw_value": "/app",
+        "canonical_value": "/app",
+        "normalized_value": "/app"
+      },
+      {
+        "node_id": "IOC_1fead1f2f3ab",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "172.67.152[.]173",
+        "edges": [
+          "EDGE_5a0d1e108a67",
+          "EDGE_ab65218ddcfb"
+        ],
+        "source": {
+          "172.67.152[.]173_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              29,
+              "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+            ]
+          ]
+        },
+        "raw_value": "172.67.152[.]173",
+        "canonical_value": "172.67.152[.]173"
+      },
+      {
+        "node_id": "IOC_3672d7adc870",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\osit\\r.ps1",
+        "edges": [
+          "EDGE_6539d4200f25",
+          "EDGE_f0e27ceb6413"
+        ],
+        "source": {
+          "C:\\osit\\r.ps1_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              47,
+              "Evidence of this execution was an obfuscated PowerShell script named ‘C:\\osit\\r.ps1’ that was found on a local server."
+            ]
+          ]
+        },
+        "raw_value": "C:\\osit\\r.ps1",
+        "canonical_value": "C:\\osit\\r.ps1",
+        "normalized_value": "C:\\osit\\r.ps1"
+      },
+      {
+        "node_id": "IOC_3e8c2ac1db11",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "91.109.201.223",
+        "edges": [
+          "EDGE_dae977eaf5ec"
+        ],
+        "source": {
+          "91.109.201.223_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              46,
+              "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+            ]
+          ]
+        },
+        "raw_value": "91.109.201.223",
+        "canonical_value": "91.109.201.223"
+      },
+      {
+        "node_id": "IOC_45c72aa18ebd",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "bellebobas[.]com",
+        "edges": [
+          "EDGE_e700d8d6bc45",
+          "EDGE_fb2a5c98985c"
+        ],
+        "source": {
+          "bellebobas[.]com_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              29,
+              "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+            ]
+          ]
+        },
+        "raw_value": "bellebobas[.]com",
+        "canonical_value": "bellebobas.com",
+        "normalized_value": "bellebobas.com"
+      },
+      {
+        "node_id": "IOC_7d765b9e5e71",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Intel\\exp.exe",
+        "edges": [],
+        "source": {
+          "C:\\Intel\\exp.exe_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              26,
+              "The ‘C:\\Intel\\exp.exe’ file was created on the pivot-server during the RDP session, and its execution was detected and blocked by MDE."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Intel\\exp.exe",
+        "canonical_value": "C:\\Intel\\exp.exe",
+        "normalized_value": "C:\\Intel\\exp.exe"
+      },
+      {
+        "node_id": "IOC_8ac050e51ddc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "edges": [
+          "EDGE_8261e7b2eccc"
+        ],
+        "source": {
+          "C:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              28,
+              "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+            ]
+          ]
+        },
+        "raw_value": "C:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "canonical_value": "C:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "normalized_value": "C:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+      },
+      {
+        "node_id": "IOC_960f5794f799",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2022-24521",
+        "edges": [],
+        "source": {
+          "CVE-2022-24521_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              27,
+              "An analysis of ‘exp.exe’ indicated that it is a privilege escalation tool based on the exploitation of CVE-2022-24521 – a vulnerability in the Windows Common Log File System (CLFS) Driver, known to be used by several ransomware groups."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2022-24521",
+        "canonical_value": "CVE-2022-24521",
+        "normalized_value": "CVE-2022-24521"
+      },
+      {
+        "node_id": "IOC_a47c83c7bf9e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "bashupload[.]com",
+        "edges": [
+          "EDGE_8131d726f8d1"
+        ],
+        "source": {
+          "bashupload[.]com_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              31,
+              "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’."
+            ]
+          ]
+        },
+        "raw_value": "bashupload[.]com",
+        "canonical_value": "bashupload.com",
+        "normalized_value": "bashupload.com"
+      },
+      {
+        "node_id": "IOC_a872a3a1d348",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "victorianshow[.]com",
+        "edges": [
+          "EDGE_f2d05a9451a3",
+          "EDGE_fa3995743231"
+        ],
+        "source": {
+          "victorianshow[.]com_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              32,
+              "As a result, Cobalt Strike Beacon was installed, injected itself into ‘dfrgui.exe’, and communicated with a Cloudflare C2 domain ‘victorianshow[.]com’; this communication was crafted to look like the uploading and downloading of images."
+            ]
+          ]
+        },
+        "raw_value": "victorianshow[.]com",
+        "canonical_value": "victorianshow.com",
+        "normalized_value": "victorianshow.com"
+      },
+      {
+        "node_id": "IOC_b7bfdcdb0c69",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Window\\debug\\debug\\host.exe",
+        "edges": [
+          "EDGE_238fceed4e2f",
+          "EDGE_9881d69cc390"
+        ],
+        "source": {
+          "C:\\Window\\debug\\debug\\host.exe_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              50,
+              "Another exfiltration attempt by the ‘C:\\Window\\debug\\debug\\host.exe’ process was detected and terminated by an EDR."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Window\\debug\\debug\\host.exe",
+        "canonical_value": "C:\\Window\\debug\\debug\\host.exe",
+        "normalized_value": "C:\\Window\\debug\\debug\\host.exe"
+      },
+      {
+        "node_id": "IOC_bac3676b074f",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "pCloud.com",
+        "edges": [
+          "EDGE_82bb19c4f18b"
+        ],
+        "source": {
+          "pCloud.com_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              53,
+              "An ‘Rclone’ configuration file retrieved from a compromised server indicated the use of the ‘IDrive’ service, while a failed connection attempt to the ‘pCloud.com’ service was identified on another server."
+            ]
+          ]
+        },
+        "raw_value": "pCloud.com",
+        "canonical_value": "pcloud.com",
+        "normalized_value": "pcloud.com"
+      },
+      {
+        "node_id": "IOC_ca12469685b8",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "104.21.27.108",
+        "edges": [
+          "EDGE_1c13e2e42fad",
+          "EDGE_d97ee649ce2a"
+        ],
+        "source": {
+          "104.21.27.108_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              45,
+              "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+            ]
+          ]
+        },
+        "raw_value": "104.21.27.108",
+        "canonical_value": "104.21.27.108"
+      },
+      {
+        "node_id": "IOC_d2e2e243b3f8",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "172.67.142.67",
+        "edges": [
+          "EDGE_2ac86a37fde3",
+          "EDGE_61c94c4bf1f1"
+        ],
+        "source": {
+          "172.67.142.67_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              45,
+              "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+            ]
+          ]
+        },
+        "raw_value": "172.67.142.67",
+        "canonical_value": "172.67.142.67"
+      },
+      {
+        "node_id": "IOC_d3b96946530d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Intel\\45.ps1",
+        "edges": [
+          "EDGE_1b7ce9ef5a6c",
+          "EDGE_c87b9ee78a3b"
+        ],
+        "source": {
+          "C:\\Intel\\45.ps1_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              28,
+              "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Intel\\45.ps1",
+        "canonical_value": "C:\\Intel\\45.ps1",
+        "normalized_value": "C:\\Intel\\45.ps1"
+      },
+      {
+        "node_id": "IOC_e0677b877b75",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "timelesstravelinc[.]com",
+        "edges": [
+          "EDGE_aee6c0c4680d",
+          "EDGE_ba3ec84d70b5"
+        ],
+        "source": {
+          "timelesstravelinc[.]com_www.sygnia.co_blog_blackcat-ransomware": [
+            [
+              45,
+              "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+            ]
+          ]
+        },
+        "raw_value": "timelesstravelinc[.]com",
+        "canonical_value": "timelesstravelinc.com",
+        "normalized_value": "timelesstravelinc.com"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_5ef331b0493a",
+      "node_u": "IOC_1039bbbeb272",
+      "node_v": "TTP_T1486",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a3ef6d5bab7",
+      "node_u": "HL_4d801cc36fa6",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8d1f63f35303",
+      "node_u": "IOC_c3942e87cd13",
+      "node_v": "TTP_T1486",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9d501764a808",
+      "node_u": "HL_f4a13e431f72",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a952ebedb8c6",
+      "node_u": "IOC_af96345f179d",
+      "node_v": "TTP_T1486",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a95a14b4ad1f",
+      "node_u": "HL_713d3f89a9d4",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b4587847a603",
+      "node_u": "HL_ffd6164ff34f",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e783ebbbc3b9",
+      "node_u": "HL_be7937a9dcd7",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fba22fb101d7",
+      "node_u": "HL_be7937a9dcd7",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fc3280d4593a",
+      "node_u": "HL_be7937a9dcd7",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_04d58efdd2e4",
+      "node_u": "HL_b32d1902bb1c",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_27b521647098",
+      "node_u": "HL_3fdf4c0217aa",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_31e0ac4addd7",
+      "node_u": "HL_aff4f951ca1c",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_41a6e38331d1",
+      "node_u": "HL_d072381029c7",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4b738fb16ce6",
+      "node_u": "HL_45f04cb20e48",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5241d6a32f6c",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6d99a22bd4fb",
+      "node_u": "HL_10f4db42cf03",
+      "node_v": "TTP_T1572",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_766ad155ff33",
+      "node_u": "HL_c0ea5e1a232f",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_804ba147a9dd",
+      "node_u": "HL_aff4f951ca1c",
+      "node_v": "TTP_T1572",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8402a231d9b1",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9cc8c26cbc32",
+      "node_u": "HL_78e1db397d80",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b3092cd75b0a",
+      "node_u": "HL_10f4db42cf03",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bb07f2bac822",
+      "node_u": "HL_572479f657da",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c036fc82ef1f",
+      "node_u": "HL_ac693b8bf6ff",
+      "node_v": "TTP_T1557",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cacfcc4a6a10",
+      "node_u": "HL_c3c00bd24dee",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e0059dabd013",
+      "node_u": "HL_ea761e410a92",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e79d0af4cfa1",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_04a4a0dd87d8",
+      "node_u": "HL_548f85d138f6",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0614f566784c",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_08a388c806de",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0e4632bc59f4",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1097f24bbc5b",
+      "node_u": "HL_e65338ef3309",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_13d6ce1e87dc",
+      "node_u": "HL_9b4af12b449a",
+      "node_v": "TTP_T1048",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_14978e43da8b",
+      "node_u": "HL_49fa04070cb5",
+      "node_v": "TTP_T1048",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_183c041e40e9",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b7ce9ef5a6c",
+      "node_u": "IOC_d3b96946530d",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1c13e2e42fad",
+      "node_u": "IOC_ca12469685b8",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1d337604f37a",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_238fceed4e2f",
+      "node_u": "IOC_b7bfdcdb0c69",
+      "node_v": "TTP_T1567",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ac86a37fde3",
+      "node_u": "IOC_d2e2e243b3f8",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3b1ecaaaae8b",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1076",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_49cf0d99746e",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4d03f3bf0aa5",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_56289abe3e0c",
+      "node_u": "HL_49fa04070cb5",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5a0d1e108a67",
+      "node_u": "IOC_1fead1f2f3ab",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_61c94c4bf1f1",
+      "node_u": "IOC_d2e2e243b3f8",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6539d4200f25",
+      "node_u": "IOC_3672d7adc870",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6aa72b6e3eed",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1558",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7a5fbb6de1e9",
+      "node_u": "HL_0fe717564f9b",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7d47ae75e9b3",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7f8db812b662",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_80f3764dac84",
+      "node_u": "HL_601bdcf4b2fb",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8131d726f8d1",
+      "node_u": "IOC_a47c83c7bf9e",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8261e7b2eccc",
+      "node_u": "IOC_8ac050e51ddc",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_82931b1b075c",
+      "node_u": "HL_0fe717564f9b",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_82bb19c4f18b",
+      "node_u": "IOC_bac3676b074f",
+      "node_v": "TTP_T1567",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_908943a5e8e0",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9881d69cc390",
+      "node_u": "IOC_b7bfdcdb0c69",
+      "node_v": "TTP_T1048",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9e3df188a1b7",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a230f9ce093a",
+      "node_u": "HL_9b4af12b449a",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ab65218ddcfb",
+      "node_u": "IOC_1fead1f2f3ab",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ac0c0cd59c96",
+      "node_u": "HL_076a04b3efbb",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_aee6c0c4680d",
+      "node_u": "IOC_e0677b877b75",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_afd720af8d0f",
+      "node_u": "HL_44b3459204b4",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b303468618f8",
+      "node_u": "HL_93e1ee43e148",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba3ec84d70b5",
+      "node_u": "IOC_e0677b877b75",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bd0e22b07435",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_be4176408eef",
+      "node_u": "HL_fc1fc8b0d0af",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c87b9ee78a3b",
+      "node_u": "IOC_d3b96946530d",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ca2d6efc0a64",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d211c84acf01",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d234dbcd5664",
+      "node_u": "HL_548f85d138f6",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d2641edfb5f3",
+      "node_u": "HL_44b3459204b4",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d8df5cb44939",
+      "node_u": "HL_93e1ee43e148",
+      "node_v": "TTP_T1558",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d97ee649ce2a",
+      "node_u": "IOC_ca12469685b8",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_dae977eaf5ec",
+      "node_u": "IOC_3e8c2ac1db11",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e700d8d6bc45",
+      "node_u": "IOC_45c72aa18ebd",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f0e27ceb6413",
+      "node_u": "IOC_3672d7adc870",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f19df6c04452",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f27476a8323c",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1048",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f2d05a9451a3",
+      "node_u": "IOC_a872a3a1d348",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f8a971fb8cbb",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fa3995743231",
+      "node_u": "IOC_a872a3a1d348",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fb2a5c98985c",
+      "node_u": "IOC_45c72aa18ebd",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedc2391e361",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ff6275ff963c",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

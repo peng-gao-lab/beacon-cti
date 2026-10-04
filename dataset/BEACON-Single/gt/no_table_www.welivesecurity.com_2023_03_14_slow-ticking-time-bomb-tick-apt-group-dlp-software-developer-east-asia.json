@@ -1,0 +1,816 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_18cb2f107a89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "AhnLab",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "In May 2022, AhnLab researchers published a report about an unidentified threat actor targeting entities and individuals from South Korea with CHM files that deploy a legitimate executable and a malicious DLL for side-loading."
+        ]
+      },
+      {
+        "node_id": "HL_1dce191c273a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ghostdown",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          17,
+          33
+        ],
+        "span_sentences": [
+          "During the intrusion, the attackers deployed a previously undocumented downloader named ShadowPy, and they also deployed the Netboy backdoor (aka Invader) and Ghostdown downloader.",
+          "The malware included variants of the Netboy and Ghostdown families, and a previously undocumented downloader named ShadowPy.",
+          "The payload in each loader is one of three malware families: ShadowPy, Ghostdown, or Netboy."
+        ]
+      },
+      {
+        "node_id": "HL_62c14cd4f687",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ReVBShell",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          13,
+          23,
+          26,
+          28,
+          51
+        ],
+        "span_sentences": [
+          "The attackers deployed persistent malware and replaced installers of a legitimate application known as Q-dir with trojanized copies that, when executed, dropped an open-source VBScript backdoor named ReVBShell, as well as a copy of the legitimate Q-Dir application.",
+          "Although we have not obtained the dropped sample from the compromised machine, based on the detection (VBS/Agent.DL), we have high confidence that the detected script was the open-source backdoor ReVBShell.",
+          "The installer contains the Q-Dir application and an encoded (VBE) ReVBShell backdoor that was customized by the attackers; both of them were compressed with LZO and encrypted with RC6.",
+          "ReVBShell is an open-source backdoor with very basic capabilities.",
+          "The decoded script reveals a ReVBShell backdoor once again."
+        ]
+      },
+      {
+        "node_id": "HL_815e46eca47f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Q-dir",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          13,
+          18,
+          20
+        ],
+        "span_sentences": [
+          "The attackers deployed persistent malware and replaced installers of a legitimate application known as Q-dir with trojanized copies that, when executed, dropped an open-source VBScript backdoor named ReVBShell, as well as a copy of the legitimate Q-Dir application.",
+          "In April, the attackers began to introduce trojanized copies of the Q-dir installers in the network of the compromised company.",
+          "In February and June 2022, the trojanized Q-dir installers were transferred via remote support tools to customers of the compromised company."
+        ]
+      },
+      {
+        "node_id": "HL_894cff5539c1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Netboy",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          17,
+          33,
+          40
+        ],
+        "span_sentences": [
+          "During the intrusion, the attackers deployed a previously undocumented downloader named ShadowPy, and they also deployed the Netboy backdoor (aka Invader) and Ghostdown downloader.",
+          "The malware included variants of the Netboy and Ghostdown families, and a previously undocumented downloader named ShadowPy.",
+          "The payload in each loader is one of three malware families: ShadowPy, Ghostdown, or Netboy.",
+          "Netboy (aka Invader) is a backdoor programmed in Delphi; it supports 34 commands that allow the attackers to capture the screen, perform mouse and keyboard events on the compromised machine, manipulate files and services, and obtain system and network information, among other capabilities."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET researchers discovered a campaign that we attribute with high confidence to the APT group Tick."
+        ]
+      },
+      {
+        "node_id": "HL_cb6e965b7713",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Korea",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "In May 2022, AhnLab researchers published a report about an unidentified threat actor targeting entities and individuals from South Korea with CHM files that deploy a legitimate executable and a malicious DLL for side-loading."
+        ]
+      },
+      {
+        "node_id": "HL_d595c750cddb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Tick",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          0,
+          5,
+          7,
+          9,
+          10,
+          47,
+          53
+        ],
+        "span_sentences": [
+          "ESET researchers discovered a campaign that we attribute with high confidence to the APT group Tick.",
+          "Based on Tick’s profile, and the compromised company’s high-value customer portfolio, the objective of the attack was most likely cyberespionage.",
+          "Tick (also known as BRONZE BUTLER or REDBALDKNIGHT) is an APT group, suspected of being active since at least 2006, targeting mainly countries in the APAC region.",
+          "Tick employs an exclusive custom malware toolset designed for persistent access to compromised machines, reconnaissance, data exfiltration, and download of tools.",
+          "Our latest report into Tick’s activity found it exploiting the ProxyLogon vulnerability to compromise a South Korean IT company, as one of the groups with access to that remote code execution exploit before the vulnerability was publicly disclosed.",
+          "We attribute this attack to Tick with high confidence based on the malware found that has been previously attributed to Tick, and to the best of our knowledge has not been shared with other APT groups, and the code similarities between ShadowPy and the loader used by Netboy.",
+          "Based on similarities in the malware found during the investigation, we have attributed the attack with high confidence to the Tick APT group, known for its cyberespionage operations targeting the APAC region."
+        ]
+      },
+      {
+        "node_id": "HL_e1d92d28c9bb",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Invader",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          40
+        ],
+        "span_sentences": [
+          "During the intrusion, the attackers deployed a previously undocumented downloader named ShadowPy, and they also deployed the Netboy backdoor (aka Invader) and Ghostdown downloader.",
+          "Netboy (aka Invader) is a backdoor programmed in Delphi; it supports 34 commands that allow the attackers to capture the screen, perform mouse and keyboard events on the compromised machine, manipulate files and services, and obtain system and network information, among other capabilities."
+        ]
+      },
+      {
+        "node_id": "HL_ef19c3ee9b09",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ShadowPy",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          4,
+          17,
+          33,
+          34,
+          52
+        ],
+        "span_sentences": [
+          "During the intrusion, the attackers deployed a previously undocumented downloader named ShadowPy, and they also deployed the Netboy backdoor (aka Invader) and Ghostdown downloader.",
+          "The malware included variants of the Netboy and Ghostdown families, and a previously undocumented downloader named ShadowPy.",
+          "The payload in each loader is one of three malware families: ShadowPy, Ghostdown, or Netboy.",
+          "ShadowPy is a downloader developed in Python and converted into a Windows executable using a customized version of py2exe.",
+          "Our analysis of the malicious tools used during the attack revealed previously undocumented malware, which we named ShadowPy."
+        ]
+      },
+      {
+        "node_id": "HL_f8aa47fd8d41",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BRONZE BUTLER",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Tick (also known as BRONZE BUTLER or REDBALDKNIGHT) is an APT group, suspected of being active since at least 2006, targeting mainly countries in the APAC region."
+        ]
+      },
+      {
+        "node_id": "HL_f8f28884cb45",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "REDBALDKNIGHT",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Tick (also known as BRONZE BUTLER or REDBALDKNIGHT) is an APT group, suspected of being active since at least 2006, targeting mainly countries in the APAC region."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_9",
+          "EDGE_13",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            37,
+            38
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malicious executable issues an HTTP GET request to http://103.127.124[.]117/index.html to obtain the key to decrypt the embedded payload, which is encrypted with the RC6 algorithm."
+          ],
+          [
+            "We have not observed any other incidents where ShadowPy was deployed.",
+            "It issues an HTTP GET request to travelasist[.]com to receive a new payload that is XOR-decrypted with a fixed, single-byte key, 0xC3, then base64-decoded; the result is decrypted using the AES algorithm in CFB mode with a 128-bit key and IV provided with the payload."
+          ],
+          [
+            "For compression, Netboy uses a variant of the LZRW family of compression algorithms and for encryption it uses the RC4 algorithm with a 256-bit key made up of ASCII characters."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            13,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers deployed persistent malware and replaced installers of a legitimate application known as Q-dir with trojanized copies that, when executed, dropped an open-source VBScript backdoor named ReVBShell, as well as a copy of the legitimate Q-Dir application."
+          ],
+          [
+            "The attackers deployed persistent malware and replaced installers of a legitimate application known as Q-dir with trojanized copies that, when executed, dropped an open-source VBScript backdoor named ReVBShell, as well as a copy of the legitimate Q-Dir application.",
+            "This led to the execution of malicious code in networks of two of the compromised company's customers when the trojanized installers were transferred via remote support software – our hypothesis is that this occurred while the DLP company provided technical support to their customers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            31,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To maintain persistent access, the attackers deployed malicious loader DLLs along with legitimate signed applications vulnerable to DLL search-order hijacking.",
+            "The purpose of these DLLs is to decode and inject a payload into a designated process (in all cases of this incident, all loaders were configured to inject into svchost.exe)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            34,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers deployed persistent malware and replaced installers of a legitimate application known as Q-dir with trojanized copies that, when executed, dropped an open-source VBScript backdoor named ReVBShell, as well as a copy of the legitimate Q-Dir application."
+          ],
+          [
+            "The attackers deployed persistent malware and replaced installers of a legitimate application known as Q-dir with trojanized copies that, when executed, dropped an open-source VBScript backdoor named ReVBShell, as well as a copy of the legitimate Q-Dir application.",
+            "This led to the execution of malicious code in networks of two of the compromised company's customers when the trojanized installers were transferred via remote support software – our hypothesis is that this occurred while the DLP company provided technical support to their customers."
+          ],
+          [
+            "The payload is dropped to the %TEMP% directory with a random name and a .vbe extension, and is then executed."
+          ],
+          [
+            "ShadowPy is a downloader developed in Python and converted into a Windows executable using a customized version of py2exe.",
+            "The downloader contacts its C&C to obtain Python scripts to execute."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_7",
+          "EDGE_10",
+          "EDGE_14",
+          "EDGE_19",
+          "EDGE_21",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            34,
+            35
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malicious executable issues an HTTP GET request to http://103.127.124[.]117/index.html to obtain the key to decrypt the embedded payload, which is encrypted with the RC6 algorithm."
+          ],
+          [
+            "ShadowPy is a downloader developed in Python and converted into a Windows executable using a customized version of py2exe.",
+            "The downloader contacts its C&C to obtain Python scripts to execute."
+          ],
+          [
+            "We have not observed any other incidents where ShadowPy was deployed.",
+            "It issues an HTTP GET request to travelasist[.]com to receive a new payload that is XOR-decrypted with a fixed, single-byte key, 0xC3, then base64-decoded; the result is decrypted using the AES algorithm in CFB mode with a 128-bit key and IV provided with the payload."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_8",
+          "EDGE_11",
+          "EDGE_15",
+          "EDGE_18",
+          "EDGE_20",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            34,
+            35
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "During the intrusion, the attackers deployed a previously undocumented downloader named ShadowPy, and they also deployed the Netboy backdoor (aka Invader) and Ghostdown downloader."
+          ],
+          [
+            "The shellcode, shown in Figure 5, downloads an unencrypted payload from http://softsrobot[.]com/index.html to %TEMP%\\ChromeUp.exe by default; if the file cannot be created, it gets a new name using the GetTempFileNameA API."
+          ],
+          [
+            "ShadowPy is a downloader developed in Python and converted into a Windows executable using a customized version of py2exe.",
+            "The downloader contacts its C&C to obtain Python scripts to execute."
+          ],
+          [
+            "We have not observed any other incidents where ShadowPy was deployed.",
+            "It issues an HTTP GET request to travelasist[.]com to receive a new payload that is XOR-decrypted with a fixed, single-byte key, 0xC3, then base64-decoded; the result is decrypted using the AES algorithm in CFB mode with a 128-bit key and IV provided with the payload."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_12",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We have not observed any other incidents where ShadowPy was deployed.",
+            "It issues an HTTP GET request to travelasist[.]com to receive a new payload that is XOR-decrypted with a fixed, single-byte key, 0xC3, then base64-decoded; the result is decrypted using the AES algorithm in CFB mode with a 128-bit key and IV provided with the payload."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1190",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Our latest report into Tick’s activity found it exploiting the ProxyLogon vulnerability to compromise a South Korean IT company, as one of the groups with access to that remote code execution exploit before the vulnerability was publicly disclosed.",
+            "While still a zero-day, the group used the exploit to install a webshell to deploy a backdoor on a webserver."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers compromised the DLP company’s internal update servers to deliver malware inside the software developer’s network, and trojanized installers of legitimate tools used by the company, which eventually resulted in the execution of malware on the computers of the company’s customers."
+          ],
+          [
+            "The attackers also compromised update servers, which delivered malicious updates on two occasions to machines inside the network of the DLP company."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers deployed persistent malware and replaced installers of a legitimate application known as Q-dir with trojanized copies that, when executed, dropped an open-source VBScript backdoor named ReVBShell, as well as a copy of the legitimate Q-Dir application."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1505",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Our latest report into Tick’s activity found it exploiting the ProxyLogon vulnerability to compromise a South Korean IT company, as one of the groups with access to that remote code execution exploit before the vulnerability was publicly disclosed.",
+            "While still a zero-day, the group used the exploit to install a webshell to deploy a backdoor on a webserver."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To maintain persistent access, the attackers deployed malicious loader DLLs along with legitimate signed applications vulnerable to DLL search-order hijacking."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Additionally, domains used by the attackers to contact their C&C servers were previously attributed to Tick in past cases: waterglue[.]org in 2015, and softsrobot[.]com in 2020."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_09cd381de5f6",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "travelasist[.]com",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "It issues an HTTP GET request to travelasist[.]com to receive a new payload that is XOR-decrypted with a fixed, single-byte key, 0xC3, then base64-decoded; the result is decrypted using the AES algorithm in CFB mode with a 128-bit key and IV provided with the payload."
+        ]
+      },
+      {
+        "node_id": "IOC_3ab6bbc10dac",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://103.127.124[.]117/index.html",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The malicious executable issues an HTTP GET request to http://103.127.124[.]117/index.html to obtain the key to decrypt the embedded payload, which is encrypted with the RC6 algorithm."
+        ]
+      },
+      {
+        "node_id": "IOC_5f95f47d6937",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "0xC3",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "It issues an HTTP GET request to travelasist[.]com to receive a new payload that is XOR-decrypted with a fixed, single-byte key, 0xC3, then base64-decoded; the result is decrypted using the AES algorithm in CFB mode with a 128-bit key and IV provided with the payload."
+        ]
+      },
+      {
+        "node_id": "IOC_739c814c4cda",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%\\ChromeUp.exe",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The shellcode, shown in Figure 5, downloads an unencrypted payload from http://softsrobot[.]com/index.html to %TEMP%\\ChromeUp.exe by default; if the file cannot be created, it gets a new name using the GetTempFileNameA API."
+        ]
+      },
+      {
+        "node_id": "IOC_b3c92f174d35",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://softsrobot[.]com/index.html",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The shellcode, shown in Figure 5, downloads an unencrypted payload from http://softsrobot[.]com/index.html to %TEMP%\\ChromeUp.exe by default; if the file cannot be created, it gets a new name using the GetTempFileNameA API."
+        ]
+      },
+      {
+        "node_id": "IOC_dda1aac331cb",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "softsrobot[.]com",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          24,
+          48
+        ],
+        "span_sentences": [
+          "The shellcode, shown in Figure 5, downloads an unencrypted payload from http://softsrobot[.]com/index.html to %TEMP%\\ChromeUp.exe by default; if the file cannot be created, it gets a new name using the GetTempFileNameA API.",
+          "Additionally, domains used by the attackers to contact their C&C servers were previously attributed to Tick in past cases: waterglue[.]org in 2015, and softsrobot[.]com in 2020."
+        ]
+      },
+      {
+        "node_id": "IOC_df2100be803a",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "waterglue[.]org",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "Additionally, domains used by the attackers to contact their C&C servers were previously attributed to Tick in past cases: waterglue[.]org in 2015, and softsrobot[.]com in 2020."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_62c14cd4f687",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_815e46eca47f",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_815e46eca47f",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_d595c750cddb",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_d595c750cddb",
+      "node_v": "TTP_T1505"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_ef19c3ee9b09",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_ef19c3ee9b09",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_ef19c3ee9b09",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_09cd381de5f6",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_09cd381de5f6",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_09cd381de5f6",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_09cd381de5f6",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_3ab6bbc10dac",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_3ab6bbc10dac",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_3ab6bbc10dac",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_5f95f47d6937",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_5f95f47d6937",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_739c814c4cda",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_b3c92f174d35",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_b3c92f174d35",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_dda1aac331cb",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_dda1aac331cb",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_df2100be803a",
+      "node_v": "TTP_T1071"
+    }
+  ]
+}

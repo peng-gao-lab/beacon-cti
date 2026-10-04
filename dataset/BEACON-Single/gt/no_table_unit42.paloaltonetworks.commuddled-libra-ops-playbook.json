@@ -1,0 +1,676 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0576e1dd1c38",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Outlook",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "The attackers then searched the web for “office[.]com old setup download” and “is there a place to download an older version of Outlook?” Attackers also reviewed various Reddit posts related to this query."
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "We observed and retrieved dozens of files associated with ADRecon, including a PowerShell script and output files."
+        ]
+      },
+      {
+        "node_id": "HL_1b5ee0c9ffc6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft SysInternals",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "We also observed the attackers downloading the tool ADExplorer64.exe directly from the Microsoft SysInternals domain."
+        ]
+      },
+      {
+        "node_id": "HL_22935c36e8ee",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office",
+        "edges": [],
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "However, based on Bing search history, they had difficulty accessing the mailbox via Office."
+        ]
+      },
+      {
+        "node_id": "HL_2557a4ff31b7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNC3944",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "During a September 2025 incident response investigation, Unit 42 discovered a rogue virtual machine (VM) which we believe with high confidence to be used by the cybercrime group Muddled Libra (aka Scattered Spider, UNC3944)."
+        ]
+      },
+      {
+        "node_id": "HL_2667e2b2457b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Bing",
+        "edges": [],
+        "sentence_indices": [
+          35,
+          40
+        ],
+        "span_sentences": [
+          "After trying several common file-sharing sites, they began using Bing to search on the phrases “upload files” and “upload files no registration” to identify a file-sharing site that was not blocked.",
+          "However, based on Bing search history, they had difficulty accessing the mailbox via Office."
+        ]
+      },
+      {
+        "node_id": "HL_37aa9c94eaf5",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Scattered Spider",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "During a September 2025 incident response investigation, Unit 42 discovered a rogue virtual machine (VM) which we believe with high confidence to be used by the cybercrime group Muddled Libra (aka Scattered Spider, UNC3944)."
+        ]
+      },
+      {
+        "node_id": "HL_4722e7be1a76",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Muddled Libra",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          3,
+          4,
+          8,
+          10,
+          48,
+          52,
+          53
+        ],
+        "span_sentences": [
+          "During a September 2025 incident response investigation, Unit 42 discovered a rogue virtual machine (VM) which we believe with high confidence to be used by the cybercrime group Muddled Libra (aka Scattered Spider, UNC3944).",
+          "Muddled Libra created the VM after the group successfully gained unauthorized access to the target's VMware vSphere environment.",
+          "Based on the characteristics of the attack, we assess with high confidence that Muddled Libra conducted it.",
+          "As previously documented, threat actors affiliated with Muddled Libra use various social engineering tactics (e.g., smishing, vishing) to gain initial access to targeted organizations.",
+          "Threat actors affiliated with Muddled Libra are highly proficient at exploiting human psychology by impersonating employees to attempt password and multi-factor authentication (MFA) resets.",
+          "While their tradecraft has evolved, threat actors affiliated with Muddled Libra continue to minimize their use of malware throughout the attack chain.",
+          "Intrusion operations Muddled Libra conducts have affected the business operations of many organizations across the globe.",
+          "This incident offers a rare window into an operational playbook used by Muddled Libra, revealing how a single rogue VM can serve as a powerful foothold for lateral movement and data theft.",
+          "While Muddled Libra’s tactics may appear simple, their effectiveness reminds us that cybersecurity resilience begins not with complexity, but with vigilance, visibility and disciplined access management."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          29,
+          42
+        ],
+        "span_sentences": [
+          "We also observed the attackers downloading the tool ADExplorer64.exe directly from the Microsoft SysInternals domain.",
+          "Shortly after, they downloaded and ran OfficeSetup.exe from Microsoft."
+        ]
+      },
+      {
+        "node_id": "HL_6120d5ae876b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMware ESXi",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "After approximately 15 hours of access to their VM, attackers began browsing various VMware ESXi hosts."
+        ]
+      },
+      {
+        "node_id": "HL_8dfeb3700cd0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Reddit",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "The attackers then searched the web for “office[.]com old setup download” and “is there a place to download an older version of Outlook?” Attackers also reviewed various Reddit posts related to this query."
+        ]
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "edges": [],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "At nearly 30 minutes of access to this newly created VM, the attackers began executing the Active Directory enumeration tool ADRecon."
+        ]
+      },
+      {
+        "node_id": "HL_ab51f15a5b12",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PsExec",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "Shortly after interacting with the data, the attackers began lateral movement using multiple then-compromised accounts with their SSH tunnel, RDP and PsExec."
+        ]
+      },
+      {
+        "node_id": "HL_ba978495bfed",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ADRecon",
+        "edges": [],
+        "sentence_indices": [
+          26,
+          27,
+          31
+        ],
+        "span_sentences": [
+          "At nearly 30 minutes of access to this newly created VM, the attackers began executing the Active Directory enumeration tool ADRecon.",
+          "We observed and retrieved dozens of files associated with ADRecon, including a PowerShell script and output files.",
+          "Within the ADRecon output, the threat actors only opened the CSV file ComputerSPNs.csv."
+        ]
+      },
+      {
+        "node_id": "HL_c525e7638b0f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMware vSphere",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Muddled Libra created the VM after the group successfully gained unauthorized access to the target's VMware vSphere environment."
+        ]
+      },
+      {
+        "node_id": "HL_c777f7592b5e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "S3 Browser",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "They first searched for the S3 Browser tool."
+        ]
+      },
+      {
+        "node_id": "HL_e86d90498288",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Chisel",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Within three minutes, attackers established additional persistence in the target’s environment using an SSH tunnel through the Chisel tool."
+        ]
+      },
+      {
+        "node_id": "HL_f71e26f61b8b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Snowflake",
+        "edges": [],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "Thirty minutes after their web searches, attackers began interacting with significant data from the target’s Snowflake database, which they also downloaded to their VM."
+        ]
+      },
+      {
+        "node_id": "HL_ffbd93853e15",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ADExplorer64.exe",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "We also observed the attackers downloading the tool ADExplorer64.exe directly from the Microsoft SysInternals domain."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_2",
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Approximately 15 minutes after creating the VM, the attackers began using vSphere to power down two of the target's virtualized DCs.",
+            "They then mounted the virtual machine disks (VMDKs) of the powered-down DCs.",
+            "This allowed them to copy the NTDS.dit and SYSTEM registry hive files from these two DCs and place them on the desktop of the Administrator account on their newly created VM."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [
+          "EDGE_3",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Shortly after interacting with the data, the attackers began lateral movement using multiple then-compromised accounts with their SSH tunnel, RDP and PsExec.",
+            "Approximately four hours after the creation of their VM, the attackers began looking for additional sensitive data.",
+            "At that time, we observed them having compromised a handful of accounts, one of which they used to access the mailboxes of other accounts to download a Personal Storage Table (PST) file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_4",
+          "EDGE_10",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            37,
+            39
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            46,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Threat actors affiliated with Muddled Libra are highly proficient at exploiting human psychology by impersonating employees to attempt password and multi-factor authentication (MFA) resets."
+          ],
+          [
+            "Approximately two hours after gaining initial access to the target’s environment, we observed the attackers accessing the target’s vSphere portal and creating a new VM named “New Virtual Machine.” The attackers then leveraged this VM for the early stages of the incident as a beachhead host using the local Administrator account."
+          ],
+          [
+            "Shortly after interacting with the data, the attackers began lateral movement using multiple then-compromised accounts with their SSH tunnel, RDP and PsExec.",
+            "Approximately four hours after the creation of their VM, the attackers began looking for additional sensitive data.",
+            "At that time, we observed them having compromised a handful of accounts, one of which they used to access the mailboxes of other accounts to download a Personal Storage Table (PST) file."
+          ],
+          [
+            "At that time, we observed them having compromised a handful of accounts, one of which they used to access the mailboxes of other accounts to download a Personal Storage Table (PST) file."
+          ],
+          [
+            "After approximately 15 hours of access to their VM, attackers began browsing various VMware ESXi hosts.",
+            "They continued to pivot through the network, leveraging access to multiple compromised accounts before their access was terminated by the targeted organization’s security team."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_5",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Within three minutes, attackers established additional persistence in the target’s environment using an SSH tunnel through the Chisel tool."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_1",
+          "EDGE_6",
+          "EDGE_9",
+          "EDGE_15",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            41,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We also observed the attackers downloading the tool ADExplorer64.exe directly from the Microsoft SysInternals domain."
+          ],
+          [
+            "The attackers then searched the web for “office[.]com old setup download” and “is there a place to download an older version of Outlook?” Attackers also reviewed various Reddit posts related to this query.",
+            "Shortly after, they downloaded and ran OfficeSetup.exe from Microsoft."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1114",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "At that time, we observed them having compromised a handful of accounts, one of which they used to access the mailboxes of other accounts to download a Personal Storage Table (PST) file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1567",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1567",
+        "edges": [
+          "EDGE_8",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They first searched for the S3 Browser tool.",
+            "Once they downloaded the tool from the S3 Browser website, attackers then attempted to exfiltrate the PST file by uploading it to their S3 bucket."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_061b7d45204c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "result.kerb",
+        "edges": [],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "Approximately two minutes later, they wrote two files, result and result.kerb, to the local Administrator account’s desktop."
+        ]
+      },
+      {
+        "node_id": "IOC_a1c75e4b31f4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "NTDS.dit",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "This allowed them to copy the NTDS.dit and SYSTEM registry hive files from these two DCs and place them on the desktop of the Administrator account on their newly created VM."
+        ]
+      },
+      {
+        "node_id": "IOC_a746f8fb057a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SYSTEM",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "This allowed them to copy the NTDS.dit and SYSTEM registry hive files from these two DCs and place them on the desktop of the Administrator account on their newly created VM."
+        ]
+      },
+      {
+        "node_id": "IOC_b90cb2688128",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "result",
+        "edges": [],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "Approximately two minutes later, they wrote two files, result and result.kerb, to the local Administrator account’s desktop."
+        ]
+      },
+      {
+        "node_id": "IOC_dec0338d8a15",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "OfficeSetup.exe",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "Shortly after, they downloaded and ran OfficeSetup.exe from Microsoft."
+        ]
+      },
+      {
+        "node_id": "IOC_fca98737825c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ComputerSPNs.csv",
+        "edges": [],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "Within the ADRecon output, the threat actors only opened the CSV file ComputerSPNs.csv."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_1b5ee0c9ffc6",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_4722e7be1a76",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_4722e7be1a76",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_4722e7be1a76",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_4722e7be1a76",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_4722e7be1a76",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_4722e7be1a76",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_4722e7be1a76",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_49884b2b2c2e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_6120d5ae876b",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_ab51f15a5b12",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_c525e7638b0f",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_c777f7592b5e",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_e86d90498288",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_ffbd93853e15",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_a1c75e4b31f4",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_a746f8fb057a",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_dec0338d8a15",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

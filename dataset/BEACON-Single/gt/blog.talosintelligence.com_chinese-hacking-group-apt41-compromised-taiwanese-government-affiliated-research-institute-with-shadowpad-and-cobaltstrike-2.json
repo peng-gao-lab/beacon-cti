@@ -1,0 +1,915 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0c451fd5e540",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mustang Panda",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Along with APT41 it has also been used by other Chinese hacking groups like Mustang Panda and the Tonto Team."
+        ]
+      },
+      {
+        "node_id": "HL_1f4f4c53ed33",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "U.S. Department of Justice",
+        "edges": [],
+        "sentence_indices": [
+          14,
+          15
+        ],
+        "span_sentences": [
+          "The malware was publicly reported being used by APT41, which is a hacking group believed to be based out of Chengdu, China, according to the U.S.",
+          "Department of Justice."
+        ]
+      },
+      {
+        "node_id": "HL_3cea184bcbb7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ShadowPad",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          11,
+          13,
+          19,
+          34,
+          42,
+          43,
+          44,
+          55,
+          58
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered a malicious campaign that compromised a Taiwanese government-affiliated research institute that started as early as July 2023, delivering the ShadowPad malware, Cobalt Strike and other customized tools for post-compromise activities.",
+          "- The ShadowPad malware used in the current campaign exploited an outdated vulnerable version of Microsoft Office IME binary as a loader to load the customized second-stage loader for launching the payload.",
+          "Talos’ analyses of the malware loaders used in this attack reveal that these are ShadowPad loaders.",
+          "ShadowPad, widely considered the successor of PlugX, is a modular remote access trojan (RAT) only seen sold to Chinese hacking groups.",
+          "This includes using the same ShadowPad Bitdefender loader, using similar file names for the tool, using Filezilla for moving files between endpoints and using the WebPass tool for dumping credentials.",
+          "Beside running commands to discover the network, we also observed the ShadowPad sample perform lightweight network scanning to collect the hosts in the network.",
+          "During our investigation of this campaign, we encountered two distinct iterations of ShadowPad.",
+          "While both iterations utilized the same sideloading technique, they each exploited different vulnerable legitimate binaries to initiate the ShadowPad loader.",
+          "The more recent variant of the ShadowPad loader targeted an outdated and susceptible version of the Microsoft Office IME imecmnt.exe binary, which is over 13 years old.",
+          "We found 2 other ShadowPad loaders by pivoting the RICH PE header (978ece20137baea2bcb364b160eb9678) of the ShadowPad loader.",
+          "The ShadowPad payload connects to an interesting C2 domain w2.chatgptsfit[.]com for communication."
+        ]
+      },
+      {
+        "node_id": "HL_412c1351a473",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PlugX",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "ShadowPad, widely considered the successor of PlugX, is a modular remote access trojan (RAT) only seen sold to Chinese hacking groups."
+        ]
+      },
+      {
+        "node_id": "HL_42b96d56080a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Symantec",
+        "edges": [],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "Infrastructure overlapping: Beside the binary connection, we also found a C2 (103.56.114[.]69) that was reported by Symantec."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          6,
+          8,
+          23
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered a malicious campaign that compromised a Taiwanese government-affiliated research institute that started as early as July 2023, delivering the ShadowPad malware, Cobalt Strike and other customized tools for post-compromise activities.",
+          "In August 2023, Cisco Talos detected abnormal PowerShell commands connecting to an IP address to download and execute PowerShell scripts in the environment of a Taiwanese research institute.",
+          "Cisco Talos assesses with medium confidence that this campaign is carried out by APT41, alleged by the U.S.",
+          "In August 2023, Cisco Talos detected abnormal PowerShell commands connected to an IP address to download PowerShell script for execution in the environment of the target."
+        ]
+      },
+      {
+        "node_id": "HL_499f43288fbc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "UPX",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "With deep analysis for this loader, we found the loader not only packed with UPX but modified the section name to anti-unpack the malware."
+        ]
+      },
+      {
+        "node_id": "HL_4c8e9b9bb795",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Office IME",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          4,
+          44
+        ],
+        "span_sentences": [
+          "- The ShadowPad malware used in the current campaign exploited an outdated vulnerable version of Microsoft Office IME binary as a loader to load the customized second-stage loader for launching the payload.",
+          "The more recent variant of the ShadowPad loader targeted an outdated and susceptible version of the Microsoft Office IME imecmnt.exe binary, which is over 13 years old."
+        ]
+      },
+      {
+        "node_id": "HL_4e6bdc40be03",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Chengdu, China",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "The malware was publicly reported being used by APT41, which is a hacking group believed to be based out of Chengdu, China, according to the U.S."
+        ]
+      },
+      {
+        "node_id": "HL_58115ff911bd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "CS-Avoid-Killing",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "This loader is based on an anti-AV loader named CS-Avoid-Killing hosted on GitHub and written in Simplified Chinese."
+        ]
+      },
+      {
+        "node_id": "HL_5886a9ce543d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT41",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          1,
+          5,
+          8,
+          14,
+          16
+        ],
+        "span_sentences": [
+          "- The activity conducted on the victim endpoint matches the hacking group APT41, alleged by the U.S.",
+          "- We also discovered that APT41 created a tailored loader to inject a proof-of-concept for CVE-2018-0824 directly into memory, utilizing a remote code execution vulnerability to achieve local privilege escalation.",
+          "Cisco Talos assesses with medium confidence that this campaign is carried out by APT41, alleged by the U.S.",
+          "The malware was publicly reported being used by APT41, which is a hacking group believed to be based out of Chengdu, China, according to the U.S.",
+          "Along with APT41 it has also been used by other Chinese hacking groups like Mustang Panda and the Tonto Team."
+        ]
+      },
+      {
+        "node_id": "HL_5d52c72fa972",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Filezilla",
+        "edges": [],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "This includes using the same ShadowPad Bitdefender loader, using similar file names for the tool, using Filezilla for moving files between endpoints and using the WebPass tool for dumping credentials."
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          0,
+          20,
+          27,
+          28,
+          39,
+          47,
+          51
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered a malicious campaign that compromised a Taiwanese government-affiliated research institute that started as early as July 2023, delivering the ShadowPad malware, Cobalt Strike and other customized tools for post-compromise activities.",
+          "This attack saw the use of a unique Cobalt Strike loader, written in GoLang is meant to evade detection of Cobalt Strike by Windows Defender.",
+          "Later on, the attackers used another two PowerShell commands to download Cobalt Strike malware from a compromised C2 server (www.nss.com[.]tw).",
+          "The Cobalt Strike malware had been developed using an anti-AV loader to bypass AV detection and avoid the security product quarantine.",
+          "The threat actor leverages two major backdoors into their infection chains in this campaign, including both shadowPad and Cobalt Strike malware.",
+          "There is a Cobalt Strike loader also detected in this incident.",
+          "Based on the project name we found that the code was cloned from a GitHub source that was written in simplified Chinese and the project is to avoid the Cobalt Strike being deleted by antivirus products."
+        ]
+      },
+      {
+        "node_id": "HL_6d7b11512a54",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Mimikatz",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "The actor uses Mimikatz to harvest the hashes from the lsass process address space and WebBrowserPassView to get all credentials stored in the web browsers."
+        ]
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "This attack saw the use of a unique Cobalt Strike loader, written in GoLang is meant to evade detection of Cobalt Strike by Windows Defender."
+        ]
+      },
+      {
+        "node_id": "HL_925a6c00b37f",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "7zip",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "To exfiltrate a large number of files from multiple compromised machines, we observed threat actors using 7zip to compress and encrypt the files into an archive and later using backdoors to send the archive to the control and command server."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          6,
+          23,
+          27
+        ],
+        "span_sentences": [
+          "In August 2023, Cisco Talos detected abnormal PowerShell commands connecting to an IP address to download and execute PowerShell scripts in the environment of a Taiwanese research institute.",
+          "In August 2023, Cisco Talos detected abnormal PowerShell commands connected to an IP address to download PowerShell script for execution in the environment of the target.",
+          "Later on, the attackers used another two PowerShell commands to download Cobalt Strike malware from a compromised C2 server (www.nss.com[.]tw)."
+        ]
+      },
+      {
+        "node_id": "HL_b6d64f5199fd",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Tonto Team",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Along with APT41 it has also been used by other Chinese hacking groups like Mustang Panda and the Tonto Team."
+        ]
+      },
+      {
+        "node_id": "HL_bcf6af5081c3",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WebPass",
+        "edges": [],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "This includes using the same ShadowPad Bitdefender loader, using similar file names for the tool, using Filezilla for moving files between endpoints and using the WebPass tool for dumping credentials."
+        ]
+      },
+      {
+        "node_id": "HL_d338c0c71b7f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Bitdefender",
+        "edges": [],
+        "sentence_indices": [
+          19,
+          57
+        ],
+        "span_sentences": [
+          "This includes using the same ShadowPad Bitdefender loader, using similar file names for the tool, using Filezilla for moving files between endpoints and using the WebPass tool for dumping credentials.",
+          "Beside the ShadowPad loader, we found the same Bitdefender loader (386eb7aa33c76ce671d6685f79512597f1fab28ea46c8ec7d89e58340081e2bd) and a payload file on the C2 server."
+        ]
+      },
+      {
+        "node_id": "HL_db8b34ff2026",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "UnmarshalPwn",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          31,
+          54
+        ],
+        "span_sentences": [
+          "During the compromise the threat actor attempts to exploit CVE-2018-0824, with a tool called UnmarshalPwn, which we will detail in the sections below.",
+          "After deep analysis, we found the final payload is UnmarshalPwn malware which is a POC for CVE-2018-0824 and uses a remote code execution vulnerability to get local privilege escalation."
+        ]
+      },
+      {
+        "node_id": "HL_e2ee582465a8",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WebBrowserPassView",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "The actor uses Mimikatz to harvest the hashes from the lsass process address space and WebBrowserPassView to get all credentials stored in the web browsers."
+        ]
+      },
+      {
+        "node_id": "HL_e3c10fd9ca67",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GitHub",
+        "edges": [],
+        "sentence_indices": [
+          21,
+          51
+        ],
+        "span_sentences": [
+          "This loader is based on an anti-AV loader named CS-Avoid-Killing hosted on GitHub and written in Simplified Chinese.",
+          "Based on the project name we found that the code was cloned from a GitHub source that was written in simplified Chinese and the project is to avoid the Cobalt Strike being deleted by antivirus products."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The actor uses Mimikatz to harvest the hashes from the lsass process address space and WebBrowserPassView to get all credentials stored in the web browsers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1018",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1018",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Beside running commands to discover the network, we also observed the ShadowPad sample perform lightweight network scanning to collect the hosts in the network."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            39,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor leverages two major backdoors into their infection chains in this campaign, including both shadowPad and Cobalt Strike malware.",
+            "Those two major backdoors were installed via webshell, reverse shell and RDP by the attacker themselves."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_8",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            37,
+            37
+          ],
+          [
+            52,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This attack saw the use of a unique Cobalt Strike loader, written in GoLang is meant to evade detection of Cobalt Strike by Windows Defender."
+          ],
+          [
+            "To exfiltrate a large number of files from multiple compromised machines, we observed threat actors using 7zip to compress and encrypt the files into an archive and later using backdoors to send the archive to the control and command server."
+          ],
+          [
+            "It’s important to highlight that this cobalt strike beacon shellcode used steganography to hide in a picture and executed by this loader."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To exfiltrate a large number of files from multiple compromised machines, we observed threat actors using 7zip to compress and encrypt the files into an archive and later using backdoors to send the archive to the control and command server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_3",
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- We also discovered that APT41 created a tailored loader to inject a proof-of-concept for CVE-2018-0824 directly into memory, utilizing a remote code execution vulnerability to achieve local privilege escalation."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_13",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            27,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In August 2023, Cisco Talos detected abnormal PowerShell commands connecting to an IP address to download and execute PowerShell scripts in the environment of a Taiwanese research institute."
+          ],
+          [
+            "Later on, the attackers used another two PowerShell commands to download Cobalt Strike malware from a compromised C2 server (www.nss.com[.]tw).",
+            "The Cobalt Strike malware had been developed using an anti-AV loader to bypass AV detection and avoid the security product quarantine.",
+            "The following command was used by the threat actor to download anti-AV malware and run the malware in the victim's host machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1068",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1068",
+        "edges": [
+          "EDGE_10",
+          "EDGE_18",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The ShadowPad malware used in the current campaign exploited an outdated vulnerable version of Microsoft Office IME binary as a loader to load the customized second-stage loader for launching the payload.",
+            "- We also discovered that APT41 created a tailored loader to inject a proof-of-concept for CVE-2018-0824 directly into memory, utilizing a remote code execution vulnerability to achieve local privilege escalation."
+          ],
+          [
+            "- We also discovered that APT41 created a tailored loader to inject a proof-of-concept for CVE-2018-0824 directly into memory, utilizing a remote code execution vulnerability to achieve local privilege escalation."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            58,
+            58
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The ShadowPad payload connects to an interesting C2 domain w2.chatgptsfit[.]com for communication."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_14",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            27,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In August 2023, Cisco Talos detected abnormal PowerShell commands connecting to an IP address to download and execute PowerShell scripts in the environment of a Taiwanese research institute."
+          ],
+          [
+            "Later on, the attackers used another two PowerShell commands to download Cobalt Strike malware from a compromised C2 server (www.nss.com[.]tw).",
+            "The Cobalt Strike malware had been developed using an anti-AV loader to bypass AV detection and avoid the security product quarantine.",
+            "The following command was used by the threat actor to download anti-AV malware and run the malware in the victim's host machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1203",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1203",
+        "edges": [
+          "EDGE_5",
+          "EDGE_7",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            5
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The ShadowPad malware used in the current campaign exploited an outdated vulnerable version of Microsoft Office IME binary as a loader to load the customized second-stage loader for launching the payload.",
+            "- We also discovered that APT41 created a tailored loader to inject a proof-of-concept for CVE-2018-0824 directly into memory, utilizing a remote code execution vulnerability to achieve local privilege escalation."
+          ],
+          [
+            "The more recent variant of the ShadowPad loader targeted an outdated and susceptible version of the Microsoft Office IME imecmnt.exe binary, which is over 13 years old."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1555",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The actor uses Mimikatz to harvest the hashes from the lsass process address space and WebBrowserPassView to get all credentials stored in the web browsers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To exfiltrate a large number of files from multiple compromised machines, we observed threat actors using 7zip to compress and encrypt the files into an archive and later using backdoors to send the archive to the control and command server."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_15588c4e485e",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "386eb7aa33c76ce671d6685f79512597f1fab28ea46c8ec7d89e58340081e2bd",
+        "edges": [],
+        "sentence_indices": [
+          57
+        ],
+        "span_sentences": [
+          "Beside the ShadowPad loader, we found the same Bitdefender loader (386eb7aa33c76ce671d6685f79512597f1fab28ea46c8ec7d89e58340081e2bd) and a payload file on the C2 server."
+        ]
+      },
+      {
+        "node_id": "IOC_3c8177addf6e",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2018-0824",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          5,
+          31,
+          54
+        ],
+        "span_sentences": [
+          "- We also discovered that APT41 created a tailored loader to inject a proof-of-concept for CVE-2018-0824 directly into memory, utilizing a remote code execution vulnerability to achieve local privilege escalation.",
+          "During the compromise the threat actor attempts to exploit CVE-2018-0824, with a tool called UnmarshalPwn, which we will detail in the sections below.",
+          "After deep analysis, we found the final payload is UnmarshalPwn malware which is a POC for CVE-2018-0824 and uses a remote code execution vulnerability to get local privilege escalation."
+        ]
+      },
+      {
+        "node_id": "IOC_4a802cc99d58",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "w2.chatgptsfit[.]com",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          58
+        ],
+        "span_sentences": [
+          "The ShadowPad payload connects to an interesting C2 domain w2.chatgptsfit[.]com for communication."
+        ]
+      },
+      {
+        "node_id": "IOC_6a20ce76ff98",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "978ece20137baea2bcb364b160eb9678",
+        "edges": [],
+        "sentence_indices": [
+          55
+        ],
+        "span_sentences": [
+          "We found 2 other ShadowPad loaders by pivoting the RICH PE header (978ece20137baea2bcb364b160eb9678) of the ShadowPad loader."
+        ]
+      },
+      {
+        "node_id": "IOC_71ab30b32ca3",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "www.nss.com[.]tw",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Later on, the attackers used another two PowerShell commands to download Cobalt Strike malware from a compromised C2 server (www.nss.com[.]tw)."
+        ]
+      },
+      {
+        "node_id": "IOC_dfa848e2c049",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "103.56.114[.]69",
+        "edges": [],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "Infrastructure overlapping: Beside the binary connection, we also found a C2 (103.56.114[.]69) that was reported by Symantec."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_3cea184bcbb7",
+      "node_v": "TTP_T1018"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_3cea184bcbb7",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_3cea184bcbb7",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_3cea184bcbb7",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_3cea184bcbb7",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_499f43288fbc",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_4c8e9b9bb795",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_58115ff911bd",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1068"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_5886a9ce543d",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_6d7b11512a54",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_925a6c00b37f",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_db8b34ff2026",
+      "node_v": "TTP_T1068"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_e2ee582465a8",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_3c8177addf6e",
+      "node_v": "TTP_T1068"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_4a802cc99d58",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_71ab30b32ca3",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

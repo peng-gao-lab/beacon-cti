@@ -1,0 +1,857 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0f277059215f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Argentina",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "During the second quarter of 2023, the attack volume per month almost doubled, and the group shifted its focus toward Latin American countries such as Brazil, Mexico, Argentina and Colombia, as shown in the chart below."
+        ]
+      },
+      {
+        "node_id": "HL_18a8c40152fc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Brazil",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "During the second quarter of 2023, the attack volume per month almost doubled, and the group shifted its focus toward Latin American countries such as Brazil, Mexico, Argentina and Colombia, as shown in the chart below."
+        ]
+      },
+      {
+        "node_id": "HL_1faccc3e9493",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BabyLockerKZ",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          3,
+          4,
+          9,
+          18,
+          23,
+          34,
+          35,
+          38
+        ],
+        "span_sentences": [
+          "This threat actor was observed distributing a MedusaLocker ransomware variant known as “BabyLockerKZ.” This variant is compiled with a PDB path containing the word “paid_memes” which is also present in other tools observed during the attacks, presumably by the same author.",
+          "Talos has recently observed an attack leading to the deployment of a MedusaLocker ransomware variant known as “BabyLockerKZ.” The distinguishable techniques — including consistently storing the same set of tools in the same location on compromised systems, the use of tools that have the PDB path with the string “paid_memes,” and the use of a lateral movement tool named “checker” — used in the attack led us to take a deeper look to try to understand more about this threat actor.",
+          "Based on the name of the autorun key, the attackers call this variant “BabyLockerKZ.”\nWe assess with medium confidence that the actor is financially motivated, likely working as an IAB or an affiliate of a ransomware cartel, and has been carrying out attacks since at least 2022.",
+          "During the attack leading to the deployment of the BabyLockerKZt, the adversary used several publicly known attack tools and others that could be unique to this actor.",
+          "One of these tools, called “Checker” used in an attack that deployed BabyLockerKZ, consisted of pivotal characteristics of BabyLockerKZ, the “Checker” tool has a PDB path containing the string “paid_memes”.",
+          "BabyLockerKZ is a variant of MedusaLocker that has been around at least since late 2023 and has been analyzed by other researchers, although not specifically called out as a MedusaLocker variant with this name.",
+          "A Cynet blog post on the malware used the name “Hazard” for a MedusaLocker variant (named after the extension used for encrypted files) and mentions the existence of the BabyLockerKZ registry key.",
+          "But there are several notable differences between BabyLockerKZ and MedusaLocker, such as:."
+        ]
+      },
+      {
+        "node_id": "HL_21475ea23849",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ASEC",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "These are similar to a previous attack leading to MedusaLocker ransomware, documented by ASEC in February 2023, which our telemetry suggests was a more active period for this threat actor."
+        ]
+      },
+      {
+        "node_id": "HL_2402bec9263f",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "RDP",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          22,
+          28
+        ],
+        "span_sentences": [
+          "While most of the tools the attacker uses are publicly available, they also use some tools that are not widely distributed that streamline the attack process by automating the interaction between popular attack tools (e.g., Mimikatz, Invoke-the-hash, PSEXEC, RDP) and by adding convenient functionality and interfaces.",
+          "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner."
+        ]
+      },
+      {
+        "node_id": "HL_359171ee0083",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Spain",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "At that time, the targets were mostly located in European countries such as France, Germany, Spain or Italy."
+        ]
+      },
+      {
+        "node_id": "HL_35a1a34238f2",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Whitehat",
+        "edges": [],
+        "sentence_indices": [
+          36,
+          40
+        ],
+        "span_sentences": [
+          "Another post from Whitehat mentions the existence of PAIDMEMES PUBLIC and PRIVATE registry keys on a MedusaLocker sample.",
+          "In their post, Whitehat mentioned that they believe the keys aren’t necessary for the encryption process, as the Linux version doesn’t use them."
+        ]
+      },
+      {
+        "node_id": "HL_404b5ee235b5",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WMI",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner."
+        ]
+      },
+      {
+        "node_id": "HL_426ef9249592",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Colombia",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "During the second quarter of 2023, the attack volume per month almost doubled, and the group shifted its focus toward Latin American countries such as Brazil, Mexico, Argentina and Colombia, as shown in the chart below."
+        ]
+      },
+      {
+        "node_id": "HL_45787f8e84a8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "France",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "At that time, the targets were mostly located in European countries such as France, Germany, Spain or Italy."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos has discovered a financially motivated threat actor, active since 2022, recently observed delivering a MedusaLocker ransomware variant."
+        ]
+      },
+      {
+        "node_id": "HL_49fa04070cb5",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "rclone",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "MIMIK (D:\\Projects\\paid_memes\\mimik\\Release\\stub_mimik.pdb) is a wrapper around Mimikatz and rclone that can be used to steal credentials and automatically upload them to an attacker-controlled server."
+        ]
+      },
+      {
+        "node_id": "HL_5ad19db44168",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SMB",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner."
+        ]
+      },
+      {
+        "node_id": "HL_6d7b11512a54",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Mimikatz",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          22,
+          28,
+          32
+        ],
+        "span_sentences": [
+          "While most of the tools the attacker uses are publicly available, they also use some tools that are not widely distributed that streamline the attack process by automating the interaction between popular attack tools (e.g., Mimikatz, Invoke-the-hash, PSEXEC, RDP) and by adding convenient functionality and interfaces.",
+          "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner.",
+          "MIMIK (D:\\Projects\\paid_memes\\mimik\\Release\\stub_mimik.pdb) is a wrapper around Mimikatz and rclone that can be used to steal credentials and automatically upload them to an attacker-controlled server."
+        ]
+      },
+      {
+        "node_id": "HL_6dd88beb28f8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "Pivoting off this string, we identified files on VirusTotal, of which most are BabyLockerKZ samples."
+        ]
+      },
+      {
+        "node_id": "HL_7751adb7c0b0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Hazard",
+        "edges": [],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "A Cynet blog post on the malware used the name “Hazard” for a MedusaLocker variant (named after the extension used for encrypted files) and mentions the existence of the BabyLockerKZ registry key."
+        ]
+      },
+      {
+        "node_id": "HL_7910a4b0ccb6",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PTH",
+        "edges": [],
+        "sentence_indices": [
+          30,
+          43
+        ],
+        "span_sentences": [
+          "The PTH (D:\\Projects\\paid_memes\\PTH\\Release\\PTH.pdb) name suggests the pass-the-hash technique to use NTLM hashes to authenticate remotely without having to crack the password.",
+          "PTH:."
+        ]
+      },
+      {
+        "node_id": "HL_88b25dff1004",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Invoke-the-hash",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "While most of the tools the attacker uses are publicly available, they also use some tools that are not widely distributed that streamline the attack process by automating the interaction between popular attack tools (e.g., Mimikatz, Invoke-the-hash, PSEXEC, RDP) and by adding convenient functionality and interfaces."
+        ]
+      },
+      {
+        "node_id": "HL_91b03f3fabdd",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Italy",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "At that time, the targets were mostly located in European countries such as France, Germany, Spain or Italy."
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "At that time, the targets were mostly located in European countries such as France, Germany, Spain or Italy."
+        ]
+      },
+      {
+        "node_id": "HL_ab51f15a5b12",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PSEXEC",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          22,
+          28
+        ],
+        "span_sentences": [
+          "While most of the tools the attacker uses are publicly available, they also use some tools that are not widely distributed that streamline the attack process by automating the interaction between popular attack tools (e.g., Mimikatz, Invoke-the-hash, PSEXEC, RDP) and by adding convenient functionality and interfaces.",
+          "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner."
+        ]
+      },
+      {
+        "node_id": "HL_b338b7cdf906",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "MIMIK",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "MIMIK (D:\\Projects\\paid_memes\\mimik\\Release\\stub_mimik.pdb) is a wrapper around Mimikatz and rclone that can be used to steal credentials and automatically upload them to an attacker-controlled server."
+        ]
+      },
+      {
+        "node_id": "HL_b7eb6900aab6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MedusaLocker",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          7,
+          8,
+          21,
+          34,
+          35,
+          36,
+          37,
+          38
+        ],
+        "span_sentences": [
+          "Cisco Talos has discovered a financially motivated threat actor, active since 2022, recently observed delivering a MedusaLocker ransomware variant.",
+          "This threat actor was observed distributing a MedusaLocker ransomware variant known as “BabyLockerKZ.” This variant is compiled with a PDB path containing the word “paid_memes” which is also present in other tools observed during the attacks, presumably by the same author.",
+          "Talos has recently observed an attack leading to the deployment of a MedusaLocker ransomware variant known as “BabyLockerKZ.” The distinguishable techniques — including consistently storing the same set of tools in the same location on compromised systems, the use of tools that have the PDB path with the string “paid_memes,” and the use of a lateral movement tool named “checker” — used in the attack led us to take a deeper look to try to understand more about this threat actor.",
+          "The same developer built the MedusaLocker variant used in the initial attack.",
+          "This variant that uses the same chat and leak site URLs contains several differences to the original MedusaLocker ransomware, such as a different autorun key or an extra public and private key set stored in the registry.",
+          "These are similar to a previous attack leading to MedusaLocker ransomware, documented by ASEC in February 2023, which our telemetry suggests was a more active period for this threat actor.",
+          "BabyLockerKZ is a variant of MedusaLocker that has been around at least since late 2023 and has been analyzed by other researchers, although not specifically called out as a MedusaLocker variant with this name.",
+          "A Cynet blog post on the malware used the name “Hazard” for a MedusaLocker variant (named after the extension used for encrypted files) and mentions the existence of the BabyLockerKZ registry key.",
+          "Another post from Whitehat mentions the existence of PAIDMEMES PUBLIC and PRIVATE registry keys on a MedusaLocker sample.",
+          "This variant has not been given much attention outside of that, though, possibly because it’s highly similar to MedusaLocker or because it uses the same chat and leak sites as MedusaLocker.",
+          "But there are several notable differences between BabyLockerKZ and MedusaLocker, such as:."
+        ]
+      },
+      {
+        "node_id": "HL_c679190ac4af",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Mexico",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "During the second quarter of 2023, the attack volume per month almost doubled, and the group shifted its focus toward Latin American countries such as Brazil, Mexico, Argentina and Colombia, as shown in the chart below."
+        ]
+      },
+      {
+        "node_id": "HL_c8cba2c3b1f1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cynet",
+        "edges": [],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "A Cynet blog post on the malware used the name “Hazard” for a MedusaLocker variant (named after the extension used for encrypted files) and mentions the existence of the BabyLockerKZ registry key."
+        ]
+      },
+      {
+        "node_id": "HL_d89af15eceb9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Cisco Duo",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "Cisco Duo provides multi-factor authentication for users to ensure only those authorized are accessing your network."
+        ]
+      },
+      {
+        "node_id": "HL_ef55f946f796",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Checker",
+        "edges": [
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          23,
+          26,
+          45
+        ],
+        "span_sentences": [
+          "One of these tools, called “Checker” used in an attack that deployed BabyLockerKZ, consisted of pivotal characteristics of BabyLockerKZ, the “Checker” tool has a PDB path containing the string “paid_memes”.",
+          "Checker (E:\\paid_memes\\wmi_smb_rdp_checker\\Release\\checker.pdb) is an app that bundles several other freely available apps and provides a GUI for management of credentials as the attackers proceed with lateral movement.",
+          "Checker:\nd00f7cf6af68ba832b9d364f28411346cfe66fd3b1f5bcac318766add29ff7f0\n1f2df15442593b159e45d16a27e4d43d3a9062da212a588ba4c048f214a0b7be\n1e9246e6a35731143368eaa0ade4f3cf576d6b22e6090152f6e94f1fa3070651\n6ae3a58a78be9c606009c657de4e390538b21ad951e62b6f4d31138e1a75732c\n2eddfe711c32ef1668e14a10d00452c83c29e394e17c41f491550a1583c1bcac."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_10",
+          "EDGE_13",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "MIMIK (D:\\Projects\\paid_memes\\mimik\\Release\\stub_mimik.pdb) is a wrapper around Mimikatz and rclone that can be used to steal credentials and automatically upload them to an attacker-controlled server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [
+          "EDGE_3",
+          "EDGE_5",
+          "EDGE_8",
+          "EDGE_11",
+          "EDGE_17",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            28
+          ],
+          [
+            26,
+            29
+          ],
+          [
+            28,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Checker (E:\\paid_memes\\wmi_smb_rdp_checker\\Release\\checker.pdb) is an app that bundles several other freely available apps and provides a GUI for management of credentials as the attackers proceed with lateral movement.",
+            "In particular it contains a set of tools:.",
+            "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner."
+          ],
+          [
+            "Checker (E:\\paid_memes\\wmi_smb_rdp_checker\\Release\\checker.pdb) is an app that bundles several other freely available apps and provides a GUI for management of credentials as the attackers proceed with lateral movement.",
+            "In particular it contains a set of tools:.",
+            "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner.",
+            "The tool can also decrypt hashes and offers the convenience of a GUI to store a database of the hosts and respective credentials that have been obtained or verified."
+          ],
+          [
+            "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner.",
+            "The tool can also decrypt hashes and offers the convenience of a GUI to store a database of the hosts and respective credentials that have been obtained or verified.",
+            "The PTH (D:\\Projects\\paid_memes\\PTH\\Release\\PTH.pdb) name suggests the pass-the-hash technique to use NTLM hashes to authenticate remotely without having to crack the password."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_4",
+          "EDGE_6",
+          "EDGE_9",
+          "EDGE_12",
+          "EDGE_18",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            28
+          ],
+          [
+            26,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Checker (E:\\paid_memes\\wmi_smb_rdp_checker\\Release\\checker.pdb) is an app that bundles several other freely available apps and provides a GUI for management of credentials as the attackers proceed with lateral movement.",
+            "In particular it contains a set of tools:.",
+            "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner."
+          ],
+          [
+            "Checker (E:\\paid_memes\\wmi_smb_rdp_checker\\Release\\checker.pdb) is an app that bundles several other freely available apps and provides a GUI for management of credentials as the attackers proceed with lateral movement.",
+            "In particular it contains a set of tools:.",
+            "As the image illustrates, the tool can be used to scan IPs for valid credentials using several protocols/techniques (PSEXEC, RDP, SMB and WMI) and is prepared to import data from lists of hosts and some of the tools in the attacker toolset, such as Mimikatz, as well as an advanced port scanner.",
+            "The tool can also decrypt hashes and offers the convenience of a GUI to store a database of the hosts and respective credentials that have been obtained or verified."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1486",
+        "edges": [
+          "EDGE_1",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This threat actor was observed distributing a MedusaLocker ransomware variant known as “BabyLockerKZ.” This variant is compiled with a PDB path containing the word “paid_memes” which is also present in other tools observed during the attacks, presumably by the same author."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_2",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This variant that uses the same chat and leak site URLs contains several differences to the original MedusaLocker ransomware, such as a different autorun key or an extra public and private key set stored in the registry.",
+            "Based on the name of the autorun key, the attackers call this variant “BabyLockerKZ.”\nWe assess with medium confidence that the actor is financially motivated, likely working as an IAB or an affiliate of a ransomware cartel, and has been carrying out attacks since at least 2022."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1567",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1567",
+        "edges": [
+          "EDGE_7",
+          "EDGE_14",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "MIMIK (D:\\Projects\\paid_memes\\mimik\\Release\\stub_mimik.pdb) is a wrapper around Mimikatz and rclone that can be used to steal credentials and automatically upload them to an attacker-controlled server."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_09d5fa1c2c30",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "E:\\paid_memes\\wmi_smb_rdp_checker\\Release\\checker.pdb",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "Checker (E:\\paid_memes\\wmi_smb_rdp_checker\\Release\\checker.pdb) is an app that bundles several other freely available apps and provides a GUI for management of credentials as the attackers proceed with lateral movement."
+        ]
+      },
+      {
+        "node_id": "IOC_0fedb1e07228",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "1e9246e6a35731143368eaa0ade4f3cf576d6b22e6090152f6e94f1fa3070651",
+        "edges": [],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Checker:\nd00f7cf6af68ba832b9d364f28411346cfe66fd3b1f5bcac318766add29ff7f0\n1f2df15442593b159e45d16a27e4d43d3a9062da212a588ba4c048f214a0b7be\n1e9246e6a35731143368eaa0ade4f3cf576d6b22e6090152f6e94f1fa3070651\n6ae3a58a78be9c606009c657de4e390538b21ad951e62b6f4d31138e1a75732c\n2eddfe711c32ef1668e14a10d00452c83c29e394e17c41f491550a1583c1bcac."
+        ]
+      },
+      {
+        "node_id": "IOC_1c4aaf8389dc",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "8bc455e5de35290f8a94376357947bd72aaf6f4d452c25a8ef444e037ef76b9f",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "9f066975f1e02b29c7c635280f405c59704ce4f4e06b04e9ac8a7eac22acd3c7\n8bc455e5de35290f8a94376357947bd72aaf6f4d452c25a8ef444e037ef76b9f."
+        ]
+      },
+      {
+        "node_id": "IOC_57d665e8b5c4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "D:\\Projects\\paid_memes\\mimik\\Release\\stub_mimik.pdb",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "MIMIK (D:\\Projects\\paid_memes\\mimik\\Release\\stub_mimik.pdb) is a wrapper around Mimikatz and rclone that can be used to steal credentials and automatically upload them to an attacker-controlled server."
+        ]
+      },
+      {
+        "node_id": "IOC_58fb16aad545",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "1f2df15442593b159e45d16a27e4d43d3a9062da212a588ba4c048f214a0b7be",
+        "edges": [],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Checker:\nd00f7cf6af68ba832b9d364f28411346cfe66fd3b1f5bcac318766add29ff7f0\n1f2df15442593b159e45d16a27e4d43d3a9062da212a588ba4c048f214a0b7be\n1e9246e6a35731143368eaa0ade4f3cf576d6b22e6090152f6e94f1fa3070651\n6ae3a58a78be9c606009c657de4e390538b21ad951e62b6f4d31138e1a75732c\n2eddfe711c32ef1668e14a10d00452c83c29e394e17c41f491550a1583c1bcac."
+        ]
+      },
+      {
+        "node_id": "IOC_7f51b26cf452",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "6ae3a58a78be9c606009c657de4e390538b21ad951e62b6f4d31138e1a75732c",
+        "edges": [],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Checker:\nd00f7cf6af68ba832b9d364f28411346cfe66fd3b1f5bcac318766add29ff7f0\n1f2df15442593b159e45d16a27e4d43d3a9062da212a588ba4c048f214a0b7be\n1e9246e6a35731143368eaa0ade4f3cf576d6b22e6090152f6e94f1fa3070651\n6ae3a58a78be9c606009c657de4e390538b21ad951e62b6f4d31138e1a75732c\n2eddfe711c32ef1668e14a10d00452c83c29e394e17c41f491550a1583c1bcac."
+        ]
+      },
+      {
+        "node_id": "IOC_8421039f025e",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "9f066975f1e02b29c7c635280f405c59704ce4f4e06b04e9ac8a7eac22acd3c7",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "9f066975f1e02b29c7c635280f405c59704ce4f4e06b04e9ac8a7eac22acd3c7\n8bc455e5de35290f8a94376357947bd72aaf6f4d452c25a8ef444e037ef76b9f."
+        ]
+      },
+      {
+        "node_id": "IOC_8b9becffd45c",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "d00f7cf6af68ba832b9d364f28411346cfe66fd3b1f5bcac318766add29ff7f0",
+        "edges": [],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Checker:\nd00f7cf6af68ba832b9d364f28411346cfe66fd3b1f5bcac318766add29ff7f0\n1f2df15442593b159e45d16a27e4d43d3a9062da212a588ba4c048f214a0b7be\n1e9246e6a35731143368eaa0ade4f3cf576d6b22e6090152f6e94f1fa3070651\n6ae3a58a78be9c606009c657de4e390538b21ad951e62b6f4d31138e1a75732c\n2eddfe711c32ef1668e14a10d00452c83c29e394e17c41f491550a1583c1bcac."
+        ]
+      },
+      {
+        "node_id": "IOC_956685765f72",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "D:\\Projects\\paid_memes\\PTH\\Release\\PTH.pdb",
+        "edges": [],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "The PTH (D:\\Projects\\paid_memes\\PTH\\Release\\PTH.pdb) name suggests the pass-the-hash technique to use NTLM hashes to authenticate remotely without having to crack the password."
+        ]
+      },
+      {
+        "node_id": "IOC_d8f60ea21b61",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "2eddfe711c32ef1668e14a10d00452c83c29e394e17c41f491550a1583c1bcac",
+        "edges": [],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Checker:\nd00f7cf6af68ba832b9d364f28411346cfe66fd3b1f5bcac318766add29ff7f0\n1f2df15442593b159e45d16a27e4d43d3a9062da212a588ba4c048f214a0b7be\n1e9246e6a35731143368eaa0ade4f3cf576d6b22e6090152f6e94f1fa3070651\n6ae3a58a78be9c606009c657de4e390538b21ad951e62b6f4d31138e1a75732c\n2eddfe711c32ef1668e14a10d00452c83c29e394e17c41f491550a1583c1bcac."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_1faccc3e9493",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_1faccc3e9493",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_2402bec9263f",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_2402bec9263f",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_404b5ee235b5",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_404b5ee235b5",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_49fa04070cb5",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_5ad19db44168",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_5ad19db44168",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_6d7b11512a54",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_ab51f15a5b12",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_ab51f15a5b12",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_b338b7cdf906",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_b338b7cdf906",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_b7eb6900aab6",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_b7eb6900aab6",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_ef55f946f796",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_ef55f946f796",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_09d5fa1c2c30",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_09d5fa1c2c30",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_57d665e8b5c4",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_57d665e8b5c4",
+      "node_v": "TTP_T1567"
+    }
+  ]
+}

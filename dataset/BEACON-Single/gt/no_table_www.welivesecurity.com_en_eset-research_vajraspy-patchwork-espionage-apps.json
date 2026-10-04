@@ -1,0 +1,777 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "During our investigation, weak operational security of one of the apps led to some victim data being exposed, which allowed us to geolocate 148 compromised devices in Pakistan and India."
+        ]
+      },
+      {
+        "node_id": "HL_0eb589767704",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Patchwork APT",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          5,
+          25,
+          42
+        ],
+        "span_sentences": [
+          "In the background, these apps covertly execute remote access trojan (RAT) code called VajraSpy, used for targeted espionage by the Patchwork APT group.",
+          "According to our research, this Patchwork APT campaign targeted users mostly in Pakistan.",
+          "Because of that, we attributed VajraSpy to the Patchwork APT group.",
+          "ESET Research has discovered an espionage campaign using apps bundled with VajraSpy malware conducted, with a high level of confidence, by the Patchwork APT group."
+        ]
+      },
+      {
+        "node_id": "HL_1c460c992b00",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "QiAnXin",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The malicious code executed by the apps was first discovered in March 2022 by QiAnXin."
+        ]
+      },
+      {
+        "node_id": "HL_1de4c416a49c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "VajraSpy",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          2,
+          3,
+          23,
+          25,
+          26,
+          27,
+          32,
+          38,
+          40,
+          42
+        ],
+        "span_sentences": [
+          "In the background, these apps covertly execute remote access trojan (RAT) code called VajraSpy, used for targeted espionage by the Patchwork APT group.",
+          "VajraSpy has a range of espionage functionalities that can be expanded based on the permissions granted to the app bundled with its code.",
+          "Our analysis of these apps revealed that they all share the same malicious code and belong to the same malware family, VajraSpy.",
+          "Because of that, we attributed VajraSpy to the Patchwork APT group.",
+          "The extent of VajraSpy’s malicious functionalities varies based on the permissions granted to the trojanized application.",
+          "If such permission is granted, VajraSpy can intercept received messages from any messaging application, including SMS messages.",
+          "VajraSpy logs any visible communication from these apps in the console and in the local database, and subsequently uploads it to the Firebase-hosted C&C server.",
+          "VajraSpy uses it to upload user data unencrypted to the C&C server via HTTP.",
+          "It is the only VajraSpy application that is not used for messaging, and is ostensibly used to deliver the latest news.",
+          "ESET Research has discovered an espionage campaign using apps bundled with VajraSpy malware conducted, with a high level of confidence, by the Patchwork APT group."
+        ]
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          13,
+          15,
+          17,
+          19,
+          46
+        ],
+        "span_sentences": [
+          "According to our research, this Patchwork APT campaign targeted users mostly in Pakistan.",
+          "During our investigation, weak operational security of one of the apps led to some victim data being exposed, which allowed us to geolocate 148 compromised devices in Pakistan and India.",
+          "Another clue pointing toward Pakistan is the name of the developer used for the Google Play listing of the Rafaqat رفاقت app.",
+          "Rafaqat رفاقت and several more of these trojanized apps also had the Pakistani country calling code selected by default on their login screen.",
+          "Urdu is one of national languages in Pakistan.",
+          "Based on several indicators, the campaign targeted mostly Pakistani users: Rafaqat رفاقت, one of the malicious apps, used the name of a popular Pakistani cricket player as the developer name on Google Play; the apps that requested a phone number upon account creation have the Pakistan country code selected by default; and many of the compromised devices discovered through the security flaw were located in Pakistan."
+        ]
+      },
+      {
+        "node_id": "HL_42e30457a7ba",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Wave Chat",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          33,
+          35
+        ],
+        "span_sentences": [
+          "Wave Chat can receive a C&C command to take a picture using the camera, and another command to record audio, either for 60 seconds (by default) or for the amount of time specified in the server response.",
+          "To receive commands and store user messages, SMS messages, and the contact list, Wave Chat uses a Firebase server."
+        ]
+      },
+      {
+        "node_id": "HL_5085121e494b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Signal",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          4,
+          31
+        ],
+        "span_sentences": [
+          "It steals contacts, files, call logs, and SMS messages, but some of its implementations can even extract WhatsApp and Signal messages, record phone calls, and take pictures with the camera.",
+          "In addition to the first group’s functionalities, these apps are able to exploit built-in accessibility options to intercept WhatsApp, WhatsApp Business, and Signal communication."
+        ]
+      },
+      {
+        "node_id": "HL_51c9daeb24d8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Meta",
+        "edges": [],
+        "sentence_indices": [
+          22,
+          24
+        ],
+        "span_sentences": [
+          "In November 2023, Qihoo 360 independently published an article matching malicious apps described by Meta and this report, attributing them to VajraSpy malware operated by Fire Demon Snake (APT-C-52), a new APT group.",
+          "Meta’s report includes more comprehensive information, which might give Meta better visibility on the campaigns and also more data to identify the APT group."
+        ]
+      },
+      {
+        "node_id": "HL_58f0edcd1dc0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Play",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          0,
+          9,
+          10,
+          15,
+          43,
+          44,
+          46
+        ],
+        "span_sentences": [
+          "ESET researchers have identified twelve Android espionage apps that share the same malicious code: six were available on Google Play, and six were found on VirusTotal.",
+          "In total, we analyzed 12 trojanized apps, six of which (including Rafaqat رفاقت) had been available on Google Play, and six of which were found in the wild.",
+          "The six malicious apps that had been available on Google Play were downloaded more than 1,400 times altogether.",
+          "Another clue pointing toward Pakistan is the name of the developer used for the Google Play listing of the Rafaqat رفاقت app.",
+          "Some apps were distributed via Google Play and also found, along with others, in the wild.",
+          "Based on the available numbers, the malicious apps that used to be available on Google Play were downloaded more than 1,400 times.",
+          "Based on several indicators, the campaign targeted mostly Pakistani users: Rafaqat رفاقت, one of the malicious apps, used the name of a popular Pakistani cricket player as the developer name on Google Play; the apps that requested a phone number upon account creation have the Pakistan country code selected by default; and many of the compromised devices discovered through the security flaw were located in Pakistan."
+        ]
+      },
+      {
+        "node_id": "HL_61be60731b0e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET Research",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "ESET Research has discovered an espionage campaign using apps bundled with VajraSpy malware conducted, with a high level of confidence, by the Patchwork APT group."
+        ]
+      },
+      {
+        "node_id": "HL_6dd88beb28f8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET researchers have identified twelve Android espionage apps that share the same malicious code: six were available on Google Play, and six were found on VirusTotal."
+        ]
+      },
+      {
+        "node_id": "HL_6f082c512436",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Firebase",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "To receive commands and store user messages, SMS messages, and the contact list, Wave Chat uses a Firebase server."
+        ]
+      },
+      {
+        "node_id": "HL_7a83293baae8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Android",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          37
+        ],
+        "span_sentences": [
+          "ESET researchers have identified twelve Android espionage apps that share the same malicious code: six were available on Google Play, and six were found on VirusTotal.",
+          "Retrofit is an Android REST client in Java that makes it easy to retrieve and upload data via a REST-based web service."
+        ]
+      },
+      {
+        "node_id": "HL_899673a9ba80",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WhatsApp Business",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "In addition to the first group’s functionalities, these apps are able to exploit built-in accessibility options to intercept WhatsApp, WhatsApp Business, and Signal communication."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          12,
+          42
+        ],
+        "span_sentences": [
+          "ESET researchers have identified twelve Android espionage apps that share the same malicious code: six were available on Google Play, and six were found on VirusTotal.",
+          "While ESET telemetry data registered detections from Malaysia only, we believe those were only incidental and did not constitute the actual targets of the campaign.",
+          "ESET Research has discovered an espionage campaign using apps bundled with VajraSpy malware conducted, with a high level of confidence, by the Patchwork APT group."
+        ]
+      },
+      {
+        "node_id": "HL_ae8eff3571de",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Facebook Messenger",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "This was also reported in the Qihoo 360 research, where threat actors started initial communication with victims via Facebook Messenger and WhatsApp, then moved to a trojanized chat application."
+        ]
+      },
+      {
+        "node_id": "HL_b3718abca91a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Qihoo 360",
+        "edges": [],
+        "sentence_indices": [
+          22,
+          48
+        ],
+        "span_sentences": [
+          "In November 2023, Qihoo 360 independently published an article matching malicious apps described by Meta and this report, attributing them to VajraSpy malware operated by Fire Demon Snake (APT-C-52), a new APT group.",
+          "This was also reported in the Qihoo 360 research, where threat actors started initial communication with victims via Facebook Messenger and WhatsApp, then moved to a trojanized chat application."
+        ]
+      },
+      {
+        "node_id": "HL_b4454c3ab464",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT-Q-43",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "They named it VajraSpy and attributed it to APT-Q-43."
+        ]
+      },
+      {
+        "node_id": "HL_c785cc74eae7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Rafaqat رفاقت",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          6,
+          7,
+          9,
+          15,
+          17,
+          39,
+          41,
+          46
+        ],
+        "span_sentences": [
+          "In January 2023, we detected a trojanized news app called Rafaqat رفاقت (the Urdu word translates to Fellowship) being used to steal user information.",
+          "Further research uncovered several more applications with the same malicious code as Rafaqat رفاقت.",
+          "In total, we analyzed 12 trojanized apps, six of which (including Rafaqat رفاقت) had been available on Google Play, and six of which were found in the wild.",
+          "Another clue pointing toward Pakistan is the name of the developer used for the Google Play listing of the Rafaqat رفاقت app.",
+          "Rafaqat رفاقت and several more of these trojanized apps also had the Pakistani country calling code selected by default on their login screen.",
+          "So far, the only application that belongs to this group is the one that kicked off this research in the first place – Rafaqat رفاقت.",
+          "Since news apps don’t need to request intrusive permissions such as access to SMS messages or call logs, the malicious capabilities of Rafaqat رفاقت are limited when compared to the other analyzed applications.",
+          "Based on several indicators, the campaign targeted mostly Pakistani users: Rafaqat رفاقت, one of the malicious apps, used the name of a popular Pakistani cricket player as the developer name on Google Play; the apps that requested a phone number upon account creation have the Pakistan country code selected by default; and many of the compromised devices discovered through the security flaw were located in Pakistan."
+        ]
+      },
+      {
+        "node_id": "HL_cab10105ec52",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WhatsApp",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          4,
+          31,
+          48
+        ],
+        "span_sentences": [
+          "It steals contacts, files, call logs, and SMS messages, but some of its implementations can even extract WhatsApp and Signal messages, record phone calls, and take pictures with the camera.",
+          "In addition to the first group’s functionalities, these apps are able to exploit built-in accessibility options to intercept WhatsApp, WhatsApp Business, and Signal communication.",
+          "This was also reported in the Qihoo 360 research, where threat actors started initial communication with victims via Facebook Messenger and WhatsApp, then moved to a trojanized chat application."
+        ]
+      },
+      {
+        "node_id": "HL_d724b1be40b3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Malaysia",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "While ESET telemetry data registered detections from Malaysia only, we believe those were only incidental and did not constitute the actual targets of the campaign."
+        ]
+      },
+      {
+        "node_id": "HL_d806d993ce1c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT-C-52",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "In November 2023, Qihoo 360 independently published an article matching malicious apps described by Meta and this report, attributing them to VajraSpy malware operated by Fire Demon Snake (APT-C-52), a new APT group."
+        ]
+      },
+      {
+        "node_id": "HL_daca20e92043",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Translate",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "According to Google Translate, رفاقت means \"fellowship\" in Urdu."
+        ]
+      },
+      {
+        "node_id": "HL_ed6c89a42cba",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Fire Demon Snake",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "In November 2023, Qihoo 360 independently published an article matching malicious apps described by Meta and this report, attributing them to VajraSpy malware operated by Fire Demon Snake (APT-C-52), a new APT group."
+        ]
+      },
+      {
+        "node_id": "HL_ff1b555c170f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Firebase Hosting",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The operators behind the attacks used Firebase Hosting, a web content hosting service, for the C&C server."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_1",
+          "EDGE_13",
+          "EDGE_20",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It steals contacts, files, call logs, and SMS messages, but some of its implementations can even extract WhatsApp and Signal messages, record phone calls, and take pictures with the camera."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "VajraSpy uses it to upload user data unencrypted to the C&C server via HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1056",
+        "edges": [
+          "EDGE_3",
+          "EDGE_14",
+          "EDGE_18",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In addition to the first group’s functionalities, these apps are able to exploit built-in accessibility options to intercept WhatsApp, WhatsApp Business, and Signal communication."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4",
+          "EDGE_9",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            35
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Wave Chat can receive a C&C command to take a picture using the camera, and another command to record audio, either for 60 seconds (by default) or for the amount of time specified in the server response.",
+            "The captured data is then exfiltrated to the C&C via POST requests.",
+            "To receive commands and store user messages, SMS messages, and the contact list, Wave Chat uses a Firebase server."
+          ],
+          [
+            "VajraSpy uses it to upload user data unencrypted to the C&C server via HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_5",
+          "EDGE_10",
+          "EDGE_17",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            29
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The operators behind the attacks used Firebase Hosting, a web content hosting service, for the C&C server.",
+            "Apart from serving as the C&C, the server was also used to store the victims’ account information and exchanged messages."
+          ],
+          [
+            "To receive commands and store user messages, SMS messages, and the contact list, Wave Chat uses a Firebase server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1123",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1123",
+        "edges": [
+          "EDGE_6",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            33,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It steals contacts, files, call logs, and SMS messages, but some of its implementations can even extract WhatsApp and Signal messages, record phone calls, and take pictures with the camera."
+          ],
+          [
+            "Wave Chat can receive a C&C command to take a picture using the camera, and another command to record audio, either for 60 seconds (by default) or for the amount of time specified in the server response."
+          ],
+          [
+            "Wave Chat can receive a C&C command to take a picture using the camera, and another command to record audio, either for 60 seconds (by default) or for the amount of time specified in the server response.",
+            "The captured data is then exfiltrated to the C&C via POST requests.",
+            "To receive commands and store user messages, SMS messages, and the contact list, Wave Chat uses a Firebase server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1125",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1125",
+        "edges": [
+          "EDGE_7",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It steals contacts, files, call logs, and SMS messages, but some of its implementations can even extract WhatsApp and Signal messages, record phone calls, and take pictures with the camera."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_8",
+          "EDGE_15",
+          "EDGE_19",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Based on our investigation, the threat actors behind the trojanized apps probably used a honey-trap romance scam to lure their victims into installing the malware."
+          ]
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_1de4c416a49c",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_1de4c416a49c",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_1de4c416a49c",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_1de4c416a49c",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_1de4c416a49c",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_1de4c416a49c",
+      "node_v": "TTP_T1123"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_1de4c416a49c",
+      "node_v": "TTP_T1125"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_1de4c416a49c",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_42e30457a7ba",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_42e30457a7ba",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_42e30457a7ba",
+      "node_v": "TTP_T1123"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_42e30457a7ba",
+      "node_v": "TTP_T1125"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_5085121e494b",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_5085121e494b",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_58f0edcd1dc0",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_899673a9ba80",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_ae8eff3571de",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_c785cc74eae7",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_cab10105ec52",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_cab10105ec52",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_cab10105ec52",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_ff1b555c170f",
+      "node_v": "TTP_T1102"
+    }
+  ]
+}

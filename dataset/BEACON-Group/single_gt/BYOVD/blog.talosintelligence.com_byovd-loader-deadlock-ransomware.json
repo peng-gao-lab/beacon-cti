@@ -1,0 +1,1155 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_260c483871a6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Session messenger",
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "Instead, victims are persuaded to contact the threat actor operating the DeadLock ransomware via Session messenger."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_38681a19b8b0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Baidu Antivirus",
+        "sentence_indices": [
+          1,
+          6
+        ],
+        "span_sentences": [
+          "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes.",
+          "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+        ],
+        "edges": [
+          "EDGE_1b2d1cbf5a2f",
+          "EDGE_3e9ab93c2cea",
+          "EDGE_601153a6efa2"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          3,
+          45
+        ],
+        "span_sentences": [
+          "- The DeadLock ransomware targets Windows machines with a custom stream cipher encryption algorithm that uses time-based cryptographic keys to encrypt files.",
+          "The DeadLock ransomware encryptor is specifically designed to target the Windows environment."
+        ],
+        "edges": [
+          "EDGE_5241d6a32f6c"
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "While tracking ransomware activities, Cisco Talos uncovered new tactics, techniques, and procedures (TTPs) linked to a financially motivated threat actor targeting victims with DeadLock ransomware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "sentence_indices": [
+          2,
+          39
+        ],
+        "span_sentences": [
+          "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery.",
+          "By executing the following commands, the actor disabled Real-Time Protection (RTP) in Windows Defender."
+        ],
+        "edges": [
+          "EDGE_0700d30a17b6",
+          "EDGE_0cff2139ef89",
+          "EDGE_6bed394329f5",
+          "EDGE_bf1d8c347a74"
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          2,
+          16,
+          17
+        ],
+        "span_sentences": [
+          "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery.",
+          "Talos observed that the threat actor executed a PowerShell script in the victim’s machine before the encryption process.",
+          "The PowerShell script is a pre-encryption preparation component of the attack that the actor used to bypass the UAC, disable the detection services, and inhibit the system recovery of the victim machine."
+        ],
+        "edges": [
+          "EDGE_52c211bd8403",
+          "EDGE_60c5c68573b5",
+          "EDGE_6d995fe80ada",
+          "EDGE_fd7cafe03ab3",
+          "EDGE_fedc2391e361"
+        ]
+      },
+      {
+        "node_id": "HL_c25339a222e3",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DeadLock ransomware",
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          5,
+          24,
+          42,
+          43,
+          44,
+          45
+        ],
+        "span_sentences": [
+          "While tracking ransomware activities, Cisco Talos uncovered new tactics, techniques, and procedures (TTPs) linked to a financially motivated threat actor targeting victims with DeadLock ransomware.",
+          "- The DeadLock ransomware targets Windows machines with a custom stream cipher encryption algorithm that uses time-based cryptographic keys to encrypt files.",
+          "- This custom encryption method allows DeadLock ransomware to effectively encrypt different file types in enterprise environments while preventing system corruption through selective targeting and anti-forensics techniques, which complicate recovery.",
+          "Talos observed a threat actor leveraging a BYOVD technique to disable endpoint detection and escalate privileges in an attack that eventually delivered DeadLock ransomware as the payload.",
+          "Talos discovered several other notable TTPs of the DeadLock ransomware attacks from the telemetry data.",
+          "Talos observed that the threat actor deployed DeadLock ransomware as the payload in their attack.",
+          "DeadLock ransomware has been active since as early as July 2025 and, unlike other ransomware actors, this threat actor does not operate a data leak site.",
+          "Instead, victims are persuaded to contact the threat actor operating the DeadLock ransomware via Session messenger.",
+          "The DeadLock ransomware encryptor is specifically designed to target the Windows environment."
+        ],
+        "edges": [
+          "EDGE_117564f15ce2",
+          "EDGE_1ece9bddf726",
+          "EDGE_29deac1164c8",
+          "EDGE_4815c96d4a93",
+          "EDGE_60ddcf9bb613",
+          "EDGE_6849414d5357",
+          "EDGE_75484c383265",
+          "EDGE_7ca15c426898",
+          "EDGE_90c8cce7ae09",
+          "EDGE_a575a91e4bfe",
+          "EDGE_b33163a3fc5a",
+          "EDGE_ca87831be8dc",
+          "EDGE_d30e23f449f2",
+          "EDGE_d6b25e42aa54",
+          "EDGE_df1b516ea383",
+          "EDGE_f61f92e6b4f6",
+          "EDGE_faa193df087e"
+        ]
+      },
+      {
+        "node_id": "HL_f8b77c8fe4ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AnyDesk",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "We assess that the threat actor, operating from a compromised user account, installed a new instance of AnyDesk on a specific host one day prior to an encryption event."
+        ],
+        "edges": [
+          "EDGE_608626743307"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1018",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1018",
+        "ttp_id": "T1018",
+        "best_span_sentences_list": [
+          [
+            "Talos observed several commands the actor executed for internal reconnaissance and lateral movement within the victim environment following the AnyDesk installation, highlighting their intent to discover and move to high-value targets."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_1ece9bddf726"
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections.",
+            "Then, the actor executed the netsh advfirewall\ncommand to create a new inbound firewall rule, opening TCP port 3389 to ensure RDP traffic isn't blocked."
+          ],
+          [
+            "Then, with the discovered internal IP addresses, the actor moved laterally by executing the mstsc\ncommand to start the Remote Desktop Protocol (RDP) session."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            28
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_b33163a3fc5a",
+          "EDGE_d44523056bad"
+        ]
+      },
+      {
+        "node_id": "TTP_T1033",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1033",
+        "ttp_id": "T1033",
+        "best_span_sentences_list": [
+          [
+            "They performed a connectivity test using a ping\ncommand to see if a target machine was reachable and checked the logged-on user details by executing the Quser\ncommand."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_7ca15c426898",
+          "EDGE_f22f516ec5da"
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1057",
+        "ttp_id": "T1057",
+        "best_span_sentences_list": [
+          [
+            "Once connected, the loader enumerates running system processes to identify the process ID (PID) of the target antivirus or EDR solution.",
+            "To trigger the exploit, it calls the DeviceIOControl()\nfunction, passing the target PID along with the specific I/O Control Code (IOCTL) 0x800024b4."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_d92a0d1cdf8b",
+          "EDGE_df1b516ea383"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ],
+          [
+            "The script implements a privilege escalation mechanism through the Test-Admin\nfunction that automatically detects current user permissions and re-launches itself with administrative privileges using the Verb RunAs\nparameter, ensuring it operates with the necessary system-level access required for service manipulation and shadow copy deletion."
+          ],
+          [
+            "The script executes commands to delete all volume shadow copy snapshots, eliminating the victim’s ability to recover the system."
+          ],
+          [
+            "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections."
+          ],
+          [
+            "Talos observed several commands the actor executed for internal reconnaissance and lateral movement within the victim environment following the AnyDesk installation, highlighting their intent to discover and move to high-value targets."
+          ],
+          [
+            "They performed a connectivity test using a ping\ncommand to see if a target machine was reachable and checked the logged-on user details by executing the Quser\ncommand.",
+            "Then, with the discovered internal IP addresses, the actor moved laterally by executing the mstsc\ncommand to start the Remote Desktop Protocol (RDP) session.",
+            "They also executed the mmc.exe compmgmt.msc\ncommand, which is an alternative remote computer management command without a full interactive RDP session.",
+            "Finally, the actor executed iexplore.exe\n, likely to access an internal web resource."
+          ],
+          [
+            "By executing the following commands, the actor disabled Real-Time Protection (RTP) in Windows Defender.",
+            "They subsequently disabled cloud-based protections through the command SpynetReporting 0\n, which stops the machine from sending threat reports to Microsoft.",
+            "The command SubmitSamplesConsent 0\nprevents Windows Defender from automatically submitting suspicious files for analysis."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            34,
+            37
+          ],
+          [
+            39,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_0cff2139ef89",
+          "EDGE_20e8c86fe124",
+          "EDGE_f61f92e6b4f6",
+          "EDGE_fedc2391e361"
+        ]
+      },
+      {
+        "node_id": "TTP_T1068",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1068",
+        "ttp_id": "T1068",
+        "best_span_sentences_list": [
+          [
+            "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes."
+          ],
+          [
+            "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_601153a6efa2",
+          "EDGE_ba84aaed8ce5",
+          "EDGE_bcf0e6cf3d48",
+          "EDGE_d6b25e42aa54"
+        ]
+      },
+      {
+        "node_id": "TTP_T1069",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1069",
+        "ttp_id": "T1069",
+        "best_span_sentences_list": [
+          [
+            "The actor attempted to discover domain controllers, query the domain structure, and enumerate the privileged groups and their members."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "Talos suspects that the threat actor leverages the compromised valid accounts to gain access to the victim's machine based on telemetry data."
+          ],
+          [
+            "We assess that the threat actor, operating from a compromised user account, installed a new instance of AnyDesk on a specific host one day prior to an encryption event."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            26
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_29deac1164c8"
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1106",
+        "ttp_id": "T1106",
+        "best_span_sentences_list": [
+          [
+            "Upon receiving the request, the driver decodes the function code 0x92D as a \"terminate process\" command."
+          ],
+          [
+            "Because the driver operates in kernel mode with the highest system privileges, it blindly accepts the command and executes ZwTerminateProcess()\n, instantly killing the targeted security service."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_4815c96d4a93",
+          "EDGE_8c6957603777",
+          "EDGE_8deeaa34b119"
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_27232845411b",
+          "EDGE_90c8cce7ae09"
+        ]
+      },
+      {
+        "node_id": "TTP_T1211",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1211",
+        "ttp_id": "T1211",
+        "best_span_sentences_list": [
+          [
+            "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes."
+          ],
+          [
+            "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_3d1474dc9abe",
+          "EDGE_3e9ab93c2cea",
+          "EDGE_60ddcf9bb613",
+          "EDGE_6ecc8164e810",
+          "EDGE_f322a561ae97"
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "Talos observed that the actor modified the Windows Defender settings using legitimate Windows executable SystemSettingsAdminFlows.exe\n."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_6bed394329f5",
+          "EDGE_e141303bb018",
+          "EDGE_faa193df087e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "We assess that the threat actor, operating from a compromised user account, installed a new instance of AnyDesk on a specific host one day prior to an encryption event."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_608626743307",
+          "EDGE_ca87831be8dc"
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "- The DeadLock ransomware targets Windows machines with a custom stream cipher encryption algorithm that uses time-based cryptographic keys to encrypt files."
+          ],
+          [
+            "Talos observed that the threat actor deployed DeadLock ransomware as the payload in their attack."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_5241d6a32f6c",
+          "EDGE_75484c383265"
+        ]
+      },
+      {
+        "node_id": "TTP_T1489",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1489",
+        "ttp_id": "T1489",
+        "best_span_sentences_list": [
+          [
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_117564f15ce2",
+          "EDGE_6d995fe80ada",
+          "EDGE_bf1d8c347a74"
+        ]
+      },
+      {
+        "node_id": "TTP_T1490",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1490",
+        "ttp_id": "T1490",
+        "best_span_sentences_list": [
+          [
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ],
+          [
+            "The script executes commands to delete all volume shadow copy snapshots, eliminating the victim’s ability to recover the system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_60c5c68573b5",
+          "EDGE_a575a91e4bfe"
+        ]
+      },
+      {
+        "node_id": "TTP_T1548",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1548",
+        "ttp_id": "T1548",
+        "best_span_sentences_list": [
+          [
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ],
+          [
+            "The script implements a privilege escalation mechanism through the Test-Admin\nfunction that automatically detects current user permissions and re-launches itself with administrative privileges using the Verb RunAs\nparameter, ensuring it operates with the necessary system-level access required for service manipulation and shadow copy deletion.",
+            "This elevation technique bypasses UAC prompts through the exec bypass\nexecution policy override, allowing the script to execute without standard PowerShell security restrictions."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_52c211bd8403"
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes.",
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ],
+          [
+            "Because the driver operates in kernel mode with the highest system privileges, it blindly accepts the command and executes ZwTerminateProcess()\n, instantly killing the targeted security service."
+          ],
+          [
+            "Then, the actor executed the netsh advfirewall\ncommand to create a new inbound firewall rule, opening TCP port 3389 to ensure RDP traffic isn't blocked."
+          ],
+          [
+            "Talos observed that the actor modified the Windows Defender settings using legitimate Windows executable SystemSettingsAdminFlows.exe\n.",
+            "By executing the following commands, the actor disabled Real-Time Protection (RTP) in Windows Defender.",
+            "They subsequently disabled cloud-based protections through the command SpynetReporting 0\n, which stops the machine from sending threat reports to Microsoft.",
+            "The command SubmitSamplesConsent 0\nprevents Windows Defender from automatically submitting suspicious files for analysis."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            38,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_0700d30a17b6",
+          "EDGE_1b2d1cbf5a2f",
+          "EDGE_596651d101cf",
+          "EDGE_64bf26d75990",
+          "EDGE_6849414d5357",
+          "EDGE_cdcbde92bcd3",
+          "EDGE_fd7cafe03ab3"
+        ]
+      },
+      {
+        "node_id": "TTP_T1569",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1569",
+        "ttp_id": "T1569",
+        "best_span_sentences_list": [
+          [
+            "Finally, they used sc config\nand sc start\nto change the RemoteRegistry\nservice to on-demand\nand immediately start it, allowing them to query and modify the system's registry from another machine for further reconnaissance and configuration modifications."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_d30e23f449f2"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1bf442c2345b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "BdApiUtil.sys",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+        ],
+        "edges": [
+          "EDGE_64bf26d75990",
+          "EDGE_6ecc8164e810",
+          "EDGE_bcf0e6cf3d48"
+        ]
+      },
+      {
+        "node_id": "IOC_3ee20231c258",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SystemSettingsAdminFlows.exe",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "Talos observed that the actor modified the Windows Defender settings using legitimate Windows executable SystemSettingsAdminFlows.exe\n."
+        ],
+        "edges": [
+          "EDGE_596651d101cf",
+          "EDGE_e141303bb018"
+        ]
+      },
+      {
+        "node_id": "IOC_43d35f182a9e",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "EDRGay.exe",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The attack began when the actor dropped the loader (using the file name “EDRGay.exe”) and the vulnerable driver into the victim's Videos folder and ran the loader."
+        ],
+        "edges": [
+          "EDGE_8c6957603777",
+          "EDGE_d92a0d1cdf8b",
+          "EDGE_f322a561ae97"
+        ]
+      },
+      {
+        "node_id": "IOC_539c14a33f45",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "DriverGay.sys",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+        ],
+        "edges": [
+          "EDGE_f22f516ec5da"
+        ]
+      },
+      {
+        "node_id": "IOC_acdfa5c39300",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\\\.\\BdApiUtil",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "It specifies the driver's real device name (“\\\\.\\BdApiUtil”) to obtain a handle which essentially acts as a \"ticket\" to authorize future communication between the loader and the driver."
+        ],
+        "edges": [
+          "EDGE_8deeaa34b119"
+        ]
+      },
+      {
+        "node_id": "IOC_b8ba1a1283da",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "fDenyTSConnections",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections."
+        ],
+        "edges": [
+          "EDGE_20e8c86fe124",
+          "EDGE_27232845411b",
+          "EDGE_d44523056bad"
+        ]
+      },
+      {
+        "node_id": "IOC_ec36c53c2f25",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2024-51324",
+        "sentence_indices": [
+          1,
+          6,
+          14
+        ],
+        "span_sentences": [
+          "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes.",
+          "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”.",
+          "Due to the CVE-2024-51324 vulnerability, the driver fails to validate if the user-mode program has the necessary permissions to make this request."
+        ],
+        "edges": [
+          "EDGE_3d1474dc9abe",
+          "EDGE_ba84aaed8ce5",
+          "EDGE_cdcbde92bcd3"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0700d30a17b6",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0cff2139ef89",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_117564f15ce2",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1489",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b2d1cbf5a2f",
+      "node_u": "HL_38681a19b8b0",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1ece9bddf726",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1018",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_20e8c86fe124",
+      "node_u": "IOC_b8ba1a1283da",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_27232845411b",
+      "node_u": "IOC_b8ba1a1283da",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_29deac1164c8",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3d1474dc9abe",
+      "node_u": "IOC_ec36c53c2f25",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3e9ab93c2cea",
+      "node_u": "HL_38681a19b8b0",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4815c96d4a93",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5241d6a32f6c",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_52c211bd8403",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1548",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_596651d101cf",
+      "node_u": "IOC_3ee20231c258",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_601153a6efa2",
+      "node_u": "HL_38681a19b8b0",
+      "node_v": "TTP_T1068",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_608626743307",
+      "node_u": "HL_f8b77c8fe4ea",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_60c5c68573b5",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1490",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_60ddcf9bb613",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_64bf26d75990",
+      "node_u": "IOC_1bf442c2345b",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6849414d5357",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6bed394329f5",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6d995fe80ada",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1489",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6ecc8164e810",
+      "node_u": "IOC_1bf442c2345b",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_75484c383265",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7ca15c426898",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8c6957603777",
+      "node_u": "IOC_43d35f182a9e",
+      "node_v": "TTP_T1106",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8deeaa34b119",
+      "node_u": "IOC_acdfa5c39300",
+      "node_v": "TTP_T1106",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_90c8cce7ae09",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a575a91e4bfe",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1490",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b33163a3fc5a",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba84aaed8ce5",
+      "node_u": "IOC_ec36c53c2f25",
+      "node_v": "TTP_T1068",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bcf0e6cf3d48",
+      "node_u": "IOC_1bf442c2345b",
+      "node_v": "TTP_T1068",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bf1d8c347a74",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1489",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ca87831be8dc",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cdcbde92bcd3",
+      "node_u": "IOC_ec36c53c2f25",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d30e23f449f2",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1569",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d44523056bad",
+      "node_u": "IOC_b8ba1a1283da",
+      "node_v": "TTP_T1021",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d6b25e42aa54",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1068",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d92a0d1cdf8b",
+      "node_u": "IOC_43d35f182a9e",
+      "node_v": "TTP_T1057",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_df1b516ea383",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1057",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e141303bb018",
+      "node_u": "IOC_3ee20231c258",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f22f516ec5da",
+      "node_u": "IOC_539c14a33f45",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f322a561ae97",
+      "node_u": "IOC_43d35f182a9e",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f61f92e6b4f6",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_faa193df087e",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fd7cafe03ab3",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedc2391e361",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

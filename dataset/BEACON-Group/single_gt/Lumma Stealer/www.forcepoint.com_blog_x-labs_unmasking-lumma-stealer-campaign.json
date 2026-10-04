@@ -1,0 +1,862 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_1cac50f138e8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Forcepoint",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_25da5e1178db",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Alexander.com",
+        "sentence_indices": [
+          30,
+          32,
+          35,
+          38
+        ],
+        "span_sentences": [
+          "These .accde files combine and make an Auto IT-compiled executable, Alexander.com, which is an Auto IT file loader.",
+          "During analysis of the final payload Alexander.com, which is an AutoIT loader, we observed the payload runs a script o.a3x, which is an AutoIT compiled script.",
+          "The script is capable of injecting into its own process (Alexander.com), which can be obtained by repeated use of DllCall(“kernel32.dll”, “ptr”, “GetCurrentProcess”)\\Second stage payload execution using the Execute function.",
+          "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration."
+        ],
+        "edges": [
+          "EDGE_096541b6807b",
+          "EDGE_0cd67f5ac947",
+          "EDGE_2edc22aeb0f3",
+          "EDGE_5ae49dc37cfa",
+          "EDGE_f55df411f5fa"
+        ]
+      },
+      {
+        "node_id": "HL_28bb92983c8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma Stealer",
+        "sentence_indices": [
+          0,
+          2,
+          7,
+          20,
+          39,
+          43
+        ],
+        "span_sentences": [
+          "Lumma Stealer, a potent information-stealing malware, emerged in 2022, targeting sensitive data like browser-stored passwords, cryptocurrency wallets, and 2FA tokens.",
+          "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware.",
+          "It also reflects the increasing adaptability of threat actors behind malware like Lumma Stealer, who continuously refine their delivery methods to outpace security solutions.",
+          "Inside the archive file, users find a large executable file (.exe) having file size (>800mb, which acts as the Lumma Stealer’s payload.",
+          "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication.",
+          "The Lumma Stealer campaign highlights a layered and evolving malware delivery strategy that blends social engineering with abuse of legitimate infrastructure to bypass defences."
+        ],
+        "edges": [
+          "EDGE_0120ad86b4b3",
+          "EDGE_1f3ab148d259",
+          "EDGE_3a443f33e286",
+          "EDGE_472715b1d6cf",
+          "EDGE_5b2ab5cdbe98",
+          "EDGE_80dd8e4acfcd",
+          "EDGE_9de999bb382b",
+          "EDGE_a06448532393",
+          "EDGE_c94e842c7528",
+          "EDGE_d984a70dcc34",
+          "EDGE_da50ffe5fd8a",
+          "EDGE_de91a95465c8",
+          "EDGE_f08b2c16e203"
+        ]
+      },
+      {
+        "node_id": "HL_5a2fd38838d5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Caucasus region of Eastern Europe and West Asia",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6c8a333930de",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Auto IT",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "These .accde files combine and make an Auto IT-compiled executable, Alexander.com, which is an Auto IT file loader."
+        ],
+        "edges": [
+          "EDGE_08f93221df66"
+        ]
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_8f21e9ef0956",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Georgia",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "sentence_indices": [
+          42,
+          46
+        ],
+        "span_sentences": [
+          "It also targets user-sensitive files, Telegram data, email clients, cryptocurrency wallets, FTP, and Remote client data and more.",
+          "This malware, after being executed in the victim’s system, is capable of stealing user-sensitive data such as browser credentials, ftp and remote client data, Telegram data and other sensitive information."
+        ],
+        "edges": [
+          "EDGE_0be4ddc72655"
+        ]
+      },
+      {
+        "node_id": "HL_f490d3b65ad2",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoIT",
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "During analysis of the final payload Alexander.com, which is an AutoIT loader, we observed the payload runs a script o.a3x, which is an AutoIT compiled script."
+        ],
+        "edges": [
+          "EDGE_9b06b729b70b"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1005",
+        "ttp_id": "T1005",
+        "best_span_sentences_list": [
+          [
+            "It also targets user-sensitive files, Telegram data, email clients, cryptocurrency wallets, FTP, and Remote client data and more."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_0be4ddc72655",
+          "EDGE_c94e842c7528"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "One standout feature of the campaign is the inclusion of a dynamic element: a unique password that is generated for every downloaded archive file."
+          ],
+          [
+            "At this point, the final URL provides users with a downloadable archive file, paired with a password required to unlock its contents."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_5b2ab5cdbe98"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The Lumma Stealer campaign initiates with a strategically crafted URL that leads the user to a PDF file.",
+            "At face value, both the URL and the document appear benign, effectively reducing suspicion and bypassing initial detection.",
+            "The attackers leverage the credibility of widely recognized hosting services to host these malicious PDFs, including platforms like wsimg.com and cdn-website.com."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_d984a70dcc34"
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration.",
+            "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication.",
+            "After receiving the response from the C2 server, the malware begins to exfiltrate data from the victim’s system.",
+            "The data is collected in the form of web browser history, extensions, login data, and cache."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_26a8fc6e21a2",
+          "EDGE_3a443f33e286",
+          "EDGE_98f87b0cbec0",
+          "EDGE_e78d86c08edf",
+          "EDGE_f55df411f5fa"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The script is capable of injecting into its own process (Alexander.com), which can be obtained by repeated use of DllCall(“kernel32.dll”, “ptr”, “GetCurrentProcess”)\\Second stage payload execution using the Execute function."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_0120ad86b4b3",
+          "EDGE_5ae49dc37cfa"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Accompanying this stage are explicit instructions that urge users to copy and paste the URL from the final link to download the archive file, open it using the password, and then execute the .exe file through the command prompt."
+          ],
+          [
+            "6.1 - Mars.accde\nSome parts of Mars.accde are not found to be encrypted.",
+            "It contains compiled VBA logic, and some embedded form/module identifiers remain in the binary."
+          ],
+          [
+            "These .accde files combine and make an Auto IT-compiled executable, Alexander.com, which is an Auto IT file loader."
+          ],
+          [
+            "During analysis of the final payload Alexander.com, which is an AutoIT loader, we observed the payload runs a script o.a3x, which is an AutoIT compiled script."
+          ],
+          [
+            "From the script, ObjGet( function is used to connect to C2, which de-obfuscates to something like a moniker string or CLSID URL, pointing to a remote COM object or ActiveX control, which is a well-known fileless C2 method."
+          ],
+          [
+            "Upon execution, it performs a series of actions including creating .accde files in the \\\\Appdata\\\\Local\\\\Temp folder, which is then used to create an AutoIT compiled executable along with a malicious .a3x script."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            37,
+            37
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "edges": [
+          "EDGE_08f93221df66",
+          "EDGE_0cd67f5ac947",
+          "EDGE_9b06b729b70b",
+          "EDGE_a06448532393"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "From the script, ObjGet( function is used to connect to C2, which de-obfuscates to something like a moniker string or CLSID URL, pointing to a remote COM object or ActiveX control, which is a well-known fileless C2 method.",
+            "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration.",
+            "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication.",
+            "After receiving the response from the C2 server, the malware begins to exfiltrate data from the victim’s system.",
+            "The data is collected in the form of web browser history, extensions, login data, and cache."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_096541b6807b",
+          "EDGE_2a90cac27680",
+          "EDGE_d4b26381e818",
+          "EDGE_dbdb2384c1f3",
+          "EDGE_f08b2c16e203"
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1106",
+        "ttp_id": "T1106",
+        "best_span_sentences_list": [
+          [
+            "The script is capable of injecting into its own process (Alexander.com), which can be obtained by repeated use of DllCall(“kernel32.dll”, “ptr”, “GetCurrentProcess”)\\Second stage payload execution using the Execute function."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_2edc22aeb0f3",
+          "EDGE_80dd8e4acfcd"
+        ]
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1114",
+        "ttp_id": "T1114",
+        "best_span_sentences_list": [
+          [
+            "It also targets user-sensitive files, Telegram data, email clients, cryptocurrency wallets, FTP, and Remote client data and more."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_9de999bb382b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware.",
+            "This campaign integrates multiple steps, beginning with URLs embedded within PDFs and followed by a series of dropper URLs."
+          ],
+          [
+            "The Lumma Stealer campaign initiates with a strategically crafted URL that leads the user to a PDF file.",
+            "At face value, both the URL and the document appear benign, effectively reducing suspicion and bypassing initial detection."
+          ],
+          [
+            "In the second stage of this campaign, the attacker delivers a malicious PDF file designed to resemble a standard \"bot check\" page, mimicking familiar visual elements that imply the user must verify they are human.",
+            "This is a classic social engineering tactic meant to exploit user trust and urgency.",
+            "What makes this PDF particularly deceptive is that the entire page is clickable, not just specific buttons or links.",
+            "Any user interaction—whether intentional or accidental—triggers a malicious embedded hyperlink, moving the victim seamlessly into the next stage of the attack chain.",
+            "Once clicked, the PDF launches a series of rapid URL redirections.",
+            "These hops traverse through multiple intermediary domains before finally landing on the site hosting the actual payload."
+          ],
+          [
+            "Accompanying this stage are explicit instructions that urge users to copy and paste the URL from the final link to download the archive file, open it using the password, and then execute the .exe file through the command prompt.",
+            "By providing such clear guidance, the attackers ensure that users follow the exact steps required to successfully infect their systems.",
+            "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia.",
+            "This restriction may indicate targeted operations in these areas, reflecting a strategic focus on demographics or regional vulnerabilities.",
+            "In this campaign, the attacker leverages .accde files to host malicious VB codes in a protected format, making analysis more difficult."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            11,
+            16
+          ],
+          [
+            21,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_da50ffe5fd8a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1555",
+        "ttp_id": "T1555",
+        "best_span_sentences_list": [
+          [
+            "Lumma Stealer, a potent information-stealing malware, emerged in 2022, targeting sensitive data like browser-stored passwords, cryptocurrency wallets, and 2FA tokens.",
+            "It spreads through phishing campaigns and malicious downloads, posing significant risks to individuals and organizations in the cybersecurity landscape."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_472715b1d6cf"
+        ]
+      },
+      {
+        "node_id": "TTP_T1559",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1559",
+        "ttp_id": "T1559",
+        "best_span_sentences_list": [
+          [
+            "From the script, ObjGet( function is used to connect to C2, which de-obfuscates to something like a moniker string or CLSID URL, pointing to a remote COM object or ActiveX control, which is a well-known fileless C2 method."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Lumma Stealer, a potent information-stealing malware, emerged in 2022, targeting sensitive data like browser-stored passwords, cryptocurrency wallets, and 2FA tokens.",
+            "It spreads through phishing campaigns and malicious downloads, posing significant risks to individuals and organizations in the cybersecurity landscape.",
+            "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware.",
+            "This campaign integrates multiple steps, beginning with URLs embedded within PDFs and followed by a series of dropper URLs."
+          ],
+          [
+            "The Lumma Stealer campaign initiates with a strategically crafted URL that leads the user to a PDF file.",
+            "At face value, both the URL and the document appear benign, effectively reducing suspicion and bypassing initial detection."
+          ],
+          [
+            "In the second stage of this campaign, the attacker delivers a malicious PDF file designed to resemble a standard \"bot check\" page, mimicking familiar visual elements that imply the user must verify they are human.",
+            "This is a classic social engineering tactic meant to exploit user trust and urgency."
+          ],
+          [
+            "Once clicked, the PDF launches a series of rapid URL redirections.",
+            "These hops traverse through multiple intermediary domains before finally landing on the site hosting the actual payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            3
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            15,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_de91a95465c8"
+        ]
+      },
+      {
+        "node_id": "TTP_T1573",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1573",
+        "ttp_id": "T1573",
+        "best_span_sentences_list": [
+          [
+            "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration.",
+            "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication.",
+            "After receiving the response from the C2 server, the malware begins to exfiltrate data from the victim’s system.",
+            "The data is collected in the form of web browser history, extensions, login data, and cache."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_1f3ab148d259"
+        ]
+      },
+      {
+        "node_id": "TTP_T1620",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1620",
+        "ttp_id": "T1620",
+        "best_span_sentences_list": [
+          [
+            "The script can perform in-memory shellcode execution."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "edges": []
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_048fb1f67a2f",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "steamcommunity[.]com",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration."
+        ],
+        "edges": [
+          "EDGE_26a8fc6e21a2",
+          "EDGE_d4b26381e818"
+        ]
+      },
+      {
+        "node_id": "IOC_1e13489b1298",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "wsimg.com",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The attackers leverage the credibility of widely recognized hosting services to host these malicious PDFs, including platforms like wsimg.com and cdn-website.com."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_39f650d600a4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "cdn-website.com",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The attackers leverage the credibility of widely recognized hosting services to host these malicious PDFs, including platforms like wsimg.com and cdn-website.com."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_750303ae8f6c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\\\Appdata\\\\Local\\\\Temp",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Upon execution, it performs a series of actions including creating .accde files in the \\\\Appdata\\\\Local\\\\Temp folder, which is then used to create an AutoIT compiled executable along with a malicious .a3x script."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_d536813cee15",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "dogalmedical[.]org",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration."
+        ],
+        "edges": [
+          "EDGE_2a90cac27680",
+          "EDGE_98f87b0cbec0"
+        ]
+      },
+      {
+        "node_id": "IOC_f04301b59ec2",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "t[.]me",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration."
+        ],
+        "edges": [
+          "EDGE_dbdb2384c1f3",
+          "EDGE_e78d86c08edf"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0120ad86b4b3",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_08f93221df66",
+      "node_u": "HL_6c8a333930de",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_096541b6807b",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0be4ddc72655",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0cd67f5ac947",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1f3ab148d259",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1573",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_26a8fc6e21a2",
+      "node_u": "IOC_048fb1f67a2f",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2a90cac27680",
+      "node_u": "IOC_d536813cee15",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2edc22aeb0f3",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a443f33e286",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_472715b1d6cf",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1555",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5ae49dc37cfa",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5b2ab5cdbe98",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_80dd8e4acfcd",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_98f87b0cbec0",
+      "node_u": "IOC_d536813cee15",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9b06b729b70b",
+      "node_u": "HL_f490d3b65ad2",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9de999bb382b",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1114",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a06448532393",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c94e842c7528",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d4b26381e818",
+      "node_u": "IOC_048fb1f67a2f",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d984a70dcc34",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_da50ffe5fd8a",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dbdb2384c1f3",
+      "node_u": "IOC_f04301b59ec2",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_de91a95465c8",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e78d86c08edf",
+      "node_u": "IOC_f04301b59ec2",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f08b2c16e203",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f55df411f5fa",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

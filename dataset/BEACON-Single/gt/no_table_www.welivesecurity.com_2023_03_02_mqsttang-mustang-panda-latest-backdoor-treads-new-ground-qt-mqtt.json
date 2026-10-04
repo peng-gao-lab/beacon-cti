@@ -1,0 +1,726 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0c451fd5e540",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mustang Panda",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          3,
+          11,
+          28,
+          29,
+          48,
+          51
+        ],
+        "span_sentences": [
+          "UPDATE (July 20th, 2025): Since this article was published, we have refined our definition of Mustang Panda.",
+          "ESET researchers have analyzed MQsTTang, a new custom backdoor that we attribute to the Mustang Panda APT group.",
+          "Another GitHub repository of the same user was used in a previous Mustang Panda campaign described by Avast in a December 2022 blogpost.",
+          "This could be a way to make the network traffic seem legitimate and to hide Mustang Panda’s own infrastructure.",
+          "Using this public broker also provides resiliency; the service is unlikely to be taken down because of its many legitimate users and, even if the current C&C servers are banned or taken down, Mustang Panda could spin up new ones and use the same MQTT topics without disrupting MQsTTang’s operation.",
+          "The Mustang Panda campaign described in this article is ongoing as of this writing.",
+          "However, it shows that Mustang Panda is exploring new technology stacks for its tools."
+        ]
+      },
+      {
+        "node_id": "HL_195d0e4b6ae8",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "CeranaKeeper",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          2
+        ],
+        "span_sentences": [
+          "We now attribute MQsTTang to CeranaKeeper.",
+          "The TTPs described here align more closely with this group, and the Github user YanNaingOo0072022 has been linked to activity we attribute to CeranaKeeper."
+        ]
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "sentence_indices": [
+          8,
+          49
+        ],
+        "span_sentences": [
+          "However, due to the nature of the decoy filenames used, we believe that political and governmental organizations in Europe and Asia are also being targeted.",
+          "The victimology is unclear, but the decoy filenames are in line with the group’s other campaigns that target European political entities."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key."
+        ]
+      },
+      {
+        "node_id": "HL_51adab691386",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Qt framework",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          20,
+          21,
+          42
+        ],
+        "span_sentences": [
+          "This library depends on the Qt framework, a large part of which is statically linked in the malware.",
+          "Using the Qt framework for malware development is also fairly uncommon.",
+          "As shown in Figure 5, the client executes the received command using QProcess::startCommand from the Qt framework."
+        ]
+      },
+      {
+        "node_id": "HL_555069cdd6db",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "EMQX",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "This server is a public broker operated by EMQX, who also happen to be the maintainers of the QMQTT library."
+        ]
+      },
+      {
+        "node_id": "HL_5e1b1e1af3d1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Asia",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "However, due to the nature of the decoy filenames used, we believe that political and governmental organizations in Europe and Asia are also being targeted."
+        ]
+      },
+      {
+        "node_id": "HL_63afecdb5b90",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Pegasus",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "One such example is Chrysaor, also known as Pegasus for Android."
+        ]
+      },
+      {
+        "node_id": "HL_89390e552cb8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Australia",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "We have seen unknown entities in Bulgaria and Australia in our telemetry."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "ESET researchers have analyzed MQsTTang, a new custom backdoor that we attribute to the Mustang Panda APT group."
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "We also have information indicating that this campaign is targeting a governmental institution in Taiwan."
+        ]
+      },
+      {
+        "node_id": "HL_bb0c89cafac4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Avast",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "Another GitHub repository of the same user was used in a previous Mustang Panda campaign described by Avast in a December 2022 blogpost."
+        ]
+      },
+      {
+        "node_id": "HL_c8e13d8c953b",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Bulgaria",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "We have seen unknown entities in Bulgaria and Australia in our telemetry."
+        ]
+      },
+      {
+        "node_id": "HL_cacca7c05cb5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MQsTTang",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          1,
+          3,
+          5,
+          10,
+          12,
+          25,
+          29,
+          50
+        ],
+        "span_sentences": [
+          "We now attribute MQsTTang to CeranaKeeper.",
+          "ESET researchers have analyzed MQsTTang, a new custom backdoor that we attribute to the Mustang Panda APT group.",
+          "Unlike most of the group’s malware, MQsTTang doesn’t seem to be based on existing families or publicly available projects.",
+          "We found archives containing samples of MQsTTang in two GitHub repositories belonging to the user YanNaingOo0072022.",
+          "MQsTTang is a barebones backdoor that allows the attacker to execute arbitrary commands on a victim’s machine and get the output.",
+          "As was previously mentioned, MQsTTang communicates with its C&C server over the MQTT protocol.",
+          "Using this public broker also provides resiliency; the service is unlikely to be taken down because of its many legitimate users and, even if the current C&C servers are banned or taken down, Mustang Panda could spin up new ones and use the same MQTT topics without disrupting MQsTTang’s operation.",
+          "This new MQsTTang backdoor provides a kind of remote shell without any of the bells and whistles associated with the group’s other malware families."
+        ]
+      },
+      {
+        "node_id": "HL_e317a3974fac",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MagicRAT",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Lazarus’s MagicRAT is one of the rare recently documented examples."
+        ]
+      },
+      {
+        "node_id": "HL_e31e477ff21c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Chrysaor",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "One such example is Chrysaor, also known as Pegasus for Android."
+        ]
+      },
+      {
+        "node_id": "HL_e3c10fd9ca67",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GitHub",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          10,
+          11
+        ],
+        "span_sentences": [
+          "The TTPs described here align more closely with this group, and the Github user YanNaingOo0072022 has been linked to activity we attribute to CeranaKeeper.",
+          "We found archives containing samples of MQsTTang in two GitHub repositories belonging to the user YanNaingOo0072022.",
+          "Another GitHub repository of the same user was used in a previous Mustang Panda campaign described by Avast in a December 2022 blogpost."
+        ]
+      },
+      {
+        "node_id": "HL_fdea9376fccd",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lazarus",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Lazarus’s MagicRAT is one of the rare recently documented examples."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1001",
+        "edges": [
+          "EDGE_4",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To generate the value of this attribute, the actual content is first base64 encoded, then XORed with the hardcoded string nasa, and base64 encoded again."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_5",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To generate the value of this attribute, the actual content is first base64 encoded, then XORed with the hardcoded string nasa, and base64 encoded again."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_3",
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "MQsTTang is a barebones backdoor that allows the attacker to execute arbitrary commands on a victim’s machine and get the output."
+          ],
+          [
+            "As shown in Figure 5, the client executes the received command using QProcess::startCommand from the Qt framework."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_7",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            30,
+            33
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Chief among these is its use of the MQTT protocol for C&C communication."
+          ],
+          [
+            "As was previously mentioned, MQsTTang communicates with its C&C server over the MQTT protocol.",
+            "All observed samples use 3.228.54.173 as broker."
+          ],
+          [
+            "As shown in Figure 4, the malware and C&C server use two MQTT topics for their communication.",
+            "The first one, iot/server2, is used for communication from the client to the server.",
+            "The second one is used for communication from the server to the client.",
+            "It follows the format iot/v2/<Unique ID> where <Unique ID> is generated by taking the last 8 bytes, in hex form, of a UUID."
+          ],
+          [
+            "The MQTT message’s payload is a JSON object with a single attribute named msg."
+          ],
+          [
+            "Upon first connecting to the broker, the malware subscribes to its unique topic."
+          ],
+          [
+            "Then, and every 30 seconds thereafter, the client publishes a KeepAlive message to the server’s topic."
+          ],
+          [
+            "When the server wants to issue a command, it publishes a message to the client’s unique topic."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_1",
+          "EDGE_8",
+          "EDGE_12",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_9",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To generate the value of this attribute, the actual content is first base64 encoded, then XORed with the hardcoded string nasa, and base64 encoded again."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_2",
+          "EDGE_10",
+          "EDGE_13",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This fact, along with the filenames, leads us to believe that the malware is spread via spearphishing."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0da635a4c98a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\users\\public\\vdump.exe",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "They copy the malware’s executable to a hardcoded path; c:\\users\\public\\vdump.exe and c:\\users\\public\\vcall.exe respectively."
+        ]
+      },
+      {
+        "node_id": "IOC_4a81249c0966",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\users\\public",
+        "edges": [],
+        "sentence_indices": [
+          44,
+          45,
+          46
+        ],
+        "span_sentences": [
+          "They copy the malware’s executable to a hardcoded path; c:\\users\\public\\vdump.exe and c:\\users\\public\\vcall.exe respectively.",
+          "The filenames used are different for each sample, but they are always located in the C:\\users\\public directory.",
+          "Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key."
+        ]
+      },
+      {
+        "node_id": "IOC_50b98ed96b0d",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key."
+        ]
+      },
+      {
+        "node_id": "IOC_9199b275f01b",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "3.228.54.173",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "All observed samples use 3.228.54.173 as broker."
+        ]
+      },
+      {
+        "node_id": "IOC_96154627fa8c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\users\\public\\vcall.exe",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          44,
+          46
+        ],
+        "span_sentences": [
+          "They copy the malware’s executable to a hardcoded path; c:\\users\\public\\vdump.exe and c:\\users\\public\\vcall.exe respectively.",
+          "Persistence is established by the fourth task, which creates a new value qvlc set to c:\\users\\public\\vcall.exe under the HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key."
+        ]
+      },
+      {
+        "node_id": "IOC_ffb01b9fbbff",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "nasa",
+        "edges": [
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "To generate the value of this attribute, the actual content is first base64 encoded, then XORed with the hardcoded string nasa, and base64 encoded again."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_51adab691386",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_cacca7c05cb5",
+      "node_v": "TTP_T1001"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_cacca7c05cb5",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_cacca7c05cb5",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_cacca7c05cb5",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_cacca7c05cb5",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_cacca7c05cb5",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_cacca7c05cb5",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_cacca7c05cb5",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_50b98ed96b0d",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_50b98ed96b0d",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_9199b275f01b",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_96154627fa8c",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_96154627fa8c",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_ffb01b9fbbff",
+      "node_v": "TTP_T1001"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_ffb01b9fbbff",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_ffb01b9fbbff",
+      "node_v": "TTP_T1132"
+    }
+  ]
+}

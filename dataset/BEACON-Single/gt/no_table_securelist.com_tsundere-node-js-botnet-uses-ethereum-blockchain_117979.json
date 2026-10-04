@@ -1,0 +1,818 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_107c96f4a174",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Tsundere",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          0,
+          7,
+          30,
+          31,
+          36,
+          41,
+          44,
+          46,
+          48
+        ],
+        "span_sentences": [
+          "Tsundere is a new botnet, discovered by our Kaspersky GReAT around mid-2025.",
+          "We have dubbed it the Tsundere bot after its C2 panel.",
+          "In this case, the Tsundere botnet utilizes the Ethereum blockchain, where a method named setString(string _str)\nis defined to modify the state variable param1\n, allowing it to store a string.",
+          "The string stored in param1\nis used by the Tsundere botnet administrators to store new WebSocket C2 servers, which can be rotated at will and are immutable once written to the Ethereum blockchain.",
+          "The Tsundere bot verifies that the C2 address starts with either ws://\nor wss://\nto ensure it is a valid WebSocket URL, and then sets the obtained string as the server URL.",
+          "The Tsundere bot is designed to allow the C2 server to send dynamic JavaScript code.",
+          "The Tsundere bot utilizes WebSocket as its primary protocol for establishing connections with the C2 server.",
+          "Based on the text found in the implants, we can conclude with high confidence that the threat actor behind the Tsundere botnet is likely Russian-speaking.",
+          "Furthermore, our analysis suggests a connection between the Tsundere botnet and the 123 Stealer, a C++-based stealer available on the shadow market for $120 per month."
+        ]
+      },
+      {
+        "node_id": "HL_2df96783c7af",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "koneko",
+        "edges": [],
+        "sentence_indices": [
+          51,
+          54,
+          56
+        ],
+        "span_sentences": [
+          "By examining the available evidence, we can link both threats to a Russian-speaking threat actor known as “koneko”.",
+          "Before the dark web forum was seized and shut down, koneko’s profile featured the title “node malware senior”, further suggesting their expertise in Node.js-based malware.",
+          "The botnet’s possible author, koneko, is also involved in peddling other threats, such as the 123 Stealer, which suggests that the threat is likely to escalate rather than diminish in the coming months."
+        ]
+      },
+      {
+        "node_id": "HL_3f394f9b256e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "123 Stealer",
+        "edges": [],
+        "sentence_indices": [
+          48,
+          50,
+          56
+        ],
+        "span_sentences": [
+          "Furthermore, our analysis suggests a connection between the Tsundere botnet and the 123 Stealer, a C++-based stealer available on the shadow market for $120 per month.",
+          "Notably, the main domain serves as the frontend for the 123 Stealer panel, while the subdomain “idk.” is used for the Tsundere botnet panel.",
+          "The botnet’s possible author, koneko, is also involved in peddling other threats, such as the 123 Stealer, which suggests that the threat is likely to escalate rather than diminish in the coming months."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          8,
+          11
+        ],
+        "span_sentences": [
+          "This supply chain attack affected Windows, Linux, and macOS users, but it was short-lived, as the packages were removed and the threat actor abandoned this infection method after being detected.",
+          "This botnet is currently expanding and poses an active threat to Windows users.",
+          "In other instances, the sample names suggest that the implants are being disseminated using the lure of popular Windows games, particularly first-person shooters."
+        ]
+      },
+      {
+        "node_id": "HL_517f2af00e5a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Node Package Manager",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "In that instance, the threat actor created malicious Node.js packages and used the Node Package Manager (npm) to deliver the payload."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          13,
+          21,
+          53
+        ],
+        "span_sentences": [
+          "According to the C2 panel, there are two distinct formats for spreading the implant: via an MSI installer and via a PowerShell script.",
+          "The PowerShell version of the infector operates in a more compact and simplified manner.",
+          "Although our analysis of the backdoor revealed that it was not directly related to Tsundere, it shared similarities with the Tsundere botnet in that it was written in Node.js and used PowerShell or MSI as infectors."
+        ]
+      },
+      {
+        "node_id": "HL_b07e83768d2c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "macOS",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "This supply chain attack affected Windows, Linux, and macOS users, but it was short-lived, as the packages were removed and the threat actor abandoned this infection method after being detected."
+        ]
+      },
+      {
+        "node_id": "HL_bcbe759ec049",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "npm",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          2,
+          19
+        ],
+        "span_sentences": [
+          "In that instance, the threat actor created malicious Node.js packages and used the Node Package Manager (npm) to deliver the payload.",
+          "The malware author refers to this file as “config”, but its primary purpose is to package and deploy the Node.js package manager (npm) without requiring manual installation or downloading."
+        ]
+      },
+      {
+        "node_id": "HL_e121d45c5495",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "CIS region",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "But before using this new URL, the bot first checks the system locale by retrieving the culture name of the machine to avoid infecting systems in the CIS region."
+        ]
+      },
+      {
+        "node_id": "HL_e178f55af616",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Ethereum",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          30,
+          31,
+          33
+        ],
+        "span_sentences": [
+          "In this case, the Tsundere botnet utilizes the Ethereum blockchain, where a method named setString(string _str)\nis defined to modify the state variable param1\n, allowing it to store a string.",
+          "The string stored in param1\nis used by the Tsundere botnet administrators to store new WebSocket C2 servers, which can be rotated at will and are immutable once written to the Ethereum blockchain.",
+          "To obtain the C2 address, the bot contacts various public endpoints that provide remote procedure call (RPC) APIs, allowing them to interact with Ethereum blockchain nodes."
+        ]
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "This supply chain attack affected Windows, Linux, and macOS users, but it was short-lived, as the packages were removed and the threat actor abandoned this infection method after being detected."
+        ]
+      },
+      {
+        "node_id": "HL_f8d891215e79",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Node.js",
+        "edges": [
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          2,
+          19,
+          22,
+          53
+        ],
+        "span_sentences": [
+          "In that instance, the threat actor created malicious Node.js packages and used the Node Package Manager (npm) to deliver the payload.",
+          "The malware author refers to this file as “config”, but its primary purpose is to package and deploy the Node.js package manager (npm) without requiring manual installation or downloading.",
+          "Instead of utilizing a configuration file and an unpacker — as done with the MSI installer — it downloads the ZIP file node-v18.17.0-win-x64.zip\nfrom the official Node.js website nodejs[.]org\nand extracts it to the AppData\\Local\\NodeJS\ndirectory, ultimately deploying Node.js on the targeted device.",
+          "Although our analysis of the backdoor revealed that it was not directly related to Tsundere, it shared similarities with the Tsundere botnet in that it was written in Node.js and used PowerShell or MSI as infectors."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once executed, the loader attempts to locate the unpackaging script and configuration for the Tsundere bot, decrypts them using the AES-256 CBC cryptographic algorithm with a build-specific key and IV, and saves the decrypted files under different filenames."
+          ],
+          [
+            "The infector then uses the AES-256-CBC algorithm to decrypt two large hexadecimal-encoded variables, which correspond to the bot script and a persistence script."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The packages were named similarly to popular packages, employing a technique known as typosquatting."
+          ],
+          [
+            "The samples found in the wild have names such as “valorant”, “cs2”, or “r6x”, which appear to be attempts to capitalize on the popularity of these games among piracy communities."
+          ],
+          [
+            "MSI installer\nThe MSI installer was often disguised as a fake installer for popular games and other software to lure new victims."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_3",
+          "EDGE_13",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            22
+          ],
+          [
+            41,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The PowerShell version of the infector operates in a more compact and simplified manner.",
+            "Instead of utilizing a configuration file and an unpacker — as done with the MSI installer — it downloads the ZIP file node-v18.17.0-win-x64.zip\nfrom the official Node.js website nodejs[.]org\nand extracts it to the AppData\\Local\\NodeJS\ndirectory, ultimately deploying Node.js on the targeted device."
+          ],
+          [
+            "The Tsundere bot is designed to allow the C2 server to send dynamic JavaScript code."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4",
+          "EDGE_16",
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            31
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In this case, the Tsundere botnet utilizes the Ethereum blockchain, where a method named setString(string _str)\nis defined to modify the state variable param1\n, allowing it to store a string.",
+            "The string stored in param1\nis used by the Tsundere botnet administrators to store new WebSocket C2 servers, which can be rotated at will and are immutable once written to the Ethereum blockchain."
+          ],
+          [
+            "To obtain the C2 address, the bot contacts various public endpoints that provide remote procedure call (RPC) APIs, allowing them to interact with Ethereum blockchain nodes."
+          ],
+          [
+            "The Tsundere bot verifies that the C2 address starts with either ws://\nor wss://\nto ensure it is a valid WebSocket URL, and then sets the obtained string as the server URL."
+          ],
+          [
+            "The Tsundere bot utilizes WebSocket as its primary protocol for establishing connections with the C2 server."
+          ],
+          [
+            "As mentioned earlier, at the time of writing, the malware was communicating with the WebSocket server located at 185.28.119[.]179\n, and our tests indicated that it was responding positively to bot connections."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_5",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ],
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "But before using this new URL, the bot first checks the system locale by retrieving the culture name of the machine to avoid infecting systems in the CIS region."
+          ],
+          [
+            "The bot transmits the OS information of the infected machine, including the MAC address, total memory, GPU information, and other details."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_6",
+          "EDGE_18",
+          "EDGE_20",
+          "EDGE_23",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            21,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, in one documented case, the implant was installed via a Remote Monitoring and Management (RMM) tool, which downloaded a file named pdf.msi\nfrom a compromised website."
+          ],
+          [
+            "The PowerShell version of the infector operates in a more compact and simplified manner.",
+            "Instead of utilizing a configuration file and an unpacker — as done with the MSI installer — it downloads the ZIP file node-v18.17.0-win-x64.zip\nfrom the official Node.js website nodejs[.]org\nand extracts it to the AppData\\Local\\NodeJS\ndirectory, ultimately deploying Node.js on the targeted device."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_7",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Persistence is achieved through the same mechanism observed in the MSI installer: the script creates a value in the HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key that points to itself."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once executed, the loader attempts to locate the unpackaging script and configuration for the Tsundere bot, decrypts them using the AES-256 CBC cryptographic algorithm with a build-specific key and IV, and saves the decrypted files under different filenames."
+          ],
+          [
+            "The infector then uses the AES-256-CBC algorithm to decrypt two large hexadecimal-encoded variables, which correspond to the bot script and a persistence script."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_9",
+          "EDGE_12",
+          "EDGE_14",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In that instance, the threat actor created malicious Node.js packages and used the Node Package Manager (npm) to deliver the payload."
+          ],
+          [
+            "The packages were named similarly to popular packages, employing a technique known as typosquatting."
+          ],
+          [
+            "The threat actor targeted libraries such as Puppeteer, Bignum.js, and various cryptocurrency packages, resulting in 287 identified malware packages."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "MSI installer\nThe MSI installer was often disguised as a fake installer for popular games and other software to lure new victims."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_11",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Persistence is achieved through the same mechanism observed in the MSI installer: the script creates a value in the HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key that points to itself."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_662a218610f6",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "node-v18.17.0-win-x64.zip",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Instead of utilizing a configuration file and an unpacker — as done with the MSI installer — it downloads the ZIP file node-v18.17.0-win-x64.zip\nfrom the official Node.js website nodejs[.]org\nand extracts it to the AppData\\Local\\NodeJS\ndirectory, ultimately deploying Node.js on the targeted device."
+        ]
+      },
+      {
+        "node_id": "IOC_7b65bd61bcf4",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "ws[:]//185.28.119[.]179:1234",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "When this string is converted from hexadecimal to ASCII, it reveals the new WebSocket C2 server address: ws[:]//185.28.119[.]179:1234\n."
+        ]
+      },
+      {
+        "node_id": "IOC_83977d4251dd",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "AppData\\Local\\NodeJS",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Instead of utilizing a configuration file and an unpacker — as done with the MSI installer — it downloads the ZIP file node-v18.17.0-win-x64.zip\nfrom the official Node.js website nodejs[.]org\nand extracts it to the AppData\\Local\\NodeJS\ndirectory, ultimately deploying Node.js on the targeted device."
+        ]
+      },
+      {
+        "node_id": "IOC_9f2b4b44d0af",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "185.28.119[.]179",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          32,
+          45
+        ],
+        "span_sentences": [
+          "When this string is converted from hexadecimal to ASCII, it reveals the new WebSocket C2 server address: ws[:]//185.28.119[.]179:1234\n.",
+          "As mentioned earlier, at the time of writing, the malware was communicating with the WebSocket server located at 185.28.119[.]179\n, and our tests indicated that it was responding positively to bot connections."
+        ]
+      },
+      {
+        "node_id": "IOC_d00be2344631",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "nodejs[.]org",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Instead of utilizing a configuration file and an unpacker — as done with the MSI installer — it downloads the ZIP file node-v18.17.0-win-x64.zip\nfrom the official Node.js website nodejs[.]org\nand extracts it to the AppData\\Local\\NodeJS\ndirectory, ultimately deploying Node.js on the targeted device."
+        ]
+      },
+      {
+        "node_id": "IOC_de99c83c7e32",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "package.json",
+        "edges": [],
+        "sentence_indices": [
+          24,
+          25
+        ],
+        "span_sentences": [
+          "These decrypted files, along with a package.json\nfile are written to the disk.",
+          "The package.json\nfile contains information about the malicious Node.js package, as well as the necessary libraries to be installed, including the ws\nand ethers\npackages."
+        ]
+      },
+      {
+        "node_id": "IOC_e240891b1fdc",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "edges": [
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Persistence is achieved through the same mechanism observed in the MSI installer: the script creates a value in the HKCU:\\Software\\Microsoft\\Windows\\CurrentVersion\\Run registry key that points to itself."
+        ]
+      },
+      {
+        "node_id": "IOC_f32728631e83",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "pdf.msi",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "However, in one documented case, the implant was installed via a Remote Monitoring and Management (RMM) tool, which downloaded a file named pdf.msi\nfrom a compromised website."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_107c96f4a174",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_517f2af00e5a",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_bcbe759ec049",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_e121d45c5495",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_e178f55af616",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_f8d891215e79",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_f8d891215e79",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_f8d891215e79",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_662a218610f6",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_7b65bd61bcf4",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_9f2b4b44d0af",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_d00be2344631",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_e240891b1fdc",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_e240891b1fdc",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_f32728631e83",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

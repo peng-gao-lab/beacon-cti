@@ -1,0 +1,525 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_2973f0bb3d03",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Computer Emergency Response Team from Poland",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "In their February 2023 post about brute-forcing Phobos encryption, the Computer Emergency Response Team from Poland (Cert-PL) looked at sample 2704e269fb5cf9a02070a0ea07d82dc9d87f2cb95e60cb71d6c6d38b01869f66 which was first observed in VirusTotal in 2020."
+        ]
+      },
+      {
+        "node_id": "HL_2a27ebc1b269",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "8Base",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          14,
+          39,
+          40,
+          42,
+          45,
+          47,
+          52
+        ],
+        "span_sentences": [
+          "Cisco Talos has recently observed an increase in activity conducted by 8Base, a ransomware group that uses a variant of the Phobos ransomware and other publicly available tools to facilitate their operations.",
+          "In 8Base campaigns, however, it has the ransomware component embedded in its encrypted payloads, which is then decrypted and loaded into the SmokeLoader process’ memory.",
+          "- 8Base’s Phobos ransomware payload contains an embedded configuration which we describe in this blog.",
+          "In our FY23 Q2 Talos Incident Response Quarterly Report, we detailed how the 8Base group used their Phobos variant after installing AnyDesk to enable remote access to the machine as well as perform credential dumping via LSASS.",
+          "Since 8Base group is known to operate with characteristics similar to previous Phobos campaigns, we compared the code in an 8Base sample with previous Phobos variants and determined there are no differences between the code at the binary level at all.",
+          "As we mentioned above, this 8Base sample, 32a674b59c3f9a45efde48368b4de7e0e76c19e06b2f18afb6638d1a080b2eb3, was extracted from a SmokeLoader binary deployed in a recent 8Base campaign seen between June and August 2023.",
+          "Their observations about how the encryption works had many similarities with the 8Base sample we analyzed, and our analysis revealed that there were no changes in the code at all, with 100% carryover of samples’ functions and basic blocks.",
+          "The differences in code start to appear when we compare the 8Base sample with Phobos variants created in 2019.",
+          "The current 8Base sample shares 89.6% of its code with the 2019 sample, according to our analysis.",
+          "The code block below is related to the encryption/decryption function in 8Base, which uses the custom cryptographic library, versus the code in the 2019 sample which uses Windows Crypto API\nThere are similar differences in the function used to decrypt the configuration file, which behaves in a related fashion but using different cryptographic APIs."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos has recently observed an increase in activity conducted by 8Base, a ransomware group that uses a variant of the Phobos ransomware and other publicly available tools to facilitate their operations."
+        ]
+      },
+      {
+        "node_id": "HL_6dd88beb28f8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          21,
+          41,
+          46
+        ],
+        "span_sentences": [
+          "This fact is supported by an analysis of over a thousand unpacked Phobos samples available on VirusTotal since 2019, where the same public RSA key mentioned above is used.",
+          "In their February 2023 post about brute-forcing Phobos encryption, the Computer Emergency Response Team from Poland (Cert-PL) looked at sample 2704e269fb5cf9a02070a0ea07d82dc9d87f2cb95e60cb71d6c6d38b01869f66 which was first observed in VirusTotal in 2020.",
+          "We analyzed the sample fc4b14250db7f66107820ecc56026e6be3e8e0eb2d428719156cf1c53ae139c6 first seen in VirusTotal in August 2019."
+        ]
+      },
+      {
+        "node_id": "HL_8ff8e010d7f9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows 10",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "This technique has been documented since at least 2017 but still works in the latest version of Windows 10."
+        ]
+      },
+      {
+        "node_id": "HL_942bc5e9671b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Malwarebytes",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "This algorithm has been documented before, for example in this Malwarebytes post from 2019, and the process still remains the same."
+        ]
+      },
+      {
+        "node_id": "HL_96e172562941",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SmokeLoader",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          1,
+          3,
+          8,
+          40
+        ],
+        "span_sentences": [
+          "- Most of the group’s Phobos variants are distributed by SmokeLoader, a backdoor trojan.",
+          "In 8Base campaigns, however, it has the ransomware component embedded in its encrypted payloads, which is then decrypted and loaded into the SmokeLoader process’ memory.",
+          "SmokeLoader malware decrypts its payload in three stages.",
+          "As we mentioned above, this 8Base sample, 32a674b59c3f9a45efde48368b4de7e0e76c19e06b2f18afb6638d1a080b2eb3, was extracted from a SmokeLoader binary deployed in a recent 8Base campaign seen between June and August 2023."
+        ]
+      },
+      {
+        "node_id": "HL_ac3064aee469",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cert-PL",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "In their February 2023 post about brute-forcing Phobos encryption, the Computer Emergency Response Team from Poland (Cert-PL) looked at sample 2704e269fb5cf9a02070a0ea07d82dc9d87f2cb95e60cb71d6c6d38b01869f66 which was first observed in VirusTotal in 2020."
+        ]
+      },
+      {
+        "node_id": "HL_b988cd210aac",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Poland",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "In their February 2023 post about brute-forcing Phobos encryption, the Computer Emergency Response Team from Poland (Cert-PL) looked at sample 2704e269fb5cf9a02070a0ea07d82dc9d87f2cb95e60cb71d6c6d38b01869f66 which was first observed in VirusTotal in 2020."
+        ]
+      },
+      {
+        "node_id": "HL_c5644cb643e7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Phobos",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          5,
+          6,
+          12,
+          13,
+          16,
+          20,
+          21,
+          34,
+          39,
+          41,
+          45,
+          49,
+          53
+        ],
+        "span_sentences": [
+          "Cisco Talos has recently observed an increase in activity conducted by 8Base, a ransomware group that uses a variant of the Phobos ransomware and other publicly available tools to facilitate their operations.",
+          "- 8Base’s Phobos ransomware payload contains an embedded configuration which we describe in this blog.",
+          "Besides this embedded configuration, our analysis did not uncover any other significant differences between 8Base’s Phobos variant and other Phobos samples that have been observed in the wild since 2019.",
+          "Notably, in all samples of Phobos released since 2019 that we analyzed, the same RSA key protected the encryption key.",
+          "Our analysis of Phobos uncovered a number of features that enable operators of the ransomware to establish persistence in a targeted system, perform speedy encryption, and remove backups, amongst other capabilities.",
+          "Phobos is a typical ransomware capable of encrypting files both in local drives as well as network shares.",
+          "Versions of Phobos released after 2019 use a custom implementation of AES-256 encryption, with a different random symmetric key used for each encrypted file, instead of using the Windows Crypto API like earlier variants.",
+          "It implies, however, that once the private RSA key is known, any file encrypted by any Phobos variant since 2019 can reliably be decrypted.",
+          "This fact is supported by an analysis of over a thousand unpacked Phobos samples available on VirusTotal since 2019, where the same public RSA key mentioned above is used.",
+          "While Phobos does not typically demonstrate reporting a new infection to the attacker, our analysis indicates the capability to do so is present in the code, hidden behind a configuration setting which enables this feature and the creation of a custom URL and message chosen by the attacker.",
+          "Since 8Base group is known to operate with characteristics similar to previous Phobos campaigns, we compared the code in an 8Base sample with previous Phobos variants and determined there are no differences between the code at the binary level at all.",
+          "In their February 2023 post about brute-forcing Phobos encryption, the Computer Emergency Response Team from Poland (Cert-PL) looked at sample 2704e269fb5cf9a02070a0ea07d82dc9d87f2cb95e60cb71d6c6d38b01869f66 which was first observed in VirusTotal in 2020.",
+          "The differences in code start to appear when we compare the 8Base sample with Phobos variants created in 2019.",
+          "This implies these features were added to Phobos source code at some point in 2019 or 2020, likely the last time the Phobos source code was updated.",
+          "These changes observed in early samples support the assumption that Phobos went through a development phase in 2019 but has remained unchanged since then."
+        ]
+      },
+      {
+        "node_id": "HL_f8b77c8fe4ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AnyDesk",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "In our FY23 Q2 Talos Incident Response Quarterly Report, we detailed how the 8Base group used their Phobos variant after installing AnyDesk to enable remote access to the machine as well as perform credential dumping via LSASS."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In our FY23 Q2 Talos Incident Response Quarterly Report, we detailed how the 8Base group used their Phobos variant after installing AnyDesk to enable remote access to the machine as well as perform credential dumping via LSASS."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In 8Base campaigns, however, it has the ransomware component embedded in its encrypted payloads, which is then decrypted and loaded into the SmokeLoader process’ memory."
+          ],
+          [
+            "SmokeLoader malware decrypts its payload in three stages."
+          ],
+          [
+            "In the code above we see the malware initially checking the CRC32 hash of the data in the last section of the PE file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_3",
+          "EDGE_7",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "SmokeLoader malware decrypts its payload in three stages."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1219",
+        "edges": [
+          "EDGE_4",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In our FY23 Q2 Talos Incident Response Quarterly Report, we detailed how the 8Base group used their Phobos variant after installing AnyDesk to enable remote access to the machine as well as perform credential dumping via LSASS."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1486",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- 8Base’s Phobos ransomware payload contains an embedded configuration which we describe in this blog."
+          ],
+          [
+            "Besides this embedded configuration, our analysis did not uncover any other significant differences between 8Base’s Phobos variant and other Phobos samples that have been observed in the wild since 2019.",
+            "Notably, in all samples of Phobos released since 2019 that we analyzed, the same RSA key protected the encryption key."
+          ],
+          [
+            "Our analysis of Phobos uncovered a number of features that enable operators of the ransomware to establish persistence in a targeted system, perform speedy encryption, and remove backups, amongst other capabilities."
+          ],
+          [
+            "Phobos is a typical ransomware capable of encrypting files both in local drives as well as network shares."
+          ],
+          [
+            "Versions of Phobos released after 2019 use a custom implementation of AES-256 encryption, with a different random symmetric key used for each encrypted file, instead of using the Windows Crypto API like earlier variants."
+          ],
+          [
+            "Once each file is encrypted, the key used in the encryption along with additional metadata is then encrypted using RSA-1024 with a hardcoded public key, and saved to the end of the file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1490",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1490",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Our analysis of Phobos uncovered a number of features that enable operators of the ransomware to establish persistence in a targeted system, perform speedy encryption, and remove backups, amongst other capabilities."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1548",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1548",
+        "edges": [
+          "EDGE_5",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Phobos binary contains code that performs UAC bypass using a vulnerability in the .Net Profiler DLL loading process while executing “compmgmt.msc”."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_32d9abbc3d6c",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "fc4b14250db7f66107820ecc56026e6be3e8e0eb2d428719156cf1c53ae139c6",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "We analyzed the sample fc4b14250db7f66107820ecc56026e6be3e8e0eb2d428719156cf1c53ae139c6 first seen in VirusTotal in August 2019."
+        ]
+      },
+      {
+        "node_id": "IOC_5c18c294c205",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "2704e269fb5cf9a02070a0ea07d82dc9d87f2cb95e60cb71d6c6d38b01869f66",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "In their February 2023 post about brute-forcing Phobos encryption, the Computer Emergency Response Team from Poland (Cert-PL) looked at sample 2704e269fb5cf9a02070a0ea07d82dc9d87f2cb95e60cb71d6c6d38b01869f66 which was first observed in VirusTotal in 2020."
+        ]
+      },
+      {
+        "node_id": "IOC_c142c931607a",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "32a674b59c3f9a45efde48368b4de7e0e76c19e06b2f18afb6638d1a080b2eb3",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          11,
+          40
+        ],
+        "span_sentences": [
+          "The final payload hash extracted by this method is 32a674b59c3f9a45efde48368b4de7e0e76c19e06b2f18afb6638d1a080b2eb3.",
+          "As we mentioned above, this 8Base sample, 32a674b59c3f9a45efde48368b4de7e0e76c19e06b2f18afb6638d1a080b2eb3, was extracted from a SmokeLoader binary deployed in a recent 8Base campaign seen between June and August 2023."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_2a27ebc1b269",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_2a27ebc1b269",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_2a27ebc1b269",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_2a27ebc1b269",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_8ff8e010d7f9",
+      "node_v": "TTP_T1548"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_96e172562941",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_96e172562941",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_c5644cb643e7",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_c5644cb643e7",
+      "node_v": "TTP_T1490"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_c5644cb643e7",
+      "node_v": "TTP_T1548"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_f8b77c8fe4ea",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_c142c931607a",
+      "node_v": "TTP_T1140"
+    }
+  ]
+}

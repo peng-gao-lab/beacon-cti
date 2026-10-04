@@ -1,0 +1,1202 @@
+{
+  "schema_version": "1.1",
+  "generated_on": "2026-07-25",
+  "title": "BEACON dataset statistics",
+  "purpose": "Descriptive statistics for BEACON-Single and BEACON-Group. Statistical values are retained from the original audit; local paths, auxiliary labels, and experiment-specific analysis are excluded.",
+  "scope_and_provenance": {
+    "rq1": {
+      "task": "Document-level contextual entity, TTP, and IoC extraction and contextual-TTP and IoC-TTP edge construction.",
+      "report_directory": "../BEACON-Single/reports",
+      "ground_truth_directory": "../BEACON-Single/gt",
+      "source_manifest": "single_report_source.json",
+      "integrity": {
+        "txt_files": 150,
+        "direct_ground_truth_json_files": 150,
+        "report_id_stem_matches": 150,
+        "missing_ground_truth": 0,
+        "extra_ground_truth": 0
+      }
+    },
+    "rq2": {
+      "task": "Cross-report graph alignment within multi-source groups.",
+      "report_directory": "../BEACON-Group/reports",
+      "base_ground_truth_directory": "../BEACON-Group/single_gt",
+      "alignment_ground_truth_directory": "../BEACON-Group/alignment_gt",
+      "source_manifest": "group_report_source.json",
+      "integrity": {
+        "group_directories": 33,
+        "txt_files": 100,
+        "direct_base_ground_truth_json_files": 100,
+        "direct_final_alignment_json_files": 33,
+        "report_id_stem_matches": 100,
+        "missing_base_components_in_final_backmapping": 0,
+        "multiply_mapped_base_components": 0,
+        "warning": "Counts use active GT nodes and edges only."
+      }
+    }
+  },
+  "counting_definitions": {
+    "report_instance": "One .txt file in the relevant collection. The same underlying published article may occur once in each collection as two instances.",
+    "token": "A non-empty token produced by splitting report text on whitespace. These counts are not model-tokenizer counts.",
+    "character": "A Unicode code point counted by Python len(text).",
+    "sentence": "One sentence returned by BEACON regex sentence splitting. Split after .?! followed by whitespace using ([.!?])\\s+, reconstruct punctuation, strip whitespace, and discard empty items.",
+    "unique_exact_node_text": "Distinct stored node_text strings without case folding or semantic normalization.",
+    "unique_normalized_entity": "Distinct (stored node_type, casefold(trim(node_text))) pairs.",
+    "base_component": "A report-specific node in BEACON-Group/single_gt before alignment.",
+    "final_canonical_node_or_cluster": "An active node in BEACON-Group/alignment_gt.",
+    "evaluator_alignment_unit": "For each final cluster, the number of base-aware union operations is size minus one. The reported denominator is the sum of these values, not all pairwise combinations.",
+    "pairwise_positive": "For descriptive analysis only, all unordered base-component pairs inside each final cluster: sum of n choose 2.",
+    "cross_report_cluster": "A final cluster whose source backmapping covers at least two distinct reports in its group.",
+    "evidence_sentence_reference": "One node-to-sentence evidence association in the GT. It is not necessarily a distinct surface-string mention.",
+    "publisher_label": "The raw aggregate label stored by the provided source manifest. Labels are preserved because the manifests mix brand labels and domain-form labels."
+  },
+  "rq1_document_level_extraction": {
+    "source_distribution": {
+      "reports_with_identified_source": 150,
+      "source_count": 15,
+      "top_1_share_percent": 26.67,
+      "top_3_share_percent": 54.67,
+      "top_5_share_percent": 70.67,
+      "raw_source_counts": [
+        {
+          "source": "talosintelligence",
+          "reports": 40,
+          "percent": 26.67
+        },
+        {
+          "source": "unit42",
+          "reports": 25,
+          "percent": 16.67
+        },
+        {
+          "source": "welivesecurity",
+          "reports": 17,
+          "percent": 11.33
+        },
+        {
+          "source": "zscaler",
+          "reports": 15,
+          "percent": 10.0
+        },
+        {
+          "source": "forcepoint",
+          "reports": 9,
+          "percent": 6.0
+        },
+        {
+          "source": "microsoft",
+          "reports": 9,
+          "percent": 6.0
+        },
+        {
+          "source": "proofpoint",
+          "reports": 9,
+          "percent": 6.0
+        },
+        {
+          "source": "trendmicro",
+          "reports": 9,
+          "percent": 6.0
+        },
+        {
+          "source": "securelist",
+          "reports": 7,
+          "percent": 4.67
+        },
+        {
+          "source": "trellix",
+          "reports": 4,
+          "percent": 2.67
+        },
+        {
+          "source": "bitdefender",
+          "reports": 2,
+          "percent": 1.33
+        },
+        {
+          "source": "crowdstrike",
+          "reports": 1,
+          "percent": 0.67
+        },
+        {
+          "source": "levelblue",
+          "reports": 1,
+          "percent": 0.67
+        },
+        {
+          "source": "nccgroup",
+          "reports": 1,
+          "percent": 0.67
+        },
+        {
+          "source": "security",
+          "reports": 1,
+          "percent": 0.67
+        }
+      ]
+    },
+    "publication_date_audit": {
+      "status": "Dates were reconstructed from publication metadata, visible page dates, and selected filenames during the original audit. Per-report dates and the source HTML used for this audit are not included in this package.",
+      "reports_with_date": 150,
+      "earliest": "2018-01-24",
+      "latest": "2026-02-26",
+      "year_counts": {
+        "2018": 1,
+        "2019": 5,
+        "2020": 0,
+        "2021": 3,
+        "2022": 8,
+        "2023": 14,
+        "2024": 42,
+        "2025": 55,
+        "2026": 22
+      },
+      "metadata_methods": {
+        "article_published_time": 101,
+        "datePublished": 24,
+        "releaseDate": 4,
+        "visible_page_date": 14,
+        "welivesecurity_filename_date": 6,
+        "security_createdYmd": 1
+      },
+      "limitation": "This aggregate date range is not recoverable from the supplied source summaries alone."
+    },
+    "text_size": {
+      "total_characters": 1004699,
+      "total_whitespace_delimited_tokens": 147721,
+      "total_sentences": 6823,
+      "global_whitespace_tokens_per_sentence": 21.6504,
+      "per_report": {
+        "characters": {
+          "mean": 6697.99,
+          "median": 6991,
+          "q1": 5384.5,
+          "q3": 8152.75,
+          "min": 1373,
+          "max": 12658
+        },
+        "whitespace_delimited_tokens": {
+          "mean": 984.81,
+          "median": 1050,
+          "q1": 791,
+          "q3": 1206,
+          "min": 187,
+          "max": 1737
+        },
+        "sentences": {
+          "mean": 45.4867,
+          "median": 50.0,
+          "q1": 37.5,
+          "q3": 55.0,
+          "min": 11,
+          "max": 59
+        }
+      }
+    },
+    "ground_truth_graph": {
+      "graph_count": 150,
+      "total_graph_elements": 8395,
+      "nodes": {
+        "all": 4966,
+        "per_report": {
+          "mean": 33.1067,
+          "median": 31.5,
+          "min": 5,
+          "max": 76
+        },
+        "layers": {
+          "high_level": {
+            "count": 2425,
+            "share_percent": 48.83,
+            "unique_exact_node_texts": 1558,
+            "unique_normalized_entities": 1554,
+            "reports_with_at_least_one": 150,
+            "per_report": {
+              "mean": 16.1667,
+              "median": 14,
+              "q1": 10,
+              "q3": 21,
+              "min": 2,
+              "max": 43
+            },
+            "subtypes": {
+              "Product": {
+                "count": 621,
+                "unique_normalized": 355,
+                "report_coverage": 141
+              },
+              "Organization": {
+                "count": 419,
+                "unique_normalized": 242,
+                "report_coverage": 129
+              },
+              "Location": {
+                "count": 367,
+                "unique_normalized": 143,
+                "report_coverage": 102
+              },
+              "MalwareFamily": {
+                "count": 319,
+                "unique_normalized": 270,
+                "report_coverage": 119
+              },
+              "Tool": {
+                "count": 314,
+                "unique_normalized": 237,
+                "report_coverage": 106
+              },
+              "ThreatActor": {
+                "count": 216,
+                "unique_normalized": 174,
+                "report_coverage": 81
+              },
+              "Sector": {
+                "count": 141,
+                "unique_normalized": 105,
+                "report_coverage": 48
+              },
+              "Campaign": {
+                "count": 28,
+                "unique_normalized": 28,
+                "report_coverage": 20
+              }
+            }
+          },
+          "ttp": {
+            "count": 1487,
+            "share_percent": 29.94,
+            "unique_parent_ids": 125,
+            "reports_with_at_least_one": 149,
+            "per_report": {
+              "mean": 9.9133,
+              "median": 10,
+              "q1": 7,
+              "q3": 12.75,
+              "min": 0,
+              "max": 22
+            },
+            "id_form": "All stored RQ1 TTP node_text values use parent-form Txxxx IDs.",
+            "top_occurring_ids": [
+              {
+                "id": "T1059",
+                "count": 101
+              },
+              {
+                "id": "T1105",
+                "count": 98
+              },
+              {
+                "id": "T1027",
+                "count": 85
+              },
+              {
+                "id": "T1071",
+                "count": 83
+              },
+              {
+                "id": "T1204",
+                "count": 64
+              },
+              {
+                "id": "T1566",
+                "count": 63
+              },
+              {
+                "id": "T1041",
+                "count": 51
+              },
+              {
+                "id": "T1036",
+                "count": 48
+              },
+              {
+                "id": "T1140",
+                "count": 41
+              },
+              {
+                "id": "T1005",
+                "count": 35
+              }
+            ]
+          },
+          "ioc": {
+            "count": 1054,
+            "share_percent": 21.22,
+            "unique_exact_node_texts": 1027,
+            "unique_normalized_entities": 1024,
+            "reports_with_at_least_one": 145,
+            "per_report": {
+              "mean": 7.0267,
+              "median": 6,
+              "q1": 3,
+              "q3": 9,
+              "min": 0,
+              "max": 51
+            },
+            "subtypes": {
+              "FilePath": {
+                "count": 370,
+                "unique_normalized": 351,
+                "report_coverage": 99
+              },
+              "Domain": {
+                "count": 229,
+                "unique_normalized": 227,
+                "report_coverage": 78
+              },
+              "URL": {
+                "count": 170,
+                "unique_normalized": 170,
+                "report_coverage": 54
+              },
+              "IPAddress": {
+                "count": 89,
+                "unique_normalized": 88,
+                "report_coverage": 50
+              },
+              "Hash": {
+                "count": 63,
+                "unique_normalized": 63,
+                "report_coverage": 30
+              },
+              "CVE": {
+                "count": 55,
+                "unique_normalized": 48,
+                "report_coverage": 32
+              },
+              "AESKey": {
+                "count": 28,
+                "unique_normalized": 28,
+                "report_coverage": 22
+              },
+              "RegistryKey": {
+                "count": 24,
+                "unique_normalized": 23,
+                "report_coverage": 19
+              },
+              "Email": {
+                "count": 18,
+                "unique_normalized": 18,
+                "report_coverage": 14
+              },
+              "SecurityIndicator": {
+                "count": 4,
+                "unique_normalized": 4,
+                "report_coverage": 2
+              },
+              "Mutex": {
+                "count": 4,
+                "unique_normalized": 4,
+                "report_coverage": 4
+              }
+            }
+          }
+        },
+        "isolated_nodes": {
+          "definition": "Direct GT nodes with degree zero.",
+          "high_level": {
+            "count": 1449,
+            "percent_of_layer": 59.75
+          },
+          "ttp": {
+            "count": 140,
+            "percent_of_layer": 9.41
+          },
+          "ioc": {
+            "count": 289,
+            "percent_of_layer": 27.42
+          }
+        }
+      },
+      "edges": {
+        "all": 3429,
+        "per_report": {
+          "mean": 22.86,
+          "median": 22,
+          "q1": 15,
+          "q3": 29,
+          "min": 0,
+          "max": 69
+        },
+        "types": {
+          "high_level-ttp": {
+            "count": 2358,
+            "share_percent": 68.77,
+            "report_coverage": 149
+          },
+          "ioc-ttp": {
+            "count": 1071,
+            "share_percent": 31.23,
+            "report_coverage": 141
+          }
+        },
+        "integrity": {
+          "invalid_endpoints": 0,
+          "self_loops": 0,
+          "duplicate_endpoint_pairs": 0,
+          "duplicate_node_ids": 0
+        }
+      }
+    }
+  },
+  "rq2_cross_report_alignment": {
+    "source_distribution": {
+      "reports_with_identified_source": 100,
+      "reports_with_unidentified_source": 0,
+      "source_count": 31,
+      "manual_source_overrides": 12,
+      "top_1_share_percent": 19.0,
+      "top_3_share_percent": 44.0,
+      "top_5_share_percent": 60.0,
+      "raw_source_counts": [
+        {
+          "source": "the hacker news",
+          "reports": 19,
+          "percent": 19.0
+        },
+        {
+          "source": "talosintelligence",
+          "reports": 15,
+          "percent": 15.0
+        },
+        {
+          "source": "unit42",
+          "reports": 10,
+          "percent": 10.0
+        },
+        {
+          "source": "bleepingcomputer",
+          "reports": 8,
+          "percent": 8.0
+        },
+        {
+          "source": "darkreading",
+          "reports": 8,
+          "percent": 8.0
+        },
+        {
+          "source": "securityweek",
+          "reports": 4,
+          "percent": 4.0
+        },
+        {
+          "source": "trendmicro",
+          "reports": 4,
+          "percent": 4.0
+        },
+        {
+          "source": "zscaler",
+          "reports": 4,
+          "percent": 4.0
+        },
+        {
+          "source": "forcepoint",
+          "reports": 2,
+          "percent": 2.0
+        },
+        {
+          "source": "hivepro.com",
+          "reports": 2,
+          "percent": 2.0
+        },
+        {
+          "source": "securelist",
+          "reports": 2,
+          "percent": 2.0
+        },
+        {
+          "source": "socprime.com",
+          "reports": 2,
+          "percent": 2.0
+        },
+        {
+          "source": "socradar",
+          "reports": 2,
+          "percent": 2.0
+        },
+        {
+          "source": "bankinfosecurity.com",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "bitdefender",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "cisa.gov",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "crowdstrike",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "cyber press",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "darktrace.com",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "egress.com",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "google cloud",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "levelblue",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "nccgroup",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "proofpoint",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "sentinelone.com",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "sonicwall.com",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "sygnia.co",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "techcrunch.com",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "trellix",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "volexity.com",
+          "reports": 1,
+          "percent": 1.0
+        },
+        {
+          "source": "withsecure",
+          "reports": 1,
+          "percent": 1.0
+        }
+      ],
+      "publication_date_status": {
+        "complete_range_available": false,
+        "reason": "Complete per-report publication dates are not available in the supplied dataset metadata.",
+        "filename_year_hints_only": {
+          "reports": 24,
+          "range": "2022-2026",
+          "year_counts": {
+            "2022": 1,
+            "2023": 5,
+            "2024": 2,
+            "2025": 11,
+            "2026": 5
+          }
+        },
+        "limitation": "The filename-only year hints are not the publication range of all 100 reports."
+      }
+    },
+    "group_composition": {
+      "groups": 33,
+      "report_instances": 100,
+      "reports_per_group": {
+        "mean": 3.0303,
+        "median": 3,
+        "min": 2,
+        "max": 4,
+        "distribution": {
+          "2": 2,
+          "3": 28,
+          "4": 3
+        }
+      },
+      "distinct_publishers_per_group": {
+        "mean": 2.9697,
+        "min": 2,
+        "max": 4,
+        "distribution": {
+          "2": 3,
+          "3": 28,
+          "4": 2
+        },
+        "groups_with_at_least_two_publishers": 33
+      },
+      "within_group_report_pairs": {
+        "all": 104,
+        "cross_publisher": 102,
+        "same_publisher": 2,
+        "cross_publisher_percent": 98.08
+      }
+    },
+    "text_size": {
+      "total_characters": 494829,
+      "total_utf8_bytes": 496718,
+      "total_whitespace_delimited_tokens": 73272,
+      "total_sentences": 3166,
+      "global_whitespace_tokens_per_sentence": 23.1434,
+      "total_nonempty_lines": 2131,
+      "per_report": {
+        "characters": {
+          "mean": 4948.29,
+          "median": 4461.5,
+          "min": 1141,
+          "max": 9574
+        },
+        "whitespace_delimited_tokens": {
+          "mean": 732.72,
+          "median": 683,
+          "q1": 497.75,
+          "q3": 960.5,
+          "min": 169,
+          "max": 1417
+        },
+        "sentences": {
+          "mean": 31.66,
+          "median": 29.0,
+          "q1": 18.25,
+          "q3": 47.0,
+          "min": 7,
+          "max": 59
+        },
+        "nonempty_lines": {
+          "mean": 21.31,
+          "median": 19,
+          "min": 3,
+          "max": 54
+        }
+      },
+      "per_group": {
+        "characters": {
+          "mean": 14994.82,
+          "median": 14910,
+          "min": 3924,
+          "max": 27761
+        },
+        "whitespace_delimited_tokens": {
+          "mean": 2220.36,
+          "median": 2216,
+          "q1": 1720,
+          "q3": 2722,
+          "min": 587,
+          "max": 4122
+        },
+        "sentences": {
+          "mean": 95.9394,
+          "median": 88,
+          "q1": 71.5,
+          "q3": 125.0,
+          "min": 25,
+          "max": 178
+        }
+      }
+    },
+    "pre_alignment_single_report_ground_truth": {
+      "graphs": 100,
+      "total_graph_elements": 5186,
+      "nodes": {
+        "all": 2908,
+        "per_report": {
+          "mean": 29.08,
+          "median": 29,
+          "min": 8,
+          "max": 76
+        },
+        "layers": {
+          "high_level": {
+            "count": 1716,
+            "share_percent": 59.01,
+            "unique_exact_node_texts": 1008,
+            "report_coverage": 100,
+            "subtypes": {
+              "Product": 325,
+              "Organization": 323,
+              "Location": 295,
+              "MalwareFamily": 283,
+              "ThreatActor": 224,
+              "Tool": 164,
+              "Sector": 79,
+              "Campaign": 23
+            }
+          },
+          "ttp": {
+            "count": 816,
+            "share_percent": 28.06,
+            "unique_exact_parent_ids": 103,
+            "report_coverage": 99
+          },
+          "ioc": {
+            "count": 376,
+            "share_percent": 12.93,
+            "unique_exact_node_texts": 348,
+            "report_coverage": 68,
+            "subtypes": {
+              "FilePath": 142,
+              "Domain": 81,
+              "CVE": 53,
+              "URL": 34,
+              "IPAddress": 30,
+              "Hash": 17,
+              "RegistryKey": 7,
+              "Email": 5,
+              "AESKey": 5,
+              "Mutex": 1,
+              "SecurityIndicator": 1
+            }
+          }
+        }
+      },
+      "edges": {
+        "all": 2278,
+        "per_report": {
+          "mean": 22.78,
+          "median": 17,
+          "min": 0,
+          "max": 108
+        },
+        "types": {
+          "high_level-ttp": {
+            "count": 1832,
+            "share_percent": 80.42,
+            "report_coverage": 99
+          },
+          "ioc-ttp": {
+            "count": 446,
+            "share_percent": 19.58,
+            "report_coverage": 64
+          }
+        }
+      },
+      "evidence_annotations": {
+        "all_base_nodes_have_at_least_one_available_evidence": true,
+        "high_level_node_to_sentence_references": 3424,
+        "ttp_node_to_sentence_references": 2221,
+        "ttp_behavior_span_groups": 1356,
+        "ioc_node_to_sentence_references": 485,
+        "interpretation": "These are evidence associations retained by the GT schema, not raw mention-frequency counts."
+      }
+    },
+    "final_alignment_ground_truth": {
+      "graphs": 33,
+      "total_graph_elements": 3487,
+      "active_canonical_nodes": {
+        "all": 1950,
+        "per_group": {
+          "mean": 59.09,
+          "median": 61,
+          "min": 10,
+          "max": 109
+        },
+        "layers": {
+          "high_level": {
+            "count": 1092,
+            "share_percent": 56.0,
+            "group_coverage": 33
+          },
+          "ttp": {
+            "count": 512,
+            "share_percent": 26.26,
+            "group_coverage": 33
+          },
+          "ioc": {
+            "count": 346,
+            "share_percent": 17.74,
+            "group_coverage": 29
+          }
+        }
+      },
+      "active_edges": {
+        "all": 1537,
+        "per_group": {
+          "mean": 46.58,
+          "median": 38,
+          "min": 2,
+          "max": 116
+        },
+        "types": {
+          "high_level-ttp": {
+            "count": 1116,
+            "share_percent": 72.61,
+            "group_coverage": 33
+          },
+          "ioc-ttp": {
+            "count": 421,
+            "share_percent": 27.39,
+            "group_coverage": 28
+          }
+        }
+      },
+      "alignment_workload": {
+        "base_components": 2908,
+        "final_canonical_nodes": 1950,
+        "evaluator_merge_link_units": 958,
+        "component_reduction_percent": 32.94,
+        "by_layer": {
+          "high_level": {
+            "base": 1716,
+            "final": 1092,
+            "evaluator_units": 624,
+            "reduction_percent": 36.36
+          },
+          "ttp": {
+            "base": 816,
+            "final": 512,
+            "evaluator_units": 304,
+            "reduction_percent": 37.25
+          },
+          "ioc": {
+            "base": 376,
+            "final": 346,
+            "evaluator_units": 30,
+            "reduction_percent": 7.98
+          }
+        },
+        "all_pairwise_positive_pairs_for_description_only": 1880,
+        "pairwise_positives_by_layer": {
+          "high_level": 1435,
+          "ttp": 407,
+          "ioc": 38
+        },
+        "cross_report_pairwise_positives": 1491,
+        "same_report_pairwise_positives": 389,
+        "cross_report_pairs_that_are_cross_publisher": 1475,
+        "cross_report_pairs_that_are_same_publisher": 16,
+        "cross_publisher_share_of_cross_report_positive_pairs_percent": 98.93,
+        "critical_metric_note": "The current RQ2 evaluator denominator is 958 base-aware merge-link units, not 1880 all-pairs positives."
+      },
+      "cluster_structure": {
+        "all_final_clusters": 1950,
+        "non_singleton_clusters": 562,
+        "non_singleton_share_percent": 28.82,
+        "cross_report_non_singleton_clusters": 528,
+        "same_report_only_non_singleton_clusters": 34,
+        "cross_report_share_of_non_singleton_percent": 93.95,
+        "by_layer": {
+          "high_level": {
+            "clusters": 1092,
+            "non_singleton": 333,
+            "cross_report": 303,
+            "same_report_only": 30,
+            "base_component_size_distribution": {
+              "1": 759,
+              "2": 179,
+              "3": 103,
+              "4": 26,
+              "5": 11,
+              "6": 7,
+              "7": 1,
+              "10": 1,
+              "11": 2,
+              "15": 2,
+              "20": 1
+            },
+            "clusters_by_distinct_report_count": {
+              "1": 789,
+              "2": 166,
+              "3": 124,
+              "4": 13
+            },
+            "max_base_component_size": 20
+          },
+          "ttp": {
+            "clusters": 512,
+            "non_singleton": 207,
+            "cross_report": 207,
+            "same_report_only": 0,
+            "base_component_size_distribution": {
+              "1": 305,
+              "2": 116,
+              "3": 85,
+              "4": 6
+            },
+            "clusters_by_distinct_report_count": {
+              "1": 305,
+              "2": 116,
+              "3": 85,
+              "4": 6
+            },
+            "max_base_component_size": 4
+          },
+          "ioc": {
+            "clusters": 346,
+            "non_singleton": 22,
+            "cross_report": 18,
+            "same_report_only": 4,
+            "base_component_size_distribution": {
+              "1": 324,
+              "2": 14,
+              "3": 8
+            },
+            "clusters_by_distinct_report_count": {
+              "1": 328,
+              "2": 10,
+              "3": 8
+            },
+            "max_base_component_size": 3
+          }
+        }
+      },
+      "high_level_subtype_alignment": {
+        "Campaign": {
+          "base": 23,
+          "final": 17,
+          "evaluator_units": 6,
+          "reduction_percent": 26.09,
+          "cross_report_clusters": 2
+        },
+        "Location": {
+          "base": 295,
+          "final": 187,
+          "evaluator_units": 108,
+          "reduction_percent": 36.61,
+          "cross_report_clusters": 78
+        },
+        "MalwareFamily": {
+          "base": 283,
+          "final": 158,
+          "evaluator_units": 125,
+          "reduction_percent": 44.17,
+          "cross_report_clusters": 54
+        },
+        "Organization": {
+          "base": 323,
+          "final": 233,
+          "evaluator_units": 90,
+          "reduction_percent": 27.86,
+          "cross_report_clusters": 49
+        },
+        "Product": {
+          "base": 325,
+          "final": 226,
+          "evaluator_units": 99,
+          "reduction_percent": 30.46,
+          "cross_report_clusters": 50
+        },
+        "Sector": {
+          "base": 79,
+          "final": 57,
+          "evaluator_units": 22,
+          "reduction_percent": 27.85,
+          "cross_report_clusters": 15
+        },
+        "ThreatActor": {
+          "base": 224,
+          "final": 86,
+          "evaluator_units": 138,
+          "reduction_percent": 61.61,
+          "cross_report_clusters": 33
+        },
+        "Tool": {
+          "base": 164,
+          "final": 128,
+          "evaluator_units": 36,
+          "reduction_percent": 21.95,
+          "cross_report_clusters": 22
+        }
+      },
+      "ioc_subtype_alignment": {
+        "AESKey": {
+          "base": 5,
+          "final": 5,
+          "evaluator_units": 0,
+          "cross_report_clusters": 0
+        },
+        "CVE": {
+          "base": 53,
+          "final": 31,
+          "evaluator_units": 22,
+          "cross_report_clusters": 14
+        },
+        "Domain": {
+          "base": 81,
+          "final": 78,
+          "evaluator_units": 3,
+          "cross_report_clusters": 3
+        },
+        "Email": {
+          "base": 5,
+          "final": 5,
+          "evaluator_units": 0,
+          "cross_report_clusters": 0
+        },
+        "FilePath": {
+          "base": 142,
+          "final": 138,
+          "evaluator_units": 4,
+          "cross_report_clusters": 1
+        },
+        "Hash": {
+          "base": 17,
+          "final": 17,
+          "evaluator_units": 0,
+          "cross_report_clusters": 0
+        },
+        "IPAddress": {
+          "base": 30,
+          "final": 30,
+          "evaluator_units": 0,
+          "cross_report_clusters": 0
+        },
+        "Mutex": {
+          "base": 1,
+          "final": 1,
+          "evaluator_units": 0,
+          "cross_report_clusters": 0
+        },
+        "RegistryKey": {
+          "base": 7,
+          "final": 7,
+          "evaluator_units": 0,
+          "cross_report_clusters": 0
+        },
+        "SecurityIndicator": {
+          "base": 1,
+          "final": 1,
+          "evaluator_units": 0,
+          "cross_report_clusters": 0
+        },
+        "URL": {
+          "base": 34,
+          "final": 33,
+          "evaluator_units": 1,
+          "cross_report_clusters": 0
+        }
+      },
+      "groups_without_ioc": [
+        "DarkCrystal RAT (DCRat)",
+        "Emotet",
+        "UAT-9921",
+        "Ursnif Banking Trojan"
+      ]
+    }
+  },
+  "cross_collection_analysis": {
+    "dataset_instances": {
+      "rq1": 150,
+      "rq2": 100,
+      "combined": 250
+    },
+    "publisher_labels": {
+      "rq1": 15,
+      "rq2": 31,
+      "exact_raw_label_intersection": 12,
+      "exact_raw_label_union": 34,
+      "shared_raw_labels": [
+        "bitdefender",
+        "crowdstrike",
+        "forcepoint",
+        "levelblue",
+        "nccgroup",
+        "proofpoint",
+        "securelist",
+        "talosintelligence",
+        "trellix",
+        "trendmicro",
+        "unit42",
+        "zscaler"
+      ],
+      "warning": "The value 34 is the union of raw manifest labels. Because labels mix brands and domain-form names, preserve this wording or normalize sources explicitly before making a stronger claim."
+    },
+    "report_overlap": {
+      "normalization_rule": {
+        "rq1": "Path(filename).stem followed only by removeprefix('no_table_')",
+        "rq2": "Path(filename).stem",
+        "comparison": "Exact case-sensitive and Unicode-sensitive equality; no lowercasing, punctuation cleanup, domain normalization, or internal .html removal."
+      },
+      "shared_normalized_source_report_ids": 15,
+      "shared_ids": [
+        "A Deep Dive into the Latest Version of Lumma InfoStealer",
+        "blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their",
+        "blog.talosintelligence.com_blackbyte-blends-tried-and-true-tradecraft-with-newly-disclosed-vulnerabilities-to-support-ongoing-attacks",
+        "blog.talosintelligence.com_deep-dive-into-phobos-ransomware",
+        "blog.talosintelligence.com_gamaredon-campaign-distribute-remcos",
+        "blog.talosintelligence.com_transparent-tribe-infra-and-targeting",
+        "blog.talosintelligence.com_transparent-tribe-targets-education",
+        "unit42.paloaltonetworks.com_ivanti-cve-2026-1281-cve-2026-1340",
+        "unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan",
+        "unit42.paloaltonetworks.com_threat-brief-ivanti-cve-2025-0282-cve-2025-0283",
+        "www.forcepoint.com_blog_x-labs_asyncrat-reloaded-python-trycloudflare-malware",
+        "www.forcepoint.com_blog_x-labs_unmasking-lumma-stealer-campaign",
+        "www.nccgroup.com_research-blog_fake-captcha-led-to-lumma",
+        "www.trendmicro.com_en_us_research_26_a_analyzing-a-a-multi-stage-asyncrat-campaign-via-mdr.html",
+        "www.zscaler.com_blogs_security-research_spoofed-ivanti-vpn-client-sites"
+      ],
+      "normalized_id_union": 235,
+      "byte_identical_shared_report_pairs": 0,
+      "within_rq1_exact_content_duplicates": 0,
+      "within_rq2_exact_content_duplicates": 0,
+      "interpretation": "The 15 overlaps identify the same source article under the conservative filename rule, but each collection contains a different cleaned/crawled text snapshot."
+    }
+  },
+  "important_cautions": [
+    "There are 250 report instances across the two collections, not 250 mutually distinct source articles. The documented filename rule identifies 15 overlapping source-report IDs with different cleaned text snapshots.",
+    "Publisher labels mix brand names and domain-form names. The combined count of 34 is a count of raw labels, not an independently normalized publisher total.",
+    "Source summaries are aggregate metadata, not complete per-report URL, title, or date manifests. The Group summary includes 12 explicit source overrides.",
+    "The stored contextual entity subtype is MalwareFamily. Display names or evaluator normalization do not change the stored annotation label.",
+    "Alignment uses 958 merge-link units, not the 1880 all-pairs positives. Of 562 non-singleton clusters, 528 span multiple reports; 34 consolidate nodes within one report.",
+    "BEACON-Group publication dates are incomplete. Event years in report text must not be substituted for publication dates."
+  ],
+  "relative_paths_base": "directory containing this JSON file",
+  "summary": {
+    "rq1_document_level_extraction": {
+      "reports": 150,
+      "publishers": 15,
+      "whitespace_delimited_tokens": 147721,
+      "sentences": 6823,
+      "ground_truth_nodes": 4966,
+      "ground_truth_edges": 3429,
+      "ground_truth_graph_elements": 8395,
+      "node_layers": {
+        "high_level": 2425,
+        "ttp": 1487,
+        "ioc": 1054
+      }
+    },
+    "rq2_cross_report_alignment": {
+      "groups": 33,
+      "report_instances": 100,
+      "publishers": 31,
+      "whitespace_delimited_tokens": 73272,
+      "sentences": 3166,
+      "reports_per_group_mean": 3.0303,
+      "cross_publisher_report_pairs": "102/104 (98.08%)",
+      "pre_alignment_report_specific_nodes": 2908,
+      "final_canonical_nodes": 1950,
+      "ground_truth_alignment_units_used_by_evaluator": 958,
+      "non_singleton_final_clusters": 562,
+      "cross_report_non_singleton_final_clusters": 528
+    },
+    "combined_collections": {
+      "dataset_report_instances": 250,
+      "raw_publisher_labels_across_manifests": 34,
+      "overlapping_normalized_source_report_ids": 15,
+      "normalized_source_report_ids_under_the_documented_rule": 235,
+      "warning": "The two collections contain 250 dataset instances, not 250 mutually distinct reports. The 15 shared source-report IDs contain different cleaned/crawled text versions and are not byte-identical."
+    }
+  }
+}

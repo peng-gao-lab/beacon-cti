@@ -1,0 +1,536 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0901021eafe3",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Cardinal RAT",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          7,
+          9,
+          28,
+          35,
+          37,
+          46,
+          53
+        ],
+        "span_sentences": [
+          "In 2017, Unit 42 reported on and analyzed a low-volume malware family called Cardinal RAT.",
+          "Since that publication, we have continued to monitor this threat, resulting in the discovery of a series of attacks using an updated version of Cardinal RAT.",
+          "The last time we wrote about Cardinal RAT in 2017, we looked at version 1.4 of the malware family.",
+          "Unlike previously discussed samples, this latest instance of Cardinal RAT employs various obfuscation techniques to hinder analysis of the underlying code.",
+          "Underneath all this obfuscation, this Cardinal RAT payload does not have any significant changes compared to the previously discussed version in terms of its operation or capabilities.",
+          "When looking at files submitted by the same customer in a similar timeframe to the Cardinal RAT samples, we saw that the customer had also submitted a malware family we’d been tracking as EVILNUM.",
+          "When we cross-referenced submissions to online sandboxes, we found an additional case to ours, where another organization had submitted both EVILNUM and Cardinal RAT on the same day; both of which are rare malware families with limited distribution.",
+          "Since April 2017, we have observed Cardinal RAT in attacks against two customers, both customers were FinTech companies who write software relating to forex and cryptocurrency trading, and both companies were based in Israel.",
+          "Cardinal RAT and EVILNUM are both used in limited distribution attacks against FinTech companies."
+        ]
+      },
+      {
+        "node_id": "HL_3c9e3682cbfd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "Looking at submissions to VirusTotal, there are 13 Carp Downloader documents."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The DLL begins by performing a sleep using the built-in Windows choice utility:\ncmd.exe /c choice /C Y /N /D Y /T 20\nThe command prompts the user for a choice with a 20 second timeout, at which point the process will exit."
+        ]
+      },
+      {
+        "node_id": "HL_5209d14c92dc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Israel",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          46,
+          49
+        ],
+        "span_sentences": [
+          "We witnessed attacks targeting the financial technology (FinTech) sector, primarily focused on organizations based in Israel.",
+          "Since April 2017, we have observed Cardinal RAT in attacks against two customers, both customers were FinTech companies who write software relating to forex and cryptocurrency trading, and both companies were based in Israel.",
+          "When looking at the first submitters for these documents in Figure 1, we see they are predominantly uploaded from Israel."
+        ]
+      },
+      {
+        "node_id": "HL_59a43949bb84",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "FinTech",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          46,
+          53
+        ],
+        "span_sentences": [
+          "We witnessed attacks targeting the financial technology (FinTech) sector, primarily focused on organizations based in Israel.",
+          "Since April 2017, we have observed Cardinal RAT in attacks against two customers, both customers were FinTech companies who write software relating to forex and cryptocurrency trading, and both companies were based in Israel.",
+          "Cardinal RAT and EVILNUM are both used in limited distribution attacks against FinTech companies."
+        ]
+      },
+      {
+        "node_id": "HL_6cef606090fa",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Carp Downloader",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          47
+        ],
+        "span_sentences": [
+          "This malware family had remained undetected for over two years and was delivered via a unique downloader named Carp Downloader.",
+          "Looking at submissions to VirusTotal, there are 13 Carp Downloader documents."
+        ]
+      },
+      {
+        "node_id": "HL_a16f8380f016",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "FinTech companies",
+        "edges": [],
+        "sentence_indices": [
+          46,
+          53
+        ],
+        "span_sentences": [
+          "Since April 2017, we have observed Cardinal RAT in attacks against two customers, both customers were FinTech companies who write software relating to forex and cryptocurrency trading, and both companies were based in Israel.",
+          "Cardinal RAT and EVILNUM are both used in limited distribution attacks against FinTech companies."
+        ]
+      },
+      {
+        "node_id": "HL_a511095a4b44",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Python",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "We have provided a Python script to automate this process in the Appendix of the blog post."
+        ]
+      },
+      {
+        "node_id": "HL_d9d529816e9a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Twitter",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "EVILNUM has been covered in the public domain previously (albeit with no name assigned to the malware family) and has been noticed by multiple analysts on Twitter."
+        ]
+      },
+      {
+        "node_id": "HL_ee9cadf8a749",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial technology (FinTech) sector",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "We witnessed attacks targeting the financial technology (FinTech) sector, primarily focused on organizations based in Israel."
+        ]
+      },
+      {
+        "node_id": "HL_f59bf89cbc4b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "EVILNUM",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          5,
+          6,
+          35,
+          37,
+          38,
+          50,
+          53
+        ],
+        "span_sentences": [
+          "While researching these attacks, we discovered a possible relationship between Cardinal RAT and another malware family named EVILNUM.",
+          "EVILNUM is a JavaScript-based malware family that is used in attacks against similar organizations.",
+          "When looking at files submitted by the same customer in a similar timeframe to the Cardinal RAT samples, we saw that the customer had also submitted a malware family we’d been tracking as EVILNUM.",
+          "When we cross-referenced submissions to online sandboxes, we found an additional case to ours, where another organization had submitted both EVILNUM and Cardinal RAT on the same day; both of which are rare malware families with limited distribution.",
+          "We opted to use the name EVILNUM, since in some versions of the malware the C2 is calculated by reading the page, parsing a numerical value, dividing it by 666 and then converting the resulting decimal to an IP address.",
+          "In the case of EVILNUM, we have only seen one instance at a customer (the same one we referred to earlier in this article).",
+          "Cardinal RAT and EVILNUM are both used in limited distribution attacks against FinTech companies."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1001",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            9,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Unlike previously discussed samples, this latest instance of Cardinal RAT employs various obfuscation techniques to hinder analysis of the underlying code.",
+            "The first layer of obfuscation comes in the form of steganography; the initial sample is compiled with .NET and contains an embedded bitmap (BMP) file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            28,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Unlike previously discussed samples, this latest instance of Cardinal RAT employs various obfuscation techniques to hinder analysis of the underlying code."
+          ],
+          [
+            "Unlike previously discussed samples, this latest instance of Cardinal RAT employs various obfuscation techniques to hinder analysis of the underlying code.",
+            "The first layer of obfuscation comes in the form of steganography; the initial sample is compiled with .NET and contains an embedded bitmap (BMP) file."
+          ],
+          [
+            "Upon execution, the malware will read this file, parse out pixel data from the image, and decrypt the result using a single-byte XOR key."
+          ],
+          [
+            "The second stage DLL reads in the ‘strings’ embedded resource from the first stage executable.",
+            "Part of this resource is decrypted to provide configuration information to the dropper."
+          ],
+          [
+            "The remaining segment of the embedded resource is decrypted using a 16-byte XOR key, resulting in a .NET executable."
+          ],
+          [
+            "Underneath all this obfuscation, this Cardinal RAT payload does not have any significant changes compared to the previously discussed version in terms of its operation or capabilities.",
+            "One of the most significant changes lies in the obfuscation used by the malware; all of the functions, methods, and variables have been renamed to MD5 hashes."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_2",
+          "EDGE_5",
+          "EDGE_7",
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After this file has been loaded in memory, the initial loader will load and execute the ‘corerun’ function, initiating the second stage of the malware."
+          ],
+          [
+            "The DLL begins by performing a sleep using the built-in Windows choice utility:\ncmd.exe /c choice /C Y /N /D Y /T 20\nThe command prompts the user for a choice with a 20 second timeout, at which point the process will exit."
+          ],
+          [
+            "The LNK file executes the following command:\nC:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -windowstyle hidden \"%APPDATA%\\Microsoft\\Windows\\IEConfig\\[random]\\sqlreader.exe\"\nFinally, the malware will execute the previously written RunExecutive executable with arguments to copy the original executable to the previously referenced sqlreader.exe file path."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "EVILNUM has been covered in the public domain previously (albeit with no name assigned to the malware family) and has been noticed by multiple analysts on Twitter.",
+            "It’s a first-stage malware family which gives an attacker data about the infected host before they decide to install other utilities on the machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Upon execution, the malware will read this file, parse out pixel data from the image, and decrypt the result using a single-byte XOR key."
+          ],
+          [
+            "The second stage DLL reads in the ‘strings’ embedded resource from the first stage executable.",
+            "Part of this resource is decrypted to provide configuration information to the dropper."
+          ],
+          [
+            "The remaining segment of the embedded resource is decrypted using a 16-byte XOR key, resulting in a .NET executable."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            50,
+            51
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In the case of EVILNUM, we have only seen one instance at a customer (the same one we referred to earlier in this article).",
+            "When it comes to investigations from public sandboxes though, the distribution of the initial files used in infections is most commonly via LNK files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_4",
+          "EDGE_8",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware creates an LNK file in the victim’s startup folder with a randomly generated filename using a GUID (Example: {fcb29182-b3cc-47e2-a95c-b22c6d87dda1}.lnk)."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_08449e70cfb3",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%APPDATA%\\Microsoft\\Windows\\IEConfig\\[random]\\sqlreader.exe",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "The LNK file executes the following command:\nC:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -windowstyle hidden \"%APPDATA%\\Microsoft\\Windows\\IEConfig\\[random]\\sqlreader.exe\"\nFinally, the malware will execute the previously written RunExecutive executable with arguments to copy the original executable to the previously referenced sqlreader.exe file path."
+        ]
+      },
+      {
+        "node_id": "IOC_16f4975b5157",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%\\[random].exe",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "It then writes an embedded executable with the hash below to %TEMP%\\[random].exe."
+        ]
+      },
+      {
+        "node_id": "IOC_402a421392f5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%\\[random].ini",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "In the installation routine, it begins by writing a unique GUID identifier to %TEMP%\\[random].ini."
+        ]
+      },
+      {
+        "node_id": "IOC_966b19731e7c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "RunExecutive.exe",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "This file has an internal filename of RunExecutive.exe and simply copies the contents of argument #2 to the file path specified in argument #1."
+        ]
+      },
+      {
+        "node_id": "IOC_cf8cdf485a85",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "The LNK file executes the following command:\nC:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -windowstyle hidden \"%APPDATA%\\Microsoft\\Windows\\IEConfig\\[random]\\sqlreader.exe\"\nFinally, the malware will execute the previously written RunExecutive executable with arguments to copy the original executable to the previously referenced sqlreader.exe file path."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0901021eafe3",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0901021eafe3",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0901021eafe3",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_0901021eafe3",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_f59bf89cbc4b",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "IOC_08449e70cfb3",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "IOC_08449e70cfb3",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_cf8cdf485a85",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_cf8cdf485a85",
+      "node_v": "TTP_T1547"
+    }
+  ]
+}

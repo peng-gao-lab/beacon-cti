@@ -1,0 +1,978 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_02f14ca3b9fa",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ScreenShotter",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Since at least early 2023, this has typically included WasabiSeed, ScreenShotter and AHK Bot."
+        ]
+      },
+      {
+        "node_id": "HL_05e730a42266",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Remote Utilities",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "TA866 also commonly deploys remote access solutions on infected systems such as AnyDesk and Remote Utilities."
+        ]
+      },
+      {
+        "node_id": "HL_0a960352959c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Rhadamanthys",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Based on analysis of post-compromise activity associated with this tooling, we assess with high confidence that TA866 also sometimes deploys a persistent backdoor called Resident, CSharp-Streamer-RAT, Cobalt Strike and Rhadamanthys on compromised systems."
+        ]
+      },
+      {
+        "node_id": "HL_0e4de83f4074",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AHK Bot",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          7,
+          35,
+          51,
+          52,
+          54
+        ],
+        "span_sentences": [
+          "Since at least early 2023, this has typically included WasabiSeed, ScreenShotter and AHK Bot.",
+          "We also identified an implementation of Screenshotter using an AutoHotKey script, likely to enable this functionality directly within AHK Bot, which is also often delivered during the infection process and described in the next section.",
+          "Along with the deployment of WasabiSeed and Screenshotter, we have frequently observed the deployment of an AutoHotKey (AHK) based malware called AHK Bot.",
+          "AHK Bot is a modular malware family that uses AHK scripts to implement various functionality required by the adversary.",
+          "We assess that these scripts were likely developed by the author of AHK Bot for delivery and use on systems previously infected with AHK Bot."
+        ]
+      },
+      {
+        "node_id": "HL_28c6a844c008",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "WarmCookie",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "While analyzing recent WarmCookie/BadSpace activity, we observed a case in early 2024 where Cobalt Strike and CSharp-Streamer-RAT were deployed as follow-on payloads following the initial WarmCookie infection."
+        ]
+      },
+      {
+        "node_id": "HL_2aa3f53fb349",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Resident",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Based on analysis of post-compromise activity associated with this tooling, we assess with high confidence that TA866 also sometimes deploys a persistent backdoor called Resident, CSharp-Streamer-RAT, Cobalt Strike and Rhadamanthys on compromised systems."
+        ]
+      },
+      {
+        "node_id": "HL_3be1fc1817d8",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA571",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "Prior reporting suggests that, in previous campaigns, the malspam may have been associated with a spam botnet operated by TA571."
+        ]
+      },
+      {
+        "node_id": "HL_4237d0fa5821",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "WasabiSeed",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          7,
+          21,
+          22,
+          28,
+          51
+        ],
+        "span_sentences": [
+          "Since at least early 2023, this has typically included WasabiSeed, ScreenShotter and AHK Bot.",
+          "This downloader is responsible for retrieving the next stage of the infection chain, which is often MSI packages containing a malware payload called WasabiSeed.",
+          "WasabiSeed effectively functions as another downloader stage that is used to retrieve additional payloads from attacker-controlled servers.",
+          "Persistence is achieved via the use of an LNK shortcut that is dropped into the Startup directory on the system, ensuring that WasabiSeed is executed each time the system reboots.",
+          "Along with the deployment of WasabiSeed and Screenshotter, we have frequently observed the deployment of an AutoHotKey (AHK) based malware called AHK Bot."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Cisco Talos has been monitoring and analyzing the malware distribution campaigns, and post-compromise intrusion activity associated with TA866 and has observed continued evolution in the tooling and tactics, techniques and procedures (TTPs) employed by this threat actor since early 2023."
+        ]
+      },
+      {
+        "node_id": "HL_51d5e856cbdb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA866",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          8,
+          10,
+          14,
+          15,
+          16,
+          19
+        ],
+        "span_sentences": [
+          "TA866, also called Asylum Ambuscade, is a threat actor that has been observed conducting intrusion operations since at least 2020.",
+          "TA866 has historically been associated with financially motivated malware campaigns.",
+          "Cisco Talos has been monitoring and analyzing the malware distribution campaigns, and post-compromise intrusion activity associated with TA866 and has observed continued evolution in the tooling and tactics, techniques and procedures (TTPs) employed by this threat actor since early 2023.",
+          "Based on analysis of post-compromise activity associated with this tooling, we assess with high confidence that TA866 also sometimes deploys a persistent backdoor called Resident, CSharp-Streamer-RAT, Cobalt Strike and Rhadamanthys on compromised systems.",
+          "TA866 also commonly deploys remote access solutions on infected systems such as AnyDesk and Remote Utilities.",
+          "As previously mentioned, initial access to target environments is typically obtained by TA866 through successfully infecting systems via either malspam or malvertising.",
+          "Throughout 2022 and 2023, we frequently observed TA866 relying on both methods for initiating the infection process.",
+          "In the case of malspam, we have observed TA866 relying on various lure themes and techniques, including email thread hijacking, a technique where threat actors leverage replies to legitimate email threads that the recipient was previously a part of to increase the legitimacy of the malicious email.",
+          "Prior reporting indicates that TA866 has been observed leveraging malicious Google advertisements and SEO poisoning to infect victims."
+        ]
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "edges": [],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "Prior reporting indicates that TA866 has been observed leveraging malicious Google advertisements and SEO poisoning to infect victims."
+        ]
+      },
+      {
+        "node_id": "HL_646c183d9ef5",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AdFind",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "To enable the performance of various post-compromise enumeration and reconnaissance activities, we have also observed the use of utilities such as AdFind and network scanners."
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          8,
+          11
+        ],
+        "span_sentences": [
+          "Based on analysis of post-compromise activity associated with this tooling, we assess with high confidence that TA866 also sometimes deploys a persistent backdoor called Resident, CSharp-Streamer-RAT, Cobalt Strike and Rhadamanthys on compromised systems.",
+          "While analyzing recent WarmCookie/BadSpace activity, we observed a case in early 2024 where Cobalt Strike and CSharp-Streamer-RAT were deployed as follow-on payloads following the initial WarmCookie infection."
+        ]
+      },
+      {
+        "node_id": "HL_aee7a6de27ed",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Asylum Ambuscade",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "TA866, also called Asylum Ambuscade, is a threat actor that has been observed conducting intrusion operations since at least 2020."
+        ]
+      },
+      {
+        "node_id": "HL_be580b58b197",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "404 TDS",
+        "edges": [
+          "EDGE_27",
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In many cases, this content is used to redirect victims to traffic distribution systems (TDS), such as 404 TDS, operated by threat actors offering malware installation services."
+        ]
+      },
+      {
+        "node_id": "HL_bf47d8fe871b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoHotKey",
+        "edges": [],
+        "sentence_indices": [
+          35,
+          51
+        ],
+        "span_sentences": [
+          "We also identified an implementation of Screenshotter using an AutoHotKey script, likely to enable this functionality directly within AHK Bot, which is also often delivered during the infection process and described in the next section.",
+          "Along with the deployment of WasabiSeed and Screenshotter, we have frequently observed the deployment of an AutoHotKey (AHK) based malware called AHK Bot."
+        ]
+      },
+      {
+        "node_id": "HL_cabd37f0742e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "IrfanView",
+        "edges": [],
+        "sentence_indices": [
+          37,
+          40,
+          46
+        ],
+        "span_sentences": [
+          "The MSI associated with the JavaScript implementation contains two JavaScript files, “app[.]js\n” and “index[.]js\n” as well as a legitimate screen capture binary, typically IrfanView.",
+          "The script “app[.]js\n” is responsible for executing IrfanView to capture screenshots periodically.",
+          "The CAB archive contains a legitimate Python installation as well as a Python script (screen1[.]pyw\n) that takes the place of IrfanView as used in the JavaScript implementation."
+        ]
+      },
+      {
+        "node_id": "HL_e6b9ef29f5d3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "TeamViewer",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "In the case of malvertising, we have observed instances of users being infected while browsing for legitimate software downloads for applications such as TeamViewer when the infection process began."
+        ]
+      },
+      {
+        "node_id": "HL_e893549d6066",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CSharp-Streamer-RAT",
+        "edges": [
+          "EDGE_29",
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          8,
+          11,
+          12,
+          13
+        ],
+        "span_sentences": [
+          "Based on analysis of post-compromise activity associated with this tooling, we assess with high confidence that TA866 also sometimes deploys a persistent backdoor called Resident, CSharp-Streamer-RAT, Cobalt Strike and Rhadamanthys on compromised systems.",
+          "While analyzing recent WarmCookie/BadSpace activity, we observed a case in early 2024 where Cobalt Strike and CSharp-Streamer-RAT were deployed as follow-on payloads following the initial WarmCookie infection.",
+          "The SSL certificate used on the CSharp-Streamer-RAT C2 server (185[.]73[.]124[.]164\n) appeared to have been generated using information programmatically populated using an algorithm defined by the threat actor.",
+          "This same algorithm appears to have been used on three additional CSharp-Streamer-RAT C2 servers, one of which (109[.]236[.]80[.]191."
+        ]
+      },
+      {
+        "node_id": "HL_f394d503aef6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BadSpace",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "While analyzing recent WarmCookie/BadSpace activity, we observed a case in early 2024 where Cobalt Strike and CSharp-Streamer-RAT were deployed as follow-on payloads following the initial WarmCookie infection."
+        ]
+      },
+      {
+        "node_id": "HL_f8b77c8fe4ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AnyDesk",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "TA866 also commonly deploys remote access solutions on infected systems such as AnyDesk and Remote Utilities."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1018",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1018",
+        "edges": [
+          "EDGE_13",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Based on analysis of post-compromise activity associated with this tooling, we assess with high confidence that TA866 also sometimes deploys a persistent backdoor called Resident, CSharp-Streamer-RAT, Cobalt Strike and Rhadamanthys on compromised systems.",
+            "To enable the performance of various post-compromise enumeration and reconnaissance activities, we have also observed the use of utilities such as AdFind and network scanners."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_1",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ],
+          [
+            42,
+            46
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Screenshotter is a malware family used to generate periodic screenshots from infected systems which are transmitted to the threat actor over HTTP."
+          ],
+          [
+            "The script “index[.]js\n” is responsible for facilitating the transmission of captured screenshots to the adversary via C2.",
+            "Like WasabiSeed, the URL used is generated using the drive serial number of the system, which is appended to the end of the URL used for exfiltration, as shown below.",
+            "http://<C2 Server>/screenshot/<Drive Serial Number>\nWhile we have observed variations in the JavaScript implementation of Screenshotter, in all cases the overall functionality and operation of the malware is consistent.",
+            "The Python implementation also functions similarly with some notable differences.",
+            "The CAB archive contains a legitimate Python installation as well as a Python script (screen1[.]pyw\n) that takes the place of IrfanView as used in the JavaScript implementation."
+          ],
+          [
+            "Like WasabiSeed, the URL used is generated using the drive serial number of the system, which is appended to the end of the URL used for exfiltration, as shown below."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1056",
+        "edges": [
+          "EDGE_6",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            54,
+            56
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We assess that these scripts were likely developed by the author of AHK Bot for delivery and use on systems previously infected with AHK Bot.",
+            "The AHK script has a fully implemented keylogger capability.",
+            "Collected keystrokes are transmitted via HTTP POST requests."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_7",
+          "EDGE_10",
+          "EDGE_16",
+          "EDGE_33"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            21
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            35,
+            38
+          ],
+          [
+            42,
+            46
+          ],
+          [
+            52,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In most observed cases, the infection process begins with the delivery of a malicious JavaScript downloader via the distribution process(es) previously described.",
+            "This downloader is responsible for retrieving the next stage of the infection chain, which is often MSI packages containing a malware payload called WasabiSeed."
+          ],
+          [
+            "During execution, the MSI creates a subfolder within %PROGRAMDATA%\nand copies a malicious VBScript into this location."
+          ],
+          [
+            "We also identified an implementation of Screenshotter using an AutoHotKey script, likely to enable this functionality directly within AHK Bot, which is also often delivered during the infection process and described in the next section.",
+            "In both the JavaScript and Python implementations of Screenshotter, the malware is delivered within an MSI package.",
+            "The MSI associated with the JavaScript implementation contains two JavaScript files, “app[.]js\n” and “index[.]js\n” as well as a legitimate screen capture binary, typically IrfanView.",
+            "Like WasabiSeed, a CustomAction[.]idt\nis used to execute the JavaScript files using wscript[.]exe\n, as shown below."
+          ],
+          [
+            "The script “index[.]js\n” is responsible for facilitating the transmission of captured screenshots to the adversary via C2.",
+            "Like WasabiSeed, the URL used is generated using the drive serial number of the system, which is appended to the end of the URL used for exfiltration, as shown below.",
+            "http://<C2 Server>/screenshot/<Drive Serial Number>\nWhile we have observed variations in the JavaScript implementation of Screenshotter, in all cases the overall functionality and operation of the malware is consistent.",
+            "The Python implementation also functions similarly with some notable differences.",
+            "The CAB archive contains a legitimate Python installation as well as a Python script (screen1[.]pyw\n) that takes the place of IrfanView as used in the JavaScript implementation."
+          ],
+          [
+            "AHK Bot is a modular malware family that uses AHK scripts to implement various functionality required by the adversary."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_2",
+          "EDGE_8",
+          "EDGE_17",
+          "EDGE_29",
+          "EDGE_32",
+          "EDGE_34"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ],
+          [
+            54,
+            56
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Screenshotter is a malware family used to generate periodic screenshots from infected systems which are transmitted to the threat actor over HTTP."
+          ],
+          [
+            "We assess that these scripts were likely developed by the author of AHK Bot for delivery and use on systems previously infected with AHK Bot.",
+            "The AHK script has a fully implemented keylogger capability.",
+            "Collected keystrokes are transmitted via HTTP POST requests."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_5",
+          "EDGE_11",
+          "EDGE_18",
+          "EDGE_25",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            28,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "While analyzing recent WarmCookie/BadSpace activity, we observed a case in early 2024 where Cobalt Strike and CSharp-Streamer-RAT were deployed as follow-on payloads following the initial WarmCookie infection."
+          ],
+          [
+            "In most observed cases, the infection process begins with the delivery of a malicious JavaScript downloader via the distribution process(es) previously described.",
+            "This downloader is responsible for retrieving the next stage of the infection chain, which is often MSI packages containing a malware payload called WasabiSeed."
+          ],
+          [
+            "WasabiSeed effectively functions as another downloader stage that is used to retrieve additional payloads from attacker-controlled servers."
+          ],
+          [
+            "Persistence is achieved via the use of an LNK shortcut that is dropped into the Startup directory on the system, ensuring that WasabiSeed is executed each time the system reboots.",
+            "When run, it continuously reaches out to obtain arbitrary payloads in the form of MSI packages that are then executed by MsiExec to infect systems with additional malware."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_3",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ],
+          [
+            42,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Screenshotter is a malware family used to generate periodic screenshots from infected systems which are transmitted to the threat actor over HTTP."
+          ],
+          [
+            "The script “index[.]js\n” is responsible for facilitating the transmission of captured screenshots to the adversary via C2.",
+            "Like WasabiSeed, the URL used is generated using the drive serial number of the system, which is appended to the end of the URL used for exfiltration, as shown below.",
+            "http://<C2 Server>/screenshot/<Drive Serial Number>\nWhile we have observed variations in the JavaScript implementation of Screenshotter, in all cases the overall functionality and operation of the malware is consistent.",
+            "The Python implementation also functions similarly with some notable differences.",
+            "The CAB archive contains a legitimate Python installation as well as a Python script (screen1[.]pyw\n) that takes the place of IrfanView as used in the JavaScript implementation."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1189",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1189",
+        "edges": [
+          "EDGE_20",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In the case of malvertising, we have observed instances of users being infected while browsing for legitimate software downloads for applications such as TeamViewer when the infection process began.",
+            "Prior reporting indicates that TA866 has been observed leveraging malicious Google advertisements and SEO poisoning to infect victims."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1219",
+        "edges": [
+          "EDGE_4",
+          "EDGE_21",
+          "EDGE_31"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Based on analysis of post-compromise activity associated with this tooling, we assess with high confidence that TA866 also sometimes deploys a persistent backdoor called Resident, CSharp-Streamer-RAT, Cobalt Strike and Rhadamanthys on compromised systems."
+          ],
+          [
+            "TA866 also commonly deploys remote access solutions on infected systems such as AnyDesk and Remote Utilities."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_12",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            57,
+            57
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Persistence is achieved via the use of an LNK shortcut that is dropped into the Startup directory on the system, ensuring that WasabiSeed is executed each time the system reboots."
+          ],
+          [
+            "Persistence is achieved via the use of an LNK shortcut that is dropped into the Startup directory on the system, ensuring that WasabiSeed is executed each time the system reboots.",
+            "When run, it continuously reaches out to obtain arbitrary payloads in the form of MSI packages that are then executed by MsiExec to infect systems with additional malware."
+          ],
+          [
+            "The keylogger also features persistence, which is established via the creation of a new Windows shortcut LNK within the StartUp directory on infected systems, allowing the keylogger to be executed each time the system reboots."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_9",
+          "EDGE_23",
+          "EDGE_26",
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            16,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "TA866, also called Asylum Ambuscade, is a threat actor that has been observed conducting intrusion operations since at least 2020.",
+            "TA866 has historically been associated with financially motivated malware campaigns.",
+            "However, prior reporting indicates that they may also conduct espionage-related activities.",
+            "Cisco Talos has been monitoring and analyzing the malware distribution campaigns, and post-compromise intrusion activity associated with TA866 and has observed continued evolution in the tooling and tactics, techniques and procedures (TTPs) employed by this threat actor since early 2023.",
+            "Throughout 2023, these malware campaigns typically relied on malspam or malvertising to facilitate the delivery of malicious content to potential victims."
+          ],
+          [
+            "Throughout 2023, these malware campaigns typically relied on malspam or malvertising to facilitate the delivery of malicious content to potential victims.",
+            "In many cases, this content is used to redirect victims to traffic distribution systems (TDS), such as 404 TDS, operated by threat actors offering malware installation services."
+          ],
+          [
+            "In the case of malspam, we have observed TA866 relying on various lure themes and techniques, including email thread hijacking, a technique where threat actors leverage replies to legitimate email threads that the recipient was previously a part of to increase the legitimacy of the malicious email.",
+            "Prior reporting suggests that, in previous campaigns, the malspam may have been associated with a spam botnet operated by TA571."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_3b6271b86a04",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "109[.]236[.]80[.]191",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "This same algorithm appears to have been used on three additional CSharp-Streamer-RAT C2 servers, one of which (109[.]236[.]80[.]191."
+        ]
+      },
+      {
+        "node_id": "IOC_7dc6ebfd3457",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%PROGRAMDATA%",
+        "edges": [
+          "EDGE_33"
+        ],
+        "sentence_indices": [
+          24,
+          39
+        ],
+        "span_sentences": [
+          "During execution, the MSI creates a subfolder within %PROGRAMDATA%\nand copies a malicious VBScript into this location.",
+          "The MSI creates a subdirectory with %PROGRAMDATA%\nand copies the Screenshotter components into it."
+        ]
+      },
+      {
+        "node_id": "IOC_eb4044ee98e9",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "185[.]73[.]124[.]164",
+        "edges": [
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The SSL certificate used on the CSharp-Streamer-RAT C2 server (185[.]73[.]124[.]164\n) appeared to have been generated using information programmatically populated using an algorithm defined by the threat actor."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_02f14ca3b9fa",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_02f14ca3b9fa",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_02f14ca3b9fa",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_05e730a42266",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_0a960352959c",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_0e4de83f4074",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_0e4de83f4074",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_0e4de83f4074",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_3be1fc1817d8",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_4237d0fa5821",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_4237d0fa5821",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_4237d0fa5821",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1018"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_51d5e856cbdb",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_646c183d9ef5",
+      "node_v": "TTP_T1018"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_aee7a6de27ed",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "HL_be580b58b197",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "HL_be580b58b197",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "HL_e893549d6066",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "HL_e893549d6066",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "HL_f8b77c8fe4ea",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_3b6271b86a04",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_7dc6ebfd3457",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_eb4044ee98e9",
+      "node_v": "TTP_T1071"
+    }
+  ]
+}

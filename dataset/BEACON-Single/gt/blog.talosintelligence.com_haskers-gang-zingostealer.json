@@ -1,0 +1,934 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_00e6e0b884a6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Counter-Strike: Global Offensive",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "In one example, the malware was being distributed under the guise of a game modification utility for \"Counter-Strike: Global Offensive.\" The threat actor posted a YouTube video demonstrating use of a tool purported to mod the popular video game."
+        ]
+      },
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "The video description contained a link to the tool hosted on Google Drive."
+        ]
+      },
+      {
+        "node_id": "HL_1bd4504e7fd9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ExoCrypt",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "For 300 Rubles (~$3 USD), Haskers Gang also offers a pre-built option that leverages their crypter, which they refer to as \"ExoCrypt.\" This allows affiliates to take advantage of antivirus evasion without requiring them to use a third-party builder to package the malware prior to distributing it."
+        ]
+      },
+      {
+        "node_id": "HL_26e59a85bc10",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "YouTube",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "In one example, the malware was being distributed under the guise of a game modification utility for \"Counter-Strike: Global Offensive.\" The threat actor posted a YouTube video demonstrating use of a tool purported to mod the popular video game."
+        ]
+      },
+      {
+        "node_id": "HL_2e21bf046837",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Eastern Europe",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The core members of this crimeware group are likely located in Eastern Europe, and many of the announcements and other communications are written in Russian."
+        ]
+      },
+      {
+        "node_id": "HL_50e56856a68c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "DotNetZip",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "Once the collection process has been completed, DotNetZip creates an archive containing all the information, which is then exfiltrated to an attacker-controlled server."
+        ]
+      },
+      {
+        "node_id": "HL_7e11aebe15ef",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Haskers Gang",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          8,
+          9,
+          13,
+          44
+        ],
+        "span_sentences": [
+          "Update (04/14/22): Following the initial publication of this blog, we observed a new post in the Haskers Gang Telegram channel announcing that ownership of the ZingoStealer project is being transferred to a new threat actor.",
+          "Haskers Gang is a crimeware-related threat actor group active since at least January 2020, consisting of a small number of original members.",
+          "In early March 2022, while monitoring the communications between members of Haskers Gang, we observed the announcement of the availability of a new information stealer called \"ZingoStealer.\" This new malware was advertised as being freely available to members of the Haskers Gang Telegram community.",
+          "For 300 Rubles (~$3 USD), Haskers Gang also offers a pre-built option that leverages their crypter, which they refer to as \"ExoCrypt.\" This allows affiliates to take advantage of antivirus evasion without requiring them to use a third-party builder to package the malware prior to distributing it.",
+          "As this stealer is being made available for free to members of the Haskers Gang community, it is likely being leveraged by a variety of otherwise unrelated threat actors using various techniques to infect potential victims.",
+          "ZingoStealer is a relatively new information stealer being offered for free to members of the Haskers Gang Telegram group."
+        ]
+      },
+      {
+        "node_id": "HL_856a5e2e4897",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RedLine Stealer",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          33,
+          35,
+          37,
+          46
+        ],
+        "span_sentences": [
+          "In this particular case, the binary \"sweet.exe\" was associated with RedLine Stealer and saved at C:\\Users\\<USERNAME>\\AppData\\Local\\536075.exe.",
+          "One of the secondary payloads delivered and executed by ZingoStealer is RedLine Stealer, a well-known information stealer that has been analyzed extensively over the past couple of years.",
+          "However, by effectively backdooring ZingoStealer and using it to deliver RedLine Stealer, they can still take advantage of the infections achieved by ZingoStealer users.",
+          "In many cases, this includes the RedLine Stealer and an XMRig-based cryptocurrency mining malware that is internally referred to as \"ZingoMiner.\""
+        ]
+      },
+      {
+        "node_id": "HL_a1801bafa004",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "XMRig",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          10,
+          34,
+          40,
+          42,
+          43,
+          46
+        ],
+        "span_sentences": [
+          "During our analysis of ZingoStealer, we observed the malware author behind the stealer incorporating the XMRig cryptocurrency mining software into the stealer to further monetize their efforts by using systems infected by affiliates to generate Monero for the malware author.",
+          "While \"antiwm.exe\" was associated with an injector for the XMRig cryptocurrency miner and saved at C:\\Users\\<USERNAME>\\AppData\\Local\\209625.exe.",
+          "In addition to RedLine Stealer, ZingoStealer also delivers the XMRig cryptocurrency mining malware to victims.",
+          "This injects XMRig into the explorer.exe process and begins the cryptocurrency mining operations.",
+          "The XMRig client is launched with the following command line parameters:\n\\Windows\\explorer.exe --algo=rx/0 --randomx-no-rdmsr --url=pool[.]hashvault[.]pro:80 --user=47tAzTKZcJuCui5Bx2FPVoA7UvWoz1QvRCFF1Bpvej5yGJuPPBgqTC8NG95Q3sMwsYV34eonCD3RVSEpSdhxaPRKSiagNNi --pass= --cpu-max-threads-hint=30 --cinit-stealth-targets=\"Taskmgr.exe,ProcessHacker.exe,perfmon.exe,procexp.exe,procexp64.exe\" --cinit-api=\"hxxps://control[.]nominally[.]ru/api/endpoint.php\" --tls --cinit-idle-wait=5 --cinit-idle-cpu=90\nInfected systems periodically send beacon data to the API specified when XMRig was launched.",
+          "In many cases, this includes the RedLine Stealer and an XMRig-based cryptocurrency mining malware that is internally referred to as \"ZingoMiner.\""
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          8,
+          24,
+          44
+        ],
+        "span_sentences": [
+          "Update (04/14/22): Following the initial publication of this blog, we observed a new post in the Haskers Gang Telegram channel announcing that ownership of the ZingoStealer project is being transferred to a new threat actor.",
+          "The group operates a Telegram channel to collaborate with other members, collect logs from systems infected with ZingoStealer and publish announcements related to ongoing development efforts.",
+          "In early March 2022, while monitoring the communications between members of Haskers Gang, we observed the announcement of the availability of a new information stealer called \"ZingoStealer.\" This new malware was advertised as being freely available to members of the Haskers Gang Telegram community.",
+          "Next, ZingoStealer attempts to collect sensitive information, including user account tokens for collaboration software that may be installed, including Discord and Telegram.",
+          "ZingoStealer is a relatively new information stealer being offered for free to members of the Haskers Gang Telegram group."
+        ]
+      },
+      {
+        "node_id": "HL_d1d0e73de8a1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ZingoMiner",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "In many cases, this includes the RedLine Stealer and an XMRig-based cryptocurrency mining malware that is internally referred to as \"ZingoMiner.\""
+        ]
+      },
+      {
+        "node_id": "HL_d4326b6ae548",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ZingoStealer",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          4,
+          8,
+          10,
+          12,
+          15,
+          22,
+          24,
+          29,
+          35,
+          37,
+          38,
+          40,
+          41,
+          44
+        ],
+        "span_sentences": [
+          "Update (04/14/22): Following the initial publication of this blog, we observed a new post in the Haskers Gang Telegram channel announcing that ownership of the ZingoStealer project is being transferred to a new threat actor.",
+          "We also observed the malware author offering to sell the source code for ZingoStealer for $500 (negotiable).",
+          "The group operates a Telegram channel to collaborate with other members, collect logs from systems infected with ZingoStealer and publish announcements related to ongoing development efforts.",
+          "In early March 2022, while monitoring the communications between members of Haskers Gang, we observed the announcement of the availability of a new information stealer called \"ZingoStealer.\" This new malware was advertised as being freely available to members of the Haskers Gang Telegram community.",
+          "During our analysis of ZingoStealer, we observed the malware author behind the stealer incorporating the XMRig cryptocurrency mining software into the stealer to further monetize their efforts by using systems infected by affiliates to generate Monero for the malware author.",
+          "While researching ZingoStealer, we observed additional functionality, cryptocurrency theft support, and other features added frequently, indicating that this threat will likely continue to evolve and mature over time.",
+          "In many cases, ZingoStealer is currently being distributed under the guise of game cheats, cracks and code generators.",
+          "ZingoStealer then begins the system enumeration and data collection process, starting by taking a screenshot of the victim's system and storing it as a PNG called \"Screenshot.PNG\" within the directory that was created earlier.",
+          "Next, ZingoStealer attempts to collect sensitive information, including user account tokens for collaboration software that may be installed, including Discord and Telegram.",
+          "During the execution of the ZingoStealer payload, it retrieves the geolocation of the victim's system using freegeoip[.]app.",
+          "One of the secondary payloads delivered and executed by ZingoStealer is RedLine Stealer, a well-known information stealer that has been analyzed extensively over the past couple of years.",
+          "However, by effectively backdooring ZingoStealer and using it to deliver RedLine Stealer, they can still take advantage of the infections achieved by ZingoStealer users.",
+          "This allows them to let ZingoStealer users perform the heavy lifting in terms of malware distribution, antivirus evasion, and achieving successful infections, while they passively collect more comprehensive logs from the systems.",
+          "In addition to RedLine Stealer, ZingoStealer also delivers the XMRig cryptocurrency mining malware to victims.",
+          "This is another way the malware author behind ZingoStealer is attempting to monetize the operations of ZingoStealer users.",
+          "ZingoStealer is a relatively new information stealer being offered for free to members of the Haskers Gang Telegram group."
+        ]
+      },
+      {
+        "node_id": "HL_f32e005df759",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Discord",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          5,
+          24
+        ],
+        "span_sentences": [
+          "The group also operates a similar collaborative Discord server where new tooling is often shared to enable members to launch more successful intrusions, improve antivirus evasion capabilities and otherwise disseminate tactics, techniques and procedures.",
+          "Next, ZingoStealer attempts to collect sensitive information, including user account tokens for collaboration software that may be installed, including Discord and Telegram."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_6",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Next, ZingoStealer attempts to collect sensitive information, including user account tokens for collaboration software that may be installed, including Discord and Telegram."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2",
+          "EDGE_4",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Haskers Gang is a crimeware-related threat actor group active since at least January 2020, consisting of a small number of original members.",
+            "Their activity ranges from developing methods for stealing confidential information to cryptocurrency mining, remote access and development of so-called \"crypters\" to avoid detection of malware by security and antivirus software."
+          ],
+          [
+            "Haskers Gang is a crimeware-related threat actor group active since at least January 2020, consisting of a small number of original members.",
+            "Their activity ranges from developing methods for stealing confidential information to cryptocurrency mining, remote access and development of so-called \"crypters\" to avoid detection of malware by security and antivirus software.",
+            "The group operates a Telegram channel to collaborate with other members, collect logs from systems infected with ZingoStealer and publish announcements related to ongoing development efforts.",
+            "The group also operates a similar collaborative Discord server where new tooling is often shared to enable members to launch more successful intrusions, improve antivirus evasion capabilities and otherwise disseminate tactics, techniques and procedures."
+          ],
+          [
+            "For 300 Rubles (~$3 USD), Haskers Gang also offers a pre-built option that leverages their crypter, which they refer to as \"ExoCrypt.\" This allows affiliates to take advantage of antivirus evasion without requiring them to use a third-party builder to package the malware prior to distributing it."
+          ],
+          [
+            "The stealer is an obfuscated .NET executable.",
+            "When executed on victim systems, it attempts to retrieve various .NET dependencies that provide core functionality used by the malware from an attacker-controlled server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_9",
+          "EDGE_16",
+          "EDGE_33"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This injects XMRig into the explorer.exe process and begins the cryptocurrency mining operations."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_10",
+          "EDGE_17",
+          "EDGE_25",
+          "EDGE_31",
+          "EDGE_32",
+          "EDGE_34"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Haskers Gang is a crimeware-related threat actor group active since at least January 2020, consisting of a small number of original members.",
+            "Their activity ranges from developing methods for stealing confidential information to cryptocurrency mining, remote access and development of so-called \"crypters\" to avoid detection of malware by security and antivirus software.",
+            "The group operates a Telegram channel to collaborate with other members, collect logs from systems infected with ZingoStealer and publish announcements related to ongoing development efforts."
+          ],
+          [
+            "Haskers Gang is a crimeware-related threat actor group active since at least January 2020, consisting of a small number of original members.",
+            "Their activity ranges from developing methods for stealing confidential information to cryptocurrency mining, remote access and development of so-called \"crypters\" to avoid detection of malware by security and antivirus software.",
+            "The group operates a Telegram channel to collaborate with other members, collect logs from systems infected with ZingoStealer and publish announcements related to ongoing development efforts.",
+            "The group also operates a similar collaborative Discord server where new tooling is often shared to enable members to launch more successful intrusions, improve antivirus evasion capabilities and otherwise disseminate tactics, techniques and procedures."
+          ],
+          [
+            "During the execution of the ZingoStealer payload, it retrieves the geolocation of the victim's system using freegeoip[.]app."
+          ],
+          [
+            "It then makes an HTTP GET request to the C2 server for a resource called \"cis.txt.\"\nFollowing the geolocation check, the malware requests a list of URLs that it uses to retrieve and execute additional malware payloads, at the discretion of the attacker."
+          ],
+          [
+            "The XMRig client is launched with the following command line parameters:\n\\Windows\\explorer.exe --algo=rx/0 --randomx-no-rdmsr --url=pool[.]hashvault[.]pro:80 --user=47tAzTKZcJuCui5Bx2FPVoA7UvWoz1QvRCFF1Bpvej5yGJuPPBgqTC8NG95Q3sMwsYV34eonCD3RVSEpSdhxaPRKSiagNNi --pass= --cpu-max-threads-hint=30 --cinit-stealth-targets=\"Taskmgr.exe,ProcessHacker.exe,perfmon.exe,procexp.exe,procexp64.exe\" --cinit-api=\"hxxps://control[.]nominally[.]ru/api/endpoint.php\" --tls --cinit-idle-wait=5 --cinit-idle-cpu=90\nInfected systems periodically send beacon data to the API specified when XMRig was launched."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1074",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1074",
+        "edges": [
+          "EDGE_18",
+          "EDGE_27",
+          "EDGE_29"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            21
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The stealer then creates a directory structure which is used to collect and save sensitive information that is later exfiltrated to the attacker.",
+            "The location for this directory structure is:\nC:\\Users\\<USERNAME>\\AppData\\Local\\GinzoFolder."
+          ],
+          [
+            "Any files or directories present within the infected user's Desktop folder will also be copied to the staging directory."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_1",
+          "EDGE_7",
+          "EDGE_19",
+          "EDGE_26",
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            35,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The stealer is an obfuscated .NET executable.",
+            "When executed on victim systems, it attempts to retrieve various .NET dependencies that provide core functionality used by the malware from an attacker-controlled server."
+          ],
+          [
+            "It then makes an HTTP GET request to the C2 server for a resource called \"cis.txt.\"\nFollowing the geolocation check, the malware requests a list of URLs that it uses to retrieve and execute additional malware payloads, at the discretion of the attacker."
+          ],
+          [
+            "One of the secondary payloads delivered and executed by ZingoStealer is RedLine Stealer, a well-known information stealer that has been analyzed extensively over the past couple of years.",
+            "It features significantly more support for retrieving data from various applications, browsers, cryptocurrency wallets and extensions.",
+            "However, by effectively backdooring ZingoStealer and using it to deliver RedLine Stealer, they can still take advantage of the infections achieved by ZingoStealer users."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "ZingoStealer then begins the system enumeration and data collection process, starting by taking a screenshot of the victim's system and storing it as a PNG called \"Screenshot.PNG\" within the directory that was created earlier."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1119",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1119",
+        "edges": [
+          "EDGE_8",
+          "EDGE_12",
+          "EDGE_21",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Next the malware begins to identify and collect sensitive information stored by web browsers installed on the system."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1496",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1496",
+        "edges": [
+          "EDGE_5",
+          "EDGE_11",
+          "EDGE_13",
+          "EDGE_22",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Haskers Gang is a crimeware-related threat actor group active since at least January 2020, consisting of a small number of original members.",
+            "Their activity ranges from developing methods for stealing confidential information to cryptocurrency mining, remote access and development of so-called \"crypters\" to avoid detection of malware by security and antivirus software."
+          ],
+          [
+            "Haskers Gang is a crimeware-related threat actor group active since at least January 2020, consisting of a small number of original members.",
+            "Their activity ranges from developing methods for stealing confidential information to cryptocurrency mining, remote access and development of so-called \"crypters\" to avoid detection of malware by security and antivirus software.",
+            "The group operates a Telegram channel to collaborate with other members, collect logs from systems infected with ZingoStealer and publish announcements related to ongoing development efforts.",
+            "The group also operates a similar collaborative Discord server where new tooling is often shared to enable members to launch more successful intrusions, improve antivirus evasion capabilities and otherwise disseminate tactics, techniques and procedures."
+          ],
+          [
+            "During our analysis of ZingoStealer, we observed the malware author behind the stealer incorporating the XMRig cryptocurrency mining software into the stealer to further monetize their efforts by using systems infected by affiliates to generate Monero for the malware author."
+          ],
+          [
+            "This injects XMRig into the explorer.exe process and begins the cryptocurrency mining operations."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_3",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once the collection process has been completed, DotNetZip creates an archive containing all the information, which is then exfiltrated to an attacker-controlled server."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_190716087258",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "193[.]38[.]235[.]228:45347",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "{\"ip\": \"193[.]38[.]235[.]228:45347\", \"xor_key\": \"Zag\", \"id\": \"keepye\"}\nThe value \"keepye\" stored within the ID field of the configuration matches the username associated with an individual suspected to be behind development of ZingoStealer."
+        ]
+      },
+      {
+        "node_id": "IOC_27dd3560dc26",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USERNAME>\\AppData\\Local\\536075.exe",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "In this particular case, the binary \"sweet.exe\" was associated with RedLine Stealer and saved at C:\\Users\\<USERNAME>\\AppData\\Local\\536075.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_3fe3c6a2dd6c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USERNAME>\\AppData\\Local\\GinzoFolder",
+        "edges": [
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The location for this directory structure is:\nC:\\Users\\<USERNAME>\\AppData\\Local\\GinzoFolder."
+        ]
+      },
+      {
+        "node_id": "IOC_603bca78186f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USERNAME>\\AppData\\Local\\209625.exe",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "While \"antiwm.exe\" was associated with an injector for the XMRig cryptocurrency miner and saved at C:\\Users\\<USERNAME>\\AppData\\Local\\209625.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_713a8c188bc4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%APPDATA%\\Local",
+        "edges": [
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "This list of URLs is saved into a text file called \"ginzolist.txt\" that is saved within the %APPDATA%\\Local directory on the victim system."
+        ]
+      },
+      {
+        "node_id": "IOC_733c3b549f3e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "pool[.]hashvault[.]pro",
+        "edges": [
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "The XMRig client is launched with the following command line parameters:\n\\Windows\\explorer.exe --algo=rx/0 --randomx-no-rdmsr --url=pool[.]hashvault[.]pro:80 --user=47tAzTKZcJuCui5Bx2FPVoA7UvWoz1QvRCFF1Bpvej5yGJuPPBgqTC8NG95Q3sMwsYV34eonCD3RVSEpSdhxaPRKSiagNNi --pass= --cpu-max-threads-hint=30 --cinit-stealth-targets=\"Taskmgr.exe,ProcessHacker.exe,perfmon.exe,procexp.exe,procexp64.exe\" --cinit-api=\"hxxps://control[.]nominally[.]ru/api/endpoint.php\" --tls --cinit-idle-wait=5 --cinit-idle-cpu=90\nInfected systems periodically send beacon data to the API specified when XMRig was launched."
+        ]
+      },
+      {
+        "node_id": "IOC_aa88709bc4f8",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://control[.]nominally[.]ru/api/endpoint.php",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "The XMRig client is launched with the following command line parameters:\n\\Windows\\explorer.exe --algo=rx/0 --randomx-no-rdmsr --url=pool[.]hashvault[.]pro:80 --user=47tAzTKZcJuCui5Bx2FPVoA7UvWoz1QvRCFF1Bpvej5yGJuPPBgqTC8NG95Q3sMwsYV34eonCD3RVSEpSdhxaPRKSiagNNi --pass= --cpu-max-threads-hint=30 --cinit-stealth-targets=\"Taskmgr.exe,ProcessHacker.exe,perfmon.exe,procexp.exe,procexp64.exe\" --cinit-api=\"hxxps://control[.]nominally[.]ru/api/endpoint.php\" --tls --cinit-idle-wait=5 --cinit-idle-cpu=90\nInfected systems periodically send beacon data to the API specified when XMRig was launched."
+        ]
+      },
+      {
+        "node_id": "IOC_bd1c1c850f58",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "freegeoip[.]app",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "During the execution of the ZingoStealer payload, it retrieves the geolocation of the victim's system using freegeoip[.]app."
+        ]
+      },
+      {
+        "node_id": "IOC_cbd5f433c83a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\Windows\\explorer.exe",
+        "edges": [
+          "EDGE_33"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "The XMRig client is launched with the following command line parameters:\n\\Windows\\explorer.exe --algo=rx/0 --randomx-no-rdmsr --url=pool[.]hashvault[.]pro:80 --user=47tAzTKZcJuCui5Bx2FPVoA7UvWoz1QvRCFF1Bpvej5yGJuPPBgqTC8NG95Q3sMwsYV34eonCD3RVSEpSdhxaPRKSiagNNi --pass= --cpu-max-threads-hint=30 --cinit-stealth-targets=\"Taskmgr.exe,ProcessHacker.exe,perfmon.exe,procexp.exe,procexp64.exe\" --cinit-api=\"hxxps://control[.]nominally[.]ru/api/endpoint.php\" --tls --cinit-idle-wait=5 --cinit-idle-cpu=90\nInfected systems periodically send beacon data to the API specified when XMRig was launched."
+        ]
+      },
+      {
+        "node_id": "IOC_dbc979a61bbb",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "Zag",
+        "edges": [
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "{\"ip\": \"193[.]38[.]235[.]228:45347\", \"xor_key\": \"Zag\", \"id\": \"keepye\"}\nThe value \"keepye\" stored within the ID field of the configuration matches the username associated with an individual suspected to be behind development of ZingoStealer."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_1bd4504e7fd9",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_50e56856a68c",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_7e11aebe15ef",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_7e11aebe15ef",
+      "node_v": "TTP_T1496"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_856a5e2e4897",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_856a5e2e4897",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_856a5e2e4897",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_a1801bafa004",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_a1801bafa004",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_a1801bafa004",
+      "node_v": "TTP_T1496"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_d1d0e73de8a1",
+      "node_v": "TTP_T1496"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1496"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_d4326b6ae548",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_f32e005df759",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_190716087258",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_27dd3560dc26",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_3fe3c6a2dd6c",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_603bca78186f",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_713a8c188bc4",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_733c3b549f3e",
+      "node_v": "TTP_T1496"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_aa88709bc4f8",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_bd1c1c850f58",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_cbd5f433c83a",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_dbc979a61bbb",
+      "node_v": "TTP_T1071"
+    }
+  ]
+}

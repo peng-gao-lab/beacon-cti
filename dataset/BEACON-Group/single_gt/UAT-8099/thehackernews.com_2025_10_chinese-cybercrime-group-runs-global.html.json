@@ -1,0 +1,948 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0459b4ad2556",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "GhostRedirector",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "As recently as last month, ESET revealed details of another threat actor named GhostRedirector that has managed to compromise at least 65 Windows servers primarily located in Brazil, Thailand, and Vietnam with a malicious IIS module codenamed Gamshen to facilitate SEO fraud."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_09745102c5fd",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecom providers",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0cfc8059489d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-8099",
+        "sentence_indices": [
+          0,
+          4,
+          6,
+          9,
+          13
+        ],
+        "span_sentences": [
+          "Cybersecurity researchers have shed light on a Chinese-speaking cybercrime group codenamed UAT-8099 that has been attributed to search engine optimization (SEO) fraud and theft of high-value credentials, configuration files, and certificate data.",
+          "UAT-8099 is the latest China-linked actor to engage in SEO fraud for financial gain.",
+          "\"UAT-8099 manipulates search rankings by focusing on reputable, high-value IIS servers in targeted regions,\" Cisco Talos researcher Joey Chen said.",
+          "UAT-8099 has also been observed taking steps to plug the initial access pathway to maintain sole control of the compromised hosts and prevent other threat actors from compromising the same servers.",
+          "UAT-8099 uses RDP to access IIS servers and search for valuable data within the compromised host using a graphical user interface (GUI) tool named Everything, which is then packaged for either resale or further exploitation."
+        ],
+        "edges": [
+          "EDGE_01d152b1b36e",
+          "EDGE_1f52aad0aae7",
+          "EDGE_26f41827b24d",
+          "EDGE_397cd9f4065c",
+          "EDGE_4ed4ce1afe75",
+          "EDGE_68951891eb00",
+          "EDGE_6e4c5e05c9c6",
+          "EDGE_87c1f5fb4322",
+          "EDGE_9e7c6d0162cb",
+          "EDGE_aed5808ee720",
+          "EDGE_cd0e5d74bf87"
+        ]
+      },
+      {
+        "node_id": "HL_18a8c40152fc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Brazil",
+        "sentence_indices": [
+          1,
+          5
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers.",
+          "As recently as last month, ESET revealed details of another threat actor named GhostRedirector that has managed to compromise at least 65 Windows servers primarily located in Brazil, Thailand, and Vietnam with a malicious IIS module codenamed Gamshen to facilitate SEO fraud."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_1fe42abc4b88",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "CL-UNK-1037",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The attack chain culminates with the installation of BadIIS malware, which has been put to use by multiple Chinese-speaking threat clusters like DragonRank and Operation Rewrite (aka CL-UNK-1037)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_268c3d35f5c6",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "tech firms",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_42ebf853f762",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BadIIS",
+        "sentence_indices": [
+          7,
+          12,
+          15
+        ],
+        "span_sentences": [
+          "\"The group maintains persistence and alters SEO rankings using web shells, open-source hacking tools, Cobalt Strike, and various BadIIS malware; their automation scripts are customized to evade defenses and hide activity.\"\nOnce a vulnerable IIS server is found – either via security vulnerability or weak settings in the web server's file upload feature – the threat actor uses the foothold to upload web shells to conduct reconnaissance and gather basic system information.",
+          "The attack chain culminates with the installation of BadIIS malware, which has been put to use by multiple Chinese-speaking threat clusters like DragonRank and Operation Rewrite (aka CL-UNK-1037).",
+          "The BadIIS malware deployed in this case, however, is a variant that has tweaked its code structure and functional workflow to sidestep detection by antivirus software."
+        ],
+        "edges": [
+          "EDGE_943db993200a"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "As recently as last month, ESET revealed details of another threat actor named GhostRedirector that has managed to compromise at least 65 Windows servers primarily located in Brazil, Thailand, and Vietnam with a malicious IIS module codenamed Gamshen to facilitate SEO fraud."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "\"UAT-8099 manipulates search rankings by focusing on reputable, high-value IIS servers in targeted regions,\" Cisco Talos researcher Joey Chen said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_4cd867bb78c0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Apple iPhone",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The targets are primarily mobile users, encompassing both Android and Apple iPhone devices."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "sentence_indices": [
+          16,
+          18
+        ],
+        "span_sentences": [
+          "It functions similarly to Gamshen in that the SEO manipulation component kicks in only when the request originates from Google (i.e., User-Agent is Googlebot).",
+          "\"Google's search engine uses backlinks to discover additional sites and assess keyword relevance.\""
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5b35c4cb3b1a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Everything",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "UAT-8099 uses RDP to access IIS servers and search for valuable data within the compromised host using a graphical user interface (GUI) tool named Everything, which is then packaged for either resale or further exploitation."
+        ],
+        "edges": [
+          "EDGE_0aaf8c9e160e",
+          "EDGE_d80fb0cda27c"
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "sentence_indices": [
+          7,
+          10
+        ],
+        "span_sentences": [
+          "\"The group maintains persistence and alters SEO rankings using web shells, open-source hacking tools, Cobalt Strike, and various BadIIS malware; their automation scripts are customized to evade defenses and hide activity.\"\nOnce a vulnerable IIS server is found – either via security vulnerability or weak settings in the web server's file upload feature – the threat actor uses the foothold to upload web shells to conduct reconnaissance and gather basic system information.",
+          "In addition, Cobalt Strike is deployed as the preferred backdoor for post-exploitation."
+        ],
+        "edges": [
+          "EDGE_23120d01dded"
+        ]
+      },
+      {
+        "node_id": "HL_6e82f439967d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "DragonRank",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The attack chain culminates with the installation of BadIIS malware, which has been put to use by multiple Chinese-speaking threat clusters like DragonRank and Operation Rewrite (aka CL-UNK-1037)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_78f31e251fa7",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "FRP",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "In order to achieve persistence, RDP is combined with VPN tools like SoftEther VPN, EasyTier, and Fast Reverse Proxy (FRP)."
+        ],
+        "edges": [
+          "EDGE_a911ef9fa292",
+          "EDGE_cb20d9b6773b"
+        ]
+      },
+      {
+        "node_id": "HL_7a83293baae8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Android",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The targets are primarily mobile users, encompassing both Android and Apple iPhone devices."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_93e21b95ffb9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Fast Reverse Proxy",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "In order to achieve persistence, RDP is combined with VPN tools like SoftEther VPN, EasyTier, and Fast Reverse Proxy (FRP)."
+        ],
+        "edges": [
+          "EDGE_21aa99ccaf06",
+          "EDGE_e654b44ed3b2"
+        ]
+      },
+      {
+        "node_id": "HL_97300ff7245c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Operation Rewrite",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The attack chain culminates with the installation of BadIIS malware, which has been put to use by multiple Chinese-speaking threat clusters like DragonRank and Operation Rewrite (aka CL-UNK-1037)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "As recently as last month, ESET revealed details of another threat actor named GhostRedirector that has managed to compromise at least 65 Windows servers primarily located in Brazil, Thailand, and Vietnam with a malicious IIS module codenamed Gamshen to facilitate SEO fraud."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_aec120e689cc",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Internet Information Services",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers."
+        ],
+        "edges": [
+          "EDGE_6424caf80335",
+          "EDGE_9f23f1c2a206",
+          "EDGE_a3f5e9337cf0"
+        ]
+      },
+      {
+        "node_id": "HL_b0f55656dd86",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "EasyTier",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "In order to achieve persistence, RDP is combined with VPN tools like SoftEther VPN, EasyTier, and Fast Reverse Proxy (FRP)."
+        ],
+        "edges": [
+          "EDGE_7999ea7c909c",
+          "EDGE_f92723b14606"
+        ]
+      },
+      {
+        "node_id": "HL_b170b72b41f9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "IIS",
+        "sentence_indices": [
+          1,
+          6,
+          7,
+          13
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers.",
+          "\"UAT-8099 manipulates search rankings by focusing on reputable, high-value IIS servers in targeted regions,\" Cisco Talos researcher Joey Chen said.",
+          "\"The group maintains persistence and alters SEO rankings using web shells, open-source hacking tools, Cobalt Strike, and various BadIIS malware; their automation scripts are customized to evade defenses and hide activity.\"\nOnce a vulnerable IIS server is found – either via security vulnerability or weak settings in the web server's file upload feature – the threat actor uses the foothold to upload web shells to conduct reconnaissance and gather basic system information.",
+          "UAT-8099 uses RDP to access IIS servers and search for valuable data within the compromised host using a graphical user interface (GUI) tool named Everything, which is then packaged for either resale or further exploitation."
+        ],
+        "edges": [
+          "EDGE_8ec132dadf44",
+          "EDGE_bec6d34e1e44",
+          "EDGE_ebefcfacf493"
+        ]
+      },
+      {
+        "node_id": "HL_b39d93b6fd6a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Canada",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b7ee316d14fd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Remote Desktop Protocol (RDP)",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The financially motivated hacking group subsequently enables the guest account to escalate their privileges, all the way to the administrator, and use it to enable Remote Desktop Protocol (RDP)."
+        ],
+        "edges": [
+          "EDGE_7f1d8aae0f3c",
+          "EDGE_9917945730fc"
+        ]
+      },
+      {
+        "node_id": "HL_beba6cc51baa",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "universities",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c2e34242aeab",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Gamshen",
+        "sentence_indices": [
+          5,
+          16
+        ],
+        "span_sentences": [
+          "As recently as last month, ESET revealed details of another threat actor named GhostRedirector that has managed to compromise at least 65 Windows servers primarily located in Brazil, Thailand, and Vietnam with a malicious IIS module codenamed Gamshen to facilitate SEO fraud.",
+          "It functions similarly to Gamshen in that the SEO manipulation component kicks in only when the request originates from Google (i.e., User-Agent is Googlebot)."
+        ],
+        "edges": [
+          "EDGE_d083d0fb140a"
+        ]
+      },
+      {
+        "node_id": "HL_cbc494a80473",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SoftEther VPN",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "In order to achieve persistence, RDP is combined with VPN tools like SoftEther VPN, EasyTier, and Fast Reverse Proxy (FRP)."
+        ],
+        "edges": [
+          "EDGE_4e36171191fe",
+          "EDGE_b0e0da65de22"
+        ]
+      },
+      {
+        "node_id": "HL_ed027fcc1345",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Vietnam",
+        "sentence_indices": [
+          1,
+          5
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers.",
+          "As recently as last month, ESET revealed details of another threat actor named GhostRedirector that has managed to compromise at least 65 Windows servers primarily located in Brazil, Thailand, and Vietnam with a malicious IIS module codenamed Gamshen to facilitate SEO fraud."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f0730fc60dca",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Thailand",
+        "sentence_indices": [
+          1,
+          5
+        ],
+        "span_sentences": [
+          "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers.",
+          "As recently as last month, ESET revealed details of another threat actor named GhostRedirector that has managed to compromise at least 65 Windows servers primarily located in Brazil, Thailand, and Vietnam with a malicious IIS module codenamed Gamshen to facilitate SEO fraud."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1005",
+        "ttp_id": "T1005",
+        "best_span_sentences_list": [
+          [
+            "UAT-8099 uses RDP to access IIS servers and search for valuable data within the compromised host using a graphical user interface (GUI) tool named Everything, which is then packaged for either resale or further exploitation."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_0aaf8c9e160e",
+          "EDGE_cd0e5d74bf87"
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "The financially motivated hacking group subsequently enables the guest account to escalate their privileges, all the way to the administrator, and use it to enable Remote Desktop Protocol (RDP)."
+          ],
+          [
+            "In order to achieve persistence, RDP is combined with VPN tools like SoftEther VPN, EasyTier, and Fast Reverse Proxy (FRP)."
+          ],
+          [
+            "UAT-8099 uses RDP to access IIS servers and search for valuable data within the compromised host using a graphical user interface (GUI) tool named Everything, which is then packaged for either resale or further exploitation."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_4ed4ce1afe75",
+          "EDGE_6424caf80335",
+          "EDGE_9917945730fc",
+          "EDGE_ebefcfacf493"
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "Cybersecurity researchers have shed light on a Chinese-speaking cybercrime group codenamed UAT-8099 that has been attributed to search engine optimization (SEO) fraud and theft of high-value credentials, configuration files, and certificate data.",
+            "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers.",
+            "The group was first discovered in April 2025.",
+            "The targets are primarily mobile users, encompassing both Android and Apple iPhone devices.",
+            "UAT-8099 is the latest China-linked actor to engage in SEO fraud for financial gain."
+          ],
+          [
+            "The financially motivated hacking group subsequently enables the guest account to escalate their privileges, all the way to the administrator, and use it to enable Remote Desktop Protocol (RDP)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            4
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_6e4c5e05c9c6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1083",
+        "ttp_id": "T1083",
+        "best_span_sentences_list": [
+          [
+            "UAT-8099 uses RDP to access IIS servers and search for valuable data within the compromised host using a graphical user interface (GUI) tool named Everything, which is then packaged for either resale or further exploitation."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_397cd9f4065c",
+          "EDGE_d80fb0cda27c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "In order to achieve persistence, RDP is combined with VPN tools like SoftEther VPN, EasyTier, and Fast Reverse Proxy (FRP)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_21aa99ccaf06",
+          "EDGE_68951891eb00",
+          "EDGE_a911ef9fa292",
+          "EDGE_b0e0da65de22",
+          "EDGE_f92723b14606"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "In addition, Cobalt Strike is deployed as the preferred backdoor for post-exploitation."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_aed5808ee720"
+        ]
+      },
+      {
+        "node_id": "TTP_T1133",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1133",
+        "ttp_id": "T1133",
+        "best_span_sentences_list": [
+          [
+            "In order to achieve persistence, RDP is combined with VPN tools like SoftEther VPN, EasyTier, and Fast Reverse Proxy (FRP)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_01d152b1b36e",
+          "EDGE_4e36171191fe",
+          "EDGE_7999ea7c909c",
+          "EDGE_7f1d8aae0f3c",
+          "EDGE_cb20d9b6773b",
+          "EDGE_e654b44ed3b2"
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_1f52aad0aae7",
+          "EDGE_9f23f1c2a206",
+          "EDGE_bec6d34e1e44"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "In addition, Cobalt Strike is deployed as the preferred backdoor for post-exploitation."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_23120d01dded",
+          "EDGE_87c1f5fb4322"
+        ]
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1505",
+        "ttp_id": "T1505",
+        "best_span_sentences_list": [
+          [
+            "\"The group maintains persistence and alters SEO rankings using web shells, open-source hacking tools, Cobalt Strike, and various BadIIS malware; their automation scripts are customized to evade defenses and hide activity.\"\nOnce a vulnerable IIS server is found – either via security vulnerability or weak settings in the web server's file upload feature – the threat actor uses the foothold to upload web shells to conduct reconnaissance and gather basic system information."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_8ec132dadf44",
+          "EDGE_943db993200a",
+          "EDGE_9e7c6d0162cb",
+          "EDGE_a3f5e9337cf0",
+          "EDGE_d083d0fb140a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1552",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1552",
+        "ttp_id": "T1552",
+        "best_span_sentences_list": [
+          [
+            "Cybersecurity researchers have shed light on a Chinese-speaking cybercrime group codenamed UAT-8099 that has been attributed to search engine optimization (SEO) fraud and theft of high-value credentials, configuration files, and certificate data.",
+            "The attacks are designed to target Microsoft Internet Information Services (IIS) servers, with most of the infections reported in India, Thailand, Vietnam, Canada, and Brazil, spanning universities, tech firms, and telecom providers.",
+            "The group was first discovered in April 2025.",
+            "The targets are primarily mobile users, encompassing both Android and Apple iPhone devices.",
+            "UAT-8099 is the latest China-linked actor to engage in SEO fraud for financial gain."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_26f41827b24d"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_01d152b1b36e",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1133",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0aaf8c9e160e",
+      "node_u": "HL_5b35c4cb3b1a",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1f52aad0aae7",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_21aa99ccaf06",
+      "node_u": "HL_93e21b95ffb9",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_23120d01dded",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_26f41827b24d",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1552",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_397cd9f4065c",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1083",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4e36171191fe",
+      "node_u": "HL_cbc494a80473",
+      "node_v": "TTP_T1133",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ed4ce1afe75",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6424caf80335",
+      "node_u": "HL_aec120e689cc",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_68951891eb00",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6e4c5e05c9c6",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7999ea7c909c",
+      "node_u": "HL_b0f55656dd86",
+      "node_v": "TTP_T1133",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7f1d8aae0f3c",
+      "node_u": "HL_b7ee316d14fd",
+      "node_v": "TTP_T1133",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_87c1f5fb4322",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8ec132dadf44",
+      "node_u": "HL_b170b72b41f9",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_943db993200a",
+      "node_u": "HL_42ebf853f762",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9917945730fc",
+      "node_u": "HL_b7ee316d14fd",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9e7c6d0162cb",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9f23f1c2a206",
+      "node_u": "HL_aec120e689cc",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a3f5e9337cf0",
+      "node_u": "HL_aec120e689cc",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a911ef9fa292",
+      "node_u": "HL_78f31e251fa7",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_aed5808ee720",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b0e0da65de22",
+      "node_u": "HL_cbc494a80473",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bec6d34e1e44",
+      "node_u": "HL_b170b72b41f9",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cb20d9b6773b",
+      "node_u": "HL_78f31e251fa7",
+      "node_v": "TTP_T1133",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd0e5d74bf87",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d083d0fb140a",
+      "node_u": "HL_c2e34242aeab",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d80fb0cda27c",
+      "node_u": "HL_5b35c4cb3b1a",
+      "node_v": "TTP_T1083",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e654b44ed3b2",
+      "node_u": "HL_93e21b95ffb9",
+      "node_v": "TTP_T1133",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ebefcfacf493",
+      "node_u": "HL_b170b72b41f9",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f92723b14606",
+      "node_u": "HL_b0f55656dd86",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

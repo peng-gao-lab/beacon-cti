@@ -1,0 +1,911 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "sentence_indices": [
+          2,
+          5,
+          6,
+          47
+        ],
+        "span_sentences": [
+          "APT29’s involvement aligns with the attacks targeting the geopolitical relations between India and diplomats in European nations.",
+          "The PDF file is a fake invitation to a wine-tasting event purported to take place at the Indian ambassador’s residence on February 2nd, 2024.",
+          "The contents are well-crafted to impersonate the Ambassador of India.",
+          "The threat discussed in this blog demonstrated advanced tactics, techniques, and procedures (TTPs), displaying a keen interest in exploiting the diplomatic relations between India and Europe."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_073de7f9bea3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "SECFORCE",
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "The implementation is similar to the one presented by SECFORCE in their blog."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_24ac7491031e",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Cozy Bear",
+        "sentence_indices": [
+          1,
+          4,
+          48
+        ],
+        "span_sentences": [
+          "We now have new evidence attributing these attacks to APT29 (Cozy Bear).",
+          "Given the thematic and file name elements, we previously identified this threat actor as ‘\"SPIKEDWINE\", though new findings point directly to APT29 (Cozy Bear).",
+          "APT29 (Cozy Bear) put additional effort into remaining undetected by evading memory forensics and automated URL scanning solutions."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2a0b5ad78f29",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT29",
+        "sentence_indices": [
+          1,
+          2,
+          4,
+          48
+        ],
+        "span_sentences": [
+          "We now have new evidence attributing these attacks to APT29 (Cozy Bear).",
+          "APT29’s involvement aligns with the attacks targeting the geopolitical relations between India and diplomats in European nations.",
+          "Given the thematic and file name elements, we previously identified this threat actor as ‘\"SPIKEDWINE\", though new findings point directly to APT29 (Cozy Bear).",
+          "APT29 (Cozy Bear) put additional effort into remaining undetected by evading memory forensics and automated URL scanning solutions."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "The threat discussed in this blog demonstrated advanced tactics, techniques, and procedures (TTPs), displaying a keen interest in exploiting the diplomatic relations between India and Europe."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_348a9135329c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "obfuscator.io",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The obfuscation technique used in the code exhibits patterns that match those of the publicly available obfuscator obfuscator.io."
+        ],
+        "edges": [
+          "EDGE_dbe6d499bb7e"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          24,
+          29
+        ],
+        "span_sentences": [
+          "DLL hollowing is then used to inject WINELOADER into a randomly selected DLL from the Windows system directory.",
+          "All requests to the C2 server use the same User-Agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.1) Gecko/20100101 Firefox/86.1, hardcoded into the sample itself."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5ccea5e028b6",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "SPIKEDWINE",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Given the thematic and file name elements, we previously identified this threat actor as ‘\"SPIKEDWINE\", though new findings point directly to APT29 (Cozy Bear)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a75c7f72d7bb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "LibreOffice",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "A quick analysis of the PDF file's metadata reveals that it was generated using LibreOffice version 6.4, and the time of creation was January 29th, 2024, at 10:38 AM UTC."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_fdc33c346fe5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "WINELOADER",
+        "sentence_indices": [
+          0,
+          19,
+          21,
+          23,
+          24,
+          26,
+          27,
+          41
+        ],
+        "span_sentences": [
+          "This blog provides detailed information about a previously undocumented backdoor we named \"WINELOADER\".",
+          "This function decrypts the embedded WINELOADER core module within the DLL using a hardcoded 256-byte RC4 key before executing it.",
+          "Part of the decrypted WINELOADER core module is shown in Figure 5 below.",
+          "WINELOADER employs the following techniques to evade detection:.",
+          "DLL hollowing is then used to inject WINELOADER into a randomly selected DLL from the Windows system directory.",
+          "WINELOADER includes additional randomization code to ensure that different DLLs are chosen for each instance of DLL hollowing (see Figure 6).",
+          "WINELOADER will inject itself into another randomly selected DLL again via DLL hollowing before it sends the first beacon request to the C2 server.",
+          "After establishing persistence for WINELOADER, the module sends an HTTP POST request to notify the C2 server about the completed task."
+        ],
+        "edges": [
+          "EDGE_091875ba874c",
+          "EDGE_16bc15cdb65e",
+          "EDGE_18ac7ccf48f6",
+          "EDGE_1bfbb2904626",
+          "EDGE_2d6aa74e7cbb",
+          "EDGE_2ed9fe6e3770",
+          "EDGE_349513fcf939",
+          "EDGE_3934b46dedf7",
+          "EDGE_3b9dadb38351",
+          "EDGE_94094268e127",
+          "EDGE_be2e30baf089",
+          "EDGE_e65d63045038",
+          "EDGE_eba675deb49c"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The HTA file downloaded in the previous section contains obfuscated JavaScript code, which executes the next stage of malicious activities.",
+            "The obfuscation technique used in the code exhibits patterns that match those of the publicly available obfuscator obfuscator.io."
+          ],
+          [
+            "This function decrypts the embedded WINELOADER core module within the DLL using a hardcoded 256-byte RC4 key before executing it.",
+            "Each module consists of configuration data (e.g., C2 polling interval), an RC4 key, and encrypted strings, followed by the module code.",
+            "Part of the decrypted WINELOADER core module is shown in Figure 5 below."
+          ],
+          [
+            "The beacon request is an HTTP GET request containing a request body, which is unusual for GET requests.",
+            "All requests to the C2 server use the same User-Agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.1) Gecko/20100101 Firefox/86.1, hardcoded into the sample itself.",
+            "The body of the HTTP GET request is encrypted with the same 256-byte RC4 key and the fields are as follows."
+          ],
+          [
+            "The same RC4 key is then used to decrypt the response from the C2 server."
+          ],
+          [
+            "APT29 (Cozy Bear) put additional effort into remaining undetected by evading memory forensics and automated URL scanning solutions."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            13
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            28,
+            30
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "edges": [
+          "EDGE_3934b46dedf7",
+          "EDGE_dbe6d499bb7e",
+          "EDGE_eab472efd35b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_91e4d973a171",
+          "EDGE_932ac29b6e88",
+          "EDGE_be2e30baf089"
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "During our research, we obtained a persistence module from the C2 server.",
+            "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_1b76691f3718",
+          "EDGE_6c7eb661de5e",
+          "EDGE_89b2e71c9df8",
+          "EDGE_94094268e127"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "DLL hollowing is then used to inject WINELOADER into a randomly selected DLL from the Windows system directory."
+          ],
+          [
+            "WINELOADER will inject itself into another randomly selected DLL again via DLL hollowing before it sends the first beacon request to the C2 server."
+          ],
+          [
+            "The core module supports three commands:\n- Execute modules from the C2 either synchronously or asynchronously (via CreateThread)\n- Inject itself into another DLL\n- Update the sleep interval between beacon requests."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_2ed9fe6e3770"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The HTA file downloaded in the previous section contains obfuscated JavaScript code, which executes the next stage of malicious activities."
+          ],
+          [
+            "The core module supports three commands:\n- Execute modules from the C2 either synchronously or asynchronously (via CreateThread)\n- Inject itself into another DLL\n- Update the sleep interval between beacon requests."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_02335e6cb415",
+          "EDGE_eba675deb49c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The beacon request is an HTTP GET request containing a request body, which is unusual for GET requests.",
+            "All requests to the C2 server use the same User-Agent, Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.1) Gecko/20100101 Firefox/86.1, hardcoded into the sample itself.",
+            "The body of the HTTP GET request is encrypted with the same 256-byte RC4 key and the fields are as follows."
+          ],
+          [
+            "After establishing persistence for WINELOADER, the module sends an HTTP POST request to notify the C2 server about the completed task."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            30
+          ],
+          [
+            41,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_349513fcf939"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_091875ba874c",
+          "EDGE_3e4143687877",
+          "EDGE_593059fd24dd",
+          "EDGE_8b0ffae475f4"
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "The persistence module offers an alternative configuration to establish registry persistence at HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_14892ed29866",
+          "EDGE_16bc15cdb65e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "When executing sqlwriter.exe, it loads a malicious DLL named vcruntime140.dll from the same directory using DLL side-loading.",
+            "The exported function set_se_translator is then executed.",
+            "This function decrypts the embedded WINELOADER core module within the DLL using a hardcoded 256-byte RC4 key before executing it."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_3b9dadb38351"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The PDF file is a fake invitation to a wine-tasting event purported to take place at the Indian ambassador’s residence on February 2nd, 2024."
+          ],
+          [
+            "The invitation contains a link to a fake questionnaire, which kickstarts the infection chain.",
+            "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_18ac7ccf48f6",
+          "EDGE_67609bd874d4",
+          "EDGE_8b476cba3eb6",
+          "EDGE_ee6ede25e428"
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "The persistence module offers an alternative configuration to establish registry persistence at HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_2d6aa74e7cbb",
+          "EDGE_d5b0d0598c96"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The PDF file is a fake invitation to a wine-tasting event purported to take place at the Indian ambassador’s residence on February 2nd, 2024."
+          ],
+          [
+            "The invitation contains a link to a fake questionnaire, which kickstarts the infection chain.",
+            "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_1bfbb2904626",
+          "EDGE_5b9eb1550a88",
+          "EDGE_8c4993e0f0c0"
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "When executing sqlwriter.exe, it loads a malicious DLL named vcruntime140.dll from the same directory using DLL side-loading.",
+            "The exported function set_se_translator is then executed.",
+            "This function decrypts the embedded WINELOADER core module within the DLL using a hardcoded 256-byte RC4 key before executing it."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_41f603f151e9",
+          "EDGE_bed976a9d9e9",
+          "EDGE_e65d63045038"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1c89e0282db8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "wine.hta",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+        ],
+        "edges": [
+          "EDGE_02335e6cb415",
+          "EDGE_593059fd24dd",
+          "EDGE_67609bd874d4",
+          "EDGE_eab472efd35b"
+        ]
+      },
+      {
+        "node_id": "IOC_1d7d1534eb34",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "seeceafcleaners[.]co[.]uk",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+        ],
+        "edges": [
+          "EDGE_8b0ffae475f4",
+          "EDGE_8b476cba3eb6",
+          "EDGE_8c4993e0f0c0"
+        ]
+      },
+      {
+        "node_id": "IOC_51385baad487",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "vcruntime140.dll",
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "When executing sqlwriter.exe, it loads a malicious DLL named vcruntime140.dll from the same directory using DLL side-loading."
+        ],
+        "edges": [
+          "EDGE_bed976a9d9e9"
+        ]
+      },
+      {
+        "node_id": "IOC_659e9eb56667",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer",
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "The persistence module offers an alternative configuration to establish registry persistence at HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run\\MS SQL Writer."
+        ],
+        "edges": [
+          "EDGE_14892ed29866",
+          "EDGE_d5b0d0598c96"
+        ]
+      },
+      {
+        "node_id": "IOC_7059185f0d71",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "vcruntime.dll",
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_7bfc7c20bb7c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\Tasks",
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+        ],
+        "edges": [
+          "EDGE_1b76691f3718"
+        ]
+      },
+      {
+        "node_id": "IOC_89ef20849635",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "sqlwriter.exe",
+        "sentence_indices": [
+          17,
+          39
+        ],
+        "span_sentences": [
+          "When executing sqlwriter.exe, it loads a malicious DLL named vcruntime140.dll from the same directory using DLL side-loading.",
+          "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+        ],
+        "edges": [
+          "EDGE_41f603f151e9",
+          "EDGE_89b2e71c9df8",
+          "EDGE_932ac29b6e88"
+        ]
+      },
+      {
+        "node_id": "IOC_ac520884a472",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://seeceafcleaners[.]co[.]uk/wine.php",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The malicious link in the PDF invitation redirects users to a compromised site, hxxps://seeceafcleaners[.]co[.]uk/wine.php, that proceeds to download a ZIP archive containing an HTA file - wine.hta."
+        ],
+        "edges": [
+          "EDGE_3e4143687877",
+          "EDGE_5b9eb1550a88",
+          "EDGE_ee6ede25e428"
+        ]
+      },
+      {
+        "node_id": "IOC_c7261a51fa80",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\Tasks\\sqlwriter.exe",
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "This module copies sqlwriter.exe and vcruntime.dll into the C:\\Windows\\Tasks directory and creates a scheduled task named MS SQL Writer with the description SQL Server VSS Writer 64-bit to execute C:\\Windows\\Tasks\\sqlwriter.exe daily."
+        ],
+        "edges": [
+          "EDGE_6c7eb661de5e",
+          "EDGE_91e4d973a171"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_02335e6cb415",
+      "node_u": "IOC_1c89e0282db8",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_091875ba874c",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_14892ed29866",
+      "node_u": "IOC_659e9eb56667",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_16bc15cdb65e",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_18ac7ccf48f6",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b76691f3718",
+      "node_u": "IOC_7bfc7c20bb7c",
+      "node_v": "TTP_T1053",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bfbb2904626",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2d6aa74e7cbb",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ed9fe6e3770",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_349513fcf939",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3934b46dedf7",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3b9dadb38351",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3e4143687877",
+      "node_u": "IOC_ac520884a472",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_41f603f151e9",
+      "node_u": "IOC_89ef20849635",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_593059fd24dd",
+      "node_u": "IOC_1c89e0282db8",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5b9eb1550a88",
+      "node_u": "IOC_ac520884a472",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_67609bd874d4",
+      "node_u": "IOC_1c89e0282db8",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c7eb661de5e",
+      "node_u": "IOC_c7261a51fa80",
+      "node_v": "TTP_T1053",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_89b2e71c9df8",
+      "node_u": "IOC_89ef20849635",
+      "node_v": "TTP_T1053",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b0ffae475f4",
+      "node_u": "IOC_1d7d1534eb34",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b476cba3eb6",
+      "node_u": "IOC_1d7d1534eb34",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8c4993e0f0c0",
+      "node_u": "IOC_1d7d1534eb34",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_91e4d973a171",
+      "node_u": "IOC_c7261a51fa80",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_932ac29b6e88",
+      "node_u": "IOC_89ef20849635",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_94094268e127",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_be2e30baf089",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bed976a9d9e9",
+      "node_u": "IOC_51385baad487",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d5b0d0598c96",
+      "node_u": "IOC_659e9eb56667",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_dbe6d499bb7e",
+      "node_u": "HL_348a9135329c",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e65d63045038",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_eab472efd35b",
+      "node_u": "IOC_1c89e0282db8",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_eba675deb49c",
+      "node_u": "HL_fdc33c346fe5",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ee6ede25e428",
+      "node_u": "IOC_ac520884a472",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

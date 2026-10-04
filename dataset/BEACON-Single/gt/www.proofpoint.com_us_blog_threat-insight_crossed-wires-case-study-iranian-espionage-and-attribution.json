@@ -1,0 +1,873 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0430ce37f014",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNK_SmudgedSerpent",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          3,
+          5,
+          6,
+          11,
+          20,
+          22,
+          24,
+          27,
+          28,
+          32,
+          33,
+          38,
+          43,
+          44,
+          46,
+          48,
+          49
+        ],
+        "span_sentences": [
+          "Given a lack of high confidence links to any one established threat group, we designated the activity as a temporary cluster called UNK_SmudgedSerpent.",
+          "After this initial credential harvesting attempt, UNK_SmudgedSerpent continued to conduct phishing activity within the same email thread with a specific target and subsequently delivered a URL that hosted an archive file with an MSI that loaded RMM payloads.",
+          "UNK_SmudgedSerpent’s first identified campaign within Proofpoint data spoofed a member of the Brookings Institute reaching out to over 20 members of a United States-based think tank in mid-June 2025.",
+          "Regardless of each recipient’s expertise, UNK_SmudgedSerpent leveraged the same collaboration lure about impending Iranian societal reform.",
+          "In Proofpoint’s investigation, after the target communicated suspicions about the credential harvesting page, UNK_SmudgedSerpent removed the password requirement on the initial thebesthomehealth[.]com URL.",
+          "Upon execution, UNK_SmudgedSerpent’s ZIP archive loaded an MSI file, which launched the PDQConnect Remote Monitoring & Management (RMM) software.",
+          "During our research, Threat Research observed UNK_SmudgedSerpent engaging in suspected hands-on-keyboard activity where the attackers leveraged PDQConnect to install additional RMM software, ISL Online.",
+          "In this lure, UNK_SmudgedSerpent asked for assistance investigating the IRGC.",
+          "In early August 2025, UNK_SmudgedSerpent surfaced again, this time soliciting information and collaboration on Iran’s efforts in Latin America.",
+          "UNK_SmudgedSerpent Patrick Clawson Spoof #2.",
+          "The timeline below shows the campaigns and cadence of UNK_SmudgedSerpent activity, which appears to be topical and sporadic.",
+          "Investigating suspected UNK_SmudgedSerpent infrastructure, such as healthcrescent[.]com, surfaced additional activity that further complicates UNK_SmudgedSerpent’s relationship and overlaps with TA455.",
+          "The exploration of infrastructure and operations connected to UNK_SmudgedSerpent activity further blurs the lines of attribution and the nature of the relationship to TA455.",
+          "Proofpoint Threat Research is currently tracking this activity separately as a new threat actor – UNK_SmudgedSerpent – and clustered distinctly from TA453, TA455, and TA450.",
+          "UNK_SmudgedSerpent’s first observed campaign was in June 2025, after which the group was seen a few times targeting policy experts in the US using lures about internal political developments in Iran.",
+          "While UNK_SmudgedSerpent has not been observed in email campaigns since August 2025, related activity likely remains ongoing.",
+          "The appearance of a new actor with borrowed techniques suggests there may be personnel mobility or exchange between teams, but with a consistent remit; however, there is no confirmed attribution for UNK_SmudgedSerpent at the time of writing."
+        ]
+      },
+      {
+        "node_id": "HL_04703d1dd7db",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MiniBike",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "userenv.dll is a TA455 custom backdoor termed MiniJunk in public reporting, a version of previously reported malware called MiniBike."
+        ]
+      },
+      {
+        "node_id": "HL_0576e1dd1c38",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Outlook",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The phishing email originated from another spoof of Patrick Clawson, this time using an Outlook email address: patrick.clawson51@outlook[.]com."
+        ]
+      },
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "UNK_SmudgedSerpent’s first identified campaign within Proofpoint data spoofed a member of the Brookings Institute reaching out to over 20 members of a United States-based think tank in mid-June 2025."
+        ]
+      },
+      {
+        "node_id": "HL_1933261331dc",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Charming Kitten",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm)."
+        ]
+      },
+      {
+        "node_id": "HL_1df1a3827bc3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Middle Eastern",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "TA453 primarily focuses on Middle Eastern policy topics, such as Iranian nuclear negotiations or Iran’s foreign relations."
+        ]
+      },
+      {
+        "node_id": "HL_38b979530882",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA450",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          42,
+          47
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm).",
+          "The final file hosted on the OnlyOffice URL was Interview time.msi, a loader responsible for installing the RMM tool PDQConnect, seen deployed in both UNK_SmudgedSerpent and TA450 activity, though not previously seen associated with TA455.",
+          "The subsequent investigation revealed multiple overlaps in TTPs with TA453, TA450, and TA455."
+        ]
+      },
+      {
+        "node_id": "HL_39f273421850",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Proofpoint Threat Research",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          8,
+          44
+        ],
+        "span_sentences": [
+          "In June, Proofpoint Threat Research began investigating a benign email discussing economic uncertainty and domestic political unrest in Iran.",
+          "However, approaching a significant number of individuals at a single organization diverges from Proofpoint Threat Research’s observations of typical TA453 techniques.",
+          "Proofpoint Threat Research is currently tracking this activity separately as a new threat actor – UNK_SmudgedSerpent – and clustered distinctly from TA453, TA455, and TA450."
+        ]
+      },
+      {
+        "node_id": "HL_4544063ea11f",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Smoke Sandstorm",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm)."
+        ]
+      },
+      {
+        "node_id": "HL_514a571a8043",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft 365",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The URL was only masquerading as an OnlyOffice link in the email but instead hyperlinked to a health-themed attacker domain thebesthomehealth[.]com, which redirected to a second health-themed attacker domain mosaichealthsolutions[.]com that displayed a Microsoft 365 login page."
+        ]
+      },
+      {
+        "node_id": "HL_5209d14c92dc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Israel",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          16
+        ],
+        "span_sentences": [
+          "While coinciding with the escalations in the Iran-Israel conflict, there was no indication that the observed activity was directly correlated with Israel’s attacks on Iranian nuclear facilities or Iran’s actions in response.",
+          "As the engagement continued, the persona sent an appointed time for a meeting, using Israel time as a point of reference though the target was based in the US."
+        ]
+      },
+      {
+        "node_id": "HL_6043f7d854a6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Brookings Institution",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The attackers’ approach impersonated Suzanne Maloney – the vice president and director of the Foreign Policy program at the Brookings Institution and an expert on Iran – using a Gmail address and misspelled version of her name, “Suzzane Maloney.”\nFigure 2."
+        ]
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "edges": [],
+        "sentence_indices": [
+          16,
+          26,
+          46
+        ],
+        "span_sentences": [
+          "As the engagement continued, the persona sent an appointed time for a meeting, using Israel time as a point of reference though the target was based in the US.",
+          "Maloney (with her name spelled correctly) – suzannemaloney68@gmail[.]com – targeting a US-based academic that appeared to be Israeli.",
+          "UNK_SmudgedSerpent’s first observed campaign was in June 2025, after which the group was seen a few times targeting policy experts in the US using lures about internal political developments in Iran."
+        ]
+      },
+      {
+        "node_id": "HL_71ec9db43de8",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PDQConnect",
+        "edges": [],
+        "sentence_indices": [
+          22,
+          24,
+          42
+        ],
+        "span_sentences": [
+          "Upon execution, UNK_SmudgedSerpent’s ZIP archive loaded an MSI file, which launched the PDQConnect Remote Monitoring & Management (RMM) software.",
+          "During our research, Threat Research observed UNK_SmudgedSerpent engaging in suspected hands-on-keyboard activity where the attackers leveraged PDQConnect to install additional RMM software, ISL Online.",
+          "The final file hosted on the OnlyOffice URL was Interview time.msi, a loader responsible for installing the RMM tool PDQConnect, seen deployed in both UNK_SmudgedSerpent and TA450 activity, though not previously seen associated with TA455."
+        ]
+      },
+      {
+        "node_id": "HL_7404055402f9",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "MuddyWater",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm)."
+        ]
+      },
+      {
+        "node_id": "HL_7b33adfdc069",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Gmail",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          12,
+          25,
+          26,
+          30
+        ],
+        "span_sentences": [
+          "The attackers’ approach impersonated Suzanne Maloney – the vice president and director of the Foreign Policy program at the Brookings Institution and an expert on Iran – using a Gmail address and misspelled version of her name, “Suzzane Maloney.”\nFigure 2.",
+          "Before the email exchange discussed ended on 26 June, Proofpoint identified an additional Gmail account on 23 June spoofing Dr.",
+          "Maloney (with her name spelled correctly) – suzannemaloney68@gmail[.]com – targeting a US-based academic that appeared to be Israeli.",
+          "However, the email in the signature did not match and included both potentially legitimate emails and patrickclawson51@gmail[.]com, which was the previously used spoofed email."
+        ]
+      },
+      {
+        "node_id": "HL_80a2f4be33aa",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "OnlyOffice",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          17,
+          21,
+          42
+        ],
+        "span_sentences": [
+          "At the delivery stage, the actor began to deviate from TA453’s typical TTPs and sent a link appearing to be an OnlyOffice URL belonging to \"Suzzane Maloney” (again spelled incorrectly) with documents relevant to the upcoming meeting.",
+          "The link then proceeded to a spoofed OnlyOffice login page.",
+          "The final file hosted on the OnlyOffice URL was Interview time.msi, a loader responsible for installing the RMM tool PDQConnect, seen deployed in both UNK_SmudgedSerpent and TA450 activity, though not previously seen associated with TA455."
+        ]
+      },
+      {
+        "node_id": "HL_8c38db7a49fb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "C5 Agent",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm)."
+        ]
+      },
+      {
+        "node_id": "HL_903464adf545",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Proofpoint",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          6,
+          8,
+          14,
+          20,
+          25,
+          34,
+          44
+        ],
+        "span_sentences": [
+          "In June, Proofpoint Threat Research began investigating a benign email discussing economic uncertainty and domestic political unrest in Iran.",
+          "UNK_SmudgedSerpent’s first identified campaign within Proofpoint data spoofed a member of the Brookings Institute reaching out to over 20 members of a United States-based think tank in mid-June 2025.",
+          "However, approaching a significant number of individuals at a single organization diverges from Proofpoint Threat Research’s observations of typical TA453 techniques.",
+          "Following a response, the Suzzane Maloney persona was more cautious than Proofpoint has observed in past interactions with TA453.",
+          "In Proofpoint’s investigation, after the target communicated suspicions about the credential harvesting page, UNK_SmudgedSerpent removed the password requirement on the initial thebesthomehealth[.]com URL.",
+          "Before the email exchange discussed ended on 26 June, Proofpoint identified an additional Gmail account on 23 June spoofing Dr.",
+          "After the initial approach that targeted over 20 individuals, Proofpoint data showed the actor focused only on solitary targets in further campaigns.",
+          "Proofpoint Threat Research is currently tracking this activity separately as a new threat actor – UNK_SmudgedSerpent – and clustered distinctly from TA453, TA455, and TA450."
+        ]
+      },
+      {
+        "node_id": "HL_926180af8da9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MiniJunk",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "userenv.dll is a TA455 custom backdoor termed MiniJunk in public reporting, a version of previously reported malware called MiniBike."
+        ]
+      },
+      {
+        "node_id": "HL_9a77f56b990a",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mango Sandstorm",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm)."
+        ]
+      },
+      {
+        "node_id": "HL_a0f4029cc093",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Iran",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          1,
+          7,
+          10,
+          11,
+          28,
+          46,
+          50
+        ],
+        "span_sentences": [
+          "In June, Proofpoint Threat Research began investigating a benign email discussing economic uncertainty and domestic political unrest in Iran.",
+          "While coinciding with the escalations in the Iran-Israel conflict, there was no indication that the observed activity was directly correlated with Israel’s attacks on Iranian nuclear facilities or Iran’s actions in response.",
+          "Targeting specific subject matter experts in Iran-related policy areas is often a characteristic of TA453 activity, particularly using a benign conversation starter.",
+          "TA453 primarily focuses on Middle Eastern policy topics, such as Iranian nuclear negotiations or Iran’s foreign relations.",
+          "Regardless of each recipient’s expertise, UNK_SmudgedSerpent leveraged the same collaboration lure about impending Iranian societal reform.",
+          "In early August 2025, UNK_SmudgedSerpent surfaced again, this time soliciting information and collaboration on Iran’s efforts in Latin America.",
+          "UNK_SmudgedSerpent’s first observed campaign was in June 2025, after which the group was seen a few times targeting policy experts in the US using lures about internal political developments in Iran.",
+          "The TTPs and infrastructure are an extension of previously observed behavior from Iranian threat groups, and the targeting of Iran foreign policy experts continues to reflect the Iranian government’s intelligence collection priorities."
+        ]
+      },
+      {
+        "node_id": "HL_b562bbc01b7b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Brookings Institute",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "UNK_SmudgedSerpent’s first identified campaign within Proofpoint data spoofed a member of the Brookings Institute reaching out to over 20 members of a United States-based think tank in mid-June 2025."
+        ]
+      },
+      {
+        "node_id": "HL_c788d3977073",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA453",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          7,
+          8,
+          9,
+          10,
+          47
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm).",
+          "Targeting specific subject matter experts in Iran-related policy areas is often a characteristic of TA453 activity, particularly using a benign conversation starter.",
+          "However, approaching a significant number of individuals at a single organization diverges from Proofpoint Threat Research’s observations of typical TA453 techniques.",
+          "In another deviation from typical TA453 activity, members of the targeted organization focused across almost all areas of expertise including national defense, advanced technology, economic security, and global health, along with region-specific experts.",
+          "TA453 primarily focuses on Middle Eastern policy topics, such as Iranian nuclear negotiations or Iran’s foreign relations.",
+          "The subsequent investigation revealed multiple overlaps in TTPs with TA453, TA450, and TA455."
+        ]
+      },
+      {
+        "node_id": "HL_ddbc584d4008",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA455",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          38,
+          42,
+          47
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm).",
+          "Investigating suspected UNK_SmudgedSerpent infrastructure, such as healthcrescent[.]com, surfaced additional activity that further complicates UNK_SmudgedSerpent’s relationship and overlaps with TA455.",
+          "The final file hosted on the OnlyOffice URL was Interview time.msi, a loader responsible for installing the RMM tool PDQConnect, seen deployed in both UNK_SmudgedSerpent and TA450 activity, though not previously seen associated with TA455.",
+          "The subsequent investigation revealed multiple overlaps in TTPs with TA453, TA450, and TA455."
+        ]
+      },
+      {
+        "node_id": "HL_dddf6a4708e0",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mint Sandstorm",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Initial analysis of the activity found tactics, techniques, and procedures (TTP) overlaps with multiple Iranian aligned groups, including TA455 (C5 Agent, Smoke Sandstorm), TA453 (Mint Sandstorm, Charming Kitten), and TA450 (MuddyWater, Mango Sandstorm)."
+        ]
+      },
+      {
+        "node_id": "HL_e614e7a7bc8c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Latin America",
+        "edges": [],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "In early August 2025, UNK_SmudgedSerpent surfaced again, this time soliciting information and collaboration on Iran’s efforts in Latin America."
+        ]
+      },
+      {
+        "node_id": "HL_f9e4b77de3c8",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ISL Online",
+        "edges": [],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "During our research, Threat Research observed UNK_SmudgedSerpent engaging in suspected hands-on-keyboard activity where the attackers leveraged PDQConnect to install additional RMM software, ISL Online."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_15",
+          "EDGE_17",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            28,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The infection chain began with a benign conversation, followed by an email exchange and a credential harvesting attempt."
+          ],
+          [
+            "After this initial credential harvesting attempt, UNK_SmudgedSerpent continued to conduct phishing activity within the same email thread with a specific target and subsequently delivered a URL that hosted an archive file with an MSI that loaded RMM payloads."
+          ],
+          [
+            "UNK_SmudgedSerpent’s first identified campaign within Proofpoint data spoofed a member of the Brookings Institute reaching out to over 20 members of a United States-based think tank in mid-June 2025."
+          ],
+          [
+            "The attackers’ approach impersonated Suzanne Maloney – the vice president and director of the Foreign Policy program at the Brookings Institution and an expert on Iran – using a Gmail address and misspelled version of her name, “Suzzane Maloney.”\nFigure 2."
+          ],
+          [
+            "At the delivery stage, the actor began to deviate from TA453’s typical TTPs and sent a link appearing to be an OnlyOffice URL belonging to \"Suzzane Maloney” (again spelled incorrectly) with documents relevant to the upcoming meeting."
+          ],
+          [
+            "The URL was only masquerading as an OnlyOffice link in the email but instead hyperlinked to a health-themed attacker domain thebesthomehealth[.]com, which redirected to a second health-themed attacker domain mosaichealthsolutions[.]com that displayed a Microsoft 365 login page."
+          ],
+          [
+            "The URL hosted a customized credential harvesting page with the user’s information pre-loaded."
+          ],
+          [
+            "Before the email exchange discussed ended on 26 June, Proofpoint identified an additional Gmail account on 23 June spoofing Dr.",
+            "Maloney (with her name spelled correctly) – suzannemaloney68@gmail[.]com – targeting a US-based academic that appeared to be Israeli."
+          ],
+          [
+            "In early August 2025, UNK_SmudgedSerpent surfaced again, this time soliciting information and collaboration on Iran’s efforts in Latin America.",
+            "The phishing email originated from another spoof of Patrick Clawson, this time using an Outlook email address: patrick.clawson51@outlook[.]com.",
+            "However, the email in the signature did not match and included both potentially legitimate emails and patrickclawson51@gmail[.]com, which was the previously used spoofed email."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Hiring Portal.zip contained two DLLs and an executable; the legitimate EXE sideloads userenv.dlland through another legitimate EXE, sideloads xmllite.exe.",
+            "userenv.dll is a TA455 custom backdoor termed MiniJunk in public reporting, a version of previously reported malware called MiniBike."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1585",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1585",
+        "edges": [
+          "EDGE_2",
+          "EDGE_14",
+          "EDGE_16",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            28,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers’ approach impersonated Suzanne Maloney – the vice president and director of the Foreign Policy program at the Brookings Institution and an expert on Iran – using a Gmail address and misspelled version of her name, “Suzzane Maloney.”\nFigure 2."
+          ],
+          [
+            "Before the email exchange discussed ended on 26 June, Proofpoint identified an additional Gmail account on 23 June spoofing Dr.",
+            "Maloney (with her name spelled correctly) – suzannemaloney68@gmail[.]com – targeting a US-based academic that appeared to be Israeli."
+          ],
+          [
+            "In early August 2025, UNK_SmudgedSerpent surfaced again, this time soliciting information and collaboration on Iran’s efforts in Latin America.",
+            "The phishing email originated from another spoof of Patrick Clawson, this time using an Outlook email address: patrick.clawson51@outlook[.]com.",
+            "However, the email in the signature did not match and included both potentially legitimate emails and patrickclawson51@gmail[.]com, which was the previously used spoofed email."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1589",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1589",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The URL hosted a customized credential harvesting page with the user’s information pre-loaded."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0afb5194242e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "thebesthomehealth[.]com",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          18,
+          20
+        ],
+        "span_sentences": [
+          "The URL was only masquerading as an OnlyOffice link in the email but instead hyperlinked to a health-themed attacker domain thebesthomehealth[.]com, which redirected to a second health-themed attacker domain mosaichealthsolutions[.]com that displayed a Microsoft 365 login page.",
+          "In Proofpoint’s investigation, after the target communicated suspicions about the credential harvesting page, UNK_SmudgedSerpent removed the password requirement on the initial thebesthomehealth[.]com URL."
+        ]
+      },
+      {
+        "node_id": "IOC_1a2d45574d40",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "mosaichealthsolutions[.]com",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The URL was only masquerading as an OnlyOffice link in the email but instead hyperlinked to a health-themed attacker domain thebesthomehealth[.]com, which redirected to a second health-themed attacker domain mosaichealthsolutions[.]com that displayed a Microsoft 365 login page."
+        ]
+      },
+      {
+        "node_id": "IOC_3ca5d48e43fe",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "patrickclawson51@gmail[.]com",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "However, the email in the signature did not match and included both potentially legitimate emails and patrickclawson51@gmail[.]com, which was the previously used spoofed email."
+        ]
+      },
+      {
+        "node_id": "IOC_85d911d51c9e",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "suzannemaloney68@gmail[.]com",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "Maloney (with her name spelled correctly) – suzannemaloney68@gmail[.]com – targeting a US-based academic that appeared to be Israeli."
+        ]
+      },
+      {
+        "node_id": "IOC_862755646ac3",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "patrick.clawson51@outlook[.]com",
+        "edges": [
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The phishing email originated from another spoof of Patrick Clawson, this time using an Outlook email address: patrick.clawson51@outlook[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_9fe85c3eab44",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ebixcareers[.]com",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "healthcrescent[.]com shares server configuration similarities with a set of domains, including ebixcareers[.]com, that displays a fake Teams portal."
+        ]
+      },
+      {
+        "node_id": "IOC_ccf50ecdb254",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "healthcrescent[.]com",
+        "edges": [],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "Investigating suspected UNK_SmudgedSerpent infrastructure, such as healthcrescent[.]com, surfaced additional activity that further complicates UNK_SmudgedSerpent’s relationship and overlaps with TA455."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0430ce37f014",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0430ce37f014",
+      "node_v": "TTP_T1585"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0430ce37f014",
+      "node_v": "TTP_T1589"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_0576e1dd1c38",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_514a571a8043",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_6043f7d854a6",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_7b33adfdc069",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_80a2f4be33aa",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_926180af8da9",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_b562bbc01b7b",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_0afb5194242e",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_1a2d45574d40",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_3ca5d48e43fe",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_3ca5d48e43fe",
+      "node_v": "TTP_T1585"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_85d911d51c9e",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_85d911d51c9e",
+      "node_v": "TTP_T1585"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_862755646ac3",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_862755646ac3",
+      "node_v": "TTP_T1585"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_9fe85c3eab44",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

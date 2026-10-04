@@ -1,0 +1,1347 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_082118261122",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical infrastructure",
+        "edges": [],
+        "source": {
+          "critical infrastructure_blog.talosintelligence.com_voidlink": [
+            [
+              41,
+              "Linux is a particularly large landscape, with the Internet of Things (IoT) and critical infrastructure heavily relying on the Linux OS."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_14caf66a9090",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Kubernetes",
+        "edges": [
+          "EDGE_28b7b876df9b"
+        ],
+        "source": {
+          "Kubernetes_blog.talosintelligence.com_voidlink": [
+            [
+              44,
+              "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1aa8ec1ebecd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Sliver",
+        "edges": [],
+        "source": {
+          "Sliver_blog.talosintelligence.com_voidlink": [
+            [
+              23,
+              "There were obvious inspirations from CobaltStrike and Sliver; however, one fundamental difference was the single file infrastructure and the lack of integrated initial infector vector."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1db8281b3bf6",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Manjusaka",
+        "edges": [],
+        "source": {
+          "Manjusaka_blog.talosintelligence.com_voidlink": [
+            [
+              6,
+              "Modular frameworks are prevalent on the landscape today with the likes of Cobalt Strike, Manjusaka, Alchimist, and SuperShell among the many operating today."
+            ],
+            [
+              21,
+              "The future of attack frameworks\nTalos has been tracking fast deployment frameworks since 2022, with reports on Manjusaka and Alchimist/Insekt."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2d7bd41c8263",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "technology sector",
+        "edges": [],
+        "source": {
+          "technology sector_blog.talosintelligence.com_voidlink": [
+            [
+              16,
+              "With regard to victimology, UAT-9921 appears to focus on the technology sector, but we have also seen victims from financial services."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_38f5869ffd27",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-9921",
+        "edges": [
+          "EDGE_1de8cd6730b2",
+          "EDGE_32b308075b7a",
+          "EDGE_a2c12fc6ab0e",
+          "EDGE_c291ed3561ef",
+          "EDGE_c9b15e1dcf1e",
+          "EDGE_3d08046fd423",
+          "EDGE_40e550c9ca86"
+        ],
+        "source": {
+          "UAT-9921_blog.talosintelligence.com_voidlink": [
+            [
+              0,
+              "Cisco Talos recently discovered a new threat actor, UAT-9921, leveraging VoidLink in campaigns."
+            ],
+            [
+              8,
+              "Cisco Talos is tracking the threat actor first seen to be using the VoidLink framework as UAT-9921."
+            ],
+            [
+              10,
+              "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+            ],
+            [
+              11,
+              "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project."
+            ],
+            [
+              13,
+              "In their post-compromise activities, UAT-9921 deploys the VoidLink implant."
+            ],
+            [
+              15,
+              "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+            ],
+            [
+              16,
+              "With regard to victimology, UAT-9921 appears to focus on the technology sector, but we have also seen victims from financial services."
+            ],
+            [
+              18,
+              "Given VoidLink’s auditability and oversight features, it is worth noting that even though UAT-9921 activity involves usage of exploits and pre-obtained credentials, Talos cannot discount the possibility that this activity is part of red team exercises."
+            ]
+          ],
+          "UAT-9921_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              0,
+              "A previously unknown threat actor tracked as UAT-9921 has been observed leveraging a new modular framework called VoidLink in its campaigns targeting the technology and financial services sectors, according to findings from Cisco Talos."
+            ],
+            [
+              2,
+              "\"UAT-9921 uses compromised hosts to install VoidLink command-and-control (C2), which are then used to launch scanning activities both internal and external to the network.\"\nVoidLink was first documented by Check Point last month, describing it as a feature-rich malware framework written in Zig designed for long-term, stealthy access to Linux-based cloud environments."
+            ],
+            [
+              5,
+              "Per Talos, UAT-9921 is believed to possess knowledge of the Chinese language, given the language of the framework and code comments present in it."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3b05bc5922dc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Alchimist",
+        "edges": [],
+        "source": {
+          "Alchimist_blog.talosintelligence.com_voidlink": [
+            [
+              6,
+              "Modular frameworks are prevalent on the landscape today with the likes of Cobalt Strike, Manjusaka, Alchimist, and SuperShell among the many operating today."
+            ],
+            [
+              21,
+              "The future of attack frameworks\nTalos has been tracking fast deployment frameworks since 2022, with reports on Manjusaka and Alchimist/Insekt."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_677e23cc4c1c"
+        ],
+        "source": {
+          "Windows_blog.talosintelligence.com_voidlink": [
+            [
+              3,
+              "- Cisco Talos found clear indications that implants also exist for Windows, with the capability to load plugins."
+            ],
+            [
+              36,
+              "Talos has found clear indications that the main implant has been compiled for Windows and that it can load plugins via dynamic-link library (DLL) sideloading."
+            ],
+            [
+              39,
+              "Most of the modular frameworks Talos observes support a wide variety of platforms typically inclusive of Linux, Windows, and MacOS — but VoidLink is different."
+            ]
+          ],
+          "Windows_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              19,
+              "What's more, there are signs that there exists a main implant that has been compiled for Windows and can load plugins via a technique called DLL side-loading."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "source": {
+          "Cisco Talos_blog.talosintelligence.com_voidlink": [
+            [
+              0,
+              "Cisco Talos recently discovered a new threat actor, UAT-9921, leveraging VoidLink in campaigns."
+            ],
+            [
+              3,
+              "- Cisco Talos found clear indications that implants also exist for Windows, with the capability to load plugins."
+            ],
+            [
+              8,
+              "Cisco Talos is tracking the threat actor first seen to be using the VoidLink framework as UAT-9921."
+            ],
+            [
+              10,
+              "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+            ],
+            [
+              11,
+              "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project."
+            ],
+            [
+              19,
+              "Talos is aware of multiple VoidLink-related victims dating back to September with the activity continuing through to January 2026."
+            ],
+            [
+              21,
+              "The future of attack frameworks\nTalos has been tracking fast deployment frameworks since 2022, with reports on Manjusaka and Alchimist/Insekt."
+            ],
+            [
+              32,
+              "The development timeline reported by Checkpoint Research indicates that this is a near-production-ready proof of concept."
+            ],
+            [
+              36,
+              "Talos has found clear indications that the main implant has been compiled for Windows and that it can load plugins via dynamic-link library (DLL) sideloading."
+            ]
+          ],
+          "Cisco Talos_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              0,
+              "A previously unknown threat actor tracked as UAT-9921 has been observed leveraging a new modular framework called VoidLink in its campaigns targeting the technology and financial services sectors, according to findings from Cisco Talos."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_531a5dcd0341",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial services",
+        "edges": [],
+        "source": {
+          "financial services_blog.talosintelligence.com_voidlink": [
+            [
+              16,
+              "With regard to victimology, UAT-9921 appears to focus on the technology sector, but we have also seen victims from financial services."
+            ]
+          ],
+          "financial services_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              0,
+              "A previously unknown threat actor tracked as UAT-9921 has been observed leveraging a new modular framework called VoidLink in its campaigns targeting the technology and financial services sectors, according to findings from Cisco Talos."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_57a032eb4fc3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Apache Dubbo",
+        "edges": [
+          "EDGE_53fb2250d9ff"
+        ],
+        "source": {
+          "Apache Dubbo_blog.talosintelligence.com_voidlink": [
+            [
+              11,
+              "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [],
+        "source": {
+          "Cobalt Strike_blog.talosintelligence.com_voidlink": [
+            [
+              6,
+              "Modular frameworks are prevalent on the landscape today with the likes of Cobalt Strike, Manjusaka, Alchimist, and SuperShell among the many operating today."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_96e6259a61f6",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "VoidLink",
+        "edges": [
+          "EDGE_38d3209b46d7",
+          "EDGE_48b52b1de2fb",
+          "EDGE_606581d056be",
+          "EDGE_8a4ec021e4f4",
+          "EDGE_acc816cdf093",
+          "EDGE_e2febf118cff",
+          "EDGE_ff6c3bb0bc50"
+        ],
+        "source": {
+          "VoidLink_blog.talosintelligence.com_voidlink": [
+            [
+              0,
+              "Cisco Talos recently discovered a new threat actor, UAT-9921, leveraging VoidLink in campaigns."
+            ],
+            [
+              1,
+              "Their activities may go as far back as 2019, even without VoidLink."
+            ],
+            [
+              2,
+              "- The VoidLink compile-on-demand feature lays down the foundations for AI-enabled attack frameworks, which can create tools on-demand for their operators."
+            ],
+            [
+              4,
+              "- VoidLink is a near-production-ready proof of concept for an enterprise grade implant management framework, and features auditability and oversight for non-operators."
+            ],
+            [
+              5,
+              "VoidLink is a new modular framework that targets Linux based systems."
+            ],
+            [
+              8,
+              "Cisco Talos is tracking the threat actor first seen to be using the VoidLink framework as UAT-9921."
+            ],
+            [
+              10,
+              "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+            ],
+            [
+              13,
+              "In their post-compromise activities, UAT-9921 deploys the VoidLink implant."
+            ],
+            [
+              14,
+              "This allows the threat actor to hide their presence and the VoidLink C2, once deployed."
+            ],
+            [
+              17,
+              "However, the cloud-aware nature of VoidLink and scanning of entire Class C networks indicates that there is no specific targeting."
+            ],
+            [
+              18,
+              "Given VoidLink’s auditability and oversight features, it is worth noting that even though UAT-9921 activity involves usage of exploits and pre-obtained credentials, Talos cannot discount the possibility that this activity is part of red team exercises."
+            ],
+            [
+              19,
+              "Talos is aware of multiple VoidLink-related victims dating back to September with the activity continuing through to January 2026."
+            ],
+            [
+              24,
+              "The VoidLink framework represents a giant leap in this predictable evolution, while keeping the same, single file infrastructure philosophy."
+            ],
+            [
+              25,
+              "The development of VoidLink was fast, supported on AI-enabled integrated development environments."
+            ],
+            [
+              29,
+              "VoidLink contains features that make it “defense contractor grade,” such as the auditability of all actions and the existence of a role-based access control (RBAC)."
+            ],
+            [
+              33,
+              "Most frameworks support Windows and MacOS from their early stages of development; VoidLink only appears to have implants developed for Linux, although the implant code is written in such a way that can easily be adapted to other languages."
+            ],
+            [
+              40,
+              "The VoidLink framework specifically targets Linux devices without any current support for Windows or MacOS."
+            ],
+            [
+              42,
+              "As with most frameworks, VoidLink can generate implants consisting of a variety of plugins."
+            ],
+            [
+              44,
+              "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ae90ec3ddffb",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Insekt",
+        "edges": [],
+        "source": {
+          "Insekt_blog.talosintelligence.com_voidlink": [
+            [
+              21,
+              "The future of attack frameworks\nTalos has been tracking fast deployment frameworks since 2022, with reports on Manjusaka and Alchimist/Insekt."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b07e83768d2c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "MacOS",
+        "edges": [],
+        "source": {
+          "MacOS_blog.talosintelligence.com_voidlink": [
+            [
+              39,
+              "Most of the modular frameworks Talos observes support a wide variety of platforms typically inclusive of Linux, Windows, and MacOS — but VoidLink is different."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b5c80a85c121",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "FSCAN",
+        "edges": [
+          "EDGE_53150a700f08"
+        ],
+        "source": {
+          "FSCAN_blog.talosintelligence.com_voidlink": [
+            [
+              15,
+              "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+            ]
+          ],
+          "Fscan_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              8,
+              "The threat actor has also been observed deploying a SOCKS proxy on compromised servers to launch scans for internal reconnaissance and lateral movement using open-source tools like Fscan."
+            ]
+          ]
+        },
+        "alias": [
+          "Fscan"
+        ]
+      },
+      {
+        "node_id": "HL_b7b42a22e626",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Docker",
+        "edges": [
+          "EDGE_d2844694fbbc"
+        ],
+        "source": {
+          "Docker_blog.talosintelligence.com_voidlink": [
+            [
+              44,
+              "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "edges": [],
+        "source": {
+          "Linux_blog.talosintelligence.com_voidlink": [
+            [
+              27,
+              "It supports compilation on demand for plugins, providing support for the different Linux distributions that might be targeted."
+            ],
+            [
+              33,
+              "Most frameworks support Windows and MacOS from their early stages of development; VoidLink only appears to have implants developed for Linux, although the implant code is written in such a way that can easily be adapted to other languages."
+            ],
+            [
+              37,
+              "The Linux implants have advanced features, such as an eBPF or Loadable Kernel Module (LKM) based rootkit, container privilege escalation, and sandbox escape."
+            ],
+            [
+              38,
+              "These are often related with the server side, but there are a multitude of plugins in the implant targeting Linux as a desktop and not a server, something which is not often seen on malware since the Linux desktop base is not as prevalent as Windows or MacOS."
+            ],
+            [
+              40,
+              "The VoidLink framework specifically targets Linux devices without any current support for Windows or MacOS."
+            ],
+            [
+              41,
+              "Linux is a particularly large landscape, with the Internet of Things (IoT) and critical infrastructure heavily relying on the Linux OS."
+            ]
+          ],
+          "Linux_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              11,
+              "It supports compilation on demand for plugins, providing support for the different Linux distributions that might be targeted."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ef7d7a6b57f2",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Internet of Things (IoT)",
+        "edges": [],
+        "source": {
+          "Internet of Things (IoT)_blog.talosintelligence.com_voidlink": [
+            [
+              41,
+              "Linux is a particularly large landscape, with the Internet of Things (IoT) and critical infrastructure heavily relying on the Linux OS."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f19b9877d34e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SuperShell",
+        "edges": [],
+        "source": {
+          "SuperShell_blog.talosintelligence.com_voidlink": [
+            [
+              6,
+              "Modular frameworks are prevalent on the landscape today with the likes of Cobalt Strike, Manjusaka, Alchimist, and SuperShell among the many operating today."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_132cf6ae8435",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "The Hacker News",
+        "edges": [],
+        "source": {
+          "The Hacker News_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              10,
+              "When reached for comment regarding the latest findings, Pedro Drimel Neto, malware analysis lead at Check Point Software, told The Hacker News via email that they have not observed evidence of VoidLink \"being used as of September 2025 and threat actor activity since 2019,\" and that \"we cannot independently verify activity outside of the datasets and sources available to us.\"\nVoidLink uses three different programming languages: ZigLang for the implant, C for the plugins, and GoLang for the backend."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1347b4b1a08e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ontinue",
+        "edges": [],
+        "source": {
+          "Ontinue_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              4,
+              "In another analysis published earlier this week, Ontinue pointed out that the emergence of VoidLink presents a new concern where LLM-generated implants, packed with kernel-level rootkits and features to target cloud environments, can further lower the skill barrier required to produce hard-to-detect malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_350da80d41e8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "VoidLink",
+        "edges": [
+          "EDGE_0e17aa66694d",
+          "EDGE_62089595823a",
+          "EDGE_9b8a66eedc3f",
+          "EDGE_e3bc9186ed9e"
+        ],
+        "source": {
+          "VoidLink_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              0,
+              "A previously unknown threat actor tracked as UAT-9921 has been observed leveraging a new modular framework called VoidLink in its campaigns targeting the technology and financial services sectors, according to findings from Cisco Talos."
+            ],
+            [
+              2,
+              "\"UAT-9921 uses compromised hosts to install VoidLink command-and-control (C2), which are then used to launch scanning activities both internal and external to the network.\"\nVoidLink was first documented by Check Point last month, describing it as a feature-rich malware framework written in Zig designed for long-term, stealthy access to Linux-based cloud environments."
+            ],
+            [
+              4,
+              "In another analysis published earlier this week, Ontinue pointed out that the emergence of VoidLink presents a new concern where LLM-generated implants, packed with kernel-level rootkits and features to target cloud environments, can further lower the skill barrier required to produce hard-to-detect malware."
+            ],
+            [
+              6,
+              "\"The operators deploying VoidLink have access to the source code of some [kernel] modules and some tools to interact with the implants without the C2,\" the researchers noted."
+            ],
+            [
+              7,
+              "\"This indicates inner knowledge of the communication protocols of the implants.\"\nVoidLink is deployed as a post-compromise tool, allowing the adversary to sidestep detection."
+            ],
+            [
+              9,
+              "The cybersecurity company said it's aware of multiple VoidLink-related victims dating back to September 2025, indicating that work on the malware may have commenced much earlier than the November 2025 timeline pieced together by Check Point."
+            ],
+            [
+              10,
+              "When reached for comment regarding the latest findings, Pedro Drimel Neto, malware analysis lead at Check Point Software, told The Hacker News via email that they have not observed evidence of VoidLink \"being used as of September 2025 and threat actor activity since 2019,\" and that \"we cannot independently verify activity outside of the datasets and sources available to us.\"\nVoidLink uses three different programming languages: ZigLang for the implant, C for the plugins, and GoLang for the backend."
+            ],
+            [
+              16,
+              "With the current VoidLink compile-on-demand capability, integrating such a feature should not be complex."
+            ],
+            [
+              17,
+              "Another defining trait of VoidLink is its auditability and the existence of a role-based access control (RBAC) mechanism, which consists of three role levels: SuperAdmin, Operator, and Viewer."
+            ],
+            [
+              21,
+              "\"VoidLink is positioned to become an even more powerful framework based on its capabilities and flexibility.\""
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6acb3b643fdc",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Check Point",
+        "edges": [],
+        "source": {
+          "Check Point_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              2,
+              "\"UAT-9921 uses compromised hosts to install VoidLink command-and-control (C2), which are then used to launch scanning activities both internal and external to the network.\"\nVoidLink was first documented by Check Point last month, describing it as a feature-rich malware framework written in Zig designed for long-term, stealthy access to Linux-based cloud environments."
+            ],
+            [
+              9,
+              "The cybersecurity company said it's aware of multiple VoidLink-related victims dating back to September 2025, indicating that work on the malware may have commenced much earlier than the November 2025 timeline pieced together by Check Point."
+            ],
+            [
+              10,
+              "When reached for comment regarding the latest findings, Pedro Drimel Neto, malware analysis lead at Check Point Software, told The Hacker News via email that they have not observed evidence of VoidLink \"being used as of September 2025 and threat actor activity since 2019,\" and that \"we cannot independently verify activity outside of the datasets and sources available to us.\"\nVoidLink uses three different programming languages: ZigLang for the implant, C for the plugins, and GoLang for the backend."
+            ]
+          ],
+          "Check Point Software_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              10,
+              "When reached for comment regarding the latest findings, Pedro Drimel Neto, malware analysis lead at Check Point Software, told The Hacker News via email that they have not observed evidence of VoidLink \"being used as of September 2025 and threat actor activity since 2019,\" and that \"we cannot independently verify activity outside of the datasets and sources available to us.\"\nVoidLink uses three different programming languages: ZigLang for the implant, C for the plugins, and GoLang for the backend."
+            ]
+          ],
+          "Checkpoint Research_blog.talosintelligence.com_voidlink": [
+            [
+              20,
+              "This finding does not necessarily contradict the Checkpoint Research mentions of late November since the presented documents show development dates from version 2.0 and Cisco Talos assesses that this was still version 1.0."
+            ],
+            [
+              32,
+              "The development timeline reported by Checkpoint Research indicates that this is a near-production-ready proof of concept."
+            ]
+          ]
+        },
+        "alias": [
+          "Check Point Software",
+          "Checkpoint Research"
+        ]
+      },
+      {
+        "node_id": "HL_d8bc8e5105ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GoLang",
+        "edges": [],
+        "source": {
+          "GoLang_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              10,
+              "When reached for comment regarding the latest findings, Pedro Drimel Neto, malware analysis lead at Check Point Software, told The Hacker News via email that they have not observed evidence of VoidLink \"being used as of September 2025 and threat actor activity since 2019,\" and that \"we cannot independently verify activity outside of the datasets and sources available to us.\"\nVoidLink uses three different programming languages: ZigLang for the implant, C for the plugins, and GoLang for the backend."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f4d6eee05b7f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ZigLang",
+        "edges": [],
+        "source": {
+          "ZigLang_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": [
+            [
+              10,
+              "When reached for comment regarding the latest findings, Pedro Drimel Neto, malware analysis lead at Check Point Software, told The Hacker News via email that they have not observed evidence of VoidLink \"being used as of September 2025 and threat actor activity since 2019,\" and that \"we cannot independently verify activity outside of the datasets and sources available to us.\"\nVoidLink uses three different programming languages: ZigLang for the implant, C for the plugins, and GoLang for the backend."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+            "This allows the threat actor to hide their presence and the VoidLink C2, once deployed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_ff6c3bb0bc50"
+        ],
+        "source": {
+          "TTP:T1027_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                13,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+                "This allows the threat actor to hide their presence and the VoidLink C2, once deployed."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_1de8cd6730b2",
+          "EDGE_53150a700f08",
+          "EDGE_606581d056be",
+          "EDGE_e3bc9186ed9e"
+        ],
+        "source": {
+          "TTP:T1046_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+              ]
+            ]
+          },
+          "TTP:T1046_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                8,
+                8
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"UAT-9921 uses compromised hosts to install VoidLink command-and-control (C2), which are then used to launch scanning activities both internal and external to the network.\"\nVoidLink was first documented by Check Point last month, describing it as a feature-rich malware framework written in Zig designed for long-term, stealthy access to Linux-based cloud environments."
+              ],
+              [
+                "The threat actor has also been observed deploying a SOCKS proxy on compromised servers to launch scans for internal reconnaissance and lateral movement using open-source tools like Fscan."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project.",
+            "We also found indications of possible initial compromise via malicious documents, but no samples were obtained.",
+            "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+            "This allows the threat actor to hide their presence and the VoidLink C2, once deployed.",
+            "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_c291ed3561ef"
+        ],
+        "source": {
+          "TTP:T1078_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                11,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project.",
+                "We also found indications of possible initial compromise via malicious documents, but no samples were obtained.",
+                "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+                "This allows the threat actor to hide their presence and the VoidLink C2, once deployed.",
+                "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+          ],
+          [
+            "The mesh peer-to-peer (P2P) and dead-letter queue routing capabilities allow some implants to communicate with others, creating hidden networks with-in the same environment allowing the bypass of network access restrictions, as one implant may serve as external gateway for other implants."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_32b308075b7a"
+        ],
+        "source": {
+          "TTP:T1090_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ],
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+              ],
+              [
+                "The mesh peer-to-peer (P2P) and dead-letter queue routing capabilities allow some implants to communicate with others, creating hidden networks with-in the same environment allowing the bypass of network access restrictions, as one implant may serve as external gateway for other implants."
+              ]
+            ]
+          },
+          "TTP:T1090_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": {
+            "best_span_ranges": [
+              [
+                8,
+                8
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The threat actor has also been observed deploying a SOCKS proxy on compromised servers to launch scans for internal reconnaissance and lateral movement using open-source tools like Fscan."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "- Cisco Talos found clear indications that implants also exist for Windows, with the capability to load plugins."
+          ],
+          [
+            "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_8a4ec021e4f4",
+          "EDGE_a2c12fc6ab0e",
+          "EDGE_9b8a66eedc3f"
+        ],
+        "source": {
+          "TTP:T1105_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                10,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- Cisco Talos found clear indications that implants also exist for Windows, with the capability to load plugins."
+              ],
+              [
+                "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+              ]
+            ]
+          },
+          "TTP:T1105_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"UAT-9921 uses compromised hosts to install VoidLink command-and-control (C2), which are then used to launch scanning activities both internal and external to the network.\"\nVoidLink was first documented by Check Point last month, describing it as a feature-rich malware framework written in Zig designed for long-term, stealthy access to Linux-based cloud environments."
+              ],
+              [
+                "\"The C2 will provide that implant with a plugin to read a specific database the operator has found or an exploit for a known vulnerability, which just happens to be on an internal web server,\" Talos said."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project.",
+            "We also found indications of possible initial compromise via malicious documents, but no samples were obtained.",
+            "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+            "This allows the threat actor to hide their presence and the VoidLink C2, once deployed.",
+            "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_53fb2250d9ff",
+          "EDGE_c9b15e1dcf1e"
+        ],
+        "source": {
+          "TTP:T1190_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                11,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project.",
+                "We also found indications of possible initial compromise via malicious documents, but no samples were obtained.",
+                "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+                "This allows the threat actor to hide their presence and the VoidLink C2, once deployed.",
+                "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1215",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1215",
+        "ttp_id": "T1215",
+        "best_span_sentences_list": [
+          [
+            "The Linux implants have advanced features, such as an eBPF or Loadable Kernel Module (LKM) based rootkit, container privilege escalation, and sandbox escape."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_48b52b1de2fb"
+        ],
+        "source": {
+          "TTP:T1215_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                37,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The Linux implants have advanced features, such as an eBPF or Loadable Kernel Module (LKM) based rootkit, container privilege escalation, and sandbox escape."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "It has stealth mechanisms in place, including the ability to detect endpoint detection and response (EDR) solutions and create an evasion strategy based on the findings."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "edges": [
+          "EDGE_acc816cdf093",
+          "EDGE_0e17aa66694d",
+          "EDGE_3d08046fd423"
+        ],
+        "source": {
+          "TTP:T1562_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                45,
+                45
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It has stealth mechanisms in place, including the ability to detect endpoint detection and response (EDR) solutions and create an evasion strategy based on the findings."
+              ]
+            ]
+          },
+          "TTP:T1562_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": {
+            "best_span_ranges": [
+              [
+                13,
+                13
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The framework also comes fitted with a wide range of stealth mechanisms to hinder analysis, prevent its removal from the infected hosts, and even detect endpoint detection and response (EDR) solutions and devise an evasion strategy on the fly."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "Talos has found clear indications that the main implant has been compiled for Windows and that it can load plugins via dynamic-link library (DLL) sideloading."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_677e23cc4c1c",
+          "EDGE_e2febf118cff",
+          "EDGE_40e550c9ca86",
+          "EDGE_62089595823a"
+        ],
+        "source": {
+          "TTP:T1574_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                36,
+                36
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Talos has found clear indications that the main implant has been compiled for Windows and that it can load plugins via dynamic-link library (DLL) sideloading."
+              ]
+            ]
+          },
+          "TTP:T1574_thehackernews.com_2026_02_uat-9921-deploys-voidlink-malware-to.html": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "What's more, there are signs that there exists a main implant that has been compiled for Windows and can load plugins via a technique called DLL side-loading."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1613",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1613",
+        "ttp_id": "T1613",
+        "best_span_sentences_list": [
+          [
+            "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            44
+          ]
+        ],
+        "edges": [
+          "EDGE_28b7b876df9b",
+          "EDGE_38d3209b46d7",
+          "EDGE_d2844694fbbc"
+        ],
+        "source": {
+          "TTP:T1613_blog.talosintelligence.com_voidlink": {
+            "best_span_ranges": [
+              [
+                44,
+                44
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1de8cd6730b2",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_28b7b876df9b",
+      "node_u": "HL_14caf66a9090",
+      "node_v": "TTP_T1613",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_32b308075b7a",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_38d3209b46d7",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1613",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_48b52b1de2fb",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1215",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_53150a700f08",
+      "node_u": "HL_b5c80a85c121",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_53fb2250d9ff",
+      "node_u": "HL_57a032eb4fc3",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_606581d056be",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_677e23cc4c1c",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8a4ec021e4f4",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a2c12fc6ab0e",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_acc816cdf093",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c291ed3561ef",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c9b15e1dcf1e",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d2844694fbbc",
+      "node_u": "HL_b7b42a22e626",
+      "node_v": "TTP_T1613",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e2febf118cff",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ff6c3bb0bc50",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0e17aa66694d",
+      "node_u": "HL_350da80d41e8",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3d08046fd423",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_40e550c9ca86",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_62089595823a",
+      "node_u": "HL_350da80d41e8",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9b8a66eedc3f",
+      "node_u": "HL_350da80d41e8",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e3bc9186ed9e",
+      "node_u": "HL_350da80d41e8",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

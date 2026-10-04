@@ -1,0 +1,989 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "We attribute this operation to PlushDaemon – a China-aligned threat actor active since at least 2019, engaging in espionage operations against individuals and entities in China, Taiwan, Hong Kong, South Korea, the United States, and New Zealand."
+        ]
+      },
+      {
+        "node_id": "HL_2eb2909e5b69",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Visual Studio",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "If the processes are not running, it executes PerfWatson.exe (originally a legitimate command line utility named regcap.exe, included in Visual Studio), which the attackers abuse to side-load lregdll.dll."
+        ]
+      },
+      {
+        "node_id": "HL_3371dcf2599a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Japan",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The two oldest cases registered in our telemetry were a victim from Japan in November 2023, and a victim from China in December 2023."
+        ]
+      },
+      {
+        "node_id": "HL_38c124e184e3",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "PlushDaemon",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          5,
+          48,
+          50
+        ],
+        "span_sentences": [
+          "ESET researchers have discovered a supply-chain attack against a VPN provider in South Korea by a new China-aligned APT group we have named PlushDaemon\nESET researchers provide details on a previously undisclosed China-aligned APT group that we track as PlushDaemon and one of its cyberespionage operations: the supply-chain compromise in 2023 of VPN software developed by a South Korean company, where the attackers replaced the legitimate installer with one that also deployed the group’s signature implant that we have named SlowStepper – a feature-rich backdoor with a toolkit of more than 30 components.",
+          "We attribute this operation to PlushDaemon – a China-aligned threat actor active since at least 2019, engaging in espionage operations against individuals and entities in China, Taiwan, Hong Kong, South Korea, the United States, and New Zealand.",
+          "PlushDaemon uses a custom backdoor that we track as SlowStepper, and its main initial access technique is to hijack legitimate updates by redirecting traffic to attacker-controlled servers.",
+          "We also documented the SlowStepper backdoor, used exclusively by PlushDaemon.",
+          "The numerous components in the PlushDaemon toolset, and its rich version history, show that, while previously unknown, this China-aligned APT group has been operating diligently to develop a wide array of tools, making it a significant threat to watch for."
+        ]
+      },
+      {
+        "node_id": "HL_4b33f91b89da",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Hong Kong",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "We attribute this operation to PlushDaemon – a China-aligned threat actor active since at least 2019, engaging in espionage operations against individuals and entities in China, Taiwan, Hong Kong, South Korea, the United States, and New Zealand."
+        ]
+      },
+      {
+        "node_id": "HL_4f8e8c3bfc33",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "NSIS",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          7
+        ],
+        "span_sentences": [
+          "In May 2024, we noticed detections of malicious code in an NSIS installer for Windows that users from South Korea had downloaded from the website of the legitimate VPN software IPany (https://ipany.kr/; see Figure 1), which is developed by a South Korean company.",
+          "The victims appear to have manually downloaded a ZIP archive containing a malicious NSIS installer from the URL https://ipany[.]kr/download/IPanyVPNsetup.zip."
+        ]
+      },
+      {
+        "node_id": "HL_83e8f14641a2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "IPany",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          8,
+          11,
+          15,
+          25
+        ],
+        "span_sentences": [
+          "In May 2024, we noticed detections of malicious code in an NSIS installer for Windows that users from South Korea had downloaded from the website of the legitimate VPN software IPany (https://ipany.kr/; see Figure 1), which is developed by a South Korean company.",
+          "We found no suspicious code on the download page (shown in Figure 1) to produce targeted downloads, for example by geofencing to specific targeted regions or IP ranges; therefore, we believe that anyone using the IPany VPN might have been a valid target.",
+          "As illustrated in Figure 2, when the malicious IPanyVPNsetup.exe installer is executed, it creates several directories and deploys both legitimate and malicious files.",
+          "When IPanyVPNSetup.exe calls ExitProcess, the patched bytes redirect execution to the shellcode that loads EncMgr.pkg into memory and executes it.",
+          "Although the code contains hundreds of functions, the particular variant used in the supply-chain compromise of the IPany VPN software appears to be version 0.2.10 Lite, according to the backdoor’s code."
+        ]
+      },
+      {
+        "node_id": "HL_8adcb4fff6f0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GitCode",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The tools were stored in a remote code repository hosted on the Chinese platform GitCode, under the LetMeGo22 account; at the time of writing, the profile was private (Figure 4)."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          9,
+          47
+        ],
+        "span_sentences": [
+          "ESET researchers have discovered a supply-chain attack against a VPN provider in South Korea by a new China-aligned APT group we have named PlushDaemon\nESET researchers provide details on a previously undisclosed China-aligned APT group that we track as PlushDaemon and one of its cyberespionage operations: the supply-chain compromise in 2023 of VPN software developed by a South Korean company, where the attackers replaced the legitimate installer with one that also deployed the group’s signature implant that we have named SlowStepper – a feature-rich backdoor with a toolkit of more than 30 components.",
+          "Via ESET telemetry, we found that several users attempted to install the trojanized software in the network of a semiconductor company and an unidentified software development company in South Korea.",
+          "In this blogpost, we have analyzed a supply-chain attack against a Korean VPN provider, targeting users in East Asia, as evident through the specific software targeted for information collection and confirmed via ESET telemetry."
+        ]
+      },
+      {
+        "node_id": "HL_a7ef74bcfdaf",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "IPany VPN",
+        "edges": [],
+        "sentence_indices": [
+          8,
+          25
+        ],
+        "span_sentences": [
+          "We found no suspicious code on the download page (shown in Figure 1) to produce targeted downloads, for example by geofencing to specific targeted regions or IP ranges; therefore, we believe that anyone using the IPany VPN might have been a valid target.",
+          "Although the code contains hundreds of functions, the particular variant used in the supply-chain compromise of the IPany VPN software appears to be version 0.2.10 Lite, according to the backdoor’s code."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          10
+        ],
+        "span_sentences": [
+          "We attribute this operation to PlushDaemon – a China-aligned threat actor active since at least 2019, engaging in espionage operations against individuals and entities in China, Taiwan, Hong Kong, South Korea, the United States, and New Zealand.",
+          "The two oldest cases registered in our telemetry were a victim from Japan in November 2023, and a victim from China in December 2023."
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "We attribute this operation to PlushDaemon – a China-aligned threat actor active since at least 2019, engaging in espionage operations against individuals and entities in China, Taiwan, Hong Kong, South Korea, the United States, and New Zealand."
+        ]
+      },
+      {
+        "node_id": "HL_b89c22398634",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Alibaba Public DNS",
+        "edges": [],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The query is sent to one of three legitimate, public DNS servers:\n8.8.8.8 – Google Public DNS,\n114.114.114.114 – 114dns.com, or\n223.5.5.5 – Alibaba Public DNS."
+        ]
+      },
+      {
+        "node_id": "HL_cb6e965b7713",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Korea",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          1,
+          4,
+          9
+        ],
+        "span_sentences": [
+          "ESET researchers have discovered a supply-chain attack against a VPN provider in South Korea by a new China-aligned APT group we have named PlushDaemon\nESET researchers provide details on a previously undisclosed China-aligned APT group that we track as PlushDaemon and one of its cyberespionage operations: the supply-chain compromise in 2023 of VPN software developed by a South Korean company, where the attackers replaced the legitimate installer with one that also deployed the group’s signature implant that we have named SlowStepper – a feature-rich backdoor with a toolkit of more than 30 components.",
+          "In May 2024, we noticed detections of malicious code in an NSIS installer for Windows that users from South Korea had downloaded from the website of the legitimate VPN software IPany (https://ipany.kr/; see Figure 1), which is developed by a South Korean company.",
+          "We attribute this operation to PlushDaemon – a China-aligned threat actor active since at least 2019, engaging in espionage operations against individuals and entities in China, Taiwan, Hong Kong, South Korea, the United States, and New Zealand.",
+          "Via ESET telemetry, we found that several users attempted to install the trojanized software in the network of a semiconductor company and an unidentified software development company in South Korea."
+        ]
+      },
+      {
+        "node_id": "HL_e3f661f9228e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Public DNS",
+        "edges": [],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The query is sent to one of three legitimate, public DNS servers:\n8.8.8.8 – Google Public DNS,\n114.114.114.114 – 114dns.com, or\n223.5.5.5 – Alibaba Public DNS."
+        ]
+      },
+      {
+        "node_id": "HL_f141cdf2a1eb",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "New Zealand",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "We attribute this operation to PlushDaemon – a China-aligned threat actor active since at least 2019, engaging in espionage operations against individuals and entities in China, Taiwan, Hong Kong, South Korea, the United States, and New Zealand."
+        ]
+      },
+      {
+        "node_id": "HL_f71440706827",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SlowStepper",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          5,
+          12,
+          21,
+          24,
+          27,
+          36,
+          38,
+          48
+        ],
+        "span_sentences": [
+          "ESET researchers have discovered a supply-chain attack against a VPN provider in South Korea by a new China-aligned APT group we have named PlushDaemon\nESET researchers provide details on a previously undisclosed China-aligned APT group that we track as PlushDaemon and one of its cyberespionage operations: the supply-chain compromise in 2023 of VPN software developed by a South Korean company, where the attackers replaced the legitimate installer with one that also deployed the group’s signature implant that we have named SlowStepper – a feature-rich backdoor with a toolkit of more than 30 components.",
+          "Upon further analysis, we discovered that the installer was deploying both the legitimate software and the backdoor that we’ve named SlowStepper.",
+          "PlushDaemon uses a custom backdoor that we track as SlowStepper, and its main initial access technique is to hijack legitimate updates by redirecting traffic to attacker-controlled servers.",
+          "Additionally, the installer establishes persistence for SlowStepper by adding an entry named IPanyVPN to a Run key, with the value %PUBLIC%\\Documents\\WPSDocuments\\WPSManager\\svcghost.exe, so that the malicious component svcghost.exe (later extracted and deployed by the loader in EncMgr.pkg) is launched when the operating system starts.",
+          "The DLL’s goal is to load the SlowStepper backdoor from the winlogin.gif file.",
+          "SlowStepper is a backdoor developed in C++ with extensive use of object-oriented programming in the C&C communications code.",
+          "The oldest version of the SlowStepper backdoor that we know of is 0.1.7, compiled on 2019-01-31 according to its PE timestamps; the newest one is 0.2.12, compiled on 2024-06-13, and is the full version of the backdoor.",
+          "One of the IP addresses is chosen and SlowStepper connects to the C&C server via TCP to begin its communication protocol.",
+          "SlowStepper has a rather unusual feature: the developers implemented a custom shell, or command line interface, on top of its communication protocol.",
+          "We also documented the SlowStepper backdoor, used exclusively by PlushDaemon."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The code checks whether the first six bytes of the TXT record match &%QT%# and if so, it extracts the rest of the string, which is a base64-encoded AES-encrypted blob containing an array of 10 IP addresses to be used as C&C servers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1057",
+        "edges": [
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The svcghost.exe component performs monitoring of the PerfWatson.exe process, where the backdoor is loaded, ensuring that it is always running."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            39
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "SlowStepper has a rather unusual feature: the developers implemented a custom shell, or command line interface, on top of its communication protocol.",
+            "While the backdoor accepts and handles commands in the traditional way, the 0x3A command activates the interpretation of operator-written commands (Table 4)."
+          ],
+          [
+            "Figure 6 illustrates the execution chain, starting when the operator issues a pycall command to request the execution of a Python module on the compromised machine; here, as an example, the module CollectInfo."
+          ],
+          [
+            "The module named runas is a custom Python script (Figure 8) that loads another custom Python module named help from which it uses the function named run to decrypt the module and execute it."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_5",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_19",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "SlowStepper does not carry the C&C IP address in its configuration; instead, it crafts a DNS query to obtain a TXT record for the domain 7051.gsm.360safe[.]company."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "From the remote repository, the pycall command downloads a ZIP archive that contains the Python interpreter and its supporting libraries."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1129",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1129",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The first malicious component that is loaded by the installer is the AutoMsg.dll loader."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The code checks whether the first six bytes of the TXT record match &%QT%# and if so, it extracts the rest of the string, which is a base64-encoded AES-encrypted blob containing an array of 10 IP addresses to be used as C&C servers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_14",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The module named runas is a custom Python script (Figure 8) that loads another custom Python module named help from which it uses the function named run to decrypt the module and execute it."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_1",
+          "EDGE_8",
+          "EDGE_21",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "ESET researchers have discovered a supply-chain attack against a VPN provider in South Korea by a new China-aligned APT group we have named PlushDaemon\nESET researchers provide details on a previously undisclosed China-aligned APT group that we track as PlushDaemon and one of its cyberespionage operations: the supply-chain compromise in 2023 of VPN software developed by a South Korean company, where the attackers replaced the legitimate installer with one that also deployed the group’s signature implant that we have named SlowStepper – a feature-rich backdoor with a toolkit of more than 30 components."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_9",
+          "EDGE_18",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Additionally, the installer establishes persistence for SlowStepper by adding an entry named IPanyVPN to a Run key, with the value %PUBLIC%\\Documents\\WPSDocuments\\WPSManager\\svcghost.exe, so that the malicious component svcghost.exe (later extracted and deployed by the loader in EncMgr.pkg) is launched when the operating system starts."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_15",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The svcghost.exe component performs monitoring of the PerfWatson.exe process, where the backdoor is loaded, ensuring that it is always running.",
+            "If the processes are not running, it executes PerfWatson.exe (originally a legitimate command line utility named regcap.exe, included in Visual Studio), which the attackers abuse to side-load lregdll.dll.",
+            "The DLL’s goal is to load the SlowStepper backdoor from the winlogin.gif file."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1357e2e4e8ad",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "winlogin.gif",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The DLL’s goal is to load the SlowStepper backdoor from the winlogin.gif file."
+        ]
+      },
+      {
+        "node_id": "IOC_1acac5c99af9",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "regcap.exe",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "If the processes are not running, it executes PerfWatson.exe (originally a legitimate command line utility named regcap.exe, included in Visual Studio), which the attackers abuse to side-load lregdll.dll."
+        ]
+      },
+      {
+        "node_id": "IOC_25364475435e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "st.360safe[.]company",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "If, after a number of attempts, it fails to establish a connection to the server, it uses the gethostbyname API on the domain st.360safe[.]company to obtain the IP address mapped to that domain and uses the obtained IP as its fallback C&C server."
+        ]
+      },
+      {
+        "node_id": "IOC_33211d669fed",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "114.114.114.114",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The query is sent to one of three legitimate, public DNS servers:\n8.8.8.8 – Google Public DNS,\n114.114.114.114 – 114dns.com, or\n223.5.5.5 – Alibaba Public DNS."
+        ]
+      },
+      {
+        "node_id": "IOC_33b951608d4f",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "sQi9&*2Uhy3Fg7se",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "The key used for decryption is sQi9&*2Uhy3Fg7se and the IV is Qhsy&7y@bsG9st#g."
+        ]
+      },
+      {
+        "node_id": "IOC_3ad60158052d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "lregdll.dll",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "If the processes are not running, it executes PerfWatson.exe (originally a legitimate command line utility named regcap.exe, included in Visual Studio), which the attackers abuse to side-load lregdll.dll."
+        ]
+      },
+      {
+        "node_id": "IOC_46f2705d081c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "NetNative.pkg",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "EncMgr.pkg creates two directories – WPSDocuments and WPSManager – in %PUBLIC%\\Documents and the deployment begins by extracting components from the custom archives NetNative.pkg and FeatureFlag.pkg."
+        ]
+      },
+      {
+        "node_id": "IOC_6c7f03ec22e4",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "8.8.8.8",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The query is sent to one of three legitimate, public DNS servers:\n8.8.8.8 – Google Public DNS,\n114.114.114.114 – 114dns.com, or\n223.5.5.5 – Alibaba Public DNS."
+        ]
+      },
+      {
+        "node_id": "IOC_6f95ed020f0b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "AutoMsg.dll",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The first malicious component that is loaded by the installer is the AutoMsg.dll loader."
+        ]
+      },
+      {
+        "node_id": "IOC_79ed0713359e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "7051.gsm.360safe[.]company",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "SlowStepper does not carry the C&C IP address in its configuration; instead, it crafts a DNS query to obtain a TXT record for the domain 7051.gsm.360safe[.]company."
+        ]
+      },
+      {
+        "node_id": "IOC_813a71d5e922",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "svcghost.exe",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          12,
+          18,
+          19
+        ],
+        "span_sentences": [
+          "Additionally, the installer establishes persistence for SlowStepper by adding an entry named IPanyVPN to a Run key, with the value %PUBLIC%\\Documents\\WPSDocuments\\WPSManager\\svcghost.exe, so that the malicious component svcghost.exe (later extracted and deployed by the loader in EncMgr.pkg) is launched when the operating system starts.",
+          "Its last actions are to execute svcghost.exe using the ShellExecute API and then exit.",
+          "The svcghost.exe component performs monitoring of the PerfWatson.exe process, where the backdoor is loaded, ensuring that it is always running."
+        ]
+      },
+      {
+        "node_id": "IOC_9e82614df134",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "EncMgr.pkg",
+        "edges": [],
+        "sentence_indices": [
+          15,
+          16
+        ],
+        "span_sentences": [
+          "When IPanyVPNSetup.exe calls ExitProcess, the patched bytes redirect execution to the shellcode that loads EncMgr.pkg into memory and executes it.",
+          "EncMgr.pkg creates two directories – WPSDocuments and WPSManager – in %PUBLIC%\\Documents and the deployment begins by extracting components from the custom archives NetNative.pkg and FeatureFlag.pkg."
+        ]
+      },
+      {
+        "node_id": "IOC_aac002d811a2",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "114dns.com",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The query is sent to one of three legitimate, public DNS servers:\n8.8.8.8 – Google Public DNS,\n114.114.114.114 – 114dns.com, or\n223.5.5.5 – Alibaba Public DNS."
+        ]
+      },
+      {
+        "node_id": "IOC_b93ab49d779a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%PUBLIC%\\Documents\\WPSDocuments\\WPSManager\\svcghost.exe",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Additionally, the installer establishes persistence for SlowStepper by adding an entry named IPanyVPN to a Run key, with the value %PUBLIC%\\Documents\\WPSDocuments\\WPSManager\\svcghost.exe, so that the malicious component svcghost.exe (later extracted and deployed by the loader in EncMgr.pkg) is launched when the operating system starts."
+        ]
+      },
+      {
+        "node_id": "IOC_bb1b19d9d90f",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://ipany.kr/",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "In May 2024, we noticed detections of malicious code in an NSIS installer for Windows that users from South Korea had downloaded from the website of the legitimate VPN software IPany (https://ipany.kr/; see Figure 1), which is developed by a South Korean company."
+        ]
+      },
+      {
+        "node_id": "IOC_c990d6cd3957",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "IPanyVPNSetup.exe",
+        "edges": [],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "When IPanyVPNSetup.exe calls ExitProcess, the patched bytes redirect execution to the shellcode that loads EncMgr.pkg into memory and executes it."
+        ]
+      },
+      {
+        "node_id": "IOC_cac52f39fb8b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "FeatureFlag.pkg",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "EncMgr.pkg creates two directories – WPSDocuments and WPSManager – in %PUBLIC%\\Documents and the deployment begins by extracting components from the custom archives NetNative.pkg and FeatureFlag.pkg."
+        ]
+      },
+      {
+        "node_id": "IOC_cb96f434be39",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "223.5.5.5",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The query is sent to one of three legitimate, public DNS servers:\n8.8.8.8 – Google Public DNS,\n114.114.114.114 – 114dns.com, or\n223.5.5.5 – Alibaba Public DNS."
+        ]
+      },
+      {
+        "node_id": "IOC_ce746f492fb3",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "PerfWatson.exe",
+        "edges": [
+          "EDGE_23",
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          19,
+          20
+        ],
+        "span_sentences": [
+          "The svcghost.exe component performs monitoring of the PerfWatson.exe process, where the backdoor is loaded, ensuring that it is always running.",
+          "If the processes are not running, it executes PerfWatson.exe (originally a legitimate command line utility named regcap.exe, included in Visual Studio), which the attackers abuse to side-load lregdll.dll."
+        ]
+      },
+      {
+        "node_id": "IOC_d8a16d73ac57",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://ipany[.]kr/download/IPanyVPNsetup.zip",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The victims appear to have manually downloaded a ZIP archive containing a malicious NSIS installer from the URL https://ipany[.]kr/download/IPanyVPNsetup.zip."
+        ]
+      },
+      {
+        "node_id": "IOC_f2c727bf3426",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "Qhsy&7y@bsG9st#g",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "The key used for decryption is sQi9&*2Uhy3Fg7se and the IV is Qhsy&7y@bsG9st#g."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_38c124e184e3",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_8adcb4fff6f0",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_f71440706827",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_f71440706827",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_f71440706827",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_f71440706827",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_f71440706827",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_f71440706827",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_f71440706827",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_f71440706827",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_1acac5c99af9",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_25364475435e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_33211d669fed",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_33b951608d4f",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_3ad60158052d",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_6c7f03ec22e4",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_79ed0713359e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_813a71d5e922",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_aac002d811a2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_b93ab49d779a",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_bb1b19d9d90f",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_cb96f434be39",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_ce746f492fb3",
+      "node_v": "TTP_T1057"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_ce746f492fb3",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_d8a16d73ac57",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_f2c727bf3426",
+      "node_v": "TTP_T1140"
+    }
+  ]
+}

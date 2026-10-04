@@ -1,0 +1,436 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0f465b2c0af1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Azure",
+        "sentence_indices": [
+          7,
+          29
+        ],
+        "span_sentences": [
+          "Data is sent to a command-and-control (C2) server hosted on Microsoft Azure infrastructure.",
+          "This IP address is part of the Microsoft Azure range, likely to evade detection using a technique called Living off of Trusted Sites (LOTS)."
+        ],
+        "edges": [
+          "EDGE_118f2313a41a"
+        ]
+      },
+      {
+        "node_id": "HL_2667e2b2457b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Bing",
+        "sentence_indices": [
+          3,
+          20
+        ],
+        "span_sentences": [
+          "Zscaler Threat Hunting has identified an active campaign leveraging Search Engine Optimization (SEO) poisoning, primarily on the Bing search engine, to distribute a trojanized Ivanti Pulse Secure VPN client.",
+          "However, when accessed via a Bing search (if Bing is present in the refer-URL), the original phishing content is displayed, including the malicious download link."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2ced2bd7404d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Ivanti Pulse Secure VPN",
+        "sentence_indices": [
+          0,
+          3
+        ],
+        "span_sentences": [
+          "The Zscaler Threat HuntingTM team has recently detected an uptick in activity involving SEO poisoning to lure users into downloading a malicious version of the Ivanti Pulse Secure VPN client.",
+          "Zscaler Threat Hunting has identified an active campaign leveraging Search Engine Optimization (SEO) poisoning, primarily on the Bing search engine, to distribute a trojanized Ivanti Pulse Secure VPN client."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3a881efdfd5a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ivanti",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Upon clicking the link impersonating Ivanti, the user is directed to a threat actor-controlled website designed to impersonate the official Ivanti Pulse Secure download page."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Data is sent to a command-and-control (C2) server hosted on Microsoft Azure infrastructure."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_87fcc1a46ea5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Akira ransomware",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "This TTP has been historically observed following VPN credential theft threats; actors leverage these credentials to perform reconnaissance and lateral movement, which has led to the deployment of Akira ransomware in past campaigns."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_cd8ed940f5f1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The Zscaler Threat HuntingTM team has recently detected an uptick in activity involving SEO poisoning to lure users into downloading a malicious version of the Ivanti Pulse Secure VPN client."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1005",
+        "ttp_id": "T1005",
+        "best_span_sentences_list": [
+          [
+            "The malware specifically targets the connectionstore.dat file to steal saved VPN server URIs, which it combines with hardcoded credentials for exfiltration."
+          ],
+          [
+            "The malware searches for the Ivanti Pulse Secure connection storage file at the following hardcoded path: C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat.",
+            "It then reads and parses this .dat file to extract the VPN server URI (URL/server address) saved by the user."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            25,
+            26
+          ]
+        ],
+        "edges": [
+          "EDGE_34284ef0695f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "The malware specifically targets the connectionstore.dat file to steal saved VPN server URIs, which it combines with hardcoded credentials for exfiltration.",
+            "Data is sent to a command-and-control (C2) server hosted on Microsoft Azure infrastructure."
+          ],
+          [
+            "It then sends the collected credential data in an HTTP POST request to the C2 path /income_shit."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            7
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_00550e622483",
+          "EDGE_e53acd3ced28"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "It then sends the collected credential data in an HTTP POST request to the C2 path /income_shit."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_118f2313a41a",
+          "EDGE_567c5b600e14",
+          "EDGE_87e9901c709e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Threat actors use lookalike domains to host fake download pages that appear legitimate to unsuspecting users."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_8a2fc89512fd",
+          "EDGE_efeda08ad9fd"
+        ]
+      },
+      {
+        "node_id": "TTP_T1553",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1553",
+        "ttp_id": "T1553",
+        "best_span_sentences_list": [
+          [
+            "Notably, the downloaded MSI file is signed, a technique used to evade security detections and create a false sense of security for the end user."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_effdddec5890"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_63f190d2ba95",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ivanti-secure-access[.]org",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "The user is presented with results pointing to look-alike domains such as ivanti-pulsesecure[.]com (registered on 2025-09-19) or ivanti-secure-access[.]org (registered on 2025-09-14)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_6456bc6a1c74",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "dwmapi.dll",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "When the MSI is executed, it drops several files, including recently modified malicious DLLs named dwmapi.dll and pulse_extension.dll."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_69626fcf5fda",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "/income_shit",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "It then sends the collected credential data in an HTTP POST request to the C2 path /income_shit."
+        ],
+        "edges": [
+          "EDGE_87e9901c709e",
+          "EDGE_e53acd3ced28"
+        ]
+      },
+      {
+        "node_id": "IOC_7af7f63456db",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "4[.]239[.]95[.]1",
+        "sentence_indices": [
+          28,
+          31
+        ],
+        "span_sentences": [
+          "It establishes a network connection to a hardcoded C2 server at IP address 4[.]239[.]95[.]1 on port 8080.",
+          "The successful connection to the C2 server at 4[.]239[.]95[.]1:8080 is a strong indicator of successful credential exfiltration."
+        ],
+        "edges": [
+          "EDGE_00550e622483",
+          "EDGE_567c5b600e14"
+        ]
+      },
+      {
+        "node_id": "IOC_80220cbae8a9",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "netml[.]shop/get?q=ivanti",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "This URL, in turn, facilitates the download of a trojanized MSI installer from netml[.]shop/get?q=ivanti."
+        ],
+        "edges": [
+          "EDGE_efeda08ad9fd"
+        ]
+      },
+      {
+        "node_id": "IOC_a47a1a4535bd",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "pulse_extension.dll",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "When the MSI is executed, it drops several files, including recently modified malicious DLLs named dwmapi.dll and pulse_extension.dll."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_d4205b10a9ed",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ivanti-pulsesecure[.]com",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "The user is presented with results pointing to look-alike domains such as ivanti-pulsesecure[.]com (registered on 2025-09-19) or ivanti-secure-access[.]org (registered on 2025-09-14)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_e2593779ce34",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "6e258deec1e176516d180d758044c019",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Filename: Ivanti-VPN[.]msi\n- MD5: 6e258deec1e176516d180d758044c019 (VirusTotal)."
+        ],
+        "edges": [
+          "EDGE_effdddec5890"
+        ]
+      },
+      {
+        "node_id": "IOC_f7871adbaff8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat",
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "The malware searches for the Ivanti Pulse Secure connection storage file at the following hardcoded path: C:\\ProgramData\\Pulse Secure\\ConnectionStore\\connectionstore.dat."
+        ],
+        "edges": [
+          "EDGE_34284ef0695f"
+        ]
+      },
+      {
+        "node_id": "IOC_f99718c6d7f2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "shopping5[.]shop/?file=ivanti",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "When the user clicks the download button, the website initiates an HTTP request in the background to shopping5[.]shop/?file=ivanti."
+        ],
+        "edges": [
+          "EDGE_8a2fc89512fd"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_00550e622483",
+      "node_u": "IOC_7af7f63456db",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_118f2313a41a",
+      "node_u": "HL_0f465b2c0af1",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_34284ef0695f",
+      "node_u": "IOC_f7871adbaff8",
+      "node_v": "TTP_T1005",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_567c5b600e14",
+      "node_u": "IOC_7af7f63456db",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_87e9901c709e",
+      "node_u": "IOC_69626fcf5fda",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8a2fc89512fd",
+      "node_u": "IOC_f99718c6d7f2",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e53acd3ced28",
+      "node_u": "IOC_69626fcf5fda",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_efeda08ad9fd",
+      "node_u": "IOC_80220cbae8a9",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_effdddec5890",
+      "node_u": "IOC_e2593779ce34",
+      "node_v": "TTP_T1553",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

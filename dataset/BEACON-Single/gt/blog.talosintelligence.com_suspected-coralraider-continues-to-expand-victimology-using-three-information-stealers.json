@@ -1,0 +1,1139 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0a960352959c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Rhadamanthys",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          14,
+          30,
+          44,
+          45,
+          47,
+          48,
+          49,
+          50,
+          53
+        ],
+        "span_sentences": [
+          "The PowerShell Loader executes multiple functions to evade the detections and bypass UAC, and finally, it downloads and runs one of the payloads, Cryptbot, LummaC2 or Rhadamanthys information stealer.",
+          "Talos discovered that the threat actor delivered three famous information stealer malware as payloads in this campaign, including CryptBot, LummaC2 and Rhadamanthys.",
+          "The last payload we found in this campaign is Rhadamanthys malware, a famous infostealer appearing in the underground forum advertisement in September 2022.",
+          "The Rhadamanthys malware has been evolving till now, and its authors have released a new version, V0.6.0, on Feb.",
+          "However, the Rhadamanthys variant we found in this campaign is still v0.5.0.",
+          "The threat actor uses a Python executable file as a loader to execute the Rhadamanthys malware into memory.",
+          "After decompiling the Python executable file, Python scripts load the Rhadamanthys malware in two stages.",
+          "In the second stage, the Python script uses the Windows API to allocate a memory block and inject Rhadamanthys malware into the process.",
+          "The custom loader module in XS format is similar to that of a Rhadamanthys sample analyzed by the researcher at Check Point."
+        ]
+      },
+      {
+        "node_id": "HL_0b8862a70333",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Turkey",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_2361b6ce9fed",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Philippines",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_3371dcf2599a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Japan",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_3db92b668538",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Syria",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          1
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information.",
+          "Our telemetry also disclosed that some affected users were from Japan’s computer service call center organizations and civil defense service organizations in Syria."
+        ]
+      },
+      {
+        "node_id": "HL_4d92a5190c96",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Norway",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_5554cea3a586",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.K.",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_6005d39bb4b8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LummaC2",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          14,
+          30,
+          37,
+          38,
+          40,
+          41
+        ],
+        "span_sentences": [
+          "The PowerShell Loader executes multiple functions to evade the detections and bypass UAC, and finally, it downloads and runs one of the payloads, Cryptbot, LummaC2 or Rhadamanthys information stealer.",
+          "Talos discovered that the threat actor delivered three famous information stealer malware as payloads in this campaign, including CryptBot, LummaC2 and Rhadamanthys.",
+          "Talos discovered that the actor is delivering a new variant of LummaC2 malware as an alternative payload in this campaign.",
+          "LummaC2 is a notorious information stealer that attempts to harvest information from victims’ machines.",
+          "Analyzing various samples of the new LummaC2 variant, we spotted that each will use a different key to encrypt the C2.",
+          "LummaC2’s first step in its exfiltration phase is its connection to the C2 server."
+        ]
+      },
+      {
+        "node_id": "HL_6acb3b643fdc",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Check Point",
+        "edges": [],
+        "sentence_indices": [
+          53
+        ],
+        "span_sentences": [
+          "The custom loader module in XS format is similar to that of a Rhadamanthys sample analyzed by the researcher at Check Point."
+        ]
+      },
+      {
+        "node_id": "HL_6adbcc2edf01",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Nigeria",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          22,
+          27
+        ],
+        "span_sentences": [
+          "Initially, it executes a function that drops a batch script in the victim machine’s temporary folder and writes its contents, which includes the PowerShell command to add the folder “ProgramData” of the victim machine to the Windows Defender exclusion list.",
+          "The batch script adds the folder “C:\\ProgramData” to the Windows Defender exclusion list."
+        ]
+      },
+      {
+        "node_id": "HL_764e687b91af",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "CoralRaider",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Talos assesses with moderate confidence that threat actor CoralRaider is likely operating this campaign based on several overlaps in the TTPs used and the targeted victims’ geography of this campaign with that of the CoralRaider’s Rotbot campaign."
+        ]
+      },
+      {
+        "node_id": "HL_8c34eb3dc949",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Cryptbot",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "The PowerShell Loader executes multiple functions to evade the detections and bypass UAC, and finally, it downloads and runs one of the payloads, Cryptbot, LummaC2 or Rhadamanthys information stealer."
+        ]
+      },
+      {
+        "node_id": "HL_a511095a4b44",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Python",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          48,
+          49,
+          50,
+          51
+        ],
+        "span_sentences": [
+          "The threat actor uses a Python executable file as a loader to execute the Rhadamanthys malware into memory.",
+          "After decompiling the Python executable file, Python scripts load the Rhadamanthys malware in two stages.",
+          "In the second stage, the Python script uses the Windows API to allocate a memory block and inject Rhadamanthys malware into the process.",
+          "We spotted that the threat actor is developing the Python script with the intention of including the functionality of executing a shellcode."
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          8,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          18,
+          19,
+          20,
+          21,
+          22,
+          25,
+          28
+        ],
+        "span_sentences": [
+          "We spotted that the PowerShell scripts used in the attack chain of this campaign to decrypt the PowerShell scripts of further stages and the downloader PowerShell script are similar to those employed in the Rotbot’s campaign.",
+          "The Windows shortcut file has an embedded PowerShell command running a malicious HTA file on attacker-controlled CDN domains.",
+          "HTA file executes an embedded Javascript, which decodes and runs a PowerShell decrypter script.",
+          "PowerShell decrypter script decrypts the embedded PowerShell Loader script and runs it in the victim’s memory.",
+          "The PowerShell Loader executes multiple functions to evade the detections and bypass UAC, and finally, it downloads and runs one of the payloads, Cryptbot, LummaC2 or Rhadamanthys information stealer.",
+          "Windows shortcut file runs a PowerShell command to download and run an HTML application file on the victim’s machine.",
+          "The threat actor has used “gp,” a PowerShell command alias for Get-ItemProperty, to read the registry contents of the application classes registry key and gets the executable name “mshta.exe.” Using mshta.exe, the PowerShell instance executes the remotely hosted malicious HTA file on the victim’s machine.",
+          "The decoded function then executes an embedded PowerShell decryptor script.",
+          "The decryptor PowerShell script has a block of AES-encrypted string.",
+          "Using the AES decryptor function, it generates an AES key of 256 bytes from a base64 encoded string “RVRVd2h4RUJHUWNiTEZpbkN5SXhzUWRHeFN4V053THQ=” and the IV “AAAAAAAAAAAAAAAA.” With the key and IV, it decrypts and executes the next stage of the PowerShell Loader script.",
+          "The PowerShell loader script is modular and has multiple functions to perform a sequence of activities on the victim’s machine.",
+          "Initially, it executes a function that drops a batch script in the victim machine’s temporary folder and writes its contents, which includes the PowerShell command to add the folder “ProgramData” of the victim machine to the Windows Defender exclusion list.",
+          "After modifying the registry settings, the PowerShell script runs FoDHelper.exe, executing the command assigned to the registry key HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\nand executing the dropped batch script.",
+          "The PowerShell loader script downloads the payload and saves it in the “C:\\ProgramData” folder as “X1xDd.exe.”\nAfter downloading the payload to the victim’s machine, the PowerShell loader executes another function that overwrites the previously dropped batch file with the new instructions to run the downloaded payload information stealer through the Windows start command."
+        ]
+      },
+      {
+        "node_id": "HL_b84a0d2574f0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Egypt",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_b988cd210aac",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Poland",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_ba6fbdc3dd86",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Ecuador",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The campaign affects victims across multiple countries, including the U.S., Nigeria, Pakistan, Ecuador, Germany, Egypt, the U.K., Poland, the Philippines, Norway, Japan, Syria and Turkey, based on our telemetry data and OSINT information."
+        ]
+      },
+      {
+        "node_id": "HL_f5429c85dc20",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Talos",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          7,
+          30,
+          32,
+          37
+        ],
+        "span_sentences": [
+          "Talos discovered that the actor is using multiple C2 domains in the campaign.",
+          "Talos assesses with moderate confidence that threat actor CoralRaider is likely operating this campaign based on several overlaps in the TTPs used and the targeted victims’ geography of this campaign with that of the CoralRaider’s Rotbot campaign.",
+          "Talos discovered that the threat actor delivered three famous information stealer malware as payloads in this campaign, including CryptBot, LummaC2 and Rhadamanthys.",
+          "Talos has discovered a new CryptBot variant distributed in the wild since January 2024.",
+          "Talos discovered that the actor is delivering a new variant of LummaC2 malware as an alternative payload in this campaign."
+        ]
+      },
+      {
+        "node_id": "HL_ffd6b830a7e3",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Rotbot",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          7,
+          8
+        ],
+        "span_sentences": [
+          "Talos assesses with moderate confidence that threat actor CoralRaider is likely operating this campaign based on several overlaps in the TTPs used and the targeted victims’ geography of this campaign with that of the CoralRaider’s Rotbot campaign.",
+          "We spotted that the PowerShell scripts used in the attack chain of this campaign to decrypt the PowerShell scripts of further stages and the downloader PowerShell script are similar to those employed in the Rotbot’s campaign."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ],
+          [
+            35,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We observed the new CryptBot variant also includes password manager application databases and authenticator application information in its stealing list to steal the cryptocurrency wallets that have two-factor authentication enabled."
+          ],
+          [
+            "CryptBot is aware that the target applications in the victim’s environment will have different versions, and their database files will have different file extensions.",
+            "It scans the victim’s machine for database files’ extensions of the targeted applications for harvesting credentials."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_16",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            19,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We spotted that the PowerShell scripts used in the attack chain of this campaign to decrypt the PowerShell scripts of further stages and the downloader PowerShell script are similar to those employed in the Rotbot’s campaign."
+          ],
+          [
+            "The malicious HTML application file is heavily obfuscated and has a Javascript that decodes and executes a function using the String fromCharCode method.",
+            "The decoded function then executes an embedded PowerShell decryptor script."
+          ],
+          [
+            "The decryptor PowerShell script has a block of AES-encrypted string.",
+            "Using the AES decryptor function, it generates an AES key of 256 bytes from a base64 encoded string “RVRVd2h4RUJHUWNiTEZpbkN5SXhzUWRHeFN4V053THQ=” and the IV “AAAAAAAAAAAAAAAA.” With the key and IV, it decrypts and executes the next stage of the PowerShell Loader script."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The affected users were downloading files masquerading as movie files through the browser, indicating the possibility of a widespread attack on users across various business verticals and geographies."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "LummaC2’s first step in its exfiltration phase is its connection to the C2 server.",
+            "The malware will exit the process if it does not receive the “OK” message as a response from any of the nine C2 servers.",
+            "The second step will be exfiltrating information from infected machines."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            50,
+            50
+          ],
+          [
+            52,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In the second stage, the Python script uses the Windows API to allocate a memory block and inject Rhadamanthys malware into the process."
+          ],
+          [
+            "Analyzing the final executable file showed us that the malware unpacks the loader module with the custom format having the magic header “XS” and performs the process injection."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_11",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            19,
+            20
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            25,
+            28
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We spotted that the PowerShell scripts used in the attack chain of this campaign to decrypt the PowerShell scripts of further stages and the downloader PowerShell script are similar to those employed in the Rotbot’s campaign."
+          ],
+          [
+            "HTA file executes an embedded Javascript, which decodes and runs a PowerShell decrypter script."
+          ],
+          [
+            "PowerShell decrypter script decrypts the embedded PowerShell Loader script and runs it in the victim’s memory.",
+            "The PowerShell Loader executes multiple functions to evade the detections and bypass UAC, and finally, it downloads and runs one of the payloads, Cryptbot, LummaC2 or Rhadamanthys information stealer."
+          ],
+          [
+            "The PowerShell Loader executes multiple functions to evade the detections and bypass UAC, and finally, it downloads and runs one of the payloads, Cryptbot, LummaC2 or Rhadamanthys information stealer."
+          ],
+          [
+            "Windows shortcut file runs a PowerShell command to download and run an HTML application file on the victim’s machine."
+          ],
+          [
+            "The threat actor has used “gp,” a PowerShell command alias for Get-ItemProperty, to read the registry contents of the application classes registry key and gets the executable name “mshta.exe.” Using mshta.exe, the PowerShell instance executes the remotely hosted malicious HTA file on the victim’s machine."
+          ],
+          [
+            "The malicious HTML application file is heavily obfuscated and has a Javascript that decodes and executes a function using the String fromCharCode method.",
+            "The decoded function then executes an embedded PowerShell decryptor script."
+          ],
+          [
+            "The decryptor PowerShell script has a block of AES-encrypted string.",
+            "Using the AES decryptor function, it generates an AES key of 256 bytes from a base64 encoded string “RVRVd2h4RUJHUWNiTEZpbkN5SXhzUWRHeFN4V053THQ=” and the IV “AAAAAAAAAAAAAAAA.” With the key and IV, it decrypts and executes the next stage of the PowerShell Loader script."
+          ],
+          [
+            "In this campaign, the threat actor abuses the “CurVer” registry key feature by creating a custom ProgID “ServiceHostXGRT” registry key in the software classes registry and assigns the Windows shell to execute a command to run the batch script."
+          ],
+          [
+            "After modifying the registry settings, the PowerShell script runs FoDHelper.exe, executing the command assigned to the registry key HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\nand executing the dropped batch script."
+          ],
+          [
+            "After modifying the registry settings, the PowerShell script runs FoDHelper.exe, executing the command assigned to the registry key HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\nand executing the dropped batch script.",
+            "Finally, it deletes the configured registry keys to evade detection.",
+            "The batch script adds the folder “C:\\ProgramData” to the Windows Defender exclusion list.",
+            "The PowerShell loader script downloads the payload and saves it in the “C:\\ProgramData” folder as “X1xDd.exe.”\nAfter downloading the payload to the victim’s machine, the PowerShell loader executes another function that overwrites the previously dropped batch file with the new instructions to run the downloaded payload information stealer through the Windows start command."
+          ],
+          [
+            "The batch script adds the folder “C:\\ProgramData” to the Windows Defender exclusion list."
+          ],
+          [
+            "The PowerShell loader script downloads the payload and saves it in the “C:\\ProgramData” folder as “X1xDd.exe.”\nAfter downloading the payload to the victim’s machine, the PowerShell loader executes another function that overwrites the previously dropped batch file with the new instructions to run the downloaded payload information stealer through the Windows start command."
+          ],
+          [
+            "The threat actor uses a Python executable file as a loader to execute the Rhadamanthys malware into memory."
+          ],
+          [
+            "In the second stage, the Python script uses the Windows API to allocate a memory block and inject Rhadamanthys malware into the process."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            35,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "CryptBot is aware that the target applications in the victim’s environment will have different versions, and their database files will have different file extensions.",
+            "It scans the victim’s machine for database files’ extensions of the targeted applications for harvesting credentials."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            4
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We observe that this threat actor is using a Content Delivery Network (CDN) cache to store the malicious files on their network edge host in this campaign, avoiding request delay.",
+            "The actor is using the CDN cache as a download server to deceive network defenders."
+          ],
+          [
+            "PowerShell decrypter script decrypts the embedded PowerShell Loader script and runs it in the victim’s memory.",
+            "The PowerShell Loader executes multiple functions to evade the detections and bypass UAC, and finally, it downloads and runs one of the payloads, Cryptbot, LummaC2 or Rhadamanthys information stealer."
+          ],
+          [
+            "Windows shortcut file runs a PowerShell command to download and run an HTML application file on the victim’s machine."
+          ],
+          [
+            "The PowerShell loader script downloads the payload and saves it in the “C:\\ProgramData” folder as “X1xDd.exe.”\nAfter downloading the payload to the victim’s machine, the PowerShell loader executes another function that overwrites the previously dropped batch file with the new instructions to run the downloaded payload information stealer through the Windows start command."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In the second stage, the Python script uses the Windows API to allocate a memory block and inject Rhadamanthys malware into the process."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_9",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            25,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In this campaign, the threat actor abuses the “CurVer” registry key feature by creating a custom ProgID “ServiceHostXGRT” registry key in the software classes registry and assigns the Windows shell to execute a command to run the batch script."
+          ],
+          [
+            "After modifying the registry settings, the PowerShell script runs FoDHelper.exe, executing the command assigned to the registry key HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\nand executing the dropped batch script."
+          ],
+          [
+            "After modifying the registry settings, the PowerShell script runs FoDHelper.exe, executing the command assigned to the registry key HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\nand executing the dropped batch script.",
+            "Finally, it deletes the configured registry keys to evade detection.",
+            "The batch script adds the folder “C:\\ProgramData” to the Windows Defender exclusion list.",
+            "The PowerShell loader script downloads the payload and saves it in the “C:\\ProgramData” folder as “X1xDd.exe.”\nAfter downloading the payload to the victim’s machine, the PowerShell loader executes another function that overwrites the previously dropped batch file with the new instructions to run the downloaded payload information stealer through the Windows start command."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_17",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            18
+          ],
+          [
+            19,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malicious HTML application file is heavily obfuscated and has a Javascript that decodes and executes a function using the String fromCharCode method.",
+            "The decoded function then executes an embedded PowerShell decryptor script."
+          ],
+          [
+            "The decryptor PowerShell script has a block of AES-encrypted string.",
+            "Using the AES decryptor function, it generates an AES key of 256 bytes from a base64 encoded string “RVRVd2h4RUJHUWNiTEZpbkN5SXhzUWRHeFN4V053THQ=” and the IV “AAAAAAAAAAAAAAAA.” With the key and IV, it decrypts and executes the next stage of the PowerShell Loader script."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1189",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1189",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The infection chain starts when a victim opens the malicious shortcut file from a ZIP file downloaded using the drive-by download technique, according to our telemetry."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The affected users were downloading files masquerading as movie files through the browser, indicating the possibility of a widespread attack on users across various business verticals and geographies."
+          ],
+          [
+            "The infection chain starts when a victim opens the malicious shortcut file from a ZIP file downloaded using the drive-by download technique, according to our telemetry."
+          ],
+          [
+            "Windows shortcut file runs a PowerShell command to download and run an HTML application file on the victim’s machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor has used “gp,” a PowerShell command alias for Get-ItemProperty, to read the registry contents of the application classes registry key and gets the executable name “mshta.exe.” Using mshta.exe, the PowerShell instance executes the remotely hosted malicious HTA file on the victim’s machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1548",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1548",
+        "edges": [
+          "EDGE_10",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            23,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The PowerShell Loader executes multiple functions to evade the detections and bypass UAC, and finally, it downloads and runs one of the payloads, Cryptbot, LummaC2 or Rhadamanthys information stealer."
+          ],
+          [
+            "In this campaign, the threat actor abuses the “CurVer” registry key feature by creating a custom ProgID “ServiceHostXGRT” registry key in the software classes registry and assigns the Windows shell to execute a command to run the batch script.",
+            "The script configures the ProgID ServiceHostXGRT\nin the CurVer registry subkey of HKCU\\Software\\Classes\\ms-settings\\CurVer\n, which will get translated to HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\n.",
+            "After modifying the registry settings, the PowerShell script runs FoDHelper.exe, executing the command assigned to the registry key HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\nand executing the dropped batch script."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_5",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            28
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After modifying the registry settings, the PowerShell script runs FoDHelper.exe, executing the command assigned to the registry key HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\nand executing the dropped batch script.",
+            "Finally, it deletes the configured registry keys to evade detection.",
+            "The batch script adds the folder “C:\\ProgramData” to the Windows Defender exclusion list.",
+            "The PowerShell loader script downloads the payload and saves it in the “C:\\ProgramData” folder as “X1xDd.exe.”\nAfter downloading the payload to the victim’s machine, the PowerShell loader executes another function that overwrites the previously dropped batch file with the new instructions to run the downloaded payload information stealer through the Windows start command."
+          ],
+          [
+            "The batch script adds the folder “C:\\ProgramData” to the Windows Defender exclusion list."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor is likely delivering malicious links to victims through phishing emails."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1a7b0b81add3",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU\\Software\\Classes\\ms-settings\\CurVer",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The script configures the ProgID ServiceHostXGRT\nin the CurVer registry subkey of HKCU\\Software\\Classes\\ms-settings\\CurVer\n, which will get translated to HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\n."
+        ]
+      },
+      {
+        "node_id": "IOC_271de6758148",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          27,
+          28
+        ],
+        "span_sentences": [
+          "The batch script adds the folder “C:\\ProgramData” to the Windows Defender exclusion list.",
+          "The PowerShell loader script downloads the payload and saves it in the “C:\\ProgramData” folder as “X1xDd.exe.”\nAfter downloading the payload to the victim’s machine, the PowerShell loader executes another function that overwrites the previously dropped batch file with the new instructions to run the downloaded payload information stealer through the Windows start command."
+        ]
+      },
+      {
+        "node_id": "IOC_296f774b7c26",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          24,
+          25
+        ],
+        "span_sentences": [
+          "The script configures the ProgID ServiceHostXGRT\nin the CurVer registry subkey of HKCU\\Software\\Classes\\ms-settings\\CurVer\n, which will get translated to HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\n.",
+          "After modifying the registry settings, the PowerShell script runs FoDHelper.exe, executing the command assigned to the registry key HKCU:\\Software\\Classes\\ms-settings\\shell\\open\\command\nand executing the dropped batch script."
+        ]
+      },
+      {
+        "node_id": "IOC_c35be5127465",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "AAAAAAAAAAAAAAAA",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Using the AES decryptor function, it generates an AES key of 256 bytes from a base64 encoded string “RVRVd2h4RUJHUWNiTEZpbkN5SXhzUWRHeFN4V053THQ=” and the IV “AAAAAAAAAAAAAAAA.” With the key and IV, it decrypts and executes the next stage of the PowerShell Loader script."
+        ]
+      },
+      {
+        "node_id": "IOC_c832595aeaf2",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "RVRVd2h4RUJHUWNiTEZpbkN5SXhzUWRHeFN4V053THQ=",
+        "edges": [
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Using the AES decryptor function, it generates an AES key of 256 bytes from a base64 encoded string “RVRVd2h4RUJHUWNiTEZpbkN5SXhzUWRHeFN4V053THQ=” and the IV “AAAAAAAAAAAAAAAA.” With the key and IV, it decrypts and executes the next stage of the PowerShell Loader script."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0a960352959c",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0a960352959c",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0a960352959c",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_6005d39bb4b8",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_a511095a4b44",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_ffd6b830a7e3",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_1a7b0b81add3",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_1a7b0b81add3",
+      "node_v": "TTP_T1548"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_271de6758148",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_271de6758148",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_271de6758148",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_296f774b7c26",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_296f774b7c26",
+      "node_v": "TTP_T1548"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_c35be5127465",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_c35be5127465",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_c832595aeaf2",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_c832595aeaf2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_c832595aeaf2",
+      "node_v": "TTP_T1140"
+    }
+  ]
+}

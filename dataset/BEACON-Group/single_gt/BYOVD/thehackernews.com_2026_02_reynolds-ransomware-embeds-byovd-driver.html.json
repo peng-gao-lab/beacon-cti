@@ -1,0 +1,1564 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_022adf8cd03c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Amazon Web Services",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+        ],
+        "edges": [
+          "EDGE_44c8f1ad613b",
+          "EDGE_472be69e44e9"
+        ]
+      },
+      {
+        "node_id": "HL_04d31b20ce49",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Interlock",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+        ],
+        "edges": [
+          "EDGE_209952a1fcca",
+          "EDGE_cd471750ccae"
+        ]
+      },
+      {
+        "node_id": "HL_125ce59a2714",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "education sector",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_132cf6ae8435",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "The Hacker News",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "\"Normally, the BYOVD defense evasion component of an attack would involve a distinct tool that would be deployed on the system prior to the ransomware payload in order to disable security software,\" the Symantec and Carbon Black Threat Hunter Team said in a report shared with The Hacker News."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5"
+        ]
+      },
+      {
+        "node_id": "HL_18c859845574",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit",
+        "sentence_indices": [
+          13,
+          20,
+          26,
+          33
+        ],
+        "span_sentences": [
+          "\"The advantages of wrapping the defense evasion capability in with the ransomware payload, and the reason ransomware actors might do this, may include the fact that packaging the defense evasion binary and the ransomware payload together is 'quieter,' with no separate external file dropped on the victim network.\"\nSophos also noted that the use of the NSecKrnl driver was previously observed in two ransomware incidents involving LockBit/Warlock and Nitrogen, and that these incidents were \"stopped by process-independent ransomware protection that remains effective regardless of BYOVD termination attempts.\"\nFurthermore, the company pointed out that there are both pros and cons when it comes to merging BYOVD with ransomware encryption into one payload, adding it risks breaking the entire execution chain once the driver is detected by security software, putting them at a tactical disadvantage.",
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer.",
+          "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0.",
+          "\"Meanwhile, the return of LockBit 5.0 was one of Q4's biggest shifts, driven by a late-quarter spike that saw the group list 110 organizations in December alone,\" researcher Gautham Ashok said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_1a8badf461ac",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ryuk",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025."
+        ],
+        "edges": [
+          "EDGE_00c9c76c427a"
+        ]
+      },
+      {
+        "node_id": "HL_1e6e3aed62d2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Symantec Endpoint Protection",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": [
+          "EDGE_2973c5b07a79"
+        ]
+      },
+      {
+        "node_id": "HL_26b851496b88",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ReliaQuest",
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "In Q4 2025 alone, Sinobi's data leak site listings increased 306%, making it the third-most active ransomware group after Qilin and Akira, per ReliaQuest."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_28bb92983c8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma Stealer",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2995d1a5a56f",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "WantToCry",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "- Attacks mounted by WantToCry have abused virtual machines (VMs) provisioned by ISPsystem, a legitimate virtual infrastructure management provider, to host and deliver malicious payloads at scale."
+        ],
+        "edges": [
+          "EDGE_06f4c2d5e3b4"
+        ]
+      },
+      {
+        "node_id": "HL_30cbead77ab8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NodeSnake/Interlock RAT",
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The attack is also characterized by the deployment of NodeSnake/Interlock RAT (aka CORNFLAKE) to steal sensitive data, while initial access is said to have originated from a MintLoader infection."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3179da4ca7ea",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BlackCat",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_34a1793610bc",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Silver Fox",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Notably, the driver has been put to use by a threat actor known as Silver Fox in attacks designed to kill endpoint security tools prior to delivering ValleyRAT."
+        ],
+        "edges": [
+          "EDGE_d38bd93fbf93",
+          "EDGE_ec31fb11bc0a"
+        ]
+      },
+      {
+        "node_id": "HL_37a01c19929d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "CrowdStrike Falcon",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": [
+          "EDGE_3934f7f3d0e6"
+        ]
+      },
+      {
+        "node_id": "HL_3c631e7a2cfc",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lampion",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3ed03315a579",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Broadcom",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3fa4a6edef47",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "LevelBlue",
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "\"The audit includes a detailed risk report, prepared communication materials, such as call scripts and executive-level letters, and strategic guidance designed to influence negotiations,\" LevelBlue said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_42b96d56080a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Symantec",
+        "sentence_indices": [
+          3,
+          10
+        ],
+        "span_sentences": [
+          "\"Normally, the BYOVD defense evasion component of an attack would involve a distinct tool that would be deployed on the system prior to the ransomware payload in order to disable security software,\" the Symantec and Carbon Black Threat Hunter Team said in a report shared with The Hacker News.",
+          "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed,\" Symantec and Carbon Black said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          16,
+          26
+        ],
+        "span_sentences": [
+          "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware.",
+          "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_499d07662f18",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "S3 buckets",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+        ],
+        "edges": [
+          "EDGE_62c84de2fd95",
+          "EDGE_b3e92395ee98"
+        ]
+      },
+      {
+        "node_id": "HL_4d3e45d64d7c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Phorpiex",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+        ],
+        "edges": [
+          "EDGE_23a2829f0b8f",
+          "EDGE_58ab87075db1",
+          "EDGE_99871b6c521f",
+          "EDGE_a4f3d917e8e1"
+        ]
+      },
+      {
+        "node_id": "HL_5554cea3a586",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.K.",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5f15506e1f25",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Conti",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6105fdbf1146",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "GotoHTTP",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed.\"\nAnother tool deployed on the target network a day after the ransomware deployment was the GotoHTTP remote access program, indicating that the attackers may be looking to maintain persistent access to the compromised hosts."
+        ],
+        "edges": [
+          "EDGE_bc0abfe005db"
+        ]
+      },
+      {
+        "node_id": "HL_63abf4f5e05d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MintLoader",
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The attack is also characterized by the deployment of NodeSnake/Interlock RAT (aka CORNFLAKE) to steal sensitive data, while initial access is said to have originated from a MintLoader infection."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_65a26798995f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "HitmanPro.Alert",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": [
+          "EDGE_bb6ac03f0446"
+        ]
+      },
+      {
+        "node_id": "HL_6653efa040cb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Sophos",
+        "sentence_indices": [
+          5,
+          13,
+          38
+        ],
+        "span_sentences": [
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others.",
+          "\"The advantages of wrapping the defense evasion capability in with the ransomware payload, and the reason ransomware actors might do this, may include the fact that packaging the defense evasion binary and the ransomware payload together is 'quieter,' with no separate external file dropped on the victim network.\"\nSophos also noted that the use of the NSecKrnl driver was previously observed in two ransomware incidents involving LockBit/Warlock and Nitrogen, and that these incidents were \"stopped by process-independent ransomware protection that remains effective regardless of BYOVD termination attempts.\"\nFurthermore, the company pointed out that there are both pros and cons when it comes to merging BYOVD with ransomware encryption into one payload, adding it risks breaking the entire execution chain once the driver is detected by security software, putting them at a tactical disadvantage.",
+          "(The story was updated after publication to include additional insights from Sophos.)"
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_67be50c2942b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Palo Alto Networks Cortex XDR",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": [
+          "EDGE_f93b8ac32b4c"
+        ]
+      },
+      {
+        "node_id": "HL_69ecb1e42841",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "DragonForce",
+        "sentence_indices": [
+          23,
+          25
+        ],
+        "span_sentences": [
+          "- DragonForce has created a \"Company Data Audit\" service to support affiliates during extortion campaigns as part of the continued professionalization of ransomware operations.",
+          "DragonForce operates as a cartel that allows affiliates to create their own brands while operating under its umbrella and gaining access to its resources and services."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6a5e6a248761",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Carbon Black",
+        "sentence_indices": [
+          3,
+          10
+        ],
+        "span_sentences": [
+          "\"Normally, the BYOVD defense evasion component of an attack would involve a distinct tool that would be deployed on the system prior to the ransomware payload in order to disable security software,\" the Symantec and Carbon Black Threat Hunter Team said in a report shared with The Hacker News.",
+          "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed,\" Symantec and Carbon Black said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6a77b031dd52",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Nitrogen",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "\"The advantages of wrapping the defense evasion capability in with the ransomware payload, and the reason ransomware actors might do this, may include the fact that packaging the defense evasion binary and the ransomware payload together is 'quieter,' with no separate external file dropped on the victim network.\"\nSophos also noted that the use of the NSecKrnl driver was previously observed in two ransomware incidents involving LockBit/Warlock and Nitrogen, and that these incidents were \"stopped by process-independent ransomware protection that remains effective regardless of BYOVD termination attempts.\"\nFurthermore, the company pointed out that there are both pros and cons when it comes to merging BYOVD with ransomware encryption into one payload, adding it risks breaking the entire execution chain once the driver is detected by security software, putting them at a tactical disadvantage."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_7562524e0f66",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "NsecSoft NSecKrnl",
+        "sentence_indices": [
+          4,
+          5
+        ],
+        "span_sentences": [
+          "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025.",
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": [
+          "EDGE_5863dbd30bcf"
+        ]
+      },
+      {
+        "node_id": "HL_75cc3bd21587",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PureRAT",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_804f694f2fbb",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit 5.0",
+        "sentence_indices": [
+          26,
+          33
+        ],
+        "span_sentences": [
+          "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0.",
+          "\"Meanwhile, the return of LockBit 5.0 was one of Q4's biggest shifts, driven by a late-quarter spike that saw the group list 110 organizations in December alone,\" researcher Gautham Ashok said."
+        ],
+        "edges": [
+          "EDGE_531277fe4598",
+          "EDGE_a8b76da7dca5"
+        ]
+      },
+      {
+        "node_id": "HL_856a5e2e4897",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RedLine Stealer",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_877fd1eea727",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMmanager",
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "- It's assessed that bulletproof hosting providers are leasing ISPsystem virtual machines to other criminal actors for use in ransomware operations and malware delivery by exploiting a design weakness in VMmanager's default Windows templates that reuse the same static hostname and system identifiers every time they are deployed."
+        ],
+        "edges": [
+          "EDGE_212956e03291"
+        ]
+      },
+      {
+        "node_id": "HL_8867fea85f08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Coveware",
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "As for the average ransom payment, the figure stood at $591,988 in Q4 2025, a 57% jump from Q3 2025, driven by a small number of \"outsized settlements,\" Coveware said in its quarterly report last week, adding threat actors may return to their \"data encryption roots\" for more effective leverage to extract ransoms from victims."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_89ed70f658d5",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ESXi",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_89fdf541b570",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NightSpire",
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_92f5fe3d65ef",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GLOBAL GROUP ransomware",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+        ],
+        "edges": [
+          "EDGE_277f1f6a5701"
+        ]
+      },
+      {
+        "node_id": "HL_97a86169a55d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NetSupport RAT",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_984cc7a8b012",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BEAST",
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9e4981c0d6a6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Qilin",
+        "sentence_indices": [
+          20,
+          32
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer.",
+          "In Q4 2025 alone, Sinobi's data leak site listings increased 306%, making it the third-most active ransomware group after Qilin and Akira, per ReliaQuest."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9fac26b94980",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "AWS",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+        ],
+        "edges": [
+          "EDGE_2e8c1207b149",
+          "EDGE_64ae84cc9c06"
+        ]
+      },
+      {
+        "node_id": "HL_a92c2e91552b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ursnif",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b2880c18599f",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Reynolds campaign",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": [
+          "EDGE_471a44bc2070",
+          "EDGE_fa0d6be9edf1"
+        ]
+      },
+      {
+        "node_id": "HL_bb0c89cafac4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Avast",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": [
+          "EDGE_259fea2e1daa"
+        ]
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_cf628dba5e33",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cyble",
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_cfbe358c338b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NOVA",
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_d12e58f653ab",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Palo Alto Networks",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_d44c280db449",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CORNFLAKE",
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The attack is also characterized by the deployment of NodeSnake/Interlock RAT (aka CORNFLAKE) to steal sensitive data, while initial access is said to have originated from a MintLoader infection."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_d58f20495d89",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit 2.0",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+        ],
+        "edges": [
+          "EDGE_302084d5404f"
+        ]
+      },
+      {
+        "node_id": "HL_d8df1cedf680",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ISPsystem",
+        "sentence_indices": [
+          19,
+          21
+        ],
+        "span_sentences": [
+          "- Attacks mounted by WantToCry have abused virtual machines (VMs) provisioned by ISPsystem, a legitimate virtual infrastructure management provider, to host and deliver malicious payloads at scale.",
+          "- It's assessed that bulletproof hosting providers are leasing ISPsystem virtual machines to other criminal actors for use in ransomware operations and malware delivery by exploiting a design weakness in VMmanager's default Windows templates that reuse the same static hostname and system identifiers every time they are deployed."
+        ],
+        "edges": [
+          "EDGE_45b98b9f21b2"
+        ]
+      },
+      {
+        "node_id": "HL_d953d99b6528",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ValleyRAT",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Notably, the driver has been put to use by a threat actor known as Silver Fox in attacks designed to kill endpoint security tools prior to delivering ValleyRAT."
+        ],
+        "edges": [
+          "EDGE_bb241529fa93"
+        ]
+      },
+      {
+        "node_id": "HL_dcb99375b665",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Reynolds",
+        "sentence_indices": [
+          0,
+          5
+        ],
+        "span_sentences": [
+          "Cybersecurity researchers have disclosed details of an emergent ransomware family dubbed Reynolds that comes embedded with a built-in bring your own vulnerable driver (BYOVD) component for defense evasion purposes within the ransomware payload itself.",
+          "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+        ],
+        "edges": [
+          "EDGE_7edab710b9e1",
+          "EDGE_b1608a41432f"
+        ]
+      },
+      {
+        "node_id": "HL_e075845419f5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Devman",
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_e53cb86b5900",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit 3.0",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+        ],
+        "edges": [
+          "EDGE_f00561939f4d"
+        ]
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_fee3c5f8c9b7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Obscura",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025."
+        ],
+        "edges": [
+          "EDGE_736c513fe465"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware.",
+            "The ransomware is notable for carrying out all activity locally on the compromised system, making it compatible with air‑gapped environments.",
+            "It also conducts no data exfiltration."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_58ab87075db1"
+        ]
+      },
+      {
+        "node_id": "TTP_T1068",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1068",
+        "ttp_id": "T1068",
+        "best_span_sentences_list": [
+          [
+            "Cybersecurity researchers have disclosed details of an emergent ransomware family dubbed Reynolds that comes embedded with a built-in bring your own vulnerable driver (BYOVD) component for defense evasion purposes within the ransomware payload itself."
+          ],
+          [
+            "Over the past year, the hacking group has previously wielded multiple legitimate but flawed drivers – including truesight.sys and amsdk.sys – as part of BYOVD attacks to disarm security programs."
+          ],
+          [
+            "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_99871b6c521f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_a4f3d917e8e1"
+        ]
+      },
+      {
+        "node_id": "TTP_T1211",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1211",
+        "ttp_id": "T1211",
+        "best_span_sentences_list": [
+          [
+            "Cybersecurity researchers have disclosed details of an emergent ransomware family dubbed Reynolds that comes embedded with a built-in bring your own vulnerable driver (BYOVD) component for defense evasion purposes within the ransomware payload itself."
+          ],
+          [
+            "It's worth noting that the NSecKrnl driver is susceptible to a known security flaw (CVE-2025-68947, CVSS score: 5.7) that could be exploited to terminate arbitrary processes.",
+            "Notably, the driver has been put to use by a threat actor known as Silver Fox in attacks designed to kill endpoint security tools prior to delivering ValleyRAT.",
+            "Over the past year, the hacking group has previously wielded multiple legitimate but flawed drivers – including truesight.sys and amsdk.sys – as part of BYOVD attacks to disarm security programs."
+          ],
+          [
+            "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_209952a1fcca",
+          "EDGE_471a44bc2070",
+          "EDGE_6d225af4807e",
+          "EDGE_7edab710b9e1",
+          "EDGE_ec31fb11bc0a",
+          "EDGE_feaeceed0690"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed.\"\nAnother tool deployed on the target network a day after the ransomware deployment was the GotoHTTP remote access program, indicating that the attackers may be looking to maintain persistent access to the compromised hosts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_bc0abfe005db"
+        ]
+      },
+      {
+        "node_id": "TTP_T1485",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1485",
+        "ttp_id": "T1485",
+        "best_span_sentences_list": [
+          [
+            "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0.",
+            "In addition, the new version features a wiper component, an option to delay execution prior to encryption, track status of encryption using a progress bar, improved anti-analysis techniques to evade detection, and enhanced in-memory execution to minimize disk traces."
+          ],
+          [
+            "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            27
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_2e8c1207b149",
+          "EDGE_472be69e44e9",
+          "EDGE_531277fe4598",
+          "EDGE_b3e92395ee98"
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "\"Combining BYOVD-based EDR termination with ransomware encryption in a single binary can be particularly effective against solutions with two architectural weaknesses: infrequently updated Vulnerable Driver Blocklists, and threat protection relying solely on user-mode services that only detect locally executed ransomware (which fails against remote encryption),\" it explained."
+          ],
+          [
+            "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware.",
+            "The ransomware is notable for carrying out all activity locally on the compromised system, making it compatible with air‑gapped environments.",
+            "It also conducts no data exfiltration."
+          ],
+          [
+            "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0.",
+            "In addition, the new version features a wiper component, an option to delay execution prior to encryption, track status of encryption using a progress bar, improved anti-analysis techniques to evade detection, and enhanced in-memory execution to minimize disk traces."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            26,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_277f1f6a5701",
+          "EDGE_302084d5404f",
+          "EDGE_a8b76da7dca5",
+          "EDGE_f00561939f4d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1530",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1530",
+        "ttp_id": "T1530",
+        "best_span_sentences_list": [
+          [
+            "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_44c8f1ad613b",
+          "EDGE_62c84de2fd95",
+          "EDGE_64ae84cc9c06"
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "Cybersecurity researchers have disclosed details of an emergent ransomware family dubbed Reynolds that comes embedded with a built-in bring your own vulnerable driver (BYOVD) component for defense evasion purposes within the ransomware payload itself."
+          ],
+          [
+            "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025.",
+            "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others.",
+            "It's worth noting that the NSecKrnl driver is susceptible to a known security flaw (CVE-2025-68947, CVSS score: 5.7) that could be exploited to terminate arbitrary processes.",
+            "Notably, the driver has been put to use by a threat actor known as Silver Fox in attacks designed to kill endpoint security tools prior to delivering ValleyRAT.",
+            "Over the past year, the hacking group has previously wielded multiple legitimate but flawed drivers – including truesight.sys and amsdk.sys – as part of BYOVD attacks to disarm security programs."
+          ],
+          [
+            "\"Combining BYOVD-based EDR termination with ransomware encryption in a single binary can be particularly effective against solutions with two architectural weaknesses: infrequently updated Vulnerable Driver Blocklists, and threat protection relying solely on user-mode services that only detect locally executed ransomware (which fails against remote encryption),\" it explained."
+          ],
+          [
+            "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            8
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_00c9c76c427a",
+          "EDGE_259fea2e1daa",
+          "EDGE_2973c5b07a79",
+          "EDGE_3934f7f3d0e6",
+          "EDGE_5722e377642c",
+          "EDGE_5863dbd30bcf",
+          "EDGE_736c513fe465",
+          "EDGE_b1608a41432f",
+          "EDGE_bb241529fa93",
+          "EDGE_bb6ac03f0446",
+          "EDGE_c47fa2f4a2b0",
+          "EDGE_cd471750ccae",
+          "EDGE_d38bd93fbf93",
+          "EDGE_f93b8ac32b4c",
+          "EDGE_fa0d6be9edf1"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware.",
+            "The ransomware is notable for carrying out all activity locally on the compromised system, making it compatible with air‑gapped environments.",
+            "It also conducts no data exfiltration."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_23a2829f0b8f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed,\" Symantec and Carbon Black said."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1583",
+        "ttp_id": "T1583",
+        "best_span_sentences_list": [
+          [
+            "- Attacks mounted by WantToCry have abused virtual machines (VMs) provisioned by ISPsystem, a legitimate virtual infrastructure management provider, to host and deliver malicious payloads at scale."
+          ],
+          [
+            "- It's assessed that bulletproof hosting providers are leasing ISPsystem virtual machines to other criminal actors for use in ransomware operations and malware delivery by exploiting a design weakness in VMmanager's default Windows templates that reuse the same static hostname and system identifiers every time they are deployed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_06f4c2d5e3b4",
+          "EDGE_212956e03291",
+          "EDGE_45b98b9f21b2"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_8c2813176293",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-61155",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+        ],
+        "edges": [
+          "EDGE_c47fa2f4a2b0",
+          "EDGE_feaeceed0690"
+        ]
+      },
+      {
+        "node_id": "IOC_d4b10ae950d5",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-68947",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "It's worth noting that the NSecKrnl driver is susceptible to a known security flaw (CVE-2025-68947, CVSS score: 5.7) that could be exploited to terminate arbitrary processes."
+        ],
+        "edges": [
+          "EDGE_5722e377642c",
+          "EDGE_6d225af4807e"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_00c9c76c427a",
+      "node_u": "HL_1a8badf461ac",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_06f4c2d5e3b4",
+      "node_u": "HL_2995d1a5a56f",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_209952a1fcca",
+      "node_u": "HL_04d31b20ce49",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_212956e03291",
+      "node_u": "HL_877fd1eea727",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_23a2829f0b8f",
+      "node_u": "HL_4d3e45d64d7c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_259fea2e1daa",
+      "node_u": "HL_bb0c89cafac4",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_277f1f6a5701",
+      "node_u": "HL_92f5fe3d65ef",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2973c5b07a79",
+      "node_u": "HL_1e6e3aed62d2",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2e8c1207b149",
+      "node_u": "HL_9fac26b94980",
+      "node_v": "TTP_T1485",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_302084d5404f",
+      "node_u": "HL_d58f20495d89",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3934f7f3d0e6",
+      "node_u": "HL_37a01c19929d",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_44c8f1ad613b",
+      "node_u": "HL_022adf8cd03c",
+      "node_v": "TTP_T1530",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_45b98b9f21b2",
+      "node_u": "HL_d8df1cedf680",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_471a44bc2070",
+      "node_u": "HL_b2880c18599f",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_472be69e44e9",
+      "node_u": "HL_022adf8cd03c",
+      "node_v": "TTP_T1485",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_531277fe4598",
+      "node_u": "HL_804f694f2fbb",
+      "node_v": "TTP_T1485",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5722e377642c",
+      "node_u": "IOC_d4b10ae950d5",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5863dbd30bcf",
+      "node_u": "HL_7562524e0f66",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_58ab87075db1",
+      "node_u": "HL_4d3e45d64d7c",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_62c84de2fd95",
+      "node_u": "HL_499d07662f18",
+      "node_v": "TTP_T1530",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_64ae84cc9c06",
+      "node_u": "HL_9fac26b94980",
+      "node_v": "TTP_T1530",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6d225af4807e",
+      "node_u": "IOC_d4b10ae950d5",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_736c513fe465",
+      "node_u": "HL_fee3c5f8c9b7",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7edab710b9e1",
+      "node_u": "HL_dcb99375b665",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_99871b6c521f",
+      "node_u": "HL_4d3e45d64d7c",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a4f3d917e8e1",
+      "node_u": "HL_4d3e45d64d7c",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a8b76da7dca5",
+      "node_u": "HL_804f694f2fbb",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b1608a41432f",
+      "node_u": "HL_dcb99375b665",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b3e92395ee98",
+      "node_u": "HL_499d07662f18",
+      "node_v": "TTP_T1485",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bb241529fa93",
+      "node_u": "HL_d953d99b6528",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bb6ac03f0446",
+      "node_u": "HL_65a26798995f",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bc0abfe005db",
+      "node_u": "HL_6105fdbf1146",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c47fa2f4a2b0",
+      "node_u": "IOC_8c2813176293",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd471750ccae",
+      "node_u": "HL_04d31b20ce49",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d38bd93fbf93",
+      "node_u": "HL_34a1793610bc",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec31fb11bc0a",
+      "node_u": "HL_34a1793610bc",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f00561939f4d",
+      "node_u": "HL_e53cb86b5900",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f93b8ac32b4c",
+      "node_u": "HL_67be50c2942b",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fa0d6be9edf1",
+      "node_u": "HL_b2880c18599f",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_feaeceed0690",
+      "node_u": "IOC_8c2813176293",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

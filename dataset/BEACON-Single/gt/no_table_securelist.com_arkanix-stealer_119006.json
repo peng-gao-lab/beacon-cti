@@ -1,0 +1,719 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_277d6c1af238",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Tor Browser",
+        "edges": [],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "This stealer is capable of extracting various types of data from supported browsers (22 in total, ranging from the widely popular Google Chrome to the Tor Browser)."
+        ]
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "edges": [],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "Although these domains were routed through Cloudflare, a real IP address was successfully discovered for one of them, namely, arkanix[.]pw."
+        ]
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "This stealer is capable of extracting various types of data from supported browsers (22 in total, ranging from the widely popular Google Chrome to the Tor Browser)."
+        ]
+      },
+      {
+        "node_id": "HL_7e5394088f82",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Arkanix Stealer",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In October 2025, we discovered a series of forum posts advertising a previously unknown stealer, dubbed “Arkanix Stealer” by its authors."
+        ]
+      },
+      {
+        "node_id": "HL_a12709a60fcf",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Arkanix campaign",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "During the Arkanix campaign, two domains used in the attacks were identified."
+        ]
+      },
+      {
+        "node_id": "HL_ac32d0d12c8b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Windows",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "On Microsoft Windows systems, the loader also installs pywin32\n."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          24,
+          25
+        ],
+        "span_sentences": [
+          "Telegram data collection begins with terminating the Telegram.exe process using the taskkill\ncommand.",
+          "Subsequently, if the telegram_optimized\nfeature is set to False, the malware zips the entire tdata directory (typically located at %APPDATA%\\Roaming\\Telegram Desktop\\tdata\n) and transmits it to the attacker."
+        ]
+      },
+      {
+        "node_id": "HL_d5b5f85b3e44",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ChromElevator",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          2,
+          45
+        ],
+        "span_sentences": [
+          "The set of implants included a publicly available browser post-exploitation tool known as ChromElevator, which was delivered by a native C++ version of the stealer.",
+          "The payload itself is the unaltered publicly available project known as “ChromElevator”."
+        ]
+      },
+      {
+        "node_id": "HL_f32e005df759",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Discord",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          28,
+          32
+        ],
+        "span_sentences": [
+          "The stealer includes two features connected with Discord: credentials stealing and self-spreading.",
+          "The stealer acquires the list of user’s friends and channels via the Discord API and sends a message provided by the attacker."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            34,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "File retrieval is performed regardless of the configuration.",
+            "The script relies on a predefined set of paths associated with the current user (such as Desktop, Download, etc.) and file extensions mainly connected with documents and media."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The injected payload then decrypts the browser master key and exfiltrates data such as cookies, login information, web data, and so on."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Subsequently, if the telegram_optimized\nfeature is set to False, the malware zips the entire tdata directory (typically located at %APPDATA%\\Roaming\\Telegram Desktop\\tdata\n) and transmits it to the attacker."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The injector initializes a direct syscall engine, spawns a suspended target browser process, and injects the decrypted code into it via Nt syscalls."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Alongside that, we have also discovered Python implementation of the stealer capable of dynamically modifying its configuration."
+          ],
+          [
+            "Upon execution, the loader first installs the required packages — namely, requests\n, pycryptodome\n, and psutil\n— via the pip\npackage manager, utilizing the subprocess\nmodule."
+          ],
+          [
+            "On Microsoft Windows systems, the loader also installs pywin32\n."
+          ],
+          [
+            "After that, the stealer makes a GET request to hxxps://arkanix[.]pw/stealer.py\nand executes the downloaded payload."
+          ],
+          [
+            "Telegram data collection begins with terminating the Telegram.exe process using the taskkill\ncommand."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_9",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            28,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Since the loader does not perform any output validation of the module installation command, it proceeds to make a POST request to hxxps://arkanix[.]pw/api/session/create\nto register the current compromised machine on the panel with a predefined set of parameters even if the installation failed."
+          ],
+          [
+            "After that, the stealer makes a GET request to hxxps://arkanix[.]pw/stealer.py\nand executes the downloaded payload."
+          ],
+          [
+            "To dynamically update the feature list, the stealer makes a GET request to hxxps://arkanix[.]pw/api/features/{payload_id}\n, indicating that these capabilities can be modified on the panel side."
+          ],
+          [
+            "Information collection is performed using standard shell commands with the exception of the VPN check.",
+            "The latter is implemented by querying the endpoint hxxps://ipapi[.]co/json/\nand verifying whether the associated IP address belongs to a known set of VPNs, proxies, or Tor exit nodes."
+          ],
+          [
+            "The stealer includes two features connected with Discord: credentials stealing and self-spreading.",
+            "The first one can be utilized to acquire credentials both from the standard client and custom clients.",
+            "If the client is Chromium-based, the stealer employs the same data exfiltration mechanism as during browser credentials stealing.",
+            "The self-spreading feature is configurable (meaning it can be disabled in the config).",
+            "The stealer acquires the list of user’s friends and channels via the Discord API and sends a message provided by the attacker."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            34,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "File retrieval is performed regardless of the configuration.",
+            "The script relies on a predefined set of paths associated with the current user (such as Desktop, Download, etc.) and file extensions mainly connected with documents and media."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_3",
+          "EDGE_10",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The set of implants included a publicly available browser post-exploitation tool known as ChromElevator, which was delivered by a native C++ version of the stealer."
+          ],
+          [
+            "After that, the stealer makes a GET request to hxxps://arkanix[.]pw/stealer.py\nand executes the downloaded payload."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            44,
+            44
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Subsequently, the stealer extracts the payload to a temporary folder with a randomly generated name composed of hexadecimal digits (0-9 and A-F) and executes it using the CreateProcess WinAPI\n."
+          ],
+          [
+            "The injector initializes a direct syscall engine, spawns a suspended target browser process, and injects the decrypted code into it via Nt syscalls."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1119",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1119",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            21,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "All information is decrypted using either the Windows DPAPI or AES, where applicable, and searched for relevant keywords.",
+            "In the case of browser information collection, the stealer searches exclusively for keywords related to banking (e.g., “revolut”, “stripe”, “bank”) and cryptocurrencies (e.g., “binance”, “metamask”, “wallet”)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After launching, the stealer implements a series of analysis countermeasures to verify that the application is not being executed within a sandboxed environment or run under a debugger.",
+            "Following these checks, the sample patches AmsiScanBuffer."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_2",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Subsequently, if the telegram_optimized\nfeature is set to False, the malware zips the entire tdata directory (typically located at %APPDATA%\\Roaming\\Telegram Desktop\\tdata\n) and transmits it to the attacker."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After launching, the stealer implements a series of analysis countermeasures to verify that the application is not being executed within a sandboxed environment or run under a debugger.",
+            "Following these checks, the sample patches AmsiScanBuffer."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_8",
+          "EDGE_11",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, based on some of the file names (such as steam_account_checker_pro_v1.py\n, discord_nitro_checker.py\n, and TikTokAccountBotter.exe\n) of the loader scripts we obtained, it can be concluded with high confidence that the initial infection vector involved phishing."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_20becc32609e",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://ipapi[.]co/json/",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The latter is implemented by querying the endpoint hxxps://ipapi[.]co/json/\nand verifying whether the associated IP address belongs to a known set of VPNs, proxies, or Tor exit nodes."
+        ]
+      },
+      {
+        "node_id": "IOC_32697f206479",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://arkanix[.]pw/api/session/create",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Since the loader does not perform any output validation of the module installation command, it proceeds to make a POST request to hxxps://arkanix[.]pw/api/session/create\nto register the current compromised machine on the panel with a predefined set of parameters even if the installation failed."
+        ]
+      },
+      {
+        "node_id": "IOC_40e3bc2a1fa2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://arkanix[.]pw/api/features/{payload_id}",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "To dynamically update the feature list, the stealer makes a GET request to hxxps://arkanix[.]pw/api/features/{payload_id}\n, indicating that these capabilities can be modified on the panel side."
+        ]
+      },
+      {
+        "node_id": "IOC_5df70909ab75",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "TikTokAccountBotter.exe",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "However, based on some of the file names (such as steam_account_checker_pro_v1.py\n, discord_nitro_checker.py\n, and TikTokAccountBotter.exe\n) of the loader scripts we obtained, it can be concluded with high confidence that the initial infection vector involved phishing."
+        ]
+      },
+      {
+        "node_id": "IOC_61588780643a",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "arkanix_secret_key_v20_2024",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "In some observed samples, the key used was arkanix_secret_key_v20_2024\n."
+        ]
+      },
+      {
+        "node_id": "IOC_8098caeed40e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "arkanix[.]pw",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "Although these domains were routed through Cloudflare, a real IP address was successfully discovered for one of them, namely, arkanix[.]pw."
+        ]
+      },
+      {
+        "node_id": "IOC_818957e1a0da",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "steam_account_checker_pro_v1.py",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "However, based on some of the file names (such as steam_account_checker_pro_v1.py\n, discord_nitro_checker.py\n, and TikTokAccountBotter.exe\n) of the loader scripts we obtained, it can be concluded with high confidence that the initial infection vector involved phishing."
+        ]
+      },
+      {
+        "node_id": "IOC_b37b164f1975",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%APPDATA%\\Roaming\\Telegram Desktop\\tdata",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "Subsequently, if the telegram_optimized\nfeature is set to False, the malware zips the entire tdata directory (typically located at %APPDATA%\\Roaming\\Telegram Desktop\\tdata\n) and transmits it to the attacker."
+        ]
+      },
+      {
+        "node_id": "IOC_bba474e9a99f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "discord_nitro_checker.py",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "However, based on some of the file names (such as steam_account_checker_pro_v1.py\n, discord_nitro_checker.py\n, and TikTokAccountBotter.exe\n) of the loader scripts we obtained, it can be concluded with high confidence that the initial infection vector involved phishing."
+        ]
+      },
+      {
+        "node_id": "IOC_d42a8995e9b0",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://arkanix[.]pw/stealer.py",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "After that, the stealer makes a GET request to hxxps://arkanix[.]pw/stealer.py\nand executes the downloaded payload."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_d5b5f85b3e44",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_f32e005df759",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "IOC_20becc32609e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "IOC_32697f206479",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "IOC_40e3bc2a1fa2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "IOC_5df70909ab75",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_8098caeed40e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_8098caeed40e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_818957e1a0da",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_b37b164f1975",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_bba474e9a99f",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_d42a8995e9b0",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_d42a8995e9b0",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

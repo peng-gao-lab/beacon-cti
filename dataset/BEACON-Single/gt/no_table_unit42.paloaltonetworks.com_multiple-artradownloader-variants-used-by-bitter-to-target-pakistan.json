@@ -1,0 +1,746 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          4,
+          6,
+          7,
+          8,
+          13,
+          32,
+          34
+        ],
+        "span_sentences": [
+          "Since at least 2015, a suspected South Asian threat grouping known as BITTER has been targeting Pakistan and Chinese organizations using variants of a previously unreported downloader.",
+          "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia.",
+          "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations.",
+          "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload.",
+          "These websites include those associated with the Pakistan government and other Pakistan organizations.",
+          "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload.",
+          "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader.",
+          "Multiple organizations have been affected or found to be hosting the malware used by BITTER, including the Pakistan government, an engineering company, and an electrical provider."
+        ]
+      },
+      {
+        "node_id": "HL_3b520e7d5fd6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BitterRAT",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          3,
+          33
+        ],
+        "span_sentences": [
+          "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations.",
+          "This downloader, leveraging unique custom obfuscation routines downloads and executes the BitterRAT malware family via HTTP."
+        ]
+      },
+      {
+        "node_id": "HL_3d9419e7e021",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BITTER",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          5,
+          31,
+          34
+        ],
+        "span_sentences": [
+          "Since at least 2015, a suspected South Asian threat grouping known as BITTER has been targeting Pakistan and Chinese organizations using variants of a previously unreported downloader.",
+          "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations.",
+          "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia.",
+          "This is the first reported instance of BITTER targeting Saudi Arabia.",
+          "To date, the threat actor commonly referred to as BITTER continues to be active against various regions across the globe.",
+          "Multiple organizations have been affected or found to be hosting the malware used by BITTER, including the Pakistan government, an engineering company, and an electrical provider."
+        ]
+      },
+      {
+        "node_id": "HL_5ed66d5e0513",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "RMMUN",
+        "edges": [],
+        "sentence_indices": [
+          11,
+          12
+        ],
+        "span_sentences": [
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+          "The RMMUN, Roots Metropolitan Model United Nations, is an organized event that was held on November 8-11, 2018 which fosters collaboration and insights into issues such as human rights and economic development."
+        ]
+      },
+      {
+        "node_id": "HL_8793fb593279",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ArtraDownloader",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          1,
+          6,
+          11,
+          19,
+          21,
+          24,
+          30,
+          32
+        ],
+        "span_sentences": [
+          "We have named this malware family ArtraDownloader based on a PDB string discovered within the samples.",
+          "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations.",
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+          "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT).",
+          "In total, roughly 80 unique instances of the ArtraDownloader malware family have been discovered.",
+          "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file.",
+          "In November 2017, we first observed ArtraDownloader querying the same domain; this continuing through February 2018.",
+          "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+        ]
+      },
+      {
+        "node_id": "HL_8f229c579a9b",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Saudi Arabia",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          4,
+          5,
+          6,
+          9,
+          32
+        ],
+        "span_sentences": [
+          "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia.",
+          "This is the first reported instance of BITTER targeting Saudi Arabia.",
+          "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations.",
+          "The presumed spear phish targeted an employee of an organization in Saudi Arabia.",
+          "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+        ]
+      },
+      {
+        "node_id": "HL_9dfd2d6e4b41",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MY24",
+        "edges": [],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "In November 2017 we reported on malicious documents that were downloaded from the domain zmwardrobe[.]com and subsequently executed a payload referred to as MY24."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+        ]
+      },
+      {
+        "node_id": "HL_d7ba689a6593",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Roots Metropolitan Model United Nations",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The RMMUN, Roots Metropolitan Model United Nations, is an organized event that was held on November 8-11, 2018 which fosters collaboration and insights into issues such as human rights and economic development."
+        ]
+      },
+      {
+        "node_id": "HL_fc573577a13d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Pakistan government",
+        "edges": [],
+        "sentence_indices": [
+          8,
+          34
+        ],
+        "span_sentences": [
+          "These websites include those associated with the Pakistan government and other Pakistan organizations.",
+          "Multiple organizations have been affected or found to be hosting the malware used by BITTER, including the Pakistan government, an engineering company, and an electrical provider."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            25
+          ],
+          [
+            32,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file.",
+            "Important strings within these samples are obfuscated by adding or subtracting from each byte within a string."
+          ],
+          [
+            "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader.",
+            "This downloader, leveraging unique custom obfuscation routines downloads and executes the BitterRAT malware family via HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_5",
+          "EDGE_11",
+          "EDGE_15",
+          "EDGE_18",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            15
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            32,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+            "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net."
+          ],
+          [
+            "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+          ],
+          [
+            "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader.",
+            "This downloader, leveraging unique custom obfuscation routines downloads and executes the BitterRAT malware family via HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_16",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            3
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            28,
+            30
+          ],
+          [
+            31,
+            32
+          ],
+          [
+            32,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We have named this malware family ArtraDownloader based on a PDB string discovered within the samples.",
+            "We’ve observed three variants of this downloader with the earliest timestamp of February 2015.",
+            "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations."
+          ],
+          [
+            "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload."
+          ],
+          [
+            "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+          ],
+          [
+            "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+          ],
+          [
+            "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+          ],
+          [
+            "In November 2017 we reported on malicious documents that were downloaded from the domain zmwardrobe[.]com and subsequently executed a payload referred to as MY24.",
+            "This activity was observed through September and October 2017.",
+            "In November 2017, we first observed ArtraDownloader querying the same domain; this continuing through February 2018."
+          ],
+          [
+            "To date, the threat actor commonly referred to as BITTER continues to be active against various regions across the globe.",
+            "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+          ],
+          [
+            "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader.",
+            "This downloader, leveraging unique custom obfuscation routines downloads and executes the BitterRAT malware family via HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1203",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1203",
+        "edges": [
+          "EDGE_7",
+          "EDGE_17",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            14
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            19,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+            "The RMMUN, Roots Metropolitan Model United Nations, is an organized event that was held on November 8-11, 2018 which fosters collaboration and insights into issues such as human rights and economic development.",
+            "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload.",
+            "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882."
+          ],
+          [
+            "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload.",
+            "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+            "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net.",
+            "The other two files hosted on the engineering company’s domain communicated with command and control domain xiovo426[.]net."
+          ],
+          [
+            "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+            "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net."
+          ],
+          [
+            "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT).",
+            "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_3",
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations.",
+            "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload.",
+            "These websites include those associated with the Pakistan government and other Pakistan organizations.",
+            "The presumed spear phish targeted an employee of an organization in Saudi Arabia.",
+            "The malicious file communicated with the C2 nethosttalk[.]com."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_03a7a8da624c",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "xiovo426[.]net",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The other two files hosted on the engineering company’s domain communicated with command and control domain xiovo426[.]net."
+        ]
+      },
+      {
+        "node_id": "IOC_2ba1432a90dd",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "ef0cb0a1…",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+        ]
+      },
+      {
+        "node_id": "IOC_4974e332a548",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://rmmun.org[.]pk/svch",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+        ]
+      },
+      {
+        "node_id": "IOC_7549eadcd1d4",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://fst.gov[.]pk/images/winsvc",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+        ]
+      },
+      {
+        "node_id": "IOC_8b88e869c241",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "hewle.kielsoservice[.]net",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          11,
+          15,
+          20
+        ],
+        "span_sentences": [
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+          "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net.",
+          "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+        ]
+      },
+      {
+        "node_id": "IOC_9c59c7073e89",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-11882",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          14,
+          19
+        ],
+        "span_sentences": [
+          "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+          "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT)."
+        ]
+      },
+      {
+        "node_id": "IOC_9d6878e541d2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hewle.kielsoservice[.]net/Engset.php",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+        ]
+      },
+      {
+        "node_id": "IOC_af0f9af7685e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "zmwardrobe[.]com",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "In November 2017 we reported on malicious documents that were downloaded from the domain zmwardrobe[.]com and subsequently executed a payload referred to as MY24."
+        ]
+      },
+      {
+        "node_id": "IOC_b1ec5987a5ea",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "almasoodgroup[.]com",
+        "edges": [
+          "EDGE_20",
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload."
+        ]
+      },
+      {
+        "node_id": "IOC_c6fef7253362",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "info.viewworld71[.]com",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+        ]
+      },
+      {
+        "node_id": "IOC_e3dc50c194db",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "nethosttalk[.]com",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The malicious file communicated with the C2 nethosttalk[.]com."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_3b520e7d5fd6",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_3d9419e7e021",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_3d9419e7e021",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_8f229c579a9b",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_03a7a8da624c",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_2ba1432a90dd",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_4974e332a548",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_7549eadcd1d4",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_8b88e869c241",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_8b88e869c241",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_9c59c7073e89",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_9d6878e541d2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_af0f9af7685e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_b1ec5987a5ea",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_b1ec5987a5ea",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_c6fef7253362",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_e3dc50c194db",
+      "node_v": "TTP_T1071"
+    }
+  ]
+}

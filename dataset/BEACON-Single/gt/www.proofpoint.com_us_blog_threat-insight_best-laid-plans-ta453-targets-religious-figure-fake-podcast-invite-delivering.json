@@ -1,0 +1,803 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_050f07f6cbcd",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AnvilEcho",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          15,
+          25,
+          26,
+          29,
+          30,
+          31,
+          33,
+          36,
+          39,
+          43
+        ],
+        "span_sentences": [
+          "- The attack chain attempted to deliver a new malware toolkit called BlackSmith, which delivered a PowerShell trojan dubbed AnvilEcho by Proofpoint.",
+          "- AnvilEcho contains all of TA453’s previously identified malware capabilities in a single PowerShell script rather than the modular approach previously observed.",
+          "The LNK delivered the BlackSmith toolset which eventually loaded TA453’s AnvilEcho Powershell Trojan.",
+          "The next stage, the loader, loads the final stage, AnvilEcho.",
+          "AnvilEcho is a PowerShell trojan that contains extensive functionality, including capabilities that expand on previous TA453 malware samples.",
+          "Like NokNok, AnvilEcho repeatedly uses the same encryption and network communication functions across capabilities.",
+          "Our analysis identified this AnvilEcho sample as version 3.2.3.",
+          "AnvilEcho starts by using System.Net.ServicePointManager to write TrustAllCertsPolicy, to bypass SSL Certificate Validation by forcing a system to accept all SSL/TLS certificates without validating them.",
+          "AnvilEcho uses deepspaceocean[.]info for C2 throughout the script.",
+          "If the MachineID does not already exist, AnvilEcho creates two random 32-character length alphanumeric strings and concatenates them.",
+          "AnvilEcho consists of multiple functions, many of which are either similar to or improved on previously reported TA453 malware modules.",
+          "Overall, AnvilEcho capabilities indicate a clear focus on intelligence collection and exfiltration."
+        ]
+      },
+      {
+        "node_id": "HL_19081875b744",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google Threat Intelligence Group",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The theme of spoofing is consistent with broader TA453 phishing activity reported by Google Threat Intelligence Group in August 2024."
+        ]
+      },
+      {
+        "node_id": "HL_2630814d45c1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Institute for the Study of War",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          10
+        ],
+        "span_sentences": [
+          "Starting 22 July 2024, TA453 contacted multiple email addresses for a prominent Jewish figure while pretending to be the Research Director for the Institute for the Study of War (ISW).",
+          "Proofpoint first observed TA453 spoofing the Institute for the Study of War (ISW) in phishing campaigns targeting other organizations starting in February 2024, almost immediately after registering the domain in late January 2024."
+        ]
+      },
+      {
+        "node_id": "HL_26d52e065a06",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "BlackSmith",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          2,
+          15,
+          16
+        ],
+        "span_sentences": [
+          "- The attack chain attempted to deliver a new malware toolkit called BlackSmith, which delivered a PowerShell trojan dubbed AnvilEcho by Proofpoint.",
+          "The LNK delivered the BlackSmith toolset which eventually loaded TA453’s AnvilEcho Powershell Trojan.",
+          "BlackSmith uses soshi.dll file as an installer, creating C:\\Users\\Public\\Public Library and then copying mary.dll, qemus, and toni.dll."
+        ]
+      },
+      {
+        "node_id": "HL_5fec4cc07684",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NokNok",
+        "edges": [],
+        "sentence_indices": [
+          29,
+          42
+        ],
+        "span_sentences": [
+          "Like NokNok, AnvilEcho repeatedly uses the same encryption and network communication functions across capabilities.",
+          "The design of using the same network communication and encryption functions across multiple modules is similar to what our analysis revealed in TA453’s NokNok malware."
+        ]
+      },
+      {
+        "node_id": "HL_903464adf545",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Proofpoint",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          2,
+          7,
+          10
+        ],
+        "span_sentences": [
+          "Proofpoint identified Iranian threat actor TA453 targeting a prominent religious figure with a fake podcast interview invitation.",
+          "- The attack chain attempted to deliver a new malware toolkit called BlackSmith, which delivered a PowerShell trojan dubbed AnvilEcho by Proofpoint.",
+          "After receiving a response from the target (outside of Proofpoint visibility), TA453 replied with a DocSend URL.",
+          "Proofpoint first observed TA453 spoofing the Institute for the Study of War (ISW) in phishing campaigns targeting other organizations starting in February 2024, almost immediately after registering the domain in late January 2024."
+        ]
+      },
+      {
+        "node_id": "HL_9b3962781483",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GoogleDrive",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "After another reply from the target, TA453 replied with a GoogleDrive URL leading to a ZIP archive named “Podcast Plan-2024.zip”."
+        ]
+      },
+      {
+        "node_id": "HL_9fbf01b87294",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ISW Podcast",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The DocSend URL was password protected and led to a text file that contained a URL to the legitimate ISW Podcast being impersonated by TA453."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          15,
+          24,
+          26,
+          27,
+          28
+        ],
+        "span_sentences": [
+          "- The attack chain attempted to deliver a new malware toolkit called BlackSmith, which delivered a PowerShell trojan dubbed AnvilEcho by Proofpoint.",
+          "- AnvilEcho contains all of TA453’s previously identified malware capabilities in a single PowerShell script rather than the modular approach previously observed.",
+          "The LNK delivered the BlackSmith toolset which eventually loaded TA453’s AnvilEcho Powershell Trojan.",
+          "The stager then base64 decodes and AES/ECB decrypts qemus and launches videogui.exe, the PowerShell loader previously hidden in the PNG.",
+          "AnvilEcho is a PowerShell trojan that contains extensive functionality, including capabilities that expand on previous TA453 malware samples.",
+          "TA453 developers attempted to bundle the previous capabilities of TA453 malware into a single PowerShell script.",
+          "Previously, TA453 used individual scripts for each function of the malware, typically VBS or PowerShell scripts."
+        ]
+      },
+      {
+        "node_id": "HL_b0aa92762bc5",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "DocSend",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          7,
+          8
+        ],
+        "span_sentences": [
+          "After receiving a response from the target (outside of Proofpoint visibility), TA453 replied with a DocSend URL.",
+          "The DocSend URL was password protected and led to a text file that contained a URL to the legitimate ISW Podcast being impersonated by TA453."
+        ]
+      },
+      {
+        "node_id": "HL_b6c52aa2a503",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Hotmail",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "TA453 continued to establish their legitimacy by sending emails from understandingthewar[.]org and including a TA453 controlled Hotmail account in the email signature."
+        ]
+      },
+      {
+        "node_id": "HL_c788d3977073",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA453",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          15,
+          17,
+          27,
+          28,
+          39,
+          42
+        ],
+        "span_sentences": [
+          "Proofpoint identified Iranian threat actor TA453 targeting a prominent religious figure with a fake podcast interview invitation.",
+          "- The malware, which uses encryption and network communication techniques similar to previously observed TA453 samples, is designed to enable intelligence gathering and exfiltration.",
+          "- AnvilEcho contains all of TA453’s previously identified malware capabilities in a single PowerShell script rather than the modular approach previously observed.",
+          "Starting 22 July 2024, TA453 contacted multiple email addresses for a prominent Jewish figure while pretending to be the Research Director for the Institute for the Study of War (ISW).",
+          "After receiving a response from the target (outside of Proofpoint visibility), TA453 replied with a DocSend URL.",
+          "The DocSend URL was password protected and led to a text file that contained a URL to the legitimate ISW Podcast being impersonated by TA453.",
+          "It is likely that TA453 was attempting to normalize the target clicking a link and entering a password so the target would do the same when they delivered malware.",
+          "Proofpoint first observed TA453 spoofing the Institute for the Study of War (ISW) in phishing campaigns targeting other organizations starting in February 2024, almost immediately after registering the domain in late January 2024.",
+          "The theme of spoofing is consistent with broader TA453 phishing activity reported by Google Threat Intelligence Group in August 2024.",
+          "TA453 continued to establish their legitimacy by sending emails from understandingthewar[.]org and including a TA453 controlled Hotmail account in the email signature.",
+          "The LNK delivered the BlackSmith toolset which eventually loaded TA453’s AnvilEcho Powershell Trojan.",
+          "If qemus or toni.dll are not available, soshi.dll will download them from d75[.]site, a TA453 controlled storage site.",
+          "TA453 developers attempted to bundle the previous capabilities of TA453 malware into a single PowerShell script.",
+          "Previously, TA453 used individual scripts for each function of the malware, typically VBS or PowerShell scripts.",
+          "AnvilEcho consists of multiple functions, many of which are either similar to or improved on previously reported TA453 malware modules.",
+          "The design of using the same network communication and encryption functions across multiple modules is similar to what our analysis revealed in TA453’s NokNok malware."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The installer then extracts a file hidden with steganography as a base64 string inside Beautifull.jpg, a PNG file."
+          ],
+          [
+            "Stage 2, toni.dll, is heavily obfuscated and starts by looking for antivirus installed on the system."
+          ],
+          [
+            "The stager then base64 decodes and AES/ECB decrypts qemus and launches videogui.exe, the PowerShell loader previously hidden in the PNG."
+          ],
+          [
+            "The beginning of the script sets up a series of functions to encrypt, encode and exfiltrate information."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_14",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The malware, which uses encryption and network communication techniques similar to previously observed TA453 samples, is designed to enable intelligence gathering and exfiltration."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_9",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The attack chain attempted to deliver a new malware toolkit called BlackSmith, which delivered a PowerShell trojan dubbed AnvilEcho by Proofpoint."
+          ],
+          [
+            "- AnvilEcho contains all of TA453’s previously identified malware capabilities in a single PowerShell script rather than the modular approach previously observed."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_5",
+          "EDGE_7",
+          "EDGE_16",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "BlackSmith uses soshi.dll file as an installer, creating C:\\Users\\Public\\Public Library and then copying mary.dll, qemus, and toni.dll.",
+            "If qemus or toni.dll are not available, soshi.dll will download them from d75[.]site, a TA453 controlled storage site."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The installer then extracts a file hidden with steganography as a base64 string inside Beautifull.jpg, a PNG file."
+          ],
+          [
+            "The stager then base64 decodes and AES/ECB decrypts qemus and launches videogui.exe, the PowerShell loader previously hidden in the PNG."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The ZIP contained an LNK titled “Podcast Plan 2024.lnk”.",
+            "The LNK delivered the BlackSmith toolset which eventually loaded TA453’s AnvilEcho Powershell Trojan."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1543",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1543",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After mary.dll is copied to the install folder, the installer registers toni.dll as a service for persistence."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1553",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1553",
+        "edges": [
+          "EDGE_3",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "AnvilEcho starts by using System.Net.ServicePointManager to write TrustAllCertsPolicy, to bypass SSL Certificate Validation by forcing a system to accept all SSL/TLS certificates without validating them."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If antivirus software is detected, the malware will rewrite the entry point of amsi.AmsiScanBuffer to force AmsiScanBuffer to return an Invalid Argument error when called."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_8",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_22",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Proofpoint identified Iranian threat actor TA453 targeting a prominent religious figure with a fake podcast interview invitation."
+          ],
+          [
+            "- The initial interaction attempted to lure the target to engage with a benign email to build conversation and trust to then subsequently click on a follow-up malicious link."
+          ],
+          [
+            "Starting 22 July 2024, TA453 contacted multiple email addresses for a prominent Jewish figure while pretending to be the Research Director for the Institute for the Study of War (ISW)."
+          ],
+          [
+            "After receiving a response from the target (outside of Proofpoint visibility), TA453 replied with a DocSend URL.",
+            "The DocSend URL was password protected and led to a text file that contained a URL to the legitimate ISW Podcast being impersonated by TA453."
+          ],
+          [
+            "Proofpoint first observed TA453 spoofing the Institute for the Study of War (ISW) in phishing campaigns targeting other organizations starting in February 2024, almost immediately after registering the domain in late January 2024."
+          ],
+          [
+            "TA453 continued to establish their legitimacy by sending emails from understandingthewar[.]org and including a TA453 controlled Hotmail account in the email signature."
+          ],
+          [
+            "After another reply from the target, TA453 replied with a GoogleDrive URL leading to a ZIP archive named “Podcast Plan-2024.zip”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1585",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1585",
+        "edges": [
+          "EDGE_12",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Starting 22 July 2024, TA453 contacted multiple email addresses for a prominent Jewish figure while pretending to be the Research Director for the Institute for the Study of War (ISW)."
+          ],
+          [
+            "TA453 continued to establish their legitimacy by sending emails from understandingthewar[.]org and including a TA453 controlled Hotmail account in the email signature."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_8747736dd56a",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "deepspaceocean[.]info",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "AnvilEcho uses deepspaceocean[.]info for C2 throughout the script."
+        ]
+      },
+      {
+        "node_id": "IOC_99c680c51074",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "understandingthewar[.]org",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "TA453 continued to establish their legitimacy by sending emails from understandingthewar[.]org and including a TA453 controlled Hotmail account in the email signature."
+        ]
+      },
+      {
+        "node_id": "IOC_b3980fde93a0",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "$env:PUBLIC\\qwer.txt",
+        "edges": [],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "It checks for a previously generated MachineID in $env:PUBLIC\\qwer.txt."
+        ]
+      },
+      {
+        "node_id": "IOC_cd86027d8bb3",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "d75[.]site",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          17,
+          19
+        ],
+        "span_sentences": [
+          "If qemus or toni.dll are not available, soshi.dll will download them from d75[.]site, a TA453 controlled storage site.",
+          "Again, if the PNG file is not found in the working directory, it’s downloaded from d75[.]site."
+        ]
+      },
+      {
+        "node_id": "IOC_d13dd4c4c87a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\Public\\Public Library",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "BlackSmith uses soshi.dll file as an installer, creating C:\\Users\\Public\\Public Library and then copying mary.dll, qemus, and toni.dll."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_050f07f6cbcd",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_050f07f6cbcd",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_050f07f6cbcd",
+      "node_v": "TTP_T1553"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_26d52e065a06",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_26d52e065a06",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_26d52e065a06",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_9b3962781483",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_9b3962781483",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_b0aa92762bc5",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_b6c52aa2a503",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_b6c52aa2a503",
+      "node_v": "TTP_T1585"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1543"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1553"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_c788d3977073",
+      "node_v": "TTP_T1585"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_8747736dd56a",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_99c680c51074",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_cd86027d8bb3",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

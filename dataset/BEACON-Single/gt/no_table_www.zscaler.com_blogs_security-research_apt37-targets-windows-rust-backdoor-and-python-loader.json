@@ -1,0 +1,1089 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_18cb2f107a89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "AhnLab",
+        "edges": [],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "The decrypted malware is FadeStealer, the same data-theft tool previously documented by AhnLab."
+        ]
+      },
+      {
+        "node_id": "HL_29dbb6cf1793",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "North Korea",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The decoy document is a Hangul Word Processor (HWP) file titled “Two Perspectives on North Korea in South Korean Society”, which was last modified on June 11, 2025."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          9,
+          12,
+          15,
+          16,
+          21,
+          23,
+          25
+        ],
+        "span_sentences": [
+          "ThreatLabz’s latest findings suggest that APT37 utilized the Rust programming language to create a lightweight backdoor we named Rustonotto, which has basic functionality for executing Windows commands and sending the results to a threat actor-controlled server.",
+          "ThreatLabz reconstructed the APT37 infection chain that begins with an initial compromise via a Windows shortcut or a Windows help file, followed by Chinotto dropping FadeStealer through a sophisticated infection process.",
+          "Windows shortcut and Rustonotto\nIn one campaign, APT37 utilizes a Windows shortcut file.",
+          "- Scans\n%temp%\nand the current working directory for its own Windows shortcut file, validating its exact size (6,032,787 bytes) to ensure the correct file is processed.",
+          "- Reads the Windows shortcut, converts the byte values to ASCII, and extracts two hex-encoded payloads delimited by the markers AEL (first payload start), BEL (second payload start), and EOF (end of file marker).",
+          "Figure 2: Example decoy document dropped by an APT37 Windows shortcut file.",
+          "In another campaign, the threat actor used a Windows help file (CHM) to deliver malware, a method that ThreatLabz has observed APT37 use before.",
+          "Inside the RAR archive were two files: a password-protected ZIP archive called KT그룹 채용 (translated as KT Job Description) and a malicious Windows help file named Password.chm."
+        ]
+      },
+      {
+        "node_id": "HL_4568e65357c3",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Rustonotto",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          2,
+          3,
+          6,
+          12,
+          22,
+          31
+        ],
+        "span_sentences": [
+          "In recent campaigns, APT37 utilizes a single command-and-control (C2) server to orchestrate all components of their malware arsenal, including a Rust-based backdoor that ThreatLabz dubbed Rustonotto (also known as CHILLYCHINO), a PowerShell-based malware known as Chinotto, and FadeStealer.",
+          "Rustonotto is a newly identified backdoor in use since June 2025.",
+          "ThreatLabz’s latest findings suggest that APT37 utilized the Rust programming language to create a lightweight backdoor we named Rustonotto, which has basic functionality for executing Windows commands and sending the results to a threat actor-controlled server.",
+          "Windows shortcut and Rustonotto\nIn one campaign, APT37 utilizes a Windows shortcut file.",
+          "The dropped payload is Rustonotto, which is a Rust-compiled binary (MD5 7967156e138a66f3ee1bfce81836d8d0).",
+          "Chinotto connects to the same C2 server URL previously associated with Rustonotto."
+        ]
+      },
+      {
+        "node_id": "HL_58f5afc3833d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Ruby Sleet",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "APT37 (also known as ScarCruft, Ruby Sleet, and Velvet Chollima) is a North Korean-aligned threat actor active since at least 2012."
+        ]
+      },
+      {
+        "node_id": "HL_72608656a66c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Velvet Chollima",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "APT37 (also known as ScarCruft, Ruby Sleet, and Velvet Chollima) is a North Korean-aligned threat actor active since at least 2012."
+        ]
+      },
+      {
+        "node_id": "HL_75b6262057e7",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "schtasks",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "- Creates a scheduled task named\nMicrosoftUpdate\n, configured to execute3HNoWZd.exe\nevery 5 minutes usingschtasks\n."
+        ]
+      },
+      {
+        "node_id": "HL_76224a316ca2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Chinotto",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          9,
+          13,
+          14,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ],
+        "span_sentences": [
+          "In recent campaigns, APT37 utilizes a single command-and-control (C2) server to orchestrate all components of their malware arsenal, including a Rust-based backdoor that ThreatLabz dubbed Rustonotto (also known as CHILLYCHINO), a PowerShell-based malware known as Chinotto, and FadeStealer.",
+          "Chinotto is a well-documented PowerShell backdoor that has been in use since 2019.",
+          "ThreatLabz reconstructed the APT37 infection chain that begins with an initial compromise via a Windows shortcut or a Windows help file, followed by Chinotto dropping FadeStealer through a sophisticated infection process.",
+          "When this shortcut file (MD5: b9900bef33c6cc9911a5cd7eeda8e093) is launched, a malicious PowerShell script, Chinotto, is invoked that extracts an embedded decoy and payload using predefined markers.",
+          "The steps outlined below detail the infection process initiated when the victim executes Chinotto.",
+          "The backdoor known as Chinotto is capable of performing various tasks, such as transferring files, executing commands, modifying the registry, creating scheduled tasks, and more.",
+          "When Chinotto launches, it creates a unique victim identifier by combining the computer name and the username, which Chinotto uses when communicating with the C2 server.",
+          "Chinotto connects to the same C2 server URL previously associated with Rustonotto.",
+          "To avoid running the malware more than once on the same machine, Chinotto generates a file named %TEMP%\\jMwVrHdPtpv as an execution marker.",
+          "Every 5 seconds, Chinotto checks the threat actor’s C2 server for new instructions via HTTP POST requests, sending the victim ID (formatted as U=[victim ID]\n).",
+          "Chinotto then receives commands from the server, which are Base64 decoded, and executed on the infected system."
+        ]
+      },
+      {
+        "node_id": "HL_77541d46e156",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "RAR.exe",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Additionally, when creating a RAR archive, FadeStealer utilizes the hardcoded password NaeMhq[d]q to encrypt the RAR content and employs a custom RAR.exe tool extracted from its embedded resources."
+        ]
+      },
+      {
+        "node_id": "HL_82fe1c342308",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Hangul Word Processor",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The decoy document is a Hangul Word Processor (HWP) file titled “Two Perspectives on North Korea in South Korean Society”, which was last modified on June 11, 2025."
+        ]
+      },
+      {
+        "node_id": "HL_a1ee8a6ec1b2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CHILLYCHINO",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "In recent campaigns, APT37 utilizes a single command-and-control (C2) server to orchestrate all components of their malware arsenal, including a Rust-based backdoor that ThreatLabz dubbed Rustonotto (also known as CHILLYCHINO), a PowerShell-based malware known as Chinotto, and FadeStealer."
+        ]
+      },
+      {
+        "node_id": "HL_a511095a4b44",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Python",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "APT37 also employed a Python-based loader implementing the Process Doppelgänging code injection technique to deploy a custom-built stealer designed for data exfiltration."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          13,
+          28
+        ],
+        "span_sentences": [
+          "In recent campaigns, APT37 utilizes a single command-and-control (C2) server to orchestrate all components of their malware arsenal, including a Rust-based backdoor that ThreatLabz dubbed Rustonotto (also known as CHILLYCHINO), a PowerShell-based malware known as Chinotto, and FadeStealer.",
+          "Chinotto is a well-documented PowerShell backdoor that has been in use since 2019.",
+          "When this shortcut file (MD5: b9900bef33c6cc9911a5cd7eeda8e093) is launched, a malicious PowerShell script, Chinotto, is invoked that extracts an embedded decoy and payload using predefined markers.",
+          "The HTA file (1.html\n) downloaded by the CHM contains a malicious PowerShell script that acts as a backdoor, allowing the threat actor to control the infected computer remotely."
+        ]
+      },
+      {
+        "node_id": "HL_ac4fe665136e",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "ScarCruft",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "APT37 (also known as ScarCruft, Ruby Sleet, and Velvet Chollima) is a North Korean-aligned threat actor active since at least 2012."
+        ]
+      },
+      {
+        "node_id": "HL_b34e8271d122",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ThreatLabz",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          6,
+          9,
+          23,
+          55
+        ],
+        "span_sentences": [
+          "In recent campaigns, APT37 utilizes a single command-and-control (C2) server to orchestrate all components of their malware arsenal, including a Rust-based backdoor that ThreatLabz dubbed Rustonotto (also known as CHILLYCHINO), a PowerShell-based malware known as Chinotto, and FadeStealer.",
+          "ThreatLabz’s latest findings suggest that APT37 utilized the Rust programming language to create a lightweight backdoor we named Rustonotto, which has basic functionality for executing Windows commands and sending the results to a threat actor-controlled server.",
+          "ThreatLabz reconstructed the APT37 infection chain that begins with an initial compromise via a Windows shortcut or a Windows help file, followed by Chinotto dropping FadeStealer through a sophisticated infection process.",
+          "In another campaign, the threat actor used a Windows help file (CHM) to deliver malware, a method that ThreatLabz has observed APT37 use before.",
+          "Based on the decoy content employed in the attack, ThreatLabz assesses with medium confidence that the intended targets include individuals linked to the North Korean regime or involved in South Korean political and/or diplomatic affairs."
+        ]
+      },
+      {
+        "node_id": "HL_c58f22851a80",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "FadeStealer",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          2,
+          5,
+          9,
+          35,
+          36,
+          37,
+          38,
+          39,
+          41,
+          42,
+          45,
+          46
+        ],
+        "span_sentences": [
+          "In recent campaigns, APT37 utilizes a single command-and-control (C2) server to orchestrate all components of their malware arsenal, including a Rust-based backdoor that ThreatLabz dubbed Rustonotto (also known as CHILLYCHINO), a PowerShell-based malware known as Chinotto, and FadeStealer.",
+          "FadeStealer, first discovered in 2023, is a surveillance tool that records keystrokes, captures screenshots and audio, monitors devices and removable media, and exfiltrates data via password-protected RAR archives.",
+          "ThreatLabz reconstructed the APT37 infection chain that begins with an initial compromise via a Windows shortcut or a Windows help file, followed by Chinotto dropping FadeStealer through a sophisticated infection process.",
+          "The decrypted malware is FadeStealer, the same data-theft tool previously documented by AhnLab.",
+          "FadeStealer periodically gathers files from the infected system, compresses them into password-protected RAR archives, and transmits them to a C2 server.",
+          "When launched, FadeStealer creates working directories under the %TEMP%\\VSTelems_Fade\\\nfolder.",
+          "FadeStealer has two main functions: automatically exfiltrating sensitive files and sending specific files as directed by commands specified by the threat actor.",
+          "Once connected to the C2 server, FadeStealer receives Base64-encoded commands specifying a file path and a search pattern, separated by the |\ncharacter.",
+          "After collecting the files, FadeStealer creates a timestamped RAR archive (e.g., data_YYYY_MM_DD-HH_MM_SS.rar\n) and sends it back to the C2 server.",
+          "FadeStealer compiles all the collected data into a RAR archive every hour, using a naming format like watch_YYYY_MM_DD-HH_MM_SS.rar\n.",
+          "When sending files, FadeStealer uses HTTP POST requests with multipart form data, specifying myboundary as the boundary name.",
+          "Additionally, when creating a RAR archive, FadeStealer utilizes the hardcoded password NaeMhq[d]q to encrypt the RAR content and employs a custom RAR.exe tool extracted from its embedded resources."
+        ]
+      },
+      {
+        "node_id": "HL_cb6e965b7713",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Korea",
+        "edges": [],
+        "sentence_indices": [
+          53
+        ],
+        "span_sentences": [
+          "Our findings revealed that several victims of this attack were located in South Korea."
+        ]
+      },
+      {
+        "node_id": "HL_dbe1e07c9eae",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Rust programming language",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "ThreatLabz’s latest findings suggest that APT37 utilized the Rust programming language to create a lightweight backdoor we named Rustonotto, which has basic functionality for executing Windows commands and sending the results to a threat actor-controlled server."
+        ]
+      },
+      {
+        "node_id": "HL_ed6c0fbd4850",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT37",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          6,
+          8,
+          9,
+          12,
+          23,
+          48,
+          49
+        ],
+        "span_sentences": [
+          "APT37 (also known as ScarCruft, Ruby Sleet, and Velvet Chollima) is a North Korean-aligned threat actor active since at least 2012.",
+          "APT37 primarily targets South Korean individuals connected to the North Korean regime or involved in human rights activism, leveraging custom malware and adopting emerging technologies.",
+          "In recent campaigns, APT37 utilizes a single command-and-control (C2) server to orchestrate all components of their malware arsenal, including a Rust-based backdoor that ThreatLabz dubbed Rustonotto (also known as CHILLYCHINO), a PowerShell-based malware known as Chinotto, and FadeStealer.",
+          "ThreatLabz’s latest findings suggest that APT37 utilized the Rust programming language to create a lightweight backdoor we named Rustonotto, which has basic functionality for executing Windows commands and sending the results to a threat actor-controlled server.",
+          "APT37 also employed a Python-based loader implementing the Process Doppelgänging code injection technique to deploy a custom-built stealer designed for data exfiltration.",
+          "ThreatLabz reconstructed the APT37 infection chain that begins with an initial compromise via a Windows shortcut or a Windows help file, followed by Chinotto dropping FadeStealer through a sophisticated infection process.",
+          "Windows shortcut and Rustonotto\nIn one campaign, APT37 utilizes a Windows shortcut file.",
+          "In another campaign, the threat actor used a Windows help file (CHM) to deliver malware, a method that ThreatLabz has observed APT37 use before.",
+          "The C2 PHP script used by APT37 is a lightweight and file-based backend, facilitating communication between the threat actor and the malware implants.",
+          "The APT37 C2 server handles incoming HTTP requests differently depending on whether they originate from the threat actor or the malware implant."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1020",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1020",
+        "edges": [
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "FadeStealer periodically gathers files from the infected system, compresses them into password-protected RAR archives, and transmits them to a C2 server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_15",
+          "EDGE_24",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            45,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Reads the Windows shortcut, converts the byte values to ASCII, and extracts two hex-encoded payloads delimited by the markers AEL (first payload start), BEL (second payload start), and EOF (end of file marker)."
+          ],
+          [
+            "- Decodes the second payload and writes it as\nC:\\ProgramData\\3HNoWZd.exe\n, which functions as the main executable."
+          ],
+          [
+            "When sending files, FadeStealer uses HTTP POST requests with multipart form data, specifying myboundary as the boundary name.",
+            "Additionally, when creating a RAR archive, FadeStealer utilizes the hardcoded password NaeMhq[d]q to encrypt the RAR content and employs a custom RAR.exe tool extracted from its embedded resources."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1033",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1033",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When Chinotto launches, it creates a unique victim identifier by combining the computer name and the username, which Chinotto uses when communicating with the C2 server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ],
+          [
+            45,
+            45
+          ],
+          [
+            52,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "FadeStealer periodically gathers files from the infected system, compresses them into password-protected RAR archives, and transmits them to a C2 server."
+          ],
+          [
+            "When sending files, FadeStealer uses HTTP POST requests with multipart form data, specifying myboundary as the boundary name."
+          ],
+          [
+            "The threat actor retrieves exfiltrated files from the compromised machine by issuing a direct GET request to the C2 server, leveraging prior knowledge of the client ID and the specific file name."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_2",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Decodes the second payload and writes it as\nC:\\ProgramData\\3HNoWZd.exe\n, which functions as the main executable.",
+            "- Creates a scheduled task named\nMicrosoftUpdate\n, configured to execute3HNoWZd.exe\nevery 5 minutes usingschtasks\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_12",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "APT37 also employed a Python-based loader implementing the Process Doppelgänging code injection technique to deploy a custom-built stealer designed for data exfiltration."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_11",
+          "EDGE_13",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In recent campaigns, APT37 utilizes a single command-and-control (C2) server to orchestrate all components of their malware arsenal, including a Rust-based backdoor that ThreatLabz dubbed Rustonotto (also known as CHILLYCHINO), a PowerShell-based malware known as Chinotto, and FadeStealer."
+          ],
+          [
+            "ThreatLabz’s latest findings suggest that APT37 utilized the Rust programming language to create a lightweight backdoor we named Rustonotto, which has basic functionality for executing Windows commands and sending the results to a threat actor-controlled server."
+          ],
+          [
+            "APT37 also employed a Python-based loader implementing the Process Doppelgänging code injection technique to deploy a custom-built stealer designed for data exfiltration."
+          ],
+          [
+            "Windows shortcut and Rustonotto\nIn one campaign, APT37 utilizes a Windows shortcut file.",
+            "When this shortcut file (MD5: b9900bef33c6cc9911a5cd7eeda8e093) is launched, a malicious PowerShell script, Chinotto, is invoked that extracts an embedded decoy and payload using predefined markers."
+          ],
+          [
+            "The HTA file (1.html\n) downloaded by the CHM contains a malicious PowerShell script that acts as a backdoor, allowing the threat actor to control the infected computer remotely."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_5",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            45,
+            45
+          ],
+          [
+            45,
+            46
+          ],
+          [
+            52,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When Chinotto launches, it creates a unique victim identifier by combining the computer name and the username, which Chinotto uses when communicating with the C2 server."
+          ],
+          [
+            "Every 5 seconds, Chinotto checks the threat actor’s C2 server for new instructions via HTTP POST requests, sending the victim ID (formatted as U=[victim ID]\n)."
+          ],
+          [
+            "When sending files, FadeStealer uses HTTP POST requests with multipart form data, specifying myboundary as the boundary name."
+          ],
+          [
+            "When sending files, FadeStealer uses HTTP POST requests with multipart form data, specifying myboundary as the boundary name.",
+            "Additionally, when creating a RAR archive, FadeStealer utilizes the hardcoded password NaeMhq[d]q to encrypt the RAR content and employs a custom RAR.exe tool extracted from its embedded resources."
+          ],
+          [
+            "The threat actor retrieves exfiltrated files from the compromised machine by issuing a direct GET request to the C2 server, leveraging prior knowledge of the client ID and the specific file name."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_6",
+          "EDGE_29"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The steps outlined below detail the infection process initiated when the victim executes Chinotto.",
+            "- Scans\n%temp%\nand the current working directory for its own Windows shortcut file, validating its exact size (6,032,787 bytes) to ensure the correct file is processed."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malicious CHM file, when opened, creates a registry value under the Run key to trigger the download and execution of an HTML Application (HTA) file from the threat actor’s server each time the current user logs on."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once connected to the C2 server, FadeStealer receives Base64-encoded commands specifying a file path and a search pattern, separated by the |\ncharacter."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_8",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Reads the Windows shortcut, converts the byte values to ASCII, and extracts two hex-encoded payloads delimited by the markers AEL (first payload start), BEL (second payload start), and EOF (end of file marker)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_9",
+          "EDGE_23",
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            12,
+            13
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "ThreatLabz reconstructed the APT37 infection chain that begins with an initial compromise via a Windows shortcut or a Windows help file, followed by Chinotto dropping FadeStealer through a sophisticated infection process."
+          ],
+          [
+            "Windows shortcut and Rustonotto\nIn one campaign, APT37 utilizes a Windows shortcut file.",
+            "When this shortcut file (MD5: b9900bef33c6cc9911a5cd7eeda8e093) is launched, a malicious PowerShell script, Chinotto, is invoked that extracts an embedded decoy and payload using predefined markers."
+          ],
+          [
+            "In another campaign, the threat actor used a Windows help file (CHM) to deliver malware, a method that ThreatLabz has observed APT37 use before."
+          ],
+          [
+            "The malicious CHM file, when opened, creates a registry value under the Run key to trigger the download and execution of an HTML Application (HTA) file from the threat actor’s server each time the current user logs on."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malicious CHM file, when opened, creates a registry value under the Run key to trigger the download and execution of an HTML Application (HTA) file from the threat actor’s server each time the current user logs on."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_10",
+          "EDGE_20",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ],
+          [
+            42,
+            42
+          ],
+          [
+            45,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "FadeStealer periodically gathers files from the infected system, compresses them into password-protected RAR archives, and transmits them to a C2 server."
+          ],
+          [
+            "FadeStealer compiles all the collected data into a RAR archive every hour, using a naming format like watch_YYYY_MM_DD-HH_MM_SS.rar\n."
+          ],
+          [
+            "When sending files, FadeStealer uses HTTP POST requests with multipart form data, specifying myboundary as the boundary name.",
+            "Additionally, when creating a RAR archive, FadeStealer utilizes the hardcoded password NaeMhq[d]q to encrypt the RAR content and employs a custom RAR.exe tool extracted from its embedded resources."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_18be32ee0d82",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "7967156e138a66f3ee1bfce81836d8d0",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The dropped payload is Rustonotto, which is a Rust-compiled binary (MD5 7967156e138a66f3ee1bfce81836d8d0)."
+        ]
+      },
+      {
+        "node_id": "IOC_2221a5c442ff",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\3HNoWZd.exe",
+        "edges": [
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "- Decodes the second payload and writes it as\nC:\\ProgramData\\3HNoWZd.exe\n, which functions as the main executable."
+        ]
+      },
+      {
+        "node_id": "IOC_420c5df2aa6f",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "NaeMhq[d]q",
+        "edges": [
+          "EDGE_26",
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Additionally, when creating a RAR archive, FadeStealer utilizes the hardcoded password NaeMhq[d]q to encrypt the RAR content and employs a custom RAR.exe tool extracted from its embedded resources."
+        ]
+      },
+      {
+        "node_id": "IOC_53ae07a395a3",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\NKView.hwp",
+        "edges": [],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "- Converts the first hex payload to binary and writes it as\nC:\\ProgramData\\NKView.hwp\n, then launches it as a decoy document."
+        ]
+      },
+      {
+        "node_id": "IOC_7cee19378d7f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%\\VSTelems_Fade\\",
+        "edges": [],
+        "sentence_indices": [
+          37,
+          43
+        ],
+        "span_sentences": [
+          "When launched, FadeStealer creates working directories under the %TEMP%\\VSTelems_Fade\\\nfolder.",
+          "This archive includes files stored in the main directory (%TEMP%\\VSTelems_Fade\\\n), which contain keylogging data, screenshots, audio recordings, and captured files."
+        ]
+      },
+      {
+        "node_id": "IOC_84fedca093e8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%\\jMwVrHdPtpv",
+        "edges": [],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "To avoid running the malware more than once on the same machine, Chinotto generates a file named %TEMP%\\jMwVrHdPtpv as an execution marker."
+        ]
+      },
+      {
+        "node_id": "IOC_9d84441ec6f9",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "b9900bef33c6cc9911a5cd7eeda8e093",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "When this shortcut file (MD5: b9900bef33c6cc9911a5cd7eeda8e093) is launched, a malicious PowerShell script, Chinotto, is invoked that extracts an embedded decoy and payload using predefined markers."
+        ]
+      },
+      {
+        "node_id": "IOC_bbf76c0289ea",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%temp%",
+        "edges": [
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "- Scans\n%temp%\nand the current working directory for its own Windows shortcut file, validating its exact size (6,032,787 bytes) to ensure the correct file is processed."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_4568e65357c3",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_75b6262057e7",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_76224a316ca2",
+      "node_v": "TTP_T1033"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_76224a316ca2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_76224a316ca2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_76224a316ca2",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_76224a316ca2",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_76224a316ca2",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_76224a316ca2",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_77541d46e156",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_a1ee8a6ec1b2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_a511095a4b44",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_c58f22851a80",
+      "node_v": "TTP_T1020"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_c58f22851a80",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_c58f22851a80",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_c58f22851a80",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_c58f22851a80",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_c58f22851a80",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_c58f22851a80",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_ed6c0fbd4850",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_ed6c0fbd4850",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_ed6c0fbd4850",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_2221a5c442ff",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_2221a5c442ff",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_420c5df2aa6f",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_420c5df2aa6f",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_9d84441ec6f9",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_bbf76c0289ea",
+      "node_v": "TTP_T1083"
+    }
+  ]
+}

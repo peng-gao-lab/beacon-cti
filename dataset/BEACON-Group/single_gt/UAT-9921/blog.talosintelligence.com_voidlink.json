@@ -1,0 +1,736 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_082118261122",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical infrastructure",
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "Linux is a particularly large landscape, with the Internet of Things (IoT) and critical infrastructure heavily relying on the Linux OS."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_14caf66a9090",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Kubernetes",
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+        ],
+        "edges": [
+          "EDGE_28b7b876df9b"
+        ]
+      },
+      {
+        "node_id": "HL_1aa8ec1ebecd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Sliver",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "There were obvious inspirations from CobaltStrike and Sliver; however, one fundamental difference was the single file infrastructure and the lack of integrated initial infector vector."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_1db8281b3bf6",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Manjusaka",
+        "sentence_indices": [
+          6,
+          21
+        ],
+        "span_sentences": [
+          "Modular frameworks are prevalent on the landscape today with the likes of Cobalt Strike, Manjusaka, Alchimist, and SuperShell among the many operating today.",
+          "The future of attack frameworks\nTalos has been tracking fast deployment frameworks since 2022, with reports on Manjusaka and Alchimist/Insekt."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2d7bd41c8263",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "technology sector",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "With regard to victimology, UAT-9921 appears to focus on the technology sector, but we have also seen victims from financial services."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_38f5869ffd27",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-9921",
+        "sentence_indices": [
+          0,
+          8,
+          10,
+          11,
+          13,
+          15,
+          16,
+          18
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a new threat actor, UAT-9921, leveraging VoidLink in campaigns.",
+          "Cisco Talos is tracking the threat actor first seen to be using the VoidLink framework as UAT-9921.",
+          "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network.",
+          "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project.",
+          "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+          "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance.",
+          "With regard to victimology, UAT-9921 appears to focus on the technology sector, but we have also seen victims from financial services.",
+          "Given VoidLink’s auditability and oversight features, it is worth noting that even though UAT-9921 activity involves usage of exploits and pre-obtained credentials, Talos cannot discount the possibility that this activity is part of red team exercises."
+        ],
+        "edges": [
+          "EDGE_1de8cd6730b2",
+          "EDGE_32b308075b7a",
+          "EDGE_a2c12fc6ab0e",
+          "EDGE_c291ed3561ef",
+          "EDGE_c9b15e1dcf1e"
+        ]
+      },
+      {
+        "node_id": "HL_3b05bc5922dc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Alchimist",
+        "sentence_indices": [
+          6,
+          21
+        ],
+        "span_sentences": [
+          "Modular frameworks are prevalent on the landscape today with the likes of Cobalt Strike, Manjusaka, Alchimist, and SuperShell among the many operating today.",
+          "The future of attack frameworks\nTalos has been tracking fast deployment frameworks since 2022, with reports on Manjusaka and Alchimist/Insekt."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          3,
+          36,
+          39
+        ],
+        "span_sentences": [
+          "- Cisco Talos found clear indications that implants also exist for Windows, with the capability to load plugins.",
+          "Talos has found clear indications that the main implant has been compiled for Windows and that it can load plugins via dynamic-link library (DLL) sideloading.",
+          "Most of the modular frameworks Talos observes support a wide variety of platforms typically inclusive of Linux, Windows, and MacOS — but VoidLink is different."
+        ],
+        "edges": [
+          "EDGE_677e23cc4c1c"
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          0,
+          3,
+          8,
+          10,
+          11,
+          19,
+          21,
+          32,
+          36
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a new threat actor, UAT-9921, leveraging VoidLink in campaigns.",
+          "- Cisco Talos found clear indications that implants also exist for Windows, with the capability to load plugins.",
+          "Cisco Talos is tracking the threat actor first seen to be using the VoidLink framework as UAT-9921.",
+          "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network.",
+          "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project.",
+          "Talos is aware of multiple VoidLink-related victims dating back to September with the activity continuing through to January 2026.",
+          "The future of attack frameworks\nTalos has been tracking fast deployment frameworks since 2022, with reports on Manjusaka and Alchimist/Insekt.",
+          "The development timeline reported by Checkpoint Research indicates that this is a near-production-ready proof of concept.",
+          "Talos has found clear indications that the main implant has been compiled for Windows and that it can load plugins via dynamic-link library (DLL) sideloading."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_531a5dcd0341",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial services",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "With regard to victimology, UAT-9921 appears to focus on the technology sector, but we have also seen victims from financial services."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_57a032eb4fc3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Apache Dubbo",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project."
+        ],
+        "edges": [
+          "EDGE_53fb2250d9ff"
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Modular frameworks are prevalent on the landscape today with the likes of Cobalt Strike, Manjusaka, Alchimist, and SuperShell among the many operating today."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_96e6259a61f6",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "VoidLink",
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          8,
+          10,
+          13,
+          14,
+          17,
+          18,
+          19,
+          24,
+          25,
+          29,
+          33,
+          40,
+          42,
+          44
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a new threat actor, UAT-9921, leveraging VoidLink in campaigns.",
+          "Their activities may go as far back as 2019, even without VoidLink.",
+          "- The VoidLink compile-on-demand feature lays down the foundations for AI-enabled attack frameworks, which can create tools on-demand for their operators.",
+          "- VoidLink is a near-production-ready proof of concept for an enterprise grade implant management framework, and features auditability and oversight for non-operators.",
+          "VoidLink is a new modular framework that targets Linux based systems.",
+          "Cisco Talos is tracking the threat actor first seen to be using the VoidLink framework as UAT-9921.",
+          "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network.",
+          "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+          "This allows the threat actor to hide their presence and the VoidLink C2, once deployed.",
+          "However, the cloud-aware nature of VoidLink and scanning of entire Class C networks indicates that there is no specific targeting.",
+          "Given VoidLink’s auditability and oversight features, it is worth noting that even though UAT-9921 activity involves usage of exploits and pre-obtained credentials, Talos cannot discount the possibility that this activity is part of red team exercises.",
+          "Talos is aware of multiple VoidLink-related victims dating back to September with the activity continuing through to January 2026.",
+          "The VoidLink framework represents a giant leap in this predictable evolution, while keeping the same, single file infrastructure philosophy.",
+          "The development of VoidLink was fast, supported on AI-enabled integrated development environments.",
+          "VoidLink contains features that make it “defense contractor grade,” such as the auditability of all actions and the existence of a role-based access control (RBAC).",
+          "Most frameworks support Windows and MacOS from their early stages of development; VoidLink only appears to have implants developed for Linux, although the implant code is written in such a way that can easily be adapted to other languages.",
+          "The VoidLink framework specifically targets Linux devices without any current support for Windows or MacOS.",
+          "As with most frameworks, VoidLink can generate implants consisting of a variety of plugins.",
+          "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+        ],
+        "edges": [
+          "EDGE_38d3209b46d7",
+          "EDGE_48b52b1de2fb",
+          "EDGE_606581d056be",
+          "EDGE_8a4ec021e4f4",
+          "EDGE_acc816cdf093",
+          "EDGE_e2febf118cff",
+          "EDGE_ff6c3bb0bc50"
+        ]
+      },
+      {
+        "node_id": "HL_ae90ec3ddffb",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Insekt",
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The future of attack frameworks\nTalos has been tracking fast deployment frameworks since 2022, with reports on Manjusaka and Alchimist/Insekt."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b07e83768d2c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "MacOS",
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "Most of the modular frameworks Talos observes support a wide variety of platforms typically inclusive of Linux, Windows, and MacOS — but VoidLink is different."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b5c80a85c121",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "FSCAN",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+        ],
+        "edges": [
+          "EDGE_53150a700f08"
+        ]
+      },
+      {
+        "node_id": "HL_b7b42a22e626",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Docker",
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+        ],
+        "edges": [
+          "EDGE_d2844694fbbc"
+        ]
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "sentence_indices": [
+          27,
+          33,
+          37,
+          38,
+          40,
+          41
+        ],
+        "span_sentences": [
+          "It supports compilation on demand for plugins, providing support for the different Linux distributions that might be targeted.",
+          "Most frameworks support Windows and MacOS from their early stages of development; VoidLink only appears to have implants developed for Linux, although the implant code is written in such a way that can easily be adapted to other languages.",
+          "The Linux implants have advanced features, such as an eBPF or Loadable Kernel Module (LKM) based rootkit, container privilege escalation, and sandbox escape.",
+          "These are often related with the server side, but there are a multitude of plugins in the implant targeting Linux as a desktop and not a server, something which is not often seen on malware since the Linux desktop base is not as prevalent as Windows or MacOS.",
+          "The VoidLink framework specifically targets Linux devices without any current support for Windows or MacOS.",
+          "Linux is a particularly large landscape, with the Internet of Things (IoT) and critical infrastructure heavily relying on the Linux OS."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ede2e1e737ea",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Checkpoint Research",
+        "sentence_indices": [
+          20,
+          32
+        ],
+        "span_sentences": [
+          "This finding does not necessarily contradict the Checkpoint Research mentions of late November since the presented documents show development dates from version 2.0 and Cisco Talos assesses that this was still version 1.0.",
+          "The development timeline reported by Checkpoint Research indicates that this is a near-production-ready proof of concept."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ef7d7a6b57f2",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Internet of Things (IoT)",
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "Linux is a particularly large landscape, with the Internet of Things (IoT) and critical infrastructure heavily relying on the Linux OS."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f19b9877d34e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SuperShell",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Modular frameworks are prevalent on the landscape today with the likes of Cobalt Strike, Manjusaka, Alchimist, and SuperShell among the many operating today."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+            "This allows the threat actor to hide their presence and the VoidLink C2, once deployed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_ff6c3bb0bc50"
+        ]
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_1de8cd6730b2",
+          "EDGE_53150a700f08",
+          "EDGE_606581d056be"
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project.",
+            "We also found indications of possible initial compromise via malicious documents, but no samples were obtained.",
+            "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+            "This allows the threat actor to hide their presence and the VoidLink C2, once deployed.",
+            "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_c291ed3561ef"
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+          ],
+          [
+            "The mesh peer-to-peer (P2P) and dead-letter queue routing capabilities allow some implants to communicate with others, creating hidden networks with-in the same environment allowing the bypass of network access restrictions, as one implant may serve as external gateway for other implants."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_32b308075b7a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "- Cisco Talos found clear indications that implants also exist for Windows, with the capability to load plugins."
+          ],
+          [
+            "UAT-9921 uses compromised hosts to install VoidLink command and control (C2) which are then used to launch scanning activities both internal and external to the network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_8a4ec021e4f4",
+          "EDGE_a2c12fc6ab0e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "Talos assesses with high confidence that UAT-9921 compromises servers with the usage of pre-obtained credentials or exploiting Java serialization vulnerabilities which allow remote code execution, namely Apache Dubbo project.",
+            "We also found indications of possible initial compromise via malicious documents, but no samples were obtained.",
+            "In their post-compromise activities, UAT-9921 deploys the VoidLink implant.",
+            "This allows the threat actor to hide their presence and the VoidLink C2, once deployed.",
+            "To find new targets and perform lateral movement, UAT-9921 deploys a SOCKS server on their compromised servers, which is used by FSCAN to perform internal reconnaissance."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_53fb2250d9ff",
+          "EDGE_c9b15e1dcf1e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1215",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1215",
+        "ttp_id": "T1215",
+        "best_span_sentences_list": [
+          [
+            "The Linux implants have advanced features, such as an eBPF or Loadable Kernel Module (LKM) based rootkit, container privilege escalation, and sandbox escape."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_48b52b1de2fb"
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "It has stealth mechanisms in place, including the ability to detect endpoint detection and response (EDR) solutions and create an evasion strategy based on the findings."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "edges": [
+          "EDGE_acc816cdf093"
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "Talos has found clear indications that the main implant has been compiled for Windows and that it can load plugins via dynamic-link library (DLL) sideloading."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_677e23cc4c1c",
+          "EDGE_e2febf118cff"
+        ]
+      },
+      {
+        "node_id": "TTP_T1613",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1613",
+        "ttp_id": "T1613",
+        "best_span_sentences_list": [
+          [
+            "VoidLink is also cloud-aware and can determine if it is running in a Kubernetes or Docker environment, then gather additional information to make use of the vendor’s respective APIs."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            44
+          ]
+        ],
+        "edges": [
+          "EDGE_28b7b876df9b",
+          "EDGE_38d3209b46d7",
+          "EDGE_d2844694fbbc"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1de8cd6730b2",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_28b7b876df9b",
+      "node_u": "HL_14caf66a9090",
+      "node_v": "TTP_T1613",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_32b308075b7a",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_38d3209b46d7",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1613",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_48b52b1de2fb",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1215",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_53150a700f08",
+      "node_u": "HL_b5c80a85c121",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_53fb2250d9ff",
+      "node_u": "HL_57a032eb4fc3",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_606581d056be",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_677e23cc4c1c",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8a4ec021e4f4",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a2c12fc6ab0e",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_acc816cdf093",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c291ed3561ef",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c9b15e1dcf1e",
+      "node_u": "HL_38f5869ffd27",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d2844694fbbc",
+      "node_u": "HL_b7b42a22e626",
+      "node_v": "TTP_T1613",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e2febf118cff",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ff6c3bb0bc50",
+      "node_u": "HL_96e6259a61f6",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

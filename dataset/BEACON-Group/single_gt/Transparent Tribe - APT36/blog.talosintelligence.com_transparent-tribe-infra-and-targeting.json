@@ -1,0 +1,1026 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "sentence_indices": [
+          10,
+          23
+        ],
+        "span_sentences": [
+          "This domain masquerades as the website for the Center For Land Warfare Studies (CLAWS), an India-based think tank covering national security and military issues.",
+          "This domain masquerades as an information portal for The 7th Central Pay Commission (CPC) of India, which provides payment information and updates for government employees."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0cff205d5090",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Indian Armed Forces",
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "These maldocs did not contain popular news topics, as seen in older campaigns, but instead masqueraded as logistical and operational documents for the Indian Armed Forces."
+        ],
+        "edges": [
+          "EDGE_e6dd36673d27"
+        ]
+      },
+      {
+        "node_id": "HL_1b7ecb94eac4",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mythic Leopard",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe, also known as APT36 and Mythic Leopard, continues to create fake domains mimicking legitimate military and defense organizations as a core component of their operations."
+        ],
+        "edges": [
+          "EDGE_3154aa42adc4",
+          "EDGE_4af2cbfff81e",
+          "EDGE_5021b8ad9528",
+          "EDGE_60e3c2cd4a8f",
+          "EDGE_bd490f061f1d"
+        ]
+      },
+      {
+        "node_id": "HL_24706d42667f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ObliqueRAT",
+        "sentence_indices": [
+          1,
+          4,
+          13,
+          15,
+          18,
+          19,
+          20,
+          39
+        ],
+        "span_sentences": [
+          "Cisco Talos’ previous research has mainly linked this group to CrimsonRAT, but new campaigns show they are expanding their Windows malware arsenal with ObliqueRAT.",
+          "These domains work in conjunction with each other to deliver maldocs distributing CrimsonRAT and ObliqueRAT.",
+          "The victim is encouraged to click on an embedded URL hosted on sharingmymedia[.]com, which then downloads ObliqueRAT, the trojan discovered by Talos in 2020 associated with threat activity targeting entities in South Asia.",
+          "Although we could not confirm the initial infection vector of ObliqueRAT maldocs, earlier campaigns had the same infection chain as those seen in previous CrimsonRAT operations.",
+          "The actors recently deviated from the CrimsonRAT infection chains to make their ObliqueRAT phishing maldocs appear more legitimate.",
+          "For example, attackers leveraging ObliqueRAT started hosting their malicious payloads on compromised websites instead of embedding the malware in the maldoc.",
+          "In one such case in early 2021, the adversaries used iiaonline[.]in, the Indian Industries Association’s legitimate website, to host ObliqueRAT artifacts.",
+          "While CrimsonRAT remains the group’s staple Windows implant, their development and distribution of ObliqueRAT in early 2020 indicates they are rapidly expanding their Windows malware arsenal."
+        ],
+        "edges": [
+          "EDGE_5d2b0b2d2cbf",
+          "EDGE_a29fe6e8d2a0",
+          "EDGE_c78d5e8eb789"
+        ]
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "Then, in mid- to late-2020, the attackers targeted diplomatic entities with RAR archives pretending to be related to the British High Commision in Islamabad, Pakistan."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Cisco Talos’ previous research has mainly linked this group to CrimsonRAT, but new campaigns show they are expanding their Windows malware arsenal with ObliqueRAT."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_683f2396e991",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Center For Land Warfare Studies",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "This domain masquerades as the website for the Center For Land Warfare Studies (CLAWS), an India-based think tank covering national security and military issues."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_68a0077c1589",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CrimsonRAT",
+        "sentence_indices": [
+          1,
+          4,
+          11,
+          15,
+          16,
+          22,
+          25,
+          37,
+          39
+        ],
+        "span_sentences": [
+          "Cisco Talos’ previous research has mainly linked this group to CrimsonRAT, but new campaigns show they are expanding their Windows malware arsenal with ObliqueRAT.",
+          "These domains work in conjunction with each other to deliver maldocs distributing CrimsonRAT and ObliqueRAT.",
+          "(The legitimate domain for CLAWS is claws[.]in.)\nThe malicious clawsindia[.]com domain was previously hosted on 164[.]68[.]101[.]194, a known command and control (C2) for CrimsonRAT, Transparent Tribe’s custom .NET remote access trojan (RAT).",
+          "Although we could not confirm the initial infection vector of ObliqueRAT maldocs, earlier campaigns had the same infection chain as those seen in previous CrimsonRAT operations.",
+          "In such cases, adversaries would deliver phishing maldocs to targets containing a malicious VBA macro that extracted either the CrimsonRAT executable or a ZIP archive embedded in the maldoc.",
+          "Another fake domain the group uses to serve CrimsonRAT is 7thcpcupdates[.]info.",
+          "After enabling macros, the file executes CrimsonRAT on the endpoint.",
+          "Specifically, we have observed the group using resume documents and archives, such as ZIPs and RARs, with alluring themes distributing CrimsonRAT.",
+          "While CrimsonRAT remains the group’s staple Windows implant, their development and distribution of ObliqueRAT in early 2020 indicates they are rapidly expanding their Windows malware arsenal."
+        ],
+        "edges": [
+          "EDGE_1164e928e65a",
+          "EDGE_dc384e66a78f"
+        ]
+      },
+      {
+        "node_id": "HL_6f1c1870ee3c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "The 7th Central Pay Commission",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "This domain masquerades as an information portal for The 7th Central Pay Commission (CPC) of India, which provides payment information and updates for government employees."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_87713f94840d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT36",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Transparent Tribe, also known as APT36 and Mythic Leopard, continues to create fake domains mimicking legitimate military and defense organizations as a core component of their operations."
+        ],
+        "edges": [
+          "EDGE_4ce04c39a8cc",
+          "EDGE_8a14633275bd",
+          "EDGE_d6fac9090c38",
+          "EDGE_da0489980897",
+          "EDGE_fd83be19aed4"
+        ]
+      },
+      {
+        "node_id": "HL_8c45f10a7e17",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Indian Industries Association",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "In one such case in early 2021, the adversaries used iiaonline[.]in, the Indian Industries Association’s legitimate website, to host ObliqueRAT artifacts."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9728b1ff28eb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Transparent Tribe",
+        "sentence_indices": [
+          0,
+          2,
+          3,
+          5,
+          6,
+          7,
+          8,
+          14,
+          21,
+          26,
+          29,
+          35,
+          36,
+          38,
+          42
+        ],
+        "span_sentences": [
+          "Transparent Tribe, also known as APT36 and Mythic Leopard, continues to create fake domains mimicking legitimate military and defense organizations as a core component of their operations.",
+          "While military and defense personnel continue to be the group’s primary targets, Transparent Tribe is increasingly targeting diplomatic entities, defense contractors, research organizations and conference attendees, indicating that the group is expanding its targeting.",
+          "Our recent research into Transparent Tribe uncovered two types of domains the group uses in their various campaigns: fake domains masquerading as legitimate Indian defense and government-related websites, and malicious domains posing as content-hosting sites.",
+          "Based on our findings, Transparent Tribe’s tactics, techniques, and procedures (TTPs) have remained largely unchanged since 2020, but the group continues to implement new lures into its operational toolkit.",
+          "The variety of maldoc lures Transparent Tribe employs indicates the group still relies on social engineering as a core component of its operations.",
+          "Transparent Tribe uses a two-pronged approach for registering malicious domains: Fake domains masquerading as legitimate sites belonging to government, defense, or research entities, and malicious domains that resemble file-sharing websites.",
+          "Our latest Transparent Tribe research confirms that the group continues to create malicious domains mimicking defense-related entities as a core component of their operations.",
+          "Security researchers previously discovered Transparent Tribe using sharingmymedia[.]com to host Android malware targeting Indian military and defense personnel.",
+          "These examples highlight Transparent Tribe’s heavy reliance on social engineering as a core TTP and the group’s efforts to make their operations appear as legitimate as possible.",
+          "Transparent Tribe also regularly registers domains that appear to be legitimate file- and media-sharing services.",
+          "Transparent Tribe uses a variety of themes in their lures that evolved over time.",
+          "Transparent Tribe has historically used military and defense-themes in their phishing emails and maldocs to target Indian military and government personnel.",
+          "Transparent Tribe consistently uses alluring documents and file names, commonly referred to as honeytraps, to trick victims into executing malicious content on their endpoints.",
+          "Transparent Tribe relies heavily on the use of maldocs to spread their Windows implants.",
+          "Transparent Tribe uses generically themed content-hosting domains as well as malicious domains masquerading as legitimate defense-related websites."
+        ],
+        "edges": [
+          "EDGE_4e528cab6bf3",
+          "EDGE_59354ac25277",
+          "EDGE_a4490f9b79de",
+          "EDGE_c3206b82c8ee",
+          "EDGE_cc00a52667e6"
+        ]
+      },
+      {
+        "node_id": "HL_b99094a7fadd",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Islamabad",
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "Then, in mid- to late-2020, the attackers targeted diplomatic entities with RAR archives pretending to be related to the British High Commision in Islamabad, Pakistan."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_bb8e65a0d582",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CLAWS",
+        "sentence_indices": [
+          10,
+          11
+        ],
+        "span_sentences": [
+          "This domain masquerades as the website for the Center For Land Warfare Studies (CLAWS), an India-based think tank covering national security and military issues.",
+          "(The legitimate domain for CLAWS is claws[.]in.)\nThe malicious clawsindia[.]com domain was previously hosted on 164[.]68[.]101[.]194, a known command and control (C2) for CrimsonRAT, Transparent Tribe’s custom .NET remote access trojan (RAT)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_dbebd6355415",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Asia",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The victim is encouraged to click on an embedded URL hosted on sharingmymedia[.]com, which then downloads ObliqueRAT, the trojan discovered by Talos in 2020 associated with threat activity targeting entities in South Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_eed7327a8bf4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "British High Commision in Islamabad, Pakistan",
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "Then, in mid- to late-2020, the attackers targeted diplomatic entities with RAR archives pretending to be related to the British High Commision in Islamabad, Pakistan."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "By mid-2020, the attackers reverted to primarily distributing military-themed maldocs.",
+            "These maldocs did not contain popular news topics, as seen in older campaigns, but instead masqueraded as logistical and operational documents for the Indian Armed Forces."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_60e3c2cd4a8f",
+          "EDGE_c3206b82c8ee",
+          "EDGE_e6dd36673d27",
+          "EDGE_fd83be19aed4"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "Security researchers previously discovered Transparent Tribe using sharingmymedia[.]com to host Android malware targeting Indian military and defense personnel."
+          ],
+          [
+            "For example, attackers leveraging ObliqueRAT started hosting their malicious payloads on compromised websites instead of embedding the malware in the maldoc.",
+            "In one such case in early 2021, the adversaries used iiaonline[.]in, the Indian Industries Association’s legitimate website, to host ObliqueRAT artifacts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            19,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_0bc2ad87ac46",
+          "EDGE_28deeecb282b",
+          "EDGE_31a3d38e35c8",
+          "EDGE_4ce04c39a8cc",
+          "EDGE_61064b0b9136",
+          "EDGE_8e3035b42a04",
+          "EDGE_a87e80978a3d",
+          "EDGE_bd490f061f1d",
+          "EDGE_c78d5e8eb789",
+          "EDGE_cc00a52667e6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Our recent research into Transparent Tribe uncovered two types of domains the group uses in their various campaigns: fake domains masquerading as legitimate Indian defense and government-related websites, and malicious domains posing as content-hosting sites.",
+            "These domains work in conjunction with each other to deliver maldocs distributing CrimsonRAT and ObliqueRAT.",
+            "Based on our findings, Transparent Tribe’s tactics, techniques, and procedures (TTPs) have remained largely unchanged since 2020, but the group continues to implement new lures into its operational toolkit.",
+            "The variety of maldoc lures Transparent Tribe employs indicates the group still relies on social engineering as a core component of its operations.",
+            "Transparent Tribe uses a two-pronged approach for registering malicious domains: Fake domains masquerading as legitimate sites belonging to government, defense, or research entities, and malicious domains that resemble file-sharing websites."
+          ],
+          [
+            "However, we also identified a subdomain, mail[.]clawsindia[.]com, hosted on the same IP, suggesting that the attackers are using it as part of a malspam campaign.",
+            "The victim is encouraged to click on an embedded URL hosted on sharingmymedia[.]com, which then downloads ObliqueRAT, the trojan discovered by Talos in 2020 associated with threat activity targeting entities in South Asia.",
+            "Security researchers previously discovered Transparent Tribe using sharingmymedia[.]com to host Android malware targeting Indian military and defense personnel."
+          ],
+          [
+            "Upon clicking “Download Now,” a malicious XLS file is downloaded onto the victim’s computer.",
+            "After enabling macros, the file executes CrimsonRAT on the endpoint."
+          ],
+          [
+            "The infection chain involving these domains is similar to the one described above in which the threat actors use social engineering to convince the victim to download and open the malware hosted on these sites.",
+            "Transparent Tribe uses a variety of themes in their lures that evolved over time."
+          ],
+          [
+            "From 2019 and continuing into 2020, the attackers started using honeytrap-themed lures to trick targets into opening ZIP archives and maldocs that posed as pictures of women."
+          ],
+          [
+            "Transparent Tribe consistently uses alluring documents and file names, commonly referred to as honeytraps, to trick victims into executing malicious content on their endpoints.",
+            "Specifically, we have observed the group using resume documents and archives, such as ZIPs and RARs, with alluring themes distributing CrimsonRAT."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            7
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            36,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_1164e928e65a",
+          "EDGE_262a7788ad14",
+          "EDGE_2c1648274e61",
+          "EDGE_4e528cab6bf3",
+          "EDGE_5021b8ad9528",
+          "EDGE_5d2b0b2d2cbf",
+          "EDGE_8a14633275bd",
+          "EDGE_8ac8709c5c6c",
+          "EDGE_c6b6fcebb0f1",
+          "EDGE_d55229315a46"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Our recent research into Transparent Tribe uncovered two types of domains the group uses in their various campaigns: fake domains masquerading as legitimate Indian defense and government-related websites, and malicious domains posing as content-hosting sites.",
+            "These domains work in conjunction with each other to deliver maldocs distributing CrimsonRAT and ObliqueRAT.",
+            "Based on our findings, Transparent Tribe’s tactics, techniques, and procedures (TTPs) have remained largely unchanged since 2020, but the group continues to implement new lures into its operational toolkit.",
+            "The variety of maldoc lures Transparent Tribe employs indicates the group still relies on social engineering as a core component of its operations.",
+            "Transparent Tribe uses a two-pronged approach for registering malicious domains: Fake domains masquerading as legitimate sites belonging to government, defense, or research entities, and malicious domains that resemble file-sharing websites."
+          ],
+          [
+            "However, we also identified a subdomain, mail[.]clawsindia[.]com, hosted on the same IP, suggesting that the attackers are using it as part of a malspam campaign.",
+            "The victim is encouraged to click on an embedded URL hosted on sharingmymedia[.]com, which then downloads ObliqueRAT, the trojan discovered by Talos in 2020 associated with threat activity targeting entities in South Asia.",
+            "Security researchers previously discovered Transparent Tribe using sharingmymedia[.]com to host Android malware targeting Indian military and defense personnel."
+          ],
+          [
+            "In such cases, adversaries would deliver phishing maldocs to targets containing a malicious VBA macro that extracted either the CrimsonRAT executable or a ZIP archive embedded in the maldoc."
+          ],
+          [
+            "These examples highlight Transparent Tribe’s heavy reliance on social engineering as a core TTP and the group’s efforts to make their operations appear as legitimate as possible.",
+            "Another fake domain the group uses to serve CrimsonRAT is 7thcpcupdates[.]info."
+          ],
+          [
+            "The infection chain involving these domains is similar to the one described above in which the threat actors use social engineering to convince the victim to download and open the malware hosted on these sites.",
+            "Transparent Tribe uses a variety of themes in their lures that evolved over time.",
+            "The group has leveraged generic themes, such as resumes and CVs, since early 2019.",
+            "From 2019 and continuing into 2020, the attackers started using honeytrap-themed lures to trick targets into opening ZIP archives and maldocs that posed as pictures of women.",
+            "By mid-2020, the attackers reverted to primarily distributing military-themed maldocs.",
+            "These maldocs did not contain popular news topics, as seen in older campaigns, but instead masqueraded as logistical and operational documents for the Indian Armed Forces.",
+            "Then, in mid- to late-2020, the attackers targeted diplomatic entities with RAR archives pretending to be related to the British High Commision in Islamabad, Pakistan.",
+            "Transparent Tribe has historically used military and defense-themes in their phishing emails and maldocs to target Indian military and government personnel.",
+            "Transparent Tribe consistently uses alluring documents and file names, commonly referred to as honeytraps, to trick victims into executing malicious content on their endpoints.",
+            "Specifically, we have observed the group using resume documents and archives, such as ZIPs and RARs, with alluring themes distributing CrimsonRAT.",
+            "Transparent Tribe relies heavily on the use of maldocs to spread their Windows implants."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            7
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            28,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_3154aa42adc4",
+          "EDGE_59354ac25277",
+          "EDGE_743e8423e864",
+          "EDGE_a29fe6e8d2a0",
+          "EDGE_da0489980897",
+          "EDGE_dc384e66a78f",
+          "EDGE_e30b9eae785f",
+          "EDGE_e623feeae3fc",
+          "EDGE_ebc8c127a4e0"
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1583",
+        "ttp_id": "T1583",
+        "best_span_sentences_list": [
+          [
+            "Transparent Tribe, also known as APT36 and Mythic Leopard, continues to create fake domains mimicking legitimate military and defense organizations as a core component of their operations."
+          ],
+          [
+            "Our recent research into Transparent Tribe uncovered two types of domains the group uses in their various campaigns: fake domains masquerading as legitimate Indian defense and government-related websites, and malicious domains posing as content-hosting sites.",
+            "These domains work in conjunction with each other to deliver maldocs distributing CrimsonRAT and ObliqueRAT.",
+            "Based on our findings, Transparent Tribe’s tactics, techniques, and procedures (TTPs) have remained largely unchanged since 2020, but the group continues to implement new lures into its operational toolkit.",
+            "The variety of maldoc lures Transparent Tribe employs indicates the group still relies on social engineering as a core component of its operations.",
+            "Transparent Tribe uses a two-pronged approach for registering malicious domains: Fake domains masquerading as legitimate sites belonging to government, defense, or research entities, and malicious domains that resemble file-sharing websites.",
+            "Our latest Transparent Tribe research confirms that the group continues to create malicious domains mimicking defense-related entities as a core component of their operations.",
+            "we discovered a fake domain, clawsindia[.]com, registered by the attackers.",
+            "This domain masquerades as the website for the Center For Land Warfare Studies (CLAWS), an India-based think tank covering national security and military issues."
+          ],
+          [
+            "Transparent Tribe also regularly registers domains that appear to be legitimate file- and media-sharing services."
+          ],
+          [
+            "Transparent Tribe uses generically themed content-hosting domains as well as malicious domains masquerading as legitimate defense-related websites."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            3,
+            10
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_0979fe74fc53",
+          "EDGE_22654bef415b",
+          "EDGE_4af2cbfff81e",
+          "EDGE_717ea454aab6",
+          "EDGE_954f10464fa0",
+          "EDGE_a1e0d992075d",
+          "EDGE_a4490f9b79de",
+          "EDGE_d6fac9090c38"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_088c733b06ff",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "mediaclouds[.]live",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "For example, the group has used drivestransfer[.]com, file-attachment[.]com, mediaclouds[.]live, and emailhost[.]network during their operations."
+        ],
+        "edges": [
+          "EDGE_262a7788ad14",
+          "EDGE_954f10464fa0",
+          "EDGE_a87e80978a3d"
+        ]
+      },
+      {
+        "node_id": "IOC_18ac8e40198e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "claws[.]in",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "(The legitimate domain for CLAWS is claws[.]in.)\nThe malicious clawsindia[.]com domain was previously hosted on 164[.]68[.]101[.]194, a known command and control (C2) for CrimsonRAT, Transparent Tribe’s custom .NET remote access trojan (RAT)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_21502848971c",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "164[.]68[.]101[.]194",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "(The legitimate domain for CLAWS is claws[.]in.)\nThe malicious clawsindia[.]com domain was previously hosted on 164[.]68[.]101[.]194, a known command and control (C2) for CrimsonRAT, Transparent Tribe’s custom .NET remote access trojan (RAT)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_27c86e0377b3",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "vikaskumar[.]patel[at]larsentobro[.]com",
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "vikaskumar[.]patel[at]larsentobro[.]com."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_4e45f95364a5",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "drivestransfer[.]com",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "For example, the group has used drivestransfer[.]com, file-attachment[.]com, mediaclouds[.]live, and emailhost[.]network during their operations."
+        ],
+        "edges": [
+          "EDGE_0bc2ad87ac46",
+          "EDGE_a1e0d992075d",
+          "EDGE_c6b6fcebb0f1"
+        ]
+      },
+      {
+        "node_id": "IOC_6c4232efe4e5",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "emailhost[.]network",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "For example, the group has used drivestransfer[.]com, file-attachment[.]com, mediaclouds[.]live, and emailhost[.]network during their operations."
+        ],
+        "edges": [
+          "EDGE_0979fe74fc53",
+          "EDGE_28deeecb282b",
+          "EDGE_8ac8709c5c6c"
+        ]
+      },
+      {
+        "node_id": "IOC_6e2117ef76ba",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "larsento[at]larsentobro[.]com",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "larsento[at]larsentobro[.]com."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_983fdf3ebc32",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "iiaonline[.]in",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "In one such case in early 2021, the adversaries used iiaonline[.]in, the Indian Industries Association’s legitimate website, to host ObliqueRAT artifacts."
+        ],
+        "edges": [
+          "EDGE_61064b0b9136"
+        ]
+      },
+      {
+        "node_id": "IOC_bd2d351a01f2",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "clawsindia[.]com",
+        "sentence_indices": [
+          9,
+          11,
+          12
+        ],
+        "span_sentences": [
+          "we discovered a fake domain, clawsindia[.]com, registered by the attackers.",
+          "(The legitimate domain for CLAWS is claws[.]in.)\nThe malicious clawsindia[.]com domain was previously hosted on 164[.]68[.]101[.]194, a known command and control (C2) for CrimsonRAT, Transparent Tribe’s custom .NET remote access trojan (RAT).",
+          "However, we also identified a subdomain, mail[.]clawsindia[.]com, hosted on the same IP, suggesting that the attackers are using it as part of a malspam campaign."
+        ],
+        "edges": [
+          "EDGE_717ea454aab6",
+          "EDGE_ebc8c127a4e0"
+        ]
+      },
+      {
+        "node_id": "IOC_c764df9e1511",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "sharingmymedia[.]com",
+        "sentence_indices": [
+          13,
+          14
+        ],
+        "span_sentences": [
+          "The victim is encouraged to click on an embedded URL hosted on sharingmymedia[.]com, which then downloads ObliqueRAT, the trojan discovered by Talos in 2020 associated with threat activity targeting entities in South Asia.",
+          "Security researchers previously discovered Transparent Tribe using sharingmymedia[.]com to host Android malware targeting Indian military and defense personnel."
+        ],
+        "edges": [
+          "EDGE_8e3035b42a04",
+          "EDGE_d55229315a46",
+          "EDGE_e623feeae3fc"
+        ]
+      },
+      {
+        "node_id": "IOC_c9384ea8cb97",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "7thcpcupdates[.]info",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Another fake domain the group uses to serve CrimsonRAT is 7thcpcupdates[.]info."
+        ],
+        "edges": [
+          "EDGE_743e8423e864"
+        ]
+      },
+      {
+        "node_id": "IOC_dc31265b3939",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "mail[.]clawsindia[.]com",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "However, we also identified a subdomain, mail[.]clawsindia[.]com, hosted on the same IP, suggesting that the attackers are using it as part of a malspam campaign."
+        ],
+        "edges": [
+          "EDGE_e30b9eae785f"
+        ]
+      },
+      {
+        "node_id": "IOC_f03d3a858552",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "file-attachment[.]com",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "For example, the group has used drivestransfer[.]com, file-attachment[.]com, mediaclouds[.]live, and emailhost[.]network during their operations."
+        ],
+        "edges": [
+          "EDGE_22654bef415b",
+          "EDGE_2c1648274e61",
+          "EDGE_31a3d38e35c8"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0979fe74fc53",
+      "node_u": "IOC_6c4232efe4e5",
+      "node_v": "TTP_T1583",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0bc2ad87ac46",
+      "node_u": "IOC_4e45f95364a5",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1164e928e65a",
+      "node_u": "HL_68a0077c1589",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_22654bef415b",
+      "node_u": "IOC_f03d3a858552",
+      "node_v": "TTP_T1583",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_262a7788ad14",
+      "node_u": "IOC_088c733b06ff",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_28deeecb282b",
+      "node_u": "IOC_6c4232efe4e5",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2c1648274e61",
+      "node_u": "IOC_f03d3a858552",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3154aa42adc4",
+      "node_u": "HL_1b7ecb94eac4",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_31a3d38e35c8",
+      "node_u": "IOC_f03d3a858552",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4af2cbfff81e",
+      "node_u": "HL_1b7ecb94eac4",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ce04c39a8cc",
+      "node_u": "HL_87713f94840d",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4e528cab6bf3",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5021b8ad9528",
+      "node_u": "HL_1b7ecb94eac4",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_59354ac25277",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5d2b0b2d2cbf",
+      "node_u": "HL_24706d42667f",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_60e3c2cd4a8f",
+      "node_u": "HL_1b7ecb94eac4",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_61064b0b9136",
+      "node_u": "IOC_983fdf3ebc32",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_717ea454aab6",
+      "node_u": "IOC_bd2d351a01f2",
+      "node_v": "TTP_T1583",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_743e8423e864",
+      "node_u": "IOC_c9384ea8cb97",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8a14633275bd",
+      "node_u": "HL_87713f94840d",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8ac8709c5c6c",
+      "node_u": "IOC_6c4232efe4e5",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8e3035b42a04",
+      "node_u": "IOC_c764df9e1511",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_954f10464fa0",
+      "node_u": "IOC_088c733b06ff",
+      "node_v": "TTP_T1583",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a1e0d992075d",
+      "node_u": "IOC_4e45f95364a5",
+      "node_v": "TTP_T1583",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a29fe6e8d2a0",
+      "node_u": "HL_24706d42667f",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a4490f9b79de",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a87e80978a3d",
+      "node_u": "IOC_088c733b06ff",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bd490f061f1d",
+      "node_u": "HL_1b7ecb94eac4",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c3206b82c8ee",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c6b6fcebb0f1",
+      "node_u": "IOC_4e45f95364a5",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c78d5e8eb789",
+      "node_u": "HL_24706d42667f",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cc00a52667e6",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d55229315a46",
+      "node_u": "IOC_c764df9e1511",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d6fac9090c38",
+      "node_u": "HL_87713f94840d",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_da0489980897",
+      "node_u": "HL_87713f94840d",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dc384e66a78f",
+      "node_u": "HL_68a0077c1589",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e30b9eae785f",
+      "node_u": "IOC_dc31265b3939",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e623feeae3fc",
+      "node_u": "IOC_c764df9e1511",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e6dd36673d27",
+      "node_u": "HL_0cff205d5090",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ebc8c127a4e0",
+      "node_u": "IOC_bd2d351a01f2",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fd83be19aed4",
+      "node_u": "HL_87713f94840d",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

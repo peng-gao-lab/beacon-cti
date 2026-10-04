@@ -1,0 +1,676 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader."
+        ],
+        "edges": [
+          "EDGE_5d2998355e15"
+        ]
+      },
+      {
+        "node_id": "HL_0666553a06f3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Indonesia",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0c4981090af2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MultipipeLoader",
+        "sentence_indices": [
+          30,
+          31
+        ],
+        "span_sentences": [
+          "Meanwhile, MultipipeLoader and OutLoader are similar to CroxLoader and BigpipeLoader but have slightly different features.",
+          "MultipipeLoader uses multiple threads to read/write the encrypted payload like BigpipeLoader, but it implements a similar decryption routine as CroxLoader."
+        ],
+        "edges": [
+          "EDGE_9281e22f74c1"
+        ]
+      },
+      {
+        "node_id": "HL_0c56bf9349b8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "OutLoader",
+        "sentence_indices": [
+          19,
+          30,
+          32
+        ],
+        "span_sentences": [
+          "In this campaign, the APT group used various types of customized Cobalt Strike loaders, which we call CroxLoader, BigpipeLoader, and OutLoader.",
+          "Meanwhile, MultipipeLoader and OutLoader are similar to CroxLoader and BigpipeLoader but have slightly different features.",
+          "Meanwhile, OutLoader tries to download the payload from a remote server, while its other function is the same as BigpipeLoader."
+        ],
+        "edges": [
+          "EDGE_b4f63aff10a5"
+        ]
+      },
+      {
+        "node_id": "HL_20fcb3fd6348",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Symatic loader",
+        "sentence_indices": [
+          13,
+          14
+        ],
+        "span_sentences": [
+          "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools.",
+          "Symatic loader\n\nSecurity solutions place the in-memory API hooks in ntdll.dll to monitor suspicious behavior."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2ab3e10f0893",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Earth Longzhi",
+        "sentence_indices": [
+          0,
+          6,
+          7,
+          8,
+          13,
+          18
+        ],
+        "span_sentences": [
+          "We looked into the campaigns deployed by a new subgroup of advanced persistent threat (APT) group APT41, Earth Longzhi.",
+          "After clustering each intrusion, we concluded that the threat actor is a new subgroup of advanced persistent threat (APT) group APT41 that we call Earth Longzhi.",
+          "Since it first started being active in 2020, Earth Longzhi’s long-running campaign can be divided into two based on the range of time and toolset.",
+          "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China.",
+          "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools.",
+          "Earth Longzhi initiated the second campaign five months after the last attack in its first campaign."
+        ],
+        "edges": [
+          "EDGE_03186e14d9bc",
+          "EDGE_baf2e330d1bf"
+        ]
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3f0b5111d024",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "the government, healthcare, academic, and infrastructure industries",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_55f8c695d2b3",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "banking sector",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5886a9ce543d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT41",
+        "sentence_indices": [
+          0,
+          6
+        ],
+        "span_sentences": [
+          "We looked into the campaigns deployed by a new subgroup of advanced persistent threat (APT) group APT41, Earth Longzhi.",
+          "After clustering each intrusion, we concluded that the threat actor is a new subgroup of advanced persistent threat (APT) group APT41 that we call Earth Longzhi."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "sentence_indices": [
+          3,
+          4,
+          12,
+          13,
+          19,
+          26
+        ],
+        "span_sentences": [
+          "The malware used in the incident was a simple but custom Cobalt Strike loader.",
+          "After further investigation, however, we found incidents targeting multiple regions using a similar Cobalt Strike loader.",
+          "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader.",
+          "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools.",
+          "In this campaign, the APT group used various types of customized Cobalt Strike loaders, which we call CroxLoader, BigpipeLoader, and OutLoader.",
+          "The first variant of BigpipeLoader just drops the decoy file and loads the Cobalt Strike payload into the memory, then proceeds to execute it."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6fc13146077e",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "the defense, aviation, insurance, and urban development industries",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "sentence_indices": [
+          8,
+          9
+        ],
+        "span_sentences": [
+          "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China.",
+          "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_adc773403759",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BigpipeLoader",
+        "sentence_indices": [
+          19,
+          24,
+          26,
+          28
+        ],
+        "span_sentences": [
+          "In this campaign, the APT group used various types of customized Cobalt Strike loaders, which we call CroxLoader, BigpipeLoader, and OutLoader.",
+          "Since this loader will read/write encrypted payload through a named pipe, we named this shellcode loader BigpipeLoader.",
+          "The first variant of BigpipeLoader just drops the decoy file and loads the Cobalt Strike payload into the memory, then proceeds to execute it.",
+          "This launches the encrypted BigpipeLoader (chrome.inf)."
+        ],
+        "edges": [
+          "EDGE_b69643e0c75d",
+          "EDGE_c0b9da263ddf"
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "sentence_indices": [
+          2,
+          8,
+          9,
+          13
+        ],
+        "span_sentences": [
+          "In early 2022, we investigated an incident that compromised a company in Taiwan.",
+          "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China.",
+          "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine.",
+          "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b869d616918c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CroxLoader",
+        "sentence_indices": [
+          12,
+          19,
+          20,
+          23,
+          30,
+          31
+        ],
+        "span_sentences": [
+          "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader.",
+          "In this campaign, the APT group used various types of customized Cobalt Strike loaders, which we call CroxLoader, BigpipeLoader, and OutLoader.",
+          "During the deployment of the second campaign, we found two different variants of CroxLoader with respective patterns of use.",
+          "Meanwhile, the second variant of CroxLoader is often deployed through spearphishing emails to lure victims into opening it.",
+          "Meanwhile, MultipipeLoader and OutLoader are similar to CroxLoader and BigpipeLoader but have slightly different features.",
+          "MultipipeLoader uses multiple threads to read/write the encrypted payload like BigpipeLoader, but it implements a similar decryption routine as CroxLoader."
+        ],
+        "edges": [
+          "EDGE_342bf0313c50",
+          "EDGE_6c63e5f1a1f4",
+          "EDGE_aa090f1297f6",
+          "EDGE_ac4d7bafece1"
+        ]
+      },
+      {
+        "node_id": "HL_c6ca18fdfff0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Ukraine",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_d724b1be40b3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Malaysia",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ebcfc9936ae6",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "government, infrastructure, and health industries",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f0730fc60dca",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Thailand",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Both variants of BigpipeLoader use the AES-128-CFB algorithm to decrypt the payload."
+          ],
+          [
+            "MultipipeLoader uses multiple threads to read/write the encrypted payload like BigpipeLoader, but it implements a similar decryption routine as CroxLoader."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_06eb4e84a4ca",
+          "EDGE_6c63e5f1a1f4",
+          "EDGE_9281e22f74c1",
+          "EDGE_b69643e0c75d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "After restoring the ntdll, Symatic will spawn a new process for process injection."
+          ],
+          [
+            "During the deployment of the second campaign, we found two different variants of CroxLoader with respective patterns of use.",
+            "The first variant is commonly used when attackers use publicly facing applications as the entry point of attack.",
+            "It decrypts the embedded payload and injects the decrypted payload into the remote process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_ac4d7bafece1"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "Meanwhile, OutLoader tries to download the payload from a remote server, while its other function is the same as BigpipeLoader."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_5d2998355e15",
+          "EDGE_b4f63aff10a5"
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1106",
+        "ttp_id": "T1106",
+        "best_span_sentences_list": [
+          [
+            "Symatic removes the API hooks first and gets the raw content of ntdll.dll from the disk."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Meanwhile, the second variant of CroxLoader is often deployed through spearphishing emails to lure victims into opening it."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_03186e14d9bc",
+          "EDGE_342bf0313c50"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Both campaigns used spear-phishing emails as the primary entry vector to deliver Earth Longhzhi’s malware.",
+            "The attacker embeds the malware in a password-protected archive or shares a link to download a malware, luring the victim with information about a person.",
+            "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader."
+          ],
+          [
+            "Meanwhile, the second variant of CroxLoader is often deployed through spearphishing emails to lure victims into opening it."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            12
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_aa090f1297f6",
+          "EDGE_baf2e330d1bf"
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "The first variant of BigpipeLoader just drops the decoy file and loads the Cobalt Strike payload into the memory, then proceeds to execute it.",
+            "In the second variant, however, the attacker creates a dropper, which drops the malicious WTSAPI32.dll designed to be sideloaded by a legitimate application with the file name “wusa.exe”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_3ef04a4f4a8f",
+          "EDGE_a320d3c53d4d",
+          "EDGE_c0b9da263ddf",
+          "EDGE_d32c723c625c"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_03e5aa49816a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "wusa.exe",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "In the second variant, however, the attacker creates a dropper, which drops the malicious WTSAPI32.dll designed to be sideloaded by a legitimate application with the file name “wusa.exe”."
+        ],
+        "edges": [
+          "EDGE_d32c723c625c"
+        ]
+      },
+      {
+        "node_id": "IOC_3803910e5911",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "WTSAPI32.dll",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "In the second variant, however, the attacker creates a dropper, which drops the malicious WTSAPI32.dll designed to be sideloaded by a legitimate application with the file name “wusa.exe”."
+        ],
+        "edges": [
+          "EDGE_a320d3c53d4d"
+        ]
+      },
+      {
+        "node_id": "IOC_792dd26ddc4e",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ntdll.dll",
+        "sentence_indices": [
+          14,
+          15,
+          16
+        ],
+        "span_sentences": [
+          "Symatic loader\n\nSecurity solutions place the in-memory API hooks in ntdll.dll to monitor suspicious behavior.",
+          "Symatic removes the API hooks first and gets the raw content of ntdll.dll from the disk.",
+          "It then proceeds to replace the in-memory ntdll image to make sure there are no hooks placed in ntdll.dll."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_b3bb3a6308b4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "chrome.inf",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "This launches the encrypted BigpipeLoader (chrome.inf)."
+        ],
+        "edges": [
+          "EDGE_06eb4e84a4ca",
+          "EDGE_3ef04a4f4a8f"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_03186e14d9bc",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_06eb4e84a4ca",
+      "node_u": "IOC_b3bb3a6308b4",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_342bf0313c50",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ef04a4f4a8f",
+      "node_u": "IOC_b3bb3a6308b4",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5d2998355e15",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c63e5f1a1f4",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9281e22f74c1",
+      "node_u": "HL_0c4981090af2",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a320d3c53d4d",
+      "node_u": "IOC_3803910e5911",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_aa090f1297f6",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ac4d7bafece1",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b4f63aff10a5",
+      "node_u": "HL_0c56bf9349b8",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b69643e0c75d",
+      "node_u": "HL_adc773403759",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_baf2e330d1bf",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c0b9da263ddf",
+      "node_u": "HL_adc773403759",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d32c723c625c",
+      "node_u": "IOC_03e5aa49816a",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

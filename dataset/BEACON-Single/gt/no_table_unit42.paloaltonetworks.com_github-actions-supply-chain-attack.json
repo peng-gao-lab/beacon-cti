@@ -1,0 +1,505 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_082d081461ad",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "agentkit",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          4,
+          23,
+          31,
+          48,
+          51
+        ],
+        "span_sentences": [
+          "The payload was focused on exploiting the public CI/CD flow of one of their open source projects (agentkit) probably with the purpose of leveraging it for further compromises.",
+          "We assume that although the attacker had a GitHub token with write permission to the repository, they preferred to disguise their malicious commit by impersonating a valid user in a valid pull request — a technique called “commit impersonation.”\nWe kept looking and saw that both of these users made changes to their forks of coinbase/agentkit, but not to the other two repositories, so we focused on coinbase/agentkit.",
+          "This payload demonstrates the connection between the actor, tj-actions/changed-files and coinbase/agentkit as shown in Figure 6.",
+          "- Using this token, the attacker overrode a tag in tj-actions/changed-files, making it point to a malicious commit done in a fork by the malicious user mmvojwip, specifically targeting the coinbase/agentkit repository\n- Next, coinbase/agentkit’s CI workflow executed, consuming the malicious tag from tj-actions/changed-files and leaking the credentials to the attacker.",
+          "We know the attacker specifically targeted Coinbase, and coinbase/agentkit's workflow started using tj-actions/changed-files only on March 7."
+        ]
+      },
+      {
+        "node_id": "HL_1af9314daea8",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "tj-actions/eslint-changed-files",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "We can now confirm that tj-actions/changed-files was compromised because it used the tj-actions/eslint-changed-files action, which relied on reviewdog/action-setup as a dependency."
+        ]
+      },
+      {
+        "node_id": "HL_482359750013",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "tj-actions/changed-files",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          0,
+          6,
+          11,
+          13,
+          17,
+          21,
+          24,
+          25,
+          27,
+          31,
+          48,
+          51,
+          52
+        ],
+        "span_sentences": [
+          "Update March 20: The recent compromise of the GitHub action tj-actions/changed-files and additional actions within the reviewdog organization has captured the attention of the GitHub community, marking another major software supply chain attack.",
+          "The tj-actions/changed-files GitHub action was recently compromised, allowing attackers to access sensitive workflow secrets that relied on this action.",
+          "We can now confirm that tj-actions/changed-files was compromised because it used the tj-actions/eslint-changed-files action, which relied on reviewdog/action-setup as a dependency.",
+          "Somewhere between March 10 and March 14, 2025, an attacker successfully pushed a malicious commit to the tj-actions/changed-files GitHub repository.",
+          "In the tj-actions/changed-files infection, we saw that the attacker infected the index.js file via a “legitimate” pull request.",
+          "In addition to the pull request infiltration, the attacker used the token to update the existing git tags of the tj-actions/changed-files repository, making all tags point to the malicious 0e58ed8 commit.",
+          "Having discovered that the actor forked these repositories before the large attack on tj-actions/changed-files took place, we suspected that Coinbase might have been the actual target (or one target) of the campaign.",
+          "Although it was deleted, we could see that the workflow referenced v39 of tj-actions/changed-files, which is the exact same tag the actor was fiddling with in their own fork.",
+          "All of these commits changed the reference of tj-actions/changed-files to or from SHA 6e6023c01918b353229af0881232f601a4cc8365.",
+          "This payload demonstrates the connection between the actor, tj-actions/changed-files and coinbase/agentkit as shown in Figure 6.",
+          "- Using this token, the attacker overrode a tag in tj-actions/changed-files, making it point to a malicious commit done in a fork by the malicious user mmvojwip, specifically targeting the coinbase/agentkit repository\n- Next, coinbase/agentkit’s CI workflow executed, consuming the malicious tag from tj-actions/changed-files and leaking the credentials to the attacker.",
+          "We know the attacker specifically targeted Coinbase, and coinbase/agentkit's workflow started using tj-actions/changed-files only on March 7.",
+          "As such, one possible hypothesis is that the attackers monitored the projects dependent on the tj-actions/changed-files and waited for an opportunity to compromise a high-value target."
+        ]
+      },
+      {
+        "node_id": "HL_4e09e1b8be58",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "reviewdog",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          0,
+          10,
+          11,
+          12,
+          20,
+          33,
+          37
+        ],
+        "span_sentences": [
+          "Update March 20: The recent compromise of the GitHub action tj-actions/changed-files and additional actions within the reviewdog organization has captured the attention of the GitHub community, marking another major software supply chain attack.",
+          "A lead provided by Adnan Khan suggested that the compromise of the tj-actions/changed-files action originated in the compromise of a repository belonging to another GitHub organization: reviewdog/action-setup.",
+          "We can now confirm that tj-actions/changed-files was compromised because it used the tj-actions/eslint-changed-files action, which relied on reviewdog/action-setup as a dependency.",
+          "Further investigation revealed that additional actions belonging to the reviewdog organization were hijacked as well.",
+          "We now know that they obtained this capability using the PAT that they previously acquired by infecting reviewdog/action-setup, which in turn poisoned tj-actions/changed-files’s workflow.",
+          "We now know that reviewdog was compromised due to a reviewdog maintainer’s leaked PAT.",
+          "By reviewing the IoCs and speaking to the maintainers of the involved repositories, we estimate that this PAT had access to both spotbugs/spotbugs and to reviewdog/action-setup."
+        ]
+      },
+      {
+        "node_id": "HL_9ea889c1d49e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "spotbugs/spotbugs",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          34,
+          35,
+          36,
+          37
+        ],
+        "span_sentences": [
+          "We now know that RD_MNTNR's PAT was leaked by the attacker from the spotbugs/spotbugs repository.",
+          "The attacker pushed a malicious GitHub Actions workflow file to the spotbugs/spotbugs repository, creating a malicious workflow run in the context of the repository.",
+          "The attacker used this malicious workflow to leak all spotbugs/spotbugs secrets, which included RD_MNTNR's PAT.",
+          "By reviewing the IoCs and speaking to the maintainers of the involved repositories, we estimate that this PAT had access to both spotbugs/spotbugs and to reviewdog/action-setup."
+        ]
+      },
+      {
+        "node_id": "HL_c343c3909804",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "reviewdog/action-setup",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          10,
+          11,
+          20,
+          37
+        ],
+        "span_sentences": [
+          "A lead provided by Adnan Khan suggested that the compromise of the tj-actions/changed-files action originated in the compromise of a repository belonging to another GitHub organization: reviewdog/action-setup.",
+          "We can now confirm that tj-actions/changed-files was compromised because it used the tj-actions/eslint-changed-files action, which relied on reviewdog/action-setup as a dependency.",
+          "We now know that they obtained this capability using the PAT that they previously acquired by infecting reviewdog/action-setup, which in turn poisoned tj-actions/changed-files’s workflow.",
+          "By reviewing the IoCs and speaking to the maintainers of the involved repositories, we estimate that this PAT had access to both spotbugs/spotbugs and to reviewdog/action-setup."
+        ]
+      },
+      {
+        "node_id": "HL_dc361f084942",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Coinbase",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          5,
+          24,
+          26,
+          32,
+          51
+        ],
+        "span_sentences": [
+          "Our team also discovered that the initial attack targeted Coinbase.",
+          "However, the attacker was not able to use Coinbase secrets or publish packages.",
+          "Having discovered that the actor forked these repositories before the large attack on tj-actions/changed-files took place, we suspected that Coinbase might have been the actual target (or one target) of the campaign.",
+          "This also strengthened our suspicion that the attacker had targeted Coinbase.",
+          "The details in this commit prove that the attacker was looking specifically for the Coinbase repository.",
+          "We know the attacker specifically targeted Coinbase, and coinbase/agentkit's workflow started using tj-actions/changed-files only on March 7."
+        ]
+      },
+      {
+        "node_id": "HL_e3c10fd9ca67",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GitHub",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          0,
+          6,
+          7,
+          15,
+          23,
+          43,
+          47
+        ],
+        "span_sentences": [
+          "Update March 20: The recent compromise of the GitHub action tj-actions/changed-files and additional actions within the reviewdog organization has captured the attention of the GitHub community, marking another major software supply chain attack.",
+          "The tj-actions/changed-files GitHub action was recently compromised, allowing attackers to access sensitive workflow secrets that relied on this action.",
+          "This GitHub action was used by over 23,000 GitHub repositories.",
+          "The attacker was able to add the malicious commit (0e58ed8) to the repository by using a GitHub token with write permissions that they obtained previously.",
+          "We assume that although the attacker had a GitHub token with write permission to the repository, they preferred to disguise their malicious commit by impersonating a valid user in a valid pull request — a technique called “commit impersonation.”\nWe kept looking and saw that both of these users made changes to their forks of coinbase/agentkit, but not to the other two repositories, so we focused on coinbase/agentkit.",
+          "This triggered a GitHub Actions run for the pushed changes, specifically for the malicious workflow, leaving barely any traces.",
+          "For those unfamiliar with the risks involved in using the pull_request_target trigger in GitHub Actions, this is a GitHub Actions workflow trigger that allows workflows running from forks to access secrets, which may lead to a poisoned pipeline execution attack (PPE)."
+        ]
+      },
+      {
+        "node_id": "HL_ec254e037c71",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "spotbugs/sonar-findbugs",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          44,
+          46
+        ],
+        "span_sentences": [
+          "On 2024-11-28T09:45:13 UTC SPTBGS_MNTNR modified one of the spotbugs/sonar-findbugs workflows to use their own PAT, as they were having technical difficulties in a part of their CI/CD process.",
+          "On 2024-12-06 02:39:00 UTC, the attacker submitted a malicious pull request to spotbugs/sonar-findbugs, which exploited a GitHub Actions workflow that used the pull_request_target trigger."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers injected a payload that dumped the CI/CD runner’s memory, exposing sensitive environment variables and secrets directly to the workflow logs."
+          ],
+          [
+            "This commit contained a Base64-encoded payload shown in Figure 1, which prints all of the credentials that were present in the CI runner’s memory to the workflow’s log."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once running, the workflow stringified all the available secrets, encrypted them with AES (symmetric encryption) and encrypted the symmetric key using a hard-coded RSA public key (asymmetric encryption)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_1",
+          "EDGE_6",
+          "EDGE_9",
+          "EDGE_11",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            10
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            19,
+            23
+          ],
+          [
+            21,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The tj-actions/changed-files GitHub action was recently compromised, allowing attackers to access sensitive workflow secrets that relied on this action.",
+            "This GitHub action was used by over 23,000 GitHub repositories.",
+            "The compromise was first identified on March 14, 2025, when security researchers detected suspicious activity made by the action.",
+            "The attackers injected a payload that dumped the CI/CD runner’s memory, exposing sensitive environment variables and secrets directly to the workflow logs.",
+            "A lead provided by Adnan Khan suggested that the compromise of the tj-actions/changed-files action originated in the compromise of a repository belonging to another GitHub organization: reviewdog/action-setup."
+          ],
+          [
+            "The attacker was able to add the malicious commit (0e58ed8) to the repository by using a GitHub token with write permissions that they obtained previously."
+          ],
+          [
+            "In the tj-actions/changed-files infection, we saw that the attacker infected the index.js file via a “legitimate” pull request."
+          ],
+          [
+            "Without this, they wouldn’t have been able to push the impersonated commit (0e58ed8).",
+            "We now know that they obtained this capability using the PAT that they previously acquired by infecting reviewdog/action-setup, which in turn poisoned tj-actions/changed-files’s workflow.",
+            "In addition to the pull request infiltration, the attacker used the token to update the existing git tags of the tj-actions/changed-files repository, making all tags point to the malicious 0e58ed8 commit.",
+            "This eventually led to code execution in the CI runners of any GitHub action or workflow using this action, and referencing it by one of these tags.",
+            "We assume that although the attacker had a GitHub token with write permission to the repository, they preferred to disguise their malicious commit by impersonating a valid user in a valid pull request — a technique called “commit impersonation.”\nWe kept looking and saw that both of these users made changes to their forks of coinbase/agentkit, but not to the other two repositories, so we focused on coinbase/agentkit."
+          ],
+          [
+            "In addition to the pull request infiltration, the attacker used the token to update the existing git tags of the tj-actions/changed-files repository, making all tags point to the malicious 0e58ed8 commit.",
+            "This eventually led to code execution in the CI runners of any GitHub action or workflow using this action, and referencing it by one of these tags.",
+            "We assume that although the attacker had a GitHub token with write permission to the repository, they preferred to disguise their malicious commit by impersonating a valid user in a valid pull request — a technique called “commit impersonation.”\nWe kept looking and saw that both of these users made changes to their forks of coinbase/agentkit, but not to the other two repositories, so we focused on coinbase/agentkit."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_2",
+          "EDGE_7",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These attackers compromised continuous integration/continuous delivery (CI/CD) pipelines of thousands of repositories, putting them at risk."
+          ],
+          [
+            "Our team also discovered that the initial attack targeted Coinbase.",
+            "The payload was focused on exploiting the public CI/CD flow of one of their open source projects (agentkit) probably with the purpose of leveraging it for further compromises."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1199",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1199",
+        "edges": [
+          "EDGE_3",
+          "EDGE_8",
+          "EDGE_12",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In the tj-actions/changed-files infection, we saw that the attacker infected the index.js file via a “legitimate” pull request."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1567",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1567",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once running, the workflow stringified all the available secrets, encrypted them with AES (symmetric encryption) and encrypted the symmetric key using a hard-coded RSA public key (asymmetric encryption).",
+            "This ensured that the encrypted leaked secrets and their encryption key could only be decrypted and read by the attacker.",
+            "The workflow then continued to upload this data as a workflow artifact, which the attacker could later download."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_4bef4bbc122c",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "6e6023c01918b353229af0881232f601a4cc8365",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "All of these commits changed the reference of tj-actions/changed-files to or from SHA 6e6023c01918b353229af0881232f601a4cc8365."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_082d081461ad",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_082d081461ad",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_1af9314daea8",
+      "node_v": "TTP_T1199"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_482359750013",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_482359750013",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_482359750013",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_482359750013",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_482359750013",
+      "node_v": "TTP_T1199"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_4e09e1b8be58",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_9ea889c1d49e",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_c343c3909804",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_c343c3909804",
+      "node_v": "TTP_T1199"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_e3c10fd9ca67",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_ec254e037c71",
+      "node_v": "TTP_T1199"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_4bef4bbc122c",
+      "node_v": "TTP_T1195"
+    }
+  ]
+}

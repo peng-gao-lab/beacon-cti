@@ -1,0 +1,361 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_255bec80a143",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Darktrace",
+        "sentence_indices": [
+          0,
+          1,
+          11,
+          14,
+          19
+        ],
+        "span_sentences": [
+          "Earlier this month, Darktrace’s Cyber AI detected the Ursnif banking trojan, described as May’s most wanted malware, making a resurgence across its customers’ networks.",
+          "This blog follows the malicious activity in one financial services company in the US, detailing how and why Darktrace Antigena stepped in and autonomously stopped the attack in real time.",
+          "After the downloads, Darktrace’s AI observed beaconing to rare DGA domains.",
+          "The initial file downloads also purported to be .cab files, but Darktrace’s AI identified that these were in fact executable files.",
+          "In the same week as the events explained above, Darktrace identified the Urnsnif malware in numerous other customers in the US and Italy, across multiple industries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2e89f053c3bf",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Darktrace Antigena",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "This blog follows the malicious activity in one financial services company in the US, detailing how and why Darktrace Antigena stepped in and autonomously stopped the attack in real time."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2eaa5a8eacb6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Urnsnif",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "In the same week as the events explained above, Darktrace identified the Urnsnif malware in numerous other customers in the US and Italy, across multiple industries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_327ba45ce297",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Webex",
+        "sentence_indices": [
+          9,
+          10
+        ],
+        "span_sentences": [
+          "Interestingly, the malware also used new User Agents imitating Zoom and Webex, a clear attempt to blend in with assumed network traffic.",
+          "After the malware was downloaded, several devices were observed making connections using these Zoom or Webex User Agents to non-Zoom and non-Webex domains, another attempt to blend in."
+        ],
+        "edges": [
+          "EDGE_6f2a1eb461da",
+          "EDGE_a14a79122b9b"
+        ]
+      },
+      {
+        "node_id": "HL_4d4a1f8476fb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Zoom",
+        "sentence_indices": [
+          9,
+          10
+        ],
+        "span_sentences": [
+          "Interestingly, the malware also used new User Agents imitating Zoom and Webex, a clear attempt to blend in with assumed network traffic.",
+          "After the malware was downloaded, several devices were observed making connections using these Zoom or Webex User Agents to non-Zoom and non-Webex domains, another attempt to blend in."
+        ],
+        "edges": [
+          "EDGE_8f5b07b71e19",
+          "EDGE_b85547cec43d"
+        ]
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "sentence_indices": [
+          1,
+          19
+        ],
+        "span_sentences": [
+          "This blog follows the malicious activity in one financial services company in the US, detailing how and why Darktrace Antigena stepped in and autonomously stopped the attack in real time.",
+          "In the same week as the events explained above, Darktrace identified the Urnsnif malware in numerous other customers in the US and Italy, across multiple industries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The majority of these domains were Russian and registered within the previous 24 hours."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_91b03f3fabdd",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Italy",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "In the same week as the events explained above, Darktrace identified the Urnsnif malware in numerous other customers in the US and Italy, across multiple industries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a92c2e91552b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ursnif",
+        "sentence_indices": [
+          0,
+          15
+        ],
+        "span_sentences": [
+          "Earlier this month, Darktrace’s Cyber AI detected the Ursnif banking trojan, described as May’s most wanted malware, making a resurgence across its customers’ networks.",
+          "The Ursnif banking trojan presents a particularly lethal threat: silent, stealthy, and capable of stealing vital financial information, email credentials, and other sensitive data at machine speeds."
+        ],
+        "edges": [
+          "EDGE_10d3d0cc5aec",
+          "EDGE_4da685f4fe13",
+          "EDGE_7bec99f378bd",
+          "EDGE_ce4801b3400e",
+          "EDGE_e2af51c62922"
+        ]
+      },
+      {
+        "node_id": "HL_c318f0aff312",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Cyber AI",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Earlier this month, Darktrace’s Cyber AI detected the Ursnif banking trojan, described as May’s most wanted malware, making a resurgence across its customers’ networks."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "This attack was delivered via phishing email, which initiated a download of an executable file masquerading as a .cab extension."
+          ],
+          [
+            "Interestingly, the malware also used new User Agents imitating Zoom and Webex, a clear attempt to blend in with assumed network traffic.",
+            "After the malware was downloaded, several devices were observed making connections using these Zoom or Webex User Agents to non-Zoom and non-Webex domains, another attempt to blend in."
+          ],
+          [
+            "The initial file downloads also purported to be .cab files, but Darktrace’s AI identified that these were in fact executable files."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_4da685f4fe13",
+          "EDGE_8f5b07b71e19",
+          "EDGE_a14a79122b9b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Interestingly, the malware also used new User Agents imitating Zoom and Webex, a clear attempt to blend in with assumed network traffic.",
+            "After the malware was downloaded, several devices were observed making connections using these Zoom or Webex User Agents to non-Zoom and non-Webex domains, another attempt to blend in."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_10d3d0cc5aec",
+          "EDGE_6f2a1eb461da",
+          "EDGE_b85547cec43d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Earlier this month, Darktrace’s Cyber AI detected the Ursnif banking trojan, described as May’s most wanted malware, making a resurgence across its customers’ networks.",
+            "This blog follows the malicious activity in one financial services company in the US, detailing how and why Darktrace Antigena stepped in and autonomously stopped the attack in real time.",
+            "Banking trojans continue to present a credible and persistent threat to organizations of all sizes across the globe.",
+            "This attack was delivered via phishing email, which initiated a download of an executable file masquerading as a .cab extension."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_ce4801b3400e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Earlier this month, Darktrace’s Cyber AI detected the Ursnif banking trojan, described as May’s most wanted malware, making a resurgence across its customers’ networks.",
+            "This blog follows the malicious activity in one financial services company in the US, detailing how and why Darktrace Antigena stepped in and autonomously stopped the attack in real time.",
+            "Banking trojans continue to present a credible and persistent threat to organizations of all sizes across the globe.",
+            "This attack was delivered via phishing email, which initiated a download of an executable file masquerading as a .cab extension."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_7bec99f378bd"
+        ]
+      },
+      {
+        "node_id": "TTP_T1568",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1568",
+        "ttp_id": "T1568",
+        "best_span_sentences_list": [
+          [
+            "This specific banking trojan is particularly sophisticated, with multiple new command and control (C2) domains registered – identifiable because several distinct Domain Generation Algorithms (DGA) were observed across different networks – the majority of which were only registered the day prior to the campaign."
+          ],
+          [
+            "After the downloads, Darktrace’s AI observed beaconing to rare DGA domains."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_e2af51c62922"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_10d3d0cc5aec",
+      "node_u": "HL_a92c2e91552b",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4da685f4fe13",
+      "node_u": "HL_a92c2e91552b",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6f2a1eb461da",
+      "node_u": "HL_327ba45ce297",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7bec99f378bd",
+      "node_u": "HL_a92c2e91552b",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8f5b07b71e19",
+      "node_u": "HL_4d4a1f8476fb",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a14a79122b9b",
+      "node_u": "HL_327ba45ce297",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b85547cec43d",
+      "node_u": "HL_4d4a1f8476fb",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ce4801b3400e",
+      "node_u": "HL_a92c2e91552b",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e2af51c62922",
+      "node_u": "HL_a92c2e91552b",
+      "node_v": "TTP_T1568",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

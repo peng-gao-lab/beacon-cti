@@ -1,0 +1,637 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_06e8aef494b6",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Gamaredon",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          3,
+          4,
+          6,
+          10,
+          15,
+          21
+        ],
+        "span_sentences": [
+          "Talos assesses with medium confidence that this activity is associated with the Gamaredon threat actor group.",
+          "The invasion of Ukraine is a common theme used by the Gamaredon group in their phishing campaigns and this campaign continues the use of this technique.",
+          "Although Talos was not able to pinpoint the exact method by which these files are distributed, it is likely that Gamaredon continues to send phishing e-mails with either the ZIP file directly attached to it or containing a URL link to download the file from a remote host.",
+          "As we mentioned in a previous blog Gamaredon tends to use a short list of machines when creating the LNK files for their campaigns and the ones used in this campaign were previously seen by Talos in incidents related to this threat group.",
+          "Gamaredon is known to restrict access to their payload servers only to victims located in Ukraine.",
+          "Gamaredon has previously been known to use custom scripts and tools in their attack chains, but Talos has observed the use of Remcos backdoor as an alternative tool in their campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos is actively tracking an ongoing campaign targeting users in Ukraine with malicious LNK files, which run a PowerShell downloader, since at least November 2024."
+        ]
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          1,
+          13
+        ],
+        "span_sentences": [
+          "The PowerShell downloader contacts geo-fenced servers located in Russia and Germany to download the second stage Zip file containing the Remcos backdoor.",
+          "The servers used in this campaign are based out of Germany and Russia, and at the time of our assessment, all of them return HTTP error 403 when attempting to download the payload files."
+        ]
+      },
+      {
+        "node_id": "HL_a328b591fdc9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Remcos",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          1,
+          2,
+          17,
+          21,
+          24,
+          28
+        ],
+        "span_sentences": [
+          "The PowerShell downloader contacts geo-fenced servers located in Russia and Germany to download the second stage Zip file containing the Remcos backdoor.",
+          "The second stage payload uses DLL side loading to execute the Remcos payload.",
+          "These servers are used to distribute the payload and the decoy document, but Talos found evidence of at least one server being used as the Command and Control (C2) server for the Remcos backdoor.",
+          "Gamaredon has previously been known to use custom scripts and tools in their attack chains, but Talos has observed the use of Remcos backdoor as an alternative tool in their campaigns.",
+          "This file is actually a malicious loader which decrypts and executes the final Remcos payload from encrypted files found within the ZIP.",
+          "The payload binary is a typical Remcos backdoor which is injected into Explorer.exe."
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          1,
+          13
+        ],
+        "span_sentences": [
+          "The PowerShell downloader contacts geo-fenced servers located in Russia and Germany to download the second stage Zip file containing the Remcos backdoor.",
+          "The servers used in this campaign are based out of Germany and Russia, and at the time of our assessment, all of them return HTTP error 403 when attempting to download the payload files."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          11,
+          12,
+          25
+        ],
+        "span_sentences": [
+          "Cisco Talos is actively tracking an ongoing campaign targeting users in Ukraine with malicious LNK files, which run a PowerShell downloader, since at least November 2024.",
+          "The PowerShell downloader contacts geo-fenced servers located in Russia and Germany to download the second stage Zip file containing the Remcos backdoor.",
+          "The LNK files contain PowerShell code used to download and execute the next stage payload, as well as a decoy file which is shown to the user after the infection occurs as a way to disguise the compromise.",
+          "The PowerShell code uses the cmdlet Get-Command to indirectly execute the functions to download and execute the payload, which could be an attempt to bypass string-based detection by antivirus solutions.",
+          "The PowerShell files we observed downloading the ZIP files contain hints of various applications being abused for DLL side loading, and they contain a mix of clean and malicious files:."
+        ]
+      },
+      {
+        "node_id": "HL_c6ca18fdfff0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Ukraine",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          15
+        ],
+        "span_sentences": [
+          "Cisco Talos is actively tracking an ongoing campaign targeting users in Ukraine with malicious LNK files, which run a PowerShell downloader, since at least November 2024.",
+          "The invasion of Ukraine is a common theme used by the Gamaredon group in their phishing campaigns and this campaign continues the use of this technique.",
+          "Gamaredon is known to restrict access to their payload servers only to victims located in Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_c8c369004d52",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Any.run",
+        "edges": [],
+        "sentence_indices": [
+          16,
+          26
+        ],
+        "span_sentences": [
+          "We have found evidence in public sample databases that these servers were still hosting the files for specific regions while returning access denied errors in our tests, like this sample available in the \"Any.run” public sandbox:.",
+          "We can see in the previously mentioned sample downloaded by “Any.run” that it contains the clean application TivoDiag.exe, as well as two DLLs."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This file is actually a malicious loader which decrypts and executes the final Remcos payload from encrypted files found within the ZIP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_1",
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The actor distributes LNK files compressed inside ZIP archives, usually disguising the file as an Office document and using names that are related to the invasion."
+          ],
+          [
+            "The LNK files contain PowerShell code used to download and execute the next stage payload, as well as a decoy file which is shown to the user after the infection occurs as a way to disguise the compromise."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_6",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The payload binary is a typical Remcos backdoor which is injected into Explorer.exe."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_7",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos is actively tracking an ongoing campaign targeting users in Ukraine with malicious LNK files, which run a PowerShell downloader, since at least November 2024."
+          ],
+          [
+            "The PowerShell downloader contacts geo-fenced servers located in Russia and Germany to download the second stage Zip file containing the Remcos backdoor."
+          ],
+          [
+            "The LNK files contain PowerShell code used to download and execute the next stage payload, as well as a decoy file which is shown to the user after the infection occurs as a way to disguise the compromise."
+          ],
+          [
+            "The PowerShell code uses the cmdlet Get-Command to indirectly execute the functions to download and execute the payload, which could be an attempt to bypass string-based detection by antivirus solutions."
+          ],
+          [
+            "The PowerShell files we observed downloading the ZIP files contain hints of various applications being abused for DLL side loading, and they contain a mix of clean and malicious files:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_4",
+          "EDGE_8",
+          "EDGE_13",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The PowerShell downloader contacts geo-fenced servers located in Russia and Germany to download the second stage Zip file containing the Remcos backdoor."
+          ],
+          [
+            "The LNK files contain PowerShell code used to download and execute the next stage payload, as well as a decoy file which is shown to the user after the infection occurs as a way to disguise the compromise."
+          ],
+          [
+            "These servers are used to distribute the payload and the decoy document, but Talos found evidence of at least one server being used as the Command and Control (C2) server for the Remcos backdoor."
+          ],
+          [
+            "Once the ZIP payload is downloaded from the servers, it is extracted to the %TEMP% folder and executed."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This file is actually a malicious loader which decrypts and executes the final Remcos payload from encrypted files found within the ZIP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1202",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1202",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The PowerShell code uses the cmdlet Get-Command to indirectly execute the functions to download and execute the payload, which could be an attempt to bypass string-based detection by antivirus solutions."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_2",
+          "EDGE_10",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos is actively tracking an ongoing campaign targeting users in Ukraine with malicious LNK files, which run a PowerShell downloader, since at least November 2024."
+          ],
+          [
+            "The actor distributes LNK files compressed inside ZIP archives, usually disguising the file as an Office document and using names that are related to the invasion."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_3",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The actor distributes LNK files compressed inside ZIP archives, usually disguising the file as an Office document and using names that are related to the invasion."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_12",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            26,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The second stage payload uses DLL side loading to execute the Remcos payload."
+          ],
+          [
+            "The binary which is executed is a clean application which in turn loads the malicious DLL via DLL sideloading method."
+          ],
+          [
+            "We can see in the previously mentioned sample downloaded by “Any.run” that it contains the clean application TivoDiag.exe, as well as two DLLs.",
+            "The file “mindclient.dll” is the malicious DLL which is loaded by “TivoDiag.exe” during execution."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_a556d829e448",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Explorer.exe",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The payload binary is a typical Remcos backdoor which is injected into Explorer.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_b45b218785c4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "TivoDiag.exe",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          26,
+          27
+        ],
+        "span_sentences": [
+          "We can see in the previously mentioned sample downloaded by “Any.run” that it contains the clean application TivoDiag.exe, as well as two DLLs.",
+          "The file “mindclient.dll” is the malicious DLL which is loaded by “TivoDiag.exe” during execution."
+        ]
+      },
+      {
+        "node_id": "IOC_bbf76c0289ea",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Once the ZIP payload is downloaded from the servers, it is extracted to the %TEMP% folder and executed."
+        ]
+      },
+      {
+        "node_id": "IOC_d9e65f9b2d7d",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "146[.]185[.]233[.]96",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It communicates with the C2 server 146[.]185[.]233[.]96 on port 6856:."
+        ]
+      },
+      {
+        "node_id": "IOC_f8a875eed016",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "mindclient.dll",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "The file “mindclient.dll” is the malicious DLL which is loaded by “TivoDiag.exe” during execution."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_06e8aef494b6",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_06e8aef494b6",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_06e8aef494b6",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_7455d6e9fdc5",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_a64a2e87d892",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1202"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_c6ca18fdfff0",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_a556d829e448",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_b45b218785c4",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_f8a875eed016",
+      "node_v": "TTP_T1574"
+    }
+  ]
+}

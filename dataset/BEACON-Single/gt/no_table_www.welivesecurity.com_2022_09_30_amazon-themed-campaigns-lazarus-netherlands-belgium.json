@@ -1,0 +1,918 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_045f26e9851d",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Operation DreamJob",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          14
+        ],
+        "span_sentences": [
+          "We attribute these attacks to Lazarus with high confidence, based on the specific modules, the code-signing certificate, and the intrusion approach in common with previous Lazarus campaigns like Operation In(ter)ception and Operation DreamJob.",
+          "This is a method that Lazarus practiced in the Operation In(ter)ception and Operation DreamJob campaigns targeting aerospace and defense industries."
+        ]
+      },
+      {
+        "node_id": "HL_059408590ccc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Belgium",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          8,
+          16,
+          45
+        ],
+        "span_sentences": [
+          "The campaign started with spearphishing emails containing malicious Amazon-themed documents and targeted an employee of an aerospace company in the Netherlands, and a political journalist in Belgium.",
+          "ESET researchers discovered two new attacks: one against personnel of a media outlet in Belgium and one against an employee of an aerospace company in the Netherlands.",
+          "Regarding the attack in Belgium, the employee of a journalism company (whose email address was publicly available on the company’s website) was contacted via an email message with the lure AWS_EMEA_Legal_.docx attached.",
+          "The attack against a target in Belgium was blocked early in its deployment chain so only one file was identified, a 32-bit dropper located at C:\\PublicCache\\msdxm.ocx."
+        ]
+      },
+      {
+        "node_id": "HL_0a4828f47f48",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Amazon",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          1,
+          11,
+          13
+        ],
+        "span_sentences": [
+          "The campaign started with spearphishing emails containing malicious Amazon-themed documents and targeted an employee of an aerospace company in the Netherlands, and a political journalist in Belgium.",
+          "The Word file Amzon_Netherlands.docx sent to the target is merely an outline document with an Amazon logo (see Figure 1).",
+          "We were unable to acquire the content, but we assume that it may have contained a job offer for the Amazon space program, Project Kuiper."
+        ]
+      },
+      {
+        "node_id": "HL_16f90258577c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Media Player",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The main purpose of these loaders is to read and decrypt executables located in alternate data streams (ADS) at C:\\ProgramData\\Caphyon\\mi.dll:Zone.Identifier and C:\\Program Files\\Windows Media Player\\Skins\\DarkMode.wmz:Zone.Identifier, respectively."
+        ]
+      },
+      {
+        "node_id": "HL_17d7142642e1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "the Netherlands",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          8,
+          9
+        ],
+        "span_sentences": [
+          "The campaign started with spearphishing emails containing malicious Amazon-themed documents and targeted an employee of an aerospace company in the Netherlands, and a political journalist in Belgium.",
+          "ESET researchers discovered two new attacks: one against personnel of a media outlet in Belgium and one against an employee of an aerospace company in the Netherlands.",
+          "In the Netherlands, the attack affected a Windows 10 computer connected to the corporate network, where an employee was contacted via LinkedIn Messaging about a supposed potential new job, resulting in an email with a document attachment being sent."
+        ]
+      },
+      {
+        "node_id": "HL_18cb2f107a89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ahnlab",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "The use of ADS is not new, because Ahnlab reported a Lazarus attack against South Korean companies in June 2021 involving such techniques."
+        ]
+      },
+      {
+        "node_id": "HL_1f24ffc39873",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "\"A\" MEDICAL OFFICE, PLLC",
+        "edges": [],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "At the time of the attack, it was validly signed with a certificate issued to \"A\" MEDICAL OFFICE, PLLC (see Figure 8), which has since expired."
+        ]
+      },
+      {
+        "node_id": "HL_34352725ffe4",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "aerospace and defense industries",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "This is a method that Lazarus practiced in the Operation In(ter)ception and Operation DreamJob campaigns targeting aerospace and defense industries."
+        ]
+      },
+      {
+        "node_id": "HL_3eae312ab4e9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BLINDINGCAN",
+        "edges": [],
+        "sentence_indices": [
+          21,
+          29,
+          36,
+          38
+        ],
+        "span_sentences": [
+          "This is based on the following factors, which show relationships to other Lazarus campaigns:\n- Malware (the intrusion set):\n- The HTTPS backdoor (SHA‑1: 735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2) has strong similarities with the BLINDINGCAN backdoor, reported by CISA (US-CERT), and attributed to HIDDEN COBRA, which is their codename for Lazarus.",
+          "We identified a fully featured HTTP(S) backdoor – a RAT known as BLINDINGCAN – used in the attack.",
+          "This helped us to identify this RAT as BLINDINGCAN (SHA-1: 5F4FBD57319BD0D2DF31131E864FDDA9590A652D), reported for the first time by CISA.",
+          "It uses the same User Agent – Mozilla/5.0 (Windows NT 6.1; WOW64) Chrome/28.0.1500.95 Safari/537.36 – as BLINDINGCAN RAT, contains the RTTI artifact .?AVCHTTP_Protocol@@ but not .?AVCFileRW@@, and lacks features like taking screenshots, archiving files, or executing a command via the command line."
+        ]
+      },
+      {
+        "node_id": "HL_41fd9a2b3379",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "HIDDEN COBRA",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "This is based on the following factors, which show relationships to other Lazarus campaigns:\n- Malware (the intrusion set):\n- The HTTPS backdoor (SHA‑1: 735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2) has strong similarities with the BLINDINGCAN backdoor, reported by CISA (US-CERT), and attributed to HIDDEN COBRA, which is their codename for Lazarus."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          5,
+          40
+        ],
+        "span_sentences": [
+          "The attackers then used their kernel memory write access to disable seven mechanisms the Windows operating system offers to monitor its actions, like registry, file system, process creation, event tracing etc., basically blinding security solutions in a very generic and robust way.",
+          "We identified a dynamically linked library with the internal name FudModule.dll that tries to disable various Windows monitoring features."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The droppers may (Table 1) or may not (Table 2) be side-loaded by a legitimate (Microsoft) process."
+        ]
+      },
+      {
+        "node_id": "HL_4d8ba066b103",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Operation In(ter)ception",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          14
+        ],
+        "span_sentences": [
+          "We attribute these attacks to Lazarus with high confidence, based on the specific modules, the code-signing certificate, and the intrusion approach in common with previous Lazarus campaigns like Operation In(ter)ception and Operation DreamJob.",
+          "This is a method that Lazarus practiced in the Operation In(ter)ception and Operation DreamJob campaigns targeting aerospace and defense industries."
+        ]
+      },
+      {
+        "node_id": "HL_64aac6758d09",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "LinkedIn Messaging",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "In the Netherlands, the attack affected a Windows 10 computer connected to the corporate network, where an employee was contacted via LinkedIn Messaging about a supposed potential new job, resulting in an email with a document attachment being sent."
+        ]
+      },
+      {
+        "node_id": "HL_67685a356cdc",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Dell",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          41
+        ],
+        "span_sentences": [
+          "The most notable tool delivered by the attackers was a user-mode module that gained the ability to read and write kernel memory due to the CVE-2021-21551 vulnerability in a legitimate Dell driver.",
+          "It does so by modifying kernel variables and removing kernel callbacks, which is possible because the module acquires the ability to write in the kernel by leveraging the BYOVD techniques - the specific CVE-2021-21551 vulnerability in the Dell driver dbutil_2_3.sys."
+        ]
+      },
+      {
+        "node_id": "HL_82fc5147766f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CISA",
+        "edges": [],
+        "sentence_indices": [
+          21,
+          36
+        ],
+        "span_sentences": [
+          "This is based on the following factors, which show relationships to other Lazarus campaigns:\n- Malware (the intrusion set):\n- The HTTPS backdoor (SHA‑1: 735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2) has strong similarities with the BLINDINGCAN backdoor, reported by CISA (US-CERT), and attributed to HIDDEN COBRA, which is their codename for Lazarus.",
+          "This helped us to identify this RAT as BLINDINGCAN (SHA-1: 5F4FBD57319BD0D2DF31131E864FDDA9590A652D), reported for the first time by CISA."
+        ]
+      },
+      {
+        "node_id": "HL_8d3e0faf5e22",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Operation Bookcodes",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "It starts with a dropper – usually a trojanized open-source application – that decrypts the embedded payload with a modern block cipher like AES-128 (which is not unusual for Lazarus, e.g., Operation Bookcodes, or an obfuscated XOR, after parsing the command line arguments for a strong key."
+        ]
+      },
+      {
+        "node_id": "HL_8ff8e010d7f9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows 10",
+        "edges": [],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "In the Netherlands, the attack affected a Windows 10 computer connected to the corporate network, where an employee was contacted via LinkedIn Messaging about a supposed potential new job, resulting in an email with a document attachment being sent."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          8,
+          18
+        ],
+        "span_sentences": [
+          "ESET researchers uncovered and analyzed a set of malicious tools that were used by the infamous Lazarus APT group in attacks during the autumn of 2021.",
+          "ESET researchers discovered two new attacks: one against personnel of a media outlet in Belgium and one against an employee of an aerospace company in the Netherlands.",
+          "After opening the document, the attack was triggered, but stopped by ESET products immediately, with just one malicious executable involved."
+        ]
+      },
+      {
+        "node_id": "HL_9eda4005a3a9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "VMProtect",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          32,
+          37
+        ],
+        "span_sentences": [
+          "The payload, SHA-1: 735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2, is a 64-bit VMProtect-ed DLL.",
+          "The second stage is a 32-bit VMProtect-ed module that makes an HTTP connection request to a C&C server stored in its configuration; see Figure 7."
+        ]
+      },
+      {
+        "node_id": "HL_b7c2b61a92f2",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "US-CERT",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "This is based on the following factors, which show relationships to other Lazarus campaigns:\n- Malware (the intrusion set):\n- The HTTPS backdoor (SHA‑1: 735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2) has strong similarities with the BLINDINGCAN backdoor, reported by CISA (US-CERT), and attributed to HIDDEN COBRA, which is their codename for Lazarus."
+        ]
+      },
+      {
+        "node_id": "HL_cb6e965b7713",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Korea",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "The use of ADS is not new, because Ahnlab reported a Lazarus attack against South Korean companies in June 2021 involving such techniques."
+        ]
+      },
+      {
+        "node_id": "HL_cf62a62343a6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Color Control Panel",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "For example, the malicious DLL coloui.dll is side-loaded by a legitimate system application Color Control Panel (colorcpl.exe), both located at C:\\ProgramData\\PTC\\."
+        ]
+      },
+      {
+        "node_id": "HL_fdea9376fccd",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lazarus",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          0,
+          6,
+          7,
+          14,
+          20,
+          21,
+          22,
+          23,
+          44,
+          50
+        ],
+        "span_sentences": [
+          "ESET researchers uncovered and analyzed a set of malicious tools that were used by the infamous Lazarus APT group in attacks during the autumn of 2021.",
+          "We attribute these attacks to Lazarus with high confidence, based on the specific modules, the code-signing certificate, and the intrusion approach in common with previous Lazarus campaigns like Operation In(ter)ception and Operation DreamJob.",
+          "The diversity, number, and eccentricity in implementation of Lazarus campaigns define this group, as well as that it performs all three pillars of cybercriminal activities: cyberespionage, cybersabotage, and pursuit of financial gain.",
+          "This is a method that Lazarus practiced in the Operation In(ter)ception and Operation DreamJob campaigns targeting aerospace and defense industries.",
+          "We attribute both attacks to the Lazarus group with a high level of confidence.",
+          "This is based on the following factors, which show relationships to other Lazarus campaigns:\n- Malware (the intrusion set):\n- The HTTPS backdoor (SHA‑1: 735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2) has strong similarities with the BLINDINGCAN backdoor, reported by CISA (US-CERT), and attributed to HIDDEN COBRA, which is their codename for Lazarus.",
+          "One of the typical traits of Lazarus is its delivery of the final payload in the form of a sequence of two or three stages.",
+          "It starts with a dropper – usually a trojanized open-source application – that decrypts the embedded payload with a modern block cipher like AES-128 (which is not unusual for Lazarus, e.g., Operation Bookcodes, or an obfuscated XOR, after parsing the command line arguments for a strong key.",
+          "The use of ADS is not new, because Ahnlab reported a Lazarus attack against South Korean companies in June 2021 involving such techniques.",
+          "In this attack, as well as in many others attributed to Lazarus, we saw that many tools were distributed even on a single targeted endpoint in a network of interest."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_4",
+          "EDGE_6",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The payload is extracted and decrypted using a simple XOR but with a long key, which is a string built by concatenating the name of the parent process, is own filename, and the external command line parameter – here COLORCPL.EXECOLORUI.DLLBE93E050D9C0EAEB1F0E6AE13C1595B5."
+          ],
+          [
+            "The main purpose of these loaders is to read and decrypt executables located in alternate data streams (ADS) at C:\\ProgramData\\Caphyon\\mi.dll:Zone.Identifier and C:\\Program Files\\Windows Media Player\\Skins\\DarkMode.wmz:Zone.Identifier, respectively."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1068",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1068",
+        "edges": [
+          "EDGE_7",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The most notable tool delivered by the attackers was a user-mode module that gained the ability to read and write kernel memory due to the CVE-2021-21551 vulnerability in a legitimate Dell driver."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_8",
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Within hours, several malicious tools were delivered to the system, including droppers, loaders, fully featured HTTP(S) backdoors, HTTP(S) uploaders and HTTP(S) downloaders; see the Toolset section."
+          ],
+          [
+            "A connection is made to one of the remote locations https://aquaprographix[.]com/patterns/Map/maps.php or https://turnscor[.]com/wp-includes/feedback.php."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_9",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Within hours, several malicious tools were delivered to the system, including droppers, loaders, fully featured HTTP(S) backdoors, HTTP(S) uploaders and HTTP(S) downloaders; see the Toolset section."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_10",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The payload is extracted and decrypted using a simple XOR but with a long key, which is a string built by concatenating the name of the parent process, is own filename, and the external command line parameter – here COLORCPL.EXECOLORUI.DLLBE93E050D9C0EAEB1F0E6AE13C1595B5."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_2",
+          "EDGE_11",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            52,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers then used their kernel memory write access to disable seven mechanisms the Windows operating system offers to monitor its actions, like registry, file system, process creation, event tracing etc., basically blinding security solutions in a very generic and robust way."
+          ],
+          [
+            "We identified a dynamically linked library with the internal name FudModule.dll that tries to disable various Windows monitoring features."
+          ],
+          [
+            "For the first time in the wild, the attackers were able to leverage CVE-2021-21551 for turning off the monitoring of all security solutions."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1564",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1564",
+        "edges": [
+          "EDGE_19",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The main purpose of these loaders is to read and decrypt executables located in alternate data streams (ADS) at C:\\ProgramData\\Caphyon\\mi.dll:Zone.Identifier and C:\\Program Files\\Windows Media Player\\Skins\\DarkMode.wmz:Zone.Identifier, respectively."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_1",
+          "EDGE_3",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The campaign started with spearphishing emails containing malicious Amazon-themed documents and targeted an employee of an aerospace company in the Netherlands, and a political journalist in Belgium."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_5",
+          "EDGE_15",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The droppers may (Table 1) or may not (Table 2) be side-loaded by a legitimate (Microsoft) process.",
+            "In the first case here, the legitimate application is at an unusual location and the malicious component bears the name of the corresponding DLL that is among the application’s imports.",
+            "For example, the malicious DLL coloui.dll is side-loaded by a legitimate system application Color Control Panel (colorcpl.exe), both located at C:\\ProgramData\\PTC\\."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0499101b140c",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          21,
+          32
+        ],
+        "span_sentences": [
+          "This is based on the following factors, which show relationships to other Lazarus campaigns:\n- Malware (the intrusion set):\n- The HTTPS backdoor (SHA‑1: 735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2) has strong similarities with the BLINDINGCAN backdoor, reported by CISA (US-CERT), and attributed to HIDDEN COBRA, which is their codename for Lazarus.",
+          "The payload, SHA-1: 735B7E9DFA7AF03B751075FD6D3DE45FBF0330A2, is a 64-bit VMProtect-ed DLL."
+        ]
+      },
+      {
+        "node_id": "IOC_25cdb3727195",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "ffffffffffffffff",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "The decryption algorithm is also interesting as the attackers use HC-128 with the 128-bit key as the first parameter and for its 128-bit initialization vector, the string ffffffffffffffff."
+        ]
+      },
+      {
+        "node_id": "IOC_4d2581db71c9",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\PTC\\",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "For example, the malicious DLL coloui.dll is side-loaded by a legitimate system application Color Control Panel (colorcpl.exe), both located at C:\\ProgramData\\PTC\\."
+        ]
+      },
+      {
+        "node_id": "IOC_5bbf0d311693",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://thetalkingcanvas[.]com/thetalking/globalcareers/us/5/careers/jobinfo.php?image=<var>_DO.PROJ",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "When opened, the remote template https://thetalkingcanvas[.]com/thetalking/globalcareers/us/5/careers/jobinfo.php?image=<var>_DO.PROJ (where <var> is a seven-digit number) is fetched."
+        ]
+      },
+      {
+        "node_id": "IOC_5f407719bfe2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://turnscor[.]com/wp-includes/feedback.php",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "A connection is made to one of the remote locations https://aquaprographix[.]com/patterns/Map/maps.php or https://turnscor[.]com/wp-includes/feedback.php."
+        ]
+      },
+      {
+        "node_id": "IOC_657594de64c3",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://aquaprographix[.]com/patterns/Map/maps.php",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "A connection is made to one of the remote locations https://aquaprographix[.]com/patterns/Map/maps.php or https://turnscor[.]com/wp-includes/feedback.php."
+        ]
+      },
+      {
+        "node_id": "IOC_734cddda41f4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Program Files\\Windows Media Player\\Skins\\DarkMode.wmz:Zone.Identifier",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The main purpose of these loaders is to read and decrypt executables located in alternate data streams (ADS) at C:\\ProgramData\\Caphyon\\mi.dll:Zone.Identifier and C:\\Program Files\\Windows Media Player\\Skins\\DarkMode.wmz:Zone.Identifier, respectively."
+        ]
+      },
+      {
+        "node_id": "IOC_76a1dd74967d",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "5F4FBD57319BD0D2DF31131E864FDDA9590A652D",
+        "edges": [],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "This helped us to identify this RAT as BLINDINGCAN (SHA-1: 5F4FBD57319BD0D2DF31131E864FDDA9590A652D), reported for the first time by CISA."
+        ]
+      },
+      {
+        "node_id": "IOC_ba2df4a0d56c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%ALLUSERSPROFILE%\\PTC\\colorui.dll",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "This payload’s dropper was executed as %ALLUSERSPROFILE%\\PTC\\colorui.dll; see Table 1 for details."
+        ]
+      },
+      {
+        "node_id": "IOC_c551189c9435",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2021-21551",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          3,
+          41,
+          52
+        ],
+        "span_sentences": [
+          "The most notable tool delivered by the attackers was a user-mode module that gained the ability to read and write kernel memory due to the CVE-2021-21551 vulnerability in a legitimate Dell driver.",
+          "It does so by modifying kernel variables and removing kernel callbacks, which is possible because the module acquires the ability to write in the kernel by leveraging the BYOVD techniques - the specific CVE-2021-21551 vulnerability in the Dell driver dbutil_2_3.sys.",
+          "For the first time in the wild, the attackers were able to leverage CVE-2021-21551 for turning off the monitoring of all security solutions."
+        ]
+      },
+      {
+        "node_id": "IOC_e6432445a7c6",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\Caphyon\\mi.dll:Zone.Identifier",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The main purpose of these loaders is to read and decrypt executables located in alternate data streams (ADS) at C:\\ProgramData\\Caphyon\\mi.dll:Zone.Identifier and C:\\Program Files\\Windows Media Player\\Skins\\DarkMode.wmz:Zone.Identifier, respectively."
+        ]
+      },
+      {
+        "node_id": "IOC_f948fe38389c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\PublicCache\\msdxm.ocx",
+        "edges": [],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "The attack against a target in Belgium was blocked early in its deployment chain so only one file was identified, a 32-bit dropper located at C:\\PublicCache\\msdxm.ocx."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0a4828f47f48",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_64aac6758d09",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_9eda4005a3a9",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_cf62a62343a6",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_fdea9376fccd",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_fdea9376fccd",
+      "node_v": "TTP_T1068"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_fdea9376fccd",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_fdea9376fccd",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_fdea9376fccd",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_fdea9376fccd",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_fdea9376fccd",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_0499101b140c",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_25cdb3727195",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_4d2581db71c9",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_5bbf0d311693",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_5f407719bfe2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_657594de64c3",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_734cddda41f4",
+      "node_v": "TTP_T1564"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_ba2df4a0d56c",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_c551189c9435",
+      "node_v": "TTP_T1068"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_c551189c9435",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_e6432445a7c6",
+      "node_v": "TTP_T1564"
+    }
+  ]
+}

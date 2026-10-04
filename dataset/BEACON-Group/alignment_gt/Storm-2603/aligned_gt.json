@@ -1,0 +1,2267 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_03d1278b54ab",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ak47c2",
+        "edges": [
+          "EDGE_526e2d9107d0",
+          "EDGE_a93cea716421",
+          "EDGE_c0fe654f17aa"
+        ],
+        "source": {
+          "ak47c2_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              0,
+              "The threat actor linked to the exploitation of the recently disclosed security flaws in Microsoft SharePoint Server is using a bespoke command-and-control (C2) framework called AK47 C2 (also spelled ak47c2) in its operations."
+            ]
+          ],
+          "AK47HTTP_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ]
+          ],
+          "AK47 C2_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              0,
+              "The threat actor linked to the exploitation of the recently disclosed security flaws in Microsoft SharePoint Server is using a bespoke command-and-control (C2) framework called AK47 C2 (also spelled ak47c2) in its operations."
+            ],
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ],
+            [
+              10,
+              "Palo Alto Networks Unit 42, which is tracking Storm-2603 under the moniker CL-CRI-1040, said it has also observed the threat activity cluster using AK47 C2 prior to the exploitation of ToolShell flaws in Microsoft SharePoint Server."
+            ],
+            [
+              12,
+              "Describing AK47 C2 as a multi-protocol supporting backdoor, Unit 42 said the tool comes with capabilities to execute arbitrary commands received via DNS and HTTP."
+            ]
+          ],
+          "AK47 C2_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              3,
+              "SpiderLabs’ research noted that the group, tracked by Microsoft as Storm-2603 and CL-CRI-1040 by Palo Alto, is a new threat actor first observed in March 2025 that uses a specialized command-and-control (C2) toolkit dubbed AK47 C2 to conduct its SharePoint operation."
+            ]
+          ]
+        },
+        "alias": [
+          "AK47HTTP",
+          "AK47 C2"
+        ]
+      },
+      {
+        "node_id": "HL_078be6ce0cea",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Palo Alto Networks Unit 42",
+        "edges": [],
+        "source": {
+          "Palo Alto Networks Unit 42_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              10,
+              "Palo Alto Networks Unit 42, which is tracking Storm-2603 under the moniker CL-CRI-1040, said it has also observed the threat activity cluster using AK47 C2 prior to the exploitation of ToolShell flaws in Microsoft SharePoint Server."
+            ],
+            [
+              12,
+              "Describing AK47 C2 as a multi-protocol supporting backdoor, Unit 42 said the tool comes with capabilities to execute arbitrary commands received via DNS and HTTP."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_29dbb6cf1793",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "North Korea",
+        "edges": [],
+        "source": {
+          "North Korea_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              7,
+              "However, it bears noting that there have been instances where nation-state actors from China, Iran, and North Korea have deployed ransomware on the side."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_37894a1d535f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "X2anylock",
+        "edges": [
+          "EDGE_bf649cef7bd6"
+        ],
+        "source": {
+          "X2anylock_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              1,
+              "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+            ],
+            [
+              14,
+              "The cybersecurity company also pointed out that it has not found any common indicators to link Warlock ransomware and X2anylock (aka AK47 ransomware), and that it cannot \"conclusively\" ascertain if the two ransomware strains are one and the same."
+            ]
+          ],
+          "X2ANYLOCK_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              35,
+              "However, since we have not found any common indicators between AK47/X2ANYLOCK ransomware from CL-CRI-1040 and Warlock ransomware from Microsoft's article, we cannot conclusively determine the relationship between these two ransomware families."
+            ]
+          ]
+        },
+        "alias": [
+          "X2ANYLOCK"
+        ]
+      },
+      {
+        "node_id": "HL_3c9e3682cbfd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "source": {
+          "VirusTotal_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              2,
+              "A previously unreported threat cluster, evidence gathered following an analysis of VirusTotal artifacts shows that the group may have been active since at least March 2025, deploying ransomware families like LockBit Black and Warlock together – something that's not observed commonly among established e-crime groups."
+            ],
+            [
+              5,
+              "Check Point said it also discovered another MSI artifact uploaded to VirusTotal in April 2025 that's used to launch Warlock and LockBit ransomware, and also drop a custom antivirus killer executable (\"VMToolsEng.exe\") that employs the bring your own vulnerable driver (BYOVD) technique to terminate security software using ServiceMouse.sys, a third-party driver provided by Chinese security vendor Antiy Labs."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3df6a552c4aa",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "CL-CRI-1040",
+        "edges": [],
+        "source": {
+          "CL-CRI-1040_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              10,
+              "Palo Alto Networks Unit 42, which is tracking Storm-2603 under the moniker CL-CRI-1040, said it has also observed the threat activity cluster using AK47 C2 prior to the exploitation of ToolShell flaws in Microsoft SharePoint Server."
+            ],
+            [
+              11,
+              "\"CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock,\" the company said."
+            ]
+          ],
+          "CL-CRI-1040_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              3,
+              "SpiderLabs’ research noted that the group, tracked by Microsoft as Storm-2603 and CL-CRI-1040 by Palo Alto, is a new threat actor first observed in March 2025 that uses a specialized command-and-control (C2) toolkit dubbed AK47 C2 to conduct its SharePoint operation."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_424250ad592c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft SharePoint Server",
+        "edges": [
+          "EDGE_8dce3b39d040"
+        ],
+        "source": {
+          "Microsoft SharePoint Server_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              0,
+              "The threat actor linked to the exploitation of the recently disclosed security flaws in Microsoft SharePoint Server is using a bespoke command-and-control (C2) framework called AK47 C2 (also spelled ak47c2) in its operations."
+            ],
+            [
+              10,
+              "Palo Alto Networks Unit 42, which is tracking Storm-2603 under the moniker CL-CRI-1040, said it has also observed the threat activity cluster using AK47 C2 prior to the exploitation of ToolShell flaws in Microsoft SharePoint Server."
+            ]
+          ],
+          "Microsoft SharePoint Server_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              1,
+              "Trustwave SpiderLabs Cyber Threat Intelligence team has developed a new detailed analysis of Storm-2603, the threat group associated with the recent exploitation of security flaws in Microsoft SharePoint Server."
+            ]
+          ],
+          "SharePoint_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              0,
+              "Unit 42 observed notable overlaps between Microsoft’s reporting on ToolShell activity (an exploit chain affecting SharePoint vulnerabilities) and activity that we have been separately tracking."
+            ],
+            [
+              4,
+              "We initially noted this in our threat brief covering exploitation of recent SharePoint vulnerabilities, and here further expand on our observations."
+            ],
+            [
+              6,
+              "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain."
+            ]
+          ]
+        },
+        "alias": [
+          "SharePoint"
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "source": {
+          "Microsoft_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              1,
+              "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+            ],
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ]
+          ],
+          "Microsoft_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              0,
+              "Unit 42 observed notable overlaps between Microsoft’s reporting on ToolShell activity (an exploit chain affecting SharePoint vulnerabilities) and activity that we have been separately tracking."
+            ],
+            [
+              2,
+              "Microsoft's report named a suspected China-based threat actor, Storm-2603."
+            ],
+            [
+              6,
+              "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain."
+            ],
+            [
+              10,
+              "However, considering that CL-CRI-1040 activity appeared alongside espionage-motivated actors in Microsoft’s report, we cannot entirely rule out the possibility of nation-state motivation or cooperation between threat actors."
+            ],
+            [
+              12,
+              "Microsoft’s report covers the activity of several threat actors."
+            ],
+            [
+              18,
+              "According to IoCs shared by Microsoft, attackers deployed both the dnsclient and httpclient components of AK47C2 as payloads for the ToolShell exploits."
+            ],
+            [
+              34,
+              "According to the Microsoft report, Storm-2603 has previously deployed ransomware named Warlock."
+            ],
+            [
+              50,
+              "On the other hand, Microsoft mentioned that Storm-2603 has previously deployed Warlock ransomware."
+            ]
+          ],
+          "Microsoft_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              1,
+              "Trustwave SpiderLabs Cyber Threat Intelligence team has developed a new detailed analysis of Storm-2603, the threat group associated with the recent exploitation of security flaws in Microsoft SharePoint Server."
+            ],
+            [
+              3,
+              "SpiderLabs’ research noted that the group, tracked by Microsoft as Storm-2603 and CL-CRI-1040 by Palo Alto, is a new threat actor first observed in March 2025 that uses a specialized command-and-control (C2) toolkit dubbed AK47 C2 to conduct its SharePoint operation."
+            ],
+            [
+              6,
+              "However, Microsoft has attributed Storm-2603 to China with medium confidence."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5edb9f72b0a0",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WinPcap",
+        "edges": [],
+        "source": {
+          "WinPcap_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6acb3b643fdc",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Check Point",
+        "edges": [],
+        "source": {
+          "Check Point_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              3,
+              "\"Based on VirusTotal data, Storm-2603 likely targeted some organizations in Latin America throughout the first half of 2025, in parallel to attacking organizations in APAC,\" Check Point said."
+            ],
+            [
+              8,
+              "\"We tend to assess it is a financially motivated actor, but with this, we can't also exclude the option that this is a dual motivation actor, both espionage and financially motivated,\" Sergey Shykevich, Threat Intelligence Group Manager at Check Point, told The Hacker News."
+            ],
+            [
+              9,
+              "\"Storm-2603 leverages BYOVD techniques to disable endpoint defenses and DLL hijacking to deploy multiple ransomware families – blurring the lines between APT and criminal ransomware operations,\" Check Point added."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_78d9f86d16bd",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Storm-2603",
+        "edges": [
+          "EDGE_17cc011bd0f5",
+          "EDGE_a1c13ca9f140",
+          "EDGE_d5a1fc358b4e",
+          "EDGE_ea2b386b40f5"
+        ],
+        "source": {
+          "Storm-2603_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              1,
+              "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+            ],
+            [
+              3,
+              "\"Based on VirusTotal data, Storm-2603 likely targeted some organizations in Latin America throughout the first half of 2025, in parallel to attacking organizations in APAC,\" Check Point said."
+            ],
+            [
+              6,
+              "Ultimately, Storm-2603's exact motivations remain unclear at this stage, making it harder to determine if it's espionage-focused or driven by profit motives."
+            ],
+            [
+              9,
+              "\"Storm-2603 leverages BYOVD techniques to disable endpoint defenses and DLL hijacking to deploy multiple ransomware families – blurring the lines between APT and criminal ransomware operations,\" Check Point added."
+            ]
+          ],
+          "Storm-2603_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              2,
+              "Microsoft's report named a suspected China-based threat actor, Storm-2603."
+            ],
+            [
+              3,
+              "Based on our analysis of host- and network-based artifacts, we assess with high confidence that Storm-2603 is related to the activity cluster that we track as CL-CRI-1040."
+            ],
+            [
+              6,
+              "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain."
+            ],
+            [
+              13,
+              "In this article, we detail our observations of CL-CRI-1040, which we assess with high confidence represents the activity of the same threat actor as Storm-2603."
+            ],
+            [
+              34,
+              "According to the Microsoft report, Storm-2603 has previously deployed ransomware named Warlock."
+            ],
+            [
+              50,
+              "On the other hand, Microsoft mentioned that Storm-2603 has previously deployed Warlock ransomware."
+            ]
+          ],
+          "Storm-2603_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              1,
+              "Trustwave SpiderLabs Cyber Threat Intelligence team has developed a new detailed analysis of Storm-2603, the threat group associated with the recent exploitation of security flaws in Microsoft SharePoint Server."
+            ],
+            [
+              2,
+              "This article is from a strategic threat intelligence perspective, focusing on Storm-2603’s motives, affiliations, and global targeting impact, with lighter technical detail."
+            ],
+            [
+              3,
+              "SpiderLabs’ research noted that the group, tracked by Microsoft as Storm-2603 and CL-CRI-1040 by Palo Alto, is a new threat actor first observed in March 2025 that uses a specialized command-and-control (C2) toolkit dubbed AK47 C2 to conduct its SharePoint operation."
+            ],
+            [
+              4,
+              "There is some discrepancy surrounding Storm-2603’s affiliation due to the group having some links to the Chinese-supported threat groups APT27 (aka Emissary Panda) and APT31, aka Judgement Panda."
+            ],
+            [
+              5,
+              "SpiderLabs noted in an earlier blog that Storm-2603 is likely based in China, but the researchers noted there is insufficient evidence to conclude that Storm-2603 is a state-sponsored group or tied to the People’s Republic of China."
+            ],
+            [
+              6,
+              "However, Microsoft has attributed Storm-2603 to China with medium confidence."
+            ],
+            [
+              8,
+              "SpiderLabs found that Storm-2603 appears to be driven by a dual desire to conduct espionage and for financial gain."
+            ],
+            [
+              11,
+              "Storm-2603 has been active since at least March 2025 and was most recently observed leveraging the ToolShell exploit chain to weaponize the SharePoint vulnerabilities CVE-2025-49704, CVE-2025-49706, CVE-2025-53770, and CVE-2025-53771."
+            ],
+            [
+              12,
+              "SpiderLabs’ and other researchers’ investigations into Storm-2603 uncovered the group’s prior reliance on the Project AK47 toolset, which consists of ransomware, backdoor malware, and other tools."
+            ],
+            [
+              13,
+              "Analysis further indicates a financial dimension to Storm-2603’s operations, with past links to a LockBit 3.0/LockBit Black affiliate and the management of the Warlock double-extortion leak platform."
+            ],
+            [
+              14,
+              "SpiderLabs’ deep dive into Storm-2603 reveals why there is some concern that it is, in fact, related to China."
+            ],
+            [
+              16,
+              "However, the evidence available cannot confirm that Storm-2603 is directly state-directed or if its blend of espionage-driven and financially motivated activity is merely a coincidence."
+            ],
+            [
+              17,
+              "Storm-2603 does not limit itself to targeting specific global regions, but is a worldwide danger."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9204abb664d1",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "masscan",
+        "edges": [],
+        "source": {
+          "masscan_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9d5135717b3e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SharpHostInfo",
+        "edges": [],
+        "source": {
+          "SharpHostInfo_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9e7939ad9107",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit Black",
+        "edges": [
+          "EDGE_413a746e3b76"
+        ],
+        "source": {
+          "LockBit Black_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              2,
+              "A previously unreported threat cluster, evidence gathered following an analysis of VirusTotal artifacts shows that the group may have been active since at least March 2025, deploying ransomware families like LockBit Black and Warlock together – something that's not observed commonly among established e-crime groups."
+            ]
+          ],
+          "LockBit Black_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              13,
+              "Analysis further indicates a financial dimension to Storm-2603’s operations, with past links to a LockBit 3.0/LockBit Black affiliate and the management of the Warlock double-extortion leak platform."
+            ],
+            [
+              18,
+              "It has conducted ransomware operations in the Asia-Pacific region and Latin America using LockBit Black and Warlock."
+            ]
+          ],
+          "LockBit 3.0_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              11,
+              "\"CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock,\" the company said."
+            ]
+          ],
+          "LockBit 3.0_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              9,
+              "We confirmed that CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock Client Leaked Data Show."
+            ],
+            [
+              36,
+              "Our investigation of CL-CRI-1040 attacks revealed evidence of previous ransomware activities, including LockBit 3.0 and Warlock Client ransomware."
+            ],
+            [
+              38,
+              "During our investigation on the Tox ID (3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A) from the AK47 ransomware note, we discovered a database dump file associated with LockBit 3.0 ransomware."
+            ],
+            [
+              39,
+              "In May 2025, an unknown actor compromised LockBit 3.0 infrastructure and leaked a database dump of the ransomware's operations."
+            ],
+            [
+              41,
+              "The database indicates that the wlteaml is the last user registered as a LockBit 3.0 affiliate before the data leak."
+            ],
+            [
+              43,
+              "The final payload executed by the in-memory shellcode is explicitly LockBit 3.0."
+            ],
+            [
+              45,
+              "This code invokes ransomware behavior, associated functions and meaningless Windows API calls, as an analysis report on LockBit 3.0 previously described."
+            ],
+            [
+              46,
+              "The timeline for this sample is unusual, because the first submission date of this sample to VirusTotal was April 16, 2025, but the associated wlteaml user registration on the LockBit 3.0 portal was April 22, 2025."
+            ],
+            [
+              47,
+              "While we cannot yet explain this timeline gap, the inclusion of the LockBit 3.0 instance in the same archive as Project AK47 components does not seem to be a mere coincidence."
+            ]
+          ],
+          "LockBit 3.0_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              13,
+              "Analysis further indicates a financial dimension to Storm-2603’s operations, with past links to a LockBit 3.0/LockBit Black affiliate and the management of the Warlock double-extortion leak platform."
+            ]
+          ]
+        },
+        "alias": [
+          "LockBit 3.0"
+        ]
+      },
+      {
+        "node_id": "HL_a0f4029cc093",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Iran",
+        "edges": [],
+        "source": {
+          "Iran_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              7,
+              "However, it bears noting that there have been instances where nation-state actors from China, Iran, and North Korea have deployed ransomware on the side."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "source": {
+          "China_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              1,
+              "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+            ],
+            [
+              7,
+              "However, it bears noting that there have been instances where nation-state actors from China, Iran, and North Korea have deployed ransomware on the side."
+            ]
+          ],
+          "China_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              5,
+              "SpiderLabs noted in an earlier blog that Storm-2603 is likely based in China, but the researchers noted there is insufficient evidence to conclude that Storm-2603 is a state-sponsored group or tied to the People’s Republic of China."
+            ],
+            [
+              6,
+              "However, Microsoft has attributed Storm-2603 to China with medium confidence."
+            ],
+            [
+              14,
+              "SpiderLabs’ deep dive into Storm-2603 reveals why there is some concern that it is, in fact, related to China."
+            ]
+          ],
+          "People’s Republic of China_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              5,
+              "SpiderLabs noted in an earlier blog that Storm-2603 is likely based in China, but the researchers noted there is insufficient evidence to conclude that Storm-2603 is a state-sponsored group or tied to the People’s Republic of China."
+            ]
+          ]
+        },
+        "alias": [
+          "People’s Republic of China"
+        ]
+      },
+      {
+        "node_id": "HL_ab51f15a5b12",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PsExec",
+        "edges": [],
+        "source": {
+          "PsExec_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b7affd6ba208",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "nxc",
+        "edges": [],
+        "source": {
+          "nxc_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bc2adc9a3c7d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Warlock",
+        "edges": [
+          "EDGE_1bc2b872a1a6",
+          "EDGE_634e2b551418"
+        ],
+        "source": {
+          "Warlock_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              1,
+              "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+            ],
+            [
+              2,
+              "A previously unreported threat cluster, evidence gathered following an analysis of VirusTotal artifacts shows that the group may have been active since at least March 2025, deploying ransomware families like LockBit Black and Warlock together – something that's not observed commonly among established e-crime groups."
+            ],
+            [
+              5,
+              "Check Point said it also discovered another MSI artifact uploaded to VirusTotal in April 2025 that's used to launch Warlock and LockBit ransomware, and also drop a custom antivirus killer executable (\"VMToolsEng.exe\") that employs the bring your own vulnerable driver (BYOVD) technique to terminate security software using ServiceMouse.sys, a third-party driver provided by Chinese security vendor Antiy Labs."
+            ],
+            [
+              11,
+              "\"CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock,\" the company said."
+            ],
+            [
+              14,
+              "The cybersecurity company also pointed out that it has not found any common indicators to link Warlock ransomware and X2anylock (aka AK47 ransomware), and that it cannot \"conclusively\" ascertain if the two ransomware strains are one and the same."
+            ]
+          ],
+          "Warlock_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              34,
+              "According to the Microsoft report, Storm-2603 has previously deployed ransomware named Warlock."
+            ],
+            [
+              35,
+              "However, since we have not found any common indicators between AK47/X2ANYLOCK ransomware from CL-CRI-1040 and Warlock ransomware from Microsoft's article, we cannot conclusively determine the relationship between these two ransomware families."
+            ],
+            [
+              36,
+              "Our investigation of CL-CRI-1040 attacks revealed evidence of previous ransomware activities, including LockBit 3.0 and Warlock Client ransomware."
+            ],
+            [
+              50,
+              "On the other hand, Microsoft mentioned that Storm-2603 has previously deployed Warlock ransomware."
+            ],
+            [
+              51,
+              "However, since the report shares no indicators of Warlock ransomware binaries, we cannot confirm if the Warlock mentioned by Microsoft is identical to that used by the Warlock Client Leaked Data Show."
+            ]
+          ],
+          "Warlock_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              13,
+              "Analysis further indicates a financial dimension to Storm-2603’s operations, with past links to a LockBit 3.0/LockBit Black affiliate and the management of the Warlock double-extortion leak platform."
+            ],
+            [
+              18,
+              "It has conducted ransomware operations in the Asia-Pacific region and Latin America using LockBit Black and Warlock."
+            ],
+            [
+              23,
+              "However, limited observations of Linux variants of the Warlock ransomware in the wild suggest the group retains some capability to target non-Windows systems as well."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d02590370b58",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Antiy Labs",
+        "edges": [],
+        "source": {
+          "Antiy Labs_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              5,
+              "Check Point said it also discovered another MSI artifact uploaded to VirusTotal in April 2025 that's used to launch Warlock and LockBit ransomware, and also drop a custom antivirus killer executable (\"VMToolsEng.exe\") that employs the bring your own vulnerable driver (BYOVD) technique to terminate security software using ServiceMouse.sys, a third-party driver provided by Chinese security vendor Antiy Labs."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e614e7a7bc8c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Latin America",
+        "edges": [
+          "EDGE_4cfef5e41059"
+        ],
+        "source": {
+          "Latin America_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              3,
+              "\"Based on VirusTotal data, Storm-2603 likely targeted some organizations in Latin America throughout the first half of 2025, in parallel to attacking organizations in APAC,\" Check Point said."
+            ]
+          ],
+          "Latin America_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              18,
+              "It has conducted ransomware operations in the Asia-Pacific region and Latin America using LockBit Black and Warlock."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2b48d06c4f64",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "CL-CRI-1040",
+        "edges": [
+          "EDGE_1bd5103693e9",
+          "EDGE_50135ec94a83",
+          "EDGE_ad7b47f5da08",
+          "EDGE_eb8f6544476d",
+          "EDGE_f1e2d9f2caab"
+        ],
+        "source": {
+          "CL-CRI-1040_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              1,
+              "The activity, which we track as CL-CRI-1040, caught our attention by deploying a tool set that we call Project AK47, which includes a backdoor, ransomware and loaders."
+            ],
+            [
+              3,
+              "Based on our analysis of host- and network-based artifacts, we assess with high confidence that Storm-2603 is related to the activity cluster that we track as CL-CRI-1040."
+            ],
+            [
+              5,
+              "CL-CRI-1040 has been active since at least March 2025."
+            ],
+            [
+              6,
+              "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain."
+            ],
+            [
+              8,
+              "Retrospective investigation of CL-CRI-1040 revealed several pieces of evidence to support our assessment of this activity cluster as financially motivated."
+            ],
+            [
+              9,
+              "We confirmed that CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock Client Leaked Data Show."
+            ],
+            [
+              13,
+              "In this article, we detail our observations of CL-CRI-1040, which we assess with high confidence represents the activity of the same threat actor as Storm-2603."
+            ],
+            [
+              14,
+              "Project AK47 is a collection of malware used in CL-CRI-1040 that has likely been under development since at least March 2025."
+            ],
+            [
+              36,
+              "Our investigation of CL-CRI-1040 attacks revealed evidence of previous ransomware activities, including LockBit 3.0 and Warlock Client ransomware."
+            ],
+            [
+              37,
+              "This evidence led us to assess with high confidence that CL-CRI-1040 is financially motivated."
+            ],
+            [
+              52,
+              "Our analysis reveals overlaps between recent ToolShell exploit activity and the activity of a cluster that we track as CL-CRI-1040."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6418d2f6e808",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AK47 ransomware",
+        "edges": [
+          "EDGE_f4bb7f68cc8f"
+        ],
+        "source": {
+          "AK47 ransomware_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              28,
+              "The associated sample was likely a prototype of AK47 ransomware."
+            ],
+            [
+              31,
+              "The ransom note is embedded in the AK47 ransomware binary without encryption or encoding."
+            ],
+            [
+              33,
+              "The decrypt ID differs with each binary, but the Tox ID to communicate with the threat actor is the same across all AK47 ransomware variants."
+            ],
+            [
+              38,
+              "During our investigation on the Tox ID (3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A) from the AK47 ransomware note, we discovered a database dump file associated with LockBit 3.0 ransomware."
+            ],
+            [
+              48,
+              "The AK47 ransomware Tox ID shows another link to the Warlock ransomware group, which emerged in June 2025."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7bbea51d18a0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AK47C2",
+        "edges": [
+          "EDGE_3bfa80e9b34d",
+          "EDGE_738b8ffea43c",
+          "EDGE_8e7e00fe0ece"
+        ],
+        "source": {
+          "AK47C2_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              16,
+              "AK47C2\nAK47C2 is designed as a multi-protocol supporting backdoor."
+            ],
+            [
+              18,
+              "According to IoCs shared by Microsoft, attackers deployed both the dnsclient and httpclient components of AK47C2 as payloads for the ToolShell exploits."
+            ],
+            [
+              20,
+              "The XOR key (VHBD@H) is hard-coded in the binary and is shared among other AK47C2 samples."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_91aeddf97df0",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Warlock Client Leaked Data Show",
+        "edges": [],
+        "source": {
+          "Warlock Client Leaked Data Show_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              9,
+              "We confirmed that CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock Client Leaked Data Show."
+            ],
+            [
+              49,
+              "The ransomware's leak site on the dark web is named Warlock Client Leaked Data Show, and it displays the same Tox ID as AK47 ransomware for negotiation with its victims."
+            ],
+            [
+              51,
+              "However, since the report shares no indicators of Warlock ransomware binaries, we cannot confirm if the Warlock mentioned by Microsoft is identical to that used by the Warlock Client Leaked Data Show."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_dcd516efd6d6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Warlock Client ransomware",
+        "edges": [],
+        "source": {
+          "Warlock Client ransomware_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              36,
+              "Our investigation of CL-CRI-1040 attacks revealed evidence of previous ransomware activities, including LockBit 3.0 and Warlock Client ransomware."
+            ],
+            [
+              42,
+              "We believe the letters in the username wlteaml might stand for warlock team LockBit and indicate a tie to Warlock Client ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_dea90c536043",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "ToolShell",
+        "edges": [
+          "EDGE_18103c99ffb6"
+        ],
+        "source": {
+          "ToolShell_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              0,
+              "Unit 42 observed notable overlaps between Microsoft’s reporting on ToolShell activity (an exploit chain affecting SharePoint vulnerabilities) and activity that we have been separately tracking."
+            ],
+            [
+              6,
+              "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain."
+            ],
+            [
+              18,
+              "According to IoCs shared by Microsoft, attackers deployed both the dnsclient and httpclient components of AK47C2 as payloads for the ToolShell exploits."
+            ],
+            [
+              52,
+              "Our analysis reveals overlaps between recent ToolShell exploit activity and the activity of a cluster that we track as CL-CRI-1040."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f1f37cc6416e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Project AK47",
+        "edges": [
+          "EDGE_0ab6b5a4acc2"
+        ],
+        "source": {
+          "Project AK47_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              1,
+              "The activity, which we track as CL-CRI-1040, caught our attention by deploying a tool set that we call Project AK47, which includes a backdoor, ransomware and loaders."
+            ],
+            [
+              14,
+              "Project AK47 is a collection of malware used in CL-CRI-1040 that has likely been under development since at least March 2025."
+            ],
+            [
+              47,
+              "While we cannot yet explain this timeline gap, the inclusion of the LockBit 3.0 instance in the same archive as Project AK47 components does not seem to be a mere coincidence."
+            ],
+            [
+              53,
+              "This article also covers the Project AK47 tool set in detail and describes the considerations behind our attribution."
+            ]
+          ],
+          "Project AK47_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              12,
+              "SpiderLabs’ and other researchers’ investigations into Storm-2603 uncovered the group’s prior reliance on the Project AK47 toolset, which consists of ransomware, backdoor malware, and other tools."
+            ],
+            [
+              22,
+              "The group’s Project AK47 malware collection is almost entirely Windows-based, reflecting a strong preference for Windows environments."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0e807ba1df94",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "US Nuclear Weapons Agency",
+        "edges": [
+          "EDGE_0721b959efdf"
+        ],
+        "source": {
+          "US Nuclear Weapons Agency_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              19,
+              "As previously noted, it has exploited SharePoint vulnerabilities in the US, going after critical infrastructure organizations such as the US Nuclear Weapons Agency."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1e8d9085fb63",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Emissary Panda",
+        "edges": [],
+        "source": {
+          "Emissary Panda_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              4,
+              "There is some discrepancy surrounding Storm-2603’s affiliation due to the group having some links to the Chinese-supported threat groups APT27 (aka Emissary Panda) and APT31, aka Judgement Panda."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_28baeccb99d6",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical infrastructure organizations",
+        "edges": [],
+        "source": {
+          "critical infrastructure organizations_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              19,
+              "As previously noted, it has exploited SharePoint vulnerabilities in the US, going after critical infrastructure organizations such as the US Nuclear Weapons Agency."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "source": {
+          "Europe_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              20,
+              "In Europe, targeting has been less direct, with activity largely tied to espionage campaigns associated with related Chinese threat groups."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3ded130d93e2",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Trustwave SpiderLabs",
+        "edges": [],
+        "source": {
+          "Trustwave SpiderLabs_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              0,
+              "This blog is the latest in a series that delves into the deep research conducted daily by the Trustwave SpiderLabs Threat Operations team on major threat actor groups currently operating globally."
+            ],
+            [
+              1,
+              "Trustwave SpiderLabs Cyber Threat Intelligence team has developed a new detailed analysis of Storm-2603, the threat group associated with the recent exploitation of security flaws in Microsoft SharePoint Server."
+            ]
+          ],
+          "SpiderLabs_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              3,
+              "SpiderLabs’ research noted that the group, tracked by Microsoft as Storm-2603 and CL-CRI-1040 by Palo Alto, is a new threat actor first observed in March 2025 that uses a specialized command-and-control (C2) toolkit dubbed AK47 C2 to conduct its SharePoint operation."
+            ],
+            [
+              5,
+              "SpiderLabs noted in an earlier blog that Storm-2603 is likely based in China, but the researchers noted there is insufficient evidence to conclude that Storm-2603 is a state-sponsored group or tied to the People’s Republic of China."
+            ],
+            [
+              12,
+              "SpiderLabs’ and other researchers’ investigations into Storm-2603 uncovered the group’s prior reliance on the Project AK47 toolset, which consists of ransomware, backdoor malware, and other tools."
+            ],
+            [
+              14,
+              "SpiderLabs’ deep dive into Storm-2603 reveals why there is some concern that it is, in fact, related to China."
+            ]
+          ],
+          "Trustwave_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              0,
+              "This blog is the latest in a series that delves into the deep research conducted daily by the Trustwave SpiderLabs Threat Operations team on major threat actor groups currently operating globally."
+            ],
+            [
+              1,
+              "Trustwave SpiderLabs Cyber Threat Intelligence team has developed a new detailed analysis of Storm-2603, the threat group associated with the recent exploitation of security flaws in Microsoft SharePoint Server."
+            ]
+          ]
+        },
+        "alias": [
+          "SpiderLabs",
+          "Trustwave"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "source": {
+          "Windows_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              22,
+              "The group’s Project AK47 malware collection is almost entirely Windows-based, reflecting a strong preference for Windows environments."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "edges": [
+          "EDGE_d4452ca6fd81"
+        ],
+        "source": {
+          "US_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              19,
+              "As previously noted, it has exploited SharePoint vulnerabilities in the US, going after critical infrastructure organizations such as the US Nuclear Weapons Agency."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_83285a24f603",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ToolShell exploit chain",
+        "edges": [
+          "EDGE_38afa05e6030"
+        ],
+        "source": {
+          "ToolShell exploit chain_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              11,
+              "Storm-2603 has been active since at least March 2025 and was most recently observed leveraging the ToolShell exploit chain to weaponize the SharePoint vulnerabilities CVE-2025-49704, CVE-2025-49706, CVE-2025-53770, and CVE-2025-53771."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a00900e55050",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT31",
+        "edges": [],
+        "source": {
+          "APT31_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              4,
+              "There is some discrepancy surrounding Storm-2603’s affiliation due to the group having some links to the Chinese-supported threat groups APT27 (aka Emissary Panda) and APT31, aka Judgement Panda."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b05a8a8e2591",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Palo Alto",
+        "edges": [],
+        "source": {
+          "Palo Alto_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              3,
+              "SpiderLabs’ research noted that the group, tracked by Microsoft as Storm-2603 and CL-CRI-1040 by Palo Alto, is a new threat actor first observed in March 2025 that uses a specialized command-and-control (C2) toolkit dubbed AK47 C2 to conduct its SharePoint operation."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c772da1612af",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "government and strategic organizations",
+        "edges": [],
+        "source": {
+          "government and strategic organizations_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              9,
+              "The group’s espionage motivations are reflected in its targeting of critical sectors, such as government and strategic organizations."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c9ee3b475f8c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Violet Typhoon",
+        "edges": [],
+        "source": {
+          "Violet Typhoon_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              15,
+              "The group appears to operate in the same space as the espionage-focused actors Linen Typhoon and Violet Typhoon."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d45fadd2b042",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Asia-Pacific region",
+        "edges": [
+          "EDGE_3cd0b251186f"
+        ],
+        "source": {
+          "Asia-Pacific region_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              18,
+              "It has conducted ransomware operations in the Asia-Pacific region and Latin America using LockBit Black and Warlock."
+            ]
+          ],
+          "APAC_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              3,
+              "\"Based on VirusTotal data, Storm-2603 likely targeted some organizations in Latin America throughout the first half of 2025, in parallel to attacking organizations in APAC,\" Check Point said."
+            ]
+          ]
+        },
+        "alias": [
+          "APAC"
+        ]
+      },
+      {
+        "node_id": "HL_e0def36e43e5",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT27",
+        "edges": [],
+        "source": {
+          "APT27_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              4,
+              "There is some discrepancy surrounding Storm-2603’s affiliation due to the group having some links to the Chinese-supported threat groups APT27 (aka Emissary Panda) and APT31, aka Judgement Panda."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e944b2a6c4be",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Judgement Panda",
+        "edges": [],
+        "source": {
+          "Judgement Panda_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              4,
+              "There is some discrepancy surrounding Storm-2603’s affiliation due to the group having some links to the Chinese-supported threat groups APT27 (aka Emissary Panda) and APT31, aka Judgement Panda."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "edges": [],
+        "source": {
+          "Linux_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              23,
+              "However, limited observations of Linux variants of the Warlock ransomware in the wild suggest the group retains some capability to target non-Windows systems as well."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f966f622b9dc",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Linen Typhoon",
+        "edges": [],
+        "source": {
+          "Linen Typhoon_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              15,
+              "The group appears to operate in the same space as the espionage-focused actors Linen Typhoon and Violet Typhoon."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+          ],
+          [
+            "Describing AK47 C2 as a multi-protocol supporting backdoor, Unit 42 said the tool comes with capabilities to execute arbitrary commands received via DNS and HTTP."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_a93cea716421"
+        ],
+        "source": {
+          "TTP:T1059_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+              ],
+              [
+                "Describing AK47 C2 as a multi-protocol supporting backdoor, Unit 42 said the tool comes with capabilities to execute arbitrary commands received via DNS and HTTP."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1068",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1068",
+        "ttp_id": "T1068",
+        "best_span_sentences_list": [
+          [
+            "Check Point said it also discovered another MSI artifact uploaded to VirusTotal in April 2025 that's used to launch Warlock and LockBit ransomware, and also drop a custom antivirus killer executable (\"VMToolsEng.exe\") that employs the bring your own vulnerable driver (BYOVD) technique to terminate security software using ServiceMouse.sys, a third-party driver provided by Chinese security vendor Antiy Labs."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1068_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Check Point said it also discovered another MSI artifact uploaded to VirusTotal in April 2025 that's used to launch Warlock and LockBit ransomware, and also drop a custom antivirus killer executable (\"VMToolsEng.exe\") that employs the bring your own vulnerable driver (BYOVD) technique to terminate security software using ServiceMouse.sys, a third-party driver provided by Chinese security vendor Antiy Labs."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+          ],
+          [
+            "Describing AK47 C2 as a multi-protocol supporting backdoor, Unit 42 said the tool comes with capabilities to execute arbitrary commands received via DNS and HTTP."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_526e2d9107d0",
+          "EDGE_a5a1757f0f33",
+          "EDGE_3bfa80e9b34d",
+          "EDGE_ad7b47f5da08",
+          "EDGE_f4bb7f68cc8f"
+        ],
+        "source": {
+          "TTP:T1071_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+              ],
+              [
+                "Describing AK47 C2 as a multi-protocol supporting backdoor, Unit 42 said the tool comes with capabilities to execute arbitrary commands received via DNS and HTTP."
+              ]
+            ]
+          },
+          "TTP:T1071_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ],
+              [
+                18,
+                19
+              ],
+              [
+                24,
+                26
+              ],
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "AK47C2\nAK47C2 is designed as a multi-protocol supporting backdoor."
+              ],
+              [
+                "According to IoCs shared by Microsoft, attackers deployed both the dnsclient and httpclient components of AK47C2 as payloads for the ToolShell exploits.",
+                "Version 202503 of dnsclient communicates with the C2 server by XOR-encoding JSON data, converting it into a hexadecimal string and then sending it as a subdomain of the hard-coded server at update.updatemicfosoft[.]com."
+              ],
+              [
+                "The httpclient has been under development since at least late March 2025 and supports HTTP communication with the C2 server, as its PDB name indicates.",
+                "The encoded hexadecimal string is stored in the HTTP body and sent to the C2 server using the POST method.",
+                "The httpclient uses curl for network communication, as noted in the curl options (CURLOPT) shown in the code snippet in Figure 7 below."
+              ],
+              [
+                "The decrypt ID differs with each binary, but the Tox ID to communicate with the threat actor is the same across all AK47 ransomware variants."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_c0fe654f17aa"
+        ],
+        "source": {
+          "TTP:T1082_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_691b2a3ec54a",
+          "EDGE_6edbdd91270d",
+          "EDGE_8dce3b39d040",
+          "EDGE_ea2b386b40f5",
+          "EDGE_18103c99ffb6",
+          "EDGE_490b1f2bcafd",
+          "EDGE_50135ec94a83",
+          "EDGE_578462bf7557",
+          "EDGE_0721b959efdf",
+          "EDGE_38afa05e6030",
+          "EDGE_d4452ca6fd81"
+        ],
+        "source": {
+          "TTP:T1190_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+              ]
+            ]
+          },
+          "TTP:T1190_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain."
+              ]
+            ]
+          },
+          "TTP:T1190_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": {
+            "best_span_ranges": [
+              [
+                10,
+                13
+              ],
+              [
+                19,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "However, it also deploys ransomware payloads, which indicates a parallel financial profit motive.",
+                "Storm-2603 has been active since at least March 2025 and was most recently observed leveraging the ToolShell exploit chain to weaponize the SharePoint vulnerabilities CVE-2025-49704, CVE-2025-49706, CVE-2025-53770, and CVE-2025-53771.",
+                "SpiderLabs’ and other researchers’ investigations into Storm-2603 uncovered the group’s prior reliance on the Project AK47 toolset, which consists of ransomware, backdoor malware, and other tools.",
+                "Analysis further indicates a financial dimension to Storm-2603’s operations, with past links to a LockBit 3.0/LockBit Black affiliate and the management of the Warlock double-extortion leak platform."
+              ],
+              [
+                "As previously noted, it has exploited SharePoint vulnerabilities in the US, going after critical infrastructure organizations such as the US Nuclear Weapons Agency.",
+                "In Europe, targeting has been less direct, with activity largely tied to espionage campaigns associated with related Chinese threat groups."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware.",
+            "A previously unreported threat cluster, evidence gathered following an analysis of VirusTotal artifacts shows that the group may have been active since at least March 2025, deploying ransomware families like LockBit Black and Warlock together – something that's not observed commonly among established e-crime groups."
+          ],
+          [
+            "\"Storm-2603 leverages BYOVD techniques to disable endpoint defenses and DLL hijacking to deploy multiple ransomware families – blurring the lines between APT and criminal ransomware operations,\" Check Point added."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_17cc011bd0f5",
+          "EDGE_413a746e3b76",
+          "EDGE_634e2b551418",
+          "EDGE_bf649cef7bd6",
+          "EDGE_0ab6b5a4acc2",
+          "EDGE_eb8f6544476d",
+          "EDGE_3cd0b251186f",
+          "EDGE_4cfef5e41059"
+        ],
+        "source": {
+          "TTP:T1486_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                9,
+                9
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware.",
+                "A previously unreported threat cluster, evidence gathered following an analysis of VirusTotal artifacts shows that the group may have been active since at least March 2025, deploying ransomware families like LockBit Black and Warlock together – something that's not observed commonly among established e-crime groups."
+              ],
+              [
+                "\"Storm-2603 leverages BYOVD techniques to disable endpoint defenses and DLL hijacking to deploy multiple ransomware families – blurring the lines between APT and criminal ransomware operations,\" Check Point added."
+              ]
+            ]
+          },
+          "TTP:T1486_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                9,
+                9
+              ],
+              [
+                38,
+                38
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The activity, which we track as CL-CRI-1040, caught our attention by deploying a tool set that we call Project AK47, which includes a backdoor, ransomware and loaders."
+              ],
+              [
+                "We confirmed that CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock Client Leaked Data Show."
+              ],
+              [
+                "During our investigation on the Tox ID (3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A) from the AK47 ransomware note, we discovered a database dump file associated with LockBit 3.0 ransomware."
+              ]
+            ]
+          },
+          "TTP:T1486_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": {
+            "best_span_ranges": [
+              [
+                10,
+                13
+              ],
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "However, it also deploys ransomware payloads, which indicates a parallel financial profit motive.",
+                "Storm-2603 has been active since at least March 2025 and was most recently observed leveraging the ToolShell exploit chain to weaponize the SharePoint vulnerabilities CVE-2025-49704, CVE-2025-49706, CVE-2025-53770, and CVE-2025-53771.",
+                "SpiderLabs’ and other researchers’ investigations into Storm-2603 uncovered the group’s prior reliance on the Project AK47 toolset, which consists of ransomware, backdoor malware, and other tools.",
+                "Analysis further indicates a financial dimension to Storm-2603’s operations, with past links to a LockBit 3.0/LockBit Black affiliate and the management of the Warlock double-extortion leak platform."
+              ],
+              [
+                "It has conducted ransomware operations in the Asia-Pacific region and Latin America using LockBit Black and Warlock."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1505",
+        "ttp_id": "T1505",
+        "best_span_sentences_list": [
+          [
+            "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1505_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "Check Point said it also discovered another MSI artifact uploaded to VirusTotal in April 2025 that's used to launch Warlock and LockBit ransomware, and also drop a custom antivirus killer executable (\"VMToolsEng.exe\") that employs the bring your own vulnerable driver (BYOVD) technique to terminate security software using ServiceMouse.sys, a third-party driver provided by Chinese security vendor Antiy Labs."
+          ],
+          [
+            "\"Storm-2603 leverages BYOVD techniques to disable endpoint defenses and DLL hijacking to deploy multiple ransomware families – blurring the lines between APT and criminal ransomware operations,\" Check Point added."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_1bc2b872a1a6",
+          "EDGE_a1c13ca9f140"
+        ],
+        "source": {
+          "TTP:T1562_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                5,
+                5
+              ],
+              [
+                9,
+                9
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Check Point said it also discovered another MSI artifact uploaded to VirusTotal in April 2025 that's used to launch Warlock and LockBit ransomware, and also drop a custom antivirus killer executable (\"VMToolsEng.exe\") that employs the bring your own vulnerable driver (BYOVD) technique to terminate security software using ServiceMouse.sys, a third-party driver provided by Chinese security vendor Antiy Labs."
+              ],
+              [
+                "\"Storm-2603 leverages BYOVD techniques to disable endpoint defenses and DLL hijacking to deploy multiple ransomware families – blurring the lines between APT and criminal ransomware operations,\" Check Point added."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "\"Storm-2603 leverages BYOVD techniques to disable endpoint defenses and DLL hijacking to deploy multiple ransomware families – blurring the lines between APT and criminal ransomware operations,\" Check Point added."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_d5a1fc358b4e"
+        ],
+        "source": {
+          "TTP:T1574_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": {
+            "best_span_ranges": [
+              [
+                9,
+                9
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"Storm-2603 leverages BYOVD techniques to disable endpoint defenses and DLL hijacking to deploy multiple ransomware families – blurring the lines between APT and criminal ransomware operations,\" Check Point added."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "Version 202503 of dnsclient communicates with the C2 server by XOR-encoding JSON data, converting it into a hexadecimal string and then sending it as a subdomain of the hard-coded server at update.updatemicfosoft[.]com."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_001632770d8f",
+          "EDGE_1bd4e6c06b8a",
+          "EDGE_738b8ffea43c",
+          "EDGE_f1e2d9f2caab"
+        ],
+        "source": {
+          "TTP:T1001_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Version 202503 of dnsclient communicates with the C2 server by XOR-encoding JSON data, converting it into a hexadecimal string and then sending it as a subdomain of the hard-coded server at update.updatemicfosoft[.]com."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The XOR key (VHBD@H) is hard-coded in the binary and is shared among other AK47C2 samples."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_1bd5103693e9",
+          "EDGE_8e7e00fe0ece"
+        ],
+        "source": {
+          "TTP:T1027_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The XOR key (VHBD@H) is hard-coded in the binary and is shared among other AK47C2 samples."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_16fefe5606d4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "update.updatemicfosoft[.]com",
+        "edges": [
+          "EDGE_a5a1757f0f33",
+          "EDGE_001632770d8f"
+        ],
+        "source": {
+          "update.updatemicfosoft[.]com_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              4,
+              "The attack tools used by the threat actor includes legitimate open-source and Windows utilities like masscan, WinPcap, SharpHostInfo, nxc, and PsExec, as well as a custom backdoor (\"dnsclient.exe\") that uses DNS for command-and-control with the domain \"update.updatemicfosoft[.]com.\"\nThe backdoor is part of the AK47 C2 framework, alongside AK47HTTP, that's employed to gather host information and parse DNS or HTTP responses from the server and execute them on the infected machine via \"cmd.exe.\"\nA point worth mentioning here is that the aforementioned infrastructure was also flagged by Microsoft as used by the threat actor as a C2 server to establish communication with the \"spinstall0.aspx\" web shell."
+            ]
+          ],
+          "update.updatemicfosoft[.]com_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              19,
+              "Version 202503 of dnsclient communicates with the C2 server by XOR-encoding JSON data, converting it into a hexadecimal string and then sending it as a subdomain of the hard-coded server at update.updatemicfosoft[.]com."
+            ]
+          ]
+        },
+        "raw_value": "update.updatemicfosoft[.]com",
+        "canonical_value": "update.updatemicfosoft.com",
+        "normalized_value": "update.updatemicfosoft.com"
+      },
+      {
+        "node_id": "IOC_1827dc1579ff",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-49706",
+        "edges": [
+          "EDGE_691b2a3ec54a"
+        ],
+        "source": {
+          "CVE-2025-49706_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              1,
+              "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+            ]
+          ],
+          "CVE-2025-49706_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              7,
+              "The recent SharePoint vulnerabilities are designated CVE-2025-49704, CVE-2025-49706, CVE-2025-53770 and CVE-2025-53771."
+            ]
+          ],
+          "CVE-2025-49706_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              11,
+              "Storm-2603 has been active since at least March 2025 and was most recently observed leveraging the ToolShell exploit chain to weaponize the SharePoint vulnerabilities CVE-2025-49704, CVE-2025-49706, CVE-2025-53770, and CVE-2025-53771."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2025-49706",
+        "canonical_value": "CVE-2025-49706",
+        "normalized_value": "CVE-2025-49706"
+      },
+      {
+        "node_id": "IOC_9d0076d2a494",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-49704",
+        "edges": [
+          "EDGE_6edbdd91270d"
+        ],
+        "source": {
+          "CVE-2025-49704_thehackernews.com_2025_08_storm-2603-exploits-sharepoint-flaws-to.html": [
+            [
+              1,
+              "The activity has been attributed to Storm-2603, which, according to Microsoft, is a suspected China-based threat actor that has leveraged the SharePoint flaws – CVE-2025-49706 and CVE-2025-49704 (aka ToolShell) – to deploy Warlock (aka X2anylock) ransomware."
+            ]
+          ],
+          "CVE-2025-49704_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              7,
+              "The recent SharePoint vulnerabilities are designated CVE-2025-49704, CVE-2025-49706, CVE-2025-53770 and CVE-2025-53771."
+            ]
+          ],
+          "CVE-2025-49704_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              11,
+              "Storm-2603 has been active since at least March 2025 and was most recently observed leveraging the ToolShell exploit chain to weaponize the SharePoint vulnerabilities CVE-2025-49704, CVE-2025-49706, CVE-2025-53770, and CVE-2025-53771."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2025-49704",
+        "canonical_value": "CVE-2025-49704",
+        "normalized_value": "CVE-2025-49704"
+      },
+      {
+        "node_id": "IOC_01ca81e5c239",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "VHBD@H",
+        "edges": [
+          "EDGE_1bd4e6c06b8a"
+        ],
+        "source": {
+          "VHBD@H_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              20,
+              "The XOR key (VHBD@H) is hard-coded in the binary and is shared among other AK47C2 samples."
+            ]
+          ]
+        },
+        "raw_value": "VHBD@H",
+        "canonical_value": "VHBD@H"
+      },
+      {
+        "node_id": "IOC_1766542380ab",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-53770",
+        "edges": [
+          "EDGE_578462bf7557"
+        ],
+        "source": {
+          "CVE-2025-53770_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              7,
+              "The recent SharePoint vulnerabilities are designated CVE-2025-49704, CVE-2025-49706, CVE-2025-53770 and CVE-2025-53771."
+            ]
+          ],
+          "CVE-2025-53770_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              11,
+              "Storm-2603 has been active since at least March 2025 and was most recently observed leveraging the ToolShell exploit chain to weaponize the SharePoint vulnerabilities CVE-2025-49704, CVE-2025-49706, CVE-2025-53770, and CVE-2025-53771."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2025-53770",
+        "canonical_value": "CVE-2025-53770",
+        "normalized_value": "CVE-2025-53770"
+      },
+      {
+        "node_id": "IOC_8f523b335145",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A",
+        "edges": [],
+        "source": {
+          "3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              38,
+              "During our investigation on the Tox ID (3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A) from the AK47 ransomware note, we discovered a database dump file associated with LockBit 3.0 ransomware."
+            ]
+          ]
+        },
+        "raw_value": "3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A",
+        "canonical_value": "3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A"
+      },
+      {
+        "node_id": "IOC_defee4942408",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-53771",
+        "edges": [
+          "EDGE_490b1f2bcafd"
+        ],
+        "source": {
+          "CVE-2025-53771_unit42.paloaltonetworks.com_ak47-activity-linked-to-sharepoint-vulnerabilities": [
+            [
+              7,
+              "The recent SharePoint vulnerabilities are designated CVE-2025-49704, CVE-2025-49706, CVE-2025-53770 and CVE-2025-53771."
+            ]
+          ],
+          "CVE-2025-53771_www.levelblue.com_blogs_levelblue-blog_storm-2603-targeting-sharepoint-vulnerabilities-and-critical-infrastructure-worldwide": [
+            [
+              11,
+              "Storm-2603 has been active since at least March 2025 and was most recently observed leveraging the ToolShell exploit chain to weaponize the SharePoint vulnerabilities CVE-2025-49704, CVE-2025-49706, CVE-2025-53770, and CVE-2025-53771."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2025-53771",
+        "canonical_value": "CVE-2025-53771",
+        "normalized_value": "CVE-2025-53771"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_17cc011bd0f5",
+      "node_u": "HL_78d9f86d16bd",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bc2b872a1a6",
+      "node_u": "HL_bc2adc9a3c7d",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_413a746e3b76",
+      "node_u": "HL_9e7939ad9107",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_526e2d9107d0",
+      "node_u": "HL_03d1278b54ab",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_634e2b551418",
+      "node_u": "HL_bc2adc9a3c7d",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_691b2a3ec54a",
+      "node_u": "IOC_1827dc1579ff",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6edbdd91270d",
+      "node_u": "IOC_9d0076d2a494",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8dce3b39d040",
+      "node_u": "HL_424250ad592c",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a1c13ca9f140",
+      "node_u": "HL_78d9f86d16bd",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a5a1757f0f33",
+      "node_u": "IOC_16fefe5606d4",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a93cea716421",
+      "node_u": "HL_03d1278b54ab",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bf649cef7bd6",
+      "node_u": "HL_37894a1d535f",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c0fe654f17aa",
+      "node_u": "HL_03d1278b54ab",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d5a1fc358b4e",
+      "node_u": "HL_78d9f86d16bd",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ea2b386b40f5",
+      "node_u": "HL_78d9f86d16bd",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_001632770d8f",
+      "node_u": "IOC_16fefe5606d4",
+      "node_v": "TTP_T1001",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0ab6b5a4acc2",
+      "node_u": "HL_f1f37cc6416e",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_18103c99ffb6",
+      "node_u": "HL_dea90c536043",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bd4e6c06b8a",
+      "node_u": "IOC_01ca81e5c239",
+      "node_v": "TTP_T1001",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bd5103693e9",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3bfa80e9b34d",
+      "node_u": "HL_7bbea51d18a0",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_490b1f2bcafd",
+      "node_u": "IOC_defee4942408",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_50135ec94a83",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_578462bf7557",
+      "node_u": "IOC_1766542380ab",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_738b8ffea43c",
+      "node_u": "HL_7bbea51d18a0",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8e7e00fe0ece",
+      "node_u": "HL_7bbea51d18a0",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ad7b47f5da08",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_eb8f6544476d",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f1e2d9f2caab",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f4bb7f68cc8f",
+      "node_u": "HL_6418d2f6e808",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0721b959efdf",
+      "node_u": "HL_0e807ba1df94",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_38afa05e6030",
+      "node_u": "HL_83285a24f603",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3cd0b251186f",
+      "node_u": "HL_d45fadd2b042",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4cfef5e41059",
+      "node_u": "HL_e614e7a7bc8c",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d4452ca6fd81",
+      "node_u": "HL_6389a383bed8",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

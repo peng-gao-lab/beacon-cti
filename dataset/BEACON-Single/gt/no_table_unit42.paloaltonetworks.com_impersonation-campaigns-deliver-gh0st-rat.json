@@ -1,0 +1,612 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_1cddb2f590c4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Sogou browser",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "They also continued targeting software popular with Chinese speakers, such as QQ Music and Sogou browser."
+        ]
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "These Gh0st RAT samples create scheduled tasks for persistence and use powershell.exe to add exclusions in Windows Defender, so they can run undetected."
+        ]
+      },
+      {
+        "node_id": "HL_89f08fbe3c2a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "QQ Music",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "They also continued targeting software popular with Chinese speakers, such as QQ Music and Sogou browser."
+        ]
+      },
+      {
+        "node_id": "HL_aa8e2db6cb7d",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Campaign Chorus",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          20,
+          22,
+          24,
+          50
+        ],
+        "span_sentences": [
+          "We refer to the second campaign as Campaign Chorus because attackers expanded their lures to impersonate over 40 different software applications.",
+          "In Campaign Chorus, attackers impersonated widely used enterprise messaging software, Chinese versions of secure messaging apps and popular gaming platforms.",
+          "In a tactical shift from previous activity, the actor behind Campaign Chorus moved away from a single, self-hosted payload server.",
+          "Campaign Chorus, the second campaign, leverages a more complex multi-stage infection chain and uses DLL sideloading."
+        ]
+      },
+      {
+        "node_id": "HL_c4138cbd04f1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Gh0st RAT",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          9,
+          16,
+          18,
+          19
+        ],
+        "span_sentences": [
+          "The Gh0st RAT and its many variants are a prominent choice, particularly for Chinese-nexus cybercrime and espionage actors who have used these tools for over a decade.",
+          "The obfuscated binary was hosted on URLs from fs-im-kefu.7moor-fs1[.]com, a malware distribution point linked to previous Gh0st RAT activity.",
+          "These Gh0st RAT samples create scheduled tasks for persistence and use powershell.exe to add exclusions in Windows Defender, so they can run undetected.",
+          "Once active, these Gh0st RAT samples establish command and control (C2) communication via encrypted TCP traffic over port 8080 to servers with domains like xiaobaituziha[.]com, which resolved to 103.181.134[.]138."
+        ]
+      },
+      {
+        "node_id": "HL_e5f8425886d9",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Campaign Trio",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          10,
+          49
+        ],
+        "span_sentences": [
+          "We refer to this initial activity as Campaign Trio due to its impersonation of three distinct software brands.",
+          "Campaign Trio, the first campaign, uses direct droppers."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The obfuscated binary was hosted on URLs from fs-im-kefu.7moor-fs1[.]com, a malware distribution point linked to previous Gh0st RAT activity."
+          ],
+          [
+            "The VBScript file acts as a file assembler and decryptor for the next-stage malware."
+          ],
+          [
+            "The VBScript file reads these separate components, merges them into a single binary and uses a stored password to decrypt the combined data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We refer to the second campaign as Campaign Chorus because attackers expanded their lures to impersonate over 40 different software applications.",
+            "Launched in May 2025, this campaign built upon the foundation of the first and showed a significant expansion in targeting.",
+            "In Campaign Chorus, attackers impersonated widely used enterprise messaging software, Chinese versions of secure messaging apps and popular gaming platforms."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These Gh0st RAT samples create scheduled tasks for persistence and use powershell.exe to add exclusions in Windows Defender, so they can run undetected."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These Gh0st RAT samples create scheduled tasks for persistence and use powershell.exe to add exclusions in Windows Defender, so they can run undetected."
+          ],
+          [
+            "The VBScript file acts as a file assembler and decryptor for the next-stage malware."
+          ],
+          [
+            "The VBScript file reads these separate components, merges them into a single binary and uses a stored password to decrypt the combined data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_6",
+          "EDGE_13",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once active, these Gh0st RAT samples establish command and control (C2) communication via encrypted TCP traffic over port 8080 to servers with domains like xiaobaituziha[.]com, which resolved to 103.181.134[.]138."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_12",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Webpages from over 2,000 domains served their malicious payloads from a single source: hxxps[:]//xiazailianjieoss[.]com."
+          ],
+          [
+            "Instead, the malicious landing pages used intermediary redirection domains to fetch the malicious ZIP archives from public cloud service buckets."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The VBScript file acts as a file assembler and decryptor for the next-stage malware."
+          ],
+          [
+            "The VBScript file reads these separate components, merges them into a single binary and uses a stored password to decrypt the combined data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "From the first campaign to the second, the adversary advanced from simple droppers to complex, multi-stage infection chains that misuse legitimate, signed software to bypass modern defenses."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_1",
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These Gh0st RAT samples create scheduled tasks for persistence and use powershell.exe to add exclusions in Windows Defender, so they can run undetected."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_3",
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ],
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The final and most complex step in the infection chain is using DLL side-loading to execute the payload."
+          ],
+          [
+            "Campaign Chorus, the second campaign, leverages a more complex multi-stage infection chain and uses DLL sideloading."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            13
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Between February and March 2025, attackers registered over 2,000 domains, with significant surges in activity in early February and early March.",
+            "Attackers appear to have automated their domain registration, typically combining the impersonated brand name with a random-looking alphanumeric suffix and using TLDs like .top or .vip."
+          ],
+          [
+            "The IP address 95.173.197[.]195 continues to serve new malicious domains as of early October 2025."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_195bb34d8060",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "youdaxxyzr[.]top",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "For example, we observed domains such as youdaxxyzr[.]top and i4toolscacsm[.]top actively resolving to this IP address."
+        ]
+      },
+      {
+        "node_id": "IOC_4376b62684f0",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "95.173.197[.]195",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "The IP address 95.173.197[.]195 continues to serve new malicious domains as of early October 2025."
+        ]
+      },
+      {
+        "node_id": "IOC_453652241935",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps[:]//xiazailianjieoss[.]com",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Webpages from over 2,000 domains served their malicious payloads from a single source: hxxps[:]//xiazailianjieoss[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_659365c07ea0",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "103.181.134[.]138",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "Once active, these Gh0st RAT samples establish command and control (C2) communication via encrypted TCP traffic over port 8080 to servers with domains like xiaobaituziha[.]com, which resolved to 103.181.134[.]138."
+        ]
+      },
+      {
+        "node_id": "IOC_6668a559a8ce",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "fs-im-kefu.7moor-fs1[.]com",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The obfuscated binary was hosted on URLs from fs-im-kefu.7moor-fs1[.]com, a malware distribution point linked to previous Gh0st RAT activity."
+        ]
+      },
+      {
+        "node_id": "IOC_6d93289f33f4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "xiaobaituziha[.]com",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "Once active, these Gh0st RAT samples establish command and control (C2) communication via encrypted TCP traffic over port 8080 to servers with domains like xiaobaituziha[.]com, which resolved to 103.181.134[.]138."
+        ]
+      },
+      {
+        "node_id": "IOC_c190568542fe",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "i4toolscacsm[.]top",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "For example, we observed domains such as youdaxxyzr[.]top and i4toolscacsm[.]top actively resolving to this IP address."
+        ]
+      },
+      {
+        "node_id": "IOC_c3cabef1f1cf",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "156.251.25[.]112",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "Domains associated with the first campaign's infrastructure continue to resolve to 156.251.25[.]112."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_aa8e2db6cb7d",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_aa8e2db6cb7d",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_c4138cbd04f1",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_c4138cbd04f1",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_c4138cbd04f1",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_c4138cbd04f1",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_c4138cbd04f1",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_e5f8425886d9",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_195bb34d8060",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_4376b62684f0",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_453652241935",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_659365c07ea0",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_6668a559a8ce",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_6668a559a8ce",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_6d93289f33f4",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_c190568542fe",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_c3cabef1f1cf",
+      "node_v": "TTP_T1583"
+    }
+  ]
+}

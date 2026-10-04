@@ -1,0 +1,661 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_007618c8b10f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WildFire",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "These samples were all ingested into our WildFire malware analysis platform between November 4 - 22, 2019, suggesting that this specific variant was first found earlier this month and is currently still in use."
+        ]
+      },
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          8,
+          10,
+          16
+        ],
+        "span_sentences": [
+          "In this campaign, instead of solely relying on email attachments, the adversaries included links to what appeared to be a legitimate Google Docs document which itself contained links to malicious files hosted on Google Drive.",
+          "Once the user is fully redirected to the file hosted on Google Drive, an executable file is downloaded.",
+          "Once the victim clicks on the links, they are redirected to a Google Doc document which has a link to a file hosted on Google Drive."
+        ]
+      },
+      {
+        "node_id": "HL_2446deef692c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cortex XDR",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          23
+        ],
+        "span_sentences": [
+          "By using a combination of Cortex XDR and the AutoFocus contextual threat intelligence service, Unit 42 discovered a recent Trickbot campaign leveraging legitimate cloud service providers to obfuscate malicious delivery behavior.",
+          "Using Cortex XDR and AutoFocus, we observed that once the files were executed by the victim, they would then retrieve the corresponding Trickbot payload from a first stage C2 server."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          18,
+          19
+        ],
+        "span_sentences": [
+          "Both of these downloaders are signed by PERISMOUNT LIMITED and appear as Microsoft Word documents to Windows users, as shown in Figure 3.",
+          "Due to default settings in most Windows deployments of not displaying file extensions, these files will not appear as obvious executables to a victim."
+        ]
+      },
+      {
+        "node_id": "HL_518a34352daf",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GSuite",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "In this campaign, we discovered the adversaries leveraging legitimate services such as SendGrid and GSuite in an effort to obfuscate malicious activity."
+        ]
+      },
+      {
+        "node_id": "HL_5be5a239d867",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "PERISMOUNT LIMITED",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "Both of these downloaders are signed by PERISMOUNT LIMITED and appear as Microsoft Word documents to Windows users, as shown in Figure 3."
+        ]
+      },
+      {
+        "node_id": "HL_62951c4067f1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Word",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "Both of these downloaders are signed by PERISMOUNT LIMITED and appear as Microsoft Word documents to Windows users, as shown in Figure 3."
+        ]
+      },
+      {
+        "node_id": "HL_7cb35a516b62",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SendGrid",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          9,
+          13,
+          15,
+          41
+        ],
+        "span_sentences": [
+          "To further obfuscate the malicious activity, the adversaries leveraged a legitimate Email Delivery Service (EDS) called SendGrid to distribute the initial emails, and also hide the Google Drive links in the documents behind a SendGrid URL.",
+          "They then used SendGrid’s EDS to distribute the actual emails.",
+          "The body of the emails contained lure text consistent with the subject lines and links that utilized a SendGrid function called Click Tracking which sends a notification back to the sender of the email for tracking purposes.",
+          "In this campaign, we discovered the adversaries leveraging legitimate services such as SendGrid and GSuite in an effort to obfuscate malicious activity."
+        ]
+      },
+      {
+        "node_id": "HL_8e46732f8ae4",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Trickbot",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          6,
+          7,
+          11,
+          17,
+          21,
+          23,
+          26,
+          27,
+          30,
+          40
+        ],
+        "span_sentences": [
+          "By using a combination of Cortex XDR and the AutoFocus contextual threat intelligence service, Unit 42 discovered a recent Trickbot campaign leveraging legitimate cloud service providers to obfuscate malicious delivery behavior.",
+          "Trickbot is a well-known, modular credential stealer first discovered in 2016.",
+          "Due to its modularity, operators of Trickbot are able to gain access to different functions and capabilities by retrieving additional modules from the command and control (C2) servers.",
+          "Between November 7 - 8, 2019, Unit 42 identified a Trickbot distribution campaign delivered via phishing emails with subject lines using topics around payroll or annual bonuses shown below.",
+          "Generally, Trickbot and similar tools have been largely associated with using malspam with malicious document attachments as the delivery mechanism of choice by their operators likely due to ease-of-use, relatively low resource cost, and high success rates.",
+          "This executable is a downloader tool designed to retrieve a Trickbot payload.",
+          "This file is a simple downloader which has a single function of retrieving the Trickbot payload then executing it on the victim host.",
+          "Regardless of whether or not the user hits “OK” or closes the pop-up window, the file will still proceed with the download and installation of the Trickbot payload.",
+          "Using Cortex XDR and AutoFocus, we observed that once the files were executed by the victim, they would then retrieve the corresponding Trickbot payload from a first stage C2 server.",
+          "Table 2 below depicts the downloader and URL used for each Trickbot payload.",
+          "The two payloads, nfdsus12.exe and nfdusdarm.exe, were immediately identified as Trickbot by the AutoFocus threat intelligence service via the tagging system.",
+          "This specific variant appeared to be a newer version of Trickbot, using the file path %APPDATA%\\cashcore to store its files and configurations.",
+          "These samples also encompassed a range of Trickbot related files, from the Trickbot payload itself as well as various Trickbot modules."
+        ]
+      },
+      {
+        "node_id": "HL_91f39d1cdefd",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Dyreza",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "It has been thought to be a descendent of another well-known credential stealer called Dyreza, or Dyre, due to similarities in functionalities and codebase."
+        ]
+      },
+      {
+        "node_id": "HL_ad6c195aa456",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AutoFocus",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          23,
+          27,
+          28,
+          34,
+          38
+        ],
+        "span_sentences": [
+          "By using a combination of Cortex XDR and the AutoFocus contextual threat intelligence service, Unit 42 discovered a recent Trickbot campaign leveraging legitimate cloud service providers to obfuscate malicious delivery behavior.",
+          "Using Cortex XDR and AutoFocus, we observed that once the files were executed by the victim, they would then retrieve the corresponding Trickbot payload from a first stage C2 server.",
+          "The two payloads, nfdsus12.exe and nfdusdarm.exe, were immediately identified as Trickbot by the AutoFocus threat intelligence service via the tagging system.",
+          "AutoFocus tags are groupings of behaviors that are designed to immediately identify specific malware families, threat actors, campaigns, or exploits.",
+          "Using AutoFocus, we used the string supp.php within the URL as a pivot point to search for any other files that were delivered from that URL.",
+          "Executing another search in AutoFocus looking for the occurrence of the string cashcore within any File Activity revealed over 800 additional samples, also all tagged as Trickbot."
+        ]
+      },
+      {
+        "node_id": "HL_b1dd7d73d84b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Docs",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "In this campaign, instead of solely relying on email attachments, the adversaries included links to what appeared to be a legitimate Google Docs document which itself contained links to malicious files hosted on Google Drive."
+        ]
+      },
+      {
+        "node_id": "HL_ff7aacdaaf8c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Dyre",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "It has been thought to be a descendent of another well-known credential stealer called Dyreza, or Dyre, due to similarities in functionalities and codebase."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1",
+          "EDGE_5",
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In this campaign, we discovered the adversaries leveraging legitimate services such as SendGrid and GSuite in an effort to obfuscate malicious activity."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_4",
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Both of these downloaders are signed by PERISMOUNT LIMITED and appear as Microsoft Word documents to Windows users, as shown in Figure 3."
+          ],
+          [
+            "Once these files are executed by the victim, a decoy pop-up is displayed to reduce suspicion of any malicious behavior."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once the payload is executed, it will spawn a child process (svchost.exe) in a suspended state, replace the memory with malicious code, and resume the process.",
+            "The technique is known as process hollowing."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The emails sent by the attackers appeared to originate from individuals at .edu email addresses which were likely compromised by the adversary."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "From there, basic system information is collected, and it will attempt to communicate to its second-stage C2 infrastructure to retrieve additional modules."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            41,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To further obfuscate the malicious activity, the adversaries leveraged a legitimate Email Delivery Service (EDS) called SendGrid to distribute the initial emails, and also hide the Google Drive links in the documents behind a SendGrid URL."
+          ],
+          [
+            "In this campaign, we discovered the adversaries leveraging legitimate services such as SendGrid and GSuite in an effort to obfuscate malicious activity."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_2",
+          "EDGE_12",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Due to its modularity, operators of Trickbot are able to gain access to different functions and capabilities by retrieving additional modules from the command and control (C2) servers."
+          ],
+          [
+            "Once the user is fully redirected to the file hosted on Google Drive, an executable file is downloaded.",
+            "This executable is a downloader tool designed to retrieve a Trickbot payload."
+          ],
+          [
+            "This file is a simple downloader which has a single function of retrieving the Trickbot payload then executing it on the victim host."
+          ],
+          [
+            "Using Cortex XDR and AutoFocus, we observed that once the files were executed by the victim, they would then retrieve the corresponding Trickbot payload from a first stage C2 server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once the user is fully redirected to the file hosted on Google Drive, an executable file is downloaded.",
+            "This executable is a downloader tool designed to retrieve a Trickbot payload."
+          ],
+          [
+            "Once these files are executed by the victim, a decoy pop-up is displayed to reduce suspicion of any malicious behavior."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_3",
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Between November 7 - 8, 2019, Unit 42 identified a Trickbot distribution campaign delivered via phishing emails with subject lines using topics around payroll or annual bonuses shown below."
+          ],
+          [
+            "In this campaign, instead of solely relying on email attachments, the adversaries included links to what appeared to be a legitimate Google Docs document which itself contained links to malicious files hosted on Google Drive."
+          ],
+          [
+            "To further obfuscate the malicious activity, the adversaries leveraged a legitimate Email Delivery Service (EDS) called SendGrid to distribute the initial emails, and also hide the Google Drive links in the documents behind a SendGrid URL."
+          ],
+          [
+            "The emails sent by the attackers appeared to originate from individuals at .edu email addresses which were likely compromised by the adversary."
+          ],
+          [
+            "They then used SendGrid’s EDS to distribute the actual emails.",
+            "This would have increased their likelihood of bypassing email filters, as it is a popular service used by organizations around the world.",
+            "The body of the emails contained lure text consistent with the subject lines and links that utilized a SendGrid function called Click Tracking which sends a notification back to the sender of the email for tracking purposes."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_5657f85bf478",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "MHk6kyiq.Z6O",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The payload in this case is a file named MHk6kyiq.Z6O and is saved in the user’s temp directory where it is eventually executed."
+        ]
+      },
+      {
+        "node_id": "IOC_5b5d3de5773c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "nfdsus12.exe",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "The two payloads, nfdsus12.exe and nfdusdarm.exe, were immediately identified as Trickbot by the AutoFocus threat intelligence service via the tagging system."
+        ]
+      },
+      {
+        "node_id": "IOC_8be2e064f98d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "nfdusdarm.exe",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "The two payloads, nfdsus12.exe and nfdusdarm.exe, were immediately identified as Trickbot by the AutoFocus threat intelligence service via the tagging system."
+        ]
+      },
+      {
+        "node_id": "IOC_99537e861bb3",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%APPDATA%\\cashcore",
+        "edges": [],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "This specific variant appeared to be a newer version of Trickbot, using the file path %APPDATA%\\cashcore to store its files and configurations."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_7cb35a516b62",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_7cb35a516b62",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_8e46732f8ae4",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_8e46732f8ae4",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_8e46732f8ae4",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_8e46732f8ae4",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_8e46732f8ae4",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_8e46732f8ae4",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_8e46732f8ae4",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_8e46732f8ae4",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_b1dd7d73d84b",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_5657f85bf478",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_5b5d3de5773c",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_8be2e064f98d",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0ba651a3b366",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "SolarWinds",
+        "sentence_indices": [
+          3,
+          5,
+          7,
+          13
+        ],
+        "span_sentences": [
+          "According to FireEye, SolarStorm has compromised organizations across the globe via a supply chain attack that consists of a trojanized update file for the SolarWinds Orion Platform.",
+          "SolarStorm specifically targeted supply chains during their attack on SolarWinds’ Orion IT performance and statistics monitoring software.",
+          "SolarStorm threat actors created a legitimate digitally signed backdoor, SUNBURST, as a trojanized version of a SolarWinds Orion plug-in.",
+          "At the time of this publication, the Windows Installer Patch file including the trojanized version of the SolarWinds Orion product was still reachable:\nFilename: SolarWinds-Core-v2019.4.5220-Hotfix5.msp."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3797d3b480dd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SolarWinds Orion",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "At the time of this publication, the Windows Installer Patch file including the trojanized version of the SolarWinds Orion product was still reachable:\nFilename: SolarWinds-Core-v2019.4.5220-Hotfix5.msp."
+        ],
+        "edges": [
+          "EDGE_00ab419eec18"
+        ]
+      },
+      {
+        "node_id": "HL_37dfa49a423e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SUNBURST",
+        "sentence_indices": [
+          4,
+          7,
+          9,
+          10,
+          14
+        ],
+        "span_sentences": [
+          "What’s Known About SolarStorm and SUNBURST.",
+          "SolarStorm threat actors created a legitimate digitally signed backdoor, SUNBURST, as a trojanized version of a SolarWinds Orion plug-in.",
+          "- SUNBURST has been observed delivering multiple payloads, mostly focused on memory-only droppers, such as the FireEye-dubbed TEARDROP and Cobalt Strike BEACON.",
+          "SUNBURST’s command and control (C2) traffic masquerades as legitimate Orion Improvement Program traffic.",
+          "SUNBURST deployed several different payloads, and in at least one instance, a memory-only dropper FireEye dubbed TEARDROP to deploy a Cobalt Strike BEACON."
+        ],
+        "edges": [
+          "EDGE_04f9288f1f28",
+          "EDGE_3a7976aef565",
+          "EDGE_825219040140"
+        ]
+      },
+      {
+        "node_id": "HL_3ae18220aab8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Unit 42 ATOM Viewer",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Unit 42 tracks this and related activity as the group named SolarStorm, and has published an ATOM containing the observed techniques, IOCs and relevant courses of action in the Unit 42 ATOM Viewer."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_59428bc6de05",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNC2452",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "13, FireEye released information related to a breach and data exfiltration originating from an unknown actor FireEye is calling UNC2452."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "sentence_indices": [
+          9,
+          14,
+          15
+        ],
+        "span_sentences": [
+          "- SUNBURST has been observed delivering multiple payloads, mostly focused on memory-only droppers, such as the FireEye-dubbed TEARDROP and Cobalt Strike BEACON.",
+          "SUNBURST deployed several different payloads, and in at least one instance, a memory-only dropper FireEye dubbed TEARDROP to deploy a Cobalt Strike BEACON.",
+          "During analysis of the information available, Unit 42 identified related activity involving TEARDROP malware that was used to execute a customized Cobalt Strike BEACON."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6a53ab4bd2ce",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "FireEye",
+        "sentence_indices": [
+          1,
+          3,
+          9,
+          11,
+          12,
+          14
+        ],
+        "span_sentences": [
+          "13, FireEye released information related to a breach and data exfiltration originating from an unknown actor FireEye is calling UNC2452.",
+          "According to FireEye, SolarStorm has compromised organizations across the globe via a supply chain attack that consists of a trojanized update file for the SolarWinds Orion Platform.",
+          "- SUNBURST has been observed delivering multiple payloads, mostly focused on memory-only droppers, such as the FireEye-dubbed TEARDROP and Cobalt Strike BEACON.",
+          "- FireEye has released signatures and specific indicators to help identify SolarStorm’s activity.",
+          "FireEye’s research has been a cornerstone in providing not only useful signatures, but also indicators which help with tracking and hunting for SolarStorm activity.",
+          "SUNBURST deployed several different payloads, and in at least one instance, a memory-only dropper FireEye dubbed TEARDROP to deploy a Cobalt Strike BEACON."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_93e71dc090b6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TEARDROP",
+        "sentence_indices": [
+          9,
+          14,
+          15
+        ],
+        "span_sentences": [
+          "- SUNBURST has been observed delivering multiple payloads, mostly focused on memory-only droppers, such as the FireEye-dubbed TEARDROP and Cobalt Strike BEACON.",
+          "SUNBURST deployed several different payloads, and in at least one instance, a memory-only dropper FireEye dubbed TEARDROP to deploy a Cobalt Strike BEACON.",
+          "During analysis of the information available, Unit 42 identified related activity involving TEARDROP malware that was used to execute a customized Cobalt Strike BEACON."
+        ],
+        "edges": [
+          "EDGE_eae3e1f10bfe"
+        ]
+      },
+      {
+        "node_id": "HL_a74ea5eecea3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Unit 42",
+        "sentence_indices": [
+          2,
+          15
+        ],
+        "span_sentences": [
+          "Unit 42 tracks this and related activity as the group named SolarStorm, and has published an ATOM containing the observed techniques, IOCs and relevant courses of action in the Unit 42 ATOM Viewer.",
+          "During analysis of the information available, Unit 42 identified related activity involving TEARDROP malware that was used to execute a customized Cobalt Strike BEACON."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c0bda788458d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "SolarStorm",
+        "sentence_indices": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          11,
+          12
+        ],
+        "span_sentences": [
+          "Unit 42 tracks this and related activity as the group named SolarStorm, and has published an ATOM containing the observed techniques, IOCs and relevant courses of action in the Unit 42 ATOM Viewer.",
+          "According to FireEye, SolarStorm has compromised organizations across the globe via a supply chain attack that consists of a trojanized update file for the SolarWinds Orion Platform.",
+          "What’s Known About SolarStorm and SUNBURST.",
+          "SolarStorm specifically targeted supply chains during their attack on SolarWinds’ Orion IT performance and statistics monitoring software.",
+          "- SolarStorm is a highly skilled threat actor, with a significant operational security mindset, as can be observed in its post-exploitation activity.",
+          "SolarStorm threat actors created a legitimate digitally signed backdoor, SUNBURST, as a trojanized version of a SolarWinds Orion plug-in.",
+          "- FireEye has released signatures and specific indicators to help identify SolarStorm’s activity.",
+          "FireEye’s research has been a cornerstone in providing not only useful signatures, but also indicators which help with tracking and hunting for SolarStorm activity."
+        ],
+        "edges": [
+          "EDGE_c47e903fd33b"
+        ]
+      },
+      {
+        "node_id": "HL_d5df3ce00887",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SolarWinds’ Orion IT performance and statistics monitoring software",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "SolarStorm specifically targeted supply chains during their attack on SolarWinds’ Orion IT performance and statistics monitoring software."
+        ],
+        "edges": [
+          "EDGE_7501ee75eece"
+        ]
+      },
+      {
+        "node_id": "HL_efbbe2054f4c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Orion Improvement Program",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "SUNBURST’s command and control (C2) traffic masquerades as legitimate Orion Improvement Program traffic."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f59f5fbcafa2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SolarWinds Orion Platform",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "According to FireEye, SolarStorm has compromised organizations across the globe via a supply chain attack that consists of a trojanized update file for the SolarWinds Orion Platform."
+        ],
+        "edges": [
+          "EDGE_826d6c4684a8"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "SUNBURST’s command and control (C2) traffic masquerades as legitimate Orion Improvement Program traffic."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "SUNBURST’s command and control (C2) traffic masquerades as legitimate Orion Improvement Program traffic."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_04f9288f1f28"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "- SUNBURST has been observed delivering multiple payloads, mostly focused on memory-only droppers, such as the FireEye-dubbed TEARDROP and Cobalt Strike BEACON.",
+            "SUNBURST’s command and control (C2) traffic masquerades as legitimate Orion Improvement Program traffic.",
+            "- FireEye has released signatures and specific indicators to help identify SolarStorm’s activity.",
+            "FireEye’s research has been a cornerstone in providing not only useful signatures, but also indicators which help with tracking and hunting for SolarStorm activity.",
+            "At the time of this publication, the Windows Installer Patch file including the trojanized version of the SolarWinds Orion product was still reachable:\nFilename: SolarWinds-Core-v2019.4.5220-Hotfix5.msp."
+          ],
+          [
+            "During analysis of the information available, Unit 42 identified related activity involving TEARDROP malware that was used to execute a customized Cobalt Strike BEACON.",
+            "This sample contains a beacon request to the previously unreported domain mobilnweb[.]com.",
+            "The TEARDROP DLL has a SHA256 of: 118189f90da3788362fe85eafa555298423e21ec37f147f3bf88c61d4cd46c51\nand contains a beacon request for the URI /2019/Person-With-Parnters-Brands-Our/ with the User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36.",
+            "Within that same configuration, we also observed an additional URI setting containing the string /2019/This-Person-Two-Join-With/."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            13
+          ],
+          [
+            15,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_0cbebed51745",
+          "EDGE_5cd2c94a824b",
+          "EDGE_825219040140",
+          "EDGE_eae3e1f10bfe"
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1195",
+        "ttp_id": "T1195",
+        "best_span_sentences_list": [
+          [
+            "According to FireEye, SolarStorm has compromised organizations across the globe via a supply chain attack that consists of a trojanized update file for the SolarWinds Orion Platform."
+          ],
+          [
+            "SolarStorm specifically targeted supply chains during their attack on SolarWinds’ Orion IT performance and statistics monitoring software."
+          ],
+          [
+            "SolarStorm threat actors created a legitimate digitally signed backdoor, SUNBURST, as a trojanized version of a SolarWinds Orion plug-in."
+          ],
+          [
+            "At the time of this publication, the Windows Installer Patch file including the trojanized version of the SolarWinds Orion product was still reachable:\nFilename: SolarWinds-Core-v2019.4.5220-Hotfix5.msp."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            13,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_00ab419eec18",
+          "EDGE_3a7976aef565",
+          "EDGE_7501ee75eece",
+          "EDGE_826d6c4684a8",
+          "EDGE_c47e903fd33b"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_3c43d0c24196",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "mobilnweb[.]com",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "This sample contains a beacon request to the previously unreported domain mobilnweb[.]com."
+        ],
+        "edges": [
+          "EDGE_0cbebed51745"
+        ]
+      },
+      {
+        "node_id": "IOC_e4e1f459e5cb",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "118189f90da3788362fe85eafa555298423e21ec37f147f3bf88c61d4cd46c51",
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "The TEARDROP DLL has a SHA256 of: 118189f90da3788362fe85eafa555298423e21ec37f147f3bf88c61d4cd46c51\nand contains a beacon request for the URI /2019/Person-With-Parnters-Brands-Our/ with the User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36."
+        ],
+        "edges": [
+          "EDGE_5cd2c94a824b"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_00ab419eec18",
+      "node_u": "HL_3797d3b480dd",
+      "node_v": "TTP_T1195",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_04f9288f1f28",
+      "node_u": "HL_37dfa49a423e",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0cbebed51745",
+      "node_u": "IOC_3c43d0c24196",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a7976aef565",
+      "node_u": "HL_37dfa49a423e",
+      "node_v": "TTP_T1195",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5cd2c94a824b",
+      "node_u": "IOC_e4e1f459e5cb",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7501ee75eece",
+      "node_u": "HL_d5df3ce00887",
+      "node_v": "TTP_T1195",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_825219040140",
+      "node_u": "HL_37dfa49a423e",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_826d6c4684a8",
+      "node_u": "HL_f59f5fbcafa2",
+      "node_v": "TTP_T1195",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c47e903fd33b",
+      "node_u": "HL_c0bda788458d",
+      "node_v": "TTP_T1195",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_eae3e1f10bfe",
+      "node_u": "HL_93e71dc090b6",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

@@ -1,0 +1,509 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_06e8aef494b6",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Gamaredon",
+        "sentence_indices": [
+          0,
+          7,
+          21
+        ],
+        "span_sentences": [
+          "The Gamaredon hacker group, a known advanced persistent threat (APT) actor, has been observed leveraging weaponized LNK files to distribute the Remcos backdoor on Windows systems.",
+          "Metadata analysis reveals that only two machines were used to create these shortcut files, consistent with Gamaredon’s operational patterns in previous campaigns.",
+          "The Gamaredon group’s exploitation of geopolitical events like the Ukraine conflict underscores their persistence and adaptability in cyber espionage campaigns."
+        ],
+        "edges": [
+          "EDGE_3a2199790e8e"
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          3,
+          9
+        ],
+        "span_sentences": [
+          "Upon execution, the LNK files trigger a PowerShell downloader that connects to geo-fenced servers located in Russia and Germany.",
+          "The PowerShell downloader embedded in the LNK files uses obfuscation techniques, such as invoking cmdlets indirectly via Get-Command."
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_291a5e159f4a"
+        ]
+      },
+      {
+        "node_id": "HL_41d3948136be",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "HyperHosting",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The campaign’s servers, hosted by ISPs like GTHost and HyperHosting, restrict access to specific geographic regions, primarily Ukraine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          0,
+          5
+        ],
+        "span_sentences": [
+          "The Gamaredon hacker group, a known advanced persistent threat (APT) actor, has been observed leveraging weaponized LNK files to distribute the Remcos backdoor on Windows systems.",
+          "The payload employs DLL side-loading techniques to execute the malware, which is ultimately injected into the Windows Explorer process for persistence and communication with command-and-control (C2) infrastructure."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          1,
+          18
+        ],
+        "span_sentences": [
+          "This campaign, tracked by Cisco Talos since November 2024, primarily targets users in Ukraine, exploiting the ongoing conflict as a thematic lure.",
+          "Cisco Talos has identified several IP addresses associated with this campaign’s infrastructure."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Upon execution, the LNK files trigger a PowerShell downloader that connects to geo-fenced servers located in Russia and Germany."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a328b591fdc9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Remcos",
+        "sentence_indices": [
+          0,
+          4,
+          17
+        ],
+        "span_sentences": [
+          "The Gamaredon hacker group, a known advanced persistent threat (APT) actor, has been observed leveraging weaponized LNK files to distribute the Remcos backdoor on Windows systems.",
+          "These servers deliver a second-stage ZIP file containing the Remcos backdoor.",
+          "Remcos enables attackers to perform various malicious activities, including data exfiltration and remote control of infected systems."
+        ],
+        "edges": [
+          "EDGE_015487d61782",
+          "EDGE_06580670ac4e",
+          "EDGE_432ba9d05336",
+          "EDGE_4e2655484626",
+          "EDGE_9a0184428521",
+          "EDGE_de3d5c7fc5fa"
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Upon execution, the LNK files trigger a PowerShell downloader that connects to geo-fenced servers located in Russia and Germany."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b63322a01ed6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GTHost",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The campaign’s servers, hosted by ISPs like GTHost and HyperHosting, restrict access to specific geographic regions, primarily Ukraine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c6ca18fdfff0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Ukraine",
+        "sentence_indices": [
+          1,
+          10,
+          21
+        ],
+        "span_sentences": [
+          "This campaign, tracked by Cisco Talos since November 2024, primarily targets users in Ukraine, exploiting the ongoing conflict as a thematic lure.",
+          "The campaign’s servers, hosted by ISPs like GTHost and HyperHosting, restrict access to specific geographic regions, primarily Ukraine.",
+          "The Gamaredon group’s exploitation of geopolitical events like the Ukraine conflict underscores their persistence and adaptability in cyber espionage campaigns."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_e86c5af5e095",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Explorer",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "The payload employs DLL side-loading techniques to execute the malware, which is ultimately injected into the Windows Explorer process for persistence and communication with command-and-control (C2) infrastructure."
+        ],
+        "edges": [
+          "EDGE_6d3ac6bc4af5"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The PowerShell downloader embedded in the LNK files uses obfuscation techniques, such as invoking cmdlets indirectly via Get-Command.",
+            "The campaign’s servers, hosted by ISPs like GTHost and HyperHosting, restrict access to specific geographic regions, primarily Ukraine."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_291a5e159f4a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The malicious LNK files are disguised as Office documents and use filenames referencing troop movements and other war-related topics to entice victims into opening them."
+          ],
+          [
+            "The LNK files also include decoy documents to mask the infection process and avoid raising suspicion."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "Remcos enables attackers to perform various malicious activities, including data exfiltration and remote control of infected systems."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_9a0184428521"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The payload employs DLL side-loading techniques to execute the malware, which is ultimately injected into the Windows Explorer process for persistence and communication with command-and-control (C2) infrastructure."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "edges": [
+          "EDGE_4e2655484626",
+          "EDGE_6d3ac6bc4af5"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Upon execution, the LNK files trigger a PowerShell downloader that connects to geo-fenced servers located in Russia and Germany."
+          ],
+          [
+            "The PowerShell downloader embedded in the LNK files uses obfuscation techniques, such as invoking cmdlets indirectly via Get-Command.",
+            "The campaign’s servers, hosted by ISPs like GTHost and HyperHosting, restrict access to specific geographic regions, primarily Ukraine."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            9,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "These servers deliver a second-stage ZIP file containing the Remcos backdoor."
+          ],
+          [
+            "Once downloaded, the ZIP file is extracted into the %TEMP%."
+          ],
+          [
+            "Cisco Talos has identified several IP addresses associated with this campaign’s infrastructure.",
+            "These addresses are linked to payload distribution and C2 activities."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_de3d5c7fc5fa"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The Gamaredon hacker group, a known advanced persistent threat (APT) actor, has been observed leveraging weaponized LNK files to distribute the Remcos backdoor on Windows systems.",
+            "This campaign, tracked by Cisco Talos since November 2024, primarily targets users in Ukraine, exploiting the ongoing conflict as a thematic lure.",
+            "The malicious LNK files are disguised as Office documents and use filenames referencing troop movements and other war-related topics to entice victims into opening them.",
+            "Upon execution, the LNK files trigger a PowerShell downloader that connects to geo-fenced servers located in Russia and Germany."
+          ],
+          [
+            "The LNK files also include decoy documents to mask the infection process and avoid raising suspicion."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            3
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_3a2199790e8e",
+          "EDGE_432ba9d05336"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "Remcos enables attackers to perform various malicious activities, including data exfiltration and remote control of infected systems."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_06580670ac4e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The phishing emails distributing these LNK files either attach the ZIP archives directly or provide links to download them from remote servers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "The payload includes a legitimate application that loads a malicious DLL through DLL side-loading a method where clean software is exploited to execute malicious code."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_015487d61782"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_bbf76c0289ea",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Once downloaded, the ZIP file is extracted into the %TEMP%."
+        ],
+        "edges": []
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_015487d61782",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_06580670ac4e",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_291a5e159f4a",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3a2199790e8e",
+      "node_u": "HL_06e8aef494b6",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_432ba9d05336",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4e2655484626",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6d3ac6bc4af5",
+      "node_u": "HL_e86c5af5e095",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9a0184428521",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_de3d5c7fc5fa",
+      "node_u": "HL_a328b591fdc9",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

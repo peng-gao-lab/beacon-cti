@@ -1,0 +1,337 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_42b96d56080a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Symantec",
+        "sentence_indices": [
+          2,
+          3,
+          13
+        ],
+        "span_sentences": [
+          "In a report published Thursday, the Symantec and Carbon Black Threat Hunter Team detailed a recent attack that featured an interesting development: A vulnerable driver was embedded directly into a Black Basta ransomware payload.",
+          "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system.",
+          "Like virtually all EDR killers, the NSecKrnl driver targets the processes of well-known vendors, including Symantec."
+        ],
+        "edges": [
+          "EDGE_9aa82c582733"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system."
+        ],
+        "edges": [
+          "EDGE_0bf97e2e40ea",
+          "EDGE_9da65525396d"
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "Even though the certificate for the driver had been revoked more than a decade ago, threat actors were still able to exploit gaps in Microsoft's Driver Signature Enforcement feature."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6a5e6a248761",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Carbon Black",
+        "sentence_indices": [
+          2,
+          3,
+          15
+        ],
+        "span_sentences": [
+          "In a report published Thursday, the Symantec and Carbon Black Threat Hunter Team detailed a recent attack that featured an interesting development: A vulnerable driver was embedded directly into a Black Basta ransomware payload.",
+          "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system.",
+          "\"We know the attack was at least partially successful because they managed to encrypt some files,\" says Dick O’Brien, principal intelligence analyst for the Symantec and Carbon Black Threat Hunter Team."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_7562524e0f66",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "NsecSoft NSecKrnl",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "The Threat Hunter Team discovered the vulnerable driver, NsecSoft NSecKrnl, bundled with the Reynolds ransomware."
+        ],
+        "edges": [
+          "EDGE_5863dbd30bcf",
+          "EDGE_fa53e7667ab0"
+        ]
+      },
+      {
+        "node_id": "HL_c53d03d83f5b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "EnCase",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Last week, Huntress researchers detailed an incident in which attackers weaponized a driver for the EnCase digital forensics suite."
+        ],
+        "edges": [
+          "EDGE_f94e5bcd2fdb"
+        ]
+      },
+      {
+        "node_id": "HL_d5f8b702d799",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Black Basta",
+        "sentence_indices": [
+          2,
+          7,
+          8
+        ],
+        "span_sentences": [
+          "In a report published Thursday, the Symantec and Carbon Black Threat Hunter Team detailed a recent attack that featured an interesting development: A vulnerable driver was embedded directly into a Black Basta ransomware payload.",
+          "The attack was initially attributed to Black Basta, which has been relatively quiet over the last year following a high-profile leak of the gang's internal communications.",
+          "It's unclear if Reynolds is a rebranded group that spun off of Black Basta."
+        ],
+        "edges": [
+          "EDGE_a8afd888ef52"
+        ]
+      },
+      {
+        "node_id": "HL_d761076092c3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Huntress",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Last week, Huntress researchers detailed an incident in which attackers weaponized a driver for the EnCase digital forensics suite."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_dcb99375b665",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Reynolds",
+        "sentence_indices": [
+          0,
+          3,
+          9,
+          11,
+          16,
+          21
+        ],
+        "span_sentences": [
+          "Researchers discovered a newly disclosed vulnerable driver embedded in Reynolds' ransomware, illustrating the increasing popularity of the defense-evasion technique.",
+          "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system.",
+          "The Threat Hunter Team discovered the vulnerable driver, NsecSoft NSecKrnl, bundled with the Reynolds ransomware.",
+          "It's unclear when Reynolds first began weaponizing and embedding the vulnerable driver into ransomware payloads, but it's also the latest example of the growing popularity of BYOVD.",
+          "\"It appears it failed to kill our product because it continued to function after the attack.\"\nAs far as why Reynolds bundled the driver and ransomware payload together, the Threat Hunter Team said it may be that dropping one combined file instead of two is \"quieter\" and reduces the chances of being detected.",
+          "The Reynolds attack is the latest example of the dangers posed by vulnerable and outdated drivers."
+        ],
+        "edges": [
+          "EDGE_7edab710b9e1",
+          "EDGE_b1608a41432f"
+        ]
+      },
+      {
+        "node_id": "HL_ef0b346c0f6b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AuKill",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "For example, ransomware affiliates have used an EDR killer known as \"AuKill\" to shut down security products before deploying ransomware or backdoors on the targeted system."
+        ],
+        "edges": [
+          "EDGE_1e2c1e210655"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1211",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1211",
+        "ttp_id": "T1211",
+        "best_span_sentences_list": [
+          [
+            "The Threat Hunter Team discovered the vulnerable driver, NsecSoft NSecKrnl, bundled with the Reynolds ransomware.",
+            "Last month, a medium-severity vulnerability in the NSecKrnl Windows driver, tracked as CVE-2025-68947, was disclosed.",
+            "It's unclear when Reynolds first began weaponizing and embedding the vulnerable driver into ransomware payloads, but it's also the latest example of the growing popularity of BYOVD."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_0bf97e2e40ea",
+          "EDGE_6d225af4807e",
+          "EDGE_7edab710b9e1",
+          "EDGE_a8afd888ef52",
+          "EDGE_f94e5bcd2fdb",
+          "EDGE_fa53e7667ab0"
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system."
+          ],
+          [
+            "Typically, EDR killers are standalone tools, often publicly available, that threat actors deploy before delivering a ransomware payload.",
+            "For example, ransomware affiliates have used an EDR killer known as \"AuKill\" to shut down security products before deploying ransomware or backdoors on the targeted system."
+          ],
+          [
+            "Like virtually all EDR killers, the NSecKrnl driver targets the processes of well-known vendors, including Symantec."
+          ],
+          [
+            "\"In other scenarios, if defenders saw a suspicious driver being dropped on a system, they may have time to stop the attack before the ransomware is deployed.\"\nThe Threat Hunter Team noted that BYOVD is undoubtedly the most common evasion tool used by ransomware attackers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_1e2c1e210655",
+          "EDGE_5863dbd30bcf",
+          "EDGE_9aa82c582733",
+          "EDGE_9da65525396d",
+          "EDGE_b1608a41432f"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_d4b10ae950d5",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-68947",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Last month, a medium-severity vulnerability in the NSecKrnl Windows driver, tracked as CVE-2025-68947, was disclosed."
+        ],
+        "edges": [
+          "EDGE_6d225af4807e"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0bf97e2e40ea",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1e2c1e210655",
+      "node_u": "HL_ef0b346c0f6b",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5863dbd30bcf",
+      "node_u": "HL_7562524e0f66",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6d225af4807e",
+      "node_u": "IOC_d4b10ae950d5",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7edab710b9e1",
+      "node_u": "HL_dcb99375b665",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9aa82c582733",
+      "node_u": "HL_42b96d56080a",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9da65525396d",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a8afd888ef52",
+      "node_u": "HL_d5f8b702d799",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b1608a41432f",
+      "node_u": "HL_dcb99375b665",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f94e5bcd2fdb",
+      "node_u": "HL_c53d03d83f5b",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fa53e7667ab0",
+      "node_u": "HL_7562524e0f66",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

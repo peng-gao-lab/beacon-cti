@@ -1,0 +1,948 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_02c9dbab8202",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "dsquery",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "In one intrusion, the actor deployed dsget and dsquery to query for specific properties in the AD:."
+        ]
+      },
+      {
+        "node_id": "HL_082118261122",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical Infrastructure",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Although UAT-8837's targeting may appear sporadic, since at least 2025, the group has clearly focused on targets within critical Infrastructure sectors in North America."
+        ]
+      },
+      {
+        "node_id": "HL_090e9377224e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "GoExec",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "GoExec\nIn one intrusion, after cycling through a number of tools, UAT-8837 deployed GoExec, a GoLang-based remote execution tool to execute commands on other connected remote endpoints within the victim’s network:."
+        ]
+      },
+      {
+        "node_id": "HL_0c99a32ffe24",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Certipy",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          4,
+          22,
+          30
+        ],
+        "span_sentences": [
+          "The threat actor uses a combination of tools in their post-compromise hands-on-keyboard operations, including Earthworm, Sharphound, DWAgent, and Certipy.",
+          "Certipy\nUAT-8837 also deploys Certipy, a tool for AD discovery and abuse, to:.",
+          "These tools include SharpHound and Certipy."
+        ]
+      },
+      {
+        "node_id": "HL_1097d897fc51",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "GoTokenTheft",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "GoTokenTheft\nThe GoTokenTheft utility is a tool for stealing access tokens."
+        ]
+      },
+      {
+        "node_id": "HL_10abe4e75253",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Invoke-WMIExec",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "When Impacket is detected and blocked, Invoke-WMIExec is downloaded to run commands with elevated privileges:."
+        ]
+      },
+      {
+        "node_id": "HL_12d42bc745db",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Earthworm",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          4,
+          12,
+          13
+        ],
+        "span_sentences": [
+          "The threat actor uses a combination of tools in their post-compromise hands-on-keyboard operations, including Earthworm, Sharphound, DWAgent, and Certipy.",
+          "Earthworm\nEarthworm is network tunneling tool that has extensively been used by Chinese-speaking threat actors in intrusions to expose internal endpoints to attacker-owned remote infrastructure.",
+          "UAT-8837 deploys multiple versions of Earthworm to determine which are not detectable by endpoint protection products."
+        ]
+      },
+      {
+        "node_id": "HL_2b1fb50a5d68",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "North America",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Although UAT-8837's targeting may appear sporadic, since at least 2025, the group has clearly focused on targets within critical Infrastructure sectors in North America."
+        ]
+      },
+      {
+        "node_id": "HL_31e41be2f1f7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory (AD)",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "After obtaining initial access — either by successful exploitation of vulnerable servers or by using compromised credentials — UAT-8837 predominantly deploys open-source tools to harvest sensitive information such as credentials, security configurations, and domain and Active Directory (AD) information to create multiple channels of access to their victims."
+        ]
+      },
+      {
+        "node_id": "HL_327650b6b122",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SiteCore",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          5,
+          7
+        ],
+        "span_sentences": [
+          "The TTPs, tooling, and remote infrastructure associated with UAT-8837 were also seen in the recent exploitation of CVE-2025-53690, a ViewState Deserialization zero-day vulnerability in SiteCore products, indicating that UAT-8837 may have access to zero-day exploits.",
+          "Most recently, UAT-8837 exploited a ViewState Deserialization zero-day vulnerability in SiteCore products, CVE-2025-53690, to obtain initial access."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos is closely tracking UAT-8837, a threat actor we assess with medium confidence is a China-nexus advanced persistent threat (APT) actor based on overlaps in tactics, techniques, and procedures (TTPs) with those of other known China-nexus threat actors."
+        ]
+      },
+      {
+        "node_id": "HL_468c0483c564",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "dsget",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "In one intrusion, the actor deployed dsget and dsquery to query for specific properties in the AD:."
+        ]
+      },
+      {
+        "node_id": "HL_5db21f22b3cc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "DWAgent",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          4,
+          15
+        ],
+        "span_sentences": [
+          "The threat actor uses a combination of tools in their post-compromise hands-on-keyboard operations, including Earthworm, Sharphound, DWAgent, and Certipy.",
+          "DWAgent\nUAT-8837 deploys DWAgent, a remote administration tool, to make it easier to access the compromised endpoint and drop additional malware to the system:."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos is closely tracking UAT-8837, a threat actor we assess with medium confidence is a China-nexus advanced persistent threat (APT) actor based on overlaps in tactics, techniques, and procedures (TTPs) with those of other known China-nexus threat actors."
+        ]
+      },
+      {
+        "node_id": "HL_aaf489ab18de",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "cmd.exe",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "A shell console may subsequently be opened via “cmd.exe” to conduct hands-on keyboard activity on the compromised endpoint."
+        ]
+      },
+      {
+        "node_id": "HL_b41a70fc881f",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Rubeus",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "Rubeus\nRubeus, a C# based toolset for Kerberos abuse may also be deployed:."
+        ]
+      },
+      {
+        "node_id": "HL_b545dbff3508",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Impacket",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "Impacket\nUAT-8837 makes several attempts to download Impacket-based binaries to use in their operations:."
+        ]
+      },
+      {
+        "node_id": "HL_c39d1d5a758f",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Sharphound",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "The threat actor uses a combination of tools in their post-compromise hands-on-keyboard operations, including Earthworm, Sharphound, DWAgent, and Certipy."
+        ]
+      },
+      {
+        "node_id": "HL_c6f02b5cdedf",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-8837",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23",
+          "EDGE_24",
+          "EDGE_25",
+          "EDGE_26",
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          6,
+          7,
+          10,
+          13,
+          15,
+          16,
+          17,
+          19,
+          22,
+          23,
+          27,
+          29,
+          32,
+          35
+        ],
+        "span_sentences": [
+          "Cisco Talos is closely tracking UAT-8837, a threat actor we assess with medium confidence is a China-nexus advanced persistent threat (APT) actor based on overlaps in tactics, techniques, and procedures (TTPs) with those of other known China-nexus threat actors.",
+          "Based on UAT-8837's TTPs and post-compromise activity Talos has observed across multiple intrusions, we assess with medium confidence that this actor is primarily tasked with obtaining initial access to high-value organizations.",
+          "Although UAT-8837's targeting may appear sporadic, since at least 2025, the group has clearly focused on targets within critical Infrastructure sectors in North America.",
+          "After obtaining initial access — either by successful exploitation of vulnerable servers or by using compromised credentials — UAT-8837 predominantly deploys open-source tools to harvest sensitive information such as credentials, security configurations, and domain and Active Directory (AD) information to create multiple channels of access to their victims.",
+          "The TTPs, tooling, and remote infrastructure associated with UAT-8837 were also seen in the recent exploitation of CVE-2025-53690, a ViewState Deserialization zero-day vulnerability in SiteCore products, indicating that UAT-8837 may have access to zero-day exploits.",
+          "UAT-8837 can exploit both n-day and zero-day vulnerabilities to gain access to target environments.",
+          "Most recently, UAT-8837 exploited a ViewState Deserialization zero-day vulnerability in SiteCore products, CVE-2025-53690, to obtain initial access.",
+          "UAT-8837 may use a variety of tooling throughout the course of an intrusion.",
+          "UAT-8837 deploys multiple versions of Earthworm to determine which are not detectable by endpoint protection products.",
+          "DWAgent\nUAT-8837 deploys DWAgent, a remote administration tool, to make it easier to access the compromised endpoint and drop additional malware to the system:.",
+          "SharpHound\nPer Talos’ observations, UAT-8837 downloads SharpHound with the intention to collect Active Directory information:.",
+          "Impacket\nUAT-8837 makes several attempts to download Impacket-based binaries to use in their operations:.",
+          "GoExec\nIn one intrusion, after cycling through a number of tools, UAT-8837 deployed GoExec, a GoLang-based remote execution tool to execute commands on other connected remote endpoints within the victim’s network:.",
+          "Certipy\nUAT-8837 also deploys Certipy, a tool for AD discovery and abuse, to:.",
+          "Hands-on-keyboard activity\nUAT-8837 may run a series of commands during the intrusion to obtain sensitive information, such as credentials from victim organizations:.",
+          "In one victim organization, UAT-8837 exfiltrated DLL-based shared libraries related to the victim’s products, raising the possibility that these libraries may be trojanized in the future.",
+          "Active Directory reconnaissance\nUAT-8837 deploys a combination of tools to perform AD reconnaissance in the compromised environment.",
+          "However, UAT-8837 also brings their own living-off-the-land (LOTL) tooling.",
+          "In another instance, UAT-8837 added an existing user account to local groups:."
+        ]
+      },
+      {
+        "node_id": "HL_dfd98986492f",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SharpWMI",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The threat actor also attempted to download and execute SharpWMI in the compromised environment, which was again detected by CSE:."
+        ]
+      },
+      {
+        "node_id": "HL_f2e814670d06",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "secedit",
+        "edges": [
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          24,
+          25
+        ],
+        "span_sentences": [
+          "The system’s security configuration is also exported using secedit:.",
+          "Windows Local security policies extracted via secedit include password policies, user rights and audit settings."
+        ]
+      },
+      {
+        "node_id": "HL_fd2dfa7c061f",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "setspn",
+        "edges": [
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The threat actor also uses the Windows-native tool “setspn” to query for AD data."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_15",
+          "EDGE_29"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In one victim organization, UAT-8837 exfiltrated DLL-based shared libraries related to the victim’s products, raising the possibility that these libraries may be trojanized in the future."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor disables RestrictedAdmin for Remote Desktop Protocol (RDP) to obtain credentials for remoting into other devices:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1047",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1047",
+        "edges": [
+          "EDGE_4",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "SharpHound\nPer Talos’ observations, UAT-8837 downloads SharpHound with the intention to collect Active Directory information:.",
+            "Impacket\nUAT-8837 makes several attempts to download Impacket-based binaries to use in their operations:.",
+            "When Impacket is detected and blocked, Invoke-WMIExec is downloaded to run commands with elevated privileges:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_2",
+          "EDGE_5",
+          "EDGE_11",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            19,
+            22
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "A shell console may subsequently be opened via “cmd.exe” to conduct hands-on keyboard activity on the compromised endpoint."
+          ],
+          [
+            "SharpHound\nPer Talos’ observations, UAT-8837 downloads SharpHound with the intention to collect Active Directory information:.",
+            "Impacket\nUAT-8837 makes several attempts to download Impacket-based binaries to use in their operations:.",
+            "When Impacket is detected and blocked, Invoke-WMIExec is downloaded to run commands with elevated privileges:."
+          ],
+          [
+            "GoExec\nIn one intrusion, after cycling through a number of tools, UAT-8837 deployed GoExec, a GoLang-based remote execution tool to execute commands on other connected remote endpoints within the victim’s network:."
+          ],
+          [
+            "GoExec\nIn one intrusion, after cycling through a number of tools, UAT-8837 deployed GoExec, a GoLang-based remote execution tool to execute commands on other connected remote endpoints within the victim’s network:.",
+            "The threat actor also attempted to download and execute SharpWMI in the compromised environment, which was again detected by CSE:.",
+            "Rubeus\nRubeus, a C# based toolset for Kerberos abuse may also be deployed:.",
+            "Certipy\nUAT-8837 also deploys Certipy, a tool for AD discovery and abuse, to:."
+          ],
+          [
+            "Hands-on-keyboard activity\nUAT-8837 may run a series of commands during the intrusion to obtain sensitive information, such as credentials from victim organizations:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After obtaining initial access — either by successful exploitation of vulnerable servers or by using compromised credentials — UAT-8837 predominantly deploys open-source tools to harvest sensitive information such as credentials, security configurations, and domain and Active Directory (AD) information to create multiple channels of access to their victims."
+          ],
+          [
+            "After obtaining initial access — either by successful exploitation of vulnerable servers or by using compromised credentials — UAT-8837 predominantly deploys open-source tools to harvest sensitive information such as credentials, security configurations, and domain and Active Directory (AD) information to create multiple channels of access to their victims.",
+            "The threat actor uses a combination of tools in their post-compromise hands-on-keyboard operations, including Earthworm, Sharphound, DWAgent, and Certipy."
+          ],
+          [
+            "After obtaining initial access — either by successful exploitation of vulnerable servers or by using compromised credentials — UAT-8837 predominantly deploys open-source tools to harvest sensitive information such as credentials, security configurations, and domain and Active Directory (AD) information to create multiple channels of access to their victims.",
+            "The threat actor uses a combination of tools in their post-compromise hands-on-keyboard operations, including Earthworm, Sharphound, DWAgent, and Certipy.",
+            "The TTPs, tooling, and remote infrastructure associated with UAT-8837 were also seen in the recent exploitation of CVE-2025-53690, a ViewState Deserialization zero-day vulnerability in SiteCore products, indicating that UAT-8837 may have access to zero-day exploits.",
+            "UAT-8837 can exploit both n-day and zero-day vulnerabilities to gain access to target environments."
+          ],
+          [
+            "The threat actor disables RestrictedAdmin for Remote Desktop Protocol (RDP) to obtain credentials for remoting into other devices:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1087",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1087",
+        "edges": [
+          "EDGE_1",
+          "EDGE_3",
+          "EDGE_8",
+          "EDGE_14",
+          "EDGE_20",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor also uses the Windows-native tool “setspn” to query for AD data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_6",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "UAT-8837 deploys multiple versions of Earthworm to determine which are not detectable by endpoint protection products.",
+            "The undetected version is then used to create a reverse tunnel to attacker-controlled servers, as seen in the commands below:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1098",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1098",
+        "edges": [
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In another instance, UAT-8837 added an existing user account to local groups:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_9",
+          "EDGE_13",
+          "EDGE_23",
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "DWAgent\nUAT-8837 deploys DWAgent, a remote administration tool, to make it easier to access the compromised endpoint and drop additional malware to the system:."
+          ],
+          [
+            "SharpHound\nPer Talos’ observations, UAT-8837 downloads SharpHound with the intention to collect Active Directory information:."
+          ],
+          [
+            "SharpHound\nPer Talos’ observations, UAT-8837 downloads SharpHound with the intention to collect Active Directory information:.",
+            "Impacket\nUAT-8837 makes several attempts to download Impacket-based binaries to use in their operations:.",
+            "When Impacket is detected and blocked, Invoke-WMIExec is downloaded to run commands with elevated privileges:."
+          ],
+          [
+            "Impacket\nUAT-8837 makes several attempts to download Impacket-based binaries to use in their operations:."
+          ],
+          [
+            "The threat actor also attempted to download and execute SharpWMI in the compromised environment, which was again detected by CSE:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1136",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1136",
+        "edges": [
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Backdoored user accounts\nThe threat actor created user accounts to open up another channel of access to the compromised environment:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1190",
+        "edges": [
+          "EDGE_7",
+          "EDGE_25",
+          "EDGE_31"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After obtaining initial access — either by successful exploitation of vulnerable servers or by using compromised credentials — UAT-8837 predominantly deploys open-source tools to harvest sensitive information such as credentials, security configurations, and domain and Active Directory (AD) information to create multiple channels of access to their victims.",
+            "The threat actor uses a combination of tools in their post-compromise hands-on-keyboard operations, including Earthworm, Sharphound, DWAgent, and Certipy.",
+            "The TTPs, tooling, and remote infrastructure associated with UAT-8837 were also seen in the recent exploitation of CVE-2025-53690, a ViewState Deserialization zero-day vulnerability in SiteCore products, indicating that UAT-8837 may have access to zero-day exploits.",
+            "UAT-8837 can exploit both n-day and zero-day vulnerabilities to gain access to target environments."
+          ],
+          [
+            "The TTPs, tooling, and remote infrastructure associated with UAT-8837 were also seen in the recent exploitation of CVE-2025-53690, a ViewState Deserialization zero-day vulnerability in SiteCore products, indicating that UAT-8837 may have access to zero-day exploits.",
+            "UAT-8837 can exploit both n-day and zero-day vulnerabilities to gain access to target environments."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1219",
+        "edges": [
+          "EDGE_10",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "DWAgent\nUAT-8837 deploys DWAgent, a remote administration tool, to make it easier to access the compromised endpoint and drop additional malware to the system:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1558",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1558",
+        "edges": [
+          "EDGE_12",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Rubeus\nRubeus, a C# based toolset for Kerberos abuse may also be deployed:.",
+            "Certipy\nUAT-8837 also deploys Certipy, a tool for AD discovery and abuse, to:.",
+            "Hands-on-keyboard activity\nUAT-8837 may run a series of commands during the intrusion to obtain sensitive information, such as credentials from victim organizations:."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_6ee8006d0648",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-53690",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          5,
+          7
+        ],
+        "span_sentences": [
+          "The TTPs, tooling, and remote infrastructure associated with UAT-8837 were also seen in the recent exploitation of CVE-2025-53690, a ViewState Deserialization zero-day vulnerability in SiteCore products, indicating that UAT-8837 may have access to zero-day exploits.",
+          "Most recently, UAT-8837 exploited a ViewState Deserialization zero-day vulnerability in SiteCore products, CVE-2025-53690, to obtain initial access."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_02c9dbab8202",
+      "node_v": "TTP_T1087"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_090e9377224e",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0c99a32ffe24",
+      "node_v": "TTP_T1087"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_10abe4e75253",
+      "node_v": "TTP_T1047"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_10abe4e75253",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_12d42bc745db",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_327650b6b122",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_468c0483c564",
+      "node_v": "TTP_T1087"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_5db21f22b3cc",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_5db21f22b3cc",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_aaf489ab18de",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_b41a70fc881f",
+      "node_v": "TTP_T1558"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_b545dbff3508",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_c39d1d5a758f",
+      "node_v": "TTP_T1087"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1047"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1087"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1098"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1136"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "HL_c6f02b5cdedf",
+      "node_v": "TTP_T1558"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "HL_dfd98986492f",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "HL_f2e814670d06",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "HL_fd2dfa7c061f",
+      "node_v": "TTP_T1087"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_6ee8006d0648",
+      "node_v": "TTP_T1190"
+    }
+  ]
+}

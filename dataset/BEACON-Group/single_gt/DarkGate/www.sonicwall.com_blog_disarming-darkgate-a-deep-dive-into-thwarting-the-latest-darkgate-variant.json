@@ -1,0 +1,823 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_08e97f1f2fcd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Process Explorer",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The malware runs in a 100 milliseconds sleep loop for 40 times in which foreground window text is checked for strings \"process hacker\" or \"process explorer,\" and if it does not match, the malware exits from the loop."
+        ],
+        "edges": [
+          "EDGE_66240d55c988"
+        ]
+      },
+      {
+        "node_id": "HL_2a1f9689a7fe",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Process Hacker",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Malware delays execution for some time if the user is focused on the Process Hacker or Process Monitor window, to avoid malicious activity observation from the user."
+        ],
+        "edges": [
+          "EDGE_484f3393a76c"
+        ]
+      },
+      {
+        "node_id": "HL_2b260171a6c9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DarkGate",
+        "sentence_indices": [
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          26,
+          30,
+          31
+        ],
+        "span_sentences": [
+          "It concatenates hexadecimal encoded strings of shellcode bytes, which are followed by the DarkGate loader binary bytes.",
+          "The shellcode enumerates PE headers of the DarkGate loader binary, which is followed by the shellcode bytes to get the address of the entry point.",
+          "Execution is now transferred to the DarkGate loader entry point, and the 0x20th byte in the DOS header of the loader binary is updated to the value “2” to prevent re-execution of the loader binary in the next callback to the shellcode.",
+          "The shellcode is registered as a callback function, and the updated value of the 0x20th byte in the DOS header helps to prevent multi-instances execution for the DarkGate loader.",
+          "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section.",
+          "The malware now loads the DarkGate binary in memory and transfers execution control to it.",
+          "Malware execution starts with initializing the version value “6.6” for the DarkGate variant.",
+          "The malware also checks for the presence of the directory “c:\\debug” to display a debug message with the DarkGate version number.",
+          "The malware decrypts the DarkGate binary with the key value \"GDrdcpJy\" from field data 27 using the EncryptDecrypt algorithm.",
+          "The key value also works as a marker to retrieve the encrypted DarkGate bytes from the AU3 script file."
+        ],
+        "edges": [
+          "EDGE_3e71bc52f830",
+          "EDGE_3ffa7ef2c7d9",
+          "EDGE_503e22895c06",
+          "EDGE_6c4003b26fca",
+          "EDGE_8b7ac22421b8",
+          "EDGE_9d355464b6cc",
+          "EDGE_bbe10a5dde11",
+          "EDGE_f278f73b7f7c",
+          "EDGE_fe71ab0d9472"
+        ]
+      },
+      {
+        "node_id": "HL_326ac4276ba9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Process Monitor",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Malware delays execution for some time if the user is focused on the Process Hacker or Process Monitor window, to avoid malicious activity observation from the user."
+        ],
+        "edges": [
+          "EDGE_69884df40331"
+        ]
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "If the malware does not find any security software, then it considers the presence of Windows Defender and initializes the flag and name values accordingly."
+        ],
+        "edges": [
+          "EDGE_04e7ed5f3537"
+        ]
+      },
+      {
+        "node_id": "HL_a4b288fde332",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AutoIt3",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+        ],
+        "edges": [
+          "EDGE_f59cba8c5f27"
+        ]
+      },
+      {
+        "node_id": "HL_ab757af3e503",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WMIC",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+        ],
+        "edges": [
+          "EDGE_6a0052bf3bec"
+        ]
+      },
+      {
+        "node_id": "HL_bb0c89cafac4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Avast",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine."
+        ],
+        "edges": [
+          "EDGE_49f5e18a6217"
+        ]
+      },
+      {
+        "node_id": "HL_bf691056b8b7",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "AVG",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine."
+        ],
+        "edges": [
+          "EDGE_606c4950751b"
+        ]
+      },
+      {
+        "node_id": "HL_d055ddead613",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VBScript",
+        "sentence_indices": [
+          0,
+          1
+        ],
+        "span_sentences": [
+          "The PDF file disguises itself as an invoice file dated “26 Jun2024” and contains a download button that redirects to a compromised website to download a malicious VBScript file.",
+          "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+        ],
+        "edges": [
+          "EDGE_57de22683d45",
+          "EDGE_f5592323015b"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+          ],
+          [
+            "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+          ],
+          [
+            "The malware decrypts the configuration data from memory with the key “ckcilIcconnh” using an XOR-based algorithm."
+          ],
+          [
+            "Figure 12: EncryptDecrypt algorithm\nThe decrypted data is a representation of key-value pairs, where keys are integer indexes and values are either “Yes” or “No” flags or can be data used by the malware.",
+            "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine.",
+            "The malware creates other folders and files in the mainfolder.",
+            "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            21,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_0f5cecea3254",
+          "EDGE_2754d48dfd1f",
+          "EDGE_bbe10a5dde11",
+          "EDGE_c67671397498",
+          "EDGE_f5592323015b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1047",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1047",
+        "ttp_id": "T1047",
+        "best_span_sentences_list": [
+          [
+            "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+          ],
+          [
+            "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_4f93f47efc8d",
+          "EDGE_6a0052bf3bec",
+          "EDGE_d7b40a08508c",
+          "EDGE_fe71ab0d9472"
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1057",
+        "ttp_id": "T1057",
+        "best_span_sentences_list": [
+          [
+            "The malware enumerates the processes and saves the list of process names separated by “|.” It detects the security software based on either the presence of the installation directory or by the presence of the process name related to the security software.",
+            "If security software is detected, the malware sets the corresponding flag and initializes the name string for that security software.",
+            "If the malware does not find any security software, then it considers the presence of Windows Defender and initializes the flag and name values accordingly.",
+            "Flag values are used to alter malware behavior based on the presence of particular security software."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_9d355464b6cc"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The PDF file disguises itself as an invoice file dated “26 Jun2024” and contains a download button that redirects to a compromised website to download a malicious VBScript file.",
+            "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+          ],
+          [
+            "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+          ],
+          [
+            "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+          ],
+          [
+            "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+          ],
+          [
+            "If the value of flag 1 is \"yes,\" the malware retrieves the running executable path and script path from the process arguments to copy them into Autoit3.exe and AU3 script respectively into the main folder in \"c:\\ProgramData\"."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_57de22683d45",
+          "EDGE_66c0cc5e384a",
+          "EDGE_6c2d14a29d67",
+          "EDGE_f278f73b7f7c",
+          "EDGE_f59cba8c5f27"
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1083",
+        "ttp_id": "T1083",
+        "best_span_sentences_list": [
+          [
+            "The malware enumerates the processes and saves the list of process names separated by “|.” It detects the security software based on either the presence of the installation directory or by the presence of the process name related to the security software.",
+            "If security software is detected, the malware sets the corresponding flag and initializes the name string for that security software.",
+            "If the malware does not find any security software, then it considers the presence of Windows Defender and initializes the flag and name values accordingly.",
+            "Flag values are used to alter malware behavior based on the presence of particular security software."
+          ],
+          [
+            "The malware also checks for the presence of the directory “c:\\debug” to display a debug message with the DarkGate version number."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            17
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "edges": [
+          "EDGE_3ffa7ef2c7d9",
+          "EDGE_bd57bdfa8d77"
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+          ],
+          [
+            "The malware decrypts the configuration data from memory with the key “ckcilIcconnh” using an XOR-based algorithm."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_0597eeb03db2",
+          "EDGE_503e22895c06",
+          "EDGE_d7a4d90eea89",
+          "EDGE_fb32f167dcc1"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The PDF file disguises itself as an invoice file dated “26 Jun2024” and contains a download button that redirects to a compromised website to download a malicious VBScript file.",
+            "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_8b7ac22421b8"
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "Malware delays execution for some time if the user is focused on the Process Hacker or Process Monitor window, to avoid malicious activity observation from the user."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_484f3393a76c",
+          "EDGE_66240d55c988",
+          "EDGE_69884df40331",
+          "EDGE_6c4003b26fca",
+          "EDGE_d16a1a28e87f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1518",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1518",
+        "ttp_id": "T1518",
+        "best_span_sentences_list": [
+          [
+            "The malware enumerates the processes and saves the list of process names separated by “|.” It detects the security software based on either the presence of the installation directory or by the presence of the process name related to the security software.",
+            "If security software is detected, the malware sets the corresponding flag and initializes the name string for that security software.",
+            "If the malware does not find any security software, then it considers the presence of Windows Defender and initializes the flag and name values accordingly.",
+            "Flag values are used to alter malware behavior based on the presence of particular security software."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_04e7ed5f3537",
+          "EDGE_3e71bc52f830",
+          "EDGE_49f5e18a6217",
+          "EDGE_606c4950751b"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_094ea5bb3d17",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\dehffdh\\ddahcgk",
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+        ],
+        "edges": [
+          "EDGE_2754d48dfd1f",
+          "EDGE_fb32f167dcc1"
+        ]
+      },
+      {
+        "node_id": "IOC_271de6758148",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_61db997e2e69",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "GDrdcpJy",
+        "sentence_indices": [
+          10,
+          30
+        ],
+        "span_sentences": [
+          "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section.",
+          "The malware decrypts the DarkGate binary with the key value \"GDrdcpJy\" from field data 27 using the EncryptDecrypt algorithm."
+        ],
+        "edges": [
+          "EDGE_c67671397498",
+          "EDGE_d7a4d90eea89"
+        ]
+      },
+      {
+        "node_id": "IOC_6eb1375311b9",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\dehffdh\\kkgfbgh",
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_73e8449d84eb",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "ckcilIcconnh",
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The malware decrypts the configuration data from memory with the key “ckcilIcconnh” using an XOR-based algorithm."
+        ],
+        "edges": [
+          "EDGE_0597eeb03db2",
+          "EDGE_0f5cecea3254"
+        ]
+      },
+      {
+        "node_id": "IOC_76ce230ba9db",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "127.0.0.1",
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+        ],
+        "edges": [
+          "EDGE_d16a1a28e87f"
+        ]
+      },
+      {
+        "node_id": "IOC_97000484bce8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Default\\script.a3x",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+        ],
+        "edges": [
+          "EDGE_6c2d14a29d67",
+          "EDGE_d7b40a08508c"
+        ]
+      },
+      {
+        "node_id": "IOC_b6364d943372",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Default\\Autoit3.exe",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+        ],
+        "edges": [
+          "EDGE_4f93f47efc8d",
+          "EDGE_66c0cc5e384a"
+        ]
+      },
+      {
+        "node_id": "IOC_b6c77c0e6699",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_fea1181a6ea2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\debug",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The malware also checks for the presence of the directory “c:\\debug” to display a debug message with the DarkGate version number."
+        ],
+        "edges": [
+          "EDGE_bd57bdfa8d77"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_04e7ed5f3537",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0597eeb03db2",
+      "node_u": "IOC_73e8449d84eb",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f5cecea3254",
+      "node_u": "IOC_73e8449d84eb",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2754d48dfd1f",
+      "node_u": "IOC_094ea5bb3d17",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3e71bc52f830",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ffa7ef2c7d9",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1083",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_484f3393a76c",
+      "node_u": "HL_2a1f9689a7fe",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_49f5e18a6217",
+      "node_u": "HL_bb0c89cafac4",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4f93f47efc8d",
+      "node_u": "IOC_b6364d943372",
+      "node_v": "TTP_T1047",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_503e22895c06",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_57de22683d45",
+      "node_u": "HL_d055ddead613",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_606c4950751b",
+      "node_u": "HL_bf691056b8b7",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66240d55c988",
+      "node_u": "HL_08e97f1f2fcd",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66c0cc5e384a",
+      "node_u": "IOC_b6364d943372",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_69884df40331",
+      "node_u": "HL_326ac4276ba9",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a0052bf3bec",
+      "node_u": "HL_ab757af3e503",
+      "node_v": "TTP_T1047",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c2d14a29d67",
+      "node_u": "IOC_97000484bce8",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c4003b26fca",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b7ac22421b8",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9d355464b6cc",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1057",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bbe10a5dde11",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bd57bdfa8d77",
+      "node_u": "IOC_fea1181a6ea2",
+      "node_v": "TTP_T1083",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c67671397498",
+      "node_u": "IOC_61db997e2e69",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d16a1a28e87f",
+      "node_u": "IOC_76ce230ba9db",
+      "node_v": "TTP_T1497",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d7a4d90eea89",
+      "node_u": "IOC_61db997e2e69",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d7b40a08508c",
+      "node_u": "IOC_97000484bce8",
+      "node_v": "TTP_T1047",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f278f73b7f7c",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f5592323015b",
+      "node_u": "HL_d055ddead613",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f59cba8c5f27",
+      "node_u": "HL_a4b288fde332",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fb32f167dcc1",
+      "node_u": "IOC_094ea5bb3d17",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fe71ab0d9472",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1047",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

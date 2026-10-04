@@ -1,0 +1,751 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0ba651a3b366",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "SolarWinds",
+        "sentence_indices": [
+          8,
+          42
+        ],
+        "span_sentences": [
+          "Through the SolarWinds Orion IT packages, the attackers reached about 18,000 customers, according to the SolarWinds alert.",
+          "However, the total number is likely to be larger, considering the official numbers from SolarWinds."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0d5250c666a8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office365",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The attackers showed a deep understanding and knowledge of Office365, Azure, Exchange, Powershell and leveraged it in many creative ways to constantly monitor and extract e-mails from their true victims’ systems."
+        ],
+        "edges": [
+          "EDGE_f1a2597f27c0"
+        ]
+      },
+      {
+        "node_id": "HL_31f280c5f0e4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Volexity",
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "Volexity, who previously worked on other incidents related to this, named the actor DarkHalo."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_37dfa49a423e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Sunburst",
+        "sentence_indices": [
+          4,
+          12
+        ],
+        "span_sentences": [
+          "For instance, before making the first internet connection to its C2s, the Sunburst malware lies dormant for a long period, of up to two weeks, which prevents an easy detection of this behavior in sandboxes.",
+          "In the initial phases, the Sunburst malware talks to the C&C server by sending encoded DNS requests."
+        ],
+        "edges": [
+          "EDGE_2bcc1bb94e79",
+          "EDGE_7f31a73cf265",
+          "EDGE_825219040140",
+          "EDGE_f96e6fac8b09"
+        ]
+      },
+      {
+        "node_id": "HL_3cbe3e374913",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "DarkHalo",
+        "sentence_indices": [
+          1,
+          33
+        ],
+        "span_sentences": [
+          "An unknown attacker, referred to as UNC2452 or DarkHalo planted a backdoor in the SolarWinds Orion IT software.",
+          "Volexity, who previously worked on other incidents related to this, named the actor DarkHalo."
+        ],
+        "edges": [
+          "EDGE_2ce9a1fe8ded",
+          "EDGE_3dd00e95216b",
+          "EDGE_5e26fcd83dd2",
+          "EDGE_80e38d8922ff",
+          "EDGE_941e1b7ea87a",
+          "EDGE_b9e7c707d34f",
+          "EDGE_d4e2906b3a30",
+          "EDGE_eab646d55cbe",
+          "EDGE_eb1fa80f3d55"
+        ]
+      },
+      {
+        "node_id": "HL_44b3459204b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Azure",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The attackers showed a deep understanding and knowledge of Office365, Azure, Exchange, Powershell and leveraged it in many creative ways to constantly monitor and extract e-mails from their true victims’ systems."
+        ],
+        "edges": [
+          "EDGE_d5e53a32ee19"
+        ]
+      },
+      {
+        "node_id": "HL_59428bc6de05",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNC2452",
+        "sentence_indices": [
+          1,
+          34
+        ],
+        "span_sentences": [
+          "An unknown attacker, referred to as UNC2452 or DarkHalo planted a backdoor in the SolarWinds Orion IT software.",
+          "FireEye named them “UNC2452”, suggesting an unknown actor."
+        ],
+        "edges": [
+          "EDGE_14c3210f901a",
+          "EDGE_15d816f66a26",
+          "EDGE_2012ff2686de",
+          "EDGE_61f9f0342614",
+          "EDGE_842baf1a7f44",
+          "EDGE_877cdfa031d8",
+          "EDGE_bc00ed384605",
+          "EDGE_edfad0792df9",
+          "EDGE_f680ad09ae0a"
+        ]
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "sentence_indices": [
+          14,
+          27,
+          30,
+          44
+        ],
+        "span_sentences": [
+          "TL;DR\nThree of the requests from FireEye’s Github repository can be mapped to two domain names that belong to a government organization and a telecommunications company in the US.",
+          "These steps effectively decoded 3 of the 6 CNAME records provided by FireEye into two possible domains:\n***net.***.com – a rather big telecommunications company from the US, serving more than 6 million customers\ncentral.***.gov – a governmental organization from the US.",
+          "To summarize our research, the UIDs we discovered match two domain names that belong to a US government organization and a large US telecommunications company.",
+          "Based on the CNAME records published by FireEye, we identified only two entities, a US government organization and a telecommunications company, who were tagged and “promoted” to dedicated C2s for additional exploitation."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6a53ab4bd2ce",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "FireEye",
+        "sentence_indices": [
+          0,
+          14,
+          20,
+          44,
+          49
+        ],
+        "span_sentences": [
+          "On December 13, 2020 FireEye published important details of a newly discovered supply chain attack.",
+          "TL;DR\nThree of the requests from FireEye’s Github repository can be mapped to two domain names that belong to a government organization and a telecommunications company in the US.",
+          "However, if we reverse the sequence of operations of GetPreviousString or GetCurrentString for the known CNAME DNS requests published by FireEye, the resulting strings don’t look like valid domain names!",
+          "Based on the CNAME records published by FireEye, we identified only two entities, a US government organization and a telecommunications company, who were tagged and “promoted” to dedicated C2s for additional exploitation.",
+          "According to FireEye, Teardrop is malware delivered by the attackers to some of the victims."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_84858ea90f98",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": ".NET",
+        "sentence_indices": [
+          2,
+          47
+        ],
+        "span_sentences": [
+          "This backdoor, which comes in the form of a .NET module, has some really interesting and rather unique features.",
+          "The other one is the lack of x86 shellcode; the attackers used a .NET injected module."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_8dbb6aab1a1b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Wannacry",
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "While the vast majority of the high-profile incidents nowadays include ransomware or some sort of destructive payload (see NotPetya, Wannacry) in this case, it would appear the main goal was espionage."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_93e71dc090b6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Teardrop",
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "According to FireEye, Teardrop is malware delivered by the attackers to some of the victims."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Powershell",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The attackers showed a deep understanding and knowledge of Office365, Azure, Exchange, Powershell and leveraged it in many creative ways to constantly monitor and extract e-mails from their true victims’ systems."
+        ],
+        "edges": [
+          "EDGE_fedc2391e361"
+        ]
+      },
+      {
+        "node_id": "HL_b14ad614fd35",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SolarWinds Orion IT software",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "An unknown attacker, referred to as UNC2452 or DarkHalo planted a backdoor in the SolarWinds Orion IT software."
+        ],
+        "edges": [
+          "EDGE_2c80f4604bf7"
+        ]
+      },
+      {
+        "node_id": "HL_bf7f186bb7b3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Exchange",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The attackers showed a deep understanding and knowledge of Office365, Azure, Exchange, Powershell and leveraged it in many creative ways to constantly monitor and extract e-mails from their true victims’ systems."
+        ],
+        "edges": [
+          "EDGE_660b8b90439d"
+        ]
+      },
+      {
+        "node_id": "HL_cd457b8ca77c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "CobaltStrike BEACON",
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "It is an unknown memory-only dropper suspected to deliver a customized version of the well-known CobaltStrike BEACON."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f381914da95a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NotPetya",
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "While the vast majority of the high-profile incidents nowadays include ransomware or some sort of destructive payload (see NotPetya, Wannacry) in this case, it would appear the main goal was espionage."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "In the initial phases, the Sunburst malware talks to the C&C server by sending encoded DNS requests.",
+            "These requests contain information about the infected computer; if the attackers deem it interesting enough, the DNS response includes a CNAME record pointing to a second level C&C server."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_bc00ed384605",
+          "EDGE_eb1fa80f3d55",
+          "EDGE_f96e6fac8b09"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The encryption used in the malware is just a simple XOR operation, and the encoding is either a substitution cipher or Base32 with a custom alphabet."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_842baf1a7f44",
+          "EDGE_d4e2906b3a30"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The other one is the lack of x86 shellcode; the attackers used a .NET injected module."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_14c3210f901a",
+          "EDGE_eab646d55cbe"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The attackers showed a deep understanding and knowledge of Office365, Azure, Exchange, Powershell and leveraged it in many creative ways to constantly monitor and extract e-mails from their true victims’ systems."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_5e26fcd83dd2",
+          "EDGE_61f9f0342614",
+          "EDGE_fedc2391e361"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "In the initial phases, the Sunburst malware talks to the C&C server by sending encoded DNS requests.",
+            "These requests contain information about the infected computer; if the attackers deem it interesting enough, the DNS response includes a CNAME record pointing to a second level C&C server."
+          ],
+          [
+            "The remaining two functions, GetNextStringEx and GetNextString, generate a different type of DNS requests.",
+            "They include only the target’s UID, hashes of the running processes of interest and (only in the Ex version) the list and status of these processes."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            13
+          ],
+          [
+            17,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_3805712d736b",
+          "EDGE_3dd00e95216b",
+          "EDGE_6dcc1d1425db",
+          "EDGE_825219040140",
+          "EDGE_877cdfa031d8",
+          "EDGE_e3b4e30665e4"
+        ]
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1114",
+        "ttp_id": "T1114",
+        "best_span_sentences_list": [
+          [
+            "The attackers showed a deep understanding and knowledge of Office365, Azure, Exchange, Powershell and leveraged it in many creative ways to constantly monitor and extract e-mails from their true victims’ systems."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_660b8b90439d",
+          "EDGE_80e38d8922ff",
+          "EDGE_d5e53a32ee19",
+          "EDGE_edfad0792df9",
+          "EDGE_f1a2597f27c0"
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1132",
+        "ttp_id": "T1132",
+        "best_span_sentences_list": [
+          [
+            "In the initial phases, the Sunburst malware talks to the C&C server by sending encoded DNS requests."
+          ],
+          [
+            "The encoding of the data is done by the functions CreateSecureString and CreateString."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_2012ff2686de",
+          "EDGE_2bcc1bb94e79",
+          "EDGE_2ce9a1fe8ded"
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1195",
+        "ttp_id": "T1195",
+        "best_span_sentences_list": [
+          [
+            "An unknown attacker, referred to as UNC2452 or DarkHalo planted a backdoor in the SolarWinds Orion IT software."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_15d816f66a26",
+          "EDGE_2c80f4604bf7",
+          "EDGE_b9e7c707d34f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "For instance, before making the first internet connection to its C2s, the Sunburst malware lies dormant for a long period, of up to two weeks, which prevents an easy detection of this behavior in sandboxes."
+          ],
+          [
+            "The slow communication method, in which the malware lies dormant for up to two weeks, is one of them."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "edges": [
+          "EDGE_7f31a73cf265",
+          "EDGE_941e1b7ea87a",
+          "EDGE_f680ad09ae0a"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0b1dc97a55c3",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "central.***.gov",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "These steps effectively decoded 3 of the 6 CNAME records provided by FireEye into two possible domains:\n***net.***.com – a rather big telecommunications company from the US, serving more than 6 million customers\ncentral.***.gov – a governmental organization from the US."
+        ],
+        "edges": [
+          "EDGE_6dcc1d1425db"
+        ]
+      },
+      {
+        "node_id": "IOC_27552024070b",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "appsync-api.*.avsvmcloud[.]com",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The first function GetCurrentString generates strings that contain a supposedly unique target’s identifier (this.guid), the target’s hostname (this.dnStrLower) and the rest of the hostname that will be in form of “appsync-api.*.avsvmcloud[.]com”."
+        ],
+        "edges": [
+          "EDGE_e3b4e30665e4"
+        ]
+      },
+      {
+        "node_id": "IOC_aaa108a9a08f",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "***net.***.com",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "These steps effectively decoded 3 of the 6 CNAME records provided by FireEye into two possible domains:\n***net.***.com – a rather big telecommunications company from the US, serving more than 6 million customers\ncentral.***.gov – a governmental organization from the US."
+        ],
+        "edges": [
+          "EDGE_3805712d736b"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_14c3210f901a",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_15d816f66a26",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1195",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2012ff2686de",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1132",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2bcc1bb94e79",
+      "node_u": "HL_37dfa49a423e",
+      "node_v": "TTP_T1132",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2c80f4604bf7",
+      "node_u": "HL_b14ad614fd35",
+      "node_v": "TTP_T1195",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ce9a1fe8ded",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1132",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3805712d736b",
+      "node_u": "IOC_aaa108a9a08f",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3dd00e95216b",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5e26fcd83dd2",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_61f9f0342614",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_660b8b90439d",
+      "node_u": "HL_bf7f186bb7b3",
+      "node_v": "TTP_T1114",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6dcc1d1425db",
+      "node_u": "IOC_0b1dc97a55c3",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7f31a73cf265",
+      "node_u": "HL_37dfa49a423e",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_80e38d8922ff",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1114",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_825219040140",
+      "node_u": "HL_37dfa49a423e",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_842baf1a7f44",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_877cdfa031d8",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_941e1b7ea87a",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b9e7c707d34f",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1195",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bc00ed384605",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d4e2906b3a30",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d5e53a32ee19",
+      "node_u": "HL_44b3459204b4",
+      "node_v": "TTP_T1114",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e3b4e30665e4",
+      "node_u": "IOC_27552024070b",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_eab646d55cbe",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_eb1fa80f3d55",
+      "node_u": "HL_3cbe3e374913",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_edfad0792df9",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1114",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f1a2597f27c0",
+      "node_u": "HL_0d5250c666a8",
+      "node_v": "TTP_T1114",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f680ad09ae0a",
+      "node_u": "HL_59428bc6de05",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f96e6fac8b09",
+      "node_u": "HL_37dfa49a423e",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedc2391e361",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

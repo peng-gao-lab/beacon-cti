@@ -1,0 +1,1098 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_04d8f686c29e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "BitTorrent",
+        "sentence_indices": [
+          3,
+          32
+        ],
+        "span_sentences": [
+          "- Talos also discovered that UAT-9244 uses “PeerTime,” an ELF-based backdoor that uses the BitTorrent protocol to conduct malicious operations on an infected system.",
+          "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+        ],
+        "edges": [
+          "EDGE_6e6cfb1dd163"
+        ]
+      },
+      {
+        "node_id": "HL_1c37b0e8d6ea",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical telecommunications infrastructure",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_24107c8dc40e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Tomcat",
+        "sentence_indices": [
+          4,
+          37,
+          44,
+          45
+        ],
+        "span_sentences": [
+          "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers.",
+          "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers.",
+          "] }\nThe “type” field in the json defines the type of scan to conduct — either “tomcat”,“postgres”, or “ssh”.",
+          "The agent will then use a set of embedded credentials to attempt to brute force into either a Tomcat server application at the URL “https[://]<IP>:<Port>/manager/html”, or will brute force into a Postgres instance, either defined in the JSON (<IP><Port>) from the C2 or using the port 5432 if no port is specified."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_30fc4853445d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "FamousSparrow",
+        "sentence_indices": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "span_sentences": [
+          "TernDoor is a variant of CrowDoor, a backdoor deployed in recent intrusions linked to China-nexus APTs such as FamousSparrow and Earth Estries.",
+          "CrowDoor is a variant of SparrowDoor, another backdoor attributed to FamousSparrow.",
+          "CrowDoor has also been observed in previous Tropic Trooper intrusions, indicating a close operational relationship with FamousSparrow.",
+          "Based on the overlap in tooling; tactics, techniques, and procedures (TTPs); and victimology, we assess with high confidence that UAT-9244 closely overlaps with FamousSparrow and Tropic Trooper."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          1,
+          2
+        ],
+        "span_sentences": [
+          "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants.",
+          "The first backdoor, “TernDoor,” is a new variation of the previously disclosed, Windows-based, CrowDoor malware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos is disclosing UAT-9244, who we assess with high confidence is a China-nexus advanced persistent threat (APT) actor closely associated with Famous Sparrow."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_46c066afb6d9",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-9244",
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          11,
+          12,
+          24,
+          37
+        ],
+        "span_sentences": [
+          "Cisco Talos is disclosing UAT-9244, who we assess with high confidence is a China-nexus advanced persistent threat (APT) actor closely associated with Famous Sparrow.",
+          "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants.",
+          "- Talos also discovered that UAT-9244 uses “PeerTime,” an ELF-based backdoor that uses the BitTorrent protocol to conduct malicious operations on an infected system.",
+          "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers.",
+          "UAT-9244 used dynamic-link library (DLL) side-loading to activate multiple stages of their infection chain.",
+          "Based on the overlap in tooling; tactics, techniques, and procedures (TTPs); and victimology, we assess with high confidence that UAT-9244 closely overlaps with FamousSparrow and Tropic Trooper.",
+          "Although UAT-9244 and Salt Typhoon both target telecommunications service providers, Talos has not been able to verify or establish a solid connection between the two clusters.",
+          "All the C2 IP addresses discovered by Talos were associated with the following SSL certificate on port 443:\nSSL_fingerprint_sha256= 0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8 SSL_fingerprint_SHA1= 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Data: Version: V3 Serial Number: 1 Thumbprint: 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Signature Algorithm: Issuer: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8 Validity Not Before: 2022-09-04 12:54:51 Not After: 2023-09-04 12:54:51 Subject: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8\nPivoting off this certificate, Talos found an additional 18 IPs likely being used by UAT-9244.",
+          "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers."
+        ],
+        "edges": [
+          "EDGE_1a47dc4479c9",
+          "EDGE_22c22f6f5dd8",
+          "EDGE_2cb98e450c3a",
+          "EDGE_4bbfba4e9be0",
+          "EDGE_7c3e5bd1d1b8",
+          "EDGE_8776d0338d3f",
+          "EDGE_a0f6317a4595",
+          "EDGE_a12b6a3814ac",
+          "EDGE_ada9232c75e7",
+          "EDGE_c99f7a87fe70",
+          "EDGE_d39a7feb3025"
+        ]
+      },
+      {
+        "node_id": "HL_564a9f182ce0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PeerTime",
+        "sentence_indices": [
+          3,
+          26,
+          27,
+          30,
+          31,
+          32,
+          34,
+          35
+        ],
+        "span_sentences": [
+          "- Talos also discovered that UAT-9244 uses “PeerTime,” an ELF-based backdoor that uses the BitTorrent protocol to conduct malicious operations on an infected system.",
+          "On this server, we discovered a set of shell scripts and an accompanying malware family we track as “PeerTime.”\nPeerTime is an ELF based backdoor that is compiled for a variety of architectures such as ARM, AARCH, PPC, MIPS etc., indicating that UAT-9244 can use it to infect a variety of embedded systems.",
+          "PeerTime is deployed through a shellscript that downloads the PeerTime loader ELF binary and an instrumentor binary.",
+          "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors:\n获取当前程序路径错误: //Error retrieving current program path: 删除当前程序错误: // Error deleting current program:\nPeerTime consists of a loader that will decrypt and decompress the final PeerTime ELF payload and run it in memory.",
+          "The PeerTime loader has the ability to rename its process to a benign process to evade detection.",
+          "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host.",
+          "As of now, PeerTime consists of two versions: one written in C/C++ and a newer version written in Rust.",
+          "PeerTime is also known as “angrypeer” and can be tracked in VirusTotal using the “malware_config:angrypeer” query."
+        ],
+        "edges": [
+          "EDGE_094fc8c72ffe",
+          "EDGE_21019f1c3f20",
+          "EDGE_35d1f7b6f2e8",
+          "EDGE_a219382c8822",
+          "EDGE_b91799c65975",
+          "EDGE_bf46452bdd0d"
+        ]
+      },
+      {
+        "node_id": "HL_5b80130249c7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Salt Typhoon",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Although UAT-9244 and Salt Typhoon both target telecommunications service providers, Talos has not been able to verify or establish a solid connection between the two clusters."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6df013ab394e",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Earth Estries",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "TernDoor is a variant of CrowDoor, a backdoor deployed in recent intrusions linked to China-nexus APTs such as FamousSparrow and Earth Estries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_84e427121d6e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "BusyBox",
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "The payloads are written to disk and copied to the specified locations using BusyBox."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_98a32dad314e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TernDoor",
+        "sentence_indices": [
+          2,
+          7,
+          15,
+          16,
+          17,
+          18,
+          20,
+          23
+        ],
+        "span_sentences": [
+          "The first backdoor, “TernDoor,” is a new variation of the previously disclosed, Windows-based, CrowDoor malware.",
+          "The DLL reads a data file named “WSPrint[.]dll” from disk, decrypts its contents, and executes them in memory to activate TernDoor, the final payload.",
+          "The final payload is the TernDoor implant.",
+          "The final shellcode consists of the TernDoor backdoor.",
+          "TernDoor is a variant of CrowDoor, actively developed and used by UAT-9244 since at least November 2024.",
+          "Unlike CrowDoor, TernDoor only supports one command line switch: “-u”, passed to WSPrint.exe.",
+          "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”.",
+          "It can terminate, suspend, or resume processes specified by TernDoor — likely a means of evasion."
+        ],
+        "edges": [
+          "EDGE_4d4731ed43fb",
+          "EDGE_84d81fe740f1",
+          "EDGE_ce0e6f916a6b"
+        ]
+      },
+      {
+        "node_id": "HL_9ae4384e237f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "angrypeer",
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "PeerTime is also known as “angrypeer” and can be tracked in VirusTotal using the “malware_config:angrypeer” query."
+        ],
+        "edges": [
+          "EDGE_2b08b4df6d51",
+          "EDGE_32c1b4cce5d0",
+          "EDGE_3ee4dfffa07c",
+          "EDGE_4a6256dcc990",
+          "EDGE_7e8086e6a003",
+          "EDGE_d4931aff506f"
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "sentence_indices": [
+          0,
+          8
+        ],
+        "span_sentences": [
+          "Cisco Talos is disclosing UAT-9244, who we assess with high confidence is a China-nexus advanced persistent threat (APT) actor closely associated with Famous Sparrow.",
+          "TernDoor is a variant of CrowDoor, a backdoor deployed in recent intrusions linked to China-nexus APTs such as FamousSparrow and Earth Estries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b766c23ad67d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BruteEntry",
+        "sentence_indices": [
+          4,
+          38
+        ],
+        "span_sentences": [
+          "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers.",
+          "BruteEntry is also written in GoLang and begins by registering with the C2 server by providing it with the infected system’s IP address and computer name:\n{“ip”:“value”, “hostname”:“value”}\nThe C2 responds with a JSON that assigns an agent_id to the infected host:\n{“agent_id”:“value”, “server”:“value”}\nwhere “server” = version string of BruteEntry such as “brute-force-server-v1.0”\nBruteEntry will then ask the C2 for tasks to perform by sending a GET request to the C2 at the URI, where limit=1000 is the maximum number of vulnerable IPs to scan:."
+        ],
+        "edges": [
+          "EDGE_3ad10d93c4a3",
+          "EDGE_61ba1cf1c7ac",
+          "EDGE_91cfd1cf2058"
+        ]
+      },
+      {
+        "node_id": "HL_b7b42a22e626",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "docker",
+        "sentence_indices": [
+          28,
+          29
+        ],
+        "span_sentences": [
+          "The instrumentor ELF binary will check for the presence of docker on the compromised host using the commands docker and docker –q.",
+          "If docker is found, then the PeerTime loader is executed using:."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_dac0420e3448",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Famous Sparrow",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos is disclosing UAT-9244, who we assess with high confidence is a China-nexus advanced persistent threat (APT) actor closely associated with Famous Sparrow."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_df1debd28b27",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Postgres",
+        "sentence_indices": [
+          4,
+          37,
+          45
+        ],
+        "span_sentences": [
+          "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers.",
+          "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers.",
+          "The agent will then use a set of embedded credentials to attempt to brute force into either a Tomcat server application at the URL “https[://]<IP>:<Port>/manager/html”, or will brute force into a Postgres instance, either defined in the JSON (<IP><Port>) from the C2 or using the port 5432 if no port is specified."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_e16135ae1da5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SparrowDoor",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "CrowDoor is a variant of SparrowDoor, another backdoor attributed to FamousSparrow."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "sentence_indices": [
+          1,
+          37
+        ],
+        "span_sentences": [
+          "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants.",
+          "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ec5e76fc2a19",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South America",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f5ecc5b8d346",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Tropic Trooper",
+        "sentence_indices": [
+          10,
+          11
+        ],
+        "span_sentences": [
+          "CrowDoor has also been observed in previous Tropic Trooper intrusions, indicating a close operational relationship with FamousSparrow.",
+          "Based on the overlap in tooling; tactics, techniques, and procedures (TTPs); and victimology, we assess with high confidence that UAT-9244 closely overlaps with FamousSparrow and Tropic Trooper."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_fcc2678ea9a1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CrowDoor",
+        "sentence_indices": [
+          2,
+          8,
+          9,
+          10,
+          17,
+          20
+        ],
+        "span_sentences": [
+          "The first backdoor, “TernDoor,” is a new variation of the previously disclosed, Windows-based, CrowDoor malware.",
+          "TernDoor is a variant of CrowDoor, a backdoor deployed in recent intrusions linked to China-nexus APTs such as FamousSparrow and Earth Estries.",
+          "CrowDoor is a variant of SparrowDoor, another backdoor attributed to FamousSparrow.",
+          "CrowDoor has also been observed in previous Tropic Trooper intrusions, indicating a close operational relationship with FamousSparrow.",
+          "TernDoor is a variant of CrowDoor, actively developed and used by UAT-9244 since at least November 2024.",
+          "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The actor executed “wsprint[.]exe”, a benign executable that loaded the malicious DLL-based loader “BugSplatRc64[.]dll”.",
+            "The DLL reads a data file named “WSPrint[.]dll” from disk, decrypts its contents, and executes them in memory to activate TernDoor, the final payload."
+          ],
+          [
+            "The decoded shellcode is position-independent and decodes and decompresses the final payload.",
+            "The final payload is the TernDoor implant."
+          ],
+          [
+            "If docker is found, then the PeerTime loader is executed using:.",
+            "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors:\n获取当前程序路径错误: //Error retrieving current program path: 删除当前程序错误: // Error deleting current program:\nPeerTime consists of a loader that will decrypt and decompress the final PeerTime ELF payload and run it in memory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            7
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_53854e15822e",
+          "EDGE_7e8086e6a003",
+          "EDGE_84d81fe740f1",
+          "EDGE_a219382c8822",
+          "EDGE_ada9232c75e7"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The PeerTime loader has the ability to rename its process to a benign process to evade detection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_2cb98e450c3a",
+          "EDGE_3ee4dfffa07c",
+          "EDGE_bf46452bdd0d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”.",
+            "The implant decodes its configuration that can specify the following information:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_4bbfba4e9be0",
+          "EDGE_4d4731ed43fb"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Unlike CrowDoor, TernDoor only supports one command line switch: “-u”, passed to WSPrint.exe.",
+            "This is the switch for uninstalling the malware from the system and it deletes all malware files from the operating directory, as well as terminates malicious processes."
+          ],
+          [
+            "PeerTime is deployed through a shellscript that downloads the PeerTime loader ELF binary and an instrumentor binary.",
+            "The instrumentor ELF binary will check for the presence of docker on the compromised host using the commands docker and docker –q."
+          ],
+          [
+            "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_094fc8c72ffe",
+          "EDGE_c99f7a87fe70",
+          "EDGE_d4931aff506f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+          ],
+          [
+            "BruteEntry is also written in GoLang and begins by registering with the C2 server by providing it with the infected system’s IP address and computer name:\n{“ip”:“value”, “hostname”:“value”}\nThe C2 responds with a JSON that assigns an agent_id to the infected host:\n{“agent_id”:“value”, “server”:“value”}\nwhere “server” = version string of BruteEntry such as “brute-force-server-v1.0”\nBruteEntry will then ask the C2 for tasks to perform by sending a GET request to the C2 at the URI, where limit=1000 is the maximum number of vulnerable IPs to scan:."
+          ],
+          [
+            "Any successful logins are then POSTED back to the C2:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "edges": [
+          "EDGE_020a74e013a0",
+          "EDGE_2b08b4df6d51",
+          "EDGE_6e6cfb1dd163",
+          "EDGE_81cc2fe2f8e1",
+          "EDGE_91cfd1cf2058",
+          "EDGE_a0f6317a4595",
+          "EDGE_b91799c65975"
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_3ad10d93c4a3",
+          "EDGE_8776d0338d3f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "PeerTime is deployed through a shellscript that downloads the PeerTime loader ELF binary and an instrumentor binary."
+          ],
+          [
+            "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_32c1b4cce5d0",
+          "EDGE_35d1f7b6f2e8",
+          "EDGE_a12b6a3814ac",
+          "EDGE_c97a91bee5eb"
+        ]
+      },
+      {
+        "node_id": "TTP_T1107",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1107",
+        "ttp_id": "T1107",
+        "best_span_sentences_list": [
+          [
+            "Unlike CrowDoor, TernDoor only supports one command line switch: “-u”, passed to WSPrint.exe.",
+            "This is the switch for uninstalling the malware from the system and it deletes all malware files from the operating directory, as well as terminates malicious processes."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_7c3e5bd1d1b8",
+          "EDGE_ce0e6f916a6b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1110",
+        "ttp_id": "T1110",
+        "best_span_sentences_list": [
+          [
+            "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+          ],
+          [
+            "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers.",
+            "BruteEntry is also written in GoLang and begins by registering with the C2 server by providing it with the infected system’s IP address and computer name:\n{“ip”:“value”, “hostname”:“value”}\nThe C2 responds with a JSON that assigns an agent_id to the infected host:\n{“agent_id”:“value”, “server”:“value”}\nwhere “server” = version string of BruteEntry such as “brute-force-server-v1.0”\nBruteEntry will then ask the C2 for tasks to perform by sending a GET request to the C2 at the URI, where limit=1000 is the maximum number of vulnerable IPs to scan:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_22c22f6f5dd8",
+          "EDGE_4afb24135ebc",
+          "EDGE_61ba1cf1c7ac"
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”.",
+            "The implant decodes its configuration that can specify the following information:."
+          ],
+          [
+            "If docker is found, then the PeerTime loader is executed using:.",
+            "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors:\n获取当前程序路径错误: //Error retrieving current program path: 删除当前程序错误: // Error deleting current program:\nPeerTime consists of a loader that will decrypt and decompress the final PeerTime ELF payload and run it in memory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            21
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_1a47dc4479c9",
+          "EDGE_21019f1c3f20",
+          "EDGE_4a6256dcc990",
+          "EDGE_7f5153cd9803"
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "UAT-9244 used dynamic-link library (DLL) side-loading to activate multiple stages of their infection chain.",
+            "The actor executed “wsprint[.]exe”, a benign executable that loaded the malicious DLL-based loader “BugSplatRc64[.]dll”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_d39a7feb3025"
+        ]
+      },
+      {
+        "node_id": "TTP_T1613",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1613",
+        "ttp_id": "T1613",
+        "best_span_sentences_list": [
+          [
+            "The instrumentor ELF binary will check for the presence of docker on the compromised host using the commands docker and docker –q."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": []
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_3ecbacd15e6a",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "212.11.64[.]105",
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "One of the DLL-based loaders was also hosted on the IP “212.11.64[.]105”."
+        ],
+        "edges": [
+          "EDGE_c97a91bee5eb"
+        ]
+      },
+      {
+        "node_id": "IOC_9706c2785166",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "qwiozpVngruhg123",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The DLL-based loader, “BugSplatRc64.dll”, will load the “WSPrint.dll” file from the current directory, which will be decoded using the key “qwiozpVngruhg123”."
+        ],
+        "edges": [
+          "EDGE_53854e15822e",
+          "EDGE_7f5153cd9803"
+        ]
+      },
+      {
+        "node_id": "IOC_97920bbf7b94",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\\\DosDevices\\\\VMTool",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The driver creates a device named “\\\\Device\\\\VMTool” and symbolically links it to “\\\\DosDevices\\\\VMTool”."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_b3feed028a9f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\\\Device\\\\VMTool",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The driver creates a device named “\\\\Device\\\\VMTool” and symbolically links it to “\\\\DosDevices\\\\VMTool”."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_d8bfb5d16f14",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "2b170a6d90fceba72aba3c7bc5c40b9725f43788",
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "All the C2 IP addresses discovered by Talos were associated with the following SSL certificate on port 443:\nSSL_fingerprint_sha256= 0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8 SSL_fingerprint_SHA1= 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Data: Version: V3 Serial Number: 1 Thumbprint: 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Signature Algorithm: Issuer: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8 Validity Not Before: 2022-09-04 12:54:51 Not After: 2023-09-04 12:54:51 Subject: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8\nPivoting off this certificate, Talos found an additional 18 IPs likely being used by UAT-9244."
+        ],
+        "edges": [
+          "EDGE_81cc2fe2f8e1"
+        ]
+      },
+      {
+        "node_id": "IOC_f52c1567e0d8",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8",
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "All the C2 IP addresses discovered by Talos were associated with the following SSL certificate on port 443:\nSSL_fingerprint_sha256= 0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8 SSL_fingerprint_SHA1= 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Data: Version: V3 Serial Number: 1 Thumbprint: 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Signature Algorithm: Issuer: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8 Validity Not Before: 2022-09-04 12:54:51 Not After: 2023-09-04 12:54:51 Subject: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8\nPivoting off this certificate, Talos found an additional 18 IPs likely being used by UAT-9244."
+        ],
+        "edges": [
+          "EDGE_020a74e013a0"
+        ]
+      },
+      {
+        "node_id": "IOC_f5eb1635792c",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https[://]<IP>:<Port>/manager/html",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "The agent will then use a set of embedded credentials to attempt to brute force into either a Tomcat server application at the URL “https[://]<IP>:<Port>/manager/html”, or will brute force into a Postgres instance, either defined in the JSON (<IP><Port>) from the C2 or using the port 5432 if no port is specified."
+        ],
+        "edges": [
+          "EDGE_4afb24135ebc"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_020a74e013a0",
+      "node_u": "IOC_f52c1567e0d8",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_094fc8c72ffe",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1a47dc4479c9",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_21019f1c3f20",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_22c22f6f5dd8",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2b08b4df6d51",
+      "node_u": "HL_9ae4384e237f",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2cb98e450c3a",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_32c1b4cce5d0",
+      "node_u": "HL_9ae4384e237f",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_35d1f7b6f2e8",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ad10d93c4a3",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ee4dfffa07c",
+      "node_u": "HL_9ae4384e237f",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4a6256dcc990",
+      "node_u": "HL_9ae4384e237f",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4afb24135ebc",
+      "node_u": "IOC_f5eb1635792c",
+      "node_v": "TTP_T1110",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4bbfba4e9be0",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4d4731ed43fb",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_53854e15822e",
+      "node_u": "IOC_9706c2785166",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_61ba1cf1c7ac",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6e6cfb1dd163",
+      "node_u": "HL_04d8f686c29e",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7c3e5bd1d1b8",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1107",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7e8086e6a003",
+      "node_u": "HL_9ae4384e237f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7f5153cd9803",
+      "node_u": "IOC_9706c2785166",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_81cc2fe2f8e1",
+      "node_u": "IOC_d8bfb5d16f14",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_84d81fe740f1",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8776d0338d3f",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_91cfd1cf2058",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a0f6317a4595",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a12b6a3814ac",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a219382c8822",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ada9232c75e7",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b91799c65975",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bf46452bdd0d",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c97a91bee5eb",
+      "node_u": "IOC_3ecbacd15e6a",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c99f7a87fe70",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ce0e6f916a6b",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1107",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d39a7feb3025",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d4931aff506f",
+      "node_u": "HL_9ae4384e237f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

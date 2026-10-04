@@ -1,0 +1,1076 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          6,
+          13,
+          16
+        ],
+        "span_sentences": [
+          "According to public reports, the group has also targeted unknown entities in Hong Kong, India, and Malaysia.",
+          "Based on the IP address ranges the code checks for, we discovered that the attackers targeted users in India, Taiwan, Hong Kong, Australia, and the United States; the attack might have aimed to capitalize on international interest in the Kagyu Monlam Festival (Figure 1) that is held annually in January in the city of Bodhgaya, India.",
+          "Around September 2023, the attackers compromised the website of a software development company based in India that produces Tibetan language translation software."
+        ]
+      },
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          46,
+          48
+        ],
+        "span_sentences": [
+          "The backdoor communicates with its C&C server via UDP or the Google Drive API.",
+          "It encrypts a Google API OAuth 2.0 token within the data section and uses the token to access the attacker’s Google Drive."
+        ]
+      },
+      {
+        "node_id": "HL_110493ede4f0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive API",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "The backdoor communicates with its C&C server via UDP or the Google Drive API."
+        ]
+      },
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "edges": [],
+        "sentence_indices": [
+          13,
+          14
+        ],
+        "span_sentences": [
+          "Based on the IP address ranges the code checks for, we discovered that the attackers targeted users in India, Taiwan, Hong Kong, Australia, and the United States; the attack might have aimed to capitalize on international interest in the Kagyu Monlam Festival (Figure 1) that is held annually in January in the city of Bodhgaya, India.",
+          "Interestingly, the network of the Georgia Institute of Technology (also known as Georgia Tech) in the United States is among the identified entities in the targeted IP address ranges."
+        ]
+      },
+      {
+        "node_id": "HL_1a8eed584698",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BRONZE HIGHLAND",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Evasive Panda (also known as BRONZE HIGHLAND and Daggerfly) is a Chinese-speaking APT group, active since at least 2012."
+        ]
+      },
+      {
+        "node_id": "HL_2526373dde3d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Daggerfly",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Evasive Panda (also known as BRONZE HIGHLAND and Daggerfly) is a Chinese-speaking APT group, active since at least 2012."
+        ]
+      },
+      {
+        "node_id": "HL_2d0202b26788",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Georgia Institute of Technology",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Interestingly, the network of the Georgia Institute of Technology (also known as Georgia Tech) in the United States is among the identified entities in the targeted IP address ranges."
+        ]
+      },
+      {
+        "node_id": "HL_3371dcf2599a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Japan",
+        "edges": [],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "We found one victim from Japan who downloaded one of the packages for Windows."
+        ]
+      },
+      {
+        "node_id": "HL_438360403240",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kagyu International Monlam Trust",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The compromised website abused as a watering hole belongs to Kagyu International Monlam Trust, an organization based in India that promotes Tibetan Buddhism internationally."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          11,
+          17,
+          18,
+          24,
+          29,
+          30,
+          42
+        ],
+        "span_sentences": [
+          "The attackers aimed to deploy malicious downloaders for Windows and macOS to compromise website visitors with MgBot and a backdoor that, to the best of our knowledge, has not been publicly documented yet; we have named it Nightdoor.",
+          "The attackers placed a script in the website that verifies the IP address of the potential victim and if it is within one of the targeted ranges of addresses, shows a fake error page to entice the user to download a “fix” named certificate (with a .exe extension if the visitor is using Windows or .pkg if macOS).",
+          "The attackers placed several trojanized applications there that deploy a malicious downloader for Windows or macOS.",
+          "In addition to this, the attackers also abused the same website and a Tibetan news website called Tibetpost – tibetpost[.]net – to host the payloads obtained by the malicious downloads, including two full-featured backdoors for Windows and an unknown number of payloads for macOS.",
+          "On Windows, victims of the attack are served with a malicious executable located at https://update.devicebug[.]com/fixTools/certificate.exe.",
+          "On January 18th, we discovered that the official website (Figure 12) of a Tibetan language translation software product for multiple platforms was hosting ZIP packages containing trojanized installers for legitimate software that deployed malicious downloaders for Windows and macOS.",
+          "We found one victim from Japan who downloaded one of the packages for Windows.",
+          "The same URL as the Windows version is used to retrieve that configuration: https://www.monlamit[.]com/sites/default/files/softwares/updateFiles/Monlam_Grand_Tibetan_Dictionary_2018/UpdateInfo.dat."
+        ]
+      },
+      {
+        "node_id": "HL_47bc58ec06b9",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Bodhgaya",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "Based on the IP address ranges the code checks for, we discovered that the attackers targeted users in India, Taiwan, Hong Kong, Australia, and the United States; the attack might have aimed to capitalize on international interest in the Kagyu Monlam Festival (Figure 1) that is held annually in January in the city of Bodhgaya, India."
+        ]
+      },
+      {
+        "node_id": "HL_4b33f91b89da",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Hong Kong",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          5,
+          6,
+          13
+        ],
+        "span_sentences": [
+          "ESET Research has observed the group conducting cyberespionage against individuals in mainland China, Hong Kong, Macao, and Nigeria.",
+          "Other organizations in China and Hong Kong were also targeted.",
+          "According to public reports, the group has also targeted unknown entities in Hong Kong, India, and Malaysia.",
+          "Based on the IP address ranges the code checks for, we discovered that the attackers targeted users in India, Taiwan, Hong Kong, Australia, and the United States; the attack might have aimed to capitalize on international interest in the Kagyu Monlam Festival (Figure 1) that is held annually in January in the city of Bodhgaya, India."
+        ]
+      },
+      {
+        "node_id": "HL_5a482404bb03",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Macao",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          4
+        ],
+        "span_sentences": [
+          "ESET Research has observed the group conducting cyberespionage against individuals in mainland China, Hong Kong, Macao, and Nigeria.",
+          "Government entities were targeted in Southeast and East Asia, specifically China, Macao, Myanmar, The Philippines, Taiwan, and Vietnam."
+        ]
+      },
+      {
+        "node_id": "HL_61be60731b0e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET Research",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "ESET Research has observed the group conducting cyberespionage against individuals in mainland China, Hong Kong, Macao, and Nigeria."
+        ]
+      },
+      {
+        "node_id": "HL_6adbcc2edf01",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Nigeria",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "ESET Research has observed the group conducting cyberespionage against individuals in mainland China, Hong Kong, Macao, and Nigeria."
+        ]
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The page mimics typical “Aw, Snap!” warnings from Google Chrome."
+        ]
+      },
+      {
+        "node_id": "HL_6de2e3456771",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Georgia Tech",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Interestingly, the network of the Georgia Institute of Technology (also known as Georgia Tech) in the United States is among the identified entities in the targeted IP address ranges."
+        ]
+      },
+      {
+        "node_id": "HL_7cfaee9e6bb0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "mainland China",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "ESET Research has observed the group conducting cyberespionage against individuals in mainland China, Hong Kong, Macao, and Nigeria."
+        ]
+      },
+      {
+        "node_id": "HL_7d9953e5237e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Chinese Communist Party",
+        "edges": [],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "In the past, the university was mentioned in connection with the Chinese Communist Party’s influence on education institutes in the US."
+        ]
+      },
+      {
+        "node_id": "HL_89390e552cb8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Australia",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "Based on the IP address ranges the code checks for, we discovered that the attackers targeted users in India, Taiwan, Hong Kong, Australia, and the United States; the attack might have aimed to capitalize on international interest in the Kagyu Monlam Festival (Figure 1) that is held annually in January in the city of Bodhgaya, India."
+        ]
+      },
+      {
+        "node_id": "HL_8f241d713859",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NetMM",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "The backdoor that we have named Nightdoor (and is named NetMM by the malware authors according to PDB paths) is a late addition to Evasive Panda’s toolset."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          3
+        ],
+        "span_sentences": [
+          "ESET researchers discovered a cyberespionage campaign that, since at least September 2023, has been victimizing Tibetans through a targeted watering hole (also known as a strategic web compromise), and a supply-chain compromise to deliver trojanized installers of Tibetan language translation software.",
+          "ESET Research has observed the group conducting cyberespionage against individuals in mainland China, Hong Kong, Macao, and Nigeria."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          5
+        ],
+        "span_sentences": [
+          "Government entities were targeted in Southeast and East Asia, specifically China, Macao, Myanmar, The Philippines, Taiwan, and Vietnam.",
+          "Other organizations in China and Hong Kong were also targeted."
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          13
+        ],
+        "span_sentences": [
+          "Government entities were targeted in Southeast and East Asia, specifically China, Macao, Myanmar, The Philippines, Taiwan, and Vietnam.",
+          "Based on the IP address ranges the code checks for, we discovered that the attackers targeted users in India, Taiwan, Hong Kong, Australia, and the United States; the attack might have aimed to capitalize on international interest in the Kagyu Monlam Festival (Figure 1) that is held annually in January in the city of Bodhgaya, India."
+        ]
+      },
+      {
+        "node_id": "HL_b07e83768d2c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "macOS",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          11,
+          17,
+          18,
+          29,
+          41,
+          43
+        ],
+        "span_sentences": [
+          "The attackers aimed to deploy malicious downloaders for Windows and macOS to compromise website visitors with MgBot and a backdoor that, to the best of our knowledge, has not been publicly documented yet; we have named it Nightdoor.",
+          "The attackers placed a script in the website that verifies the IP address of the potential victim and if it is within one of the targeted ranges of addresses, shows a fake error page to entice the user to download a “fix” named certificate (with a .exe extension if the visitor is using Windows or .pkg if macOS).",
+          "The attackers placed several trojanized applications there that deploy a malicious downloader for Windows or macOS.",
+          "In addition to this, the attackers also abused the same website and a Tibetan news website called Tibetpost – tibetpost[.]net – to host the payloads obtained by the malicious downloads, including two full-featured backdoors for Windows and an unknown number of payloads for macOS.",
+          "On January 18th, we discovered that the official website (Figure 12) of a Tibetan language translation software product for multiple platforms was hosting ZIP packages containing trojanized installers for legitimate software that deployed malicious downloaders for Windows and macOS.",
+          "The architecture (ARM or Intel), macOS version, and hardware UUID (an identifier unique to each Mac) are reported in the User-Agent HTTP request header.",
+          "However, the macOS version will look at the data under the mac key of the JSON object instead of the win key."
+        ]
+      },
+      {
+        "node_id": "HL_b2bd8b0f689f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Myanmar",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Government entities were targeted in Southeast and East Asia, specifically China, Macao, Myanmar, The Philippines, Taiwan, and Vietnam."
+        ]
+      },
+      {
+        "node_id": "HL_c07d7ceba47f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "The Philippines",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Government entities were targeted in Southeast and East Asia, specifically China, Macao, Myanmar, The Philippines, Taiwan, and Vietnam."
+        ]
+      },
+      {
+        "node_id": "HL_c1eb7e06dafd",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Apple",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "Our team reached out to Apple on January 25th and the certificate was revoked the same day."
+        ]
+      },
+      {
+        "node_id": "HL_d724b1be40b3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Malaysia",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "According to public reports, the group has also targeted unknown entities in Hong Kong, India, and Malaysia."
+        ]
+      },
+      {
+        "node_id": "HL_d75d8409613b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MgBot",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          7,
+          52
+        ],
+        "span_sentences": [
+          "The attackers aimed to deploy malicious downloaders for Windows and macOS to compromise website visitors with MgBot and a backdoor that, to the best of our knowledge, has not been publicly documented yet; we have named it Nightdoor.",
+          "The group uses its own custom malware framework with a modular architecture that allows its backdoor, known as MgBot, to receive modules to spy on its victims and enhance its capabilities.",
+          "The attackers fielded several downloaders, droppers, and backdoors, including MgBot – which is used exclusively by Evasive Panda – and Nightdoor: the latest major addition to the group’s toolkit and which has been used to target several networks in East Asia."
+        ]
+      },
+      {
+        "node_id": "HL_dfc33240b320",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Evasive Panda",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          2,
+          8,
+          45,
+          49,
+          52
+        ],
+        "span_sentences": [
+          "Evasive Panda (also known as BRONZE HIGHLAND and Daggerfly) is a Chinese-speaking APT group, active since at least 2012.",
+          "Since 2020 we have also observed that Evasive Panda has capabilities to deliver its backdoors via adversary-in-the-middle attacks hijacking updates of legitimate software.",
+          "Our earliest knowledge of Nightdoor goes back to 2020, when Evasive Panda deployed it onto a machine of a high-profile target in Vietnam.",
+          "We have analyzed a campaign by the China-aligned APT Evasive Panda that targeted Tibetans in several countries and territories.",
+          "The attackers fielded several downloaders, droppers, and backdoors, including MgBot – which is used exclusively by Evasive Panda – and Nightdoor: the latest major addition to the group’s toolkit and which has been used to target several networks in East Asia."
+        ]
+      },
+      {
+        "node_id": "HL_e166f4d64020",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Southeast and East Asia",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Government entities were targeted in Southeast and East Asia, specifically China, Macao, Myanmar, The Philippines, Taiwan, and Vietnam."
+        ]
+      },
+      {
+        "node_id": "HL_e5ef67edc44e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Nightdoor",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          1,
+          28,
+          44,
+          47,
+          52
+        ],
+        "span_sentences": [
+          "The attackers aimed to deploy malicious downloaders for Windows and macOS to compromise website visitors with MgBot and a backdoor that, to the best of our knowledge, has not been publicly documented yet; we have named it Nightdoor.",
+          "When the next stage is downloaded and executed, it deploys another side-loading chain to deliver Nightdoor as the final payload.",
+          "The backdoor that we have named Nightdoor (and is named NetMM by the malware authors according to PDB paths) is a late addition to Evasive Panda’s toolset.",
+          "The Nightdoor implant from this campaign used the latter.",
+          "The attackers fielded several downloaders, droppers, and backdoors, including MgBot – which is used exclusively by Evasive Panda – and Nightdoor: the latest major addition to the group’s toolkit and which has been used to target several networks in East Asia."
+        ]
+      },
+      {
+        "node_id": "HL_ed027fcc1345",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Vietnam",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          45
+        ],
+        "span_sentences": [
+          "Government entities were targeted in Southeast and East Asia, specifically China, Macao, Myanmar, The Philippines, Taiwan, and Vietnam.",
+          "Our earliest knowledge of Nightdoor goes back to 2020, when Evasive Panda deployed it onto a machine of a high-profile target in Vietnam."
+        ]
+      },
+      {
+        "node_id": "HL_fadb722bc686",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Tibetpost",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "In addition to this, the attackers also abused the same website and a Tibetan news website called Tibetpost – tibetpost[.]net – to host the payloads obtained by the malicious downloads, including two full-featured backdoors for Windows and an unknown number of payloads for macOS."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The compromised website abused as a watering hole belongs to Kagyu International Monlam Trust, an organization based in India that promotes Tibetan Buddhism internationally.",
+            "The attackers placed a script in the website that verifies the IP address of the potential victim and if it is within one of the targeted ranges of addresses, shows a fake error page to entice the user to download a “fix” named certificate (with a .exe extension if the visitor is using Windows or .pkg if macOS)."
+          ],
+          [
+            "The “Immediate Fix” button triggers a script that downloads a payload based on the user’s operating system (Figure 8)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_8",
+          "EDGE_13",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            45,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If the machine does not reply with the expected data, the malicious code continues by obtaining an MD5 hash from a secondary server at https://update.devicebug[.]com/getVersion.php."
+          ],
+          [
+            "certificate.exe is a dropper that deploys a side-loading chain to load an intermediate downloader, memmgrset.dll (internally named http_dy.dll).",
+            "This DLL fetches a JSON file from the C&C server at https://update.devicebug[.]com/assets_files/config.json, which contains the information to download the next stage (see Figure 11)."
+          ],
+          [
+            "Our earliest knowledge of Nightdoor goes back to 2020, when Evasive Panda deployed it onto a machine of a high-profile target in Vietnam.",
+            "The backdoor communicates with its C&C server via UDP or the Google Drive API."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_9",
+          "EDGE_11",
+          "EDGE_14",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            8
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The group uses its own custom malware framework with a modular architecture that allows its backdoor, known as MgBot, to receive modules to spy on its victims and enhance its capabilities.",
+            "Since 2020 we have also observed that Evasive Panda has capabilities to deliver its backdoors via adversary-in-the-middle attacks hijacking updates of legitimate software."
+          ],
+          [
+            "In addition to this, the attackers also abused the same website and a Tibetan news website called Tibetpost – tibetpost[.]net – to host the payloads obtained by the malicious downloads, including two full-featured backdoors for Windows and an unknown number of payloads for macOS."
+          ],
+          [
+            "The “Immediate Fix” button triggers a script that downloads a payload based on the user’s operating system (Figure 8)."
+          ],
+          [
+            "On Windows, victims of the attack are served with a malicious executable located at https://update.devicebug[.]com/fixTools/certificate.exe."
+          ],
+          [
+            "certificate.exe is a dropper that deploys a side-loading chain to load an intermediate downloader, memmgrset.dll (internally named http_dy.dll).",
+            "This DLL fetches a JSON file from the C&C server at https://update.devicebug[.]com/assets_files/config.json, which contains the information to download the next stage (see Figure 11)."
+          ],
+          [
+            "This first-stage malware downloads a JSON file that contains the URL to the next stage."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1189",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1189",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In January 2024, we discovered a cyberespionage operation in which attackers compromised at least three websites to carry out watering-hole attacks as well as a supply-chain compromise of a Tibetan software company."
+          ],
+          [
+            "The compromised website abused as a watering hole belongs to Kagyu International Monlam Trust, an organization based in India that promotes Tibetan Buddhism internationally.",
+            "The attackers placed a script in the website that verifies the IP address of the potential victim and if it is within one of the targeted ranges of addresses, shows a fake error page to entice the user to download a “fix” named certificate (with a .exe extension if the visitor is using Windows or .pkg if macOS)."
+          ],
+          [
+            "We believe that the attackers capitalized, at the time, on the upcoming Monlam festival in January and February of 2024 to compromise users when they visited the festival’s website-turned-watering-hole."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            51,
+            51
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "ESET researchers discovered a cyberespionage campaign that, since at least September 2023, has been victimizing Tibetans through a targeted watering hole (also known as a strategic web compromise), and a supply-chain compromise to deliver trojanized installers of Tibetan language translation software."
+          ],
+          [
+            "The group uses its own custom malware framework with a modular architecture that allows its backdoor, known as MgBot, to receive modules to spy on its victims and enhance its capabilities.",
+            "Since 2020 we have also observed that Evasive Panda has capabilities to deliver its backdoors via adversary-in-the-middle attacks hijacking updates of legitimate software."
+          ],
+          [
+            "Since 2020 we have also observed that Evasive Panda has capabilities to deliver its backdoors via adversary-in-the-middle attacks hijacking updates of legitimate software."
+          ],
+          [
+            "In January 2024, we discovered a cyberespionage operation in which attackers compromised at least three websites to carry out watering-hole attacks as well as a supply-chain compromise of a Tibetan software company."
+          ],
+          [
+            "Around September 2023, the attackers compromised the website of a software development company based in India that produces Tibetan language translation software.",
+            "The attackers placed several trojanized applications there that deploy a malicious downloader for Windows or macOS."
+          ],
+          [
+            "On January 18th, we discovered that the official website (Figure 12) of a Tibetan language translation software product for multiple platforms was hosting ZIP packages containing trojanized installers for legitimate software that deployed malicious downloaders for Windows and macOS."
+          ],
+          [
+            "In addition, the attackers compromised the supply chain of a software developer of Tibetan language translation apps."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If there is a match, the script will render an HTML page with a fake crash notification (Figure 7) intended to bait the visiting user into downloading a solution to fix the problem."
+          ],
+          [
+            "The “Immediate Fix” button triggers a script that downloads a payload based on the user’s operating system (Figure 8)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1543",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1543",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "On January 18th, we discovered that the official website (Figure 12) of a Tibetan language translation software product for multiple platforms was hosting ZIP packages containing trojanized installers for legitimate software that deployed malicious downloaders for Windows and macOS.",
+            "We found one victim from Japan who downloaded one of the packages for Windows.",
+            "The ZIP archive downloaded from the official app store contains a modified installer package (.pkg file), where a Mach-O executable and a post-installation script were added.",
+            "The post-installation script copies the Mach-O file to $HOME/Library/Containers/CalendarFocusEXT/ and proceeds to install a Launch Agent in $HOME/Library/LaunchAgents/com.Terminal.us.plist for persistence."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1553",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1553",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malicious Mach-O, Monlam-bodyig_Keyboard_2017 in Figure 13 is signed, but not notarized, using a developer certificate (not a certificate type usually used for distribution) with the name and team identifier ya ni yang (2289F6V4BN)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1557",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1557",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Since 2020 we have also observed that Evasive Panda has capabilities to deliver its backdoors via adversary-in-the-middle attacks hijacking updates of legitimate software."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            26
+          ],
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "certificate.exe is a dropper that deploys a side-loading chain to load an intermediate downloader, memmgrset.dll (internally named http_dy.dll)."
+          ],
+          [
+            "When the next stage is downloaded and executed, it deploys another side-loading chain to deliver Nightdoor as the final payload."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0253ea4b0d64",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://update.devicebug[.]com/assets_files/config.json",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "This DLL fetches a JSON file from the C&C server at https://update.devicebug[.]com/assets_files/config.json, which contains the information to download the next stage (see Figure 11)."
+        ]
+      },
+      {
+        "node_id": "IOC_382fc2ec554d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "$HOME/Library/LaunchAgents/com.Terminal.us.plist",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "The post-installation script copies the Mach-O file to $HOME/Library/Containers/CalendarFocusEXT/ and proceeds to install a Launch Agent in $HOME/Library/LaunchAgents/com.Terminal.us.plist for persistence."
+        ]
+      },
+      {
+        "node_id": "IOC_40927887ab76",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://update.devicebug[.]com/fixTools/certificate.exe",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "On Windows, victims of the attack are served with a malicious executable located at https://update.devicebug[.]com/fixTools/certificate.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_444190761cf2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://update.devicebug[.]com/getVersion.php",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "If the machine does not reply with the expected data, the malicious code continues by obtaining an MD5 hash from a secondary server at https://update.devicebug[.]com/getVersion.php."
+        ]
+      },
+      {
+        "node_id": "IOC_5140041fff38",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "$HOME/Library/Containers/CalendarFocusEXT/",
+        "edges": [],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "The post-installation script copies the Mach-O file to $HOME/Library/Containers/CalendarFocusEXT/ and proceeds to install a Launch Agent in $HOME/Library/LaunchAgents/com.Terminal.us.plist for persistence."
+        ]
+      },
+      {
+        "node_id": "IOC_99f14d3f2028",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "tibetpost[.]net",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "In addition to this, the attackers also abused the same website and a Tibetan news website called Tibetpost – tibetpost[.]net – to host the payloads obtained by the malicious downloads, including two full-featured backdoors for Windows and an unknown number of payloads for macOS."
+        ]
+      },
+      {
+        "node_id": "IOC_f66e4a7443be",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://www.monlamit[.]com/sites/default/files/softwares/updateFiles/Monlam_Grand_Tibetan_Dictionary_2018/UpdateInfo.dat",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The same URL as the Windows version is used to retrieve that configuration: https://www.monlamit[.]com/sites/default/files/softwares/updateFiles/Monlam_Grand_Tibetan_Dictionary_2018/UpdateInfo.dat."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_001424583ef1",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_438360403240",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_dfc33240b320",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_dfc33240b320",
+      "node_v": "TTP_T1557"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_e5ef67edc44e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_e5ef67edc44e",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "IOC_0253ea4b0d64",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_0253ea4b0d64",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_382fc2ec554d",
+      "node_v": "TTP_T1543"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_40927887ab76",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_40927887ab76",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_444190761cf2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_99f14d3f2028",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_f66e4a7443be",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_f66e4a7443be",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

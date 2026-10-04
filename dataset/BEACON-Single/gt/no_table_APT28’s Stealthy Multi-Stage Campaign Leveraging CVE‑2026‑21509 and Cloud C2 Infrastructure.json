@@ -1,0 +1,1292 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0576e1dd1c38",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Outlook",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          2,
+          26,
+          27,
+          28,
+          29,
+          31,
+          46,
+          52,
+          55
+        ],
+        "span_sentences": [
+          "This campaign features a multi-stage infection chain and novel payloads, including a simple initial loader, an Outlook VBA backdoor (NotDoor), and a modified Covenant implant (\"CovenantGrunt\" [7]).",
+          "Parallel to the steganography loader chain, certain campaign targets received the NotDoor - a two-stage Outlook-focused backdoor designed for long-term email intelligence collection rather than interactive C2.",
+          "Upon execution of SimpleLoader, it performs registry surgery to completely disable Outlook's macro security controls: `HKCU\\Software\\Microsoft\\Office\\16.0\\Outlook\\Security\\Level` to 1: trust all macros with no warnings, and establishes LoadMacroProviderOnBoot as 1: force automatic macro provider initialization at startup, creating a persistent execution environment that survives application restarts and requires no user interaction.",
+          "The dropper then writes the VbaProject.OTM (32,768 bytes) directly to `%APPDATA%\\Microsoft\\Outlook`.",
+          "The VBA macro itself implements email surveillance through dual automatic triggers: `Application_MAPILogonComplete` executes upon Outlook login, while `Application_NewMailEx` activates instantly upon new message arrival for real-time forwarding.",
+          "For each unprocessed email, the macro invokes the native Outlook object model to save the complete message (headers, body, attachments, metadata) as a `.msg` file to `%TEMP%\\temp_email.msg`, creates a new forwarding message with the original attached, and transmits it to two adversary-controlled addresses via standard SMTP.",
+          "The use of COM hijacking for persistence and macro-enabled Outlook backdoors (NotDoor) are TTPs recently tied to APT28 operations targeting European organizations.",
+          "By integrating a fresh Office exploit, multi-layered loaders, cloud-based C2 channels, and even an Outlook backdoor, APT28 continues to expand its arsenal for infiltrating high-value targets.",
+          "Attribution to APT28 is reinforced by the continuity in their tactics: early observations by CERT-UA and others tie these activities back to the same unit behind prior operations like the Signal Messenger lures (BeardShell/Covenant) and the NotDoor Outlook backdoor [4][5]."
+        ]
+      },
+      {
+        "node_id": "HL_0b8862a70333",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Turkey",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_2c83fb2c9d49",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Fancy Bear",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          41
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine.",
+          "CERT-UA officially attributed the January 2026 attacks to threat actor UAC-0001 [1], which corresponds to APT28 (Fancy Bear), a unit of Russia’s GRU military intelligence."
+        ]
+      },
+      {
+        "node_id": "HL_47dd6130af98",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CERT-UA",
+        "edges": [],
+        "sentence_indices": [
+          41,
+          48,
+          55
+        ],
+        "span_sentences": [
+          "CERT-UA officially attributed the January 2026 attacks to threat actor UAC-0001 [1], which corresponds to APT28 (Fancy Bear), a unit of Russia’s GRU military intelligence.",
+          "These implants, along with the Covenant framework, were all found in incidents responded by CERT-UA and partners, linking them to the same adversary.",
+          "Attribution to APT28 is reinforced by the continuity in their tactics: early observations by CERT-UA and others tie these activities back to the same unit behind prior operations like the Signal Messenger lures (BeardShell/Covenant) and the NotDoor Outlook backdoor [4][5]."
+        ]
+      },
+      {
+        "node_id": "HL_48cfcbbe02d5",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "maritime and transport organizations",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          17
+        ],
+        "span_sentences": [
+          "The attackers weaponized a newly disclosed Microsoft Office 1-day (CVE-2026-21509) within 24 hours of its public revelation, using spear-phishing documents to compromise Ukrainian government agencies and EU institutions [1].",
+          "According to Microsoft, CVE-2026-21509 allows an attacker to bypass Office’s OLE security restrictions, exposing unsafe COM controls to execution [6]."
+        ]
+      },
+      {
+        "node_id": "HL_4e2f8f7228d0",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Russia’s GRU military intelligence",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "CERT-UA officially attributed the January 2026 attacks to threat actor UAC-0001 [1], which corresponds to APT28 (Fancy Bear), a unit of Russia’s GRU military intelligence."
+        ]
+      },
+      {
+        "node_id": "HL_5a50fd564641",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Signal Messenger",
+        "edges": [],
+        "sentence_indices": [
+          55
+        ],
+        "span_sentences": [
+          "Attribution to APT28 is reinforced by the continuity in their tactics: early observations by CERT-UA and others tie these activities back to the same unit behind prior operations like the Signal Messenger lures (BeardShell/Covenant) and the NotDoor Outlook backdoor [4][5]."
+        ]
+      },
+      {
+        "node_id": "HL_5b54f5f070f3",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Covenant",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          22,
+          25,
+          48,
+          55
+        ],
+        "span_sentences": [
+          "This campaign features a multi-stage infection chain and novel payloads, including a simple initial loader, an Outlook VBA backdoor (NotDoor), and a modified Covenant implant (\"CovenantGrunt\" [7]).",
+          "Following successful shellcode execution, the infection chain progresses to a staged .NET loader (\"Publish\"- modified Covenant backdoor) that implements cryptographic handshake protocol with the adversary's command infrastructure: 2048-bit RSA key pair.",
+          "Once the handshake completes successfully, the loader downloads the encrypted Covenant Grunt assembly, decrypts it using the newly established session key, and executes it via Assembly.Load() with reflection-based method invocation targeting the [DisplayName(\"Invite\")] attribute, achieving completely fileless execution.",
+          "These implants, along with the Covenant framework, were all found in incidents responded by CERT-UA and partners, linking them to the same adversary.",
+          "Attribution to APT28 is reinforced by the continuity in their tactics: early observations by CERT-UA and others tie these activities back to the same unit behind prior operations like the Signal Messenger lures (BeardShell/Covenant) and the NotDoor Outlook backdoor [4][5]."
+        ]
+      },
+      {
+        "node_id": "HL_63906ee71937",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Koofr",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "Earlier related operations used Koofr and Icedrive for C2, indicating APT28’s flexibility in swapping out cloud platforms [2]."
+        ]
+      },
+      {
+        "node_id": "HL_76eb9cf74211",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT28",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          12,
+          18,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          49,
+          50,
+          51,
+          52,
+          55
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine.",
+          "APT28's attack begins with spear-phishing emails containing weaponized documents that exploit CVE-2026-21509, a Microsoft Office security feature bypass vulnerability.",
+          "This multi-layered approach demonstrates APT28's evolved tradecraft in maintaining persistent access while evading detection across enterprise environments.",
+          "In practical terms, APT28’s malicious documents embedded a specially crafted OLE object (for instance, a Shell.Explorer ActiveX control) that automatically retrieves the next-stage payload over HTTP/WebDAV.",
+          "This campaign is attributed to APT28 with high confidence based on technical indicators and victimology.",
+          "CERT-UA officially attributed the January 2026 attacks to threat actor UAC-0001 [1], which corresponds to APT28 (Fancy Bear), a unit of Russia’s GRU military intelligence.",
+          "In the past, APT28 swiftly weaponized Office vulnerabilities and was among the first to use them in the wild, demonstrating a capability for 0-day or n-day exploitation that few groups possess at this level.",
+          "APT28 has a long history of cyber espionage and influence operations.",
+          "The tradecraft in this campaign – multi-stage malware, extensive obfuscation, abuse of cloud services, and targeting of email systems for persistence – reflects a well-resourced, advanced adversary consistent with APT28’s profile.",
+          "The toolset and techniques also align with APT28’s fingerprint.",
+          "The use of COM hijacking for persistence and macro-enabled Outlook backdoors (NotDoor) are TTPs recently tied to APT28 operations targeting European organizations.",
+          "Furthermore, the focus on Ukrainian government and military bodies, as well as NATO-aligned targets, strongly correlates with APT28’s strategic interests over the past decade (especially post-2022 invasion of Ukraine).",
+          "While attribution in cyberspace can be challenging, in this case the convergence of indicators (including code overlaps, infrastructure reuse, and timing) makes a compelling case that the Russian GRU-linked APT28 is behind the campaign.",
+          "APT28’s latest campaign underscores the group’s technical prowess and adaptability.",
+          "By integrating a fresh Office exploit, multi-layered loaders, cloud-based C2 channels, and even an Outlook backdoor, APT28 continues to expand its arsenal for infiltrating high-value targets.",
+          "Attribution to APT28 is reinforced by the continuity in their tactics: early observations by CERT-UA and others tie these activities back to the same unit behind prior operations like the Signal Messenger lures (BeardShell/Covenant) and the NotDoor Outlook backdoor [4][5]."
+        ]
+      },
+      {
+        "node_id": "HL_7b9a558b4a30",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SimpleLoader",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Upon execution of SimpleLoader, it performs registry surgery to completely disable Outlook's macro security controls: `HKCU\\Software\\Microsoft\\Office\\16.0\\Outlook\\Security\\Level` to 1: trust all macros with no warnings, and establishes LoadMacroProviderOnBoot as 1: force automatic macro provider initialization at startup, creating a persistent execution environment that survives application restarts and requires no user interaction."
+        ]
+      },
+      {
+        "node_id": "HL_8b164f2fc045",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAC-0001",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          41
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine.",
+          "CERT-UA officially attributed the January 2026 attacks to threat actor UAC-0001 [1], which corresponds to APT28 (Fancy Bear), a unit of Russia’s GRU military intelligence."
+        ]
+      },
+      {
+        "node_id": "HL_9746770ff249",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Romania",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "These emails originated from compromised government accounts of multiple countries, including Romania, Bolivia, and Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_99c266a75edf",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Icedrive",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "Earlier related operations used Koofr and Icedrive for C2, indicating APT28’s flexibility in swapping out cloud platforms [2]."
+        ]
+      },
+      {
+        "node_id": "HL_a56e0439ea7d",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Slovenia",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_a958be643fb2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NotDoor",
+        "edges": [
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          26,
+          46,
+          55
+        ],
+        "span_sentences": [
+          "Parallel to the steganography loader chain, certain campaign targets received the NotDoor - a two-stage Outlook-focused backdoor designed for long-term email intelligence collection rather than interactive C2.",
+          "The use of COM hijacking for persistence and macro-enabled Outlook backdoors (NotDoor) are TTPs recently tied to APT28 operations targeting European organizations.",
+          "Attribution to APT28 is reinforced by the continuity in their tactics: early observations by CERT-UA and others tie these activities back to the same unit behind prior operations like the Signal Messenger lures (BeardShell/Covenant) and the NotDoor Outlook backdoor [4][5]."
+        ]
+      },
+      {
+        "node_id": "HL_b12e32314824",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BeardShell",
+        "edges": [],
+        "sentence_indices": [
+          47,
+          55
+        ],
+        "span_sentences": [
+          "The BeardShell malware has been explicitly attributed to APT28 by Ukrainian authorities and security researchers.",
+          "Attribution to APT28 is reinforced by the continuity in their tactics: early observations by CERT-UA and others tie these activities back to the same unit behind prior operations like the Signal Messenger lures (BeardShell/Covenant) and the NotDoor Outlook backdoor [4][5]."
+        ]
+      },
+      {
+        "node_id": "HL_b988cd210aac",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Poland",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_c6ca18fdfff0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Ukraine",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          14,
+          49
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine.",
+          "These emails originated from compromised government accounts of multiple countries, including Romania, Bolivia, and Ukraine.",
+          "Furthermore, the focus on Ukrainian government and military bodies, as well as NATO-aligned targets, strongly correlates with APT28’s strategic interests over the past decade (especially post-2022 invasion of Ukraine)."
+        ]
+      },
+      {
+        "node_id": "HL_d00a2a46a160",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "UAE",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_d4884f393e38",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Greece",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Russian state-sponsored threat group APT28 (aka Fancy Bear or UAC-0001) has launched a sophisticated espionage campaign targeting European military and government entities, specifically targeting maritime and transport organizations across Poland, Slovenia, Turkey, Greece, the UAE, and Ukraine."
+        ]
+      },
+      {
+        "node_id": "HL_e0826f818933",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "defense ministries",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The adversary orchestrated a concentrated 72-hour spear-phishing campaign (January 28-30, 2026), delivering at least 29 distinct emails across nine Eastern European nations, primarily targeting defense ministries (40%), transportation/logistics operators (35%), and diplomatic entities (25%)."
+        ]
+      },
+      {
+        "node_id": "HL_ec3570bf1f6d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Office",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "APT28's attack begins with spear-phishing emails containing weaponized documents that exploit CVE-2026-21509, a Microsoft Office security feature bypass vulnerability."
+        ]
+      },
+      {
+        "node_id": "HL_eda27edbb151",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Publish",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Following successful shellcode execution, the infection chain progresses to a staged .NET loader (\"Publish\"- modified Covenant backdoor) that implements cryptographic handshake protocol with the adversary's command infrastructure: 2048-bit RSA key pair."
+        ]
+      },
+      {
+        "node_id": "HL_efa6cd40b2c8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CovenantGrunt",
+        "edges": [
+          "EDGE_25",
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          2,
+          9,
+          35
+        ],
+        "span_sentences": [
+          "This campaign features a multi-stage infection chain and novel payloads, including a simple initial loader, an Outlook VBA backdoor (NotDoor), and a modified Covenant implant (\"CovenantGrunt\" [7]).",
+          "The loader either extracts an encrypted PNG image file containing shellcode, which it decrypts and executes CovenantGrunt in memory, or drops VbaProject.OTM for NotDoor payload.",
+          "In this 2026 wave, filen.io – a cloud storage provider – serves as the core C2 channel for the CovenantGrunt implants."
+        ]
+      },
+      {
+        "node_id": "HL_f80daffce025",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Bolivia",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "These emails originated from compromised government accounts of multiple countries, including Romania, Bolivia, and Ukraine."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_4",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The loader either extracts an encrypted PNG image file containing shellcode, which it decrypts and executes CovenantGrunt in memory, or drops VbaProject.OTM for NotDoor payload."
+          ],
+          [
+            "Once the handshake completes successfully, the loader downloads the encrypted Covenant Grunt assembly, decrypts it using the newly established session key, and executes it via Assembly.Load() with reflection-based method invocation targeting the [DisplayName(\"Invite\")] attribute, achieving completely fileless execution."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1048",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1048",
+        "edges": [
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The exfiltration logic systematically enumerates 4 folder types (Inbox, Drafts, Junk Mail, RSS Feeds), processing up to 10 messages per folder per execution.",
+            "For each unprocessed email, the macro invokes the native Outlook object model to save the complete message (headers, body, attachments, metadata) as a `.msg` file to `%TEMP%\\temp_email.msg`, creates a new forwarding message with the original attached, and transmits it to two adversary-controlled addresses via standard SMTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The loader creates a scheduled task named \"OneDriveHealth\" that triggers 60 seconds post-registration, executing a command sequence that terminates explorer.exe, relaunches it (triggering the hijacked COM object load above), and self-deletes the scheduled task."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            20,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The entire chain is designed for resilience and evasion, utilizing encrypted payloads, legitimate cloud services for C2, in-memory execution, and process injection to minimize forensic artifacts."
+          ],
+          [
+            "The loader creates a scheduled task named \"OneDriveHealth\" that triggers 60 seconds post-registration, executing a command sequence that terminates explorer.exe, relaunches it (triggering the hijacked COM object load above), and self-deletes the scheduled task.",
+            "Once loaded into the new explorer.exe process, EhStoreShell.dll establishes C2 communication with filen.io."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The loader creates a scheduled task named \"OneDriveHealth\" that triggers 60 seconds post-registration, executing a command sequence that terminates explorer.exe, relaunches it (triggering the hijacked COM object load above), and self-deletes the scheduled task."
+          ],
+          [
+            "The VBA macro itself implements email surveillance through dual automatic triggers: `Application_MAPILogonComplete` executes upon Outlook login, while `Application_NewMailEx` activates instantly upon new message arrival for real-time forwarding."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The loader creates a scheduled task named \"OneDriveHealth\" that triggers 60 seconds post-registration, executing a command sequence that terminates explorer.exe, relaunches it (triggering the hijacked COM object load above), and self-deletes the scheduled task."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_9",
+          "EDGE_33"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actors abuse legitimate cloud storage (filen.io) as command-and-control (C2) infrastructure, blending malicious traffic with normal user activity."
+          ],
+          [
+            "Once loaded into the new explorer.exe process, EhStoreShell.dll establishes C2 communication with filen.io."
+          ],
+          [
+            "Following successful shellcode execution, the infection chain progresses to a staged .NET loader (\"Publish\"- modified Covenant backdoor) that implements cryptographic handshake protocol with the adversary's command infrastructure: 2048-bit RSA key pair."
+          ],
+          [
+            "For each unprocessed email, the macro invokes the native Outlook object model to save the complete message (headers, body, attachments, metadata) as a `.msg` file to `%TEMP%\\temp_email.msg`, creates a new forwarding message with the original attached, and transmits it to two adversary-controlled addresses via standard SMTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_3",
+          "EDGE_10",
+          "EDGE_19",
+          "EDGE_26",
+          "EDGE_34"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            34,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actors abuse legitimate cloud storage (filen.io) as command-and-control (C2) infrastructure, blending malicious traffic with normal user activity."
+          ],
+          [
+            "Infrastructure: APT28’s campaign stands out for its heavy abuse of legitimate cloud services.",
+            "In this 2026 wave, filen.io – a cloud storage provider – serves as the core C2 channel for the CovenantGrunt implants."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_11",
+          "EDGE_28",
+          "EDGE_31",
+          "EDGE_36",
+          "EDGE_38"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The vulnerability allows embedded OLE objects to execute by leveraging the WebDAV protocol to fetch external payloads from attacker-controlled infrastructure."
+          ],
+          [
+            "The initial exploitation downloads a malicious LNK shortcut and first-stage loader DLL, which establishes the foundation for a sophisticated multi-stage infection chain."
+          ],
+          [
+            "Once the handshake completes successfully, the loader downloads the encrypted Covenant Grunt assembly, decrypts it using the newly established session key, and executes it via Assembly.Load() with reflection-based method invocation targeting the [DisplayName(\"Invite\")] attribute, achieving completely fileless execution."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1112",
+        "edges": [
+          "EDGE_1",
+          "EDGE_12",
+          "EDGE_18",
+          "EDGE_21",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Parallel to the steganography loader chain, certain campaign targets received the NotDoor - a two-stage Outlook-focused backdoor designed for long-term email intelligence collection rather than interactive C2.",
+            "Upon execution of SimpleLoader, it performs registry surgery to completely disable Outlook's macro security controls: `HKCU\\Software\\Microsoft\\Office\\16.0\\Outlook\\Security\\Level` to 1: trust all macros with no warnings, and establishes LoadMacroProviderOnBoot as 1: force automatic macro provider initialization at startup, creating a persistent execution environment that survives application restarts and requires no user interaction."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1114",
+        "edges": [
+          "EDGE_2",
+          "EDGE_13",
+          "EDGE_22",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The VBA macro itself implements email surveillance through dual automatic triggers: `Application_MAPILogonComplete` executes upon Outlook login, while `Application_NewMailEx` activates instantly upon new message arrival for real-time forwarding."
+          ],
+          [
+            "For each unprocessed email, the macro invokes the native Outlook object model to save the complete message (headers, body, attachments, metadata) as a `.msg` file to `%TEMP%\\temp_email.msg`, creates a new forwarding message with the original attached, and transmits it to two adversary-controlled addresses via standard SMTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1203",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1203",
+        "edges": [
+          "EDGE_14",
+          "EDGE_24",
+          "EDGE_40"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers weaponized a newly disclosed Microsoft Office 1-day (CVE-2026-21509) within 24 hours of its public revelation, using spear-phishing documents to compromise Ukrainian government agencies and EU institutions [1]."
+          ],
+          [
+            "APT28's attack begins with spear-phishing emails containing weaponized documents that exploit CVE-2026-21509, a Microsoft Office security feature bypass vulnerability."
+          ],
+          [
+            "When victims open these malicious documents, the exploit triggers automatically without requiring macros or user interaction."
+          ],
+          [
+            "The vulnerability allows embedded OLE objects to execute by leveraging the WebDAV protocol to fetch external payloads from attacker-controlled infrastructure."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1546",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1546",
+        "edges": [
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Persistence is achieved through COM object hijacking targeting CLSID {D9144DCD-E998-4ECA-AB6A-DCD83CCBA16D}."
+          ],
+          [
+            "The VBA macro itself implements email surveillance through dual automatic triggers: `Application_MAPILogonComplete` executes upon Outlook login, while `Application_NewMailEx` activates instantly upon new message arrival for real-time forwarding."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_15",
+          "EDGE_41"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers weaponized a newly disclosed Microsoft Office 1-day (CVE-2026-21509) within 24 hours of its public revelation, using spear-phishing documents to compromise Ukrainian government agencies and EU institutions [1]."
+          ],
+          [
+            "APT28's attack begins with spear-phishing emails containing weaponized documents that exploit CVE-2026-21509, a Microsoft Office security feature bypass vulnerability."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1573",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1573",
+        "edges": [
+          "EDGE_16",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This shellcode loads a .NET-based payload that performs key exchange operations with cloud storage infrastructure."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [
+          "EDGE_17",
+          "EDGE_29",
+          "EDGE_32",
+          "EDGE_37",
+          "EDGE_39"
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "For example, domains like wellnessmedcare[.]org, wellnesscaremed[.]com, freefoodaid[.]com, and longsauce[.]com were used to host and deliver the Office exploits (possibly as part of the WebDAV fetch and as decoy content) – see IoC table below."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0d9a7024dbf5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%\\temp_email.msg",
+        "edges": [
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "For each unprocessed email, the macro invokes the native Outlook object model to save the complete message (headers, body, attachments, metadata) as a `.msg` file to `%TEMP%\\temp_email.msg`, creates a new forwarding message with the original attached, and transmits it to two adversary-controlled addresses via standard SMTP."
+        ]
+      },
+      {
+        "node_id": "IOC_5c2f0797cb14",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "wellnesscaremed[.]com",
+        "edges": [
+          "EDGE_28",
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "For example, domains like wellnessmedcare[.]org, wellnesscaremed[.]com, freefoodaid[.]com, and longsauce[.]com were used to host and deliver the Office exploits (possibly as part of the WebDAV fetch and as decoy content) – see IoC table below."
+        ]
+      },
+      {
+        "node_id": "IOC_81f51563628f",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU\\Software\\Microsoft\\Office\\16.0\\Outlook\\Security\\Level",
+        "edges": [
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Upon execution of SimpleLoader, it performs registry surgery to completely disable Outlook's macro security controls: `HKCU\\Software\\Microsoft\\Office\\16.0\\Outlook\\Security\\Level` to 1: trust all macros with no warnings, and establishes LoadMacroProviderOnBoot as 1: force automatic macro provider initialization at startup, creating a persistent execution environment that survives application restarts and requires no user interaction."
+        ]
+      },
+      {
+        "node_id": "IOC_9860bd4735b4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "freefoodaid[.]com",
+        "edges": [
+          "EDGE_31",
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "For example, domains like wellnessmedcare[.]org, wellnesscaremed[.]com, freefoodaid[.]com, and longsauce[.]com were used to host and deliver the Office exploits (possibly as part of the WebDAV fetch and as decoy content) – see IoC table below."
+        ]
+      },
+      {
+        "node_id": "IOC_a02520f36f34",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "filen.io",
+        "edges": [
+          "EDGE_33",
+          "EDGE_34",
+          "EDGE_35"
+        ],
+        "sentence_indices": [
+          3,
+          21,
+          23,
+          35,
+          36
+        ],
+        "span_sentences": [
+          "The threat actors abuse legitimate cloud storage (filen.io) as command-and-control (C2) infrastructure, blending malicious traffic with normal user activity.",
+          "Once loaded into the new explorer.exe process, EhStoreShell.dll establishes C2 communication with filen.io.",
+          "The operator's C2-monitoring the base folder UUID on filen.io -detects the new victim registration, generates a cryptographically random 32-byte AES-256 session key, encrypts it with the victim's RSA public key, and uploads the encrypted session key back to the victim's dedicated subfolder.",
+          "In this 2026 wave, filen.io – a cloud storage provider – serves as the core C2 channel for the CovenantGrunt implants.",
+          "All beaconing and tasking occurs via HTTPS requests to filen.io API endpoints, appearing as normal cloud storage traffic."
+        ]
+      },
+      {
+        "node_id": "IOC_c54e527cd152",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%APPDATA%\\Microsoft\\Outlook",
+        "edges": [],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The dropper then writes the VbaProject.OTM (32,768 bytes) directly to `%APPDATA%\\Microsoft\\Outlook`."
+        ]
+      },
+      {
+        "node_id": "IOC_c593f53889b9",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "longsauce[.]com",
+        "edges": [
+          "EDGE_36",
+          "EDGE_37"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "For example, domains like wellnessmedcare[.]org, wellnesscaremed[.]com, freefoodaid[.]com, and longsauce[.]com were used to host and deliver the Office exploits (possibly as part of the WebDAV fetch and as decoy content) – see IoC table below."
+        ]
+      },
+      {
+        "node_id": "IOC_e50a3bbf1bfb",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "wellnessmedcare[.]org",
+        "edges": [
+          "EDGE_38",
+          "EDGE_39"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "For example, domains like wellnessmedcare[.]org, wellnesscaremed[.]com, freefoodaid[.]com, and longsauce[.]com were used to host and deliver the Office exploits (possibly as part of the WebDAV fetch and as decoy content) – see IoC table below."
+        ]
+      },
+      {
+        "node_id": "IOC_ea257dab67bb",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2026-21509",
+        "edges": [
+          "EDGE_40",
+          "EDGE_41"
+        ],
+        "sentence_indices": [
+          1,
+          4,
+          15,
+          16,
+          17,
+          53
+        ],
+        "span_sentences": [
+          "The attackers weaponized a newly disclosed Microsoft Office 1-day (CVE-2026-21509) within 24 hours of its public revelation, using spear-phishing documents to compromise Ukrainian government agencies and EU institutions [1].",
+          "APT28's attack begins with spear-phishing emails containing weaponized documents that exploit CVE-2026-21509, a Microsoft Office security feature bypass vulnerability.",
+          "All emails carried weaponized RTF/DOC attachments (e.g., BULLETEN_H.doc, Courses.doc, OperInformativ_163.doc) exploiting CVE-2026-21509, with decoy content meticulously replicating authentic government communication aesthetics, which could potentially be based on real, previously stolen documents, including official letterheads, bilingual formatting (Romanian/English, Ukrainian/English), color-coded hazard maps, and ministerial seals/-visual elements designed to exploit institutional trust mechanisms and circumvent user suspicion during the critical file-open decision point.",
+          "The spear-phishing document uses the CVE-2026-21509 exploit to achieve code execution as soon as it is opened.",
+          "According to Microsoft, CVE-2026-21509 allows an attacker to bypass Office’s OLE security restrictions, exposing unsafe COM controls to execution [6].",
+          "The use of CVE-2026-21509 demonstrates how quickly state-aligned actors can weaponize new vulnerabilities, shrinking the window for defenders to patch critical systems."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0576e1dd1c38",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0576e1dd1c38",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_63906ee71937",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1573"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_76eb9cf74211",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_7b9a558b4a30",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_99c266a75edf",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_a958be643fb2",
+      "node_v": "TTP_T1048"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_a958be643fb2",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_a958be643fb2",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_a958be643fb2",
+      "node_v": "TTP_T1546"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_ec3570bf1f6d",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_efa6cd40b2c8",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_efa6cd40b2c8",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_0d9a7024dbf5",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_5c2f0797cb14",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_5c2f0797cb14",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_81f51563628f",
+      "node_v": "TTP_T1112"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_9860bd4735b4",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_9860bd4735b4",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_a02520f36f34",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_a02520f36f34",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_a02520f36f34",
+      "node_v": "TTP_T1573"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_c593f53889b9",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "IOC_c593f53889b9",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_38",
+      "node_u": "IOC_e50a3bbf1bfb",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_39",
+      "node_u": "IOC_e50a3bbf1bfb",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_40",
+      "node_u": "IOC_ea257dab67bb",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_41",
+      "node_u": "IOC_ea257dab67bb",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

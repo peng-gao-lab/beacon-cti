@@ -1,0 +1,2073 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0703fafaaccd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Entra",
+        "edges": [],
+        "sentence_indices": [
+          27,
+          28,
+          31,
+          32,
+          33,
+          34,
+          37,
+          39,
+          40,
+          42,
+          43,
+          44,
+          46
+        ],
+        "span_sentences": [
+          "The threat actor used the credentials, specifically Microsoft Entra ID (formerly Azure AD), that were stolen from earlier in the attack to move laterally from the on-premises to the cloud environment and establish persistent access to the target network through a backdoor.",
+          "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+          "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID).",
+          "Another way to pivot from on-premises to Microsoft Entra ID is to gain control of an on-premises user account that has a respective user account in the cloud.",
+          "In some of the Storm-0501 cases we investigated, at least one of the Domain Admin accounts that was compromised had a respective account in Microsoft Entra ID, with multifactor authentication (MFA) disabled, and assigned with a Global Administrator role.",
+          "It is important to mention that the sync service is unavailable for administrative accounts in Microsoft Entra, hence the passwords and other data are not synced from the on-premises account to the Microsoft Entra account in this case.",
+          "Following a successful pivot from the on-premises environment to the cloud through the compromised Microsoft Entra Connect Sync user account or the cloud admin account compromised through cloud session hijacking, the threat actor was able to connect to Microsoft Entra (portal/MS Graph) from any device, using a privileged Microsoft Entra ID account, such as a Global Administrator, and was no longer limited to the compromised devices.",
+          "This backdoor enables an attacker to sign in as any user of the Microsoft Entra ID tenant in hand if the Microsoft Entra ID user property ImmutableId is known or set by the attackers.",
+          "For users that are configured to be synced by the Microsoft Entra Connect service, the ImmutableId property is automatically populated, while for users that are not synced the default value is null.",
+          "The threat actor used the open-source tool AADInternals, and its Microsoft Entra ID capabilities to create the backdoor.",
+          "AADInternals is a PowerShell module designed for security researchers and penetration testers that provides various methods for interacting and testing Microsoft Entra ID and is commonly used by Storm-0501.",
+          "To create the backdoor, the threat actor first needed to have a domain of their own that is registered to Microsoft Entra ID.",
+          "A federated domain in Microsoft Entra ID is a domain that is configured to use federation technologies, such as Active Directory Federation Services (AD FS), to authenticate users."
+        ]
+      },
+      {
+        "node_id": "HL_0d735254933c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Embargo ransomware",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          3,
+          51,
+          52,
+          55
+        ],
+        "span_sentences": [
+          "Since then, most of the threat actor’s attacks have been opportunistic, as the group began operating as a ransomware-as-a-service (RaaS) affiliate deploying multiple ransomware payloads developed and maintained by other threat actors over the years, including Hive, BlackCat (ALPHV), Hunters International, LockBit, and most recently, Embargo ransomware.",
+          "On-premises compromise leading to ransomware\nOnce the threat actor achieved sufficient control over the network, successfully extracted sensitive files, and managed to move laterally to the cloud environment, the threat actor then deployed the Embargo ransomware across the organization.",
+          "Embargo ransomware is a new strain developed in Rust, known to use advanced encryption methods.",
+          "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network."
+        ]
+      },
+      {
+        "node_id": "HL_14207738ffb4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Azure AD",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "The threat actor used the credentials, specifically Microsoft Entra ID (formerly Azure AD), that were stolen from earlier in the attack to move laterally from the on-premises to the cloud environment and establish persistent access to the target network through a backdoor."
+        ]
+      },
+      {
+        "node_id": "HL_18c859845574",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Since then, most of the threat actor’s attacks have been opportunistic, as the group began operating as a ransomware-as-a-service (RaaS) affiliate deploying multiple ransomware payloads developed and maintained by other threat actors over the years, including Hive, BlackCat (ALPHV), Hunters International, LockBit, and most recently, Embargo ransomware."
+        ]
+      },
+      {
+        "node_id": "HL_18dd9131b3af",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Storm-0249",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Storm-0501 previously achieved initial access through intrusions facilitated by access brokers like Storm-0249 and Storm-0900, leveraging possibly stolen compromised credentials to sign in to the target system, or exploiting various known remote code execution vulnerabilities in unpatched public-facing servers."
+        ]
+      },
+      {
+        "node_id": "HL_309dbb67d028",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "OSQuery",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The threat actor also utilized open-source tools like ossec-win32 and OSQuery to query additional endpoint information."
+        ]
+      },
+      {
+        "node_id": "HL_330b58e2e852",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office 365",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "Microsoft observed the actor using the SAML token sign in to Office 365."
+        ]
+      },
+      {
+        "node_id": "HL_335130b90a8d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Storm-0501",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23",
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          5,
+          7,
+          8,
+          26,
+          28,
+          33,
+          38,
+          43
+        ],
+        "span_sentences": [
+          "August 27, 2025 update: Storm-0501 has continuously evolved to achieve sharpened focus on cloud-based TTPs as their primary objective shifted from deploying on-premises endpoint ransomware to using cloud-based ransomware tactics.",
+          "Leveraging cloud-native capabilities, Storm-0501 rapidly exfiltrates large volumes of data, destroys data and backups within the victim environment, and demands ransom—all without relying on traditional malware deployment.",
+          "Storm-0501 has been active as early as 2021, initially observed deploying the Sabbath(54bb47h) ransomware in attacks targeting US school districts, publicly leaking data for extortion, and even directly messaging school staff and parents.",
+          "Storm-0501 is the latest threat actor observed to exploit weak credentials and over-privileged accounts to move from organizations’ on-premises environment to cloud environments.",
+          "Storm-0501 previously achieved initial access through intrusions facilitated by access brokers like Storm-0249 and Storm-0900, leveraging possibly stolen compromised credentials to sign in to the target system, or exploiting various known remote code execution vulnerabilities in unpatched public-facing servers.",
+          "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+          "In their recent campaign, we noticed a shift in Storm-0501’s methods.",
+          "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+          "In some of the Storm-0501 cases we investigated, at least one of the Domain Admin accounts that was compromised had a respective account in Microsoft Entra ID, with multifactor authentication (MFA) disabled, and assigned with a Global Administrator role.",
+          "Once Global Administrator access is available for Storm-0501, we observed them creating a persistent backdoor access for later use by creating a new federated domain in the tenant.",
+          "AADInternals is a PowerShell module designed for security researchers and penetration testers that provides various methods for interacting and testing Microsoft Entra ID and is commonly used by Storm-0501."
+        ]
+      },
+      {
+        "node_id": "HL_3caf91429df9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AD FS",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "A federated domain in Microsoft Entra ID is a domain that is configured to use federation technologies, such as Active Directory Federation Services (AD FS), to authenticate users."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_25",
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase."
+        ]
+      },
+      {
+        "node_id": "HL_46cc1b00e9e3",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SecretsDump",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The threat actor primarily utilized Impacket’s SecretsDump module, which extracts credentials over the network, and leveraged it across an extensive number of devices to obtain credentials."
+        ]
+      },
+      {
+        "node_id": "HL_494d919d191e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Entra ID",
+        "edges": [
+          "EDGE_27",
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          27,
+          31,
+          32,
+          33,
+          37,
+          39,
+          42,
+          43,
+          46
+        ],
+        "span_sentences": [
+          "The threat actor used the credentials, specifically Microsoft Entra ID (formerly Azure AD), that were stolen from earlier in the attack to move laterally from the on-premises to the cloud environment and establish persistent access to the target network through a backdoor.",
+          "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID).",
+          "Another way to pivot from on-premises to Microsoft Entra ID is to gain control of an on-premises user account that has a respective user account in the cloud.",
+          "In some of the Storm-0501 cases we investigated, at least one of the Domain Admin accounts that was compromised had a respective account in Microsoft Entra ID, with multifactor authentication (MFA) disabled, and assigned with a Global Administrator role.",
+          "Following a successful pivot from the on-premises environment to the cloud through the compromised Microsoft Entra Connect Sync user account or the cloud admin account compromised through cloud session hijacking, the threat actor was able to connect to Microsoft Entra (portal/MS Graph) from any device, using a privileged Microsoft Entra ID account, such as a Global Administrator, and was no longer limited to the compromised devices.",
+          "This backdoor enables an attacker to sign in as any user of the Microsoft Entra ID tenant in hand if the Microsoft Entra ID user property ImmutableId is known or set by the attackers.",
+          "The threat actor used the open-source tool AADInternals, and its Microsoft Entra ID capabilities to create the backdoor.",
+          "AADInternals is a PowerShell module designed for security researchers and penetration testers that provides various methods for interacting and testing Microsoft Entra ID and is commonly used by Storm-0501.",
+          "A federated domain in Microsoft Entra ID is a domain that is configured to use federation technologies, such as Active Directory Federation Services (AD FS), to authenticate users."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          50,
+          55
+        ],
+        "span_sentences": [
+          "Microsoft observed the actor using the SAML token sign in to Office 365.",
+          "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network."
+        ]
+      },
+      {
+        "node_id": "HL_49fa04070cb5",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Rclone",
+        "edges": [
+          "EDGE_29",
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          22,
+          23
+        ],
+        "span_sentences": [
+          "To exfiltrate data, the threat actor used the open-source tool Rclone and renamed it to known Windows binary names or variations of them, such as svhost.exe or scvhost.exe as masquerading means.",
+          "The threat actor employed the renamed Rclone binaries to transfer data to the cloud, using a dedicated configuration that synchronized files to public cloud storage services such as MegaSync across multiple threads."
+        ]
+      },
+      {
+        "node_id": "HL_50239ee5110c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Citrix NetScaler",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+        ]
+      },
+      {
+        "node_id": "HL_5a9559975049",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "hospitals",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "The threat actor was also recently observed targeting hospitals in the US."
+        ]
+      },
+      {
+        "node_id": "HL_5f9a852c677c",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "US school districts",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Storm-0501 has been active as early as 2021, initially observed deploying the Sabbath(54bb47h) ransomware in attacks targeting US school districts, publicly leaking data for extortion, and even directly messaging school staff and parents."
+        ]
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          4
+        ],
+        "span_sentences": [
+          "Storm-0501 has been active as early as 2021, initially observed deploying the Sabbath(54bb47h) ransomware in attacks targeting US school districts, publicly leaking data for extortion, and even directly messaging school staff and parents.",
+          "The threat actor was also recently observed targeting hospitals in the US."
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_32",
+          "EDGE_33",
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          15,
+          16,
+          17,
+          18
+        ],
+        "span_sentences": [
+          "The threat actor was observed leveraging Cobalt Strike to move laterally across the network using the compromised credentials and using the tool’s command-and-control (C2) capabilities to directly communicate with the endpoints and send further commands.",
+          "The common Cobalt Strike Beacon file types used in these campaigns were .dll files and .ocx files that were launched by rundll32.exe and regsvr32.exe respectively.",
+          "Moreover, the “license_id” associated with this Cobalt Strike Beacon is “666”.",
+          "The “license_id” definition is commonly referred to as Watermark and is a nine-digit value that is unique per legitimate license provided by Cobalt Strike."
+        ]
+      },
+      {
+        "node_id": "HL_75caabbf737b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Zoho ManageEngine",
+        "edges": [
+          "EDGE_35"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+        ]
+      },
+      {
+        "node_id": "HL_77f9e90d4032",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ossec-win32",
+        "edges": [
+          "EDGE_36"
+        ],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The threat actor also utilized open-source tools like ossec-win32 and OSQuery to query additional endpoint information."
+        ]
+      },
+      {
+        "node_id": "HL_7edebf531f8c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Hive",
+        "edges": [
+          "EDGE_37"
+        ],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Since then, most of the threat actor’s attacks have been opportunistic, as the group began operating as a ransomware-as-a-service (RaaS) affiliate deploying multiple ransomware payloads developed and maintained by other threat actors over the years, including Hive, BlackCat (ALPHV), Hunters International, LockBit, and most recently, Embargo ransomware."
+        ]
+      },
+      {
+        "node_id": "HL_804b20e7f284",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Entra Connect",
+        "edges": [],
+        "sentence_indices": [
+          28,
+          31,
+          37,
+          40
+        ],
+        "span_sentences": [
+          "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+          "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID).",
+          "Following a successful pivot from the on-premises environment to the cloud through the compromised Microsoft Entra Connect Sync user account or the cloud admin account compromised through cloud session hijacking, the threat actor was able to connect to Microsoft Entra (portal/MS Graph) from any device, using a privileged Microsoft Entra ID account, such as a Global Administrator, and was no longer limited to the compromised devices.",
+          "For users that are configured to be synced by the Microsoft Entra Connect service, the ImmutableId property is automatically populated, while for users that are not synced the default value is null."
+        ]
+      },
+      {
+        "node_id": "HL_88e8195bf8c7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Storm-0900",
+        "edges": [
+          "EDGE_38"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Storm-0501 previously achieved initial access through intrusions facilitated by access brokers like Storm-0249 and Storm-0900, leveraging possibly stolen compromised credentials to sign in to the target system, or exploiting various known remote code execution vulnerabilities in unpatched public-facing servers."
+        ]
+      },
+      {
+        "node_id": "HL_9da9bdf8f1d5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Sabbath(54bb47h) ransomware",
+        "edges": [
+          "EDGE_39"
+        ],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "Storm-0501 has been active as early as 2021, initially observed deploying the Sabbath(54bb47h) ransomware in attacks targeting US school districts, publicly leaking data for extortion, and even directly messaging school staff and parents."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_40"
+        ],
+        "sentence_indices": [
+          25,
+          43
+        ],
+        "span_sentences": [
+          "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+          "AADInternals is a PowerShell module designed for security researchers and penetration testers that provides various methods for interacting and testing Microsoft Entra ID and is commonly used by Storm-0501."
+        ]
+      },
+      {
+        "node_id": "HL_ab4a8f42da8e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "MegaSync",
+        "edges": [
+          "EDGE_41"
+        ],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "The threat actor employed the renamed Rclone binaries to transfer data to the cloud, using a dedicated configuration that synchronized files to public cloud storage services such as MegaSync across multiple threads."
+        ]
+      },
+      {
+        "node_id": "HL_b545dbff3508",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Impacket",
+        "edges": [
+          "EDGE_42",
+          "EDGE_43"
+        ],
+        "sentence_indices": [
+          12,
+          13,
+          29
+        ],
+        "span_sentences": [
+          "The threat actor primarily utilized Impacket’s SecretsDump module, which extracts credentials over the network, and leveraged it across an extensive number of devices to obtain credentials.",
+          "The threat actor used the compromised credentials to access more devices in the network and then leveraged Impacket again to collect additional credentials.",
+          "We assess that the threat actor was able to achieve this because of the previous malicious activities described in this blog post, such as using Impacket to steal credentials and DPAPI encryption keys, and tampering with security products."
+        ]
+      },
+      {
+        "node_id": "HL_bec51d383cd3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Graph",
+        "edges": [
+          "EDGE_44"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "Following the compromise of the cloud Directory Synchronization Account, the threat actor can authenticate using the clear text credentials and get an access token to Microsoft Graph."
+        ]
+      },
+      {
+        "node_id": "HL_dfc71238b054",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory Federation Services",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "A federated domain in Microsoft Entra ID is a domain that is configured to use federation technologies, such as Active Directory Federation Services (AD FS), to authenticate users."
+        ]
+      },
+      {
+        "node_id": "HL_e7737672b0ff",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BlackCat (ALPHV)",
+        "edges": [
+          "EDGE_45"
+        ],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Since then, most of the threat actor’s attacks have been opportunistic, as the group began operating as a ransomware-as-a-service (RaaS) affiliate deploying multiple ransomware payloads developed and maintained by other threat actors over the years, including Hive, BlackCat (ALPHV), Hunters International, LockBit, and most recently, Embargo ransomware."
+        ]
+      },
+      {
+        "node_id": "HL_e7c7b4b08b99",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ColdFusion 2016 application",
+        "edges": [
+          "EDGE_46"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+        ]
+      },
+      {
+        "node_id": "HL_efc2770d905a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Entra Connect Sync",
+        "edges": [
+          "EDGE_47",
+          "EDGE_48",
+          "EDGE_49",
+          "EDGE_50"
+        ],
+        "sentence_indices": [
+          28,
+          31,
+          37
+        ],
+        "span_sentences": [
+          "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+          "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID).",
+          "Following a successful pivot from the on-premises environment to the cloud through the compromised Microsoft Entra Connect Sync user account or the cloud admin account compromised through cloud session hijacking, the threat actor was able to connect to Microsoft Entra (portal/MS Graph) from any device, using a privileged Microsoft Entra ID account, such as a Global Administrator, and was no longer limited to the compromised devices."
+        ]
+      },
+      {
+        "node_id": "HL_f45fc236a24d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Hunters International",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Since then, most of the threat actor’s attacks have been opportunistic, as the group began operating as a ransomware-as-a-service (RaaS) affiliate deploying multiple ransomware payloads developed and maintained by other threat actors over the years, including Hive, BlackCat (ALPHV), Hunters International, LockBit, and most recently, Embargo ransomware."
+        ]
+      },
+      {
+        "node_id": "HL_ff26ef78c43d",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AADInternals",
+        "edges": [
+          "EDGE_51",
+          "EDGE_52"
+        ],
+        "sentence_indices": [
+          42,
+          43,
+          49
+        ],
+        "span_sentences": [
+          "The threat actor used the open-source tool AADInternals, and its Microsoft Entra ID capabilities to create the backdoor.",
+          "AADInternals is a PowerShell module designed for security researchers and penetration testers that provides various methods for interacting and testing Microsoft Entra ID and is commonly used by Storm-0501.",
+          "The threat actor uses the AADInternals commands that enable the creation of Security Assertion Markup Language (SAML or SAML2) tokens, which can be used to impersonate any user in the organization and bypass MFA to sign in to any application."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_7",
+          "EDGE_42",
+          "EDGE_47"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            12
+          ],
+          [
+            28,
+            30
+          ],
+          [
+            28,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust.",
+            "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase.",
+            "The threat actor also utilized open-source tools like ossec-win32 and OSQuery to query additional endpoint information.",
+            "The threat actor primarily utilized Impacket’s SecretsDump module, which extracts credentials over the network, and leveraged it across an extensive number of devices to obtain credentials."
+          ],
+          [
+            "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+            "We assess that the threat actor was able to achieve this because of the previous malicious activities described in this blog post, such as using Impacket to steal credentials and DPAPI encryption keys, and tampering with security products.",
+            "Following the compromise of the cloud Directory Synchronization Account, the threat actor can authenticate using the clear text credentials and get an access token to Microsoft Graph."
+          ],
+          [
+            "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+            "We assess that the threat actor was able to achieve this because of the previous malicious activities described in this blog post, such as using Impacket to steal credentials and DPAPI encryption keys, and tampering with security products.",
+            "Following the compromise of the cloud Directory Synchronization Account, the threat actor can authenticate using the clear text credentials and get an access token to Microsoft Graph.",
+            "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_8",
+          "EDGE_29",
+          "EDGE_53",
+          "EDGE_54"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            19
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            22,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Moreover, the “license_id” associated with this Cobalt Strike Beacon is “666”.",
+            "The “license_id” definition is commonly referred to as Watermark and is a nine-digit value that is unique per legitimate license provided by Cobalt Strike.",
+            "In this case, the “license_id” was modified with 3-digit unique value in all the beacon configurations."
+          ],
+          [
+            "The threat actor was observed exfiltrating sensitive data from compromised devices.",
+            "To exfiltrate data, the threat actor used the open-source tool Rclone and renamed it to known Windows binary names or variations of them, such as svhost.exe or scvhost.exe as masquerading means."
+          ],
+          [
+            "To exfiltrate data, the threat actor used the open-source tool Rclone and renamed it to known Windows binary names or variations of them, such as svhost.exe or scvhost.exe as masquerading means.",
+            "The threat actor employed the renamed Rclone binaries to transfer data to the cloud, using a dedicated configuration that synchronized files to public cloud storage services such as MegaSync across multiple threads.",
+            "The threat actor attempted to evade detection by tampering with security products in some of the devices they got hands-on-keyboard access to.",
+            "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_1",
+          "EDGE_9",
+          "EDGE_60",
+          "EDGE_62"
+        ],
+        "best_span_ranges": [
+          [
+            53,
+            55
+          ],
+          [
+            53,
+            56
+          ],
+          [
+            53,
+            57
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network."
+          ],
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network.",
+            "The ransomware binaries names that were used were PostalScanImporter.exe and win.exe."
+          ],
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network.",
+            "The ransomware binaries names that were used were PostalScanImporter.exe and win.exe.",
+            "Once the files on the target devices were encrypted, the encrypted files extension changed to .partial, .564ba1, and .embargo."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_10",
+          "EDGE_25",
+          "EDGE_40",
+          "EDGE_51",
+          "EDGE_56",
+          "EDGE_59",
+          "EDGE_66",
+          "EDGE_69"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            10
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            42,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust.",
+            "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase."
+          ],
+          [
+            "The threat actor was observed leveraging Cobalt Strike to move laterally across the network using the compromised credentials and using the tool’s command-and-control (C2) capabilities to directly communicate with the endpoints and send further commands."
+          ],
+          [
+            "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods."
+          ],
+          [
+            "The threat actor used the open-source tool AADInternals, and its Microsoft Entra ID capabilities to create the backdoor.",
+            "AADInternals is a PowerShell module designed for security researchers and penetration testers that provides various methods for interacting and testing Microsoft Entra ID and is commonly used by Storm-0501."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_11",
+          "EDGE_32"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor was observed leveraging Cobalt Strike to move laterally across the network using the compromised credentials and using the tool’s command-and-control (C2) capabilities to directly communicate with the endpoints and send further commands."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_4",
+          "EDGE_12",
+          "EDGE_27",
+          "EDGE_33",
+          "EDGE_38",
+          "EDGE_44",
+          "EDGE_48"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            26,
+            27
+          ],
+          [
+            28,
+            30
+          ],
+          [
+            28,
+            31
+          ],
+          [
+            31,
+            33
+          ],
+          [
+            37,
+            38
+          ],
+          [
+            50,
+            53
+          ],
+          [
+            53,
+            55
+          ],
+          [
+            53,
+            56
+          ],
+          [
+            53,
+            57
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Storm-0501 is the latest threat actor observed to exploit weak credentials and over-privileged accounts to move from organizations’ on-premises environment to cloud environments.",
+            "They stole credentials and used them to gain control of the network, eventually creating persistent backdoor access to the cloud environment and deploying ransomware to the on-premises."
+          ],
+          [
+            "Storm-0501 is the latest threat actor observed to exploit weak credentials and over-privileged accounts to move from organizations’ on-premises environment to cloud environments.",
+            "They stole credentials and used them to gain control of the network, eventually creating persistent backdoor access to the cloud environment and deploying ransomware to the on-premises.",
+            "Storm-0501 previously achieved initial access through intrusions facilitated by access brokers like Storm-0249 and Storm-0900, leveraging possibly stolen compromised credentials to sign in to the target system, or exploiting various known remote code execution vulnerabilities in unpatched public-facing servers.",
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+          ],
+          [
+            "Storm-0501 previously achieved initial access through intrusions facilitated by access brokers like Storm-0249 and Storm-0900, leveraging possibly stolen compromised credentials to sign in to the target system, or exploiting various known remote code execution vulnerabilities in unpatched public-facing servers."
+          ],
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust.",
+            "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase.",
+            "The threat actor also utilized open-source tools like ossec-win32 and OSQuery to query additional endpoint information.",
+            "The threat actor primarily utilized Impacket’s SecretsDump module, which extracts credentials over the network, and leveraged it across an extensive number of devices to obtain credentials."
+          ],
+          [
+            "The threat actor used the compromised credentials to access more devices in the network and then leveraged Impacket again to collect additional credentials."
+          ],
+          [
+            "The threat actor was observed leveraging Cobalt Strike to move laterally across the network using the compromised credentials and using the tool’s command-and-control (C2) capabilities to directly communicate with the endpoints and send further commands."
+          ],
+          [
+            "In cases we observed, the threat actor’s lateral movement across the campaign ended with a Domain Admin compromise and access to a Domain Controller that eventually enabled them to deploy ransomware across the devices in the network."
+          ],
+          [
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods.",
+            "The threat actor used the credentials, specifically Microsoft Entra ID (formerly Azure AD), that were stolen from earlier in the attack to move laterally from the on-premises to the cloud environment and establish persistent access to the target network through a backdoor."
+          ],
+          [
+            "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+            "We assess that the threat actor was able to achieve this because of the previous malicious activities described in this blog post, such as using Impacket to steal credentials and DPAPI encryption keys, and tampering with security products.",
+            "Following the compromise of the cloud Directory Synchronization Account, the threat actor can authenticate using the clear text credentials and get an access token to Microsoft Graph."
+          ],
+          [
+            "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+            "We assess that the threat actor was able to achieve this because of the previous malicious activities described in this blog post, such as using Impacket to steal credentials and DPAPI encryption keys, and tampering with security products.",
+            "Following the compromise of the cloud Directory Synchronization Account, the threat actor can authenticate using the clear text credentials and get an access token to Microsoft Graph.",
+            "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID)."
+          ],
+          [
+            "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID).",
+            "Another way to pivot from on-premises to Microsoft Entra ID is to gain control of an on-premises user account that has a respective user account in the cloud.",
+            "In some of the Storm-0501 cases we investigated, at least one of the Domain Admin accounts that was compromised had a respective account in Microsoft Entra ID, with multifactor authentication (MFA) disabled, and assigned with a Global Administrator role."
+          ],
+          [
+            "Following a successful pivot from the on-premises environment to the cloud through the compromised Microsoft Entra Connect Sync user account or the cloud admin account compromised through cloud session hijacking, the threat actor was able to connect to Microsoft Entra (portal/MS Graph) from any device, using a privileged Microsoft Entra ID account, such as a Global Administrator, and was no longer limited to the compromised devices.",
+            "Once Global Administrator access is available for Storm-0501, we observed them creating a persistent backdoor access for later use by creating a new federated domain in the tenant."
+          ],
+          [
+            "Microsoft observed the actor using the SAML token sign in to Office 365.",
+            "On-premises compromise leading to ransomware\nOnce the threat actor achieved sufficient control over the network, successfully extracted sensitive files, and managed to move laterally to the cloud environment, the threat actor then deployed the Embargo ransomware across the organization.",
+            "Embargo ransomware is a new strain developed in Rust, known to use advanced encryption methods.",
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom."
+          ],
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network."
+          ],
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network.",
+            "The ransomware binaries names that were used were PostalScanImporter.exe and win.exe."
+          ],
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network.",
+            "The ransomware binaries names that were used were PostalScanImporter.exe and win.exe.",
+            "Once the files on the target devices were encrypted, the encrypted files extension changed to .partial, .564ba1, and .embargo."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_5",
+          "EDGE_13",
+          "EDGE_26",
+          "EDGE_36",
+          "EDGE_57"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust.",
+            "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase.",
+            "The threat actor also utilized open-source tools like ossec-win32 and OSQuery to query additional endpoint information."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1087",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1087",
+        "edges": [
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust."
+          ],
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust.",
+            "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1098",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1098",
+        "edges": [
+          "EDGE_15",
+          "EDGE_28",
+          "EDGE_49"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            33
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID).",
+            "Another way to pivot from on-premises to Microsoft Entra ID is to gain control of an on-premises user account that has a respective user account in the cloud.",
+            "In some of the Storm-0501 cases we investigated, at least one of the Domain Admin accounts that was compromised had a respective account in Microsoft Entra ID, with multifactor authentication (MFA) disabled, and assigned with a Global Administrator role."
+          ],
+          [
+            "Following a successful pivot from the on-premises environment to the cloud through the compromised Microsoft Entra Connect Sync user account or the cloud admin account compromised through cloud session hijacking, the threat actor was able to connect to Microsoft Entra (portal/MS Graph) from any device, using a privileged Microsoft Entra ID account, such as a Global Administrator, and was no longer limited to the compromised devices.",
+            "Once Global Administrator access is available for Storm-0501, we observed them creating a persistent backdoor access for later use by creating a new federated domain in the tenant."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1190",
+        "edges": [
+          "EDGE_16",
+          "EDGE_31",
+          "EDGE_35",
+          "EDGE_46",
+          "EDGE_64",
+          "EDGE_65",
+          "EDGE_67",
+          "EDGE_68"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            9
+          ],
+          [
+            8,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Storm-0501 previously achieved initial access through intrusions facilitated by access brokers like Storm-0249 and Storm-0900, leveraging possibly stolen compromised credentials to sign in to the target system, or exploiting various known remote code execution vulnerabilities in unpatched public-facing servers."
+          ],
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+          ],
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust."
+          ],
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust.",
+            "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase.",
+            "The threat actor also utilized open-source tools like ossec-win32 and OSQuery to query additional endpoint information.",
+            "The threat actor primarily utilized Impacket’s SecretsDump module, which extracts credentials over the network, and leveraged it across an extensive number of devices to obtain credentials."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1210",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1210",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            8,
+            10
+          ],
+          [
+            8,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust.",
+            "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase."
+          ],
+          [
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203).",
+            "After gaining initial access and code execution capabilities on the affected device in the network, the threat actor performed extensive discovery to find potential desirable targets such as high-value assets and general domain information like Domain Administrator users and domain forest trust.",
+            "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase.",
+            "The threat actor also utilized open-source tools like ossec-win32 and OSQuery to query additional endpoint information."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [
+          "EDGE_17",
+          "EDGE_34",
+          "EDGE_55",
+          "EDGE_58"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            25,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The common Cobalt Strike Beacon file types used in these campaigns were .dll files and .ocx files that were launched by rundll32.exe and regsvr32.exe respectively."
+          ],
+          [
+            "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1484",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1484",
+        "edges": [
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            26
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods."
+          ],
+          [
+            "Once a backdoor domain is available for use, the threat actor creates a federation trust between the compromised tenant, and their own tenant."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1485",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1485",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Leveraging cloud-native capabilities, Storm-0501 rapidly exfiltrates large volumes of data, destroys data and backups within the victim environment, and demands ransom—all without relying on traditional malware deployment."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1486",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_20",
+          "EDGE_37",
+          "EDGE_39",
+          "EDGE_45",
+          "EDGE_61",
+          "EDGE_63"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            50,
+            53
+          ],
+          [
+            51,
+            53
+          ],
+          [
+            53,
+            55
+          ],
+          [
+            53,
+            56
+          ],
+          [
+            53,
+            57
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Storm-0501 has been active as early as 2021, initially observed deploying the Sabbath(54bb47h) ransomware in attacks targeting US school districts, publicly leaking data for extortion, and even directly messaging school staff and parents."
+          ],
+          [
+            "Storm-0501 has been active as early as 2021, initially observed deploying the Sabbath(54bb47h) ransomware in attacks targeting US school districts, publicly leaking data for extortion, and even directly messaging school staff and parents.",
+            "Since then, most of the threat actor’s attacks have been opportunistic, as the group began operating as a ransomware-as-a-service (RaaS) affiliate deploying multiple ransomware payloads developed and maintained by other threat actors over the years, including Hive, BlackCat (ALPHV), Hunters International, LockBit, and most recently, Embargo ransomware."
+          ],
+          [
+            "Storm-0501 is the latest threat actor observed to exploit weak credentials and over-privileged accounts to move from organizations’ on-premises environment to cloud environments.",
+            "They stole credentials and used them to gain control of the network, eventually creating persistent backdoor access to the cloud environment and deploying ransomware to the on-premises."
+          ],
+          [
+            "Storm-0501 is the latest threat actor observed to exploit weak credentials and over-privileged accounts to move from organizations’ on-premises environment to cloud environments.",
+            "They stole credentials and used them to gain control of the network, eventually creating persistent backdoor access to the cloud environment and deploying ransomware to the on-premises.",
+            "Storm-0501 previously achieved initial access through intrusions facilitated by access brokers like Storm-0249 and Storm-0900, leveraging possibly stolen compromised credentials to sign in to the target system, or exploiting various known remote code execution vulnerabilities in unpatched public-facing servers.",
+            "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+          ],
+          [
+            "In cases we observed, the threat actor’s lateral movement across the campaign ended with a Domain Admin compromise and access to a Domain Controller that eventually enabled them to deploy ransomware across the devices in the network."
+          ],
+          [
+            "Microsoft observed the actor using the SAML token sign in to Office 365.",
+            "On-premises compromise leading to ransomware\nOnce the threat actor achieved sufficient control over the network, successfully extracted sensitive files, and managed to move laterally to the cloud environment, the threat actor then deployed the Embargo ransomware across the organization.",
+            "Embargo ransomware is a new strain developed in Rust, known to use advanced encryption methods.",
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom."
+          ],
+          [
+            "On-premises compromise leading to ransomware\nOnce the threat actor achieved sufficient control over the network, successfully extracted sensitive files, and managed to move laterally to the cloud environment, the threat actor then deployed the Embargo ransomware across the organization.",
+            "Embargo ransomware is a new strain developed in Rust, known to use advanced encryption methods.",
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom."
+          ],
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network."
+          ],
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network.",
+            "The ransomware binaries names that were used were PostalScanImporter.exe and win.exe."
+          ],
+          [
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom.",
+            "Embargo affiliates employ double extortion tactics, where they first encrypt a victim’s files and threaten to leak stolen sensitive data unless a ransom is paid.",
+            "In the cases observed by Microsoft, the threat actor leveraged compromised Domain Admin accounts to distribute the Embargo ransomware via a scheduled task named “SysUpdate” that was registered via GPO on the devices in the network.",
+            "The ransomware binaries names that were used were PostalScanImporter.exe and win.exe.",
+            "Once the files on the target devices were encrypted, the encrypted files extension changed to .partial, .564ba1, and .embargo."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1490",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1490",
+        "edges": [
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Leveraging cloud-native capabilities, Storm-0501 rapidly exfiltrates large volumes of data, destroys data and backups within the victim environment, and demands ransom—all without relying on traditional malware deployment."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1550",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1550",
+        "edges": [
+          "EDGE_6",
+          "EDGE_52"
+        ],
+        "best_span_ranges": [
+          [
+            49,
+            53
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor uses the AADInternals commands that enable the creation of Security Assertion Markup Language (SAML or SAML2) tokens, which can be used to impersonate any user in the organization and bypass MFA to sign in to any application.",
+            "Microsoft observed the actor using the SAML token sign in to Office 365.",
+            "On-premises compromise leading to ransomware\nOnce the threat actor achieved sufficient control over the network, successfully extracted sensitive files, and managed to move laterally to the cloud environment, the threat actor then deployed the Embargo ransomware across the organization.",
+            "Embargo ransomware is a new strain developed in Rust, known to use advanced encryption methods.",
+            "Operating under the RaaS model, the ransomware group behind Embargo allows affiliates like Storm-0501 to use its platform to launch attacks in exchange for a share of the ransom."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1552",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1552",
+        "edges": [
+          "EDGE_22",
+          "EDGE_43",
+          "EDGE_50"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            30
+          ],
+          [
+            28,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+            "We assess that the threat actor was able to achieve this because of the previous malicious activities described in this blog post, such as using Impacket to steal credentials and DPAPI encryption keys, and tampering with security products.",
+            "Following the compromise of the cloud Directory Synchronization Account, the threat actor can authenticate using the clear text credentials and get an access token to Microsoft Graph."
+          ],
+          [
+            "We can assess with high confidence that in the recent Storm-0501 campaign, the threat actor specifically located Microsoft Entra Connect Sync servers and managed to extract the plain text credentials of the Microsoft Entra Connect cloud and on-premises sync accounts.",
+            "We assess that the threat actor was able to achieve this because of the previous malicious activities described in this blog post, such as using Impacket to steal credentials and DPAPI encryption keys, and tampering with security products.",
+            "Following the compromise of the cloud Directory Synchronization Account, the threat actor can authenticate using the clear text credentials and get an access token to Microsoft Graph.",
+            "The compromise of the Microsoft Entra Connect Sync account presents a high risk to the target, as it can allow the threat actor to set or change Microsoft Entra ID passwords of any hybrid account (on-premises account that is synced to Microsoft Entra ID)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            26
+          ],
+          [
+            23,
+            26
+          ],
+          [
+            25,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To exfiltrate data, the threat actor used the open-source tool Rclone and renamed it to known Windows binary names or variations of them, such as svhost.exe or scvhost.exe as masquerading means.",
+            "The threat actor employed the renamed Rclone binaries to transfer data to the cloud, using a dedicated configuration that synchronized files to public cloud storage services such as MegaSync across multiple threads.",
+            "The threat actor attempted to evade detection by tampering with security products in some of the devices they got hands-on-keyboard access to.",
+            "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods."
+          ],
+          [
+            "The threat actor employed the renamed Rclone binaries to transfer data to the cloud, using a dedicated configuration that synchronized files to public cloud storage services such as MegaSync across multiple threads.",
+            "The threat actor attempted to evade detection by tampering with security products in some of the devices they got hands-on-keyboard access to.",
+            "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods."
+          ],
+          [
+            "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1567",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1567",
+        "edges": [
+          "EDGE_24",
+          "EDGE_30",
+          "EDGE_41"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor employed the renamed Rclone binaries to transfer data to the cloud, using a dedicated configuration that synchronized files to public cloud storage services such as MegaSync across multiple threads.",
+            "The threat actor attempted to evade detection by tampering with security products in some of the devices they got hands-on-keyboard access to.",
+            "They employed an open-source tool, resorted to PowerShell cmdlets and existing binaries to evade detection, and in some cases, distributed Group Policy Object (GPO) policies to tamper with security products.",
+            "In their recent campaign, we noticed a shift in Storm-0501’s methods."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0403b850215f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "scvhost.exe",
+        "edges": [
+          "EDGE_53"
+        ],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "To exfiltrate data, the threat actor used the open-source tool Rclone and renamed it to known Windows binary names or variations of them, such as svhost.exe or scvhost.exe as masquerading means."
+        ]
+      },
+      {
+        "node_id": "IOC_129a6bd9797f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "svhost.exe",
+        "edges": [
+          "EDGE_54"
+        ],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "To exfiltrate data, the threat actor used the open-source tool Rclone and renamed it to known Windows binary names or variations of them, such as svhost.exe or scvhost.exe as masquerading means."
+        ]
+      },
+      {
+        "node_id": "IOC_1b18f92b5ebc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "regsvr32.exe",
+        "edges": [
+          "EDGE_55"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The common Cobalt Strike Beacon file types used in these campaigns were .dll files and .ocx files that were launched by rundll32.exe and regsvr32.exe respectively."
+        ]
+      },
+      {
+        "node_id": "IOC_4424e9987973",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "systeminfo.exe",
+        "edges": [
+          "EDGE_56",
+          "EDGE_57"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase."
+        ]
+      },
+      {
+        "node_id": "IOC_452e90101f57",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "rundll32.exe",
+        "edges": [
+          "EDGE_58"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The common Cobalt Strike Beacon file types used in these campaigns were .dll files and .ocx files that were launched by rundll32.exe and regsvr32.exe respectively."
+        ]
+      },
+      {
+        "node_id": "IOC_7db32d5cfd75",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "nltest.exe",
+        "edges": [
+          "EDGE_59"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase."
+        ]
+      },
+      {
+        "node_id": "IOC_825dcf6b6bf9",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "PostalScanImporter.exe",
+        "edges": [
+          "EDGE_60",
+          "EDGE_61"
+        ],
+        "sentence_indices": [
+          56
+        ],
+        "span_sentences": [
+          "The ransomware binaries names that were used were PostalScanImporter.exe and win.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_8587194e0a2c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "win.exe",
+        "edges": [
+          "EDGE_62",
+          "EDGE_63"
+        ],
+        "sentence_indices": [
+          56
+        ],
+        "span_sentences": [
+          "The ransomware binaries names that were used were PostalScanImporter.exe and win.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_94c5caa80dba",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2023-29300",
+        "edges": [
+          "EDGE_64"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+        ]
+      },
+      {
+        "node_id": "IOC_a0b9506a1b80",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2022-47966",
+        "edges": [
+          "EDGE_65"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+        ]
+      },
+      {
+        "node_id": "IOC_a24f81ae42f2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "net.exe",
+        "edges": [
+          "EDGE_66"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase."
+        ]
+      },
+      {
+        "node_id": "IOC_b7710275fadb",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2023-4966",
+        "edges": [
+          "EDGE_67"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+        ]
+      },
+      {
+        "node_id": "IOC_d01d8673ed9b",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2023-38203",
+        "edges": [
+          "EDGE_68"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "In a recent campaign, Storm-0501 exploited known vulnerabilities in Zoho ManageEngine (CVE-2022-47966), Citrix NetScaler (CVE-2023-4966), and ColdFusion 2016 application (possibly CVE-2023-29300 or CVE-2023-38203)."
+        ]
+      },
+      {
+        "node_id": "IOC_dc3a770f0ef8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "tasklist.exe",
+        "edges": [
+          "EDGE_69"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Common native Windows tools and commands, such as systeminfo.exe, net.exe, nltest.exe, tasklist.exe, were leveraged in this phase."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0d735254933c",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0d735254933c",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_18c859845574",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_18dd9131b3af",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_309dbb67d028",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_330b58e2e852",
+      "node_v": "TTP_T1550"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1087"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1098"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1484"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1485"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1490"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1552"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_335130b90a8d",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "HL_494d919d191e",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "HL_494d919d191e",
+      "node_v": "TTP_T1098"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "HL_49fa04070cb5",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "HL_49fa04070cb5",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "HL_50239ee5110c",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "HL_75caabbf737b",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "HL_77f9e90d4032",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "HL_7edebf531f8c",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_38",
+      "node_u": "HL_88e8195bf8c7",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_39",
+      "node_u": "HL_9da9bdf8f1d5",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_40",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_41",
+      "node_u": "HL_ab4a8f42da8e",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_42",
+      "node_u": "HL_b545dbff3508",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_43",
+      "node_u": "HL_b545dbff3508",
+      "node_v": "TTP_T1552"
+    },
+    {
+      "edge_id": "EDGE_44",
+      "node_u": "HL_bec51d383cd3",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_45",
+      "node_u": "HL_e7737672b0ff",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_46",
+      "node_u": "HL_e7c7b4b08b99",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_47",
+      "node_u": "HL_efc2770d905a",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_48",
+      "node_u": "HL_efc2770d905a",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_49",
+      "node_u": "HL_efc2770d905a",
+      "node_v": "TTP_T1098"
+    },
+    {
+      "edge_id": "EDGE_50",
+      "node_u": "HL_efc2770d905a",
+      "node_v": "TTP_T1552"
+    },
+    {
+      "edge_id": "EDGE_51",
+      "node_u": "HL_ff26ef78c43d",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_52",
+      "node_u": "HL_ff26ef78c43d",
+      "node_v": "TTP_T1550"
+    },
+    {
+      "edge_id": "EDGE_53",
+      "node_u": "IOC_0403b850215f",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_54",
+      "node_u": "IOC_129a6bd9797f",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_55",
+      "node_u": "IOC_1b18f92b5ebc",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_56",
+      "node_u": "IOC_4424e9987973",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_57",
+      "node_u": "IOC_4424e9987973",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_58",
+      "node_u": "IOC_452e90101f57",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_59",
+      "node_u": "IOC_7db32d5cfd75",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_60",
+      "node_u": "IOC_825dcf6b6bf9",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_61",
+      "node_u": "IOC_825dcf6b6bf9",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_62",
+      "node_u": "IOC_8587194e0a2c",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_63",
+      "node_u": "IOC_8587194e0a2c",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_64",
+      "node_u": "IOC_94c5caa80dba",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_65",
+      "node_u": "IOC_a0b9506a1b80",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_66",
+      "node_u": "IOC_a24f81ae42f2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_67",
+      "node_u": "IOC_b7710275fadb",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_68",
+      "node_u": "IOC_d01d8673ed9b",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_69",
+      "node_u": "IOC_dc3a770f0ef8",
+      "node_v": "TTP_T1059"
+    }
+  ]
+}

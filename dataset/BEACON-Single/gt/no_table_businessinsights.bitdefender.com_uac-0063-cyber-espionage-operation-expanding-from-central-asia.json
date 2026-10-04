@@ -1,0 +1,978 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_148c686173e3",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DownEx",
+        "edges": [],
+        "sentence_indices": [
+          31,
+          49
+        ],
+        "span_sentences": [
+          "DownExPyer (also known as CherrySpy), a key component of the UAC-0063 operations, was first detailed in Bitdefender's \"Deep Dive Into DownEx Espionage Operation in Central Asia\" and subsequently analyzed by CERT-UA and Insikt Group.",
+          "This suggests that data exfiltration likely occurs through a separate channel, potentially using other malware implants such as DownEx or DownExPyer."
+        ]
+      },
+      {
+        "node_id": "HL_17d7142642e1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "the Netherlands",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "This research focuses on completing the picture of UAC-0063's operations, particularly documenting their expansion beyond their initial focus on Central Asia, targeting entities such as embassies in multiple European countries, including Germany, the UK, the Netherlands, Romania, and Georgia."
+        ]
+      },
+      {
+        "node_id": "HL_250e562b80b6",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Kazakhstan",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "The weaponized Microsoft Word documents were uploaded from Kazakhstan and appear to have been exfiltrated from Kazakh embassies, based on details found in the documents."
+        ]
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The group, tracked as UAC-0063, employs sophisticated tactics to infiltrate high-value targets, including government entities and diplomatic missions, expanding their operations into Europe."
+        ]
+      },
+      {
+        "node_id": "HL_47dd6130af98",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CERT-UA",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          6,
+          8,
+          31,
+          50
+        ],
+        "span_sentences": [
+          "While initially lacking sufficient data for a dedicated name, further research by Bitdefender Labs and insights from CERT-UA have provided a more comprehensive understanding of this actor's tactics, techniques, and procedures (TTPs).",
+          "Rather than creating a new designation, we have adopted the name UAC-0063 assigned by CERT-UA for this threat actor.",
+          "There is a moderate confidence assessment by CERT-UA that UAC-0063 is linked to the Russian cyber-espionage group APT28 (BlueDelta).",
+          "DownExPyer (also known as CherrySpy), a key component of the UAC-0063 operations, was first detailed in Bitdefender's \"Deep Dive Into DownEx Espionage Operation in Central Asia\" and subsequently analyzed by CERT-UA and Insikt Group.",
+          "CERT-UA's initial research on UAC-0063 describes an advanced variant of the analyzed script, the LOGPIE keylogger."
+        ]
+      },
+      {
+        "node_id": "HL_53824f43ea17",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CherrySpy",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          29,
+          31
+        ],
+        "span_sentences": [
+          "Notably, the same Python executable extracted from the 379.zip archive is used to execute the malicious Python implant known as DownExPyer (or CherrySpy).",
+          "DownExPyer (also known as CherrySpy), a key component of the UAC-0063 operations, was first detailed in Bitdefender's \"Deep Dive Into DownEx Espionage Operation in Central Asia\" and subsequently analyzed by CERT-UA and Insikt Group."
+        ]
+      },
+      {
+        "node_id": "HL_60c7275f9b8a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PyPlunderPlug",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          46,
+          56
+        ],
+        "span_sentences": [
+          "Investigation revealed that PyPlunderPlug was deployed alongside DownExPyer, both PYARMOR protected and executed within the same Python environment.",
+          "Their arsenal, featuring sophisticated implants like DownExPyer and PyPlunderPlug, combined with well-crafted TTPs, demonstrates a clear focus on espionage and intelligence gathering."
+        ]
+      },
+      {
+        "node_id": "HL_62951c4067f1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Word",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "The weaponized Microsoft Word documents were uploaded from Kazakhstan and appear to have been exfiltrated from Kazakh embassies, based on details found in the documents."
+        ]
+      },
+      {
+        "node_id": "HL_6d0fb980852a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "HATVIBE",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          16,
+          17,
+          21,
+          24,
+          27
+        ],
+        "span_sentences": [
+          "These documents were all designed to deploy the HATVIBE loader using a combination of VBA scripts.",
+          "Another detailed analysis of the HATVIBE loader was published by Sekoia team.",
+          "As mentioned before, HATVIBE is an HTA (HTML Application) script.",
+          "Decoded HATVIBE script shows that an HTTP PUT request is sent to the C2 server, transmitting the victim's ID, hostname, and username as a JSON payload.",
+          "An interesting observation related to the HATVIBE C2 server is the presence of a zip archive named 379.zip (MD5: 7a2a8c002a5e22c6231885e1ccf82bd1) stored in the /tmp directory."
+        ]
+      },
+      {
+        "node_id": "HL_6d22154de1f1",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TAG-110",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The threat actor UAC-0063 is also tracked as TAG-110."
+        ]
+      },
+      {
+        "node_id": "HL_76eb9cf74211",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT28",
+        "edges": [],
+        "sentence_indices": [
+          8,
+          10
+        ],
+        "span_sentences": [
+          "There is a moderate confidence assessment by CERT-UA that UAC-0063 is linked to the Russian cyber-espionage group APT28 (BlueDelta).",
+          "While the strategic interests overlap, the technical evidence to definitively link UAC-0063 to APT28 is not strong enough to either confirm or deny it with high confidence."
+        ]
+      },
+      {
+        "node_id": "HL_89f20f679452",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Central Asia",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          5
+        ],
+        "span_sentences": [
+          "Bitdefender Labs warns of an active cyber-espionage campaign targeting organizations in Central Asia and European countries.",
+          "This research focuses on completing the picture of UAC-0063's operations, particularly documenting their expansion beyond their initial focus on Central Asia, targeting entities such as embassies in multiple European countries, including Germany, the UK, the Netherlands, Romania, and Georgia."
+        ]
+      },
+      {
+        "node_id": "HL_8f21e9ef0956",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Georgia",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "This research focuses on completing the picture of UAC-0063's operations, particularly documenting their expansion beyond their initial focus on Central Asia, targeting entities such as embassies in multiple European countries, including Germany, the UK, the Netherlands, Romania, and Georgia."
+        ]
+      },
+      {
+        "node_id": "HL_9547b800ca1c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "the UK",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "This research focuses on completing the picture of UAC-0063's operations, particularly documenting their expansion beyond their initial focus on Central Asia, targeting entities such as embassies in multiple European countries, including Germany, the UK, the Netherlands, Romania, and Georgia."
+        ]
+      },
+      {
+        "node_id": "HL_9746770ff249",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Romania",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "This research focuses on completing the picture of UAC-0063's operations, particularly documenting their expansion beyond their initial focus on Central Asia, targeting entities such as embassies in multiple European countries, including Germany, the UK, the Netherlands, Romania, and Georgia."
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "This research focuses on completing the picture of UAC-0063's operations, particularly documenting their expansion beyond their initial focus on Central Asia, targeting entities such as embassies in multiple European countries, including Germany, the UK, the Netherlands, Romania, and Georgia."
+        ]
+      },
+      {
+        "node_id": "HL_b3786d0d33b3",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DownExPyer",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          29,
+          30,
+          31,
+          32,
+          35,
+          37,
+          38,
+          45,
+          46,
+          49,
+          52
+        ],
+        "span_sentences": [
+          "Notably, the same Python executable extracted from the 379.zip archive is used to execute the malicious Python implant known as DownExPyer (or CherrySpy).",
+          "DownExPyer is likely the next payload intended for deployment on specific targeted victims.",
+          "DownExPyer (also known as CherrySpy), a key component of the UAC-0063 operations, was first detailed in Bitdefender's \"Deep Dive Into DownEx Espionage Operation in Central Asia\" and subsequently analyzed by CERT-UA and Insikt Group.",
+          "DownExPyer maintains a persistent connection with a C2 server controlled by the attackers.",
+          "While DownExPyer utilizes classes for task organization, it is important to mention that nothing prevents threat actors from delivering Python code directly instead of using class constructs.",
+          "The stability of DownExPyer's core functionalities over the past two years is a significant indicator of its maturity and likely long-standing presence within the UAC-0063 arsenal.",
+          "This observed stability suggests that DownExPyer was likely already operational and refined prior to 2022.",
+          "This suggests that DownExPyer may include a task capable of uploading files to the victim's system, with this particular A5 task potentially serving as the initial step in deploying the keylogger by installing its required components.",
+          "Investigation revealed that PyPlunderPlug was deployed alongside DownExPyer, both PYARMOR protected and executed within the same Python environment.",
+          "This suggests that data exfiltration likely occurs through a separate channel, potentially using other malware implants such as DownEx or DownExPyer.",
+          "This is significant because one of the intercepted A4 tasks received by a DownExPyer implant specifically targeted files with the .~tmp extension from this directory, strongly suggesting its purpose was to retrieve keylogs."
+        ]
+      },
+      {
+        "node_id": "HL_b823ff5d83fb",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "LOGPIE",
+        "edges": [
+          "EDGE_18",
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          44,
+          50
+        ],
+        "span_sentences": [
+          "In November 2024, a notable task was issued to execute the command C:\\\\ProgramData\\\\Python\\\\pythonw.exe -m pip install pywin32==304 psutil keyboard scipy, likely as an attempt to install dependencies for the LOGPIE keylogger.",
+          "CERT-UA's initial research on UAC-0063 describes an advanced variant of the analyzed script, the LOGPIE keylogger."
+        ]
+      },
+      {
+        "node_id": "HL_b90e3cf2514c",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAC-0063",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          2,
+          5,
+          6,
+          7,
+          8,
+          10,
+          31,
+          37,
+          55
+        ],
+        "span_sentences": [
+          "The group, tracked as UAC-0063, employs sophisticated tactics to infiltrate high-value targets, including government entities and diplomatic missions, expanding their operations into Europe.",
+          "Our previous research identified a new persistent threat actor, UAC-0063, specializing in espionage against government institutions and sensitive data exfiltration.",
+          "This research focuses on completing the picture of UAC-0063's operations, particularly documenting their expansion beyond their initial focus on Central Asia, targeting entities such as embassies in multiple European countries, including Germany, the UK, the Netherlands, Romania, and Georgia.",
+          "Rather than creating a new designation, we have adopted the name UAC-0063 assigned by CERT-UA for this threat actor.",
+          "The threat actor UAC-0063 is also tracked as TAG-110.",
+          "There is a moderate confidence assessment by CERT-UA that UAC-0063 is linked to the Russian cyber-espionage group APT28 (BlueDelta).",
+          "While the strategic interests overlap, the technical evidence to definitively link UAC-0063 to APT28 is not strong enough to either confirm or deny it with high confidence.",
+          "DownExPyer (also known as CherrySpy), a key component of the UAC-0063 operations, was first detailed in Bitdefender's \"Deep Dive Into DownEx Espionage Operation in Central Asia\" and subsequently analyzed by CERT-UA and Insikt Group.",
+          "The stability of DownExPyer's core functionalities over the past two years is a significant indicator of its maturity and likely long-standing presence within the UAC-0063 arsenal.",
+          "UAC-0063 exemplifies a sophisticated threat actor group characterized by its advanced capabilities and persistent targeting of government entities."
+        ]
+      },
+      {
+        "node_id": "HL_fd8f7e1f3737",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BlueDelta",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "There is a moderate confidence assessment by CERT-UA that UAC-0063 is linked to the Russian cyber-espionage group APT28 (BlueDelta)."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1001",
+        "edges": [
+          "EDGE_7",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, the C2 address was obfuscated by XOR-encoding it using the key 18f3aMKv."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_8",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            51,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This enhanced version not only supports clipboard monitoring but also utilizes a different file extension, .~tmp, and stores logs in the following directory: %LOCALAPPDATA%\\Diagnostics\\<USER_SID>\\1cbe6654-466b-4d53-8303-2e86ab6db8a7.",
+            "This is significant because one of the intercepted A4 tasks received by a DownExPyer implant specifically targeted files with the .~tmp extension from this directory, strongly suggesting its purpose was to retrieve keylogs."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2",
+          "EDGE_9",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In this case, the generated HTA file contains an encoded VBScript (VBE) payload to interact with the C2 server, receive commands, and execute malicious actions on the compromised system."
+          ],
+          [
+            "However, the C2 address was obfuscated by XOR-encoding it using the key 18f3aMKv."
+          ],
+          [
+            "Investigation revealed that PyPlunderPlug was deployed alongside DownExPyer, both PYARMOR protected and executed within the same Python environment."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_4",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Decoded HATVIBE script shows that an HTTP PUT request is sent to the C2 server, transmitting the victim's ID, hostname, and username as a JSON payload."
+          ],
+          [
+            "DownExPyer maintains a persistent connection with a C2 server controlled by the attackers."
+          ],
+          [
+            "However, one key difference is that, in addition to exfiltrating files to the C2, the A4 task also deletes the files from the disk after exfiltration."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1056",
+        "edges": [
+          "EDGE_11",
+          "EDGE_18",
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ],
+          [
+            50,
+            51
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Evidence indicates that A4 task was used to collect keystroke logs."
+          ],
+          [
+            "CERT-UA's initial research on UAC-0063 describes an advanced variant of the analyzed script, the LOGPIE keylogger.",
+            "This enhanced version not only supports clipboard monitoring but also utilizes a different file extension, .~tmp, and stores logs in the following directory: %LOCALAPPDATA%\\Diagnostics\\<USER_SID>\\1cbe6654-466b-4d53-8303-2e86ab6db8a7."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_3",
+          "EDGE_5",
+          "EDGE_12",
+          "EDGE_19",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            46,
+            46
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These documents were all designed to deploy the HATVIBE loader using a combination of VBA scripts."
+          ],
+          [
+            "In this case, the generated HTA file contains an encoded VBScript (VBE) payload to interact with the C2 server, receive commands, and execute malicious actions on the compromised system."
+          ],
+          [
+            "If the C2 server’s response is prefixed with sd5ddf3e3fg4gfds, the implant executes the returned hex-encoded code."
+          ],
+          [
+            "Notably, the same Python executable extracted from the 379.zip archive is used to execute the malicious Python implant known as DownExPyer (or CherrySpy)."
+          ],
+          [
+            "In November 2024, a notable task was issued to execute the command C:\\\\ProgramData\\\\Python\\\\pythonw.exe -m pip install pywin32==304 psutil keyboard scipy, likely as an attempt to install dependencies for the LOGPIE keylogger."
+          ],
+          [
+            "Investigation revealed that PyPlunderPlug was deployed alongside DownExPyer, both PYARMOR protected and executed within the same Python environment."
+          ],
+          [
+            "The script is designed to collect data from removable devices connected to the infected system."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, one key difference is that, in addition to exfiltrating files to the C2, the A4 task also deletes the files from the disk after exfiltration."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_6",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In this case, the generated HTA file contains an encoded VBScript (VBE) payload to interact with the C2 server, receive commands, and execute malicious actions on the compromised system."
+          ],
+          [
+            "Decoded HATVIBE script shows that an HTTP PUT request is sent to the C2 server, transmitting the victim's ID, hostname, and username as a JSON payload."
+          ],
+          [
+            "DownExPyer maintains a persistent connection with a C2 server controlled by the attackers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1074",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1074",
+        "edges": [
+          "EDGE_15",
+          "EDGE_29"
+        ],
+        "best_span_ranges": [
+          [
+            51,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This enhanced version not only supports clipboard monitoring but also utilizes a different file extension, .~tmp, and stores logs in the following directory: %LOCALAPPDATA%\\Diagnostics\\<USER_SID>\\1cbe6654-466b-4d53-8303-2e86ab6db8a7.",
+            "This is significant because one of the intercepted A4 tasks received by a DownExPyer implant specifically targeted files with the .~tmp extension from this directory, strongly suggesting its purpose was to retrieve keylogs."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_16",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            53,
+            53
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Furthermore, another A4 task was configured to scan the C:\\ProgramData\\Python\\\\Lib\\LOC\\F directory for files to upload to the C2 server, excluding those with a .py extension."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_17",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, the C2 address was obfuscated by XOR-encoding it using the key 18f3aMKv."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_20",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "For delivery of these weaponized documents, threat actors send emails with URL links in their body instead of directly attaching these documents to emails."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_05ab42b967dc",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "cloud-mail[.]ink",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The latest infection attempt was observed on November 21, 2024, containing a link to a document file named Инфо о запуске нового проекта ec.doc hosted on server https://cloud-mail[.]ink/download.php."
+        ]
+      },
+      {
+        "node_id": "IOC_17616b56cb08",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://cloud-mail[.]ink/download.php",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The latest infection attempt was observed on November 21, 2024, containing a link to a document file named Инфо о запуске нового проекта ec.doc hosted on server https://cloud-mail[.]ink/download.php."
+        ]
+      },
+      {
+        "node_id": "IOC_24dbd89fa3c9",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ProgramData\\Python\\Lib\\LOC\\F",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          53
+        ],
+        "span_sentences": [
+          "Furthermore, another A4 task was configured to scan the C:\\ProgramData\\Python\\\\Lib\\LOC\\F directory for files to upload to the C2 server, excluding those with a .py extension."
+        ]
+      },
+      {
+        "node_id": "IOC_2a00dc31c927",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "18f3aMKv",
+        "edges": [
+          "EDGE_23",
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "However, the C2 address was obfuscated by XOR-encoding it using the key 18f3aMKv."
+        ]
+      },
+      {
+        "node_id": "IOC_55971cc1daa2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\\\ProgramData\\\\Python\\\\pythonw.exe",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "In November 2024, a notable task was issued to execute the command C:\\\\ProgramData\\\\Python\\\\pythonw.exe -m pip install pywin32==304 psutil keyboard scipy, likely as an attempt to install dependencies for the LOGPIE keylogger."
+        ]
+      },
+      {
+        "node_id": "IOC_6fe973eb3281",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%LOCALAPPDATA%\\Diagnostics\\<USER_SID>\\1cbe6654-466b-4d53-8303-2e86ab6db8a7",
+        "edges": [
+          "EDGE_27",
+          "EDGE_28",
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          51
+        ],
+        "span_sentences": [
+          "This enhanced version not only supports clipboard monitoring but also utilizes a different file extension, .~tmp, and stores logs in the following directory: %LOCALAPPDATA%\\Diagnostics\\<USER_SID>\\1cbe6654-466b-4d53-8303-2e86ab6db8a7."
+        ]
+      },
+      {
+        "node_id": "IOC_892b21dbfc34",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/tmp",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "An interesting observation related to the HATVIBE C2 server is the presence of a zip archive named 379.zip (MD5: 7a2a8c002a5e22c6231885e1ccf82bd1) stored in the /tmp directory."
+        ]
+      },
+      {
+        "node_id": "IOC_f4174611a320",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "7a2a8c002a5e22c6231885e1ccf82bd1",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "An interesting observation related to the HATVIBE C2 server is the presence of a zip archive named 379.zip (MD5: 7a2a8c002a5e22c6231885e1ccf82bd1) stored in the /tmp directory."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_53824f43ea17",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_60c7275f9b8a",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_60c7275f9b8a",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_6d0fb980852a",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_6d0fb980852a",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_6d0fb980852a",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1001"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_b3786d0d33b3",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_b823ff5d83fb",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_b823ff5d83fb",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_05ab42b967dc",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_17616b56cb08",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_24dbd89fa3c9",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_2a00dc31c927",
+      "node_v": "TTP_T1001"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_2a00dc31c927",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_2a00dc31c927",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_55971cc1daa2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_6fe973eb3281",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_6fe973eb3281",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_6fe973eb3281",
+      "node_v": "TTP_T1074"
+    }
+  ]
+}

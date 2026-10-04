@@ -1,0 +1,651 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0251d5a9c595",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GitHub",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Popular phishing schemes involve ClickFix or fake CAPTCHA web pages, fraudulent forums with cracked software, fake GitHub repositories, fraudulent links on Reddit forums, and many more."
+        ]
+      },
+      {
+        "node_id": "HL_16f548b28611",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Lumen",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET has collaborated with Microsoft, BitSight, Lumen, Cloudflare, CleanDNS, and GMO Registry in a global disruption operation against Lumma Stealer, an infamous malware-as-a-service (MaaS) infostealer."
+        ]
+      },
+      {
+        "node_id": "HL_21b3fad418f2",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GMO Registry",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET has collaborated with Microsoft, BitSight, Lumen, Cloudflare, CleanDNS, and GMO Registry in a global disruption operation against Lumma Stealer, an infamous malware-as-a-service (MaaS) infostealer."
+        ]
+      },
+      {
+        "node_id": "HL_22dbb4876dac",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Steam",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          16,
+          17,
+          18
+        ],
+        "span_sentences": [
+          "If no C&C server from the static config responds to Lumma Stealer, then the backup C&C is extracted from a dummy Steam profile web page acting as a dead-drop resolver.",
+          "The Steam profile URL is heavily protected in the binary, the same way as the version string.",
+          "The encrypted backup C&C URL is set in the Steam profile name, as shown in Figure 6, and the protection is a simple Caesar cipher (ROT11)."
+        ]
+      },
+      {
+        "node_id": "HL_28bb92983c8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma Stealer",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          10,
+          12,
+          14,
+          15,
+          16,
+          19,
+          21,
+          27,
+          32,
+          33,
+          35,
+          38,
+          40,
+          41,
+          42,
+          45,
+          49,
+          50
+        ],
+        "span_sentences": [
+          "ESET has collaborated with Microsoft, BitSight, Lumen, Cloudflare, CleanDNS, and GMO Registry in a global disruption operation against Lumma Stealer, an infamous malware-as-a-service (MaaS) infostealer.",
+          "The operation targeted Lumma Stealer infrastructure with all known C&C servers in the past year, rendering the exfiltration network, or a large part of it, nonoperational.",
+          "Infostealer malware families, like Lumma Stealer, are typically just a foreshadowing of a future, much more devastating attack.",
+          "Lumma Stealer has been one of the most prevalent infostealers over the past two years, and ESET telemetry (see Figure 1) confirms that it has left no part of the world untouched.",
+          "Over the past two years, Lumma Stealer (also known as LummaC or LummaC2) has emerged as one of the most active infostealers in the cybercrime ecosystem, becoming a favored tool among cybercriminals due to its active development of malware features and its infrastructure being sold as a service.",
+          "Malware as a service\nLumma Stealer adopts the concept of malware as a service (MaaS), where affiliates pay a monthly fee, based on their tier, to receive the latest malware builds and the network infrastructure necessary for data exfiltration.",
+          "Each Lumma Stealer sample contains a list of nine encrypted C&C domains.",
+          "Based on Lumma Stealer’s internal sample versioning, which is heavily protected by stack string obfuscation, we know that up until January 2025, the C&C domains in the samples were protected by an XOR function and base64 encoding (see Figure 4).",
+          "In January 2025, Lumma Stealer transitioned the protection of the C&C list to ChaCha20 encryption with a single hardcoded key and nonce (see Figure 5).",
+          "Since June 2024, each Lumma Stealer build came with a new feature for obtaining a backup C&C.",
+          "If no C&C server from the static config responds to Lumma Stealer, then the backup C&C is extracted from a dummy Steam profile web page acting as a dead-drop resolver.",
+          "In February 2025, Lumma Stealer received an update that included a feature for obtaining a new, primary C&C URL from a Telegram channel dead-drop resolver.",
+          "Each Lumma Stealer sample contains a unique hardcoded affiliate identifier known as LID.",
+          "However, in early March 2025, Lumma Stealer transitioned to using hexadecimal identifiers, referred to internally as UID (see Figure 9).",
+          "If the J parameter is missing in the Lumma Stealer sample, an empty string is used in the C&C request and a default configuration is retrieved.",
+          "Unlike LID, the J parameter is rarely present in Lumma Stealer samples.",
+          "Lumma Stealer retrieves a dynamic configuration from the C&C server, which contains definitions specifying what to scan for exfiltration (see Table 1).",
+          "Throughout our Lumma Stealer tracking period, all extracted C&C domains consistently led to Cloudflare services, which are utilized to conceal Lumma Stealer’s real C&C infrastructure.",
+          "When Lumma Stealer identifies an active C&C server, it requests the configuration via an HTTPS POST request (Figure 17), which includes the LID and J parameters as data.",
+          "If the J parameter is not present in the sample, Lumma Stealer retrieves the default configuration from the C&C server.",
+          "After Lumma Stealer successfully exfiltrates sensitive data and harvested credentials, it issues one final HTTPS POST request to the C&C server – this time, with an additional victim hardware ID called hwid.",
+          "Lumma Stealer employs a few, but effective, anti-emulation techniques to make analysis as complicated as possible.",
+          "The disruption operation, led by Microsoft, aims to seize all known Lumma Stealer C&C domains, rendering Lumma Stealer’s exfiltration infrastructure nonfunctional.",
+          "ESET will continue to track other infostealers while closely monitoring for Lumma Stealer activity following this disruption operation."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          49
+        ],
+        "span_sentences": [
+          "ESET has collaborated with Microsoft, BitSight, Lumen, Cloudflare, CleanDNS, and GMO Registry in a global disruption operation against Lumma Stealer, an infamous malware-as-a-service (MaaS) infostealer.",
+          "The disruption operation, led by Microsoft, aims to seize all known Lumma Stealer C&C domains, rendering Lumma Stealer’s exfiltration infrastructure nonfunctional."
+        ]
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          38,
+          39
+        ],
+        "span_sentences": [
+          "ESET has collaborated with Microsoft, BitSight, Lumen, Cloudflare, CleanDNS, and GMO Registry in a global disruption operation against Lumma Stealer, an infamous malware-as-a-service (MaaS) infostealer.",
+          "Throughout our Lumma Stealer tracking period, all extracted C&C domains consistently led to Cloudflare services, which are utilized to conceal Lumma Stealer’s real C&C infrastructure.",
+          "Cloudflare services are also employed for C&C servers located via dead-drop resolvers."
+        ]
+      },
+      {
+        "node_id": "HL_6005d39bb4b8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LummaC2",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Over the past two years, Lumma Stealer (also known as LummaC or LummaC2) has emerged as one of the most active infostealers in the cybercrime ecosystem, becoming a favored tool among cybercriminals due to its active development of malware features and its infrastructure being sold as a service."
+        ]
+      },
+      {
+        "node_id": "HL_84a519c95c7e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LummaC",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Over the past two years, Lumma Stealer (also known as LummaC or LummaC2) has emerged as one of the most active infostealers in the cybercrime ecosystem, becoming a favored tool among cybercriminals due to its active development of malware features and its infrastructure being sold as a service."
+        ]
+      },
+      {
+        "node_id": "HL_8dfeb3700cd0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Reddit",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Popular phishing schemes involve ClickFix or fake CAPTCHA web pages, fraudulent forums with cracked software, fake GitHub repositories, fraudulent links on Reddit forums, and many more."
+        ]
+      },
+      {
+        "node_id": "HL_956c45705a87",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Vidar",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Common distribution methods include phishing, cracked software, and other malware downloaders including SmokeLoader, DarkGate, Amadey, Vidar, and others."
+        ]
+      },
+      {
+        "node_id": "HL_967d06e2d8c2",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Amadey",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Common distribution methods include phishing, cracked software, and other malware downloaders including SmokeLoader, DarkGate, Amadey, Vidar, and others."
+        ]
+      },
+      {
+        "node_id": "HL_96e172562941",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SmokeLoader",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Common distribution methods include phishing, cracked software, and other malware downloaders including SmokeLoader, DarkGate, Amadey, Vidar, and others."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          4,
+          50
+        ],
+        "span_sentences": [
+          "ESET has collaborated with Microsoft, BitSight, Lumen, Cloudflare, CleanDNS, and GMO Registry in a global disruption operation against Lumma Stealer, an infamous malware-as-a-service (MaaS) infostealer.",
+          "Lumma Stealer has been one of the most prevalent infostealers over the past two years, and ESET telemetry (see Figure 1) confirms that it has left no part of the world untouched.",
+          "ESET will continue to track other infostealers while closely monitoring for Lumma Stealer activity following this disruption operation."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          19,
+          20
+        ],
+        "span_sentences": [
+          "In February 2025, Lumma Stealer received an update that included a feature for obtaining a new, primary C&C URL from a Telegram channel dead-drop resolver.",
+          "The C&C URL is extracted from the Telegram channel’s title field, and it is protected by the same algorithm as in the case of the Steam profile dead-drop resolver."
+        ]
+      },
+      {
+        "node_id": "HL_b3e5c62fd3dd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ClickFix",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Popular phishing schemes involve ClickFix or fake CAPTCHA web pages, fraudulent forums with cracked software, fake GitHub repositories, fraudulent links on Reddit forums, and many more."
+        ]
+      },
+      {
+        "node_id": "HL_b8f977cc22bb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "BitSight",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET has collaborated with Microsoft, BitSight, Lumen, Cloudflare, CleanDNS, and GMO Registry in a global disruption operation against Lumma Stealer, an infamous malware-as-a-service (MaaS) infostealer."
+        ]
+      },
+      {
+        "node_id": "HL_cc8331bddce3",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "DarkGate",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Common distribution methods include phishing, cracked software, and other malware downloaders including SmokeLoader, DarkGate, Amadey, Vidar, and others."
+        ]
+      },
+      {
+        "node_id": "HL_d956f941077c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CleanDNS",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET has collaborated with Microsoft, BitSight, Lumen, Cloudflare, CleanDNS, and GMO Registry in a global disruption operation against Lumma Stealer, an infamous malware-as-a-service (MaaS) infostealer."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            14
+          ],
+          [
+            47,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Each Lumma Stealer sample contains a list of nine encrypted C&C domains."
+          ],
+          [
+            "Based on Lumma Stealer’s internal sample versioning, which is heavily protected by stack string obfuscation, we know that up until January 2025, the C&C domains in the samples were protected by an XOR function and base64 encoding (see Figure 4)."
+          ],
+          [
+            "Based on Lumma Stealer’s internal sample versioning, which is heavily protected by stack string obfuscation, we know that up until January 2025, the C&C domains in the samples were protected by an XOR function and base64 encoding (see Figure 4).",
+            "When the base64-encoded string was decoded, it revealed a structure where the first 32 bytes served as an XOR key, and the remaining bytes contained the encrypted C&C domain.",
+            "In January 2025, Lumma Stealer transitioned the protection of the C&C list to ChaCha20 encryption with a single hardcoded key and nonce (see Figure 5)."
+          ],
+          [
+            "In Lumma Stealer, imports are resolved at runtime.",
+            "Import names are hashed using the FNV-1a algorithm with each build using a custom offset basis."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After Lumma Stealer successfully exfiltrates sensitive data and harvested credentials, it issues one final HTTPS POST request to the C&C server – this time, with an additional victim hardware ID called hwid."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ],
+          [
+            40,
+            40
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Lumma Stealer retrieves a dynamic configuration from the C&C server, which contains definitions specifying what to scan for exfiltration (see Table 1)."
+          ],
+          [
+            "When Lumma Stealer identifies an active C&C server, it requests the configuration via an HTTPS POST request (Figure 17), which includes the LID and J parameters as data."
+          ],
+          [
+            "After Lumma Stealer successfully exfiltrates sensitive data and harvested credentials, it issues one final HTTPS POST request to the C&C server – this time, with an additional victim hardware ID called hwid."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            16
+          ],
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Since June 2024, each Lumma Stealer build came with a new feature for obtaining a backup C&C.",
+            "If no C&C server from the static config responds to Lumma Stealer, then the backup C&C is extracted from a dummy Steam profile web page acting as a dead-drop resolver."
+          ],
+          [
+            "In February 2025, Lumma Stealer received an update that included a feature for obtaining a new, primary C&C URL from a Telegram channel dead-drop resolver."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            12,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Based on Lumma Stealer’s internal sample versioning, which is heavily protected by stack string obfuscation, we know that up until January 2025, the C&C domains in the samples were protected by an XOR function and base64 encoding (see Figure 4)."
+          ],
+          [
+            "Based on Lumma Stealer’s internal sample versioning, which is heavily protected by stack string obfuscation, we know that up until January 2025, the C&C domains in the samples were protected by an XOR function and base64 encoding (see Figure 4).",
+            "When the base64-encoded string was decoded, it revealed a structure where the first 32 bytes served as an XOR key, and the remaining bytes contained the encrypted C&C domain.",
+            "In January 2025, Lumma Stealer transitioned the protection of the C&C list to ChaCha20 encryption with a single hardcoded key and nonce (see Figure 5)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Lumma Stealer employs a few, but effective, anti-emulation techniques to make analysis as complicated as possible.",
+            "These techniques are designed to evade detection and hinder the efforts of security analysts."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1539",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1539",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The primary focus is on stealing web browser extension data and databases containing passwords, session cookies, web browsing history, and autofill data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1555",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The primary focus is on stealing web browser extension data and databases containing passwords, session cookies, web browsing history, and autofill data."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_1",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Common distribution methods include phishing, cracked software, and other malware downloaders including SmokeLoader, DarkGate, Amadey, Vidar, and others."
+          ]
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0251d5a9c595",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_22dbb4876dac",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1539"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_8dfeb3700cd0",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

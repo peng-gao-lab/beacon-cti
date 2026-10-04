@@ -1,0 +1,679 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0251d5a9c595",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GitHub",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          28,
+          33,
+          36
+        ],
+        "span_sentences": [
+          "The threat actor uses GitHub Pages to host phishing sites impersonating popular software installers.",
+          "A Python script for decrypting this configuration is available in the ThreatLabz GitHub repository.",
+          "The Python script provided in the ThreatLabz GitHub repository can be used to decrypt the network data captured.",
+          "The Python code in the ThreatLabz GitHub repository can be used to decrypt the encrypted plugin."
+        ]
+      },
+      {
+        "node_id": "HL_2f051fec2428",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "FatalRAT",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          25
+        ],
+        "span_sentences": [
+          "The campaign delivers three types of malware: ValleyRAT, FatalRAT, and a new Remote Access Trojan (RAT) that ThreatLabz named kkRAT.",
+          "Since ValleyRAT and FatalRAT are already extensively documented, they will not be analyzed in this section."
+        ]
+      },
+      {
+        "node_id": "HL_3c9e3682cbfd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "Note that kkRAT's main plugin, Plugin32.dll, was uncovered alongside the source code of an older version on VirusTotal, which served as the basis for the RAT's name."
+        ]
+      },
+      {
+        "node_id": "HL_6105fdbf1146",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "GotoHTTP",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "kkRAT’s commands and plugins enable features such as clipboard hijacking to replace cryptocurrency wallet addresses, installing RMM tools like Sunlogin and GotoHTTP, and relaying network traffic that can be used to bypass firewalls and VPNs."
+        ]
+      },
+      {
+        "node_id": "HL_8e1659bea8b4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler ThreatLabz",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Zscaler ThreatLabz has identified a malware campaign targeting Chinese-speaking users, which has been active since early May 2025."
+        ]
+      },
+      {
+        "node_id": "HL_9488ce82241d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Big Bad Wolf",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          26
+        ],
+        "span_sentences": [
+          "The latter shares code similarities with both Ghost RAT and Big Bad Wolf (大灰狼), a RAT typically leveraged by China-based cybercriminals.",
+          "However, kkRAT is a previously unknown malware family that incorporates elements from both Ghost RAT and Big Bad Wolf."
+        ]
+      },
+      {
+        "node_id": "HL_9ea6e1cc1691",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ghost RAT",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          26,
+          30,
+          42
+        ],
+        "span_sentences": [
+          "The latter shares code similarities with both Ghost RAT and Big Bad Wolf (大灰狼), a RAT typically leveraged by China-based cybercriminals.",
+          "However, kkRAT is a previously unknown malware family that incorporates elements from both Ghost RAT and Big Bad Wolf.",
+          "kkRAT's network communication protocol closely resembles that of Ghost RAT, with an added layer of encryption applied after data compression.",
+          "kkRAT’s network communication protocol resembles that of Ghost RAT, but includes an added encryption layer after data compression."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          20
+        ],
+        "span_sentences": [
+          "The latter shares code similarities with both Ghost RAT and Big Bad Wolf (大灰狼), a RAT typically leveraged by China-based cybercriminals.",
+          "Following this, the malware scans the system for the presence of specific AV and EDR processes predominantly associated with China-based cybersecurity vendors."
+        ]
+      },
+      {
+        "node_id": "HL_aee7d226f67c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "kkRAT",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          1,
+          3,
+          26,
+          27,
+          29,
+          30,
+          34,
+          39,
+          40,
+          41,
+          42,
+          43
+        ],
+        "span_sentences": [
+          "The campaign delivers three types of malware: ValleyRAT, FatalRAT, and a new Remote Access Trojan (RAT) that ThreatLabz named kkRAT.",
+          "In this blog post, ThreatLabz examines the attack chain used in the malware campaign and provides a technical analysis of the kkRAT including its core features, network communication protocol, commands, and plugins.",
+          "However, kkRAT is a previously unknown malware family that incorporates elements from both Ghost RAT and Big Bad Wolf.",
+          "kkRAT’s configuration, such as the C2 server IP and port, version, and group identifier, are stored as encrypted strings and sent in the registration message.",
+          "After establishing a socket connection, kkRAT gathers system information for device fingerprinting.",
+          "kkRAT's network communication protocol closely resembles that of Ghost RAT, with an added layer of encryption applied after data compression.",
+          "kkRAT retrieves its main plugin and saves it on disk in an encrypted format.",
+          "After receiving the registration message, the C2 server issues a series of commands for kkRAT to execute.",
+          "kkRAT supports an extensive range of commands, integrating functionality from its plugin DLL exports.",
+          "ThreatLabz has identified a new malware family that we have named kkRAT, which is one of several RATs deployed via a malware campaign targeting Chinese-speakers.",
+          "kkRAT’s network communication protocol resembles that of Ghost RAT, but includes an added encryption layer after data compression.",
+          "kkRAT’s commands and plugins enable features such as clipboard hijacking to replace cryptocurrency wallet addresses, installing RMM tools like Sunlogin and GotoHTTP, and relaying network traffic that can be used to bypass firewalls and VPNs."
+        ]
+      },
+      {
+        "node_id": "HL_b34e8271d122",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ThreatLabz",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          4,
+          28,
+          33,
+          36,
+          41
+        ],
+        "span_sentences": [
+          "Zscaler ThreatLabz has identified a malware campaign targeting Chinese-speaking users, which has been active since early May 2025.",
+          "The campaign delivers three types of malware: ValleyRAT, FatalRAT, and a new Remote Access Trojan (RAT) that ThreatLabz named kkRAT.",
+          "In this blog post, ThreatLabz examines the attack chain used in the malware campaign and provides a technical analysis of the kkRAT including its core features, network communication protocol, commands, and plugins.",
+          "In early May 2025, ThreatLabz identified a malware campaign delivering multiple RATs as the final payload.",
+          "A Python script for decrypting this configuration is available in the ThreatLabz GitHub repository.",
+          "The Python script provided in the ThreatLabz GitHub repository can be used to decrypt the network data captured.",
+          "The Python code in the ThreatLabz GitHub repository can be used to decrypt the encrypted plugin.",
+          "ThreatLabz has identified a new malware family that we have named kkRAT, which is one of several RATs deployed via a malware campaign targeting Chinese-speakers."
+        ]
+      },
+      {
+        "node_id": "HL_d953d99b6528",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ValleyRAT",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          25
+        ],
+        "span_sentences": [
+          "The campaign delivers three types of malware: ValleyRAT, FatalRAT, and a new Remote Access Trojan (RAT) that ThreatLabz named kkRAT.",
+          "Since ValleyRAT and FatalRAT are already extensively documented, they will not be analyzed in this section."
+        ]
+      },
+      {
+        "node_id": "HL_e75ad3a970c6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GitHub Pages",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "The threat actor uses GitHub Pages to host phishing sites impersonating popular software installers."
+        ]
+      },
+      {
+        "node_id": "HL_f08964ade6af",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Sunlogin",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "kkRAT’s commands and plugins enable features such as clipboard hijacking to replace cryptocurrency wallet addresses, installing RMM tools like Sunlogin and GotoHTTP, and relaying network traffic that can be used to bypass firewalls and VPNs."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Memory is allocated for next-stage shellcodes, which are decrypted, written, and directly executed by the first stage."
+          ],
+          [
+            "kkRAT’s configuration, such as the C2 server IP and port, version, and group identifier, are stored as encrypted strings and sent in the registration message."
+          ],
+          [
+            "kkRAT's network communication protocol closely resembles that of Ghost RAT, with an added layer of encryption applied after data compression."
+          ],
+          [
+            "kkRAT retrieves its main plugin and saves it on disk in an encrypted format."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware assesses disk space (minimum 50 GB) and CPU cores (minimum two).",
+            "If these thresholds aren’t met, the malware initiates evasive actions, including altering the Process Environment Block (PEB) structure:\nProcessParameters->ImagePathName\nandProcessParameters->CommandLine\nare altered to mimic%WINDIR%\\explorer.exe\n.- The malware also traverses\nInLoadOrderModuleList\n."
+          ],
+          [
+            "If these thresholds aren’t met, the malware initiates evasive actions, including altering the Process Environment Block (PEB) structure:\nProcessParameters->ImagePathName\nandProcessParameters->CommandLine\nare altered to mimic%WINDIR%\\explorer.exe\n.- The malware also traverses\nInLoadOrderModuleList\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware also creates a scheduled task to run with SYSTEM privileges to execute a batch script on every user logon to ensure the processes are repeatedly killed."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1057",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Following this, the malware scans the system for the presence of specific AV and EDR processes predominantly associated with China-based cybersecurity vendors."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "kkRAT supports an extensive range of commands, integrating functionality from its plugin DLL exports."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            11
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware assesses disk space (minimum 50 GB) and CPU cores (minimum two).",
+            "If these thresholds aren’t met, the malware initiates evasive actions, including altering the Process Environment Block (PEB) structure:\nProcessParameters->ImagePathName\nandProcessParameters->CommandLine\nare altered to mimic%WINDIR%\\explorer.exe\n.- The malware also traverses\nInLoadOrderModuleList\n."
+          ],
+          [
+            "After establishing a socket connection, kkRAT gathers system information for device fingerprinting."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "kkRAT’s commands and plugins enable features such as clipboard hijacking to replace cryptocurrency wallet addresses, installing RMM tools like Sunlogin and GotoHTTP, and relaying network traffic that can be used to bypass firewalls and VPNs."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor uses GitHub Pages to host phishing sites impersonating popular software installers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1107",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1107",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After disabling callbacks, the malware terminates and deletes files of specific AV/EDR processes at the user level."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "kkRAT's network communication protocol closely resembles that of Ghost RAT, with an added layer of encryption applied after data compression."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1219",
+        "edges": [
+          "EDGE_1",
+          "EDGE_6",
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The campaign delivers three types of malware: ValleyRAT, FatalRAT, and a new Remote Access Trojan (RAT) that ThreatLabz named kkRAT."
+          ],
+          [
+            "kkRAT’s commands and plugins enable features such as clipboard hijacking to replace cryptocurrency wallet addresses, installing RMM tools like Sunlogin and GotoHTTP, and relaying network traffic that can be used to bypass firewalls and VPNs."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "During the initial stage of the campaign, the malware employs two distinct methods to identify sandbox environments and virtual machines (VMs):\nTime stability analysis."
+          ],
+          [
+            "Using QueryPerformanceCounter\n, the malware measures the time for a repetitive operation, compares the average (expected 300 ms) to a threshold (0.0008), and identifies sandboxes/VMs if the deviation exceeds this limit."
+          ],
+          [
+            "The malware assesses disk space (minimum 50 GB) and CPU cores (minimum two).",
+            "If these thresholds aren’t met, the malware initiates evasive actions, including altering the Process Environment Block (PEB) structure:\nProcessParameters->ImagePathName\nandProcessParameters->CommandLine\nare altered to mimic%WINDIR%\\explorer.exe\n.- The malware also traverses\nInLoadOrderModuleList\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware also creates a scheduled task to run with SYSTEM privileges to execute a batch script on every user logon to ensure the processes are repeatedly killed."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If the malware has administrator privileges, the malware enumerates all active network adapters and temporarily disables them, severing AV/EDR communication with the corresponding vendor’s servers."
+          ],
+          [
+            "After disabling callbacks, the malware terminates and deletes files of specific AV/EDR processes at the user level."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor uses GitHub Pages to host phishing sites impersonating popular software installers."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_18ee911547a4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%WINDIR%\\explorer.exe",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          11,
+          12
+        ],
+        "span_sentences": [
+          "If these thresholds aren’t met, the malware initiates evasive actions, including altering the Process Environment Block (PEB) structure:\nProcessParameters->ImagePathName\nandProcessParameters->CommandLine\nare altered to mimic%WINDIR%\\explorer.exe\n.- The malware also traverses\nInLoadOrderModuleList\n.",
+          "If any entry’sBaseDllName\nmatches the current process name, bothBaseDllName\nandFullDllName\nare rewritten to%WINDIR%\\explorer.exe\n."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_6105fdbf1146",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_aee7d226f67c",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_aee7d226f67c",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_aee7d226f67c",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_aee7d226f67c",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_aee7d226f67c",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_e75ad3a970c6",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_e75ad3a970c6",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_f08964ade6af",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_18ee911547a4",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_18ee911547a4",
+      "node_v": "TTP_T1497"
+    }
+  ]
+}

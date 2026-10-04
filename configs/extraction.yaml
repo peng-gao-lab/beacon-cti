@@ -1,0 +1,67 @@
+# Mode 1: per-report graph construction, no cross-report consolidation.
+# Every TXT directly under input.path becomes one report. Relative paths are
+# resolved against the directory containing this file.
+input:
+  kind: reports          # reports | graphs
+  layout: flat           # flat | groups
+  path: ../dataset/BEACON-Single/reports
+  pattern: "*.txt"
+  limit: null            # null = all; N = first N reports of the sorted listing (skipped ones count)
+
+output:
+  root: ../output/extraction
+  existing: skip         # skip = reuse existing component outputs; overwrite = rerun
+
+run:
+  workers: 1             # reports processed concurrently (each report still runs its stages in order)
+  console: quiet         # quiet = runner progress only; verbose = also stream component output
+  component_errors: fail # fail = a stage whose component swallowed LLM/parsing errors counts as failed; warn = keep going
+  sentence_splitter: regex # regex = components' built-in splitter (used in the paper's runs) | nltk = NLTK Punkt (needs punkt_tab)
+
+resources:
+  mitre_json: ../dataset/resources/mitre.json   # prepared ATT&CK corpus bundled with the dataset
+
+models:
+  default: gpt-4o                 # used by every component unless overridden below
+  embedding: text-embedding-3-large
+
+# Stage names in the paper: highlevel = Contextual Entity Extraction,
+# tagger = Behavior Grounding (TTP extraction), ioc = IoC Extraction,
+# augmentor = Anchored Attachment (single-report graph), alignmentor = Consolidation.
+components:
+  highlevel:
+    enabled: true
+    log: true            # write ctihighlevelextractor/logs/<report>.log
+    extract: true        # write ctihighlevelextractor/extract/<report>.txt
+    model: null          # null = models.default
+    chunk_size: 100
+    overlap_size: 2
+    token_overlap_threshold: 0.6
+  tagger:
+    enabled: true
+    log: true
+    extract: true
+    model: null
+    threshold: 0.71
+    lmax: 5
+    high_freq_threshold: 0.01
+    enable_ngram: true
+  ioc:
+    enabled: true
+    log: true
+    extract: true
+    model: null
+  augmentor:
+    enabled: true
+    log: true
+    extract: true
+    model: null
+    threshold: 0.7
+    delta: 0
+    check_split: false
+  alignmentor:
+    enabled: false
+
+cost:
+  enabled: true          # append per-call records to <output.root>/cost/api_calls.jsonl
+  pricebook: null        # null = bundled openai_standard_2026-07-21.json (prices as of that date)

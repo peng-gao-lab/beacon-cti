@@ -1,0 +1,920 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_03e5aa791b9b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Edge",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          43,
+          48
+        ],
+        "span_sentences": [
+          "One is used to run arbitrary commands on the system and the other is used to steal Microsoft Edge browser’s login data.",
+          "The second tool discovered by Talos is a PowerShell script residing at the location:\nC:\\windows\\system32\\edgeparser.ps1\nThis script is used to find login data from Microsoft Edge located at:\n%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data\nThis data file and the corresponding decryption key for the login data extracted from the endpoint is archived into a ZIP file and stored in the directory: C:\\windows\\temp\\<filename>.zip\nThe script can be used to obtain credentials for Google Chrome as well but has been modified to parse login data from:."
+        ]
+      },
+      {
+        "node_id": "HL_1e9303f0478a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WordPress",
+        "edges": [],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "New findings from Talos illustrate the inner workings of the command and control (C2) scripts deployed on the compromised WordPress servers utilized in the compromise we previously disclosed."
+        ]
+      },
+      {
+        "node_id": "HL_39a500a8ab73",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CERT.NGO",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos, in cooperation with CERT.NGO, has discovered new malicious components used by the Turla APT."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos, in cooperation with CERT.NGO, has discovered new malicious components used by the Turla APT."
+        ]
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "The second tool discovered by Talos is a PowerShell script residing at the location:\nC:\\windows\\system32\\edgeparser.ps1\nThis script is used to find login data from Microsoft Edge located at:\n%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data\nThis data file and the corresponding decryption key for the login data extracted from the endpoint is archived into a ZIP file and stored in the directory: C:\\windows\\temp\\<filename>.zip\nThe script can be used to obtain credentials for Google Chrome as well but has been modified to parse login data from:."
+        ]
+      },
+      {
+        "node_id": "HL_75c759fe138e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TurlaPower-NG",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          7,
+          10,
+          19,
+          20,
+          28
+        ],
+        "span_sentences": [
+          "This assessment is in line with Turla’s usage of multiple variants of malware families including TinyTurla-NG, TurlaPower-NG and other PowerShell-based scripts during this campaign.",
+          "The C2 scripts obtained by Talos are complementary to the TinyTurla-NG (TTNG) and TurlaPower-NG implants and are meant to deliver executables and administrative commands to execute on infected systems.",
+          "If there is an “id” provided in the HTTP request to the C2 server, the script will treat this as communication with an implant, such as TTNG or TurlaPower-NG.",
+          "The “id” parameter is the same variable that is passed by the TTNG and TurlaPower-NG implants during communication with the C2 and creates the logging directory on the C2 server, as well.",
+          "Talos’ investigation uncovered that apart from TurlaPower-NG, the PowerShell-based file exfiltrator, the adversary also deployed another implant on infected systems."
+        ]
+      },
+      {
+        "node_id": "HL_88c7e06a3762",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TinyTurla-NG",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          7,
+          9,
+          10,
+          24
+        ],
+        "span_sentences": [
+          "- Talos also illustrates the post-compromise activity carried out by the operators of the TinyTurla-NG (TTNG) backdoor to issue commands to the infected endpoints.",
+          "Talos has also discovered the use of another three malicious modules deployed via the initial implant, TinyTurla-NG, to maintain access, and carry out arbitrary command execution and credential harvesting.",
+          "This assessment is in line with Turla’s usage of multiple variants of malware families including TinyTurla-NG, TurlaPower-NG and other PowerShell-based scripts during this campaign.",
+          "C2 server analysis\nThe command and control (C2) code is a PHP-based script that serves two purposes: It’s a handler for the TinyTurla-NG implants and web shell that the Turla operators can use to execute commands on the compromised C2 server.",
+          "The C2 scripts obtained by Talos are complementary to the TinyTurla-NG (TTNG) and TurlaPower-NG implants and are meant to deliver executables and administrative commands to execute on infected systems.",
+          "The adversaries use TinyTurla-NG to perform additional reconnaissance to enumerate files of interest on the infected endpoints and then exfiltrate these files."
+        ]
+      },
+      {
+        "node_id": "HL_a452f3bb8d29",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Turla",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23",
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          0,
+          7,
+          9,
+          19,
+          20,
+          23,
+          24,
+          27,
+          39,
+          42,
+          47
+        ],
+        "span_sentences": [
+          "Cisco Talos, in cooperation with CERT.NGO, has discovered new malicious components used by the Turla APT.",
+          "This assessment is in line with Turla’s usage of multiple variants of malware families including TinyTurla-NG, TurlaPower-NG and other PowerShell-based scripts during this campaign.",
+          "C2 server analysis\nThe command and control (C2) code is a PHP-based script that serves two purposes: It’s a handler for the TinyTurla-NG implants and web shell that the Turla operators can use to execute commands on the compromised C2 server.",
+          "If there is an “id” provided in the HTTP request to the C2 server, the script will treat this as communication with an implant, such as TTNG or TurlaPower-NG.",
+          "The “id” parameter is the same variable that is passed by the TTNG and TurlaPower-NG implants during communication with the C2 and creates the logging directory on the C2 server, as well.",
+          "Therefore, it would be beneficial for Turla’s operators to simply communicate over HTTPS masquerading as legitimate traffic instead of re-exploiting or accessing the servers through other means such as SSH thereby increasing their fingerprint on the compromised C2 servers.",
+          "The adversaries use TinyTurla-NG to perform additional reconnaissance to enumerate files of interest on the infected endpoints and then exfiltrate these files.",
+          "The actors also used these scripts to exfiltrate Firefox profile data, reinforcing our assessment that Turla made attempts to harvest credentials, along with data exfiltration.",
+          "During our data analysis, we found another certificate which we assessed with high confidence was also generated by Turla operators, but it's unclear if this was a mistake or if they intended for the certificate to be used on another modified chisel implant.",
+          "Turla also deployed two more tools to aid their malicious operations on the infected systems.",
+          "The binary was compiled in early 2022 and was likely used in previous campaigns by Turla."
+        ]
+      },
+      {
+        "node_id": "HL_e86d90498288",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Chisel",
+        "edges": [
+          "EDGE_26",
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          5,
+          6,
+          29,
+          30
+        ],
+        "span_sentences": [
+          "- One of these components is a modified agent/client from Chisel, an open-sourced attack framework, used to communicate with a separate C2 server to execute arbitrary commands on the infected systems.",
+          "Certificate analysis of the Chisel client used in this campaign indicates that another modified chisel implant has likely been created that uses a similar yet distinct certificate.",
+          "It’s a modified copy of the GoLang-based, open-source tunneling tool Chisel stored in the location: C:\\Windows\\System32\\TrustedWorker[.]exe.",
+          "The modified Chisel malware is UPX compressed, as is common for Go binaries, and contains the C2 URL, port and communication certificate, and private keys embedded in the malware sample."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_8",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The adversaries use TinyTurla-NG to perform additional reconnaissance to enumerate files of interest on the infected endpoints and then exfiltrate these files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_9",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We found three distinct sets of PowerShell commands issued to TTNG to enumerate, stage and exfiltrate files that the attackers found to be of interest."
+          ],
+          [
+            "The adversaries use TinyTurla-NG to perform additional reconnaissance to enumerate files of interest on the infected endpoints and then exfiltrate these files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_6",
+          "EDGE_10",
+          "EDGE_16",
+          "EDGE_28",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            8,
+            10
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            11,
+            13
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            42,
+            44
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            49,
+            49
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos, in cooperation with CERT.NGO, has discovered new malicious components used by the Turla APT.",
+            "New findings from Talos illustrate the inner workings of the command and control (C2) scripts deployed on the compromised WordPress servers utilized in the compromise we previously disclosed."
+          ],
+          [
+            "- Talos also illustrates the post-compromise activity carried out by the operators of the TinyTurla-NG (TTNG) backdoor to issue commands to the infected endpoints.",
+            "We found three distinct sets of PowerShell commands issued to TTNG to enumerate, stage and exfiltrate files that the attackers found to be of interest."
+          ],
+          [
+            "We found three distinct sets of PowerShell commands issued to TTNG to enumerate, stage and exfiltrate files that the attackers found to be of interest."
+          ],
+          [
+            "Talos has also discovered the use of another three malicious modules deployed via the initial implant, TinyTurla-NG, to maintain access, and carry out arbitrary command execution and credential harvesting."
+          ],
+          [
+            "- One of these components is a modified agent/client from Chisel, an open-sourced attack framework, used to communicate with a separate C2 server to execute arbitrary commands on the infected systems.",
+            "Certificate analysis of the Chisel client used in this campaign indicates that another modified chisel implant has likely been created that uses a similar yet distinct certificate.",
+            "This assessment is in line with Turla’s usage of multiple variants of malware families including TinyTurla-NG, TurlaPower-NG and other PowerShell-based scripts during this campaign.",
+            "The continued investigation also revealed details of the inner workings of the C2 scripts including handling of incoming requests and a WebShell component that allows the operators to administer the compromised C2 servers remotely.",
+            "C2 server analysis\nThe command and control (C2) code is a PHP-based script that serves two purposes: It’s a handler for the TinyTurla-NG implants and web shell that the Turla operators can use to execute commands on the compromised C2 server."
+          ],
+          [
+            "The continued investigation also revealed details of the inner workings of the C2 scripts including handling of incoming requests and a WebShell component that allows the operators to administer the compromised C2 servers remotely.",
+            "C2 server analysis\nThe command and control (C2) code is a PHP-based script that serves two purposes: It’s a handler for the TinyTurla-NG implants and web shell that the Turla operators can use to execute commands on the compromised C2 server.",
+            "The C2 scripts obtained by Talos are complementary to the TinyTurla-NG (TTNG) and TurlaPower-NG implants and are meant to deliver executables and administrative commands to execute on infected systems."
+          ],
+          [
+            "C2 server analysis\nThe command and control (C2) code is a PHP-based script that serves two purposes: It’s a handler for the TinyTurla-NG implants and web shell that the Turla operators can use to execute commands on the compromised C2 server.",
+            "The C2 scripts obtained by Talos are complementary to the TinyTurla-NG (TTNG) and TurlaPower-NG implants and are meant to deliver executables and administrative commands to execute on infected systems.",
+            "On load, the PHP-based C2 script will perform multiple actions to create the file structure used to serve the TTNG backdoor."
+          ],
+          [
+            "On load, the PHP-based C2 script will perform multiple actions to create the file structure used to serve the TTNG backdoor.",
+            "After receiving a request, the C2 script first checks if the logging directory exists, if not, it will create one.",
+            "Next, the script checks for a specific COOKIE ID."
+          ],
+          [
+            "If it exists and corresponds to the hardcoded value, then the C2 script will act as a web shell.",
+            "It will base64 decode the value of the $_COOKIE (not to be confused with the authentication COOKIE ID) entry and execute it on the C2 server as a command."
+          ],
+          [
+            "They issued three distinct sets of modular PowerShell commands to TTNG:\n\nThe scripts used during enumeration, copying and exfiltration tasks contain hardcoded paths for files and folders of interest to Turla."
+          ],
+          [
+            "Turla also deployed two more tools to aid their malicious operations on the infected systems.",
+            "One is used to run arbitrary commands on the system and the other is used to steal Microsoft Edge browser’s login data.",
+            "The first tool is a small and simple Windows executable to create a new command line process on the system by impersonating the privilege level of another existing process."
+          ],
+          [
+            "The second tool discovered by Talos is a PowerShell script residing at the location:\nC:\\windows\\system32\\edgeparser.ps1\nThis script is used to find login data from Microsoft Edge located at:\n%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data\nThis data file and the corresponding decryption key for the login data extracted from the endpoint is archived into a ZIP file and stored in the directory: C:\\windows\\temp\\<filename>.zip\nThe script can be used to obtain credentials for Google Chrome as well but has been modified to parse login data from:."
+          ],
+          [
+            "TTNG uses the privilege elevation tool to run the PowerShell script using the command:\n\"C:\\Windows\\System32\\i.exe\" _PID_ \"powershell -f C:\\Windows\\System32\\edgeparser.ps1\"\nThis results in the tool spawning a new process with the command line:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_11",
+          "EDGE_17",
+          "EDGE_26",
+          "EDGE_33"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            9
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- One of these components is a modified agent/client from Chisel, an open-sourced attack framework, used to communicate with a separate C2 server to execute arbitrary commands on the infected systems.",
+            "Certificate analysis of the Chisel client used in this campaign indicates that another modified chisel implant has likely been created that uses a similar yet distinct certificate.",
+            "This assessment is in line with Turla’s usage of multiple variants of malware families including TinyTurla-NG, TurlaPower-NG and other PowerShell-based scripts during this campaign.",
+            "The continued investigation also revealed details of the inner workings of the C2 scripts including handling of incoming requests and a WebShell component that allows the operators to administer the compromised C2 servers remotely.",
+            "C2 server analysis\nThe command and control (C2) code is a PHP-based script that serves two purposes: It’s a handler for the TinyTurla-NG implants and web shell that the Turla operators can use to execute commands on the compromised C2 server."
+          ],
+          [
+            "The HTTP form values accepted by the C2 server task\n, cat_file\n, rm_file\n, get_result\nand their corresponding operations on the C2 server indicate that these are part of an operational apparatus that allows the threat actors to feed the C2 server new commands and retrieve valuable information collected by the C2 server, from a remote location, without having to log into the C2 itself."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_12",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Talos also illustrates the post-compromise activity carried out by the operators of the TinyTurla-NG (TTNG) backdoor to issue commands to the infected endpoints.",
+            "We found three distinct sets of PowerShell commands issued to TTNG to enumerate, stage and exfiltrate files that the attackers found to be of interest."
+          ],
+          [
+            "We found three distinct sets of PowerShell commands issued to TTNG to enumerate, stage and exfiltrate files that the attackers found to be of interest."
+          ],
+          [
+            "The adversaries use TinyTurla-NG to perform additional reconnaissance to enumerate files of interest on the infected endpoints and then exfiltrate these files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_19",
+          "EDGE_27",
+          "EDGE_34"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The modified Chisel malware is UPX compressed, as is common for Go binaries, and contains the C2 URL, port and communication certificate, and private keys embedded in the malware sample.",
+            "Once it decrypts these artifacts, it continues to create a reverse SOCKS proxy connection to the C2 using the configuration: R:5000:socks."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_7",
+          "EDGE_13",
+          "EDGE_20",
+          "EDGE_31"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "C2 server analysis\nThe command and control (C2) code is a PHP-based script that serves two purposes: It’s a handler for the TinyTurla-NG implants and web shell that the Turla operators can use to execute commands on the compromised C2 server.",
+            "The C2 scripts obtained by Talos are complementary to the TinyTurla-NG (TTNG) and TurlaPower-NG implants and are meant to deliver executables and administrative commands to execute on infected systems.",
+            "On load, the PHP-based C2 script will perform multiple actions to create the file structure used to serve the TTNG backdoor."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If it exists and corresponds to the hardcoded value, then the C2 script will act as a web shell.",
+            "It will base64 decode the value of the $_COOKIE (not to be confused with the authentication COOKIE ID) entry and execute it on the C2 server as a command."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1134",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1134",
+        "edges": [
+          "EDGE_22",
+          "EDGE_29"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Turla also deployed two more tools to aid their malicious operations on the infected systems.",
+            "One is used to run arbitrary commands on the system and the other is used to steal Microsoft Edge browser’s login data.",
+            "The first tool is a small and simple Windows executable to create a new command line process on the system by impersonating the privilege level of another existing process."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1505",
+        "edges": [
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The continued investigation also revealed details of the inner workings of the C2 scripts including handling of incoming requests and a WebShell component that allows the operators to administer the compromised C2 servers remotely.",
+            "C2 server analysis\nThe command and control (C2) code is a PHP-based script that serves two purposes: It’s a handler for the TinyTurla-NG implants and web shell that the Turla operators can use to execute commands on the compromised C2 server.",
+            "The C2 scripts obtained by Talos are complementary to the TinyTurla-NG (TTNG) and TurlaPower-NG implants and are meant to deliver executables and administrative commands to execute on infected systems."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1555",
+        "edges": [
+          "EDGE_2",
+          "EDGE_5",
+          "EDGE_24",
+          "EDGE_32",
+          "EDGE_36"
+        ],
+        "best_span_ranges": [
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The second tool discovered by Talos is a PowerShell script residing at the location:\nC:\\windows\\system32\\edgeparser.ps1\nThis script is used to find login data from Microsoft Edge located at:\n%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data\nThis data file and the corresponding decryption key for the login data extracted from the endpoint is archived into a ZIP file and stored in the directory: C:\\windows\\temp\\<filename>.zip\nThe script can be used to obtain credentials for Google Chrome as well but has been modified to parse login data from:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_3",
+          "EDGE_25",
+          "EDGE_30",
+          "EDGE_37"
+        ],
+        "best_span_ranges": [
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The second tool discovered by Talos is a PowerShell script residing at the location:\nC:\\windows\\system32\\edgeparser.ps1\nThis script is used to find login data from Microsoft Edge located at:\n%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data\nThis data file and the corresponding decryption key for the login data extracted from the endpoint is archived into a ZIP file and stored in the directory: C:\\windows\\temp\\<filename>.zip\nThe script can be used to obtain credentials for Google Chrome as well but has been modified to parse login data from:."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_4fba08f3c2d0",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "blum[.]com",
+        "edges": [],
+        "sentence_indices": [
+          38,
+          40
+        ],
+        "span_sentences": [
+          "The issuer of the certificate is named “dropher[.]com” and the subject name is “blum[.]com”.",
+          "The new certificate has the same issuer but in this case, the common name is blum[.]com and the serial number is 0x1000."
+        ]
+      },
+      {
+        "node_id": "IOC_7941f4c020c4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\i.exe",
+        "edges": [
+          "EDGE_28",
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "TTNG uses the privilege elevation tool to run the PowerShell script using the command:\n\"C:\\Windows\\System32\\i.exe\" _PID_ \"powershell -f C:\\Windows\\System32\\edgeparser.ps1\"\nThis results in the tool spawning a new process with the command line:."
+        ]
+      },
+      {
+        "node_id": "IOC_855ab392184f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\windows\\temp\\<filename>.zip",
+        "edges": [
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "The second tool discovered by Talos is a PowerShell script residing at the location:\nC:\\windows\\system32\\edgeparser.ps1\nThis script is used to find login data from Microsoft Edge located at:\n%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data\nThis data file and the corresponding decryption key for the login data extracted from the endpoint is archived into a ZIP file and stored in the directory: C:\\windows\\temp\\<filename>.zip\nThe script can be used to obtain credentials for Google Chrome as well but has been modified to parse login data from:."
+        ]
+      },
+      {
+        "node_id": "IOC_897e8a91ebd7",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\TrustedWorker[.]exe",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It’s a modified copy of the GoLang-based, open-source tunneling tool Chisel stored in the location: C:\\Windows\\System32\\TrustedWorker[.]exe."
+        ]
+      },
+      {
+        "node_id": "IOC_9218ad637a1a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "The second tool discovered by Talos is a PowerShell script residing at the location:\nC:\\windows\\system32\\edgeparser.ps1\nThis script is used to find login data from Microsoft Edge located at:\n%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data\nThis data file and the corresponding decryption key for the login data extracted from the endpoint is archived into a ZIP file and stored in the directory: C:\\windows\\temp\\<filename>.zip\nThe script can be used to obtain credentials for Google Chrome as well but has been modified to parse login data from:."
+        ]
+      },
+      {
+        "node_id": "IOC_a2cbeff3f5e3",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "91[.]193[.]18[.]120",
+        "edges": [
+          "EDGE_33",
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "The C2 server that the chisel sample contacts is: 91[.]193[.]18[.]120:443."
+        ]
+      },
+      {
+        "node_id": "IOC_ce54d5f484fb",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "dropher[.]com",
+        "edges": [],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The issuer of the certificate is named “dropher[.]com” and the subject name is “blum[.]com”."
+        ]
+      },
+      {
+        "node_id": "IOC_ea0439e953b3",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\windows\\system32\\edgeparser.ps1",
+        "edges": [
+          "EDGE_35",
+          "EDGE_36",
+          "EDGE_37"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "The second tool discovered by Talos is a PowerShell script residing at the location:\nC:\\windows\\system32\\edgeparser.ps1\nThis script is used to find login data from Microsoft Edge located at:\n%userprofile%\\AppData\\Local\\Microsoft\\Edge\\User Data\\Default\\Login Data\nThis data file and the corresponding decryption key for the login data extracted from the endpoint is archived into a ZIP file and stored in the directory: C:\\windows\\temp\\<filename>.zip\nThe script can be used to obtain credentials for Google Chrome as well but has been modified to parse login data from:."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_03e5aa791b9b",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_03e5aa791b9b",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_03e5aa791b9b",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_6adc15335b24",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_6adc15335b24",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_75c759fe138e",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_75c759fe138e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_88c7e06a3762",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_88c7e06a3762",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_88c7e06a3762",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_88c7e06a3762",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_88c7e06a3762",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_88c7e06a3762",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1134"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1505"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_a452f3bb8d29",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_e86d90498288",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "HL_e86d90498288",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_7941f4c020c4",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_7941f4c020c4",
+      "node_v": "TTP_T1134"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_855ab392184f",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_897e8a91ebd7",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_9218ad637a1a",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_a2cbeff3f5e3",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_a2cbeff3f5e3",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_ea0439e953b3",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_ea0439e953b3",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "IOC_ea0439e953b3",
+      "node_v": "TTP_T1560"
+    }
+  ]
+}

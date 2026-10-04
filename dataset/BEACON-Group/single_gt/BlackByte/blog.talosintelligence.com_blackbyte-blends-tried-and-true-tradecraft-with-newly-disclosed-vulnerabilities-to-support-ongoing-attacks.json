@@ -1,0 +1,657 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0bd41412eae5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BlackByteNT",
+        "sentence_indices": [
+          19,
+          31
+        ],
+        "span_sentences": [
+          "The command syntax used by the adversary during each attack – `C:\\Windows\\host.exe -s [8-digit numeric string] svc` – and the behavior of the ransomware binary is consistent with previous analysis of the BlackByteNT binary by Microsoft, DuskRise, Acronis and others.",
+          "BlackByte’s progression in programming languages from C# to Go and subsequently to C/C++ in the latest version of its encryptor – BlackByteNT – represents a deliberate effort to increase the malware's resilience against detection and analysis."
+        ],
+        "edges": [
+          "EDGE_0436a982274d"
+        ]
+      },
+      {
+        "node_id": "HL_125b6bd575c4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "DuskRise",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The command syntax used by the adversary during each attack – `C:\\Windows\\host.exe -s [8-digit numeric string] svc` – and the behavior of the ransomware binary is consistent with previous analysis of the BlackByteNT binary by Microsoft, DuskRise, Acronis and others."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_44b817ddb465",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BlackByte",
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          18,
+          22,
+          31
+        ],
+        "span_sentences": [
+          "The BlackByte ransomware group continues to leverage tactics, techniques and procedures (TTPs) that have formed the foundation of its tradecraft since its inception, continuously iterating its use of vulnerable drivers to bypass security protections and deploying a self-propagating, wormable ransomware encryptor.",
+          "In recent investigations, Talos IR has also observed BlackByte using techniques that depart from their established tradecraft, such as exploiting CVE-2024-37085 – an authentication bypass vulnerability in VMware ESXi – shortly after it was disclosed and using a victim’s authorized remote access mechanism rather than deploying a commercial remote administration tool like AnyDesk.",
+          "Talos IR observed a new iteration of the BlackByte encryptor that appends the file extension “blackbytent_h” to encrypted files, drops four vulnerable driver files compared to the previously observed three, and uses victim Active Directory credentials to self-propagate.",
+          "BlackByte is a ransomware-as-a-service (RaaS) group believed to be an offshoot of the infamous Conti ransomware group.",
+          "During Talos IR’s investigation into a recent BlackByte ransomware attack, the threat actor gained initial access using valid credentials to access the victim organization’s VPN.",
+          "In recent cases, the BlackByte ransomware binary, “host.exe,” was executed from the same directory – “C:\\Windows” – across all victims investigated by Talos IR.",
+          "Talos observed some differences in the recent BlackByte attacks.",
+          "BlackByte’s progression in programming languages from C# to Go and subsequently to C/C++ in the latest version of its encryptor – BlackByteNT – represents a deliberate effort to increase the malware's resilience against detection and analysis."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The command syntax used by the adversary during each attack – `C:\\Windows\\host.exe -s [8-digit numeric string] svc` – and the behavior of the ransomware binary is consistent with previous analysis of the BlackByteNT binary by Microsoft, DuskRise, Acronis and others."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_51f6350f6a1d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMware vCenter",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "One of these accounts was used to access the organization’s VMware vCenter server and, shortly after, create Active Directory domain objects for individual VMware ESXi hypervisors, effectively joining those hosts to the domain."
+        ],
+        "edges": [
+          "EDGE_873e50f009dc"
+        ]
+      },
+      {
+        "node_id": "HL_56189a86e5cf",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Acronis",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The command syntax used by the adversary during each attack – `C:\\Windows\\host.exe -s [8-digit numeric string] svc` – and the behavior of the ransomware binary is consistent with previous analysis of the BlackByteNT binary by Microsoft, DuskRise, Acronis and others."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6120d5ae876b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMware ESXi",
+        "sentence_indices": [
+          1,
+          7,
+          8
+        ],
+        "span_sentences": [
+          "In recent investigations, Talos IR has also observed BlackByte using techniques that depart from their established tradecraft, such as exploiting CVE-2024-37085 – an authentication bypass vulnerability in VMware ESXi – shortly after it was disclosed and using a victim’s authorized remote access mechanism rather than deploying a commercial remote administration tool like AnyDesk.",
+          "One of these accounts was used to access the organization’s VMware vCenter server and, shortly after, create Active Directory domain objects for individual VMware ESXi hypervisors, effectively joining those hosts to the domain.",
+          "Talos IR assesses that this user group was created to exploit CVE-2024-37085, an authentication bypass vulnerability in VMware ESXi known to be used by multiple ransomware groups."
+        ],
+        "edges": [
+          "EDGE_e1aff23c4dcc"
+        ]
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "sentence_indices": [
+          2,
+          7,
+          9
+        ],
+        "span_sentences": [
+          "Talos IR observed a new iteration of the BlackByte encryptor that appends the file extension “blackbytent_h” to encrypted files, drops four vulnerable driver files compared to the previously observed three, and uses victim Active Directory credentials to self-propagate.",
+          "One of these accounts was used to access the organization’s VMware vCenter server and, shortly after, create Active Directory domain objects for individual VMware ESXi hypervisors, effectively joining those hosts to the domain.",
+          "Successful exploitation of this vulnerability grants members of a specific Active Directory group elevated privileges on an ESXi host, allowing for control over virtual machines (VMs), the ability to modify the host server’s configuration, and access to system logs, diagnostics and performance monitoring tools."
+        ],
+        "edges": [
+          "EDGE_8ed52c25e865",
+          "EDGE_d831864590d3"
+        ]
+      },
+      {
+        "node_id": "HL_976b29b0b6a2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "NT LAN Manager",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Analysis of system event and authentication logs revealed a consistent pattern where the threat actor primarily leveraged NT LAN Manager (NTLM) for authentication, while organizational users primarily used Kerberos."
+        ],
+        "edges": [
+          "EDGE_64e0b599b746"
+        ]
+      },
+      {
+        "node_id": "HL_a4153ac89d79",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Conti",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "BlackByte is a ransomware-as-a-service (RaaS) group believed to be an offshoot of the infamous Conti ransomware group."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b32d1902bb1c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AnyDesk",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "In recent investigations, Talos IR has also observed BlackByte using techniques that depart from their established tradecraft, such as exploiting CVE-2024-37085 – an authentication bypass vulnerability in VMware ESXi – shortly after it was disclosed and using a victim’s authorized remote access mechanism rather than deploying a commercial remote administration tool like AnyDesk."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b727ae4be56d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Kerberos",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Analysis of system event and authentication logs revealed a consistent pattern where the threat actor primarily leveraged NT LAN Manager (NTLM) for authentication, while organizational users primarily used Kerberos."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b811b1a2b178",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "manufacturing industry",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "BlackByte’s victimology aligns with this assessment, with over 32 percent of known victims falling into the manufacturing industry vertically."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ec3487fbed18",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ExByte",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Since BlackByte actors are known to favor the string “P@$$w0rd” when setting account passwords and as input parameters for custom tooling, this syntax may indicate efforts to disguise malware – such as their custom data exfiltration tool, ExByte – as a known or legitimate file."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "One of these accounts was used to access the organization’s VMware vCenter server and, shortly after, create Active Directory domain objects for individual VMware ESXi hypervisors, effectively joining those hosts to the domain."
+          ],
+          [
+            "The threat actor accessed other systems, directories and files within each victim environment using protocols such as Server Message Block (SMB) and Remote Desktop Protocol (RDP)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "In recent investigations, Talos IR has also observed BlackByte using techniques that depart from their established tradecraft, such as exploiting CVE-2024-37085 – an authentication bypass vulnerability in VMware ESXi – shortly after it was disclosed and using a victim’s authorized remote access mechanism rather than deploying a commercial remote administration tool like AnyDesk.",
+            "Talos IR observed a new iteration of the BlackByte encryptor that appends the file extension “blackbytent_h” to encrypted files, drops four vulnerable driver files compared to the previously observed three, and uses victim Active Directory credentials to self-propagate."
+          ],
+          [
+            "During Talos IR’s investigation into a recent BlackByte ransomware attack, the threat actor gained initial access using valid credentials to access the victim organization’s VPN.",
+            "After gaining initial access to the environment, the adversary managed to escalate privileges by compromising two Domain Admin-level accounts.",
+            "One of these accounts was used to access the organization’s VMware vCenter server and, shortly after, create Active Directory domain objects for individual VMware ESXi hypervisors, effectively joining those hosts to the domain."
+          ],
+          [
+            "Analysis of system event and authentication logs revealed a consistent pattern where the threat actor primarily leveraged NT LAN Manager (NTLM) for authentication, while organizational users primarily used Kerberos."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_64e0b599b746",
+          "EDGE_873e50f009dc",
+          "EDGE_d831864590d3"
+        ]
+      },
+      {
+        "node_id": "TTP_T1107",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1107",
+        "ttp_id": "T1107",
+        "best_span_sentences_list": [
+          [
+            "Deletion of system binaries from the “C:\\Windows\\System32” directory, including “taskmgr.exe”, “perfmon.exe”, “shutdown.exe”, and “resmon.exe”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_6bcbe2b5f69a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "Finally, the threat actor was observed tampering with security tool configurations via system registry modifications, manually uninstalling EDR from multiple key systems, and, in one investigation, changing the root password for the organization’s ESXi hosts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1133",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1133",
+        "ttp_id": "T1133",
+        "best_span_sentences_list": [
+          [
+            "In recent investigations, Talos IR has also observed BlackByte using techniques that depart from their established tradecraft, such as exploiting CVE-2024-37085 – an authentication bypass vulnerability in VMware ESXi – shortly after it was disclosed and using a victim’s authorized remote access mechanism rather than deploying a commercial remote administration tool like AnyDesk."
+          ],
+          [
+            "During Talos IR’s investigation into a recent BlackByte ransomware attack, the threat actor gained initial access using valid credentials to access the victim organization’s VPN."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1135",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1135",
+        "ttp_id": "T1135",
+        "best_span_sentences_list": [
+          [
+            "During dynamic analysis of multiple BlackByte ransomware binaries, Talos found that the file attempted network share enumeration via the ‘SRVSVC’ named pipe’s NetShareEnumAll function using specific user accounts associated with the victim."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1136",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1136",
+        "ttp_id": "T1136",
+        "best_span_sentences_list": [
+          [
+            "One of these accounts was used to access the organization’s VMware vCenter server and, shortly after, create Active Directory domain objects for individual VMware ESXi hypervisors, effectively joining those hosts to the domain."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_8ed52c25e865",
+          "EDGE_e1aff23c4dcc"
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "The BlackByte ransomware group continues to leverage tactics, techniques and procedures (TTPs) that have formed the foundation of its tradecraft since its inception, continuously iterating its use of vulnerable drivers to bypass security protections and deploying a self-propagating, wormable ransomware encryptor.",
+            "In recent investigations, Talos IR has also observed BlackByte using techniques that depart from their established tradecraft, such as exploiting CVE-2024-37085 – an authentication bypass vulnerability in VMware ESXi – shortly after it was disclosed and using a victim’s authorized remote access mechanism rather than deploying a commercial remote administration tool like AnyDesk.",
+            "Talos IR observed a new iteration of the BlackByte encryptor that appends the file extension “blackbytent_h” to encrypted files, drops four vulnerable driver files compared to the previously observed three, and uses victim Active Directory credentials to self-propagate."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_0436a982274d",
+          "EDGE_8b4690a3eed7",
+          "EDGE_9617acbf85e6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "The BlackByte ransomware group continues to leverage tactics, techniques and procedures (TTPs) that have formed the foundation of its tradecraft since its inception, continuously iterating its use of vulnerable drivers to bypass security protections and deploying a self-propagating, wormable ransomware encryptor.",
+            "In recent investigations, Talos IR has also observed BlackByte using techniques that depart from their established tradecraft, such as exploiting CVE-2024-37085 – an authentication bypass vulnerability in VMware ESXi – shortly after it was disclosed and using a victim’s authorized remote access mechanism rather than deploying a commercial remote administration tool like AnyDesk."
+          ],
+          [
+            "Finally, the threat actor was observed tampering with security tool configurations via system registry modifications, manually uninstalling EDR from multiple key systems, and, in one investigation, changing the root password for the organization’s ESXi hosts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1569",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1569",
+        "ttp_id": "T1569",
+        "best_span_sentences_list": [
+          [
+            "The “svc” parameter causes the ransomware to install itself as a service, which appeared to convert an infected system into an additional spreader as part of the ransomware’s wormable behavior.",
+            "Subsequent SMB and NTLM authentications were observed against reachable hosts after the ransomware service was created, resulting in multiple waves of encryption hours after the initial event."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_b245f8500cce",
+          "EDGE_e7f6bf161db8"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1dc0a328b094",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\temp\\sys",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "However, during the investigation of one BlackByte attack, “atieclxx.exe” was executed from the “C:\\temp\\sys” directory with the command `atieclxx.exe P@$$w0rd123!!!`."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_3ea31c550bae",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2024-37085",
+        "sentence_indices": [
+          1,
+          8
+        ],
+        "span_sentences": [
+          "In recent investigations, Talos IR has also observed BlackByte using techniques that depart from their established tradecraft, such as exploiting CVE-2024-37085 – an authentication bypass vulnerability in VMware ESXi – shortly after it was disclosed and using a victim’s authorized remote access mechanism rather than deploying a commercial remote administration tool like AnyDesk.",
+          "Talos IR assesses that this user group was created to exploit CVE-2024-37085, an authentication bypass vulnerability in VMware ESXi known to be used by multiple ransomware groups."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_50029b7514b0",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\host.exe",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The command syntax used by the adversary during each attack – `C:\\Windows\\host.exe -s [8-digit numeric string] svc` – and the behavior of the ransomware binary is consistent with previous analysis of the BlackByteNT binary by Microsoft, DuskRise, Acronis and others."
+        ],
+        "edges": [
+          "EDGE_8b4690a3eed7",
+          "EDGE_b245f8500cce"
+        ]
+      },
+      {
+        "node_id": "IOC_54e5cb37c4fc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows",
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "In recent cases, the BlackByte ransomware binary, “host.exe,” was executed from the same directory – “C:\\Windows” – across all victims investigated by Talos IR."
+        ],
+        "edges": [
+          "EDGE_9617acbf85e6",
+          "EDGE_e7f6bf161db8"
+        ]
+      },
+      {
+        "node_id": "IOC_c01e86cd910b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\temp\\sys\\",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Talos IR also observed the execution of a file called “atieclxx.exe” from the “C:\\temp\\sys\\” directory on one of the file servers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_c2e4f145fdf2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "Deletion of system binaries from the “C:\\Windows\\System32” directory, including “taskmgr.exe”, “perfmon.exe”, “shutdown.exe”, and “resmon.exe”."
+        ],
+        "edges": [
+          "EDGE_6bcbe2b5f69a"
+        ]
+      },
+      {
+        "node_id": "IOC_c3e16bd04e17",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "msdl.microsoft[.]com",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Communication with msdl.microsoft[.]com via IP address 204.79.197[.]219 early in the execution process."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_dd7ad69a870c",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "204.79.197[.]219",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Communication with msdl.microsoft[.]com via IP address 204.79.197[.]219 early in the execution process."
+        ],
+        "edges": []
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0436a982274d",
+      "node_u": "HL_0bd41412eae5",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_64e0b599b746",
+      "node_u": "HL_976b29b0b6a2",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6bcbe2b5f69a",
+      "node_u": "IOC_c2e4f145fdf2",
+      "node_v": "TTP_T1107",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_873e50f009dc",
+      "node_u": "HL_51f6350f6a1d",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b4690a3eed7",
+      "node_u": "IOC_50029b7514b0",
+      "node_v": "TTP_T1486",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8ed52c25e865",
+      "node_u": "HL_93e1ee43e148",
+      "node_v": "TTP_T1136",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9617acbf85e6",
+      "node_u": "IOC_54e5cb37c4fc",
+      "node_v": "TTP_T1486",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b245f8500cce",
+      "node_u": "IOC_50029b7514b0",
+      "node_v": "TTP_T1569",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d831864590d3",
+      "node_u": "HL_93e1ee43e148",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e1aff23c4dcc",
+      "node_u": "HL_6120d5ae876b",
+      "node_v": "TTP_T1136",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e7f6bf161db8",
+      "node_u": "IOC_54e5cb37c4fc",
+      "node_v": "TTP_T1569",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

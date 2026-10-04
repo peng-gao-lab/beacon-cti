@@ -1,0 +1,648 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0349258b4c40",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "01flip",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          7,
+          8,
+          10,
+          16,
+          17,
+          18,
+          23,
+          28,
+          29,
+          30,
+          35,
+          44,
+          45,
+          48
+        ],
+        "span_sentences": [
+          "In June 2025, we observed a new ransomware family named 01flip targeting a limited set of victims in the Asia-Pacific region.",
+          "01flip ransomware is fully written in the Rust programming language and supports multi-platform architectures by leveraging the cross-compilation feature of Rust.",
+          "Our initial analysis revealed that this is a new ransomware family fully written in Rust, called “01flip.” This name is based on the appended file extension (.01flip) and the email address (01Flip@proton[.]me) found in the ransom note.",
+          "After further investigation, we discovered a Linux version of 01flip ransomware, which showed zero detection rate at least three months after the sample had initially been submitted to VirusTotal.",
+          "After further investigation, we found a post on an online security forum by an alleged victim of 01flip ransomware, claiming that attackers had compromised their Zimbra Server, which is an email solution for enterprises.",
+          "A week later, we confirmed that attackers deployed multiple 01flip ransomware instances onto many devices within the network, including both Windows and Linux machines.",
+          "As of late October, we had observed both Windows and Linux versions of 01flip ransomware.",
+          "The 01flip ransomware sample is not packed or heavily obfuscated, unlike other malware used by cybercriminals.",
+          "01flip ransomware employs several evasion techniques.",
+          "However, some of the 01flip ransomware samples implement a simple anti-sandbox technique by checking whether the filename contains the string 01flip.",
+          "If the sample's filename contains the string 01flip, the ransomware proceeds to indicator removal without performing file encryption.",
+          "01flip ransomware drops ransom notes in all writable directories before encrypting files.",
+          "After completing encryption, the 01flip ransomware attempts to remove any trace of itself, to prevent it from being recovered from an infected host.",
+          "Of note, 01flip ransomware cannot exfiltrate data, so the only connection between this poster and 01flip is the victim.",
+          "During our analysis of 01flip ransomware, we found that there is one particularly interesting extension in the list of file extensions excluded from encryption, which is lockbit as shown in Figure 10.",
+          "We have described emerging activity, which we currently track as CL-CRI-1036, where financially motivated attackers used a new Rust-based ransomware named 01flip."
+        ]
+      },
+      {
+        "node_id": "HL_082118261122",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical infrastructure",
+        "edges": [],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "But victims of this ransomware include organizations responsible for critical infrastructure in Southeast Asia."
+        ]
+      },
+      {
+        "node_id": "HL_0aee17a53d79",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Flighty Scorpius",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Avoiding encrypting files with a lockbit file extension implies a possible overlap of the threat actor behind CL-CRI-1036 and the group behind LockBit ransomware, which we track as Flighty Scorpius."
+        ]
+      },
+      {
+        "node_id": "HL_18c859845574",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Avoiding encrypting files with a lockbit file extension implies a possible overlap of the threat actor behind CL-CRI-1036 and the group behind LockBit ransomware, which we track as Flighty Scorpius."
+        ]
+      },
+      {
+        "node_id": "HL_1aa8ec1ebecd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Sliver",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          14,
+          15
+        ],
+        "span_sentences": [
+          "However, a month later, they successfully deployed a Linux version of Sliver, a publicly available cross-platform adversary emulation framework written in Go.",
+          "In late May 2025, the threat actor behind CL-CRI-1036 successfully performed lateral movement to another Linux machine by downloading another Sliver implant, which was a TCP Pivot profiled implant."
+        ]
+      },
+      {
+        "node_id": "HL_2361b6ce9fed",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Philippines",
+        "edges": [],
+        "sentence_indices": [
+          11,
+          42
+        ],
+        "span_sentences": [
+          "However, there might be several victims in the Philippines and Taiwan, based on a post in a dark web forum that we believe comes from a threat actor linked to CL-CRI-1036.",
+          "The post indicates that victims in Taiwan and the Philippines were also targeted."
+        ]
+      },
+      {
+        "node_id": "HL_36badb34c3ce",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Asia-Pacific",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "In June 2025, we observed a new ransomware family named 01flip targeting a limited set of victims in the Asia-Pacific region."
+        ]
+      },
+      {
+        "node_id": "HL_3c9e3682cbfd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "After further investigation, we discovered a Linux version of 01flip ransomware, which showed zero detection rate at least three months after the sample had initially been submitted to VirusTotal."
+        ]
+      },
+      {
+        "node_id": "HL_7396b14c9775",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "CL-CRI-1036",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          3,
+          4,
+          11,
+          15,
+          38,
+          46,
+          48
+        ],
+        "span_sentences": [
+          "We are currently tracking this activity as CL-CRI-1036, signifying a cluster of malicious activity that is likely related to cybercrime.",
+          "While the impact of CL-CRI-1036 is limited at this point, it’s likely that this activity is related to alleged data leaks.",
+          "However, there might be several victims in the Philippines and Taiwan, based on a post in a dark web forum that we believe comes from a threat actor linked to CL-CRI-1036.",
+          "In late May 2025, the threat actor behind CL-CRI-1036 successfully performed lateral movement to another Linux machine by downloading another Sliver implant, which was a TCP Pivot profiled implant.",
+          "As of late October, the attackers behind CL-CRI-1036 don't appear to operate a double extortion site like those commonly seen in recent ransomware-as-a-service (RaaS) groups.",
+          "Avoiding encrypting files with a lockbit file extension implies a possible overlap of the threat actor behind CL-CRI-1036 and the group behind LockBit ransomware, which we track as Flighty Scorpius.",
+          "We have described emerging activity, which we currently track as CL-CRI-1036, where financially motivated attackers used a new Rust-based ransomware named 01flip."
+        ]
+      },
+      {
+        "node_id": "HL_77c646329940",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "XSS",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "The username itself is not particularly unique, but we have confirmed that a Russian-speaking user with the same username has been selling data and network access on the well-known dark web forum XSS since 2020."
+        ]
+      },
+      {
+        "node_id": "HL_84293c6b62c4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Zimbra Server",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "After further investigation, we found a post on an online security forum by an alleged victim of 01flip ransomware, claiming that attackers had compromised their Zimbra Server, which is an email solution for enterprises."
+        ]
+      },
+      {
+        "node_id": "HL_98ac8fd1bcba",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Southeast Asia",
+        "edges": [],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "But victims of this ransomware include organizations responsible for critical infrastructure in Southeast Asia."
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "sentence_indices": [
+          11,
+          42
+        ],
+        "span_sentences": [
+          "However, there might be several victims in the Philippines and Taiwan, based on a post in a dark web forum that we believe comes from a threat actor linked to CL-CRI-1036.",
+          "The post indicates that victims in Taiwan and the Philippines were also targeted."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Additionally, most of the user-defined strings in the ransomware code are encoded.",
+            "These strings are decoded at runtime:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After completing encryption, the 01flip ransomware attempts to remove any trace of itself, to prevent it from being recovered from an infected host."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_8",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            16
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, a month later, they successfully deployed a Linux version of Sliver, a publicly available cross-platform adversary emulation framework written in Go.",
+            "In late May 2025, the threat actor behind CL-CRI-1036 successfully performed lateral movement to another Linux machine by downloading another Sliver implant, which was a TCP Pivot profiled implant.",
+            "A week later, we confirmed that attackers deployed multiple 01flip ransomware instances onto many devices within the network, including both Windows and Linux machines."
+          ],
+          [
+            "In late May 2025, the threat actor behind CL-CRI-1036 successfully performed lateral movement to another Linux machine by downloading another Sliver implant, which was a TCP Pivot profiled implant."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            24
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "01flip ransomware employs several evasion techniques.",
+            "For example, both Linux and Windows versions are designed to use low-level APIs or system calls as much as possible, because such activity is less likely to stand out from normal operating system activity."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Additionally, most of the user-defined strings in the ransomware code are encoded.",
+            "These strings are decoded at runtime:."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1190",
+        "edges": [
+          "EDGE_11",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            10
+          ],
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "But victims of this ransomware include organizations responsible for critical infrastructure in Southeast Asia.",
+            "After further investigation, we found a post on an online security forum by an alleged victim of 01flip ransomware, claiming that attackers had compromised their Zimbra Server, which is an email solution for enterprises."
+          ],
+          [
+            "Investigation revealed that attackers had been attempting exploits targeting older vulnerabilities such as CVE-2019-11580 against a victim’s internet-facing applications since early April 2025."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1486",
+        "edges": [
+          "EDGE_5",
+          "EDGE_7",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            32,
+            34
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            45,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In June 2025, we observed a new ransomware family named 01flip targeting a limited set of victims in the Asia-Pacific region.",
+            "01flip ransomware is fully written in the Rust programming language and supports multi-platform architectures by leveraging the cross-compilation feature of Rust."
+          ],
+          [
+            "01flip ransomware is fully written in the Rust programming language and supports multi-platform architectures by leveraging the cross-compilation feature of Rust."
+          ],
+          [
+            "Our initial analysis revealed that this is a new ransomware family fully written in Rust, called “01flip.” This name is based on the appended file extension (.01flip) and the email address (01Flip@proton[.]me) found in the ransom note.",
+            "After further investigation, we discovered a Linux version of 01flip ransomware, which showed zero detection rate at least three months after the sample had initially been submitted to VirusTotal.",
+            "But victims of this ransomware include organizations responsible for critical infrastructure in Southeast Asia."
+          ],
+          [
+            "But victims of this ransomware include organizations responsible for critical infrastructure in Southeast Asia.",
+            "After further investigation, we found a post on an online security forum by an alleged victim of 01flip ransomware, claiming that attackers had compromised their Zimbra Server, which is an email solution for enterprises."
+          ],
+          [
+            "However, a month later, they successfully deployed a Linux version of Sliver, a publicly available cross-platform adversary emulation framework written in Go.",
+            "In late May 2025, the threat actor behind CL-CRI-1036 successfully performed lateral movement to another Linux machine by downloading another Sliver implant, which was a TCP Pivot profiled implant.",
+            "A week later, we confirmed that attackers deployed multiple 01flip ransomware instances onto many devices within the network, including both Windows and Linux machines."
+          ],
+          [
+            "A week later, we confirmed that attackers deployed multiple 01flip ransomware instances onto many devices within the network, including both Windows and Linux machines."
+          ],
+          [
+            "01flip ransomware drops ransom notes in all writable directories before encrypting files."
+          ],
+          [
+            "Finally, 01flip encrypts files using the AES encryption algorithm.",
+            "The session key used for the ransomware's file-encrypting activity is itself encrypted using an embedded RSA public key.",
+            "Encrypted files are renamed with the specific naming convention <ORIGINAL_FILENAME>.<UNIQUE_ID>.<0 or 1>.01flip, as shown in Figure 7."
+          ],
+          [
+            "After completing encryption, the 01flip ransomware attempts to remove any trace of itself, to prevent it from being recovered from an infected host."
+          ],
+          [
+            "Attackers behind this campaign have so far demanded one bitcoin (BTC) for decrypting files."
+          ],
+          [
+            "Further investigation revealed an alleged data leak of the affected organization on a dark web forum posted on the day after the ransomware deployment."
+          ],
+          [
+            "During our analysis of 01flip ransomware, we found that there is one particularly interesting extension in the list of file extensions excluded from encryption, which is lockbit as shown in Figure 10.",
+            "Avoiding encrypting files with a lockbit file extension implies a possible overlap of the threat actor behind CL-CRI-1036 and the group behind LockBit ransomware, which we track as Flighty Scorpius."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, some of the 01flip ransomware samples implement a simple anti-sandbox technique by checking whether the filename contains the string 01flip."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1570",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1570",
+        "edges": [
+          "EDGE_9",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In late May 2025, the threat actor behind CL-CRI-1036 successfully performed lateral movement to another Linux machine by downloading another Sliver implant, which was a TCP Pivot profiled implant."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_15bf45039c14",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "01Flip@proton[.]me",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Our initial analysis revealed that this is a new ransomware family fully written in Rust, called “01flip.” This name is based on the appended file extension (.01flip) and the email address (01Flip@proton[.]me) found in the ransom note."
+        ]
+      },
+      {
+        "node_id": "IOC_3b2daf03f760",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "ba41f0c7ea36cefe7bc9827b3cf27308362a4d07a8c97109704df5d209bce191",
+        "edges": [],
+        "sentence_indices": [
+          51
+        ],
+        "span_sentences": [
+          "- SHA-256 hash: ba41f0c7ea36cefe7bc9827b3cf27308362a4d07a8c97109704df5d209bce191."
+        ]
+      },
+      {
+        "node_id": "IOC_af598af1df02",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2019-11580",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Investigation revealed that attackers had been attempting exploits targeting older vulnerabilities such as CVE-2019-11580 against a victim’s internet-facing applications since early April 2025."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0349258b4c40",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0349258b4c40",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0349258b4c40",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_0349258b4c40",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_0349258b4c40",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_0349258b4c40",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_18c859845574",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_1aa8ec1ebecd",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_1aa8ec1ebecd",
+      "node_v": "TTP_T1570"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_7396b14c9775",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_7396b14c9775",
+      "node_v": "TTP_T1190"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_7396b14c9775",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_7396b14c9775",
+      "node_v": "TTP_T1570"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_af598af1df02",
+      "node_v": "TTP_T1190"
+    }
+  ]
+}

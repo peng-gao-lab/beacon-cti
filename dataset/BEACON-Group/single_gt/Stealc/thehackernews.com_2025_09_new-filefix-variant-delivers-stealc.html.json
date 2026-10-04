@@ -1,0 +1,773 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_1385cae28d95",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Bitbucket",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "At a high level, the attack chain involves the use of FileFix to entice users into launching an initial payload that then proceeds to download seemingly innocuous images containing the malicious components from a Bitbucket repository."
+        ],
+        "edges": [
+          "EDGE_e25463db7097"
+        ]
+      },
+      {
+        "node_id": "HL_180c8dd484f7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "StealC",
+        "sentence_indices": [
+          0,
+          11
+        ],
+        "span_sentences": [
+          "Cybersecurity researchers have warned of a new campaign that's leveraging a variant of the FileFix social engineering tactic to deliver the StealC information stealer malware.",
+          "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+        ],
+        "edges": [
+          "EDGE_287300b46ec8",
+          "EDGE_2ddf7213b853",
+          "EDGE_7a0c087a9012",
+          "EDGE_f213d30736e4"
+        ]
+      },
+      {
+        "node_id": "HL_335595ae46cd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "MSHTA",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+        ],
+        "edges": [
+          "EDGE_3c804ff82e3c",
+          "EDGE_580af8f540cf",
+          "EDGE_cebc593e3936",
+          "EDGE_fca7cd8a6086"
+        ]
+      },
+      {
+        "node_id": "HL_4cc5ab71f383",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "FileFix",
+        "sentence_indices": [
+          0,
+          2,
+          4,
+          5,
+          9,
+          12,
+          13
+        ],
+        "span_sentences": [
+          "Cybersecurity researchers have warned of a new campaign that's leveraging a variant of the FileFix social engineering tactic to deliver the StealC information stealer malware.",
+          "At a high level, the attack chain involves the use of FileFix to entice users into launching an initial payload that then proceeds to download seemingly innocuous images containing the malicious components from a Bitbucket repository.",
+          "FileFix, first documented by security researcher mrd0x as a proof-of-concept (PoC) in June 2025, is a little different from ClickFix in that it eschews the need for users to launch the Windows Run dialog and paste an already copied obfuscated command to complete bogus CAPTCHA verification checks on phishing pages set up for this purpose.",
+          "Instead, it leverages a web browser's file upload feature to deceive users into copying and pasting a command on the File Explorer's address bar, causing it to be executed locally on the victim's machine.",
+          "The FileFix attack comes into play once the button is clicked, at which point the victim is displayed a message stating they can access a PDF version of the supposed policy violation by copying and pasting a path to the document in the File Explorer's address bar.",
+          "FileFix also offers a crucial advantage over ClickFix, as it abuses a widely used browser feature as opposed to opening the Run dialog (or the Terminal app in case of Apple macOS), which could be blocked by a system administrator as a security measure.",
+          "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said."
+        ],
+        "edges": [
+          "EDGE_36dbdced8cdf",
+          "EDGE_45313f61ddb3",
+          "EDGE_6a44163a2a9f",
+          "EDGE_7a558495399a",
+          "EDGE_8f46c5abbb2a"
+        ]
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_56189a86e5cf",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Acronis",
+        "sentence_indices": [
+          1,
+          13
+        ],
+        "span_sentences": [
+          "\"The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection,\" Acronis security researcher Eliad Kimhy said in a report shared with The Hacker News.",
+          "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+        ],
+        "edges": [
+          "EDGE_d2bd068e4054"
+        ]
+      },
+      {
+        "node_id": "HL_6120e967f906",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Facebook",
+        "sentence_indices": [
+          1,
+          6
+        ],
+        "span_sentences": [
+          "\"The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection,\" Acronis security researcher Eliad Kimhy said in a report shared with The Hacker News.",
+          "The attack commences with a phishing site to which the victim is likely redirected from an email message that warns recipients of potential suspension of their Facebook accounts after a week, claiming the shared posts or messages violate its policies."
+        ],
+        "edges": [
+          "EDGE_338cbeadfff9",
+          "EDGE_7a9031acde09",
+          "EDGE_a9438c5ed178"
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          11,
+          14
+        ],
+        "span_sentences": [
+          "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC.",
+          "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b3e5c62fd3dd",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ClickFix",
+        "sentence_indices": [
+          4,
+          12,
+          14
+        ],
+        "span_sentences": [
+          "FileFix, first documented by security researcher mrd0x as a proof-of-concept (PoC) in June 2025, is a little different from ClickFix in that it eschews the need for users to launch the Windows Run dialog and paste an already copied obfuscated command to complete bogus CAPTCHA verification checks on phishing pages set up for this purpose.",
+          "FileFix also offers a crucial advantage over ClickFix, as it abuses a widely used browser feature as opposed to opening the Run dialog (or the Terminal app in case of Apple macOS), which could be blocked by a system administrator as a security measure.",
+          "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+        ],
+        "edges": [
+          "EDGE_1b020f1dbc05",
+          "EDGE_585d8d9e5785",
+          "EDGE_725ee8f9b421",
+          "EDGE_a3f3d77ee82a"
+        ]
+      },
+      {
+        "node_id": "HL_bf47d8fe871b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoHotkey",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+        ],
+        "edges": [
+          "EDGE_1e62bad5f3ee",
+          "EDGE_3623380b8d0a"
+        ]
+      },
+      {
+        "node_id": "HL_c91471151636",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AHK",
+        "sentence_indices": [
+          17,
+          18
+        ],
+        "span_sentences": [
+          "\"AHK is a Windows-based scripting language originally designed for automating repetitive tasks like keystrokes and mouse clicks,\" Doppel security researcher Aarsh Jawa noted.",
+          "\"While it's long been popular among power users and system admins for its simplicity and flexibility, threat actors began weaponizing AHK around 2019 to create lightweight malware droppers and info-stealers."
+        ],
+        "edges": [
+          "EDGE_12f488fd2d08",
+          "EDGE_bd4cebc8f3d8"
+        ]
+      },
+      {
+        "node_id": "HL_e6b9ef29f5d3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "TeamViewer",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware."
+        ],
+        "edges": [
+          "EDGE_abffd6f613be"
+        ]
+      },
+      {
+        "node_id": "HL_f576dbcf13da",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Doppel",
+        "sentence_indices": [
+          14,
+          17
+        ],
+        "span_sentences": [
+          "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+          "\"AHK is a Windows-based scripting language originally designed for automating repetitive tasks like keystrokes and mouse clicks,\" Doppel security researcher Aarsh Jawa noted."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f8b77c8fe4ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AnyDesk",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware."
+        ],
+        "edges": [
+          "EDGE_7006ab291dbf"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "\"The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection,\" Acronis security researcher Eliad Kimhy said in a report shared with The Hacker News."
+          ],
+          [
+            "Users are then asked to appeal the decision by clicking on a button.",
+            "The phishing page is not only heavily obfuscated, but also resorts to techniques like junk code and fragmentation to hinder analysis efforts.",
+            "The FileFix attack comes into play once the button is clicked, at which point the victim is displayed a message stating they can access a PDF version of the supposed policy violation by copying and pasting a path to the document in the File Explorer's address bar.",
+            "While the path provided in the instruction appears completely harmless, clicking the \"Copy\" button actually copies a malicious command that's suffixed with extra spaces, so that only the file path is displayed when pasted into File Explorer upon opening it using the \"Open File Explorer\" button.",
+            "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_338cbeadfff9",
+          "EDGE_7a558495399a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "These malicious scripts often masquerade as benign automation tools or support utilities.\""
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_0988a923a256",
+          "EDGE_7a9031acde09",
+          "EDGE_d2bd068e4054"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Instead, it leverages a web browser's file upload feature to deceive users into copying and pasting a command on the File Explorer's address bar, causing it to be executed locally on the victim's machine."
+          ],
+          [
+            "Users are then asked to appeal the decision by clicking on a button.",
+            "The phishing page is not only heavily obfuscated, but also resorts to techniques like junk code and fragmentation to hinder analysis efforts.",
+            "The FileFix attack comes into play once the button is clicked, at which point the victim is displayed a message stating they can access a PDF version of the supposed policy violation by copying and pasting a path to the document in the File Explorer's address bar.",
+            "While the path provided in the instruction appears completely harmless, clicking the \"Copy\" button actually copies a malicious command that's suffixed with extra spaces, so that only the file path is displayed when pasted into File Explorer upon opening it using the \"Open File Explorer\" button.",
+            "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+          ],
+          [
+            "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+            "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+            "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware.",
+            "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+          ],
+          [
+            "\"While it's long been popular among power users and system admins for its simplicity and flexibility, threat actors began weaponizing AHK around 2019 to create lightweight malware droppers and info-stealers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            11
+          ],
+          [
+            13,
+            16
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_12f488fd2d08",
+          "EDGE_1e62bad5f3ee",
+          "EDGE_45313f61ddb3",
+          "EDGE_7a0c087a9012",
+          "EDGE_a3f3d77ee82a",
+          "EDGE_fca7cd8a6086"
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+            "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+            "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            15
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "At a high level, the attack chain involves the use of FileFix to entice users into launching an initial payload that then proceeds to download seemingly innocuous images containing the malicious components from a Bitbucket repository."
+          ],
+          [
+            "This command is a multi-stage PowerShell script that downloads the aforementioned image, decodes it into the next-stage payload, and ultimately runs a Go-based loader that unpacks shellcode responsible for launching StealC."
+          ],
+          [
+            "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+            "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+            "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware.",
+            "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            13,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_1b020f1dbc05",
+          "EDGE_3623380b8d0a",
+          "EDGE_36dbdced8cdf",
+          "EDGE_7006ab291dbf",
+          "EDGE_abffd6f613be",
+          "EDGE_bd4cebc8f3d8",
+          "EDGE_cebc593e3936",
+          "EDGE_e25463db7097",
+          "EDGE_f213d30736e4",
+          "EDGE_f26944381037"
+        ]
+      },
+      {
+        "node_id": "TTP_T1115",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1115",
+        "ttp_id": "T1115",
+        "best_span_sentences_list": [
+          [
+            "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_725ee8f9b421"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Instead, it leverages a web browser's file upload feature to deceive users into copying and pasting a command on the File Explorer's address bar, causing it to be executed locally on the victim's machine."
+          ],
+          [
+            "\"On the other hand, one of the things that makes ClickFix so challenging to detect in the first place is that it is spawned from Explorer.exe via the run dialog, or directly from a terminal, whereas with FileFix, the payload is executed by the web browser used by the victim, which is far more likely to stand out in an investigation or to a security product,\" Acronis said.",
+            "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script.",
+            "The script is designed to profile the compromised host and deliver additional payloads, including AnyDesk, TeamViewer, information stealers, and clipper malware.",
+            "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            13,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_2ddf7213b853",
+          "EDGE_580af8f540cf",
+          "EDGE_585d8d9e5785",
+          "EDGE_8f46c5abbb2a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_3c804ff82e3c",
+          "EDGE_91547a18dfe8"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "\"The observed campaign uses a highly convincing, multilingual phishing site (e.g., fake Facebook Security page), with anti-analysis techniques and advanced obfuscation to evade detection,\" Acronis security researcher Eliad Kimhy said in a report shared with The Hacker News."
+          ],
+          [
+            "The attack commences with a phishing site to which the victim is likely redirected from an email message that warns recipients of potential suspension of their Facebook accounts after a week, claiming the shared posts or messages violate its policies.",
+            "Users are then asked to appeal the decision by clicking on a button.",
+            "The phishing page is not only heavily obfuscated, but also resorts to techniques like junk code and fragmentation to hinder analysis efforts.",
+            "The FileFix attack comes into play once the button is clicked, at which point the victim is displayed a message stating they can access a PDF version of the supposed policy violation by copying and pasting a path to the document in the File Explorer's address bar.",
+            "While the path provided in the instruction appears completely harmless, clicking the \"Copy\" button actually copies a malicious command that's suffixed with extra spaces, so that only the file path is displayed when pasted into File Explorer upon opening it using the \"Open File Explorer\" button."
+          ],
+          [
+            "\"The adversary behind this attack demonstrated significant investment in tradecraft, carefully engineering the phishing infrastructure, payload delivery and supporting elements to maximize both evasion and impact.\"\nThe disclosure comes as Doppel detailed another campaign that has been observed using a combination of fake support portals, Cloudflare CAPTCHA error pages, and clipboard hijacking -- i.e., ClickFix -- to socially engineer victims into running malicious PowerShell code that downloads and runs an AutoHotkey (AHK) script."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            10
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_287300b46ec8",
+          "EDGE_6a44163a2a9f",
+          "EDGE_a9438c5ed178"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_ceb009fa7946",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "wl.google-587262[.]com",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "The cybersecurity company said it also observed other variants of the activity where victims are guided to run an MSHTA command pointing to a lookalike Google domain (\"wl.google-587262[.]com\"), which then retrieves and executes a remote malicious script."
+        ],
+        "edges": [
+          "EDGE_0988a923a256",
+          "EDGE_91547a18dfe8",
+          "EDGE_f26944381037"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0988a923a256",
+      "node_u": "IOC_ceb009fa7946",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_12f488fd2d08",
+      "node_u": "HL_c91471151636",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b020f1dbc05",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1e62bad5f3ee",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_287300b46ec8",
+      "node_u": "HL_180c8dd484f7",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ddf7213b853",
+      "node_u": "HL_180c8dd484f7",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_338cbeadfff9",
+      "node_u": "HL_6120e967f906",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3623380b8d0a",
+      "node_u": "HL_bf47d8fe871b",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_36dbdced8cdf",
+      "node_u": "HL_4cc5ab71f383",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3c804ff82e3c",
+      "node_u": "HL_335595ae46cd",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_45313f61ddb3",
+      "node_u": "HL_4cc5ab71f383",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_580af8f540cf",
+      "node_u": "HL_335595ae46cd",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_585d8d9e5785",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6a44163a2a9f",
+      "node_u": "HL_4cc5ab71f383",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7006ab291dbf",
+      "node_u": "HL_f8b77c8fe4ea",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_725ee8f9b421",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1115",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7a0c087a9012",
+      "node_u": "HL_180c8dd484f7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7a558495399a",
+      "node_u": "HL_4cc5ab71f383",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7a9031acde09",
+      "node_u": "HL_6120e967f906",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8f46c5abbb2a",
+      "node_u": "HL_4cc5ab71f383",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_91547a18dfe8",
+      "node_u": "IOC_ceb009fa7946",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_a3f3d77ee82a",
+      "node_u": "HL_b3e5c62fd3dd",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a9438c5ed178",
+      "node_u": "HL_6120e967f906",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_abffd6f613be",
+      "node_u": "HL_e6b9ef29f5d3",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bd4cebc8f3d8",
+      "node_u": "HL_c91471151636",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cebc593e3936",
+      "node_u": "HL_335595ae46cd",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d2bd068e4054",
+      "node_u": "HL_5a41715fe692",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e25463db7097",
+      "node_u": "HL_1385cae28d95",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f213d30736e4",
+      "node_u": "HL_180c8dd484f7",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f26944381037",
+      "node_u": "IOC_ceb009fa7946",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fca7cd8a6086",
+      "node_u": "HL_335595ae46cd",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

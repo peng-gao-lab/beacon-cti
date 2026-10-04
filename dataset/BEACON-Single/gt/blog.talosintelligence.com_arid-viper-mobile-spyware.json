@@ -1,0 +1,848 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_035726e1e97c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Skipped GmbH",
+        "edges": [],
+        "sentence_indices": [
+          18,
+          19,
+          25
+        ],
+        "span_sentences": [
+          "The publisher of Skipped, a company called “Skipped GmbH,” was registered and is headquartered in Germany, and appears to be linked to a multitude of seemingly non-malicious dating applications published by companies in Singapore and Dubai.",
+          "We found that the domains used by these additional companies to distribute their dating applications, which are available on the Google and Apple application stores, were registered by Skipped GmbH.",
+          "However, the domain for Joula, joula[.]app was registered by Skipped GmbH."
+        ]
+      },
+      {
+        "node_id": "HL_26e59a85bc10",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "YouTube",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The attackers typically send targets a link to a tutorial video for the application, which is posted on a media-sharing website like YouTube."
+        ]
+      },
+      {
+        "node_id": "HL_415995e0fc34",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Skipped - Chat, Match & Dating",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The name of Arid Viper’s mobile malware, “Skipped_Messenger,” appears to be a reference to Skipped, which is listed on some application stores as “Skipped - Chat, Match & Dating.” The “Skipped_Messenger” malware uses Google’s Firebase messaging system as a command and control (C2) channel, while the non-malicious Skipped application uses it for pushing out notifications."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Since April 2022, Cisco Talos has been tracking a malicious campaign operated by the espionage-motivated Arid Viper advanced persistent threat (APT) group targeting Arabic-speaking Android users."
+        ]
+      },
+      {
+        "node_id": "HL_5085121e494b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Signal",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Arid Viper has a history of disguising their malware as updates, either for dating applications or for popular messaging applications such as WhatsApp, Signal, or Telegram."
+        ]
+      },
+      {
+        "node_id": "HL_5559836c20db",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Arid Viper",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          5,
+          6,
+          7,
+          8,
+          15,
+          17,
+          26,
+          27,
+          31,
+          32,
+          33,
+          37,
+          38
+        ],
+        "span_sentences": [
+          "Since April 2022, Cisco Talos has been tracking a malicious campaign operated by the espionage-motivated Arid Viper advanced persistent threat (APT) group targeting Arabic-speaking Android users.",
+          "This overlap suggests the Arid Viper operators are either linked to Skipped’s developer or somehow gained illicit access to the shared project’s database.",
+          "The mobile malware deployed by Arid Viper in this campaign shares similarities with the non-malicious dating application Skipped, in that it has a similar name and uses the same shared project on the application development platform Firebase.",
+          "These overlaps, explained in further detail below, suggest the Arid Viper operators may be linked to Skipped’s developers, and/or they may have illicitly copied characteristics of the non-malicious application in order to entice and deceive users into downloading their malware.",
+          "Of note, the technique of leveraging legitimate application names in order to coerce users into downloading malicious software is in line with the “honey trap” tactics used by Arid Viper in the past.",
+          "The name of Arid Viper’s mobile malware, “Skipped_Messenger,” appears to be a reference to Skipped, which is listed on some application stores as “Skipped - Chat, Match & Dating.” The “Skipped_Messenger” malware uses Google’s Firebase messaging system as a command and control (C2) channel, while the non-malicious Skipped application uses it for pushing out notifications.",
+          "This supports our assessment that Skipped developers likely shared their Firebase project with Arid Viper operators.",
+          "Given the aforementioned connections between Arid Viper’s mobile malware and Skipped, we assess that Arid Viper operators may seek to leverage the infrastructure and/or names of these additional applications in future malicious campaigns.",
+          "Arid Viper’s latest campaign, which Talos observed occurring since at least April 2022, targets Arabic-speaking Android users through mobile malware that masquerades as application updates.",
+          "Arid Viper has a history of disguising their malware as updates, either for dating applications or for popular messaging applications such as WhatsApp, Signal, or Telegram.",
+          "A URL is provided in the video’s description, which directs to an attacker-controlled domain that serves a copy of Arid Viper’s APK malware.",
+          "We assess that all the domains used by the attackers in this campaign are solely registered, operated and controlled by Arid Viper.",
+          "These domains follow the same naming schema observed in previous Arid Viper infrastructure and are not only used to host malicious APKs, but also act as C2 servers for the implants.",
+          "One of the Firebase projects used by Arid Viper in this campaign dates back to 2021 and has some non-malicious mobile APKs associated with it, indicating operators have been trying to create, test and popularize other APK software out of the same account for years.",
+          "Arid Viper’s Android malware has a number of features that enable the operators to surreptitiously collect sensitive information from victims’ devices and deploy additional executables."
+        ]
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "edges": [],
+        "sentence_indices": [
+          8,
+          14
+        ],
+        "span_sentences": [
+          "The name of Arid Viper’s mobile malware, “Skipped_Messenger,” appears to be a reference to Skipped, which is listed on some application stores as “Skipped - Chat, Match & Dating.” The “Skipped_Messenger” malware uses Google’s Firebase messaging system as a command and control (C2) channel, while the non-malicious Skipped application uses it for pushing out notifications.",
+          "Finally, Talos found no public evidence of the Firebase/Google Cloud project being compromised such that it may be used by any parties except the project’s original creators."
+        ]
+      },
+      {
+        "node_id": "HL_6f082c512436",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Firebase",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          5,
+          8,
+          9,
+          11,
+          12,
+          13,
+          14,
+          34,
+          35,
+          36
+        ],
+        "span_sentences": [
+          "The mobile malware deployed by Arid Viper in this campaign shares similarities with the non-malicious dating application Skipped, in that it has a similar name and uses the same shared project on the application development platform Firebase.",
+          "The name of Arid Viper’s mobile malware, “Skipped_Messenger,” appears to be a reference to Skipped, which is listed on some application stores as “Skipped - Chat, Match & Dating.” The “Skipped_Messenger” malware uses Google’s Firebase messaging system as a command and control (C2) channel, while the non-malicious Skipped application uses it for pushing out notifications.",
+          "Google’s Firebase messaging system works via the creation of a named project, along with other unique identifiers.",
+          "In order for developers to write applications that use the same project and Firebase databases, they need credentials in the form of API keys, and project and application IDs that are generated in the Firebase project’s console.",
+          "The Android malware deployed in this malicious campaign extensively uses the same Firebase databases used by Skipped, however, both the malware and the non-malicious application use their own set of distinct credentials, including API keys and Client Application IDs.",
+          "This observation indicates that the malware developers had access to the same Firebase project and backend database that are used by the non-malicious dating application, and generated their own set of credentials.",
+          "Finally, Talos found no public evidence of the Firebase/Google Cloud project being compromised such that it may be used by any parties except the project’s original creators.",
+          "As previously mentioned, some of the malware deployed in this campaign used Google’s Firebase platform as C2 infrastructure for the malicious applications.",
+          "The Firebase platform primarily serves as a C2 channel to issue commands and to download and upload files.",
+          "The platform also has the ability to provide a new C2 server address to the malware so that it can switch fr,m the Firebase platform to another attacker-controlled C2 host."
+        ]
+      },
+      {
+        "node_id": "HL_7a83293baae8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Android",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          1,
+          12,
+          26,
+          38,
+          39,
+          41,
+          43,
+          46
+        ],
+        "span_sentences": [
+          "Since April 2022, Cisco Talos has been tracking a malicious campaign operated by the espionage-motivated Arid Viper advanced persistent threat (APT) group targeting Arabic-speaking Android users.",
+          "In this campaign, the actors leverage custom mobile malware, also known as Android Package files (APKs), to collect sensitive information from targets and deploy additional malware onto infected devices.",
+          "The Android malware deployed in this malicious campaign extensively uses the same Firebase databases used by Skipped, however, both the malware and the non-malicious application use their own set of distinct credentials, including API keys and Client Application IDs.",
+          "Arid Viper’s latest campaign, which Talos observed occurring since at least April 2022, targets Arabic-speaking Android users through mobile malware that masquerades as application updates.",
+          "Arid Viper’s Android malware has a number of features that enable the operators to surreptitiously collect sensitive information from victims’ devices and deploy additional executables.",
+          "The malware uses native code to hide some of its activities, meaning it can leverage Android’s capability that allows for the execution of assembly-based shared libraries.",
+          "The malware completely disables notifications on Samsung mobile devices and on any device with an Android package that contains the word “security”.",
+          "From the capability point of view, this RAT exhibits all the classic functionalities of an Android-based RAT including system fingerprinting, data exfiltration and payload deployment, to name a few.",
+          "The Android implant can ask the current C2 for an updated C2 domain and store it in its configuration, as shown below:\nExfiltrates collected credentials\nIt can also exfiltrate credentials collected from Facebook and relay them to the C2 server:\nRecord, send and receive calls and SMS messages\nThe implant has the ability to record telephone calls made on the compromised device."
+        ]
+      },
+      {
+        "node_id": "HL_7ae3e4278757",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Cloud",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Finally, Talos found no public evidence of the Firebase/Google Cloud project being compromised such that it may be used by any parties except the project’s original creators."
+        ]
+      },
+      {
+        "node_id": "HL_7e5a30b9b20a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Singapore",
+        "edges": [],
+        "sentence_indices": [
+          18,
+          24
+        ],
+        "span_sentences": [
+          "The publisher of Skipped, a company called “Skipped GmbH,” was registered and is headquartered in Germany, and appears to be linked to a multitude of seemingly non-malicious dating applications published by companies in Singapore and Dubai.",
+          "LTD”, based out of Singapore."
+        ]
+      },
+      {
+        "node_id": "HL_85bb88e2f49c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Xiaomi",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The malware makes notifications less visible on Huawei, Google, Oppo and Xiaomi mobile devices."
+        ]
+      },
+      {
+        "node_id": "HL_8b3492684973",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Huawei",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The malware makes notifications less visible on Huawei, Google, Oppo and Xiaomi mobile devices."
+        ]
+      },
+      {
+        "node_id": "HL_917ef3139238",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "NYUTAINMENT PTE. LTD",
+        "edges": [],
+        "sentence_indices": [
+          23,
+          24
+        ],
+        "span_sentences": [
+          "For example, the “Joula” application is distributed by a company called “NYUTAINMENT PTE.",
+          "LTD”, based out of Singapore."
+        ]
+      },
+      {
+        "node_id": "HL_a06e56c044d7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Skipped",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          5,
+          6,
+          8,
+          12,
+          15,
+          16,
+          17,
+          18,
+          19,
+          25,
+          48
+        ],
+        "span_sentences": [
+          "The mobile malware used in this campaign shares similarities with a non-malicious online dating application, referred to as Skipped.",
+          "This overlap suggests the Arid Viper operators are either linked to Skipped’s developer or somehow gained illicit access to the shared project’s database.",
+          "The mobile malware deployed by Arid Viper in this campaign shares similarities with the non-malicious dating application Skipped, in that it has a similar name and uses the same shared project on the application development platform Firebase.",
+          "These overlaps, explained in further detail below, suggest the Arid Viper operators may be linked to Skipped’s developers, and/or they may have illicitly copied characteristics of the non-malicious application in order to entice and deceive users into downloading their malware.",
+          "The name of Arid Viper’s mobile malware, “Skipped_Messenger,” appears to be a reference to Skipped, which is listed on some application stores as “Skipped - Chat, Match & Dating.” The “Skipped_Messenger” malware uses Google’s Firebase messaging system as a command and control (C2) channel, while the non-malicious Skipped application uses it for pushing out notifications.",
+          "The Android malware deployed in this malicious campaign extensively uses the same Firebase databases used by Skipped, however, both the malware and the non-malicious application use their own set of distinct credentials, including API keys and Client Application IDs.",
+          "This supports our assessment that Skipped developers likely shared their Firebase project with Arid Viper operators.",
+          "Our analysis uncovered an extended web of companies that create dating-themed applications that are similar or identical to Skipped.",
+          "Given the aforementioned connections between Arid Viper’s mobile malware and Skipped, we assess that Arid Viper operators may seek to leverage the infrastructure and/or names of these additional applications in future malicious campaigns.",
+          "The publisher of Skipped, a company called “Skipped GmbH,” was registered and is headquartered in Germany, and appears to be linked to a multitude of seemingly non-malicious dating applications published by companies in Singapore and Dubai.",
+          "We found that the domains used by these additional companies to distribute their dating applications, which are available on the Google and Apple application stores, were registered by Skipped GmbH.",
+          "However, the domain for Joula, joula[.]app was registered by Skipped GmbH.",
+          "The malware can also capture SMS messages received by the device, send new SMS messages, and make calls to phone numbers specified by the C2:.Skipped"
+        ]
+      },
+      {
+        "node_id": "HL_a6118de3a56b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Facebook",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "The Android implant can ask the current C2 for an updated C2 domain and store it in its configuration, as shown below:\nExfiltrates collected credentials\nIt can also exfiltrate credentials collected from Facebook and relay them to the C2 server:\nRecord, send and receive calls and SMS messages\nThe implant has the ability to record telephone calls made on the compromised device."
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The publisher of Skipped, a company called “Skipped GmbH,” was registered and is headquartered in Germany, and appears to be linked to a multitude of seemingly non-malicious dating applications published by companies in Singapore and Dubai."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Arid Viper has a history of disguising their malware as updates, either for dating applications or for popular messaging applications such as WhatsApp, Signal, or Telegram."
+        ]
+      },
+      {
+        "node_id": "HL_bdef992dbd12",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Joula",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "For example, the “Joula” application is distributed by a company called “NYUTAINMENT PTE."
+        ]
+      },
+      {
+        "node_id": "HL_c1eb7e06dafd",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Apple",
+        "edges": [],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "We found that the domains used by these additional companies to distribute their dating applications, which are available on the Google and Apple application stores, were registered by Skipped GmbH."
+        ]
+      },
+      {
+        "node_id": "HL_cab10105ec52",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WhatsApp",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Arid Viper has a history of disguising their malware as updates, either for dating applications or for popular messaging applications such as WhatsApp, Signal, or Telegram."
+        ]
+      },
+      {
+        "node_id": "HL_d644ce68aa7f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Samsung",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "The malware completely disables notifications on Samsung mobile devices and on any device with an Android package that contains the word “security”."
+        ]
+      },
+      {
+        "node_id": "HL_eb187fff129c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Dubai",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The publisher of Skipped, a company called “Skipped GmbH,” was registered and is headquartered in Germany, and appears to be linked to a multitude of seemingly non-malicious dating applications published by companies in Singapore and Dubai."
+        ]
+      },
+      {
+        "node_id": "HL_fd009f28112d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Oppo",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The malware makes notifications less visible on Huawei, Google, Oppo and Xiaomi mobile devices."
+        ]
+      },
+      {
+        "node_id": "HL_fe4f00499d02",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Skipped_Messenger",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The name of Arid Viper’s mobile malware, “Skipped_Messenger,” appears to be a reference to Skipped, which is listed on some application stores as “Skipped - Chat, Match & Dating.” The “Skipped_Messenger” malware uses Google’s Firebase messaging system as a command and control (C2) channel, while the non-malicious Skipped application uses it for pushing out notifications."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_15",
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The mobile malware used in this campaign shares similarities with a non-malicious online dating application, referred to as Skipped.",
+            "The malware specifically uses a similar name and the same shared project on the applications’ development platform."
+          ],
+          [
+            "Arid Viper has a history of disguising their malware as updates, either for dating applications or for popular messaging applications such as WhatsApp, Signal, or Telegram."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_4",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ],
+          [
+            43,
+            43
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Firebase platform primarily serves as a C2 channel to issue commands and to download and upload files."
+          ],
+          [
+            "From the capability point of view, this RAT exhibits all the classic functionalities of an Android-based RAT including system fingerprinting, data exfiltration and payload deployment, to name a few."
+          ],
+          [
+            "The Android implant can ask the current C2 for an updated C2 domain and store it in its configuration, as shown below:\nExfiltrates collected credentials\nIt can also exfiltrate credentials collected from Facebook and relay them to the C2 server:\nRecord, send and receive calls and SMS messages\nThe implant has the ability to record telephone calls made on the compromised device."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_5",
+          "EDGE_12",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Android implant can ask the current C2 for an updated C2 domain and store it in its configuration, as shown below:\nExfiltrates collected credentials\nIt can also exfiltrate credentials collected from Facebook and relay them to the C2 server:\nRecord, send and receive calls and SMS messages\nThe implant has the ability to record telephone calls made on the compromised device."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_6",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "From the capability point of view, this RAT exhibits all the classic functionalities of an Android-based RAT including system fingerprinting, data exfiltration and payload deployment, to name a few."
+          ],
+          [
+            "Executes trojanized apps\n\nRetrieves system information\nThe implant has the ability to get system information from locations such as “/proc/cpuinfo“, and from systems services such as “activity”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_1",
+          "EDGE_7",
+          "EDGE_13",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The name of Arid Viper’s mobile malware, “Skipped_Messenger,” appears to be a reference to Skipped, which is listed on some application stores as “Skipped - Chat, Match & Dating.” The “Skipped_Messenger” malware uses Google’s Firebase messaging system as a command and control (C2) channel, while the non-malicious Skipped application uses it for pushing out notifications."
+          ],
+          [
+            "The Firebase platform primarily serves as a C2 channel to issue commands and to download and upload files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_8",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Arid Viper’s Android malware has a number of features that enable the operators to surreptitiously collect sensitive information from victims’ devices and deploy additional executables."
+          ],
+          [
+            "From the capability point of view, this RAT exhibits all the classic functionalities of an Android-based RAT including system fingerprinting, data exfiltration and payload deployment, to name a few."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1123",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1123",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            46,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Android implant can ask the current C2 for an updated C2 domain and store it in its configuration, as shown below:\nExfiltrates collected credentials\nIt can also exfiltrate credentials collected from Facebook and relay them to the C2 server:\nRecord, send and receive calls and SMS messages\nThe implant has the ability to record telephone calls made on the compromised device.",
+            "This is done by recording the MIC audio source, capturing the recording to a specified location on disk, and subsequently uploading all files in the directory to the C2 server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ],
+          [
+            28,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Arid Viper has a history of disguising their malware as updates, either for dating applications or for popular messaging applications such as WhatsApp, Signal, or Telegram."
+          ],
+          [
+            "The attackers typically send targets a link to a tutorial video for the application, which is posted on a media-sharing website like YouTube.",
+            "The tutorial video will provide a step-by-step account of all features of the application and instructions on how to operate it in Arabic, suggesting a specific targeting of Arabic-speaking individuals.",
+            "One such video depicts an individual narrating in Arabic in Levantine dialect.",
+            "A URL is provided in the video’s description, which directs to an attacker-controlled domain that serves a copy of Arid Viper’s APK malware."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Given the aforementioned connections between Arid Viper’s mobile malware and Skipped, we assess that Arid Viper operators may seek to leverage the infrastructure and/or names of these additional applications in future malicious campaigns."
+          ],
+          [
+            "We assess that all the domains used by the attackers in this campaign are solely registered, operated and controlled by Arid Viper."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1431a10244b0",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/proc/cpuinfo",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "Executes trojanized apps\n\nRetrieves system information\nThe implant has the ability to get system information from locations such as “/proc/cpuinfo“, and from systems services such as “activity”."
+        ]
+      },
+      {
+        "node_id": "IOC_d33047cb8048",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "joula[.]app",
+        "edges": [],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "However, the domain for Joula, joula[.]app was registered by Skipped GmbH."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_26e59a85bc10",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_5085121e494b",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1123"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_5559836c20db",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_6f082c512436",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_a06e56c044d7",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_a6118de3a56b",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_cab10105ec52",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_fe4f00499d02",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_fe4f00499d02",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_1431a10244b0",
+      "node_v": "TTP_T1082"
+    }
+  ]
+}

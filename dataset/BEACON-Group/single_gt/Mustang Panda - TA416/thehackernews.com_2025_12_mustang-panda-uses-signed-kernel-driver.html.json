@@ -1,0 +1,566 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0c451fd5e540",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mustang Panda",
+        "sentence_indices": [
+          0,
+          4,
+          20
+        ],
+        "span_sentences": [
+          "The Chinese hacking group known as Mustang Panda (aka HoneyMyte) has leveraged a previously undocumented kernel-mode rootkit driver to deliver a new variant of backdoor dubbed TONESHELL in a cyber attack detected in mid-2025 targeting an unspecified entity in Asia.",
+          "The use of TONESHELL has been attributed to Mustang Panda since at least late 2022.",
+          "The findings indicate that the driver is the latest addition to a larger, evolving toolset used by Mustang Panda to maintain persistence and hide its backdoor."
+        ],
+        "edges": [
+          "EDGE_7ead34281cc7"
+        ]
+      },
+      {
+        "node_id": "HL_124c917eb7a7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TONESHELL",
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          5,
+          18,
+          21,
+          22
+        ],
+        "span_sentences": [
+          "The Chinese hacking group known as Mustang Panda (aka HoneyMyte) has leveraged a previously undocumented kernel-mode rootkit driver to deliver a new variant of backdoor dubbed TONESHELL in a cyber attack detected in mid-2025 targeting an unspecified entity in Asia.",
+          "\"Its end-goal is to inject a backdoor trojan into the system processes and provide protection for malicious files, user-mode processes, and registry keys.\"\nThe final payload deployed as part of the attack is TONESHELL, an implant with reverse shell and downloader capabilities to fetch next-stage malware onto compromised hosts.",
+          "The use of TONESHELL has been attributed to Mustang Panda since at least late 2022.",
+          "As recently as September 2025, the threat actor was linked to attacks targeting Thai entities with TONESHELL and a USB worm named TONEDISK (aka WispRider) that uses removable devices as a distribution vector for a backdoor referred to as Yokai.",
+          "The second payload is the TONESHELL backdoor that's injected into that same \"svchost.exe\" process.",
+          "Memory forensics is key to analyzing the new TONESHELL infections, as the shellcode executes entirely in memory, Kaspersky said, noting that detecting the injected shellcode is a crucial indicator of the backdoor's presence on compromised hosts.",
+          "\"HoneyMyte's 2025 operations show a noticeable evolution toward using kernel-mode injectors to deploy TONESHELL, improving both stealth and resilience,\" the company concluded."
+        ],
+        "edges": [
+          "EDGE_14cb00c71fe9",
+          "EDGE_69e7a3f1dcba",
+          "EDGE_90d8853fff43",
+          "EDGE_b1905ecec3cd",
+          "EDGE_c3fd3b09e948",
+          "EDGE_e820ab20c71b"
+        ]
+      },
+      {
+        "node_id": "HL_285cb5f0200a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Yokai",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "As recently as September 2025, the threat actor was linked to attacks targeting Thai entities with TONESHELL and a USB worm named TONEDISK (aka WispRider) that uses removable devices as a distribution vector for a backdoor referred to as Yokai."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "\"Microsoft designates the 320000–329999 altitude range for the FSFilter Anti-Virus Load Order Group,\" Kaspersky explained."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_52bce757b7bd",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TONEDISK",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "As recently as September 2025, the threat actor was linked to attacks targeting Thai entities with TONESHELL and a USB worm named TONEDISK (aka WispRider) that uses removable devices as a distribution vector for a backdoor referred to as Yokai."
+        ],
+        "edges": [
+          "EDGE_8f5d324f5461"
+        ]
+      },
+      {
+        "node_id": "HL_5e1b1e1af3d1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Asia",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The Chinese hacking group known as Mustang Panda (aka HoneyMyte) has leveraged a previously undocumented kernel-mode rootkit driver to deliver a new variant of backdoor dubbed TONESHELL in a cyber attack detected in mid-2025 targeting an unspecified entity in Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_7becf1b95eb5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "East Asia",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The findings come from Kaspersky, which observed the new backdoor variant in cyber espionage campaigns mounted by the hacking group targeting government organizations in Southeast and East Asia, primarily Myanmar and Thailand."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_8d580f483018",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TONSHELL",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The development marks the first time TONSHELL has been delivered through a kernel-mode loader, effectively allowing it to conceal its activity from security tools."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_98ac8fd1bcba",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Southeast Asia",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The findings come from Kaspersky, which observed the new backdoor variant in cyber espionage campaigns mounted by the hacking group targeting government organizations in Southeast and East Asia, primarily Myanmar and Thailand."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ab012406908c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Guangzhou Kingteller Technology Co., Ltd",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "The driver file (\"ProjectConfiguration.sys\") is signed with a digital certificate from Guangzhou Kingteller Technology Co., Ltd, a Chinese company that's involved in the distribution and provisioning of automated teller machines (ATMs)."
+        ],
+        "edges": [
+          "EDGE_9c64110a069b"
+        ]
+      },
+      {
+        "node_id": "HL_ac58a7f99304",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "HoneyMyte",
+        "sentence_indices": [
+          0,
+          22
+        ],
+        "span_sentences": [
+          "The Chinese hacking group known as Mustang Panda (aka HoneyMyte) has leveraged a previously undocumented kernel-mode rootkit driver to deliver a new variant of backdoor dubbed TONESHELL in a cyber attack detected in mid-2025 targeting an unspecified entity in Asia.",
+          "\"HoneyMyte's 2025 operations show a noticeable evolution toward using kernel-mode injectors to deploy TONESHELL, improving both stealth and resilience,\" the company concluded."
+        ],
+        "edges": [
+          "EDGE_125efaa32cc5"
+        ]
+      },
+      {
+        "node_id": "HL_b2bd8b0f689f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Myanmar",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The findings come from Kaspersky, which observed the new backdoor variant in cyber espionage campaigns mounted by the hacking group targeting government organizations in Southeast and East Asia, primarily Myanmar and Thailand."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_cda5242f22cb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kaspersky",
+        "sentence_indices": [
+          1,
+          14,
+          15,
+          21
+        ],
+        "span_sentences": [
+          "The findings come from Kaspersky, which observed the new backdoor variant in cyber espionage campaigns mounted by the hacking group targeting government organizations in Southeast and East Asia, primarily Myanmar and Thailand.",
+          "\"The rootkit functionality protects both the driver's own module and the user-mode processes into which the backdoor code is injected, preventing access by any process on the system,\" Kaspersky said.",
+          "\"Microsoft designates the 320000–329999 altitude range for the FSFilter Anti-Virus Load Order Group,\" Kaspersky explained.",
+          "Memory forensics is key to analyzing the new TONESHELL infections, as the shellcode executes entirely in memory, Kaspersky said, noting that detecting the injected shellcode is a crucial indicator of the backdoor's presence on compromised hosts."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f0730fc60dca",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Thailand",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The findings come from Kaspersky, which observed the new backdoor variant in cyber espionage campaigns mounted by the hacking group targeting government organizations in Southeast and East Asia, primarily Myanmar and Thailand."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f0e0a619d88d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "WispRider",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "As recently as September 2025, the threat actor was linked to attacks targeting Thai entities with TONESHELL and a USB worm named TONEDISK (aka WispRider) that uses removable devices as a distribution vector for a backdoor referred to as Yokai."
+        ],
+        "edges": [
+          "EDGE_3de991eb4052"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1014",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1014",
+        "ttp_id": "T1014",
+        "best_span_sentences_list": [
+          [
+            "The Chinese hacking group known as Mustang Panda (aka HoneyMyte) has leveraged a previously undocumented kernel-mode rootkit driver to deliver a new variant of backdoor dubbed TONESHELL in a cyber attack detected in mid-2025 targeting an unspecified entity in Asia.",
+            "The findings come from Kaspersky, which observed the new backdoor variant in cyber espionage campaigns mounted by the hacking group targeting government organizations in Southeast and East Asia, primarily Myanmar and Thailand.",
+            "\"The driver file is signed with an old, stolen, or leaked digital certificate and registers as a minifilter driver on infected machines,\" the Russian cybersecurity company said.",
+            "\"Its end-goal is to inject a backdoor trojan into the system processes and provide protection for malicious files, user-mode processes, and registry keys.\"\nThe final payload deployed as part of the attack is TONESHELL, an implant with reverse shell and downloader capabilities to fetch next-stage malware onto compromised hosts.",
+            "The use of TONESHELL has been attributed to Mustang Panda since at least late 2022."
+          ],
+          [
+            "\"The rootkit functionality protects both the driver's own module and the user-mode processes into which the backdoor code is injected, preventing access by any process on the system,\" Kaspersky said."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            4
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_125efaa32cc5",
+          "EDGE_7ead34281cc7"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "It also uses multiple obfuscation techniques, callback routines, and notification mechanisms to hide its API usage and track process and registry activity, ultimately strengthening the backdoor's defenses."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_e820ab20c71b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "\"Its end-goal is to inject a backdoor trojan into the system processes and provide protection for malicious files, user-mode processes, and registry keys.\"\nThe final payload deployed as part of the attack is TONESHELL, an implant with reverse shell and downloader capabilities to fetch next-stage malware onto compromised hosts."
+          ],
+          [
+            "\"The rootkit functionality protects both the driver's own module and the user-mode processes into which the backdoor code is injected, preventing access by any process on the system,\" Kaspersky said."
+          ],
+          [
+            "Since filters with lower altitudes sit deeper in the I/O stack, the malicious driver intercepts file operations before legitimate low-altitude filters like antivirus components, allowing it to circumvent security checks.\"\nThe driver is ultimately designed to drop two user-mode payloads, one of which spawns an \"svchost.exe\" process and injects a small delay-inducing shellcode.",
+            "The second payload is the TONESHELL backdoor that's injected into that same \"svchost.exe\" process."
+          ],
+          [
+            "Memory forensics is key to analyzing the new TONESHELL infections, as the shellcode executes entirely in memory, Kaspersky said, noting that detecting the injected shellcode is a crucial indicator of the backdoor's presence on compromised hosts."
+          ],
+          [
+            "\"To further conceal its activity, the driver first deploys a small user-mode component that handles the final injection step."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            17,
+            18
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_69e7a3f1dcba"
+        ]
+      },
+      {
+        "node_id": "TTP_T1091",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1091",
+        "ttp_id": "T1091",
+        "best_span_sentences_list": [
+          [
+            "As recently as September 2025, the threat actor was linked to attacks targeting Thai entities with TONESHELL and a USB worm named TONEDISK (aka WispRider) that uses removable devices as a distribution vector for a backdoor referred to as Yokai."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "edges": [
+          "EDGE_3de991eb4052",
+          "EDGE_8f5d324f5461"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "\"Its end-goal is to inject a backdoor trojan into the system processes and provide protection for malicious files, user-mode processes, and registry keys.\"\nThe final payload deployed as part of the attack is TONESHELL, an implant with reverse shell and downloader capabilities to fetch next-stage malware onto compromised hosts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_90d8853fff43"
+        ]
+      },
+      {
+        "node_id": "TTP_T1215",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1215",
+        "ttp_id": "T1215",
+        "best_span_sentences_list": [
+          [
+            "\"The driver file is signed with an old, stolen, or leaked digital certificate and registers as a minifilter driver on infected machines,\" the Russian cybersecurity company said."
+          ],
+          [
+            "\"Microsoft designates the 320000–329999 altitude range for the FSFilter Anti-Virus Load Order Group,\" Kaspersky explained.",
+            "\"The malware's chosen altitude exceeds this range."
+          ],
+          [
+            "The development marks the first time TONSHELL has been delivered through a kernel-mode loader, effectively allowing it to conceal its activity from security tools."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_14cb00c71fe9"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "\"Its end-goal is to inject a backdoor trojan into the system processes and provide protection for malicious files, user-mode processes, and registry keys.\"\nThe final payload deployed as part of the attack is TONESHELL, an implant with reverse shell and downloader capabilities to fetch next-stage malware onto compromised hosts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_b1905ecec3cd"
+        ]
+      },
+      {
+        "node_id": "TTP_T1553",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1553",
+        "ttp_id": "T1553",
+        "best_span_sentences_list": [
+          [
+            "\"The driver file is signed with an old, stolen, or leaked digital certificate and registers as a minifilter driver on infected machines,\" the Russian cybersecurity company said."
+          ],
+          [
+            "The driver file (\"ProjectConfiguration.sys\") is signed with a digital certificate from Guangzhou Kingteller Technology Co., Ltd, a Chinese company that's involved in the distribution and provisioning of automated teller machines (ATMs)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_9c64110a069b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1583",
+        "ttp_id": "T1583",
+        "best_span_sentences_list": [
+          [
+            "The command-and-control (C2) infrastructure used for TONESHELL is said to have been erected in September 2024, although there are indications that the campaign itself did not commence until February 2025."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_c3fd3b09e948"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_125efaa32cc5",
+      "node_u": "HL_ac58a7f99304",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_14cb00c71fe9",
+      "node_u": "HL_124c917eb7a7",
+      "node_v": "TTP_T1215",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3de991eb4052",
+      "node_u": "HL_f0e0a619d88d",
+      "node_v": "TTP_T1091",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_69e7a3f1dcba",
+      "node_u": "HL_124c917eb7a7",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7ead34281cc7",
+      "node_u": "HL_0c451fd5e540",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8f5d324f5461",
+      "node_u": "HL_52bce757b7bd",
+      "node_v": "TTP_T1091",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_90d8853fff43",
+      "node_u": "HL_124c917eb7a7",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9c64110a069b",
+      "node_u": "HL_ab012406908c",
+      "node_v": "TTP_T1553",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b1905ecec3cd",
+      "node_u": "HL_124c917eb7a7",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c3fd3b09e948",
+      "node_u": "HL_124c917eb7a7",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e820ab20c71b",
+      "node_u": "HL_124c917eb7a7",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

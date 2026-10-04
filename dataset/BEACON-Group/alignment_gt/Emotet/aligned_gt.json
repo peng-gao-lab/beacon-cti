@@ -1,0 +1,1604 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_42e58b82b87b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Internal Revenue Service",
+        "edges": [
+          "EDGE_21e2b86d943a"
+        ],
+        "source": {
+          "Internal Revenue Service_blog.talosintelligence.com_emotet-switches-to-onenote": [
+            [
+              14,
+              "Internal Revenue Service (IRS) and requested that the recipient complete the attached form."
+            ]
+          ],
+          "IRS_blog.talosintelligence.com_emotet-switches-to-onenote": [
+            [
+              14,
+              "Internal Revenue Service (IRS) and requested that the recipient complete the attached form."
+            ]
+          ]
+        },
+        "alias": [
+          "IRS"
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "source": {
+          "Microsoft_blog.talosintelligence.com_emotet-switches-to-onenote": [
+            [
+              10,
+              "Microsoft recently deployed new security mechanisms around protecting endpoints from macro-based malware infections, which resulted in various threat actors moving away from Office document-based malspam campaigns."
+            ]
+          ],
+          "Microsoft_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              0,
+              "In this post, we look at the types of embedded payloads that attackers leverage to abuse Microsoft OneNote files."
+            ],
+            [
+              9,
+              "However, Microsoft has started blocking embedded objects with certain extensions that are considered dangerous within OneNote files running on Microsoft 365 on Windows."
+            ]
+          ],
+          "Microsoft_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              7,
+              "In response to Microsoft blocking macros within documents (a previously popular mechanism for spreading malware, including Emotet), cybercriminals are using OneNote attachments instead."
+            ],
+            [
+              24,
+              "Emotet malware was widely distributed in 2022, often seen embedded in Microsoft’s macros within Word and Excel files."
+            ],
+            [
+              25,
+              "This attack method, however, was curbed by Microsoft automatically blocking macros from downloaded files."
+            ],
+            [
+              30,
+              "While Microsoft will still deliver their warning when the user clicks on the ‘View’ button, most non-technical users may not acknowledge or understand this message and will likely click on the ‘OK’ button to simply get rid of the alert."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_62951c4067f1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Word",
+        "edges": [
+          "EDGE_3398e605c394",
+          "EDGE_67b0f6f4158b",
+          "EDGE_91eed0f0b223",
+          "EDGE_dd910140943c",
+          "EDGE_ec63b4275d4b"
+        ],
+        "source": {
+          "Microsoft Word_blog.talosintelligence.com_emotet-switches-to-onenote": [
+            [
+              1,
+              "- Initially leveraging heavily padded Microsoft Word documents to attempt to evade sandbox analysis and endpoint protection, the botnets switched to distributing malicious OneNote documents on March 16."
+            ],
+            [
+              4,
+              "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection."
+            ],
+            [
+              6,
+              "While the ZIP archives are often small, in some cases only ~646KB, the Microsoft Word document when fully extracted was ~500MB in size."
+            ]
+          ],
+          "Word_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              24,
+              "Emotet malware was widely distributed in 2022, often seen embedded in Microsoft’s macros within Word and Excel files."
+            ],
+            [
+              28,
+              "Similar to using Word and Excel files, using a real OneNote file gives the attachment a benign and familiar appearance, lowering the target’s suspicions that they are interacting with a malicious payload."
+            ]
+          ]
+        },
+        "alias": [
+          "Word"
+        ]
+      },
+      {
+        "node_id": "HL_934b448b11eb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "OneNote",
+        "edges": [
+          "EDGE_3fb563713dd2",
+          "EDGE_7313f39ffa28",
+          "EDGE_b073e6a36b4b",
+          "EDGE_bcd4b5dfad33",
+          "EDGE_dd76e73ca43d",
+          "EDGE_59eded92c3a8"
+        ],
+        "source": {
+          "OneNote_blog.talosintelligence.com_emotet-switches-to-onenote": [
+            [
+              1,
+              "- Initially leveraging heavily padded Microsoft Word documents to attempt to evade sandbox analysis and endpoint protection, the botnets switched to distributing malicious OneNote documents on March 16."
+            ],
+            [
+              11,
+              "In many cases, these malware distribution campaigns switched to distributing OneNote documents instead, likely as a result of decreased infections and lower success rates."
+            ],
+            [
+              12,
+              "Emotet is no different — shortly after their return to spamming operations on March 16, 2023, they began distributing OneNote files, as well."
+            ],
+            [
+              15,
+              "The attached OneNote document featured templates similar to what has been observed in other Office document formats over the past several years, prompting the user to click inside the document to view the file."
+            ],
+            [
+              18,
+              "More recently, the embedded object inside of the OneNote files contained JavaScript instead of VBScript but offered the same functionality within the infection chain."
+            ]
+          ],
+          "OneNote_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              1,
+              "Our analysis of roughly 6,000 malicious OneNote samples from WildFire reveals that these samples have a phishing-like theme where attackers use one or more images to lure people into clicking or interacting with OneNote files."
+            ],
+            [
+              4,
+              "As a result, malicious OneNote files have grown in popularity."
+            ],
+            [
+              5,
+              "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one."
+            ],
+            [
+              6,
+              "We find that attackers have the freedom to embed either text-based malicious scripts or binary files inside OneNote."
+            ],
+            [
+              8,
+              "Additionally, Microsoft OneNote allows people to embed external files, enabling them to store files such as videos, images or even scripts and executables."
+            ],
+            [
+              11,
+              "Malicious OneNote samples typically disguise themselves as legitimate notes, often including an image and a button."
+            ],
+            [
+              14,
+              "In Figure 1, the malicious OneNote sample asks the target to click on the view button to see the “protected” document."
+            ],
+            [
+              16,
+              "Similarly, Figures 2 and 3 show malicious OneNote documents with fake buttons that entice victims to execute an embedded EXE payload and an Office 97-2003 payload, respectively."
+            ],
+            [
+              19,
+              "The telltale sign of a malicious OneNote file is the presence of embedded objects."
+            ],
+            [
+              23,
+              "While larger binary embedded payloads such as EXE and Office 97-2003 are more capable, attackers tend to use them less often (as shown in Figure 5) because they increase the overall size of the OneNote sample."
+            ],
+            [
+              26,
+              "Attackers creating malicious OneNote lures use images that look like buttons to trick people into launching harmful payloads."
+            ],
+            [
+              27,
+              "We mapped out the number of images in each malicious OneNote sample with the payload type, and then calculated the median number of images."
+            ],
+            [
+              28,
+              "In analyzing the 6,000 samples in our dataset, we found that all but three (99.9%) of the malicious OneNote samples contained at least one image."
+            ],
+            [
+              29,
+              "Since almost all of the samples contain at least one image, we can confirm our hypothesis that OneNote samples are primarily used as phishing vehicles."
+            ],
+            [
+              32,
+              "The chart above demonstrates that two to three images typically accompany payloads in malicious OneNote samples, some used to make the document more believable and some serving as fake buttons."
+            ],
+            [
+              33,
+              "While our previous research examined OneNote samples that carry the more common and popular payload types, such as PowerShell or HTA, EXE payloads have gotten less attention."
+            ],
+            [
+              34,
+              "In this section, we will analyze a OneNote sample with an embedded EXE payload."
+            ],
+            [
+              46,
+              "We conclude that OneNote as an attack vector is more versatile than we initially thought."
+            ],
+            [
+              49,
+              "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+            ]
+          ],
+          "Microsoft OneNote_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              0,
+              "In this post, we look at the types of embedded payloads that attackers leverage to abuse Microsoft OneNote files."
+            ],
+            [
+              8,
+              "Additionally, Microsoft OneNote allows people to embed external files, enabling them to store files such as videos, images or even scripts and executables."
+            ]
+          ],
+          "Microsoft OneNote_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              0,
+              "Since March 2nd, 2023, intelligence from the Egress Intelligent Email Security platform shows Emotet malware being used within Microsoft OneNote attachments, as cybercriminals evolve their attacks in attempts to avoid detection."
+            ],
+            [
+              17,
+              "Microsoft OneNote’s features allows users to create documents with design elements that overlay an embedded document."
+            ],
+            [
+              21,
+              "Microsoft OneNote will still prompt the victim with a legitimate warning message when the embedded file underneath the view button is clicked."
+            ]
+          ],
+          "OneNote desktop app_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              5,
+              "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one."
+            ]
+          ]
+        },
+        "alias": [
+          "Microsoft OneNote",
+          "OneNote desktop app"
+        ]
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "source": {
+          "U.S._blog.talosintelligence.com_emotet-switches-to-onenote": [
+            [
+              13,
+              "In one example, the sender purported to be from the U.S."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f5d008f23d8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Emotet",
+        "edges": [
+          "EDGE_04e14532070b",
+          "EDGE_095f9463036a",
+          "EDGE_2efcc32ebe9d",
+          "EDGE_8b5ada8903a3",
+          "EDGE_bfa92b240628",
+          "EDGE_2ceea0d80ea8",
+          "EDGE_c820146fa374"
+        ],
+        "source": {
+          "Emotet_blog.talosintelligence.com_emotet-switches-to-onenote": [
+            [
+              0,
+              "Emotet resumed spamming operations on March 7, 2023, after a months-long hiatus."
+            ],
+            [
+              2,
+              "- Since returning, Emotet has leveraged several distinct infection chains, indicating that they are modifying their approach based on their perceived success in infecting new systems."
+            ],
+            [
+              3,
+              "- The initial emails delivered to victims are consistent with what has been observed from Emotet over the past several years."
+            ],
+            [
+              4,
+              "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection."
+            ],
+            [
+              9,
+              "The Word documents in this campaign contained malicious VBA macros that, when executed, functioned as a malware downloader, retrieving the Emotet payload from attacker-controlled distribution servers and infecting systems, thus adding them to the Emotet botnets."
+            ],
+            [
+              12,
+              "Emotet is no different — shortly after their return to spamming operations on March 16, 2023, they began distributing OneNote files, as well."
+            ],
+            [
+              17,
+              "This VBScript downloader is responsible for retrieving the Emotet malware payload from an attacker-controlled server and infecting the system."
+            ],
+            [
+              21,
+              "This object is a heavily obfuscated JavaScript downloader responsible for retrieving and executing the Emotet payload on the system."
+            ],
+            [
+              22,
+              "In a relatively short period, Emotet has modified its infection chain several times to maximize the likelihood of successfully infecting victims."
+            ]
+          ],
+          "Emotet_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              0,
+              "Since March 2nd, 2023, intelligence from the Egress Intelligent Email Security platform shows Emotet malware being used within Microsoft OneNote attachments, as cybercriminals evolve their attacks in attempts to avoid detection."
+            ],
+            [
+              1,
+              "Emotet is sophisticated malware primarily used for stealing sensitive information, such as credentials, from the machines it infects."
+            ],
+            [
+              2,
+              "Emotet typically spreads through malicious attachments or links contained within phishing emails, and once it has infected a system, it can also spread to other machines on the network."
+            ],
+            [
+              3,
+              "Emotet is known for being highly sophisticated and very difficult to combat because of its ‘worm-like’ features that enable network-wide infections."
+            ],
+            [
+              4,
+              "Additionally, Emotet uses modular dynamic link libraries (DLL) to continuously evolve and update its capabilities."
+            ],
+            [
+              7,
+              "In response to Microsoft blocking macros within documents (a previously popular mechanism for spreading malware, including Emotet), cybercriminals are using OneNote attachments instead."
+            ],
+            [
+              12,
+              "The attacks seen by our Cyber Analysts to disguise and send Emotet malware were created using a very basic HTML template."
+            ],
+            [
+              16,
+              "Phishing email containing Emotet malware within a OneNote attachment, leverage impersonation of the UK CEO of Santander Bank\nIn the payload shown below, when they open the attachment, the target is taken to what appears to be a legitimate OneNote file with a blurred, ‘protected’ invoice in the background."
+            ],
+            [
+              19,
+              "In this specific Emotet malware attack, the cybercriminals have hidden a malicious VBScript file called ‘view.wsf’ underneath the ‘View’ button in the fake OneNote pop up – when the victim clicks the button, they unintentionally run the VBScript on their machine."
+            ],
+            [
+              22,
+              "Once Emotet has successfully infected one machine on the network, it can now use this machine as a pivot to spread to others on the network by exploiting vulnerabilities, infecting shared drives, email harvesting, and using brute force methods to try crack passwords for other machines on the network."
+            ],
+            [
+              23,
+              "Egress analysis\nThis attack demonstrates the sophistication of Emotet malware and how phishing can be used as an easy way to infect an initial machine."
+            ],
+            [
+              24,
+              "Emotet malware was widely distributed in 2022, often seen embedded in Microsoft’s macros within Word and Excel files."
+            ],
+            [
+              34,
+              "The simplicity and believability of the phishing emails used to deliver the Emotet payload is concerning for organizations given the damage this malware can do."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_007618c8b10f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WildFire",
+        "edges": [],
+        "source": {
+          "WildFire_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              1,
+              "Our analysis of roughly 6,000 malicious OneNote samples from WildFire reveals that these samples have a phishing-like theme where attackers use one or more images to lure people into clicking or interacting with OneNote files."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1bcf824222e5"
+        ],
+        "source": {
+          "PowerShell_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              33,
+              "While our previous research examined OneNote samples that carry the more common and popular payload types, such as PowerShell or HTA, EXE payloads have gotten less attention."
+            ],
+            [
+              49,
+              "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_22935c36e8ee",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office",
+        "edges": [],
+        "source": {
+          "Office_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              3,
+              "Since macros have been disabled by default in Office, attackers have turned to leveraging other Microsoft products for embedding malicious payloads."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "source": {
+          "Windows_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              5,
+              "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one."
+            ],
+            [
+              9,
+              "However, Microsoft has started blocking embedded objects with certain extensions that are considered dangerous within OneNote files running on Microsoft 365 on Windows."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_514a571a8043",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft 365",
+        "edges": [],
+        "source": {
+          "Microsoft 365_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              5,
+              "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one."
+            ],
+            [
+              9,
+              "However, Microsoft has started blocking embedded objects with certain extensions that are considered dangerous within OneNote files running on Microsoft 365 on Windows."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_52ba757ea8df",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Batch",
+        "edges": [
+          "EDGE_4014c5e3125b"
+        ],
+        "source": {
+          "Batch_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              49,
+              "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5e08fcb55ae6",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "JavaScript",
+        "edges": [
+          "EDGE_cc614d3da113"
+        ],
+        "source": {
+          "JavaScript_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              25,
+              "As illustrated in Figure 6 above, embedded malicious EXE and Office 97-2003 file payloads tend to be larger, and embedded malicious HTA and JavaScript files tend to be smaller."
+            ],
+            [
+              49,
+              "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6432cad7af04",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office 2019",
+        "edges": [],
+        "source": {
+          "Office 2019_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              5,
+              "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_67a4193a668c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "IDA Pro",
+        "edges": [],
+        "source": {
+          "IDA Pro_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              35,
+              "Figure 8 shows our analysis of the EXE payload in IDA Pro."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6c65650652b4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Python",
+        "edges": [],
+        "source": {
+          "Python_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              45,
+              "Executing the above Python script gave us the output shown in Figure 15, indicating the attacker is connecting to a local machine on port 4444, potentially to an attacker-controlled machine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b061a5924e9f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office 97-2003",
+        "edges": [
+          "EDGE_9eeee286426d"
+        ],
+        "source": {
+          "Office 97-2003_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              16,
+              "Similarly, Figures 2 and 3 show malicious OneNote documents with fake buttons that entice victims to execute an embedded EXE payload and an Office 97-2003 payload, respectively."
+            ],
+            [
+              23,
+              "While larger binary embedded payloads such as EXE and Office 97-2003 are more capable, attackers tend to use them less often (as shown in Figure 5) because they increase the overall size of the OneNote sample."
+            ],
+            [
+              25,
+              "As illustrated in Figure 6 above, embedded malicious EXE and Office 97-2003 file payloads tend to be larger, and embedded malicious HTA and JavaScript files tend to be smaller."
+            ],
+            [
+              50,
+              "However, attackers occasionally use binary payloads such as executables or even Office 97-2003 files to achieve their objectives."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c80487cfd123",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "HTA",
+        "edges": [],
+        "source": {
+          "HTA_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              25,
+              "As illustrated in Figure 6 above, embedded malicious EXE and Office 97-2003 file payloads tend to be larger, and embedded malicious HTA and JavaScript files tend to be smaller."
+            ],
+            [
+              33,
+              "While our previous research examined OneNote samples that carry the more common and popular payload types, such as PowerShell or HTA, EXE payloads have gotten less attention."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ce22df989522",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "VBScript",
+        "edges": [
+          "EDGE_5f59f5496a62",
+          "EDGE_dc2592d9e6b2"
+        ],
+        "source": {
+          "VBScript_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": [
+            [
+              15,
+              "Upon doing so, a malicious VBScript file executes."
+            ],
+            [
+              49,
+              "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_61303dfe332c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Santander Bank",
+        "edges": [
+          "EDGE_4c3bf1339b55",
+          "EDGE_e8e4726a1978"
+        ],
+        "source": {
+          "Santander Bank_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              13,
+              "This contains a few lines of text and impersonates the UK CEO of Santander Bank in the ‘From’ address."
+            ],
+            [
+              16,
+              "Phishing email containing Emotet malware within a OneNote attachment, leverage impersonation of the UK CEO of Santander Bank\nIn the payload shown below, when they open the attachment, the target is taken to what appears to be a legitimate OneNote file with a blurred, ‘protected’ invoice in the background."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_951223d5d18c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Excel",
+        "edges": [],
+        "source": {
+          "Excel_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              24,
+              "Emotet malware was widely distributed in 2022, often seen embedded in Microsoft’s macros within Word and Excel files."
+            ],
+            [
+              28,
+              "Similar to using Word and Excel files, using a real OneNote file gives the attachment a benign and familiar appearance, lowering the target’s suspicions that they are interacting with a malicious payload."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_99eca8433124",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Egress",
+        "edges": [],
+        "source": {
+          "Egress_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              0,
+              "Since March 2nd, 2023, intelligence from the Egress Intelligent Email Security platform shows Emotet malware being used within Microsoft OneNote attachments, as cybercriminals evolve their attacks in attempts to avoid detection."
+            ],
+            [
+              23,
+              "Egress analysis\nThis attack demonstrates the sophistication of Emotet malware and how phishing can be used as an easy way to infect an initial machine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a7c8489ac277",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "UK",
+        "edges": [],
+        "source": {
+          "UK_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              13,
+              "This contains a few lines of text and impersonates the UK CEO of Santander Bank in the ‘From’ address."
+            ],
+            [
+              16,
+              "Phishing email containing Emotet malware within a OneNote attachment, leverage impersonation of the UK CEO of Santander Bank\nIn the payload shown below, when they open the attachment, the target is taken to what appears to be a legitimate OneNote file with a blurred, ‘protected’ invoice in the background."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c77c3b7396f4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Egress Intelligent Email Security",
+        "edges": [],
+        "source": {
+          "Egress Intelligent Email Security_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": [
+            [
+              0,
+              "Since March 2nd, 2023, intelligence from the Egress Intelligent Email Security platform shows Emotet malware being used within Microsoft OneNote attachments, as cybercriminals evolve their attacks in attempts to avoid detection."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "The document included a large number of 0x00 bytes, a technique commonly referred to as “padding.”\nSome of the documents also featured excerpts from the classic novel “Moby Dick,” another attempt to increase the size of the documents for evasion purposes."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1001_blog.talosintelligence.com_emotet-switches-to-onenote": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The document included a large number of 0x00 bytes, a technique commonly referred to as “padding.”\nSome of the documents also featured excerpts from the classic novel “Moby Dick,” another attempt to increase the size of the documents for evasion purposes."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "- Initially leveraging heavily padded Microsoft Word documents to attempt to evade sandbox analysis and endpoint protection, the botnets switched to distributing malicious OneNote documents on March 16."
+          ],
+          [
+            "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection."
+          ],
+          [
+            "The document included a large number of 0x00 bytes, a technique commonly referred to as “padding.”\nSome of the documents also featured excerpts from the classic novel “Moby Dick,” another attempt to increase the size of the documents for evasion purposes.",
+            "The Office documents featured templates consistent with those used by Emotet in the past, as shown below."
+          ],
+          [
+            "This object is a heavily obfuscated JavaScript downloader responsible for retrieving and executing the Emotet payload on the system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_2efcc32ebe9d",
+          "EDGE_b073e6a36b4b",
+          "EDGE_ec63b4275d4b"
+        ],
+        "source": {
+          "TTP:T1027_blog.talosintelligence.com_emotet-switches-to-onenote": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- Initially leveraging heavily padded Microsoft Word documents to attempt to evade sandbox analysis and endpoint protection, the botnets switched to distributing malicious OneNote documents on March 16."
+              ],
+              [
+                "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection."
+              ],
+              [
+                "The document included a large number of 0x00 bytes, a technique commonly referred to as “padding.”\nSome of the documents also featured excerpts from the classic novel “Moby Dick,” another attempt to increase the size of the documents for evasion purposes.",
+                "The Office documents featured templates consistent with those used by Emotet in the past, as shown below."
+              ],
+              [
+                "This object is a heavily obfuscated JavaScript downloader responsible for retrieving and executing the Emotet payload on the system."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The Word documents in this campaign contained malicious VBA macros that, when executed, functioned as a malware downloader, retrieving the Emotet payload from attacker-controlled distribution servers and infecting systems, thus adding them to the Emotet botnets."
+          ],
+          [
+            "When clicked, an embedded WSF script linked behind the view button containing malicious VBScript code is executed.",
+            "This VBScript downloader is responsible for retrieving the Emotet malware payload from an attacker-controlled server and infecting the system.",
+            "More recently, the embedded object inside of the OneNote files contained JavaScript instead of VBScript but offered the same functionality within the infection chain.",
+            "Hovering over the next button indicates that an object called “Object1.js” will execute when the button is clicked."
+          ],
+          [
+            "This object is a heavily obfuscated JavaScript downloader responsible for retrieving and executing the Emotet payload on the system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_bfa92b240628",
+          "EDGE_dd76e73ca43d",
+          "EDGE_dd910140943c",
+          "EDGE_1bcf824222e5",
+          "EDGE_4014c5e3125b",
+          "EDGE_cc614d3da113",
+          "EDGE_dc2592d9e6b2"
+        ],
+        "source": {
+          "TTP:T1059_blog.talosintelligence.com_emotet-switches-to-onenote": {
+            "best_span_ranges": [
+              [
+                9,
+                9
+              ],
+              [
+                16,
+                19
+              ],
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The Word documents in this campaign contained malicious VBA macros that, when executed, functioned as a malware downloader, retrieving the Emotet payload from attacker-controlled distribution servers and infecting systems, thus adding them to the Emotet botnets."
+              ],
+              [
+                "When clicked, an embedded WSF script linked behind the view button containing malicious VBScript code is executed.",
+                "This VBScript downloader is responsible for retrieving the Emotet malware payload from an attacker-controlled server and infecting the system.",
+                "More recently, the embedded object inside of the OneNote files contained JavaScript instead of VBScript but offered the same functionality within the infection chain.",
+                "Hovering over the next button indicates that an object called “Object1.js” will execute when the button is clicked."
+              ],
+              [
+                "This object is a heavily obfuscated JavaScript downloader responsible for retrieving and executing the Emotet payload on the system."
+              ]
+            ]
+          },
+          "TTP:T1059_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ],
+              [
+                14,
+                15
+              ],
+              [
+                49,
+                49
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "We find that attackers have the freedom to embed either text-based malicious scripts or binary files inside OneNote."
+              ],
+              [
+                "In Figure 1, the malicious OneNote sample asks the target to click on the view button to see the “protected” document.",
+                "Upon doing so, a malicious VBScript file executes."
+              ],
+              [
+                "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+              ]
+            ]
+          },
+          "TTP:T1059_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                26,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once they have opened the file, victims are instructed to double-click on a ‘View’ button, which contains the malicious script."
+              ],
+              [
+                "Malicious VBScript file is hidden underneath a fake OneNote pop up."
+              ],
+              [
+                "The evolution to using OneNote to deliver the malicious payload enables cybercriminals to work around this update.",
+                "In addition, the use of a usually benign application (OneNote) and malicious VBS payload means the attack can bypass traditional email security technologies that use signature-based detection to identify known payloads."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The Word documents in this campaign contained malicious VBA macros that, when executed, functioned as a malware downloader, retrieving the Emotet payload from attacker-controlled distribution servers and infecting systems, thus adding them to the Emotet botnets."
+          ],
+          [
+            "This VBScript downloader is responsible for retrieving the Emotet malware payload from an attacker-controlled server and infecting the system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            17,
+            17
+          ]
+        ],
+        "edges": [
+          "EDGE_7313f39ffa28",
+          "EDGE_8b5ada8903a3",
+          "EDGE_91eed0f0b223"
+        ],
+        "source": {
+          "TTP:T1105_blog.talosintelligence.com_emotet-switches-to-onenote": {
+            "best_span_ranges": [
+              [
+                9,
+                9
+              ],
+              [
+                17,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The Word documents in this campaign contained malicious VBA macros that, when executed, functioned as a malware downloader, retrieving the Emotet payload from attacker-controlled distribution servers and infecting systems, thus adding them to the Emotet botnets."
+              ],
+              [
+                "This VBScript downloader is responsible for retrieving the Emotet malware payload from an attacker-controlled server and infecting the system."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The attached OneNote document featured templates similar to what has been observed in other Office document formats over the past several years, prompting the user to click inside the document to view the file.",
+            "When clicked, an embedded WSF script linked behind the view button containing malicious VBScript code is executed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_04e14532070b",
+          "EDGE_3398e605c394",
+          "EDGE_bcd4b5dfad33",
+          "EDGE_5f59f5496a62",
+          "EDGE_9eeee286426d"
+        ],
+        "source": {
+          "TTP:T1204_blog.talosintelligence.com_emotet-switches-to-onenote": {
+            "best_span_ranges": [
+              [
+                15,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attached OneNote document featured templates similar to what has been observed in other Office document formats over the past several years, prompting the user to click inside the document to view the file.",
+                "When clicked, an embedded WSF script linked behind the view button containing malicious VBScript code is executed."
+              ]
+            ]
+          },
+          "TTP:T1204_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                11,
+                12
+              ],
+              [
+                14,
+                16
+              ],
+              [
+                26,
+                26
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Our analysis of roughly 6,000 malicious OneNote samples from WildFire reveals that these samples have a phishing-like theme where attackers use one or more images to lure people into clicking or interacting with OneNote files.",
+                "The interaction then executes an embedded malicious payload."
+              ],
+              [
+                "Malicious OneNote samples typically disguise themselves as legitimate notes, often including an image and a button.",
+                "Attackers use images to draw people’s attention, and they rely on unsuspecting people clicking buttons to launch malicious payloads."
+              ],
+              [
+                "In Figure 1, the malicious OneNote sample asks the target to click on the view button to see the “protected” document.",
+                "Upon doing so, a malicious VBScript file executes.",
+                "Similarly, Figures 2 and 3 show malicious OneNote documents with fake buttons that entice victims to execute an embedded EXE payload and an Office 97-2003 payload, respectively."
+              ],
+              [
+                "Attackers creating malicious OneNote lures use images that look like buttons to trick people into launching harmful payloads."
+              ]
+            ]
+          },
+          "TTP:T1204_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                11,
+                11
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                26,
+                27
+              ],
+              [
+                29,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Emotet typically spreads through malicious attachments or links contained within phishing emails, and once it has infected a system, it can also spread to other machines on the network."
+              ],
+              [
+                "Once they have opened the file, victims are instructed to double-click on a ‘View’ button, which contains the malicious script."
+              ],
+              [
+                "Malicious VBScript file is hidden underneath a fake OneNote pop up."
+              ],
+              [
+                "The evolution to using OneNote to deliver the malicious payload enables cybercriminals to work around this update.",
+                "In addition, the use of a usually benign application (OneNote) and malicious VBS payload means the attack can bypass traditional email security technologies that use signature-based detection to identify known payloads."
+              ],
+              [
+                "Additionally, the use of OneNote enables the cybercriminal to effectively hide their malicious scripts underneath a highly stylized but fake warning, increasing the likelihood that their victim will be deceived.",
+                "While Microsoft will still deliver their warning when the user clicks on the ‘View’ button, most non-technical users may not acknowledge or understand this message and will likely click on the ‘OK’ button to simply get rid of the alert."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Emotet resumed spamming operations on March 7, 2023, after a months-long hiatus."
+          ],
+          [
+            "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection."
+          ],
+          [
+            "Emotet is no different — shortly after their return to spamming operations on March 16, 2023, they began distributing OneNote files, as well.",
+            "In one example, the sender purported to be from the U.S.",
+            "Internal Revenue Service (IRS) and requested that the recipient complete the attached form."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            12,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_095f9463036a",
+          "EDGE_21e2b86d943a",
+          "EDGE_3fb563713dd2",
+          "EDGE_67b0f6f4158b",
+          "EDGE_4c3bf1339b55"
+        ],
+        "source": {
+          "TTP:T1566_blog.talosintelligence.com_emotet-switches-to-onenote": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                12,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Emotet resumed spamming operations on March 7, 2023, after a months-long hiatus."
+              ],
+              [
+                "Following its initial return to spamming operations, Emotet was leveraging heavily padded Microsoft Word documents in an attempt to evade detection."
+              ],
+              [
+                "Emotet is no different — shortly after their return to spamming operations on March 16, 2023, they began distributing OneNote files, as well.",
+                "In one example, the sender purported to be from the U.S.",
+                "Internal Revenue Service (IRS) and requested that the recipient complete the attached form."
+              ]
+            ]
+          },
+          "TTP:T1566_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                16,
+                16
+              ],
+              [
+                24,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Our analysis of roughly 6,000 malicious OneNote samples from WildFire reveals that these samples have a phishing-like theme where attackers use one or more images to lure people into clicking or interacting with OneNote files.",
+                "The interaction then executes an embedded malicious payload."
+              ],
+              [
+                "Similarly, Figures 2 and 3 show malicious OneNote documents with fake buttons that entice victims to execute an embedded EXE payload and an Office 97-2003 payload, respectively."
+              ],
+              [
+                "Attackers tend to prefer a smaller overall file size, as smaller-sized malware is easier to include in common malware delivery mechanisms such as email attachments, thus raising less suspicion."
+              ]
+            ]
+          },
+          "TTP:T1566_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                2,
+                2
+              ],
+              [
+                7,
+                9
+              ],
+              [
+                12,
+                13
+              ],
+              [
+                15,
+                15
+              ],
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Since March 2nd, 2023, intelligence from the Egress Intelligent Email Security platform shows Emotet malware being used within Microsoft OneNote attachments, as cybercriminals evolve their attacks in attempts to avoid detection."
+              ],
+              [
+                "Emotet typically spreads through malicious attachments or links contained within phishing emails, and once it has infected a system, it can also spread to other machines on the network."
+              ],
+              [
+                "In response to Microsoft blocking macros within documents (a previously popular mechanism for spreading malware, including Emotet), cybercriminals are using OneNote attachments instead.",
+                "These attachments have been disguised as ‘harmless’ attachments, such as invoices and job references.",
+                "The phishing emails are sent from lookalike, spoofed domains that impersonate reputable organisations."
+              ],
+              [
+                "The attacks seen by our Cyber Analysts to disguise and send Emotet malware were created using a very basic HTML template.",
+                "This contains a few lines of text and impersonates the UK CEO of Santander Bank in the ‘From’ address."
+              ],
+              [
+                "In the example below, the cybercriminal uses a common social engineering tactic of an arbitrary deadline (‘This is an urgent invoice that needs to be paid ASAP!’) to increase pressure on the target, trying to force them to act fast and without thinking about, or validating what they are doing."
+              ],
+              [
+                "Finally, in the attacks our Cyber Analysts have analyzed, the cybercriminals use highly effective social engineering tactics, including impersonation, to increase the attacks’ credibility, lower targets’ suspicions, and manipulate targets into acting quickly."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "Malicious OneNote samples typically disguise themselves as legitimate notes, often including an image and a button."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_59eded92c3a8",
+          "EDGE_2ceea0d80ea8",
+          "EDGE_e8e4726a1978"
+        ],
+        "source": {
+          "TTP:T1036_unit42.paloaltonetworks.com_payloads-in-malicious-onenote-samples": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Malicious OneNote samples typically disguise themselves as legitimate notes, often including an image and a button."
+              ]
+            ]
+          },
+          "TTP:T1036_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": {
+            "best_span_ranges": [
+              [
+                7,
+                8
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In response to Microsoft blocking macros within documents (a previously popular mechanism for spreading malware, including Emotet), cybercriminals are using OneNote attachments instead.",
+                "These attachments have been disguised as ‘harmless’ attachments, such as invoices and job references."
+              ],
+              [
+                "Malicious VBScript file is hidden underneath a fake OneNote pop up."
+              ],
+              [
+                "Additionally, the use of OneNote enables the cybercriminal to effectively hide their malicious scripts underneath a highly stylized but fake warning, increasing the likelihood that their victim will be deceived."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1110",
+        "ttp_id": "T1110",
+        "best_span_sentences_list": [
+          [
+            "Once Emotet has successfully infected one machine on the network, it can now use this machine as a pivot to spread to others on the network by exploiting vulnerabilities, infecting shared drives, email harvesting, and using brute force methods to try crack passwords for other machines on the network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_c820146fa374"
+        ],
+        "source": {
+          "TTP:T1110_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": {
+            "best_span_ranges": [
+              [
+                22,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once Emotet has successfully infected one machine on the network, it can now use this machine as a pivot to spread to others on the network by exploiting vulnerabilities, infecting shared drives, email harvesting, and using brute force methods to try crack passwords for other machines on the network."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1114",
+        "ttp_id": "T1114",
+        "best_span_sentences_list": [
+          [
+            "Once Emotet has successfully infected one machine on the network, it can now use this machine as a pivot to spread to others on the network by exploiting vulnerabilities, infecting shared drives, email harvesting, and using brute force methods to try crack passwords for other machines on the network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1114_www.egress.com_blog_phishing_new-use-of-emotet-malware-within-microsoft-onenote": {
+            "best_span_ranges": [
+              [
+                22,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once Emotet has successfully infected one machine on the network, it can now use this machine as a pivot to spread to others on the network by exploiting vulnerabilities, infecting shared drives, email harvesting, and using brute force methods to try crack passwords for other machines on the network."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_04e14532070b",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_095f9463036a",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_21e2b86d943a",
+      "node_u": "HL_42e58b82b87b",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2efcc32ebe9d",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3398e605c394",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3fb563713dd2",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_67b0f6f4158b",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7313f39ffa28",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8b5ada8903a3",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_91eed0f0b223",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b073e6a36b4b",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bcd4b5dfad33",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bfa92b240628",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dd76e73ca43d",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dd910140943c",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec63b4275d4b",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4014c5e3125b",
+      "node_u": "HL_52ba757ea8df",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_59eded92c3a8",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5f59f5496a62",
+      "node_u": "HL_ce22df989522",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9eeee286426d",
+      "node_u": "HL_b061a5924e9f",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cc614d3da113",
+      "node_u": "HL_5e08fcb55ae6",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dc2592d9e6b2",
+      "node_u": "HL_ce22df989522",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ceea0d80ea8",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4c3bf1339b55",
+      "node_u": "HL_61303dfe332c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c820146fa374",
+      "node_u": "HL_f5d008f23d8f",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e8e4726a1978",
+      "node_u": "HL_61303dfe332c",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

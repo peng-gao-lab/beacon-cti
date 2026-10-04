@@ -1,0 +1,1402 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_022adf8cd03c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Amazon Web Services",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos discovered that the attacker in this campaign is using multiple hosts, including an Amazon Web Services (AWS) Elastic Compute Cloud (EC2) instance, accessed through its public URL, to host the malicious files."
+        ]
+      },
+      {
+        "node_id": "HL_0576e1dd1c38",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Outlook",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          41,
+          42
+        ],
+        "span_sentences": [
+          "Talos discovered Horabot, an Outlook Phishing botnet program written in PowerShell.",
+          "It has embedded Visual Basic code that enables the threat actor to control the victim’s Outlook mailbox, exfiltrate contacts’ email addresses, and send phishing emails with malicious HTML attachments to all addresses in the victim’s mailbox."
+        ]
+      },
+      {
+        "node_id": "HL_0f277059215f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Argentina",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "The attacks predominantly target users in Mexico, with a few infections in Uruguay, Brazil, Venezuela, Argentina, Guatemala and Panama."
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          11,
+          16,
+          17,
+          19,
+          20,
+          26,
+          29,
+          41
+        ],
+        "span_sentences": [
+          "During our analysis, Talos observed that a malicious server at IP address 185[.]45[.]195[.]226 hosted the PowerShell downloader script and had an open directory that the attacker eventually disabled.",
+          "This campaign involves a multi-stage attack chain that begins with a phishing email and leads to payload delivery through the execution of a PowerShell downloader script and sideloading to legitimate executables.",
+          "The batch file downloads the PowerShell downloader script from an attacker-controlled server and executes it through the PowerShell commands.",
+          "The PowerShell downloader script will download a ZIP file that contains the payload DLLs and a few legitimate executables and DLLs.",
+          "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server.",
+          "The malicious PowerShell downloader script launches several processes that download the payloads and reboots the victim’s machine.",
+          "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops.",
+          "This link file executes another dropped batch file, “<desktop_name>Sy.cmd”, which executes a PowerShell command to download and run the Horabot “au” using the URL hxxp[://]tributaria[.]website/esp/12/151222/au/au.",
+          "Talos discovered Horabot, an Outlook Phishing botnet program written in PowerShell."
+        ]
+      },
+      {
+        "node_id": "HL_18a8c40152fc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Brazil",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          2,
+          9,
+          33
+        ],
+        "span_sentences": [
+          "- The threat actor appears to be targeting Spanish-speaking users in the Americas and, based on our analysis, may be located in Brazil.",
+          "The attacks predominantly target users in Mexico, with a few infections in Uruguay, Brazil, Venezuela, Argentina, Guatemala and Panama.",
+          "According to WHOIS records for the domain tributaria[.]website, used in this campaign to host the attacker’s tools as well as exfiltrated data, the domain was registered in July 2022 and the registrant was based out of Brazil.",
+          "It also uses similar techniques as Brazilian banking trojans reported by other security researchers at ESET and Check Point in the past."
+        ]
+      },
+      {
+        "node_id": "HL_1a9d581f4f6a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Panama",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "The attacks predominantly target users in Mexico, with a few infections in Uruguay, Brazil, Venezuela, Argentina, Guatemala and Panama."
+        ]
+      },
+      {
+        "node_id": "HL_2aa7594ef803",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Americas",
+        "edges": [],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- The threat actor appears to be targeting Spanish-speaking users in the Americas and, based on our analysis, may be located in Brazil."
+        ]
+      },
+      {
+        "node_id": "HL_353cd827af60",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Elastic Compute Cloud (EC2)",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Talos discovered that the attacker in this campaign is using multiple hosts, including an Amazon Web Services (AWS) Elastic Compute Cloud (EC2) instance, accessed through its public URL, to host the malicious files."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos has observed a threat actor deploying a previously unidentified botnet program Talos is calling “Horabot,” which delivers a known banking trojan and spam tool onto victim machines in a campaign that has been ongoing since at least November 2020."
+        ]
+      },
+      {
+        "node_id": "HL_475df6e3bb3c",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "investment firms",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In analyzing the phishing emails used in the campaign, Talos identified that users in organizations across several business verticals — including accounting, construction and engineering, wholesale distributing and investment firms — have been affected."
+        ]
+      },
+      {
+        "node_id": "HL_5b5cbb2d0f79",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Venezuela",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "The attacks predominantly target users in Mexico, with a few infections in Uruguay, Brazil, Venezuela, Argentina, Guatemala and Panama."
+        ]
+      },
+      {
+        "node_id": "HL_627bc6046419",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "construction and engineering",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In analyzing the phishing emails used in the campaign, Talos identified that users in organizations across several business verticals — including accounting, construction and engineering, wholesale distributing and investment firms — have been affected."
+        ]
+      },
+      {
+        "node_id": "HL_66ceded9c9c1",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "accounting",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In analyzing the phishing emails used in the campaign, Talos identified that users in organizations across several business verticals — including accounting, construction and engineering, wholesale distributing and investment firms — have been affected."
+        ]
+      },
+      {
+        "node_id": "HL_6acb3b643fdc",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Check Point",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "It also uses similar techniques as Brazilian banking trojans reported by other security researchers at ESET and Check Point in the past."
+        ]
+      },
+      {
+        "node_id": "HL_6adc15335b24",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Chrome",
+        "edges": [],
+        "sentence_indices": [
+          36,
+          37
+        ],
+        "span_sentences": [
+          "Talos spotted hardcoded SQL commands in the trojan binary designed to collect login data from the Google Chrome user profile folders by writing it to a database source file called “login_data.sql”, and creating SQL queries to produce the database tables to store the stolen data.",
+          "The dynamic analysis behavior in our analysis environment showed us that the database source file “login_data.sql” contains the login details and the associated URLs from the Google Chrome database files."
+        ]
+      },
+      {
+        "node_id": "HL_712effa3ccf0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Yahoo",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "The spam tool is a 32-bit DLL written in Delphi and, when run on the victim’s machine, will attempt to compromise the victim’s login credentials for webmail services such as Yahoo, Gmail, and Hotmail."
+        ]
+      },
+      {
+        "node_id": "HL_75785cf3a5e9",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "wholesale distributing",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In analyzing the phishing emails used in the campaign, Talos identified that users in organizations across several business verticals — including accounting, construction and engineering, wholesale distributing and investment firms — have been affected."
+        ]
+      },
+      {
+        "node_id": "HL_76872969bcdf",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Mexican Tax Agency",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "This domain name also resembled the legitimate Mexican Tax Agency domain, a tactic the attacker likely adopted to disguise malicious traffic."
+        ]
+      },
+      {
+        "node_id": "HL_7b33adfdc069",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Gmail",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "The spam tool is a 32-bit DLL written in Delphi and, when run on the victim’s machine, will attempt to compromise the victim’s login credentials for webmail services such as Yahoo, Gmail, and Hotmail."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "It also uses similar techniques as Brazilian banking trojans reported by other security researchers at ESET and Check Point in the past."
+        ]
+      },
+      {
+        "node_id": "HL_adc86eb7dab6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Horabot",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          0,
+          29,
+          41,
+          43
+        ],
+        "span_sentences": [
+          "Cisco Talos has observed a threat actor deploying a previously unidentified botnet program Talos is calling “Horabot,” which delivers a known banking trojan and spam tool onto victim machines in a campaign that has been ongoing since at least November 2020.",
+          "This link file executes another dropped batch file, “<desktop_name>Sy.cmd”, which executes a PowerShell command to download and run the Horabot “au” using the URL hxxp[://]tributaria[.]website/esp/12/151222/au/au.",
+          "Talos discovered Horabot, an Outlook Phishing botnet program written in PowerShell.",
+          "The end game of the attacker is to deliver the banking trojan to steal the victim's creds and financial data, along with it they are delivering Horabot and separate spam tool to propagate the infection by sending the phishing emails to all of the validated email IDs in the victim's mailbox."
+        ]
+      },
+      {
+        "node_id": "HL_b6c52aa2a503",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Hotmail",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "The spam tool is a 32-bit DLL written in Delphi and, when run on the victim’s machine, will attempt to compromise the victim’s login credentials for webmail services such as Yahoo, Gmail, and Hotmail."
+        ]
+      },
+      {
+        "node_id": "HL_b7c51e1ef8e9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Themida",
+        "edges": [],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The banking trojan identified in this campaign, a 32-bit Windows DLL written in the Delphi programming language and packed with Themida packer, can collect system information, credentials and user activity."
+        ]
+      },
+      {
+        "node_id": "HL_c679190ac4af",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Mexico",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "The attacks predominantly target users in Mexico, with a few infections in Uruguay, Brazil, Venezuela, Argentina, Guatemala and Panama."
+        ]
+      },
+      {
+        "node_id": "HL_e03945f2f3b1",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Delphi_Remote_Access_PC",
+        "edges": [],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "This trojan is based on a tool called Delphi_Remote_Access_PC, which is publicly available on GitHub."
+        ]
+      },
+      {
+        "node_id": "HL_e7be114bbc25",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Uruguay",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "The attacks predominantly target users in Mexico, with a few infections in Uruguay, Brazil, Venezuela, Argentina, Guatemala and Panama."
+        ]
+      },
+      {
+        "node_id": "HL_f490d3b65ad2",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AutoIt",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Then, the AutoIt script sideloads the DLL to the AutoIt interpreter process and executes the malicious function “B080223_AT” with the parameter “STRUCT”."
+        ]
+      },
+      {
+        "node_id": "HL_faa6b31b4475",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Guatemala",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "The attacks predominantly target users in Mexico, with a few infections in Uruguay, Brazil, Venezuela, Argentina, Guatemala and Panama."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malicious DLL “_upyqta2_J.mdat.a1” is a spam tool with information-stealing capability."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The script is heavily obfuscated with random symbols that substitute the instructions during the run-time and base64-encoded strings."
+          ],
+          [
+            "The banking trojan identified in this campaign, a 32-bit Windows DLL written in the Delphi programming language and packed with Themida packer, can collect system information, credentials and user activity."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            23,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It executes a function that uses alphanumeric characters and the special character “_” to generate a random name and creates a folder with the random name in the root directory of the victim’s machine.",
+            "The random name generated by the sample during our analysis was “_upyqta2_J”.",
+            "The script uses this random name eventually to create other folders and files.",
+            "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_6",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Using the GetRequestStream function, the script requests a data stream from the C2 server through the URL hxxp[://]139[.]177[.]193[.]74/esp/12/151222/au/tst/index[.]php?list and upon the successful response, the encoded email addresses are exfiltrated."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1056",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            34,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The trojan has remote desktop management capabilities such as creating and deleting directories on the victim’s machine, checking if a file on the victim’s filesystem exists and gets the file’s attributes, collecting size and version information, and downloading files from a URL.",
+            "It also has information-stealing capabilities, such as logging keystrokes via polling and application hooks, capturing screenshots, manipulating the victim’s machine clipboard and tracking the mouse's events."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_7",
+          "EDGE_17",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            23,
+            26
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            41,
+            42
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "During our analysis, Talos observed that a malicious server at IP address 185[.]45[.]195[.]226 hosted the PowerShell downloader script and had an open directory that the attacker eventually disabled."
+          ],
+          [
+            "This campaign involves a multi-stage attack chain that begins with a phishing email and leads to payload delivery through the execution of a PowerShell downloader script and sideloading to legitimate executables.",
+            "The infection starts with an income tax-themed phishing email written in Spanish, disguising itself as a tax receipt notification and enticing users to open the attached malicious HTML file."
+          ],
+          [
+            "The RAR file contains a batch file with a CMD extension that is executed when the victim opens the contents of the file."
+          ],
+          [
+            "The batch file downloads the PowerShell downloader script from an attacker-controlled server and executes it through the PowerShell commands.",
+            "The PowerShell downloader script will download a ZIP file that contains the payload DLLs and a few legitimate executables and DLLs.",
+            "It creates Windows shortcut files configured to run the payloads in the startup folder of the victim’s machine and restarts the machine after 10 seconds.",
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ],
+          [
+            "The PowerShell downloader script will download a ZIP file that contains the payload DLLs and a few legitimate executables and DLLs."
+          ],
+          [
+            "It creates Windows shortcut files configured to run the payloads in the startup folder of the victim’s machine and restarts the machine after 10 seconds.",
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ],
+          [
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ],
+          [
+            "The malicious PowerShell downloader script launches several processes that download the payloads and reboots the victim’s machine."
+          ],
+          [
+            "It executes a function that uses alphanumeric characters and the special character “_” to generate a random name and creates a folder with the random name in the root directory of the victim’s machine.",
+            "The random name generated by the sample during our analysis was “_upyqta2_J”.",
+            "The script uses this random name eventually to create other folders and files.",
+            "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops."
+          ],
+          [
+            "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops."
+          ],
+          [
+            "Then, the AutoIt script sideloads the DLL to the AutoIt interpreter process and executes the malicious function “B080223_AT” with the parameter “STRUCT”."
+          ],
+          [
+            "This link file executes another dropped batch file, “<desktop_name>Sy.cmd”, which executes a PowerShell command to download and run the Horabot “au” using the URL hxxp[://]tributaria[.]website/esp/12/151222/au/au."
+          ],
+          [
+            "Talos discovered Horabot, an Outlook Phishing botnet program written in PowerShell.",
+            "It has embedded Visual Basic code that enables the threat actor to control the victim’s Outlook mailbox, exfiltrate contacts’ email addresses, and send phishing emails with malicious HTML attachments to all addresses in the victim’s mailbox."
+          ],
+          [
+            "After exfiltrating the email addresses, the script creates a folder “fb” in the Public user folder and creates an HTML file in it, named “adjuntos_1503.html” in our sample analysis."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_8",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Then the phishing email is sent to the list of extracted email addresses one at a time, deleting the “fb” folder to cover its paths and avoid detection."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_9",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Using the GetRequestStream function, the script requests a data stream from the C2 server through the URL hxxp[://]139[.]177[.]193[.]74/esp/12/151222/au/tst/index[.]php?list and upon the successful response, the encoded email addresses are exfiltrated."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The banking trojan identified in this campaign, a 32-bit Windows DLL written in the Delphi programming language and packed with Themida packer, can collect system information, credentials and user activity."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The trojan has remote desktop management capabilities such as creating and deleting directories on the victim’s machine, checking if a file on the victim’s filesystem exists and gets the file’s attributes, collecting size and version information, and downloading files from a URL."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_10",
+          "EDGE_13",
+          "EDGE_19",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            16,
+            19
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos has observed a threat actor deploying a previously unidentified botnet program Talos is calling “Horabot,” which delivers a known banking trojan and spam tool onto victim machines in a campaign that has been ongoing since at least November 2020."
+          ],
+          [
+            "Another malicious server, 216[.]238[.]70[.]224, hosted the ZIP file containing the payloads."
+          ],
+          [
+            "According to WHOIS records for the domain tributaria[.]website, used in this campaign to host the attacker’s tools as well as exfiltrated data, the domain was registered in July 2022 and the registrant was based out of Brazil."
+          ],
+          [
+            "The batch file downloads the PowerShell downloader script from an attacker-controlled server and executes it through the PowerShell commands.",
+            "The PowerShell downloader script will download a ZIP file that contains the payload DLLs and a few legitimate executables and DLLs.",
+            "It creates Windows shortcut files configured to run the payloads in the startup folder of the victim’s machine and restarts the machine after 10 seconds.",
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ],
+          [
+            "The PowerShell downloader script will download a ZIP file that contains the payload DLLs and a few legitimate executables and DLLs."
+          ],
+          [
+            "It creates Windows shortcut files configured to run the payloads in the startup folder of the victim’s machine and restarts the machine after 10 seconds.",
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ],
+          [
+            "The malicious PowerShell downloader script launches several processes that download the payloads and reboots the victim’s machine."
+          ],
+          [
+            "This link file executes another dropped batch file, “<desktop_name>Sy.cmd”, which executes a PowerShell command to download and run the Horabot “au” using the URL hxxp[://]tributaria[.]website/esp/12/151222/au/au."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            34,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The trojan has remote desktop management capabilities such as creating and deleting directories on the victim’s machine, checking if a file on the victim’s filesystem exists and gets the file’s attributes, collecting size and version information, and downloading files from a URL.",
+            "It also has information-stealing capabilities, such as logging keystrokes via polling and application hooks, capturing screenshots, manipulating the victim’s machine clipboard and tracking the mouse's events."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1114",
+        "edges": [
+          "EDGE_2",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Talos discovered Horabot, an Outlook Phishing botnet program written in PowerShell.",
+            "It has embedded Visual Basic code that enables the threat actor to control the victim’s Outlook mailbox, exfiltrate contacts’ email addresses, and send phishing emails with malicious HTML attachments to all addresses in the victim’s mailbox."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1115",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1115",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It also has information-stealing capabilities, such as logging keystrokes via polling and application hooks, capturing screenshots, manipulating the victim’s machine clipboard and tracking the mouse's events."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The infection starts with an income tax-themed phishing email written in Spanish, disguising itself as a tax receipt notification and enticing users to open the attached malicious HTML file."
+          ],
+          [
+            "When a victim opens the HTML file attachment, an embedded URL is launched in the victim’s browser, redirecting to another malicious HTML file from an attacker-controlled AWS EC2 instance."
+          ],
+          [
+            "The content displayed on the victim’s browser lures them to click an embedded malicious hyperlink which downloads a RAR file."
+          ],
+          [
+            "The RAR file contains a batch file with a CMD extension that is executed when the victim opens the contents of the file."
+          ],
+          [
+            "The HTML file has an embedded malicious URL “hxxps[://]facturacionmarzo[.]cloud/e/archivos[.]pdf[.]html” in its metadata section."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            16,
+            19
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The batch file downloads the PowerShell downloader script from an attacker-controlled server and executes it through the PowerShell commands.",
+            "The PowerShell downloader script will download a ZIP file that contains the payload DLLs and a few legitimate executables and DLLs.",
+            "It creates Windows shortcut files configured to run the payloads in the startup folder of the victim’s machine and restarts the machine after 10 seconds.",
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ],
+          [
+            "It creates Windows shortcut files configured to run the payloads in the startup folder of the victim’s machine and restarts the machine after 10 seconds.",
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ],
+          [
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_3",
+          "EDGE_12",
+          "EDGE_14",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            41,
+            42
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, the attacker uses Horabot and the spam tool in this campaign to further propagate the attack by sending additional phishing emails to the victim’s contacts, meaning Spanish-speaking users from organizations in additional verticals are likely also affected."
+          ],
+          [
+            "However, the attacker uses Horabot and the spam tool in this campaign to further propagate the attack by sending additional phishing emails to the victim’s contacts, meaning Spanish-speaking users from organizations in additional verticals are likely also affected.",
+            "Talos discovered that the attacker in this campaign is using multiple hosts, including an Amazon Web Services (AWS) Elastic Compute Cloud (EC2) instance, accessed through its public URL, to host the malicious files."
+          ],
+          [
+            "This campaign involves a multi-stage attack chain that begins with a phishing email and leads to payload delivery through the execution of a PowerShell downloader script and sideloading to legitimate executables.",
+            "The infection starts with an income tax-themed phishing email written in Spanish, disguising itself as a tax receipt notification and enticing users to open the attached malicious HTML file."
+          ],
+          [
+            "The infection starts with an income tax-themed phishing email written in Spanish, disguising itself as a tax receipt notification and enticing users to open the attached malicious HTML file."
+          ],
+          [
+            "When a victim opens the HTML file attachment, an embedded URL is launched in the victim’s browser, redirecting to another malicious HTML file from an attacker-controlled AWS EC2 instance."
+          ],
+          [
+            "The content displayed on the victim’s browser lures them to click an embedded malicious hyperlink which downloads a RAR file."
+          ],
+          [
+            "Talos discovered Horabot, an Outlook Phishing botnet program written in PowerShell.",
+            "It has embedded Visual Basic code that enables the threat actor to control the victim’s Outlook mailbox, exfiltrate contacts’ email addresses, and send phishing emails with malicious HTML attachments to all addresses in the victim’s mailbox."
+          ],
+          [
+            "The HTML file has an embedded malicious URL “hxxps[://]facturacionmarzo[.]cloud/e/archivos[.]pdf[.]html” in its metadata section."
+          ],
+          [
+            "Then the phishing email is sent to the list of extracted email addresses one at a time, deleting the “fb” folder to cover its paths and avoid detection."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After the victim’s machine is rebooted, the malicious Windows startup files run the payloads by sideloading them to the legitimate executables and downloading and executing two other PowerShell scripts from a different attacker-controlled server."
+          ],
+          [
+            "Then, the AutoIt script sideloads the DLL to the AutoIt interpreter process and executes the malicious function “B080223_AT” with the parameter “STRUCT”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, the attacker uses Horabot and the spam tool in this campaign to further propagate the attack by sending additional phishing emails to the victim’s contacts, meaning Spanish-speaking users from organizations in additional verticals are likely also affected.",
+            "Talos discovered that the attacker in this campaign is using multiple hosts, including an Amazon Web Services (AWS) Elastic Compute Cloud (EC2) instance, accessed through its public URL, to host the malicious files."
+          ],
+          [
+            "According to WHOIS records for the domain tributaria[.]website, used in this campaign to host the attacker’s tools as well as exfiltrated data, the domain was registered in July 2022 and the registrant was based out of Brazil."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0c43bc09dc7c",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "<desktop_name>Sy.cmd",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "This link file executes another dropped batch file, “<desktop_name>Sy.cmd”, which executes a PowerShell command to download and run the Horabot “au” using the URL hxxp[://]tributaria[.]website/esp/12/151222/au/au."
+        ]
+      },
+      {
+        "node_id": "IOC_29ba14fd770f",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "216[.]238[.]70[.]224",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Another malicious server, 216[.]238[.]70[.]224, hosted the ZIP file containing the payloads."
+        ]
+      },
+      {
+        "node_id": "IOC_3584485fcfac",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "kinit.exe",
+        "edges": [],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops."
+        ]
+      },
+      {
+        "node_id": "IOC_36f7b2291516",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "adjuntos_1503.html",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "After exfiltrating the email addresses, the script creates a folder “fb” in the Public user folder and creates an HTML file in it, named “adjuntos_1503.html” in our sample analysis."
+        ]
+      },
+      {
+        "node_id": "IOC_889e19a77161",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[://]139[.]177[.]193[.]74/esp/12/151222/au/tst/index[.]php?list",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Using the GetRequestStream function, the script requests a data stream from the C2 server through the URL hxxp[://]139[.]177[.]193[.]74/esp/12/151222/au/tst/index[.]php?list and upon the successful response, the encoded email addresses are exfiltrated."
+        ]
+      },
+      {
+        "node_id": "IOC_8a6ac8f0d945",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/Users/Public",
+        "edges": [
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops."
+        ]
+      },
+      {
+        "node_id": "IOC_905298eca579",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "_upyqta2_Ji7.exe",
+        "edges": [],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops."
+        ]
+      },
+      {
+        "node_id": "IOC_97d02fb93f32",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "tributaria[.]website",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          9,
+          29
+        ],
+        "span_sentences": [
+          "According to WHOIS records for the domain tributaria[.]website, used in this campaign to host the attacker’s tools as well as exfiltrated data, the domain was registered in July 2022 and the registrant was based out of Brazil.",
+          "This link file executes another dropped batch file, “<desktop_name>Sy.cmd”, which executes a PowerShell command to download and run the Horabot “au” using the URL hxxp[://]tributaria[.]website/esp/12/151222/au/au."
+        ]
+      },
+      {
+        "node_id": "IOC_9821021c0750",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "185[.]45[.]195[.]226",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "During our analysis, Talos observed that a malicious server at IP address 185[.]45[.]195[.]226 hosted the PowerShell downloader script and had an open directory that the attacker eventually disabled."
+        ]
+      },
+      {
+        "node_id": "IOC_aa21037af508",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[://]tributaria[.]website/esp/12/151222/au/au",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "This link file executes another dropped batch file, “<desktop_name>Sy.cmd”, which executes a PowerShell command to download and run the Horabot “au” using the URL hxxp[://]tributaria[.]website/esp/12/151222/au/au."
+        ]
+      },
+      {
+        "node_id": "IOC_aef21b90b6bd",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "_upyqta2_J.mdat.a1",
+        "edges": [],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The malicious DLL “_upyqta2_J.mdat.a1” is a spam tool with information-stealing capability."
+        ]
+      },
+      {
+        "node_id": "IOC_d76ddf99d0fd",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "jli.dll",
+        "edges": [],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops."
+        ]
+      },
+      {
+        "node_id": "IOC_dd64de639543",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "_upyqta2_JAA.lnk",
+        "edges": [],
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The script creates two other malicious batch scripts with the extension .cmd in the folder “/Users/Public.”\n_upyqta2_JAA.lnk\nThis link file “_upyqta2_JAA.lnk” will sideload a malicious DLL called “jli.dll,” a banking trojan, by executing “_upyqta2_Ji7.exe,” which is actually a legitimate copy of “kinit.exe” that the PowerShell downloader script drops."
+        ]
+      },
+      {
+        "node_id": "IOC_f6564d59265f",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps[://]facturacionmarzo[.]cloud/e/archivos[.]pdf[.]html",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "The HTML file has an embedded malicious URL “hxxps[://]facturacionmarzo[.]cloud/e/archivos[.]pdf[.]html” in its metadata section."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_022adf8cd03c",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0576e1dd1c38",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0576e1dd1c38",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_353cd827af60",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_adc86eb7dab6",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_adc86eb7dab6",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_adc86eb7dab6",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_adc86eb7dab6",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_adc86eb7dab6",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_adc86eb7dab6",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_adc86eb7dab6",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_adc86eb7dab6",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_29ba14fd770f",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_36f7b2291516",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_889e19a77161",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_889e19a77161",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_8a6ac8f0d945",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_8a6ac8f0d945",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_97d02fb93f32",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_97d02fb93f32",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_9821021c0750",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_aa21037af508",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_f6564d59265f",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

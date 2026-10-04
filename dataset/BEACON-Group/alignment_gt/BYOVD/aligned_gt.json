@@ -1,0 +1,3647 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_260c483871a6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Session messenger",
+        "edges": [],
+        "source": {
+          "Session messenger_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              44,
+              "Instead, victims are persuaded to contact the threat actor operating the DeadLock ransomware via Session messenger."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_38681a19b8b0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Baidu Antivirus",
+        "edges": [
+          "EDGE_1b2d1cbf5a2f",
+          "EDGE_3e9ab93c2cea",
+          "EDGE_601153a6efa2"
+        ],
+        "source": {
+          "Baidu Antivirus_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              1,
+              "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes."
+            ],
+            [
+              6,
+              "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_5241d6a32f6c",
+          "EDGE_0bf97e2e40ea",
+          "EDGE_9da65525396d"
+        ],
+        "source": {
+          "Windows_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              3,
+              "- The DeadLock ransomware targets Windows machines with a custom stream cipher encryption algorithm that uses time-based cryptographic keys to encrypt files."
+            ],
+            [
+              45,
+              "The DeadLock ransomware encryptor is specifically designed to target the Windows environment."
+            ]
+          ],
+          "Windows_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              3,
+              "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system."
+            ]
+          ],
+          "Windows_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              16,
+              "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+            ],
+            [
+              26,
+              "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "source": {
+          "Cisco Talos_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              0,
+              "While tracking ransomware activities, Cisco Talos uncovered new tactics, techniques, and procedures (TTPs) linked to a financially motivated threat actor targeting victims with DeadLock ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6f2ac82a2560",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Defender",
+        "edges": [
+          "EDGE_0700d30a17b6",
+          "EDGE_0cff2139ef89",
+          "EDGE_6bed394329f5",
+          "EDGE_bf1d8c347a74"
+        ],
+        "source": {
+          "Windows Defender_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              2,
+              "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+            ],
+            [
+              39,
+              "By executing the following commands, the actor disabled Real-Time Protection (RTP) in Windows Defender."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_52c211bd8403",
+          "EDGE_60c5c68573b5",
+          "EDGE_6d995fe80ada",
+          "EDGE_fd7cafe03ab3",
+          "EDGE_fedc2391e361"
+        ],
+        "source": {
+          "PowerShell_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              2,
+              "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+            ],
+            [
+              16,
+              "Talos observed that the threat actor executed a PowerShell script in the victim’s machine before the encryption process."
+            ],
+            [
+              17,
+              "The PowerShell script is a pre-encryption preparation component of the attack that the actor used to bypass the UAC, disable the detection services, and inhibit the system recovery of the victim machine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c25339a222e3",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DeadLock ransomware",
+        "edges": [
+          "EDGE_117564f15ce2",
+          "EDGE_1ece9bddf726",
+          "EDGE_29deac1164c8",
+          "EDGE_4815c96d4a93",
+          "EDGE_60ddcf9bb613",
+          "EDGE_6849414d5357",
+          "EDGE_75484c383265",
+          "EDGE_7ca15c426898",
+          "EDGE_90c8cce7ae09",
+          "EDGE_a575a91e4bfe",
+          "EDGE_b33163a3fc5a",
+          "EDGE_ca87831be8dc",
+          "EDGE_d30e23f449f2",
+          "EDGE_d6b25e42aa54",
+          "EDGE_df1b516ea383",
+          "EDGE_f61f92e6b4f6",
+          "EDGE_faa193df087e"
+        ],
+        "source": {
+          "DeadLock ransomware_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              0,
+              "While tracking ransomware activities, Cisco Talos uncovered new tactics, techniques, and procedures (TTPs) linked to a financially motivated threat actor targeting victims with DeadLock ransomware."
+            ],
+            [
+              3,
+              "- The DeadLock ransomware targets Windows machines with a custom stream cipher encryption algorithm that uses time-based cryptographic keys to encrypt files."
+            ],
+            [
+              4,
+              "- This custom encryption method allows DeadLock ransomware to effectively encrypt different file types in enterprise environments while preventing system corruption through selective targeting and anti-forensics techniques, which complicate recovery."
+            ],
+            [
+              5,
+              "Talos observed a threat actor leveraging a BYOVD technique to disable endpoint detection and escalate privileges in an attack that eventually delivered DeadLock ransomware as the payload."
+            ],
+            [
+              24,
+              "Talos discovered several other notable TTPs of the DeadLock ransomware attacks from the telemetry data."
+            ],
+            [
+              42,
+              "Talos observed that the threat actor deployed DeadLock ransomware as the payload in their attack."
+            ],
+            [
+              43,
+              "DeadLock ransomware has been active since as early as July 2025 and, unlike other ransomware actors, this threat actor does not operate a data leak site."
+            ],
+            [
+              44,
+              "Instead, victims are persuaded to contact the threat actor operating the DeadLock ransomware via Session messenger."
+            ],
+            [
+              45,
+              "The DeadLock ransomware encryptor is specifically designed to target the Windows environment."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f8b77c8fe4ea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AnyDesk",
+        "edges": [
+          "EDGE_608626743307"
+        ],
+        "source": {
+          "AnyDesk_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              30,
+              "We assess that the threat actor, operating from a compromised user account, installed a new instance of AnyDesk on a specific host one day prior to an encryption event."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_42b96d56080a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Symantec",
+        "edges": [
+          "EDGE_9aa82c582733"
+        ],
+        "source": {
+          "Symantec_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              2,
+              "In a report published Thursday, the Symantec and Carbon Black Threat Hunter Team detailed a recent attack that featured an interesting development: A vulnerable driver was embedded directly into a Black Basta ransomware payload."
+            ],
+            [
+              3,
+              "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system."
+            ],
+            [
+              13,
+              "Like virtually all EDR killers, the NSecKrnl driver targets the processes of well-known vendors, including Symantec."
+            ]
+          ],
+          "Symantec_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              3,
+              "\"Normally, the BYOVD defense evasion component of an attack would involve a distinct tool that would be deployed on the system prior to the ransomware payload in order to disable security software,\" the Symantec and Carbon Black Threat Hunter Team said in a report shared with The Hacker News."
+            ],
+            [
+              10,
+              "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed,\" Symantec and Carbon Black said."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "source": {
+          "Microsoft_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              23,
+              "Even though the certificate for the driver had been revoked more than a decade ago, threat actors were still able to exploit gaps in Microsoft's Driver Signature Enforcement feature."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6a5e6a248761",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Carbon Black",
+        "edges": [],
+        "source": {
+          "Carbon Black_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              2,
+              "In a report published Thursday, the Symantec and Carbon Black Threat Hunter Team detailed a recent attack that featured an interesting development: A vulnerable driver was embedded directly into a Black Basta ransomware payload."
+            ],
+            [
+              3,
+              "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system."
+            ],
+            [
+              15,
+              "\"We know the attack was at least partially successful because they managed to encrypt some files,\" says Dick O’Brien, principal intelligence analyst for the Symantec and Carbon Black Threat Hunter Team."
+            ]
+          ],
+          "Carbon Black_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              3,
+              "\"Normally, the BYOVD defense evasion component of an attack would involve a distinct tool that would be deployed on the system prior to the ransomware payload in order to disable security software,\" the Symantec and Carbon Black Threat Hunter Team said in a report shared with The Hacker News."
+            ],
+            [
+              10,
+              "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed,\" Symantec and Carbon Black said."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7562524e0f66",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "NsecSoft NSecKrnl",
+        "edges": [
+          "EDGE_5863dbd30bcf",
+          "EDGE_fa53e7667ab0"
+        ],
+        "source": {
+          "NsecSoft NSecKrnl_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              9,
+              "The Threat Hunter Team discovered the vulnerable driver, NsecSoft NSecKrnl, bundled with the Reynolds ransomware."
+            ]
+          ],
+          "NsecSoft NSecKrnl_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              4,
+              "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025."
+            ],
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c53d03d83f5b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "EnCase",
+        "edges": [
+          "EDGE_f94e5bcd2fdb"
+        ],
+        "source": {
+          "EnCase_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              22,
+              "Last week, Huntress researchers detailed an incident in which attackers weaponized a driver for the EnCase digital forensics suite."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d5f8b702d799",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Black Basta",
+        "edges": [
+          "EDGE_a8afd888ef52"
+        ],
+        "source": {
+          "Black Basta_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              2,
+              "In a report published Thursday, the Symantec and Carbon Black Threat Hunter Team detailed a recent attack that featured an interesting development: A vulnerable driver was embedded directly into a Black Basta ransomware payload."
+            ],
+            [
+              7,
+              "The attack was initially attributed to Black Basta, which has been relatively quiet over the last year following a high-profile leak of the gang's internal communications."
+            ],
+            [
+              8,
+              "It's unclear if Reynolds is a rebranded group that spun off of Black Basta."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d761076092c3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Huntress",
+        "edges": [],
+        "source": {
+          "Huntress_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              22,
+              "Last week, Huntress researchers detailed an incident in which attackers weaponized a driver for the EnCase digital forensics suite."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_dcb99375b665",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Reynolds",
+        "edges": [
+          "EDGE_7edab710b9e1",
+          "EDGE_b1608a41432f"
+        ],
+        "source": {
+          "Reynolds_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              0,
+              "Researchers discovered a newly disclosed vulnerable driver embedded in Reynolds' ransomware, illustrating the increasing popularity of the defense-evasion technique."
+            ],
+            [
+              3,
+              "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system."
+            ],
+            [
+              9,
+              "The Threat Hunter Team discovered the vulnerable driver, NsecSoft NSecKrnl, bundled with the Reynolds ransomware."
+            ],
+            [
+              11,
+              "It's unclear when Reynolds first began weaponizing and embedding the vulnerable driver into ransomware payloads, but it's also the latest example of the growing popularity of BYOVD."
+            ],
+            [
+              16,
+              "\"It appears it failed to kill our product because it continued to function after the attack.\"\nAs far as why Reynolds bundled the driver and ransomware payload together, the Threat Hunter Team said it may be that dropping one combined file instead of two is \"quieter\" and reduces the chances of being detected."
+            ],
+            [
+              21,
+              "The Reynolds attack is the latest example of the dangers posed by vulnerable and outdated drivers."
+            ]
+          ],
+          "Reynolds_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              0,
+              "Cybersecurity researchers have disclosed details of an emergent ransomware family dubbed Reynolds that comes embedded with a built-in bring your own vulnerable driver (BYOVD) component for defense evasion purposes within the ransomware payload itself."
+            ],
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ef0b346c0f6b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AuKill",
+        "edges": [
+          "EDGE_1e2c1e210655"
+        ],
+        "source": {
+          "AuKill_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              6,
+              "For example, ransomware affiliates have used an EDR killer known as \"AuKill\" to shut down security products before deploying ransomware or backdoors on the targeted system."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_022adf8cd03c",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Amazon Web Services",
+        "edges": [
+          "EDGE_2e8c1207b149",
+          "EDGE_44c8f1ad613b"
+        ],
+        "source": {
+          "Amazon Web Services_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              30,
+              "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+            ]
+          ],
+          "AWS_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              30,
+              "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+            ]
+          ]
+        },
+        "alias": [
+          "AWS"
+        ]
+      },
+      {
+        "node_id": "HL_04d31b20ce49",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Interlock",
+        "edges": [
+          "EDGE_209952a1fcca",
+          "EDGE_cd471750ccae"
+        ],
+        "source": {
+          "Interlock_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              28,
+              "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_125ce59a2714",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "education sector",
+        "edges": [],
+        "source": {
+          "education sector_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              28,
+              "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_132cf6ae8435",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "The Hacker News",
+        "edges": [],
+        "source": {
+          "The Hacker News_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              3,
+              "\"Normally, the BYOVD defense evasion component of an attack would involve a distinct tool that would be deployed on the system prior to the ransomware payload in order to disable security software,\" the Symantec and Carbon Black Threat Hunter Team said in a report shared with The Hacker News."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1bcf824222e5"
+        ],
+        "source": {
+          "PowerShell_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              16,
+              "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1a8badf461ac",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ryuk",
+        "edges": [
+          "EDGE_00c9c76c427a"
+        ],
+        "source": {
+          "Ryuk_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              4,
+              "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1e6e3aed62d2",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Symantec Endpoint Protection",
+        "edges": [
+          "EDGE_2973c5b07a79"
+        ],
+        "source": {
+          "Symantec Endpoint Protection_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_26b851496b88",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ReliaQuest",
+        "edges": [],
+        "source": {
+          "ReliaQuest_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              32,
+              "In Q4 2025 alone, Sinobi's data leak site listings increased 306%, making it the third-most active ransomware group after Qilin and Akira, per ReliaQuest."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_28bb92983c8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma Stealer",
+        "edges": [],
+        "source": {
+          "Lumma Stealer_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2995d1a5a56f",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "WantToCry",
+        "edges": [
+          "EDGE_06f4c2d5e3b4"
+        ],
+        "source": {
+          "WantToCry_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              19,
+              "- Attacks mounted by WantToCry have abused virtual machines (VMs) provisioned by ISPsystem, a legitimate virtual infrastructure management provider, to host and deliver malicious payloads at scale."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_30cbead77ab8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NodeSnake/Interlock RAT",
+        "edges": [],
+        "source": {
+          "NodeSnake/Interlock RAT_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              29,
+              "The attack is also characterized by the deployment of NodeSnake/Interlock RAT (aka CORNFLAKE) to steal sensitive data, while initial access is said to have originated from a MintLoader infection."
+            ]
+          ],
+          "CORNFLAKE_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              29,
+              "The attack is also characterized by the deployment of NodeSnake/Interlock RAT (aka CORNFLAKE) to steal sensitive data, while initial access is said to have originated from a MintLoader infection."
+            ]
+          ]
+        },
+        "alias": [
+          "CORNFLAKE"
+        ]
+      },
+      {
+        "node_id": "HL_3179da4ca7ea",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BlackCat",
+        "edges": [],
+        "source": {
+          "BlackCat_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_34a1793610bc",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Silver Fox",
+        "edges": [
+          "EDGE_d38bd93fbf93",
+          "EDGE_ec31fb11bc0a"
+        ],
+        "source": {
+          "Silver Fox_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              7,
+              "Notably, the driver has been put to use by a threat actor known as Silver Fox in attacks designed to kill endpoint security tools prior to delivering ValleyRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_37a01c19929d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "CrowdStrike Falcon",
+        "edges": [
+          "EDGE_3934f7f3d0e6"
+        ],
+        "source": {
+          "CrowdStrike Falcon_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3c631e7a2cfc",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lampion",
+        "edges": [],
+        "source": {
+          "Lampion_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3ed03315a579",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Broadcom",
+        "edges": [],
+        "source": {
+          "Broadcom_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              4,
+              "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3fa4a6edef47",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "LevelBlue",
+        "edges": [],
+        "source": {
+          "LevelBlue_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              24,
+              "\"The audit includes a detailed risk report, prepared communication materials, such as call scripts and executive-level letters, and strategic guidance designed to influence negotiations,\" LevelBlue said."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_499d07662f18",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "S3 buckets",
+        "edges": [
+          "EDGE_62c84de2fd95",
+          "EDGE_b3e92395ee98"
+        ],
+        "source": {
+          "S3 buckets_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              30,
+              "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4d3e45d64d7c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Phorpiex",
+        "edges": [
+          "EDGE_23a2829f0b8f",
+          "EDGE_58ab87075db1",
+          "EDGE_99871b6c521f",
+          "EDGE_a4f3d917e8e1"
+        ],
+        "source": {
+          "Phorpiex_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              16,
+              "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5554cea3a586",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.K.",
+        "edges": [],
+        "source": {
+          "U.K._thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              28,
+              "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5f15506e1f25",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Conti",
+        "edges": [],
+        "source": {
+          "Conti_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6105fdbf1146",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "GotoHTTP",
+        "edges": [
+          "EDGE_bc0abfe005db"
+        ],
+        "source": {
+          "GotoHTTP_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              11,
+              "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed.\"\nAnother tool deployed on the target network a day after the ransomware deployment was the GotoHTTP remote access program, indicating that the attackers may be looking to maintain persistent access to the compromised hosts."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_63abf4f5e05d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MintLoader",
+        "edges": [],
+        "source": {
+          "MintLoader_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              29,
+              "The attack is also characterized by the deployment of NodeSnake/Interlock RAT (aka CORNFLAKE) to steal sensitive data, while initial access is said to have originated from a MintLoader infection."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_65a26798995f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "HitmanPro.Alert",
+        "edges": [
+          "EDGE_bb6ac03f0446"
+        ],
+        "source": {
+          "HitmanPro.Alert_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6653efa040cb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Sophos",
+        "edges": [],
+        "source": {
+          "Sophos_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ],
+            [
+              13,
+              "\"The advantages of wrapping the defense evasion capability in with the ransomware payload, and the reason ransomware actors might do this, may include the fact that packaging the defense evasion binary and the ransomware payload together is 'quieter,' with no separate external file dropped on the victim network.\"\nSophos also noted that the use of the NSecKrnl driver was previously observed in two ransomware incidents involving LockBit/Warlock and Nitrogen, and that these incidents were \"stopped by process-independent ransomware protection that remains effective regardless of BYOVD termination attempts.\"\nFurthermore, the company pointed out that there are both pros and cons when it comes to merging BYOVD with ransomware encryption into one payload, adding it risks breaking the entire execution chain once the driver is detected by security software, putting them at a tactical disadvantage."
+            ],
+            [
+              38,
+              "(The story was updated after publication to include additional insights from Sophos.)"
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_67be50c2942b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Palo Alto Networks Cortex XDR",
+        "edges": [
+          "EDGE_f93b8ac32b4c"
+        ],
+        "source": {
+          "Palo Alto Networks Cortex XDR_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_69ecb1e42841",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "DragonForce",
+        "edges": [],
+        "source": {
+          "DragonForce_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              23,
+              "- DragonForce has created a \"Company Data Audit\" service to support affiliates during extortion campaigns as part of the continued professionalization of ransomware operations."
+            ],
+            [
+              25,
+              "DragonForce operates as a cartel that allows affiliates to create their own brands while operating under its umbrella and gaining access to its resources and services."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6a77b031dd52",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Nitrogen",
+        "edges": [],
+        "source": {
+          "Nitrogen_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              13,
+              "\"The advantages of wrapping the defense evasion capability in with the ransomware payload, and the reason ransomware actors might do this, may include the fact that packaging the defense evasion binary and the ransomware payload together is 'quieter,' with no separate external file dropped on the victim network.\"\nSophos also noted that the use of the NSecKrnl driver was previously observed in two ransomware incidents involving LockBit/Warlock and Nitrogen, and that these incidents were \"stopped by process-independent ransomware protection that remains effective regardless of BYOVD termination attempts.\"\nFurthermore, the company pointed out that there are both pros and cons when it comes to merging BYOVD with ransomware encryption into one payload, adding it risks breaking the entire execution chain once the driver is detected by security software, putting them at a tactical disadvantage."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_75cc3bd21587",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PureRAT",
+        "edges": [],
+        "source": {
+          "PureRAT_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_804f694f2fbb",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit 5.0",
+        "edges": [
+          "EDGE_302084d5404f",
+          "EDGE_531277fe4598"
+        ],
+        "source": {
+          "LockBit 5.0_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              26,
+              "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+            ],
+            [
+              33,
+              "\"Meanwhile, the return of LockBit 5.0 was one of Q4's biggest shifts, driven by a late-quarter spike that saw the group list 110 organizations in December alone,\" researcher Gautham Ashok said."
+            ]
+          ],
+          "LockBit_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              13,
+              "\"The advantages of wrapping the defense evasion capability in with the ransomware payload, and the reason ransomware actors might do this, may include the fact that packaging the defense evasion binary and the ransomware payload together is 'quieter,' with no separate external file dropped on the victim network.\"\nSophos also noted that the use of the NSecKrnl driver was previously observed in two ransomware incidents involving LockBit/Warlock and Nitrogen, and that these incidents were \"stopped by process-independent ransomware protection that remains effective regardless of BYOVD termination attempts.\"\nFurthermore, the company pointed out that there are both pros and cons when it comes to merging BYOVD with ransomware encryption into one payload, adding it risks breaking the entire execution chain once the driver is detected by security software, putting them at a tactical disadvantage."
+            ],
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ],
+            [
+              26,
+              "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+            ],
+            [
+              33,
+              "\"Meanwhile, the return of LockBit 5.0 was one of Q4's biggest shifts, driven by a late-quarter spike that saw the group list 110 organizations in December alone,\" researcher Gautham Ashok said."
+            ]
+          ],
+          "LockBit 2.0_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              26,
+              "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+            ]
+          ],
+          "LockBit 3.0_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              26,
+              "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+            ]
+          ]
+        },
+        "alias": [
+          "LockBit",
+          "LockBit 2.0",
+          "LockBit 3.0"
+        ]
+      },
+      {
+        "node_id": "HL_856a5e2e4897",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RedLine Stealer",
+        "edges": [],
+        "source": {
+          "RedLine Stealer_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_877fd1eea727",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMmanager",
+        "edges": [
+          "EDGE_212956e03291"
+        ],
+        "source": {
+          "VMmanager_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              21,
+              "- It's assessed that bulletproof hosting providers are leasing ISPsystem virtual machines to other criminal actors for use in ransomware operations and malware delivery by exploiting a design weakness in VMmanager's default Windows templates that reuse the same static hostname and system identifiers every time they are deployed."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8867fea85f08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Coveware",
+        "edges": [],
+        "source": {
+          "Coveware_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              37,
+              "As for the average ransom payment, the figure stood at $591,988 in Q4 2025, a 57% jump from Q3 2025, driven by a small number of \"outsized settlements,\" Coveware said in its quarterly report last week, adding threat actors may return to their \"data encryption roots\" for more effective leverage to extract ransoms from victims."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_89ed70f658d5",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ESXi",
+        "edges": [],
+        "source": {
+          "ESXi_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              26,
+              "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_89fdf541b570",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NightSpire",
+        "edges": [],
+        "source": {
+          "NightSpire_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              31,
+              "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_92f5fe3d65ef",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GLOBAL GROUP ransomware",
+        "edges": [
+          "EDGE_277f1f6a5701"
+        ],
+        "source": {
+          "GLOBAL GROUP ransomware_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              16,
+              "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_97a86169a55d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NetSupport RAT",
+        "edges": [],
+        "source": {
+          "NetSupport RAT_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_984cc7a8b012",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BEAST",
+        "edges": [],
+        "source": {
+          "BEAST_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              31,
+              "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9e4981c0d6a6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Qilin",
+        "edges": [],
+        "source": {
+          "Qilin_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ],
+            [
+              32,
+              "In Q4 2025 alone, Sinobi's data leak site listings increased 306%, making it the third-most active ransomware group after Qilin and Akira, per ReliaQuest."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a92c2e91552b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ursnif",
+        "edges": [],
+        "source": {
+          "Ursnif_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              20,
+              "Some of the hostnames have been identified in the infrastructure of multiple ransomware operators, including LockBit, Qilin, Conti, BlackCat, and Ursnif, as well as various malware campaigns involving NetSupport RAT, PureRAT, Lampion, Lumma Stealer, and RedLine Stealer."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b2880c18599f",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Reynolds campaign",
+        "edges": [
+          "EDGE_471a44bc2070",
+          "EDGE_fa0d6be9edf1"
+        ],
+        "source": {
+          "Reynolds campaign_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bb0c89cafac4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Avast",
+        "edges": [
+          "EDGE_259fea2e1daa"
+        ],
+        "source": {
+          "Avast_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "source": {
+          "U.S._thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              28,
+              "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_cf628dba5e33",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cyble",
+        "edges": [],
+        "source": {
+          "Cyble_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              31,
+              "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_cfbe358c338b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "NOVA",
+        "edges": [],
+        "source": {
+          "NOVA_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              31,
+              "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d12e58f653ab",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Palo Alto Networks",
+        "edges": [],
+        "source": {
+          "Palo Alto Networks_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              5,
+              "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d8df1cedf680",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ISPsystem",
+        "edges": [
+          "EDGE_45b98b9f21b2"
+        ],
+        "source": {
+          "ISPsystem_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              19,
+              "- Attacks mounted by WantToCry have abused virtual machines (VMs) provisioned by ISPsystem, a legitimate virtual infrastructure management provider, to host and deliver malicious payloads at scale."
+            ],
+            [
+              21,
+              "- It's assessed that bulletproof hosting providers are leasing ISPsystem virtual machines to other criminal actors for use in ransomware operations and malware delivery by exploiting a design weakness in VMmanager's default Windows templates that reuse the same static hostname and system identifiers every time they are deployed."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d953d99b6528",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ValleyRAT",
+        "edges": [
+          "EDGE_bb241529fa93"
+        ],
+        "source": {
+          "ValleyRAT_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              7,
+              "Notably, the driver has been put to use by a threat actor known as Silver Fox in attacks designed to kill endpoint security tools prior to delivering ValleyRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e075845419f5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Devman",
+        "edges": [],
+        "source": {
+          "Devman_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              31,
+              "According to data from Cyble, GLOBAL GROUP is one of the many ransomware crews that sprang forth in 2025, the others being Devman, DireWolf, NOVA, J group, Warlock, BEAST, Sinobi, NightSpire, and The Gentlemen."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "edges": [],
+        "source": {
+          "Linux_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              26,
+              "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_fee3c5f8c9b7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Obscura",
+        "edges": [
+          "EDGE_736c513fe465"
+        ],
+        "source": {
+          "Obscura_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              4,
+              "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1018",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1018",
+        "ttp_id": "T1018",
+        "best_span_sentences_list": [
+          [
+            "Talos observed several commands the actor executed for internal reconnaissance and lateral movement within the victim environment following the AnyDesk installation, highlighting their intent to discover and move to high-value targets."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_1ece9bddf726"
+        ],
+        "source": {
+          "TTP:T1018_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Talos observed several commands the actor executed for internal reconnaissance and lateral movement within the victim environment following the AnyDesk installation, highlighting their intent to discover and move to high-value targets."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections.",
+            "Then, the actor executed the netsh advfirewall\ncommand to create a new inbound firewall rule, opening TCP port 3389 to ensure RDP traffic isn't blocked."
+          ],
+          [
+            "Then, with the discovered internal IP addresses, the actor moved laterally by executing the mstsc\ncommand to start the Remote Desktop Protocol (RDP) session."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            28
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_b33163a3fc5a",
+          "EDGE_d44523056bad"
+        ],
+        "source": {
+          "TTP:T1021_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                27,
+                28
+              ],
+              [
+                35,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections.",
+                "Then, the actor executed the netsh advfirewall\ncommand to create a new inbound firewall rule, opening TCP port 3389 to ensure RDP traffic isn't blocked."
+              ],
+              [
+                "Then, with the discovered internal IP addresses, the actor moved laterally by executing the mstsc\ncommand to start the Remote Desktop Protocol (RDP) session."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1033",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1033",
+        "ttp_id": "T1033",
+        "best_span_sentences_list": [
+          [
+            "They performed a connectivity test using a ping\ncommand to see if a target machine was reachable and checked the logged-on user details by executing the Quser\ncommand."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1033_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                34,
+                34
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "They performed a connectivity test using a ping\ncommand to see if a target machine was reachable and checked the logged-on user details by executing the Quser\ncommand."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_7ca15c426898",
+          "EDGE_f22f516ec5da"
+        ],
+        "source": {
+          "TTP:T1036_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1057",
+        "ttp_id": "T1057",
+        "best_span_sentences_list": [
+          [
+            "Once connected, the loader enumerates running system processes to identify the process ID (PID) of the target antivirus or EDR solution.",
+            "To trigger the exploit, it calls the DeviceIOControl()\nfunction, passing the target PID along with the specific I/O Control Code (IOCTL) 0x800024b4."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_d92a0d1cdf8b",
+          "EDGE_df1b516ea383"
+        ],
+        "source": {
+          "TTP:T1057_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                11,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once connected, the loader enumerates running system processes to identify the process ID (PID) of the target antivirus or EDR solution.",
+                "To trigger the exploit, it calls the DeviceIOControl()\nfunction, passing the target PID along with the specific I/O Control Code (IOCTL) 0x800024b4."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ],
+          [
+            "The script implements a privilege escalation mechanism through the Test-Admin\nfunction that automatically detects current user permissions and re-launches itself with administrative privileges using the Verb RunAs\nparameter, ensuring it operates with the necessary system-level access required for service manipulation and shadow copy deletion."
+          ],
+          [
+            "The script executes commands to delete all volume shadow copy snapshots, eliminating the victim’s ability to recover the system."
+          ],
+          [
+            "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections."
+          ],
+          [
+            "Talos observed several commands the actor executed for internal reconnaissance and lateral movement within the victim environment following the AnyDesk installation, highlighting their intent to discover and move to high-value targets."
+          ],
+          [
+            "They performed a connectivity test using a ping\ncommand to see if a target machine was reachable and checked the logged-on user details by executing the Quser\ncommand.",
+            "Then, with the discovered internal IP addresses, the actor moved laterally by executing the mstsc\ncommand to start the Remote Desktop Protocol (RDP) session.",
+            "They also executed the mmc.exe compmgmt.msc\ncommand, which is an alternative remote computer management command without a full interactive RDP session.",
+            "Finally, the actor executed iexplore.exe\n, likely to access an internal web resource."
+          ],
+          [
+            "By executing the following commands, the actor disabled Real-Time Protection (RTP) in Windows Defender.",
+            "They subsequently disabled cloud-based protections through the command SpynetReporting 0\n, which stops the machine from sending threat reports to Microsoft.",
+            "The command SubmitSamplesConsent 0\nprevents Windows Defender from automatically submitting suspicious files for analysis."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            34,
+            37
+          ],
+          [
+            39,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_0cff2139ef89",
+          "EDGE_20e8c86fe124",
+          "EDGE_f61f92e6b4f6",
+          "EDGE_fedc2391e361",
+          "EDGE_1bcf824222e5",
+          "EDGE_58ab87075db1"
+        ],
+        "source": {
+          "TTP:T1059_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                18,
+                18
+              ],
+              [
+                23,
+                23
+              ],
+              [
+                27,
+                27
+              ],
+              [
+                32,
+                32
+              ],
+              [
+                34,
+                37
+              ],
+              [
+                39,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+              ],
+              [
+                "The script implements a privilege escalation mechanism through the Test-Admin\nfunction that automatically detects current user permissions and re-launches itself with administrative privileges using the Verb RunAs\nparameter, ensuring it operates with the necessary system-level access required for service manipulation and shadow copy deletion."
+              ],
+              [
+                "The script executes commands to delete all volume shadow copy snapshots, eliminating the victim’s ability to recover the system."
+              ],
+              [
+                "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections."
+              ],
+              [
+                "Talos observed several commands the actor executed for internal reconnaissance and lateral movement within the victim environment following the AnyDesk installation, highlighting their intent to discover and move to high-value targets."
+              ],
+              [
+                "They performed a connectivity test using a ping\ncommand to see if a target machine was reachable and checked the logged-on user details by executing the Quser\ncommand.",
+                "Then, with the discovered internal IP addresses, the actor moved laterally by executing the mstsc\ncommand to start the Remote Desktop Protocol (RDP) session.",
+                "They also executed the mmc.exe compmgmt.msc\ncommand, which is an alternative remote computer management command without a full interactive RDP session.",
+                "Finally, the actor executed iexplore.exe\n, likely to access an internal web resource."
+              ],
+              [
+                "By executing the following commands, the actor disabled Real-Time Protection (RTP) in Windows Defender.",
+                "They subsequently disabled cloud-based protections through the command SpynetReporting 0\n, which stops the machine from sending threat reports to Microsoft.",
+                "The command SubmitSamplesConsent 0\nprevents Windows Defender from automatically submitting suspicious files for analysis."
+              ]
+            ]
+          },
+          "TTP:T1059_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                16,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware.",
+                "The ransomware is notable for carrying out all activity locally on the compromised system, making it compatible with air‑gapped environments.",
+                "It also conducts no data exfiltration."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1068",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1068",
+        "ttp_id": "T1068",
+        "best_span_sentences_list": [
+          [
+            "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes."
+          ],
+          [
+            "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_601153a6efa2",
+          "EDGE_ba84aaed8ce5",
+          "EDGE_bcf0e6cf3d48",
+          "EDGE_d6b25e42aa54"
+        ],
+        "source": {
+          "TTP:T1068_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes."
+              ],
+              [
+                "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+              ]
+            ]
+          },
+          "TTP:T1068_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                8,
+                8
+              ],
+              [
+                28,
+                28
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Cybersecurity researchers have disclosed details of an emergent ransomware family dubbed Reynolds that comes embedded with a built-in bring your own vulnerable driver (BYOVD) component for defense evasion purposes within the ransomware payload itself."
+              ],
+              [
+                "Over the past year, the hacking group has previously wielded multiple legitimate but flawed drivers – including truesight.sys and amsdk.sys – as part of BYOVD attacks to disarm security programs."
+              ],
+              [
+                "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1069",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1069",
+        "ttp_id": "T1069",
+        "best_span_sentences_list": [
+          [
+            "The actor attempted to discover domain controllers, query the domain structure, and enumerate the privileged groups and their members."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1069_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The actor attempted to discover domain controllers, query the domain structure, and enumerate the privileged groups and their members."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "Talos suspects that the threat actor leverages the compromised valid accounts to gain access to the victim's machine based on telemetry data."
+          ],
+          [
+            "We assess that the threat actor, operating from a compromised user account, installed a new instance of AnyDesk on a specific host one day prior to an encryption event."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            26
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_29deac1164c8"
+        ],
+        "source": {
+          "TTP:T1078_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                26,
+                26
+              ],
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Talos suspects that the threat actor leverages the compromised valid accounts to gain access to the victim's machine based on telemetry data."
+              ],
+              [
+                "We assess that the threat actor, operating from a compromised user account, installed a new instance of AnyDesk on a specific host one day prior to an encryption event."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1106",
+        "ttp_id": "T1106",
+        "best_span_sentences_list": [
+          [
+            "Upon receiving the request, the driver decodes the function code 0x92D as a \"terminate process\" command."
+          ],
+          [
+            "Because the driver operates in kernel mode with the highest system privileges, it blindly accepts the command and executes ZwTerminateProcess()\n, instantly killing the targeted security service."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_4815c96d4a93",
+          "EDGE_8c6957603777",
+          "EDGE_8deeaa34b119"
+        ],
+        "source": {
+          "TTP:T1106_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                13,
+                13
+              ],
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Upon receiving the request, the driver decodes the function code 0x92D as a \"terminate process\" command."
+              ],
+              [
+                "Because the driver operates in kernel mode with the highest system privileges, it blindly accepts the command and executes ZwTerminateProcess()\n, instantly killing the targeted security service."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_27232845411b",
+          "EDGE_90c8cce7ae09"
+        ],
+        "source": {
+          "TTP:T1112_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                27,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1211",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1211",
+        "ttp_id": "T1211",
+        "best_span_sentences_list": [
+          [
+            "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes."
+          ],
+          [
+            "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_3d1474dc9abe",
+          "EDGE_3e9ab93c2cea",
+          "EDGE_60ddcf9bb613",
+          "EDGE_6ecc8164e810",
+          "EDGE_f322a561ae97",
+          "EDGE_0bf97e2e40ea",
+          "EDGE_6d225af4807e",
+          "EDGE_7edab710b9e1",
+          "EDGE_a8afd888ef52",
+          "EDGE_f94e5bcd2fdb",
+          "EDGE_fa53e7667ab0",
+          "EDGE_209952a1fcca",
+          "EDGE_471a44bc2070",
+          "EDGE_ec31fb11bc0a",
+          "EDGE_feaeceed0690"
+        ],
+        "source": {
+          "TTP:T1211_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                1,
+                1
+              ],
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes."
+              ],
+              [
+                "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+              ]
+            ]
+          },
+          "TTP:T1211_'Reynolds' Bundles BYOVD With Ransomware Payload": {
+            "best_span_ranges": [
+              [
+                9,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The Threat Hunter Team discovered the vulnerable driver, NsecSoft NSecKrnl, bundled with the Reynolds ransomware.",
+                "Last month, a medium-severity vulnerability in the NSecKrnl Windows driver, tracked as CVE-2025-68947, was disclosed.",
+                "It's unclear when Reynolds first began weaponizing and embedding the vulnerable driver into ransomware payloads, but it's also the latest example of the growing popularity of BYOVD."
+              ]
+            ]
+          },
+          "TTP:T1211_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                6,
+                8
+              ],
+              [
+                28,
+                28
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Cybersecurity researchers have disclosed details of an emergent ransomware family dubbed Reynolds that comes embedded with a built-in bring your own vulnerable driver (BYOVD) component for defense evasion purposes within the ransomware payload itself."
+              ],
+              [
+                "It's worth noting that the NSecKrnl driver is susceptible to a known security flaw (CVE-2025-68947, CVSS score: 5.7) that could be exploited to terminate arbitrary processes.",
+                "Notably, the driver has been put to use by a threat actor known as Silver Fox in attacks designed to kill endpoint security tools prior to delivering ValleyRAT.",
+                "Over the past year, the hacking group has previously wielded multiple legitimate but flawed drivers – including truesight.sys and amsdk.sys – as part of BYOVD attacks to disarm security programs."
+              ],
+              [
+                "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "Talos observed that the actor modified the Windows Defender settings using legitimate Windows executable SystemSettingsAdminFlows.exe\n."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_6bed394329f5",
+          "EDGE_e141303bb018",
+          "EDGE_faa193df087e"
+        ],
+        "source": {
+          "TTP:T1218_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                38,
+                38
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Talos observed that the actor modified the Windows Defender settings using legitimate Windows executable SystemSettingsAdminFlows.exe\n."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "We assess that the threat actor, operating from a compromised user account, installed a new instance of AnyDesk on a specific host one day prior to an encryption event."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_608626743307",
+          "EDGE_ca87831be8dc",
+          "EDGE_bc0abfe005db"
+        ],
+        "source": {
+          "TTP:T1219_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "We assess that the threat actor, operating from a compromised user account, installed a new instance of AnyDesk on a specific host one day prior to an encryption event."
+              ]
+            ]
+          },
+          "TTP:T1219_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                11,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed.\"\nAnother tool deployed on the target network a day after the ransomware deployment was the GotoHTTP remote access program, indicating that the attackers may be looking to maintain persistent access to the compromised hosts."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "- The DeadLock ransomware targets Windows machines with a custom stream cipher encryption algorithm that uses time-based cryptographic keys to encrypt files."
+          ],
+          [
+            "Talos observed that the threat actor deployed DeadLock ransomware as the payload in their attack."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": [
+          "EDGE_5241d6a32f6c",
+          "EDGE_75484c383265",
+          "EDGE_277f1f6a5701",
+          "EDGE_302084d5404f"
+        ],
+        "source": {
+          "TTP:T1486_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                42,
+                42
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The DeadLock ransomware targets Windows machines with a custom stream cipher encryption algorithm that uses time-based cryptographic keys to encrypt files."
+              ],
+              [
+                "Talos observed that the threat actor deployed DeadLock ransomware as the payload in their attack."
+              ]
+            ]
+          },
+          "TTP:T1486_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ],
+              [
+                16,
+                18
+              ],
+              [
+                26,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"Combining BYOVD-based EDR termination with ransomware encryption in a single binary can be particularly effective against solutions with two architectural weaknesses: infrequently updated Vulnerable Driver Blocklists, and threat protection relying solely on user-mode services that only detect locally executed ransomware (which fails against remote encryption),\" it explained."
+              ],
+              [
+                "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware.",
+                "The ransomware is notable for carrying out all activity locally on the compromised system, making it compatible with air‑gapped environments.",
+                "It also conducts no data exfiltration."
+              ],
+              [
+                "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0.",
+                "In addition, the new version features a wiper component, an option to delay execution prior to encryption, track status of encryption using a progress bar, improved anti-analysis techniques to evade detection, and enhanced in-memory execution to minimize disk traces."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1489",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1489",
+        "ttp_id": "T1489",
+        "best_span_sentences_list": [
+          [
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_117564f15ce2",
+          "EDGE_6d995fe80ada",
+          "EDGE_bf1d8c347a74"
+        ],
+        "source": {
+          "TTP:T1489_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1490",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1490",
+        "ttp_id": "T1490",
+        "best_span_sentences_list": [
+          [
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ],
+          [
+            "The script executes commands to delete all volume shadow copy snapshots, eliminating the victim’s ability to recover the system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_60c5c68573b5",
+          "EDGE_a575a91e4bfe"
+        ],
+        "source": {
+          "TTP:T1490_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                23,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+              ],
+              [
+                "The script executes commands to delete all volume shadow copy snapshots, eliminating the victim’s ability to recover the system."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1548",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1548",
+        "ttp_id": "T1548",
+        "best_span_sentences_list": [
+          [
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ],
+          [
+            "The script implements a privilege escalation mechanism through the Test-Admin\nfunction that automatically detects current user permissions and re-launches itself with administrative privileges using the Verb RunAs\nparameter, ensuring it operates with the necessary system-level access required for service manipulation and shadow copy deletion.",
+            "This elevation technique bypasses UAC prompts through the exec bypass\nexecution policy override, allowing the script to execute without standard PowerShell security restrictions."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_52c211bd8403"
+        ],
+        "source": {
+          "TTP:T1548_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                18,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+              ],
+              [
+                "The script implements a privilege escalation mechanism through the Test-Admin\nfunction that automatically detects current user permissions and re-launches itself with administrative privileges using the Verb RunAs\nparameter, ensuring it operates with the necessary system-level access required for service manipulation and shadow copy deletion.",
+                "This elevation technique bypasses UAC prompts through the exec bypass\nexecution policy override, allowing the script to execute without standard PowerShell security restrictions."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes.",
+            "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+          ],
+          [
+            "Because the driver operates in kernel mode with the highest system privileges, it blindly accepts the command and executes ZwTerminateProcess()\n, instantly killing the targeted security service."
+          ],
+          [
+            "Then, the actor executed the netsh advfirewall\ncommand to create a new inbound firewall rule, opening TCP port 3389 to ensure RDP traffic isn't blocked."
+          ],
+          [
+            "Talos observed that the actor modified the Windows Defender settings using legitimate Windows executable SystemSettingsAdminFlows.exe\n.",
+            "By executing the following commands, the actor disabled Real-Time Protection (RTP) in Windows Defender.",
+            "They subsequently disabled cloud-based protections through the command SpynetReporting 0\n, which stops the machine from sending threat reports to Microsoft.",
+            "The command SubmitSamplesConsent 0\nprevents Windows Defender from automatically submitting suspicious files for analysis."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            2
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            38,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_0700d30a17b6",
+          "EDGE_1b2d1cbf5a2f",
+          "EDGE_596651d101cf",
+          "EDGE_64bf26d75990",
+          "EDGE_6849414d5357",
+          "EDGE_cdcbde92bcd3",
+          "EDGE_fd7cafe03ab3",
+          "EDGE_1e2c1e210655",
+          "EDGE_5863dbd30bcf",
+          "EDGE_9aa82c582733",
+          "EDGE_9da65525396d",
+          "EDGE_b1608a41432f",
+          "EDGE_00c9c76c427a",
+          "EDGE_259fea2e1daa",
+          "EDGE_2973c5b07a79",
+          "EDGE_3934f7f3d0e6",
+          "EDGE_5722e377642c",
+          "EDGE_736c513fe465",
+          "EDGE_bb241529fa93",
+          "EDGE_bb6ac03f0446",
+          "EDGE_c47fa2f4a2b0",
+          "EDGE_cd471750ccae",
+          "EDGE_d38bd93fbf93",
+          "EDGE_f93b8ac32b4c",
+          "EDGE_fa0d6be9edf1"
+        ],
+        "source": {
+          "TTP:T1562_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                1,
+                2
+              ],
+              [
+                15,
+                15
+              ],
+              [
+                28,
+                28
+              ],
+              [
+                38,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes.",
+                "- The actor ran a PowerShell script that bypasses User Account Control (UAC), disables Windows Defender, terminates various security, backup, and database services, and deletes all volume shadow copies to prevent system recovery."
+              ],
+              [
+                "Because the driver operates in kernel mode with the highest system privileges, it blindly accepts the command and executes ZwTerminateProcess()\n, instantly killing the targeted security service."
+              ],
+              [
+                "Then, the actor executed the netsh advfirewall\ncommand to create a new inbound firewall rule, opening TCP port 3389 to ensure RDP traffic isn't blocked."
+              ],
+              [
+                "Talos observed that the actor modified the Windows Defender settings using legitimate Windows executable SystemSettingsAdminFlows.exe\n.",
+                "By executing the following commands, the actor disabled Real-Time Protection (RTP) in Windows Defender.",
+                "They subsequently disabled cloud-based protections through the command SpynetReporting 0\n, which stops the machine from sending threat reports to Microsoft.",
+                "The command SubmitSamplesConsent 0\nprevents Windows Defender from automatically submitting suspicious files for analysis."
+              ]
+            ]
+          },
+          "TTP:T1562_'Reynolds' Bundles BYOVD With Ransomware Payload": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                13,
+                13
+              ],
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Symantec and Carbon Black updated the report on Monday based on further analysis, which revealed that the payload was from a new ransomware family, dubbed \"Reynolds.\"\nIn a BYOVD attack, a threat actor uses a vulnerable software driver, which has elevated privileges and kernel-level access to Windows, to terminate the security processes of a targeted system."
+              ],
+              [
+                "Typically, EDR killers are standalone tools, often publicly available, that threat actors deploy before delivering a ransomware payload.",
+                "For example, ransomware affiliates have used an EDR killer known as \"AuKill\" to shut down security products before deploying ransomware or backdoors on the targeted system."
+              ],
+              [
+                "Like virtually all EDR killers, the NSecKrnl driver targets the processes of well-known vendors, including Symantec."
+              ],
+              [
+                "\"In other scenarios, if defenders saw a suspicious driver being dropped on a system, they may have time to stop the attack before the ransomware is deployed.\"\nThe Threat Hunter Team noted that BYOVD is undoubtedly the most common evasion tool used by ransomware attackers."
+              ]
+            ]
+          },
+          "TTP:T1562_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                0,
+                0
+              ],
+              [
+                4,
+                8
+              ],
+              [
+                14,
+                14
+              ],
+              [
+                28,
+                28
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Cybersecurity researchers have disclosed details of an emergent ransomware family dubbed Reynolds that comes embedded with a built-in bring your own vulnerable driver (BYOVD) component for defense evasion purposes within the ransomware payload itself."
+              ],
+              [
+                "\"However, in this attack, the vulnerable driver (an NsecSoft NSecKrnl driver) was bundled with the ransomware itself.\"\nBroadcom's cybersecurity teams noted that this tactic of bundling a defense evasion component within the ransomware payload is not novel, and that it has been observed in a Ryuk ransomware attack in 2020 and in an incident involving a lesser-known ransomware family called Obscura in late August 2025.",
+                "In the Reynolds campaign, the ransomware is designed to drop a vulnerable NsecSoft NSecKrnl driver and terminate processes associated with various security programs from Avast, CrowdStrike Falcon, Palo Alto Networks Cortex XDR, Sophos (along with HitmanPro.Alert), and Symantec Endpoint Protection, among others.",
+                "It's worth noting that the NSecKrnl driver is susceptible to a known security flaw (CVE-2025-68947, CVSS score: 5.7) that could be exploited to terminate arbitrary processes.",
+                "Notably, the driver has been put to use by a threat actor known as Silver Fox in attacks designed to kill endpoint security tools prior to delivering ValleyRAT.",
+                "Over the past year, the hacking group has previously wielded multiple legitimate but flawed drivers – including truesight.sys and amsdk.sys – as part of BYOVD attacks to disarm security programs."
+              ],
+              [
+                "\"Combining BYOVD-based EDR termination with ransomware encryption in a single binary can be particularly effective against solutions with two architectural weaknesses: infrequently updated Vulnerable Driver Blocklists, and threat protection relying solely on user-mode services that only detect locally executed ransomware (which fails against remote encryption),\" it explained."
+              ],
+              [
+                "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1569",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1569",
+        "ttp_id": "T1569",
+        "best_span_sentences_list": [
+          [
+            "Finally, they used sc config\nand sc start\nto change the RemoteRegistry\nservice to on-demand\nand immediately start it, allowing them to query and modify the system's registry from another machine for further reconnaissance and configuration modifications."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_d30e23f449f2"
+        ],
+        "source": {
+          "TTP:T1569_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Finally, they used sc config\nand sc start\nto change the RemoteRegistry\nservice to on-demand\nand immediately start it, allowing them to query and modify the system's registry from another machine for further reconnaissance and configuration modifications."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_99871b6c521f"
+        ],
+        "source": {
+          "TTP:T1105_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_a4f3d917e8e1"
+        ],
+        "source": {
+          "TTP:T1204_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1485",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1485",
+        "ttp_id": "T1485",
+        "best_span_sentences_list": [
+          [
+            "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0.",
+            "In addition, the new version features a wiper component, an option to delay execution prior to encryption, track status of encryption using a progress bar, improved anti-analysis techniques to evade detection, and enhanced in-memory execution to minimize disk traces."
+          ],
+          [
+            "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            27
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_2e8c1207b149",
+          "EDGE_531277fe4598",
+          "EDGE_b3e92395ee98"
+        ],
+        "source": {
+          "TTP:T1485_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                26,
+                27
+              ],
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- The latest iteration of LockBit, LockBit 5.0, has been found to use ChaCha20 cipher to encrypt files and data across Windows, Linux, and ESXi environments, a shift from the AES-based encryption approach in LockBit 2.0 and LockBit 3.0.",
+                "In addition, the new version features a wiper component, an option to delay execution prior to encryption, track status of encryption using a progress bar, improved anti-analysis techniques to evade detection, and enhanced in-memory execution to minimize disk traces."
+              ],
+              [
+                "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1530",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1530",
+        "ttp_id": "T1530",
+        "best_span_sentences_list": [
+          [
+            "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_44c8f1ad613b",
+          "EDGE_62c84de2fd95"
+        ],
+        "source": {
+          "TTP:T1530_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- Ransomware operators have been observed increasingly shifting their focus from traditional on-premises targets to cloud storage services, especially misconfigured S3 buckets used by Amazon Web Services (AWS), with the attacks leaning on native cloud features to delete or overwrite data, suspend access, or extract sensitive content, while simultaneously staying under the radar."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware.",
+            "The ransomware is notable for carrying out all activity locally on the compromised system, making it compatible with air‑gapped environments.",
+            "It also conducts no data exfiltration."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_23a2829f0b8f"
+        ],
+        "source": {
+          "TTP:T1566_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                16,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The finding coincides with various ransomware-related developments in recent weeks -\n- A high-volume phishing campaign has used emails with Windows shortcut (LNK) attachments to run PowerShell code that fetches a Phorpiex dropper, which is then used to deliver the GLOBAL GROUP ransomware.",
+                "The ransomware is notable for carrying out all activity locally on the compromised system, making it compatible with air‑gapped environments.",
+                "It also conducts no data exfiltration."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed,\" Symantec and Carbon Black said."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1574_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"Also of note in this attack campaign was the presence of a suspicious side-loaded loader on the target's network several weeks prior to the ransomware being deployed,\" Symantec and Carbon Black said."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1583",
+        "ttp_id": "T1583",
+        "best_span_sentences_list": [
+          [
+            "- Attacks mounted by WantToCry have abused virtual machines (VMs) provisioned by ISPsystem, a legitimate virtual infrastructure management provider, to host and deliver malicious payloads at scale."
+          ],
+          [
+            "- It's assessed that bulletproof hosting providers are leasing ISPsystem virtual machines to other criminal actors for use in ransomware operations and malware delivery by exploiting a design weakness in VMmanager's default Windows templates that reuse the same static hostname and system identifiers every time they are deployed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_06f4c2d5e3b4",
+          "EDGE_212956e03291",
+          "EDGE_45b98b9f21b2"
+        ],
+        "source": {
+          "TTP:T1583_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ],
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "- Attacks mounted by WantToCry have abused virtual machines (VMs) provisioned by ISPsystem, a legitimate virtual infrastructure management provider, to host and deliver malicious payloads at scale."
+              ],
+              [
+                "- It's assessed that bulletproof hosting providers are leasing ISPsystem virtual machines to other criminal actors for use in ransomware operations and malware delivery by exploiting a design weakness in VMmanager's default Windows templates that reuse the same static hostname and system identifiers every time they are deployed."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1bf442c2345b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "BdApiUtil.sys",
+        "edges": [
+          "EDGE_64bf26d75990",
+          "EDGE_6ecc8164e810",
+          "EDGE_bcf0e6cf3d48"
+        ],
+        "source": {
+          "BdApiUtil.sys_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              6,
+              "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+            ]
+          ]
+        },
+        "raw_value": "BdApiUtil.sys",
+        "canonical_value": "BdApiUtil.sys",
+        "normalized_value": "BdApiUtil.sys"
+      },
+      {
+        "node_id": "IOC_3ee20231c258",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "SystemSettingsAdminFlows.exe",
+        "edges": [
+          "EDGE_596651d101cf",
+          "EDGE_e141303bb018"
+        ],
+        "source": {
+          "SystemSettingsAdminFlows.exe_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              38,
+              "Talos observed that the actor modified the Windows Defender settings using legitimate Windows executable SystemSettingsAdminFlows.exe\n."
+            ]
+          ]
+        },
+        "raw_value": "SystemSettingsAdminFlows.exe",
+        "canonical_value": "SystemSettingsAdminFlows.exe",
+        "normalized_value": "SystemSettingsAdminFlows.exe"
+      },
+      {
+        "node_id": "IOC_43d35f182a9e",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "EDRGay.exe",
+        "edges": [
+          "EDGE_8c6957603777",
+          "EDGE_d92a0d1cdf8b",
+          "EDGE_f322a561ae97"
+        ],
+        "source": {
+          "EDRGay.exe_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              8,
+              "The attack began when the actor dropped the loader (using the file name “EDRGay.exe”) and the vulnerable driver into the victim's Videos folder and ran the loader."
+            ]
+          ]
+        },
+        "raw_value": "EDRGay.exe",
+        "canonical_value": "EDRGay.exe",
+        "normalized_value": "EDRGay.exe"
+      },
+      {
+        "node_id": "IOC_539c14a33f45",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "DriverGay.sys",
+        "edges": [
+          "EDGE_f22f516ec5da"
+        ],
+        "source": {
+          "DriverGay.sys_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              6,
+              "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+            ]
+          ]
+        },
+        "raw_value": "DriverGay.sys",
+        "canonical_value": "DriverGay.sys",
+        "normalized_value": "DriverGay.sys"
+      },
+      {
+        "node_id": "IOC_acdfa5c39300",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\\\.\\BdApiUtil",
+        "edges": [
+          "EDGE_8deeaa34b119"
+        ],
+        "source": {
+          "\\\\.\\BdApiUtil_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              10,
+              "It specifies the driver's real device name (“\\\\.\\BdApiUtil”) to obtain a handle which essentially acts as a \"ticket\" to authorize future communication between the loader and the driver."
+            ]
+          ]
+        },
+        "raw_value": "\\\\.\\BdApiUtil",
+        "canonical_value": "\\\\.\\bdapiutil",
+        "normalized_value": "\\\\.\\bdapiutil"
+      },
+      {
+        "node_id": "IOC_b8ba1a1283da",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "fDenyTSConnections",
+        "edges": [
+          "EDGE_20e8c86fe124",
+          "EDGE_27232845411b",
+          "EDGE_d44523056bad"
+        ],
+        "source": {
+          "fDenyTSConnections_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              27,
+              "Upon gaining the system access, we observed that the threat actor attempted to enable and expose remote access services on the victim machine by using the reg add\ncommand to modify the fDenyTSConnections\nregistry value, which directly enables the machine to accept Remote Desktop Protocol (RDP) connections."
+            ]
+          ]
+        },
+        "raw_value": "fDenyTSConnections",
+        "canonical_value": "FDENYTSCONNECTIONS",
+        "normalized_value": "FDENYTSCONNECTIONS"
+      },
+      {
+        "node_id": "IOC_ec36c53c2f25",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2024-51324",
+        "edges": [
+          "EDGE_3d1474dc9abe",
+          "EDGE_ba84aaed8ce5",
+          "EDGE_cdcbde92bcd3"
+        ],
+        "source": {
+          "CVE-2024-51324_blog.talosintelligence.com_byovd-loader-deadlock-ransomware": [
+            [
+              1,
+              "- The actor used the Bring Your Own Vulnerable Driver (BYOVD) technique with a previously unknown loader to exploit the Baidu Antivirus driver vulnerability (CVE-2024-51324), enabling the termination of endpoint detection and response (EDR) processes."
+            ],
+            [
+              6,
+              "The attack relied on “BdApiUtil.sys”, a legitimate Baidu Antivirus driver containing an Improper Privilege Management vulnerability with CVE-2024-51324 — which the actor disguised using the file name “DriverGay.sys”."
+            ],
+            [
+              14,
+              "Due to the CVE-2024-51324 vulnerability, the driver fails to validate if the user-mode program has the necessary permissions to make this request."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2024-51324",
+        "canonical_value": "CVE-2024-51324",
+        "normalized_value": "CVE-2024-51324"
+      },
+      {
+        "node_id": "IOC_d4b10ae950d5",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-68947",
+        "edges": [
+          "EDGE_6d225af4807e",
+          "EDGE_5722e377642c"
+        ],
+        "source": {
+          "CVE-2025-68947_'Reynolds' Bundles BYOVD With Ransomware Payload": [
+            [
+              10,
+              "Last month, a medium-severity vulnerability in the NSecKrnl Windows driver, tracked as CVE-2025-68947, was disclosed."
+            ]
+          ],
+          "CVE-2025-68947_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              6,
+              "It's worth noting that the NSecKrnl driver is susceptible to a known security flaw (CVE-2025-68947, CVSS score: 5.7) that could be exploited to terminate arbitrary processes."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2025-68947",
+        "canonical_value": "CVE-2025-68947",
+        "normalized_value": "CVE-2025-68947"
+      },
+      {
+        "node_id": "IOC_8c2813176293",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-61155",
+        "edges": [
+          "EDGE_c47fa2f4a2b0",
+          "EDGE_feaeceed0690"
+        ],
+        "source": {
+          "CVE-2025-61155_thehackernews.com_2026_02_reynolds-ransomware-embeds-byovd-driver.html": [
+            [
+              28,
+              "- The Interlock ransomware group has continued its assault on U.K.- and U.S.-based organizations, particularly in the education sector, in one case leveraging a zero-day vulnerability in the \"GameDriverx64.sys\" gaming anti-cheat driver (CVE-2025-61155, CVSS score: 5.5) to disable security tools in a BYOVD attack."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2025-61155",
+        "canonical_value": "CVE-2025-61155",
+        "normalized_value": "CVE-2025-61155"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0700d30a17b6",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0cff2139ef89",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_117564f15ce2",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1489",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b2d1cbf5a2f",
+      "node_u": "HL_38681a19b8b0",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1ece9bddf726",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1018",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_20e8c86fe124",
+      "node_u": "IOC_b8ba1a1283da",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_27232845411b",
+      "node_u": "IOC_b8ba1a1283da",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_29deac1164c8",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3d1474dc9abe",
+      "node_u": "IOC_ec36c53c2f25",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3e9ab93c2cea",
+      "node_u": "HL_38681a19b8b0",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4815c96d4a93",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5241d6a32f6c",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_52c211bd8403",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1548",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_596651d101cf",
+      "node_u": "IOC_3ee20231c258",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_601153a6efa2",
+      "node_u": "HL_38681a19b8b0",
+      "node_v": "TTP_T1068",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_608626743307",
+      "node_u": "HL_f8b77c8fe4ea",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_60c5c68573b5",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1490",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_60ddcf9bb613",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_64bf26d75990",
+      "node_u": "IOC_1bf442c2345b",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6849414d5357",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6bed394329f5",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6d995fe80ada",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1489",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6ecc8164e810",
+      "node_u": "IOC_1bf442c2345b",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_75484c383265",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7ca15c426898",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8c6957603777",
+      "node_u": "IOC_43d35f182a9e",
+      "node_v": "TTP_T1106",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8deeaa34b119",
+      "node_u": "IOC_acdfa5c39300",
+      "node_v": "TTP_T1106",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_90c8cce7ae09",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a575a91e4bfe",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1490",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b33163a3fc5a",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba84aaed8ce5",
+      "node_u": "IOC_ec36c53c2f25",
+      "node_v": "TTP_T1068",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bcf0e6cf3d48",
+      "node_u": "IOC_1bf442c2345b",
+      "node_v": "TTP_T1068",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bf1d8c347a74",
+      "node_u": "HL_6f2ac82a2560",
+      "node_v": "TTP_T1489",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ca87831be8dc",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cdcbde92bcd3",
+      "node_u": "IOC_ec36c53c2f25",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d30e23f449f2",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1569",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d44523056bad",
+      "node_u": "IOC_b8ba1a1283da",
+      "node_v": "TTP_T1021",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d6b25e42aa54",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1068",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d92a0d1cdf8b",
+      "node_u": "IOC_43d35f182a9e",
+      "node_v": "TTP_T1057",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_df1b516ea383",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1057",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e141303bb018",
+      "node_u": "IOC_3ee20231c258",
+      "node_v": "TTP_T1218",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f22f516ec5da",
+      "node_u": "IOC_539c14a33f45",
+      "node_v": "TTP_T1036",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f322a561ae97",
+      "node_u": "IOC_43d35f182a9e",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f61f92e6b4f6",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_faa193df087e",
+      "node_u": "HL_c25339a222e3",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fd7cafe03ab3",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedc2391e361",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0bf97e2e40ea",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1e2c1e210655",
+      "node_u": "HL_ef0b346c0f6b",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5863dbd30bcf",
+      "node_u": "HL_7562524e0f66",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6d225af4807e",
+      "node_u": "IOC_d4b10ae950d5",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7edab710b9e1",
+      "node_u": "HL_dcb99375b665",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9aa82c582733",
+      "node_u": "HL_42b96d56080a",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9da65525396d",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a8afd888ef52",
+      "node_u": "HL_d5f8b702d799",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b1608a41432f",
+      "node_u": "HL_dcb99375b665",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f94e5bcd2fdb",
+      "node_u": "HL_c53d03d83f5b",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fa53e7667ab0",
+      "node_u": "HL_7562524e0f66",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_00c9c76c427a",
+      "node_u": "HL_1a8badf461ac",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_06f4c2d5e3b4",
+      "node_u": "HL_2995d1a5a56f",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bcf824222e5",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_209952a1fcca",
+      "node_u": "HL_04d31b20ce49",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_212956e03291",
+      "node_u": "HL_877fd1eea727",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_23a2829f0b8f",
+      "node_u": "HL_4d3e45d64d7c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_259fea2e1daa",
+      "node_u": "HL_bb0c89cafac4",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_277f1f6a5701",
+      "node_u": "HL_92f5fe3d65ef",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2973c5b07a79",
+      "node_u": "HL_1e6e3aed62d2",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2e8c1207b149",
+      "node_u": "HL_022adf8cd03c",
+      "node_v": "TTP_T1485",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_302084d5404f",
+      "node_u": "HL_804f694f2fbb",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3934f7f3d0e6",
+      "node_u": "HL_37a01c19929d",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_44c8f1ad613b",
+      "node_u": "HL_022adf8cd03c",
+      "node_v": "TTP_T1530",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_45b98b9f21b2",
+      "node_u": "HL_d8df1cedf680",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_471a44bc2070",
+      "node_u": "HL_b2880c18599f",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_531277fe4598",
+      "node_u": "HL_804f694f2fbb",
+      "node_v": "TTP_T1485",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5722e377642c",
+      "node_u": "IOC_d4b10ae950d5",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_58ab87075db1",
+      "node_u": "HL_4d3e45d64d7c",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_62c84de2fd95",
+      "node_u": "HL_499d07662f18",
+      "node_v": "TTP_T1530",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_736c513fe465",
+      "node_u": "HL_fee3c5f8c9b7",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_99871b6c521f",
+      "node_u": "HL_4d3e45d64d7c",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a4f3d917e8e1",
+      "node_u": "HL_4d3e45d64d7c",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b3e92395ee98",
+      "node_u": "HL_499d07662f18",
+      "node_v": "TTP_T1485",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bb241529fa93",
+      "node_u": "HL_d953d99b6528",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bb6ac03f0446",
+      "node_u": "HL_65a26798995f",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bc0abfe005db",
+      "node_u": "HL_6105fdbf1146",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c47fa2f4a2b0",
+      "node_u": "IOC_8c2813176293",
+      "node_v": "TTP_T1562",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd471750ccae",
+      "node_u": "HL_04d31b20ce49",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d38bd93fbf93",
+      "node_u": "HL_34a1793610bc",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ec31fb11bc0a",
+      "node_u": "HL_34a1793610bc",
+      "node_v": "TTP_T1211",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f93b8ac32b4c",
+      "node_u": "HL_67be50c2942b",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fa0d6be9edf1",
+      "node_u": "HL_b2880c18599f",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_feaeceed0690",
+      "node_u": "IOC_8c2813176293",
+      "node_v": "TTP_T1211",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

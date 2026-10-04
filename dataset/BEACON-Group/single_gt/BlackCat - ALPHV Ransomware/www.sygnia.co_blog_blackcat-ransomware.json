@@ -1,0 +1,1530 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_076a04b3efbb",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "MikroTik router",
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+        ],
+        "edges": [
+          "EDGE_ac0c0cd59c96"
+        ]
+      },
+      {
+        "node_id": "HL_0fe717564f9b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Stowaway",
+        "sentence_indices": [
+          39,
+          40
+        ],
+        "span_sentences": [
+          "Several executions of the Stowaway proxy tool were observed in the network under different names, such as ‘vhd.exe’, ‘vga.exe’ and ‘hhd.exe’.",
+          "Stowaway is an open-source tool used for creation of a chained proxy connection between a series of hosts; when used with a single origin host, it enables remote access the entire network."
+        ],
+        "edges": [
+          "EDGE_7a5fbb6de1e9",
+          "EDGE_82931b1b075c"
+        ]
+      },
+      {
+        "node_id": "HL_368df917d1ab",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "BlackCat",
+        "sentence_indices": [
+          0,
+          56,
+          57,
+          58
+        ],
+        "span_sentences": [
+          "The attack was facilitated by a known threat actor – BlackCat (ALPHV) – and employed a method that has become almost standard: leveraging access from third parties.",
+          "Several weeks later, the files stolen from the victim were published on BlackCat’s leak site on the dark web.",
+          "The BlackCat ransomware group surfaced in November 2021, and has since become one of the most sophisticated and active threat groups, targeting high-profile multi-sector and worldwide organizations.",
+          "Like other ransomware threat actors, BlackCat employs a Ransomware-as-a-Service business model, allowing its affiliates to leverage their tooling and infrastructure for ransomware and extortion attacks."
+        ],
+        "edges": [
+          "EDGE_0e4632bc59f4",
+          "EDGE_1d337604f37a",
+          "EDGE_4275b514eb3b",
+          "EDGE_4d03f3bf0aa5",
+          "EDGE_79fdfb39cefc",
+          "EDGE_7c8f3bcd3608",
+          "EDGE_908943a5e8e0",
+          "EDGE_c1909f4b67c8",
+          "EDGE_ca2d6efc0a64",
+          "EDGE_d211c84acf01",
+          "EDGE_ddec62d0f97d",
+          "EDGE_dfba46d229b0",
+          "EDGE_eacc739e0d5f",
+          "EDGE_f697feb638e5",
+          "EDGE_f8a971fb8cbb"
+        ]
+      },
+      {
+        "node_id": "HL_44b3459204b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Azure",
+        "sentence_indices": [
+          4,
+          11
+        ],
+        "span_sentences": [
+          "What made this situation even more complex is that the attacker compromised two different environments: on-premises and Azure.",
+          "The threat actor used several remote code execution techniques and the Cobalt Strike platform, to move laterally between the victim’s on-premises domains and Azure environment through RDP and tunneled connections."
+        ],
+        "edges": [
+          "EDGE_afd720af8d0f",
+          "EDGE_d2641edfb5f3"
+        ]
+      },
+      {
+        "node_id": "HL_49fa04070cb5",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Rclone",
+        "sentence_indices": [
+          14,
+          41,
+          51,
+          53
+        ],
+        "span_sentences": [
+          "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’.",
+          "During the next three days, the threat actor attempted to exfiltrate data from several different hosts by utilizing Rclone, an open-source tool used for syncing files and folders to and from cloud storage providers.",
+          "The hash of the executable indicates that this file was actually an ‘Rclone’ executable.",
+          "An ‘Rclone’ configuration file retrieved from a compromised server indicated the use of the ‘IDrive’ service, while a failed connection attempt to the ‘pCloud.com’ service was identified on another server."
+        ],
+        "edges": [
+          "EDGE_14978e43da8b",
+          "EDGE_56289abe3e0c"
+        ]
+      },
+      {
+        "node_id": "HL_4bd80bf58cdf",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "ALPHV",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "The attack was facilitated by a known threat actor – BlackCat (ALPHV) – and employed a method that has become almost standard: leveraging access from third parties."
+        ],
+        "edges": [
+          "EDGE_08a388c806de",
+          "EDGE_3b1ecaaaae8b",
+          "EDGE_495072ff3b03",
+          "EDGE_49cf0d99746e",
+          "EDGE_6aa72b6e3eed",
+          "EDGE_7029ed840b4b",
+          "EDGE_7d47ae75e9b3",
+          "EDGE_7f8db812b662",
+          "EDGE_b52a3fa01ddd",
+          "EDGE_bd0e22b07435",
+          "EDGE_d4daa59b8053",
+          "EDGE_d8ec435179ab",
+          "EDGE_f27476a8323c",
+          "EDGE_f5846d838bf5",
+          "EDGE_f91d56780857"
+        ]
+      },
+      {
+        "node_id": "HL_548f85d138f6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cloudflare",
+        "sentence_indices": [
+          29,
+          32,
+          45
+        ],
+        "span_sentences": [
+          "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173.",
+          "As a result, Cobalt Strike Beacon was installed, injected itself into ‘dfrgui.exe’, and communicated with a Cloudflare C2 domain ‘victorianshow[.]com’; this communication was crafted to look like the uploading and downloading of images.",
+          "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+        ],
+        "edges": [
+          "EDGE_04a4a0dd87d8",
+          "EDGE_d234dbcd5664"
+        ]
+      },
+      {
+        "node_id": "HL_601bdcf4b2fb",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "nslookup",
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed."
+        ],
+        "edges": [
+          "EDGE_80f3764dac84"
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "sentence_indices": [
+          11,
+          24,
+          25,
+          32,
+          36,
+          45
+        ],
+        "span_sentences": [
+          "The threat actor used several remote code execution techniques and the Cobalt Strike platform, to move laterally between the victim’s on-premises domains and Azure environment through RDP and tunneled connections.",
+          "These included executing PowerShell commands, attempting a privilege escalation attack, using a password-dumping tool, and deploying Cobalt Strike.",
+          "Several Cobalt Strike framework capabilities were utilized by the threat actor throughout the course of the attack, including RDP tunnelling for lateral movement, and process injection for the purposes of execution and evasion.",
+          "As a result, Cobalt Strike Beacon was installed, injected itself into ‘dfrgui.exe’, and communicated with a Cloudflare C2 domain ‘victorianshow[.]com’; this communication was crafted to look like the uploading and downloading of images.",
+          "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed.",
+          "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+        ],
+        "edges": [
+          "EDGE_183c041e40e9",
+          "EDGE_8402a231d9b1",
+          "EDGE_9e3df188a1b7",
+          "EDGE_f19df6c04452"
+        ]
+      },
+      {
+        "node_id": "HL_7455d6e9fdc5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Russia",
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "sentence_indices": [
+          35,
+          49
+        ],
+        "span_sentences": [
+          "The threat actor also executed a Kerberoasting attack in order to retrieve password hashes from the Active Directory.",
+          "The file was identified as ‘ADRecon’, an open-source PowerShell tool specifically designed to gather extensive information about Active Directory (AD) environments, including ACLs, DNS zones, BitLocker recovery keys, LAPS passwords, Domain accounts, and SPN credential hashes."
+        ],
+        "edges": [
+          "EDGE_b303468618f8",
+          "EDGE_d8df5cb44939"
+        ]
+      },
+      {
+        "node_id": "HL_9b4af12b449a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Wasabi",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’."
+        ],
+        "edges": [
+          "EDGE_13d6ce1e87dc",
+          "EDGE_a230f9ce093a"
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "sentence_indices": [
+          24,
+          28,
+          31,
+          47,
+          48
+        ],
+        "span_sentences": [
+          "These included executing PowerShell commands, attempting a privilege escalation attack, using a password-dumping tool, and deploying Cobalt Strike.",
+          "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process.",
+          "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’.",
+          "Evidence of this execution was an obfuscated PowerShell script named ‘C:\\osit\\r.ps1’ that was found on a local server.",
+          "Although the file no longer existed after execution – presumably it was deleted by the threat actor – by analysing the PowerShell logs, it was possible to recover and decode the content of the file."
+        ],
+        "edges": [
+          "EDGE_0614f566784c",
+          "EDGE_fedc2391e361",
+          "EDGE_ff6275ff963c"
+        ]
+      },
+      {
+        "node_id": "HL_ba978495bfed",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ADRecon",
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "The file was identified as ‘ADRecon’, an open-source PowerShell tool specifically designed to gather extensive information about Active Directory (AD) environments, including ACLs, DNS zones, BitLocker recovery keys, LAPS passwords, Domain accounts, and SPN credential hashes."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_e65338ef3309",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "AccountRestore",
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords."
+        ],
+        "edges": [
+          "EDGE_1097f24bbc5b"
+        ]
+      },
+      {
+        "node_id": "HL_fc1fc8b0d0af",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "IDrive",
+        "sentence_indices": [
+          53
+        ],
+        "span_sentences": [
+          "An ‘Rclone’ configuration file retrieved from a compromised server indicated the use of the ‘IDrive’ service, while a failed connection attempt to the ‘pCloud.com’ service was identified on another server."
+        ],
+        "edges": [
+          "EDGE_be4176408eef"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1003",
+        "ttp_id": "T1003",
+        "best_span_sentences_list": [
+          [
+            "During the RDP session, the threat actor conducted the first successful malicious activities in the targeted network.",
+            "These included executing PowerShell commands, attempting a privilege escalation attack, using a password-dumping tool, and deploying Cobalt Strike."
+          ],
+          [
+            "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+            "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords.",
+            "The threat actor also executed a Kerberoasting attack in order to retrieve password hashes from the Active Directory."
+          ],
+          [
+            "Following that, the threat actor attempted to save the Security Account Manager (SAM) registry hive, which stores credentials and account information for local users."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            24
+          ],
+          [
+            33,
+            35
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_4d03f3bf0aa5",
+          "EDGE_b303468618f8",
+          "EDGE_f5846d838bf5"
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "The threat actor used several remote code execution techniques and the Cobalt Strike platform, to move laterally between the victim’s on-premises domains and Azure environment through RDP and tunneled connections."
+          ],
+          [
+            "Day 1: Several RDP and SMB logon attempts were made to two servers; the attempts originated from an IP address of a vendor’s network which was connected to the victim, following an earlier compromise of this vendor."
+          ],
+          [
+            "Day 3: The threat actor successfully connected over RDP from the DESKTOP-PSGDD89 host to a server in the victim’s network."
+          ],
+          [
+            "The ‘C:\\Intel\\exp.exe’ file was created on the pivot-server during the RDP session, and its execution was detected and blocked by MDE."
+          ],
+          [
+            "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            26,
+            26
+          ],
+          [
+            36,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_49cf0d99746e",
+          "EDGE_7c8f3bcd3608",
+          "EDGE_9e3df188a1b7",
+          "EDGE_d2641edfb5f3"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Evidence of this execution was an obfuscated PowerShell script named ‘C:\\osit\\r.ps1’ that was found on a local server."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_0614f566784c",
+          "EDGE_d211c84acf01",
+          "EDGE_d4daa59b8053",
+          "EDGE_f0e27ceb6413"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+            "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords."
+          ],
+          [
+            "Several executions of the Stowaway proxy tool were observed in the network under different names, such as ‘vhd.exe’, ‘vga.exe’ and ‘hhd.exe’."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            34
+          ],
+          [
+            39,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_82931b1b075c",
+          "EDGE_bd0e22b07435",
+          "EDGE_ddec62d0f97d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1043",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1043",
+        "ttp_id": "T1043",
+        "best_span_sentences_list": [
+          [
+            "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "This server was used as the initial point of entry into the network, from which the threat actor conducted activities such as network scanning and lateral movement, so we will refer to it from now on as the ‘pivot-server’."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_80f3764dac84",
+          "EDGE_ca2d6efc0a64",
+          "EDGE_d8ec435179ab"
+        ]
+      },
+      {
+        "node_id": "TTP_T1048",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1048",
+        "ttp_id": "T1048",
+        "best_span_sentences_list": [
+          [
+            "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_13d6ce1e87dc",
+          "EDGE_14978e43da8b",
+          "EDGE_9881d69cc390",
+          "EDGE_f27476a8323c",
+          "EDGE_f697feb638e5"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_1b7ce9ef5a6c",
+          "EDGE_1d337604f37a",
+          "EDGE_7029ed840b4b",
+          "EDGE_f19df6c04452"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "During the RDP session, the threat actor conducted the first successful malicious activities in the targeted network.",
+            "These included executing PowerShell commands, attempting a privilege escalation attack, using a password-dumping tool, and deploying Cobalt Strike."
+          ],
+          [
+            "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+          ],
+          [
+            "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’."
+          ],
+          [
+            "Day 6: The threat actor utilized ‘nslookup’ and ‘dir’ commands to carry out reconnaissance of a server in a different domain, followed by an RDP connection from the pivot-server in which Cobalt Strike Beacon was remotely executed."
+          ],
+          [
+            "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+          ],
+          [
+            "Evidence of this execution was an obfuscated PowerShell script named ‘C:\\osit\\r.ps1’ that was found on a local server."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            24
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            45,
+            45
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "edges": [
+          "EDGE_6539d4200f25",
+          "EDGE_7f8db812b662",
+          "EDGE_8261e7b2eccc",
+          "EDGE_c87b9ee78a3b",
+          "EDGE_dfba46d229b0",
+          "EDGE_fedc2391e361"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_04a4a0dd87d8",
+          "EDGE_61c94c4bf1f1",
+          "EDGE_8402a231d9b1",
+          "EDGE_ab65218ddcfb",
+          "EDGE_ba3ec84d70b5",
+          "EDGE_d97ee649ce2a",
+          "EDGE_e700d8d6bc45",
+          "EDGE_f8a971fb8cbb",
+          "EDGE_f91d56780857",
+          "EDGE_fa3995743231"
+        ]
+      },
+      {
+        "node_id": "TTP_T1076",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1076",
+        "ttp_id": "T1076",
+        "best_span_sentences_list": [
+          [
+            "Day 3: The threat actor successfully connected over RDP from the DESKTOP-PSGDD89 host to a server in the victim’s network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_3b1ecaaaae8b",
+          "EDGE_79fdfb39cefc"
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+          ],
+          [
+            "Several executions of the Stowaway proxy tool were observed in the network under different names, such as ‘vhd.exe’, ‘vga.exe’ and ‘hhd.exe’."
+          ],
+          [
+            "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "edges": [
+          "EDGE_0e4632bc59f4",
+          "EDGE_183c041e40e9",
+          "EDGE_1c13e2e42fad",
+          "EDGE_2ac86a37fde3",
+          "EDGE_495072ff3b03",
+          "EDGE_5a0d1e108a67",
+          "EDGE_7a5fbb6de1e9",
+          "EDGE_ac0c0cd59c96",
+          "EDGE_aee6c0c4680d",
+          "EDGE_afd720af8d0f",
+          "EDGE_d234dbcd5664",
+          "EDGE_dae977eaf5ec",
+          "EDGE_f2d05a9451a3",
+          "EDGE_fb2a5c98985c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The ‘C:\\Intel\\exp.exe’ file was created on the pivot-server during the RDP session, and its execution was detected and blocked by MDE."
+          ],
+          [
+            "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            26
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_8131d726f8d1",
+          "EDGE_908943a5e8e0",
+          "EDGE_b52a3fa01ddd",
+          "EDGE_ff6275ff963c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1110",
+        "ttp_id": "T1110",
+        "best_span_sentences_list": [
+          [
+            "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+            "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            34
+          ]
+        ],
+        "edges": [
+          "EDGE_1097f24bbc5b",
+          "EDGE_7d47ae75e9b3",
+          "EDGE_eacc739e0d5f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1558",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1558",
+        "ttp_id": "T1558",
+        "best_span_sentences_list": [
+          [
+            "Later that day, the threat actor executed ‘BG00Q.exe’ on the pivot-server.",
+            "The file was identified as a renamed version of ‘AccountRestore’, a tool used to perform dictionary attacks to extract passwords.",
+            "The threat actor also executed a Kerberoasting attack in order to retrieve password hashes from the Active Directory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_6aa72b6e3eed",
+          "EDGE_c1909f4b67c8",
+          "EDGE_d8df5cb44939"
+        ]
+      },
+      {
+        "node_id": "TTP_T1567",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1567",
+        "ttp_id": "T1567",
+        "best_span_sentences_list": [
+          [
+            "Using the ‘Rclone’ tool, the threat actor exfiltrated a high volume of data from local servers to a cloud file storage service called ‘Wasabi’."
+          ],
+          [
+            "During the next three days, the threat actor attempted to exfiltrate data from several different hosts by utilizing Rclone, an open-source tool used for syncing files and folders to and from cloud storage providers.",
+            "In some executions of the tool, the threat actor utilized a filter file, to control the file types to be exfiltrated.",
+            "By analyzing firewall logs, it was determined that exfiltration attempts from two hosts were successful, and data was sent from the victim’s network to ‘wasabi’, a US-based cloud storage platform."
+          ],
+          [
+            "Several weeks later, the files stolen from the victim were published on BlackCat’s leak site on the dark web."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            41,
+            43
+          ],
+          [
+            56,
+            56
+          ]
+        ],
+        "edges": [
+          "EDGE_08a388c806de",
+          "EDGE_238fceed4e2f",
+          "EDGE_4275b514eb3b",
+          "EDGE_56289abe3e0c",
+          "EDGE_82bb19c4f18b",
+          "EDGE_a230f9ce093a",
+          "EDGE_be4176408eef"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1fead1f2f3ab",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "172.67.152[.]173",
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+        ],
+        "edges": [
+          "EDGE_5a0d1e108a67",
+          "EDGE_ab65218ddcfb"
+        ]
+      },
+      {
+        "node_id": "IOC_3672d7adc870",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\osit\\r.ps1",
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "Evidence of this execution was an obfuscated PowerShell script named ‘C:\\osit\\r.ps1’ that was found on a local server."
+        ],
+        "edges": [
+          "EDGE_6539d4200f25",
+          "EDGE_f0e27ceb6413"
+        ]
+      },
+      {
+        "node_id": "IOC_3e8c2ac1db11",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "91.109.201.223",
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "The ‘tomcat.exe’ file was observed communicating with a C2 server located in Russia (91.109.201.223), which appears to be a compromised MikroTik router – a known method used by cyber criminals which provides the threat actor’s infrastructure with another layer of anonymization."
+        ],
+        "edges": [
+          "EDGE_dae977eaf5ec"
+        ]
+      },
+      {
+        "node_id": "IOC_45c72aa18ebd",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "bellebobas[.]com",
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "The process contacted, over HTTPS, a Cobalt Strike Command and Control (C2) server hosted on ‘bellebobas[.]com’, which resolved to a Cloudflare CDN at IP address 172.67.152[.]173."
+        ],
+        "edges": [
+          "EDGE_e700d8d6bc45",
+          "EDGE_fb2a5c98985c"
+        ]
+      },
+      {
+        "node_id": "IOC_7d765b9e5e71",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Intel\\exp.exe",
+        "sentence_indices": [
+          26
+        ],
+        "span_sentences": [
+          "The ‘C:\\Intel\\exp.exe’ file was created on the pivot-server during the RDP session, and its execution was detected and blocked by MDE."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_8ac050e51ddc",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+        ],
+        "edges": [
+          "EDGE_8261e7b2eccc"
+        ]
+      },
+      {
+        "node_id": "IOC_960f5794f799",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2022-24521",
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "An analysis of ‘exp.exe’ indicated that it is a privilege escalation tool based on the exploitation of CVE-2022-24521 – a vulnerability in the Windows Common Log File System (CLFS) Driver, known to be used by several ransomware groups."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_a47c83c7bf9e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "bashupload[.]com",
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "Day 5: The threat actor used PowerShell to download and execute a script named ‘vic64.ps1’ from ‘bashupload[.]com’."
+        ],
+        "edges": [
+          "EDGE_8131d726f8d1"
+        ]
+      },
+      {
+        "node_id": "IOC_a872a3a1d348",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "victorianshow[.]com",
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "As a result, Cobalt Strike Beacon was installed, injected itself into ‘dfrgui.exe’, and communicated with a Cloudflare C2 domain ‘victorianshow[.]com’; this communication was crafted to look like the uploading and downloading of images."
+        ],
+        "edges": [
+          "EDGE_f2d05a9451a3",
+          "EDGE_fa3995743231"
+        ]
+      },
+      {
+        "node_id": "IOC_b7bfdcdb0c69",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Window\\debug\\debug\\host.exe",
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "Another exfiltration attempt by the ‘C:\\Window\\debug\\debug\\host.exe’ process was detected and terminated by an EDR."
+        ],
+        "edges": [
+          "EDGE_238fceed4e2f",
+          "EDGE_9881d69cc390"
+        ]
+      },
+      {
+        "node_id": "IOC_bac3676b074f",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "pCloud.com",
+        "sentence_indices": [
+          53
+        ],
+        "span_sentences": [
+          "An ‘Rclone’ configuration file retrieved from a compromised server indicated the use of the ‘IDrive’ service, while a failed connection attempt to the ‘pCloud.com’ service was identified on another server."
+        ],
+        "edges": [
+          "EDGE_82bb19c4f18b"
+        ]
+      },
+      {
+        "node_id": "IOC_ca12469685b8",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "104.21.27.108",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+        ],
+        "edges": [
+          "EDGE_1c13e2e42fad",
+          "EDGE_d97ee649ce2a"
+        ]
+      },
+      {
+        "node_id": "IOC_d2e2e243b3f8",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "172.67.142.67",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+        ],
+        "edges": [
+          "EDGE_2ac86a37fde3",
+          "EDGE_61c94c4bf1f1"
+        ]
+      },
+      {
+        "node_id": "IOC_d3b96946530d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Intel\\45.ps1",
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The threat actor created the ‘C:\\Intel\\45.ps1’ file on the pivot-server, and executed it using PowerShell with the command line:\nC:\\ Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -nop -w hidden -c .\\45.ps1\nThe execution resulted in the injection of a malicious code into the legitimate ‘drfgui.exe’ process."
+        ],
+        "edges": [
+          "EDGE_1b7ce9ef5a6c",
+          "EDGE_c87b9ee78a3b"
+        ]
+      },
+      {
+        "node_id": "IOC_e0677b877b75",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "timelesstravelinc[.]com",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "Additional installations of Cobalt Strike Beacon were observed during this phase, this time using the script ‘150.ps1’, and a C2 Cloudflare domain (timelesstravelinc[.]com), which resolved at the time to the IP addresses 172.67.142.67 and 104.21.27.108."
+        ],
+        "edges": [
+          "EDGE_aee6c0c4680d",
+          "EDGE_ba3ec84d70b5"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_04a4a0dd87d8",
+      "node_u": "HL_548f85d138f6",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0614f566784c",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_08a388c806de",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0e4632bc59f4",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1097f24bbc5b",
+      "node_u": "HL_e65338ef3309",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_13d6ce1e87dc",
+      "node_u": "HL_9b4af12b449a",
+      "node_v": "TTP_T1048",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_14978e43da8b",
+      "node_u": "HL_49fa04070cb5",
+      "node_v": "TTP_T1048",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_183c041e40e9",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b7ce9ef5a6c",
+      "node_u": "IOC_d3b96946530d",
+      "node_v": "TTP_T1055",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1c13e2e42fad",
+      "node_u": "IOC_ca12469685b8",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1d337604f37a",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_238fceed4e2f",
+      "node_u": "IOC_b7bfdcdb0c69",
+      "node_v": "TTP_T1567",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2ac86a37fde3",
+      "node_u": "IOC_d2e2e243b3f8",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_3b1ecaaaae8b",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1076",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4275b514eb3b",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_495072ff3b03",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_49cf0d99746e",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4d03f3bf0aa5",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_56289abe3e0c",
+      "node_u": "HL_49fa04070cb5",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5a0d1e108a67",
+      "node_u": "IOC_1fead1f2f3ab",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_61c94c4bf1f1",
+      "node_u": "IOC_d2e2e243b3f8",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6539d4200f25",
+      "node_u": "IOC_3672d7adc870",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6aa72b6e3eed",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1558",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7029ed840b4b",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_79fdfb39cefc",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1076",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7a5fbb6de1e9",
+      "node_u": "HL_0fe717564f9b",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7c8f3bcd3608",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7d47ae75e9b3",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7f8db812b662",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_80f3764dac84",
+      "node_u": "HL_601bdcf4b2fb",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8131d726f8d1",
+      "node_u": "IOC_a47c83c7bf9e",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8261e7b2eccc",
+      "node_u": "IOC_8ac050e51ddc",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_82931b1b075c",
+      "node_u": "HL_0fe717564f9b",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_82bb19c4f18b",
+      "node_u": "IOC_bac3676b074f",
+      "node_v": "TTP_T1567",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8402a231d9b1",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_908943a5e8e0",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9881d69cc390",
+      "node_u": "IOC_b7bfdcdb0c69",
+      "node_v": "TTP_T1048",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_9e3df188a1b7",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a230f9ce093a",
+      "node_u": "HL_9b4af12b449a",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ab65218ddcfb",
+      "node_u": "IOC_1fead1f2f3ab",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ac0c0cd59c96",
+      "node_u": "HL_076a04b3efbb",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_aee6c0c4680d",
+      "node_u": "IOC_e0677b877b75",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_afd720af8d0f",
+      "node_u": "HL_44b3459204b4",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b303468618f8",
+      "node_u": "HL_93e1ee43e148",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b52a3fa01ddd",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba3ec84d70b5",
+      "node_u": "IOC_e0677b877b75",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_bd0e22b07435",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_be4176408eef",
+      "node_u": "HL_fc1fc8b0d0af",
+      "node_v": "TTP_T1567",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c1909f4b67c8",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1558",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c87b9ee78a3b",
+      "node_u": "IOC_d3b96946530d",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ca2d6efc0a64",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d211c84acf01",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d234dbcd5664",
+      "node_u": "HL_548f85d138f6",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d2641edfb5f3",
+      "node_u": "HL_44b3459204b4",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d4daa59b8053",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d8df5cb44939",
+      "node_u": "HL_93e1ee43e148",
+      "node_v": "TTP_T1558",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d8ec435179ab",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d97ee649ce2a",
+      "node_u": "IOC_ca12469685b8",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_dae977eaf5ec",
+      "node_u": "IOC_3e8c2ac1db11",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ddec62d0f97d",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_dfba46d229b0",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e700d8d6bc45",
+      "node_u": "IOC_45c72aa18ebd",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_eacc739e0d5f",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f0e27ceb6413",
+      "node_u": "IOC_3672d7adc870",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f19df6c04452",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f27476a8323c",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1048",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f2d05a9451a3",
+      "node_u": "IOC_a872a3a1d348",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f5846d838bf5",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f697feb638e5",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1048",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f8a971fb8cbb",
+      "node_u": "HL_368df917d1ab",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f91d56780857",
+      "node_u": "HL_4bd80bf58cdf",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fa3995743231",
+      "node_u": "IOC_a872a3a1d348",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fb2a5c98985c",
+      "node_u": "IOC_45c72aa18ebd",
+      "node_v": "TTP_T1090",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedc2391e361",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ff6275ff963c",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

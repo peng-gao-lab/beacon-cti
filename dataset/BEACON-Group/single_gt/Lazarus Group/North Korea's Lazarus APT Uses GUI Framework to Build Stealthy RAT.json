@@ -1,0 +1,518 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0032a51c801f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "QuiteRAT",
+        "sentence_indices": [
+          1,
+          2,
+          4,
+          11,
+          12,
+          14
+        ],
+        "span_sentences": [
+          "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network.",
+          "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools.",
+          "It was during these attacks that it first put QuiteRAT to the test.",
+          "The introduction of the Qt framework reduces the possibility of heuristic detection.\"\nQuiteRAT, first discovered in February, is the successor to MagicRAT.",
+          "It lacks any built-in persistence mechanism, which MagicRAT achieved with the ability to set up scheduled tasks (QuiteRAT must be granted such power via a C2 server).",
+          "Besides slimming down, QuiteRAT resembles its predecessor in just about every other way."
+        ],
+        "edges": [
+          "EDGE_41a3e9d02f8f",
+          "EDGE_9ffaab14ca6e",
+          "EDGE_ae3510281f57",
+          "EDGE_bcb86c9d4e3a"
+        ]
+      },
+      {
+        "node_id": "HL_1b894171774e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TigerRAT",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_29dbb6cf1793",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "North Korea",
+        "sentence_indices": [
+          0,
+          1,
+          3
+        ],
+        "span_sentences": [
+          "North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT\nThe world's most notorious threat actor is using an unprecedented tactic for sneaking spyware into the IT networks of important companies.",
+          "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network.",
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2fbc618c0be7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Qt",
+        "sentence_indices": [
+          2,
+          6,
+          11,
+          21
+        ],
+        "span_sentences": [
+          "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools.",
+          "MagicRAT was statically linked to Qt, an open source, cross-platform software for creating graphical user interfaces.",
+          "The introduction of the Qt framework reduces the possibility of heuristic detection.\"\nQuiteRAT, first discovered in February, is the successor to MagicRAT.",
+          "So there is a possibility that the Qt framework is picked up by other malware authors and other APT groups,\" Malhotra warns, adding there's been no evidence of that happening just yet."
+        ],
+        "edges": [
+          "EDGE_ef79394053f0"
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_689a82869e5a",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lazarus Group",
+        "sentence_indices": [
+          1,
+          5
+        ],
+        "span_sentences": [
+          "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network.",
+          "In April 2022, Lazarus Group compiled the latest known version of \"MagicRAT,\" a Trojan which stood out not because of what it did, but what it was made of."
+        ],
+        "edges": [
+          "EDGE_338ade9a3c12"
+        ]
+      },
+      {
+        "node_id": "HL_75caabbf737b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Zoho ManageEngine",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+        ],
+        "edges": [
+          "EDGE_4d6671a958f1"
+        ]
+      },
+      {
+        "node_id": "HL_8d467c5d7918",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ManageEngine ServiceDesk",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+        ],
+        "edges": [
+          "EDGE_cd6b7971419f"
+        ]
+      },
+      {
+        "node_id": "HL_a43753a73afc",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lazarus APT",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT\nThe world's most notorious threat actor is using an unprecedented tactic for sneaking spyware into the IT networks of important companies."
+        ],
+        "edges": [
+          "EDGE_b936552d5cc6"
+        ]
+      },
+      {
+        "node_id": "HL_a7c8489ac277",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "UK",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c71a5deacb97",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "healthcare organizations",
+        "sentence_indices": [
+          1,
+          3
+        ],
+        "span_sentences": [
+          "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network.",
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_e317a3974fac",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MagicRAT",
+        "sentence_indices": [
+          1,
+          5,
+          11,
+          12,
+          13
+        ],
+        "span_sentences": [
+          "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network.",
+          "In April 2022, Lazarus Group compiled the latest known version of \"MagicRAT,\" a Trojan which stood out not because of what it did, but what it was made of.",
+          "The introduction of the Qt framework reduces the possibility of heuristic detection.\"\nQuiteRAT, first discovered in February, is the successor to MagicRAT.",
+          "It lacks any built-in persistence mechanism, which MagicRAT achieved with the ability to set up scheduled tasks (QuiteRAT must be granted such power via a C2 server).",
+          "However, it makes up for that shortcoming by being significantly more compact — just 4 to 5 megabytes, on average, compared to MagicRAT's 18 megabytes."
+        ],
+        "edges": [
+          "EDGE_1591b7ae70bb",
+          "EDGE_514a834cce34",
+          "EDGE_a72252a21a07",
+          "EDGE_cfeb34075efd",
+          "EDGE_d0364e9a4b53"
+        ]
+      },
+      {
+        "node_id": "HL_fdea9376fccd",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lazarus",
+        "sentence_indices": [
+          0,
+          1,
+          3,
+          5,
+          17
+        ],
+        "span_sentences": [
+          "North Korea's Lazarus APT Uses GUI Framework to Build Stealthy RAT\nThe world's most notorious threat actor is using an unprecedented tactic for sneaking spyware into the IT networks of important companies.",
+          "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network.",
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos.",
+          "In April 2022, Lazarus Group compiled the latest known version of \"MagicRAT,\" a Trojan which stood out not because of what it did, but what it was made of.",
+          "Whether Lazarus' sneakiest, tiniest RAT will pop up in more campaigns to come remains to be seen."
+        ],
+        "edges": [
+          "EDGE_2445fe1bbb2b"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools."
+          ],
+          [
+            "The introduction of the Qt framework reduces the possibility of heuristic detection.\"\nQuiteRAT, first discovered in February, is the successor to MagicRAT."
+          ],
+          [
+            "The two also use similar tactics for obfuscating code and entering into sleep states."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_1591b7ae70bb",
+          "EDGE_9ffaab14ca6e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "Most interesting of all, however, is that QuiteRAT is built on Qt, a framework for designing graphical user interfaces (GUIs), which it wears like a costume to sneak past malware detection tools."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_41a3e9d02f8f",
+          "EDGE_514a834cce34",
+          "EDGE_ef79394053f0"
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "It lacks any built-in persistence mechanism, which MagicRAT achieved with the ability to set up scheduled tasks (QuiteRAT must be granted such power via a C2 server)."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_cfeb34075efd"
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "In recent attacks against healthcare organizations and an Internet infrastructure company, North Korea's famous Lazarus Group deployed a new, ultra-compact, highly evasive remote access Trojan (RAT) called \"QuiteRAT.\"\nQuiteRAT is an upgraded version of another RAT the group deployed in 2022, \"MagicRAT,\" itself a follow-up from 2021's \"TigerRAT.\" QuiteRAT can pilfer information about its host machine and user, as well as run commands, and at just four to five megabytes, it hardly makes a noticeable imprint in a target network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_a72252a21a07",
+          "EDGE_ae3510281f57"
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_2445fe1bbb2b",
+          "EDGE_338ade9a3c12",
+          "EDGE_4d6671a958f1",
+          "EDGE_b936552d5cc6",
+          "EDGE_cd347e1fa5c2",
+          "EDGE_cd6b7971419f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "The two also use similar tactics for obfuscating code and entering into sleep states."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_bcb86c9d4e3a",
+          "EDGE_d0364e9a4b53"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_a0b9506a1b80",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2022-47966",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In February — five days after the disclosure of proofs-of-compromise (PoCs) relating to the 9.8 \"Critical\"-rated CVE-2022-47966, a remote code execution (RCE) vulnerability for Zoho ManageEngine — Lazarus exploited ManageEngine ServiceDesk to infiltrate healthcare organizations in the US and UK, as well as a UK-based \"Internet backbone infrastructure provider,\" according to a new report from Cisco Talos."
+        ],
+        "edges": [
+          "EDGE_cd347e1fa5c2"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1591b7ae70bb",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2445fe1bbb2b",
+      "node_u": "HL_fdea9376fccd",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_338ade9a3c12",
+      "node_u": "HL_689a82869e5a",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_41a3e9d02f8f",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4d6671a958f1",
+      "node_u": "HL_75caabbf737b",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_514a834cce34",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9ffaab14ca6e",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a72252a21a07",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ae3510281f57",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b936552d5cc6",
+      "node_u": "HL_a43753a73afc",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bcb86c9d4e3a",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd347e1fa5c2",
+      "node_u": "IOC_a0b9506a1b80",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd6b7971419f",
+      "node_u": "HL_8d467c5d7918",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cfeb34075efd",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d0364e9a4b53",
+      "node_u": "HL_e317a3974fac",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ef79394053f0",
+      "node_u": "HL_2fbc618c0be7",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

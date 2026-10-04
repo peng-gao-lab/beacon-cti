@@ -1,0 +1,680 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_082118261122",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical infrastructure",
+        "edges": [],
+        "sentence_indices": [
+          4,
+          33
+        ],
+        "span_sentences": [
+          "The targets were primarily located in Southeast Asia across government, telecommunications and critical infrastructure sectors.",
+          "Recent campaigns from groups like Volt Typhoon and Salt Typhoon have focused primarily on compromising critical infrastructure backbones and edge devices, relying on living-off-the-land techniques and minimal malware."
+        ]
+      },
+      {
+        "node_id": "HL_0ecdff43bd44",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Microsoft Warbird",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "These included:\n- Using Microsoft Warbird code protection framework\n- Custom API hashing to reduce antivirus detection\n- Establishing persistent remote control over infected systems."
+        ]
+      },
+      {
+        "node_id": "HL_1b9289deee8b",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "government",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "The targets were primarily located in Southeast Asia across government, telecommunications and critical infrastructure sectors."
+        ]
+      },
+      {
+        "node_id": "HL_1d271045353f",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Lotus Blossom",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Between June and December 2025, the official hosting infrastructure for the text editor Notepad++ was compromised by a state-sponsored threat group known as Lotus Blossom."
+        ]
+      },
+      {
+        "node_id": "HL_42eb567c1aad",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Chrysalis",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          6,
+          15,
+          17,
+          22,
+          29
+        ],
+        "span_sentences": [
+          "We’ve observed two chains of infection including a Lua script injection variant that resulted in the delivery of Cobalt Strike beacon malware as well as DLL side-loading to deliver a Chrysalis backdoor.",
+          "This malware, called Chrysalis, employed advanced evasion techniques.",
+          "Unit 42 observed evidence of two separate attack sequences:\n- One in which a malicious NSIS installer drops a compiled Lua script containing an installer to download and execute a Cobalt Strike Beacon payload\n- One in which attackers used DLL side-loading to inject the Chrysalis backdoor into memory.",
+          "These were followed by subsequent download requests for update.exe that are consistent with the reported Chrysalis backdoor.",
+          "This Lua variant uses Bluetooth service DLL sideloading techniques to deploy the Chrysalis backdoor."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "These included:\n- Using Microsoft Warbird code protection framework\n- Custom API hashing to reduce antivirus detection\n- Establishing persistent remote control over infected systems."
+        ]
+      },
+      {
+        "node_id": "HL_514b9e64f22f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Notepad++",
+        "edges": [
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          8,
+          10,
+          31
+        ],
+        "span_sentences": [
+          "Between June and December 2025, the official hosting infrastructure for the text editor Notepad++ was compromised by a state-sponsored threat group known as Lotus Blossom.",
+          "This allowed the attackers to intercept and redirect traffic destined for the Notepad++ update server.",
+          "This specific user demographic makes Notepad++ a strategically critical target for threat actors.",
+          "This supply chain attack relied on exploiting insufficient verification controls in older versions of the Notepad++ updater, WinGUp.",
+          "According to Notepad++, they have migrated their website to a new hosting provider with significantly stronger security practices."
+        ]
+      },
+      {
+        "node_id": "HL_5b80130249c7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Salt Typhoon",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "Recent campaigns from groups like Volt Typhoon and Salt Typhoon have focused primarily on compromising critical infrastructure backbones and edge devices, relying on living-off-the-land techniques and minimal malware."
+        ]
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          6,
+          17,
+          26
+        ],
+        "span_sentences": [
+          "We’ve observed two chains of infection including a Lua script injection variant that resulted in the delivery of Cobalt Strike beacon malware as well as DLL side-loading to deliver a Chrysalis backdoor.",
+          "Unit 42 observed evidence of two separate attack sequences:\n- One in which a malicious NSIS installer drops a compiled Lua script containing an installer to download and execute a Cobalt Strike Beacon payload\n- One in which attackers used DLL side-loading to inject the Chrysalis backdoor into memory.",
+          "This attack used the EnumWindowStationsW API and resulted in the delivery of Cobalt Strike beacon malware."
+        ]
+      },
+      {
+        "node_id": "HL_6ac30a99bcb8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "NSIS",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          12,
+          17
+        ],
+        "span_sentences": [
+          "When targeted victims attempted to update their software, they downloaded a malicious NSIS installer.",
+          "Unit 42 observed evidence of two separate attack sequences:\n- One in which a malicious NSIS installer drops a compiled Lua script containing an installer to download and execute a Cobalt Strike Beacon payload\n- One in which attackers used DLL side-loading to inject the Chrysalis backdoor into memory."
+        ]
+      },
+      {
+        "node_id": "HL_74e1dfd2d0af",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Volt Typhoon",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "Recent campaigns from groups like Volt Typhoon and Salt Typhoon have focused primarily on compromising critical infrastructure backbones and edge devices, relying on living-off-the-land techniques and minimal malware."
+        ]
+      },
+      {
+        "node_id": "HL_98ac8fd1bcba",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Southeast Asia",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "The targets were primarily located in Southeast Asia across government, telecommunications and critical infrastructure sectors."
+        ]
+      },
+      {
+        "node_id": "HL_adc349104a82",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecommunications",
+        "edges": [],
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "The targets were primarily located in Southeast Asia across government, telecommunications and critical infrastructure sectors."
+        ]
+      },
+      {
+        "node_id": "HL_bb7c2aeca977",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WinGUp",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "This supply chain attack relied on exploiting insufficient verification controls in older versions of the Notepad++ updater, WinGUp."
+        ]
+      },
+      {
+        "node_id": "HL_d338c0c71b7f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Bitdefender",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "This chain used DLL sideloading techniques and misused a legitimate Bitdefender component (BluetoothService.exe) to load a malicious library (log.dll) that decrypted and executed a custom backdoor."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            16
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This chain used DLL sideloading techniques and misused a legitimate Bitdefender component (BluetoothService.exe) to load a malicious library (log.dll) that decrypted and executed a custom backdoor."
+          ],
+          [
+            "This malware, called Chrysalis, employed advanced evasion techniques.",
+            "These included:\n- Using Microsoft Warbird code protection framework\n- Custom API hashing to reduce antivirus detection\n- Establishing persistent remote control over infected systems."
+          ],
+          [
+            "These included:\n- Using Microsoft Warbird code protection framework\n- Custom API hashing to reduce antivirus detection\n- Establishing persistent remote control over infected systems."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_3",
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Unit 42 observed evidence of two separate attack sequences:\n- One in which a malicious NSIS installer drops a compiled Lua script containing an installer to download and execute a Cobalt Strike Beacon payload\n- One in which attackers used DLL side-loading to inject the Chrysalis backdoor into memory."
+          ],
+          [
+            "In September and October 2025, we observed a Lua script injection variant deploying malicious Lua scripts to inject shellcode."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_4",
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            17,
+            17
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We’ve observed two chains of infection including a Lua script injection variant that resulted in the delivery of Cobalt Strike beacon malware as well as DLL side-loading to deliver a Chrysalis backdoor."
+          ],
+          [
+            "Unit 42 observed evidence of two separate attack sequences:\n- One in which a malicious NSIS installer drops a compiled Lua script containing an installer to download and execute a Cobalt Strike Beacon payload\n- One in which attackers used DLL side-loading to inject the Chrysalis backdoor into memory."
+          ],
+          [
+            "In September and October 2025, we observed a Lua script injection variant deploying malicious Lua scripts to inject shellcode."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_5",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Unit 42 observed evidence of two separate attack sequences:\n- One in which a malicious NSIS installer drops a compiled Lua script containing an installer to download and execute a Cobalt Strike Beacon payload\n- One in which attackers used DLL side-loading to inject the Chrysalis backdoor into memory."
+          ],
+          [
+            "In cases between September and November 2025, we observed activity consistent with outbound connections to a C2 server.",
+            "These were followed by subsequent download requests for update.exe that are consistent with the reported Chrysalis backdoor."
+          ],
+          [
+            "In this case, the download originated from:\n- 45.76.155[.]202/update/update.exe."
+          ],
+          [
+            "Download attempts for this variant were made from a different malicious server:\n- 45.32.144[.]255/update/update.exe."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_7",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            9
+          ],
+          [
+            10,
+            11
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This specific user demographic makes Notepad++ a strategically critical target for threat actors.",
+            "Compromising this single tool allows attackers to effectively bypass perimeter defenses and piggyback into the sessions of the most privileged users in the organization, gaining implicit administrative access to the network's core infrastructure."
+          ],
+          [
+            "This supply chain attack relied on exploiting insufficient verification controls in older versions of the Notepad++ updater, WinGUp.",
+            "This exploitation allowed the threat group to redirect traffic to attacker-controlled servers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When targeted victims attempted to update their software, they downloaded a malicious NSIS installer.",
+            "This installer — often named update.exe — initiated a complex infection chain."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1557",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1557",
+        "edges": [
+          "EDGE_8",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This adversary-in-the-middle (AitM) capability allowed for dynamic fingerprinting of incoming update requests, enabling for highly selective filtering of priority targets."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_6",
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ],
+          [
+            25,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This chain used DLL sideloading techniques and misused a legitimate Bitdefender component (BluetoothService.exe) to load a malicious library (log.dll) that decrypted and executed a custom backdoor."
+          ],
+          [
+            "In September and October 2025, we observed a Lua script injection variant deploying malicious Lua scripts to inject shellcode.",
+            "This attack used the EnumWindowStationsW API and resulted in the delivery of Cobalt Strike beacon malware.",
+            "In this case, the download originated from:\n- 45.76.155[.]202/update/update.exe.",
+            "Separately, we also observed a Bluetooth DLL sideloading variant in the same case.",
+            "This Lua variant uses Bluetooth service DLL sideloading techniques to deploy the Chrysalis backdoor."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_09a862af7b0a",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "45.32.144[.]255",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "Download attempts for this variant were made from a different malicious server:\n- 45.32.144[.]255/update/update.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_0ca8bda9d08e",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "45.77.31[.]210",
+        "edges": [],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "After days of C2 beacon traffic to this IP address, attackers shifted to a second C2 server at 45.77.31[.]210, with communication lasting until September."
+        ]
+      },
+      {
+        "node_id": "IOC_220e5c3a0d0c",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "45.32.144[.]255/update/update.exe",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "Download attempts for this variant were made from a different malicious server:\n- 45.32.144[.]255/update/update.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_2ca4e81feea1",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "45.76.155[.]202/update/update.exe",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "In this case, the download originated from:\n- 45.76.155[.]202/update/update.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_8c43329a09cd",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "45.76.155[.]202",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          19,
+          27
+        ],
+        "span_sentences": [
+          "In an August incident, we observed communication with a command-and-control (C2) IP address 45.76.155[.]202.",
+          "In this case, the download originated from:\n- 45.76.155[.]202/update/update.exe."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0ecdff43bd44",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_42eb567c1aad",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_42eb567c1aad",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_42eb567c1aad",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_42eb567c1aad",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_42eb567c1aad",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_514b9e64f22f",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_514b9e64f22f",
+      "node_v": "TTP_T1557"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_6ac30a99bcb8",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_6ac30a99bcb8",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_bb7c2aeca977",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_bb7c2aeca977",
+      "node_v": "TTP_T1557"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_d338c0c71b7f",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_09a862af7b0a",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_220e5c3a0d0c",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_2ca4e81feea1",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_8c43329a09cd",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

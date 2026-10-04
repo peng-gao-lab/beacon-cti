@@ -1,0 +1,705 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0448a7f30c1c",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Monero",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          1,
+          9,
+          14,
+          38
+        ],
+        "span_sentences": [
+          "The operation attempts to mine the Monero cryptocurrency using the open-source XMRig utility.",
+          "To date, we have observed over 250 unique Microsoft Windows PE files in this Monero cryptocurrency mining campaign.",
+          "However, instead of downloading the files in question, they were instead redirected to the Monero mining malware.",
+          "As we explained prior, between late October and late December, the attackers relied heavily upon the bitly URL shortening service to download and subsequently execute the XMRig Monero mining process."
+        ]
+      },
+      {
+        "node_id": "HL_0ed17adae015",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft .NET Framework",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "They no longer made use of SFX files, but instead transitioned to using an executable file compiled in Microsoft .NET Framework that would write a VBS file to disk and modify the victim’s Run registry key to ensure persistence."
+        ]
+      },
+      {
+        "node_id": "HL_2e21bf046837",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "eastern Europe",
+        "edges": [],
+        "sentence_indices": [
+          47
+        ],
+        "span_sentences": [
+          "Based on clues provided via the initial SFX and .NET droppers observed, there is marginal evidence that the attackers may be located in eastern Europe based on the languages witnessed."
+        ]
+      },
+      {
+        "node_id": "HL_4222adf6c653",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Borland Delphi",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "Moving away from .NET, they instead create the necessary VBS file using a dropper compiled with Borland Delphi."
+        ]
+      },
+      {
+        "node_id": "HL_4e90e43e964e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "BITSAdmin",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          18,
+          25
+        ],
+        "span_sentences": [
+          "Up to October 20, 2017, the attackers behind this campaign relied heavily upon the Windows built-in BITSAdmin tool.",
+          "They no longer made use of the BITSAdmin service for downloads, and began experimenting with the use of HTTP redirection services."
+        ]
+      },
+      {
+        "node_id": "HL_621ae82efb0e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "4sync",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          10,
+          15
+        ],
+        "span_sentences": [
+          "Over half of these samples were downloaded from the 4sync online cloud storage provider.",
+          "We also see overlap with our telemetry of samples being downloaded via the 4sync cloud storage service in Figure 1."
+        ]
+      },
+      {
+        "node_id": "HL_98ac8fd1bcba",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "southeast Asia",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          49
+        ],
+        "span_sentences": [
+          "This same telemetry provides insights into the most heavily targeted areas involving this campaign, which impacts southeast Asia, northern Africa, and South America the most.",
+          "These victims are spread across the globe, but the heaviest targeted areas include southeast Asia, northern Africa, and South America."
+        ]
+      },
+      {
+        "node_id": "HL_a1801bafa004",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "XMRig",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          1,
+          7,
+          8,
+          23,
+          37,
+          38
+        ],
+        "span_sentences": [
+          "The operation attempts to mine the Monero cryptocurrency using the open-source XMRig utility.",
+          "The attackers make heavy use of VBS files and use various online URL shortening services to install and run the XMRig payload.",
+          "Additionally, the attackers mask the wallets used by leveraging XMRig proxy services on the hosts to which they are connected.",
+          "This first round of samples identified up to October 20th, 2017 exclusively connected to the same XMRig proxy service via ports 80, 443, 8443, 8080, 1725, or 123:\n- a.pool[.]ml.",
+          "It should be noted that the latest samples observed using this dropper have been using the following new IP address for XMRig communication:\n- 5.23.48[.]207.",
+          "As we explained prior, between late October and late December, the attackers relied heavily upon the bitly URL shortening service to download and subsequently execute the XMRig Monero mining process."
+        ]
+      },
+      {
+        "node_id": "HL_a64a2e87d892",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Germany",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It should be noted that all of the domains listed above are all hosted on the same IP address, 144.76.155[.]139, which is hosted in Germany."
+        ]
+      },
+      {
+        "node_id": "HL_abed32a28490",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "northern Africa",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          49
+        ],
+        "span_sentences": [
+          "This same telemetry provides insights into the most heavily targeted areas involving this campaign, which impacts southeast Asia, northern Africa, and South America the most.",
+          "These victims are spread across the globe, but the heaviest targeted areas include southeast Asia, northern Africa, and South America."
+        ]
+      },
+      {
+        "node_id": "HL_ac32d0d12c8b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Windows",
+        "edges": [],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "To date, we have observed over 250 unique Microsoft Windows PE files in this Monero cryptocurrency mining campaign."
+        ]
+      },
+      {
+        "node_id": "HL_b89dd5877bac",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Adfly",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          13,
+          16
+        ],
+        "span_sentences": [
+          "It should be noted that in Figure 2, the victim clicked an Adfly advertisement link believing it to be a download for files mentioned within a video.",
+          "It seems likely that these samples are being at least partially distributed via malicious advertisements via the Adfly advertising service."
+        ]
+      },
+      {
+        "node_id": "HL_ec5e76fc2a19",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South America",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          49
+        ],
+        "span_sentences": [
+          "This same telemetry provides insights into the most heavily targeted areas involving this campaign, which impacts southeast Asia, northern Africa, and South America the most.",
+          "These victims are spread across the globe, but the heaviest targeted areas include southeast Asia, northern Africa, and South America."
+        ]
+      },
+      {
+        "node_id": "HL_f37bf72e86f3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "bitly",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          2,
+          4,
+          5,
+          28,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "span_sentences": [
+          "Based on publicly available telemetry data via bitly, we are able to estimate that the number of victims affected by this operation is roughly around 15 million people worldwide.",
+          "However, it’s important to note that the actual number of victims is likely much higher because less than half of the samples we identified in this campaign leverage bitly.",
+          "If we postulate that the bitly telemetry is typical for this operation, we can extrapolate to speculate that as many as 30 million people have been affected by this operation.",
+          "In some instances, only bitly is used.",
+          "As we explained prior, between late October and late December, the attackers relied heavily upon the bitly URL shortening service to download and subsequently execute the XMRig Monero mining process.",
+          "A full list of all malicious bitly redirects is in the Appendix.",
+          "Bitly provides generic statistics surrounding a particular shortened URL, which allows us to garner insight into how many victims actually downloaded these samples over time.",
+          "Overall, roughly 15 million victims were observed connecting to these bitly URLs.",
+          "As we’ve stated previously, only a subset of the overall observed samples made use of the bitly URL shortening services."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The filenames also provide clues in other ways, as the prefix of ‘[File4org]’ is unique to this particular malware campaign."
+          ],
+          [
+            "The final payload is primarily installed with the filename ‘msvc.exe’."
+          ],
+          [
+            "By targeting random end-users via malicious advertisements, using seemingly innocuous names for the malware files, and using both built-in Windows utilities and scripting files, the attackers are able to gain a foothold on victim systems at large scale."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers make heavy use of VBS files and use various online URL shortening services to install and run the XMRig payload."
+          ],
+          [
+            "They no longer made use of SFX files, but instead transitioned to using an executable file compiled in Microsoft .NET Framework that would write a VBS file to disk and modify the victim’s Run registry key to ensure persistence."
+          ],
+          [
+            "By targeting random end-users via malicious advertisements, using seemingly innocuous names for the malware files, and using both built-in Windows utilities and scripting files, the attackers are able to gain a foothold on victim systems at large scale."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_7",
+          "EDGE_16",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This first round of samples identified up to October 20th, 2017 exclusively connected to the same XMRig proxy service via ports 80, 443, 8443, 8080, 1725, or 123:\n- a.pool[.]ml."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_8",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Additionally, the attackers mask the wallets used by leveraging XMRig proxy services on the hosts to which they are connected."
+          ],
+          [
+            "This first round of samples identified up to October 20th, 2017 exclusively connected to the same XMRig proxy service via ports 80, 443, 8443, 8080, 1725, or 123:\n- a.pool[.]ml."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_13",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "After October 20, 2017 the attackers began experimenting with changes to how their malware operated.",
+            "They no longer made use of the BITSAdmin service for downloads, and began experimenting with the use of HTTP redirection services."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_5",
+          "EDGE_9",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Over half of these samples were downloaded from the 4sync online cloud storage provider."
+          ],
+          [
+            "As we explained prior, between late October and late December, the attackers relied heavily upon the bitly URL shortening service to download and subsequently execute the XMRig Monero mining process."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1189",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1189",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It should be noted that in Figure 2, the victim clicked an Adfly advertisement link believing it to be a download for files mentioned within a video.",
+            "However, instead of downloading the files in question, they were instead redirected to the Monero mining malware.",
+            "We also see overlap with our telemetry of samples being downloaded via the 4sync cloud storage service in Figure 1.",
+            "It seems likely that these samples are being at least partially distributed via malicious advertisements via the Adfly advertising service."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1197",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1197",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Up to October 20, 2017, the attackers behind this campaign relied heavily upon the Windows built-in BITSAdmin tool."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "By targeting random end-users via malicious advertisements, using seemingly innocuous names for the malware files, and using both built-in Windows utilities and scripting files, the attackers are able to gain a foothold on victim systems at large scale."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1496",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1496",
+        "edges": [
+          "EDGE_1",
+          "EDGE_10",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The operation attempts to mine the Monero cryptocurrency using the open-source XMRig utility."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1547",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ],
+          [
+            31,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They no longer made use of SFX files, but instead transitioned to using an executable file compiled in Microsoft .NET Framework that would write a VBS file to disk and modify the victim’s Run registry key to ensure persistence."
+          ],
+          [
+            "They no longer made use of SFX files, but instead transitioned to using an executable file compiled in Microsoft .NET Framework that would write a VBS file to disk and modify the victim’s Run registry key to ensure persistence.",
+            "This dropper malware is typically dropped with a filename of either ‘msvc.exe’ or ‘mingc.exe’."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1e6935a74fd0",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "144.76.155[.]139",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It should be noted that all of the domains listed above are all hosted on the same IP address, 144.76.155[.]139, which is hosted in Germany."
+        ]
+      },
+      {
+        "node_id": "IOC_425bc6c1499f",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "a.pool[.]ml.",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "This first round of samples identified up to October 20th, 2017 exclusively connected to the same XMRig proxy service via ports 80, 443, 8443, 8080, 1725, or 123:\n- a.pool[.]ml."
+        ]
+      },
+      {
+        "node_id": "IOC_531139534d99",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "5.23.48[.]207.",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "It should be noted that the latest samples observed using this dropper have been using the following new IP address for XMRig communication:\n- 5.23.48[.]207."
+        ]
+      },
+      {
+        "node_id": "IOC_f9f88f66d7a7",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\Administrator\\AppData\\Roaming\\mnxz\\msvc.exe",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "An example of how the miner is run during this period can be seen below:\n\"C:\\Users\\Administrator\\AppData\\Roaming\\mnxz\\msvc.exe\" -o 144.76.201[.]175:8080 -u x3 --nicehash --max-cpu-usage=20 –keepalive."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0448a7f30c1c",
+      "node_v": "TTP_T1496"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0ed17adae015",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_4222adf6c653",
+      "node_v": "TTP_T1547"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_4e90e43e964e",
+      "node_v": "TTP_T1197"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_621ae82efb0e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_a1801bafa004",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_a1801bafa004",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_a1801bafa004",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_a1801bafa004",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_a1801bafa004",
+      "node_v": "TTP_T1496"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_b89dd5877bac",
+      "node_v": "TTP_T1189"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_b89dd5877bac",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_f37bf72e86f3",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_f37bf72e86f3",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_1e6935a74fd0",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_425bc6c1499f",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_425bc6c1499f",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_531139534d99",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_f9f88f66d7a7",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_f9f88f66d7a7",
+      "node_v": "TTP_T1496"
+    }
+  ]
+}

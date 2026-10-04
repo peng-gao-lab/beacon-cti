@@ -1,0 +1,828 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_07ae1170ba86",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-7290",
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          12,
+          14,
+          17,
+          19
+        ],
+        "span_sentences": [
+          "Cisco Talos is disclosing a sophisticated threat actor we track as UAT-7290, who has been active since at least 2022.",
+          "- UAT-7290 is tasked with gaining initial access as well as conducting espionage focused intrusions against critical infrastructure entities in South Asia.",
+          "UAT-7290's arsenal includes a malware family consisting of implants we call RushDrop, DriveSwitch, and SilentRaid.",
+          "- Our findings indicate that UAT-7290 conducts extensive technical reconnaissance of target organizations before carrying out intrusions.",
+          "Talos assesses with high confidence that UAT-7290 is a sophisticated threat actor falling under the China-nexus of Advanced Persistent Threat actors (APTs).",
+          "UAT-7290 primarily targets telecommunications providers in South Asia.",
+          "However, in recent months we have also seen UAT-7290 expand their targeting into Southeastern Europe.",
+          "In addition to conducting espionage focused attacks where UAT-7290 burrows deep inside a victim enterprise’s network infrastructure, their tactics, techniques and procedures (TTPs) and tooling suggests that this actor also establishes Operational Relay Box (ORBs) nodes.",
+          "The ORB infrastructure may then be used by other China-nexus actors in their malicious operations, signifying UAT-7290's dual role as an espionage motivated threat actor as well as an initial access group.",
+          "Active since at least 2022, UAT-7290 has an expansive arsenal of tooling, including open-source malware, custom developed malware, and payloads for 1-day vulnerabilities in popular edge networking products.",
+          "UAT-7290 primarily leverages a Linux based malware suite but may also utilize Windows based bespoke implants such as RedLeaves or Shadowpad commonly linked to China-nexus threat actors.",
+          "UAT-7290 leverages one-day exploits and target-specific SSH brute force to compromise public facing edge devices to gain initial access and escalate privileges on compromised systems.",
+          "UAT-7290 shares overlapping TTPs with known China-nexus adversaries, including the exploitation of high-profile vulnerabilities in networking devices, use of open-source web shells for persistence, leveraging UDP listeners, and using compromised infrastructure to facilitate operations.",
+          "Additionally, UAT-7290 shares a significant amount of overlap in victimology, infrastructure, and tooling with a group publicly reported by Recorded Future as Red Foxtrot.",
+          "Another malware implanted on compromised devices by UAT-7290 is Bulbature."
+        ],
+        "edges": [
+          "EDGE_002460cafb96",
+          "EDGE_124119087920",
+          "EDGE_158a5fc36e42",
+          "EDGE_1621975d34f8",
+          "EDGE_1b540afeef83",
+          "EDGE_6060348cc3fe",
+          "EDGE_854295f18951",
+          "EDGE_ab8c41351dc7",
+          "EDGE_d26d6c27ec4b"
+        ]
+      },
+      {
+        "node_id": "HL_1295b7d9c3ff",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "MenuPass",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "MenuPass, POTASSIUM and Purple Typhoon), as well as infrastructure associated with ShadowPad, a malware family used by a variety of China-nexus adversaries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_1f777f2aebc6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Bulbature",
+        "sentence_indices": [
+          19,
+          20,
+          34,
+          35,
+          36,
+          39,
+          41
+        ],
+        "span_sentences": [
+          "Another malware implanted on compromised devices by UAT-7290 is Bulbature.",
+          "Bulbature, first disclosed by Sekoia in late 2024, is an implant that is used to convert compromised devices into ORBs.",
+          "The Bulbature malware discovered consisted of the same string encoding scheme as the other UAT-7290's malware illustrated earlier.",
+          "Usually UPX compressed, Bulbature can bind to and listen to either a random port of its choosing or one specified via command line via the “-d <port_number>” switch.",
+          "Bulbature obtains the local network interface’s name by executing the command:.",
+          "Bulbature can obtain additional or new C2 addresses from the current C2 and can switch over communications with them instead.",
+          "A recent variant of Bulbature contained an embedded self-signed certificate that it used for communicating with the C2."
+        ],
+        "edges": [
+          "EDGE_011a22d3f66b",
+          "EDGE_812ea1a19c61",
+          "EDGE_9d3911dd4f9d"
+        ]
+      },
+      {
+        "node_id": "HL_27c9f4f0ff56",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SilentRaid",
+        "sentence_indices": [
+          2,
+          23,
+          24
+        ],
+        "span_sentences": [
+          "UAT-7290's arsenal includes a malware family consisting of implants we call RushDrop, DriveSwitch, and SilentRaid.",
+          "DriveSwitch simply executes the SilentRaid malware on the system.",
+          "SilentRaid is a malware written in C++ and consists of multiple functionalities, written in the form of “plugins” embedded in the malware."
+        ],
+        "edges": [
+          "EDGE_1999573515ce",
+          "EDGE_4b60ca93651b",
+          "EDGE_734ffe8b0fb7",
+          "EDGE_75604ce818e6"
+        ]
+      },
+      {
+        "node_id": "HL_2c282d1d1096",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Red Foxtrot",
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "Additionally, UAT-7290 shares a significant amount of overlap in victimology, infrastructure, and tooling with a group publicly reported by Recorded Future as Red Foxtrot."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_30ace7ed514f",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecommunications providers",
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "UAT-7290 primarily targets telecommunications providers in South Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3cea184bcbb7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Shadowpad",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "UAT-7290 primarily leverages a Linux based malware suite but may also utilize Windows based bespoke implants such as RedLeaves or Shadowpad commonly linked to China-nexus threat actors."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_499f43288fbc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "UPX",
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "Usually UPX compressed, Bulbature can bind to and listen to either a random port of its choosing or one specified via command line via the “-d <port_number>” switch."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_4b33f91b89da",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Hong Kong",
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "Censys data shows that this certificate, with the exact Serial number, is present on at least 141 hosts, all either located in China or Hong Kong."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6290368cf263",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "POTASSIUM",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "MenuPass, POTASSIUM and Purple Typhoon), as well as infrastructure associated with ShadowPad, a malware family used by a variety of China-nexus adversaries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "On Virus Total, many of the IPs identified hosting this certificate are associated with other malware typically associated with China-nexus of threat actors such as SuperShell, GobRAT, Cobalt Strike, etc."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_68c15dee0841",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SuperShell",
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "On Virus Total, many of the IPs identified hosting this certificate are associated with other malware typically associated with China-nexus of threat actors such as SuperShell, GobRAT, Cobalt Strike, etc."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_75d1abc0fb06",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DriveSwitch",
+        "sentence_indices": [
+          2,
+          23
+        ],
+        "span_sentences": [
+          "UAT-7290's arsenal includes a malware family consisting of implants we call RushDrop, DriveSwitch, and SilentRaid.",
+          "DriveSwitch simply executes the SilentRaid malware on the system."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_84e427121d6e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "busybox",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "This plugin opens a remote shell by executing “sh” either via either “busybox” or “/bin/sh”."
+        ],
+        "edges": [
+          "EDGE_48b5e837fc7b"
+        ]
+      },
+      {
+        "node_id": "HL_8b1863daaf7d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Purple Typhoon",
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "MenuPass, POTASSIUM and Purple Typhoon), as well as infrastructure associated with ShadowPad, a malware family used by a variety of China-nexus adversaries."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9e790eeb18f7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RedLeaves",
+        "sentence_indices": [
+          10,
+          15
+        ],
+        "span_sentences": [
+          "UAT-7290 primarily leverages a Linux based malware suite but may also utilize Windows based bespoke implants such as RedLeaves or Shadowpad commonly linked to China-nexus threat actors.",
+          "Specifically, we have observed technical indicators that overlap with RedLeaves, a malware family attributed to APT10 (a.k.a."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a45e7a1a23af",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RushDrop",
+        "sentence_indices": [
+          2,
+          21,
+          22
+        ],
+        "span_sentences": [
+          "UAT-7290's arsenal includes a malware family consisting of implants we call RushDrop, DriveSwitch, and SilentRaid.",
+          "RushDrop is a malware dropper that consists of three binaries encoded and embedded within it.",
+          "RushDrop first makes rudimentary checks to ensure it is running on a legitimate system instead of a sandbox."
+        ],
+        "edges": [
+          "EDGE_7ce6b2a2d6ef"
+        ]
+      },
+      {
+        "node_id": "HL_a5d9d88e69f1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Chinese People’s Liberation Army (PLA) Unit 69010",
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "In a 2021 report, Recorded Future linked Red Foxtrot to Chinese People’s Liberation Army (PLA) Unit 69010."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "sentence_indices": [
+          4,
+          8,
+          10,
+          14,
+          42,
+          43
+        ],
+        "span_sentences": [
+          "Talos assesses with high confidence that UAT-7290 is a sophisticated threat actor falling under the China-nexus of Advanced Persistent Threat actors (APTs).",
+          "The ORB infrastructure may then be used by other China-nexus actors in their malicious operations, signifying UAT-7290's dual role as an espionage motivated threat actor as well as an initial access group.",
+          "UAT-7290 primarily leverages a Linux based malware suite but may also utilize Windows based bespoke implants such as RedLeaves or Shadowpad commonly linked to China-nexus threat actors.",
+          "UAT-7290 shares overlapping TTPs with known China-nexus adversaries, including the exploitation of high-profile vulnerabilities in networking devices, use of open-source web shells for persistence, leveraging UDP listeners, and using compromised infrastructure to facilitate operations.",
+          "Censys data shows that this certificate, with the exact Serial number, is present on at least 141 hosts, all either located in China or Hong Kong.",
+          "On Virus Total, many of the IPs identified hosting this certificate are associated with other malware typically associated with China-nexus of threat actors such as SuperShell, GobRAT, Cobalt Strike, etc."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_acf2e6709ec2",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical infrastructure entities",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- UAT-7290 is tasked with gaining initial access as well as conducting espionage focused intrusions against critical infrastructure entities in South Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_be61bbf0e68c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "GobRAT",
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "On Virus Total, many of the IPs identified hosting this certificate are associated with other malware typically associated with China-nexus of threat actors such as SuperShell, GobRAT, Cobalt Strike, etc."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_cb5f74f1bfed",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Southeastern Europe",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "However, in recent months we have also seen UAT-7290 expand their targeting into Southeastern Europe."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_dbebd6355415",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Asia",
+        "sentence_indices": [
+          1,
+          5
+        ],
+        "span_sentences": [
+          "- UAT-7290 is tasked with gaining initial access as well as conducting espionage focused intrusions against critical infrastructure entities in South Asia.",
+          "UAT-7290 primarily targets telecommunications providers in South Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_e2acfae370cc",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT10",
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "Specifically, we have observed technical indicators that overlap with RedLeaves, a malware family attributed to APT10 (a.k.a."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "DriveSwitch simply executes the SilentRaid malware on the system."
+          ],
+          [
+            "This plugin opens a remote shell by executing “sh” either via either “busybox” or “/bin/sh”."
+          ],
+          [
+            "This plugin sets up port forwarding between ports specified — a local port and a port on a remote server.",
+            "It can also set up port forwarding across multiple ports.",
+            "The Bulbature malware discovered consisted of the same string encoding scheme as the other UAT-7290's malware illustrated earlier.",
+            "Usually UPX compressed, Bulbature can bind to and listen to either a random port of its choosing or one specified via command line via the “-d <port_number>” switch.",
+            "Bulbature obtains the local network interface’s name by executing the command:.",
+            "The malware typically records its C2 address in a config file in the /tmp directory."
+          ],
+          [
+            "Bulbature can obtain additional or new C2 addresses from the current C2 and can switch over communications with them instead.",
+            "The malware can open up a reverse shell with its C2 to execute arbitrary commands on the infected system."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            32,
+            37
+          ],
+          [
+            39,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_0ea2de0fcaf9",
+          "EDGE_1b540afeef83",
+          "EDGE_48b5e837fc7b",
+          "EDGE_734ffe8b0fb7",
+          "EDGE_812ea1a19c61"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "SilentRaid is a malware written in C++ and consists of multiple functionalities, written in the form of “plugins” embedded in the malware.",
+            "On execution, it does certain rudimentary anti-VM and analysis checks to ensure it isn’t running in a sandbox.",
+            "Then the malware simply initializes its “plugins” and contacts the C2 server for instructions to carry out malicious tasks on the infected endpoint."
+          ],
+          [
+            "This plugin handles communication to C2 server.",
+            "It obtains the C2 IP by resolving a domain using “8[.]8[.]8[.]8” and passes commands received from the C2 to the appropriate plugin."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            26
+          ],
+          [
+            28,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_1999573515ce",
+          "EDGE_3d66660c4f22",
+          "EDGE_854295f18951"
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "In addition to conducting espionage focused attacks where UAT-7290 burrows deep inside a victim enterprise’s network infrastructure, their tactics, techniques and procedures (TTPs) and tooling suggests that this actor also establishes Operational Relay Box (ORBs) nodes."
+          ],
+          [
+            "This plugin sets up port forwarding between ports specified — a local port and a port on a remote server."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_011a22d3f66b",
+          "EDGE_6060348cc3fe",
+          "EDGE_75604ce818e6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1110",
+        "ttp_id": "T1110",
+        "best_span_sentences_list": [
+          [
+            "UAT-7290 leverages one-day exploits and target-specific SSH brute force to compromise public facing edge devices to gain initial access and escalate privileges on compromised systems."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "edges": [
+          "EDGE_d26d6c27ec4b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "UAT-7290 leverages one-day exploits and target-specific SSH brute force to compromise public facing edge devices to gain initial access and escalate privileges on compromised systems.",
+            "The actor appears to rely on publicly available proof-of-concept exploit code as opposed to developing their own.",
+            "UAT-7290 shares overlapping TTPs with known China-nexus adversaries, including the exploitation of high-profile vulnerabilities in networking devices, use of open-source web shells for persistence, leveraging UDP listeners, and using compromised infrastructure to facilitate operations."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_002460cafb96"
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1497",
+        "ttp_id": "T1497",
+        "best_span_sentences_list": [
+          [
+            "RushDrop first makes rudimentary checks to ensure it is running on a legitimate system instead of a sandbox."
+          ],
+          [
+            "SilentRaid is a malware written in C++ and consists of multiple functionalities, written in the form of “plugins” embedded in the malware.",
+            "On execution, it does certain rudimentary anti-VM and analysis checks to ensure it isn’t running in a sandbox."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ],
+          [
+            24,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_158a5fc36e42",
+          "EDGE_4b60ca93651b",
+          "EDGE_7ce6b2a2d6ef"
+        ]
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1505",
+        "ttp_id": "T1505",
+        "best_span_sentences_list": [
+          [
+            "UAT-7290 shares overlapping TTPs with known China-nexus adversaries, including the exploitation of high-profile vulnerabilities in networking devices, use of open-source web shells for persistence, leveraging UDP listeners, and using compromised infrastructure to facilitate operations."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_1621975d34f8"
+        ]
+      },
+      {
+        "node_id": "TTP_T1573",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1573",
+        "ttp_id": "T1573",
+        "best_span_sentences_list": [
+          [
+            "A recent variant of Bulbature contained an embedded self-signed certificate that it used for communicating with the C2."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_9d3911dd4f9d",
+          "EDGE_ab8c41351dc7"
+        ]
+      },
+      {
+        "node_id": "TTP_T1591",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1591",
+        "ttp_id": "T1591",
+        "best_span_sentences_list": [
+          [
+            "- Our findings indicate that UAT-7290 conducts extensive technical reconnaissance of target organizations before carrying out intrusions."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_124119087920"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_892b21dbfc34",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/tmp",
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "The malware typically records its C2 address in a config file in the /tmp directory."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_abdb14ffe3bb",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "8[.]8[.]8[.]8",
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It obtains the C2 IP by resolving a domain using “8[.]8[.]8[.]8” and passes commands received from the C2 to the appropriate plugin."
+        ],
+        "edges": [
+          "EDGE_3d66660c4f22"
+        ]
+      },
+      {
+        "node_id": "IOC_abfc5f809f72",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/bin/sh",
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "This plugin opens a remote shell by executing “sh” either via either “busybox” or “/bin/sh”."
+        ],
+        "edges": [
+          "EDGE_0ea2de0fcaf9"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_002460cafb96",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_011a22d3f66b",
+      "node_u": "HL_1f777f2aebc6",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0ea2de0fcaf9",
+      "node_u": "IOC_abfc5f809f72",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_124119087920",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1591",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_158a5fc36e42",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1621975d34f8",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1999573515ce",
+      "node_u": "HL_27c9f4f0ff56",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b540afeef83",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3d66660c4f22",
+      "node_u": "IOC_abdb14ffe3bb",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_48b5e837fc7b",
+      "node_u": "HL_84e427121d6e",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4b60ca93651b",
+      "node_u": "HL_27c9f4f0ff56",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6060348cc3fe",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_734ffe8b0fb7",
+      "node_u": "HL_27c9f4f0ff56",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_75604ce818e6",
+      "node_u": "HL_27c9f4f0ff56",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7ce6b2a2d6ef",
+      "node_u": "HL_a45e7a1a23af",
+      "node_v": "TTP_T1497",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_812ea1a19c61",
+      "node_u": "HL_1f777f2aebc6",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_854295f18951",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9d3911dd4f9d",
+      "node_u": "HL_1f777f2aebc6",
+      "node_v": "TTP_T1573",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ab8c41351dc7",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1573",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d26d6c27ec4b",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

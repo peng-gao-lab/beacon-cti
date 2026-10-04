@@ -1,0 +1,185 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_3433beef72b9",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "DoJ",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Department of Justice (DoJ) said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_410335234c91",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Raccoon Infostealer",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "\"Individuals who deployed Raccoon Infostealer to steal data from victims leased access to the malware for approximately $200 per month, paid for by cryptocurrency,\" the U.S."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_450033518942",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Raccoon Stealer",
+        "sentence_indices": [
+          1,
+          4,
+          6,
+          9
+        ],
+        "span_sentences": [
+          "for his alleged role in the Raccoon Stealer malware-as-a-service (MaaS) operation.",
+          "\"These individuals used various ruses, such as email phishing, to install the malware onto the computers of unsuspecting victims.\"\nRaccoon Stealer, mainly distributed under the guise of cracked software, is known to be one of the most prolific information stealers, put to use by multiple cybercriminal actors for the extensive features and the customizability offered by the malware.",
+          "That said, a second version of Raccoon Stealer written in C/C++ has since begun circulating on underground forums as of June 2022, with its authors touting the tool's ease of use.",
+          "The credentials allegedly consist of over four million email addresses, prompting the FBI to launch a website raccoon.ic3[.]gov to help users check if their email addresses show up in the Raccoon Stealer data."
+        ],
+        "edges": [
+          "EDGE_966834e7e89c",
+          "EDGE_e11c64c11fcb"
+        ]
+      },
+      {
+        "node_id": "HL_b877b258a3b0",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Department of Justice",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "Department of Justice (DoJ) said."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "sentence_indices": [
+          0,
+          2,
+          11
+        ],
+        "span_sentences": [
+          "A 26-year-old Ukrainian national has been charged in the U.S.",
+          "\"Individuals who deployed Raccoon Infostealer to steal data from victims leased access to the malware for approximately $200 per month, paid for by cryptocurrency,\" the U.S.",
+          "\"This type of malware feeds the cybercrime ecosystem, harvesting valuable information and allowing cyber criminals to steal from innocent Americans and citizens around the world,\" U.S."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ca97c8a2b9a4",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Federal Bureau of Investigation",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Federal Bureau of Investigation (FBI), the malware is estimated to have facilitated the theft of 50 million unique credentials and forms of identification (e.g., email addresses, bank accounts, cryptocurrency addresses, and credit card numbers) from millions of victims globally."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f8678a1d19a6",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "FBI",
+        "sentence_indices": [
+          8,
+          9
+        ],
+        "span_sentences": [
+          "Federal Bureau of Investigation (FBI), the malware is estimated to have facilitated the theft of 50 million unique credentials and forms of identification (e.g., email addresses, bank accounts, cryptocurrency addresses, and credit card numbers) from millions of victims globally.",
+          "The credentials allegedly consist of over four million email addresses, prompting the FBI to launch a website raccoon.ic3[.]gov to help users check if their email addresses show up in the Raccoon Stealer data."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "\"These individuals used various ruses, such as email phishing, to install the malware onto the computers of unsuspecting victims.\"\nRaccoon Stealer, mainly distributed under the guise of cracked software, is known to be one of the most prolific information stealers, put to use by multiple cybercriminal actors for the extensive features and the customizability offered by the malware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_e11c64c11fcb"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "\"These individuals used various ruses, such as email phishing, to install the malware onto the computers of unsuspecting victims.\"\nRaccoon Stealer, mainly distributed under the guise of cracked software, is known to be one of the most prolific information stealers, put to use by multiple cybercriminal actors for the extensive features and the customizability offered by the malware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_966834e7e89c"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_14bad91d4686",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "raccoon.ic3[.]gov",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "The credentials allegedly consist of over four million email addresses, prompting the FBI to launch a website raccoon.ic3[.]gov to help users check if their email addresses show up in the Raccoon Stealer data."
+        ],
+        "edges": []
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_966834e7e89c",
+      "node_u": "HL_450033518942",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e11c64c11fcb",
+      "node_u": "HL_450033518942",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

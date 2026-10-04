@@ -1,0 +1,909 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "sentence_indices": [
+          1,
+          13
+        ],
+        "span_sentences": [
+          "- Cisco’s file census and DNS analysis show affected Internet Information Services (IIS) servers in India, Thailand, Vietnam, Canada, and Brazil, targeting organizations such as universities, tech firms and telecom providers.",
+          "Based on Cisco's file census and DNS traffic analysis, the affected IIS server regions include India, Thailand, Vietnam, Canada and Brazil."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_09745102c5fd",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecom providers",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- Cisco’s file census and DNS analysis show affected Internet Information Services (IIS) servers in India, Thailand, Vietnam, Canada, and Brazil, targeting organizations such as universities, tech firms and telecom providers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_0cfc8059489d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-8099",
+        "sentence_indices": [
+          0,
+          2,
+          5,
+          7,
+          8,
+          18,
+          22,
+          24
+        ],
+        "span_sentences": [
+          "Cisco Talos is disclosing details on UAT-8099, a Chinese-speaking cybercrime group mainly involved in search engine optimization (SEO) fraud and theft of high-value credentials, configuration files, and certificate data.",
+          "- UAT-8099 manipulates search rankings by focusing on reputable, high-value IIS servers in targeted regions.",
+          "In April 2025, Cisco Talos identified a Chinese-speaking cybercrime group, tracked as UAT-8099, which targets a broad range of vulnerable IIS servers across specific regions.",
+          "UAT-8099 operates as a cybercrime group conducting SEO fraud.",
+          "Additionally, UAT-8099 uses Remote Desktop Protocol (RDP) to access IIS servers and search for valuable data such as logs, credentials, configuration files and sensitive certificates, which they package for possible resale or further exploitation.",
+          "The target web server allowed users to upload files to the server, but did not restrict the file type, which allowed UAT-8099 to upload the web shell.",
+          "Once the collection of information is complete, UAT-8099 enables the guest account, setss a password, and elevate the guest user privileges to administrator level, including the ability to access the system using RDP.",
+          "Talos did not only observe UAT-8099 conducting SEO fraud, but also stealing high-value credentials, configuration files and certificate data."
+        ],
+        "edges": [
+          "EDGE_18bd403c065a",
+          "EDGE_1f52aad0aae7",
+          "EDGE_4ed4ce1afe75",
+          "EDGE_6e4c5e05c9c6",
+          "EDGE_9df0d535ea9f",
+          "EDGE_9e7c6d0162cb",
+          "EDGE_aed5808ee720",
+          "EDGE_cd0e5d74bf87",
+          "EDGE_df1f08e9ff06"
+        ]
+      },
+      {
+        "node_id": "HL_18a8c40152fc",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Brazil",
+        "sentence_indices": [
+          1,
+          13
+        ],
+        "span_sentences": [
+          "- Cisco’s file census and DNS analysis show affected Internet Information Services (IIS) servers in India, Thailand, Vietnam, Canada, and Brazil, targeting organizations such as universities, tech firms and telecom providers.",
+          "Based on Cisco's file census and DNS traffic analysis, the affected IIS server regions include India, Thailand, Vietnam, Canada and Brazil."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_268c3d35f5c6",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "tech firms",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- Cisco’s file census and DNS analysis show affected Internet Information Services (IIS) servers in India, Thailand, Vietnam, Canada, and Brazil, targeting organizations such as universities, tech firms and telecom providers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_3c9e3682cbfd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirusTotal",
+        "sentence_indices": [
+          4,
+          37
+        ],
+        "span_sentences": [
+          "- Talos found several new BadIIS malware samples in this campaign on VirusTotal this year — one cluster with very low detection and another containing simplified Chinese debug strings.",
+          "Additionally, we identified several instances of the BadIIS malware on VirusTotal this year."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_42ebf853f762",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BadIIS",
+        "sentence_indices": [
+          3,
+          4,
+          12,
+          25,
+          35,
+          36,
+          37,
+          39,
+          46,
+          48,
+          50
+        ],
+        "span_sentences": [
+          "- The group maintains persistence and alters SEO rankings using web shells, open-source hacking tools, Cobalt Strike, and various BadIIS malware; their automation scripts are customized to evade defenses and hide activity.",
+          "- Talos found several new BadIIS malware samples in this campaign on VirusTotal this year — one cluster with very low detection and another containing simplified Chinese debug strings.",
+          "Subsequently, the group performs further privilege escalation using shared tools to gain system-level permissions and install BadIIS malware.",
+          "After successfully compromising the target IIS server and deploying their BadIIS tool, their next step was to search for valuable credentials, configuration files, and certificate data within the compromised system.",
+          "Talos' analysis of the BadIIS variants used in this campaign revealed functional and URL pattern similarities to a variant previously documented in the Black Hat USA 2021 white paper and a Trend Micro blog.",
+          "However, this new BadIIS malware has altered its code structure and functional workflow to evade detection by antivirus products.",
+          "Additionally, we identified several instances of the BadIIS malware on VirusTotal this year.",
+          "The first cluster of new BadIIS malware implements handlers named “CHttpModule::OnBeginRequest” and “CHttpModule::OnSendResponse”.",
+          "In injector mode, BadIIS intercepts browser requests originating from Google search results.",
+          "BadIIS retrieves malicious JavaScript code from a C2 server and redirects users to malicious websites instead of legitimate ones.",
+          "The second cluster of the new BadIIS malware also includes handlers named “CHttpModule::OnBeginRequest” and “CHttpModule::OnSendResponse”."
+        ],
+        "edges": [
+          "EDGE_5795597387d9",
+          "EDGE_943db993200a",
+          "EDGE_df86ec038ecc"
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          0,
+          5
+        ],
+        "span_sentences": [
+          "Cisco Talos is disclosing details on UAT-8099, a Chinese-speaking cybercrime group mainly involved in search engine optimization (SEO) fraud and theft of high-value credentials, configuration files, and certificate data.",
+          "In April 2025, Cisco Talos identified a Chinese-speaking cybercrime group, tracked as UAT-8099, which targets a broad range of vulnerable IIS servers across specific regions."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "sentence_indices": [
+          3,
+          26,
+          31
+        ],
+        "span_sentences": [
+          "- The group maintains persistence and alters SEO rankings using web shells, open-source hacking tools, Cobalt Strike, and various BadIIS malware; their automation scripts are customized to evade defenses and hide activity.",
+          "Talos observed UAT-8099 utilized Cobalt Strike as their backdoor in this campaign.",
+          "We also identify this third stage payload as the User-Defined Reflective Loader for the Cobalt Strike beacon."
+        ],
+        "edges": [
+          "EDGE_8d5ee94dec0a"
+        ]
+      },
+      {
+        "node_id": "HL_8a62e08ca2be",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Trend Micro",
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "Talos' analysis of the BadIIS variants used in this campaign revealed functional and URL pattern similarities to a variant previously documented in the Black Hat USA 2021 white paper and a Trend Micro blog."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9699dfb4e4a6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Internet Information Services",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "- Cisco’s file census and DNS analysis show affected Internet Information Services (IIS) servers in India, Thailand, Vietnam, Canada, and Brazil, targeting organizations such as universities, tech firms and telecom providers."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_aeef4beceef3",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "Based on Cisco's file census and DNS traffic analysis, the affected IIS server regions include India, Thailand, Vietnam, Canada and Brazil."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_b0f55656dd86",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "EasyTier",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "For persistence, they combine RDP access with SoftEther VPN, EasyTier (a decentralized virtual private network tool) and FRP reverse proxy tool."
+        ],
+        "edges": [
+          "EDGE_f92723b14606"
+        ]
+      },
+      {
+        "node_id": "HL_b39d93b6fd6a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Canada",
+        "sentence_indices": [
+          1,
+          13
+        ],
+        "span_sentences": [
+          "- Cisco’s file census and DNS analysis show affected Internet Information Services (IIS) servers in India, Thailand, Vietnam, Canada, and Brazil, targeting organizations such as universities, tech firms and telecom providers.",
+          "Based on Cisco's file census and DNS traffic analysis, the affected IIS server regions include India, Thailand, Vietnam, Canada and Brazil."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ca93454d9afc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ASP.NET Web BackDoor",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The following is the detected location of the web shell used in this campaign, which is identified as the open-source “ASP.NET Web BackDoor” web shell:\nC:/inetpub/wwwroot/[REDACTED]/Html/hw/server.ashx."
+        ],
+        "edges": [
+          "EDGE_40b9e8847fe3"
+        ]
+      },
+      {
+        "node_id": "HL_cbc494a80473",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SoftEther VPN",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "For persistence, they combine RDP access with SoftEther VPN, EasyTier (a decentralized virtual private network tool) and FRP reverse proxy tool."
+        ],
+        "edges": [
+          "EDGE_b0e0da65de22"
+        ]
+      },
+      {
+        "node_id": "HL_ed027fcc1345",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Vietnam",
+        "sentence_indices": [
+          1,
+          13
+        ],
+        "span_sentences": [
+          "- Cisco’s file census and DNS analysis show affected Internet Information Services (IIS) servers in India, Thailand, Vietnam, Canada, and Brazil, targeting organizations such as universities, tech firms and telecom providers.",
+          "Based on Cisco's file census and DNS traffic analysis, the affected IIS server regions include India, Thailand, Vietnam, Canada and Brazil."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f0730fc60dca",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Thailand",
+        "sentence_indices": [
+          1,
+          13
+        ],
+        "span_sentences": [
+          "- Cisco’s file census and DNS analysis show affected Internet Information Services (IIS) servers in India, Thailand, Vietnam, Canada, and Brazil, targeting organizations such as universities, tech firms and telecom providers.",
+          "Based on Cisco's file census and DNS traffic analysis, the affected IIS server regions include India, Thailand, Vietnam, Canada and Brazil."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_f8709b06eb52",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "FRP reverse proxy tool",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "For persistence, they combine RDP access with SoftEther VPN, EasyTier (a decentralized virtual private network tool) and FRP reverse proxy tool."
+        ],
+        "edges": [
+          "EDGE_da35d627714e"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1005",
+        "ttp_id": "T1005",
+        "best_span_sentences_list": [
+          [
+            "Additionally, UAT-8099 uses Remote Desktop Protocol (RDP) to access IIS servers and search for valuable data such as logs, credentials, configuration files and sensitive certificates, which they package for possible resale or further exploitation."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_cd0e5d74bf87"
+        ]
+      },
+      {
+        "node_id": "TTP_T1016",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1016",
+        "ttp_id": "T1016",
+        "best_span_sentences_list": [
+          [
+            "After dropping the web shell, Talos observed the actor utilizing it to execute commands such as ipconfig, whoami, arp and tasklist to collect system information and discover the host network information."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "Additionally, UAT-8099 uses Remote Desktop Protocol (RDP) to access IIS servers and search for valuable data such as logs, credentials, configuration files and sensitive certificates, which they package for possible resale or further exploitation."
+          ],
+          [
+            "They then enable the guest account, escalate its privileges to administrator level, and use this account to enable RDP."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_4ed4ce1afe75"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The encrypted first-stage payload is embedded within the wmicodegen.dll file."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": [
+          "EDGE_9df0d535ea9f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1033",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1033",
+        "ttp_id": "T1033",
+        "best_span_sentences_list": [
+          [
+            "After dropping the web shell, Talos observed the actor utilizing it to execute commands such as ipconfig, whoami, arp and tasklist to collect system information and discover the host network information."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "Then, the actor uses another command to identify the network ports on which the TermService (Remote Desktop Services) process is actively listening."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "They employed DLL sideloading as a method to execute the backdoor and also established a scheduled task to maintain persistence on the compromised systems."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_df1f08e9ff06"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "After dropping the web shell, Talos observed the actor utilizing it to execute commands such as ipconfig, whoami, arp and tasklist to collect system information and discover the host network information."
+          ],
+          [
+            "Then, the actor uses another command to identify the network ports on which the TermService (Remote Desktop Services) process is actively listening."
+          ],
+          [
+            "The injected JavaScript embeds a C2 URL such as “http://[C2]/jump.html” or “http://[C2]/pg888.js”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The first cluster of new BadIIS malware implements handlers named “CHttpModule::OnBeginRequest” and “CHttpModule::OnSendResponse”.",
+            "Both handlers use the \"User-Agent\" and \"Referer\" fields from the incoming HTTP headers to determine which malicious function to execute.",
+            "Specifically, this malware targets requests where the \"User-Agent\" is Googlebot and the \"Referer\" is google.com, confirming that the user and crawler accessed the compromised website via the Google search engine only."
+          ],
+          [
+            "BadIIS retrieves malicious JavaScript code from a C2 server and redirects users to malicious websites instead of legitimate ones."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            39,
+            41
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "edges": [
+          "EDGE_5795597387d9"
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "They then enable the guest account, escalate its privileges to administrator level, and use this account to enable RDP."
+          ],
+          [
+            "Once the collection of information is complete, UAT-8099 enables the guest account, setss a password, and elevate the guest user privileges to administrator level, including the ability to access the system using RDP."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_6e4c5e05c9c6"
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Upon discovering a vulnerability in a target server, the group uploads a web shell to collect system information and conduct reconnaissance on the host network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "For persistence, they combine RDP access with SoftEther VPN, EasyTier (a decentralized virtual private network tool) and FRP reverse proxy tool."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_b0e0da65de22",
+          "EDGE_da35d627714e",
+          "EDGE_f92723b14606"
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "Upon discovering a vulnerability in a target server, the group uploads a web shell to collect system information and conduct reconnaissance on the host network."
+          ],
+          [
+            "The target web server allowed users to upload files to the server, but did not restrict the file type, which allowed UAT-8099 to upload the web shell."
+          ],
+          [
+            "BadIIS retrieves malicious JavaScript code from a C2 server and redirects users to malicious websites instead of legitimate ones."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            48,
+            48
+          ]
+        ],
+        "edges": [
+          "EDGE_312267d37d3f",
+          "EDGE_448ce647b572",
+          "EDGE_aed5808ee720",
+          "EDGE_df86ec038ecc"
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "- UAT-8099 manipulates search rankings by focusing on reputable, high-value IIS servers in targeted regions."
+          ],
+          [
+            "The target web server allowed users to upload files to the server, but did not restrict the file type, which allowed UAT-8099 to upload the web shell."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_1f52aad0aae7"
+        ]
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1505",
+        "ttp_id": "T1505",
+        "best_span_sentences_list": [
+          [
+            "- The group maintains persistence and alters SEO rankings using web shells, open-source hacking tools, Cobalt Strike, and various BadIIS malware; their automation scripts are customized to evade defenses and hide activity."
+          ],
+          [
+            "The target web server allowed users to upload files to the server, but did not restrict the file type, which allowed UAT-8099 to upload the web shell."
+          ],
+          [
+            "The following is the detected location of the web shell used in this campaign, which is identified as the open-source “ASP.NET Web BackDoor” web shell:\nC:/inetpub/wwwroot/[REDACTED]/Html/hw/server.ashx."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_40b9e8847fe3",
+          "EDGE_943db993200a",
+          "EDGE_9e7c6d0162cb",
+          "EDGE_c5cee86a8d35"
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "They employed DLL sideloading as a method to execute the backdoor and also established a scheduled task to maintain persistence on the compromised systems.",
+            "The encrypted first-stage payload is embedded within the wmicodegen.dll file.",
+            "When this DLL is loaded by the legitimate WMI V2 provider code generation tool, it uses the VirtualQuery API to allocate a block of memory specifically for this first-stage payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_18bd403c065a",
+          "EDGE_8d5ee94dec0a"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_50910a644588",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:/inetpub/wwwroot/[REDACTED]/Html/hw/server.ashx",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The following is the detected location of the web shell used in this campaign, which is identified as the open-source “ASP.NET Web BackDoor” web shell:\nC:/inetpub/wwwroot/[REDACTED]/Html/hw/server.ashx."
+        ],
+        "edges": [
+          "EDGE_c5cee86a8d35"
+        ]
+      },
+      {
+        "node_id": "IOC_aa954018c45f",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://[C2]/jump.html",
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The injected JavaScript embeds a C2 URL such as “http://[C2]/jump.html” or “http://[C2]/pg888.js”."
+        ],
+        "edges": [
+          "EDGE_312267d37d3f"
+        ]
+      },
+      {
+        "node_id": "IOC_ce4d46038368",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://[C2]/pg888.js",
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "The injected JavaScript embeds a C2 URL such as “http://[C2]/jump.html” or “http://[C2]/pg888.js”."
+        ],
+        "edges": [
+          "EDGE_448ce647b572"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_18bd403c065a",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1f52aad0aae7",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_312267d37d3f",
+      "node_u": "IOC_aa954018c45f",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_40b9e8847fe3",
+      "node_u": "HL_ca93454d9afc",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_448ce647b572",
+      "node_u": "IOC_ce4d46038368",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4ed4ce1afe75",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5795597387d9",
+      "node_u": "HL_42ebf853f762",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6e4c5e05c9c6",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8d5ee94dec0a",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_943db993200a",
+      "node_u": "HL_42ebf853f762",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9df0d535ea9f",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9e7c6d0162cb",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_aed5808ee720",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b0e0da65de22",
+      "node_u": "HL_cbc494a80473",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c5cee86a8d35",
+      "node_u": "IOC_50910a644588",
+      "node_v": "TTP_T1505",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd0e5d74bf87",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_da35d627714e",
+      "node_u": "HL_f8709b06eb52",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_df1f08e9ff06",
+      "node_u": "HL_0cfc8059489d",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_df86ec038ecc",
+      "node_u": "HL_42ebf853f762",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f92723b14606",
+      "node_u": "HL_b0f55656dd86",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

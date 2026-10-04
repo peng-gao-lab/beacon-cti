@@ -1,0 +1,419 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_078be6ce0cea",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Palo Alto Networks Unit 42",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Palo Alto Networks Unit 42 is tracking the associated threat cluster under the moniker CL-STA-0969."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_07ae1170ba86",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-7290",
+        "sentence_indices": [
+          0,
+          2,
+          3,
+          5,
+          9,
+          13
+        ],
+        "span_sentences": [
+          "A China-nexus threat actor known as UAT-7290 has been attributed to espionage-focused intrusions against entities in South Asia and Southeastern Europe.",
+          "\"In addition to conducting espionage-focused attacks where UAT-7290 burrows deep inside a victim enterprise’s network infrastructure, their tactics, techniques, and procedures (TTPs) and tooling suggest that this actor also establishes Operational Relay Box (ORBs) nodes,\" researchers Asheer Malhotra, Vitor Ventura, and Brandon White said.",
+          "\"The ORB infrastructure may then be used by other China-nexus actors in their malicious operations, signifying UAT-7290's dual role as an espionage-motivated threat actor as well as an initial access group.\"\nAttacks mounted by the adversary have mainly targeted telecommunications providers in South Asia.",
+          "UAT-7290's tradecraft is broad as it's varied, relying on a combination of open-source malware, custom tooling, and payloads for one-day vulnerabilities in popular edge networking products.",
+          "Also deployed by UAT-7290 is a backdoor called Bulbature that's engineered to transform a compromised edge device into an ORBs.",
+          "UAT-7290 leverages one-day exploits and target-specific SSH brute force to compromise public-facing edge devices to gain initial access and escalate privileges on compromised systems,\" the researchers said."
+        ],
+        "edges": [
+          "EDGE_002460cafb96",
+          "EDGE_6060348cc3fe",
+          "EDGE_d26d6c27ec4b"
+        ]
+      },
+      {
+        "node_id": "HL_1e9aec9eb910",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "RedFoxtrot",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The cybersecurity company said the threat actor shares tactical and infrastructure overlaps with China-linked adversaries known as Stone Panda and RedFoxtrot (aka Nomad Panda)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_1f777f2aebc6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Bulbature",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Also deployed by UAT-7290 is a backdoor called Bulbature that's engineered to transform a compromised edge device into an ORBs."
+        ],
+        "edges": [
+          "EDGE_011a22d3f66b"
+        ]
+      },
+      {
+        "node_id": "HL_27c9f4f0ff56",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SilentRaid",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The activity cluster, which has been active since at least 2022, primarily focuses on extensive technical reconnaissance of target organizations before initiating attacks, ultimately leading to the deployment of malware families such as RushDrop, DriveSwitch, and SilentRaid, according to a Cisco Talos report published today."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_30ace7ed514f",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecommunications providers",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "\"The ORB infrastructure may then be used by other China-nexus actors in their malicious operations, signifying UAT-7290's dual role as an espionage-motivated threat actor as well as an initial access group.\"\nAttacks mounted by the adversary have mainly targeted telecommunications providers in South Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_357d50972813",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "CL-STA-0969",
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Palo Alto Networks Unit 42 is tracking the associated threat cluster under the moniker CL-STA-0969."
+        ],
+        "edges": [
+          "EDGE_898bb6e7196b",
+          "EDGE_de83e5a2422a",
+          "EDGE_e603480fe1d4"
+        ]
+      },
+      {
+        "node_id": "HL_3cea184bcbb7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ShadowPad",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Some of the notable Windows implants put to use by the threat actor include RedLeaves (aka BUGJUICE) and ShadowPad, both exclusively linked to Chinese hacking groups."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The activity cluster, which has been active since at least 2022, primarily focuses on extensive technical reconnaissance of target organizations before initiating attacks, ultimately leading to the deployment of malware families such as RushDrop, DriveSwitch, and SilentRaid, according to a Cisco Talos report published today."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_57b2666e8ce1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MystRodX",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "It's worth noting that a prior analysis from QiAnXin XLab flagged MystRodX as a variant of ChronosRAT, a modular ELF binary that's capable of shellcode execution, file management, keylogging, port forwarding, remote shell, screenshot capture, and proxy."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5e16646f09a9",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Nomad Panda",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The cybersecurity company said the threat actor shares tactical and infrastructure overlaps with China-linked adversaries known as Stone Panda and RedFoxtrot (aka Nomad Panda)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6a53a47aa9d1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ChronosRAT",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "It's worth noting that a prior analysis from QiAnXin XLab flagged MystRodX as a variant of ChronosRAT, a modular ELF binary that's capable of shellcode execution, file management, keylogging, port forwarding, remote shell, screenshot capture, and proxy."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_75d1abc0fb06",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DriveSwitch",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The activity cluster, which has been active since at least 2022, primarily focuses on extensive technical reconnaissance of target organizations before initiating attacks, ultimately leading to the deployment of malware families such as RushDrop, DriveSwitch, and SilentRaid, according to a Cisco Talos report published today."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_880ec1348cd1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "QiAnXin XLab",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "It's worth noting that a prior analysis from QiAnXin XLab flagged MystRodX as a variant of ChronosRAT, a modular ELF binary that's capable of shellcode execution, file management, keylogging, port forwarding, remote shell, screenshot capture, and proxy."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_9e790eeb18f7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RedLeaves",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Some of the notable Windows implants put to use by the threat actor include RedLeaves (aka BUGJUICE) and ShadowPad, both exclusively linked to Chinese hacking groups."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a45e7a1a23af",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "RushDrop",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The activity cluster, which has been active since at least 2022, primarily focuses on extensive technical reconnaissance of target organizations before initiating attacks, ultimately leading to the deployment of malware families such as RushDrop, DriveSwitch, and SilentRaid, according to a Cisco Talos report published today."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c6c3ac3cfb85",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Sekoia",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "It was first documented by Sekoia in October 2024."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_cb5f74f1bfed",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Southeastern Europe",
+        "sentence_indices": [
+          0,
+          4
+        ],
+        "span_sentences": [
+          "A China-nexus threat actor known as UAT-7290 has been attributed to espionage-focused intrusions against entities in South Asia and Southeastern Europe.",
+          "However, recent intrusion waves have branched out to strike organizations in Southeastern Europe."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_d71cd1552c90",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BUGJUICE",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "Some of the notable Windows implants put to use by the threat actor include RedLeaves (aka BUGJUICE) and ShadowPad, both exclusively linked to Chinese hacking groups."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_dbebd6355415",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Asia",
+        "sentence_indices": [
+          0,
+          3
+        ],
+        "span_sentences": [
+          "A China-nexus threat actor known as UAT-7290 has been attributed to espionage-focused intrusions against entities in South Asia and Southeastern Europe.",
+          "\"The ORB infrastructure may then be used by other China-nexus actors in their malicious operations, signifying UAT-7290's dual role as an espionage-motivated threat actor as well as an initial access group.\"\nAttacks mounted by the adversary have mainly targeted telecommunications providers in South Asia."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_fd41733a9675",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Stone Panda",
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The cybersecurity company said the threat actor shares tactical and infrastructure overlaps with China-linked adversaries known as Stone Panda and RedFoxtrot (aka Nomad Panda)."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "\"In addition to conducting espionage-focused attacks where UAT-7290 burrows deep inside a victim enterprise’s network infrastructure, their tactics, techniques, and procedures (TTPs) and tooling suggest that this actor also establishes Operational Relay Box (ORBs) nodes,\" researchers Asheer Malhotra, Vitor Ventura, and Brandon White said."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_011a22d3f66b",
+          "EDGE_6060348cc3fe",
+          "EDGE_898bb6e7196b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1110",
+        "ttp_id": "T1110",
+        "best_span_sentences_list": [
+          [
+            "UAT-7290 leverages one-day exploits and target-specific SSH brute force to compromise public-facing edge devices to gain initial access and escalate privileges on compromised systems,\" the researchers said.",
+            "\"The actor appears to rely on publicly available proof-of-concept exploit code as opposed to developing their own.\""
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_d26d6c27ec4b",
+          "EDGE_de83e5a2422a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "UAT-7290 leverages one-day exploits and target-specific SSH brute force to compromise public-facing edge devices to gain initial access and escalate privileges on compromised systems,\" the researchers said.",
+            "\"The actor appears to rely on publicly available proof-of-concept exploit code as opposed to developing their own.\""
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_002460cafb96",
+          "EDGE_e603480fe1d4"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_002460cafb96",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_011a22d3f66b",
+      "node_u": "HL_1f777f2aebc6",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6060348cc3fe",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_898bb6e7196b",
+      "node_u": "HL_357d50972813",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d26d6c27ec4b",
+      "node_u": "HL_07ae1170ba86",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_de83e5a2422a",
+      "node_u": "HL_357d50972813",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e603480fe1d4",
+      "node_u": "HL_357d50972813",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

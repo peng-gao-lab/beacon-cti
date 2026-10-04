@@ -1,0 +1,647 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_001424583ef1",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "India",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          3,
+          6,
+          26,
+          44,
+          45,
+          48
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered an ongoing campaign conducted by the Transparent Tribe APT group against students at various educational institutions in India.",
+          "However, in this new campaign dating back to December 2021, the adversary is targeting students of universities and colleges in India.",
+          "This group typically targets individuals and entities associated with governments and military personnel in the Indian subcontinent, specifically Afghanistan and India.",
+          "These domains were named so that they would appear relevant to students and educational entities in India.",
+          "Transparent Tribe has been aggressively trying to widen its net of victims in the Indian subcontinent.",
+          "Their operations started as early as at least 2016 and have largely focussed on infecting government and military officials in Afghanistan and India.",
+          "This might be in accordance with their nation-state's goal to establish long-term access and steal valuable and restricted research from premier research institutions associated with the Indian government."
+        ]
+      },
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "Many of the domains registered by the attackers for this campaign consisted of rudimentary websites with front pages containing embedded Google Drive folders."
+        ]
+      },
+      {
+        "node_id": "HL_24706d42667f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ObliqueRAT",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          11,
+          12,
+          14
+        ],
+        "span_sentences": [
+          "Typically, this APT group focuses on targeting government (government employees, military personnel) and pseudo-government entities (think tanks, conferences, etc.) using remote access trojans (RATs) such as CrimsonRAT and ObliqueRAT.",
+          "- ObliqueRAT is a C/C++-based implant discovered by Talos in early 2020.",
+          "ObliqueRAT is primarily reserved for hyper-targeted attacks on government personnel and in operations where stealth is a prime focus of the attackers' infection chain.",
+          "- Custom malware used by Transparent Tribe consists of easily and quickly deployable downloaders, droppers and lightweight RATs containing limited capabilities as opposed to CrimsonRAT and ObliqueRAT."
+        ]
+      },
+      {
+        "node_id": "HL_3295260919cd",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Lahore",
+        "edges": [],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The second domain, zainhosting[.]net belongs to a seemingly legitimate web services and hosting provider called \"Zain Hosting\" based out of Lahore, Pakistan."
+        ]
+      },
+      {
+        "node_id": "HL_379f09444129",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CapraRAT",
+        "edges": [],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Implants such as CapraRAT are constantly modified to be deployed against targets."
+        ]
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          7,
+          38
+        ],
+        "span_sentences": [
+          "Transparent Tribe is a suspected Pakistan-linked threat actor.",
+          "Transparent Tribe has also been known to use their CrimsonRAT implant against human rights activists in Pakistan.",
+          "The second domain, zainhosting[.]net belongs to a seemingly legitimate web services and hosting provider called \"Zain Hosting\" based out of Lahore, Pakistan."
+        ]
+      },
+      {
+        "node_id": "HL_381b6df88560",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zain Hosting",
+        "edges": [],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The second domain, zainhosting[.]net belongs to a seemingly legitimate web services and hosting provider called \"Zain Hosting\" based out of Lahore, Pakistan."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered an ongoing campaign conducted by the Transparent Tribe APT group against students at various educational institutions in India."
+        ]
+      },
+      {
+        "node_id": "HL_4df137c431c8",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "educational institutions",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          47
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered an ongoing campaign conducted by the Transparent Tribe APT group against students at various educational institutions in India.",
+          "However, their new campaign indicates that the threat actors' strategy is evolving to target civilian personnel, specifically those connected to educational institutions."
+        ]
+      },
+      {
+        "node_id": "HL_57aca4ff6683",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ZainHosting",
+        "edges": [],
+        "sentence_indices": [
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ],
+        "span_sentences": [
+          "The second domain, zainhosting[.]net belongs to a seemingly legitimate web services and hosting provider called \"Zain Hosting\" based out of Lahore, Pakistan.",
+          "Apart from zainhosting[.]net, the hosting provider also operates zainhosting[.]com, which is this business' primary front for their legitimate operations.",
+          "Interestingly, vebhost[.]com uses zainhosting[.]com's name servers:.",
+          "All three sets of domains -- the malicious Transparent Tribe infrastructure, vebhost[.]com and zainhosting[.]net/com -- are clearly related, with \"ZainHosting\"' owning and operating the malicious infrastructure.",
+          "However, the entire scope of ZainHosting's role in the Transparent Tribe organization is still unknown.",
+          "We believe with high confidence that ZainHosting is just one of the many infrastructure contractors hired by Transparent Tribe."
+        ]
+      },
+      {
+        "node_id": "HL_68a0077c1589",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CrimsonRAT",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          9,
+          10,
+          21,
+          22
+        ],
+        "span_sentences": [
+          "Typically, this APT group focuses on targeting government (government employees, military personnel) and pseudo-government entities (think tanks, conferences, etc.) using remote access trojans (RATs) such as CrimsonRAT and ObliqueRAT.",
+          "- CrimsonRAT is a .NET-based implant that is the group's malware of choice since at least 2020.",
+          "Transparent Tribe's multiple campaigns leveraging CrimsonRAT over the years indicate a steady evolution in the implant's capabilities.",
+          "The malware in the archive files is CrimsonRAT.",
+          "The CrimsonRAT payloads deployed in this campaign are very similar to those from past Transparent Tribe campaigns."
+        ]
+      },
+      {
+        "node_id": "HL_9728b1ff28eb",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Transparent Tribe",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          0,
+          5,
+          7,
+          10,
+          14,
+          15,
+          19,
+          22,
+          23,
+          33,
+          41,
+          43,
+          44
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered an ongoing campaign conducted by the Transparent Tribe APT group against students at various educational institutions in India.",
+          "Transparent Tribe is a suspected Pakistan-linked threat actor.",
+          "Transparent Tribe has also been known to use their CrimsonRAT implant against human rights activists in Pakistan.",
+          "Transparent Tribe's multiple campaigns leveraging CrimsonRAT over the years indicate a steady evolution in the implant's capabilities.",
+          "- Custom malware used by Transparent Tribe consists of easily and quickly deployable downloaders, droppers and lightweight RATs containing limited capabilities as opposed to CrimsonRAT and ObliqueRAT.",
+          "Transparent Tribe also maintains a suite of mobile implants in their arsenal.",
+          "The maldocs consist of malicious VBA macros commonly observed in previous Transparent Tribe campaigns.",
+          "The CrimsonRAT payloads deployed in this campaign are very similar to those from past Transparent Tribe campaigns.",
+          "It is the staple implant of choice for Transparent Tribe to establish long-term access into victim networks.",
+          "It is highly likely that these front pages will be used as stagers for honeytrap-based attacks in the future, another tactic typical of the Transparent Tribe APT.",
+          "All three sets of domains -- the malicious Transparent Tribe infrastructure, vebhost[.]com and zainhosting[.]net/com -- are clearly related, with \"ZainHosting\"' owning and operating the malicious infrastructure.",
+          "We believe with high confidence that ZainHosting is just one of the many infrastructure contractors hired by Transparent Tribe.",
+          "Transparent Tribe has been aggressively trying to widen its net of victims in the Indian subcontinent."
+        ]
+      },
+      {
+        "node_id": "HL_ac108ea21c9c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Afghanistan",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          45
+        ],
+        "span_sentences": [
+          "This group typically targets individuals and entities associated with governments and military personnel in the Indian subcontinent, specifically Afghanistan and India.",
+          "Their operations started as early as at least 2016 and have largely focussed on infecting government and military officials in Afghanistan and India."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These implants contain a plethora of malicious capabilities meant to steal data from mobile devices.",
+            "The attack consists of a maldoc delivered to the target as an attachment or a link to a remote location via a spear-phishing email.",
+            "The maldocs consist of malicious VBA macros commonly observed in previous Transparent Tribe campaigns.",
+            "The macros extract an embedded archive file from the maldoc and unzip it to execute a copy of the malware in the archive file."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            32
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Many of the domains registered by the attackers for this campaign consisted of rudimentary websites with front pages containing embedded Google Drive folders.",
+            "All of these folders contained pictures of women."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            20
+          ],
+          [
+            18,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These implants contain a plethora of malicious capabilities meant to steal data from mobile devices.",
+            "The attack consists of a maldoc delivered to the target as an attachment or a link to a remote location via a spear-phishing email.",
+            "The maldocs consist of malicious VBA macros commonly observed in previous Transparent Tribe campaigns.",
+            "The macros extract an embedded archive file from the maldoc and unzip it to execute a copy of the malware in the archive file."
+          ],
+          [
+            "The attack consists of a maldoc delivered to the target as an attachment or a link to a remote location via a spear-phishing email.",
+            "The maldocs consist of malicious VBA macros commonly observed in previous Transparent Tribe campaigns."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            26,
+            30
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            28,
+            28
+          ],
+          [
+            34,
+            37
+          ],
+          [
+            37,
+            37
+          ],
+          [
+            41,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "These domains were named so that they would appear relevant to students and educational entities in India.",
+            "However, we've also discovered the use of additional media-themed domains that the attackers are preparing to use in parallel campaigns against their targets.",
+            "During the course of our research, we discovered SSL certificate overlaps with another domain registered by the attackers in June 2021, geo-news[.]tv, using the email address immikhan034[@]gmail[.]com.",
+            "This domain is a typo-squatted version of geo[.]tv, a legitimate Pakistani news website.",
+            "All the malicious domains have recently resolved to the same IP address: 198[.]37[.]123[.]126."
+          ],
+          [
+            "However, we've also discovered the use of additional media-themed domains that the attackers are preparing to use in parallel campaigns against their targets."
+          ],
+          [
+            "During the course of our research, we discovered SSL certificate overlaps with another domain registered by the attackers in June 2021, geo-news[.]tv, using the email address immikhan034[@]gmail[.]com."
+          ],
+          [
+            "The DNS SOA records for all the malicious domains utilized in this APT campaign contain a common administrator email address: rupees001[at]gmail[.]com.",
+            "This email address has been used to register and administer approximately 2,000 legitimate and malicious domains.",
+            "Of the two domains, vebhost[.]com hosts a dummy website that advertises website-building services.",
+            "The malicious domains used in this campaign, such as studentsportal[.]live and others, use vebhost[.]com name servers, specifically:\n- ns1[.]vebhost[.]com\n- ns2[.]vebhost[.]com\nTherefore, it is highly likely that the operators registering and maintaining the malicious domains also operate web-hosting services through vebhost[.]com."
+          ],
+          [
+            "The malicious domains used in this campaign, such as studentsportal[.]live and others, use vebhost[.]com name servers, specifically:\n- ns1[.]vebhost[.]com\n- ns2[.]vebhost[.]com\nTherefore, it is highly likely that the operators registering and maintaining the malicious domains also operate web-hosting services through vebhost[.]com."
+          ],
+          [
+            "All three sets of domains -- the malicious Transparent Tribe infrastructure, vebhost[.]com and zainhosting[.]net/com -- are clearly related, with \"ZainHosting\"' owning and operating the malicious infrastructure."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_3a684e640980",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ns2[.]vebhost[.]com",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "The malicious domains used in this campaign, such as studentsportal[.]live and others, use vebhost[.]com name servers, specifically:\n- ns1[.]vebhost[.]com\n- ns2[.]vebhost[.]com\nTherefore, it is highly likely that the operators registering and maintaining the malicious domains also operate web-hosting services through vebhost[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_4968bbbf13ec",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "immikhan034[@]gmail[.]com",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "During the course of our research, we discovered SSL certificate overlaps with another domain registered by the attackers in June 2021, geo-news[.]tv, using the email address immikhan034[@]gmail[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_6b24890a1337",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "rupees001[at]gmail[.]com",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "The DNS SOA records for all the malicious domains utilized in this APT campaign contain a common administrator email address: rupees001[at]gmail[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_6d86a4b7310d",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "ns1[.]vebhost[.]com",
+        "edges": [
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "The malicious domains used in this campaign, such as studentsportal[.]live and others, use vebhost[.]com name servers, specifically:\n- ns1[.]vebhost[.]com\n- ns2[.]vebhost[.]com\nTherefore, it is highly likely that the operators registering and maintaining the malicious domains also operate web-hosting services through vebhost[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_72deaf63ce94",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "studentsportal[.]live",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "The malicious domains used in this campaign, such as studentsportal[.]live and others, use vebhost[.]com name servers, specifically:\n- ns1[.]vebhost[.]com\n- ns2[.]vebhost[.]com\nTherefore, it is highly likely that the operators registering and maintaining the malicious domains also operate web-hosting services through vebhost[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_7c9138bb330a",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "geo-news[.]tv",
+        "edges": [
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "During the course of our research, we discovered SSL certificate overlaps with another domain registered by the attackers in June 2021, geo-news[.]tv, using the email address immikhan034[@]gmail[.]com."
+        ]
+      },
+      {
+        "node_id": "IOC_c0aa6550e154",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "zainhosting[.]com",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          39,
+          40,
+          41
+        ],
+        "span_sentences": [
+          "Apart from zainhosting[.]net, the hosting provider also operates zainhosting[.]com, which is this business' primary front for their legitimate operations.",
+          "Interestingly, vebhost[.]com uses zainhosting[.]com's name servers:.",
+          "All three sets of domains -- the malicious Transparent Tribe infrastructure, vebhost[.]com and zainhosting[.]net/com -- are clearly related, with \"ZainHosting\"' owning and operating the malicious infrastructure."
+        ]
+      },
+      {
+        "node_id": "IOC_c9bc9666fac9",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "198[.]37[.]123[.]126",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "All the malicious domains have recently resolved to the same IP address: 198[.]37[.]123[.]126."
+        ]
+      },
+      {
+        "node_id": "IOC_d074f1c7a982",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "zainhosting[.]net",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          38,
+          41
+        ],
+        "span_sentences": [
+          "The second domain, zainhosting[.]net belongs to a seemingly legitimate web services and hosting provider called \"Zain Hosting\" based out of Lahore, Pakistan.",
+          "All three sets of domains -- the malicious Transparent Tribe infrastructure, vebhost[.]com and zainhosting[.]net/com -- are clearly related, with \"ZainHosting\"' owning and operating the malicious infrastructure."
+        ]
+      },
+      {
+        "node_id": "IOC_e4525ac2caca",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "vebhost[.]com",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          36,
+          37,
+          40,
+          41
+        ],
+        "span_sentences": [
+          "Of the two domains, vebhost[.]com hosts a dummy website that advertises website-building services.",
+          "The malicious domains used in this campaign, such as studentsportal[.]live and others, use vebhost[.]com name servers, specifically:\n- ns1[.]vebhost[.]com\n- ns2[.]vebhost[.]com\nTherefore, it is highly likely that the operators registering and maintaining the malicious domains also operate web-hosting services through vebhost[.]com.",
+          "Interestingly, vebhost[.]com uses zainhosting[.]com's name servers:.",
+          "All three sets of domains -- the malicious Transparent Tribe infrastructure, vebhost[.]com and zainhosting[.]net/com -- are clearly related, with \"ZainHosting\"' owning and operating the malicious infrastructure."
+        ]
+      },
+      {
+        "node_id": "IOC_eb55f3cec3d8",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "geo[.]tv",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "This domain is a typo-squatted version of geo[.]tv, a legitimate Pakistani news website."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_9728b1ff28eb",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "IOC_3a684e640980",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "IOC_4968bbbf13ec",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "IOC_6b24890a1337",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "IOC_6d86a4b7310d",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_72deaf63ce94",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_7c9138bb330a",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_c0aa6550e154",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_c9bc9666fac9",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_d074f1c7a982",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_e4525ac2caca",
+      "node_v": "TTP_T1583"
+    }
+  ]
+}

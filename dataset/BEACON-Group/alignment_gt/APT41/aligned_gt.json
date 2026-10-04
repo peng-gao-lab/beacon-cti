@@ -1,0 +1,2959 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0232121fe3ae",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "vetysafe.exe",
+        "edges": [
+          "EDGE_ff32feddd6b3"
+        ],
+        "source": {
+          "vetysafe.exe_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              4,
+              "Once inside, the attackers used legitimate tools such as msbuild.exe for stealthy persistence and employed DLL sideloading techniques with a legitimate VipreAV executable (vetysafe.exe) to load malicious payloads."
+            ],
+            [
+              21,
+              "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_03ab562d2853",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VipreAV",
+        "edges": [
+          "EDGE_d72132166145"
+        ],
+        "source": {
+          "VipreAV_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              4,
+              "Once inside, the attackers used legitimate tools such as msbuild.exe for stealthy persistence and employed DLL sideloading techniques with a legitimate VipreAV executable (vetysafe.exe) to load malicious payloads."
+            ],
+            [
+              21,
+              "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0575878c9fb2",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Space Pirates",
+        "edges": [],
+        "source": {
+          "Space Pirates_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              10,
+              "The APT41 threat group demonstrated a high level of operational discipline and technical sophistication, leveraging overlapping tools and techniques previously observed in related campaigns such as Kelp (Salt Typhoon) and Space Pirates."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0a716fcaa4ad",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Salt Typhoon",
+        "edges": [],
+        "source": {
+          "Salt Typhoon_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              10,
+              "The APT41 threat group demonstrated a high level of operational discipline and technical sophistication, leveraging overlapping tools and techniques previously observed in related campaigns such as Kelp (Salt Typhoon) and Space Pirates."
+            ]
+          ],
+          "Kelp_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              10,
+              "The APT41 threat group demonstrated a high level of operational discipline and technical sophistication, leveraging overlapping tools and techniques previously observed in related campaigns such as Kelp (Salt Typhoon) and Space Pirates."
+            ]
+          ]
+        },
+        "alias": [
+          "Kelp"
+        ]
+      },
+      {
+        "node_id": "HL_24012dbc18af",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "msbuild.exe",
+        "edges": [
+          "EDGE_335883a28596",
+          "EDGE_a5e57285d659"
+        ],
+        "source": {
+          "msbuild.exe_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              4,
+              "Once inside, the attackers used legitimate tools such as msbuild.exe for stealthy persistence and employed DLL sideloading techniques with a legitimate VipreAV executable (vetysafe.exe) to load malicious payloads."
+            ],
+            [
+              18,
+              "A key persistence method involved the creation of scheduled tasks under SYSTEM privileges to execute malicious code via legitimate binaries such as msbuild.exe."
+            ]
+          ],
+          "MSBuild_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              19,
+              "The attackers embedded malicious payloads within XML configuration files, leveraging the trusted MSBuild utility to execute code without triggering traditional security alerts."
+            ]
+          ]
+        },
+        "alias": [
+          "MSBuild"
+        ]
+      },
+      {
+        "node_id": "HL_2652e2aa9110",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Snappy Bee",
+        "edges": [
+          "EDGE_5f562d77f026"
+        ],
+        "source": {
+          "Snappy Bee_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              5,
+              "The campaign deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese state-sponsored operations, for remote access and credential theft."
+            ],
+            [
+              23,
+              "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups."
+            ]
+          ],
+          "Poisonplug.deed_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              5,
+              "The campaign deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese state-sponsored operations, for remote access and credential theft."
+            ],
+            [
+              23,
+              "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups."
+            ]
+          ],
+          "Deed RAT_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              5,
+              "The campaign deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese state-sponsored operations, for remote access and credential theft."
+            ],
+            [
+              23,
+              "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups."
+            ],
+            [
+              24,
+              "Deed RAT malware provided the attackers with remote command execution, credential harvesting, and data exfiltration capabilities."
+            ],
+            [
+              29,
+              "The combination of DCSync, Deed RAT, and Imjpuexc reflects the shared toolsets and methodologies observed across multiple Chinese APT operations, indicating coordination and shared development resources."
+            ]
+          ]
+        },
+        "alias": [
+          "Poisonplug.deed",
+          "Deed RAT"
+        ]
+      },
+      {
+        "node_id": "HL_4e53e0933899",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Winnti",
+        "edges": [
+          "EDGE_01d0285c1fdb",
+          "EDGE_01da73fcb6f6",
+          "EDGE_07d0735df0ee",
+          "EDGE_07d75593337e",
+          "EDGE_07f2c7c19a12",
+          "EDGE_0fe43c235e17",
+          "EDGE_16dc643b0576",
+          "EDGE_1976cdfe0ece",
+          "EDGE_398b5d5dd31c",
+          "EDGE_5711a8aaab6c",
+          "EDGE_002c5fc773db",
+          "EDGE_00f9b4f2e6ed",
+          "EDGE_014761d389d4",
+          "EDGE_09efabf294ea",
+          "EDGE_0a6789a83ec3",
+          "EDGE_0f886ee2ac55",
+          "EDGE_20991490d526",
+          "EDGE_21704019bc1c",
+          "EDGE_2790aceaa90b",
+          "EDGE_63bc00494a61"
+        ],
+        "source": {
+          "Winnti_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ]
+          ],
+          "Winnti_securelist.com_apt41-in-africa_116986": [
+            [
+              3,
+              "During our incident analysis, we were able to determine that the threat actor behind the activity was APT41 (aka Wicked Panda, Brass Typhoon, Barium or Winnti)."
+            ]
+          ],
+          "APT41_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ],
+            [
+              1,
+              "This APT41 campaign reflects China’s strategic focus on institutions that shape U.S."
+            ],
+            [
+              3,
+              "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+            ],
+            [
+              6,
+              "APT41 cyber-espionage tactics included DCSync attacks to harvest domain credentials, lateral movement across the network, and data exfiltration over command-and-control channels."
+            ],
+            [
+              7,
+              "The APT41 cyber-espionage campaign was identified in April 2025 and targeted a U.S.-based non-profit organization with significant influence over government policy and foreign relations."
+            ],
+            [
+              10,
+              "The APT41 threat group demonstrated a high level of operational discipline and technical sophistication, leveraging overlapping tools and techniques previously observed in related campaigns such as Kelp (Salt Typhoon) and Space Pirates."
+            ],
+            [
+              11,
+              "The primary objective of the APT41 attack was to establish long-term, covert access to the victim’s network and exfiltrate sensitive policy-related intelligence."
+            ],
+            [
+              14,
+              "The exploitation of these vulnerabilities allowed APT41 cyber attackers to achieve initial access and establish a foothold within the victim environment."
+            ],
+            [
+              17,
+              "To maintain persistence within the compromised network, APT41 threat actors employed multiple sophisticated techniques designed to evade detection."
+            ],
+            [
+              25,
+              "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques."
+            ],
+            [
+              27,
+              "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence."
+            ],
+            [
+              30,
+              "The final phase of the APT41 cyber-espionage campaign involved data exfiltration over command-and-control (C2) channels."
+            ],
+            [
+              34,
+              "The APT41 attack underscores the ongoing threat posed by state-sponsored espionage groups targeting institutions involved in public policy, diplomacy, and strategic research."
+            ]
+          ],
+          "APT41_securelist.com_apt41-in-africa_116986": [
+            [
+              3,
+              "During our incident analysis, we were able to determine that the threat actor behind the activity was APT41 (aka Wicked Panda, Brass Typhoon, Barium or Winnti)."
+            ]
+          ],
+          "APT41_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              0,
+              "We looked into the campaigns deployed by a new subgroup of advanced persistent threat (APT) group APT41, Earth Longzhi."
+            ],
+            [
+              6,
+              "After clustering each intrusion, we concluded that the threat actor is a new subgroup of advanced persistent threat (APT) group APT41 that we call Earth Longzhi."
+            ]
+          ],
+          "Earth Baku_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ]
+          ],
+          "Barium_securelist.com_apt41-in-africa_116986": [
+            [
+              3,
+              "During our incident analysis, we were able to determine that the threat actor behind the activity was APT41 (aka Wicked Panda, Brass Typhoon, Barium or Winnti)."
+            ]
+          ],
+          "BARIUM_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ]
+          ],
+          "Group 72_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ]
+          ],
+          "GREF_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ]
+          ],
+          "Wicked Panda_securelist.com_apt41-in-africa_116986": [
+            [
+              3,
+              "During our incident analysis, we were able to determine that the threat actor behind the activity was APT41 (aka Wicked Panda, Brass Typhoon, Barium or Winnti)."
+            ]
+          ],
+          "WICKED PANDA_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ]
+          ],
+          "Brass Typhoon_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ]
+          ],
+          "Brass Typhoon_securelist.com_apt41-in-africa_116986": [
+            [
+              3,
+              "During our incident analysis, we were able to determine that the threat actor behind the activity was APT41 (aka Wicked Panda, Brass Typhoon, Barium or Winnti)."
+            ]
+          ],
+          "HOODOO_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ]
+          ]
+        },
+        "alias": [
+          "APT41",
+          "Earth Baku",
+          "Barium",
+          "Group 72",
+          "GREF",
+          "Wicked Panda",
+          "Brass Typhoon",
+          "HOODOO"
+        ]
+      },
+      {
+        "node_id": "HL_82fc5147766f",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CISA",
+        "edges": [],
+        "source": {
+          "CISA_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              13,
+              "All four vulnerabilities are listed in the CISA Known Exploited Vulnerabilities (KEV) catalog and have available patches."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "edges": [
+          "EDGE_b303468618f8"
+        ],
+        "source": {
+          "Active Directory_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              26,
+              "The attackers employed DCSync, a technique that impersonates domain controllers to harvest domain credentials from Active Directory."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "source": {
+          "China_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ],
+            [
+              1,
+              "This APT41 campaign reflects China’s strategic focus on institutions that shape U.S."
+            ],
+            [
+              8,
+              "This targeted cyber-espionage operation aligns with China’s broader intelligence-gathering strategy aimed at anticipating U.S."
+            ]
+          ],
+          "China_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              8,
+              "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China."
+            ],
+            [
+              9,
+              "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "source": {
+          "U.S._hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              0,
+              "In April 2025, the China-linked advanced persistent threat group APT41 (also known as HOODOO, WICKED PANDA, Winnti, Group 72, BARIUM, LEAD, GREF, Earth Baku, and Brass Typhoon) launched a sophisticated cyber-espionage campaign against a U.S.-based non-profit organization involved in influencing government policy."
+            ],
+            [
+              2,
+              "foreign relations and international policy decisions."
+            ],
+            [
+              7,
+              "The APT41 cyber-espionage campaign was identified in April 2025 and targeted a U.S.-based non-profit organization with significant influence over government policy and foreign relations."
+            ],
+            [
+              8,
+              "This targeted cyber-espionage operation aligns with China’s broader intelligence-gathering strategy aimed at anticipating U.S."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bfd65ba0ca97",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Sunbelt Software",
+        "edges": [
+          "EDGE_7fa0271425fe"
+        ],
+        "source": {
+          "Sunbelt Software_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              21,
+              "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c603dda5c935",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Imjpuexc",
+        "edges": [
+          "EDGE_9ef7460040bc"
+        ],
+        "source": {
+          "Imjpuexc_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              27,
+              "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence."
+            ],
+            [
+              29,
+              "The combination of DCSync, Deed RAT, and Imjpuexc reflects the shared toolsets and methodologies observed across multiple Chinese APT operations, indicating coordination and shared development resources."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f5d4d2485c76",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Atlassian Confluence",
+        "edges": [
+          "EDGE_47c5a53dc278"
+        ],
+        "source": {
+          "Atlassian Confluence_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              3,
+              "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_64f65f6fc638",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike",
+        "edges": [
+          "EDGE_8402a231d9b1",
+          "EDGE_87e73ff6bad4",
+          "EDGE_8d5ee94dec0a",
+          "EDGE_f19df6c04452"
+        ],
+        "source": {
+          "Cobalt Strike_securelist.com_apt41-in-africa_116986": [
+            [
+              16,
+              "We will discuss these tools – namely Cobalt Strike and a custom agent – in the next section."
+            ],
+            [
+              17,
+              "The attackers used Cobalt Strike for C2 communication on compromised hosts."
+            ]
+          ],
+          "Cobalt Strike_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              3,
+              "The malware used in the incident was a simple but custom Cobalt Strike loader."
+            ],
+            [
+              4,
+              "After further investigation, however, we found incidents targeting multiple regions using a similar Cobalt Strike loader."
+            ],
+            [
+              12,
+              "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader."
+            ],
+            [
+              13,
+              "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools."
+            ],
+            [
+              19,
+              "In this campaign, the APT group used various types of customized Cobalt Strike loaders, which we call CroxLoader, BigpipeLoader, and OutLoader."
+            ],
+            [
+              26,
+              "The first variant of BigpipeLoader just drops the decoy file and loads the Cobalt Strike payload into the memory, then proceeds to execute it."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b3fb93872925",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Africa",
+        "edges": [],
+        "source": {
+          "Africa_securelist.com_apt41-in-africa_116986": [
+            [
+              0,
+              "Some time ago, Kaspersky MDR analysts detected a targeted attack against government IT services in the African region."
+            ],
+            [
+              5,
+              "It’s worth noting that, prior to the incident, Africa had experienced the least activity from this APT."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b545dbff3508",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Impacket",
+        "edges": [
+          "EDGE_85b70217cb3b",
+          "EDGE_b1cf807f0bc7",
+          "EDGE_bb2f69c17559"
+        ],
+        "source": {
+          "Impacket_securelist.com_apt41-in-africa_116986": [
+            [
+              7,
+              "These were typical alerts indicating the use of the WmiExec module from the Impacket toolkit."
+            ],
+            [
+              10,
+              "Impacket was executed on it in the context of a service account."
+            ]
+          ],
+          "WmiExec_securelist.com_apt41-in-africa_116986": [
+            [
+              7,
+              "These were typical alerts indicating the use of the WmiExec module from the Impacket toolkit."
+            ]
+          ]
+        },
+        "alias": [
+          "WmiExec"
+        ]
+      },
+      {
+        "node_id": "HL_c3e69f54c745",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SharePoint",
+        "edges": [
+          "EDGE_06b0472b4557",
+          "EDGE_3057c262f97f",
+          "EDGE_8d0f574f3dbf"
+        ],
+        "source": {
+          "SharePoint_securelist.com_apt41-in-africa_116986": [
+            [
+              2,
+              "One of the C2s was a captive SharePoint server within the victim’s infrastructure."
+            ],
+            [
+              20,
+              "During our investigation, we uncovered a compromised SharePoint server that the attackers were using as the C2."
+            ],
+            [
+              24,
+              "They exfiltrated the data back to the SharePoint server via the upload.ashx web shell."
+            ],
+            [
+              33,
+              "Data gathered by these utilities was also exfiltrated via the compromised SharePoint server."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c71a5deacb97",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "healthcare organizations",
+        "edges": [],
+        "source": {
+          "healthcare organizations_securelist.com_apt41-in-africa_116986": [
+            [
+              4,
+              "This is a Chinese-speaking cyberespionage group known for targeting organizations across multiple sectors, including telecom and energy providers, educational institutions, healthcare organizations and IT energy companies in at least 42 countries."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_cda5242f22cb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kaspersky",
+        "edges": [],
+        "source": {
+          "Kaspersky_securelist.com_apt41-in-africa_116986": [
+            [
+              0,
+              "Some time ago, Kaspersky MDR analysts detected a targeted attack against government IT services in the African region."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_dee7b9a0bf8a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Atexec",
+        "edges": [
+          "EDGE_85f1dfabcda1"
+        ],
+        "source": {
+          "Atexec_securelist.com_apt41-in-africa_116986": [
+            [
+              8,
+              "Specifically, the alerts showed the following signs of the activity:\n- A process chain of svchost.exe ➔exe ➔ cmd.exe\n- The output of executed commands being written to a file on an administrative network share, with the file name consisting of numbers separated by dots:\nThe attackers also leveraged the Atexec module from the Impacket toolkit."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e3c10fd9ca67",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GitHub",
+        "edges": [],
+        "source": {
+          "GitHub_securelist.com_apt41-in-africa_116986": [
+            [
+              26,
+              "Specifically, the command above reached out to the GitHub-impersonating domain github[.]githubassets[.]net."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f52ce17f4a99",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Pillager",
+        "edges": [
+          "EDGE_1280917fc73e"
+        ],
+        "source": {
+          "Pillager_securelist.com_apt41-in-africa_116986": [
+            [
+              35,
+              "A modified version of the Pillager utility stands out among the tools the attackers deployed on hosts to gather sensitive information."
+            ],
+            [
+              37,
+              "The original Pillager version is publicly available in a repository, accompanied by a description in Chinese."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_017c8c7325b4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google Drive",
+        "edges": [
+          "EDGE_5d2998355e15"
+        ],
+        "source": {
+          "Google Drive_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              12,
+              "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0666553a06f3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Indonesia",
+        "edges": [],
+        "source": {
+          "Indonesia_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              9,
+              "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0c4981090af2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MultipipeLoader",
+        "edges": [
+          "EDGE_9281e22f74c1"
+        ],
+        "source": {
+          "MultipipeLoader_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              30,
+              "Meanwhile, MultipipeLoader and OutLoader are similar to CroxLoader and BigpipeLoader but have slightly different features."
+            ],
+            [
+              31,
+              "MultipipeLoader uses multiple threads to read/write the encrypted payload like BigpipeLoader, but it implements a similar decryption routine as CroxLoader."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_0c56bf9349b8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "OutLoader",
+        "edges": [
+          "EDGE_b4f63aff10a5"
+        ],
+        "source": {
+          "OutLoader_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              19,
+              "In this campaign, the APT group used various types of customized Cobalt Strike loaders, which we call CroxLoader, BigpipeLoader, and OutLoader."
+            ],
+            [
+              30,
+              "Meanwhile, MultipipeLoader and OutLoader are similar to CroxLoader and BigpipeLoader but have slightly different features."
+            ],
+            [
+              32,
+              "Meanwhile, OutLoader tries to download the payload from a remote server, while its other function is the same as BigpipeLoader."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_20fcb3fd6348",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Symatic loader",
+        "edges": [],
+        "source": {
+          "Symatic loader_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              13,
+              "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools."
+            ],
+            [
+              14,
+              "Symatic loader\n\nSecurity solutions place the in-memory API hooks in ntdll.dll to monitor suspicious behavior."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2ab3e10f0893",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Earth Longzhi",
+        "edges": [
+          "EDGE_03186e14d9bc",
+          "EDGE_baf2e330d1bf"
+        ],
+        "source": {
+          "Earth Longzhi_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              0,
+              "We looked into the campaigns deployed by a new subgroup of advanced persistent threat (APT) group APT41, Earth Longzhi."
+            ],
+            [
+              6,
+              "After clustering each intrusion, we concluded that the threat actor is a new subgroup of advanced persistent threat (APT) group APT41 that we call Earth Longzhi."
+            ],
+            [
+              7,
+              "Since it first started being active in 2020, Earth Longzhi’s long-running campaign can be divided into two based on the range of time and toolset."
+            ],
+            [
+              8,
+              "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China."
+            ],
+            [
+              13,
+              "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools."
+            ],
+            [
+              18,
+              "Earth Longzhi initiated the second campaign five months after the last attack in its first campaign."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_37d5f6714279",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Pakistan",
+        "edges": [],
+        "source": {
+          "Pakistan_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              9,
+              "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_3f0b5111d024",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "the government, healthcare, academic, and infrastructure industries",
+        "edges": [],
+        "source": {
+          "the government, healthcare, academic, and infrastructure industries_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              13,
+              "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools."
+            ]
+          ],
+          "government, infrastructure, and health industries_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              8,
+              "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China."
+            ]
+          ]
+        },
+        "alias": [
+          "government, infrastructure, and health industries"
+        ]
+      },
+      {
+        "node_id": "HL_55f8c695d2b3",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "banking sector",
+        "edges": [],
+        "source": {
+          "banking sector_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              8,
+              "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6fc13146077e",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "the defense, aviation, insurance, and urban development industries",
+        "edges": [],
+        "source": {
+          "the defense, aviation, insurance, and urban development industries_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              9,
+              "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_adc773403759",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BigpipeLoader",
+        "edges": [
+          "EDGE_b69643e0c75d",
+          "EDGE_c0b9da263ddf"
+        ],
+        "source": {
+          "BigpipeLoader_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              19,
+              "In this campaign, the APT group used various types of customized Cobalt Strike loaders, which we call CroxLoader, BigpipeLoader, and OutLoader."
+            ],
+            [
+              24,
+              "Since this loader will read/write encrypted payload through a named pipe, we named this shellcode loader BigpipeLoader."
+            ],
+            [
+              26,
+              "The first variant of BigpipeLoader just drops the decoy file and loads the Cobalt Strike payload into the memory, then proceeds to execute it."
+            ],
+            [
+              28,
+              "This launches the encrypted BigpipeLoader (chrome.inf)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "source": {
+          "Taiwan_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              2,
+              "In early 2022, we investigated an incident that compromised a company in Taiwan."
+            ],
+            [
+              8,
+              "During its first campaign deployed from 2020 to 2021, Earth Longzhi targeted the government, infrastructure, and health industries in Taiwan and the banking sector in China."
+            ],
+            [
+              9,
+              "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+            ],
+            [
+              13,
+              "We tracked Earth Longzhi mainly targeting the government, healthcare, academic, and infrastructure industries in Taiwan with a custom Cobalt Strike loader, which we have called Symatic loader, and custom hacking tools."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b869d616918c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CroxLoader",
+        "edges": [
+          "EDGE_342bf0313c50",
+          "EDGE_6c63e5f1a1f4",
+          "EDGE_aa090f1297f6",
+          "EDGE_ac4d7bafece1"
+        ],
+        "source": {
+          "CroxLoader_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              12,
+              "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader."
+            ],
+            [
+              19,
+              "In this campaign, the APT group used various types of customized Cobalt Strike loaders, which we call CroxLoader, BigpipeLoader, and OutLoader."
+            ],
+            [
+              20,
+              "During the deployment of the second campaign, we found two different variants of CroxLoader with respective patterns of use."
+            ],
+            [
+              23,
+              "Meanwhile, the second variant of CroxLoader is often deployed through spearphishing emails to lure victims into opening it."
+            ],
+            [
+              30,
+              "Meanwhile, MultipipeLoader and OutLoader are similar to CroxLoader and BigpipeLoader but have slightly different features."
+            ],
+            [
+              31,
+              "MultipipeLoader uses multiple threads to read/write the encrypted payload like BigpipeLoader, but it implements a similar decryption routine as CroxLoader."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c6ca18fdfff0",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Ukraine",
+        "edges": [],
+        "source": {
+          "Ukraine_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              9,
+              "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_d724b1be40b3",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Malaysia",
+        "edges": [],
+        "source": {
+          "Malaysia_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              9,
+              "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f0730fc60dca",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Thailand",
+        "edges": [],
+        "source": {
+          "Thailand_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              9,
+              "In its second campaign from 2021 to 2022, the group targeted high-profile victims in the defense, aviation, insurance, and urban development industries in Taiwan, China, Thailand, Malaysia, Indonesia, Pakistan, and Ukraine."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1003",
+        "ttp_id": "T1003",
+        "best_span_sentences_list": [
+          [
+            "APT41 cyber-espionage tactics included DCSync attacks to harvest domain credentials, lateral movement across the network, and data exfiltration over command-and-control channels."
+          ],
+          [
+            "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques.",
+            "The attackers employed DCSync, a technique that impersonates domain controllers to harvest domain credentials from Active Directory.",
+            "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            25,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_5711a8aaab6c",
+          "EDGE_b303468618f8"
+        ],
+        "source": {
+          "TTP:T1003_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ],
+              [
+                25,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "APT41 cyber-espionage tactics included DCSync attacks to harvest domain credentials, lateral movement across the network, and data exfiltration over command-and-control channels."
+              ],
+              [
+                "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques.",
+                "The attackers employed DCSync, a technique that impersonates domain controllers to harvest domain credentials from Active Directory.",
+                "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence."
+              ]
+            ]
+          },
+          "TTP:T1003_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                13,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "As a result, the attackers successfully harvested credentials from critical registry hives and leveraged them in their subsequent attacks.",
+                "In the incident we’re describing here, two domain accounts obtained from a registry dump were leveraged for lateral movement: a domain account with local administrator rights on all workstations, and a backup solution account with domain administrator privileges."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1016",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1016",
+        "ttp_id": "T1016",
+        "best_span_sentences_list": [
+          [
+            "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_398b5d5dd31c"
+        ],
+        "source": {
+          "TTP:T1016_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques.",
+            "The attackers employed DCSync, a technique that impersonates domain controllers to harvest domain credentials from Active Directory.",
+            "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            27
+          ]
+        ],
+        "edges": [
+          "EDGE_1976cdfe0ece",
+          "EDGE_9ef7460040bc",
+          "EDGE_87e73ff6bad4",
+          "EDGE_06eb4e84a4ca",
+          "EDGE_6c63e5f1a1f4",
+          "EDGE_9281e22f74c1",
+          "EDGE_b69643e0c75d"
+        ],
+        "source": {
+          "TTP:T1027_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                25,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques.",
+                "The attackers employed DCSync, a technique that impersonates domain controllers to harvest domain credentials from Active Directory.",
+                "Additionally, the APT41 campaign utilized the Imjpuexc utility for obfuscation and persistence."
+              ]
+            ]
+          },
+          "TTP:T1027_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                17,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attackers used Cobalt Strike for C2 communication on compromised hosts.",
+                "They distributed the tool as an encrypted file, typically with a TXT or INI extension.",
+                "To decrypt it, they employed a malicious library injected into a legitimate application via DLL sideloading."
+              ]
+            ]
+          },
+          "TTP:T1027_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ],
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Both variants of BigpipeLoader use the AES-128-CFB algorithm to decrypt the payload."
+              ],
+              [
+                "MultipipeLoader uses multiple threads to read/write the encrypted payload like BigpipeLoader, but it implements a similar decryption routine as CroxLoader."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1041",
+        "ttp_id": "T1041",
+        "best_span_sentences_list": [
+          [
+            "APT41 cyber-espionage tactics included DCSync attacks to harvest domain credentials, lateral movement across the network, and data exfiltration over command-and-control channels."
+          ],
+          [
+            "Deed RAT malware provided the attackers with remote command execution, credential harvesting, and data exfiltration capabilities.",
+            "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques."
+          ],
+          [
+            "The final phase of the APT41 cyber-espionage campaign involved data exfiltration over command-and-control (C2) channels.",
+            "The attackers used application layer protocols and web protocols to communicate with external infrastructure, including the identified C2 server at 38.180.83.166."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ],
+          [
+            24,
+            25
+          ],
+          [
+            30,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_07d75593337e",
+          "EDGE_5f562d77f026",
+          "EDGE_7c5e5c197fbb",
+          "EDGE_8d0f574f3dbf",
+          "EDGE_cc090c55a0b2"
+        ],
+        "source": {
+          "TTP:T1041_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ],
+              [
+                24,
+                25
+              ],
+              [
+                30,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "APT41 cyber-espionage tactics included DCSync attacks to harvest domain credentials, lateral movement across the network, and data exfiltration over command-and-control channels."
+              ],
+              [
+                "Deed RAT malware provided the attackers with remote command execution, credential harvesting, and data exfiltration capabilities.",
+                "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques."
+              ],
+              [
+                "The final phase of the APT41 cyber-espionage campaign involved data exfiltration over command-and-control (C2) channels.",
+                "The attackers used application layer protocols and web protocols to communicate with external infrastructure, including the identified C2 server at 38.180.83.166."
+              ]
+            ]
+          },
+          "TTP:T1041_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Its primary purpose is to create a reverse shell on the host, giving the attackers a shell for executing their commands.Once launched, the script gathers initial host information:\nIt then connects to the C2 server, also located at github[.]githubassets[.]net, and transmits a unique ATTACK_ID along with the initially collected data."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_01d0285c1fdb"
+        ],
+        "source": {
+          "TTP:T1046_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "A key persistence method involved the creation of scheduled tasks under SYSTEM privileges to execute malicious code via legitimate binaries such as msbuild.exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_01da73fcb6f6",
+          "EDGE_a5e57285d659"
+        ],
+        "source": {
+          "TTP:T1053_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A key persistence method involved the creation of scheduled tasks under SYSTEM privileges to execute malicious code via legitimate binaries such as msbuild.exe."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "The final phase of the APT41 cyber-espionage campaign involved data exfiltration over command-and-control (C2) channels.",
+            "The attackers used application layer protocols and web protocols to communicate with external infrastructure, including the identified C2 server at 38.180.83.166."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_07f2c7c19a12",
+          "EDGE_f6783b95b439",
+          "EDGE_3057c262f97f",
+          "EDGE_53cf163c44e5",
+          "EDGE_8402a231d9b1"
+        ],
+        "source": {
+          "TTP:T1071_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                30,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The final phase of the APT41 cyber-espionage campaign involved data exfiltration over command-and-control (C2) channels.",
+                "The attackers used application layer protocols and web protocols to communicate with external infrastructure, including the identified C2 server at 38.180.83.166."
+              ]
+            ]
+          },
+          "TTP:T1071_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ],
+              [
+                17,
+                17
+              ],
+              [
+                21,
+                21
+              ],
+              [
+                29,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "One of the C2s was a captive SharePoint server within the victim’s infrastructure."
+              ],
+              [
+                "The attackers used Cobalt Strike for C2 communication on compromised hosts."
+              ],
+              [
+                "They distributed files named agents.exe and agentx.exe via the SMB protocol to communicate with the server."
+              ],
+              [
+                "Its primary purpose is to create a reverse shell on the host, giving the attackers a shell for executing their commands.Once launched, the script gathers initial host information:\nIt then connects to the C2 server, also located at github[.]githubassets[.]net, and transmits a unique ATTACK_ID along with the initially collected data."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity.",
+            "This phase involved system information discovery, network service scanning, and the identification of domain controllers and policy-sensitive servers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            16
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1082_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                15,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Following successful exploitation, the attackers conducted internal reconnaissance to map network assets, identify critical systems, and confirm internet connectivity.",
+                "This phase involved system information discovery, network service scanning, and the identification of domain controllers and policy-sensitive servers."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_0fe43c235e17",
+          "EDGE_17731c115187",
+          "EDGE_47c5a53dc278",
+          "EDGE_af0bf8e4e0b1",
+          "EDGE_bb2c6ffc6514",
+          "EDGE_e83e3983dc45"
+        ],
+        "source": {
+          "TTP:T1190_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                3,
+                3
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "A key persistence method involved the creation of scheduled tasks under SYSTEM privileges to execute malicious code via legitimate binaries such as msbuild.exe."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ]
+        ],
+        "edges": [
+          "EDGE_16dc643b0576",
+          "EDGE_335883a28596"
+        ],
+        "source": {
+          "TTP:T1218_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                18,
+                18
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "A key persistence method involved the creation of scheduled tasks under SYSTEM privileges to execute malicious code via legitimate binaries such as msbuild.exe."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll).",
+            "This technique exploited the trust associated with digitally signed binaries, enabling the malware to execute without raising suspicion.",
+            "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups.",
+            "Deed RAT malware provided the attackers with remote command execution, credential harvesting, and data exfiltration capabilities.",
+            "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_07d0735df0ee",
+          "EDGE_7fa0271425fe",
+          "EDGE_d72132166145",
+          "EDGE_ff32feddd6b3",
+          "EDGE_8d5ee94dec0a",
+          "EDGE_3ef04a4f4a8f",
+          "EDGE_a320d3c53d4d",
+          "EDGE_c0b9da263ddf",
+          "EDGE_d32c723c625c"
+        ],
+        "source": {
+          "TTP:T1574_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": {
+            "best_span_ranges": [
+              [
+                21,
+                25
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Another notable persistence mechanism was DLL sideloading, where the attackers abused a legitimate VipreAV executable (vetysafe.exe) signed by Sunbelt Software to load a malicious DLL (sbamres.dll).",
+                "This technique exploited the trust associated with digitally signed binaries, enabling the malware to execute without raising suspicion.",
+                "The campaign also deployed Deed RAT (also known as Snappy Bee or Poisonplug.deed), a remote access trojan previously linked to Chinese threat groups.",
+                "Deed RAT malware provided the attackers with remote command execution, credential harvesting, and data exfiltration capabilities.",
+                "To escalate privileges and move laterally across the network, APT41 cyber-espionage operators used advanced credential theft techniques."
+              ]
+            ]
+          },
+          "TTP:T1574_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                17,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attackers used Cobalt Strike for C2 communication on compromised hosts.",
+                "They distributed the tool as an encrypted file, typically with a TXT or INI extension.",
+                "To decrypt it, they employed a malicious library injected into a legitimate application via DLL sideloading."
+              ]
+            ]
+          },
+          "TTP:T1574_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": {
+            "best_span_ranges": [
+              [
+                26,
+                27
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The first variant of BigpipeLoader just drops the decoy file and loads the Cobalt Strike payload into the memory, then proceeds to execute it.",
+                "In the second variant, however, the attacker creates a dropper, which drops the malicious WTSAPI32.dll designed to be sideloaded by a legitimate application with the file name “wusa.exe”."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1005",
+        "ttp_id": "T1005",
+        "best_span_sentences_list": [
+          [
+            "The attackers used the deployed agents to conduct reconnaissance and collect sensitive data, such as browser history, text files, configuration files, and documents with .doc, .docx and .xlsx extensions.",
+            "They exfiltrated the data back to the SharePoint server via the upload.ashx web shell.",
+            "The group attempted to mask their malicious activity by using resources that mimicked legitimate ones to download the HTA file.",
+            "Specifically, the command above reached out to the GitHub-impersonating domain github[.]githubassets[.]net.",
+            "The attackers primarily used the site to host JavaScript code."
+          ],
+          [
+            "A modified version of the Pillager utility stands out among the tools the attackers deployed on hosts to gather sensitive information.",
+            "This tool is used to export and decrypt data from the target computer."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            27
+          ],
+          [
+            35,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_00f9b4f2e6ed",
+          "EDGE_1280917fc73e"
+        ],
+        "source": {
+          "TTP:T1005_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                23,
+                27
+              ],
+              [
+                35,
+                36
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attackers used the deployed agents to conduct reconnaissance and collect sensitive data, such as browser history, text files, configuration files, and documents with .doc, .docx and .xlsx extensions.",
+                "They exfiltrated the data back to the SharePoint server via the upload.ashx web shell.",
+                "The group attempted to mask their malicious activity by using resources that mimicked legitimate ones to download the HTA file.",
+                "Specifically, the command above reached out to the GitHub-impersonating domain github[.]githubassets[.]net.",
+                "The attackers primarily used the site to host JavaScript code."
+              ],
+              [
+                "A modified version of the Pillager utility stands out among the tools the attackers deployed on hosts to gather sensitive information.",
+                "This tool is used to export and decrypt data from the target computer."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1021",
+        "ttp_id": "T1021",
+        "best_span_sentences_list": [
+          [
+            "These were typical alerts indicating the use of the WmiExec module from the Impacket toolkit.",
+            "Specifically, the alerts showed the following signs of the activity:\n- A process chain of svchost.exe ➔exe ➔ cmd.exe\n- The output of executed commands being written to a file on an administrative network share, with the file name consisting of numbers separated by dots:\nThe attackers also leveraged the Atexec module from the Impacket toolkit."
+          ],
+          [
+            "In the incident we’re describing here, two domain accounts obtained from a registry dump were leveraged for lateral movement: a domain account with local administrator rights on all workstations, and a backup solution account with domain administrator privileges."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            8
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "edges": [
+          "EDGE_63bc00494a61",
+          "EDGE_85f1dfabcda1",
+          "EDGE_bb2f69c17559"
+        ],
+        "source": {
+          "TTP:T1021_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                7,
+                8
+              ],
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "These were typical alerts indicating the use of the WmiExec module from the Impacket toolkit.",
+                "Specifically, the alerts showed the following signs of the activity:\n- A process chain of svchost.exe ➔exe ➔ cmd.exe\n- The output of executed commands being written to a file on an administrative network share, with the file name consisting of numbers separated by dots:\nThe attackers also leveraged the Atexec module from the Impacket toolkit."
+              ],
+              [
+                "In the incident we’re describing here, two domain accounts obtained from a registry dump were leveraged for lateral movement: a domain account with local administrator rights on all workstations, and a backup solution account with domain administrator privileges."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1047",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1047",
+        "ttp_id": "T1047",
+        "best_span_sentences_list": [
+          [
+            "These were typical alerts indicating the use of the WmiExec module from the Impacket toolkit."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_014761d389d4",
+          "EDGE_85b70217cb3b"
+        ],
+        "source": {
+          "TTP:T1047_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "These were typical alerts indicating the use of the WmiExec module from the Impacket toolkit."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The attackers used Cobalt Strike for C2 communication on compromised hosts.",
+            "They distributed the tool as an encrypted file, typically with a TXT or INI extension.",
+            "To decrypt it, they employed a malicious library injected into a legitimate application via DLL sideloading."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_0f886ee2ac55",
+          "EDGE_f19df6c04452",
+          "EDGE_ac4d7bafece1"
+        ],
+        "source": {
+          "TTP:T1055_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                17,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attackers used Cobalt Strike for C2 communication on compromised hosts.",
+                "They distributed the tool as an encrypted file, typically with a TXT or INI extension.",
+                "To decrypt it, they employed a malicious library injected into a legitimate application via DLL sideloading."
+              ]
+            ]
+          },
+          "TTP:T1055_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": {
+            "best_span_ranges": [
+              [
+                17,
+                17
+              ],
+              [
+                20,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "After restoring the ntdll, Symatic will spawn a new process for process injection."
+              ],
+              [
+                "During the deployment of the second campaign, we found two different variants of CroxLoader with respective patterns of use.",
+                "The first variant is commonly used when attackers use publicly facing applications as the entry point of attack.",
+                "It decrypts the embedded payload and injects the decrypted payload into the remote process."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Specifically, the alerts showed the following signs of the activity:\n- A process chain of svchost.exe ➔exe ➔ cmd.exe\n- The output of executed commands being written to a file on an administrative network share, with the file name consisting of numbers separated by dots:\nThe attackers also leveraged the Atexec module from the Impacket toolkit."
+          ],
+          [
+            "They distributed files named agents.exe and agentx.exe via the SMB protocol to communicate with the server.",
+            "Each of these files is actually a C# Trojan whose primary function is to execute commands it receives from a web shell named CommandHandler.aspx, which is installed on the SharePoint server."
+          ],
+          [
+            "However, we were able to obtain and analyze previously distributed scripts, specifically the malicious file 2CD15977B72D5D74FADEDFDE2CE8934F.",
+            "Its primary purpose is to create a reverse shell on the host, giving the attackers a shell for executing their commands.Once launched, the script gathers initial host information:\nIt then connects to the C2 server, also located at github[.]githubassets[.]net, and transmits a unique ATTACK_ID along with the initially collected data."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            28,
+            29
+          ]
+        ],
+        "edges": [
+          "EDGE_03b92d28b093",
+          "EDGE_20991490d526"
+        ],
+        "source": {
+          "TTP:T1059_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                8,
+                8
+              ],
+              [
+                21,
+                22
+              ],
+              [
+                28,
+                29
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Specifically, the alerts showed the following signs of the activity:\n- A process chain of svchost.exe ➔exe ➔ cmd.exe\n- The output of executed commands being written to a file on an administrative network share, with the file name consisting of numbers separated by dots:\nThe attackers also leveraged the Atexec module from the Impacket toolkit."
+              ],
+              [
+                "They distributed files named agents.exe and agentx.exe via the SMB protocol to communicate with the server.",
+                "Each of these files is actually a C# Trojan whose primary function is to execute commands it receives from a web shell named CommandHandler.aspx, which is installed on the SharePoint server."
+              ],
+              [
+                "However, we were able to obtain and analyze previously distributed scripts, specifically the malicious file 2CD15977B72D5D74FADEDFDE2CE8934F.",
+                "Its primary purpose is to create a reverse shell on the host, giving the attackers a shell for executing their commands.Once launched, the script gathers initial host information:\nIt then connects to the C2 server, also located at github[.]githubassets[.]net, and transmits a unique ATTACK_ID along with the initially collected data."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1078",
+        "ttp_id": "T1078",
+        "best_span_sentences_list": [
+          [
+            "The source of the suspicious activity turned out to be an unmonitored host that had been compromised.",
+            "Impacket was executed on it in the context of a service account."
+          ],
+          [
+            "As a result, the attackers successfully harvested credentials from critical registry hives and leveraged them in their subsequent attacks.",
+            "In the incident we’re describing here, two domain accounts obtained from a registry dump were leveraged for lateral movement: a domain account with local administrator rights on all workstations, and a backup solution account with domain administrator privileges.",
+            "The local administrator privileges allowed the attackers to use the SMB protocol to transfer tools for communicating with the C2 to the administrative network share C$."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            10
+          ],
+          [
+            13,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_0a6789a83ec3",
+          "EDGE_b1cf807f0bc7"
+        ],
+        "source": {
+          "TTP:T1078_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                9,
+                10
+              ],
+              [
+                13,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The source of the suspicious activity turned out to be an unmonitored host that had been compromised.",
+                "Impacket was executed on it in the context of a service account."
+              ],
+              [
+                "As a result, the attackers successfully harvested credentials from critical registry hives and leveraged them in their subsequent attacks.",
+                "In the incident we’re describing here, two domain accounts obtained from a registry dump were leveraged for lateral movement: a domain account with local administrator rights on all workstations, and a backup solution account with domain administrator privileges.",
+                "The local administrator privileges allowed the attackers to use the SMB protocol to transfer tools for communicating with the C2 to the administrative network share C$."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1102",
+        "ttp_id": "T1102",
+        "best_span_sentences_list": [
+          [
+            "One of the C2s was a captive SharePoint server within the victim’s infrastructure."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_002c5fc773db",
+          "EDGE_6c8dbbdf0108"
+        ],
+        "source": {
+          "TTP:T1102_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                2,
+                2
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "One of the C2s was a captive SharePoint server within the victim’s infrastructure."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "The local administrator privileges allowed the attackers to use the SMB protocol to transfer tools for communicating with the C2 to the administrative network share C$."
+          ],
+          [
+            "They distributed files named agents.exe and agentx.exe via the SMB protocol to communicate with the server."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_21704019bc1c",
+          "EDGE_3ed1e5b3f231",
+          "EDGE_5d2998355e15",
+          "EDGE_b4f63aff10a5"
+        ],
+        "source": {
+          "TTP:T1105_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ],
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The local administrator privileges allowed the attackers to use the SMB protocol to transfer tools for communicating with the C2 to the administrative network share C$."
+              ],
+              [
+                "They distributed files named agents.exe and agentx.exe via the SMB protocol to communicate with the server."
+              ]
+            ]
+          },
+          "TTP:T1105_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": {
+            "best_span_ranges": [
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Meanwhile, OutLoader tries to download the payload from a remote server, while its other function is the same as BigpipeLoader."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1119",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1119",
+        "ttp_id": "T1119",
+        "best_span_sentences_list": [
+          [
+            "Next, the attackers utilized automation tools such as stealers and credential-harvesting utilities to collect sensitive data."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_2790aceaa90b"
+        ],
+        "source": {
+          "TTP:T1119_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Next, the attackers utilized automation tools such as stealers and credential-harvesting utilities to collect sensitive data."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1505",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1505",
+        "ttp_id": "T1505",
+        "best_span_sentences_list": [
+          [
+            "They distributed files named agents.exe and agentx.exe via the SMB protocol to communicate with the server.",
+            "Each of these files is actually a C# Trojan whose primary function is to execute commands it receives from a web shell named CommandHandler.aspx, which is installed on the SharePoint server."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_06b0472b4557",
+          "EDGE_09efabf294ea"
+        ],
+        "source": {
+          "TTP:T1505_securelist.com_apt41-in-africa_116986": {
+            "best_span_ranges": [
+              [
+                21,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "They distributed files named agents.exe and agentx.exe via the SMB protocol to communicate with the server.",
+                "Each of these files is actually a C# Trojan whose primary function is to execute commands it receives from a web shell named CommandHandler.aspx, which is installed on the SharePoint server."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1106",
+        "ttp_id": "T1106",
+        "best_span_sentences_list": [
+          [
+            "Symatic removes the API hooks first and gets the raw content of ntdll.dll from the disk."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            15,
+            15
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1106_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Symatic removes the API hooks first and gets the raw content of ntdll.dll from the disk."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "Meanwhile, the second variant of CroxLoader is often deployed through spearphishing emails to lure victims into opening it."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_03186e14d9bc",
+          "EDGE_342bf0313c50"
+        ],
+        "source": {
+          "TTP:T1204_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": {
+            "best_span_ranges": [
+              [
+                23,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Meanwhile, the second variant of CroxLoader is often deployed through spearphishing emails to lure victims into opening it."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "Both campaigns used spear-phishing emails as the primary entry vector to deliver Earth Longhzhi’s malware.",
+            "The attacker embeds the malware in a password-protected archive or shares a link to download a malware, luring the victim with information about a person.",
+            "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader."
+          ],
+          [
+            "Meanwhile, the second variant of CroxLoader is often deployed through spearphishing emails to lure victims into opening it."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            12
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "edges": [
+          "EDGE_aa090f1297f6",
+          "EDGE_baf2e330d1bf"
+        ],
+        "source": {
+          "TTP:T1566_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": {
+            "best_span_ranges": [
+              [
+                10,
+                12
+              ],
+              [
+                23,
+                23
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Both campaigns used spear-phishing emails as the primary entry vector to deliver Earth Longhzhi’s malware.",
+                "The attacker embeds the malware in a password-protected archive or shares a link to download a malware, luring the victim with information about a person.",
+                "Upon opening the link, the victim is redirected to a Google Drive hosting a password-protected archive with a Cobalt Strike loader we call CroxLoader."
+              ],
+              [
+                "Meanwhile, the second variant of CroxLoader is often deployed through spearphishing emails to lure victims into opening it."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_15bb000603ba",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-9805",
+        "edges": [
+          "EDGE_e83e3983dc45"
+        ],
+        "source": {
+          "CVE-2017-9805_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              3,
+              "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2017-9805",
+        "canonical_value": "CVE-2017-9805",
+        "normalized_value": "CVE-2017-9805"
+      },
+      {
+        "node_id": "IOC_2f3b89f16bc7",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2017-17562",
+        "edges": [
+          "EDGE_af0bf8e4e0b1"
+        ],
+        "source": {
+          "CVE-2017-17562_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              3,
+              "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2017-17562",
+        "canonical_value": "CVE-2017-17562",
+        "normalized_value": "CVE-2017-17562"
+      },
+      {
+        "node_id": "IOC_312f96a0b721",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "38.180.83.166",
+        "edges": [
+          "EDGE_7c5e5c197fbb",
+          "EDGE_f6783b95b439"
+        ],
+        "source": {
+          "38.180.83.166_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              31,
+              "The attackers used application layer protocols and web protocols to communicate with external infrastructure, including the identified C2 server at 38.180.83.166."
+            ]
+          ]
+        },
+        "raw_value": "38.180.83.166",
+        "canonical_value": "38.180.83.166"
+      },
+      {
+        "node_id": "IOC_f1732ca35012",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2022-26134",
+        "edges": [
+          "EDGE_bb2c6ffc6514"
+        ],
+        "source": {
+          "CVE-2022-26134_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              3,
+              "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2022-26134",
+        "canonical_value": "CVE-2022-26134",
+        "normalized_value": "CVE-2022-26134"
+      },
+      {
+        "node_id": "IOC_fff79e145161",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2021-44228",
+        "edges": [
+          "EDGE_17731c115187"
+        ],
+        "source": {
+          "CVE-2021-44228_hivepro.com_threat-advisory_apt41-cyber-espionage-campaign-targets-u-s-policy-institutions": [
+            [
+              3,
+              "The APT41 threat actors exploited multiple vulnerabilities, including Log4j (CVE-2021-44228), Atlassian Confluence OGNL Injection (CVE-2022-26134), Apache Struts (CVE-2017-9805), and GoAhead RCE (CVE-2017-17562), to gain initial access to the target network."
+            ]
+          ]
+        },
+        "raw_value": "CVE-2021-44228",
+        "canonical_value": "CVE-2021-44228",
+        "normalized_value": "CVE-2021-44228"
+      },
+      {
+        "node_id": "IOC_db988851baed",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "2CD15977B72D5D74FADEDFDE2CE8934F",
+        "edges": [
+          "EDGE_03b92d28b093"
+        ],
+        "source": {
+          "2CD15977B72D5D74FADEDFDE2CE8934F_securelist.com_apt41-in-africa_116986": [
+            [
+              28,
+              "However, we were able to obtain and analyze previously distributed scripts, specifically the malicious file 2CD15977B72D5D74FADEDFDE2CE8934F."
+            ]
+          ]
+        },
+        "raw_value": "2CD15977B72D5D74FADEDFDE2CE8934F",
+        "canonical_value": "2CD15977B72D5D74FADEDFDE2CE8934F"
+      },
+      {
+        "node_id": "IOC_e96d1643bccd",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "github[.]githubassets[.]net",
+        "edges": [
+          "EDGE_3ed1e5b3f231",
+          "EDGE_53cf163c44e5",
+          "EDGE_6c8dbbdf0108",
+          "EDGE_cc090c55a0b2"
+        ],
+        "source": {
+          "github[.]githubassets[.]net_securelist.com_apt41-in-africa_116986": [
+            [
+              26,
+              "Specifically, the command above reached out to the GitHub-impersonating domain github[.]githubassets[.]net."
+            ],
+            [
+              29,
+              "Its primary purpose is to create a reverse shell on the host, giving the attackers a shell for executing their commands.Once launched, the script gathers initial host information:\nIt then connects to the C2 server, also located at github[.]githubassets[.]net, and transmits a unique ATTACK_ID along with the initially collected data."
+            ]
+          ]
+        },
+        "raw_value": "github[.]githubassets[.]net",
+        "canonical_value": "github.githubassets.net",
+        "normalized_value": "github.githubassets.net"
+      },
+      {
+        "node_id": "IOC_03e5aa49816a",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "wusa.exe",
+        "edges": [
+          "EDGE_d32c723c625c"
+        ],
+        "source": {
+          "wusa.exe_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              27,
+              "In the second variant, however, the attacker creates a dropper, which drops the malicious WTSAPI32.dll designed to be sideloaded by a legitimate application with the file name “wusa.exe”."
+            ]
+          ]
+        },
+        "raw_value": "wusa.exe",
+        "canonical_value": "wusa.exe"
+      },
+      {
+        "node_id": "IOC_3803910e5911",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "WTSAPI32.dll",
+        "edges": [
+          "EDGE_a320d3c53d4d"
+        ],
+        "source": {
+          "WTSAPI32.dll_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              27,
+              "In the second variant, however, the attacker creates a dropper, which drops the malicious WTSAPI32.dll designed to be sideloaded by a legitimate application with the file name “wusa.exe”."
+            ]
+          ]
+        },
+        "raw_value": "WTSAPI32.dll",
+        "canonical_value": "WTSAPI32.dll"
+      },
+      {
+        "node_id": "IOC_792dd26ddc4e",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "ntdll.dll",
+        "edges": [],
+        "source": {
+          "ntdll.dll_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              14,
+              "Symatic loader\n\nSecurity solutions place the in-memory API hooks in ntdll.dll to monitor suspicious behavior."
+            ],
+            [
+              15,
+              "Symatic removes the API hooks first and gets the raw content of ntdll.dll from the disk."
+            ],
+            [
+              16,
+              "It then proceeds to replace the in-memory ntdll image to make sure there are no hooks placed in ntdll.dll."
+            ]
+          ]
+        },
+        "raw_value": "ntdll.dll",
+        "canonical_value": "ntdll.dll"
+      },
+      {
+        "node_id": "IOC_b3bb3a6308b4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "chrome.inf",
+        "edges": [
+          "EDGE_06eb4e84a4ca",
+          "EDGE_3ef04a4f4a8f"
+        ],
+        "source": {
+          "chrome.inf_www.trendmicro.com_en_research_22_k_hack-the-real-box-apt41-new-subgroup-earth-longzhi.html": [
+            [
+              28,
+              "This launches the encrypted BigpipeLoader (chrome.inf)."
+            ]
+          ]
+        },
+        "raw_value": "chrome.inf",
+        "canonical_value": "chrome.inf"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_01d0285c1fdb",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_01da73fcb6f6",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_07d0735df0ee",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_07d75593337e",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_07f2c7c19a12",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0fe43c235e17",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_16dc643b0576",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_17731c115187",
+      "node_u": "IOC_fff79e145161",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1976cdfe0ece",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_335883a28596",
+      "node_u": "HL_24012dbc18af",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_398b5d5dd31c",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1016",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_47c5a53dc278",
+      "node_u": "HL_f5d4d2485c76",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5711a8aaab6c",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5f562d77f026",
+      "node_u": "HL_2652e2aa9110",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7c5e5c197fbb",
+      "node_u": "IOC_312f96a0b721",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_7fa0271425fe",
+      "node_u": "HL_bfd65ba0ca97",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9ef7460040bc",
+      "node_u": "HL_c603dda5c935",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a5e57285d659",
+      "node_u": "HL_24012dbc18af",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_af0bf8e4e0b1",
+      "node_u": "IOC_2f3b89f16bc7",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b303468618f8",
+      "node_u": "HL_93e1ee43e148",
+      "node_v": "TTP_T1003",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bb2c6ffc6514",
+      "node_u": "IOC_f1732ca35012",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d72132166145",
+      "node_u": "HL_03ab562d2853",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e83e3983dc45",
+      "node_u": "IOC_15bb000603ba",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f6783b95b439",
+      "node_u": "IOC_312f96a0b721",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ff32feddd6b3",
+      "node_u": "HL_0232121fe3ae",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_002c5fc773db",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1102",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_00f9b4f2e6ed",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_014761d389d4",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1047",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_03b92d28b093",
+      "node_u": "IOC_db988851baed",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_06b0472b4557",
+      "node_u": "HL_c3e69f54c745",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_09efabf294ea",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1505",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0a6789a83ec3",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f886ee2ac55",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1280917fc73e",
+      "node_u": "HL_f52ce17f4a99",
+      "node_v": "TTP_T1005",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_20991490d526",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_21704019bc1c",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2790aceaa90b",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1119",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3057c262f97f",
+      "node_u": "HL_c3e69f54c745",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ed1e5b3f231",
+      "node_u": "IOC_e96d1643bccd",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_53cf163c44e5",
+      "node_u": "IOC_e96d1643bccd",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_63bc00494a61",
+      "node_u": "HL_4e53e0933899",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c8dbbdf0108",
+      "node_u": "IOC_e96d1643bccd",
+      "node_v": "TTP_T1102",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8402a231d9b1",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_85b70217cb3b",
+      "node_u": "HL_b545dbff3508",
+      "node_v": "TTP_T1047",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_85f1dfabcda1",
+      "node_u": "HL_dee7b9a0bf8a",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_87e73ff6bad4",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8d0f574f3dbf",
+      "node_u": "HL_c3e69f54c745",
+      "node_v": "TTP_T1041",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8d5ee94dec0a",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b1cf807f0bc7",
+      "node_u": "HL_b545dbff3508",
+      "node_v": "TTP_T1078",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bb2f69c17559",
+      "node_u": "HL_b545dbff3508",
+      "node_v": "TTP_T1021",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_cc090c55a0b2",
+      "node_u": "IOC_e96d1643bccd",
+      "node_v": "TTP_T1041",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_f19df6c04452",
+      "node_u": "HL_64f65f6fc638",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_03186e14d9bc",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_06eb4e84a4ca",
+      "node_u": "IOC_b3bb3a6308b4",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_342bf0313c50",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ef04a4f4a8f",
+      "node_u": "IOC_b3bb3a6308b4",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_5d2998355e15",
+      "node_u": "HL_017c8c7325b4",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6c63e5f1a1f4",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9281e22f74c1",
+      "node_u": "HL_0c4981090af2",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a320d3c53d4d",
+      "node_u": "IOC_3803910e5911",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_aa090f1297f6",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ac4d7bafece1",
+      "node_u": "HL_b869d616918c",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b4f63aff10a5",
+      "node_u": "HL_0c56bf9349b8",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b69643e0c75d",
+      "node_u": "HL_adc773403759",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_baf2e330d1bf",
+      "node_u": "HL_2ab3e10f0893",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c0b9da263ddf",
+      "node_u": "HL_adc773403759",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d32c723c625c",
+      "node_u": "IOC_03e5aa49816a",
+      "node_v": "TTP_T1574",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

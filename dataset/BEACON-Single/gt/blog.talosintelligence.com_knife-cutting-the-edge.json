@@ -1,0 +1,956 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0e1d05a63e9f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DarkNimbus",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          3,
+          7,
+          9,
+          14,
+          29,
+          51,
+          52,
+          53,
+          56
+        ],
+        "span_sentences": [
+          "It delivers and interacts with the ShadowPad and DarkNimbus backdoors by hijacking binary downloads and Android application updates.",
+          "Background\nSince 2023, Cisco Talos has continuously tracked the MOONSHINE exploit kit and the DarkNimbus backdoor it distributes.",
+          "While hunting for DarkNimbus samples, Talos discovered an executable and linkable format (ELF) binary communicating with the same C2 server as the DarkNimbus backdoor, which retrieved a gzip-compressed archive.",
+          "Spellbinder has also been observed distributing the DarkNimbus backdoor, whose C2 infrastructure previously led to the initial discovery of DKnife.",
+          "DKnife is designed to work with both Android and Windows variants of DarkNimbus.",
+          "Shadowpad and DarkNimbus backdoors\nThe install.exe\nfile (SHA256: 2550aa4c4bc0a020ec4b16973df271b81118a7abea77f77fec2f575a32dc3444\n) is found in the downloaded archive under path /dkay-scripts/\n.",
+          "It is a RAR self extraction package containing three binaries, that are actually ShadowPad and the DarkNimbus backdoor, which both being reported [1,2] used by China-nexus threat actors.",
+          "When launched, the legitimate .exe (TosBtKbd.exe\n) sideloads the ShadowPad DLL loader (TosBtKbd.dll\n), which then loads the DarkNimbus DLL backdoor (TosBtKbdLayer.dll\n).",
+          "Pivoting on this signer, Talos found 17 samples that contain the Shadowpad and DarkNimbus backdoor."
+        ]
+      },
+      {
+        "node_id": "HL_10426906a197",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "DKnife",
+        "edges": [
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          10,
+          11,
+          12,
+          15,
+          16,
+          23,
+          26,
+          28,
+          29,
+          33,
+          34,
+          36,
+          37,
+          38,
+          39,
+          40,
+          42,
+          43,
+          48,
+          49
+        ],
+        "span_sentences": [
+          "Cisco Talos uncovered “DKnife,” a fully featured gateway-monitoring and adversary-in-the-middle (AitM) framework comprising seven Linux-based implants that perform deep-packet inspection, manipulate traffic, and deliver malware via routers and edge devices.",
+          "Based on the artifact metadata, DKnife has been used since at least 2019 and the command and control (C2) are still active as of January 2026.",
+          "DKnife’s attacks target a wide range of devices, including PCs, mobile devices, and Internet of Things (IoT) devices.",
+          "DKnife primarily targets Chinese-speaking users, indicated by credential harvesting for Chinese-language services, exfiltration modules for popular Chinese mobile applications and code references to Chinese media domains.",
+          "We discovered a link between DKnife and a campaign delivering WizardNet, a modular backdoor known to be delivered by a different AiTM framework Spellbinder, suggesting a shared development or operational lineage.",
+          "Analysis revealed that the archive contained a fully featured gateway monitoring and AiTM framework, dubbed “DKnife” by its developer.",
+          "During Talos' pivot on the C2 infrastructure associated with DKnife, we identified additional servers exhibiting open ports and configurations consistent with previously observed DKnife deployments.",
+          "Notably, one host (43.132.205[.]118) displayed port activity characteristic of DKnife infrastructure and was additionally found hosting the WizardNet backdoor on port 8881.",
+          "The URL redirection paths (http[:]//[IP]:81/app/[app name]\n) and port configurations identified in these cases are identical to those used by DKnife, indicating a shared development or operational lineage.",
+          "Based on artifacts recovered from the DKnife framework, this campaign appears to primarily target Chinese-speaking users.",
+          "DKnife is a full-featured gateway monitoring framework composed of seven ELF components that perform traffic manipulation across a target network.",
+          "DKnife binaries are 64-bit Linux (x86-64) ELF implants that run on Linux-based devices.",
+          "Configuration elements such as PPPoE, VLAN tagging, a bridged interface (br0), and adjustable MTU and MAC parameters suggest that DKnife is tailored for edge or router devices running Linux-based firmware.",
+          "DKnife is designed to work with both Android and Windows variants of DarkNimbus.",
+          "The DKMMHOST value is read from DKnife’s configuration file (\"/dksoft/conf/server.conf\"), which contains the line MMHOST URL=[value]\n.",
+          "The DKFESN value represents a device identifier that DKnife retrieves from an internal server located at \"192.168.92.92:8080\".",
+          "This URL does not return any response from Baidu itself; rather, it serves as a recognizable trigger for DKnife, which intercepts the request and injects the C2 response.",
+          "DKnife can hijack and replace Android application updates by intercepting the update manifest requests.",
+          "When an Android application sends an APK update manifest request, DKnife intercepts it, consults the configuration file, and selects the corresponding JSON response file to reply.",
+          "This response contains a download URL redirecting to the URL of address 10.3.3.3\n, which DKnife recognizes and routes to the yitiji.bin\ncreated Local Area Network (LAN) to deliver malware instead of the legitimate update APK.",
+          "In addition to Android update hijacking, DKnife also supports hijacking of Windows and other binary downloads.",
+          "DKnife attempts to read the rules configuration file at /dksoft/conf/rules.aes\nand decrypts it using a variant of the Tiny Encryption Algorithm (TEA) algorithm employed by Tencent’s older OICQ/QQ login protocols, commonly referred to as QQ TEA.",
+          "DKnife decrypts the file with a key dianke0123456789\n, and saves the decrypted file as rules.conf\n.",
+          "When an HTTP request’s Host and URI match the configured rule, DKnife evaluates the rule’s duration and interval timers to determine whether to trigger.",
+          "If the rule fires and the requested filename has a matching extension (e.g., “.exe”, “.rar”, “.zip”, or “.apk”), DKnife forges an HTTP 302 redirect whose Location URL is taken from the rule’s data field."
+        ]
+      },
+      {
+        "node_id": "HL_2361b6ce9fed",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Philippines",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Considering the connection between DKnife and the WizardNet campaign and given ESET’s reporting that WizardNet activity has targeted the Philippines, Cambodia, and the United Arab Emirates, we cannot rule out a broader regional or multilingual targeting scope."
+        ]
+      },
+      {
+        "node_id": "HL_2828b87ed572",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "CentOS/RHEL",
+        "edges": [],
+        "sentence_indices": [
+          27
+        ],
+        "span_sentences": [
+          "One of the components remote.bin imports the library \"libcrypto.so.10\", indicating it targets CentOS/RHEL-based platforms."
+        ]
+      },
+      {
+        "node_id": "HL_3cea184bcbb7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ShadowPad",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          3,
+          5,
+          52,
+          53
+        ],
+        "span_sentences": [
+          "It delivers and interacts with the ShadowPad and DarkNimbus backdoors by hijacking binary downloads and Android application updates.",
+          "Based on the language used in the code, configuration files and the ShadowPad malware delivered in the campaign, we assess with high confidence that China-nexus threat actors operate this tool.",
+          "It is a RAR self extraction package containing three binaries, that are actually ShadowPad and the DarkNimbus backdoor, which both being reported [1,2] used by China-nexus threat actors.",
+          "When launched, the legitimate .exe (TosBtKbd.exe\n) sideloads the ShadowPad DLL loader (TosBtKbd.dll\n), which then loads the DarkNimbus DLL backdoor (TosBtKbdLayer.dll\n)."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          29,
+          30,
+          40
+        ],
+        "span_sentences": [
+          "DKnife is designed to work with both Android and Windows variants of DarkNimbus.",
+          "For the Windows version, the dknife.bin component inspects UDP traffic and sends them to port 8005.",
+          "In addition to Android update hijacking, DKnife also supports hijacking of Windows and other binary downloads."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          7
+        ],
+        "span_sentences": [
+          "Cisco Talos uncovered “DKnife,” a fully featured gateway-monitoring and adversary-in-the-middle (AitM) framework comprising seven Linux-based implants that perform deep-packet inspection, manipulate traffic, and deliver malware via routers and edge devices.",
+          "Background\nSince 2023, Cisco Talos has continuously tracked the MOONSHINE exploit kit and the DarkNimbus backdoor it distributes."
+        ]
+      },
+      {
+        "node_id": "HL_4c4cc22d5961",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "iOS",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "The exploit kit and backdoor were historically used for delivering Android and iOS exploits."
+        ]
+      },
+      {
+        "node_id": "HL_7a83293baae8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Android",
+        "edges": [],
+        "sentence_indices": [
+          3,
+          8,
+          13,
+          19,
+          29,
+          35,
+          37,
+          38,
+          40
+        ],
+        "span_sentences": [
+          "It delivers and interacts with the ShadowPad and DarkNimbus backdoors by hijacking binary downloads and Android application updates.",
+          "The exploit kit and backdoor were historically used for delivering Android and iOS exploits.",
+          "Spellbinder’s TTPs, which involve hijacking legitimate application update requests and serving forged responses to redirect victims to malicious download URLs, are similar to DKnife’s method of compromising Android application updates.",
+          "The screenshot below illustrates an Android application hijacking response that targeted a Chinese taxi service and rideshare application.",
+          "DKnife is designed to work with both Android and Windows variants of DarkNimbus.",
+          "For the Android variants, the backdoor attempts to contact a Baidu URL \"http[:]//fanyi.baidu[.]com/query_config_dk\" to retrieve its C2 information.",
+          "DKnife can hijack and replace Android application updates by intercepting the update manifest requests.",
+          "When an Android application sends an APK update manifest request, DKnife intercepts it, consults the configuration file, and selects the corresponding JSON response file to reply.",
+          "In addition to Android update hijacking, DKnife also supports hijacking of Windows and other binary downloads."
+        ]
+      },
+      {
+        "node_id": "HL_7f9f0ed83635",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "WeChat",
+        "edges": [],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "Indicators supporting this assessment include data collection and processing logic explicitly designed for Chinese mail services , as well as parsing and exfiltration modules tailored for Chinese mobile applications and messaging platforms, including WeChat."
+        ]
+      },
+      {
+        "node_id": "HL_851f14a5dde4",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Cambodia",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Considering the connection between DKnife and the WizardNet campaign and given ESET’s reporting that WizardNet activity has targeted the Philippines, Cambodia, and the United Arab Emirates, we cannot rule out a broader regional or multilingual targeting scope."
+        ]
+      },
+      {
+        "node_id": "HL_88b5582a72d8",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "WizardNet",
+        "edges": [],
+        "sentence_indices": [
+          6,
+          12,
+          22
+        ],
+        "span_sentences": [
+          "We discovered a link between DKnife and a campaign delivering WizardNet, a modular backdoor known to be delivered by a different AiTM framework Spellbinder, suggesting a shared development or operational lineage.",
+          "Notably, one host (43.132.205[.]118) displayed port activity characteristic of DKnife infrastructure and was additionally found hosting the WizardNet backdoor on port 8881.",
+          "Considering the connection between DKnife and the WizardNet campaign and given ESET’s reporting that WizardNet activity has targeted the Philippines, Cambodia, and the United Arab Emirates, we cannot rule out a broader regional or multilingual targeting scope."
+        ]
+      },
+      {
+        "node_id": "HL_926db41ba61c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "United Arab Emirates",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Considering the connection between DKnife and the WizardNet campaign and given ESET’s reporting that WizardNet activity has targeted the Philippines, Cambodia, and the United Arab Emirates, we cannot rule out a broader regional or multilingual targeting scope."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Considering the connection between DKnife and the WizardNet campaign and given ESET’s reporting that WizardNet activity has targeted the Philippines, Cambodia, and the United Arab Emirates, we cannot rule out a broader regional or multilingual targeting scope."
+        ]
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "sentence_indices": [
+          5,
+          55
+        ],
+        "span_sentences": [
+          "Based on the language used in the code, configuration files and the ShadowPad malware delivered in the campaign, we assess with high confidence that China-nexus threat actors operate this tool.",
+          "This is a company located in Sichuan Chengdu, China specialised in developing computer software and providing network communication devices, according to publicly available information."
+        ]
+      },
+      {
+        "node_id": "HL_aea915848dac",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "四川奇雨网络科技有限公司",
+        "edges": [],
+        "sentence_indices": [
+          54
+        ],
+        "span_sentences": [
+          "The Shadowpad samples (both .exe and .dll) are signed with two certificates both issued from the signer “四川奇雨网络科技有限公司”."
+        ]
+      },
+      {
+        "node_id": "HL_bd8f2e540830",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Baidu",
+        "edges": [],
+        "sentence_indices": [
+          35,
+          36
+        ],
+        "span_sentences": [
+          "For the Android variants, the backdoor attempts to contact a Baidu URL \"http[:]//fanyi.baidu[.]com/query_config_dk\" to retrieve its C2 information.",
+          "This URL does not return any response from Baidu itself; rather, it serves as a recognizable trigger for DKnife, which intercepts the request and injects the C2 response."
+        ]
+      },
+      {
+        "node_id": "HL_be6f3895339b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Tencent",
+        "edges": [],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "DKnife attempts to read the rules configuration file at /dksoft/conf/rules.aes\nand decrypts it using a variant of the Tiny Encryption Algorithm (TEA) algorithm employed by Tencent’s older OICQ/QQ login protocols, commonly referred to as QQ TEA."
+        ]
+      },
+      {
+        "node_id": "HL_bf1a92e4bc24",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Spellbinder",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          6,
+          13
+        ],
+        "span_sentences": [
+          "We discovered a link between DKnife and a campaign delivering WizardNet, a modular backdoor known to be delivered by a different AiTM framework Spellbinder, suggesting a shared development or operational lineage.",
+          "Spellbinder’s TTPs, which involve hijacking legitimate application update requests and serving forged responses to redirect victims to malicious download URLs, are similar to DKnife’s method of compromising Android application updates."
+        ]
+      },
+      {
+        "node_id": "HL_d6cfbe476cea",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Sichuan Chengdu",
+        "edges": [],
+        "sentence_indices": [
+          55
+        ],
+        "span_sentences": [
+          "This is a company located in Sichuan Chengdu, China specialised in developing computer software and providing network communication devices, according to publicly available information."
+        ]
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          26,
+          28
+        ],
+        "span_sentences": [
+          "Cisco Talos uncovered “DKnife,” a fully featured gateway-monitoring and adversary-in-the-middle (AitM) framework comprising seven Linux-based implants that perform deep-packet inspection, manipulate traffic, and deliver malware via routers and edge devices.",
+          "DKnife binaries are 64-bit Linux (x86-64) ELF implants that run on Linux-based devices.",
+          "Configuration elements such as PPPoE, VLAN tagging, a bridged interface (br0), and adjustable MTU and MAC parameters suggest that DKnife is tailored for edge or router devices running Linux-based firmware."
+        ]
+      },
+      {
+        "node_id": "HL_f250867aa0f4",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "MOONSHINE",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Background\nSince 2023, Cisco Talos has continuously tracked the MOONSHINE exploit kit and the DarkNimbus backdoor it distributes."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "DKnife primarily targets Chinese-speaking users, indicated by credential harvesting for Chinese-language services, exfiltration modules for popular Chinese mobile applications and code references to Chinese media domains."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_3",
+          "EDGE_14",
+          "EDGE_18",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "DKnife attempts to read the rules configuration file at /dksoft/conf/rules.aes\nand decrypts it using a variant of the Tiny Encryption Algorithm (TEA) algorithm employed by Tencent’s older OICQ/QQ login protocols, commonly referred to as QQ TEA.",
+            "DKnife decrypts the file with a key dianke0123456789\n, and saves the decrypted file as rules.conf\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            50,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "If the binary download URL matches a specific pattern (“.exe” extension after the query symbol), the file name is replaced with install.exe\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1040",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1040",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos uncovered “DKnife,” a fully featured gateway-monitoring and adversary-in-the-middle (AitM) framework comprising seven Linux-based implants that perform deep-packet inspection, manipulate traffic, and deliver malware via routers and edge devices."
+          ],
+          [
+            "For the Windows version, the dknife.bin component inspects UDP traffic and sends them to port 8005."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "DKnife primarily targets Chinese-speaking users, indicated by credential harvesting for Chinese-language services, exfiltration modules for popular Chinese mobile applications and code references to Chinese media domains."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_7",
+          "EDGE_16",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ],
+          [
+            49,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "When it identifies a request containing the string marker DKGETMMHOST\n, it constructs and returns a response specifying the C2 server address."
+          ],
+          [
+            "If the rule fires and the requested filename has a matching extension (e.g., “.exe”, “.rar”, “.zip”, or “.apk”), DKnife forges an HTTP 302 redirect whose Location URL is taken from the rule’s data field.",
+            "If the binary download URL matches a specific pattern (“.exe” extension after the query symbol), the file name is replaced with install.exe\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_8",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos uncovered “DKnife,” a fully featured gateway-monitoring and adversary-in-the-middle (AitM) framework comprising seven Linux-based implants that perform deep-packet inspection, manipulate traffic, and deliver malware via routers and edge devices."
+          ],
+          [
+            "When an Android application sends an APK update manifest request, DKnife intercepts it, consults the configuration file, and selects the corresponding JSON response file to reply.",
+            "This response contains a download URL redirecting to the URL of address 10.3.3.3\n, which DKnife recognizes and routes to the yitiji.bin\ncreated Local Area Network (LAN) to deliver malware instead of the legitimate update APK."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_9",
+          "EDGE_15",
+          "EDGE_19",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "DKnife attempts to read the rules configuration file at /dksoft/conf/rules.aes\nand decrypts it using a variant of the Tiny Encryption Algorithm (TEA) algorithm employed by Tencent’s older OICQ/QQ login protocols, commonly referred to as QQ TEA.",
+            "DKnife decrypts the file with a key dianke0123456789\n, and saves the decrypted file as rules.conf\n."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1557",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1557",
+        "edges": [
+          "EDGE_10",
+          "EDGE_13",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            13,
+            13
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Spellbinder’s TTPs, which involve hijacking legitimate application update requests and serving forged responses to redirect victims to malicious download URLs, are similar to DKnife’s method of compromising Android application updates."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1565",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1565",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Cisco Talos uncovered “DKnife,” a fully featured gateway-monitoring and adversary-in-the-middle (AitM) framework comprising seven Linux-based implants that perform deep-packet inspection, manipulate traffic, and deliver malware via routers and edge devices."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [
+          "EDGE_1",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            51,
+            53
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Shadowpad and DarkNimbus backdoors\nThe install.exe\nfile (SHA256: 2550aa4c4bc0a020ec4b16973df271b81118a7abea77f77fec2f575a32dc3444\n) is found in the downloaded archive under path /dkay-scripts/\n.",
+            "It is a RAR self extraction package containing three binaries, that are actually ShadowPad and the DarkNimbus backdoor, which both being reported [1,2] used by China-nexus threat actors.",
+            "When launched, the legitimate .exe (TosBtKbd.exe\n) sideloads the ShadowPad DLL loader (TosBtKbd.dll\n), which then loads the DarkNimbus DLL backdoor (TosBtKbdLayer.dll\n)."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_04e8484a670b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/dksoft/conf/server.conf",
+        "edges": [],
+        "sentence_indices": [
+          33
+        ],
+        "span_sentences": [
+          "The DKMMHOST value is read from DKnife’s configuration file (\"/dksoft/conf/server.conf\"), which contains the line MMHOST URL=[value]\n."
+        ]
+      },
+      {
+        "node_id": "IOC_2f7fcd7a94b6",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/dkay-scripts/",
+        "edges": [],
+        "sentence_indices": [
+          51
+        ],
+        "span_sentences": [
+          "Shadowpad and DarkNimbus backdoors\nThe install.exe\nfile (SHA256: 2550aa4c4bc0a020ec4b16973df271b81118a7abea77f77fec2f575a32dc3444\n) is found in the downloaded archive under path /dkay-scripts/\n."
+        ]
+      },
+      {
+        "node_id": "IOC_30fc29c8582b",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/dksoft/conf/rules.aes",
+        "edges": [
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          42
+        ],
+        "span_sentences": [
+          "DKnife attempts to read the rules configuration file at /dksoft/conf/rules.aes\nand decrypts it using a variant of the Tiny Encryption Algorithm (TEA) algorithm employed by Tencent’s older OICQ/QQ login protocols, commonly referred to as QQ TEA."
+        ]
+      },
+      {
+        "node_id": "IOC_63fbbdbd4072",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "192.168.92.92",
+        "edges": [
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "The DKFESN value represents a device identifier that DKnife retrieves from an internal server located at \"192.168.92.92:8080\"."
+        ]
+      },
+      {
+        "node_id": "IOC_6c21201e24e7",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "10.3.3.3",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "This response contains a download URL redirecting to the URL of address 10.3.3.3\n, which DKnife recognizes and routes to the yitiji.bin\ncreated Local Area Network (LAN) to deliver malware instead of the legitimate update APK."
+        ]
+      },
+      {
+        "node_id": "IOC_7bd3d87e92fe",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "43.132.205[.]118",
+        "edges": [],
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "Notably, one host (43.132.205[.]118) displayed port activity characteristic of DKnife infrastructure and was additionally found hosting the WizardNet backdoor on port 8881."
+        ]
+      },
+      {
+        "node_id": "IOC_7fe7bc9b977b",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "dianke0123456789",
+        "edges": [
+          "EDGE_18",
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "DKnife decrypts the file with a key dianke0123456789\n, and saves the decrypted file as rules.conf\n."
+        ]
+      },
+      {
+        "node_id": "IOC_8020a8520bf4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "rules.conf",
+        "edges": [
+          "EDGE_20",
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          43,
+          45
+        ],
+        "span_sentences": [
+          "DKnife decrypts the file with a key dianke0123456789\n, and saves the decrypted file as rules.conf\n.",
+          "However, based on the code analysis, rules.conf\nis the configuration to define what requests to match, what to send back, when to throttle and tracking the response."
+        ]
+      },
+      {
+        "node_id": "IOC_c04b8841b2d1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "/dksoft/html/dkay-scripts/",
+        "edges": [],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "The rules include the following information:\nField in the line | Description |\nid=<number> | Rule ID |\nhost=<regex> | Matching host IP |\nuser_agent=<regex> | Matching User Agent |\nurl=<regex> | Matching URL |\nfile=<relative path> | Relative file name points into “/dksoft/html/dkay-scripts/”."
+        ]
+      },
+      {
+        "node_id": "IOC_cf37ddc82886",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "2550aa4c4bc0a020ec4b16973df271b81118a7abea77f77fec2f575a32dc3444",
+        "edges": [],
+        "sentence_indices": [
+          51
+        ],
+        "span_sentences": [
+          "Shadowpad and DarkNimbus backdoors\nThe install.exe\nfile (SHA256: 2550aa4c4bc0a020ec4b16973df271b81118a7abea77f77fec2f575a32dc3444\n) is found in the downloaded archive under path /dkay-scripts/\n."
+        ]
+      },
+      {
+        "node_id": "IOC_eeb9c13e522c",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http[:]//fanyi.baidu[.]com/query_config_dk",
+        "edges": [
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "For the Android variants, the backdoor attempts to contact a Baidu URL \"http[:]//fanyi.baidu[.]com/query_config_dk\" to retrieve its C2 information."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0e1d05a63e9f",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1040"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1557"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_10426906a197",
+      "node_v": "TTP_T1565"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_3cea184bcbb7",
+      "node_v": "TTP_T1574"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_bf1a92e4bc24",
+      "node_v": "TTP_T1557"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_30fc29c8582b",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_30fc29c8582b",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_63fbbdbd4072",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_6c21201e24e7",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_7fe7bc9b977b",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_7fe7bc9b977b",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_8020a8520bf4",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_8020a8520bf4",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_eeb9c13e522c",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_eeb9c13e522c",
+      "node_v": "TTP_T1557"
+    }
+  ]
+}

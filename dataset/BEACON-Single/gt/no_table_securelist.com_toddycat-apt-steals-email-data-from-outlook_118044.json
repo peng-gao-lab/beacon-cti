@@ -1,0 +1,681 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_06a319c086f8",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Sysinternals suite",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "In the incident being described, the local security tools (EPP) blocked the attempt to create the OUTLOOK.exe\nprocess dump using SharpTokenFinder, so the operator used ProcDump from the Sysinternals suite for this purpose:\nHere, the operator executed ProcDump with the following parameters:\naccepteula\nsilently accepts the license agreement without displaying the agreement window.ma\nindicates that a full process dump should be created.exe\nis the name of the process to be dumped."
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "Yet, analysis of incidents from May to June 2024 revealed a new variant implemented in PowerShell."
+        ]
+      },
+      {
+        "node_id": "HL_2cddc40224ce",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "XstReader",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          24,
+          25
+        ],
+        "span_sentences": [
+          "XstReader\nXstReader is an open-source C# tool for viewing and exporting the content of Microsoft Outlook OST and PST files.",
+          "The attackers used XstReader to export the content of the previously copied OST files."
+        ]
+      },
+      {
+        "node_id": "HL_2d3646a08d86",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "TCSectorCopy",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          20,
+          21
+        ],
+        "span_sentences": [
+          "To copy the file, the attackers created a specialized tool called TCSectorCopy.",
+          "TCSectorCopy then opens the disk as a device in read-only mode and sequentially copies the file content block by block, bypassing the standard Windows API."
+        ]
+      },
+      {
+        "node_id": "HL_3bd3dc94ae65",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "WinRAR",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          46
+        ],
+        "span_sentences": [
+          "Following this validation, the file is added to a dmp.rar\narchive using WinRAR."
+        ]
+      },
+      {
+        "node_id": "HL_40e0941c6eb6",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Outlook",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "XstReader\nXstReader is an open-source C# tool for viewing and exporting the content of Microsoft Outlook OST and PST files."
+        ]
+      },
+      {
+        "node_id": "HL_48235807f061",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Edge",
+        "edges": [
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Besides supporting the Chrome and Edge browsers, the new version also added processing for Firefox browser files."
+        ]
+      },
+      {
+        "node_id": "HL_4f6b6a6d5978",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "SharpTokenFinder",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          36,
+          40,
+          44
+        ],
+        "span_sentences": [
+          "The attackers used SharpTokenFinder to obtain the access token from the user’s Outlook application.",
+          "The dump files are saved in the dump\nfolder, located in the current SharpTokenFinder directory.",
+          "In the incident being described, the local security tools (EPP) blocked the attempt to create the OUTLOOK.exe\nprocess dump using SharpTokenFinder, so the operator used ProcDump from the Sysinternals suite for this purpose:\nHere, the operator executed ProcDump with the following parameters:\naccepteula\nsilently accepts the license agreement without displaying the agreement window.ma\nindicates that a full process dump should be created.exe\nis the name of the process to be dumped."
+        ]
+      },
+      {
+        "node_id": "HL_514a571a8043",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft 365",
+        "edges": [
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          27,
+          29,
+          37
+        ],
+        "span_sentences": [
+          "Some target organizations used the Microsoft 365 cloud office suite.",
+          "In the OAuth 2.0 protocol, which Microsoft 365 uses for authorization, the access token is used when requesting resources from the server.",
+          "This tool is written in C# and designed to search for an access token in processes associated with the Microsoft 365 suite."
+        ]
+      },
+      {
+        "node_id": "HL_5c4ab2152d3e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ProcDump",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "In the incident being described, the local security tools (EPP) blocked the attempt to create the OUTLOOK.exe\nprocess dump using SharpTokenFinder, so the operator used ProcDump from the Sysinternals suite for this purpose:\nHere, the operator executed ProcDump with the following parameters:\naccepteula\nsilently accepts the license agreement without displaying the agreement window.ma\nindicates that a full process dump should be created.exe\nis the name of the process to be dumped."
+        ]
+      },
+      {
+        "node_id": "HL_734da5f13986",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "ToddyCat",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          48
+        ],
+        "span_sentences": [
+          "This research describes how ToddyCat APT evolved its methods to gain covert access to the business correspondence of employees at target companies.",
+          "ToddyCat: your hidden email assistant."
+        ]
+      },
+      {
+        "node_id": "HL_9c20a94450b2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TomBerBil",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20",
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          10,
+          12,
+          14,
+          17
+        ],
+        "span_sentences": [
+          "The previous version of TomBerBil ran on the host and copied the user’s token.",
+          "The updated server-side version of TomBerBil copies files containing the user encryption keys that are used by DPAPI.",
+          "With TomBerBil, the attackers automatically collected user cookies, browsing history, and saved passwords, while simultaneously copying the encryption keys needed to decrypt the browser files.",
+          "The modified TomBerBil tool family proved ineffective at evading monitoring tools, compelling the threat actor to seek alternative methods for accessing the organization’s critical data."
+        ]
+      },
+      {
+        "node_id": "HL_a08bab4a149d",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Firefox",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Besides supporting the Chrome and Edge browsers, the new version also added processing for Firefox browser files."
+        ]
+      },
+      {
+        "node_id": "HL_fde5e6472d67",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Chrome",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Besides supporting the Chrome and Edge browsers, the new version also added processing for Firefox browser files."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1003",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1003",
+        "edges": [
+          "EDGE_1",
+          "EDGE_6",
+          "EDGE_10",
+          "EDGE_12",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            36,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The updated server-side version of TomBerBil copies files containing the user encryption keys that are used by DPAPI."
+          ],
+          [
+            "Some target organizations used the Microsoft 365 cloud office suite.",
+            "The attackers attempted to obtain the access token that resides in the memory of processes utilizing this cloud service."
+          ],
+          [
+            "The attackers used SharpTokenFinder to obtain the access token from the user’s Outlook application.",
+            "This tool is written in C# and designed to search for an access token in processes associated with the Microsoft 365 suite.",
+            "If these processes are found, the tool attempts to open each process’s object using the OpenProcess\nfunction and dump their memory."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_7",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            23,
+            23
+          ],
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "TCSectorCopy then opens the disk as a device in read-only mode and sequentially copies the file content block by block, bypassing the standard Windows API."
+          ],
+          [
+            "Having obtained the OST files, the attackers processed them using a separate tool to extract the email correspondence content."
+          ],
+          [
+            "The attackers used XstReader to export the content of the previously copied OST files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            15,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "A key feature of this version is that it was executed on domain controllers on behalf of a privileged user, accessing browser files via shared network resources using the SMB protocol."
+          ],
+          [
+            "The connection to the victim’s remote hosts was established via the SMB protocol, which significantly complicated the detection of the tool’s activity."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1057",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attackers used SharpTokenFinder to obtain the access token from the user’s Outlook application.",
+            "This tool is written in C# and designed to search for an access token in processes associated with the Microsoft 365 suite."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_2",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            7
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Yet, analysis of incidents from May to June 2024 revealed a new variant implemented in PowerShell.",
+            "It retained the core malicious functionality of the previous samples but employed a different implementation approach and incorporated new commands.",
+            "A key feature of this version is that it was executed on domain controllers on behalf of a privileged user, accessing browser files via shared network resources using the SMB protocol."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            27,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Yet, analysis of incidents from May to June 2024 revealed a new variant implemented in PowerShell.",
+            "It retained the core malicious functionality of the previous samples but employed a different implementation approach and incorporated new commands.",
+            "A key feature of this version is that it was executed on domain controllers on behalf of a privileged user, accessing browser files via shared network resources using the SMB protocol."
+          ],
+          [
+            "A key feature of this version is that it was executed on domain controllers on behalf of a privileged user, accessing browser files via shared network resources using the SMB protocol."
+          ],
+          [
+            "Some target organizations used the Microsoft 365 cloud office suite.",
+            "The attackers attempted to obtain the access token that resides in the memory of processes utilizing this cloud service."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            46,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Following this validation, the file is added to a dmp.rar\narchive using WinRAR.",
+            "The attackers sent this file to their host via SMB."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1114",
+        "edges": [
+          "EDGE_8",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            18
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We discovered an attempt to gain access to corporate correspondence files in the local Outlook storage."
+          ],
+          [
+            "Having obtained the OST files, the attackers processed them using a separate tool to extract the email correspondence content."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1119",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1119",
+        "edges": [
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "With TomBerBil, the attackers automatically collected user cookies, browsing history, and saved passwords, while simultaneously copying the encryption keys needed to decrypt the browser files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1217",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1217",
+        "edges": [
+          "EDGE_9",
+          "EDGE_20",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Besides supporting the Chrome and Edge browsers, the new version also added processing for Firefox browser files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1555",
+        "edges": [
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "With TomBerBil, the attackers automatically collected user cookies, browsing history, and saved passwords, while simultaneously copying the encryption keys needed to decrypt the browser files."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1560",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1560",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            46,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Following this validation, the file is added to a dmp.rar\narchive using WinRAR.",
+            "The attackers sent this file to their host via SMB."
+          ]
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_06a319c086f8",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_2cddc40224ce",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_2d3646a08d86",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_3bd3dc94ae65",
+      "node_v": "TTP_T1560"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_40e0941c6eb6",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_40e0941c6eb6",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_40e0941c6eb6",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_48235807f061",
+      "node_v": "TTP_T1217"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_4f6b6a6d5978",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_4f6b6a6d5978",
+      "node_v": "TTP_T1057"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_514a571a8043",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_514a571a8043",
+      "node_v": "TTP_T1114"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_5c4ab2152d3e",
+      "node_v": "TTP_T1003"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_9c20a94450b2",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_9c20a94450b2",
+      "node_v": "TTP_T1021"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_9c20a94450b2",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_9c20a94450b2",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_9c20a94450b2",
+      "node_v": "TTP_T1119"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_9c20a94450b2",
+      "node_v": "TTP_T1217"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_9c20a94450b2",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_a08bab4a149d",
+      "node_v": "TTP_T1217"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_fde5e6472d67",
+      "node_v": "TTP_T1217"
+    }
+  ]
+}

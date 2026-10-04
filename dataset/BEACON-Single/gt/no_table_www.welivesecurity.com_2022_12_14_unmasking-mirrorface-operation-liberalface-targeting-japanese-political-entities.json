@@ -1,0 +1,977 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_09ff0076cafc",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "think tanks",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In particular, MirrorFace and LODEINFO, its proprietary malware used exclusively against targets in Japan, have been reported as targeting media, defense-related companies, think tanks, diplomatic organizations, and academic institutions."
+        ]
+      },
+      {
+        "node_id": "HL_223ef6a1f9de",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LODEINFO",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12",
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          5,
+          8,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          33,
+          34,
+          36,
+          37,
+          40,
+          41,
+          43
+        ],
+        "span_sentences": [
+          "In particular, MirrorFace and LODEINFO, its proprietary malware used exclusively against targets in Japan, have been reported as targeting media, defense-related companies, think tanks, diplomatic organizations, and academic institutions.",
+          "All spearphishing emails contained a malicious attachment that upon execution deployed LODEINFO on the compromised machine.",
+          "LODEINFO is a MirrorFace backdoor that is under continual development.",
+          "JPCERT reported about the first version of LODEINFO (v0.1.2), which appeared around December 2019; its functionality allows capturing screenshots, keylogging, killing processes, exfiltrating files, and executing additional files and commands.",
+          "In Operation LiberalFace, we observed MirrorFace operators utilizing both the regular LODEINFO and what we call the second-stage LODEINFO malware.",
+          "The second-stage LODEINFO can be distinguished from the regular LODEINFO by looking at the overall functionality.",
+          "In particular, the second-stage LODEINFO accepts and runs PE binaries and shellcode outside of the implemented commands.",
+          "Furthermore, the second-stage LODEINFO can process the C&C command config, but the functionality for the command ransom is missing.",
+          "The operator issued the LODEINFO command send with the subcommand -memory to deliver MirrorStealer malware to the compromised machine.",
+          "The subcommand -memory was used to indicate to LODEINFO to keep MirrorStealer in its memory, meaning the MirrorStealer binary was never dropped on disk.",
+          "This command instructed LODEINFO to take MirrorStealer, inject it into the spawned cmd.exe process, and run it.",
+          "Once MirrorStealer had collected the credentials and stored them in %temp%\\31558.txt, the operator used LODEINFO to exfiltrate the credentials.",
+          "Therefore, the operator exfiltrated the cookies manually via LODEINFO.",
+          "First, the operator used the LODEINFO command dir to list the contents of the folders %LocalAppData%\\Google\\Chrome\\User Data\\ and %LocalAppData%\\Microsoft\\Edge\\User Data\\.",
+          "Next, the operator exfiltrated all the collected cookie files using the LODEINFO command recv."
+        ]
+      },
+      {
+        "node_id": "HL_2a5c4704d25a",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "diplomatic organizations",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In particular, MirrorFace and LODEINFO, its proprietary malware used exclusively against targets in Japan, have been reported as targeting media, defense-related companies, think tanks, diplomatic organizations, and academic institutions."
+        ]
+      },
+      {
+        "node_id": "HL_2fbc68985239",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "MirrorFace",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          0,
+          2,
+          4,
+          5,
+          9,
+          11,
+          14,
+          16,
+          21,
+          23,
+          27
+        ],
+        "span_sentences": [
+          "ESET researchers discovered a spearphishing campaign, launched in the weeks leading up to the Japanese House of Councillors election in July 2022, by the APT group that ESET Research tracks as MirrorFace.",
+          "MirrorFace is a Chinese-speaking threat actor targeting companies and organizations based in Japan.",
+          "Therefore, we are tracking it as a separate entity that we've named MirrorFace.",
+          "In particular, MirrorFace and LODEINFO, its proprietary malware used exclusively against targets in Japan, have been reported as targeting media, defense-related companies, think tanks, diplomatic organizations, and academic institutions.",
+          "Additionally, we discovered that MirrorFace has used previously undocumented malware, which we have named MirrorStealer, to steal its target’s credentials.",
+          "MirrorFace started the attack on June 29th, 2022, distributing spearphishing emails with a malicious attachment to the targets.",
+          "Purporting to be a Japanese political party’s PR department, MirrorFace asked the recipients to distribute the attached videos on their own social media profiles (SNS – Social Network Service) to further strengthen the party’s PR and to secure victory in the House of Councillors.",
+          "Since the House of Councillors election was held on July 10th, 2022, this email clearly indicates that MirrorFace sought the opportunity to attack political entities.",
+          "LODEINFO is a MirrorFace backdoor that is under continual development.",
+          "In Operation LiberalFace, we observed MirrorFace operators utilizing both the regular LODEINFO and what we call the second-stage LODEINFO malware.",
+          "MirrorStealer, internally named 31558_n.dll by MirrorFace, is a credential stealer."
+        ]
+      },
+      {
+        "node_id": "HL_3371dcf2599a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Japan",
+        "edges": [],
+        "sentence_indices": [
+          2,
+          5
+        ],
+        "span_sentences": [
+          "MirrorFace is a Chinese-speaking threat actor targeting companies and organizations based in Japan.",
+          "In particular, MirrorFace and LODEINFO, its proprietary malware used exclusively against targets in Japan, have been reported as targeting media, defense-related companies, think tanks, diplomatic organizations, and academic institutions."
+        ]
+      },
+      {
+        "node_id": "HL_52c42d680fb4",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "MirrorStealer",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          9,
+          27,
+          29,
+          30,
+          33,
+          34,
+          36,
+          37,
+          39
+        ],
+        "span_sentences": [
+          "Additionally, we discovered that MirrorFace has used previously undocumented malware, which we have named MirrorStealer, to steal its target’s credentials.",
+          "MirrorStealer, internally named 31558_n.dll by MirrorFace, is a credential stealer.",
+          "In general, MirrorStealer steals credentials from various applications such as browsers and email clients.",
+          "All the stolen credentials are stored in %TEMP%\\31558.txt and since MirrorStealer doesn’t have the capability to exfiltrate the stolen data, it depends on other malware to do it.",
+          "The operator issued the LODEINFO command send with the subcommand -memory to deliver MirrorStealer malware to the compromised machine.",
+          "The subcommand -memory was used to indicate to LODEINFO to keep MirrorStealer in its memory, meaning the MirrorStealer binary was never dropped on disk.",
+          "This command instructed LODEINFO to take MirrorStealer, inject it into the spawned cmd.exe process, and run it.",
+          "Once MirrorStealer had collected the credentials and stored them in %temp%\\31558.txt, the operator used LODEINFO to exfiltrate the credentials.",
+          "However, MirrorStealer doesn’t possess the capability to collect those."
+        ]
+      },
+      {
+        "node_id": "HL_61be60731b0e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET Research",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET researchers discovered a spearphishing campaign, launched in the weeks leading up to the Japanese House of Councillors election in July 2022, by the APT group that ESET Research tracks as MirrorFace."
+        ]
+      },
+      {
+        "node_id": "HL_68511f9df256",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Google\\Chrome",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "First, the operator used the LODEINFO command dir to list the contents of the folders %LocalAppData%\\Google\\Chrome\\User Data\\ and %LocalAppData%\\Microsoft\\Edge\\User Data\\."
+        ]
+      },
+      {
+        "node_id": "HL_7707ecb42595",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Macnica",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "While there is some speculation that this threat actor might be related to APT10 (Macnica, Kaspersky), ESET is unable to attribute it to any known APT group."
+        ]
+      },
+      {
+        "node_id": "HL_8d029d4c0a89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Japanese House of Councillors",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "ESET researchers discovered a spearphishing campaign, launched in the weeks leading up to the Japanese House of Councillors election in July 2022, by the APT group that ESET Research tracks as MirrorFace."
+        ]
+      },
+      {
+        "node_id": "HL_99eaf2d98c89",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "ESET",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          3
+        ],
+        "span_sentences": [
+          "ESET researchers discovered a spearphishing campaign, launched in the weeks leading up to the Japanese House of Councillors election in July 2022, by the APT group that ESET Research tracks as MirrorFace.",
+          "While there is some speculation that this threat actor might be related to APT10 (Macnica, Kaspersky), ESET is unable to attribute it to any known APT group."
+        ]
+      },
+      {
+        "node_id": "HL_aff2785b1f10",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "academic institutions",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In particular, MirrorFace and LODEINFO, its proprietary malware used exclusively against targets in Japan, have been reported as targeting media, defense-related companies, think tanks, diplomatic organizations, and academic institutions."
+        ]
+      },
+      {
+        "node_id": "HL_cda5242f22cb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kaspersky",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "While there is some speculation that this threat actor might be related to APT10 (Macnica, Kaspersky), ESET is unable to attribute it to any known APT group."
+        ]
+      },
+      {
+        "node_id": "HL_d6d4dfcc3fdc",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "media",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In particular, MirrorFace and LODEINFO, its proprietary malware used exclusively against targets in Japan, have been reported as targeting media, defense-related companies, think tanks, diplomatic organizations, and academic institutions."
+        ]
+      },
+      {
+        "node_id": "HL_e180e317c559",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Operation LiberalFace",
+        "edges": [
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          1,
+          7,
+          23
+        ],
+        "span_sentences": [
+          "The campaign, which we have named Operation LiberalFace, targeted Japanese political entities; our investigation revealed that the members of a specific political party were of particular focus in this campaign.",
+          "One of the spearphishing emails sent in Operation LiberalFace posed as an official communication from the PR department of a specific Japanese political party, containing a request related to the House of Councillors elections, and was purportedly sent on behalf of a prominent politician.",
+          "In Operation LiberalFace, we observed MirrorFace operators utilizing both the regular LODEINFO and what we call the second-stage LODEINFO malware."
+        ]
+      },
+      {
+        "node_id": "HL_e2acfae370cc",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "APT10",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "While there is some speculation that this threat actor might be related to APT10 (Macnica, Kaspersky), ESET is unable to attribute it to any known APT group."
+        ]
+      },
+      {
+        "node_id": "HL_e62b6ce250ed",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "defense-related companies",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "In particular, MirrorFace and LODEINFO, its proprietary malware used exclusively against targets in Japan, have been reported as targeting media, defense-related companies, think tanks, diplomatic organizations, and academic institutions."
+        ]
+      },
+      {
+        "node_id": "HL_e696ce582bea",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft\\Edge",
+        "edges": [],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "First, the operator used the LODEINFO command dir to list the contents of the folders %LocalAppData%\\Google\\Chrome\\User Data\\ and %LocalAppData%\\Microsoft\\Edge\\User Data\\."
+        ]
+      },
+      {
+        "node_id": "HL_f5406e98ca78",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "JPCERT",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "JPCERT reported about the first version of LODEINFO (v0.1.2), which appeared around December 2019; its functionality allows capturing screenshots, keylogging, killing processes, exfiltrating files, and executing additional files and commands."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_1",
+          "EDGE_21",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            40
+          ],
+          [
+            45,
+            45
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The operator was interested in the victim’s browser cookies as well.",
+            "However, MirrorStealer doesn’t possess the capability to collect those.",
+            "Therefore, the operator exfiltrated the cookies manually via LODEINFO."
+          ],
+          [
+            "Document and email stealing\nIn the next step, the operator exfiltrated documents of various kinds as well as stored emails (see Figure 9)."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_2",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ],
+          [
+            42,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Once MirrorStealer had collected the credentials and stored them in %temp%\\31558.txt, the operator used LODEINFO to exfiltrate the credentials."
+          ],
+          [
+            "Then, the operator copied all the identified cookie files into the %TEMP% folder.",
+            "Next, the operator exfiltrated all the collected cookie files using the LODEINFO command recv.",
+            "Finally, the operator deleted the copied cookie files from the %TEMP% folder in an attempt to remove the traces."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_3",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This command instructed LODEINFO to take MirrorStealer, inject it into the spawned cmd.exe process, and run it."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1056",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1056",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "JPCERT reported about the first version of LODEINFO (v0.1.2), which appeared around December 2019; its functionality allows capturing screenshots, keylogging, killing processes, exfiltrating files, and executing additional files and commands."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ],
+          [
+            33,
+            34
+          ],
+          [
+            38,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "JPCERT reported about the first version of LODEINFO (v0.1.2), which appeared around December 2019; its functionality allows capturing screenshots, keylogging, killing processes, exfiltrating files, and executing additional files and commands."
+          ],
+          [
+            "The operator issued the LODEINFO command send with the subcommand -memory to deliver MirrorStealer malware to the compromised machine.",
+            "The subcommand -memory was used to indicate to LODEINFO to keep MirrorStealer in its memory, meaning the MirrorStealer binary was never dropped on disk."
+          ],
+          [
+            "The operator was interested in the victim’s browser cookies as well.",
+            "However, MirrorStealer doesn’t possess the capability to collect those.",
+            "Therefore, the operator exfiltrated the cookies manually via LODEINFO.",
+            "First, the operator used the LODEINFO command dir to list the contents of the folders %LocalAppData%\\Google\\Chrome\\User Data\\ and %LocalAppData%\\Microsoft\\Edge\\User Data\\."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_6",
+          "EDGE_25"
+        ],
+        "best_span_ranges": [
+          [
+            42,
+            44
+          ],
+          [
+            44,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Then, the operator copied all the identified cookie files into the %TEMP% folder.",
+            "Next, the operator exfiltrated all the collected cookie files using the LODEINFO command recv.",
+            "Finally, the operator deleted the copied cookie files from the %TEMP% folder in an attempt to remove the traces."
+          ],
+          [
+            "Finally, the operator deleted the copied cookie files from the %TEMP% folder in an attempt to remove the traces."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1074",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1074",
+        "edges": [
+          "EDGE_7",
+          "EDGE_16",
+          "EDGE_20",
+          "EDGE_26"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ],
+          [
+            42,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "All the stolen credentials are stored in %TEMP%\\31558.txt and since MirrorStealer doesn’t have the capability to exfiltrate the stolen data, it depends on other malware to do it."
+          ],
+          [
+            "Then, the operator copied all the identified cookie files into the %TEMP% folder.",
+            "Next, the operator exfiltrated all the collected cookie files using the LODEINFO command recv.",
+            "Finally, the operator deleted the copied cookie files from the %TEMP% folder in an attempt to remove the traces."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_8",
+          "EDGE_22",
+          "EDGE_24"
+        ],
+        "best_span_ranges": [
+          [
+            38,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The operator was interested in the victim’s browser cookies as well.",
+            "However, MirrorStealer doesn’t possess the capability to collect those.",
+            "Therefore, the operator exfiltrated the cookies manually via LODEINFO.",
+            "First, the operator used the LODEINFO command dir to list the contents of the folders %LocalAppData%\\Google\\Chrome\\User Data\\ and %LocalAppData%\\Microsoft\\Edge\\User Data\\."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1107",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1107",
+        "edges": [
+          "EDGE_9",
+          "EDGE_27"
+        ],
+        "best_span_ranges": [
+          [
+            44,
+            44
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Finally, the operator deleted the copied cookie files from the %TEMP% folder in an attempt to remove the traces."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "JPCERT reported about the first version of LODEINFO (v0.1.2), which appeared around December 2019; its functionality allows capturing screenshots, keylogging, killing processes, exfiltrating files, and executing additional files and commands."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1114",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1114",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In general, MirrorStealer steals credentials from various applications such as browsers and email clients."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Finally, the loader reads the content of K7SysMon.Exe.db, decrypts it, and then executes it."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "All spearphishing emails contained a malicious attachment that upon execution deployed LODEINFO on the compromised machine."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1555",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1555",
+        "edges": [
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            29,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In general, MirrorStealer steals credentials from various applications such as browsers and email clients."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            11
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "ESET researchers discovered a spearphishing campaign, launched in the weeks leading up to the Japanese House of Councillors election in July 2022, by the APT group that ESET Research tracks as MirrorFace.",
+            "The campaign, which we have named Operation LiberalFace, targeted Japanese political entities; our investigation revealed that the members of a specific political party were of particular focus in this campaign."
+          ],
+          [
+            "One of the spearphishing emails sent in Operation LiberalFace posed as an official communication from the PR department of a specific Japanese political party, containing a request related to the House of Councillors elections, and was purportedly sent on behalf of a prominent politician."
+          ],
+          [
+            "All spearphishing emails contained a malicious attachment that upon execution deployed LODEINFO on the compromised machine."
+          ],
+          [
+            "MirrorFace started the attack on June 29th, 2022, distributing spearphishing emails with a malicious attachment to the targets."
+          ],
+          [
+            "Purporting to be a Japanese political party’s PR department, MirrorFace asked the recipients to distribute the attached videos on their own social media profiles (SNS – Social Network Service) to further strengthen the party’s PR and to secure victory in the House of Councillors.",
+            "Furthermore, the email provides clear instructions on the videos’ publication strategy."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As the last step, K7SysMon.exe is executed which loads the malicious loader K7SysMn1.dll dropped alongside it."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_455129cd5d43",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%\\31558.txt",
+        "edges": [
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          30,
+          37
+        ],
+        "span_sentences": [
+          "All the stolen credentials are stored in %TEMP%\\31558.txt and since MirrorStealer doesn’t have the capability to exfiltrate the stolen data, it depends on other malware to do it.",
+          "Once MirrorStealer had collected the credentials and stored them in %temp%\\31558.txt, the operator used LODEINFO to exfiltrate the credentials."
+        ]
+      },
+      {
+        "node_id": "IOC_4b5b127e7d0f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%LocalAppData%\\Google\\Chrome\\User Data\\",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "First, the operator used the LODEINFO command dir to list the contents of the folders %LocalAppData%\\Google\\Chrome\\User Data\\ and %LocalAppData%\\Microsoft\\Edge\\User Data\\."
+        ]
+      },
+      {
+        "node_id": "IOC_8cc85c0bf49e",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%LocalAppData%\\Microsoft\\Edge\\User Data\\",
+        "edges": [
+          "EDGE_23",
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "First, the operator used the LODEINFO command dir to list the contents of the folders %LocalAppData%\\Google\\Chrome\\User Data\\ and %LocalAppData%\\Microsoft\\Edge\\User Data\\."
+        ]
+      },
+      {
+        "node_id": "IOC_bbf76c0289ea",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%",
+        "edges": [
+          "EDGE_25",
+          "EDGE_26",
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          17,
+          30,
+          42,
+          44
+        ],
+        "span_sentences": [
+          "These EXEs extract their archived content into the %TEMP% folder.",
+          "All the stolen credentials are stored in %TEMP%\\31558.txt and since MirrorStealer doesn’t have the capability to exfiltrate the stolen data, it depends on other malware to do it.",
+          "Then, the operator copied all the identified cookie files into the %TEMP% folder.",
+          "Finally, the operator deleted the copied cookie files from the %TEMP% folder in an attempt to remove the traces."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1056"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1107"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_223ef6a1f9de",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_2fbc68985239",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_52c42d680fb4",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_52c42d680fb4",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_52c42d680fb4",
+      "node_v": "TTP_T1555"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_e180e317c559",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_455129cd5d43",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_455129cd5d43",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_4b5b127e7d0f",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_4b5b127e7d0f",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_8cc85c0bf49e",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_8cc85c0bf49e",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_bbf76c0289ea",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_bbf76c0289ea",
+      "node_v": "TTP_T1074"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_bbf76c0289ea",
+      "node_v": "TTP_T1107"
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_042436177633",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "Turkish businesses",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          0,
+          21
+        ],
+        "span_sentences": [
+          "Our X-Labs team’s research seems to have discovered and identified basic ransomware targeting Turkish businesses.",
+          "This ransomware seems to be targeting Turkish businesses by sending suspicious fake PDF invoices and urging users to click on malicious links."
+        ]
+      },
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "PDF.FaturaDetay_202407.exe after dropping payload it initiates PowerShell to run another hidden PowerShell command to execute RootDesign.exe in hidden mode."
+        ]
+      },
+      {
+        "node_id": "HL_80e40e45c3d0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Borland Delphi 4.0",
+        "edges": [],
+        "sentence_indices": [
+          5
+        ],
+        "span_sentences": [
+          "The download file is a 32 bit Borland Delphi 4.0 compiled binary."
+        ]
+      },
+      {
+        "node_id": "HL_862db7e77363",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "dotnet confuser core ver 1.6.",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Dropped second stage rootdesign.exe is protected with dotnet confuser core ver 1.6."
+        ]
+      },
+      {
+        "node_id": "HL_e3c10fd9ca67",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "GitHub",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "This pdf contains a URL link, which downloads further exe payload from a compromised GitHub account."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_4",
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Dropped second stage rootdesign.exe is protected with dotnet confuser core ver 1.6."
+          ],
+          [
+            "It downloads suspicious Delphi payload and then drops dotnet confuser protected binary for further activity."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_6",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            20
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It performs SMTP C2 connection on smtp[.]mail[.]ru on port 587.",
+            "Then it sends details via email service to suspicious accounts username: kurumsal[.]tasilat @internet[.]ru, which is also used as a sender domain."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_3",
+          "EDGE_9",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "PDF.FaturaDetay_202407.exe after dropping payload it initiates PowerShell to run another hidden PowerShell command to execute RootDesign.exe in hidden mode."
+          ],
+          [
+            "Command:\n“”C:\\Windows\\System32\\cmd.exe\" /c PowerShell.exe -windowstyle hidden powershell -c C:\\TheDream\\RootDesign.exe”."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_7",
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It performs SMTP C2 connection on smtp[.]mail[.]ru on port 587."
+          ],
+          [
+            "Then it sends details via email service to suspicious accounts username: kurumsal[.]tasilat @internet[.]ru, which is also used as a sender domain."
+          ],
+          [
+            "It encrypts files with “.ShadowRoot” extension and connects to a Russian SMTP mail server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            22,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The embedded links within the PDF facilitate the download of a subsequent stage exe payload upon user interaction."
+          ],
+          [
+            "It downloads suspicious Delphi payload and then drops dotnet confuser protected binary for further activity."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The embedded links within the PDF facilitate the download of a subsequent stage exe payload upon user interaction."
+          ],
+          [
+            "This pdf contains a URL link, which downloads further exe payload from a compromised GitHub account."
+          ],
+          [
+            "This ransomware seems to be targeting Turkish businesses by sending suspicious fake PDF invoices and urging users to click on malicious links."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1486",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            10,
+            10
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            14,
+            14
+          ],
+          [
+            15,
+            15
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            23,
+            23
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This dropped file then creates its recursive threads of itself in memory with new PIDs and starts performing encryption."
+          ],
+          [
+            "After this it will start performing, encrypting various system-critical non-pe and office files and renaming those files with “.ShadowRoot” extension, dropping readme.txt."
+          ],
+          [
+            "Readme.txt shows ransom notes in Turkish and encrypted files are dropped on desktop."
+          ],
+          [
+            "There is no direct crypto wallet ID info mentioned, but it is asking victims via readme to contact via the provided email address for further payment processing via crypto wallet and decryption tools."
+          ],
+          [
+            "We have observed recursive self-process creation by RootDesign.exe, which causes the files to get encrypted multiple times, resulting in higher memory consumption."
+          ],
+          [
+            "It encrypts files with “.ShadowRoot” extension and connects to a Russian SMTP mail server."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_2",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            21,
+            21
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The attack vector initiates through a PDF attachment disseminated via suspicious emails originating from the \"internet[.]ru\" domain."
+          ],
+          [
+            "This pdf contains a URL link, which downloads further exe payload from a compromised GitHub account."
+          ],
+          [
+            "This ransomware seems to be targeting Turkish businesses by sending suspicious fake PDF invoices and urging users to click on malicious links."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0b7a9d8112be",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "smtp[.]mail[.]ru",
+        "edges": [
+          "EDGE_6",
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "It performs SMTP C2 connection on smtp[.]mail[.]ru on port 587."
+        ]
+      },
+      {
+        "node_id": "IOC_18d0fd6dc987",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\TheDream\\RootDesign.exe",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          6,
+          9
+        ],
+        "span_sentences": [
+          "While analyzing exe, it is observed that it drops further payload in “C:\\TheDream\\RootDesign.exe”, “C:\\TheDream\\Uninstall.exe” and “C:\\TheDream\\Uninstall.ini”.",
+          "Command:\n“”C:\\Windows\\System32\\cmd.exe\" /c PowerShell.exe -windowstyle hidden powershell -c C:\\TheDream\\RootDesign.exe”."
+        ]
+      },
+      {
+        "node_id": "IOC_191a1dd17ebe",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\TheDream\\Uninstall.exe",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "While analyzing exe, it is observed that it drops further payload in “C:\\TheDream\\RootDesign.exe”, “C:\\TheDream\\Uninstall.exe” and “C:\\TheDream\\Uninstall.ini”."
+        ]
+      },
+      {
+        "node_id": "IOC_27f8a15081b5",
+        "node_class": "ioc",
+        "node_type": "Email",
+        "node_text": "kurumsal[.]tasilat @internet[.]ru",
+        "edges": [
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "Then it sends details via email service to suspicious accounts username: kurumsal[.]tasilat @internet[.]ru, which is also used as a sender domain."
+        ]
+      },
+      {
+        "node_id": "IOC_2cd3b98ab5c7",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\TheDream\\Uninstall.ini",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "While analyzing exe, it is observed that it drops further payload in “C:\\TheDream\\RootDesign.exe”, “C:\\TheDream\\Uninstall.exe” and “C:\\TheDream\\Uninstall.ini”."
+        ]
+      },
+      {
+        "node_id": "IOC_2eabd5a10bef",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\System32\\cmd.exe",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "Command:\n“”C:\\Windows\\System32\\cmd.exe\" /c PowerShell.exe -windowstyle hidden powershell -c C:\\TheDream\\RootDesign.exe”."
+        ]
+      },
+      {
+        "node_id": "IOC_789700a494c5",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\TheDream\\log.txt",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "It logs its every thread activity on root “C:\\TheDream\\log.txt” by adding a new line comment “ApproveExit.dot”."
+        ]
+      },
+      {
+        "node_id": "IOC_ee79783f793e",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "internet[.]ru",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The attack vector initiates through a PDF attachment disseminated via suspicious emails originating from the \"internet[.]ru\" domain."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_042436177633",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_042436177633",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_862db7e77363",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_e3c10fd9ca67",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "IOC_0b7a9d8112be",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "IOC_0b7a9d8112be",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "IOC_18d0fd6dc987",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_18d0fd6dc987",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_18d0fd6dc987",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_27f8a15081b5",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_27f8a15081b5",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_2eabd5a10bef",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_ee79783f793e",
+      "node_v": "TTP_T1566"
+    }
+  ]
+}

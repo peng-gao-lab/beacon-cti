@@ -1,0 +1,898 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_090cb4f46edc",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PoshC2",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          11,
+          24,
+          25,
+          28,
+          29,
+          30,
+          32,
+          40
+        ],
+        "span_sentences": [
+          "This playbook appears to consist of a combination of open-source and freely available tools such as PoshC2, Chisel and Classroom Spy, which are advertised as penetration testing and remote administration tools.",
+          "Figure 5 shows an example of Chisel and PoshC2 executables masked to resemble Microsoft, Cortex and VMware products.",
+          "PoshC2 is an open-source attack framework used by both penetration testers and malicious actors.",
+          "As part of the attacks, the threat actor packed the C# PoshC2 implants with a packer written in the Nim programming language.",
+          "This packer unpacked the PoshC2 binary in memory and loaded it for the purposes of execution.",
+          "The packer the attacker used on some payloads does not execute the PoshC2 implant unless the host machine is part of an Active Directory domain.",
+          "PoshC2 can use a proxy to communicate with a command and control (C2) server, and it appears that the threat actor tailored some of the PoshC2 implants specifically for the targeted environment.",
+          "Figure 8 shows a PoshC2 implant executing Chisel as a SOCKS proxy."
+        ]
+      },
+      {
+        "node_id": "HL_11475a399ce3",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Cortex",
+        "edges": [
+          "EDGE_5"
+        ],
+        "sentence_indices": [
+          24,
+          34
+        ],
+        "span_sentences": [
+          "Figure 5 shows an example of Chisel and PoshC2 executables masked to resemble Microsoft, Cortex and VMware products.",
+          "Demonstrating an awareness of the security products installed on the infected devices, in this instance the threat actor disguised the malware as a file named CortexUpdater.exe, and the scheduled task as Palo Alto Cortex Services."
+        ]
+      },
+      {
+        "node_id": "HL_18e5606f8aa6",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial sector",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The threat actors behind CL-CRI-1014 consistently use a specific set of tools as part of their playbook to attack the financial sector in Africa."
+        ]
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "edges": [
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "Figure 5 shows an example of Chisel and PoshC2 executables masked to resemble Microsoft, Cortex and VMware products."
+        ]
+      },
+      {
+        "node_id": "HL_51c9e7b91466",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "MeshAgent",
+        "edges": [
+          "EDGE_7"
+        ],
+        "sentence_indices": [
+          12,
+          13,
+          14
+        ],
+        "span_sentences": [
+          "Our analysis indicates that in previous campaigns, the attackers primarily used MeshAgent as their main payload for controlling compromised machines.",
+          "MeshAgent is an open-source remote device management tool.",
+          "Recent attacks by this threat actor have shown a slight shift in tooling, replacing MeshAgent with a remote administration tool named Classroom Spy."
+        ]
+      },
+      {
+        "node_id": "HL_7c4f55285048",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial organizations",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Unit 42 researchers have been monitoring a series of attacks targeting financial organizations across Africa."
+        ]
+      },
+      {
+        "node_id": "HL_93e1ee43e148",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Active Directory",
+        "edges": [],
+        "sentence_indices": [
+          30
+        ],
+        "span_sentences": [
+          "The packer the attacker used on some payloads does not execute the PoshC2 implant unless the host machine is part of an Active Directory domain."
+        ]
+      },
+      {
+        "node_id": "HL_b3fb93872925",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Africa",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          10,
+          42
+        ],
+        "span_sentences": [
+          "Unit 42 researchers have been monitoring a series of attacks targeting financial organizations across Africa.",
+          "The threat actors behind CL-CRI-1014 consistently use a specific set of tools as part of their playbook to attack the financial sector in Africa.",
+          "This report highlights the CL-CRI-1014 cluster of activity targeting multiple financial institutions across Africa."
+        ]
+      },
+      {
+        "node_id": "HL_ba36b189820e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Classroom Spy",
+        "edges": [
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          11,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "span_sentences": [
+          "This playbook appears to consist of a combination of open-source and freely available tools such as PoshC2, Chisel and Classroom Spy, which are advertised as penetration testing and remote administration tools.",
+          "Recent attacks by this threat actor have shown a slight shift in tooling, replacing MeshAgent with a remote administration tool named Classroom Spy.",
+          "Classroom Spy is marketed as computer monitoring software for schools.",
+          "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems.",
+          "These PowerShell scripts extracted the Classroom Spy files from a ZIP archive and installed the software as a service.",
+          "The threat actor likely changed the names and installation paths of the Classroom Spy binaries to hide their use of this tool in infected environments."
+        ]
+      },
+      {
+        "node_id": "HL_c0ea5e1a232f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VMware",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "Figure 5 shows an example of Chisel and PoshC2 executables masked to resemble Microsoft, Cortex and VMware products."
+        ]
+      },
+      {
+        "node_id": "HL_dc73c7193fc3",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "financial institutions",
+        "edges": [],
+        "sentence_indices": [
+          1,
+          8,
+          42
+        ],
+        "span_sentences": [
+          "We assess that the threat actor may be gaining initial access to these financial institutions and then selling it to others on the dark web.",
+          "We assess their goal is to create footholds in financial institutions and sell this access on darknet markets.",
+          "This report highlights the CL-CRI-1014 cluster of activity targeting multiple financial institutions across Africa."
+        ]
+      },
+      {
+        "node_id": "HL_dd02e95c1417",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "CL-CRI-1014",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          2,
+          10,
+          42
+        ],
+        "span_sentences": [
+          "Since at least July 2023, a cluster of activity we track as CL-CRI-1014 has targeted this sector.",
+          "The threat actors behind CL-CRI-1014 consistently use a specific set of tools as part of their playbook to attack the financial sector in Africa.",
+          "This report highlights the CL-CRI-1014 cluster of activity targeting multiple financial institutions across Africa."
+        ]
+      },
+      {
+        "node_id": "HL_e86d90498288",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Chisel",
+        "edges": [
+          "EDGE_21",
+          "EDGE_22",
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          11,
+          24,
+          35,
+          36,
+          37,
+          38,
+          40
+        ],
+        "span_sentences": [
+          "This playbook appears to consist of a combination of open-source and freely available tools such as PoshC2, Chisel and Classroom Spy, which are advertised as penetration testing and remote administration tools.",
+          "Figure 5 shows an example of Chisel and PoshC2 executables masked to resemble Microsoft, Cortex and VMware products.",
+          "To conceal their operations within infected networks, the attackers deployed a tool called Chisel.",
+          "It appears that the attackers used Chisel as a proxy to bypass network controls such as firewalls.",
+          "Chisel is an open-source tunneling utility based on a client-server architecture.",
+          "When executed on a victim’s machine, Chisel’s client connects to an attacker-operated Chisel server.",
+          "Figure 8 shows a PoshC2 implant executing Chisel as a SOCKS proxy."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "As part of the attacks, the threat actor packed the C# PoshC2 implants with a packer written in the Nim programming language."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_2",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_8",
+          "EDGE_12",
+          "EDGE_14",
+          "EDGE_21",
+          "EDGE_27",
+          "EDGE_28",
+          "EDGE_29",
+          "EDGE_31"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            20,
+            20
+          ],
+          [
+            21,
+            22
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor copies signatures from legitimate applications to forge file signatures, to disguise their tool set and mask their malicious activities."
+          ],
+          [
+            "Threat actors often spoof legitimate products for malicious purposes."
+          ],
+          [
+            "The threat actor likely changed the names and installation paths of the Classroom Spy binaries to hide their use of this tool in infected environments."
+          ],
+          [
+            "During our investigation, we found Classroom Spy binaries with names such as systemsvc.exe, vm3dservice.exe and vmtoolsd.exe."
+          ],
+          [
+            "The threat actor disguised the tools used in these operations as legitimate processes.",
+            "This included creating an identical icon, file signature, process name and path as the legitimate file would use."
+          ],
+          [
+            "Figure 5 shows an example of Chisel and PoshC2 executables masked to resemble Microsoft, Cortex and VMware products."
+          ],
+          [
+            "Demonstrating an awareness of the security products installed on the infected devices, in this instance the threat actor disguised the malware as a file named CortexUpdater.exe, and the scheduled task as Palo Alto Cortex Services."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1053",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            34,
+            34
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Demonstrating an awareness of the security products installed on the infected devices, in this instance the threat actor disguised the malware as a file named CortexUpdater.exe, and the scheduled task as Palo Alto Cortex Services."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_3",
+          "EDGE_9",
+          "EDGE_15",
+          "EDGE_24",
+          "EDGE_25",
+          "EDGE_26",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            16
+          ],
+          [
+            16,
+            16
+          ],
+          [
+            25,
+            26
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Our analysis indicates that in previous campaigns, the attackers primarily used MeshAgent as their main payload for controlling compromised machines.",
+            "MeshAgent is an open-source remote device management tool.",
+            "Recent attacks by this threat actor have shown a slight shift in tooling, replacing MeshAgent with a remote administration tool named Classroom Spy.",
+            "Classroom Spy is marketed as computer monitoring software for schools.",
+            "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems."
+          ],
+          [
+            "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems."
+          ],
+          [
+            "PoshC2 is an open-source attack framework used by both penetration testers and malicious actors.",
+            "This was a key tool the attackers used to execute commands and gain a foothold in compromised environments."
+          ],
+          [
+            "Figure 8 shows a PoshC2 implant executing Chisel as a SOCKS proxy."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1078",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1078",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ],
+          [
+            32,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The threat actor stole user credentials for the infected networks and used them to set up a proxy."
+          ],
+          [
+            "PoshC2 can use a proxy to communicate with a command and control (C2) server, and it appears that the threat actor tailored some of the PoshC2 implants specifically for the targeted environment.",
+            "Some of the observed implants implemented the proxy feature using a hard-coded internal IP address and stolen credentials from the infected environment, as shown in Figure 6."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1090",
+        "edges": [
+          "EDGE_4",
+          "EDGE_17",
+          "EDGE_22"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            32,
+            33
+          ],
+          [
+            35,
+            36
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            39,
+            39
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They also create tunnels for network communication and perform remote administration."
+          ],
+          [
+            "The threat actor stole user credentials for the infected networks and used them to set up a proxy."
+          ],
+          [
+            "PoshC2 can use a proxy to communicate with a command and control (C2) server, and it appears that the threat actor tailored some of the PoshC2 implants specifically for the targeted environment.",
+            "Some of the observed implants implemented the proxy feature using a hard-coded internal IP address and stolen credentials from the infected environment, as shown in Figure 6."
+          ],
+          [
+            "To conceal their operations within infected networks, the attackers deployed a tool called Chisel.",
+            "It appears that the attackers used Chisel as a proxy to bypass network controls such as firewalls."
+          ],
+          [
+            "When executed on a victim’s machine, Chisel’s client connects to an attacker-operated Chisel server."
+          ],
+          [
+            "The victim’s machine then functions as a proxy, forwarding network communication from the server to other remote machines."
+          ],
+          [
+            "Figure 8 shows a PoshC2 implant executing Chisel as a SOCKS proxy."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1219",
+        "edges": [
+          "EDGE_7",
+          "EDGE_10",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            10,
+            11
+          ],
+          [
+            12,
+            16
+          ],
+          [
+            14,
+            14
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "They also create tunnels for network communication and perform remote administration."
+          ],
+          [
+            "The threat actors behind CL-CRI-1014 consistently use a specific set of tools as part of their playbook to attack the financial sector in Africa.",
+            "This playbook appears to consist of a combination of open-source and freely available tools such as PoshC2, Chisel and Classroom Spy, which are advertised as penetration testing and remote administration tools."
+          ],
+          [
+            "Our analysis indicates that in previous campaigns, the attackers primarily used MeshAgent as their main payload for controlling compromised machines.",
+            "MeshAgent is an open-source remote device management tool.",
+            "Recent attacks by this threat actor have shown a slight shift in tooling, replacing MeshAgent with a remote administration tool named Classroom Spy.",
+            "Classroom Spy is marketed as computer monitoring software for schools.",
+            "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems."
+          ],
+          [
+            "Recent attacks by this threat actor have shown a slight shift in tooling, replacing MeshAgent with a remote administration tool named Classroom Spy."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1543",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1543",
+        "edges": [
+          "EDGE_11",
+          "EDGE_19"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems.",
+            "These PowerShell scripts extracted the Classroom Spy files from a ZIP archive and installed the software as a service."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1572",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1572",
+        "edges": [
+          "EDGE_20",
+          "EDGE_23"
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            36
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "To conceal their operations within infected networks, the attackers deployed a tool called Chisel.",
+            "It appears that the attackers used Chisel as a proxy to bypass network controls such as firewalls."
+          ],
+          [
+            "When executed on a victim’s machine, Chisel’s client connects to an attacker-operated Chisel server."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_1e2c4cab6b65",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "slr.ps1",
+        "edges": [
+          "EDGE_24"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems."
+        ]
+      },
+      {
+        "node_id": "IOC_21e734ad86ea",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "sqlx.ps1",
+        "edges": [
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems."
+        ]
+      },
+      {
+        "node_id": "IOC_36ad0863cfcd",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "sav.ps1",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems."
+        ]
+      },
+      {
+        "node_id": "IOC_71f6570ff826",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "systemsvc.exe",
+        "edges": [
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "During our investigation, we found Classroom Spy binaries with names such as systemsvc.exe, vm3dservice.exe and vmtoolsd.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_74648699b7bf",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "vmtoolsd.exe",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "During our investigation, we found Classroom Spy binaries with names such as systemsvc.exe, vm3dservice.exe and vmtoolsd.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_7c07b8cebe44",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "vm3dservice.exe",
+        "edges": [
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "During our investigation, we found Classroom Spy binaries with names such as systemsvc.exe, vm3dservice.exe and vmtoolsd.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_95bd4b0e7b4f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "cfg.ps1",
+        "edges": [
+          "EDGE_30"
+        ],
+        "sentence_indices": [
+          16
+        ],
+        "span_sentences": [
+          "Figure 2 shows how the attackers used PowerShell scripts (such as slr.ps1, sqlx.ps1, sav.ps1 and cfg.ps1) to deploy and install Classroom Spy on the targeted systems."
+        ]
+      },
+      {
+        "node_id": "IOC_cbefad80454f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "CortexUpdater.exe",
+        "edges": [
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "Demonstrating an awareness of the security products installed on the infected devices, in this instance the threat actor disguised the malware as a file named CortexUpdater.exe, and the scheduled task as Palo Alto Cortex Services."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_090cb4f46edc",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_090cb4f46edc",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_090cb4f46edc",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_090cb4f46edc",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_11475a399ce3",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_49884b2b2c2e",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_51c9e7b91466",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_ba36b189820e",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_ba36b189820e",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_ba36b189820e",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_ba36b189820e",
+      "node_v": "TTP_T1543"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_c0ea5e1a232f",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_dd02e95c1417",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "HL_dd02e95c1417",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "HL_dd02e95c1417",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "HL_dd02e95c1417",
+      "node_v": "TTP_T1078"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "HL_dd02e95c1417",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "HL_dd02e95c1417",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "HL_dd02e95c1417",
+      "node_v": "TTP_T1543"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "HL_dd02e95c1417",
+      "node_v": "TTP_T1572"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "HL_e86d90498288",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "HL_e86d90498288",
+      "node_v": "TTP_T1090"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "HL_e86d90498288",
+      "node_v": "TTP_T1572"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_1e2c4cab6b65",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_21e734ad86ea",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_36ad0863cfcd",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_71f6570ff826",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_74648699b7bf",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_7c07b8cebe44",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_95bd4b0e7b4f",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_cbefad80454f",
+      "node_v": "TTP_T1036"
+    }
+  ]
+}

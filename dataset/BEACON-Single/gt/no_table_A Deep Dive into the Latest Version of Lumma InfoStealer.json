@@ -1,0 +1,516 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_153928bf9609",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "PowerShell",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          4,
+          5
+        ],
+        "span_sentences": [
+          "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts.",
+          "These scripts contain two executable files in Base64-encoded format,\n- A .NET executable (loader) named GOO.dll\n- The Lumma payload\nThe PowerShell script loads the .NET executable using the Reflection API, then locates the \"R2\" Class within the assembly, and invokes its \"Run()\" method."
+        ]
+      },
+      {
+        "node_id": "HL_28bb92983c8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma Stealer",
+        "edges": [
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Lumma Stealer, first identified in 2022, remains a significant threat to this day, continuously evolving its tactics, techniques, and procedures (TTPs) to stay aligned with emerging trends."
+        ]
+      },
+      {
+        "node_id": "HL_4710e22aa65a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "RegSvcs.exe",
+        "edges": [],
+        "sentence_indices": [
+          7,
+          8,
+          9
+        ],
+        "span_sentences": [
+          "The first argument is the path to RegSvcs.exe (\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"), and the second argument is the Lumma payload ($hgh).",
+          "Powershell\n$YOO=[object[]]\n('C:\\Windows\\MicrFFosoft.NFFET\\FraDDmewDDork\\v4.0.30319\\RegSvcs.exe'.replace('FF','').replace('DD',''),$hgh)\nThe .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process.",
+          "The injected Lumma payload then continues to operate, masquerading as the legitimate RegSvcs.exe utility."
+        ]
+      },
+      {
+        "node_id": "HL_9b5521d9eb21",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Crypto Obfuscator",
+        "edges": [
+          "EDGE_13"
+        ],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Powershell\n$YOO=[object[]]\n('C:\\Windows\\MicrFFosoft.NFFET\\FraDDmewDDork\\v4.0.30319\\RegSvcs.exe'.replace('FF','').replace('DD',''),$hgh)\nThe .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1005",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1005",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware is capable of exfiltrating sensitive data, including information from web browsers, email applications, cryptocurrency wallets, and other personally identifiable information (PII) stored in critical system directories."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [
+          "EDGE_1",
+          "EDGE_4",
+          "EDGE_13"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            5
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts.",
+            "These scripts contain two executable files in Base64-encoded format,\n- A .NET executable (loader) named GOO.dll\n- The Lumma payload\nThe PowerShell script loads the .NET executable using the Reflection API, then locates the \"R2\" Class within the assembly, and invokes its \"Run()\" method."
+          ],
+          [
+            "Powershell\n$YOO=[object[]]\n('C:\\Windows\\MicrFFosoft.NFFET\\FraDDmewDDork\\v4.0.30319\\RegSvcs.exe'.replace('FF','').replace('DD',''),$hgh)\nThe .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+          ],
+          [
+            "The first string to be decrypted is \"ntdll.dll\".",
+            "Similarly, the names of other important libraries such as kernel32.dll, user32.dll, winhttp.dll, and crypt32.dll are also decrypted during runtime."
+          ],
+          [
+            "Lumma employs advanced codeflow obfuscation techniques to significantly complicate the analysis."
+          ],
+          [
+            "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The injected Lumma payload then continues to operate, masquerading as the legitimate RegSvcs.exe utility."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Powershell\n$YOO=[object[]]\n('C:\\Windows\\MicrFFosoft.NFFET\\FraDDmewDDork\\v4.0.30319\\RegSvcs.exe'.replace('FF','').replace('DD',''),$hgh)\nThe .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_2",
+          "EDGE_7"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "A threat actor was observed distributing Lumma via obfuscated PowerShell scripts.",
+            "These scripts contain two executable files in Base64-encoded format,\n- A .NET executable (loader) named GOO.dll\n- The Lumma payload\nThe PowerShell script loads the .NET executable using the Reflection API, then locates the \"R2\" Class within the assembly, and invokes its \"Run()\" method."
+          ],
+          [
+            "These scripts contain two executable files in Base64-encoded format,\n- A .NET executable (loader) named GOO.dll\n- The Lumma payload\nThe PowerShell script loads the .NET executable using the Reflection API, then locates the \"R2\" Class within the assembly, and invokes its \"Run()\" method."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Lumma sample being 32-bit, it uses Heaven’s gate technique to run 64-bit code when it is executed on a 64-bit machine.",
+            "Heaven’s gate\nLumma identifies whether it’s running on a 32-bit or 64-bit machine by comparing the value of the Code Segment (CS) register."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1106",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            16,
+            18
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            41,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed."
+          ],
+          [
+            "Lumma uses an API hashing technique to dynamically resolve API functions during runtime, a common method employed by malware to locate APIs as needed.",
+            "Below listed are a few API’s resolved by Lumma dynamically,\n- RtlAllocateHeap\n- RtlReAllocateHeap\n- RtlFreeHeap\n- RtlExpandEnvironmentStrings\nAlso, APIs required for networking are resolved using the same function.",
+            "Lumma sample being 32-bit, it uses Heaven’s gate technique to run 64-bit code when it is executed on a 64-bit machine."
+          ],
+          [
+            "To invoke NTAPI functions, Lumma constructs a table that includes Syscall Hashes and Syscall Indexes."
+          ],
+          [
+            "Lumma leverages the syscall table to remap ntdll.dll based on the system architecture."
+          ],
+          [
+            "Lumma invokes the NtSetInformationProcess API, passing a structure that modifies the ProcessInformation class.",
+            "By setting the Callback field to 0 in the structure, callbacks set by security softwares like ETW (Event Tracing for Windows) are removed and this prevents those software from monitoring the system calls made by Lumma stealer."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1140",
+        "edges": [
+          "EDGE_10"
+        ],
+        "best_span_ranges": [
+          [
+            11,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The first string to be decrypted is \"ntdll.dll\".",
+            "Similarly, the names of other important libraries such as kernel32.dll, user32.dll, winhttp.dll, and crypt32.dll are also decrypted during runtime."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1497",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1497",
+        "edges": [
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            2
+          ],
+          [
+            43,
+            43
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Lumma Stealer, first identified in 2022, remains a significant threat to this day, continuously evolving its tactics, techniques, and procedures (TTPs) to stay aligned with emerging trends.",
+            "It is distributed on the dark web via a subscription-based model, Malware-As-A-Service(MaaS).",
+            "Lumma is designed to detect virtual and sandbox environments, allowing it to avoid detection by security systems that depend on the sandbox environment to assess the file behaviour."
+          ],
+          [
+            "To avoid detection in sandbox environments, Lumma checks for the presence of specific sandbox or antivirus-related DLLs."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1562",
+        "edges": [
+          "EDGE_12",
+          "EDGE_14",
+          "EDGE_15"
+        ],
+        "best_span_ranges": [
+          [
+            41,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Lumma invokes the NtSetInformationProcess API, passing a structure that modifies the ProcessInformation class.",
+            "By setting the Callback field to 0 in the structure, callbacks set by security softwares like ETW (Event Tracing for Windows) are removed and this prevents those software from monitoring the system calls made by Lumma stealer."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_19d9bb699b93",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861",
+        "edges": [],
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "Sample hash (SHA256) : 80741061ccb6a337cbdf1b1b75c4fcfae7dd6ccde8ecc333fcae7bcca5dc8861\nPerforming code analysis on the Lumma’s binary, its main function begins by passing encrypted strings to a decryption routine."
+        ]
+      },
+      {
+        "node_id": "IOC_4dd797f39a72",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\MicrFFosoft.NFFET\\FraDDmewDDork\\v4.0.30319\\RegSvcs.exe",
+        "edges": [],
+        "sentence_indices": [
+          8
+        ],
+        "span_sentences": [
+          "Powershell\n$YOO=[object[]]\n('C:\\Windows\\MicrFFosoft.NFFET\\FraDDmewDDork\\v4.0.30319\\RegSvcs.exe'.replace('FF','').replace('DD',''),$hgh)\nThe .NET binary, obfuscated with Crypto Obfuscator, injects the Lumma binary into the RegSvcs.exe process."
+        ]
+      },
+      {
+        "node_id": "IOC_5416f93f91eb",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "knowndlls32/ntdll.dll",
+        "edges": [
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "On a 32-bit system, knowndlls32/ntdll.dll is mapped."
+        ]
+      },
+      {
+        "node_id": "IOC_aa2863f3ee3f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "knowndlls/ntdll.dll",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          36
+        ],
+        "span_sentences": [
+          "On a 64-bit system, knowndlls/ntdll.dll is mapped."
+        ]
+      },
+      {
+        "node_id": "IOC_ad8f9bbd0da2",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The first argument is the path to RegSvcs.exe (\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\RegSvcs.exe\"), and the second argument is the Lumma payload ($hgh)."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_153928bf9609",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1005"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1055"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1082"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1106"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1140"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1497"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_28bb92983c8f",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "HL_9b5521d9eb21",
+      "node_v": "TTP_T1027"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_5416f93f91eb",
+      "node_v": "TTP_T1562"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_aa2863f3ee3f",
+      "node_v": "TTP_T1562"
+    }
+  ]
+}

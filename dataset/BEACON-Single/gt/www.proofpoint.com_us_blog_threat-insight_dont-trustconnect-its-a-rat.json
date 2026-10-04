@@ -1,0 +1,891 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0498fff54bd2",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TrustConnect",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8",
+          "EDGE_9"
+        ],
+        "sentence_indices": [
+          1,
+          2,
+          4,
+          10,
+          21,
+          24,
+          25,
+          26,
+          35,
+          37,
+          41,
+          55,
+          56
+        ],
+        "span_sentences": [
+          "It calls itself TrustConnect.",
+          "But at the end of January, Proofpoint observed a weird twist on the RMM landscape: a threat actor created a malware masquerading as an RMM called “TrustConnect Agent.”\nInitially, TrustConnect appeared to be another legitimate RMM tool being abused.",
+          "But upon investigation, Proofpoint researchers identified evidence that showed TrustConnect is actually new malware-as-a-service (MaaS) classified as a remote access trojan (RAT).",
+          "Cybercriminals are instructed to sign up for a \"free trial\", instructed on how to pay in cryptocurrency, and then verify payment in the TrustConnect portal.",
+          "Though likely that some low volume testing was done in previous weeks based on similar file sizes and file naming, threat actors were confirmed distributing TrustConnect on 27 January, correlating with the date the seller began digitally code signing the software.",
+          "The MsTeams file Proofpoint retrieved on 30 January 2026 was signed with the original filename “MsTeams.dll” with the EV certification dated 29 January and belonging to “TrustConnect Software PTY LTD.”, meaning that the threat actor either used an unsigned executable or some other payload early in the campaign The executable dropped a file called \"TrustConnectAgent.exe\" which communicated with the TrustConnect RAT C2 server, and likely led to the installation of additional payloads.",
+          "Additionally, Proofpoint has observed TrustConnect campaigns leading to the follow-on deployment of a legitimate remote access tool, typically ScreenConnect.",
+          "Proofpoint observed TrustConnect deploying ScreenConnect from at least nine distinct on‑premises (self‑hosted) ScreenConnect servers over a 10‑day period.",
+          "TrustConnect check-in.",
+          "TrustConnect receiving PowerShell command to install ScreenConnect.",
+          "Despite the architectural shift, the platform shares the distinct \"vibe-coded\" style observed in the TrustConnect website.",
+          "Although TrustConnect only masqueraded as a legitimate RMM, the lures, attack chains, and follow-on payloads (which include RMMs) show overlap with techniques and delivery methods that are frequently observed in RMM campaigns and used by multiple threat actors.",
+          "Based on website artifacts and functionality, both TrustConnect and DocConnect websites and agents are likely coded with the assistance of AI Agents, but the new version is significantly more advanced."
+        ]
+      },
+      {
+        "node_id": "HL_0a960352959c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Rhadamanthys",
+        "edges": [],
+        "sentence_indices": [
+          52
+        ],
+        "span_sentences": [
+          "Disruptions to MaaS operations like Redline, Lumma Stealer, and Rhadamanthys, have created new opportunities for malware creators to fill gaps in the cybercrime market."
+        ]
+      },
+      {
+        "node_id": "HL_12c7a2f5382a",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Dutch National Police",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "Notably, this handle was also mentioned as a VIP customer in Operation Magnus, a joint law enforcement effort led by the Dutch National Police to disrupt Redline and META information stealers in October 2024."
+        ]
+      },
+      {
+        "node_id": "HL_222971a4169e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "META",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "Notably, this handle was also mentioned as a VIP customer in Operation Magnus, a joint law enforcement effort led by the Dutch National Police to disrupt Redline and META information stealers in October 2024."
+        ]
+      },
+      {
+        "node_id": "HL_28bb92983c8f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Lumma Stealer",
+        "edges": [],
+        "sentence_indices": [
+          52
+        ],
+        "span_sentences": [
+          "Disruptions to MaaS operations like Redline, Lumma Stealer, and Rhadamanthys, have created new opportunities for malware creators to fill gaps in the cybercrime market."
+        ]
+      },
+      {
+        "node_id": "HL_3098043af30c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TrustConnect Agent",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "But at the end of January, Proofpoint observed a weird twist on the RMM landscape: a threat actor created a malware masquerading as an RMM called “TrustConnect Agent.”\nInitially, TrustConnect appeared to be another legitimate RMM tool being abused."
+        ]
+      },
+      {
+        "node_id": "HL_36eb4d7758f1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "DocConnect",
+        "edges": [],
+        "sentence_indices": [
+          39,
+          43,
+          56
+        ],
+        "span_sentences": [
+          "Shortly before publication of this report, Proofpoint analysts identified a pivot to parallel infrastructure and testing of a new agent payload, called \"DocConnect\" or \"SHIELD OS v1.0\".",
+          "The new default name the installer is \"DocConnect.Agent.exe\".",
+          "Based on website artifacts and functionality, both TrustConnect and DocConnect websites and agents are likely coded with the assistance of AI Agents, but the new version is significantly more advanced."
+        ]
+      },
+      {
+        "node_id": "HL_65314d14e101",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Supabase",
+        "edges": [],
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "Preliminary analysis reveals the new C2 panel is a React Single Page Application (SPA) backed by Supabase."
+        ]
+      },
+      {
+        "node_id": "HL_8a469e7e4cf5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Redline",
+        "edges": [],
+        "sentence_indices": [
+          49,
+          51,
+          52
+        ],
+        "span_sentences": [
+          "Notably, this handle was also mentioned as a VIP customer in Operation Magnus, a joint law enforcement effort led by the Dutch National Police to disrupt Redline and META information stealers in October 2024.",
+          "However, based on campaign artifacts, infrastructure, and malware delivery, Proofpoint assesses with moderate confidence, the TrustConnect actor was also likely a Redline customer.",
+          "Disruptions to MaaS operations like Redline, Lumma Stealer, and Rhadamanthys, have created new opportunities for malware creators to fill gaps in the cybercrime market."
+        ]
+      },
+      {
+        "node_id": "HL_903464adf545",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Proofpoint",
+        "edges": [],
+        "sentence_indices": [
+          0,
+          2,
+          4,
+          8,
+          17,
+          22,
+          26,
+          28,
+          39,
+          51
+        ],
+        "span_sentences": [
+          "Proofpoint observed a new malware-as-a-service (MaaS) masquerading as a legitimate remote monitoring and management (RMM) tool.",
+          "But at the end of January, Proofpoint observed a weird twist on the RMM landscape: a threat actor created a malware masquerading as an RMM called “TrustConnect Agent.”\nInitially, TrustConnect appeared to be another legitimate RMM tool being abused.",
+          "But upon investigation, Proofpoint researchers identified evidence that showed TrustConnect is actually new malware-as-a-service (MaaS) classified as a remote access trojan (RAT).",
+          "Proofpoint suspects the actor used an LLM to create the site.",
+          "In collaboration with fellow researchers at The Cert Graveyard, Proofpoint was able to get the EV certificate revoked on 6 February 2026, removing the trick the actor was using to bypass security tools and adding friction to their operations.",
+          "Proofpoint has observed campaigns from multiple different threat actors distributing this malware.",
+          "Proofpoint observed TrustConnect deploying ScreenConnect from at least nine distinct on‑premises (self‑hosted) ScreenConnect servers over a 10‑day period.",
+          "Proofpoint also observed deployment of Level RMM via an abused account as well as hands‑on-keyboard activity.",
+          "Shortly before publication of this report, Proofpoint analysts identified a pivot to parallel infrastructure and testing of a new agent payload, called \"DocConnect\" or \"SHIELD OS v1.0\".",
+          "However, based on campaign artifacts, infrastructure, and malware delivery, Proofpoint assesses with moderate confidence, the TrustConnect actor was also likely a Redline customer."
+        ]
+      },
+      {
+        "node_id": "HL_9402fd6856a8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Level RMM",
+        "edges": [],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "Proofpoint also observed deployment of Level RMM via an abused account as well as hands‑on-keyboard activity."
+        ]
+      },
+      {
+        "node_id": "HL_97dc510fd7f0",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "The Cert Graveyard",
+        "edges": [],
+        "sentence_indices": [
+          17
+        ],
+        "span_sentences": [
+          "In collaboration with fellow researchers at The Cert Graveyard, Proofpoint was able to get the EV certificate revoked on 6 February 2026, removing the trick the actor was using to bypass security tools and adding friction to their operations."
+        ]
+      },
+      {
+        "node_id": "HL_a7587c1c546a",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "ScreenConnect",
+        "edges": [
+          "EDGE_10",
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          25,
+          26,
+          37
+        ],
+        "span_sentences": [
+          "Additionally, Proofpoint has observed TrustConnect campaigns leading to the follow-on deployment of a legitimate remote access tool, typically ScreenConnect.",
+          "Proofpoint observed TrustConnect deploying ScreenConnect from at least nine distinct on‑premises (self‑hosted) ScreenConnect servers over a 10‑day period.",
+          "TrustConnect receiving PowerShell command to install ScreenConnect."
+        ]
+      },
+      {
+        "node_id": "HL_ae7ae0795bc4",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Telegram",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          44,
+          47
+        ],
+        "span_sentences": [
+          "The malware panel includes a Telegram handle (@zacchyy09) for support and sales inquiries.",
+          "In addition, on 6 February 2026 (the same date the EV certificate was revoked), the open registration was closed and replaced with instructions to contact the same Telegram handle to get access to the MaaS:\nFigure 21."
+        ]
+      },
+      {
+        "node_id": "HL_c276d68c7e86",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "Operation Magnus",
+        "edges": [],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "Notably, this handle was also mentioned as a VIP customer in Operation Magnus, a joint law enforcement effort led by the Dutch National Police to disrupt Redline and META information stealers in October 2024."
+        ]
+      },
+      {
+        "node_id": "HL_e4d0609e7549",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "TrustConnect Software PTY LTD",
+        "edges": [],
+        "sentence_indices": [
+          11,
+          24
+        ],
+        "span_sentences": [
+          "The website is also the front they used to purchase a legitimate Extended Validation (EV) certificate in the name of \"TrustConnect Software PTY LTD\", supposedly based in Alexandra, South Africa.",
+          "The MsTeams file Proofpoint retrieved on 30 January 2026 was signed with the original filename “MsTeams.dll” with the EV certification dated 29 January and belonging to “TrustConnect Software PTY LTD.”, meaning that the threat actor either used an unsigned executable or some other payload early in the campaign The executable dropped a file called \"TrustConnectAgent.exe\" which communicated with the TrustConnect RAT C2 server, and likely led to the installation of additional payloads."
+        ]
+      },
+      {
+        "node_id": "HL_e8c67a338739",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SHIELD OS v1.0",
+        "edges": [],
+        "sentence_indices": [
+          39
+        ],
+        "span_sentences": [
+          "Shortly before publication of this report, Proofpoint analysts identified a pivot to parallel infrastructure and testing of a new agent payload, called \"DocConnect\" or \"SHIELD OS v1.0\"."
+        ]
+      },
+      {
+        "node_id": "HL_ebe4aefb6c3a",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Alexandra, South Africa",
+        "edges": [],
+        "sentence_indices": [
+          11
+        ],
+        "span_sentences": [
+          "The website is also the front they used to purchase a legitimate Extended Validation (EV) certificate in the name of \"TrustConnect Software PTY LTD\", supposedly based in Alexandra, South Africa."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1021",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1021",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The remote desktop management function includes features for full mouse and keyboard control, surveillance on the compromised host, UAC bypass, ability to hide operator activity from the victim, screen recording, and the ability to switch between victim displays."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1036",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            43,
+            43
+          ],
+          [
+            55,
+            55
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The new default name the installer is \"DocConnect.Agent.exe\"."
+          ],
+          [
+            "Although TrustConnect only masqueraded as a legitimate RMM, the lures, attack chains, and follow-on payloads (which include RMMs) show overlap with techniques and delivery methods that are frequently observed in RMM campaigns and used by multiple threat actors."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            37,
+            37
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "TrustConnect receiving PowerShell command to install ScreenConnect."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_2",
+          "EDGE_13",
+          "EDGE_15",
+          "EDGE_17"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            9
+          ],
+          [
+            29,
+            29
+          ],
+          [
+            33,
+            33
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware creator uses the domain as the “business website” designed to convince the public (including certificate providers) that the software is a legitimate RMM app, providing fake details like customer statistics and software documentation.",
+            "Proofpoint suspects the actor used an LLM to create the site.",
+            "This website is also the portal for criminals to sign up for the service and acts as the command and control (C2) for the malware."
+          ],
+          [
+            "The platform provides a web-based C2 dashboard, automated payload generation with digital signatures, and a subscription-based access model which costs $300 per month paid via cryptocurrency."
+          ],
+          [
+            "The malware communicates with the C2 on the same API as the web panel and doesn’t use any additional encryption other than standard SSL/TLS."
+          ],
+          [
+            "Initial analysis of the new agent shows the integration of SignalR instead of raw WebSockets, as well as giving users of the reworked MaaS the ability to include custom PDF lures in the installer itself."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_12"
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            9
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            42,
+            42
+          ],
+          [
+            44,
+            44
+          ],
+          [
+            47,
+            47
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware creator uses the domain as the “business website” designed to convince the public (including certificate providers) that the software is a legitimate RMM app, providing fake details like customer statistics and software documentation.",
+            "Proofpoint suspects the actor used an LLM to create the site.",
+            "This website is also the portal for criminals to sign up for the service and acts as the command and control (C2) for the malware."
+          ],
+          [
+            "The centralized C2 server, trustconnectsoftware[.]com, manages multiple customers."
+          ],
+          [
+            "Initial analysis of the new agent shows the integration of SignalR instead of raw WebSockets, as well as giving users of the reworked MaaS the ability to include custom PDF lures in the installer itself."
+          ],
+          [
+            "The malware panel includes a Telegram handle (@zacchyy09) for support and sales inquiries."
+          ],
+          [
+            "In addition, on 6 February 2026 (the same date the EV certificate was revoked), the open registration was closed and replaced with instructions to contact the same Telegram handle to get access to the MaaS:\nFigure 21."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_3",
+          "EDGE_10",
+          "EDGE_14"
+        ],
+        "best_span_ranges": [
+          [
+            24,
+            24
+          ],
+          [
+            26,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The MsTeams file Proofpoint retrieved on 30 January 2026 was signed with the original filename “MsTeams.dll” with the EV certification dated 29 January and belonging to “TrustConnect Software PTY LTD.”, meaning that the threat actor either used an unsigned executable or some other payload early in the campaign The executable dropped a file called \"TrustConnectAgent.exe\" which communicated with the TrustConnect RAT C2 server, and likely led to the installation of additional payloads."
+          ],
+          [
+            "Proofpoint observed TrustConnect deploying ScreenConnect from at least nine distinct on‑premises (self‑hosted) ScreenConnect servers over a 10‑day period."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1113",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The remote desktop management function includes features for full mouse and keyboard control, surveillance on the compromised host, UAC bypass, ability to hide operator activity from the victim, screen recording, and the ability to switch between victim displays."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1204",
+        "edges": [
+          "EDGE_5",
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            23,
+            23
+          ],
+          [
+            42,
+            42
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Messages contained URLs leading to an executable file \"MsTeams.exe\"."
+          ],
+          [
+            "Initial analysis of the new agent shows the integration of SignalR instead of raw WebSockets, as well as giving users of the reworked MaaS the ability to include custom PDF lures in the installer itself."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1219",
+        "edges": [
+          "EDGE_6",
+          "EDGE_11"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            26
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "Additionally, Proofpoint has observed TrustConnect campaigns leading to the follow-on deployment of a legitimate remote access tool, typically ScreenConnect.",
+            "Proofpoint observed TrustConnect deploying ScreenConnect from at least nine distinct on‑premises (self‑hosted) ScreenConnect servers over a 10‑day period."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1548",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1548",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The remote desktop management function includes features for full mouse and keyboard control, surveillance on the compromised host, UAC bypass, ability to hide operator activity from the victim, screen recording, and the ability to switch between victim displays."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1553",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1553",
+        "edges": [
+          "EDGE_7",
+          "EDGE_19",
+          "EDGE_20"
+        ],
+        "best_span_ranges": [
+          [
+            17,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In collaboration with fellow researchers at The Cert Graveyard, Proofpoint was able to get the EV certificate revoked on 6 February 2026, removing the trick the actor was using to bypass security tools and adding friction to their operations."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1566",
+        "edges": [
+          "EDGE_8"
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            22
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This aligns with the actor stopping new subscriptions, but current customers could still distribute the files via email campaigns.",
+            "Threat actors in the RMM ecosystem frequently rotate payloads, which allows a specific URL to lead to different malware or abused RMMs throughout a campaign.",
+            "Though likely that some low volume testing was done in previous weeks based on similar file sizes and file naming, threat actors were confirmed distributing TrustConnect on 27 January, correlating with the date the seller began digitally code signing the software.",
+            "Proofpoint has observed campaigns from multiple different threat actors distributing this malware."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1573",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1573",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            33,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware communicates with the C2 on the same API as the web panel and doesn’t use any additional encryption other than standard SSL/TLS."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1583",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1583",
+        "edges": [
+          "EDGE_16"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The malware domain, trustconnectsoftware[.]com, was created on 12 January 2026."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1588",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1588",
+        "edges": [
+          "EDGE_9"
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            12
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The certificate was valid from 27 January, and the actor used this EV certificate to sign the malware."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_0e306cb1410f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "TrustConnectAgent.exe",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The MsTeams file Proofpoint retrieved on 30 January 2026 was signed with the original filename “MsTeams.dll” with the EV certification dated 29 January and belonging to “TrustConnect Software PTY LTD.”, meaning that the threat actor either used an unsigned executable or some other payload early in the campaign The executable dropped a file called \"TrustConnectAgent.exe\" which communicated with the TrustConnect RAT C2 server, and likely led to the installation of additional payloads."
+        ]
+      },
+      {
+        "node_id": "IOC_1f7468da989b",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "trustconnectsoftware[.]com",
+        "edges": [
+          "EDGE_15",
+          "EDGE_16"
+        ],
+        "sentence_indices": [
+          5,
+          30
+        ],
+        "span_sentences": [
+          "The malware domain, trustconnectsoftware[.]com, was created on 12 January 2026.",
+          "The centralized C2 server, trustconnectsoftware[.]com, manages multiple customers."
+        ]
+      },
+      {
+        "node_id": "IOC_342ac6d8feea",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "178[.]128[.]69[.]245",
+        "edges": [
+          "EDGE_17"
+        ],
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "GET |\n|\nThe malware C2 was hosted on 178[.]128[.]69[.]245."
+        ]
+      },
+      {
+        "node_id": "IOC_3e7f5f5c9764",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "MsTeams.exe",
+        "edges": [
+          "EDGE_18",
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "Messages contained URLs leading to an executable file \"MsTeams.exe\"."
+        ]
+      },
+      {
+        "node_id": "IOC_4af63106fea1",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "DocConnect.Agent.exe",
+        "edges": [],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "The new default name the installer is \"DocConnect.Agent.exe\"."
+        ]
+      },
+      {
+        "node_id": "IOC_b4b6a0cb20a0",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "MsTeams.dll",
+        "edges": [
+          "EDGE_20"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "The MsTeams file Proofpoint retrieved on 30 January 2026 was signed with the original filename “MsTeams.dll” with the EV certification dated 29 January and belonging to “TrustConnect Software PTY LTD.”, meaning that the threat actor either used an unsigned executable or some other payload early in the campaign The executable dropped a file called \"TrustConnectAgent.exe\" which communicated with the TrustConnect RAT C2 server, and likely led to the installation of additional payloads."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1036"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1113"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1553"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1566"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "HL_0498fff54bd2",
+      "node_v": "TTP_T1588"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "HL_a7587c1c546a",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "HL_a7587c1c546a",
+      "node_v": "TTP_T1219"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "HL_ae7ae0795bc4",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_0e306cb1410f",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_0e306cb1410f",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_1f7468da989b",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_1f7468da989b",
+      "node_v": "TTP_T1583"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_342ac6d8feea",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_3e7f5f5c9764",
+      "node_v": "TTP_T1204"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_3e7f5f5c9764",
+      "node_v": "TTP_T1553"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_b4b6a0cb20a0",
+      "node_v": "TTP_T1553"
+    }
+  ]
+}

@@ -1,0 +1,460 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_0c451fd5e540",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Mustang Panda",
+        "sentence_indices": [
+          0,
+          1,
+          3
+        ],
+        "span_sentences": [
+          "The Chinese espionage-focused APT Mustang Panda has been using a kernel-mode rootkit in recent attacks against Asian targets, Kaspersky reports.",
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe.",
+          "In April, cybersecurity firm Zscaler detailed Mustang Panda’s use of an updated ToneShell backdoor, along with several new tools, including an EDR evasion driver."
+        ],
+        "edges": [
+          "EDGE_7ead34281cc7",
+          "EDGE_96c4f5cae7f2"
+        ]
+      },
+      {
+        "node_id": "HL_124c917eb7a7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "ToneShell",
+        "sentence_indices": [
+          3,
+          4,
+          15,
+          16
+        ],
+        "span_sentences": [
+          "In April, cybersecurity firm Zscaler detailed Mustang Panda’s use of an updated ToneShell backdoor, along with several new tools, including an EDR evasion driver.",
+          "Now, Kaspersky says that, in mid-2025, the espionage group was seen using a signed driver file that registers as a mini-filter driver to deploy the ToneShell backdoor against an Asian target.",
+          "The first spawns a svchost process and injects delay-inducing shellcode into it, while the second is the ToneShell backdoor that is injected into the spawned svchost process.",
+          "“This is the first time we’ve seen ToneShell delivered through a kernel-mode loader, giving it protection from user-mode monitoring and benefiting from the rootkit capabilities of the driver that hides its activity from security tools,” Kaspersky notes."
+        ],
+        "edges": [
+          "EDGE_69e7a3f1dcba",
+          "EDGE_f73debe7a363"
+        ]
+      },
+      {
+        "node_id": "HL_2674ae81187e",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Red Delta",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe."
+        ],
+        "edges": [
+          "EDGE_849ade68b308",
+          "EDGE_aa85ed6b9a43"
+        ]
+      },
+      {
+        "node_id": "HL_26fd88605226",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Bronze President",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe."
+        ],
+        "edges": [
+          "EDGE_e4b0716fb098",
+          "EDGE_f26bd47c2c4b"
+        ]
+      },
+      {
+        "node_id": "HL_2e9e1d15ef40",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Europe",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          10
+        ],
+        "span_sentences": [
+          "The chosen altitude, Kaspersky explains, exceeds the range designated by Microsoft for the FSFilter Anti-Virus Load Order Group."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6389a383bed8",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "US",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "In early 2025, US and French authorities attempted to clean thousands of computers that the APT had infected with the PlugX RAT."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_7becf1b95eb5",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "East Asia",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_819c704a3fe3",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Basin",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe."
+        ],
+        "edges": [
+          "EDGE_1bc7a9d6053c",
+          "EDGE_1ef36beb42db"
+        ]
+      },
+      {
+        "node_id": "HL_a41b26383b4e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PlugX RAT",
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "In early 2025, US and French authorities attempted to clean thousands of computers that the APT had infected with the PlugX RAT."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ac58a7f99304",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "HoneyMyte",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe."
+        ],
+        "edges": [
+          "EDGE_125efaa32cc5",
+          "EDGE_67a88af2a3aa"
+        ]
+      },
+      {
+        "node_id": "HL_c62b9732fdb0",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "government and military entities",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_cd8ed940f5f1",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Zscaler",
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "In April, cybersecurity firm Zscaler detailed Mustang Panda’s use of an updated ToneShell backdoor, along with several new tools, including an EDR evasion driver."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_cda5242f22cb",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Kaspersky",
+        "sentence_indices": [
+          0,
+          1,
+          4,
+          6,
+          10,
+          16
+        ],
+        "span_sentences": [
+          "The Chinese espionage-focused APT Mustang Panda has been using a kernel-mode rootkit in recent attacks against Asian targets, Kaspersky reports.",
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe.",
+          "Now, Kaspersky says that, in mid-2025, the espionage group was seen using a signed driver file that registers as a mini-filter driver to deploy the ToneShell backdoor against an Asian target.",
+          "“To obfuscate the actual behavior of the driver module, the attackers used dynamic resolution of the required API addresses from hash values,” Kaspersky explains.",
+          "The chosen altitude, Kaspersky explains, exceeds the range designated by Microsoft for the FSFilter Anti-Virus Load Order Group.",
+          "“This is the first time we’ve seen ToneShell delivered through a kernel-mode loader, giving it protection from user-mode monitoring and benefiting from the rootkit capabilities of the driver that hides its activity from security tools,” Kaspersky notes."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_d7dc87089592",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Earth Preta",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "Also known as Basin, Bronze President, Earth Preta, and Red Delta, and tracked by Kaspersky as HoneyMyte, Mustang Panda mainly targets government and military entities in East Asia and Europe."
+        ],
+        "edges": [
+          "EDGE_7da15af3b756",
+          "EDGE_b8c6dcb206eb"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1014",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1014",
+        "ttp_id": "T1014",
+        "best_span_sentences_list": [
+          [
+            "The Chinese espionage-focused APT Mustang Panda has been using a kernel-mode rootkit in recent attacks against Asian targets, Kaspersky reports."
+          ],
+          [
+            "“This is the first time we’ve seen ToneShell delivered through a kernel-mode loader, giving it protection from user-mode monitoring and benefiting from the rootkit capabilities of the driver that hides its activity from security tools,” Kaspersky notes."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            0
+          ],
+          [
+            16,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_125efaa32cc5",
+          "EDGE_1ef36beb42db",
+          "EDGE_7ead34281cc7",
+          "EDGE_849ade68b308",
+          "EDGE_b8c6dcb206eb",
+          "EDGE_e4b0716fb098"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "“To obfuscate the actual behavior of the driver module, the attackers used dynamic resolution of the required API addresses from hash values,” Kaspersky explains."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "The driver contains two user-mode shellcodes that are executed as separate threads and are designed to protect the driver’s module and the user-mode process that the backdoor is injected into."
+          ],
+          [
+            "“Since filters with lower altitudes sit deeper in the I/O stack, the malicious driver intercepts file operations before legitimate low-altitude filters like antivirus components, allowing it to circumvent security checks,” the cybersecurity firm explains.",
+            "The driver uses a similar routine to intercept and block operations targeting the user-mode processes in which the backdoor has been injected."
+          ],
+          [
+            "Kaspersky observed the backdoor delivering two user-mode payloads.",
+            "The first spawns a svchost process and injects delay-inducing shellcode into it, while the second is the ToneShell backdoor that is injected into the spawned svchost process."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ],
+          [
+            11,
+            12
+          ],
+          [
+            14,
+            15
+          ]
+        ],
+        "edges": [
+          "EDGE_69e7a3f1dcba"
+        ]
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "In April, cybersecurity firm Zscaler detailed Mustang Panda’s use of an updated ToneShell backdoor, along with several new tools, including an EDR evasion driver."
+          ],
+          [
+            "To protect itself, the driver registers with the Filter Manager and sets up a pre-operation callback to check all operations targeting itself.",
+            "If any is detected, it sets a flag to deny the operation, thus preventing security tools from removing or quarantining it.",
+            "Additionally, the driver builds a list of registry paths and parameter names, then assigns itself an altitude value, and monitors registry operations to block those targeting keys in its protected list.",
+            "The chosen altitude, Kaspersky explains, exceeds the range designated by Microsoft for the FSFilter Anti-Virus Load Order Group.",
+            "“Since filters with lower altitudes sit deeper in the I/O stack, the malicious driver intercepts file operations before legitimate low-altitude filters like antivirus components, allowing it to circumvent security checks,” the cybersecurity firm explains.",
+            "The driver uses a similar routine to intercept and block operations targeting the user-mode processes in which the backdoor has been injected.",
+            "However, it removes the protection for processes after the backdoor has performed its activities."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            7,
+            13
+          ]
+        ],
+        "edges": [
+          "EDGE_1bc7a9d6053c",
+          "EDGE_67a88af2a3aa",
+          "EDGE_7da15af3b756",
+          "EDGE_96c4f5cae7f2",
+          "EDGE_aa85ed6b9a43",
+          "EDGE_f26bd47c2c4b",
+          "EDGE_f73debe7a363"
+        ]
+      }
+    ],
+    "ioc": []
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_125efaa32cc5",
+      "node_u": "HL_ac58a7f99304",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bc7a9d6053c",
+      "node_u": "HL_819c704a3fe3",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1ef36beb42db",
+      "node_u": "HL_819c704a3fe3",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_67a88af2a3aa",
+      "node_u": "HL_ac58a7f99304",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_69e7a3f1dcba",
+      "node_u": "HL_124c917eb7a7",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7da15af3b756",
+      "node_u": "HL_d7dc87089592",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7ead34281cc7",
+      "node_u": "HL_0c451fd5e540",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_849ade68b308",
+      "node_u": "HL_2674ae81187e",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_96c4f5cae7f2",
+      "node_u": "HL_0c451fd5e540",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_aa85ed6b9a43",
+      "node_u": "HL_2674ae81187e",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b8c6dcb206eb",
+      "node_u": "HL_d7dc87089592",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e4b0716fb098",
+      "node_u": "HL_26fd88605226",
+      "node_v": "TTP_T1014",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f26bd47c2c4b",
+      "node_u": "HL_26fd88605226",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f73debe7a363",
+      "node_u": "HL_124c917eb7a7",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

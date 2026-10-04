@@ -1,0 +1,464 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_013d54f7f40a",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "insurance providers",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "and one in South Korea across several business verticals, including manufacturing, wealth management, insurance providers and pharmaceuticals."
+        ]
+      },
+      {
+        "node_id": "HL_17bdd635bb28",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "vssadmin.exe",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It deletes the volume shadow copy by executing the local Windows binary vssadmin.exe, an administrative tool used to manipulate shadow copies."
+        ]
+      },
+      {
+        "node_id": "HL_1a6eefc70d9b",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "wealth management",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "and one in South Korea across several business verticals, including manufacturing, wealth management, insurance providers and pharmaceuticals."
+        ]
+      },
+      {
+        "node_id": "HL_39f0c11b7b4f",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Babuk group",
+        "edges": [],
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "After an alleged member of the Babuk group leaked the full source code of its ransomware in September 2021, various ransomware families have emerged leveraging the leaked Babuk code."
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [],
+        "sentence_indices": [
+          29
+        ],
+        "span_sentences": [
+          "It deletes the volume shadow copy by executing the local Windows binary vssadmin.exe, an administrative tool used to manipulate shadow copies."
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a new ransomware actor called RA Group that has been operating since at least April 22, 2023."
+        ]
+      },
+      {
+        "node_id": "HL_4c7cc7b81a9a",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "pharmaceuticals",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "and one in South Korea across several business verticals, including manufacturing, wealth management, insurance providers and pharmaceuticals."
+        ]
+      },
+      {
+        "node_id": "HL_745298c21c21",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "RA Group",
+        "edges": [
+          "EDGE_1",
+          "EDGE_2",
+          "EDGE_3",
+          "EDGE_4",
+          "EDGE_5",
+          "EDGE_6"
+        ],
+        "sentence_indices": [
+          0,
+          4,
+          5,
+          9,
+          12,
+          14,
+          15,
+          16,
+          19,
+          20,
+          21,
+          23,
+          24,
+          31
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a new ransomware actor called RA Group that has been operating since at least April 22, 2023.",
+          "- Talos assesses with high confidence that RA Group is leveraging leaked Babuk ransomware source code.",
+          "Talos recently discovered a new ransomware actor, RA Group, who emerged in April 2023 and seems to be using leaked Babuk source code in its attacks.",
+          "Like other ransomware actors, RA Group also operates a data leak site in which they threaten to publish the data exfiltrated from victims who fail to contact them within a specified time or do not meet their ransom demands.",
+          "RA Group launched their data leak site on April 22, 2023, and on April 27, we observed the first batch of victims, three in total, followed by another one on April 28.",
+          "In their leak site, RA Group discloses the name of the victim's organization, a list of their exfiltrated data and the total size, and the victim’s official URL, which is typical among other ransomware groups’ leak sites.",
+          "The RA Group is also selling the victim’s exfiltrated data on their leak site by hosting the victims’ leaked data on a secured Tor site.",
+          "RA Group uses customized ransom notes, including the victim’s name and a unique link to download the exfiltration proofs.",
+          "RA Group deploys their ransomware with a built-in ransom note specifically written to each victim with their name on it, a common practice among ransomware groups.",
+          "However, it is unusual that RA Group names the victim in the executable, as well.",
+          "Our analysis shows that RA Group’s ransomware sample is written in C++ and was compiled on April 23, 2023.",
+          "It contains the same mutex name as the Babuk ransomware, supporting our high-confidence assessment that RA Group built their ransomware using Babuk’s leaked source code.",
+          "RA Group’s ransomware executable uses the cryptography scheme with curve25519 and eSTREAM cipher hc-128 algorithm for encryption.",
+          "RA Group’s malware enumerates the network shares and available network resources on the victim’s machine using the APIs NetShareEnum, WNetOpenEnumW and WNetEnumResourceW to encrypt files on the remotely mapped drives of other machines or servers."
+        ]
+      },
+      {
+        "node_id": "HL_b02c595b6381",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "qTox",
+        "edges": [],
+        "sentence_indices": [
+          34
+        ],
+        "span_sentences": [
+          "These files and folders are necessary for the system to work properly and to allow the victims to download the qTox application and contact RA group operators using the qTox ID provided on the ransom note."
+        ]
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "sentence_indices": [
+          2
+        ],
+        "span_sentences": [
+          "To date, the group has compromised three organizations in the U.S."
+        ]
+      },
+      {
+        "node_id": "HL_c328f2d52700",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "manufacturing",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "and one in South Korea across several business verticals, including manufacturing, wealth management, insurance providers and pharmaceuticals."
+        ]
+      },
+      {
+        "node_id": "HL_ca1cc53ee2f7",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Babuk ransomware",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "It contains the same mutex name as the Babuk ransomware, supporting our high-confidence assessment that RA Group built their ransomware using Babuk’s leaked source code."
+        ]
+      },
+      {
+        "node_id": "HL_cb6e965b7713",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Korea",
+        "edges": [],
+        "sentence_indices": [
+          3
+        ],
+        "span_sentences": [
+          "and one in South Korea across several business verticals, including manufacturing, wealth management, insurance providers and pharmaceuticals."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1070",
+        "edges": [
+          "EDGE_1"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The ransomware deletes the contents of the victim machine’s Recycle Bin with the API SHEmptyRecyclebinA.",
+            "It deletes the volume shadow copy by executing the local Windows binary vssadmin.exe, an administrative tool used to manipulate shadow copies."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1083",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1083",
+        "edges": [
+          "EDGE_2"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            30
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The ransomware enumerates every logical drive on the victim’s machine by comparing logical drive letters with the list of drive letter strings in the binary and mounts the identified drives to perform the encryption process."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1107",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1107",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ],
+          [
+            28,
+            29
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The ransomware deletes the contents of the victim machine’s Recycle Bin with the API SHEmptyRecyclebinA."
+          ],
+          [
+            "The ransomware deletes the contents of the victim machine’s Recycle Bin with the API SHEmptyRecyclebinA.",
+            "It deletes the volume shadow copy by executing the local Windows binary vssadmin.exe, an administrative tool used to manipulate shadow copies."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1135",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1135",
+        "edges": [
+          "EDGE_4"
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            31
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The ransomware enumerates every logical drive on the victim’s machine by comparing logical drive letters with the list of drive letter strings in the binary and mounts the identified drives to perform the encryption process.",
+            "RA Group’s malware enumerates the network shares and available network resources on the victim’s machine using the APIs NetShareEnum, WNetOpenEnumW and WNetEnumResourceW to encrypt files on the remotely mapped drives of other machines or servers."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1486",
+        "edges": [
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            8,
+            12
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            16,
+            17
+          ],
+          [
+            23,
+            24
+          ],
+          [
+            27,
+            27
+          ],
+          [
+            30,
+            30
+          ],
+          [
+            30,
+            31
+          ],
+          [
+            32,
+            33
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Talos assesses with high confidence that RA Group is leveraging leaked Babuk ransomware source code."
+          ],
+          [
+            "The group is launching double extortion attacks.",
+            "Like other ransomware actors, RA Group also operates a data leak site in which they threaten to publish the data exfiltrated from victims who fail to contact them within a specified time or do not meet their ransom demands.",
+            "This form of double extortion increases the chances that a victim will pay the requested ransom.",
+            "This actor is expanding its operations at a fast pace.",
+            "RA Group launched their data leak site on April 22, 2023, and on April 27, we observed the first batch of victims, three in total, followed by another one on April 28."
+          ],
+          [
+            "Like other ransomware actors, RA Group also operates a data leak site in which they threaten to publish the data exfiltrated from victims who fail to contact them within a specified time or do not meet their ransom demands."
+          ],
+          [
+            "RA Group uses customized ransom notes, including the victim’s name and a unique link to download the exfiltration proofs.",
+            "After activating the ransomware executable on the victim’s machine, the actor drops the ransom note file called “How To Restore Your Files.txt.”\nBased on the ransom notes we analyzed, if the victim fails to contact the actors within three days, the group leaks the victim’s files."
+          ],
+          [
+            "It contains the same mutex name as the Babuk ransomware, supporting our high-confidence assessment that RA Group built their ransomware using Babuk’s leaked source code.",
+            "RA Group’s ransomware executable uses the cryptography scheme with curve25519 and eSTREAM cipher hc-128 algorithm for encryption."
+          ],
+          [
+            "After encrypting the files, the ransomware appends the file extension “.GAGUP” to the encrypted files on the victim’s machine."
+          ],
+          [
+            "The ransomware enumerates every logical drive on the victim’s machine by comparing logical drive letters with the list of drive letter strings in the binary and mounts the identified drives to perform the encryption process."
+          ],
+          [
+            "The ransomware enumerates every logical drive on the victim’s machine by comparing logical drive letters with the list of drive letter strings in the binary and mounts the identified drives to perform the encryption process.",
+            "RA Group’s malware enumerates the network shares and available network resources on the victim’s machine using the APIs NetShareEnum, WNetOpenEnumW and WNetEnumResourceW to encrypt files on the remotely mapped drives of other machines or servers."
+          ],
+          [
+            "The ransomware does not encrypt all files and folders.",
+            "The image below shows the hardcoded list of folders the malware won’t encrypt so the victim can contact the RA Group operators."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1588",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1588",
+        "edges": [
+          "EDGE_6"
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "- Talos assesses with high confidence that RA Group is leveraging leaked Babuk ransomware source code."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_599afb6ce3bc",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "gofile[.]io",
+        "edges": [],
+        "sentence_indices": [
+          18
+        ],
+        "span_sentences": [
+          "The victims can confirm the exfiltration of their information by downloading a file using the gofile[.]io link in the ransom note."
+        ]
+      },
+      {
+        "node_id": "IOC_6b5e5a105967",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "C:\\Users\\attack\\Desktop\\Ransomware.Multi.Babuk.c\\windows\\x64\\Release\\e.pdb",
+        "edges": [],
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "The binary has the debug path “C:\\Users\\attack\\Desktop\\Ransomware.Multi.Babuk.c\\windows\\x64\\Release\\e.pdb”."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_745298c21c21",
+      "node_v": "TTP_T1070"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_745298c21c21",
+      "node_v": "TTP_T1083"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_745298c21c21",
+      "node_v": "TTP_T1107"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_745298c21c21",
+      "node_v": "TTP_T1135"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_745298c21c21",
+      "node_v": "TTP_T1486"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_745298c21c21",
+      "node_v": "TTP_T1588"
+    }
+  ]
+}

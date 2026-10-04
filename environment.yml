@@ -1,0 +1,14 @@
+# Standalone Conda environment for BEACON.
+#   conda env create -f environment.yml
+#   conda activate beacon
+# The reference GPT-4o runs behind the paper used Python 3.14.0 with
+# openai 2.14.0, Jinja2 3.1.6, nltk 3.9.2 and PyYAML 6.0.3. Python 3.11 is
+# pinned here for wider wheel availability; the code needs >= 3.10.
+name: beacon
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -e .

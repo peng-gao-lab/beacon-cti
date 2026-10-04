@@ -1,0 +1,3180 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_04d8f686c29e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "BitTorrent",
+        "edges": [
+          "EDGE_6e6cfb1dd163",
+          "EDGE_f7d26f086c9b"
+        ],
+        "source": {
+          "BitTorrent_blog.talosintelligence.com_uat-9244": [
+            [
+              3,
+              "- Talos also discovered that UAT-9244 uses “PeerTime,” an ELF-based backdoor that uses the BitTorrent protocol to conduct malicious operations on an infected system."
+            ],
+            [
+              32,
+              "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+            ]
+          ],
+          "BitTorrent_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              14,
+              "Unlike traditional malware that communicates with a centralized command-and-control server, PeerTime uses the BitTorrent protocol to retrieve instructions and download additional payloads from peers."
+            ]
+          ],
+          "BitTorrent_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              3,
+              "New malware targeting telco networks\nThe researchers found that the campaign used three previously undocumented malware families: TernDoor, a Windows backdoor; PeerTime, a Linux backdoor that uses BitTorrent; and BruteEntry, a brute-force scanner that builds proxy infrastructure (ORBs)."
+            ],
+            [
+              12,
+              "PeerTime, an ELF-based peer-to-peer (P2P) backdoor, uses the BitTorrent protocol for command-and-control (C2) communications, downloads and executes payloads from peers, and uses BusyBox to write the files on the host."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_1c37b0e8d6ea",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "critical telecommunications infrastructure",
+        "edges": [],
+        "source": {
+          "critical telecommunications infrastructure_blog.talosintelligence.com_uat-9244": [
+            [
+              1,
+              "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants."
+            ]
+          ],
+          "critical telecommunications infrastructure_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              0,
+              "A China-linked advanced persistent threat (APT) actor has been targeting critical telecommunications infrastructure in South America since 2024, targeting Windows and Linux systems and edge devices with three different implants."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_24107c8dc40e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Tomcat",
+        "edges": [
+          "EDGE_93cf84b8e79e",
+          "EDGE_5256d1b9e02e"
+        ],
+        "source": {
+          "Tomcat_blog.talosintelligence.com_uat-9244": [
+            [
+              4,
+              "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+            ],
+            [
+              37,
+              "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers."
+            ],
+            [
+              44,
+              "] }\nThe “type” field in the json defines the type of scan to conduct — either “tomcat”,“postgres”, or “ssh”."
+            ],
+            [
+              45,
+              "The agent will then use a set of embedded credentials to attempt to brute force into either a Tomcat server application at the URL “https[://]<IP>:<Port>/manager/html”, or will brute force into a Postgres instance, either defined in the JSON (<IP><Port>) from the C2 or using the port 5432 if no port is specified."
+            ]
+          ],
+          "Tomcat_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              20,
+              "Also staged in the threat actor's servers are a set of shell scripts and payloads, including a brute-force scanner codenamed BruteEntry that's installed on edge devices to turn them into mass-scanning proxy nodes within an Operational Relay Box (ORB) capable of brute-forcing Postgres, SSH, and Tomcat servers."
+            ]
+          ],
+          "Tomcat_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              20,
+              "BruteEntry scans for services such as SSH, Postgres and Tomcat and attempts authentication using built-in credential lists."
+            ]
+          ],
+          "Tomcat_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              15,
+              "The attacker uses the machines running BruteEntry to scan for new targets and brute-force access to SSH, Postgres, and Tomcat."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_30fc4853445d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "FamousSparrow",
+        "edges": [],
+        "source": {
+          "FamousSparrow_blog.talosintelligence.com_uat-9244": [
+            [
+              8,
+              "TernDoor is a variant of CrowDoor, a backdoor deployed in recent intrusions linked to China-nexus APTs such as FamousSparrow and Earth Estries."
+            ],
+            [
+              9,
+              "CrowDoor is a variant of SparrowDoor, another backdoor attributed to FamousSparrow."
+            ],
+            [
+              10,
+              "CrowDoor has also been observed in previous Tropic Trooper intrusions, indicating a close operational relationship with FamousSparrow."
+            ],
+            [
+              11,
+              "Based on the overlap in tooling; tactics, techniques, and procedures (TTPs); and victimology, we assess with high confidence that UAT-9244 closely overlaps with FamousSparrow and Tropic Trooper."
+            ]
+          ],
+          "FamousSparrow_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              1,
+              "The activity is being tracked by Cisco Talos under the moniker UAT-9244, describing it as closely associated with another cluster known as FamousSparrow."
+            ],
+            [
+              2,
+              "It's worth noting that FamousSparrow is assessed to share tactical overlaps with Salt Typhoon, a China-nexus espionage group known for its targeting of telecommunication service providers."
+            ]
+          ],
+          "FamousSparrow_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              1,
+              "According to Cisco Talos researchers, the adversary is closely associated with the FamousSparrow and Tropic Trooper hacker groups, but is tracked as a separate activity cluster."
+            ]
+          ],
+          "Famous Sparrow_blog.talosintelligence.com_uat-9244": [
+            [
+              0,
+              "Cisco Talos is disclosing UAT-9244, who we assess with high confidence is a China-nexus advanced persistent threat (APT) actor closely associated with Famous Sparrow."
+            ]
+          ],
+          "Famous Sparrow_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              0,
+              "Researchers Tie UAT-9244 Intrusion to Famous Sparrow and Tropic TrooperA China-linked cyberespionage group has been targeting telecommunications providers in South America since 2024 using a set of newly discovered malware tools designed to maintain persistent access to critical communications infrastructure, Cisco Talos researchers found."
+            ],
+            [
+              1,
+              "and says it overlaps with Chinese advanced persistent threat groups Famous Sparrow and Tropic Trooper."
+            ],
+            [
+              2,
+              "Famous Sparrow has been active since at least 2019, with a history of targeting hotels, governments, international organizations and law firms."
+            ],
+            [
+              8,
+              "Talos said TernDoor traces its lineage through CrowDoor - a backdoor previously associated with Chinese cyberespionage activity - back to SparrowDoor, an older implant long attributed to Famous Sparrow."
+            ]
+          ]
+        },
+        "alias": [
+          "Famous Sparrow"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "edges": [
+          "EDGE_07ae2aa0cf35",
+          "EDGE_5367e857cd2a"
+        ],
+        "source": {
+          "Windows_blog.talosintelligence.com_uat-9244": [
+            [
+              1,
+              "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants."
+            ],
+            [
+              2,
+              "The first backdoor, “TernDoor,” is a new variation of the previously disclosed, Windows-based, CrowDoor malware."
+            ]
+          ],
+          "Windows_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              0,
+              "A China-linked advanced persistent threat (APT) actor has been targeting critical telecommunications infrastructure in South America since 2024, targeting Windows and Linux systems and edge devices with three different implants."
+            ],
+            [
+              4,
+              "In the campaign analyzed by the cybersecurity company, the attack chains have been found to distribute three previously undocumented implants: TernDoor targeting Windows, PeerTime (aka angrypeer) targeting Linux, and BruteEntry, which is installed on network edge devices."
+            ],
+            [
+              5,
+              "The exact initial access method used in the attacks is not known, although the adversary has previously targeted systems running outdated versions of Windows Server and Microsoft Exchange Server to drop web shells for follow-on activity."
+            ]
+          ],
+          "Windows_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              5,
+              "Cisco Talos identified three previously undocumented malware families used in the intrusions: a Windows backdoor dubbed TernDoor, a Linux backdoor called PeerTime and a credential brute-forcing tool known as BruteEntry."
+            ],
+            [
+              6,
+              "Researchers observed the attackers using DLL side-loading techniques to deploy TernDoor, a process in which a legitimate executable loads a malicious library that decrypts and launches the final payload in memory, injected into the Windows process msiexec.exe\nto blend in with routine system behavior."
+            ]
+          ],
+          "Windows_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              0,
+              "A China-linked advanced persistent threat actor tracked as UAT-9244 has been targeting telecommunication service providers in South America since 2024, compromising Windows, Linux, and network-edge devices."
+            ],
+            [
+              3,
+              "New malware targeting telco networks\nThe researchers found that the campaign used three previously undocumented malware families: TernDoor, a Windows backdoor; PeerTime, a Linux backdoor that uses BitTorrent; and BruteEntry, a brute-force scanner that builds proxy infrastructure (ORBs)."
+            ],
+            [
+              5,
+              "The malware contains an embedded Windows driver, WSPrint.sys, which is used to terminate, suspend, and resume processes."
+            ],
+            [
+              6,
+              "Persistence is achieved via scheduled tasks and Windows Registry modifications, which are also used to hide the scheduled task."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "edges": [],
+        "source": {
+          "Cisco Talos_blog.talosintelligence.com_uat-9244": [
+            [
+              0,
+              "Cisco Talos is disclosing UAT-9244, who we assess with high confidence is a China-nexus advanced persistent threat (APT) actor closely associated with Famous Sparrow."
+            ]
+          ],
+          "Cisco Talos_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              1,
+              "The activity is being tracked by Cisco Talos under the moniker UAT-9244, describing it as closely associated with another cluster known as FamousSparrow."
+            ]
+          ],
+          "Cisco Talos_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              0,
+              "Researchers Tie UAT-9244 Intrusion to Famous Sparrow and Tropic TrooperA China-linked cyberespionage group has been targeting telecommunications providers in South America since 2024 using a set of newly discovered malware tools designed to maintain persistent access to critical communications infrastructure, Cisco Talos researchers found."
+            ],
+            [
+              5,
+              "Cisco Talos identified three previously undocumented malware families used in the intrusions: a Windows backdoor dubbed TernDoor, a Linux backdoor called PeerTime and a credential brute-forcing tool known as BruteEntry."
+            ]
+          ],
+          "Cisco Talos_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              1,
+              "According to Cisco Talos researchers, the adversary is closely associated with the FamousSparrow and Tropic Trooper hacker groups, but is tracked as a separate activity cluster."
+            ],
+            [
+              9,
+              "Cisco Talos documented two versions for PeerTime."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_46c066afb6d9",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "UAT-9244",
+        "edges": [
+          "EDGE_1a47dc4479c9",
+          "EDGE_22c22f6f5dd8",
+          "EDGE_2cb98e450c3a",
+          "EDGE_4bbfba4e9be0",
+          "EDGE_7c3e5bd1d1b8",
+          "EDGE_8776d0338d3f",
+          "EDGE_a0f6317a4595",
+          "EDGE_a12b6a3814ac",
+          "EDGE_ada9232c75e7",
+          "EDGE_c99f7a87fe70",
+          "EDGE_d39a7feb3025",
+          "EDGE_60473d0bb926",
+          "EDGE_74320155fbff",
+          "EDGE_8a8b0555e3d4",
+          "EDGE_b3155aeff77a"
+        ],
+        "source": {
+          "UAT-9244_blog.talosintelligence.com_uat-9244": [
+            [
+              0,
+              "Cisco Talos is disclosing UAT-9244, who we assess with high confidence is a China-nexus advanced persistent threat (APT) actor closely associated with Famous Sparrow."
+            ],
+            [
+              1,
+              "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants."
+            ],
+            [
+              3,
+              "- Talos also discovered that UAT-9244 uses “PeerTime,” an ELF-based backdoor that uses the BitTorrent protocol to conduct malicious operations on an infected system."
+            ],
+            [
+              4,
+              "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+            ],
+            [
+              5,
+              "UAT-9244 used dynamic-link library (DLL) side-loading to activate multiple stages of their infection chain."
+            ],
+            [
+              11,
+              "Based on the overlap in tooling; tactics, techniques, and procedures (TTPs); and victimology, we assess with high confidence that UAT-9244 closely overlaps with FamousSparrow and Tropic Trooper."
+            ],
+            [
+              12,
+              "Although UAT-9244 and Salt Typhoon both target telecommunications service providers, Talos has not been able to verify or establish a solid connection between the two clusters."
+            ],
+            [
+              24,
+              "All the C2 IP addresses discovered by Talos were associated with the following SSL certificate on port 443:\nSSL_fingerprint_sha256= 0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8 SSL_fingerprint_SHA1= 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Data: Version: V3 Serial Number: 1 Thumbprint: 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Signature Algorithm: Issuer: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8 Validity Not Before: 2022-09-04 12:54:51 Not After: 2023-09-04 12:54:51 Subject: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8\nPivoting off this certificate, Talos found an additional 18 IPs likely being used by UAT-9244."
+            ],
+            [
+              37,
+              "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers."
+            ]
+          ],
+          "UAT-9244_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              1,
+              "The activity is being tracked by Cisco Talos under the moniker UAT-9244, describing it as closely associated with another cluster known as FamousSparrow."
+            ],
+            [
+              3,
+              "Despite the similar targeting footprint between UAT-9244 and Salt Typhoon, there is no conclusive evidence that ties the two clusters together."
+            ],
+            [
+              7,
+              "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024."
+            ],
+            [
+              13,
+              "Further analysis of the UAT-9244's infrastructure has led to the discovery of a Linux peer-to-peer (P2P) backdoor dubbed PeerTime, which is compiled for several architectures (i.e., ARM, AARCH, PPC, and MIPS) so as to infect a variety of embedded systems."
+            ]
+          ],
+          "UAT-9244_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              0,
+              "Researchers Tie UAT-9244 Intrusion to Famous Sparrow and Tropic TrooperA China-linked cyberespionage group has been targeting telecommunications providers in South America since 2024 using a set of newly discovered malware tools designed to maintain persistent access to critical communications infrastructure, Cisco Talos researchers found."
+            ]
+          ],
+          "UAT-9244_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              0,
+              "A China-linked advanced persistent threat actor tracked as UAT-9244 has been targeting telecommunication service providers in South America since 2024, compromising Windows, Linux, and network-edge devices."
+            ],
+            [
+              2,
+              "The researchers note that while UAT-9244 shares the same target profile as Salt Typhoon, they could not establish a solid connection between the two activity clusters."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_564a9f182ce0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "PeerTime",
+        "edges": [
+          "EDGE_094fc8c72ffe",
+          "EDGE_21019f1c3f20",
+          "EDGE_2b08b4df6d51",
+          "EDGE_32c1b4cce5d0",
+          "EDGE_3ee4dfffa07c",
+          "EDGE_7e8086e6a003"
+        ],
+        "source": {
+          "PeerTime_blog.talosintelligence.com_uat-9244": [
+            [
+              3,
+              "- Talos also discovered that UAT-9244 uses “PeerTime,” an ELF-based backdoor that uses the BitTorrent protocol to conduct malicious operations on an infected system."
+            ],
+            [
+              26,
+              "On this server, we discovered a set of shell scripts and an accompanying malware family we track as “PeerTime.”\nPeerTime is an ELF based backdoor that is compiled for a variety of architectures such as ARM, AARCH, PPC, MIPS etc., indicating that UAT-9244 can use it to infect a variety of embedded systems."
+            ],
+            [
+              27,
+              "PeerTime is deployed through a shellscript that downloads the PeerTime loader ELF binary and an instrumentor binary."
+            ],
+            [
+              30,
+              "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors:\n获取当前程序路径错误: //Error retrieving current program path: 删除当前程序错误: // Error deleting current program:\nPeerTime consists of a loader that will decrypt and decompress the final PeerTime ELF payload and run it in memory."
+            ],
+            [
+              31,
+              "The PeerTime loader has the ability to rename its process to a benign process to evade detection."
+            ],
+            [
+              32,
+              "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+            ],
+            [
+              34,
+              "As of now, PeerTime consists of two versions: one written in C/C++ and a newer version written in Rust."
+            ],
+            [
+              35,
+              "PeerTime is also known as “angrypeer” and can be tracked in VirusTotal using the “malware_config:angrypeer” query."
+            ]
+          ],
+          "PeerTime_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              4,
+              "In the campaign analyzed by the cybersecurity company, the attack chains have been found to distribute three previously undocumented implants: TernDoor targeting Windows, PeerTime (aka angrypeer) targeting Linux, and BruteEntry, which is installed on network edge devices."
+            ],
+            [
+              13,
+              "Further analysis of the UAT-9244's infrastructure has led to the discovery of a Linux peer-to-peer (P2P) backdoor dubbed PeerTime, which is compiled for several architectures (i.e., ARM, AARCH, PPC, and MIPS) so as to infect a variety of embedded systems."
+            ],
+            [
+              16,
+              "\"If Docker is found, then the PeerTime loader is executed."
+            ],
+            [
+              18,
+              "PeerTime comes in two flavors: one version written in C/C++ and a newer variant programmed in Rust."
+            ]
+          ],
+          "PeerTime_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              5,
+              "Cisco Talos identified three previously undocumented malware families used in the intrusions: a Windows backdoor dubbed TernDoor, a Linux backdoor called PeerTime and a credential brute-forcing tool known as BruteEntry."
+            ],
+            [
+              12,
+              "The second tool, PeerTime, is an ELF-based backdoor designed to run across multiple processor architectures, including ARM, MIPS, PowerPC and AArch64, enabling it to infect a range of Linux servers, routers and embedded systems commonly deployed in telecommunications environments."
+            ],
+            [
+              14,
+              "Unlike traditional malware that communicates with a centralized command-and-control server, PeerTime uses the BitTorrent protocol to retrieve instructions and download additional payloads from peers."
+            ]
+          ],
+          "PeerTime_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              3,
+              "New malware targeting telco networks\nThe researchers found that the campaign used three previously undocumented malware families: TernDoor, a Windows backdoor; PeerTime, a Linux backdoor that uses BitTorrent; and BruteEntry, a brute-force scanner that builds proxy infrastructure (ORBs)."
+            ],
+            [
+              8,
+              "PeerTime is an ELF Linux backdoor that targets multiple architectures (ARM, AARCH, PPC, MIPS), suggesting it was designed to compromise a broad range of embedded systems and network devices used in telecom environments."
+            ],
+            [
+              9,
+              "Cisco Talos documented two versions for PeerTime."
+            ],
+            [
+              12,
+              "PeerTime, an ELF-based peer-to-peer (P2P) backdoor, uses the BitTorrent protocol for command-and-control (C2) communications, downloads and executes payloads from peers, and uses BusyBox to write the files on the host."
+            ]
+          ],
+          "angrypeer_blog.talosintelligence.com_uat-9244": [
+            [
+              35,
+              "PeerTime is also known as “angrypeer” and can be tracked in VirusTotal using the “malware_config:angrypeer” query."
+            ]
+          ]
+        },
+        "alias": [
+          "angrypeer"
+        ]
+      },
+      {
+        "node_id": "HL_5b80130249c7",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Salt Typhoon",
+        "edges": [],
+        "source": {
+          "Salt Typhoon_blog.talosintelligence.com_uat-9244": [
+            [
+              12,
+              "Although UAT-9244 and Salt Typhoon both target telecommunications service providers, Talos has not been able to verify or establish a solid connection between the two clusters."
+            ]
+          ],
+          "Salt Typhoon_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              2,
+              "It's worth noting that FamousSparrow is assessed to share tactical overlaps with Salt Typhoon, a China-nexus espionage group known for its targeting of telecommunication service providers."
+            ],
+            [
+              3,
+              "Despite the similar targeting footprint between UAT-9244 and Salt Typhoon, there is no conclusive evidence that ties the two clusters together."
+            ]
+          ],
+          "Salt Typhoon_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              24,
+              "Salt Typhoon, a separate China-linked group, previously compromised at least nine major U.S."
+            ],
+            [
+              26,
+              "Researchers identified continued Salt Typhoon activity into early 2026 (see: Norway Says Salt Typhoon Hackers Hit Vulnerable Systems)."
+            ]
+          ],
+          "Salt Typhoon_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              2,
+              "The researchers note that while UAT-9244 shares the same target profile as Salt Typhoon, they could not establish a solid connection between the two activity clusters."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_6df013ab394e",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Earth Estries",
+        "edges": [],
+        "source": {
+          "Earth Estries_blog.talosintelligence.com_uat-9244": [
+            [
+              8,
+              "TernDoor is a variant of CrowDoor, a backdoor deployed in recent intrusions linked to China-nexus APTs such as FamousSparrow and Earth Estries."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_84e427121d6e",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "BusyBox",
+        "edges": [
+          "EDGE_9e342eae17ab"
+        ],
+        "source": {
+          "BusyBox_blog.talosintelligence.com_uat-9244": [
+            [
+              33,
+              "The payloads are written to disk and copied to the specified locations using BusyBox."
+            ]
+          ],
+          "BusyBox_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              12,
+              "PeerTime, an ELF-based peer-to-peer (P2P) backdoor, uses the BitTorrent protocol for command-and-control (C2) communications, downloads and executes payloads from peers, and uses BusyBox to write the files on the host."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_98a32dad314e",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "TernDoor",
+        "edges": [
+          "EDGE_4d4731ed43fb",
+          "EDGE_84d81fe740f1",
+          "EDGE_ce0e6f916a6b",
+          "EDGE_38e82f23970e",
+          "EDGE_4a5b402753ec",
+          "EDGE_e2f0aedd9183",
+          "EDGE_0f4f32ef96dd",
+          "EDGE_9010dafa0ae0",
+          "EDGE_f88f423d9463",
+          "EDGE_b1817aff0542",
+          "EDGE_f1ce220ee0b2"
+        ],
+        "source": {
+          "TernDoor_blog.talosintelligence.com_uat-9244": [
+            [
+              2,
+              "The first backdoor, “TernDoor,” is a new variation of the previously disclosed, Windows-based, CrowDoor malware."
+            ],
+            [
+              7,
+              "The DLL reads a data file named “WSPrint[.]dll” from disk, decrypts its contents, and executes them in memory to activate TernDoor, the final payload."
+            ],
+            [
+              15,
+              "The final payload is the TernDoor implant."
+            ],
+            [
+              16,
+              "The final shellcode consists of the TernDoor backdoor."
+            ],
+            [
+              17,
+              "TernDoor is a variant of CrowDoor, actively developed and used by UAT-9244 since at least November 2024."
+            ],
+            [
+              18,
+              "Unlike CrowDoor, TernDoor only supports one command line switch: “-u”, passed to WSPrint.exe."
+            ],
+            [
+              20,
+              "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”."
+            ],
+            [
+              23,
+              "It can terminate, suspend, or resume processes specified by TernDoor — likely a means of evasion."
+            ]
+          ],
+          "TernDoor_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              4,
+              "In the campaign analyzed by the cybersecurity company, the attack chains have been found to distribute three previously undocumented implants: TernDoor targeting Windows, PeerTime (aka angrypeer) targeting Linux, and BruteEntry, which is installed on network edge devices."
+            ],
+            [
+              6,
+              "TernDoor is deployed through DLL side-loading, leveraging the legitimate executable \"wsprint.exe\" to launch a rogue DLL (\"BugSplatRc64.dll\") that decrypts and executes the final payload in memory."
+            ]
+          ],
+          "TernDoor_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              5,
+              "Cisco Talos identified three previously undocumented malware families used in the intrusions: a Windows backdoor dubbed TernDoor, a Linux backdoor called PeerTime and a credential brute-forcing tool known as BruteEntry."
+            ],
+            [
+              6,
+              "Researchers observed the attackers using DLL side-loading techniques to deploy TernDoor, a process in which a legitimate executable loads a malicious library that decrypts and launches the final payload in memory, injected into the Windows process msiexec.exe\nto blend in with routine system behavior."
+            ],
+            [
+              8,
+              "Talos said TernDoor traces its lineage through CrowDoor - a backdoor previously associated with Chinese cyberespionage activity - back to SparrowDoor, an older implant long attributed to Famous Sparrow."
+            ],
+            [
+              9,
+              "To maintain persistence, TernDoor creates a scheduled task and modifies related registry keys to conceal it from standard system views."
+            ]
+          ],
+          "TernDoor_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              3,
+              "New malware targeting telco networks\nThe researchers found that the campaign used three previously undocumented malware families: TernDoor, a Windows backdoor; PeerTime, a Linux backdoor that uses BitTorrent; and BruteEntry, a brute-force scanner that builds proxy infrastructure (ORBs)."
+            ],
+            [
+              4,
+              "TernDoor is deployed through DLL side-loading, using the legitimate executable wsprint.exe to load malicious code from BugSplatRc64.dll, which decrypts and executes the final payload in memory (injected into msiexec.exe)."
+            ],
+            [
+              7,
+              "Additionally, TernDoor can execute commands via remote shell, run arbitrary processes, read/write files, collect system information, and self-uninstall."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "edges": [],
+        "source": {
+          "China_blog.talosintelligence.com_uat-9244": [
+            [
+              0,
+              "Cisco Talos is disclosing UAT-9244, who we assess with high confidence is a China-nexus advanced persistent threat (APT) actor closely associated with Famous Sparrow."
+            ],
+            [
+              8,
+              "TernDoor is a variant of CrowDoor, a backdoor deployed in recent intrusions linked to China-nexus APTs such as FamousSparrow and Earth Estries."
+            ]
+          ],
+          "China_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              0,
+              "Researchers Tie UAT-9244 Intrusion to Famous Sparrow and Tropic TrooperA China-linked cyberespionage group has been targeting telecommunications providers in South America since 2024 using a set of newly discovered malware tools designed to maintain persistent access to critical communications infrastructure, Cisco Talos researchers found."
+            ],
+            [
+              24,
+              "Salt Typhoon, a separate China-linked group, previously compromised at least nine major U.S."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b766c23ad67d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "BruteEntry",
+        "edges": [
+          "EDGE_3ad10d93c4a3",
+          "EDGE_61ba1cf1c7ac",
+          "EDGE_91cfd1cf2058",
+          "EDGE_6ef3c6a16a6e",
+          "EDGE_707c27795a26",
+          "EDGE_46b918793ffe"
+        ],
+        "source": {
+          "BruteEntry_blog.talosintelligence.com_uat-9244": [
+            [
+              4,
+              "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+            ],
+            [
+              38,
+              "BruteEntry is also written in GoLang and begins by registering with the C2 server by providing it with the infected system’s IP address and computer name:\n{“ip”:“value”, “hostname”:“value”}\nThe C2 responds with a JSON that assigns an agent_id to the infected host:\n{“agent_id”:“value”, “server”:“value”}\nwhere “server” = version string of BruteEntry such as “brute-force-server-v1.0”\nBruteEntry will then ask the C2 for tasks to perform by sending a GET request to the C2 at the URI, where limit=1000 is the maximum number of vulnerable IPs to scan:."
+            ]
+          ],
+          "BruteEntry_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              4,
+              "In the campaign analyzed by the cybersecurity company, the attack chains have been found to distribute three previously undocumented implants: TernDoor targeting Windows, PeerTime (aka angrypeer) targeting Linux, and BruteEntry, which is installed on network edge devices."
+            ],
+            [
+              20,
+              "Also staged in the threat actor's servers are a set of shell scripts and payloads, including a brute-force scanner codenamed BruteEntry that's installed on edge devices to turn them into mass-scanning proxy nodes within an Operational Relay Box (ORB) capable of brute-forcing Postgres, SSH, and Tomcat servers."
+            ],
+            [
+              21,
+              "This is accomplished by means of a shell script that drops two Golang-based components: an orchestrator that delivers BruteEntry, which then contacts a C2 server to obtain the list of IP addresses to be targeted for performing brute-force attacks."
+            ]
+          ],
+          "BruteEntry_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              3,
+              "New malware targeting telco networks\nThe researchers found that the campaign used three previously undocumented malware families: TernDoor, a Windows backdoor; PeerTime, a Linux backdoor that uses BitTorrent; and BruteEntry, a brute-force scanner that builds proxy infrastructure (ORBs)."
+            ],
+            [
+              13,
+              "Finally, there’s BruteEntry, which consists of a Go-based instrumentor binary and a brute-forcing component."
+            ],
+            [
+              15,
+              "The attacker uses the machines running BruteEntry to scan for new targets and brute-force access to SSH, Postgres, and Tomcat."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_df1debd28b27",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Postgres",
+        "edges": [
+          "EDGE_1d547c6b9bf3",
+          "EDGE_2339d090e30e"
+        ],
+        "source": {
+          "Postgres_blog.talosintelligence.com_uat-9244": [
+            [
+              4,
+              "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+            ],
+            [
+              37,
+              "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers."
+            ],
+            [
+              45,
+              "The agent will then use a set of embedded credentials to attempt to brute force into either a Tomcat server application at the URL “https[://]<IP>:<Port>/manager/html”, or will brute force into a Postgres instance, either defined in the JSON (<IP><Port>) from the C2 or using the port 5432 if no port is specified."
+            ]
+          ],
+          "Postgres_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              20,
+              "Also staged in the threat actor's servers are a set of shell scripts and payloads, including a brute-force scanner codenamed BruteEntry that's installed on edge devices to turn them into mass-scanning proxy nodes within an Operational Relay Box (ORB) capable of brute-forcing Postgres, SSH, and Tomcat servers."
+            ]
+          ],
+          "Postgres_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              20,
+              "BruteEntry scans for services such as SSH, Postgres and Tomcat and attempts authentication using built-in credential lists."
+            ]
+          ],
+          "Postgres_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              15,
+              "The attacker uses the machines running BruteEntry to scan for new targets and brute-force access to SSH, Postgres, and Tomcat."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_e16135ae1da5",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SparrowDoor",
+        "edges": [],
+        "source": {
+          "SparrowDoor_blog.talosintelligence.com_uat-9244": [
+            [
+              9,
+              "CrowDoor is a variant of SparrowDoor, another backdoor attributed to FamousSparrow."
+            ]
+          ],
+          "SparrowDoor_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              7,
+              "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024."
+            ]
+          ],
+          "SparrowDoor_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              8,
+              "Talos said TernDoor traces its lineage through CrowDoor - a backdoor previously associated with Chinese cyberespionage activity - back to SparrowDoor, an older implant long attributed to Famous Sparrow."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ea761e410a92",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Linux",
+        "edges": [],
+        "source": {
+          "Linux_blog.talosintelligence.com_uat-9244": [
+            [
+              1,
+              "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants."
+            ],
+            [
+              37,
+              "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers."
+            ]
+          ],
+          "Linux_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              0,
+              "A China-linked advanced persistent threat (APT) actor has been targeting critical telecommunications infrastructure in South America since 2024, targeting Windows and Linux systems and edge devices with three different implants."
+            ],
+            [
+              4,
+              "In the campaign analyzed by the cybersecurity company, the attack chains have been found to distribute three previously undocumented implants: TernDoor targeting Windows, PeerTime (aka angrypeer) targeting Linux, and BruteEntry, which is installed on network edge devices."
+            ],
+            [
+              13,
+              "Further analysis of the UAT-9244's infrastructure has led to the discovery of a Linux peer-to-peer (P2P) backdoor dubbed PeerTime, which is compiled for several architectures (i.e., ARM, AARCH, PPC, and MIPS) so as to infect a variety of embedded systems."
+            ]
+          ],
+          "Linux_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              5,
+              "Cisco Talos identified three previously undocumented malware families used in the intrusions: a Windows backdoor dubbed TernDoor, a Linux backdoor called PeerTime and a credential brute-forcing tool known as BruteEntry."
+            ],
+            [
+              12,
+              "The second tool, PeerTime, is an ELF-based backdoor designed to run across multiple processor architectures, including ARM, MIPS, PowerPC and AArch64, enabling it to infect a range of Linux servers, routers and embedded systems commonly deployed in telecommunications environments."
+            ]
+          ],
+          "Linux_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              0,
+              "A China-linked advanced persistent threat actor tracked as UAT-9244 has been targeting telecommunication service providers in South America since 2024, compromising Windows, Linux, and network-edge devices."
+            ],
+            [
+              8,
+              "PeerTime is an ELF Linux backdoor that targets multiple architectures (ARM, AARCH, PPC, MIPS), suggesting it was designed to compromise a broad range of embedded systems and network devices used in telecom environments."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ec5e76fc2a19",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South America",
+        "edges": [],
+        "source": {
+          "South America_blog.talosintelligence.com_uat-9244": [
+            [
+              1,
+              "- Since 2024, UAT-9244 has targeted critical telecommunications infrastructure, including Windows and Linux-based endpoints and edge devices in South America, proliferating access via three malware implants."
+            ]
+          ],
+          "South America_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              0,
+              "A China-linked advanced persistent threat (APT) actor has been targeting critical telecommunications infrastructure in South America since 2024, targeting Windows and Linux systems and edge devices with three different implants."
+            ]
+          ],
+          "South America_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              0,
+              "Researchers Tie UAT-9244 Intrusion to Famous Sparrow and Tropic TrooperA China-linked cyberespionage group has been targeting telecommunications providers in South America since 2024 using a set of newly discovered malware tools designed to maintain persistent access to critical communications infrastructure, Cisco Talos researchers found."
+            ]
+          ],
+          "South America_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              0,
+              "A China-linked advanced persistent threat actor tracked as UAT-9244 has been targeting telecommunication service providers in South America since 2024, compromising Windows, Linux, and network-edge devices."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_f5ecc5b8d346",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Tropic Trooper",
+        "edges": [],
+        "source": {
+          "Tropic Trooper_blog.talosintelligence.com_uat-9244": [
+            [
+              10,
+              "CrowDoor has also been observed in previous Tropic Trooper intrusions, indicating a close operational relationship with FamousSparrow."
+            ],
+            [
+              11,
+              "Based on the overlap in tooling; tactics, techniques, and procedures (TTPs); and victimology, we assess with high confidence that UAT-9244 closely overlaps with FamousSparrow and Tropic Trooper."
+            ]
+          ],
+          "Tropic Trooper_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              0,
+              "Researchers Tie UAT-9244 Intrusion to Famous Sparrow and Tropic TrooperA China-linked cyberespionage group has been targeting telecommunications providers in South America since 2024 using a set of newly discovered malware tools designed to maintain persistent access to critical communications infrastructure, Cisco Talos researchers found."
+            ],
+            [
+              1,
+              "and says it overlaps with Chinese advanced persistent threat groups Famous Sparrow and Tropic Trooper."
+            ],
+            [
+              3,
+              "Tropic Trooper has operated since at least 2011, focusing primarily on government agencies, transportation networks and high-tech industries across Taiwan, the Philippines and Hong Kong, with more recent activity reported in the Middle East."
+            ]
+          ],
+          "Tropic Trooper_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              1,
+              "According to Cisco Talos researchers, the adversary is closely associated with the FamousSparrow and Tropic Trooper hacker groups, but is tracked as a separate activity cluster."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_fcc2678ea9a1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "CrowDoor",
+        "edges": [],
+        "source": {
+          "CrowDoor_blog.talosintelligence.com_uat-9244": [
+            [
+              2,
+              "The first backdoor, “TernDoor,” is a new variation of the previously disclosed, Windows-based, CrowDoor malware."
+            ],
+            [
+              8,
+              "TernDoor is a variant of CrowDoor, a backdoor deployed in recent intrusions linked to China-nexus APTs such as FamousSparrow and Earth Estries."
+            ],
+            [
+              9,
+              "CrowDoor is a variant of SparrowDoor, another backdoor attributed to FamousSparrow."
+            ],
+            [
+              10,
+              "CrowDoor has also been observed in previous Tropic Trooper intrusions, indicating a close operational relationship with FamousSparrow."
+            ],
+            [
+              17,
+              "TernDoor is a variant of CrowDoor, actively developed and used by UAT-9244 since at least November 2024."
+            ],
+            [
+              20,
+              "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”."
+            ]
+          ],
+          "CrowDoor_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              8,
+              "Talos said TernDoor traces its lineage through CrowDoor - a backdoor previously associated with Chinese cyberespionage activity - back to SparrowDoor, an older implant long attributed to Famous Sparrow."
+            ]
+          ],
+          "Crowdoor_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              7,
+              "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024."
+            ]
+          ]
+        },
+        "alias": [
+          "Crowdoor"
+        ]
+      },
+      {
+        "node_id": "HL_59d9cae3f4a5",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telecommunication service providers",
+        "edges": [],
+        "source": {
+          "telecommunication service providers_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              2,
+              "It's worth noting that FamousSparrow is assessed to share tactical overlaps with Salt Typhoon, a China-nexus espionage group known for its targeting of telecommunication service providers."
+            ]
+          ],
+          "telecommunication service providers_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              0,
+              "A China-linked advanced persistent threat actor tracked as UAT-9244 has been targeting telecommunication service providers in South America since 2024, compromising Windows, Linux, and network-edge devices."
+            ]
+          ],
+          "telecommunications_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              0,
+              "Researchers Tie UAT-9244 Intrusion to Famous Sparrow and Tropic TrooperA China-linked cyberespionage group has been targeting telecommunications providers in South America since 2024 using a set of newly discovered malware tools designed to maintain persistent access to critical communications infrastructure, Cisco Talos researchers found."
+            ],
+            [
+              4,
+              "The campaign focuses on telecommunications networks, which provide access to large volumes of sensitive communications data and can serve as strategic intelligence collection points for nation-state actors."
+            ],
+            [
+              12,
+              "The second tool, PeerTime, is an ELF-based backdoor designed to run across multiple processor architectures, including ARM, MIPS, PowerPC and AArch64, enabling it to infect a range of Linux servers, routers and embedded systems commonly deployed in telecommunications environments."
+            ],
+            [
+              23,
+              "The intrusions add to a growing body of reported Chinese espionage activity against telecommunications providers globally."
+            ]
+          ]
+        },
+        "alias": [
+          "telecommunications"
+        ]
+      },
+      {
+        "node_id": "HL_80b9b85bb848",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Microsoft Exchange Server",
+        "edges": [],
+        "source": {
+          "Microsoft Exchange Server_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              5,
+              "The exact initial access method used in the attacks is not known, although the adversary has previously targeted systems running outdated versions of Windows Server and Microsoft Exchange Server to drop web shells for follow-on activity."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b7b42a22e626__f0a3952f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Docker",
+        "edges": [
+          "EDGE_6e07f4fdc706"
+        ],
+        "source": {
+          "Docker_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              15,
+              "\"The instrumentor ELF binary will check for the presence of Docker on the compromised host using the commands docker and docker –q,\" Talos researchers Asheer Malhotra and Brandon White said."
+            ],
+            [
+              16,
+              "\"If Docker is found, then the PeerTime loader is executed."
+            ]
+          ],
+          "docker_blog.talosintelligence.com_uat-9244": [
+            [
+              28,
+              "The instrumentor ELF binary will check for the presence of docker on the compromised host using the commands docker and docker –q."
+            ],
+            [
+              29,
+              "If docker is found, then the PeerTime loader is executed using:."
+            ]
+          ]
+        },
+        "alias": [
+          "docker"
+        ]
+      },
+      {
+        "node_id": "HL_f05cbaecdbbf",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows Server",
+        "edges": [],
+        "source": {
+          "Windows Server_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": [
+            [
+              5,
+              "The exact initial access method used in the attacks is not known, although the adversary has previously targeted systems running outdated versions of Windows Server and Microsoft Exchange Server to drop web shells for follow-on activity."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_125e5aadeb42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Middle East",
+        "edges": [],
+        "source": {
+          "Middle East_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              3,
+              "Tropic Trooper has operated since at least 2011, focusing primarily on government agencies, transportation networks and high-tech industries across Taiwan, the Philippines and Hong Kong, with more recent activity reported in the Middle East."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_2361b6ce9fed",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Philippines",
+        "edges": [],
+        "source": {
+          "Philippines_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              3,
+              "Tropic Trooper has operated since at least 2011, focusing primarily on government agencies, transportation networks and high-tech industries across Taiwan, the Philippines and Hong Kong, with more recent activity reported in the Middle East."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4b33f91b89da",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Hong Kong",
+        "edges": [],
+        "source": {
+          "Hong Kong_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              3,
+              "Tropic Trooper has operated since at least 2011, focusing primarily on government agencies, transportation networks and high-tech industries across Taiwan, the Philippines and Hong Kong, with more recent activity reported in the Middle East."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_4d92a5190c96",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Norway",
+        "edges": [],
+        "source": {
+          "Norway_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              26,
+              "Researchers identified continued Salt Typhoon activity into early 2026 (see: Norway Says Salt Typhoon Hackers Hit Vulnerable Systems)."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "source": {
+          "Taiwan_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              3,
+              "Tropic Trooper has operated since at least 2011, focusing primarily on government agencies, transportation networks and high-tech industries across Taiwan, the Philippines and Hong Kong, with more recent activity reported in the Middle East."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_b9e448d1864e",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "transportation networks",
+        "edges": [],
+        "source": {
+          "transportation networks_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              3,
+              "Tropic Trooper has operated since at least 2011, focusing primarily on government agencies, transportation networks and high-tech industries across Taiwan, the Philippines and Hong Kong, with more recent activity reported in the Middle East."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_bdf969431e42",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "U.S.",
+        "edges": [],
+        "source": {
+          "U.S._www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              24,
+              "Salt Typhoon, a separate China-linked group, previously compromised at least nine major U.S."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_c9fdc49b2d03",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "BruteEntry",
+        "edges": [
+          "EDGE_5fdadc1cf600",
+          "EDGE_b32e5405e380"
+        ],
+        "source": {
+          "BruteEntry_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              5,
+              "Cisco Talos identified three previously undocumented malware families used in the intrusions: a Windows backdoor dubbed TernDoor, a Linux backdoor called PeerTime and a credential brute-forcing tool known as BruteEntry."
+            ],
+            [
+              18,
+              "The third component, BruteEntry, is used to convert compromised edge devices into scanning infrastructure - known as operational relay boxes - capable of conducting credential brute-force attacks against exposed services."
+            ],
+            [
+              20,
+              "BruteEntry scans for services such as SSH, Postgres and Tomcat and attempts authentication using built-in credential lists."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_ce7695ea1031",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SSH",
+        "edges": [
+          "EDGE_00772150b2d7",
+          "EDGE_bbe858f93a85"
+        ],
+        "source": {
+          "SSH_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              20,
+              "BruteEntry scans for services such as SSH, Postgres and Tomcat and attempts authentication using built-in credential lists."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_dff4851b484d",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "high-tech industries",
+        "edges": [],
+        "source": {
+          "high-tech industries_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": [
+            [
+              3,
+              "Tropic Trooper has operated since at least 2011, focusing primarily on government agencies, transportation networks and high-tech industries across Taiwan, the Philippines and Hong Kong, with more recent activity reported in the Middle East."
+            ]
+          ]
+        }
+      },
+      {
+        "node_id": "HL_a8ff15d491a2",
+        "node_class": "high_level",
+        "node_type": "Sector",
+        "node_text": "telco networks",
+        "edges": [],
+        "source": {
+          "telco networks_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": [
+            [
+              3,
+              "New malware targeting telco networks\nThe researchers found that the campaign used three previously undocumented malware families: TernDoor, a Windows backdoor; PeerTime, a Linux backdoor that uses BitTorrent; and BruteEntry, a brute-force scanner that builds proxy infrastructure (ORBs)."
+            ]
+          ]
+        }
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The actor executed “wsprint[.]exe”, a benign executable that loaded the malicious DLL-based loader “BugSplatRc64[.]dll”.",
+            "The DLL reads a data file named “WSPrint[.]dll” from disk, decrypts its contents, and executes them in memory to activate TernDoor, the final payload."
+          ],
+          [
+            "The decoded shellcode is position-independent and decodes and decompresses the final payload.",
+            "The final payload is the TernDoor implant."
+          ],
+          [
+            "If docker is found, then the PeerTime loader is executed using:.",
+            "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors:\n获取当前程序路径错误: //Error retrieving current program path: 删除当前程序错误: // Error deleting current program:\nPeerTime consists of a loader that will decrypt and decompress the final PeerTime ELF payload and run it in memory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            7
+          ],
+          [
+            14,
+            15
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_53854e15822e",
+          "EDGE_7e8086e6a003",
+          "EDGE_84d81fe740f1",
+          "EDGE_ada9232c75e7"
+        ],
+        "source": {
+          "TTP:T1027_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                6,
+                7
+              ],
+              [
+                14,
+                15
+              ],
+              [
+                29,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The actor executed “wsprint[.]exe”, a benign executable that loaded the malicious DLL-based loader “BugSplatRc64[.]dll”.",
+                "The DLL reads a data file named “WSPrint[.]dll” from disk, decrypts its contents, and executes them in memory to activate TernDoor, the final payload."
+              ],
+              [
+                "The decoded shellcode is position-independent and decodes and decompresses the final payload.",
+                "The final payload is the TernDoor implant."
+              ],
+              [
+                "If docker is found, then the PeerTime loader is executed using:.",
+                "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors:\n获取当前程序路径错误: //Error retrieving current program path: 删除当前程序错误: // Error deleting current program:\nPeerTime consists of a loader that will decrypt and decompress the final PeerTime ELF payload and run it in memory."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1036",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1036",
+        "ttp_id": "T1036",
+        "best_span_sentences_list": [
+          [
+            "The PeerTime loader has the ability to rename its process to a benign process to evade detection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            31,
+            31
+          ]
+        ],
+        "edges": [
+          "EDGE_2cb98e450c3a",
+          "EDGE_3ee4dfffa07c"
+        ],
+        "source": {
+          "TTP:T1036_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                31,
+                31
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The PeerTime loader has the ability to rename its process to a benign process to evade detection."
+              ]
+            ]
+          },
+          "TTP:T1036_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                19,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Besides having the ability to rename itself as a harmless process to sidestep detection, the backdoor employs the BitTorrent protocol to fetch C2 information, download files from its peers, and execute them on the compromised system."
+              ]
+            ]
+          },
+          "TTP:T1036_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                14,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Unlike traditional malware that communicates with a centralized command-and-control server, PeerTime uses the BitTorrent protocol to retrieve instructions and download additional payloads from peers.",
+                "Researchers said this approach helps obscure the attackers' infrastructure and complicates detection.",
+                "They said the instrumentor binary accompanying the malware contains debug strings written in Simplified Chinese, a linguistic indicator the researchers said ties the campaign directly to Chinese-speaking operators.",
+                "The malware also can disguise its processes as legitimate system programs while executing commands and transferring files between infected systems."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”.",
+            "The implant decodes its configuration that can specify the following information:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            21
+          ]
+        ],
+        "edges": [
+          "EDGE_4bbfba4e9be0",
+          "EDGE_4d4731ed43fb"
+        ],
+        "source": {
+          "TTP:T1055_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                20,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”.",
+                "The implant decodes its configuration that can specify the following information:."
+              ]
+            ]
+          },
+          "TTP:T1055_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                9,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It also exhibits differences with CrowDoor by making use of a disparate set of command codes and embedding a Windows driver to suspend, resume, and terminate processes.",
+                "Furthermore, it only supports one command-line switch (\"-u\") to uninstall itself from the host and delete all associated artifacts.",
+                "Once launched, it runs a check to make sure that it has been injected into \"msiexec.exe,\" after which it decodes a configuration to extract the command-and-control (C2) parameters.",
+                "Subsequently, it establishes communication with the C2 server, allowing it to create processes, run arbitrary commands, read/write files, collect system information, and deploy the driver to hide malicious components and manage processes."
+              ]
+            ]
+          },
+          "TTP:T1055_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Researchers observed the attackers using DLL side-loading techniques to deploy TernDoor, a process in which a legitimate executable loads a malicious library that decrypts and launches the final payload in memory, injected into the Windows process msiexec.exe\nto blend in with routine system behavior."
+              ]
+            ]
+          },
+          "TTP:T1055_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                4,
+                5
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "TernDoor is deployed through DLL side-loading, using the legitimate executable wsprint.exe to load malicious code from BugSplatRc64.dll, which decrypts and executes the final payload in memory (injected into msiexec.exe).",
+                "The malware contains an embedded Windows driver, WSPrint.sys, which is used to terminate, suspend, and resume processes."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "Unlike CrowDoor, TernDoor only supports one command line switch: “-u”, passed to WSPrint.exe.",
+            "This is the switch for uninstalling the malware from the system and it deletes all malware files from the operating directory, as well as terminates malicious processes."
+          ],
+          [
+            "PeerTime is deployed through a shellscript that downloads the PeerTime loader ELF binary and an instrumentor binary.",
+            "The instrumentor ELF binary will check for the presence of docker on the compromised host using the commands docker and docker –q."
+          ],
+          [
+            "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ],
+          [
+            27,
+            28
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_094fc8c72ffe",
+          "EDGE_c99f7a87fe70",
+          "EDGE_6e07f4fdc706",
+          "EDGE_707c27795a26",
+          "EDGE_b1817aff0542"
+        ],
+        "source": {
+          "TTP:T1059_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                18,
+                19
+              ],
+              [
+                27,
+                28
+              ],
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Unlike CrowDoor, TernDoor only supports one command line switch: “-u”, passed to WSPrint.exe.",
+                "This is the switch for uninstalling the malware from the system and it deletes all malware files from the operating directory, as well as terminates malicious processes."
+              ],
+              [
+                "PeerTime is deployed through a shellscript that downloads the PeerTime loader ELF binary and an instrumentor binary.",
+                "The instrumentor ELF binary will check for the presence of docker on the compromised host using the commands docker and docker –q."
+              ],
+              [
+                "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+              ]
+            ]
+          },
+          "TTP:T1059_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                9,
+                16
+              ],
+              [
+                19,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "It also exhibits differences with CrowDoor by making use of a disparate set of command codes and embedding a Windows driver to suspend, resume, and terminate processes.",
+                "Furthermore, it only supports one command-line switch (\"-u\") to uninstall itself from the host and delete all associated artifacts.",
+                "Once launched, it runs a check to make sure that it has been injected into \"msiexec.exe,\" after which it decodes a configuration to extract the command-and-control (C2) parameters.",
+                "Subsequently, it establishes communication with the C2 server, allowing it to create processes, run arbitrary commands, read/write files, collect system information, and deploy the driver to hide malicious components and manage processes.",
+                "Further analysis of the UAT-9244's infrastructure has led to the discovery of a Linux peer-to-peer (P2P) backdoor dubbed PeerTime, which is compiled for several architectures (i.e., ARM, AARCH, PPC, and MIPS) so as to infect a variety of embedded systems.",
+                "The ELF backdoor, along with an instrumentor binary, is deployed via a shell script.",
+                "\"The instrumentor ELF binary will check for the presence of Docker on the compromised host using the commands docker and docker –q,\" Talos researchers Asheer Malhotra and Brandon White said.",
+                "\"If Docker is found, then the PeerTime loader is executed."
+              ],
+              [
+                "Besides having the ability to rename itself as a harmless process to sidestep detection, the backdoor employs the BitTorrent protocol to fetch C2 information, download files from its peers, and execute them on the compromised system.",
+                "Also staged in the threat actor's servers are a set of shell scripts and payloads, including a brute-force scanner codenamed BruteEntry that's installed on edge devices to turn them into mass-scanning proxy nodes within an Operational Relay Box (ORB) capable of brute-forcing Postgres, SSH, and Tomcat servers.",
+                "This is accomplished by means of a shell script that drops two Golang-based components: an orchestrator that delivers BruteEntry, which then contacts a C2 server to obtain the list of IP addresses to be targeted for performing brute-force attacks."
+              ]
+            ]
+          },
+          "TTP:T1059_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                6,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Persistence is achieved via scheduled tasks and Windows Registry modifications, which are also used to hide the scheduled task.",
+                "Additionally, TernDoor can execute commands via remote shell, run arbitrary processes, read/write files, collect system information, and self-uninstall."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+          ],
+          [
+            "BruteEntry is also written in GoLang and begins by registering with the C2 server by providing it with the infected system’s IP address and computer name:\n{“ip”:“value”, “hostname”:“value”}\nThe C2 responds with a JSON that assigns an agent_id to the infected host:\n{“agent_id”:“value”, “server”:“value”}\nwhere “server” = version string of BruteEntry such as “brute-force-server-v1.0”\nBruteEntry will then ask the C2 for tasks to perform by sending a GET request to the C2 at the URI, where limit=1000 is the maximum number of vulnerable IPs to scan:."
+          ],
+          [
+            "Any successful logins are then POSTED back to the C2:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            32,
+            32
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "edges": [
+          "EDGE_020a74e013a0",
+          "EDGE_2b08b4df6d51",
+          "EDGE_6e6cfb1dd163",
+          "EDGE_81cc2fe2f8e1",
+          "EDGE_91cfd1cf2058",
+          "EDGE_a0f6317a4595"
+        ],
+        "source": {
+          "TTP:T1071_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                32,
+                32
+              ],
+              [
+                38,
+                38
+              ],
+              [
+                46,
+                46
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+              ],
+              [
+                "BruteEntry is also written in GoLang and begins by registering with the C2 server by providing it with the infected system’s IP address and computer name:\n{“ip”:“value”, “hostname”:“value”}\nThe C2 responds with a JSON that assigns an agent_id to the infected host:\n{“agent_id”:“value”, “server”:“value”}\nwhere “server” = version string of BruteEntry such as “brute-force-server-v1.0”\nBruteEntry will then ask the C2 for tasks to perform by sending a GET request to the C2 at the URI, where limit=1000 is the maximum number of vulnerable IPs to scan:."
+              ],
+              [
+                "Any successful logins are then POSTED back to the C2:."
+              ]
+            ]
+          },
+          "TTP:T1071_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                12,
+                16
+              ],
+              [
+                19,
+                19
+              ],
+              [
+                21,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Subsequently, it establishes communication with the C2 server, allowing it to create processes, run arbitrary commands, read/write files, collect system information, and deploy the driver to hide malicious components and manage processes.",
+                "Further analysis of the UAT-9244's infrastructure has led to the discovery of a Linux peer-to-peer (P2P) backdoor dubbed PeerTime, which is compiled for several architectures (i.e., ARM, AARCH, PPC, and MIPS) so as to infect a variety of embedded systems.",
+                "The ELF backdoor, along with an instrumentor binary, is deployed via a shell script.",
+                "\"The instrumentor ELF binary will check for the presence of Docker on the compromised host using the commands docker and docker –q,\" Talos researchers Asheer Malhotra and Brandon White said.",
+                "\"If Docker is found, then the PeerTime loader is executed."
+              ],
+              [
+                "Besides having the ability to rename itself as a harmless process to sidestep detection, the backdoor employs the BitTorrent protocol to fetch C2 information, download files from its peers, and execute them on the compromised system."
+              ],
+              [
+                "This is accomplished by means of a shell script that drops two Golang-based components: an orchestrator that delivers BruteEntry, which then contacts a C2 server to obtain the list of IP addresses to be targeted for performing brute-force attacks.",
+                "The backdoor ultimately reports successful logins back to the C2 server."
+              ]
+            ]
+          },
+          "TTP:T1071_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Unlike traditional malware that communicates with a centralized command-and-control server, PeerTime uses the BitTorrent protocol to retrieve instructions and download additional payloads from peers."
+              ]
+            ]
+          },
+          "TTP:T1071_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "PeerTime, an ELF-based peer-to-peer (P2P) backdoor, uses the BitTorrent protocol for command-and-control (C2) communications, downloads and executes payloads from peers, and uses BusyBox to write the files on the host."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1090",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1090",
+        "ttp_id": "T1090",
+        "best_span_sentences_list": [
+          [
+            "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ]
+        ],
+        "edges": [
+          "EDGE_3ad10d93c4a3",
+          "EDGE_8776d0338d3f"
+        ],
+        "source": {
+          "TTP:T1090_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+              ]
+            ]
+          },
+          "TTP:T1090_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                20,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Also staged in the threat actor's servers are a set of shell scripts and payloads, including a brute-force scanner codenamed BruteEntry that's installed on edge devices to turn them into mass-scanning proxy nodes within an Operational Relay Box (ORB) capable of brute-forcing Postgres, SSH, and Tomcat servers.",
+                "This is accomplished by means of a shell script that drops two Golang-based components: an orchestrator that delivers BruteEntry, which then contacts a C2 server to obtain the list of IP addresses to be targeted for performing brute-force attacks."
+              ]
+            ]
+          },
+          "TTP:T1090_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                13,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Finally, there’s BruteEntry, which consists of a Go-based instrumentor binary and a brute-forcing component.",
+                "Its role is to turn compromised devices into scanning nodes, known as Operational Relay Boxes (ORBs)."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1105",
+        "ttp_id": "T1105",
+        "best_span_sentences_list": [
+          [
+            "PeerTime is deployed through a shellscript that downloads the PeerTime loader ELF binary and an instrumentor binary."
+          ],
+          [
+            "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            27,
+            27
+          ],
+          [
+            32,
+            32
+          ]
+        ],
+        "edges": [
+          "EDGE_32c1b4cce5d0",
+          "EDGE_a12b6a3814ac",
+          "EDGE_c97a91bee5eb",
+          "EDGE_6ef3c6a16a6e",
+          "EDGE_f7d26f086c9b",
+          "EDGE_9e342eae17ab"
+        ],
+        "source": {
+          "TTP:T1105_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                27,
+                27
+              ],
+              [
+                32,
+                32
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "PeerTime is deployed through a shellscript that downloads the PeerTime loader ELF binary and an instrumentor binary."
+              ],
+              [
+                "PeerTime uses the BitTorrent protocol to obtain C2 information, download files from its peers, and execute them on the infected host."
+              ]
+            ]
+          },
+          "TTP:T1105_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                19,
+                19
+              ],
+              [
+                21,
+                21
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "In the campaign analyzed by the cybersecurity company, the attack chains have been found to distribute three previously undocumented implants: TernDoor targeting Windows, PeerTime (aka angrypeer) targeting Linux, and BruteEntry, which is installed on network edge devices."
+              ],
+              [
+                "Besides having the ability to rename itself as a harmless process to sidestep detection, the backdoor employs the BitTorrent protocol to fetch C2 information, download files from its peers, and execute them on the compromised system."
+              ],
+              [
+                "This is accomplished by means of a shell script that drops two Golang-based components: an orchestrator that delivers BruteEntry, which then contacts a C2 server to obtain the list of IP addresses to be targeted for performing brute-force attacks."
+              ]
+            ]
+          },
+          "TTP:T1105_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                14,
+                14
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Unlike traditional malware that communicates with a centralized command-and-control server, PeerTime uses the BitTorrent protocol to retrieve instructions and download additional payloads from peers."
+              ]
+            ]
+          },
+          "TTP:T1105_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                12,
+                12
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "PeerTime, an ELF-based peer-to-peer (P2P) backdoor, uses the BitTorrent protocol for command-and-control (C2) communications, downloads and executes payloads from peers, and uses BusyBox to write the files on the host."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1107",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1107",
+        "ttp_id": "T1107",
+        "best_span_sentences_list": [
+          [
+            "Unlike CrowDoor, TernDoor only supports one command line switch: “-u”, passed to WSPrint.exe.",
+            "This is the switch for uninstalling the malware from the system and it deletes all malware files from the operating directory, as well as terminates malicious processes."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            18,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_7c3e5bd1d1b8",
+          "EDGE_ce0e6f916a6b"
+        ],
+        "source": {
+          "TTP:T1107_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                18,
+                19
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Unlike CrowDoor, TernDoor only supports one command line switch: “-u”, passed to WSPrint.exe.",
+                "This is the switch for uninstalling the malware from the system and it deletes all malware files from the operating directory, as well as terminates malicious processes."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1110",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1110",
+        "ttp_id": "T1110",
+        "best_span_sentences_list": [
+          [
+            "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+          ],
+          [
+            "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers.",
+            "BruteEntry is also written in GoLang and begins by registering with the C2 server by providing it with the infected system’s IP address and computer name:\n{“ip”:“value”, “hostname”:“value”}\nThe C2 responds with a JSON that assigns an agent_id to the infected host:\n{“agent_id”:“value”, “server”:“value”}\nwhere “server” = version string of BruteEntry such as “brute-force-server-v1.0”\nBruteEntry will then ask the C2 for tasks to perform by sending a GET request to the C2 at the URI, where limit=1000 is the maximum number of vulnerable IPs to scan:."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            4,
+            4
+          ],
+          [
+            37,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_22c22f6f5dd8",
+          "EDGE_4afb24135ebc",
+          "EDGE_61ba1cf1c7ac",
+          "EDGE_1d547c6b9bf3",
+          "EDGE_93cf84b8e79e",
+          "EDGE_00772150b2d7",
+          "EDGE_b32e5405e380"
+        ],
+        "source": {
+          "TTP:T1110_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ],
+              [
+                37,
+                38
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "UAT-9244’s third implant is a brute force scanner, which Talos tracks as “BruteEntry.” BruteEntry is typically installed on network edge devices, essentially converting them into mass-scanning proxy nodes, also known as Operational Relay Boxes (ORBs) that attempt to brute force into SSH, Postgres, and Tomcat servers."
+              ],
+              [
+                "Infrastructure used by UAT-9244 also hosts another set of shell scripts and payloads designed to establish compromised Linux based systems including edge devices as operational relay boxes (ORBs) that scan and brute force Tomcat, Postgres, and SSH servers.",
+                "BruteEntry is also written in GoLang and begins by registering with the C2 server by providing it with the infected system’s IP address and computer name:\n{“ip”:“value”, “hostname”:“value”}\nThe C2 responds with a JSON that assigns an agent_id to the infected host:\n{“agent_id”:“value”, “server”:“value”}\nwhere “server” = version string of BruteEntry such as “brute-force-server-v1.0”\nBruteEntry will then ask the C2 for tasks to perform by sending a GET request to the C2 at the URI, where limit=1000 is the maximum number of vulnerable IPs to scan:."
+              ]
+            ]
+          },
+          "TTP:T1110_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                20,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Also staged in the threat actor's servers are a set of shell scripts and payloads, including a brute-force scanner codenamed BruteEntry that's installed on edge devices to turn them into mass-scanning proxy nodes within an Operational Relay Box (ORB) capable of brute-forcing Postgres, SSH, and Tomcat servers.",
+                "This is accomplished by means of a shell script that drops two Golang-based components: an orchestrator that delivers BruteEntry, which then contacts a C2 server to obtain the list of IP addresses to be targeted for performing brute-force attacks.",
+                "The backdoor ultimately reports successful logins back to the C2 server."
+              ]
+            ]
+          },
+          "TTP:T1110_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                18,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The third component, BruteEntry, is used to convert compromised edge devices into scanning infrastructure - known as operational relay boxes - capable of conducting credential brute-force attacks against exposed services.",
+                "Written in Go, the tool registers with a command-and-control server and receives lists of IP addresses to probe.",
+                "BruteEntry scans for services such as SSH, Postgres and Tomcat and attempts authentication using built-in credential lists.",
+                "When valid credentials are identified, the information is transmitted back to the attackers' command infrastructure, with the C2 response indicating whether each brute-force attempt succeeded or failed.",
+                "Researchers said the tool effectively turns compromised systems into a distributed scanning network, allowing the attackers to probe large portions of the internet for vulnerable systems and expand their access into additional networks."
+              ]
+            ]
+          },
+          "TTP:T1110_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                13,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Finally, there’s BruteEntry, which consists of a Go-based instrumentor binary and a brute-forcing component.",
+                "Its role is to turn compromised devices into scanning nodes, known as Operational Relay Boxes (ORBs).",
+                "The attacker uses the machines running BruteEntry to scan for new targets and brute-force access to SSH, Postgres, and Tomcat."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”.",
+            "The implant decodes its configuration that can specify the following information:."
+          ],
+          [
+            "If docker is found, then the PeerTime loader is executed using:.",
+            "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors:\n获取当前程序路径错误: //Error retrieving current program path: 删除当前程序错误: // Error deleting current program:\nPeerTime consists of a loader that will decrypt and decompress the final PeerTime ELF payload and run it in memory."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            21
+          ],
+          [
+            29,
+            30
+          ]
+        ],
+        "edges": [
+          "EDGE_1a47dc4479c9",
+          "EDGE_21019f1c3f20",
+          "EDGE_7f5153cd9803"
+        ],
+        "source": {
+          "TTP:T1140_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                20,
+                21
+              ],
+              [
+                29,
+                30
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Like previous variants of CrowDoor, TernDoor also checks to ensure it has been injected into “msiexec[.]exe”.",
+                "The implant decodes its configuration that can specify the following information:."
+              ],
+              [
+                "If docker is found, then the PeerTime loader is executed using:.",
+                "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors:\n获取当前程序路径错误: //Error retrieving current program path: 删除当前程序错误: // Error deleting current program:\nPeerTime consists of a loader that will decrypt and decompress the final PeerTime ELF payload and run it in memory."
+              ]
+            ]
+          },
+          "TTP:T1140_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                16,
+                17
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "\"If Docker is found, then the PeerTime loader is executed.",
+                "The instrumentor consists of debug strings in Simplified Chinese, indicating that it is a custom binary created and deployed by Chinese-speaking threat actors.\"\nThe primary goal of the loader is to decrypt and decompress the final PeerTime payload and execute it directly in memory."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1574",
+        "ttp_id": "T1574",
+        "best_span_sentences_list": [
+          [
+            "UAT-9244 used dynamic-link library (DLL) side-loading to activate multiple stages of their infection chain.",
+            "The actor executed “wsprint[.]exe”, a benign executable that loaded the malicious DLL-based loader “BugSplatRc64[.]dll”."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_d39a7feb3025",
+          "EDGE_4a5b402753ec"
+        ],
+        "source": {
+          "TTP:T1574_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                5,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "UAT-9244 used dynamic-link library (DLL) side-loading to activate multiple stages of their infection chain.",
+                "The actor executed “wsprint[.]exe”, a benign executable that loaded the malicious DLL-based loader “BugSplatRc64[.]dll”."
+              ]
+            ]
+          },
+          "TTP:T1574_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                6,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "TernDoor is deployed through DLL side-loading, leveraging the legitimate executable \"wsprint.exe\" to launch a rogue DLL (\"BugSplatRc64.dll\") that decrypts and executes the final payload in memory.",
+                "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024.",
+                "It establishes persistence on the host by means of a scheduled task or the Registry Run key.",
+                "It also exhibits differences with CrowDoor by making use of a disparate set of command codes and embedding a Windows driver to suspend, resume, and terminate processes.",
+                "Furthermore, it only supports one command-line switch (\"-u\") to uninstall itself from the host and delete all associated artifacts."
+              ]
+            ]
+          },
+          "TTP:T1574_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Researchers observed the attackers using DLL side-loading techniques to deploy TernDoor, a process in which a legitimate executable loads a malicious library that decrypts and launches the final payload in memory, injected into the Windows process msiexec.exe\nto blend in with routine system behavior."
+              ]
+            ]
+          },
+          "TTP:T1574_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "TernDoor is deployed through DLL side-loading, using the legitimate executable wsprint.exe to load malicious code from BugSplatRc64.dll, which decrypts and executes the final payload in memory (injected into msiexec.exe)."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1613",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1613",
+        "ttp_id": "T1613",
+        "best_span_sentences_list": [
+          [
+            "The instrumentor ELF binary will check for the presence of docker on the compromised host using the commands docker and docker –q."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            28,
+            28
+          ]
+        ],
+        "edges": [],
+        "source": {
+          "TTP:T1613_blog.talosintelligence.com_uat-9244": {
+            "best_span_ranges": [
+              [
+                28,
+                28
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The instrumentor ELF binary will check for the presence of docker on the compromised host using the commands docker and docker –q."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1053",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1053",
+        "ttp_id": "T1053",
+        "best_span_sentences_list": [
+          [
+            "TernDoor is deployed through DLL side-loading, leveraging the legitimate executable \"wsprint.exe\" to launch a rogue DLL (\"BugSplatRc64.dll\") that decrypts and executes the final payload in memory.",
+            "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024.",
+            "It establishes persistence on the host by means of a scheduled task or the Registry Run key."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_38e82f23970e",
+          "EDGE_b3155aeff77a",
+          "EDGE_5367e857cd2a"
+        ],
+        "source": {
+          "TTP:T1053_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                6,
+                8
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "TernDoor is deployed through DLL side-loading, leveraging the legitimate executable \"wsprint.exe\" to launch a rogue DLL (\"BugSplatRc64.dll\") that decrypts and executes the final payload in memory.",
+                "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024.",
+                "It establishes persistence on the host by means of a scheduled task or the Registry Run key."
+              ]
+            ]
+          },
+          "TTP:T1053_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                9,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "To maintain persistence, TernDoor creates a scheduled task and modifies related registry keys to conceal it from standard system views.",
+                "It also sets a Windows Registry Run key that relaunches the malware at every user login.",
+                "The implant also installs a malicious Windows driver capable of suspending or terminating processes, a technique that can help attackers evade security monitoring tools."
+              ]
+            ]
+          },
+          "TTP:T1053_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                6,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Persistence is achieved via scheduled tasks and Windows Registry modifications, which are also used to hide the scheduled task.",
+                "Additionally, TernDoor can execute commands via remote shell, run arbitrary processes, read/write files, collect system information, and self-uninstall."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1070",
+        "ttp_id": "T1070",
+        "best_span_sentences_list": [
+          [
+            "TernDoor is deployed through DLL side-loading, leveraging the legitimate executable \"wsprint.exe\" to launch a rogue DLL (\"BugSplatRc64.dll\") that decrypts and executes the final payload in memory.",
+            "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024.",
+            "It establishes persistence on the host by means of a scheduled task or the Registry Run key.",
+            "It also exhibits differences with CrowDoor by making use of a disparate set of command codes and embedding a Windows driver to suspend, resume, and terminate processes.",
+            "Furthermore, it only supports one command-line switch (\"-u\") to uninstall itself from the host and delete all associated artifacts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_8a8b0555e3d4"
+        ],
+        "source": {
+          "TTP:T1070_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                6,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "TernDoor is deployed through DLL side-loading, leveraging the legitimate executable \"wsprint.exe\" to launch a rogue DLL (\"BugSplatRc64.dll\") that decrypts and executes the final payload in memory.",
+                "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024.",
+                "It establishes persistence on the host by means of a scheduled task or the Registry Run key.",
+                "It also exhibits differences with CrowDoor by making use of a disparate set of command codes and embedding a Windows driver to suspend, resume, and terminate processes.",
+                "Furthermore, it only supports one command-line switch (\"-u\") to uninstall itself from the host and delete all associated artifacts."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "Subsequently, it establishes communication with the C2 server, allowing it to create processes, run arbitrary commands, read/write files, collect system information, and deploy the driver to hide malicious components and manage processes.",
+            "Further analysis of the UAT-9244's infrastructure has led to the discovery of a Linux peer-to-peer (P2P) backdoor dubbed PeerTime, which is compiled for several architectures (i.e., ARM, AARCH, PPC, and MIPS) so as to infect a variety of embedded systems.",
+            "The ELF backdoor, along with an instrumentor binary, is deployed via a shell script.",
+            "\"The instrumentor ELF binary will check for the presence of Docker on the compromised host using the commands docker and docker –q,\" Talos researchers Asheer Malhotra and Brandon White said.",
+            "\"If Docker is found, then the PeerTime loader is executed."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            12,
+            16
+          ]
+        ],
+        "edges": [
+          "EDGE_74320155fbff",
+          "EDGE_9010dafa0ae0"
+        ],
+        "source": {
+          "TTP:T1082_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                12,
+                16
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Subsequently, it establishes communication with the C2 server, allowing it to create processes, run arbitrary commands, read/write files, collect system information, and deploy the driver to hide malicious components and manage processes.",
+                "Further analysis of the UAT-9244's infrastructure has led to the discovery of a Linux peer-to-peer (P2P) backdoor dubbed PeerTime, which is compiled for several architectures (i.e., ARM, AARCH, PPC, and MIPS) so as to infect a variety of embedded systems.",
+                "The ELF backdoor, along with an instrumentor binary, is deployed via a shell script.",
+                "\"The instrumentor ELF binary will check for the presence of Docker on the compromised host using the commands docker and docker –q,\" Talos researchers Asheer Malhotra and Brandon White said.",
+                "\"If Docker is found, then the PeerTime loader is executed."
+              ]
+            ]
+          },
+          "TTP:T1082_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                6,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Researchers observed the attackers using DLL side-loading techniques to deploy TernDoor, a process in which a legitimate executable loads a malicious library that decrypts and launches the final payload in memory, injected into the Windows process msiexec.exe\nto blend in with routine system behavior.",
+                "Once deployed, the backdoor enables operators to execute commands remotely, collects system information and manipulates files on compromised machines."
+              ]
+            ]
+          },
+          "TTP:T1082_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                7,
+                7
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Additionally, TernDoor can execute commands via remote shell, run arbitrary processes, read/write files, collect system information, and self-uninstall."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1547",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1547",
+        "ttp_id": "T1547",
+        "best_span_sentences_list": [
+          [
+            "TernDoor is deployed through DLL side-loading, leveraging the legitimate executable \"wsprint.exe\" to launch a rogue DLL (\"BugSplatRc64.dll\") that decrypts and executes the final payload in memory.",
+            "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024.",
+            "It establishes persistence on the host by means of a scheduled task or the Registry Run key.",
+            "It also exhibits differences with CrowDoor by making use of a disparate set of command codes and embedding a Windows driver to suspend, resume, and terminate processes.",
+            "Furthermore, it only supports one command-line switch (\"-u\") to uninstall itself from the host and delete all associated artifacts."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            10
+          ]
+        ],
+        "edges": [
+          "EDGE_60473d0bb926",
+          "EDGE_e2f0aedd9183"
+        ],
+        "source": {
+          "TTP:T1547_thehackernews.com_2026_03_china-linked-hackers-use-terndoor.html": {
+            "best_span_ranges": [
+              [
+                6,
+                10
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "TernDoor is deployed through DLL side-loading, leveraging the legitimate executable \"wsprint.exe\" to launch a rogue DLL (\"BugSplatRc64.dll\") that decrypts and executes the final payload in memory.",
+                "A variant of Crowdoor (itself a variant of SparrowDoor), the backdoor is said to have been put to use by UAT-9244 since at least November 2024.",
+                "It establishes persistence on the host by means of a scheduled task or the Registry Run key.",
+                "It also exhibits differences with CrowDoor by making use of a disparate set of command codes and embedding a Windows driver to suspend, resume, and terminate processes.",
+                "Furthermore, it only supports one command-line switch (\"-u\") to uninstall itself from the host and delete all associated artifacts."
+              ]
+            ]
+          },
+          "TTP:T1547_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                9,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "To maintain persistence, TernDoor creates a scheduled task and modifies related registry keys to conceal it from standard system views.",
+                "It also sets a Windows Registry Run key that relaunches the malware at every user login.",
+                "The implant also installs a malicious Windows driver capable of suspending or terminating processes, a technique that can help attackers evade security monitoring tools."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1046",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1046",
+        "ttp_id": "T1046",
+        "best_span_sentences_list": [
+          [
+            "BruteEntry scans for services such as SSH, Postgres and Tomcat and attempts authentication using built-in credential lists.",
+            "When valid credentials are identified, the information is transmitted back to the attackers' command infrastructure, with the C2 response indicating whether each brute-force attempt succeeded or failed.",
+            "Researchers said the tool effectively turns compromised systems into a distributed scanning network, allowing the attackers to probe large portions of the internet for vulnerable systems and expand their access into additional networks."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            22
+          ]
+        ],
+        "edges": [
+          "EDGE_2339d090e30e",
+          "EDGE_5256d1b9e02e",
+          "EDGE_5fdadc1cf600",
+          "EDGE_bbe858f93a85",
+          "EDGE_46b918793ffe"
+        ],
+        "source": {
+          "TTP:T1046_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                20,
+                22
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "BruteEntry scans for services such as SSH, Postgres and Tomcat and attempts authentication using built-in credential lists.",
+                "When valid credentials are identified, the information is transmitted back to the attackers' command infrastructure, with the C2 response indicating whether each brute-force attempt succeeded or failed.",
+                "Researchers said the tool effectively turns compromised systems into a distributed scanning network, allowing the attackers to probe large portions of the internet for vulnerable systems and expand their access into additional networks."
+              ]
+            ]
+          },
+          "TTP:T1046_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                15,
+                15
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "The attacker uses the machines running BruteEntry to scan for new targets and brute-force access to SSH, Postgres, and Tomcat."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "To maintain persistence, TernDoor creates a scheduled task and modifies related registry keys to conceal it from standard system views."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_f88f423d9463",
+          "EDGE_07ae2aa0cf35"
+        ],
+        "source": {
+          "TTP:T1112_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                9,
+                9
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "To maintain persistence, TernDoor creates a scheduled task and modifies related registry keys to conceal it from standard system views."
+              ]
+            ]
+          },
+          "TTP:T1112_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Persistence is achieved via scheduled tasks and Windows Registry modifications, which are also used to hide the scheduled task."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "Researchers observed the attackers using DLL side-loading techniques to deploy TernDoor, a process in which a legitimate executable loads a malicious library that decrypts and launches the final payload in memory, injected into the Windows process msiexec.exe\nto blend in with routine system behavior."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_f1ce220ee0b2"
+        ],
+        "source": {
+          "TTP:T1218_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                6,
+                6
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "Researchers observed the attackers using DLL side-loading techniques to deploy TernDoor, a process in which a legitimate executable loads a malicious library that decrypts and launches the final payload in memory, injected into the Windows process msiexec.exe\nto blend in with routine system behavior."
+              ]
+            ]
+          },
+          "TTP:T1218_www.bleepingcomputer.com_news_security_chinese-state-hackers-target-telcos-with-new-malware-toolkit": {
+            "best_span_ranges": [
+              [
+                4,
+                4
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "TernDoor is deployed through DLL side-loading, using the legitimate executable wsprint.exe to load malicious code from BugSplatRc64.dll, which decrypts and executes the final payload in memory (injected into msiexec.exe)."
+              ]
+            ]
+          }
+        }
+      },
+      {
+        "node_id": "TTP_T1562",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1562",
+        "ttp_id": "T1562",
+        "best_span_sentences_list": [
+          [
+            "To maintain persistence, TernDoor creates a scheduled task and modifies related registry keys to conceal it from standard system views.",
+            "It also sets a Windows Registry Run key that relaunches the malware at every user login.",
+            "The implant also installs a malicious Windows driver capable of suspending or terminating processes, a technique that can help attackers evade security monitoring tools."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            11
+          ]
+        ],
+        "edges": [
+          "EDGE_0f4f32ef96dd"
+        ],
+        "source": {
+          "TTP:T1562_www.bankinfosecurity.com_china-linked-hackers-use-malware-trio-for-telecom-espionage-a-30940": {
+            "best_span_ranges": [
+              [
+                9,
+                11
+              ]
+            ],
+            "best_span_sentences_list": [
+              [
+                "To maintain persistence, TernDoor creates a scheduled task and modifies related registry keys to conceal it from standard system views.",
+                "It also sets a Windows Registry Run key that relaunches the malware at every user login.",
+                "The implant also installs a malicious Windows driver capable of suspending or terminating processes, a technique that can help attackers evade security monitoring tools."
+              ]
+            ]
+          }
+        }
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_3ecbacd15e6a",
+        "node_class": "ioc",
+        "node_type": "IPAddress",
+        "node_text": "212.11.64[.]105",
+        "edges": [
+          "EDGE_c97a91bee5eb"
+        ],
+        "source": {
+          "212.11.64[.]105_blog.talosintelligence.com_uat-9244": [
+            [
+              25,
+              "One of the DLL-based loaders was also hosted on the IP “212.11.64[.]105”."
+            ]
+          ]
+        },
+        "raw_value": "212.11.64[.]105",
+        "canonical_value": "212.11.64[.]105"
+      },
+      {
+        "node_id": "IOC_9706c2785166",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "qwiozpVngruhg123",
+        "edges": [
+          "EDGE_53854e15822e",
+          "EDGE_7f5153cd9803"
+        ],
+        "source": {
+          "qwiozpVngruhg123_blog.talosintelligence.com_uat-9244": [
+            [
+              13,
+              "The DLL-based loader, “BugSplatRc64.dll”, will load the “WSPrint.dll” file from the current directory, which will be decoded using the key “qwiozpVngruhg123”."
+            ]
+          ]
+        },
+        "raw_value": "qwiozpVngruhg123",
+        "canonical_value": "qwiozpVngruhg123"
+      },
+      {
+        "node_id": "IOC_97920bbf7b94",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\\\DosDevices\\\\VMTool",
+        "edges": [],
+        "source": {
+          "\\\\DosDevices\\\\VMTool_blog.talosintelligence.com_uat-9244": [
+            [
+              22,
+              "The driver creates a device named “\\\\Device\\\\VMTool” and symbolically links it to “\\\\DosDevices\\\\VMTool”."
+            ]
+          ]
+        },
+        "raw_value": "\\\\DosDevices\\\\VMTool",
+        "canonical_value": "\\\\DosDevices\\\\VMTool",
+        "normalized_value": "\\\\DosDevices\\\\VMTool"
+      },
+      {
+        "node_id": "IOC_b3feed028a9f",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "\\\\Device\\\\VMTool",
+        "edges": [],
+        "source": {
+          "\\\\Device\\\\VMTool_blog.talosintelligence.com_uat-9244": [
+            [
+              22,
+              "The driver creates a device named “\\\\Device\\\\VMTool” and symbolically links it to “\\\\DosDevices\\\\VMTool”."
+            ]
+          ]
+        },
+        "raw_value": "\\\\Device\\\\VMTool",
+        "canonical_value": "\\\\Device\\\\VMTool",
+        "normalized_value": "\\\\Device\\\\VMTool"
+      },
+      {
+        "node_id": "IOC_d8bfb5d16f14",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "2b170a6d90fceba72aba3c7bc5c40b9725f43788",
+        "edges": [
+          "EDGE_81cc2fe2f8e1"
+        ],
+        "source": {
+          "2b170a6d90fceba72aba3c7bc5c40b9725f43788_blog.talosintelligence.com_uat-9244": [
+            [
+              24,
+              "All the C2 IP addresses discovered by Talos were associated with the following SSL certificate on port 443:\nSSL_fingerprint_sha256= 0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8 SSL_fingerprint_SHA1= 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Data: Version: V3 Serial Number: 1 Thumbprint: 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Signature Algorithm: Issuer: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8 Validity Not Before: 2022-09-04 12:54:51 Not After: 2023-09-04 12:54:51 Subject: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8\nPivoting off this certificate, Talos found an additional 18 IPs likely being used by UAT-9244."
+            ]
+          ]
+        },
+        "raw_value": "2b170a6d90fceba72aba3c7bc5c40b9725f43788",
+        "canonical_value": "2b170a6d90fceba72aba3c7bc5c40b9725f43788"
+      },
+      {
+        "node_id": "IOC_f52c1567e0d8",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8",
+        "edges": [
+          "EDGE_020a74e013a0"
+        ],
+        "source": {
+          "0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8_blog.talosintelligence.com_uat-9244": [
+            [
+              24,
+              "All the C2 IP addresses discovered by Talos were associated with the following SSL certificate on port 443:\nSSL_fingerprint_sha256= 0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8 SSL_fingerprint_SHA1= 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Data: Version: V3 Serial Number: 1 Thumbprint: 2b170a6d90fceba72aba3c7bc5c40b9725f43788 Signature Algorithm: Issuer: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8 Validity Not Before: 2022-09-04 12:54:51 Not After: 2023-09-04 12:54:51 Subject: C=US ST=Some-State O=Internet Widgits Pty Ltd CN=8.8.8.8\nPivoting off this certificate, Talos found an additional 18 IPs likely being used by UAT-9244."
+            ]
+          ]
+        },
+        "raw_value": "0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8",
+        "canonical_value": "0c7e36683a100a96f695a952cf07052af9a47f5898e1078311fd58c5fdbdecc8"
+      },
+      {
+        "node_id": "IOC_f5eb1635792c",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https[://]<IP>:<Port>/manager/html",
+        "edges": [
+          "EDGE_4afb24135ebc"
+        ],
+        "source": {
+          "https[://]<IP>:<Port>/manager/html_blog.talosintelligence.com_uat-9244": [
+            [
+              45,
+              "The agent will then use a set of embedded credentials to attempt to brute force into either a Tomcat server application at the URL “https[://]<IP>:<Port>/manager/html”, or will brute force into a Postgres instance, either defined in the JSON (<IP><Port>) from the C2 or using the port 5432 if no port is specified."
+            ]
+          ]
+        },
+        "raw_value": "https[://]<IP>:<Port>/manager/html",
+        "canonical_value": "https[://]<IP>:<Port>/manager/html",
+        "normalized_value": "https[://]<IP>:<Port>/manager/html"
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_020a74e013a0",
+      "node_u": "IOC_f52c1567e0d8",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_094fc8c72ffe",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1a47dc4479c9",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_21019f1c3f20",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_22c22f6f5dd8",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2b08b4df6d51",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2cb98e450c3a",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_32c1b4cce5d0",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ad10d93c4a3",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3ee4dfffa07c",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1036",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4afb24135ebc",
+      "node_u": "IOC_f5eb1635792c",
+      "node_v": "TTP_T1110",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_4bbfba4e9be0",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4d4731ed43fb",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_53854e15822e",
+      "node_u": "IOC_9706c2785166",
+      "node_v": "TTP_T1027",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_61ba1cf1c7ac",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6e6cfb1dd163",
+      "node_u": "HL_04d8f686c29e",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7c3e5bd1d1b8",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1107",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7e8086e6a003",
+      "node_u": "HL_564a9f182ce0",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_7f5153cd9803",
+      "node_u": "IOC_9706c2785166",
+      "node_v": "TTP_T1140",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_81cc2fe2f8e1",
+      "node_u": "IOC_d8bfb5d16f14",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_84d81fe740f1",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8776d0338d3f",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1090",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_91cfd1cf2058",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a0f6317a4595",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a12b6a3814ac",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ada9232c75e7",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c97a91bee5eb",
+      "node_u": "IOC_3ecbacd15e6a",
+      "node_v": "TTP_T1105",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c99f7a87fe70",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ce0e6f916a6b",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1107",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d39a7feb3025",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1d547c6b9bf3",
+      "node_u": "HL_df1debd28b27",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_38e82f23970e",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4a5b402753ec",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1574",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_60473d0bb926",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6e07f4fdc706",
+      "node_u": "HL_b7b42a22e626__f0a3952f",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_6ef3c6a16a6e",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_707c27795a26",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_74320155fbff",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8a8b0555e3d4",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1070",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_93cf84b8e79e",
+      "node_u": "HL_24107c8dc40e",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b3155aeff77a",
+      "node_u": "HL_46c066afb6d9",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_e2f0aedd9183",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1547",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_00772150b2d7",
+      "node_u": "HL_ce7695ea1031",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_0f4f32ef96dd",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1562",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2339d090e30e",
+      "node_u": "HL_df1debd28b27",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5256d1b9e02e",
+      "node_u": "HL_24107c8dc40e",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5fdadc1cf600",
+      "node_u": "HL_c9fdc49b2d03",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9010dafa0ae0",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b32e5405e380",
+      "node_u": "HL_c9fdc49b2d03",
+      "node_v": "TTP_T1110",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bbe858f93a85",
+      "node_u": "HL_ce7695ea1031",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f7d26f086c9b",
+      "node_u": "HL_04d8f686c29e",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f88f423d9463",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_07ae2aa0cf35",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_46b918793ffe",
+      "node_u": "HL_b766c23ad67d",
+      "node_v": "TTP_T1046",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5367e857cd2a",
+      "node_u": "HL_44463ac59fa0",
+      "node_v": "TTP_T1053",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_9e342eae17ab",
+      "node_u": "HL_84e427121d6e",
+      "node_v": "TTP_T1105",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_b1817aff0542",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f1ce220ee0b2",
+      "node_u": "HL_98a32dad314e",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

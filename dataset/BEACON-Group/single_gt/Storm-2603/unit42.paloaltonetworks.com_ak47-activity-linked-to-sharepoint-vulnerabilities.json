@@ -1,0 +1,694 @@
+{
+  "nodes": {
+    "high_level": [
+      {
+        "node_id": "HL_2b48d06c4f64",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "CL-CRI-1040",
+        "sentence_indices": [
+          1,
+          3,
+          5,
+          6,
+          8,
+          9,
+          13,
+          14,
+          36,
+          37,
+          52
+        ],
+        "span_sentences": [
+          "The activity, which we track as CL-CRI-1040, caught our attention by deploying a tool set that we call Project AK47, which includes a backdoor, ransomware and loaders.",
+          "Based on our analysis of host- and network-based artifacts, we assess with high confidence that Storm-2603 is related to the activity cluster that we track as CL-CRI-1040.",
+          "CL-CRI-1040 has been active since at least March 2025.",
+          "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain.",
+          "Retrospective investigation of CL-CRI-1040 revealed several pieces of evidence to support our assessment of this activity cluster as financially motivated.",
+          "We confirmed that CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock Client Leaked Data Show.",
+          "In this article, we detail our observations of CL-CRI-1040, which we assess with high confidence represents the activity of the same threat actor as Storm-2603.",
+          "Project AK47 is a collection of malware used in CL-CRI-1040 that has likely been under development since at least March 2025.",
+          "Our investigation of CL-CRI-1040 attacks revealed evidence of previous ransomware activities, including LockBit 3.0 and Warlock Client ransomware.",
+          "This evidence led us to assess with high confidence that CL-CRI-1040 is financially motivated.",
+          "Our analysis reveals overlaps between recent ToolShell exploit activity and the activity of a cluster that we track as CL-CRI-1040."
+        ],
+        "edges": [
+          "EDGE_1bd5103693e9",
+          "EDGE_50135ec94a83",
+          "EDGE_ad7b47f5da08",
+          "EDGE_eb8f6544476d",
+          "EDGE_f1e2d9f2caab"
+        ]
+      },
+      {
+        "node_id": "HL_37894a1d535f",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "X2ANYLOCK",
+        "sentence_indices": [
+          35
+        ],
+        "span_sentences": [
+          "However, since we have not found any common indicators between AK47/X2ANYLOCK ransomware from CL-CRI-1040 and Warlock ransomware from Microsoft's article, we cannot conclusively determine the relationship between these two ransomware families."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_49884b2b2c2e",
+        "node_class": "high_level",
+        "node_type": "Organization",
+        "node_text": "Microsoft",
+        "sentence_indices": [
+          0,
+          2,
+          6,
+          10,
+          12,
+          18,
+          34,
+          50
+        ],
+        "span_sentences": [
+          "Unit 42 observed notable overlaps between Microsoft’s reporting on ToolShell activity (an exploit chain affecting SharePoint vulnerabilities) and activity that we have been separately tracking.",
+          "Microsoft's report named a suspected China-based threat actor, Storm-2603.",
+          "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain.",
+          "However, considering that CL-CRI-1040 activity appeared alongside espionage-motivated actors in Microsoft’s report, we cannot entirely rule out the possibility of nation-state motivation or cooperation between threat actors.",
+          "Microsoft’s report covers the activity of several threat actors.",
+          "According to IoCs shared by Microsoft, attackers deployed both the dnsclient and httpclient components of AK47C2 as payloads for the ToolShell exploits.",
+          "According to the Microsoft report, Storm-2603 has previously deployed ransomware named Warlock.",
+          "On the other hand, Microsoft mentioned that Storm-2603 has previously deployed Warlock ransomware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_6418d2f6e808",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AK47 ransomware",
+        "sentence_indices": [
+          28,
+          31,
+          33,
+          38,
+          48
+        ],
+        "span_sentences": [
+          "The associated sample was likely a prototype of AK47 ransomware.",
+          "The ransom note is embedded in the AK47 ransomware binary without encryption or encoding.",
+          "The decrypt ID differs with each binary, but the Tox ID to communicate with the threat actor is the same across all AK47 ransomware variants.",
+          "During our investigation on the Tox ID (3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A) from the AK47 ransomware note, we discovered a database dump file associated with LockBit 3.0 ransomware.",
+          "The AK47 ransomware Tox ID shows another link to the Warlock ransomware group, which emerged in June 2025."
+        ],
+        "edges": [
+          "EDGE_f4bb7f68cc8f"
+        ]
+      },
+      {
+        "node_id": "HL_78d9f86d16bd",
+        "node_class": "high_level",
+        "node_type": "ThreatActor",
+        "node_text": "Storm-2603",
+        "sentence_indices": [
+          2,
+          3,
+          6,
+          13,
+          34,
+          50
+        ],
+        "span_sentences": [
+          "Microsoft's report named a suspected China-based threat actor, Storm-2603.",
+          "Based on our analysis of host- and network-based artifacts, we assess with high confidence that Storm-2603 is related to the activity cluster that we track as CL-CRI-1040.",
+          "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain.",
+          "In this article, we detail our observations of CL-CRI-1040, which we assess with high confidence represents the activity of the same threat actor as Storm-2603.",
+          "According to the Microsoft report, Storm-2603 has previously deployed ransomware named Warlock.",
+          "On the other hand, Microsoft mentioned that Storm-2603 has previously deployed Warlock ransomware."
+        ],
+        "edges": [
+          "EDGE_ea2b386b40f5"
+        ]
+      },
+      {
+        "node_id": "HL_7bbea51d18a0",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "AK47C2",
+        "sentence_indices": [
+          16,
+          18,
+          20
+        ],
+        "span_sentences": [
+          "AK47C2\nAK47C2 is designed as a multi-protocol supporting backdoor.",
+          "According to IoCs shared by Microsoft, attackers deployed both the dnsclient and httpclient components of AK47C2 as payloads for the ToolShell exploits.",
+          "The XOR key (VHBD@H) is hard-coded in the binary and is shared among other AK47C2 samples."
+        ],
+        "edges": [
+          "EDGE_3bfa80e9b34d",
+          "EDGE_738b8ffea43c",
+          "EDGE_8e7e00fe0ece"
+        ]
+      },
+      {
+        "node_id": "HL_91aeddf97df0",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Warlock Client Leaked Data Show",
+        "sentence_indices": [
+          9,
+          49,
+          51
+        ],
+        "span_sentences": [
+          "We confirmed that CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock Client Leaked Data Show.",
+          "The ransomware's leak site on the dark web is named Warlock Client Leaked Data Show, and it displays the same Tox ID as AK47 ransomware for negotiation with its victims.",
+          "However, since the report shares no indicators of Warlock ransomware binaries, we cannot confirm if the Warlock mentioned by Microsoft is identical to that used by the Warlock Client Leaked Data Show."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_bc2adc9a3c7d",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Warlock",
+        "sentence_indices": [
+          34,
+          35,
+          36,
+          50,
+          51
+        ],
+        "span_sentences": [
+          "According to the Microsoft report, Storm-2603 has previously deployed ransomware named Warlock.",
+          "However, since we have not found any common indicators between AK47/X2ANYLOCK ransomware from CL-CRI-1040 and Warlock ransomware from Microsoft's article, we cannot conclusively determine the relationship between these two ransomware families.",
+          "Our investigation of CL-CRI-1040 attacks revealed evidence of previous ransomware activities, including LockBit 3.0 and Warlock Client ransomware.",
+          "On the other hand, Microsoft mentioned that Storm-2603 has previously deployed Warlock ransomware.",
+          "However, since the report shares no indicators of Warlock ransomware binaries, we cannot confirm if the Warlock mentioned by Microsoft is identical to that used by the Warlock Client Leaked Data Show."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_c3e69f54c745",
+        "node_class": "high_level",
+        "node_type": "Product",
+        "node_text": "SharePoint",
+        "sentence_indices": [
+          0,
+          4,
+          6
+        ],
+        "span_sentences": [
+          "Unit 42 observed notable overlaps between Microsoft’s reporting on ToolShell activity (an exploit chain affecting SharePoint vulnerabilities) and activity that we have been separately tracking.",
+          "We initially noted this in our threat brief covering exploitation of recent SharePoint vulnerabilities, and here further expand on our observations.",
+          "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain."
+        ],
+        "edges": [
+          "EDGE_da6132da6835"
+        ]
+      },
+      {
+        "node_id": "HL_dcd516efd6d6",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "Warlock Client ransomware",
+        "sentence_indices": [
+          36,
+          42
+        ],
+        "span_sentences": [
+          "Our investigation of CL-CRI-1040 attacks revealed evidence of previous ransomware activities, including LockBit 3.0 and Warlock Client ransomware.",
+          "We believe the letters in the username wlteaml might stand for warlock team LockBit and indicate a tie to Warlock Client ransomware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "HL_dea90c536043",
+        "node_class": "high_level",
+        "node_type": "Campaign",
+        "node_text": "ToolShell",
+        "sentence_indices": [
+          0,
+          6,
+          18,
+          52
+        ],
+        "span_sentences": [
+          "Unit 42 observed notable overlaps between Microsoft’s reporting on ToolShell activity (an exploit chain affecting SharePoint vulnerabilities) and activity that we have been separately tracking.",
+          "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain.",
+          "According to IoCs shared by Microsoft, attackers deployed both the dnsclient and httpclient components of AK47C2 as payloads for the ToolShell exploits.",
+          "Our analysis reveals overlaps between recent ToolShell exploit activity and the activity of a cluster that we track as CL-CRI-1040."
+        ],
+        "edges": [
+          "EDGE_18103c99ffb6"
+        ]
+      },
+      {
+        "node_id": "HL_e53cb86b5900",
+        "node_class": "high_level",
+        "node_type": "MalwareFamily",
+        "node_text": "LockBit 3.0",
+        "sentence_indices": [
+          9,
+          36,
+          38,
+          39,
+          41,
+          43,
+          45,
+          46,
+          47
+        ],
+        "span_sentences": [
+          "We confirmed that CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock Client Leaked Data Show.",
+          "Our investigation of CL-CRI-1040 attacks revealed evidence of previous ransomware activities, including LockBit 3.0 and Warlock Client ransomware.",
+          "During our investigation on the Tox ID (3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A) from the AK47 ransomware note, we discovered a database dump file associated with LockBit 3.0 ransomware.",
+          "In May 2025, an unknown actor compromised LockBit 3.0 infrastructure and leaked a database dump of the ransomware's operations.",
+          "The database indicates that the wlteaml is the last user registered as a LockBit 3.0 affiliate before the data leak.",
+          "The final payload executed by the in-memory shellcode is explicitly LockBit 3.0.",
+          "This code invokes ransomware behavior, associated functions and meaningless Windows API calls, as an analysis report on LockBit 3.0 previously described.",
+          "The timeline for this sample is unusual, because the first submission date of this sample to VirusTotal was April 16, 2025, but the associated wlteaml user registration on the LockBit 3.0 portal was April 22, 2025.",
+          "While we cannot yet explain this timeline gap, the inclusion of the LockBit 3.0 instance in the same archive as Project AK47 components does not seem to be a mere coincidence."
+        ],
+        "edges": [
+          "EDGE_f00561939f4d"
+        ]
+      },
+      {
+        "node_id": "HL_f1f37cc6416e",
+        "node_class": "high_level",
+        "node_type": "Tool",
+        "node_text": "Project AK47",
+        "sentence_indices": [
+          1,
+          14,
+          47,
+          53
+        ],
+        "span_sentences": [
+          "The activity, which we track as CL-CRI-1040, caught our attention by deploying a tool set that we call Project AK47, which includes a backdoor, ransomware and loaders.",
+          "Project AK47 is a collection of malware used in CL-CRI-1040 that has likely been under development since at least March 2025.",
+          "While we cannot yet explain this timeline gap, the inclusion of the LockBit 3.0 instance in the same archive as Project AK47 components does not seem to be a mere coincidence.",
+          "This article also covers the Project AK47 tool set in detail and describes the considerations behind our attribution."
+        ],
+        "edges": [
+          "EDGE_0ab6b5a4acc2"
+        ]
+      }
+    ],
+    "ttp": [
+      {
+        "node_id": "TTP_T1001",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1001",
+        "ttp_id": "T1001",
+        "best_span_sentences_list": [
+          [
+            "Version 202503 of dnsclient communicates with the C2 server by XOR-encoding JSON data, converting it into a hexadecimal string and then sending it as a subdomain of the hard-coded server at update.updatemicfosoft[.]com."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            19,
+            19
+          ]
+        ],
+        "edges": [
+          "EDGE_001632770d8f",
+          "EDGE_1bd4e6c06b8a",
+          "EDGE_738b8ffea43c",
+          "EDGE_f1e2d9f2caab"
+        ]
+      },
+      {
+        "node_id": "TTP_T1027",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1027",
+        "ttp_id": "T1027",
+        "best_span_sentences_list": [
+          [
+            "The XOR key (VHBD@H) is hard-coded in the binary and is shared among other AK47C2 samples."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            20,
+            20
+          ]
+        ],
+        "edges": [
+          "EDGE_1bd5103693e9",
+          "EDGE_8e7e00fe0ece"
+        ]
+      },
+      {
+        "node_id": "TTP_T1071",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1071",
+        "ttp_id": "T1071",
+        "best_span_sentences_list": [
+          [
+            "AK47C2\nAK47C2 is designed as a multi-protocol supporting backdoor."
+          ],
+          [
+            "According to IoCs shared by Microsoft, attackers deployed both the dnsclient and httpclient components of AK47C2 as payloads for the ToolShell exploits.",
+            "Version 202503 of dnsclient communicates with the C2 server by XOR-encoding JSON data, converting it into a hexadecimal string and then sending it as a subdomain of the hard-coded server at update.updatemicfosoft[.]com."
+          ],
+          [
+            "The httpclient has been under development since at least late March 2025 and supports HTTP communication with the C2 server, as its PDB name indicates.",
+            "The encoded hexadecimal string is stored in the HTTP body and sent to the C2 server using the POST method.",
+            "The httpclient uses curl for network communication, as noted in the curl options (CURLOPT) shown in the code snippet in Figure 7 below."
+          ],
+          [
+            "The decrypt ID differs with each binary, but the Tox ID to communicate with the threat actor is the same across all AK47 ransomware variants."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            16,
+            16
+          ],
+          [
+            18,
+            19
+          ],
+          [
+            24,
+            26
+          ],
+          [
+            33,
+            33
+          ]
+        ],
+        "edges": [
+          "EDGE_3bfa80e9b34d",
+          "EDGE_a5a1757f0f33",
+          "EDGE_ad7b47f5da08",
+          "EDGE_f4bb7f68cc8f"
+        ]
+      },
+      {
+        "node_id": "TTP_T1190",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1190",
+        "ttp_id": "T1190",
+        "best_span_sentences_list": [
+          [
+            "Based on overlaps in host- and network-based artifacts from the Microsoft report, we have high confidence that the CL-CRI-1040 activity cluster represents the same threat actor nicknamed Storm-2603, that Microsoft observed exploiting recent vulnerabilities in SharePoint through the ToolShell exploit chain."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            6,
+            6
+          ]
+        ],
+        "edges": [
+          "EDGE_18103c99ffb6",
+          "EDGE_490b1f2bcafd",
+          "EDGE_50135ec94a83",
+          "EDGE_578462bf7557",
+          "EDGE_691b2a3ec54a",
+          "EDGE_6edbdd91270d",
+          "EDGE_da6132da6835",
+          "EDGE_ea2b386b40f5"
+        ]
+      },
+      {
+        "node_id": "TTP_T1486",
+        "node_class": "ttp",
+        "node_type": "TTP",
+        "node_text": "TTP:T1486",
+        "ttp_id": "T1486",
+        "best_span_sentences_list": [
+          [
+            "The activity, which we track as CL-CRI-1040, caught our attention by deploying a tool set that we call Project AK47, which includes a backdoor, ransomware and loaders."
+          ],
+          [
+            "We confirmed that CL-CRI-1040 was formerly associated with a LockBit 3.0-affiliate and has recently been operating a double-extortion data leak site known as Warlock Client Leaked Data Show."
+          ],
+          [
+            "During our investigation on the Tox ID (3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A) from the AK47 ransomware note, we discovered a database dump file associated with LockBit 3.0 ransomware."
+          ]
+        ],
+        "best_span_ranges": [
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            38,
+            38
+          ]
+        ],
+        "edges": [
+          "EDGE_0ab6b5a4acc2",
+          "EDGE_eb8f6544476d",
+          "EDGE_f00561939f4d"
+        ]
+      }
+    ],
+    "ioc": [
+      {
+        "node_id": "IOC_01ca81e5c239",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "VHBD@H",
+        "sentence_indices": [
+          20
+        ],
+        "span_sentences": [
+          "The XOR key (VHBD@H) is hard-coded in the binary and is shared among other AK47C2 samples."
+        ],
+        "edges": [
+          "EDGE_1bd4e6c06b8a"
+        ]
+      },
+      {
+        "node_id": "IOC_16fefe5606d4",
+        "node_class": "ioc",
+        "node_type": "Domain",
+        "node_text": "update.updatemicfosoft[.]com",
+        "sentence_indices": [
+          19
+        ],
+        "span_sentences": [
+          "Version 202503 of dnsclient communicates with the C2 server by XOR-encoding JSON data, converting it into a hexadecimal string and then sending it as a subdomain of the hard-coded server at update.updatemicfosoft[.]com."
+        ],
+        "edges": [
+          "EDGE_001632770d8f",
+          "EDGE_a5a1757f0f33"
+        ]
+      },
+      {
+        "node_id": "IOC_1766542380ab",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-53770",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The recent SharePoint vulnerabilities are designated CVE-2025-49704, CVE-2025-49706, CVE-2025-53770 and CVE-2025-53771."
+        ],
+        "edges": [
+          "EDGE_578462bf7557"
+        ]
+      },
+      {
+        "node_id": "IOC_1827dc1579ff",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-49706",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The recent SharePoint vulnerabilities are designated CVE-2025-49704, CVE-2025-49706, CVE-2025-53770 and CVE-2025-53771."
+        ],
+        "edges": [
+          "EDGE_691b2a3ec54a"
+        ]
+      },
+      {
+        "node_id": "IOC_8f523b335145",
+        "node_class": "ioc",
+        "node_type": "AESKey",
+        "node_text": "3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A",
+        "sentence_indices": [
+          38
+        ],
+        "span_sentences": [
+          "During our investigation on the Tox ID (3DCE1C43491FC92EA7010322040B254FDD2731001C2DDC2B9E819F0C946BDC3CD251FA3B694A) from the AK47 ransomware note, we discovered a database dump file associated with LockBit 3.0 ransomware."
+        ],
+        "edges": []
+      },
+      {
+        "node_id": "IOC_9d0076d2a494",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-49704",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The recent SharePoint vulnerabilities are designated CVE-2025-49704, CVE-2025-49706, CVE-2025-53770 and CVE-2025-53771."
+        ],
+        "edges": [
+          "EDGE_6edbdd91270d"
+        ]
+      },
+      {
+        "node_id": "IOC_defee4942408",
+        "node_class": "ioc",
+        "node_type": "CVE",
+        "node_text": "CVE-2025-53771",
+        "sentence_indices": [
+          7
+        ],
+        "span_sentences": [
+          "The recent SharePoint vulnerabilities are designated CVE-2025-49704, CVE-2025-49706, CVE-2025-53770 and CVE-2025-53771."
+        ],
+        "edges": [
+          "EDGE_490b1f2bcafd"
+        ]
+      }
+    ]
+  },
+  "edges": [
+    {
+      "edge_id": "EDGE_001632770d8f",
+      "node_u": "IOC_16fefe5606d4",
+      "node_v": "TTP_T1001",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_0ab6b5a4acc2",
+      "node_u": "HL_f1f37cc6416e",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_18103c99ffb6",
+      "node_u": "HL_dea90c536043",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bd4e6c06b8a",
+      "node_u": "IOC_01ca81e5c239",
+      "node_v": "TTP_T1001",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_1bd5103693e9",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_3bfa80e9b34d",
+      "node_u": "HL_7bbea51d18a0",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_490b1f2bcafd",
+      "node_u": "IOC_defee4942408",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_50135ec94a83",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_578462bf7557",
+      "node_u": "IOC_1766542380ab",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_691b2a3ec54a",
+      "node_u": "IOC_1827dc1579ff",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_6edbdd91270d",
+      "node_u": "IOC_9d0076d2a494",
+      "node_v": "TTP_T1190",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_738b8ffea43c",
+      "node_u": "HL_7bbea51d18a0",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_8e7e00fe0ece",
+      "node_u": "HL_7bbea51d18a0",
+      "node_v": "TTP_T1027",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_a5a1757f0f33",
+      "node_u": "IOC_16fefe5606d4",
+      "node_v": "TTP_T1071",
+      "edge_type": "ioc-ttp"
+    },
+    {
+      "edge_id": "EDGE_ad7b47f5da08",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_da6132da6835",
+      "node_u": "HL_c3e69f54c745",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_ea2b386b40f5",
+      "node_u": "HL_78d9f86d16bd",
+      "node_v": "TTP_T1190",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_eb8f6544476d",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f00561939f4d",
+      "node_u": "HL_e53cb86b5900",
+      "node_v": "TTP_T1486",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f1e2d9f2caab",
+      "node_u": "HL_2b48d06c4f64",
+      "node_v": "TTP_T1001",
+      "edge_type": "high_level-ttp"
+    },
+    {
+      "edge_id": "EDGE_f4bb7f68cc8f",
+      "node_u": "HL_6418d2f6e808",
+      "node_v": "TTP_T1071",
+      "edge_type": "high_level-ttp"
+    }
+  ]
+}
