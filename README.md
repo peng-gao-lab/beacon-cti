@@ -1,4 +1,4 @@
-# BEACON
+# BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence
 
 BEACON builds a knowledge graph from a cyber threat intelligence (CTI) report and consolidates the graphs. The first stage (space-anchoring) extracts contextual entities, ATT&CK techniques and IoCs from one report and links them with verified edges. The second stage (consolidation) aligns entities across the graphs. One YAML file configures and runs the whole pipeline.
 
