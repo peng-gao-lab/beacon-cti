@@ -1,6 +1,6 @@
 # BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence
 
-[Repository layout](#repository-layout) · [Installation](#installation) · [Datasets and resources](#datasets-and-resources) · [Running the tool](#running-the-tool) · [Configuration](#configuration) · [Output](#output) · [API cost recording](#api-cost-recording) · [Paper experiments](#paper-experiments) · [Paper and Citation](#paper-and-citation) · [License](#license)
+[📁 Repository layout](#repository-layout) | [📦 Installation](#installation) | [📚 Datasets and resources](#datasets-and-resources) | [🚀 Running the tool](#running-the-tool) | [⚙️ Configuration](#configuration) | [📂 Output](#output) | [💰 API cost recording](#api-cost-recording) | [🧪 Paper experiments](#paper-experiments) | [📝 Paper and Citation](#paper-and-citation) | [⚖️ License](#license)
 
 BEACON constructs a unified knowledge graph from heterogeneous cyber threat intelligence (CTI) reports by anchoring contextual entities and IoCs to ATT&CK techniques and aligning entities across reports.
 
