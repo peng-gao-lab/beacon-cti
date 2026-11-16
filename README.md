@@ -122,6 +122,24 @@ Records include the component and stage, model, token counts, latency, status an
 
 [experiments/README.md](experiments/README.md) provides the run and evaluation commands and links to the YAML configurations used for the paper. RQ1 runs on the BEACON-Single report texts. RQ2 starts from the BEACON-Group report-level ground-truth graphs and is scored against the consolidated ground truth. Baselines are not part of this repository.
 
+## Paper and Citation
+
+This repository provides the implementation and datasets for [BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence](https://arxiv.org/abs/2608.28394), accepted to WSDM 2027.
+
+If you use BEACON or its datasets in your research, please cite our paper.
+
+```bibtex
+@misc{li2026beacon,
+  title = {{BEACON}: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence},
+  author = {Changze Li and Yutong Cheng and Tsania Camila Finnisa and Qian Cui and Wei Ding and Peng Gao},
+  year = {2026},
+  eprint = {2608.28394},
+  archivePrefix = {arXiv},
+  primaryClass = {cs.CR},
+  url = {https://arxiv.org/abs/2608.28394}
+}
+```
+
 ## License
 
 The software, prompts and documentation are under the MIT License ([LICENSE](LICENSE)). Our annotations, dataset organization and metadata are under CC BY 4.0. Report texts and quoted evidence remain subject to their publishers' rights, and ATT&CK content is subject to MITRE's terms. See [dataset/LICENSE.md](dataset/LICENSE.md) for the scope of the dataset license before redistributing its contents.
