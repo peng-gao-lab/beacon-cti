@@ -6,15 +6,13 @@
 
 BEACON constructs a unified knowledge graph from heterogeneous cyber threat intelligence (CTI) reports by anchoring contextual entities and IoCs to ATT&CK techniques and aligning entities across reports.
 
-| Stage | Package | What it does |
-| --- | --- | --- |
-| Contextual entity extraction | `CTIHighLevelExtractor` | Extract entities |
-| Behavior grounding | `CTITagger` | Extract attack behaviors and map them to MITRE ATT&CK techniques |
-| IoC extraction | `CTIIOCExtractor` | Extract IoCs |
-| Anchored attachment | `CTIAugmentor` | Construct contextual entity-TTP edges and IoC-TTP edges |
-| Consolidation | `CTIAlignmentor` | Align entities across graphs with deterministic rules, then character, embedding and neighborhood candidates verified by an LLM |
-
-The code calls contextual entities `high_level`.
+| Stage | What it does |
+| --- | --- |
+| Contextual entity extraction | Extract entities |
+| Behavior grounding | Extract attack behaviors and map them to MITRE ATT&CK techniques |
+| IoC extraction | Extract IoCs |
+| Anchored attachment | Construct contextual entity-TTP edges and IoC-TTP edges |
+| Consolidation | Align entities across graphs with deterministic rules, then character, embedding and neighborhood candidates verified by an LLM |
 
 <a id="repository-layout"></a>
 
