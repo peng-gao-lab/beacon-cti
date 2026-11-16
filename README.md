@@ -149,13 +149,16 @@ This repository provides the implementation and datasets for [BEACON: Behavior-A
 If you use BEACON or its datasets in your research, please cite our paper.
 
 ```bibtex
-@misc{li2026beacon,
+@inproceedings{li2027beacon,
   title = {{BEACON}: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence},
   author = {Changze Li and Yutong Cheng and Tsania Camila Finnisa and Qian Cui and Wei Ding and Peng Gao},
-  year = {2026},
-  eprint = {2608.28394},
-  archivePrefix = {arXiv},
-  primaryClass = {cs.CR},
+  booktitle = {Proceedings of the Twentieth ACM International Conference on Web Search and Data Mining},
+  series = {WSDM '27},
+  year = {2027},
+  publisher = {Association for Computing Machinery},
+  location = {Hong Kong, Hong Kong},
+  doi = {10.1145/3862322.3863856},
+  isbn = {979-8-4007-3117-4},
   url = {https://arxiv.org/abs/2608.28394}
 }
 ```
