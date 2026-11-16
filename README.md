@@ -1,8 +1,10 @@
 # BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence
 
-BEACON builds a knowledge graph from a cyber threat intelligence (CTI) report and consolidates the graphs. The first stage (space-anchoring) extracts contextual entities, ATT&CK techniques and IoCs from one report and links them with verified edges. The second stage (consolidation) aligns entities across the graphs. One YAML file configures and runs the whole pipeline.
+[Repository layout](#repository-layout) · [Installation](#installation) · [Datasets and resources](#datasets-and-resources) · [Running the tool](#running-the-tool) · [Configuration](#configuration) · [Output](#output) · [API cost recording](#api-cost-recording) · [Paper experiments](#paper-experiments) · [Paper and Citation](#paper-and-citation) · [License](#license)
 
-| Paper stage | Package | What it does |
+BEACON constructs a unified knowledge graph from heterogeneous cyber threat intelligence (CTI) reports by anchoring contextual entities and IoCs to ATT&CK techniques and aligning entities across reports.
+
+| Stage | Package | What it does |
 | --- | --- | --- |
 | Contextual entity extraction | `CTIHighLevelExtractor` | Extract entities |
 | Behavior grounding | `CTITagger` | Extract attack behaviors and map them to MITRE ATT&CK techniques |
@@ -10,9 +12,11 @@ BEACON builds a knowledge graph from a cyber threat intelligence (CTI) report an
 | Anchored attachment | `CTIAugmentor` | Construct contextual entity-TTP edges and IoC-TTP edges |
 | Consolidation | `CTIAlignmentor` | Align entities across graphs with deterministic rules, then character, embedding and neighborhood candidates verified by an LLM |
 
-The code calls contextual entities `high_level`. The first three packages can run on their own. CTIAugmentor needs their outputs. CTIAlignmentor takes the resulting graphs.
+The code calls contextual entities `high_level`.
 
-## Repository layout
+<a id="repository-layout"></a>
+
+## 📁 Repository layout
 
 ```text
 README.md
@@ -25,7 +29,9 @@ src/CTI*/       the five components
 src/beacon_cost/ optional API cost recording
 ```
 
-## Installation
+<a id="installation"></a>
+
+## 📦 Installation
 
 ```bash
 conda env create -f environment.yml
@@ -44,7 +50,9 @@ export OPENAI_API_KEY="..."
 
 `components.alignmentor.api_key_env` can change the variable name that Alignmentor reads.
 
-## Datasets and resources
+<a id="datasets-and-resources"></a>
+
+## 📚 Datasets and resources
 
 [dataset/README.md](dataset/README.md) describes the data and file formats.
 
@@ -52,13 +60,15 @@ export OPENAI_API_KEY="..."
 - BEACON-Group: 100 reports in 33 groups, with report-level graphs and consolidated ground truth.
 - `dataset/resources/mitre.json`: the ATT&CK v17.1 corpus (Enterprise, Mobile and ICS) in the JSON format the tool reads. Raw STIX bundles are not accepted.
 
-## Running the tool
+<a id="running-the-tool"></a>
+
+## 🚀 Running the tool
 
 ```bash
 python -m beacon --config path/to/config.yaml
 ```
 
-Paths inside a YAML are relative to that YAML file. `--dry-run` prints what would run. Start from one of the templates in `configs/` and set the input and output paths:
+Paths inside a YAML are relative to that YAML file. Start from one of the templates in `configs/` and set the input and output paths:
 
 | Mode | Template | Input |
 | --- | --- | --- |
@@ -69,7 +79,9 @@ Paths inside a YAML are relative to that YAML file. `--dry-run` prints what woul
 
 Flat input is `reports/<report_id>.txt`. Grouped input is `reports/<group_id>/<report_id>.txt`.
 
-## Configuration
+<a id="configuration"></a>
+
+## ⚙️ Configuration
 
 | Setting | Meaning |
 | --- | --- |
@@ -90,13 +102,15 @@ Flat input is `reports/<report_id>.txt`. Grouped input is `reports/<group_id>/<r
 
 Component names are `highlevel`, `tagger`, `ioc`, `augmentor` and `alignmentor`.
 
-Sentence splitting uses the components' built-in rule-based splitter by default, which is what the paper's runs used. `run.sentence_splitter: nltk` switches to NLTK Punkt (install `punkt_tab` first). Use one splitter for every component and every report that will be consolidated together.
+Sentence splitting uses the components' built-in rule-based splitter by default, which is what the paper's runs used. `run.sentence_splitter: nltk` switches to NLTK Punkt. Use one splitter for every component.
 
 For consolidation, `highlevel_stages` selects the candidate channels from `char`, `embed` and `neighbor`. `enable_llm: false` skips LLM verification. `disable_highlevel_deterministic_char: true` turns off the deterministic character rules for contextual entities.
 
 With `output.existing: skip`, an existing output is reused even if its inputs or settings changed. After changing a model, a resource or an upstream output, write to a new output directory or delete the affected outputs first.
 
-## Output
+<a id="output"></a>
+
+## 📂 Output
 
 For flat input:
 
@@ -112,17 +126,23 @@ For flat input:
 
 Grouped runs put the component directories under `<output.root>/groups/<group_id>/`. Logs and simplified views go into `logs/` and `extract/` inside each component directory. The IoC component also keeps its pre-filtering candidates in `ctiiocextractor/pre_verification/`, which the IoC filtering ablation uses.
 
-## API cost recording
+<a id="api-cost-recording"></a>
+
+## 💰 API cost recording
 
 Set `cost.enabled: true` in YAML to record API usage. The runner appends call records to `<output.root>/cost/api_calls.jsonl` and updates `<output.root>/cost/summary.json` when the run finishes. Runs sharing an output directory accumulate in the same ledger.
 
 Records include the component and stage, model, token counts, latency, status and estimated USD cost. Estimates use the dated price list in `src/beacon_cost/pricing/`; `cost.pricebook` can specify another price-list file. Failed calls without usage information are recorded with unknown cost.
 
-## Paper experiments
+<a id="paper-experiments"></a>
 
-[experiments/README.md](experiments/README.md) provides the run and evaluation commands and links to the YAML configurations used for the paper. RQ1 runs on the BEACON-Single report texts. RQ2 starts from the BEACON-Group report-level ground-truth graphs and is scored against the consolidated ground truth. Baselines are not part of this repository.
+## 🧪 Paper experiments
 
-## Paper and Citation
+[experiments/README.md](experiments/README.md) provides the run and evaluation commands and links to the YAML configurations used for the paper. RQ1 runs on the BEACON-Single report texts. RQ2 starts from the BEACON-Group report-level ground-truth graphs and is scored against the consolidated ground truth.
+
+<a id="paper-and-citation"></a>
+
+## 📝 Paper and Citation
 
 This repository provides the implementation and datasets for [BEACON: Behavior-Anchored Cross-Source Knowledge Graph Construction for Cyber Threat Intelligence](https://arxiv.org/abs/2608.28394), accepted to WSDM 2027.
 
@@ -140,6 +160,8 @@ If you use BEACON or its datasets in your research, please cite our paper.
 }
 ```
 
-## License
+<a id="license"></a>
+
+## ⚖️ License
 
 The software, prompts and documentation are under the MIT License ([LICENSE](LICENSE)). Our annotations, dataset organization and metadata are under CC BY 4.0. Report texts and quoted evidence remain subject to their publishers' rights, and ATT&CK content is subject to MITRE's terms. See [dataset/LICENSE.md](dataset/LICENSE.md) for the scope of the dataset license before redistributing its contents.
