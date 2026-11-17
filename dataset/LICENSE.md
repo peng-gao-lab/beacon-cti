@@ -20,9 +20,6 @@ requested for research use, not an additional license restriction.
 
 ## Third-party material excluded from this grant
 
-- Report texts in `BEACON-Single/reports/` and `BEACON-Group/reports/` remain
-  subject to their original authors' and publishers' rights and applicable
-  terms. Public availability does not by itself grant redistribution rights.
 - Report excerpts and other third-party expression reproduced in GT evidence
   fields, metadata, or other files are also excluded from the CC BY grant.
   The annotation license does not relicense the underlying report content.

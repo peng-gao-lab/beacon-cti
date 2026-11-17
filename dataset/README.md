@@ -6,13 +6,13 @@ Ground-truth (GT) annotations, metadata and the resources used in the BEACON exp
 
 | Path | Contents |
 | --- | --- |
-| `BEACON-Single/reports/` | Directory for the 150 report texts obtained separately |
+| `BEACON-Single/reports/` | Empty due to redistribution restrictions. Obtain the 150 report texts using the URLs in `metadata/single_report_urls.json`. |
 | `BEACON-Single/gt/` | 150 GT graphs (4,966 nodes, 3,429 edges) |
-| `BEACON-Group/reports/<group>/` | Directories for the 100 report texts obtained separately, in 33 groups |
+| `BEACON-Group/reports/<group>/` | Empty due to redistribution restrictions. Obtain the 100 report texts using the URLs in `metadata/group_report_urls.json`. |
 | `BEACON-Group/single_gt/<group>/` | 100 report-level GT graphs (2,908 nodes, 2,278 edges) |
 | `BEACON-Group/alignment_gt/<group>/aligned_gt.json` | 33 consolidated GT graphs (1,950 nodes, 1,537 edges) |
 | `resources/mitre.json` | ATT&CK v17.1 corpus, 1,076 entries |
-| `metadata/` | publisher summaries, publisher links and dataset statistics |
+| `metadata/` | report URLs, publisher summaries, publisher links and dataset statistics |
 
 A report and its GT share the same filename stem (and, in BEACON-Group, the same group directory). RQ1 takes the BEACON-Single report texts as input. RQ2 takes the BEACON-Group report-level GT graphs as input and is scored against the consolidated GT.
 
@@ -28,10 +28,7 @@ A consolidated node that merges k report-level nodes counts as k−1 links.
 
 ## Metadata
 
+- `metadata/single_report_urls.json` and `metadata/group_report_urls.json`: original report URLs and their corresponding filenames and locations for running the pipeline. Paths are relative to `dataset/`; the group file also records each report's group.
 - `metadata/single_report_source.json` and `metadata/group_report_source.json`: reports per publisher.
-- `metadata/source_url.json`: publisher websites。
+- `metadata/source_url.json`: publisher websites.
 - `metadata/experiment_dataset_statistics.json`: dataset counts and how they were counted.
-
-## Notes
-
-BEACON-Single and BEACON-Group share 15 source articles, with different cleaned text versions.
