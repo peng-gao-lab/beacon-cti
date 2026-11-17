@@ -56,9 +56,11 @@ export OPENAI_API_KEY="..."
 
 [dataset/README.md](dataset/README.md) describes the data and file formats.
 
-- BEACON-Single: 150 reports with graph ground truth.
-- BEACON-Group: 100 reports in 33 groups, with report-level graphs and consolidated ground truth.
+- BEACON-Single: graph ground truth and metadata for 150 reports.
+- BEACON-Group: report-level graphs, consolidated ground truth and metadata for 100 reports in 33 groups.
 - `dataset/resources/mitre.json`: the ATT&CK v17.1 corpus (Enterprise, Mobile and ICS) in the JSON format the tool reads. Raw STIX bundles are not accepted.
+
+Report texts are not included. Obtain them from the original publishers and place the TXT files in the corresponding `reports/` directories, using the same filename stems as the GT files.
 
 <a id="running-the-tool"></a>
 
